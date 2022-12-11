@@ -1,0 +1,290 @@
+!This program cannot be run in DOS mode.
+LRich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+onecore\base\wcp\plugins\netfxconfig\dll\netfxconfig.cpp
+Windows::WCP::NetFx::ConfigInstaller::Install
+Not-null check failed: Services
+Not-null check failed: Component
+Not-null check failed: Success
+Windows::WCP::NetFx::ConfigInstaller::Uninstall
+Windows::WCP::NetFx::ConfigInstaller::EnumConfigureNetFxSection
+component->Manifest->GetTableOfContents(&toc)
+component->Manifest->SearchULONGTable(0, toc, Windows::Cms::CMS_SECTIONID_CONFIGURENETFX_SECTION, &configureNetFxTable)
+component->Manifest->EnumerateULONGTable( 0, configureNetFxTable, &configureNetFxElements)
+configureNetFxElements->Next(1, &configureNetFxTableItem, &numConfigNetFxElements)
+ConfigManager::CreateConfigManager(phase, services, configManager)
+services->get_IsolationAllocator( Allocator.GetMutablePointer())
+component->Manifest->GetBlob(configureNetFxTableItem.Value, &size, (void**)&configureNetFxElement)
+component->Manifest->EnumerateStringTable( 0, configureNetFxElement->children, &netFxStateElements)
+netFxStateElements->Next(1, &netFxStateItem, &numNetFxStateElements)
+component->Manifest->GetBlob(netFxStateItem.Value, &size, (void**)&netFxStateElement)
+component->Manifest->GetString(netFxStateElement->key, key.GetMutablePointer())
+component->Manifest->GetString(netFxStateElement->value, value.GetMutablePointer())
+onecore\base\wcp\plugins\netfxconfig\dll\configmanager.cpp
+Windows::WCP::NetFx::ConfigManager::CreateConfigManager
+Windows::WCP::NetFx::ConfigManager::EvaluateKeyValuePair
+enable64Bit
+Windows::WCP::NetFx::ConfigManager::CreateHandlerForKey
+\Registry\Machine\SOFTWARE\Microsoft\.NETFramework
+Enable64Bit
+kernel32.dll
+GetComPlusPackageInstallStatus
+SetComPlusPackageInstallStatus
+Windows::WCP::NetFx::ConfigManager::CLR64BitLoaderHandler::OpenDotNetFrameworkRegKey
+RtlInitLUnicodeStringFromNullTerminatedString(DotNetFrameworkRegKeyPath, &regPath)
+sil->OpenRegistryKey(0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))) | ((((0x00020000L)) | (0x0002) | (0x0004)) & (~(0x00100000L))), regPath, &dotNetFrameworkRegKey, 0)
+Windows::WCP::NetFx::ConfigManager::CLR64BitLoaderHandler::Get64BitState
+RtlInitLUnicodeStringFromNullTerminatedString(Enable64BitRegValue, &regEnable64Bit)
+dotNetFrameworkRegKey->QueryValue( Windows::Rtl::IRtlKey::QueryValueFlags::ValueMissingIsOk, regEnable64Bit, KeyValuePartialInformation, &tempValue, &Disposition)
+Windows::WCP::NetFx::ConfigManager::CLR64BitLoaderHandler::Set64BitState
+dotNetFrameworkRegKey->SetValue(0, regEnable64Bit, ( 4ul ), reinterpret_cast<void*>(&state), sizeof(ULONG), 0)
+Windows::WCP::NetFx::ConfigManager::CLR64BitLoaderHandler::DoInstall
+false
+RSDSM$
+netfxconfig.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.xdata$x
+.edata
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+0f;2u
+j,hH?
+Y__^[
+netfxconfig.DLL
+DllCanUnloadNow
+DllCsiGetHandler
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+_except_handler4_common
+msvcrt.dll
+DisableThreadLibraryCalls
+DeleteCriticalSection
+InitializeCriticalSection
+HeapDestroy
+LoadLibraryW
+GetProcAddress
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+RtlReportErrorOrigination
+ConvertNtStatusToHResult
+RtlInitLUnicodeStringFromNullTerminatedString
+ConvertHResultToNtStatus
+RtlFreeLBlob
+WCP.dll
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+NetFx configuration CMI plug-in
+FileVersion
+10.0.22621.440 (WinBuild.160101.0800)
+InternalName
+netfxconfig.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+netfxconfig.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.440
+VarFileInfo
+Translation
+0 0$0(0,000
+0X0e0k0w0~0
+1%1+171>1V1l1
+2.2@2P2d2j2q2
+3=3G3U3[3b3
+4,4B4R4f4l4s4
+565_5
+6F6P6^6g6q6
+7)747D7O7c7i7
+8D8x8
+9R9\9j9x9
+:#:@:E:`:e:
+; ;%;*;0;6;>;D;V;\;k;q;z;
+<+<2<V<
+=S>Y>a>n>
+>d?l?s?y?
+0.040A0K0Y0_0f0
+0%1+171A1I1W1]1
+1$2?2e2k2x2
+5g5l5q5
+676@6F6g6o6v6|6
+7$757=7P7\7d7
+8(8=8a9y9
+;!;-;
+="=*=9=E=b=
+> >'>.>6>>>F>R>[>`>f>p>z>
+?$?(?0?4?<?@?`?h?l?t?x?
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+ JPG$
+,8WE6WDDq+8xE2GSquU4l5Uhf714CVaxAIHV0dx0wVAg=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+yuaGw
+20220720035650.116Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:7BF1-E3EA-B8081%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211202190522Z
+230228190522Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:7BF1-E3EA-B8081%0#
+Microsoft Time-Stamp Service0
+"m!u4W
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+7%k'`
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:7BF1-E3EA-B8081%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220720082144Z
+20220721082144Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+,7K|\
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+,h|2 
+j&g"y
+-_0ky

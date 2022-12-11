@@ -1,0 +1,680 @@
+!This program cannot be run in DOS mode.
+RichM
+.text
+@.rsrc
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+DIALOGS_ERR.JS
+EDLINK.JS
+FORCHAR.JS
+INSIMAGE.JS
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft
+ HTML Editing Component's Resource DLL
+FileVersion
+11.00.22621.1 (WinBuild.160101.0800)
+InternalName
+MSHTMLER.DLL
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+MSHTMLER.DLL
+ProductName
+Internet Explorer
+ProductVersion
+11.00.22621.1
+OleSelfRegister
+VarFileInfo
+Translation
+window.onerror = HandleError
+function HandleError(message, url, line)
+var str = L_Dialog_ErrorMessage + "\n\n"
++ L_ErrorNumber_Text + line + "\n"
++ message;
+alert (str);
+window.close();
+return true;
+var g_fOKEnabled = false;
+var g_fURLLoaded = false;
+function findAnchor(range)
+var rangeWorking;
+var elmWorking;
+var index;
+elmWorking = range.parentElement()
+while (null != elmWorking)
+if ("A" == elmWorking.tagName.toUpperCase())
+return elmWorking;
+elmWorking = elmWorking.parentElement
+rangeWorking = range.duplicate();
+rangeWorking.collapse(true);
+rangeWorking.moveEnd("character", 1);
+while (rangeWorking.compareEndPoints("EndToEnd", range) < 0)
+rangeWorking.move("Character");
+if (null != findAnchor(rangeWorking))
+return findAnchor(rangeWorking);
+return null;
+function getProtocolFromURL(strURL)
+var index;
+return strURL.substring(0, strURL.indexOf(":") + 1);
+function updateProtocolSel()
+var index;
+var strProtocol = getProtocolFromURL(txtURL.value);
+selProtocol.value = strProtocol;
+if (selProtocol.value != strProtocol)
+selProtocol.value = "";
+function updateProtocolTxt()
+var strSlashProts = " file:ftp:http:https:";
+var strProtocolTxt = getProtocolFromURL(txtURL.value);
+var strProtocolSel = selProtocol.value;
+var strTempURL;
+if ("//" == (txtURL.value.substring(strProtocolTxt.length,
+strProtocolTxt.length + 2)))
+strProtocolTxt = strProtocolTxt + "//";
+strTempURL = txtURL.value.substring(strProtocolTxt.length);
+if (0 < strSlashProts.indexOf(strProtocolSel))
+strProtocolSel = strProtocolSel + "//";
+txtURL.value = strProtocolSel + strTempURL;
+function setOKState()
+var htmlKeyAlt = 18;
+if (!g_fURLLoaded)
+if ((("" == txtURL.value) || (txtURL.value == selProtocol.value)
+||(txtURL.value == selProtocol.value + "//"))
+== g_fOKEnabled)
+btnOK.disabled = g_fOKEnabled
+g_fOKEnabled = !g_fOKEnabled;
+function bdyLoad()
+var globalDoc = window.dialogArguments;
+var rngMaster;
+var rngLink;
+var elmLink;
+document.onhelp = new
+Function("callHelp(window.event.srcElement)");
+document.onmouseup = new Function("mouseClick()");
+selProtocol.onchange = new Function("updateProtocolTxt()");
+btnOK.onclick = new Function("btnOKClick()");
+btnCancel.onclick = new Function("btnCancelClick()");
+txtURL.onfocus = new Function("txtURL.select()");
+txtURL.onpropertychange = new Function("if (event.propertyName == 'value') setOKState();");
+txtURL.onkeypress = new Function("txtDefaultESC()");
+if ("Control" == globalDoc.selection.type)
+rngMaster = globalDoc.selection.createRange();
+if (1 == rngMaster.length)
+rngMaster = getTextRange(rngMaster(0));
+rngMaster.select();
+if (("Text" == globalDoc.selection.type) ||
+("None" == globalDoc.selection.type))
+rngMaster = globalDoc.selection.createRange();
+globalDoc.execCommand("AutoDetect");
+elmLink = findAnchor(rngMaster);
+if (null != elmLink)
+rngLink = getTextRange(elmLink);
+if (rngLink.compareEndPoints("StartToStart", rngMaster) < 0)
+rngMaster.setEndPoint("StartToStart", rngLink);
+if (rngLink.compareEndPoints("EndToEnd", rngMaster) > 0)
+rngMaster.setEndPoint("EndToEnd", rngLink);
+rngMaster.select();
+var inputHref = (elmLink.ownerDocument.documentMode >= 9) ? elmLink.getAttribute('href') : elmLink.href;
+if (null != inputHref && "" != inputHref)
+txtURL.value = inputHref;
+txtURL.href = inputHref;
+g_fURLLoaded = true;
+btnOK.disabled = false;
+updateProtocolSel();
+txtURL.focus();
+txtURL.select();
+setOKState();
+function IsRangeEmpty( range )
+var tempRange;
+tempRange = range.duplicate();
+result = tempRange.compareEndPoints( "StartToEnd", range );
+if ( result == 0 )
+return true;
+return false;
+function btnOKClick()
+var globalDoc = window.dialogArguments;
+var cmdCreateLink = "CreateLink";
+var cmdUnlink = "Unlink";
+var range = globalDoc.selection.createRange();
+var strSlashProts = " file:ftp:http:https:";
+var strProtocol = selProtocol.value;
+var dupRange;
+var initialRange;
+var iRight;
+var fUseExecCommand = true;
+if ("" == txtURL.value)
+range.execCommand(cmdUnlink, false);
+window.close();
+return;
+if (g_fURLLoaded && (txtURL.value == txtURL.href))
+window.close();
+return;
+updateProtocolSel();
+if (0 < strSlashProts.indexOf(strProtocol))
+strProtocol = strProtocol + "//";
+initialRange = range.duplicate();
+if ( IsRangeEmpty( range ) )
+range.text = txtURL.value;
+fUseExecCommand = false;
+dupRange = range.duplicate();
+iRight = dupRange.moveEnd( "Character", 2 );
+if ( iRight < 2 && dupRange.htmlText == "" )
+range.text = txtURL.value;
+fUseExecCommand = false;
+if ( fUseExecCommand )
+range.execCommand(cmdCreateLink, false, txtURL.value);
+dupRange = range.duplicate();
+dupRange.move( "Character", -1 );
+elmParent = dupRange.parentElement();
+if (elmParent.tagName.toUpperCase() == "A")
+elmParent.href = txtURL.value;
+range.setEndPoint( "StartToEnd", initialRange );
+dupRange = range.duplicate();
+dupRange.collapse(true);
+elmParent = dupRange.parentElement();
+if (elmParent.tagName.toUpperCase() == "A")
+range.execCommand(cmdUnlink, false);
+range.execCommand(cmdCreateLink, false, txtURL.value);
+window.close();
+function callHelp(elm)
+if (null != elm.helpid)
+window.showHelp(elm.helpfile, "" + parseInt(elm.helpid),
+"popup");
+if ("BODY" != elm.tagName)
+callHelp(elm.parentElement);
+function btnCancelClick()
+window.close();
+function getTextRange(elm)
+var r = elm.parentTextEdit.createTextRange();
+r.moveToElementText(elm);
+return r;
+function mouseClick()
+if (window.event.srcElement.id.substring(0,3)
+== "txt")
+return;
+if (window.event.button == 2)
+callHelp(window.event.srcElement);
+function txtDefaultESC()
+if (event.keyCode == 27)
+window.close();
+return;
+var g_bSearchList = false;
+var g_nTimeoutID;
+var g_szLastFound = "";
+var g_nLastFoundIndex = 0;
+var g_nMatchLength = 0;
+function loadBdy()
+var doc = window.dialogArguments;
+if (doc.parentWindow.frames.length > 0 &&
+doc.all.tags("IFRAME").length == 0)
+alert(L_InsideFrameset_ErrorMessage);
+window.close();
+var rngCurrent = doc;
+document.onhelp = new Function("callHelp(window.event.srcElement)");
+document.onmouseup = new Function("mouseClick()");
+txtFontName.onblur = new
+Function("syncSelect(cmdFontName, txtFontName)");
+txtFontName.onfocus = new Function("txtFontName.select()");
+txtFontName.onchange = new
+Function("setFont(getTextRange(elmSample))");
+txtFontName.onkeyup = new Function("syncTextFont()");
+txtFontName.onfocus = new Function("txtFontName.select()");
+txtFontName.onkeypress = new Function("txtDefaultESC()");
+txtFontStyle.onblur = new
+Function("syncSelect(selFontStyle, txtFontStyle)");
+txtFontStyle.onfocus = new Function("txtFontStyle.select()");
+txtFontStyle.onchange = new Function("setFontStyle" +
+"(getTextRange(elmSample))");
+txtFontStyle.onkeyup = new Function("synchText()");
+txtFontStyle.onfocus = new Function("txtFontStyle.select()");
+txtFontStyle.onkeypress = new Function("txtDefaultESC()");
+txtFontSize.onblur = new
+Function("syncSelect(cmdFontSize, txtFontSize)");
+txtFontSize.onfocus = new Function("txtFontSize.select()");
+txtFontSize.onchange = new
+Function("setSelectStateCmd(cmdFontSize, " +
+"getTextRange(elmSample))");
+txtFontSize.onkeyup = new Function("synchText()");
+txtFontSize.onfocus = new Function("txtFontSize.select()");
+txtFontSize.onkeypress = new Function("txtDefaultESC()");
+cmdFontName.onchange = new Function("syncSelect2(cmdFontName, txtFontName);" +
+"setFont(getTextRange(elmSample))");
+selFontStyle.onchange = new Function("syncSelect2(selFontStyle," +
+"txtFontStyle);" +
+"setFontStyle(getTextRange(elmSample))");
+cmdFontSize.onchange = new Function("syncSelect2(cmdFontSize, txtFontSize);" +
+"setSelectStateCmd(cmdFontSize, getTextRange(elmSample))");
+chkUnderline.onclick = new Function("setCheckStateCmd(chkUnderline," +
+"getTextRange(elmSample))");
+selColor.onchange = new Function("setFontColor(getTextRange(elmSample))");
+btnCustom.onclick = new Function("btnCustomClick()");
+btnOK.onclick = new Function("btnOKClick()");
+btnCancel.onclick = new Function("btnCancelClick()");
+fillFontSelect(cmdFontName);
+getCheckStateCmd(chkUnderline, rngCurrent);
+getSelectStateCmd(cmdFontName, rngCurrent);
+getSelectStateCmd(cmdFontSize, rngCurrent);
+getFontStyle();
+selColor.customColor = 0;
+getFontColor();
+syncSelect2(cmdFontName, txtFontName);
+syncSelect2(selFontStyle, txtFontStyle);
+syncSelect2(cmdFontSize, txtFontSize);
+txtFontName.select();
+g_szLastFound = txtFontName.value;
+updateSample();
+txtFontName.focus();
+function GetSampleString()
+var strReturn = "AaBbYyZz";
+if (txtFontName.value != "")
+switch (dialogHelper.getCharset(txtFontName.value))
+case 2:
+strReturn = "Symbol";
+break;
+case 128:
+strReturn = "Aa\u3042\u3041\u30a2\u30a1\u4e9c\u5b87";
+break;
+case 129:
+case 130:
+strReturn = "\uac00\ub098\ub2e4\u0041\u0061\u0042\u0062\u0059\u0079\u005a\u007a";
+break;
+case 136:
+strReturn = "\u4e2d\u6587\u5b57\u578b\u7bc4\u4f8b";
+break;
+case 161:
+strReturn = "AaBb\u0391\u03b1\u0392\u03b2";
+break;
+case 162:
+strReturn = "AaBb\u011e\u011f\u015e\u015f";
+break;
+case 177:
+strReturn = "AaBb\u05e0\u05e1\u05e9\u05ea";
+break;
+case 178:
+case 179:
+strReturn = "AaBb\u0639\u0645\u0646\u062e\u0631\u0648\u0643\u0645";
+break;
+case 204:
+strReturn = "AaBb\u0411\u0431\u0424\u0444";
+break;
+case 238:
+strReturn = "AaBb\u00c1\u00e1\u00d4\u00f4";
+break;
+case 255:
+strReturn = "Aa\u00f8\u00f1\u00fd";
+break;
+return strReturn;
+function getCheckStateCmd(checkbox, range)
+checkbox.checked = (true == range.queryCommandState(checkbox.value));
+function getSelectStateCmd(select, range)
+var index;
+if (null != range.queryCommandValue(select.id.substring(3)))
+for (index = 0; index < select.options.length; index++)
+if (select.options[index].value ==
+range.queryCommandValue(select.id.substring(3)))
+select.selectedIndex = index;
+break;
+select.selectedIndex = -1;
+function setCheckStateCmd(checkbox, range)
+if (checkbox.checked !=
+(true == range.queryCommandState(checkbox.value)))
+range.execCommand(checkbox.value, false);
+function setSelectStateCmd(select, range)
+if (-1 != select.selectedIndex)
+range.execCommand(select.id.substring(3), false,
+select.options[select.selectedIndex].value);
+function NoCaseCompare(str1, str2)
+var ideo1 = 1 != escape(str1.charAt(0)).length;
+var ideo2 = 1 != escape(str2.charAt(0)).length;
+if (ideo1 != ideo2)
+return ideo1 ? -1 : 1;
+if (str1.toLowerCase() < str2.toLowerCase())
+return -1;
+if (str1.toLowerCase() > str2.toLowerCase())
+return 1;
+return 0;
+function fillFontSelect(select)
+var index;
+var fontList = new Array();
+var optFontName;
+var len = dialogHelper.fonts.length;
+for (index = 0; index < len; index++)
+fontList[index] =
+dialogHelper.fonts.item(index);
+fontList.sort(NoCaseCompare);
+for (index = 0; index < fontList.length; index++)
+optFontName = new Option();
+optFontName.value = fontList[index];
+optFontName.text = fontList[index];
+select.options[index] = optFontName;
+function setFont(range)
+var FontNameCommand = "FontName";
+if (window.event.srcElement == txtFontName ||
+window.event.srcElement == cmdFontName)
+range.text = GetSampleString();
+range = getTextRange(elmSample);
+if (-1 != cmdFontName.selectedIndex)
+range.execCommand(FontNameCommand, false, txtFontName.value);
+function getFontStyle()
+var cmdBold = "Bold";
+var cmdItalic = "Italic";
+var globalDoc = window.dialogArguments;
+var range = globalDoc;
+with (range)
+if (queryCommandState(cmdBold) && queryCommandState(cmdItalic))
+selFontStyle.value = "Bold-Italic";
+else if (queryCommandState(cmdBold))
+selFontStyle.value = "Bold";
+else if (queryCommandState(cmdItalic))
+selFontStyle.value = "Italic";
+selFontStyle.value = "Regular";
+function setFontStyle(range)
+var cmdBold = "Bold";
+var cmdItalic = "Italic";
+with (range)
+if ("Bold-Italic" == selFontStyle.value)
+if (true != queryCommandState(cmdBold))
+execCommand(cmdBold, false);
+if (true != queryCommandState(cmdItalic))
+execCommand(cmdItalic, false);
+else if ("Bold" == selFontStyle.value)
+if (true != queryCommandState(cmdBold))
+execCommand(cmdBold, false);
+if (true == queryCommandState(cmdItalic))
+execCommand(cmdItalic, false);
+else if ("Italic" == selFontStyle.value)
+if (true == queryCommandState(cmdBold))
+execCommand(cmdBold, false);
+if (true != queryCommandState(cmdItalic))
+execCommand(cmdItalic, false);
+if (true == queryCommandState(cmdBold))
+execCommand(cmdBold, false);
+if (true == queryCommandState(cmdItalic))
+execCommand(cmdItalic, false);
+function getFontColor()
+var cmdForeColor = "ForeColor";
+var globalDoc = window.dialogArguments;
+var range = globalDoc;
+var intColor = range.queryCommandValue(cmdForeColor);
+if (null != intColor)
+selColor.value = intColor;
+if (parseInt(selColor.value) != parseInt(intColor))
+selColor.customColor = intColor;
+selColor.value = "custom";
+selColor.selectedIndex = -1;
+function setFontColor(range)
+var cmdForeColor = "ForeColor";
+var intDefaultColor = 0;
+if (-1 != selColor.selectedIndex)
+if ("custom" == selColor.value)
+range.execCommand(cmdForeColor, false,
+parseInt(selColor.customColor));
+return;
+range.execCommand(cmdForeColor, false,
+parseInt(selColor.value));
+function syncSelect(ctlSelect, ctlText)
+if (-1 != ctlSelect.selectedIndex)
+if (ctlText.value.toLowerCase()
+== ctlSelect.options[ctlSelect.selectedIndex]
+.text.toLowerCase())
+ctlText.value = ctlSelect.options[ctlSelect.selectedIndex].text;
+function syncSelect2(ctlSelect, ctlText)
+if (-1 != ctlSelect.selectedIndex)
+ctlText.value = ctlSelect.options[ctlSelect.selectedIndex].text;
+function findMatch (strMatch, optionsList)
+var index;
+var index2;
+var bestChar = 0;
+var bestMatch = 0;
+var strOptText;
+for (index = 0; index < optionsList.length; index++)
+strOptText = optionsList.options[index].text;
+for (index2 = bestChar; index2 < strMatch.length; index2++)
+if (strMatch.substring(0, index2 + 1).toLowerCase() ==
+strOptText.substring(0, index2 + 1)
+.toLowerCase())
+bestChar = index2 + 1;
+bestMatch = index;
+break;
+return bestMatch;
+function updateSample()
+var rngSample = getTextRange(elmSample);
+setCheckStateCmd(chkUnderline, rngSample);
+rngSample.text = GetSampleString();
+rngSample = getTextRange(elmSample);
+setFont(rngSample);
+setSelectStateCmd(cmdFontSize, rngSample);
+setFontStyle(rngSample);
+setFontColor(rngSample);
+function searchText()
+var index;
+var index2;
+var bestChar = g_nMatchLength;
+var bestMatch = g_nLastFoundIndex;
+var strOptText;
+var optionsList = cmdFontName.options;
+var strMatch = txtFontName.value;
+if (strMatch.length == 0)
+cmdFontName.selectedIndex = -1;
+g_nMatchLength = 0;
+g_nLastFoundIndex = 0;
+g_bSearchList = false;
+g_szLastFound = "";
+return;
+if (strMatch.length >= g_szLastFound.length
+&& (strMatch.substring(0, g_nMatchLength).toLowerCase()
+== g_szLastFound.substring(0, g_nMatchLength).toLowerCase()))
+index = g_nLastFoundIndex;
+index = 0;
+bestChar = 0;
+for (; index < optionsList.length; index++)
+strOptText = optionsList.options[index].text;
+for (index2 = bestChar; index2 < strMatch.length; index2++)
+if (strMatch.substring(index2, index2 + 1).toLowerCase() ==
+strOptText.substring(index2, index2 + 1)
+.toLowerCase())
+bestChar = index2 + 1;
+bestMatch = index;
+g_nLastFoundIndex = bestMatch;
+g_nMatchLegth = bestChar;
+break;
+if (bestChar > 0 && index < optionsList.options.length - 2 &&
+optionsList.options[index + 1].text
+.substring(bestChar - 1, bestChar).toLowerCase()
+!= strMatch.substring(bestChar - 1, bestChar).toLowerCase())
+break;
+cmdFontName.selectedIndex = bestMatch;
+g_bSearchList = false;
+g_szLastFound = txtFontName.value;
+function TextboxKeyDown(textbox, select, iKeyCode)
+var fReturn = false;
+if (38 == iKeyCode || 40 ==iKeyCode)
+var iDirection = (iKeyCode == 38) ? -1 : 1;
+if (!((iDirection == 1 &&
+!(select.selectedIndex < select.options.length - 1))
+|| (iDirection == -1 && !select.selectedIndex)))
+select.selectedIndex = select.selectedIndex + iDirection;
+textbox.value =
+select.options(select.selectedIndex).text;
+textbox.select();
+updateSample(getTextRange(elmSample));
+fReturn = true;
+return fReturn;
+function syncTextFont()
+if (TextboxKeyDown(txtFontName, cmdFontName, window.event.keyCode))
+return;
+if (g_szLastFound.toLowerCase() == txtFontName.value.toLowerCase())
+return;
+if (g_bSearchList)
+window.clearTimeout(g_nTimeoutID);
+g_bSearchList = true;
+g_nTimeoutID = window.setTimeout("searchText()", 200);
+function btnCustomClick()
+var result = dialogHelper.choosecolordlg(selColor.customColor);
+if (result != 0)
+selColor.customColor = result;
+selColor.value = "custom";
+setFontColor(getTextRange(elmSample));
+function btnOKClick()
+var globalDoc = window.dialogArguments;
+var range = globalDoc;
+setCheckStateCmd(chkUnderline, range);
+setSelectStateCmd(cmdFontSize, range);
+setFont(range);
+setFontColor(range);
+setFontStyle(range);
+window.close();
+function synchText()
+var index;
+var elmSource = window.event.srcElement;
+var arrSelect = new Array();
+var elmSelect;
+var elmOptions;
+arrSelect["txtFontName"] = cmdFontName;
+arrSelect["txtFontStyle"] = selFontStyle;
+arrSelect["txtFontSize"] = cmdFontSize;
+elmSelect = arrSelect[elmSource.id];
+elmOptions = elmSelect.options;
+if (TextboxKeyDown(elmSource, elmSelect, window.event.keyCode))
+return;
+if ("" != elmSource.value)
+elmSelect.selectedIndex = findMatch(elmSource.value,
+elmOptions);
+function btnBrowseClick()
+var L_Picture_DIALOG_Title_DialogTitle = "Picture";
+var L_Picture_DIALOG_FileTypes_Text = "GIF (.gif)|*.gif|JPEG (.jpg, .jpeg, .jpe, .jfif)|*.jpg;*.jpeg;*.jpe;*.jfif|PNG (.png)|*.png|Bitmap (.bmp, .dib)|*.bmp;*.dib|Windows Metafile (.wmf)|*.wmf|ART (.art)|*.art|Icon (.ico)|*.ico|All Picture Files|*.gif;*.jpg;*.jpeg;*.jpe;*.jfif;*.png;*.bmp;*.dib;*.wmf;*.art;*.ico|All Files|*.*|";
+var strFileName;
+strFileName = dialogHelper.openfiledlgex("", "",
+L_Picture_DIALOG_FileTypes_Text, 8, L_Picture_DIALOG_Title_DialogTitle);
+if ("" != strFileName)
+txtFileName.value = strFileName;
+setOKState(false);
+function getProtocolFromURL(strURL)
+var index;
+return strURL.substring(0, strURL.indexOf(":") + 1);
+function bdyLoad()
+var elmSelectedImage;
+var htmlSelectionControl = "Control";
+var globalDoc = window.dialogArguments;
+var grngMaster = globalDoc.selection.createRange();
+txtFileName.onfocus = new Function("txtFileName.select()");
+txtFileName.onkeypress = new Function("txtDefaultESC()");
+txtAltText.onfocus = new Function("txtAltText.select()");
+txtAltText.onkeypress = new Function("txtDefaultESC()");
+txtHorizontal.onfocus = new Function("txtHorizontal.select()");
+txtHorizontal.onkeypress = new Function("txtDefaultESC()");
+txtBorder.onfocus = new Function("txtBorder.select()");
+txtBorder.onkeypress = new Function("txtDefaultESC()");
+txtVertical.onfocus = new Function("txtVertical.select()");
+txtVertical.onkeypress = new Function("txtDefaultESC()");
+btnBrowse.onclick = new Function("btnBrowseClick()");
+btnOK.onclick = new Function("btnOKClick()");
+btnCancel.onclick = new Function("btnCancelClick()");
+document.onhelp = new Function("callHelp(window.event.srcElement)");
+document.onmouseup = new Function("mouseClick()");
+txtFileName.onpropertychange = new Function("setOKState(true)");
+txtFileName.fImageLoaded = false;
+txtFileName.intImageWidth = 0;
+txtFileName.intImageHeight = 0;
+if (globalDoc.selection.type == htmlSelectionControl)
+if (grngMaster.length == 1)
+elmSelectedImage = grngMaster.item(0);
+if (elmSelectedImage.tagName.toUpperCase() == "IMG")
+txtFileName.fImageLoaded = true;
+if (elmSelectedImage.src)
+txtFileName.value = elmSelectedImage.src;
+txtFileName.intImageHeight = elmSelectedImage.height;
+txtFileName.intImageWidth = elmSelectedImage.width;
+txtVertical.value = elmSelectedImage.vspace;
+txtHorizontal.value = elmSelectedImage.hspace;
+txtBorder.value = elmSelectedImage.border;
+txtAltText.value = elmSelectedImage.alt;
+selAlignment.value = elmSelectedImage.align;
+setOKState(false);
+txtFileName.focus();
+function testTextValue(txtBox)
+var val = parseInt(txtBox.value);
+if (isNaN(val) || val < 0 || val > 999)
+return false;
+return true;
+function btnOKClick()
+var elmImage;
+var intAlignment;
+var L_HorizontalNotNumber_ErrorMessage
+= "Horizontal spacing must be a number between 0 and 999.";
+var L_VerticalNotNumber_ErrorMessage
+= "Vertical spacing must be a number between 0 and 999.";
+var L_BoderNotNumber_ErrorMessage
+= "Border thickness must be a number between 0 and 999.";
+var cmdInsertImage = "InsertImage";
+var cmdDelete = "Delete";
+var htmlSelectionControl = "Control";
+var globalDoc = window.dialogArguments;
+var grngMaster = globalDoc.selection.createRange();
+if ("" != txtHorizontal.value)
+if (!testTextValue(txtHorizontal))
+alert(L_HorizontalNotNumber_ErrorMessage);
+txtHorizontal.focus();
+return;
+if ("" != txtBorder.value)
+if (!testTextValue(txtBorder))
+alert(L_BoderNotNumber_ErrorMessage);
+txtBorder.focus();
+return;
+if ("" != txtVertical.value)
+if (!testTextValue(txtVertical))
+alert(L_VerticalNotNumber_ErrorMessage);
+txtVertical.focus();
+return;
+if (globalDoc.selection.type == htmlSelectionControl
+&& !txtFileName.fImageLoaded)
+grngMaster.execCommand(cmdDelete);
+grngMaster = globalDoc.selection.createRange();
+idstr = "\" id=\"c2eec6217e1a474eb649bfedd577334a";
+if (!txtFileName.fImageLoaded)
+grngMaster.execCommand(cmdInsertImage, false, idstr);
+elmImage = globalDoc.all.c2eec6217e1a474eb649bfedd577334a;
+elmImage.removeAttribute("id");
+elmImage.removeAttribute("src");
+grngMaster.moveStart("character", -1);
+elmImage = grngMaster.item(0);
+if (elmImage.src != txtFileName.value)
+grngMaster.execCommand(cmdDelete);
+grngMaster = globalDoc.selection.createRange();
+grngMaster.execCommand(cmdInsertImage, false, idstr);
+elmImage = globalDoc.all.c2eec6217e1a474eb649bfedd577334a;
+elmImage.removeAttribute("id");
+elmImage.removeAttribute("src");
+grngMaster.moveStart("character", -1);
+txtFileName.fImageLoaded = false;
+grngMaster = getTextRange(elmImage);
+if (txtFileName.fImageLoaded)
+elmImage.style.width = txtFileName.intImageWidth;
+elmImage.style.height = txtFileName.intImageHeight;
+if (txtFileName.value.length > 2040)
+txtFileName.value = txtFileName.value.substring(0,2040);
+if ("" == getProtocolFromURL(txtFileName.value))
+elmImage.src = "file://" + txtFileName.value;
+elmImage.src = txtFileName.value;
+if (txtHorizontal.value != "")
+elmImage.hspace = parseInt(txtHorizontal.value);
+elmImage.hspace = 0;
+if (txtVertical.value != "")
+elmImage.vspace = parseInt(txtVertical.value);
+elmImage.vspace = 0;
+elmImage.alt = txtAltText.value;
+if (txtBorder.value != "")
+elmImage.border = parseInt(txtBorder.value);
+elmImage.border = 0;
+elmImage.align = selAlignment.value;
+grngMaster.collapse(false);
+grngMaster.select();
+window.close();
+en-US

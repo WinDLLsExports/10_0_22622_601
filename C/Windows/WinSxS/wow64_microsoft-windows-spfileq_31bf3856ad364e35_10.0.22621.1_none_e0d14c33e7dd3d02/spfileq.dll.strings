@@ -1,0 +1,707 @@
+!This program cannot be run in DOS mode.
+RichUI
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+{FILE_QUEUE_COPY}
+SourceRootPath - '%ws'
+SourceFilename - '%ws'
+TargetDirectory- '%ws'
+TargetFilename - '%ws'
+SourceDesc     - '%ws'
+CopyStyle      - 0x%08x
+{FILE_QUEUE_COPY exit(0x%08x)}
+SourcePath     - '%ws'
+setupapi.ev1
+setupapi.ev2
+setupapi.ev3
+setupapi.app.log
+setupapi.dev.log
+LogPath
+Software\Microsoft\Windows\CurrentVersion\Setup
+SetupOverride
+LogMask
+LogLevel
+LogMaxFileSize
+{FILE_QUEUE_COMMIT}
+No operations queued.
+Setup FileQ Transaction
+Failed to create transaction '%ws'.
+Created transaction '%ws'.
+Failed to commit delete queue. Error = 0x%08x
+Failed to commit rename queue. Error = 0x%08x
+Failed to commit copy queue. Error = 0x%08x
+Failed to commit delayed moves. Error = 0x%08x
+FileQueueCommit aborting
+Committing transaction.
+Failed to commit transaction.
+Committed transaction.
+Rolling back transaction.
+Failed to rollback transaction.
+Rolled back transaction.
+{FILE_QUEUE_COMMIT - exit(0x%08x)}
+{FILE_QUEUE_UNWIND_BACKUP}
+{FILE_QUEUE_UNWIND_BACKUP - exit(0x%08x)}
+{FILE_QUEUE_COMMIT_DELETE_SUBQUEUE}
+Caller requested to skip file '%ws'.
+Caller requested to abort delete of file '%ws' with error 0x%08x.
+DeleteFile: '%ws'
+Skipping attempt at delete because backup was in use
+DeleteFile: FAILED
+DeleteFile: success
+Error while queuing up a delayed delete!
+File delete delayed until next boot.
+Skipping attempt at delayed delete - file NOT deleted
+Error(0x%08x) unsecuring file: %ws
+{FILE_QUEUE_COMMIT_DELETE_SUBQUEUE - exit(0x%08x)}
+{FILE_QUEUE_COMMIT_RENAME_SUBQUEUE}
+RenameFile: '%ws'
+        to: '%ws'
+Delayed RenameFile: FAILED
+RenameFile: Delayed until next boot
+RenameFile: FAILED
+RenameFile: success
+Error(0x%08x) securing file: %ws
+{FILE_QUEUE_COMMIT_RENAME_SUBQUEUE - exit(0x%08x)}
+{FILE_QUEUE_COMMIT_COPY_SUBQUEUE}
+Source Media:
+Tagfile      - [%ws]
+Description  - [%ws]
+SourcePath   - [%ws]
+SourceFile   - [%ws]
+Flags        - 0x%08x
+Commit: skip NEEDMEDIA
+Commit: skip NEEDMEDIA (non-interactive)
+Source Media: SPFQOPERATION_ABORT (%ws\%ws).
+Source Media: SPFQOPERATION_SKIP (%ws\%ws).
+Source Media: SPFQOPERATION_NEWPATH = '%ws'.
+Source Media Status: %u (assuming SPFQOPERATION_DOIT)
+Source Media: SPFQOPERATION_DOIT
+Skipping isolated file '%ws'.
+Error(0x%08x) finding loose file: %ws
+Loose file pass did not find all files in this copy queue.
+Processing CAB: %ws
+Processing CAB Complete: Status (%08x)
+Commit: going to reprompt media (noninteractive)
+Commit: going to reprompt media (removable)
+Commit: some files were processed, so skip NEEDMEDIA
+Commit: CopyQueue still completely 'full', leave open option to prompt new media
+{FILE_QUEUE_COMMIT_COPY_SUBQUEUE - exit(0x%08x)}
+{FILE_QUEUE_COMMIT_COPY_FILE}
+SPFQNOTIFY_STARTCOPY: returned SPFQOPERATION_ABORT.
+SPFQNOTIFY_COPYERROR: returned SPFQOPERATION_ABORT.
+SPFQNOTIFY_COPYERROR: returned SPFQOPERATION_SKIP.
+SPFQNOTIFY_COPYERROR: returned %u (is or is treated as SPFQOPERATION_NEWPATH), ReturnBuffer='%ws'.
+SPFQNOTIFY_COPYERROR: returned %u (is, or is treated as SPFQOPERATION_RETRY with ReturnBuffer=).
+SPFQNOTIFY_STARTCOPY: returned %u (is or is treated as SPFQOPERATION_SKIP).
+{FILE_QUEUE_COMMIT_COPY_FILE - exit(0x%08x)}
+{FILE_QUEUE_BACKUP_FILE}
+Failed to create temp file under '%ws'.  Error = 0x%08x
+Unable to backup existing file '%ws' due to full disk [%wc:], trying alternate disk [%wc:].
+Failed to create temp backup file beside '%ws'. Error = 0x%08x
+Failed to copy '%ws' to '%ws'.  Error = 0x%08x
+The file '%ws' was renamed to a temporary name '%ws' for delayed delete. However, delayed delete could not be queued.
+Failed to move '%ws' to '%ws'.  Error = 0x%08x
+{FILE_QUEUE_BACKUP_FILE - exit(0x%08x)}
+GetTempPath2W
+RtlIsStateSeparationEnabled
+kernel32.dll
+kernelbase.dll
+DecompressLzFile: '%ws' to '%ws'
+DecompressLzFile: '%ws' to '%ws' FAILED
+Error 0x%08x: %ws
+Error %d: %ws
+\REGISTRY\MACHINE
+\REGISTRY\MACHINE\SOFTWARE\Classes
+\REGISTRY\USER
+\REGISTRY\MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current
+SetupCloseFileQueue called while queue is in use (locked).
+Extracted file - '%ws'
+SecurityDesc   - '%ws'
+SourceTagfile  - '%ws'
+SourceCabfile  - '%ws'
+The Security Configuration Editor settings for file '%ws' to be queued for delayed rename to '%ws' could not be stored.
+The file '%ws' could not be queued for delayed rename to '%ws'.
+The file '%ws' could not be queued for delayed deletion.
+The operation was cancelled.
+The error was ignored.
+{FILE_QUEUE_UNWIND}
+The timestamp for file '%ws' could not be restored.
+The security settings for file '%ws' could not be restored.
+The Security Configuration Editor settings for file '%ws' could not be restored.
+A temporary file '%ws' could not be queued for delayed deletion.
+{FILE_QUEUE_UNWIND exit}
+{FILE_QUEUE_RESTORE_FILE}
+Restore attempt of '%ws' to '%ws' failed (will delay restore).
+renamed
+backup
+The %ws file '%ws' could not be restored to its original name '%ws'.
+{FILE_QUEUE_RESTORE_FILE exit}
+version.dll
+GetFileVersionInfoByHandle
+\VarFileInfo\Translation
+CopyFile: '%ws' to '%ws'
+CopyFile: '%ws' to '%ws' FAILED
+MoveFile: '%ws' to '%ws'
+MoveFile: '%ws' to '%ws' FAILED
+Shuffle-MoveFile: '%ws' to '%ws'
+Shuffle-MoveFile: '%ws' to '%ws' FAILED
+MoveFile (delayed till reboot): '%ws' to '%ws'
+DeleteFile (delayed till reboot): '%ws'
+MoveFile (delayed till reboot): '%ws' to '%ws' FAILED
+DeleteFile (delayed till reboot): '%ws' FAILED
+HardLink: '%ws' to '%ws'
+HardLink: '%ws' to '%ws' FAILED
+scecli.dll
+SceSetupUpdateSecurityFile
+SceSetupMoveSecurityFile
+SceSetupUnwindSecurityFile
+SceSetupUpdateSecurityService
+ktmw32.dll
+CreateTransaction
+CommitTransaction
+RollbackTransaction
+ntdll.dll
+RtlSetCurrentTransaction
+PrivCopyFileExW
+SPFQNOTIFY_STARTQUEUE
+SPFQNOTIFY_ENDQUEUE
+SPFQNOTIFY_STARTSUBQUEUE
+SPFQNOTIFY_ENDSUBQUEUE
+SPFQNOTIFY_STARTDELETE
+SPFQNOTIFY_ENDDELETE
+SPFQNOTIFY_DELETEERROR
+SPFQNOTIFY_STARTRENAME
+SPFQNOTIFY_ENDRENAME
+SPFQNOTIFY_RENAMEERROR
+SPFQNOTIFY_STARTCOPY
+SPFQNOTIFY_ENDCOPY
+SPFQNOTIFY_COPYERROR
+SPFQNOTIFY_NEEDMEDIA
+SPFQNOTIFY_CABINETINFO
+SPFQNOTIFY_FILEINCABINET
+SPFQNOTIFY_NEEDNEWCABINET
+SPFQNOTIFY_FILEEXTRACTED
+SPFQNOTIFY_FILEOPDELAYED
+SPFQNOTIFY_STARTBACKUP
+SPFQNOTIFY_BACKUPERROR
+SPFQNOTIFY_ENDBACKUP
+SPFQNOTIFY_PREPARECOPY
+SPFQNOTIFY_FILECOPIED
+SPFQNOTIFY_TARGETALREADYPRESENT
+SPFQNOTIFY_FINISHCOPY
+SPFQNOTIFY_PREPAREDELETE
+SPFQNOTIFY_FILEDELETED
+SPFQNOTIFY_TARGETALREADYABSENT
+SPFQNOTIFY_FINISHDELETE
+{%ws}
+{SPFQNOTIFY_??? 0x%x}
+The file queue callback routine faulted during commit with exception %08x.
+{%ws - returned 0x%08x}
+{SPFQNOTIFY_??? 0x%x - returned 0x%08x}
+LZCreateFileW
+LZCloseFile
+LZCopy
+DecompressCabFile: '%ws' to '%ws'
+DecompressCabFile: '%ws' to '%ws' FAILED
+cabinet.dll
+FDICreate
+FDIDestroy
+FDICopy
+FDIIsCabinet
+%d.%d.%d.%d
+Hardlinking '%ws' to '%ws'.
+Copying '%ws' to '%ws'.
+The file '%ws' with LANGID %04x will be replaced by a signed file with LANGID %04x.
+A target file was not overwritten. Version of source file: %ws. Version of target file: %ws.
+The SPFQNOTIFY_TARGETEXISTS flag was set.
+The SPFQNOTIFY_LANGMISMATCH flag was set.
+The SPFQNOTIFY_TARGETNEWER flag was set.
+Caller requested to abort install of file '%ws' with error 0x%08x.
+Caller applied security to file '%ws'.
+Failed to apply security to file '%ws'.
+Applied security to file '%ws'.
+Windows could not copy a boot file '%ws' due to the presence of an in-use file.
+Existing file '%ws' is identical to '%ws', delayed copy skipped.
+Targetfile '%ws' marked to be moved from '%ws' on next reboot.
+Error installing file (0x%08x)
+SourceFile   - '%ws'
+TempFile     - '%ws'
+TargetFile   - '%ws'
+setupapi.offline.log
+SYSTEM\Setup\SetupapiLogStatus
+<message string could not be built - 0x%08x>
+[Device Install Log]
+     OS Version = %d.%d.%d
+     Service Pack = %d.%d
+     Suite = 0x%04x
+     ProductType = %d
+     Architecture = %s
+[BeginLog]
+!!!  
+!    
+>>>  
+<<<  
+   . 
+     
+ %02d:%02d:%02d.%03d
+ %04d/%02d/%02d
+\\.\%c:
+spfileq.pdb
+.rdata$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.text$lp01spfileq.dll!20_pri7
+.text$lp03spfileq.dll!30_clientonly
+.text$mn
+.text$zy
+.text$zz
+.xdata$x
+.edata
+.data
+.data$03
+.bss$00
+.bss$01
+.bss$03
+.bss$dk03
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+@PWPWh
+au195
+t&hTS
+Y__^[
+xrj$j
+t9j\_f9^
+9~ t#
+D$$Pj
+tDj\P
+|$49|$,tL
+D$pj\P
+D$pj\P
+D$pPh8
+L$pQPhX
+D$pj\P
+D$pPh
+T$pPh
+t$LhP
+SVWhh
+D$$Pj
+D$$Pj
+D$$Pj
+SVWhT
+j\Xf9
+j\Xf9
+t3j\Xf9DK
+PWQVS
+j:Xf9
+j:Xf9A
+WQRh<!
+aQVhx&
+;_0t7h
+PQh\ 
+QShp!
+jLhX:
+jXhx:
+PPPPPP
+aVWQj
+VWSQj
+u#VVh
+VVhx+
+VVhP)
+j\Yf9
+tZj{X
+j(h8<
+xGj.V
+s+hd4
+j0hX<
+pHQVj
+au4VVhx"
+D$$Pj
+D$0Pj
+D$<Pj
+tHWQh
+u,j.V
+SVh`5
+t hD7
+t hD7
+VSh$8
+ r=SW
+PQPQh
+QQVWQ
+E SVW
+j:Zf9S
+aj:Yf9H
+j\Xf9
+4WVWSj
+QQPVSWQQ
+t-VSSj
+t0VSSh
+QQVWR
+QQSVWQ
+SPFILEQ.dll
+SpFileQueueClose
+SpFileQueueCommit
+SpFileQueueCopy
+SpFileQueueDelete
+SpFileQueueFileInUse
+SpFileQueueGetFlags
+SpFileQueueGetQueueCount
+SpFileQueueNodeGetSecurityDescriptor
+SpFileQueueNodeGetSourceFilename
+SpFileQueueNodeGetSourcePath
+SpFileQueueNodeGetSourceRootPath
+SpFileQueueNodeGetStyleFlags
+SpFileQueueNodeGetTargetDirectory
+SpFileQueueNodeGetTargetFilename
+SpFileQueueNodeRemove
+SpFileQueueOpen
+SpFileQueueRename
+SpFileQueueSetFlags
+wcsrchr
+_wcsnicmp
+_wcsicmp
+_resetstkoflw
+towupper
+wcschr
+_vsnwprintf
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+_except_handler4_common
+msvcrt.dll
+SetLastError
+GetLastError
+CloseHandle
+SetErrorMode
+GetFileAttributesExW
+CreateEventW
+WaitForSingleObjectEx
+SetEvent
+GetSystemWindowsDirectoryW
+RaiseException
+GetFullPathNameW
+GetTempFileNameW
+SetFileAttributesW
+DeleteFileW
+LoadLibraryExW
+GetProcAddress
+VerQueryValueW
+LocalFree
+GetFileSecurityW
+SetFileSecurityW
+GetShortPathNameW
+GetModuleHandleW
+CreateFileW
+CopyFileExW
+MoveFileExW
+CreateHardLinkW
+GetFileAttributesW
+CreateDirectoryW
+FindFirstFileW
+FindClose
+SetFileTime
+GetFileTime
+GetFileSize
+CreateFileMappingW
+MapViewOfFile
+UnmapViewOfFile
+GetTickCount
+RtlIntegerToChar
+RtlAnsiCharToUnicodeChar
+RtlIsDosDeviceName_U
+RtlGetLastNtStatus
+GetTempPathW
+DosDateTimeToFileTime
+LocalFileTimeToFileTime
+CreateFileA
+MultiByteToWideChar
+ReadFile
+WriteFile
+SetFilePointer
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+ntdll.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+_vsnprintf
+ExpandEnvironmentStringsW
+RtlNtStatusToDosError
+HeapAlloc
+HeapReAlloc
+HeapFree
+GetProcessHeap
+LCMapStringW
+WaitForMultipleObjectsEx
+ReleaseMutex
+CompareStringOrdinal
+GetThreadLocale
+RtlGetVersion
+FormatMessageW
+GetLocalTime
+FlushFileBuffers
+WideCharToMultiByte
+RtlUnicodeToMultiByteSize
+RtlUnicodeToMultiByteN
+RtlMultiByteToUnicodeSize
+RtlMultiByteToUnicodeN
+DeviceIoControl
+RtlUpcaseUnicodeChar
+GetDriveTypeW
+CreateMutexW
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+NtQueryInformationThread
+NtSetInformationThread
+SleepEx
+SetEndOfFile
+NtClose
+RtlFormatCurrentUserKeyPath
+RtlFreeUnicodeString
+RtlInitUnicodeString
+NtOpenKey
+NtCreateKey
+NtQueryValueKey
+NtSetValueKey
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-io-l1-1-0.dll
+memcmp
+memcpy
+memmove
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    type="win32"
+    name="Microsoft.Windows.SpFileq"
+    version="5.1.0.0"
+    processorArchitecture="x86"/>
+    <description>spfileq</description>
+        
+    <!-- Identify the application security requirements. -->
+    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+        <security>
+            <requestedPrivileges>
+                <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Windows SPFILEQ
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+SPFILEQ.DLL
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+SPFILEQ.DLL
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0D0H0P0X0
+1 1(10181H1P1X1`1h1p1x1
+?/?g?m?
+3E4o4
+445J5c5i5
+696}6
+788=8O8m8
+8"9)9/9H9M9_9
+?,?1?=?C?I?O?U?
+0 0(0O0b0g0
+1#1)1/141@1F1L1g1q1{1
+2*292g2q2
+3$3R3W3i3z3
+4-4D4I4O4e4
+4r5=6C6
+8/888N8~8
+:H:M:_:{:
+=/=y=
+=->K>P>
+?!?,?V?
+0-0B0T0j0p0
+1?2H2N2i2
+2A3x3}3
+484=4O4
+5A6x6}6
+687=7O7
+8.8>8C8n8
+9@9W9q9
+9U:s:
+=R=W=r=
+>!>)>5>>>C>I>S>]>m>}>
+?%?1?<?A?F?L?V?`?p?y?
+0=0Q0W0
+181G1P1Y1n1
+393;4y4
+8 8,8B8N8[8k8{8
+8+979C9O9d9j9
+<.<4<><
+=(>q>
+3)3G3U3w3}3
+4+414E4K4
+545B5V5f5n5t5
+686F6O6U6_6~6
+7,7e7
+8&9L9R9o9
+:V:e:t:
+<6<<<P<V<k<q<
+=j>{>
+2)2B2H2c2
+526L6b6
+9,9F9c9u9
+:P:i:
+;u;{;
+<V=v=
+><>T>
+0.0C0
+0U1f1|1
+2M2S2
+3:3x3
+575B5S5|5
+5'6-686>6n6
+9*:8:
+;1<7<N<?=x=
+2=2c2
+3\4b4j4w4
+4X5r5u7{7
+8)888
+;:;F;
+;E<R<\<n<
+>5>A>\>l>y>
+?R?v?
+2&2H2N2o2
+2X3^3
+4/4x4
+485`5g5r5
+6.6C7u7
+8!9'90969a9
+9W:e:r:
+:);6;K;X;
+;#<B<c<j<
+='=C=e=
+>??O?g?
+0M0Z0g0p0
+1Y1h1
+1%2f2
+2&363^3
+494t4
+5#5F5s5
+5#6.696c6
+8!858t8
+939H9b9
+:%:+:0:::?:H:M:Y:k:z:
+:%;<;D;N;W;s;m<t<|<
+?-?L?Z?`?e?n?u?
+152o2u2
+2,323W3e3r3
+4,484E4\4w4
+5D5S5k5
+6!6%6)6-616]6
+6/7x7
+7 9l9
+<N>T>o>u>
+0:1F1i1
+2=2F2L2Q2\2b2g2m2x2
+3*3>3K3d3
+4M4_4
+5q5w5
+7&7v7|7
+7_8z9
+:+:?:U:^:
+:2;8;W;
+;U<[<g<m<y<
+=)=6=B=P=U=Z=_=d=i=n=t=
+>">L>R>j>
+0H0X0
+0"1b1
+717p7
+<!<y=
+>$?D?
+0$0O0p0
+2C3g3
+3a4~4
+6+717
+9?:m:7;g;7<
+=p>x>
+1-1;1I1W1e1v1
+2$3C3
+4$444j4
+4.5I5P5r5
+6@6K6m6
+7U7_7i728>8D8i8z8
+8%9A9G9]9
+:$:*:c:p:
+;"<:<M<W<a<
+=L=]=t=
+=9>Y>_>
+>F?Q?h?
+0m0s0|0
+191D1W1b1p1
+4(5D5H5d5h5
+6 6<6@6\6`6|6
+7$7(7D7H7d7h7
+8 8$8,80888<8D8H8d8h8
+94989@9D9L9P9l9p9
+:,:0:L:P:l:p:
+;0;P;p;
+<,<0<L<P<l<p<
+=4=8=T=X=t=x=

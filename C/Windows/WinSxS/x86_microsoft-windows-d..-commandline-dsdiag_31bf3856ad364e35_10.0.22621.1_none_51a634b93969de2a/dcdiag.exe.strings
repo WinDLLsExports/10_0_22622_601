@@ -1,0 +1,3086 @@
+!This program cannot be run in DOS mode.
+DRichu
+.text
+`.wpp_sf
+`.data
+.idata
+@.rsrc
+@.reloc
+ string too long
+invalid string position
+Invalid parameter passed to C runtime function.
+Advertising
+CheckSDRefDom
+CheckSecurityError
+Connectivity
+CrossRefValidation
+CutoffServers
+DcPromo
+FrsEvent
+DFSREvent
+SysVolCheck
+FrsSysVol
+LocatorCheck
+FsmoCheck
+Intersite
+KccEvent
+KnowsOfRoleHolders
+MachineAccount
+NCSecDesc
+NetLogons
+ObjectsReplicated
+OutboundSecureChannels
+RegisterInDNS
+Replications
+RidManager
+Services
+SystemLog
+Topology
+VerifyEnterpriseReferences
+VerifyReferences
+VerifyReplicas
+/testdomain:
+/nositerestriction
+/objectdn:
+/RecreateMachineAccount
+/FixMachineAccount
+/DnsDomain:
+/NewForest
+/NewTree
+/ChildDomain
+/ReplicaDC
+/ForestRoot:
+/DnsBasic
+/DnsForwarders
+/DnsDelegation
+/DnsDynamicUpdate
+/DnsRecordRegistration
+/DnsResolveExtName
+/DnsInternetName:
+/DnsAll
+/ReplSource:
+/xsl:
+/skip:
+/test:
+Win32 Error %d
+JUMPED TO TEST EXCEPTION HANDLER(Err=%d): %s
+pass:
+password:
+user:
+Resource ID 0x%x not found.
+Unable to print Resource ID 0x%x .
+Message 0x%x not found.
+%s._msdcs.%s
+%s:%s
+interSiteTopologyGenerator
+options
+Calling ldap_search_init_page(hld,%s,LDAP_SCOPE_SUBTREE,(objectCategory=ntDSSiteSettings),.......
+(objectCategory=ntDSSiteSettings)
+Something terribly wrong in the AD environment
+FAILED CALL: ldap_search_init_page(hld,%s,LDAP_SCOPE_SUBTREE,(objectCategory=ntDSSiteSettings),.......
+The previous call succeeded 
+Iterating through the sites 
+Looking at base site object: %s
+Getting ISTG and options for the site
+objectGUID
+invocationId
+msDS-Behavior-Version
+msDS-HasMasterNCs
+hasMasterNCs
+msDS-HasDomainNCs
+hasPartialReplicaNCs
+msDS-PortLDAP
+msDS-PortSSL
+msDS-HasFullReplicaNCs
+objectCategory
+CN=NTDS-DSA-RO,
+Calling ldap_search_init_page(hld,%s,LDAP_SCOPE_SUBTREE,(objectClass=ntDSDsa),.......
+(objectClass=ntdsDsa)
+The previous call succeeded....
+No pages could not be obtained.
+Run with /v mode to get detailed info
+ldap_get_next_page_s failed after the above init
+The previous call succeeded
+Iterating through the list of servers 
+Getting information for the server %s 
+ObjectGUid could not be obtained 
+objectGuid obtained
+InvocationID obtained
+dNSHostName
+dnsHostname obtained
+.@missing_dnsHostName@
+serverReference
+Site info for the server could not be obtained
+site info obtained
+userAccountControl
+msDS-hasFullReplicaNCs
+Server is an RODC
+Naming Contexts of %ws could not be obtained
+All the info for the server collected
+msDFSR-Flags
+(objectClass=msDFSR-LocalSettings)
+CN=ActiveDirectoryRodcUpdate,CN=ForestUpdates,
+Warning: Failed when check RODCUpdate status because of error:%s.
+rootDomainNamingContext
+dsServiceName
+configurationNamingContext
+localhost
+CN=NTDS Site Settings,
+CN=Directory Service,CN=Windows NT,CN=Services,
+tombstoneLifetime
+(objectClass=*)
+FATAL FAILURE: PROBLEM IN AD ENVIROMNET: Search for Root dse attributes failed with error = %u
+Collecting AD specific global data 
+FATAL LDAP ERROR: a simple call to ldap_search failed 
+ERROR: ldap_search for NtdsSiteSettings with base value = %s
+CN=SMTP,CN=Inter-Site Transports,CN=Sites,
+CN=Partitions,
+FATAL ERROR: ldap_search for parttion attributes with base DN = %s failed with error = %u 
+%08lx 
+%ws is blank
+%ws.dwFlags=0x%08x
+(null)
+%ws.pszDn=%ws
+%ws.pszDnsRoot=%ws
+%ws.iSourceServer=%d
+%ws.pszSourceServer=%ws
+%ws.ulSystemFlags=0x%08x
+FALSE
+%ws.bEnabled=%ws
+%ws.ftWhenCreated=
+%ws.pszSDReferenceDomain=%ws
+%ws.pszNetBiosName=%ws
+%ws.cReplicas=%d
+%ws.aszReplicas=
+%ws.aszReplicas[%d]=%ws
+===============================================Printing out pDsInfo
+GLOBAL:
+ulNumServers=%d
+pszRootDomain=%s
+pszNC=%s
+pszRootDomainFQDN=%s
+pszConfigNc=%s
+pszPartitionsDn=%s
+fAdam=%d
+iSiteOptions=%X
+dwTombstoneLifeTimeDays=%d
+dwForestBehaviorVersion=%d
+HomeServer=%d, %s
+SERVER: pServer[%d].pszName=%s
+pServer[%d].pszGuidDNSName (binding str)=%s
+pServer[%d].pszDNSName=%s
+pServer[%d].pszLdapPort=%s
+pServer[%d].pszSslPort=%s
+pServer[%d].ppwszIPs:
+ppwszIPs[%d]=%s
+pServer[%d].pszDn=%s
+pServer[%d].pszComputerAccountDn=%s
+pServer[%d].uuidObjectGuid=%s
+pServer[%d].uuidInvocationId=%s
+pServer[%d].iSite=%d (%s)
+pServer[%d].iOptions=%x
+pServer[%d].ftLocalAcquireTime=
+pServer[%d].ftRemoteConnectTime=
+pServer[%d].ppszMaster/FullReplicaNCs:
+ppszMaster/FullReplicaNCs[%d]=%s
+pServer[%d].ppszPartialNCs:
+ppszPartialNCs[%d]=%s
+SITES:  pSites[%d].pszName=%s
+pSites[%d].pszSiteSettings=%s
+pSites[%d].pszISTG=%s
+pSites[%d].iSiteOption=%x
+pSites[%d].cServers=%d
+NC:     pNCs[%d].pszName=%s
+pNCs[%d].pszDn=%s
+pNCs[%d].aCrInfo[%d]
+%d NC TARGETS: 
+%ws, 
+%d TARGETS: 
+=============================================Done Printing pDsInfo
+CN=NTDS Settings,
+WttLogStartTest(%ws) : hresult %08x
+WttLogEndTest(%ws) : hresult %08x
+unicodePwd
+dBCSPwd
+ntPwdHistory
+lmPwdHistory
+supplementalCredentials
+currentValue
+priorValue
+initialAuthIncoming
+initialAuthOutgoing
+trustAuthIncoming
+trustAuthOutgoing
+msDS-ExecuteScriptPassword
+pszDn: %ws
+pszName: %ws
+cCrInfo: %d
+aCrInfo: ****
+pszName : %ws
+pszDn
+%-25ws : %ws
+%-25ws : noprint
+uuidInvocationId
+pszGuidDNSName
+pszDNSName
+pszComputerAccountDn
+ppszMasterNCs
+ppszFullReplicaNCs
+ppszPartialNCs
+pszCollectedDsServiceName
+iSite
+%-25ws : %d
+iOptions
+bIsSynchronized
+bIsGlobalCatalogReady
+bDnsIpResponding
+bLdapResponding
+bDsResponding
+hLdapBinding
+hGcLdapBinding
+hDsBinding
+sNetUseBinding
+dwLdapError
+dwGcLdapError
+dwDsError
+dwNetUseError
+usnHighestCommittedUSN
+ftRemoteConnectTime
+ftLocalAcquireTime
+hld               : noprint
+gpCreds           : noprint
+ulFlags           : %08x
+pszNC             : %ws
+ulHomeServer      : %d
+iHomeSite         : %d
+ulNumTargets      : %d
+pulTargets : %d
+cNumNcTargets     : %d
+pulNcTargets      : noprint
+ulNumServers      : %d
+pServers          : noprint
+cNumSites         : %d
+pSites            : noprint
+cNumNCs: %d
+iSiteOptions      : %08x
+pszRootDomain     : %ws
+pszRootDomainFQDN : %ws
+pszConfigNc       : %ws
+dwTombston...Days : %d
+pszSmtpTransportDN: %ws
+iDomainNamingFsmo : %d
+pszDomain...Fsmo  : %ws
+hCachedDoma...Ldap: %ws
+iConfigNc         : %d
+iSchemaNc         : %d
+ppszCommandLine   : noprint
+dwForest...Version: %d
+pszPartitionsDn   : %ws
+127.0.0.1
+<GUID=
+<SID=
+1.2.840.113556.1.4.529
+dNSRoot
+systemFlags
+enabled
+nCName
+whenCreated
+msDS-SDReferenceDomain
+nETBIOSName
+msDS-NC-Replica-Locations
+(nCName=%ws)
+(objectCategory=crossRef)
+schemaNamingContext
+currentTime
+highestCommittedUSN
+isSynchronized
+isGlobalCatalogReady
+SeNetworkLogonRight
+\ipc$
+_ldap._tcp.dc._msdcs.
+_msdcs.
+_sites.
+_tcp.
+_udp.
+System\CurrentControlSet\Services\Tcpip\Parameters
+Temporary message: Can computer %s be promoted to a DC for
+domain %s, Op %d
+Comparing the computer name suffix %s with the DNS domain name.
+Interfaces
+DisableDynamicUpdate
+System\CurrentControlSet\Services\Netlogon\Parameters
+DnsUpdateOnAllAdapters
+%d.%d.%d.%d
+unknown
+zone_unknown
+SyncDomainWithMembership
+NV Domain
+NV PrimaryDnsSuffix
+Software\Policies\Microsoft\System\DNSclient
+bad allocation
+Add connection failed
+LogonUser
+ImpersonateLoggedOnUser
+See DNS test in enterprise tests section for results
+Could not open %ws for writing
+DCDIAGTestResults
+DNSEnterpriseTestResults
+Root hints are enumerated successfully
+A record not found
+A record enumeration for the root hint Server was successful 
+Enumeration of Root hint servers failed on 
+..RootHints
+map/set<T> too long
+invalid map/set<T> iterator
+www.microsoft.com
+<unavailable>
+Authentication
+Basic
+Forwarders
+Delegation
+DynamicUpdate
+RecordRegistration
+ExternalNameResolution
+TEST: 
+Authentication (Auth)
+Error: Authentication failed with specified credentials
+Basic (Basc)
+Forwarders/Root hints (Forw)
+Delegations (Del)
+Dynamic update (Dyn)
+Records registration (RReg)
+External name resolution (Ext)
+Domain
+DnsName
+Status
+Authentication failed with specified credentials
+Authentication succeeded with the specified credentials
+Error: No WMI connectivity
+Error: Can't read OS version through WMI
+Error: Open Service Control Manager failed
+Error: 
+ service is not running
+Error: can't read network adapter information through WMI
+MAC address is %ws
+IP address: 
+Valid
+%ws (%ws) [%ws]
+Warning: The A record for this DC was not found
+The A host record(s) for this DC was found
+Warning: The AAAA record for this DC was not found
+The AAAA host record(s) for this DC was found
+The SOA record for the Active Directory zone was%ws found
+Warning: no DNS RPC connectivity (error or non Microsoft DNS server is running)
+Error: could not query DNS zones on this DC
+The Active Directory zone on this DC/DNS server was found primary
+The Active Directory zone on this DC/DNS server was found secondary
+Root zone on this DC/DNS server was not found
+No LDAP connectivity
+No DS RPC connectivity
+No WMI connectivity
+Can't read OS version through WMI
+Version
+OSInfo
+OS version is supported
+OS version is not supported (this tool is supported on Windows 2000, XP, and 2003 only)
+Open Service Control Manager failed
+DC is%ws a DNS server
+not running
+Service
+Service not running
+running
+NetworkInfo
+Can't read network adapter information through WMI
+All DNS servers are invalid
+MACAddress
+IPAddress
+static
+dynamic
+IPAddressType
+Adapter
+IP address is dynamic (can be a misconfiguration)
+DNSServerList
+valid
+DNSServer
+DnsRecords
+A Record
+false
+Found
+DnsRecord
+The A record for this DC was not found
+AAAA Record
+The AAAA record for this DC was not found
+A/AAAA Records
+Neither A nor AAAA record was found for this DC
+SOA Record
+DnsZones
+No DNS RPC connectivity (error or non Microsoft DNS server is running)
+Could not query DNS zones on this DC
+Active Directory zone
+primary
+secondary
+DnsZone
+The Active Directory zone on this DC/DNS server was not found (probably a misconfiguration)
+Root zone
+The Root zone on this DC/DNS server was found (could be a misconfiguration)
+Forwarder/Root hints tests are skipped due to the presence of root zone on this DNS server
+Forwarders and Root hints are not used when root zone is present 
+Recursion is disabled
+Recursion is enabled
+Forwarders Information: 
+%ws (%ws) [%ws] 
+Forwarders are not configured on this DNS server
+Root hint Information: 
+Name: %ws IP: %ws [%ws]
+Root hints are not configured on this DNS server 
+Forwarders and Root hints are not used when root zone is present
+Forwarder/Root hints tests are skipped due to the presence of root zone on this DNS server.
+Enabled
+Recursion
+Recursion is disabled
+Recursion is enabled
+Configured
+ForwardersInfo
+Forwarder
+Forwarders are not configured on this DNS server
+RoothintsInfo
+Both root hints and forwarders are not configured. Please configure either forwarders or roothints
+Root hints are not configured on this DNS server
+Roothint
+Delegation information for the zone: %ws
+No delegations were found in this zone on this DNS server
+Delegated domain name: %ws
+Broken delegation
+Broken delegated domain 
+DNS server: %ws IP:%ws [Valid]
+Warning: Delegation of DNS server %ws is broken on IP:%ws
+ZoneName
+DelegationInfo
+No delegations were found in this zone on this DNS server.
+DelegatedDomain
+NameServer
+Dynamic Update tests are skipped since %ws 
+is a secondary zone. DNS Record updates can't happen on the secondary zones
+Dynamic update is enabled on the zone %ws
+dcdiag-test-record
+Test record %ws added successfully in zone %ws
+Warning: Failed to add the test record 
+ in zone 
+Test record %ws deleted successfully in zone %ws
+Warning: Failed to delete the test record 
+Dynamic Update tests are skipped since %ws is a secondary zone. DNS Record updates can't happen on the secondary zones.
+Dynamic update is not enabled
+Dynamic update is enabled but not secure
+Secure
+success
+TestRecAdd
+Test record %ws added successfully in zone %ws
+Failed to add the test record 
+TestRecDelete
+Test record %ws deleted successfully in zone %ws
+Failed to delete the test record 
+Matching A record found at DNS server %ws:
+Matching AAAA record found at DNS server %ws:
+Matching CNAME record found at DNS server %ws:
+Matching  SRV record found at DNS server %ws:
+Matching DC SRV record found at DNS server %ws:
+Matching GC SRV record found at DNS server %ws:
+Matching PDC SRV record found at DNS server %ws:
+Record registrations cannot be found for all the network adapters
+Record Registrations not found in some network adapters
+NetworkAdapter
+RecordName
+Matched
+Missing
+Registration
+Matching A record found at DNS server 
+Missing A record at DNS server 
+Matching AAAAA record found at DNS server 
+Missing AAAAA record at DNS server 
+CNAME
+Matching CNAME record found at DNS server 
+Missing CNAME record at DNS server 
+DC SRV
+Matching DC SRV record found at DNS server 
+Missing DC SRV record at DNS server 
+(Ignore the error if DNSAvoidRegisterRecord registry key or its Group Policy has been configured to prevent registration of this Record. Unable to read the Registry/Group policy
+GC SRV
+Matching GC SRV record found at DNS server 
+Missing GC SRV record at DNS server 
+PDC SRV
+Missing PDC SRV record at DNS server 
+Internet name %ws was resolved successfully
+InternetName
+failure
+Internet name %ws was resolved successfully
+Internet name %ws cannot be resolved
+Undefined
+Win32
+NTSTATUS
+HRESULT
+DcDiag custom
+(unknown)
+%d (Type: %ws - Description: %ws)
+0x%lx (Type: %ws - Facility: %ws, Description: %ws)
+unknown error type
+0x%lx (Type: %ws)
+[Error details: 
+ - %ws
+vector<T> too long
+_ldap._tcp.
+_gc._tcp
+_kerberos._tcp.
+_kerberos._udp.
+_kpasswd._tcp.
+_kpasswd._udp.
+gc._msdcs.
+pdc._msdcs.
+.domains._msdcs.
+dc._msdcs.
+._sites.
+._sites.dc._msdcs.
+_gc._tcp.
+._sites.gc._msdcs.
+ ERROR retrieving DNS servers of network adapters(GetAdaptersAddreses) %d %s 
+ Memory Allocation failed. DNS servers info of network adapters could not be stored
+ Error while converting IPV6 address info to string format: %d   %s
+ ERROR: NO DNS servers for IPV6 stack was found 
+Win32_OperatingSystem
+Query Win32_OperatingSystem class failed
+Enumerate Win32_OperatingSystem class failed
+BuildNumber
+Query OS build number failed
+Caption
+ServicePackMajorVersion
+ServicePackMinorVersion
+%d.%d
+ (Service Pack level: 
+NETLOGON
+DNSCACHE
+ServicesActive
+Could not open Service Control Manager
+Win32_NetworkAdapterConfiguration
+Query Win32_NetworkAdapterConfiguration class failed
+Get DNS Domain Name of current DC failed
+Query MACAddress property failed
+Query Caption property failed
+DHCPEnabled
+Query DHCPEnabled property failed
+Query IPAddress property failed
+Access array of IP Addresses failed
+DNSServerSearchOrder
+Query DNSServerSearchOrder property failed
+Access array DNS Servers failed
+Enumerate Win32_NetworkAdapterConfiguration class failed
+ServerInfo
+Enumerating zones
+%d hr. %d min. %d sec.
+%d min. %d sec.
+<name unavailable>
+1.0.0.127.in-addr.arpa.
+www.microsoft.com.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+PTR record query for the 
+ failed on the DNS server 
+CSName
+Name resolution is not functional. 
+DNS delegation for the domain 
+ is broken on IP 
+DNS delegation for the domain  
+ is operational on IP 
+Software\Policies\Microsoft\Netlogon\Parameters
+Success
+Couldn't connect to the registry of the machine  
+DNSAvoidRegisterRecords
+Couldn't query the value of registry key 
+ under 
+Couldn't open the registry key 
+Enumeration of child nodes are successful
+DomainDnsZones
+ForestDnsZones
+Failed to enumerate the records at the zone root on the server 
+._msdcs
+._sites
+Glue records are enumerated successfully
+Missing glue A record
+Summary
+DomainControllerResults
+EnterpriseTestResults
+DNSServerResults
+Invalid (unreachable)
+Invalid
+Name resolution is functional._ldap._tcp SRV record for the forest root domain is registered 
+All tests passed on this DNS server
+%d test failure%ws on this DNS server
+PTR/SOA/A Record
+Query
+This is not a valid DNS server
+This is a valid DNS server
+SRV Record
+Name resolution is functional. _ldap._tcp SRV record for the forest root domain is registered
+ANY Record
+Delegation to the domain %ws is operational
+Warning
+Error
+0x%lx
+CreateFileW failed: 0x%x
+[ERROR] %s: 0x%x
+CoCreateInstance CLSID_MXXMLWriter60
+QueryInterface IID_ISAXContentHandler
+CoCreateInstance CLSID_SAXAttributes60
+put_output
+put_indent
+UTF-8
+encoding
+type="text/css" href="%ws"
+size of string for processing instruction > INT_MAX
+xml-stylesheet
+processingInstruction
+endDocument
+Close
+Level
+Message
+ErrorCode
+Facility
+Description
+ErrorDetails
+Memory Allocation failed in GetAsPIP6Array: Error # %d (%s)
+GetPIP6Array: Failure in UIntMult, Error (%d) %s
+COM Initialization failed
+COM Security Initialization failed
+Create instance of IWbemLocator failed
+[::1]
+\ROOT\CIMV2
+Connection to WMI server failed
+COM proxy authentication information could not be set
+Forwarders or root hints are not misconfigured from parent domain to subordinate domain
+Delegation is configured properly from parent to subordinate domain
+ParentDomain
+SubordinateDomain
+ParentSubordinatePair
+Forwarders or root hints are not misconfigured from parent domain to subordinate domain
+Neither forwarders nor root hints are configured from subordinate domain to parent domain
+Delegation is not configured on the parent domain
+Delegation is configured properly from parent to subordinate domain
+Delegation is present but the glue record is missing
+Name Server(s) 
+ in the subordinate domain is missing glue record
+Root Hints
+%ws are configured properly from subordinate to parent domain 
+%ws are configured properly from subordinate to parent domain 
+%ws are configured from subordinate to parent domain but some of them failed DNS server tests
+%ws (See DNS servers section for error details)
+%ws are misconfigured from parent domain to subordinate domain (%ws must be configured from subordinate domain to parent Domain)
+Parent domain's %ws list contains subordinate domain's DNS server IP: %ws
+ (on the DC 
+* The Outbound Secure Channels test
+[%s] LDAP bind failed with error %d. %s
+%s\%s
+\\%s\ipc$
+* Secure channel from [%s] to [%s] is working properly.
+sAMAccountName=%s$
+* [%s] has downlevel trust object for [%s]
+LDAPDisplayName
+objectClass=*
+CN=Trusted-Domain,%s
+CN=System,%s
+(&(flatName=%s)(objectCategory=%s))
+* [%s] has uplevel trust object for [%s]
+EventSystem
+RpcSs
+DnsCache
+NtFrs
+IsmServ
+SamSs
+LanmanServer
+LanmanWorkstation
+w32time
+IISADMIN
+SMTPSVC
+WIN32_SHARE_PROCESS
+WIN32_OWN_PROCESS
+UNEXPECTED_SERVICE_TYPE
+AUTO_START
+DEMAND_START
+DISABLED
+BOOT_START
+SYSTEM_START
+UNEXPECTED_SERVICE_START_VALUE
+* waiting for %s Service to start on [%s] aproximate time to wait is %d sec.
+* %s Service has started on [%s]
+* waiting for %s Service to continue on [%s] aproximate time to wait is %d sec.
+* waiting for %s Service to stop on [%s] aproximate time to wait is %d sec.
+* waiting for %s Service to pause on [%s] aproximate time to wait is %d sec.
+Replications Check
+[%s,%s] DsReplicaGetInfo(NEIGHBORS) failed with error %d,
+* Checking Service: %s
+* %s is the RID Master
+* DsBind with RID Master was successful
+rIDManagerReference
+ridManagerReference = %s
+fSMORoleOwner
+rIDAvailablePool
+* Available RID Pool for the Domain is %I64d to %I64d
+fSMORoleOwner = %s
+rIDNextRID
+rIDPreviousAllocationPool
+rIDAllocationPool
+* rIDNextRID: %ld
+* rIDPreviousAllocationPool is %I64d to %I64d
+* rIDAllocationPool is %I64d to %I64d
+* Warning :Next rid pool not allocated
+* Warning :There is less than %ld%% available RIDs in the current pool
+The DS has corrupt data: rIDNextRID value is not valid
+rIDSetReferences
+rIDSetReferences = %s
+Checking machine account for DC %s on DC %s.
+sAMAccountName
+sAMAccountName=%s
+OU=Domain Controllers,%s
+ldap_search_sW failed with %d: %s
+532480
+83890176
+objectClass
+distinguishedName
+computer
+E3514235-4B06-11D1-AB04-00C04FC2DCD2
+servicePrincipalName
+Fixed computer account object %s by writing missing replication spn %s.
+* SPN found :%s
+dnsHostName
+objectclass
+samaccountname=
+defaultNamingContext
+serverName
+CN=%s,OU=Domain Controllers,%s
+useraccountcontrol
+serviceprincipalname
+samaccountname
+$MACHINE.ACC
+File Replication Service
+SysvolReady
+SYSTEM\CurrentControlSet\Services\Netlogon\Parameters
+serverReferenceBL
+frsComputerReferenceBL
+frsComputerReference
+msDFSR-ComputerReference
+msDFSR-ComputerReferenceBL
+<WKGUID=%s,%s>
+CN=File Replication Service,
+CN=DFSR-GlobalSettings,
+ab1d30f3768811d1aded00c04fd8d5cd
+(&(objectCategory=msDFSR-ReplicationGroup)(msDFSR-ReplicationGroupType=1))
+(&(objectCategory=nTFRSReplicaSet)(fRSReplicaSetType=2))
+(objectCategory=ntdsDsa)
+(&(objectCategory=computer)(sAMAccountType=805306369)(!operatingSystem=Windows NT)(primaryGroupID=516))
+(objectCategory=nTFRSMember)
+(objectCategory=msDFSR-Member)
+DFS Replication
+The DFS Replication Event Log. 
+System
+* The System Event log test
+Found no errors in "%ws" Event log in the last %d minutes.
+* The KCC Event log test
+ADAM (%ws)
+Directory Service
+Found no KCC errors in "%ws" Event log in the last %d minutes.
+Schema Owner
+Domain Owner
+PDC Owner
+Rid Owner
+Infrastructure Update Owner
+No Error
+Can't Resolve
+Not Found
+Not Unique
+No Mapping
+Domain Only
+No Syntactical Mapping
+Role %ws = %ws
+The DC %s is advertising itself as a DC and having a DS.
+The DC %s is advertising as an LDAP server
+The DC %s is advertising as having a writeable directory
+The DC %s is not advertising as having a writeable directory because it is an RODC 
+The DC %s is advertising as a Key Distribution Center
+The DC %s is advertising as a time server
+The DS %s is advertising as a GC.
+Warning: Couldn't verify this server as a GC in this servers AD.
+Locator Flags: 0x%x
+Warning: Couldn't verify this server as a PDC using DsListRoles()
+PDC Name: %ws
+Time Server Name: %ws
+Preferred Time Server Name: %ws
+KDC Name: %ws
+writeable
+readonly
+%ws attribute %ws on %ws (%ws)
+usnLocalChange = %I64d
+LastOriginatingDsa = %ws
+usnOriginatingChange = %I64d
+timeLastOriginatingChange = %ws
+VersionLastOriginatingChange = %d
+Org.USN
+Loc.USN
+operatingSystemServicePack
+Authoritative
+Out-of-date
+Object is up-to-date on all servers.
+Checking for %ws in domain %ws on %d servers
+%ws is in domain %ws
+[%s,%s] DsReplicaGetInfo(REPSTO) failed with error %d,
+The parent of the object we tried to add is in the wrong
+partition.
+A modification and a cross-domain move occurred at the same time.
+Replication will correct itself later once the writeable
+copies synchronize and sort out the inconsistency.
+Skipping neighbor %s, because it was down
+Warning: Could not get current time from remote
+directory on %s, using the local time instead
+%s: There are %d replication work items in the queue.
+NC %ls
+DSADN %ls
+DSA transport addr %ls
+The first job has been executing for %d:%d.
+replPropertyMetaData
+FATAL error: pszDn = ldap_get_dnW (hld, pldmEntry) return NULL
+Site Settings = %s
+[0x%x,v=%d,t=%S,g=%S,orig=%I64d,local=%I64d]
+Elapsed time (sec) = %d
+* Replication Latency Check
+The replications latency check is not available on this DC.
+[%s,%s] DsReplicaGetInfoW(CURSORS_2_FOR_NC) failed with error %d,
+   %s
+      Latency information for %d entries in the vector were ignored.
+         %d were retired Invocations.  %d were either: read-only replicas and are not verifiably latent, or dc's no longer replicating this nc.  %d had no latency information (Win2K DC).  
+ReplicationsCheck: Skipping %s, because it doesn't hold NC %s
+* Replications Check
+NEIGHBORS
+CURSORS
+%s has %d cursors.
+PENDING_OPS
+Replicating Directory Changes
+Replicating Directory Changes All
+Replication Synchronization
+Manage Replication Topology
+Replicating Directory Changes In Filtered Set
+Enterprise Domain Controllers
+Domain Domain Controllers
+Administrators
+Enterprise Read Only Domain Controllers
+Unknown Account
+Configuration
+Schema
+Unknown NC Type
+Version 1
+Version 2
+Version 3
+Unknown Version
+CN=Windows2003Update,CN=DomainUpdates,CN=System,
+CN=ActiveDirectoryUpdate,CN=DomainUpdates,CN=System,
+CN=Windows2003Update,CN=ForestUpdates,
+CN=ActiveDirectoryUpdate,CN=ForestUpdates,
+nTSecurityDescriptor
+objectSid
+1.2.840.113556.1.4.801
+(%s,%s)
+* Security Permissions check for all NC's on DC %s.
+The forest is not ready for RODC. Will skip checking ERODC ACEs.
+Verified share %s
+* Network Logons Privileges Check
+\netlogon
+\sysvol
+Searching for network non-fragmentable MTU...
+Checking UDP fragmentation issues to %s.
+Found KDC %s for domain %s in site %s
+(ALL SITES)
+Getting time for %s
+Time is %d on %s
+Checking time skew between servers:
+Time is in sync:  %d seconds different.
+* Dr Auth:  Beginning security errors check!
+%s/%s
+* Analyzing the alive system replication topology for %s.
+* Analyzing the connection topology for %s.
+* Performing upstream (of target) analysis.
+* Performing downstream (of target) analysis.
+* Configuration Topology Integrity Check
+* Configuration Topology Aliveness Check
+Determining IP4 connectivity 
+Determining IP6 connectivity 
+Failure Analysis: %s ... OK.
+* Active Directory RPC Services Check
+* Active Directory LDAP Services Check
+enabledConnection
+fromServer
+(&(objectCategory=nTDSConnection)(enabledConnection=TRUE))
+System\CurrentControlSet\Services\NTDS\Parameters
+IntersiteFailuresAllowed
+MaxFailureTimeForIntersiteLink (sec)
+bridgeheadServerListBL
+CN=IP,CN=Inter-Site Transports,
+(objectCategory=interSiteTransport)
+interSiteTopologyFailover
+interSiteTopologyRenew
+Invalid DNS_ADDR at %p
+%u.%u.%u.%u
+EEnumZones
+DnsRpcError: received error %1!d!
+DnsRpcError: extended error code HResult %1!d! Win32 %2!d!
+DnsRpcError: error %1!d! retrieving RPC error information
+DnsRpcError: error %1!d! during error info enumeration
+DnsRpcError: ComputerName %1!s!
+DnsRpcError: ProcessID is %1!d!
+DnsRpcError: system time is: %1!d!/%2!d!/%3!d! %4!d!:%5!d!:%6!d!:%7!d!
+DnsRpcError: Generating component is %1!d!
+DnsRpcError: Status is %1!d!
+DnsRpcError: Detection location is %1!d!
+DnsRpcError: Flags is %1!d!
+DnsRpcError: NumberOfParameters is %1!d!
+DnsRpcError: Ansi string: %1!S!
+DnsRpcError: Unicode string: %1!s!
+DnsRpcError: Long val: %1!d!
+DnsRpcError: Short val: %1!d!
+DnsRpcError: Pointer val: %1!d!
+DnsRpcError: Truncated
+DnsRpcError: Invalid type: %1!d!
+"\F\ 
+"\F\$
+"\F\ 
+"\F\$
+"\F\8
+"\F\<
+"\F\@
+"\F\D
+"\F\H
+"\F\L
+"\F\P
+66666666666L
+"\F\(
+"\F\,
+"\F\p
+"\F\(
+"\F\,
+66666666666L
+"\F\(
+"\F\,
+"\F\(
+"\F\,
+"\F\p
+K\F\0
+%\F\4
+%\F\8
+K\HI@
+Security=Impersonation Static True
+DNSSERVERLPC
+ncalrpc
+\PIPE\DNSSERVER
+ncacn_np
+ncacn_ip_tcp
+Rpcss
+DnsServerApp
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+(never)
+%04d-%02d-%02d %02d:%02d:%02d
+ntdsapi.dll
+DsBindByInstanceW2
+"\F\,
+"\F\,
+"\F\x
+666\[
+66666L
+66@\[
+K\HIh
+K\HIl
+%\F\ 
+K\HI0
+K\HI$
+E3514235-4B06-11D1-AB04-00C04FC2DCD2-ADAM
+u%ws:%ws
+supportedCapabilities
+1.2.840.113556.1.4.1851
+(objectCategory=*)
+instanceType
+crossRef
+STREET
+IS_NC_HEAD
+UNINSTANT
+WRITE
+NC_ABOVE
+NC_COMING
+NC_GOING
+WIN2000
+WIN2003_WITH_MIXED_DOMAINS
+WIN2003
+WIN2008
+WIN2008R2
+WIN2012
+WIN2012R2
+WIN2016
+FOREST_OPTIONAL_FEATURE
+DOMAIN_OPTIONAL_FEATURE
+DISABLABLE_OPTIONAL_FEATURE
+SCHEMA_BASE_OBJECT
+DISALLOW_DELETE
+CONFIG_ALLOW_RENAME
+CONFIG_ALLOW_MOVE
+CONFIG_ALLOW_LIMITED_MOVE
+DOMAIN_DISALLOW_RENAME
+DOMAIN_DISALLOW_MOVE
+DISALLOW_MOVE_ON_DELETE
+ATTR_NOT_REPLICATED
+ATTR_REQ_PARTIAL_SET_MEMBER
+ATTR_IS_CONSTRUCTED
+ATTR_IS_OPERATIONAL
+ATTR_IS_RDN
+DOMAIN
+NOT_GC_REPLICATED
+classSchema
+attributeSchema
+IS_GC
+DISABLE_INBOUND_REPL
+DISABLE_OUTBOUND_REPL
+DISABLE_NTDSCONN_XLATE
+DISABLE_SPN_REGISTRATION
+GENERATE_OWN_TOPO
+IS_AUTO_TOPOLOGY_DISABLED
+IS_TOPL_CLEANUP_DISABLED
+IS_TOPL_MIN_HOPS_DISABLED
+IS_TOPL_DETECT_STALE_DISABLED
+IS_INTER_SITE_AUTO_TOPOLOGY_DISABLED
+IS_GROUP_CACHING_ENABLED
+FORCE_KCC_WHISTLER_BEHAVIOR
+FORCE_KCC_W2K_ELECTION
+IS_RAND_BH_SELECTION_DISABLED
+IS_SCHEDULE_HASHING_ENABLED
+IS_REDUNDANT_SERVER_TOPOLOGY_ENABLED
+IS_GENERATED
+TWOWAY_SYNC
+OVERRIDE_NOTIFY_DEFAULT
+USE_NOTIFY
+DISABLE_INTERSITE_COMPRESSION
+USER_OWNED_SCHEDULE
+RODC_TOPOLOGY
+IGNORE_SCHEDULES
+BRIDGES_REQUIRED
+DISABLE_COMPRESSION
+ntDSSiteSettings
+nTDSDSA
+nTDSConnection
+interSiteTransport
+siteConnection
+siteLink
+SCRIPT
+ACCOUNTDISABLE
+HOMEDIR_REQUIRED
+LOCKOUT
+PASSWD_NOTREQD
+PASSWD_CANT_CHANGE
+ENCRYPTED_TEXT_PASSWORD_ALLOWED
+TEMP_DUPLICATE_ACCOUNT
+NORMAL_ACCOUNT
+INTERDOMAIN_TRUST_ACCOUNT
+WORKSTATION_TRUST_ACCOUNT
+SERVER_TRUST_ACCOUNT
+DONT_EXPIRE_PASSWD
+MNS_LOGON_ACCOUNT
+SMARTCARD_REQUIRED
+TRUSTED_FOR_DELEGATION
+NOT_DELEGATED
+USE_DES_KEY_ONLY
+DONT_REQUIRE_PREAUTH
+PASSWORD_EXPIRED
+TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION
+NO_AUTH_DATA_REQUIRED
+PARTIAL_SECRETS_ACCOUNT
+USE_AES_KEYS
+DOMAIN_OBJECT
+GROUP_OBJECT
+NON_SECURITY_GROUP_OBJECT
+ALIAS_OBJECT
+NON_SECURITY_ALIAS_OBJECT
+NORMAL_USER_ACCOUNT
+MACHINE_ACCOUNT
+TRUST_ACCOUNT
+APP_BASIC_GROUP
+APP_QUERY_GROUP
+GROUP_RID_ADMINS
+GROUP_RID_USERS
+GROUP_RID_GUESTS
+GROUP_RID_COMPUTERS
+GROUP_RID_CONTROLLERS
+GROUP_RID_CERT_ADMINS
+GROUP_RID_SCHEMA_ADMINS
+GROUP_RID_ENTERPRISE_ADMINS
+GROUP_RID_POLICY_ADMINS
+ALIAS_RID_ADMINS
+ALIAS_RID_USERS
+ALIAS_RID_GUESTS
+ALIAS_RID_POWER_USERS
+ALIAS_RID_ACCOUNT_OPS
+ALIAS_RID_SYSTEM_OPS
+ALIAS_RID_PRINT_OPS
+ALIAS_RID_BACKUP_OPS
+ALIAS_RID_REPLICATOR
+ALIAS_RID_RAS_SERVERS
+ALIAS_RID_PREW2KCOMPACCESS
+ALIAS_RID_REMOTE_DESKTOP_USERS
+ALIAS_RID_NETWORK_CONFIGURATION_OPS
+ALIAS_RID_INCOMING_FOREST_TRUST_BUILDERS
+ALIAS_RID_MONITORING_USERS
+ALIAS_RID_LOGGING_USERS
+ALIAS_RID_AUTHORIZATIONACCESS
+ALIAS_RID_TS_LICENSE_SERVERS
+ALIAS_RID_DCOM_USERS
+ALIAS_RID_IUSERS
+ALIAS_RID_CRYPTO_OPERATORS
+ALIAS_RID_CACHEABLE_PRINCIPALS_GROUP
+ALIAS_RID_NON_CACHEABLE_PRINCIPALS_GROUP
+GROUP_RID_READONLY_CONTROLLERS
+NEW_SD
+NEW_ANCESTORS
+TO_LEAVES
+ANCESTRY_INCONSISTENT_IN_SUBTREE
+ANCESTRY_BEING_UPDATED_IN_SUBTREE
+INDEX
+CONTAINER_INDEX
+SUBTREE_INDEX
+TUPLE_INDEX
+PRESERVE_ON_DELETE
+CONFIDENTIAL
+NEVER_AUDIT_VALUE
+RODC_FILTERED
+SECRET
+ON_BASE_SEARCH_ONLY
+BUILTIN_LOCAL_GROUP
+ACCOUNT_GROUP
+RESOURCE_GROUP
+UNIVERSAL_GROUP
+SECURITY_ENABLED
+COMPLEX
+NO_ANON_CHANGE
+NO_CLEAR_CHANGE
+LOCKOUT_ADMINS
+STORE_CLEARTEXT
+REFUSE_PASSWORD_CHANGE
+NO_LM_OWF_CHANGE
+NEGOTIATE_PASS_THROUGH
+NEGOTIATE
+MUTUAL_AUTH_REQUIRED
+2.5.5.1
+DISTNAME
+2.5.5.2
+OBJECT_ID
+2.5.5.3
+CASE_STRING
+2.5.5.4
+NOCASE_STRING
+2.5.5.5
+PRINT_CASE_STRING
+2.5.5.6
+NUMERIC_STRING
+2.5.5.7
+DISTNAME_BINARY
+2.5.5.8
+BOOLEAN
+2.5.5.9
+INTEGER
+2.5.5.10
+OCTET_STRING
+2.5.5.11
+2.5.5.12
+UNICODE
+2.5.5.13
+ADDRESS
+2.5.5.14
+DISTNAME_STRING
+2.5.5.15
+NT_SECURITY_DESCRIPTOR
+2.5.5.16
+2.5.5.17
+BIT_STRING
+ENCODING_STRING
+ENUMERATION
+GENERAL_STRING
+GENERALISED_TIME_STRING
+GRAPHIC_STRING
+IA5_STRING
+OBJECT
+OBJECT_DESCRIPTOR_STRING
+OBJECT_IDENTIFIER_STRING
+PRINTABLE_STRING
+TELETEX_STRING
+UTC_TIME_STRING
+VIDEOTEX_STRING
+VISIBLE_STRING
+UNICODE_STRING
+OBJECT_SECURITY_DESCRIPTOR
+STRUCTURAL
+ABSTRACT
+AUXILIARY
+1.2.840.113556.1.4.800
+ACTIVE_DIRECTORY
+1.2.840.113556.1.4.1670
+ACTIVE_DIRECTORY_V51
+1.2.840.113556.1.4.1791
+ACTIVE_DIRECTORY_LDAP_INTEG
+1.2.840.113556.1.4.1851
+ACTIVE_DIRECTORY_ADAM
+1.2.840.113556.1.4.1880
+ACTIVE_DIRECTORY_ADAM_DIGEST
+1.2.840.113556.1.4.1920
+ACTIVE_DIRECTORY_PARTIAL_SECRETS
+1.2.840.113556.1.4.1935
+ACTIVE_DIRECTORY_V61
+1.2.840.113556.1.4.2080
+ACTIVE_DIRECTORY_V61_R2
+1.2.840.113556.1.4.2237
+ACTIVE_DIRECTORY_W8
+1.3.6.1.4.1.1466.20037
+START_TLS
+1.3.6.1.4.1.1466.101.119.1
+TTL_REFRESH
+1.2.840.113556.1.4.1781
+FAST_BIND
+1.3.6.1.4.1.4203.1.11.3
+WHO_AM_I
+1.2.840.113556.1.4.2212
+BATCH_REQUEST
+1.2.840.113556.1.4.319
+PAGED_RESULT
+1.2.840.113556.1.4.801
+SD_FLAGS
+1.2.840.113556.1.4.473
+1.2.840.113556.1.4.528
+NOTIFICATION
+1.2.840.113556.1.4.417
+SHOW_DELETED
+1.2.840.113556.1.4.619
+LAZY_COMMIT
+1.2.840.113556.1.4.841
+DIRSYNC
+1.2.840.113556.1.4.529
+EXTENDED_DN
+1.2.840.113556.1.4.805
+TREE_DELETE
+1.2.840.113556.1.4.521
+CROSSDOM_MOVE_TARGET
+1.2.840.113556.1.4.970
+GET_STATS
+1.2.840.113556.1.4.1338
+VERIFY_NAME
+1.2.840.113556.1.4.474
+RESP_SORT
+1.2.840.113556.1.4.1339
+DOMAIN_SCOPE
+1.2.840.113556.1.4.1340
+SEARCH_OPTIONS
+1.2.840.113556.1.4.1413
+PERMISSIVE_MODIFY
+2.16.840.1.113730.3.4.9
+VLVREQUEST
+2.16.840.1.113730.3.4.10
+VLVRESPONSE
+1.2.840.113556.1.4.1504
+1.2.840.113556.1.4.1852
+QUOTA_CONTROL
+1.2.840.113556.1.4.802
+RANGE_OPTION
+1.2.840.113556.1.4.1907
+SHUTDOWN_NOTIFY
+1.2.840.113556.1.4.1948
+RANGE_RETRIEVAL_NOERR
+1.2.840.113556.1.4.1974
+FORCE_UPDATE
+1.2.840.113556.1.4.1341
+RODC_DCPROMO
+1.2.840.113556.1.4.2026
+DN_INPUT
+1.2.840.113556.1.4.2064
+SHOW_RECYCLED
+1.2.840.113556.1.4.2065
+SHOW_DEACTIVATED_LINK
+1.2.840.113556.1.4.2066
+POLICY_HINTS_DEPRECATED
+1.2.840.113556.1.4.2090
+DIRSYNC_EX
+1.2.840.113556.1.4.2205
+UPDATE_STATS
+1.2.840.113556.1.4.2204
+TREE_DELETE_EX
+1.2.840.113556.1.4.2206
+SEARCH_HINTS
+1.2.840.113556.1.4.2211
+EXPECTED_ENTRY_COUNT
+1.2.840.113556.1.4.2239
+POLICY_HINTS
+1.2.840.113556.1.4.2255
+SET_OWNER
+1.2.840.113556.1.4.2256
+BYPASS_QUOTA
+1.2.840.113556.1.4.2309
+LINK_TTL
+1.2.840.113556.1.4.803
+MATCHING_RULE_BIT_AND
+1.2.840.113556.1.4.804
+MATCHING_RULE_BIT_OR
+1.2.840.113556.1.4.1941
+MATCHING_RULE_TRANSITIVE_EVALUATION
+1.2.840.113556.1.4.2253
+MATCHING_RULE_DN_BINARY_COMPLEX
+MH_C_OR_NAME
+DS_C_ACCESS_POINT
+DES_CBC_CRC
+DES_CBC_MD5
+RC4_HMAC_MD5
+AES128_CTS_HMAC_SHA1_96
+AES256_CTS_HMAC_SHA1_96
+INBOUND
+OUTBOUND
+BIDIRECTIONAL
+DOWNLEVEL
+UPLEVEL
+NON_TRANSITIVE
+UPLEVEL_ONLY
+QUARANTINED_DOMAIN
+FOREST_TRANSITIVE
+CROSS_ORGANIZATION
+WITHIN_FOREST
+TREAT_AS_EXTERNAL
+TRUST_USES_RC4_ENCRYPTION
+TRUST_USES_AES_KEYS
+CROSS_ORGANIZATION_NO_TGT_DELEGATION
+PIM_TRUST
+CROSS_ORGANIZATION_ENABLE_TGT_DELEGATION
+DISABLE_AUTH_TARGET_VALIDATION
+0x%X = ( 0x%X
+0x%X = ( 
+%d = ( %ws )
+%S = ( %ws )
+%s %s %s
+16010101000001.0Z
+%s, %s
+%d:%02d:%02d:%02d
+{ dwVersion = %lu;
+dwFlag = %lu;
+V1.cAttrs = %lu,
+V1.rgPartialAttr = 
+{ dwVersion = %lu; dwFlag = %lu; V1.cAttrs = %lu, V1.rgPartialAttr = 
+{ accountCount = %d;
+accountSidHistoryCount = %d;
+universalCount = %d;
+universalSidHistoryCount = %d;
+{ accountCount = %d; accountSidHistoryCount = %d; universalCount = %d; universalSidHistoryCount = %d; 
+account
+%ws[%d] = %ws;
+ %ws[%d] = %ws;
+accountSidHistory
+universal
+universalSidHistory
+v1~mtx_address: %S 
+v2~pdsa_rpc_inst v2.pszDSIServer %s v2.pszDSIAnnotation %s v2.pszDSIInstance %s v2.pguidDSIInstance %s
+dwVersion: %lu v1.cb: %lu v1.cConsecutive Failures: %lu v1.timeLastSuccess: %I64d v1.timeLastAttempt: %I64d v1.ulResultLastAttempt: %lu v1.cbOtherDraOffset: %luv1.cbOtherDra: %luv1.ulReplicaFlags: %lu v1.rtSchedule: <skipped> v1.usnvec.usnHighObjUpdate: %I64d v1.usnvec.usnHighPropUpdate: %I64d v1.pszUuidDsaObj: %s v1.pszUuidInvocId: %s v1.pszUuidTransportObj: %s v1.cbPASDataOffset: %lu 
+%s v1~PasData: version = %d, size = %d, flag = %d 
+v1~PasData: (none) 
+{ SiteGuid = %ws; TimeStamp = %ws }
+{ V1: Flags = 0x%x; LatencySecs = %I64d; DsaGuid = %ws }
+advapi32.dll
+ConvertSDToStringSDRootDomainW
+Org.Time/Date  
+Org.DSA               
+AttID
+%6s %4s %10s %38s %10s %19s
+%04d-%02d-%02d %02d:%02d:%02d
+<conv err>
+%6x %4x %10I64d %38s %10I64d %19s
+ATTESTATION
+%sMFA_NOT_USED
+%sUnknown:0x%x
+Source:0x%x(%s) Usage:0x%x(%s) Flags:0x%x(%s) CreationTime:%s LLTS:%s DeviceId:%s cbKeyID:0x%x KeyID:%s cbKeyMaterial:0x%x KeyMaterial:%s
+msDs-User-Account-Control-Computed
+groupType
+msDS-OptionalFeatureFlags
+searchFlags
+pwdProperties
+msDS-SupportedEncryptionTypes
+msDS-IntId
+objectGuid
+msDS-OptionalFeatureGuid
+parentGUID
+attributeSecurityGUID
+schemaIDGUID
+serverClassID
+netbootGuid
+msDS-DeviceID
+msDS-LocalEffectiveDeletionTime
+msDS-LocalEffectiveRecycleTime
+whenChanged
+msDS-Entry-Time-To-Die
+schemaUpdate
+modifyTimeStamp
+createTimeStamp
+dSCorePropagationData
+accountExpires
+badPasswordTime
+creationTime
+lastLogon
+lastLogoff
+lastLogonTimestamp
+pwdLastSet
+msDS-LastSuccessfulInteractiveLogonTime
+msDS-LastFailedInteractiveLogonTime
+msDS-Cached-Membership-Time-Stamp
+msDS-UserPasswordExpiryTimeComputed
+msDS-ApproximateLastLogonTimeStamp
+msDS-KeyApproximateLastLogonTimeStamp
+lockoutDuration
+lockoutObservationWindow
+forceLogoff
+minPwdAge
+maxPwdAge
+msDS-MaximumPasswordAge
+msDS-MinimumPasswordAge
+msDS-LockoutObservationWindow
+msDS-LockoutDuration
+sidHistory
+tokenGroups
+tokenGroupsGlobalAndUniversal
+tokenGroupsNoGCAcceptable
+mS-DS-CreatorSID
+msDS-ServiceAccountSID
+msExchMasterAccountSid
+msDS-LdapQosPolicyTarget
+msDS-ShadowPrincipalSid
+msDS-RequiredDomainBehaviorVersion
+msDS-RequiredForestBehaviorVersion
+domainFunctionality
+forestFunctionality
+domainControllerFunctionality
+msDS-ReplAuthenticationMode
+oMSyntax
+objectClassCategory
+samAccountType
+primaryGroupID
+attributeSyntax
+supportedControl
+supportedExtension
+oMObjectClass
+ntSecurityDescriptor
+fRSRootSecurity
+pKIEnrollmentAccess
+msExchLogonACL
+msExchMailboxSecurityDescriptor
+msExchPFDefaultAdminACL
+msExchSubmitRelaySD
+partialAttributeSet
+msDS-Cached-Membership
+msDS-Site-Affinity
+dSASignature
+RepsFrom
+RepsTo
+msDS-KeyCredentialLink
+msExchMailboxGuid
+trustDirection
+trustType
+trustAttributes
+%ws;range=%d-*
+SYSTEM\CurrentControlSet\Services\EventLog\
+EventMessageFile
+ntdsmsg.dll
+EvtOpenPublisherMetaData failed, publisher = %s, error %d %s.
+EvtFormatMessage failed, error %d %s.
+Memory allocation failure
+EvtFormatMessage failed (second call), error %d %s.
+Event/System/Level
+Event/System/EventID
+Event/System/EventID/@Qualifiers
+Event/System/Provider/@Name
+Event/System/TimeCreated/@SystemTime
+ Simple memory allocation failed, events can not be printed
+Skip the test because the event log %ws does not exist.
+Memory allocation failed: Error code = %d, Error info =%s
+ Failure to allocate memory: error code = %d, error info = %s
+RSDS`L
+dcdiag.pdb
+.rdata$brc
+.rdata$T$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+.wpp_sf
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+9w4vkVj
+9w$v9
+WPhD @
+PhL @
+PhT @
+Ph` @
+Pht @
+Ph| @
+uLj*Xf;B
+uCj@_h
+YYjWX
+p(Vh*
+@WWSW
+t6Sh4
+YFY;5
+D$ Pj
+t$(!D$
+;D$(u
+t$$h=
+t$DhK
+D$DPhL
+D$NYY
+D$NYY
+t$HhQ
+s,hp!@
+VWh|!@
+W9s<v%
+H8;X4s
+D$ SVW
+L$(^[3
+t*Pj@
+PPPPPP
+Sh@#@
+PPPPPP
+Phh'@
+Vh@#@
+Ph`)@
+PhT*@
+Php+@
+C0kL0L
+D1@hx&@
+\8\9^
+PSSSSS
+9~<vU3
+Ph</@
+PhD/@
+unh(0@
+QhD/@
+PhD/@
+Phh-@
+PhD/@
+?hT%@
+9^0t}
+9^,vei
+G;~,r
+^09^Ht
+Vh<3@
+PVhh3@
+PVh44@
+PVhp4@
+t!9_4~
+C;_4|
+Qhh7@
+098t:
+F0Y9|
+PWhh;@
+D98t7
+9~4v8
+Sh(<@
+C;^4r
+PhH=@
+YY9~$v"
+CYY;^$r
+GYY;~
+PWhH?@
+M QRSP
+Ph,A@
+PWWWWW
+PhD/@
+v(hDB@
+v,hdB@
+v4h|B@
+vLh@C@
+vPhhC@
+vTh|C@
+HhdD@
+QSVWh
+w<hXH@
+9_<vg
+6h8A@
+wDhtH@
+wThDI@
+Ff;9u
+PVSj.S
+PhD/@
+j-Xf;
+QQSVW
+QSVWhdK@
+u!jWY
+tpSWj>[
+PhD/@
+G,YPQ
+G$h@L@
+QhD/@
+O$9^$u
+O(9^(u
+O,9^,u
+F49^8u
+F8_^[
+xo;A<}j
+jWX_^
+VVVVVV
+{897tp
+9r<vO
+PhD/@
+Ph,A@
+uihdM@
+Ph,A@
+Ph,A@
+jWX_^[
+jWX_^[
+7@_^[
+t@j.V
+SSSSVWSh
+t j?W3
+Hj?W3
+jWX_^[
+j!YQP
+t;j!X
+j!YQP
+u!SWh
+FXf;C
+j!YQP
+u!SWh
+FXf;C
+jWX_^[
+|$4Qh0N@
+D$,Pj
+D$,Pj
+D$LPW
+D$,PVh
+!D$(G
+4SVW3
+tx95,LF
+9=,LF
+W9|$(u6h
+L$,Qj
+L$,_^[3
+SVWPh
+PVhDQ@
+Vh0N@
+PQh0Q@
+L$$Qj
+PPPPP
+PPPPP
+;0u.9E
+99t<3
+RPGhh
+PQSVW
+Ph0V@
+F< tD3
+Ph0V@
+Ph0X@
+QSRh,[@
+u8h$`@
+u>hP`@
+Qh$X@
+Qh$X@
+Qh$X@
+Qh(c@
+Ph@c@
+Phtc@
+Rh@c@
+Ph$X@
+QhHX@
+u2h f@
+Phld@
+Vhld@
+QPRhXk@
+Qh8m@
+Qh@c@
+Ph$X@
+QhHX@
+Qh$X@
+Ph@c@
+QhHX@
+Ph$X@
+PhHX@
+QPh q@
+QPh`q@
+Sh$X@
+Ph$X@
+Qh$X@
+Ph@c@
+PhHX@
+Ph$X@
+PhHX@
+Sh8m@
+ShLw@
+PhP{@
+Ph z@
+Ph`y@
+QhPy@
+Qh$X@
+PhHX@
+PhHX@
+PhHX@
+PhHX@
+PhHX@
+PhHX@
+tYh(}@
+PhHX@
+Ph0V@
+Ph0V@
+t);>u
+PPPPP
+PPPPP
+;0uF9E
+;0u.9E
+;0u.9E
+;0uF9E
+;0uF9E
+PPPPP
+PPPPP
+j!Yf;
+j<[9~
+PWVj&j
+PjAZF
+PWWWh@K@
+PVVVh@K@
+O,PVj
+PQQVQ
+:f;8u
+QQSVW
+QQSVW
+jh[9~
+j<^P;
+QQSVW
+y09wXt
+PSGWj
+E(j:P
+PhpPC
+jhj!Z
+RRVSRh
+RRRRQPRh
+WWWj WP
+0f;1u
+0f;1u
+0f;1u
+0f;1u
+0Xf9G
+F9_Dt99_@v79]
+9~Dt49~@v29}
+V9wDt
+Ph0V@
+Ph0V@
+Ph@c@
+Ph$X@
+PhHX@
+PhHX@
+PhHX@
+PPPPP
+PPPPP
+;0uF9E
+;0uF9E
+~uSWV
+tFRSP
+_f9>u
+VWRQQ
+Phld@
+j\j@XP
+Qj@XP
+RRWRPQ
+_LSQQh
+_LSQQh
+QQQPV
+Ph$X@
+t{SSV
+Ph0V@
+PSSSS
+t6;0t
+Ph0V@
+t;;0t
+;s(t&
+C,+C$j<
+j<^9_
+Lu9SV
+tV97tR
+uRVWS
+D$,9G
+D$0PW
+D$0SP
+Ph,A@
+90v33
+PVWh5
+t?CSP
+vxVRV
+u>VSW
+uyVSW
+uvVSW
+90t/3
+u&SVW
+u7VWS
+ueVWS
+tYVWS
+D$hSVW
+YYiL$$
+|$,PWh
+YY9\$<t
+YY9\$@t
+9\$Dt
+|$,PWh
+YY9\$Ht
+9\$Lt
+9\$Pt
+YY9\$Tt
+YY9\$Xt
+9\$\t
+t19\$
+t'9\$
+YY9\$`t
+D$$QQV
+YY9\$dt
+D$<QQ
+L$t_^[3
+tP90tL
+N 99_t
+D$XSV
+D$DPh
+QQSV3
+PSVVVV
+W VRVQ
+4SVWhp
+uFiO$
+u7iO$
+uYWWS
+YY9\0\t
+PhD/@
+WWWWWW
+F09\8\u
+j<WhP
+SVWi}
+x09Oh
+VPVQ3
+PhT*@
+QQSVW
+SVWj j@
+_091t9
+u`9sXt
+PhD/@
+PhD/@
+Ph,A@
+9Gdt&9Ght!9Glt
+9Klu@9N|t;
+D$`Pj
+D$TPj
+D$TPj
+9T$ s
+!D$ !D$$h
+T$,PS
+D$8Pj
+D$,Pj
+D$8Ph
+L$\_^[3
+SSSSSS
+;X4sOW
+;X4s'
+D$`SVW
+\$49^<
+T$,!|$ 
+L$D98
+D$XPh
+D$4;F<
+Ph</@
+L$l_^[3
+98t$3
+PhD/@
+Ph,A@
+QhD/@
+G09\0Xu%
+9A4~F
+w&j Xf9
+kt$ <
+f;D$$u
+jWX_^Y]
+SSSSSSSj
+SSSSSSSSj
+SSSSSSh 
+Ph,A@
+QhD/@
+VPPPPPPh 
+PPPPPPPj
+PPPPPPPPj
+,SVW3
+QSVWj ^h
+j\Yf;
+j\Yf;
+t!f9K
+Ph,A@
+Ph,A@
+F@SQR
+t$$SR
+D$0Pj
+\$Ptz@
+t4!|$
+C8YYkOL
+PQQQS
+uqjW^3
+PhD/@
+th9G(tA
+u.9^Tu
+QQSVW
+PQj Z
+PQj Z
+jWX_^[
+PPPPPP
+tzPj@
+PPWQ3
+F;w,r
+9~,v(S3
+SVWPj
+9>v"3
+PSVVVVRj
+SVWi}
+O09QL
+tF9w<
+9w<vo
+tlPj@
+;C,s'i
+{0;L:Lj
+] 9;t
+]$9;t
+](9;t
+9s4vm
+G;{4r
+QQQQVSQP
+QQVSQP
+WRVS3
+u*QRV
+PQRj+
+PQRj"h
+PRVQh
+(_^[]
+E PWRj
+RVPWQSj
+PQRj+
+FXj$X
+2SVQW
+0f;1u
+u4f9x
+u.f9x
+u(f9x
+u"f9x
+f98u+
+Sht.@
+u;PPPf
+QPQQQSh
+PPPSh
+j\Zf9
+t+93t'hp1A
+j@_f98
+QPSSSS
+QQSVQ
+u3VVV
+PVVQh
+Php1A
+j.Zt7
+PhD/@
+PhD/@
+PhD/@
+PhD/@
+jC[jc_;
+wHt&+
+f;F8u
+Ff99u
+r3j\[f9
+j\[f9
+rZj\[f9
+r*j\[f9
+f99uv
+j\[f9
+tSj"X
+j\Zf9
+[j"Xr
+j\[f9
+w4;s4u
+Xf;DQ
+PhLbA
+QVh(bA
+VhDbA
+VhTbA
+VVjWZj
+PhhbA
+}(h|bA
+T$,9U
+L$TQP
+Ph BF
+D$$9D$,
+Ph BF
+f;D$0u
+tEVWh
+L$(;D$,
+L$\_^[3
+j<XPSW
+X_^[]
+PhxfA
+7hpgA
+WSh|!@
+Sh|!@
+SVWu7h
+U(SV3
+D$ PS
+D$DRh
+QQSVh
+u+hXmA
+t)hdmA
+Rh|mA
+u,Qhe
+T$8j X;
+u99t$t
+VVPZPY
+SVWj 
+SVWj X
+t2j|Xf;
+PQWQQ
+VVjWZj
+tcj=P
+Q@PQW
+tLj\Xf
+W[_^]
+jWX_^[
+VVVVVV
+t"QQj
+Qj"QQ
+Qj#QQ
+PQj QQ
+t"VQj!QQ
+PVh8}A
+Vh\}A
+PSPVh
+L$@QQ
+L$LP3
+t$<Wh#
+t$@h$
+L$(Ph
+D$ GPW
+PhD/@
+@;F,r
+tgPj@
+Ph bA
+j.Xf;
+Y__^[
+Y__^[
+}8[SW
+.?AVbad_alloc@std@@
+.?AVexception@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+"/\[]:|<>+=;?,*
+cn=Partitions,
+_XcptFilter
+__p__commode
+_amsg_exit
+__wgetmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+?terminate@@YAXXZ
+msvcrt.dll
+_controlfp
+_except_handler4_common
+_lock
+_unlock
+__dllonexit
+_onexit
+Sleep
+SetUnhandledExceptionFilter
+GetModuleHandleW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+GetConsoleScreenBufferInfo
+GetStdHandle
+DsRoleFreeMemory
+SetConsoleMode
+WaitForMultipleObjects
+DsRoleGetPrimaryDomainInformation
+InitializeCriticalSection
+LocalAlloc
+DsGetDcNameW
+GetComputerNameExW
+MultiByteToWideChar
+GetConsoleMode
+FormatMessageW
+GetLastError
+ReadConsoleW
+CloseHandle
+RaiseException
+CreateThread
+DeleteCriticalSection
+NetApiBufferFree
+HeapFree
+EnterCriticalSection
+LeaveCriticalSection
+RpcErrorStartEnumeration
+FileTimeToSystemTime
+LoadStringW
+RpcErrorEndEnumeration
+GetProcessHeap
+RpcErrorGetNextRecord
+UuidToStringW
+ImpersonateLoggedOnUser
+DnsNameCompare_W
+RpcStringFreeW
+DnsValidateName_W
+LocalFree
+SystemTimeToFileTime
+LocalReAlloc
+GetSystemTime
+RevertToSelf
+GetProcAddress
+FreeLibrary
+GetIfEntry2
+CompareStringW
+GetAdaptersAddresses
+GetLengthSid
+WNetAddConnection2W
+WNetCancelConnection2W
+DnsQuery_W
+RegQueryValueExW
+FreeMibTable
+OpenServiceW
+RegOpenKeyExW
+RegEnumKeyExW
+DnsUpdateTest_W
+ControlService
+GetUnicastIpAddressTable
+DnsFree
+OpenSCManagerW
+DnsQueryConfig
+CloseServiceHandle
+WideCharToMultiByte
+RegCloseKey
+SetEvent
+ResetEvent
+CoUninitialize
+CreateEventW
+DnsModifyRecordsInSet_W
+WaitForSingleObject
+WriteFile
+CoCreateInstance
+CreateFileW
+CoSetProxyBlanket
+CoInitializeSecurity
+CoQueryProxyBlanket
+CoInitializeEx
+QueryServiceConfigW
+QueryServiceStatus
+DsIsMangledDnW
+DsMakeSpnW
+NetUserSetInfo
+StartServiceW
+EnumDependentServicesW
+NetUserGetInfo
+CompareFileTime
+LookupAccountSidW
+FreeSid
+WNetGetResourceInformationW
+IsValidSid
+NetRemoteTOD
+AllocateAndInitializeSid
+EqualSid
+GetAce
+IcmpCloseHandle
+GetAddrInfoW
+IcmpCreateFile
+Icmp6SendEcho2
+Icmp6CreateFile
+IcmpSendEcho2
+WSAIoctl
+FreeAddrInfoW
+SetLastError
+HeapAlloc
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-console-l2-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+DSROLE.dll
+api-ms-win-core-console-l1-1-0.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+logoncli.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+WS2_32.dll
+api-ms-win-core-handle-l1-1-0.dll
+netutils.dll
+api-ms-win-core-heap-l1-1-0.dll
+RPCRT4.dll
+api-ms-win-core-timezone-l1-1-0.dll
+WLDAP32.dll
+api-ms-win-security-base-l1-1-0.dll
+DNSAPI.dll
+IPHLPAPI.DLL
+samcli.dll
+MPR.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-service-management-l1-1-0.dll
+api-ms-win-service-winsvc-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+OLEAUT32.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-service-management-l2-1-0.dll
+DSPARSE.dll
+api-ms-win-service-core-l1-1-1.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+srvcli.dll
+LocalSize
+lstrlenW
+GetComputerNameW
+KERNEL32.dll
+I_NetLogonControl2
+NETAPI32.dll
+RtlIpv4AddressToStringExW
+RtlIpv6AddressToStringExW
+RtlSubAuthoritySid
+RtlSubAuthorityCountSid
+RtlLengthSid
+RtlIpv6StringToAddressW
+RtlNtStatusToDosError
+RtlAllocateHeap
+RtlInitUnicodeString
+RtlFreeHeap
+RtlGetDaclSecurityDescriptor
+RtlIpv6StringToAddressExW
+RtlIpv6AddressToStringW
+EtwTraceMessageVa
+ntdll.dll
+CoInitialize
+ole32.dll
+I_RpcGetExtendedError
+NdrClientCall2
+RpcBindingSetOption
+RpcBindingFromStringBindingW
+RpcStringBindingComposeW
+RpcMgmtSetComTimeout
+RpcBindingSetAuthInfoExW
+RpcBindingSetAuthInfoA
+RpcBindingFree
+RpcBindingSetAuthInfoExA
+GetNameInfoW
+LogonUserW
+RegConnectRegistryW
+LsaClose
+LsaOpenPolicy
+LsaQueryTrustedDomainInfoByName
+LsaFreeMemory
+LsaQueryInformationPolicy
+LsaOpenSecret
+LsaSetSecret
+LsaEnumerateAccountsWithUserRight
+TraceMessage
+ADVAPI32.dll
+wprintf
+_wcsicmp
+wcscpy_s
+wcscat_s
+_fcloseall
+putchar
+swprintf_s
+wcschr
+_wfopen
+_wcsnicmp
+malloc
+wcsncpy_s
+fflush
+vswprintf_s
+fwprintf
+_vsnwprintf
+wcstoul
+wcsstr
+printf
+_wtol
+_wtoi64
+__CxxFrameHandler3
+memcpy_s
+?what@exception@@UBEPBDXZ
+??1exception@@UAE@XZ
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABV0@@Z
+memmove_s
+??0exception@@QAE@XZ
+_purecall
+_snwprintf_s
+_wtoi
+wcstombs
+_ltow
+towlower
+towupper
+wcstol
+qsort
+wcscspn
+realloc
+mbstowcs
+_vsnprintf_s
+_vsnprintf
+_stricmp
+_callnewh
+_CxxThrowException
+??1type_info@@UAE@XZ
+DsCrackNamesW
+DsFreeNameResultW
+DsListRolesW
+DsReplicaFreeInfo
+DsReplicaGetInfoW
+DsWriteAccountSpnW
+DsReplicaSyncW
+DsReplicaAddW
+DsReplicaSyncAllW
+DsReplicaGetInfo2W
+NTDSAPI.dll
+OutputDebugStringA
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+WakeAllConditionVariable
+SleepConditionVariableSRW
+SystemTimeToTzSpecificLocalTime
+LoadLibraryExW
+GetModuleHandleExW
+I_RpcExceptionFilter
+RpcEpResolveBinding
+RpcMgmtEpEltInqBegin
+RpcMgmtEpEltInqDone
+RpcIfInqId
+RpcBindingToStringBindingW
+RpcMgmtEpEltInqNextW
+RpcStringBindingParseW
+WSALookupServiceNextW
+WSALookupServiceBeginW
+WSALookupServiceEnd
+GetConsoleOutputCP
+SetThreadUILanguage
+UuidFromStringW
+ConvertSidToStringSidW
+GetTimeZoneInformation
+ConvertSecurityDescriptorToStringSecurityDescriptorW
+GetTimeFormatW
+GetDateFormatW
+ExpandEnvironmentStringsW
+FileTimeToLocalFileTime
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-core-datetime-l1-1-0.dll
+EvtCreateRenderContext
+EvtFormatMessage
+EvtOpenSession
+EvtRender
+EvtNext
+EvtQuery
+EvtOpenPublisherMetadata
+wevtapi.dll
+OpenEventLogW
+ReadEventLogW
+CloseEventLog
+GetNumberOfEventLogRecords
+__iob_func
+wcsncmp
+setlocale
+sprintf_s
+iswxdigit
+_atoi64
+_ultoa_s
+iswdigit
+_wcsdup
+TraceMessageVa
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+RtlIpv4StringToAddressExW
+_ftol2_sse
+_local_unwind4
+memchr
+memcmp
+memcpy
+memmove
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.DS.DSDiag"
+    type="win32"
+<description>Active Directory DS diagnosis utility</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Active Directory Domain Services / Lightweight Directory Services diagnosis utility
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+dcdiag.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+dcdiag.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0 0(00080@0H0P0X0`0h0p0x0
+1 1(10181@1H1P1X1`1h1p1x1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4
+5\5`5h5p5
+A9F9P9q9v9
+9Z:g:p:v:|:
+;!;o;v;
+<$<.<6<E<M<^<f<
+=&=V=\=k=
+>.>6>B>P>X>d>r>z>
+1h1x1
+1S2p2v2{2
+2&363;3R3h3~3
+4E4N4]4p4
+5,5H5\5b5
+9F:[:
+;:<I<
+>T>l>{>
+?5?O?T?h?
+0$0:0B0^0f0l0u0~0
+1^1e1r1
+2#3K3X3
+6Y6h6
+8:8A8O8V8i8
+9(9k9
+;;;B;_;i;r;~;
+< <*<5<=<
+2(2B2R2
+2#323B3
+3C4O4
+5e5t5
+5^6y6
+:A:Y:c:r:
+;0;E;^;
+<!<+<F<c<x<
+<#=3=C=T=z=
+=8>a>|>
+?,?8?Y?r?
+0;0I0S0
+1#1-1]1
+2<2T2
+2Q3[3t3~3
+404J4Y4c4~4
+535W5m5
+7)7}7
+9I9r9
+= =-=J=V=h=
+>@>S>p>
+>*?U?h?x?
+1Q1^1
+2*272\2
+3N3i3
+4B4U4v4
+5 656_6t6
+6,727Y7_7o7u7
+8'8.848C8J8P8Y8_8e8k8
+9J9e9
+9<:B:J:P:h:n:v:|:
+;-;3;V;\;g;q;
+<%<1<:<
+<E=a=|=
+>">p>z>
+?.?4?A?
+2G2q2
+2k3w3
+404=4J4W4g4w4
+5,5?5R5h5w5
+6.6F6T6b6m6
+7F7W7e7s7
+9<9h9
+:D;l;
+;2<><
+161?1U1e1m1
+263u3
+3;4N4h4~4
+5W5g5
+6Y6y6
+7&7-747C7
+7J8S8p8
+8.9?9U9
+2+272I2P2o2
+2W3`3u3
+3L4u4
+646F6T6
+6f7~7
+838K8S8
+9+9F9f9p9
+:0:I:m:
+;+;9;G;m;};
+?,?<?F?u?
+1"1?1N1m1|1
+1+2>2Y2
+3h3q3
+5d5t5y5
+6c6v6
+8E8l8
+8&9s9
+=&=U=
+>#?j?
+$0@0c0
+1.1E1j1
+283]3
+4%4F4Q4y4
+5E5i5
+5;6T6
+6)7F7^7
+8:8Q8h8
+9'9\9l9
+9":3:D:S:
+>:>{>
+4 5;5P5
+506q6
+7)70797J7T7[7
+8$8T8_8
+879Z9o9x9
+:2:Z:`:
+;W;^;
+<S=\=
+2K3i304J4P4V4e4j4}4
+4[5k5{5
+6S6g6x6
+7V7}7
+7&8:8e8
+999D9v9
+:*:s:
+:6<y=
+021Z1f1
+2T2O3]3j4
+9*9c9
+3@4M5
+8[9d9::
+=M?o?
+2a3q3
+5O5m5
+5>6x6
+>#>2>7>D>Y>
+3 3)3O3x3
+6a7h7n7
+7F8M8
+919G9f9
+:%:.:O:j:
+;8;B;G;W;p;
+<!<<<
+?K?U?
+0j0o0
+01161@1E1U1n1
+232t2
+3-3;3J3O3d3j3
+4)4V4c4
+6Y7s7
+7:8T8
+9-9?9D9d9i9y9
+95:V:h:
+;(;.;<;Y;l;
+<><e<
+=?=H=e=
+><>M>o>
+2-232E2J2Z2
+3B3P3
+4B4L4Q4j4x4
+4 555j5t5
+839:9F9M9Y9{9
+:F:K:Y:s:
+;1;6;D;l;q;
+<3<N<
+={=8>
+4<4e4
+425(6:6?6Q6V6f6y6
+8!8J8e8l8r8
+9Y9v9
+:<:W:^:d:r:
+;+;F;M;S;a;};
+=0=:=I=N=w=
+>.>5>;>I>h>
+?W?{?
+0+000@0e0q0
+1>1a1k1r1
+2$2-222_2n2%3L386
+6!7V7]7
+7s8z8
+8!9>9U9o9
+: ;];i;
+<,<o<
+=-=L=p>~>
+6/7G7w8
+;%;i;
+8$9;:
+1'2U2
+3F3i3
+3E4?5
+506k6
+7-7k7
+798b8
+9)9k9
+>P?}?
+<0B0U0[0
+2O3s3
+4L4_4
+5(5/5=5N5d5
+999{9
+:$;5;R;
+;7<K<
+=\=i=
+=A>U>
+0<1_1
+3.4^4
+3Y3i3r3
+4:4P4_4
+565a5
+6T7[7
+:I:S:
+:T;Z;q;
+;*<;<]<c<u<{<
+<)=X=
+>n>t>
+?!?,?i?
+1>1s1
+233K3
+3S4w4
+5T5g5
+6 6h6o6
+8@9]9t9
+=!=->
+4E4}4
+4F5N6
+:%;1;
+9@:M:g:r:
+;6<S<s<
+= =+=2=A=N=Z=l=q=}=
+1%2L2h2
+3]3z3
+4'4B4w4
+4*585l5q5
+7f8t8
+;';D;6<b<
+?#?8?>?
+1#1-131?1J1O1T1a1o1y1~1
+2!2+2b2h2
+3]3b3h3s3
+4#4)4;4C4Q4`4n4s4y4
+525D5M5{5
+6_6d6r6
+7%7,757F7Q7h7w7
+:6:E:T:[:
+;I;_;
+<"<C<
+<O=l=z=
+>F>a>s>
+?+?F?P?V?c?
+0E0[0l0
+011e1~1
+23282O2e2
+4-4j4
+4:5[5z5
+8:8P8
+:%:b<
+?&?7?
+1'1L1
+393S3|3
+696V6
+717<7\7
+:7:u;
+192x2
+4F4y4
+5@5v5
+6G6V6d6s6
+8.8U8
+9&949@9O9f9w9
+:;:C:S:\:j:
+:!;/;@;e;
+<,<<<J<Y<n<
+=#=)=/=5=;=R=
+>M>]>y>
+0(0}0
+151X1w1
+232^2
+3#3(3?3q3
+5$5G5
+8 8?8P8s8
+9d9t9
+:):/:=:K:w:
+;(;;;R;r;
+<#<1<<<J<v<
+=$=1=i=
+>G>S>a>
+?&?=?
+0'0<0
+181f1q1
+2&3|3
+4f5o5w6
+7C7K7c7{7
+8!828d8
+81:g:n:u:
+; ;1;@;O;w;
+<<<T<]<k<
+<]=f=t=
+>6>J>\>
+0+0e0
+3D3b3
+304e4{4
+4:5C5Q5`5t5
+6*6Z6
+6:7\7
+8C8|8
+:P:t:
+<+<5<@<E<M<f<w<
+=,=G=Q=|=
+>(>B>S>d>x>
+>7???W?o?w?
+0V0{0
+232P2Y2q2y2
+3/3T3
+3-4k4
+6.6A6M6~6
+7M7o7
+8Z8s8{8
+8/9T9`9
+90:S:j:
+;&;8;E;
+<]<o<
+=Q>]>r>y>
+>$?<?L?c?
+0(060W0{0
+1$1.1K1`1i1
+1\2o2
+:5:O:
+<><h<w<
+=^>i>
+1?1{1
+222J2a7
+8*8?8y8
+;7;L;s;x;~;
+<,=K=
+020L0^0r0
+13282`2n2
+243g3l3
+3#4-4
+6$6O6z6
+8$9d9
+:W:s:
+;,;>;l;
+<K=Z=n=}=
+?+?8?D?T?u?
+0+1T1
+3F4r5{5
+5i6~6
+7"7/7\7
+8*8H8X8
+869n9K:
+0"1 2~2
+2G3f3
+4D4\4l4
+6f6q6
+6*7:7J7[7
+9':|:
+;;;D;
+;)<S<b<n<
+=*=1=n=
+=0>I?
+2*2a4
+6B9W9b9
+>E>g>
+?>?N?~?
+*0P0\0h0
+1%2,212
+2F3^364d4
+7-8B8J8e8j8r8
+9J9[9v9{9
+9b:{:
+?.?<?c?
+0)050e0
+2,2i2+3
+>(>2>C>`>
+565P5
+8 8=8G8R8Y8u8
+9A::;"<
+=4>a>
+K0c0j0q0x0
+1!1)1L1q1
+1:2E2Q2
+373T3
+7&7;7M7Y7`7m7y7
+8T8c8
+:9:]:l:
+;!;(;B;G;Q;
+;X<h<
+0#0.0a0v0
+1!1Y1q1w1
+3Q4d4n4~4
+5;7^8
+<g<U=
+(0;0K0v0
+<6<B=
+1!2=2D2e2
+4%484G4d4n4s4}4
+7 8*8
+;M=[=q=
+=.>6>=>L>Z>
+>@?f?
+ 0W0e0
+1P1T1X1\1`1d1h1l1p1t1x1|1
+2%272O2e2k2s2
+3"3(3:3@3n3t3
+4-4c4k4}4
+5!525m?r?
++0J0P0z0
+01161P1
+3+373q3
+4/555_5e5
+7L7Z7|7
+7!8'8-8X8^8d8
+;%;,;I;U;
+<(<A<I<U<Z<
+=n=s=
+>.>9>>>f>
+?"?M?S?X?
+0*0?0n0
+2 2?2b2s2
+2:3A3O3X3
+6{7g8(9
+:F:[:l:
+;%;_;p;
+;$<P<
+=Y=s=
+>*>K>p>
+081k1
+2v2:3C4
+5$575L5b5
+6$6/6;6G6X6d6p6|6
+7 717=7E7|7
+7D8W8b8
+9-9B9
+9!:-:9:H:
+<*<]<j<
+=7=[=a=w=
+>2>@>L>
+>C?]?
++0P0a0j0
+0F1R1a1
+<(=<=
+494r4
+5.5m5
+6,7<7]7o7
+7K8X8{8
+819b9
+;?;y;
+<V=s=
+>X>g>
+0:1A1
+2D2K2
+4\4l4
+4/5?5Z5a5l5
+5W6p6
+848R8
+849O9l9
+:&:6:F:V:s:
+:A;a;
+;.<]<
+= =(=.=:=Z=d=v=
+=&>F>K>P>U>Z>_>d>
+?+?I?
+0-0;0A0e0u0|0
+3/3R3`3w3~3
+3A4-6!7?7
+9C9s9
+92:\:u:
+;%;F;X;i;
+<m<v<
+=!=8=g=
+>">6>F>R>b>
+>%?4?=?N?_?e?
+0 0<0C0I0Q0a0l0x0
+324t4~4
+5&595I5n5u5
+6-6M6[6x6
+687P7c7u7
+8+9p9
+98:s:
+:1<O<
+1.272@2I2R2d2h2l2p2t2x2|2
+2^3c3q3
+4"4:4@4q4
+4e5r5
+6%6L6R6g6
+7p7A9
+:.:;:s:
+:*;n;
+<&=W=
+>E>M>[>k>
+>N?T?
+1U1]1k1{1
+3f3u3
+4)4J5
+< <4<U<
+=<>r>
+0!0&0,01060;0@0F0N0\0v0
+1'1;1C1K1Q1W1d1j1t1
+2%222L2W2a2l2
+3X4]4o4
+7 7z7
+8 8)8.848>8H8X8h8n8y8
+9'9,91979A9K9[9d9w9
+96:J:`:m:w:
+;2;B;R;j;
+<)<A<R<Y<f<k<q<
+=#=6=;=A=R=^=j=v=
+=->i>
+32?2K2W2c2o2{2
+2&3Y3
+455o5
+5*6M6p6
+0Q0a0
+1-2P2s2
+3-3P3s3
+6-7k7
+<2<|<P=
+=J>z>
+2:2u2
+2*3Z3}3
+3F4v4
+576Z6
+7#8[8
+<=<u<
+<7=Q=e=
+>0>P>p>
+?0?P?
+0,080X0`0l0
+1$1,141<1D1L1T1\1d1l1x1
+2<2H2P2p2x2
+3D3T3`3
+4 4T4d4p4
+5$5,545<5D5L5T5\5d5l5t5|5
+6$6,646<6D6L6T6\6d6l6t6|6
+747<7D7P7t7|7
+8 808T8\8d8l8t8|8
+9$909P9X9`9h9p9|9
+:,:4:<:D:P:p:x:
+; ;@;H;P;X;`;l;
+<$<D<L<T<\<d<l<x<
+= =,=4=h=x=
+>(>\>p>
+>0?@?L?T?
+0$0,040<0D0L0T0\0d0p0
+1$1,141<1D1L1T1\1d1l1t1|1
+2L2`2p2
+3 3@3L3l3t3
+4$40484l4|4
+5,585@5t5
+6$6,646<6D6L6T6\6d6l6t6|6
+7$7,747<7D7L7T7\7d7l7t7|7
+848H8X8h8t8|8
+9(90989@9L9T9
+:8:H:T:\:
+;$;,;4;<;D;L;T;\;d;l;t;|;
+<(<0<8<@<H<P<\<d<
+=(=0=8=@=H=P=\=d=|=
+>$>,>`>p>|>
+?$?,?4?<?H?l?t?|?
+0$0,040<0D0L0T0\0d0p0x0
+1,181@1t1
+2 2(20282D2d2p2
+343@3`3h3p3x3
+4$4,444@4`4h4p4|4
+5 5(50585D5d5l5t5|5
+6<6D6L6T6`6
+7$7,787X7`7h7p7x7
+7,8<8H8h8p8|8
+90989D9d9l9t9
+:$:,:8:@:X:`:
+; ;,;4;h;x;
+<8<X<x<
+=8=X=x=
+>4>8>T>X>`>d>l>p>x>|>
+?8?X?x?
+080X0x0
+181X1t1x1
+24282X2`2l2
+3$3,343<3P3X3\3d3h3l3t3x3|3
+1F1`1
+213Z3
+0 0$0,0004080@0D0H0L0T0X0\0`0h0l0p0t0|0
+1 10141D1H1X1\1l1p1
+2 2$24282H2L2\2`2p2t2
+3$3(383<3L3P3`3d3t3x3
+4(4,4<4@4P4T4d4h4x4|4
+5 5$5,5054585@5D5H5L5T5X5\5`5h5l5p5t5|5
+6 60646D6H6X6\6l6p6
+7 7$74787H7L7\7`7d7h7p7t7x7|7
+808P8p8
+909P9p9
+:$:,:<:D:L:T:\:d:l:t:
+; ;$;,;@;H;P;`;h;|;
+<$<,<4<<<D<L<T<\<d<l<t<|<
+=$=,=4=<=D=L=T=\=d=l=t=|=
+>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1L1T1\1l1t1|1
+2$2,242<2D2P2T2X2\2`2d2h2l2p2t2x2|2
+3$3,343<3L3T3\3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+585P5p5

@@ -1,0 +1,214 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\stream.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.DLL
+    ks.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000C140 Import Address Table
+             1C000C5D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         16C ZwClose
+                          6C IoGetDmaAdapter
+                          7B IoRegisterDeviceInterface
+                          51 IoConnectInterrupt
+                          D7 KeSynchronizeExecution
+                          B2 KeInitializeDpc
+                          73 IoInitializeTimer
+                          87 IoSetDeviceInterfaceState
+                          5E IoDetachDevice
+                         102 ObfDereferenceObject
+                          8D IoStartTimer
+                          5F IoDisconnectInterrupt
+                          78 IoOpenDeviceInterfaceRegistryKey
+                          B6 KeInitializeSpinLock
+                          5C IoDeleteDevice
+                          8E IoStopTimer
+                          B7 KeInitializeTimer
+                          F6 MmUnmapIoSpace
+                          4A IoAttachDeviceToDeviceStack
+                          44 IoAllocateDriverObjectExtension
+                         172 ZwEnumerateKey
+                         103 ObfReferenceObject
+                          6B IoGetDeviceProperty
+                          E5 MmGetSystemRoutineAddress
+                          45 IoAllocateErrorLogEntry
+                          9B IoWMIRegistrationControl
+                         14B RtlIntegerToUnicodeString
+                         181 ZwSetValueKey
+                         11E PoStartNextPowerIrp
+                          D0 KeResetEvent
+                         177 ZwOpenKey
+                          69 IoGetDeviceInterfaces
+                          66 IoGetAttachedDeviceReference
+                         184 __C_specific_handler
+                          BB KeInsertQueueDpc
+                          AC KeDelayExecutionThread
+                          6F IoGetRelatedDeviceObject
+                          60 IoFileObjectType
+                          FE ObReferenceObjectByHandle
+                          20 ExGetPreviousMode
+                          7E IoReleaseCancelSpinLock
+                         120 ProbeForRead
+                          35 ExReleaseFastMutex
+                          E0 MmAllocatePagesForMdl
+                           C ExAcquireFastMutex
+                          E4 MmFreePagesFromMdl
+                          F7 MmUnmapLockedPages
+                          EA MmMapLockedPages
+                         5EF MmMapIoSpaceEx
+                          D9 KeWaitForSingleObject
+                          4E IoBuildSynchronousFsdRequest
+                          A3 IofCompleteRequest
+                          EB MmMapLockedPagesSpecifyCache
+                          ED MmPageEntireDriver
+                          DA KfRaiseIrql
+                          B3 KeInitializeEvent
+                          41 IoAcquireCancelSpinLock
+                         17E ZwQueryValueKey
+                          A2 IofCallDriver
+                          C9 KeReleaseSpinLockFromDpcLevel
+                          15 ExAllocatePoolWithTag
+                          46 IoAllocateIrp
+                          AA KeCancelTimer
+                          64 IoFreeMdl
+                          A6 KeAcquireSpinLockAtDpcLevel
+                          1D ExFreePool
+                         146 RtlInitAnsiString
+                          BD KeLowerIrql
+                          D1 KeSetEvent
+                          C8 KeReleaseSpinLock
+                          79 IoOpenDeviceRegistryKey
+                         11A PoRequestPowerIrp
+                          31 ExQueueWorkItem
+                         148 RtlInitUnicodeString
+                         194 _vsnprintf
+                         143 RtlFreeUnicodeString
+                          47 IoAllocateMdl
+                          E1 MmBuildMdlForNonPagedPool
+                          63 IoFreeIrp
+                         104 PoCallDriver
+                          A1 IoWriteErrorLogEntry
+                          6D IoGetDriverObjectExtension
+                          4F IoCancelIrp
+                          A7 KeAcquireSpinLockRaiseToDpc
+                         124 RtlAnsiStringToUnicodeString
+                          F2 MmResetDriverPaging
+                          52 IoCreateDevice
+                          D5 KeSetTimer
+                         4B1 KeFlushIoBuffers
+                         C4C _vsnwprintf
+
+    HAL.DLL
+             1C000C000 Import Address Table
+             1C000C498 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 KeQueryPerformanceCounter
+
+    ks.sys
+             1C000C010 Import Address Table
+             1C000C4A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          CA KsStreamIo
+                          DA KsTopologyPropertyHandler
+                          A6 KsPropertyHandler
+                          AD KsQueueWorkItem
+                          C8 KsSetTargetDeviceObject
+                          9B KsPinPropertyHandler
+                          5D KsFreeEventList
+                          8D KsPinDataIntersection
+                          E2 KsValidateConnectRequest
+                          E1 KsValidateClockCreateRequest
+                          3D KsDisableEvent
+                          3F KsDispatchFastIoDeviceControlFailure
+                          29 KsCreateDefaultAllocator
+                          41 KsDispatchInvalidDeviceRequest
+                          47 KsEnableEvent
+                          40 KsDispatchFastReadFailure
+                          D8 KsSynchronousIoControlDevice
+                          63 KsGenerateEvent
+                          64 KsGenerateEventList
+                          21 KsCacheMedium
+                          C6 KsSetMajorFunctionHandler
+                          5C KsFreeDeviceHeader
+                          87 KsNullDriverUnload
+                          BC KsRemoveIrpFromCancelableQueue
+                          42 KsDispatchIrp
+                          C4 KsSetDevicePnpAndBaseObject
+                          16 KsAddIrpToCancelableQueue
+                          1C KsAllocateDeviceHeader
+                          3E KsDiscardEvent
+                          DC KsUnserializeObjectPropertiesFromRegistry
+                          61 KsFreeObjectHeader
+                          20 KsAllocateObjectHeader
+                          A4 KsProbeStreamIrp
+                          DB KsUnregisterWorker
+                          1D KsAllocateExtraData
+                          B5 KsRegisterWorker
+                          84 KsMethodHandler
+
+  Section contains the following exports for STREAM.SYS
+
+    00000000 characteristics
+    EA4AB0CE time date stamp
+        0.00 version
+           1 ordinal base
+          22 number of functions
+          22 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002EF0 DllInitialize
+          2    1 000138D0 DllUnload
+          3    2 00004760 StreamClassAbortOutstandingRequests
+          4    3 00004860 StreamClassCallAtNewPriority
+          5    4 00004940 StreamClassCompleteRequestAndMarkQueueReady
+          6    5 000011D0 StreamClassDebugAssert
+          7    6 000049C0 StreamClassDebugPrint
+          8    7 000049E0 StreamClassDeviceNotification
+          9    8 000011D0 StreamClassFilterReenumerateStreams
+         10    9 00003F70 StreamClassGetDmaBuffer
+         11    A 00004B20 StreamClassGetNextEvent
+         12    B 00004CA0 StreamClassGetPhysicalAddress
+         13    C 00004DE0 StreamClassLogError
+         14    D 000128B0 StreamClassPnPAddDeviceWorker
+         15    E 00004E70 StreamClassQueryMasterClock
+         16    F 00004EF0 StreamClassQueryMasterClockSync
+         17   10 00005000 StreamClassReadWriteConfig
+         18   11 000011D0 StreamClassReenumerateStreams
+         19   12 00012E00 StreamClassRegisterAdapter
+         20   13 00005140 StreamClassRegisterFilterWithNoKSPins
+         21   14 00005560 StreamClassScheduleTimer
+         22   15 00005610 StreamClassStreamNotification
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .guids
+        2000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text
+        1000 GFIDS
+        1000 INIT
+        8000 PAGE
+        1000 fothk

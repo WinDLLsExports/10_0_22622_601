@@ -1,0 +1,1076 @@
+!This program cannot be run in DOS mode.
+DRich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+EnableRpcAI
+CSI Print Advanced Installer
+Enable RPC AI Called Offline.  AI has no work to do because the calling manifest does all of the necessary work
+onecore\base\wcp\plugins\printadvancedinstaller\dll\enablerpcai.cpp
+Windows::WCP::EnableRpcAI::BasicInstaller::Install
+Not-null check failed: Services
+Not-null check failed: Component
+Not-null check failed: Success
+EnableRpcEndPoints
+EnableRpcAI::BasicInstaller::Install cannot set printer data because the spooler is not running.
+EnableRpcAI::BasicInstaller::Install cannot set printer data because the spooler RPC endpoints are blocked.
+dwRet
+EnableRpcAI:Called online, Spooler is not running currently - OpenPrinter.
+EnableRpcAI:Called online, Exiting EnableRPCEndPoint - dwRet = {dwRet}.
+EnableRpcAI Install Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+static_cast<DWORD>(12L)
+Enable RPC AI Uninstall Called.  AI has no work to do because the calling manifest does all of the necessary work via registry
+ServicesActive
+IsSpoolerRunning failed to open SCM with HRESULT {hr}.
+spooler
+IsSpoolerRunning failed to open the spooler service with HRESULT {hr}.
+IsSpoolerRunning failed to query service status with HRESULT {hr}.
+Running
+Not Running
+IsSpoolerRunning: The spooler is {str}.
+SetupIppAI
+onecore\base\wcp\plugins\printadvancedinstaller\dll\setupippai.cpp
+Windows::WCP::SetupIppAI::BasicInstaller::Install
+InstallWebPrinting()
+OpenPrinterW(0, &hServer, &Defaults)
+WebShareMgmt
+SetPrinterDataW(hServer, L"WebShareMgmt", dwType, (LPBYTE)&dwInstallWebPrinting, sizeof(dwInstallWebPrinting))
+SetupIppAI Install called in phase other than PHASE_CMI_PASS_ONLINE
+Uninstalling Internet Print Provider
+Windows::WCP::SetupIppAI::BasicInstaller::Uninstall
+RemoveWebPrinting()
+SetupIppAI::BasicInstaller::Uninstall was unable to SetPrinterData because IIS has been uninstalled.
+dwLastError
+SetupIppAI Uninstall called in phase other than PHASE_CMI_PASS_UNINSTALL_ONLINE
+Windows::WCP::SetupIppAI::BasicInstaller::InstallWebPrinting
+coInit.InitMultithreaded()
+pIMetaBase.CoCreateInstance(CLSID_MSAdminBase_W, 0, (CLSCTX_INPROC_SERVER| CLSCTX_INPROC_HANDLER| CLSCTX_LOCAL_SERVER| CLSCTX_REMOTE_SERVER))
+AddVirtualDir(pIMetaBase)
+AddWebExtension()
+AddScriptAtPrinterVDir(pIMetaBase)
+AddMimeType(pIMetaBase)
+Adding the Virtual Dir
+Windows::WCP::SetupIppAI::BasicInstaller::AddVirtualDir
+pIMetaBase->OpenKey(0, cszW3SvcRootPath, 0x00000001 | 0x00000002, 1000, &hMeta)
+SetupIppAI::BasicInstaller::AddVirtualDir was unable to add key with HRESULT {hr}.
+Writing our virtual dir.
+%ws\web\printers
+StringCchPrintfW(szVirPath, sizeof(*__countof_helper(szVirPath)), L"%ws\\web\\printers", cszWindowsDir)
+pIMetaBase->SetData(hMeta, cszPrinters, &mr)
+ipp_0001.asp
+IIsWebVirtualDir
+Adding the Web Extension
+Windows::WCP::SetupIppAI::BasicInstaller::AddWebExtension
+pszGroupDesc
+StringCchPrintfW(szExtPath, sizeof(*__countof_helper(szExtPath)), cszExtPathFmt, cszSystemDir)
+bstrAppHostConfigPath
+bstrCgiRestriction
+bstrAdd
+pAdminMgr.CoCreateInstance(__uuidof(AppHostWritableAdminManager), 0, CLSCTX_INPROC_SERVER)
+pAdminMgr->GetAdminSection(bstrCgiRestriction, bstrAppHostConfigPath, &pCgiRestrictionSection)
+pCgiRestrictionSection->get_Collection(&pCgiRestrictionCollection)
+pCgiRestrictionCollection->CreateNewElement(bstrAdd, &pNewCgiRestrictionElement)
+SetElementStringProperty(pNewCgiRestrictionElement, L"path", szExtPath)
+allowed
+SetElementStringProperty(pNewCgiRestrictionElement, L"allowed", L"true")
+groupId
+SetElementStringProperty(pNewCgiRestrictionElement, L"groupId", cszGroupId)
+description
+SetElementStringProperty(pNewCgiRestrictionElement, L"description", (LPWSTR) pszGroupDesc)
+pCgiRestrictionCollection->AddElement(pNewCgiRestrictionElement)
+pAdminMgr->CommitChanges()
+bstrApplicationDependencies
+bstrApplication
+pAdminMgr->GetAdminSection(bstrApplicationDependencies, bstrAppHostConfigPath, &pApplicationDependenciesSection)
+pApplicationDependenciesSection->get_Collection(&pApplicationDependenciesCollection)
+pApplicationDependenciesCollection->CreateNewElement(bstrApplication, &pNewApplicationDependenciesElement)
+SetElementStringProperty(pNewApplicationDependenciesElement, L"name", pszGroupDesc)
+SetElementStringProperty(pNewApplicationDependenciesElement, L"groupId", cszASPId)
+pApplicationDependenciesCollection->AddElement(pNewApplicationDependenciesElement)
+Adding the ScriptMap
+Windows::WCP::SetupIppAI::BasicInstaller::AddScriptAtPrinterVDir
+pIMetaBase->OpenKey(0, L"/LM", 0x00000001 | 0x00000002, 1000, &hMeta)
+pszFullFormat.Allocate(dwMDRequiredDataLen)
+pIMetaBase->GetData(hMeta, cszW3Svc, &mr, &dwMDRequiredDataLen)
+((HRESULT)0x80004005L)
+StringCchLengthW(pszAspMapping, 2147483647, &cszAspMapping)
+pszScriptMap.Allocate(nLen)
+StringCchPrintfExW(pszScriptMap.Elements, nLen, &pszNewPos, 0, 0, szScritMapFmt, pszAspMapping, L'\0', cszSystemDir, L'\0')
+pIMetaBase->SetData(hMeta, szPrinterVDir, &mr)
+Adding the MimeType
+Windows::WCP::SetupIppAI::BasicInstaller::AddMimeType
+pszCurrentMimeMap.Allocate(dwCurrentMapBytes)
+pIMetaBase->GetData(hMeta, cszMimeMap, &mr, &dwNewMapBytes)
+.webpnp
+((HRESULT)0x8007000EL)
+pszNewMimeMap.Allocate(nLen / sizeof(WCHAR))
+StringCchCopyW(pszWebPnPMap, dwWebPnPMapLen, cszWebPnPMap)
+pIMetaBase->SetData(hMeta, cszMimeMap, &mr)
+Removing Web Printing
+error
+SetupIppAI::BasicInstaller::RemoveWebPrinting was unable to open W3SVC registry key with error {error}.
+Windows::WCP::SetupIppAI::BasicInstaller::RemoveWebPrinting
+SetupIppAI::BasicInstaller::RemoveWebPrinting was unable to initialize the IIS metabase because it has been uninstalled.
+SetupIppAI::BasicInstaller::RemoveWebPrinting was unable to delete key with HRESULT {hr}.
+RemoveWebExtension()
+pszScripts.Allocate(dwMDRequiredDataLen)
+pIMetaBase->GetData(hMeta, cszW3Svc, &mr, &dwNewRequiredDataLen)
+WriteStrippedScriptValue(pIMetaBase, hMeta, pszScripts.Elements, dwMDRequiredDataLen)
+pszMimeMap.Allocate(dwMDRequiredDataLen / sizeof(WCHAR))
+pIMetaBase->GetData(hMeta, cszMimeMap, &mr, &dwNewRequiredDataLen)
+WriteStrippedMimeMapValue(pIMetaBase, hMeta, pszMimeMap.Elements, dwMDRequiredDataLen)
+pIMetaBase->SaveData()
+Removing Web Extension
+Windows::WCP::SetupIppAI::BasicInstaller::RemoveWebExtension
+pCgiRestrictionCollection->DeleteElement(varIndex)
+SetupIppAI::BasicInstaller::RemoveWebExtension was unable to remove CGI restriction because it was already removed.
+varIndex.Clear()
+pApplicationDependenciesCollection->DeleteElement(varIndex)
+SetupIppAI::BasicInstaller::RemoveWebExtension was unable to remove application dependency because it was already removed.
+Removing the ScriptMap
+.printer
+Windows::WCP::SetupIppAI::BasicInstaller::WriteStrippedScriptValue
+pIMetaBase->SetData(hMeta, cszW3Svc, &mr)
+Removing the MimeType
+Windows::WCP::SetupIppAI::BasicInstaller::WriteStrippedMimeMapValue
+Windows::WCP::SetupIppAI::BasicInstaller::SetElementProperty
+bstrPropName
+pElement->GetPropertyByName(bstrPropName, &pPropElement)
+pPropElement->put_Value(*varPropValue)
+Windows::WCP::SetupIppAI::BasicInstaller::SetElementStringProperty
+varPropValue.scode
+SetElementProperty(pElement, szPropName, &varPropValue)
+Windows::WCP::SetupIppAI::BasicInstaller::FindElementInCollection
+bstrKeyName
+pCollection->get_Count(&count)
+pCollection->get_Item(varIndex, &pElement)
+pElement->GetPropertyByName(bstrKeyName, &pKeyProperty)
+pKeyProperty->get_Value(&varKeyValue)
+varKeyValue.Clear()
+((HRESULT)0x8002802BL)
+System\CurrentControlSet\Services\W3SVC
+w3svc
+Internet Printing
+W3PRT
+%ws\msw3prt.dll
+Printers
+/LM/W3svc/1/Root
+.webpnp,application/octet-stream
+MimeMap
+%windir%\system32
+%windir%
+SetupMxdwAI
+Setup MXDW AI Installation Called Offline.
+onecore\base\wcp\plugins\printadvancedinstaller\dll\setupmxdwai.cpp
+Windows::WCP::SetupMxdwAI::BasicInstaller::Install
+ClearMxdwUninstallRegistryKeysOffline(Services)
+Setup MXDW AI Installation Called Online. 
+InstallMxdwPrintQueue()
+InstallTheMxdwDriverAndQueue()
+ClearMxdwUninstallRegistryKeys()
+SetupMxdwAI Install Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+Windows::WCP::SetupMxdwAI::BasicInstaller::Uninstall
+Setup MXDW AI Uninstallation Called Offline.
+SetMxdwUninstallRegistryKeysOffline(Services)
+Setup MXDW AI Uninstallation Called Online.
+UninstallMxdwPrintQueue()
+SetMxdwUninstallRegistryKeys()
+SetupMxdwAI Uninstall Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+%SystemRoot%\system32\spool\tools\Microsoft XPS Document Writer
+Microsoft XPS Document Writer
+PORTPROMPT:
+Microsoft XPS Document Writer v4
+WinPrint
+prnms001.Inf
+SetupMxdwAI: InstallMxdwPrintQueue(): ::AddPrinter() FAILED!
+Windows::WCP::SetupMxdwAI::InstallMxdwPrintQueue
+GetLastError
+SetupMxdwAI: InstallMxdwPrintQueue(): The MXDW's Print Queue has been successfully installed.
+Windows::WCP::SetupMxdwAI::UninstallMxdwPrintQueue
+pPrinterInfo.Allocate(cbPrinterInfo)
+EnumPrintersW(0x00000002, nullptr, 2, pPrinterInfo.Elements, cbPrinterInfo, &cbPrinterInfo, &cPrinters)
+printer
+SetupMxdwAI::UninstallMxdwPrintQueue failed to open printer '{printer}' with error {error}.
+SetupMxdwAI::UninstallMxdwPrintQueue failed to delete printer '{printer}' with error {error}.
+SetupMxdwAI: UninstallMxdwPrintQueue(): The MXDW's Print Queue has been successfully uninstalled.
+Windows::WCP::SetupMxdwAI::UninstallMxdwDriver
+DeletePrinterDriverExW(nullptr, nullptr, const_cast<LPWSTR>(g_wszpDriverNameValue), 0x00000001, 0)
+DeletePrinterDriverPackageW(nullptr, pszInfPath, nullptr)
+SetupMxdwAI: UninstallMxdwDriver(): The MXDW driver has been successfully uninstalled.
+SetupMxdwAI::IsMxdwPrintQueueInstalled failed to enumerate printers with HRESULT {hr}.
+INSTALLED
+NOT INSTALLED
+SetupMxdwAI: IsMxdwPrintQueueInstalled(): The MXDW Print Queue is {str}
+SetupMxdwAI::GetMxdwDriverInfPath failed to enumerate printers with HRESULT {hr}.
+SetupMxdwAI::GetMxdwDriverInfPath failed to allocate memory.
+SetupMxdwAI: IsMxdwPrintDriverInstalled(): The MXDW Print Driver is {str}
+Windows::WCP::SetupMxdwAI::SetMxdwUninstallRegistryKeys
+::RegOpenKeyExW(hKey, lpSubKey, ulOptions, samDesired, &ahkSubKey)
+::RegSetValueExW(ahkSubKey, g_wszRemoveMXDWKeyValueName, 0, ( 4ul ), (const BYTE *)&dwRemoveMXDW, sizeof(dwRemoveMXDW) )
+SetupMxdwAI: SetMxdwUninstallRegistryKeys(): SUCCESSFUL!.
+Windows::WCP::SetupMxdwAI::SetMxdwUninstallRegistryKeysOffline
+services->get_System(system.GetInitPointer())
+system->OpenRegistryKey( 0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))) | ((((0x00020000L)) | (0x0002) | (0x0004)) & (~(0x00100000L))), szSubKey, &subKey, &disposition )
+((HRESULT)0x80040150L)
+subKey->SetValue( 0, szValue, ( 4ul ), (const BYTE *)&dw, sizeof(dw), 0 )
+SetupMxdwAI: SetMxdwUninstallRegistryKeysOffline(): SUCCESSFUL!.
+Windows::WCP::SetupMxdwAI::GetTheMxdwStagedPath
+static_cast<DWORD>(122L)
+Windows::WCP::SetupMxdwAI::InstallTheMxdwDriverAndQueue
+InstallMxdwDriverStoreAndDriver()
+Windows::WCP::SetupMxdwAI::InstallMxdwDriverStoreAndDriver
+GetTheMxdwStagedPath(pszMxdwStagedPath, (sizeof(pszMxdwStagedPath) / sizeof(pszMxdwStagedPath[0])))
+Windows NT x86
+StringCchCopyW(szInfFullPath, (sizeof(*RtlpNumberOf(szInfFullPath))), pszMxdwStagedPath)
+StringCchCatW(szInfFullPath, (sizeof(*RtlpNumberOf(szInfFullPath))), L"\\")
+StringCchCatW(szInfFullPath, (sizeof(*RtlpNumberOf(szInfFullPath))), g_wszInfName)
+::UploadPrinterDriverPackageW(pwszServer, szInfFullPath, pwszEnvironment, dwFlags, hwnd, szDriverStorePath, &cchDriverStorePath )
+::InstallPrinterDriverFromPackageW(pwszServer, pwszInfPath, g_wszpDriverNameValue, pwszEnvironment, dwFlags)
+SetupMxdwAI: InstallMxdwDriverStoreAndDriver(): The MXDW's Driver Store and Driver successfully installed.
+RemoveMXDW
+\Registry\Machine\System\CurrentControlSet\Control\Print
+System\CurrentControlSet\Control\Print
+SetupLprAI
+onecore\base\wcp\plugins\printadvancedinstaller\dll\setuplprai.cpp
+Windows::WCP::SetupLprAI::BasicInstaller::Install
+SetupLprAI Install called 
+SetupLprAI::BasicInstaller::Install cannot install monitor because it is already installed.
+SetupLprAI::BasicInstaller::Install cannot install monitor because the spooler is not running.
+SetupLprAI Install Called in a phase other than PHASE_CMI_PASS_ONLINE 
+Windows::WCP::SetupLprAI::BasicInstaller::Uninstall
+SetupLprAI::BasicInstaller::Uninstall cannot remove monitor because it has already been removed.
+SetupLprAI::BasicInstaller::Uninstall cannot remove monitor because the spooler is not running.
+SetupLprAI Uninstall Called in a phase other than PHASE_CMI_PASS_ONLINE 
+LPRMon.dll
+LPR Port
+SetupWfsAI
+SetupWfs Advanced Installer called while the print spooler is offline.  The installation 
+will complete when the spooler is next started.
+onecore\base\wcp\plugins\printadvancedinstaller\dll\setupwfsai.cpp
+Windows::WCP::SetupWfsAI::BasicInstaller::Install
+SetWfsRegistryKeyOffline(Services, &dwKeyValue, pszFilename, (cchActualSize + 1)*sizeof(WCHAR))
+WaitForPendingOfflineOperation()
+InstallLocalFaxPrinter()
+SetupWFSAI Install Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+SetupWfs Advanced Installer called while the print spooler is offline.  The uninstallation 
+will complete when the spooler is next started.
+Windows::WCP::SetupWfsAI::BasicInstaller::Uninstall
+ClearWfsRegistryKeyOnline()
+UninstallLocalFaxPrinter()
+SetupWfsAI Uninstall Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+Windows::WCP::SetupWfsAI::SetWfsRegistryKeyOffline
+RtlInitLUnicodeStringFromNullTerminatedString(szFaxServicingKey, &szSubKey)
+RtlInitLUnicodeStringFromNullTerminatedString(szFaxServicingOperation, &szServiceFaxValue)
+system->OpenRegistryKey(0, ((((0x00020000L)) | (0x0002) | (0x0004)) & (~(0x00100000L))), szSubKey, &subKey, &disposition)
+subKey->SetValue(0, szServiceFaxValue, ( 4ul ), (const BYTE *)pdwKeyValue, sizeof(*pdwKeyValue), 0 )
+SetupWfsAI: SetWfsRegistryKeyOffline(): SUCCESSFUL!.
+Windows::WCP::SetupWfsAI::ClearWfsRegistryKeyOnline
+RegOpenKeyExW((( HKEY ) (ULONG_PTR)((LONG)0x80000002) ), szFaxServicingKeyOnline, 0, (0x0001) | (0x0002), &hKey )
+ClearWfsRegistryKeyOnline was unable to clear the serviceFax registry key with error {error}.
+Microsoft Shared Fax Monitor
+FXSMON.DLL
+Windows::WCP::SetupWfsAI::InstallLocalFaxPrinter
+IsLocalFaxPrinterInstalled(&bFaxPrinterPresent)
+InstallFaxPrinterDrivers()
+SetupWfsAI::InstallLocalFaxPrinter was unable to add monitor because it is already installed.
+RefreshPorts()
+AddLocalFaxPrinter(L"Fax", 0)
+OnEachSendToPathDo(CreateFaxRecipientShortcuts)
+SetupWfsAI::UninstallLocalFaxPrinter was unable to remove fax recipient shortcuts with HRESULT {hr}.
+Windows::WCP::SetupWfsAI::UninstallLocalFaxPrinter
+GetFirstLocalFaxPrinterName(wszLocalFaxPrnName, 260)
+OpenPrinterW(wszLocalFaxPrnName, &hPrinter, &PrinterDefaults)
+DeletePrinter(hPrinter)
+SetupWfsAI::UninstallLocalFaxPrinter was unable to delete the monitor because it has already been deleted.
+SetupWfsAI::UninstallLocalFaxPrinter was unable to delete the monitor because it is still in use.
+IsFaxDriversPresent(&bFaxPrinterPresent)
+Microsoft Shared Fax Driver
+SetupWfsAI::UninstallLocalFaxPrinter was unable to delete the driver because it is in use.
+Windows::WCP::SetupWfsAI::InstallFaxPrinterDrivers
+IsFaxDriversPresent(&bIsPresent)
+GetInfFilePath(wszInfFilePath, 260)
+InstallPrinterDriverFromPackageW(0, wszInfFilePath, L"Microsoft Shared Fax Driver", 0, 0 )
+Windows::WCP::SetupWfsAI::WaitForPendingOfflineOperation
+RegOpenKeyExW((( HKEY ) (ULONG_PTR)((LONG)0x80000002) ), szFaxServicingKeyOnline, 0, (0x0001) | (0x0010), &hKey )
+RegNotifyChangeKeyValue(hKey, 0, (0x00000004L) | (0x10000000L), notifyEvent, 1)
+static_cast<DWORD>(1460L)
+Windows::WCP::SetupWfsAI::IsFaxDriversPresent
+Not-null check failed: lpbIsPresent
+((HRESULT)0x8000FFFFL)
+pPrinterDriverInfo.Allocate(cb)
+EnumPrinterDriversW(0, 0, 1, pPrinterDriverInfo.Elements, cb, &cb, &dwNumPrinterDrivers )
+Windows::WCP::SetupWfsAI::GetInfFilePath
+Not-null check failed: lpwzInfFilePath
+%windir%\inf\prnms002.inf
+SetupGetInfDriverStoreLocationW(szExpandedFilePath, 0, 0, lpwzInfFilePath, cchMaxInfFilePath, 0)
+Windows::WCP::SetupWfsAI::OnEachSendToPathDo
+RegOpenKeyExW((( HKEY ) (ULONG_PTR)((LONG)0x80000002) ), c_szProfileListKey, 0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), &hkeyProfileList )
+dwError
+RegOpenKeyExW(hkeyProfileList, szSubkey, 0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), &hkey)
+RegGetValueW(hkey, nullptr, c_szProfileImagePathValue, 0x00000004 | 0x00000002, nullptr, reinterpret_cast<LPBYTE>(szSendToPath), &cbValue)
+StringCchCatW(szSendToPath, (sizeof(*RtlpNumberOf(szSendToPath))), L"\\")
+StringCchCatW(szSendToPath, (sizeof(*RtlpNumberOf(szSendToPath))), c_szSendToPath)
+pfAction(szSendToPath)
+SetupWfsAI::CreateFaxRecipientShortcuts was unable to load description string with HRESULT {hr}.
+SetupWfsAI::OnEachSendToPathDo was unable to expand environment strings with error {error}.
+SetupWfsAI::CreateFaxRecipientShortcuts was unable to load shortcut name string with HRESULT {hr}.
+%s\%s.lnk
+SetupWfsAI::CreateFaxRecipientShortcuts was unable to create link with HRESULT {hr}.
+SetupWfsAI::CreateFaxRecipientShortcuts was unable to create target path string with HRESULT {hr}.
+%s\*.lnk
+%s\%s
+SetupWfsAI::RemoveFaxRecipientShortcuts was unable to delete file '{file}' with error {error}.
+SetupWfsAI::RemoveFaxRecipientShortcuts was unable to full path string with HRESULT {hr}.
+SetupWfsAI::RemoveFaxRecipientShortcuts shortcuts have already been removed.
+SetupWfsAI::RemoveFaxRecipientShortcuts was unable to create search format string with HRESULT {hr}.
+Windows::WCP::SetupWfsAI::CreateLink
+psl.CoCreateInstance(CLSID_ShellLink, 0, CLSCTX_INPROC_SERVER)
+psl->SetPath(lpszPathObj)
+psl->SetDescription(lpszDesc)
+psl->SetIconLocation(lpszIconPath, iIconNdx)
+psl->SetArguments(lpszArgument)
+psl->QueryInterface(IID_IPersistFile, (LPVOID*)&ppf)
+ppf->Save(lpszPathLink, 1)
+SetupWfsAI::IsFaxRecepientShortcut was unable to expand environment strings for WFS path with HRESULT {hr}.
+SetupWfsAI::IsFaxRecepientShortcut was unable to initialize COM with HRESULT {hr}.
+SetupWfsAI::IsFaxRecepientShortcut was unable to CoCreate IShellLink with HRESULT {hr}.
+SetupWfsAI::IsFaxRecepientShortcut was unable to expand environment strings for target path with HRESULT {hr}.
+SetupWfsAI::IsFaxRecepientShortcut was unable to IShellLink::GetPath with HRESULT {hr}.
+SetupWfsAI::IsFaxRecepientShortcut was unable to IPersistFile::Load with HRESULT {hr}.
+SetupWfsAI::IsFaxRecepientShortcut was unable to query interface for IPersistFile with HRESULT {hr}.
+Windows::WCP::SetupWfsAI::RefreshPorts
+pBuff.Allocate(cbNeeded + 200)
+EnumPortsW(0, 1, pBuff.Elements, cbNeeded + 200, &cbNeeded, &cReturned)
+/SendTo
+@%windir%\system32\FXSRESM.dll,-120
+%windir%\System32\WFSR.dll
+@%windir%\system32\FXSRESM.dll,-121
+AppData\Roaming\Microsoft\Windows\SendTo
+ProfileImagePath
+Software\Microsoft\Windows NT\CurrentVersion\ProfileList
+serviceFax
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print
+\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print
+FSetupMpdwAI
+Setup MPDW AI Installation Called Offline.
+onecore\base\wcp\plugins\printadvancedinstaller\dll\setupmpdwai.cpp
+Windows::WCP::SetupMpdwAI::BasicInstaller::Install
+ClearMpdwUninstallRegistryKeysOffline(Services)
+Setup MPDW AI Installation Called Online. 
+InstallMpdwPrintQueue()
+InstallTheMpdwDriverAndQueue()
+ClearMpdwUninstallRegistryKeys()
+SetupMpdwAI Install Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+Windows::WCP::SetupMpdwAI::BasicInstaller::Uninstall
+Setup MPDW AI Uninstallation Called Offline.
+SetMpdwUninstallRegistryKeysOffline(Services)
+Setup MPDW AI Uninstallation Called Online.
+UninstallMpdwPrintQueue()
+SetMpdwUninstallRegistryKeys()
+SetupMpdwAI Uninstall Called in a phase besides PHASE_CMI_PASS_ONLINE or PHASE_CSI_OFFLINE
+%SystemRoot%\system32\spool\tools\Microsoft Print To PDF
+Microsoft Print to PDF
+Microsoft Print To PDF
+prnms009.Inf
+SetupMpdwAI: InstallMpdwPrintQueue(): ::AddPrinter() FAILED!
+Windows::WCP::SetupMpdwAI::InstallMpdwPrintQueue
+SetupMpdwAI: InstallMpdwPrintQueue(): The MPDW's Print Queue has been successfully installed.
+Windows::WCP::SetupMpdwAI::UninstallMpdwPrintQueue
+SetupMpdwAI::UninstallMpdwPrintQueue failed to open printer '{printer}' with error {error}.
+SetupMpdwAI::UninstallMpdwPrintQueue failed to delete printer '{printer}' with error {error}.
+SetupMpdwAI: UninstallMpdwPrintQueue(): The MPDW's Print Queue has been successfully uninstalled.
+Windows::WCP::SetupMpdwAI::UninstallMpdwDriver
+SetupMpdwAI: UninstallMpdwDriver(): The MPDW driver has been successfully uninstalled.
+SetupMpdwAI::IsMpdwPrintQueueInstalled failed to enumerate printers with HRESULT {hr}.
+SetupMpdwAI: IsMpdwPrintQueueInstalled(): The MPDW Print Queue is {str}
+SetupMpdwAI::GetMpdwDriverInfPath failed to enumerate printers with HRESULT {hr}.
+SetupMpdwAI::GetMpdwDriverInfPath failed to allocate memory.
+SetupMpdwAI: IsMpdwPrintDriverInstalled(): The MPDW Print Driver is {str}
+Windows::WCP::SetupMpdwAI::SetMpdwUninstallRegistryKeys
+::RegSetValueExW(ahkSubKey, g_wszRemoveMPDWKeyValueName, 0, ( 4ul ), (const BYTE *)&dwRemoveMPDW, sizeof(dwRemoveMPDW) )
+SetupMpdwAI: SetMpdwUninstallRegistryKeys(): SUCCESSFUL!.
+Windows::WCP::SetupMpdwAI::SetMpdwUninstallRegistryKeysOffline
+SetupMpdwAI: SetMpdwUninstallRegistryKeysOffline(): SUCCESSFUL!.
+Windows::WCP::SetupMpdwAI::GetTheMpdwStagedPath
+Windows::WCP::SetupMpdwAI::InstallTheMpdwDriverAndQueue
+InstallMpdwDriverStoreAndDriver()
+Windows::WCP::SetupMpdwAI::InstallMpdwDriverStoreAndDriver
+GetTheMpdwStagedPath(pszMpdwStagedPath, (sizeof(pszMpdwStagedPath) / sizeof(pszMpdwStagedPath[0])))
+StringCchCopyW(szInfFullPath, (sizeof(*RtlpNumberOf(szInfFullPath))), pszMpdwStagedPath)
+SetupMpdwAI: InstallMpdwDriverStoreAndDriver(): The MPDW's Driver Store and Driver successfully installed.
+RemoveMPDW
+\Registry\Machine\System\CurrentControlSet\Control\Print
+System\CurrentControlSet\Control\Print
+Software\Microsoft\Fax\Setup
+IsFaxPrinterShared
+SHRFAX:
+MemAlloc() failed, size=%d
+Microsoft-Windows-Fax-Common-EnableServerPolicy
+slc.dll
+SLGetWindowsInformationDWORD
+RegOpenKeyEx() failed, ec=%d
+RegSetValueEx() failed[%s], ec=%d
+RegQueryValueEx() failed[%s], ec=%d
+Software\Microsoft\Fax\Client
+DebugLevel
+uH_Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+lntdll.dll
+RtlNtStatusToDosErrorNoTeb
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+RtlRegisterFeatureConfigurationChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlNotifyFeatureUsage
+NtQueryWnfStateData
+NtUpdateWnfStateData
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+onecore\internal\sdk\inc\wil\Staging.h
+WilStaging_02
+Local\SM0:%lu:%lu:%hs
+RSDS+
+PrintAdvancedInstaller.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.edata
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+\$$PFS
+t$4Pj
+79\$(t
+L$4_^[3
+D$8SV
+\$$PSS3
+\$4FVSS
+D$4PS
+\$<Pj
+u*Shh
+79\$0t
+L$D_^[3
+D$ 45
+tdWh49
+HWh(H
+HWhxI
+D$$VW3
+u1WhPQ
+L$,_^3
+9\$,t
+9\$,t
+WWhHT
+SSSSh|e
+WSVWW
+VVVVP
+jz_f;
+PSh`*
+PSh`*
+PSh`*
+D$PPWhx]
+t29\$
+WShlj
+PQRj+
+u&f90t
+SVWjTj
+v$h<v
+vThtv
+v h(w
+Z\9;s
+u$hlx
+QQSVW3
+97s/j
+PQQSVW
+D$(PQ
+T$0QQV
+L$4^3
+PQSVW
+PQSVW
+93uIV
+93uIV
+&PWSV
+QQhxw
+PQQSVW
+Y__^[
+Y__^[
+PrintAdvancedInstaller.DLL
+InstallLocalFaxPrinter
+UninstallLocalFaxPrinter
+DllCanUnloadNow
+DllCsiGetHandler
+h8;;X
+:eop`
+.?AVResultException@wil@@
+.?AVexception@@
+w3svc/1/root/printers
+%ws%c.printer,%ws\msw3prt.dll,1,GET,POST%c
+application
+system.webServer/security/applicationDependencies
+system.webServer/security/isapiCgiRestriction
+MACHINE/WEBROOT/APPHOST
+%windir%\system32\wfs.exe
+%windir%\system32\wfs.exe
+_purecall
+_vsnwprintf
+_wcsnicmp
+_wcsicmp
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+_except_handler4_common
+msvcrt.dll
+__CxxFrameHandler3
+_lock
+_unlock
+__dllonexit
+_onexit
+GetLastError
+DisableThreadLibraryCalls
+DeleteCriticalSection
+InitializeCriticalSection
+HeapDestroy
+OpenSCManagerW
+OpenServiceW
+QueryServiceStatusEx
+CloseServiceHandle
+CoUninitialize
+CoInitializeEx
+RegOpenKeyExW
+CompareStringW
+CoCreateInstance
+RegCloseKey
+RegSetValueExW
+ExpandEnvironmentStringsW
+GetModuleFileNameW
+RegDeleteValueW
+GetTickCount64
+RegQueryValueExW
+CreateEventW
+RegNotifyChangeKeyValue
+WaitForSingleObject
+RegEnumKeyExW
+RegGetValueW
+FindFirstFileW
+FindClose
+SHLoadIndirectString
+DeleteFileW
+FindNextFileW
+CloseHandle
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-service-management-l1-1-0.dll
+api-ms-win-service-management-l2-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-shlwapi-obsolete-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+OLEAUT32.dll
+RtlRaiseStatus
+ntdll.dll
+?RtlTraceVa@Rtl@WCP@Windows@@YIXKKPAU_RTL_TRACING_FACILITY@123@QBDKPAD@Z
+?RtlTraceFormat_PCULONG@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlReportErrorOrigination
+?RtlTraceFormat_PCHRESULT@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCSTR@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCWSTR@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlInitLUnicodeStringFromNullTerminatedString
+ConvertNtStatusToHResult
+WCP.dll
+SetupGetInfDriverStoreLocationW
+SETUPAPI.dll
+OpenPrinterW
+SetPrinterDataW
+ClosePrinter
+EnumPrintProcessorsW
+AddPrinterW
+EnumPrintersW
+DeletePrinter
+DeletePrinterDriverExW
+DeletePrinterDriverPackageW
+EnumPrinterDriversW
+UploadPrinterDriverPackageW
+InstallPrinterDriverFromPackageW
+AddMonitorW
+DeleteMonitorW
+EnumPortsW
+WINSPOOL.DRV
+memcpy_s
+??1exception@@UAE@XZ
+??0exception@@QAE@XZ
+??0exception@@QAE@ABV0@@Z
+_vsnprintf_s
+memmove_s
+?terminate@@YAXXZ
+??1type_info@@UAE@XZ
+SetLastError
+TraceMessage
+HeapFree
+HeapAlloc
+GetProcessHeap
+GetVersionExW
+LoadLibraryW
+GetProcAddress
+FreeLibrary
+OutputDebugStringW
+GetModuleFileNameA
+CreateSemaphoreExW
+EnterCriticalSection
+ReleaseSemaphore
+GetModuleHandleExW
+LeaveCriticalSection
+InitializeCriticalSectionEx
+WaitForThreadpoolTimerCallbacks
+ReleaseMutex
+FormatMessageW
+ReleaseSRWLockExclusive
+CloseThreadpoolTimer
+AcquireSRWLockExclusive
+WaitForSingleObjectEx
+OpenSemaphoreW
+SetThreadpoolTimer
+ReleaseSRWLockShared
+CreateThreadpoolTimer
+CreateMutexExW
+AcquireSRWLockShared
+GetModuleHandleW
+DebugBreak
+IsDebuggerPresent
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+SHChangeNotify
+SHGetMalloc
+SHGetSpecialFolderLocation
+SHELL32.dll
+GetPrinterW
+SetPrinterW
+_CxxThrowException
+memcmp
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+CSI Print Advanced Installer plug-in
+FileVersion
+10.0.22621.440 (WinBuild.160101.0800)
+InternalName
+PrintAdvancedInstaller.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+PrintAdvancedInstaller.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.440
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 181p1
+?!?B?F?L?P?V?Z?v?
+0+0D0h0}0
+111@1E1\1a1h1
+192D2p2
+2&393I3f3p3
+4+4>4N4k4z4
+5,5B5T5`5y5~5
+61666=6b6i6p6u6|6
+7*787
+8(8b8l8z8
+8"9,9:9H9
+:U:c:
+;/;F;P;X;j;p;w;~;
+<%<+<1<7<J<T<
+<,=b=m=
+>'>2>A>S>]>q>
+?#?(?L?Y?_?k?
+0(050P0[0j0|0
+1D1e1o1w1
+2/2M2n2
+2 3*3<3L3`3
+4-4F4K4R4W4g4l4w4|4
+4:5I5[5k5
+7)797M7}7
+8@8E8S8Y8r8x8
+9%9*929K9Q9a9v9|9
+:):/:I:R:X:d:t:
+;,;:;J;U;i;o;
+<"<)<.<S<c<m<s<z<
+=6=H=X=l=v=|=
+>.>4>_>m>}>
+?#?a?s?
+0 040U0g0w0
+0 1,1d1k1r1~1
+2+2W2i2
+2P3\3k3u3
+4G4M4]4r4x4
+4)555G5W5k5q5x5
+666@6O6Y6g6
+7"71777
+8&858;8
+9#959E9Y9
+:,:7:H:M:T:p:
+;';1;9;G;M;q;
+<5<U<r<|<
+<!='=1=@=F=
+>I>U>s>
+>.?:?P?V?`?h?n?
+0>0w0
+1(1I1O1_1t1z1
+2/252b2t2
+4@4R4b4v4
+5 5:5@5P5e5k5s5
+6/6I6Y6d6x6~6
+6$747D7X7j7
+888J8Z8n8
+9!929B9V9\9c9
+:$:*:O:w:
+:[;g;u;
+>%>C>R>\>j>
+>"?7?p?w?
+1%252@2T2Z2q2
+30353<3\3l3
+4!4'4.4G4[4
+80959a9g9
+:@:T:Y:x:
+;%;7;<;d;u;z;
+<(<2<;<C<I<t<
+=&=1=?=L=[=a=f=z=
+>D>J>T>c>i>
+> ?)?F?P?]?b?j?o?v?{?
+0)030;0I0O0f0k0
+1)131;1I1O1Y1^1
+2J2T2m2t2y2
+3H3N3X3c3|3
+4>4F4]4d4i4p4u4
+5!575O5X5j5r5w5
+6!6F6V6]6k6q6|6
+7Y7o7u7
+788>8H8P8V8s8
+8Z9d9
+:2:=:B:
+<%<0<><K<e<j<
+=/=7=<=K=S=]=j=
+>O>t>
+?&?+?\?b?
+0*0O0t0
+1&1+1\1b1
+2*2A2e2t2~2
+3<3L3S3a3g3~3
+4H4\4m4|4
+5.5F5_5l5y5
+646R6\6w6
+777D7Q7~7
+8/8@8J8[8s8
+9.969@9M9
+:3:<:J:d:
+;3;A;q;|;
+<#<)<9<D<O<]<l<y<
+= =*=2=8=U=l=t=
+><>F>Z>e>s>
+?L?R?b?m?s?
+0$0;0E0b0m0|0
+1'2A2
+3!3'3@3V3l3
+4+424E4q4w4
+5)575D5K5P5c5
+6-6;6I6W6_6p6
+8*81868=8B8Y8^8e8j8
+9&949:9J9X9g9q9
+:#:1:@:J:X:m:v:
+;D;Z;f;k;q;
+<Q<Z<
+=I=P=_=f=k=
+>A>f>
+?8?G?
+0 0^0~0
+1D1O1o1
+1%2Z2d2i2
+3D3P3]3b3r3
+3&404;4L4_4j4x4
+5,5K5Z5
+6%6*61666_6
+7 7*7>7I7W7d7s7|7
+8%808I8P8U8n8
+9%9*9V9k9
+:O:Y:r:y:~:
+;0;E;X;j;u;
+<,<2<:<@<Y<h<r<
+=9=I=P=^=d=t=y=
+>'>7>=>G>V>\>
+?"?2?=?C?
+000C0]0i0w0
+1I1S1a1
+1"2,2W2e2u2
+3'4,4B4e4o4v4{4
+425<5C5H5_5z5
+6"6H6P6V6m6
+6I7N7d7
+8!8&8:8@8E8a8i8w8~8
+9 949:9?9T9]9b9v9|9
+:(:;:O:V:c:n:
+;$;G;L;Q;
+=2=]=c=n=u=
+=0>;>G>U>a>
+0&0=0X0}0
+0"1L1X1]1b1
+1W2i2
+323X3
+474O4g4
+5*535
+5(616A6J6Z6c6y6
+8)878b8o8
+;.<8<D<
+>'>p>
+0,181@1P1X1m1u1
+2"2,2>2[2g2p2|2
+4J4V4
+5 5=5_5h5n5s5
+6'606<6D6T6
+6"787J7{7
+768B8N8V8w8
+9&9=9V9b9x9
+:$;e;};
+;0<[<y<
+=9>D>_>i>A?L?
+1,1J1x1
+2!3L3
+638:8
+1-13191C1M1\1y1
+2'292
+3*3A3R3k3
+414>4
+4M5m5
+566C6d6
+6N7\7
+858;8O8|8
+959x9~9
+9::N:
+;);5;=;S;[;
+<H<W<q<
+=(=N=[=c=k=q=
+=C>J>f>m>
+?q?x?
+0O0$1q1
+2=3N3]3d3
+4L6S6
+:2:E:M:l:t:
+;-;7;F;`;
+<#=:=f=
+=V>l>
+>%?>?X?n?
+070A0W0a0p0
+0?1'2,212^2n2s2
+3'3/363<3B3p3
+4!696
+6 7N7r7
+888A8L8S8k8q8w8}8
+9&9,979=9I9Y9b9y9
+:":5:A:M:Y:e:
+<.<C<R<Z<i<u<
+=?=H=
+>*>{>
+>S?_?k?
+0#0F0i0
+1B1r1
+252X2
+4(4C4R4q4
+5<5P5p5x5
+6(646T6`6
+787X7`7
+8 8(8T8X8x8
+0 0@0D0d0h0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+9Ocr4
+Ge]L*
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+229879+4675790
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+jFtg)]
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,SFVvCrqgoFwbXUbR0jZxvex3pP0e+ffL8EsUrBH2zqo=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+TDHlr
+8NXG`
+20220720035649.892Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:DD8C-E337-2FAE1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211202190519Z
+230228190519Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:DD8C-E337-2FAE1%0#
+Microsoft Time-Stamp Service0
+>e-f)2
+i_>iQJ
+1y;V}
+8$i9cw
+42Zu.
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+G3Mc,
+9O2sI
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:DD8C-E337-2FAE1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220720065039Z
+20220721065039Z0w0=
+1/0-0
+1(0&0
+kYu x
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+ @1l3
+R\N (

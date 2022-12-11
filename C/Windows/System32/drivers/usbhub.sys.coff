@@ -1,0 +1,215 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\usbhub.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    WMILIB.SYS
+    ksecdd.sys
+    USBD.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00700C8 Import Address Table
+             1C0070618 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4CD KeInitializeEvent
+                         3F2 IoSetDeviceInterfacePropertyData
+                         5F1 MmMapLockedPagesSpecifyCache
+                         44F IofCompleteRequest
+                         907 RtlIntegerToUnicodeString
+                         585 KeWaitForSingleObject
+                         538 KeReleaseSemaphore
+                         307 IoCancelIrp
+                         353 IoFreeIrp
+                         54A KeResetEvent
+                         9FF RtlWriteRegistryValue
+                         3A9 IoOpenDeviceRegistryKey
+                         B17 ZwClose
+                         BE1 ZwSetValueKey
+                         833 RtlCompareMemory
+                         522 KeReadStateEvent
+                         3B9 IoQueueWorkItem
+                         2F9 IoAllocateWorkItem
+                         398 IoInvalidateDeviceState
+                         71F PoSetPowerState
+                         4D4 KeInitializeSemaphore
+                         488 KeCancelTimer
+                         2F4 IoAllocateIrp
+                         359 IoFreeWorkItem
+                         391 IoInitializeIrp
+                         397 IoInvalidateDeviceRelations
+                         6DA PoCallDriver
+                         718 PoRequestPowerIrp
+                         70A PoGetSystemWake
+                         728 PoStartNextPowerIrp
+                         721 PoSetSystemWake
+                         339 IoCsqRemoveNextIrp
+                         336 IoCsqInsertIrp
+                         A6E SeTokenIsAdmin
+                         A5C SeReleaseSubjectContext
+                         36E IoGetDeviceProperty
+                         A74 SeUnlockSubjectContext
+                         A43 SeLockSubjectContext
+                         35F IoGetAttachedDeviceReference
+                         A1F SeCaptureSubjectContext
+                         3D2 IoReleaseRemoveLockAndWaitEx
+                         812 RtlAppendUnicodeStringToString
+                         33F IoDetachDevice
+                         823 RtlCheckRegistryKey
+                         52B KeRegisterBugCheckReasonCallback
+                         33C IoDeleteDevice
+                         302 IoBuildDeviceIoControlRequest
+                         34F IoForwardIrpSynchronously
+                         2FE IoAttachDeviceToDeviceStack
+                          EE ExFreePoolWithTag
+                         49C KeDeregisterBugCheckReasonCallback
+                         5DB MmGetSystemRoutineAddress
+                         3EC IoReuseIrp
+                         323 IoCreateDevice
+                         441 IoWMIRegistrationControl
+                         C4C _vsnwprintf
+                         813 RtlAppendUnicodeToString
+                         855 RtlCreateRegistryKey
+                         8B3 RtlFreeUnicodeString
+                         8D4 RtlGetPersistedStateLocation
+                         B26 ZwCreateKey
+                         84C RtlCopyUnicodeString
+                         980 RtlQueryRegistryValues
+                         BA8 ZwQueryValueKey
+                         B69 ZwOpenKey
+                         531 KeReleaseInStackQueuedSpinLock
+                         46C KeAcquireInStackQueuedSpinLock
+                         58D KseQueryDeviceFlags
+                         92D RtlIsNtDdiVersionAvailable
+                         3F4 IoSetDevicePropertyData
+                         36F IoGetDevicePropertyData
+                         89C RtlFindMessage
+                         9BB RtlStringFromGUID
+                         334 IoCsqInitialize
+                         8F4 RtlInitializeBitMap
+                         35E IoGetAttachedDevice
+                         716 PoRegisterPowerSettingCallback
+                         72A PoUnregisterPowerSettingCallback
+                         86D RtlDeleteRegistryValue
+                         B45 ZwEnumerateValueKey
+                          92 EtwSetInformation
+                          94 EtwUnregister
+                          95 EtwWrite
+                          8F EtwRegister
+                         119 ExNotifyBootDeviceRemoval
+                         465 KdRefreshDebuggerNotPresent
+                         12B ExRegisterBootDevice
+                          70 DbgPrint
+                         BF2 ZwUpdateWnfStateData
+                          C0 ExAllocatePoolWithQuotaTag
+                         4D7 KeInitializeTimer
+                         4D5 KeInitializeSpinLock
+                         10C ExInterlockedInsertTailList
+                         8F1 RtlInitUnicodeString
+                         6CB ObfDereferenceObject
+                         583 KeWaitForMultipleObjects
+                         44E IofCallDriver
+                         51B KeQueryTimeIncrement
+                         6CD ObfReferenceObject
+                         3F0 IoSetCompletionRoutineEx
+                          BD ExAllocatePool2
+                         559 KeSetEvent
+                         3D0 IoRegisterShutdownNotification
+                         539 KeReleaseSpinLock
+                         3F3 IoSetDeviceInterfaceState
+                         487 KeBugCheckEx
+                         4C9 KeInitializeDpc
+                         4B9 KeGetCurrentIrql
+                         475 KeAcquireSpinLockRaiseToDpc
+                         3D3 IoReleaseRemoveLockEx
+                         499 KeDelayExecutionThread
+                         3C7 IoRegisterDeviceInterface
+                         2EB IoAcquireRemoveLockEx
+                         394 IoInitializeRemoveLockEx
+                         569 KeSetTimer
+                         C4F _wcsicmp
+                         C9F wcscpy_s
+                         C9B wcscat_s
+                         BF7 __C_specific_handler
+                         72E ProbeForRead
+
+    HAL.dll
+             1C0070000 Import Address Table
+             1C0070550 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    WMILIB.SYS
+             1C0070040 Import Address Table
+             1C0070590 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WmiSystemControl
+                           3 WmiFireEvent
+                           2 WmiCompleteRequest
+
+    ksecdd.sys
+             1C0070088 Import Address Table
+             1C00705D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1B BCryptHashData
+                           A BCryptDestroyHash
+                           4 BCryptCloseAlgorithmProvider
+                          14 BCryptFinishHash
+                          1F BCryptOpenAlgorithmProvider
+                          1A BCryptGetProperty
+                           5 BCryptCreateHash
+
+    USBD.SYS
+             1C0070010 Import Address Table
+             1C0070560 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B USBD_MarkDeviceAsDisconnected
+                          12 USBD_RemoveDeviceFromGlobalList
+                           3 USBD_AllocateHubNumber
+                           2 USBD_AddDeviceToGlobalList
+                          11 USBD_ReleaseHubNumber
+
+    WppRecorder.sys
+             1C0070060 Import Address Table
+             1C00705B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WppAutoLogTrace
+                          10 imp_WppRecorderReplay
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+
+  Summary
+
+        1000 .data
+        1000 .guids
+        2000 .idata
+        4000 .pdata
+        D000 .rdata
+        3000 .reloc
+        C000 .rsrc
+       5D000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

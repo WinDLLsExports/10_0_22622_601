@@ -1,0 +1,111 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft.windows.h..changer-driverclass_31bf3856ad364e35_10.0.22621.1_none_2a3b36ceba786bd8\mcd.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    CLASSPNP.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0006088 Import Address Table
+             1C00062A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2F2 IoAllocateDriverObjectExtension
+                         B39 ZwDeleteKey
+                         B43 ZwEnumerateKey
+                          C1 ExAllocatePoolWithTag
+                         BA8 ZwQueryValueKey
+                          EE ExFreePoolWithTag
+                         3FC IoSetHardErrorOrVerifyDevice
+                         821 RtlCharToInteger
+                         9D7 RtlUnicodeStringToAnsiString
+                         B17 ZwClose
+                         BE1 ZwSetValueKey
+                         35F IoGetAttachedDeviceReference
+                         B69 ZwOpenKey
+                         302 IoBuildDeviceIoControlRequest
+                         44E IofCallDriver
+                         4CD KeInitializeEvent
+                         585 KeWaitForSingleObject
+                          BD ExAllocatePool2
+                         2FE IoAttachDeviceToDeviceStack
+                         33E IoDeleteSymbolicLink
+                         363 IoGetConfigurationInformation
+                         33C IoDeleteDevice
+                         B26 ZwCreateKey
+                         8F1 RtlInitUnicodeString
+                         C4A _vsnprintf
+                         8B3 RtlFreeUnicodeString
+                         6CB ObfDereferenceObject
+                         3F3 IoSetDeviceInterfaceState
+                         4B9 KeGetCurrentIrql
+                         374 IoGetDriverObjectExtension
+                         C4C _vsnwprintf
+                         8AD RtlFreeAnsiString
+                         32F IoCreateSymbolicLink
+                         3C7 IoRegisterDeviceInterface
+                         C9D wcscmp
+
+    CLASSPNP.SYS
+             1C0006000 Import Address Table
+             1C0006218 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C ClassWmiCompleteRequest
+                          2A ClassReleaseRemoveLock
+                           D ClassEnableMediaChangeDetection
+                           C ClassDisableMediaChangeDetection
+                           7 ClassCompleteRequest
+                           A ClassDeleteSrbLookasideList
+                          18 ClassInitializeSrbLookasideList
+                          15 ClassInitialize
+                           8 ClassCreateDeviceObject
+                          36 ClassSetMediaChangeState
+                          3B ClassUpdateInformationInRegistry
+                          17 ClassInitializeMediaChangeDetection
+                          10 ClassGetDescriptor
+                           5 ClassClaimDevice
+                          32 ClassSendSrbSynchronous
+                           B ClassDeviceControl
+
+  Section contains the following exports for MCD.SYS
+
+    00000000 characteristics
+    F73379DB time date stamp
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001050 ChangerClassAllocatePool
+          2    1 00001080 ChangerClassDebugPrint
+          3    2 000014D0 ChangerClassFreePool
+          4    3 000014F0 ChangerClassInitialize
+          5    4 00001710 ChangerClassSendSrbSynchronous
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        1000 fothk

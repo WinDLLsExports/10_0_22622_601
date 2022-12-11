@@ -1,0 +1,1089 @@
+!This program cannot be run in DOS mode.
+Rich2CW
+.text
+`.no_bbt
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ext-ms-win-xaudio-platform-l1-1-0.dll
+ext-ms-win-xaudio-platform-l1-1-0
+api-ms-win-devices-query-l1-1-0.dll
+Unknown exception
+bad allocation
+bad array new length
+EffectCount must be greater than zero
+pEffectDescriptors cannot be NULL
+Invalid pEffect pointer 0x%p in effect descriptor %lu
+Invalid OutputChannels value %lu in effect descriptor %lu
+Effect descriptor: pEffect does not point to an XAPO
+Effect %lu invalid: XAPOs that declare XAPO_FLAG_INPLACE_REQUIRED must also declare XAPO_FLAG_INPLACE_SUPPORTED
+Effect %lu: cannot work with a single input buffer
+Effect %lu: cannot work with a single output buffer
+Effect %lu is in-place, but its input channel count %lu does not match its output channel count %lu
+pApoInterface->GetRegistrationProperties() failed with 0x%x
+XAudio2: 
+Cannot release the XAudio2 object in a callback
+Invalid NULL pointer 'ppvInterface'
+Cannot initialize the XAudio2 engine twice
+XAudio2Processor must specify at least one processor
+XAudio2Processor out of valid range
+Cannot specify shared SHAPE context and disallow the use of SHAPE at the same time
+Invalid NULL pointer 'pCallback'
+Cannot call RegisterForCallbacks() in an XAudio2 callback
+Cannot call UnregisterForCallbacks() in an XAudio2 callback
+No callback interface registered at 0x%p
+XAudio2 must be initialized first
+Must create a mastering voice first
+Cannot create voices in an XAudio2 callback
+ppSourceVoice
+Invalid NULL pointer '%s'
+pSourceFormat
+Invalid source format
+Invalid flags 0x%lx; only 0x%lx are valid
+Unrecognized format tag %lu; only PCM, ADPCM, or WMA formats supported
+n IEEE_FLOAT
+n ADPCM
+n XMA2
+ WMA2
+ WMA3
+It looks like this is a%s format that needs to be byte-reversed
+ADPCM wSamplesPerBlock must be 32, 64, 128, 256 or 512
+SHAPE (and XMA) has been disabled for this voice or engine instance
+ppSubmixVoice
+Unsupported audio channel count
+Unsupported audio sample rate
+This XAudio2 release only supports one mastering voice at a time
+ppMasteringVoice
+Cannot call StartEngine() in an XAudio2 callback
+Cannot stop the engine in an XAudio2 callback
+Invalid operation set ID
+pPerfData
+pDebugConfiguration
+quantumNumerator
+quantumDenominator
+processor
+Invalid pEffectChain argument
+Cannot destroy voices in an XAudio2 callback
+The voice still has %d senders
+source
+WMA source
+submix
+mastering
+DestroyVoice invoked on %s Voice (%p) which has already been destroyed
+pVoiceDetails
+Cannot change output voices in an XAudio2 callback
+This method isn't valid for mastering voices
+Invalid pSendList argument
+SendCount must be 0 iff pSends is NULL
+Send #%lu: flags (0x%lx) must be 0 or XAUDIO2_SEND_USEFILTER
+Sending multiple times to the voice at 0x%p
+Send #%lu: output voice pointer 0x%p is invalid
+Send #%lu: output voice 0x%p is invalid
+Send #%lu: cannot send audio to a source voice
+Submix voice at processing stage %lu cannot send to a voice at stage %lu
+All output voices must have the same sample rate
+pDestinationVoice can only be NULL if there is a single send
+Could not find destination voice 0x%p in send list
+Cannot change effect chains in an XAudio2 callback
+Cannot remove current effect chain that produces %u-channel audio, as it would make this voice revert to producing %u channels instead
+Cannot use an effect chain that produces %u-channel audio, as it would change the number of channels produced by this voice (currently %u)
+There is no effect chain on this voice
+Given effect index doesn't exist in the effect chain
+pbEnabled
+pParameters
+ParametersByteSize cannot be 0
+Invalid filter parameters
+Filter control is not available on this voice
+Send not found
+Filter control is not available on this send
+Volume level %.3f is not in valid range (-%.3f to %.3f)
+pfVolume
+pfVolumes
+Channels parameter doesn't match source voice format
+pfLevelMatrix
+SourceChannels doesn't match source voice format
+SetOutputMatrix invoked with a matrix that is too small! (%lux%lu instead of %lux%lu)
+DestinationChannels doesn't match destination voice format
+Unsupported audio channel count (must be 1 to 64)
+Unsupported audio sample rate (must be between 1kHz and 200kHz)
+MaxFrequencyRatio cannot be smaller than 1/1024
+MaxFrequencyRatio cannot be larger than 1024
+XAUDIO2_VOICE_NOSRC requires the sample rate to be divisible by %lu on this platform
+pSourceFormat->nSamplesPerSec = %luHz is not valid; the nearest valid rate is %luHz
+%luHz voice created with XAUDIO2_VOICE_NOSRC cannot send to a voice with a different sample rate (%luHz)
+pBuffer
+WMA parameters submitted to non-WMA voice
+Too many buffers queued on this voice (the maximum is 64)
+Invalid source buffer
+Buffer flags (0x%lx) must be 0 or XAUDIO2_END_OF_STREAM
+NULL pAudioData pointer
+Zero-length audio buffer
+AudioBytes (%lu) exceeds XAUDIO2_MAX_BUFFER_BYTES
+Loop count (%lu) must be XAUDIO2_LOOP_INFINITE (%u) or no greater than XAUDIO2_MAX_LOOP_COUNT (%u)
+Loop region (%lu-%lu) begins after play region (%lu-%lu)
+Loop region (%lu-%lu) ends before play region (%lu-%lu)
+Loop region (%lu-%lu) ends after play region (%lu-%lu)
+Loop start and length must be 0 if the loop count is 0
+AudioBytes (%lu) not aligned to the audio format's block size (%lu)
+Play region (%lu-%lu) must start at a multiple of ADPCMWAVEFORMAT.wSamplesPerBlock (%lu)
+Play region length (%lu) must be a multiple of ADPCMWAVEFORMAT.wSamplesPerBlock (%lu)
+Loop region (%lu-%lu) must start at a multiple of ADPCMWAVEFORMAT.wSamplesPerBlock (%lu)
+Loop region length (%lu) must be a multiple of ADPCMWAVEFORMAT.wSamplesPerBlock (%lu)
+Play region (%lu-%lu) does not start within the audio buffer (size %lu)
+Play region (%lu-%lu) does not end within the audio buffer (size %lu)
+Loop region (%lu-%lu) does not start within the audio buffer (size %u)
+Loop region (%lu-%lu) does not end within the audio buffer (size %u)
+pVoiceState
+Pitch control is not available on this voice
+Ratio may not be NAN/infinite
+pfRatio
+Can only change the source sample rate on voices with pitch control enabled
+Unsupported new sample rate (must be between 1kHz and 200kHz)
+Can only change the source sample rate on voices with no buffers queued
+Invalid NULL pointer 'pChannelMask'
+Too many buffers queued on this voice
+pBufferWMA
+XAudio2
+Audio
+\\?\SWD#
+LocalNonPcmOutputPackets
+LocalOutputPackets
+RemoteOutputPackets
+Software\Microsoft\Multimedia\LEAP
+!N/&"
+&HQo'
+!?,ZR
+y]2]^
+4 vY5
+8;jT9
+g?\5S@o
+,H'U8I
+[K\PsL
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklm
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLM
+ !"#$%&'()*+,-./0123456789:;<=>
+ !"#$%&'()*+,-./0123456789:;<
+ !"#$%&'()*+,-./0123456789:;<=
+ !"#$%&'()*+,-./0123456789:;
+ !"#$%&'()*+,-./0123456789:;<
+ !"#$%&'(
+ !"#$%&'(
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEF
+     !!!""""###$$$%%%&&&'''((())**++++,,---..///0001122334455667788999::;;<<==>>??@@AABBCCDEEFGGHHIIJJKLLMNOPPQQRSSTUUVVWWXXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[
+ !"#$%&'()*+,-./0123456789:;<=
+ !"#$%&'()*+,-./0123456789:;
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnop
+ !"#$%&'()*+,-./0123456789:;<=>?@ABC
+ !"#$%&'()*+,-./0
+ !"#$%&'()
+ !"#$%&'
+ !"#$%&'()*+,-./0123456789:;<
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxy
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJK
+ !"#$%&'()*+,-./0123456789:;<
+ !"#$%&'(
+ !"#$%&'()
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ !"#$%&'()*+,-./0123456789:;<
+ !"#$%&'(
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFG
+ !"#$%&'()
+ !"#$%&'
+ !"#$%&'(
+  !!!"""##$$%%&&&''(())**++,,--..//001122334455667899::;<<=>>??@@AABBCCDEEFGHIJKLMNOPPQQRSSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+?7>O@
+D@C;*@
+SW@Sw
+]U?dcv?*C
+?1H$?
+?`1-?
+H^>gX
+ !"#012@AP
+   ! 0 
+  !!""##$$%%&&''(())**++,,--..//0011234
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abc
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'
+ !"#$%&'()*+,-0123456789:;<@ABCDEFGHIJKPQRSTUVWXYZ`abcdefghipqrstuvwx
+Reverb
+Copyright (c) Microsoft Corporation
+VolumeMeter
+Copyright (c) Microsoft Corporation
+ADPCM decoder
+Copyright (c) Microsoft Corporation
+FilterMatrixMix
+Copyright (c) Microsoft Corporation
+Filter
+Copyright (c) Microsoft Corporation
+Copyright (c) Microsoft Corporation
+Copyright (c) Microsoft Corporation
+SOFTWARE
+Microsoft
+Scrunch
+CPU Downgrade Level
+NumThreads
+Qx?33s?
+k?fff?
+@?333?
+?ff&?333?
+Y?fff?33s?
+p}?33s?fff?
+@?333?ff&?R
+Mastering Limiter
+Copyright (c) Microsoft Corporation
+Copyright (c) Microsoft Corporation
+Copyright (c) Microsoft Corporation
+Reverb
+Copyright (c) Microsoft Corporation
+ Aq=J@
+P?fff?H
+ffffff
+F|YDF
+333333
+Microsoft.Windows.Audio.XAudio2.9
+RSDSF
+08"IZ
+XAudio2_9.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW2
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text
+.text$di
+.text$mn
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.no_bbt
+.data$brc
+.data$r$brc
+.data$rs$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+08"IZ
+|Uj4j
+;Bht'
+QQSVW
+x8tY;
+VjPWS
+C@uQfL
+VjPWS
+C@uQfL
+u79W4t
+QQSV3
+y@uQfLu^
+QPPPQ3
+y@uQfLug
+|Uj4j
+D$@SV
+D$$Pj
+L$L_^[3
+D$@SVW
+D$8Rj
+f;G"sk
+D$$RVW
+f;G"s-3
+T$0f;
+L$(uk
+t$(f;H"
+f;G"ssS3
+u3f9F
+f;C"s'3
+f;F"sA3
+f;F"s33
+f;N"sS
+f;F"sb3
+L$ f;
+f;G"sm
+f;G"sK3
+utf;U
+9X(t:
+SViqt
+x@kVt&
+NX_^[
+f;C"s
+f;F"s
+GdiGt
+Gl;Gd}M
+Gl;Gd
+Gp;Gh}J
+Gp;Gh
+zx?u)
+f+F fHf
+f;F"s+3
+f;G"s.3
+9~Tuz
+f;G"sj
+u9jpj
+Pf9W"u@
+A0SVW
+9U8tC
+f;F"s*3
+GlPVQ
+f;A"s'
+65hrv
+D$XSVW
+D$P+D$0
+D$L_^[
+D$L_^[
+t$(Nj
+T$,9{4
+9S<u[
+9S<vR
+G;{<r
+G;{<r
+F;w<r
+9A t?ff
+9w@vA
+F;w@r
+AD+BH
+JD+HH
+t0j X9
+Authu7
+entiu+
+cAMDu
+t f;E
+VWj ^f;
+T$4)U
+\$8;D$,u9
+_L$DYY
+D$(_^[
+f91t9f
+t(f9;u 
+j@_f;
+j Zf9S
+j Yf;
+333=h
+)t$09|$
+)t$@t(
+T$(r,
+D$<ff
+;L$<|
+~\9~`t
+~h_^[
+~h9~lt
+fff?VP
+~`9~pt
+~p9~ht
+~h9~lt
+9^t~0
+w_^[]
+<G_^[
+(T$ +
+(d$0H
+(T$ +
+(d$0H
+H _^[
+@9~,v
+G;~,r
+G;~,r
+X^(9~,v,
+G;~,r
+^(_^[
+^(_^[
+F(_^[
+Y__^[
+5ineI
+5ntel
+>@s5f
+?@s-f
+XAudioHeapFree
+XAudioHeapAlloc
+GetXAudioDefaultProcessorForCurrentPlatform
+GetXAudioHeap
+CreateXAudioAcpState
+DestroyXAudioAcpState
+CreateXmaBufferEngine
+SetXAudio2DebugConfiguration
+OnXAudioThreadAffinityMaskChanged
+GetAudioEndpointIdFromDeviceInterfaceId
+DevFreeObjectProperties
+DevGetObjectProperties
+PlatformSpecificXAPOFXFactory
+XAudio2_9.dll
+CreateAudioReverb
+CreateAudioReverbV2_8
+CreateAudioVolumeMeter
+CreateFX
+X3DAudioCalculate
+X3DAudioInitialize
+XAudio2Create
+XAudio2CreateV2_9
+XAudio2CreateWithSharedContexts
+XAudio2CreateWithVersionInfo
+F<u]3
+.?AVbad_alloc@std@@
+.?AVexception@std@@
+.?AVbad_array_new_length@std@@
+.?AVtype_info@@
+wcslen
+_initterm
+_initterm_e
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+memcmp
+memcpy
+memmove
+memset
+_o___libm_sse2_cos
+_o___libm_sse2_pow
+_o___libm_sse2_powf
+_o___libm_sse2_sin
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___std_type_info_destroy_list
+_o___stdio_common_vsprintf
+_o__aligned_free
+_o__aligned_malloc
+_o__callnewh
+_o__cexit
+_o__CIacos
+_o__CIatan2
+_o__CIcos
+_o__CIexp
+_o__CIpow
+_o__CIsin
+_o__CIsqrt
+_o__CItan
+_o__configure_narrow_argv
+_o__crt_atexit
+_o__execute_onexit_table
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__libm_sse2_sqrt_precise
+_o__purecall
+_o__register_onexit_function
+_o__seh_filter_dll
+_o_ceil
+_o_cos
+_o_floor
+_o_malloc
+_o_sin
+_o_wcscpy_s
+_except_handler4_common
+api-ms-win-crt-private-l1-1-0.dll
+InitializeCriticalSection
+QueryPerformanceFrequency
+DeleteCriticalSection
+LeaveCriticalSection
+HeapFree
+HeapAlloc
+EnterCriticalSection
+OutputDebugStringA
+CoTaskMemFree
+GetLastError
+HeapCreate
+HeapDestroy
+TryEnterCriticalSection
+InitializeConditionVariable
+SleepConditionVariableCS
+GetCurrentThreadId
+SetEvent
+WaitForSingleObject
+CloseHandle
+EventWriteTransfer
+CreateEventW
+CreateWaitableTimerExW
+CreateThread
+GetProcessAffinityMask
+GetCurrentProcess
+SetThreadAffinityMask
+SetThreadPriority
+GetThreadPriority
+GetCurrentThread
+WakeAllConditionVariable
+WaitForMultipleObjectsEx
+CancelWaitableTimer
+SetWaitableTimer
+RaiseException
+EventUnregister
+EventRegister
+EventSetInformation
+GetModuleFileNameA
+DisableThreadLibraryCalls
+QueryPerformanceCounter
+GetCurrentProcessId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+IsProcessorFeaturePresent
+TerminateProcess
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-processtopology-obsolete-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+MMDevAPI.DLL
+AvSetMmThreadCharacteristicsA
+AvSetMmThreadPriority
+AvRevertMmThreadCharacteristics
+AVRT.dll
+ReleaseSemaphore
+HeapSize
+GetSystemInfo
+ResetEvent
+GetProcessHeap
+CreateSemaphoreW
+CreateEventA
+CoCreateGuid
+CoTaskMemAlloc
+CoCreateInstance
+ResumeThread
+WaitForSingleObjectEx
+CreateEventExA
+DuplicateHandle
+CompareStringOrdinal
+CoGetMalloc
+StringFromGUID2
+RegOpenKeyExA
+RegQueryValueExA
+RegCloseKey
+ApiSetQueryApiSetPresence
+RegQueryValueExW
+RegOpenKeyExW
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-apiquery-l1-1-0.dll
+_clearfp
+_control87
+_CxxThrowException
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+WEVT_TEMPLATE
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+XAudio2 Game Audio API
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+XAudio2_9.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+XAudio2_9.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+CRIM`
+WEVT<
+Microsoft-Windows-XAudio2/Debug
+Microsoft-Windows-XAudio2/Performance
+MAPS|
+VMAPT
+Callback
+TEMP4
+EventData
+Instance
+Processors
+Instance
+Processors
+EventData
+SourceVoiceCount
+SubmixVoiceCount
+MasteringVoiceCount
+SourceVoiceCount
+SubmixVoiceCount
+MasteringVoiceCount
+EventData
+Pointer
+Pointer
+EventData
+OriginalHz
+NewHz
+Quantum
+OriginalHz
+NewHz
+Quantum
+TEMP$
+EventData
+Address
+ProcessingStage
+Channels
+SampleRate
+Address
+ProcessingStage
+Channels
+SampleRate
+EventData
+Address
+Channels
+SampleRate
+RendererId
+Address
+Channels
+SampleRate
+RendererId
+j7\<[
+EventData
+Callback
+Callback
+EventData
+EventData
+Value
+Value
+EventData
+Value
+Value
+TEMP4
+EventData
+DeviceId
+EndpointId
+DeviceId
+EndpointId
+*YM&0]NS
+EventData
+MinimumCyclesPerQuantum
+MaximumCyclesPerQuantum
+GlitchesSinceEngineStarted
+CpuUsage
+LatencyInSamples
+TotalMemoryUsage
+ActiveSourceVoices
+TotalSourceVoices
+ActiveSubmixVoices
+ActiveResamplers
+ActiveMatrixMixers
+MinimumCyclesPerQuantum
+MaximumCyclesPerQuantum
+GlitchesSinceEngineStarted
+CpuUsage
+LatencyInSamples
+TotalMemoryUsage
+ActiveSourceVoices
+TotalSourceVoices
+ActiveSubmixVoices
+ActiveResamplers
+ActiveMatrixMixers
+PRVAH
+Microsoft-Windows-XAudio2
+win:Start
+win:Stop
+Create
+PerformanceWarning
+win:Critical
+win:Error
+win:Warning
+win:Informational
+win:Verbose
+Performance
+TASK`
+";p~p
+Initialize
+Shutdown
+SourceVoice
+SubmixVoice
+MasteringVoice
+Processing
+EVNTp
+WEVT_TEMPLATE
+en-US
+<0@0H0P0h0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>L>P>T>\>
+0,0<0L0\0l0|0
+1,1<1L1\1l1|1
+2,2<2L2\2l2|2
+3,3<3L3\3l3|3
+4(4,40484P4`4d4t4x4|4
+8 8K8Q8n8
+7L:a:u<
+>!>c?
+%0\1b1
+2@2j2v2
+3B3h3
+588E8K8T8^8d8i8q8
+=*=J=
+789W;j;
+4 5\7
+>q?{?
+070S0o0
+2J2`2e2
+454e4o4
+4%5l5
+6!7+7\7c7
+9":^:p:u:-;
+===v=
+>.?i?
+0#1j1o1
+8Z8_8
+;3<z<
+1&1D1y1;2
+4&5_5i5n5
+687=7
+788=8
+9P9U9
+0Z0u0
+2C3V3n3
+3T4g4
+5D6R6W6
+<N<d<q<~<
+=B>f>
+2"2P2Z23393x3
+9):h:
+;7;u;
+;*<^<
+<"=9=q=~=
+021j1
+3A4x4
+4)5F5\5
+556T6
+2W2\2
+2*3a3
+3$4V4
+5P5x5
+6@6E6w6
+6+7p7
+9H9|9
+:`:y:
+:#;M;
+; <@<^<
+<N=g=
+=4>f>
+?P?i?
+0E0w0
+1@1e1
+3#3`3~3
+3 4@4^4
+5!5S5
+6@7Y7w7
+8-8_8~8
+9P9}9
+:G:y:
+:D;N;d;
+<!=`=y=
+=#>M>
+1h1x1
+6Q6x6M7
+9r;r<,=
+7@8V8
+;8<y<
+<E=o?y?
+1:1Y1
+2O2]3
+5[5v5
+8 9h9m9
+:8:m:
+;0<X<
+<1=f=
+>&>x>
+3 4}4
+7B7p7
+<8=x=
+0-1g1
+2I2W2
+2M3R3
+5*6;6S6f6k6
+6_7p7
+8 888K8P8
+9C9T9l9
+020q0
+>+?g?
+4N6X6e6
+?\?a?
+2n3x3
+9K:P:
+=2>m>
+0?1z1
+1N3X3e3r3P4
+50565n5
+;"<,<<<Q<f<m<.=r=
+1V1e1
+3.4=4
+5'5_5
+6$6}6
+;*<g<}<
+>4>Z>
+70<0b1l1v1
+3/4Q4w4
+627p7
+:&:?:
+%0`0V1
+232\2
+6I6z9
+:a;2<M<
+< ={=
+8i829C9P9
+131h3
+62787m7
+9*:]:
+;2;Y;
+J0U0g0l0
+788W8
+9 9<9X9l9
+=&=/=N=[=
+0<1b1
+2N3y3
+595F5O5X5`5i5
+9&:9:
+'2M2k2
+7;8'9T9
+<#=r?
+0n1x1R2
+<#<@<T<
+6-6r6W7
+1'7o7
+7N8e8
+9 9$9(9
+4E5O5Y5>6H6R6i6
+>C>P>
+1Y1x1
+5L6v6%7
+:@:X:g:
+:";D;p;
+;b<l<d=
+1J2.3
+6B7z7>8
+9B:V:[:d<
+4R5y5
+;V<;=
+7!7)757?7I7S7[7c7k7s7
+828B8M;[;
+; ;$;(;,;0;4;8;<;
+<T<t<
+=e>y?
+324i5E6
+1R3Y3m415
+1|2S3C5
+3k487<7@7D7H7L7P7
+7L;P;T;X;\;`;d;
+<"<A<I<P<j<q<x<
+ 1$1(1,1014181<1@1
+5O7[7b7k7w7~7'8
+:8?P?T?X?\?`?d?h?l?
+9L:S:
+9a9q9
+9%:7:
+1e2t2
+:1P1f1p1
+;3<c<
+9#9(9-94999@9E9L9Q9X9]9z9
+2T5Z5
+<*<9<M<]<q<
+=)===M=]=m=}=
+=O>W>
+70N0Y0
+:%:8:D:J:]:
+859\9
+4X9z9
+<Z<z<
+=M>r>
+>0?A?S?`?r?
+!0-0Y0\1
+2)3>3E3W3
+:E>i>q>
+1)6X7\7`7d7h7l7p7t7x7|7
+:'<s<
+2w243V4
+5F6R6
+9,:U:T;
+>F?Z?
+213Y3
+314Y4
+415Y5
+:(:.:;:I:O:\:j:p:
+; ;.;B;P;d;r;
+<%<:<L<^<
+= =$=(=,=
+6?8/;'=
+4/4B6
+9*:[:
+>2?:?B?J?R?Z?
+2 2$2(2,2:7V7`7
+5U6P7k7.8:9
+<K>m>
+>6?w?
+5Z6v6
+6>7H7_7
+;1<}<
+1d3j3
+4$5K5i5
+686Z6
+7&8T8
+;6;@;c<y<
+5G5`5
+:>:R:
+2)3q3
+4o4k5
+5/6L6
+6Q7z7
+8&9h9
+;i<,=o>
+>*?;?^?
+1<2]2
+3/3?3S3i3
+3 4h4r4
+4#595
+6E6e6
+8D9><^<!=p>
+?>?w?
+141=1f1o1
+2-2<2K2X2h2u2
+2&3T3Z3`3f3w3}3
+354<4
+4r6|6
+:!:(:
+;=<T<u<}<
+>>>:?`?y?
+2#2*2@2
+637Q7M8
+;2;D;
+?9?A?W?n?
+<"<*<8<@<P<`<p<x<
+= =/=7=F=r=
+4"4/4?4O4X4z4
+5!5Y6
+728}8
+9&:3:=:Q:a:w:
+;H<f<n<v<
+=*=_=k=
+>#>p>{>
+213|3
+9/:w:
+0)1\1
+0(2K2
+2I4v4
+4J416s6
+8h9~9
+</<I<
+152V2
+2j3v3
+7L8U8Z8
+6S7[7c7
+7l8u8
+:):3:
+;*;1;6;Q;_;d;z;
+;`={?
+6J8d8l8
+5D6c6~7
+:4:k:
+;5<@<
+=[>c>
+3;4M4_4}4
+4D5L5
+556?7
+<!</<6<=<D<h<
+<N=Y=d=l=t=
+=@>N>
+1 1$1(1,1014181<1@1
+>->?>S>b>i>u>
+>!?K?
+0)0\0
+2N3[3r3
+565a5
+5&676
+7 7K7`7
+7=8G8~8
+8'9.9c9x9
+9:;j<u<
+=<=l=s=
+,0P0W0}0
+5L6R6p6v6
+6P7v7
+1(313
+;2;F;R;a;
+1+1<1
+2@5.6
+898M8]8C9O9[9
+=#=,=O=k=r=
+=P>W>t>
+4#434Q4]477
+7^8z8
+9+9R9
+?&?@?L?
+?(?0?
+2-2L267B7
+888=8V8[8h8
+;G<m<
+=3=9=?=E=K=Q=W=r=
+= >5>e>w>
+???N?W?d?
+1(1G1X1]1p1
+1(212<2C2^2l2r2x2~2
+3'373@3X3b3k3
+4%4a4k4t4}4
+5;5V5b5n5z5
+6"6.6:6F6R6^6j6v6
+8!818A8Q8a8q8
+90969b9
+:C:h:
+?#?M?
+161\1`1|1
+2 2$2,2@2H2\2d2l2t2x2|2
+,00040<0`0|0
+0 0$0(0,00040

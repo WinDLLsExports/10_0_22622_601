@@ -1,0 +1,103 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-usbpolicymanagerapi_31bf3856ad364e35_10.0.22621.1_none_57601347f66267e6\UsbPmApi.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000F028 Import Address Table
+             1C000F1E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         16C ZwClose
+                         130 RtlCompareUnicodeString
+                         133 RtlCopyUnicodeString
+                         16E ZwCreateFile
+                          1E ExFreePoolWithTag
+                          B3 KeInitializeEvent
+                          1B ExDeleteResourceLite
+                          D1 KeSetEvent
+                          D9 KeWaitForSingleObject
+                          7C IoRegisterPlugPlayNotification
+                          6A IoGetDeviceObjectPointer
+                         102 ObfDereferenceObject
+                         15C ExSubscribeWnfStateChange
+                          24 ExInitializeResourceLite
+                          9B IoWMIRegistrationControl
+                          E5 MmGetSystemRoutineAddress
+                         148 RtlInitUnicodeString
+                         8F8 RtlInitializeGenericTable
+                          DE ExEnterCriticalRegionAndAcquireResourceExclusive
+                         8FE RtlInsertElementGenericTable
+                         141 ExReleaseResourceAndLeaveCriticalRegion
+                         866 RtlDeleteElementGenericTable
+                         943 RtlLookupElementGenericTable
+                         B3D ZwDeviceIoControlFile
+                          BD ExAllocatePool2
+                         429 IoUnregisterPlugPlayNotificationEx
+                         4D5 KeInitializeSpinLock
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                         2F9 IoAllocateWorkItem
+                         359 IoFreeWorkItem
+                         3B9 IoQueueWorkItem
+                          EC ExFreePool
+                         11F ExQueryWnfStateData
+                         175 ExUnsubscribeWnfStateChange
+
+    WppRecorder.sys
+             1C000F000 Import Address Table
+             1C000F1B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           3 WppAutoLogStop
+
+  Section contains the following exports for UsbPmApi.SYS
+
+    00000000 characteristics
+    9E208414 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000107F0 DllInitialize
+          2    1 00010880 DllUnload
+          3    2 00001B80 UsbPm_AssignConnectorPowerLevel
+          4    3 000014D0 UsbPm_Deregister
+          5    4 00001380 UsbPm_Register
+          6    5 000018A0 UsbPm_RetrieveConnectorProperties
+          7    6 00001A30 UsbPm_RetrieveConnectorState
+          8    7 00001700 UsbPm_RetrieveHubConnectorHandles
+          9    8 000015B0 UsbPm_RetrieveHubProperties
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

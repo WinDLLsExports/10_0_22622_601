@@ -1,0 +1,192 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-r..ase-rassstp-coresys_31bf3856ad364e35_10.0.22621.1_none_dd04b88bd657536c\rassstp.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+    ksecdd.sys
+    NETIO.SYS
+    fwpkclnt.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B218 Import Address Table
+             1C000B6D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         5DB MmGetSystemRoutineAddress
+                         334 IoCsqInitialize
+                          BD ExAllocatePool2
+                         336 IoCsqInsertIrp
+                         8F1 RtlInitUnicodeString
+                         441 IoWMIRegistrationControl
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                          EE ExFreePoolWithTag
+                         587 KfRaiseIrql
+                         44F IofCompleteRequest
+                         3D1 IoReleaseCancelSpinLock
+                         72E ProbeForRead
+                         833 RtlCompareMemory
+                         5EA MmLockPagableDataSection
+                         9A9 RtlSetDaclSecurityDescriptor
+                         BF7 __C_specific_handler
+                         916 RtlIpv4AddressToStringW
+                         366 IoGetCurrentProcess
+                         72F ProbeForWrite
+                         4F3 KeLowerIrql
+                         473 KeAcquireSpinLockAtDpcLevel
+                         2F9 IoAllocateWorkItem
+                         4B9 KeGetCurrentIrql
+                          F0 ExFreeToNPagedLookasideList
+                          D5 ExDeleteNPagedLookasideList
+                         6CB ObfDereferenceObject
+                         302 IoBuildDeviceIoControlRequest
+                         36D IoGetDeviceObjectPointer
+                         100 ExInitializeNPagedLookasideList
+                          BA ExAllocateFromNPagedLookasideList
+                         359 IoFreeWorkItem
+                         44E IofCallDriver
+                         4CD KeInitializeEvent
+                         3B9 IoQueueWorkItem
+                         585 KeWaitForSingleObject
+                         4C0 KeGetProcessorNumberFromIndex
+                         4C9 KeInitializeDpc
+                         4D9 KeInitializeTimerEx
+                         568 KeSetTargetProcessorDpcEx
+                          EC ExFreePool
+                         488 KeCancelTimer
+                         4B2 KeFlushQueuedDpcs
+                         500 KeQueryActiveProcessorCountEx
+                         557 KeSetCoalescableTimer
+                         4D5 KeInitializeSpinLock
+                         339 IoCsqRemoveNextIrp
+                         53B KeReleaseSpinLockFromDpcLevel
+                         91E RtlIpv6AddressToStringW
+                         A4F SeQueryInformationToken
+                         6B6 ObOpenObjectByPointer
+                         9F4 RtlValidSecurityDescriptor
+                         A74 SeUnlockSubjectContext
+                         881 RtlEqualSid
+                         BDA ZwSetSecurityObject
+                         A43 SeLockSubjectContext
+                         856 RtlCreateSecurityDescriptor
+                         121 ExQueueWorkItem
+                         559 KeSetEvent
+                         48D KeClearEvent
+                         B17 ZwClose
+                         C23 __chkstk
+
+    NDIS.SYS
+             1C000B000 Import Address Table
+             1C000B4B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          AE NdisFreeNetBufferListPool
+                          DA NdisGetVersion
+                         1C5 NdisQueueIoWorkItem
+                          4D NdisCmDispatchCallConnected
+                          16 NdisAllocateIoWorkItem
+                         127 NdisMCmActivateVc
+                          1D NdisAllocateNetBufferList
+                         129 NdisMCmDeactivateVc
+                         128 NdisMCmCreateVc
+                          53 NdisCmMakeCallComplete
+                          4E NdisCmDispatchIncomingCall
+                          BF NdisGetDataBuffer
+                         12A NdisMCmDeleteVc
+                         1DE NdisRetreatNetBufferListDataStart
+                          4A NdisCmCloseCallComplete
+                          A6 NdisFreeIoWorkItem
+                          59 NdisCmRegisterSapComplete
+                          1F NdisAllocateNetBufferListPool
+                         134 NdisMCoIndicateStatusEx
+                          50 NdisCmDispatchIncomingCloseCall
+                          4C NdisCmDeregisterSapComplete
+                         131 NdisMCoIndicateReceiveNetBufferLists
+                         1E8 NdisSetOptionalHandlers
+                         165 NdisMPauseComplete
+                         12D NdisMCmRegisterAddressFamilyEx
+                         139 NdisMCoSendNetBufferListsComplete
+                         1AF NdisOpenConfigurationEx
+                          44 NdisCloseConfiguration
+                          AC NdisFreeNetBufferList
+                         1C7 NdisReadConfiguration
+                         18A NdisMSetMiniportAttributes
+                         1CF NdisRegisterDeviceEx
+                         143 NdisMDeregisterMiniportDriver
+                          78 NdisDeregisterDeviceEx
+                         179 NdisMRegisterMiniportDriver
+                          A8 NdisFreeMemory
+                          19 NdisAllocateMemoryWithTag
+
+    ksecdd.sys
+             1C000B1D8 Import Address Table
+             1C000B690 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 BCryptCloseAlgorithmProvider
+                          1F BCryptOpenAlgorithmProvider
+                          1A BCryptGetProperty
+                           5 BCryptCreateHash
+                          1B BCryptHashData
+                           A BCryptDestroyHash
+                          14 BCryptFinishHash
+
+    NETIO.SYS
+             1C000B130 Import Address Table
+             1C000B5E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         1D3 RtlReturnTimerWheelEntry
+                         1C8 RtlIndicateTimerWheelEntryTimerStart
+                         1CA RtlInitializeTimerWheelEntry
+                         1BA RtlCleanupTimerWheelEntry
+                         1B9 RtlCleanupTimerWheel
+                         1D5 RtlUpdateCurrentTimerWheelTick
+                         1C9 RtlInitializeTimerWheel
+                          60 HfFreeHandle32
+                          5D HfAllocateHandle32
+                         1BF RtlCopyMdlToBuffer
+                          63 HfSuspendHandle32
+                          61 HfGetPointerFromHandle32
+                          5E HfCreateFactory
+                          5F HfDestroyFactory
+                         1C7 RtlGetNextExpiredTimerWheelEntry
+
+    fwpkclnt.sys
+             1C000B1B0 Import Address Table
+             1C000B668 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 DPSendNetBufferList0
+                           0 DPChannelCreate0
+                           1 DPChannelDestroy0
+                           3 DPReceiveNetBufferListComplete0
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        A000 PAGESSTP
+        1000 fothk

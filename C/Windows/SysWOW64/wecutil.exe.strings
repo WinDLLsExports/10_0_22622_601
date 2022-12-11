@@ -1,0 +1,846 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+bad allocation
+permission denied
+file exists
+no such device
+filename too long
+device or resource busy
+io error
+directory not empty
+invalid argument
+no space on device
+no such file or directory
+function not supported
+no lock available
+not enough memory
+resource unavailable try again
+cross device link
+operation canceled
+too many files open
+permission_denied
+address_in_use
+address_not_available
+address_family_not_supported
+connection_already_in_progress
+bad_file_descriptor
+connection_aborted
+connection_refused
+connection_reset
+destination_address_required
+bad_address
+host_unreachable
+operation_in_progress
+interrupted
+invalid_argument
+already_connected
+too_many_files_open
+message_size
+filename_too_long
+network_down
+network_reset
+network_unreachable
+no_buffer_space
+no_protocol_option
+not_connected
+not_a_socket
+operation_not_supported
+protocol_not_supported
+wrong_protocol_type
+timed_out
+operation_would_block
+address family not supported
+address in use
+address not available
+already connected
+argument list too long
+argument out of domain
+bad address
+bad file descriptor
+bad message
+broken pipe
+connection aborted
+connection already in progress
+connection refused
+connection reset
+destination address required
+executable format error
+file too large
+host unreachable
+identifier removed
+illegal byte sequence
+inappropriate io control operation
+invalid seek
+is a directory
+message size
+network down
+network reset
+network unreachable
+no buffer space
+no child process
+no link
+no message available
+no message
+no protocol option
+no stream resources
+no such device or address
+no such process
+not a directory
+not a socket
+not a stream
+not connected
+not supported
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+owner dead
+protocol error
+protocol not supported
+read only file system
+resource deadlock would occur
+result out of range
+state not recoverable
+stream timeout
+text file busy
+timed out
+too many files open in system
+too many links
+too many symbolic link levels
+value too large
+wrong protocol type
+OLEAUT32.dll
+ole32.dll
+credui.dll
+generic
+unknown error
+iostream
+iostream stream error
+system
+invalid string position
+string too long
+get-subscription
+set-subscription
+create-subscription
+enum-subscription
+delete-subscription
+retry-subscription
+get-subscriptionruntimestatus
+quick-config
+%sError = 0x%x.
+%s Error = 0x%x.
+Error = 0x%x.
+Failed to print error message. Error = 0x%x, original error = 0x%x.
+verbose
+unicode
+false
+vector<T> too long
+map/set<T> too long
+WecUtilException
+Operation Failed.
+[Error message can't be retrieved.]
+%4hd-%2hd-%2hdT%2hd:%2hd:%2hd.%3hd
+%4hd-%2hd-%2hdT%2hd:%2hd:%2hd
+%SystemRoot%\System32\WSMRES.DLL
+&amp;
+&#xD;
+&#xA;
+&apos;
+&quot;
+Format
+format
+terse
+Subscription Id: %s
+SubscriptionType
+SubscriptionType: %s
+Description
+Description: %s
+Enabled
+Enabled: %s
+Uri: %s
+ConfigurationMode
+ConfigurationMode: %s
+DeliveryMode
+DeliveryMode: %s
+DeliveryMaxItems
+DeliveryMaxItems: %d
+DeliveryMaxLatencyTime
+DeliveryMaxLatencyTime: %d
+HostName
+HostName: %s
+HeartbeatInterval
+HeartbeatInterval: %d
+Expires
+Expires: %s
+Query
+Query: %s
+Dialect
+Dialect: %s
+ReadExistingEvents
+ReadExistingEvents: %s
+TransportName
+TransportName: %s
+TransportPort
+TransportPort: %d
+ContentFormat
+ContentFormat: %s
+Locale
+Locale: %s
+LogFile
+LogFile: %s
+PublisherName
+PublisherName: %s
+CredentialsType
+CredentialsType: %s
+CommonUserName
+CommonUserName: %s
+CommonUserPassword: %s
+AllowedIssuerCAList
+AllowedIssuerCAList:
+AllowedSubjectList
+AllowedSubjectList:
+DeniedSubjectList
+DeniedSubjectList:
+AllowedSourceDomainComputers
+AllowedSourceDomainComputers: %s
+EventSources
+EventSourceCount
+EventSource[%d]:
+EventSourceAddress
+Address: %s
+EventSourceEnabled
+Enabled: %s
+UserName
+UserName: %s
+UserPassword: %s
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-16"?>
+<Subscription xmlns="http://schemas.microsoft.com/2006/03/windows/events/subscription">
+<SubscriptionId>
+</SubscriptionId>
+<SubscriptionType>
+</SubscriptionType>
+<Description>
+</Description>
+<Enabled>
+</Enabled>
+<Uri>
+</Uri>
+<ConfigurationMode>
+</ConfigurationMode>
+<Delivery Mode="
+<Delivery>
+<Batching>
+<MaxItems>%d</MaxItems>
+<MaxLatencyTime>%d</MaxLatencyTime>
+</Batching>
+<PushSettings>
+<HostName>
+</HostName>
+<Heartbeat Interval="%d"/>
+</PushSettings>
+</Delivery>
+<Expires>
+</Expires>
+<Query>
+<![CDATA[
+</Query>
+<Dialect>
+</Dialect>
+<ReadExistingEvents>
+</ReadExistingEvents>
+<TransportName>
+</TransportName>
+<TransportPort>%d</TransportPort>
+<ContentFormat>
+</ContentFormat>
+<Locale Language="
+<LogFile>
+</LogFile>
+<PublisherName>
+</PublisherName>
+<CredentialsType>
+</CredentialsType>
+<CommonUserName>
+</CommonUserName>
+<CommonPassword>*</CommonPassword>
+<AllowedSourceNonDomainComputers>
+<AllowedIssuerCAList>
+<IssuerCA>
+</IssuerCA>
+</AllowedIssuerCAList>
+<AllowedSubjectList>
+<Subject>
+</Subject>
+</AllowedSubjectList>
+<DeniedSubjectList>
+</DeniedSubjectList>
+</AllowedSourceNonDomainComputers>
+<AllowedSourceDomainComputers>
+</AllowedSourceDomainComputers>
+<EventSources>
+<EventSource Enabled="%s">
+<Address>
+</Address>
+<UserName>
+</UserName>
+</EventSource>
+</EventSources>
+</Subscription>
+SOFTWARE\Microsoft\Windows\CurrentVersion\EventCollector
+PurgeInactiveES
+RunTimeStatusActive
+RunTimeStatusLastError
+RunTimeStatusLastErrorTime
+RunTimeStatusNextRetryTime
+RunTimeStatusLastHeartbeatTime
+\Subscriptions\
+BatchEventsProcessed
+EventsProcessed
+BatchEventsDropped
+EventsLost
+\EventSources\
+BatchEventsProcessingTime
+firstEventbatchTime
+WecUtil purges the EventSource, which inactive state not rest within the Interval (days): 
+%sRunTimeStatus: Disabled
+%sRunTimeStatus: Active
+ (purged)
+%sRunTimeStatus: Inactive%s
+%sRunTimeStatus: Trying
+%sEvents processed: %I64u
+%sEvents lost: %I64u
+%sFirstEventBatchTime: %s
+%sEvents ProcessingTime(ms): %d
+%sLastError: %x
+RunTimeStatusLastErrorMessage
+%sErrorMessage: %s
+%sErrorTime: %s
+%sNextRetryTime: %s
+%sLastHeartbeatTime: %s
+EventSources:
+Subscription: %s
+jK##"
+AddEventSource
+RemoveEventSource
+Config
+UserPassword
+CommonUserPassword
+AllowedIssuerCA
+AllowedSubjects
+DeniedSubjects
+Subscription
+http://schemas.microsoft.com/2006/03/windows/events/subscription
+Address
+@Enabled
+EventSource/@Enabled
+EventSource
+Delivery
+Delivery/@Mode
+Delivery/Batching/MaxItems
+Delivery/Batching/MaxLatencyTime
+Delivery/PushSettings/Heartbeat/@Interval
+Locale/@Language
+Delivery/PushSettings/HostName
+CommonPassword
+AllowedSourceNonDomainComputers/AllowedIssuerCAList/IssuerCA
+AllowedSourceNonDomainComputers/AllowedSubjectList/Subject
+AllowedSourceNonDomainComputers/DeniedSubjectList/Subject
+SubscriptionId
+SubscriptionId/text()
+O:NSG:NSD:(A;;GA;;;DC)(A;;GA;;;NS)
+Quiet
+Events
+RenderedText
+Default
+Negotiate
+Digest
+LocalMachine
+Basic
+Normal
+Custom
+MinLatency
+MinBandwidth
+SourceInitiated
+CollectorInitiated
+admin\wmi\events\forwarding\common\miscutil.cpp
+%4.4hd-%2.2hd-%2.2hdT%2.2hd:%2.2hd:%2.2hd
+admin\wmi\events\forwarding\common\timehelp.cpp
+.%09I64uZ
+.%03huZ
+%4.4hd-%2.2hd-%2.2hdT%2.2hd:%2.2hd:%2.2hd.%3.3hd
+a)`a7
+admin\wmi\events\forwarding\common\reghelp.cpp
+RSDS#
+wecutil.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+Sh "@
+ShD"@
+ShL"@
+Sht"@
+Sh|"@
+tyShD#@
+tbShL#@
+Shh#@
+tkjXVW
+t#j4VW
+Phh$@
+j:Xf9
+QVh4=@
+j-Xf;A
+jTZf;
+jtZf;
+j:Xf;A
+j.Xf;A&
+D$,Php%@
+j-Xf;A
+jTZf;
+jtZf;
+u~j:Xf;A
+uuf;A uo
+D$(Ph
+L$$_^[3
+WSVPh
+t|f91tw
+Ph,!@
+Vh<!@
+tIf97tDV
++v)+F
+r-+>+
+Wh\&@
+t5PhL'@
+t6Ph$(@
+Php(@
+0hl)@
+0h@*@
+Ph\+@
+t0Ph@,@
+0h8.@
+Ph`/@
+#h8/@
+0hH3@
+0h`4@
+0hX6@
+Phx;@
+Vh`@@
+Vh(@@
+VhPA@
+PVh|A@
+Wh\B@
+Xf9DJ
+Wh\B@
+Xf9DJ
+PhDC@
+Ph,C@
+QQSVW
+j!ZjWY
+SPRVW
+SPRVW
+SPRVW
+0f;2u f
+tCC;]
+QhL&@
+PhDD@
+PQRj+
+j$htK@
+SSSSj
++v)+F
+r-+>+
+j _WS
+VPh<L@
+PhPL@
+Ph`L@
+F95 'A
+95 'A
+t#h,'A
+Y__^[
+Y__^[
+QRPh,
+QRPhL
+CoInitialize
+CredUICmdLinePromptForCredentialsW
+.?AVexception@@
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+.?AVbad_alloc@std@@
+.?AVWecUtilException@@
+.?AVException@wmi@@
+.?AVGenericException@wmi@@
+.?AUIException@wmi@@
+__CxxFrameHandler3
+??3@YAXPAX@Z
+_purecall
+fwprintf
+sprintf_s
+setlocale
+_wtoi
+swscanf
+_ui64tow
+iswspace
+_errno
+wcstoul
+_wcsicmp
+_vsnwprintf
+fgetwc
+wprintf
+malloc
+_callnewh
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABQBDH@Z
+??0exception@@QAE@ABV0@@Z
+??1exception@@UAE@XZ
+?what@exception@@UBEPBDXZ
+_CxxThrowException
+memcpy
+memmove
+_XcptFilter
+__p__commode
+_amsg_exit
+__wgetmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+??1type_info@@UAE@XZ
+wcstok
+_controlfp
+_except_handler4_common
+CompareStringW
+GetStdHandle
+LocalFree
+HeapSetInformation
+GetConsoleOutputCP
+SetThreadUILanguage
+WriteFile
+GetLastError
+GetFileType
+GetConsoleMode
+CreateFileW
+CloseHandle
+WriteConsoleW
+FormatMessageW
+GetModuleHandleW
+SystemTimeToFileTime
+LocalFileTimeToFileTime
+ExpandEnvironmentStringsW
+LoadLibraryExW
+FreeLibrary
+CoCreateInstance
+GetSystemTime
+RegOpenKeyExW
+RegCloseKey
+CoUninitialize
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-console-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+lstrcmpiW
+api-ms-win-core-string-obsolete-l1-1-0.dll
+EtwGetTraceLoggerHandle
+EtwGetTraceEnableLevel
+EtwGetTraceEnableFlags
+EtwRegisterTraceGuidsW
+EtwTraceMessage
+ntdll.dll
+EcGetSubscriptionProperty
+EcGetObjectArrayProperty
+EcGetSubscriptionRunTimeStatus
+EcOpenSubscriptionEnum
+EcClose
+EcEnumNextSubscription
+EcOpenSubscription
+EcGetObjectArraySize
+EcDeleteSubscription
+EcRetrySubscription
+EcSetSubscriptionProperty
+EcSetObjectArrayProperty
+EcInsertObjectArrayElement
+EcRemoveObjectArrayElement
+EcSaveSubscription
+EcQuickConfig
+WecApi.dll
+__iob_func
+swprintf_s
+GetFullPathNameW
+TraceMessage
+WideCharToMultiByte
+FileTimeToSystemTime
+SystemTimeToTzSpecificLocalTime
+RegQueryValueExW
+RegEnumKeyExW
+RegDeleteKeyExW
+EventUnregister
+EventRegister
+EventWrite
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.WMI.WECUtil"
+    type="win32"
+<description>WMI Event Collection Utility</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Event Collector Command Line Utility
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+WECUTIL.EXE
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+WECUTIL.EXE
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1L1T1\1d1l1t1|1
+2$2,242<2D2L2T2\2l2t2|2
+3$3,343<3D3L3T3\3d3l3t3|3
+4$4,444<4D4L4T4\4d4l4t4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6T6X6`6h6
+414T4x4
+495\5
+7-9I9v:
+;&;V;
+;2<><I<}<
+=+=7=F=R=a=m=|=
+>*>9>E>T>`>o>{>
+>*?e?
+1?1O1
+2A2U2
+3&373G3P3V3\3a3g3m3q3w3
+3'4B4[4j4z4
+7>8G8y8
+9N:g<
+=)=>=S=v={=
+>'><>a>~>
+2(323O3Y3r3|3
+435F5
+<5<C<[<
+=c=y=
+=?>\>i>r>
+?O?h?
+0;1[1u1{1
+3.4p4
+5&5I5y5
+6!7.7N739Q9
+94:>:p:z:
+<4=>=h=r=
+>%>,>
+?4?9?>?e?p?
+080J0z0
+1@1Y1d1k1q1
+252?2X2d2{2
+3I3b3n3
+3@4z4
+5'535:5@5e5~5
+6*6A6f6
+7P7k7z7
+7"8>8H8h8
+9&909P9~9
+:%:-:L:
+:&;4;9;o;y;
+< <0<=<Z<
+='===]=v=
+>->H>\>s>
+?%?F?_?k?
+0&0?0`0y0
+0$1E1u1
+262O2\2i2r2
+3&323W3p3|3
+444M4Z4s4
+5.5C5d5n5
+6(6-6:6
+6(7>7K7b7l7v7
+898U8q8
+939T9t9
+:0:F:S:f:v:
+:(;R;I<_<
+=U=q=
+>3?D?
+101E1
+2E2i2w2
+6$7.7D7
+8+8k8y8 9*9
+:5:D:K:a:
+:&;A;K;P;
+=*=/=b=g=
+>$>)>V>
+>>?X?d?
+0V0i0
+0(1B1d1
+2%2G2Q2
+3*3;3T3
+4 4I4
+435l5v5
+6)6=6B6G6
+6U7^7
+7E8O8T8
+949=9r9w9
+:$:7:L:g:p:
+;$;H;M;R;b;i;};
+=8=V=x=
+>5>C>Z>i>r>
+010Q0Z0b0
+1*151E1Q1\1l1x1
+2 2-222F2S2X2l2
+3)3;3O3X3d3n3s3
+4;4M4a4j4v4
+5/5C5L5]5b5g5w5
+5!61666;6L6S6
+7!7(7:7J7S7u7
+8#8,878G8_8i8
+:6:[:g:p:
+;;;I;m;
+<:=M=f=
+2>2{2
+3#3U3i3}3
+545:5
+8-8?8d8t8y8
+;2;B;G;^;s;
+>$>3>;>H>M>e>
+>/?C?H?`?r?
+0U0k0
+111C1Q1
+292[2
+363U3c3i3
+3&4?4M4g4s4
+656;6h6t6z6
+7&7H7S7e7m7r7w7
+8$8C8I8S8Y8b8g8
+9B9R9i9w9
+9.:B:R:j:
+;#;+;7;@;E;K;U;_;o;
+<2<><
+=U=~=
+>H?M?_?}?
+2!212A2N2b2o2
+4,4c4
+5,5\5
+696\6
+6)7Y7
+:7:o:
+>8>x>
+?;?R?V?r?v?
+0,0<0L0X0x0
+181@1H1T1\1
+2D2X2h2x2
+3(303d3t3
+4$404P4\4|4
+5,545@5`5l5
+686D6d6l6t6|6
+7$7,747<7H7h7t7
+8 8@8L8l8x8
+9,949@9`9h9t9
+:$:,:8:X:`:h:p:x:
+;$;0;P;X;`;l;
+<0<8<L<T<h<p<x<
+= =<=@=\=`=h=|=
+0 0$0(0,00080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1H1L1P1T1\1`1h1p1x1
+2 2024282<2T2t2

@@ -1,0 +1,187 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_wvpcivsp.inf_31bf3856ad364e35_10.0.22621.1_none_6c766e2f857780f5\vpcivsp.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+    winhvr.sys
+    ext-ms-win-ntos-ksr-l1-1-2.dll
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0018088 Import Address Table
+             1C0018518 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2F9 IoAllocateWorkItem
+                         303 IoBuildPartialMdl
+                         6CE ObfReferenceObjectWithTag
+                         2F6 IoAllocateMdl
+                         179 ExWaitForRundownProtectionRelease
+                         104 ExInitializeRundownProtection
+                         5E4 MmIsIoSpaceActive
+                         570 KeStackAttachProcess
+                         356 IoFreeMdl
+                         74B PsGetCurrentProcess
+                         359 IoFreeWorkItem
+                         6CC ObfDereferenceObjectWithTag
+                         52F KeReleaseGuardedMutex
+                         4CD KeInitializeEvent
+                         3B9 IoQueueWorkItem
+                         61F MmUnmapLockedPages
+                         5F1 MmMapLockedPagesSpecifyCache
+                         46A KeAcquireGuardedMutex
+                         585 KeWaitForSingleObject
+                         580 KeUnstackDetachProcess
+                         54A KeResetEvent
+                         5B3 MmAllocateMdlForIoSpace
+                         812 RtlAppendUnicodeStringToString
+                         813 RtlAppendUnicodeToString
+                         8B3 RtlFreeUnicodeString
+                         6BC ObReferenceObjectByHandleWithTag
+                         84C RtlCopyUnicodeString
+                         9BB RtlStringFromGUID
+                          E5 ExEventObjectType
+                         C4C _vsnwprintf
+                         149 ExReleaseSpinLockExclusive
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         975 RtlQueryFeatureConfiguration
+                          92 EtwSetInformation
+                         4CE KeInitializeGuardedMutex
+                         12C ExRegisterCallback
+                         117 ExIsSoftBoot
+                         98A RtlRbInsertNodeEx
+                          CF ExCreateCallback
+                         499 KeDelayExecutionThread
+                         316 IoClearActivityIdThread
+                         35B IoGetActivityIdThread
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                          9A EtwWriteTransfer
+                         14B ExReleaseSpinLockShared
+                          8B EtwActivityIdControl
+                          B3 ExAcquireSpinLockShared
+                          B1 ExAcquireSpinLockExclusive
+                         9E4 RtlUnregisterFeatureConfigurationChangeNotification
+                         98B RtlRbRemoveNode
+                          94 EtwUnregister
+                         5DB MmGetSystemRoutineAddress
+                         279 HalDispatchTable
+                          8F EtwRegister
+                         441 IoWMIRegistrationControl
+                         2E5 InitSafeBootMode
+                         44F IofCompleteRequest
+                         3EE IoSetActivityIdThread
+                         36B IoGetDeviceInterfaces
+                         173 ExUnregisterCallback
+                         48D KeClearEvent
+                         36E IoGetDeviceProperty
+                         36F IoGetDevicePropertyData
+                         C31 _purecall
+                         5B8 MmAllocatePagesForMdlEx
+                         617 MmSizeOfMdl
+                         5D0 MmFreePagesFromMdl
+                         429 IoUnregisterPlugPlayNotificationEx
+                         3CE IoRegisterPlugPlayNotification
+                         875 RtlDuplicateUnicodeString
+                         836 RtlCompareUnicodeString
+                         31F IoConvertFileHandleToKernelHandle
+                         145 ExReleaseRundownProtection
+                         B17 ZwClose
+                          EE ExFreePoolWithTag
+                          AB ExAcquireRundownProtection
+                         6BB ObReferenceObjectByHandle
+                          BD ExAllocatePool2
+                         559 KeSetEvent
+                         34C IoFileObjectType
+                         539 KeReleaseSpinLock
+                         4D5 KeInitializeSpinLock
+                         51B KeQueryTimeIncrement
+                         8E8 RtlInitAnsiString
+                          79 DbgkWerCaptureLiveKernelDump
+                         4B9 KeGetCurrentIrql
+                         8F1 RtlInitUnicodeString
+                         6CB ObfDereferenceObject
+                         384 IoGetRelatedDeviceObject
+                         82E RtlCmDecodeMemIoResource
+                         475 KeAcquireSpinLockRaiseToDpc
+                         C4A _vsnprintf
+                          71 DbgPrintEx
+                         BF7 __C_specific_handler
+
+    WppRecorder.sys
+             1C0018030 Import Address Table
+             1C00184C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           3 WppAutoLogStop
+                           4 WppAutoLogTrace
+
+    winhvr.sys
+             1C0018380 Import Address Table
+             1C0018810 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D WinHvAttachDeviceRemote
+                          2D WinHvDetachDevice
+                          A9 WinHvUnmapDeviceInterrupt
+                           C WinHvAttachDevice
+                          85 WinHvReserveDeviceInterrupt
+                          84 WinHvReportPresentHypervisor
+                          7A WinHvQueryDeviceInterruptTarget
+                          86 WinHvReserveDeviceInterruptRemote
+                          2E WinHvDetachDeviceRemote
+                          98 WinHvSetPhysicalDeviceProperty
+                           A WinHvAssertDeviceInterrupt
+                          62 WinHvMapDeviceInterruptEx
+
+    ext-ms-win-ntos-ksr-l1-1-2.dll
+             1C0018058 Import Address Table
+             1C00184E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           F KsrPersistMemory
+                           A KsrMdlToMemoryRuns
+                           0 KsrClaimPersistedMemory
+                           3 KsrEnumeratePersistedMemory
+                           5 KsrFreePersistedMemoryBlock
+
+    WDFLDR.SYS
+             1C0018000 Import Address Table
+             1C0018490 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+                           3 WdfLdrQueryInterface
+                           8 WdfVersionUnbind
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        2000 .pdata
+        7000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        D000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+       18000 PAGE
+        1000 fothk

@@ -1,0 +1,1213 @@
+!This program cannot be run in DOS mode.
+.rdata
+@.rsrc
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft .NET Runtime resources
+FileVersion
+4.8.9032.0 built by: NET481REL1
+InternalName
+mscorrc.dll
+LegalCopyright
+ Microsoft Corporation.  All rights reserved.
+OriginalFilename
+mscorrc.dll
+ProductName
+Microsoft
+ .NET Framework
+ProductVersion
+4.8.9032.0
+Comments
+Flavor=Retail
+PrivateBuild
+DDBLD344B
+VarFileInfo
+Translation
+5Cannot use SizeParamIndex for ByRef array parameters.0This object cannot be marshaled as an IDispatch.BInternal limitation: method signature is too complex or too large.;Internal limitation: structure is too complex or too large.*Array size exceeds addressing limitations.
+Struct or class fields cannot be of type StringBuilder. The same effect can usually be achieved by using a String field and preinitializing it to a string with length matching the length of the appropriate buffer.
+<Unknown>
+<In Memory Module>
+Thread has not been started.
+An instance of the __ComObject type cannot be created unless the type has been obtained using GetTypeFromProgID or GetTypeFromCLSID.
+<Unknown %1>/Marshaler restriction: Excessively long string.aThe declaration referenced in a method implementation is inaccessible.  Type: '%1' Assembly: '%2'(Vararg calling convention not supported.
+Error
+An invalid VARIANT has been passed as argument %i of method '%s' of type '%s'.  If this argument is meant to be an interface pointer, add [MarshalAs(UnmanagedType.Interface)] to the managed definition of the argument.
+Click CANCEL to break into the debugger and OK to continue.
+Invalid VARIANT.
+Warning: Components of the Common Language Runtime debugging services are from different builds.
+Continuing to run will cause unpredictable results.
+In-process component (mscoree.dll) is version %d.%d (%s)
+Out-of-process component (mscordbi.dll) is version %d.%d (%s).
+Application Error
+No debugger found.
+Application has generated an exception that could not be handled.
+Process ID=0x%x (%d), Thread ID=0x%x (%d).
+Click OK to terminate the application.
+Click CANCEL to debug the application.
+INTERNAL ERROR:
+Unhandled exception in Debugger::HandleIPCEvent.
+Event ID=0x%x.
+Exception code=0x%08x, Eip=0x%08x.
+Process ID=0x%x (%d), Thread ID=0x%x (%d).
+PPerformance Monitor Extension DLL for CLR.  This can only be used on Windows NT.(Could not load on non-Windows NT system.
+A call to PInvoke function '%1$s' has unbalanced the stack. This is likely because the managed PInvoke signature does not match the unmanaged target signature. Check that the calling convention and parameters of the PInvoke signature match the target unmanaged signature.)The '%1$s' configuration file is invalid.
+A callback was made on a garbage collected delegate of type '%1$s'. This may cause application crashes, corruption and data loss. When passing delegates to unmanaged code, they must be kept alive by the managed application until it is guaranteed that they will never be called.
+An attempt was made to change the apartment state of the thread to %1$s, but it has already been set to %2$s. When creating a new thread the apartment state shouldbe set before the thread is started. For the main thread of the application, the apartmentstate can be set by specifying either [STAThreadAttribute] or [MTAThreadAttribute] on themain method of the application. If the application really needs to attempt to set the apartment state on a running thread, Thread.TrySetApartmentState should be used and the return value should be consulted to determine if the operation was successful. Note that Thread.TrySetApartmentState will not fire the InvalidApartmentStateChange MDA.
+The current thread used to have an apartment state of %1$s, but the application has CoUnitialized this thread and it is now %2$s. This may cause calls on RuntimeCallableWrappers representing some COM components to fail and may also cause COM component that are not multi-threaded to be accessed from multiple threads at the same time which can cause corruption or data loss.
+Attempting managed execution inside OS Loader lock. Do not attempt to run managed code inside a DllMain or image initialization function since doing so can cause the application to hang.
+An exception was caught but handled while releasing a COM interface pointer through Marshal.Release, Marshal.ReleaseComObject or implicitly after the corresponding RuntimeCallableWrapper was garbage collected. This is the result of a user refcount error or other problem with a COM object's Release. Make sure refcounts are managed properly. While these types of exceptions are caught by the CLR, they can still lead to corruption and data loss so if possible the issue causing the exception should be addressed
+An invalid VARIANT was detected during a conversion from an unmanaged VARIANT to a managed object. Passing invalid VARIANTs to the CLR can cause unexpected exceptions, corruption or data loss.
+The call to QI for interface '%1$s' with IID '%2$s' failed with HRESULT 0x%3$s (%4$s). One likely reason this failed is that the object does not have a proxy/stub dll properly registered.
+Transition into COM context 0x%1$x for this RuntimeCallableWrapper failed with the following error: %2$s. This is typically because the COM context 0x%1$x where this RuntimeCallableWrapper was created has been disconnected or it is busy doing something else and cannot process the context transition. No proxy will be used to service the request on the COM component and calls will be made to the COM component directly. This may cause corruption or data loss. To avoid this problem, please ensure that all COM contexts/apartments/threads stay alive and are available for context transition, until the application is completely done with the RuntimeCallableWrappers that represents COM components that live inside them.
+Transition into COM context 0x%1$x for this RuntimeCallableWrapper failed with the following error: %2$s. This is typically because the COM context 0x%1$x where this RuntimeCallableWrapper was created has been disconnected or it is busy doing something else. Releasing the interfaces from the current COM context (COM context 0x%3$x). This may cause corruption or data loss. To avoid this problem, please ensure that all COM contexts/apartments/threads stay alive and are available for context transition, until the application is completely done with the RuntimeCallableWrappers that represents COM components that live inside them.
+A non marshalable COM component is being used from a different apartment/context then the one where it first entered the CLR. Since the component is non marshalable, it will be called directly from the current apartment/context. This may cause corruption or data loss if the component does not support being accessed from multiple threads at once. This is most likely caused by a faulty IMarshal implementation on the part of the COM component.
+An invalid IUnknown* was detected during a conversion from a COM component to a managed object. Passing invalid IUnknown pointers to the CLR can cause unexpected exceptions, corruption or data loss.JMarshaling parameter with index %1$i and name '%2$s' from '%3$s' to '%4$s'
+Invalid function pointer 0x%1$x was passed into the runtime to be converted to a delegate. Passing in invalid function pointers to be converted to delegates can cause crashes, corruption or data loss. 
+The assembly named '%1$s' was loaded from '%2$s' using the LoadFrom context. The use of this context can result in unexpected behavior for serialization, casting and dependency resolution. In almost all cases, it is recommended that the LoadFrom context be avoided. This can be done by installing assemblies in the Global Assembly Cache or in the ApplicationBase directory and using Assembly.Load when explicitly loading assemblies.
+The CLR has been unable to transition from COM context 0x%1$x to COM context 0x%2$x for 60 seconds. The thread that owns the destination context/apartment is most likely either doing a non pumping wait or processing a very long running operation without pumping Windows messages. This situation generally has a negative performance impact and may even lead to the application becoming non responsive or memory usage accumulating continually over time. To avoid this problem, all single threaded apartment (STA) threads should use pumping wait primitives (such as CoWaitForMultipleHandles) and routinely pump messages during long running operations.
+An attempt has been made to free an RCW that is in use.  The RCW is in use on the active thread or another thread.  Attempting to free an in-use RCW can cause corruption or data loss.
+A UTC DateTime is being converted to text in a format that is only correct for local times. This can happen when calling DateTime.ToString using the 'z' format specifier, which will include a local time zone offset in the output. In that case, either use the 'Z' format specifier, which designates a UTC time, or use the 'o' format string, which is the recommended way to persist a DateTime in text. This can also occur when passing a DateTime to be serialized by XmlConvert or DataSet. If using XmlConvert.ToString, pass in XmlDateTimeSerializationMode.RoundtripKind to serialize correctly. If using DataSet, set the DateTimeMode on the DataColumn object to DataSetDateTime.Utc. 
+The following error occurred while determining how to marshal the parameters of member '%1$s' of type '%2$s': %3$s This is most likely due to an incompatible MarshalAs attribute on one of the parameters. 
+A COM client has called managed method '%1$s' on type '%2$s'. This method does not have an HRESULT return type and an exception was thrown that was not handled. The exception contains the following message: %3$s. This exception will be caught and zero will be returned to the COM caller if the method's return type is not void.
+Attempting to call into managed code without transitioning out first.  Do not attempt to run managed code inside low-level native extensibility points, such as the vectored exception handler, since doing so can cause corruption and data loss.
+A QueryInterface call was made requesting the class interface of COM visible managed class '%1$s'. However since this class derives from non COM visible class '%2$s', the QueryInterface call will fail. This is done to prevent the non COM visible base class from being constrained by the COM versioning rules.
+A QueryInterface call was made requesting the default IDispatch interface of COM visible managed class '%1$s'. However since this class does not have an explicit default interface and derives from non COM visible class '%2$s', the QueryInterface call will fail. This is done to prevent the non COM visible base class from being constrained by the COM versioning rules.
+The assembly with display name '%1$s' loaded from code base '%2$s' failed to load in the '%3$s' binding context of the AppDomain with ID %4$d. The cause of the failure was: %5$s
+An attempt was made to retrieve a GCHandle from an invalid IntPtr cookie (0x%1$x). The cookie was most likely invalid because the cookie does not represent a GCHandle, the GCHandle has already been freed, the retrieval was attempted in the wrong AppDomain, or the GCHandle was marshaled to native code as a GCHandle but passed back into managed code as an IntPtr where a cast was attempted. Attempting to use an invalid pointer to reclaim a GC handle can cause unexpected exceptions, crashes, corruption or data loss. 
+An exception was caught but handled while releasing a COM interface pointer through Marshal.Release or Marshal.ReleaseComObject or implicitly after the corresponding RuntimeCallableWrapper was garbage collected. This is the result of a user refcount error or other problem with a COM object's Release. Make sure refcounts are managed properly.  The COM interface pointer's original vtable pointer was 0x%1$x. While these types of exceptions are caught by the CLR, they can still lead to corruption and data loss so if possible the issue causing the exception should be addressedGThe first PInvoke call to export '%1$s' in module '%2$s' has been made.
+The runtime has encountered a fatal error. The address of the error was at 0x%1$08x, on thread 0x%2$x. The error code is 0x%3$08x. This error may be a bug in the CLR or in the unsafe or non-verifiable portions of user code. Common sources of this bug include user marshaling errors for COM-interop or PInvoke, which may corrupt the stack.
+hUser code has attempted to call the following API: '%1$s'. This may result in a deadlock in the process.
+An overlapped pointer (0x%1$p) that was not allocated on the GC heap was passed via PInvoke to the Win32 function '%2$s' in module '%3$s'. If the AppDomain is shut down, this can cause heap corruption when the async I/O completes. The best solution is to pass a NativeOverlapped structure retrieved from a call to System.Threading.Overlapped.Pack(). If the AppDomain exits, the CLR will keep this structure alive and pinned until the I/O completes.
+An overlapped pointer (0x%1$p) may have been freed before the I/O operation completed. Freeing an overlapped pointer before the I/O operation completes will cause GC heap corruption when the I/O does complete. Note that this MDA may not represent an error if the overlapped operation did not start successfully
+The native component calling into the CLR through this ComCallWrapper has performed an illegal cast on this IUnknown or IDispatch pointer.  The caller neglected to call QueryInterface for the correct interface before making this call.HA thread has entered fiber mode and therefore debugging must be stopped.
+The assembly loaded from code base '%1$s' failed to load in the '%2$s' binding context of the AppDomain with ID %3$d. The cause of the failure was: %4$s
+The assembly with display name '%1$s' failed to load in the '%2$s' binding context of the AppDomain with ID %3$d. The cause of the failure was: %4$s-Marshaling field '%1$s' from '%2$s' to '%3$s'
+return value
+unknown
+DLL '%1$s' is attempting managed execution inside OS Loader lock. Do not attempt to run managed code inside a DllMain or image initialization function since doing so can cause the application to hang. %1$s Managed Debugging Assistant
+An early bound call (vtable call) was made on the following member of an auto dispatch class interface: '%1$s'. Early bound calls on members of auto dispatch class interfaces are not allowed. Please consider using an explicit interface as the default interface for the type. If a class interface must be called early bound, change it to auto dual. This can be accomplished by marking the class with the following attribute, located in the System.Runtime.InteropServices namespace: [ClassInterface(ClassInterfaceType.AutoDual)] 
+Method '%1$s', while executing within a constrained execution region, makes a call at IL offset 0x%2$04X to '%3$s', which does not have a sufficiently strong reliability contract and might cause non-deterministic results.
+Method '%1$s', while executing within a constrained execution region, makes a call at IL offset 0x%2$04X to '%3$s', which is virtual and cannot be prepared automatically at compile time. The caller must ensure this method is prepared explicitly at runtime before entering the constrained execution region.
+Method '%1$s', which contains at least one constrained execution region, cannot be prepared automatically since it has one or more unbound generic type parameters. The caller must ensure this method is prepared explicitly at runtime prior to execution.
+Method '%1$s' calls RuntimeHelpers.PrepareConstrainedRegions() at IL offset 0x%2$04X. This is invalid since it does not coincide with the beginning of a try clause.
+The CLR marshaler encountered an error while attempting to restore the thread culture after a call from unmanaged to managed where an LCID was used to specify the culture for the call. This will cause the thread's culture to remain set to the one associated with the LCID. The cause of the failure was: %1$s
+The CLR marshaler encountered an error while attempting to release the reference to a SafeHandle it acquired in order to marshal the SafeHandle to an unmanaged pointer during a call from managed to unmanaged. This may cause the unmanaged resource the SafeHandle represents to be leaked. The cause of the failure was: %1$s
+The CLR marshaler encountered an error while attempting to associate a SafeHandle with an unmanaged resource. This may cause the unmanaged resource to be leaked. The cause of the failure was: %1$s
+An exception was thrown from the CleanupNativeData method of a custom marshaler of type '%1$s'. This may cause an unmanaged data leak and should be corrected if possible. The cause of the failure was: %1$s
+A SafeHandle or CriticalHandle of type '%1$s' failed to properly release the handle with value 0x%2$p. This usually indicates that the handle was released incorrectly via another means (such as extracting the handle using DangerousGetHandle and closing it directly or building another SafeHandle around it.)
+Function DllMain, called with reason DLL_PROCESS_ATTACH, returned FALSE. DLL initialization failed. To ignore the DllMain return, set Registry value HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\IgnoreDllMainReturn to 1*Reflection has created a memberInfo cache.
+User code running on thread %1$i has attempted to abort thread %2$i. This may result in a corrupt state or resource leaks if the thread being aborted was in the middle of an operation that modifies global state or uses native resources. Aborting threads other than the currently running thread is strongly discouraged.
+'%s' is not a valid name.
+*Version %d.%d is not a compatible version.
+#Shared memory '%hs' already exists.
+No metadata was found.
+Database is read-only.
+/Database file is corrupt and may not be usable.%Version %d of schema '%hs' not found.
+9Null value is not allowed in unique index or primary key.#Duplicate record violates index %s.-VARIANT data type is not allowed in an index.
+Index %s not found.
+No records found.!Record capacity has been reached.9Record violates the primary key constraint for the table.
+Primary key value is required.)Access to deleted records is not allowed.
+BAttempt to update read-only column failed (column %d, table '%s').5Only one column can be the RID or primary key column.5Primary key column '%s' may not allow the null value.
+Object not found.
+Column '%s' not found.
+%d out of range.
+9A token passed to a metadata function has the wrong type.
+Internal error 0x%08x.
++Module information inconsistent upon merge.\Ignoring IDL custom attribute '%ls' on '%ls' because it must be used with an integral value.`Ignoring IDL custom attribute '%ls' on '%ls' because it cannot be used on an IUnknown interface.VType '%hs' contains arrays of SafeHandles, which cannot be exported to a type library.XInconsistent method declarations in duplicated types (types: %s; methods: %s): (0x%08x).VInconsistent field declarations in duplicated types (types: %s; fields: %s): (0x%08x).[Inconsistent parameter information in duplicated methods (methods: %s; type: %s): (0x%08x).
+^Inconsistent implemented interfaces in duplicated types (types: %s; interfaces: %s): (0x%08x).ZType '%hs' contains arrays of CriticalHandles, which cannot be exported to a type library.CInconsistent layout information in duplicated types (%s): (0x%08x).
+VInconsistent event declarations in duplicated types (types: %s; events: %s): (0x%08x).]Inconsistent property declarations in duplicated types (types: %s; properties: %s): (0x%08x).
+aInconsistent method implementation flags in duplicated methods (methods: %s; type: %s): (0x%08x)./Custom attributes are not consistent: (0x%08x).
+OInconsistent Generic information in duplicated types or methods (%s): (0x%08x).>Differing number of events in duplicated types (%s): (0x%08x).BDiffering number of properties in duplicated types (%s): (0x%08x).ZA TypeRef exists which should, but does not, have a corresponding TypeDef: (%s): (0x%08x).)SizeConst is required for a fixed string.KA MarshalType or MarshalTypeRef setting is required for a custom marshaler.%A filename is required for DllImport.VType library importer has encountered a source interface containing properties: '%ls'.
+The enum member '%hs.%ls' has a value that cannot be expressed as a 32-bit integer.  Type library enum members must be 32-bit integers.?Differing number of methods in duplicated types (%s): (0x%08x).>Differing number of fields in duplicated types (%s): (0x%08x).WDiffering number of parameters in duplicated method (types: %s; methods: %s): (0x%08x).
+Type '%hs' has auto-layout but is being exported. Consider marking the type [ComVisible(false)] since the exported definition is not guaranteed to work.
+Cannot export TypedReference.(Default interface is not visible to COM.
+System.Array fields without a SafeArraySubType cannot be used from COM. For legacy reasons, they are exported as SAFEARRAYs of VARIANTs. However, at runtime, they are not marshaled as such.
+Type library exporter encountered a reference type with layout marked as [MarshalAs(UnmanagedType.Interface)] in a signature. The reference type was instead treated as if it were marked with [MarshalAs(UnmanagedType.IUnknown)].
+?The custom attribute is not valid for the target object's type.
+Incorrect argument value.NUnable to process the custom attribute value - it may be corrupt or incorrect.5Custom attribute argument %*s should not be repeated.,Unrecognized custom attribute argument: %*s./Custom attribute does not yet support variants.-Custom attribute does not yet support arrays.
+Unexpected argument type.4Unexpected property found in custom attribute value.8Argument '%s' cannot be applied to objects of this type.
+Incorrect UUID format.WMarshalAs attribute has fields set that are not valid for the specified unmanaged type.1Specified unmanaged type is only valid on fields.#Parameter index cannot be negative.
+Multiplier cannot be negative.!Constant size cannot be negative.
+Type library exporter encountered a type that derives from a generic class and is not marked as [ClassInterface(ClassInterfaceType.None)]. Class interfaces cannot be exposed for such types. Consider marking the type with [ClassInterface(ClassInterfaceType.None)] and exposing an explicit interface as the default interface to COM using the ComDefaultInterface attribute.
+Unable to export this assembly with the specified machine type as the assembly is marked machine specific with a different machine type.tType library importer encountered a source interface on coclass '%ls' with a NewEnum member.  This is not supported.
+Type library importer encountered a property getter '%ls' on type '%ls' without a valid return type.  The importer will attempt to import this property as a method instead.4Duplicate managed types have different visibilities.{[%1] InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified.f[%1] Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.
+OError (Structural): Table=0x%08x, Col=0x%08x, Row=0x%08x, has rid out of range.\Error (Structural): Table=0x%08x, Col=0x%08x, Row=0x%08x, has coded token type out of range.UError (Structural): Table=0x%08x, Col=0x%08x, Row=0x%08x, has coded rid out of range.WError (Structural): Table=0x%08x, Col=0x%08x, Row=0x%08x, has an invalid String offset.UError (Structural): Table=0x%08x, Col=0x%08x, Row=0x%08x, has an invalid GUID offset.UError (Structural): Table=0x%08x, Col=0x%08x, Row=0x%08x, has an invalid BLOB offset.%Error: Multiple module records found.
+Error: Module has no MVID.
+Error: TypeRef has no name.-Error: TypeRef has a duplicate, token=0x%08x.
+Error: TypeDef has no name.IError: TypeDef has a duplicate based on namespace and name, token=0x%08x.=Warning: TypeDef has a duplicate based on GUID, token=0x%08x.
+AError: Signature containing ELEMENT_TYPE_SENTINEL must be VARARG.3Error: Multiple ELEMENT_TYPE_SENTINEL in signature.3Error: Trailing ELEMENT_TYPE_SENTINEL in signature.*Error: Signature is missing argument # %d.
+Error: Field of ByRef type.7Error: Synchronized method in ValueType (token=0x%08x).FError: Full name length exceeds maximum allowed (length: %d; max: %d).4Error: Duplicate Assembly Processor record (0x%08x).-Error: Duplicate Assembly OS record (0x%08X).3Error: ManifestResource has invalid flags (0x%08x).'Warning: ExportedType has no TypeDefId.'Error: File has invalid flags (0x%08x).
+Error: File has no hash BLOB.
+Error: Module has no name.&Error: Module name is fully-qualified.;Error: TypeDef marked as RTSpecialName but not SpecialName.
+@Error: FieldLayout2 record has Field token=0x%08x marked Static.7Error: FieldLayout2 record has a duplicate, rid=0x%08x.
+Error: ModuleRef has no name.1Warning: ModuleRef has a duplicate, token=0x%08x.,Error: TypeRef has invalid resolution scope.:Error: TypeDef is marked Nested but has no enclosing type.nWarning: Type extends TypeRef which resolves to TypeDef in the same module (TypeRef: 0x%08x; TypeDef: 0x%08x).
+Error: Signature has zero size.gError: Signature does not have enough bytes left at byte=0x%08x as indicated by the compression scheme.7Error: Signature has invalid calling convention=0x%08x.OError: Method is marked Static but calling convention=0x%08x is marked HASTHIS.XError: Method is not marked Static, but calling convention=0x%08x is not marked HASTHIS.6Error: Signature has no argument count at byte=0x%08x.XError: Signature missing element type after modifier (modifier: 0x%02x; offset: 0x%08x).2Error: Signature missing token after element 0x%x.FError: Signature has an invalid token (token: 0x%08x; offset: 0x%08x).
+"Warning: [CLS] Field in Interface.1Warning: Unrecognized Hash Algorithm ID (0x%08x).6Error: Unrecognized Processor ID (0x%08x) in Assembly.JWarning: Unrecognized Processor ID (0x%08x) in AssemblyRef (token=0x%08x).6Error: Constant parent token (0x%08x) is out of range.'Error: Invalid Assembly flags (0x%04x).9Warning: TypeDef (token=0x%08x) has same name as TypeRef.<Error: InterfaceImpl has invalid implementing type (0x%08x).;Error: InterfaceImpl has invalid implemented type (0x%08x).FError: TypeDef has security information but is not marked HasSecurity.EError: TypeDef is marked HasSecurity but has no security information./Error: Type constructor must have no arguments.>Error: ExportedType has invalid Implementation (token=0x%08x).?Error: MethodImpl has body from another TypeDef (token=0x%08x).7Error: Type constructor has invalid calling convention.0Error: MethodImpl has invalid Type token=0x%08x.
+SError: TypeDef that is not an Interface and not the Object class extends Nil token.FError: TypeDef for Object class extends token=0x%08x which is not nil.;Error: TypeDef extends token=0x%08x which is marked Sealed.@Error: TypeDef is a Deleted record but not marked RTSpecialName.CError: TypeDef is marked RTSpecialName but is not a Deleted record.:Error: MethodImpl overrides private method (token=0x%08x).BError: Assembly name contains leading spaces or path or extension.'Error: File has a reserved system name.>Error: MethodImpl has static overriding method (token=0x%08x).4Error: TypeDef is marked Interface but not Abstract.DError: TypeDef is marked Interface but extends non-Nil token=0x%08x.5Warning: TypeDef is marked Interface but has no GUID.8Error: MethodImpl overrides final method (token=0x%08x).HError: TypeDef is a Value Type, Enum or Delegate, but not marked Sealed..Error: Parameter has invalid flags set 0x%08x.3Error: InterfaceImpl has a duplicate, token=0x%08x.
+3Error: TypeDef extends an Interface (token=0x%08x).4Error: Type/instance constructor marked PInvokeImpl.'Error: System.Enum is not marked Class.0Error: System.Enum must extend System.ValueType._Error: MethodImpl's Decl (token=0x%08x) and Body (token=0x%08x) method signatures do not match.
+Error: Enum has method(s).$Error: Enum implements interface(s).
+Error: Enum has properties.#Error: Enum has one or more events.6Error: TypeDef has invalid Method List (> Nmethods+1).4Error: TypeDef has invalid Field List (> Nfields+1).*Error: Constant has illegal type (0x%02x)."Error: Enum has no instance field.)Error: Enum has multiple instance fields.
+YError: Event has related method belonging to another type (method: 0x%08x; type: 0x%08x).)Error: Event has no AddOn related method.,Error: Event has no RemoveOn related method.IError: ExportedType has same namespace and name as TypeDef, token 0x%08x.BError: ManifestResource refers to non-PE file but offset is not 0.@Error: Decl.Security is assigned to invalid item (token=0x%08x).6Error: Decl.Security has invalid action flag (0x%08x).7Error: Decl.Security has no associated permission BLOB.BError: ManifestResource has invalid Implementation (token=0x%08x).
+7Warning: [CLS] MemberRef has VARARG calling convention.1Error: Constructor, initializer must return void.5Error: Event's Fire method (0x%08x) must return void.
+Warning: Invalid locale string.:Error: Constant has parent of invalid type (token=0x%08x).EError: ELEMENT_TYPE_SENTINEL is only allowed in MemberRef signatures.
+0Error: Method cannot be both Abstract and Final.)Error: Abstract method marked ForwardRef.*Error: Abstract method marked PInvokeImpl.*Error: Abstract method not marked Virtual.1Error: Non-abstract method not marked ForwardRef.FError: Non-abstract method must have RVA or be PInvokeImpl or Runtime.(Error: PrivateScope method has zero RVA.-Error: Global method marked Abstract,Virtual.YError: Signature contains long form (such as ELEMENT_TYPE_CLASS<token of System.String>).'Warning: Method has multiple semantics.>Error: Method has invalid semantic association (token=0x%08x).JError: Method has semantic association (token=0x%08x) that does not exist.>Error: MethodImpl overrides non-virtual method (token=0x%08x).*Warning: [CLS] Global item (field,method).MError: Method has multiple semantic flags set for association (token=0x%08x).GError: Method has no semantic flags set for association (token=0x%08x).
+'Error: Multiple assembly records found.
+Error: Assembly has no name.oError: Token 0x%08x following ELEMENT_TYPE_CLASS (_VALUETYPE) in signature is a ValueType (Class,respectively).DError: ClassLayout has parent TypeDef token=0x%08x marked Interface.7Error: AssemblyOS entry has invalid platform ID=0x%08x.
+Error: AssemblyRef has no name.>Error: TypeDef is not marked Nested but has an enclosing type.QError: AssemblyRefOS entry for AssemblyRef=0x%08x has invalid platform ID=0x%08x.
+Error: File has no name. Error: ExportedType has no name.%Error: TypeDef extends its own child.$Error: ManifestResource has no name.*Error: File has a duplicate, token=0x%08x.7Error: File name is fully-qualified, but should not be.2Error: ExportedType has a duplicate, token=0x%08x.>Error: ManifestResource has a duplicate by name, token=0x%08x.
+8Error: ManifestResource is not marked Public or Private.8Warning: [CLS] TypeDef is Enum but has no value__ field.=Error: Field value__ (token=0x%08x) in Enum is marked static.HError: Field value__ (token=0x%08x) in Enum is not marked RTSpecialName.9Error: Field (token=0x%08x) in Enum is not marked static.:Error: Field (token=0x%08x) in Enum is not marked literal.*Warning: [CLS] Enum has no literal fields.JError: Signature of field (token=0x%08x) in Enum does not match enum type.AError: Field value__ (token=0x%08x) in Enum is not the first one.JError: Field (token=0x%08x) is marked RTSpecialName but not named value__.5Error: Field name value__ is reserved for Enums only.#Error: Instance field in Interface.%Error: Non-public field in Interface.KError: Global item (field,method) must be Public, Private, or PrivateScope.1Error: Global item (field,method) must be Static.(Error: Global field has no RVA assigned.HError: InterfaceImpl's implemented type (0x%08x) not marked tdInterface.4Error: Field is marked HasRVA but has no RVA record."Error: Field is assigned zero RVA.;Error: Method has both non-zero RVA and Implementation Map.)Error: Extraneous bits in Flags (0x%08x).
+Error: TypeDef extends itself.2Error: System.ValueType must extend System.Object.GWarning: TypeDef extends TypeSpec (0x%08x), not supported in Version 1.
+9Error: Value class has neither fields nor size parameter."Error: Interface is marked Sealed.OError: NestedClass token (0x%08x) in NestedClass record is not a valid TypeDef.RError: EnclosingClass token (0x%08x) in NestedClass record is not a valid TypeDef.-Error: Duplicate NestedClass record (0x%08x).VError: Nested type token (0x%08x) has multiple EnclosingClass tokens (0x%08x, 0x%08x).3Error: Zero RVA of field 0x%08x in FieldRVA record.
+IError: Invalid field token in FieldRVA record (field: 0x%08x; RVA: 0x%x).FError: Same RVA in another FieldRVA record (RVA: 0x%x; field: 0x%08x).LError: Same field in another FieldRVA record(field: 0x%08x; record: 0x%08x).;Error: Invalid token specified as EntryPoint in CLR header.CError: Instance method token specified as EntryPoint in CLR header.9Error: Invalid type of instance field(0x%08x) of an Enum.%Error: Method has invalid RVA (0x%x).(Error: Literal field has no const value.aError: Class implements interface but not method (class:0x%08x; interface:0x%08x; method:0x%08x).9Error: CustomAttribute has invalid Parent token (0x%08x).7Error: CustomAttribute has invalid Type token (0x%08x).9Error: CustomAttribute has non-constructor Type (0x%08x).=Error: CustomAttribute's Type (0x%08x) has invalid signature.8Error: CustomAttribute's Type (0x%08x) has no signature.:Error: CustomAttribute's blob has invalid prolog (0x%04x).9Error: Method has invalid local signature token (0x%08x).
+Error: Signature has token following ELEMENT_TYPE_CLASS (_VALUETYPE) that is not a TypeDef or TypeRef (token: 0x%08x; offset: 0x%08x).rWarning: Class does not implement interface method in this module (class:0x%08x; interface:0x%08x; method:0x%08x).
+CLR assembly '%s' was imported from a type library and cannot be re-exported to a type library.  Make sure the type library from which the assembly was imported is registered.
+!Error: Method has invalid header.GError: EntryPoint method has invalid number of arguments, expecting %d.1Error: EntryPoint method has invalid return type.8Error: EntryPoint method has invalid argument number %d./Error: Illegal use of type 'void' in signature.cError: Multiple implementation of interface method (class:0x%08x; interface:0x%08x; method:0x%08x). Error: GenericParam has no name.$Warning: GenericParam has nil owner.JError: GenericParam has a duplicate based on owner and name, token=0x%08x.LError: GenericParam has a duplicate based on owner and number, token=0x%08x.0Error: GenericParam is out of sequence by owner.1Error: GenericParam is out of sequence by number.kError: GenericParam is co-or-contra variant but its owner, token (0x%08x), is not an interface or delegate.aError: GenericParam is a method type parameter and must be non-variant, not co-or-contra variant.AError: GenericParam has invalid variance value in flags (0x%08x).{Error: GenericParam has inconsistent special constraints ReferenceTypeConstraint and ValueTypeConstraint in flags (0x%08x).
+Error: MemberRef has no name.+Error: MemberRef name starts with _VtblGap.+Error: MemberRef name starts with _Deleted.;Error: MemberRef parent is Nil but the module is a PE file.AError: MemberRef signature has invalid calling convention=0x%08x.nError: MemberRef has MethodDef parent, but calling convention is not VARARG (parent:0x%08x; callconv: 0x%08x).HError: MemberRef has different name than parent MethodDef, token=0x%08x.[Error: MemberRef has fixed part of signature different from parent MethodDef, token=0x%08x.1Warning: MemberRef has a duplicate, token=0x%08x.EError: ClassLayout has parent TypeDef token=0x%08x marked AutoLayout.vError: ClassLayout has invalid PackingSize; valid set of values is {1,2,4,...,128} (parent: 0x%08x; PackingSize: %ld).KError: ClassLayout has a duplicate (parent: 0x%08x; duplicate rid: 0x%08x).NError: FieldLayout2 record has invalid offset (field: 0x%08x; offset: 0x%08x).LError: FieldLayout2 record for Field token=0x%08x has TypeDefNil for parent.jError: FieldLayout2 record for field of type that has no ClassLayout record (field: 0x%08x; type: 0x%08x).cError: Explicit offset specified for field of type marked AutoLayout (field: 0x%08x; type: 0x%08x).
+9Error: Signature missing function pointer at byte=0x%08x.LError: Signature has function pointer missing argument count at byte=0x%08x.-Error: Signature missing rank at byte=0x%08x.KError: Signature missing count of sized dimensions of array at byte=0x%08x.CError: Signature missing size of dimension of array at byte=0x%08x.GError: Signature missing count of lower bounds of array at byte=0x%08x.=Error: Signature missing lower bound of array at byte=0x%08x.SError: Signature has invalid ELEMENT_TYPE_* (element type: 0x%08x; offset: 0x%08x).<Error: Signature missing size for VALUEARRAY at byte=0x%08x.=Error: Field signature has invalid calling convention=0x%08x.
+Error: Method has no name.
+Error: Method parent is Nil.,Error: Method has a duplicate, token=0x%08x.
+Error: Field has no name.
+Error: Field parent is Nil.+Error: Field has a duplicate, token=0x%08x.
+.Error: Field marked both InitOnly and Literal.$Error: Literal field must be Static.GError: Item (field,method) is marked RTSpecialName but not SpecialName.;Error: Abstract method in non-abstract type (token=0x%08x).FError: Neither static nor abstract method in interface (token=0x%08x).5Error: Non-public method in interface (token=0x%08x).8Error: Instance constructor in interface (token=0x%08x).
+Error: Global constructor.:Error: Static instance constructor in type (token=0x%08x).bError: Constructor/initializer in type (token=0x%08x) is not marked SpecialName and RTSpecialName.>Error: Virtual constructor/initializer in type (token=0x%08x).?Error: Abstract constructor/initializer in type (token=0x%08x).:Error: Non-static type initializer in type (token=0x%08x).dError: Method marked Abstract, Runtime, InternalCall or Imported must have zero RVA, and vice versa.OError: Method marked Final or NewSlot or CheckAccessOnOverride but not Virtual.;Error: Static method cannot be Final or NewSlot or Virtual.
+7Error: MethodImpl declared in Interface (token=0x%08x).=Error: MethodImpl has invalid MethodDeclaration token=0x%08x.6Error: MethodImpl has invalid MethodBody token=0x%08x./Error: MethodImpl has a duplicate (rid=0x%08x)./Error: Field has invalid parent (token=0x%08x).@Warning: Parameter out of sequence (parameter: %d; seq.num: %d).nError: Parameter has sequence number exceeding number of arguments (parameter: %d; seq.num: %d; num.args: %d).QError: Parameter #%d is marked HasFieldMarshal but has no marshaling information.RError: Parameter #%d has marshaling information but is not marked HasFieldMarshal.
+AError: Parameter #%d is marked HasDefault but has no const value.BError: Parameter #%d has const value but is not marked HasDefault.1Error: Property has invalid scope (token=0x%08x).
+Error: Property has no name.!Error: Property has no signature./Error: Property has a duplicate (token=0x%08x).
+.Error: Type/instance constructor has zero RVA.CError: Field is marked marshaled but has no marshaling information.DError: Field has marshaling information but is not marked marshaled.9Error: Field is marked HasDefault but has no const value.:Error: Field has const value but is not marked HasDefault.QError: Item (field,method) is marked HasSecurity but has no security information.RError: Item (field,method) has security information but is not marked HasSecurity.2Error: PInvoke item (field,method) must be Static.=Error: PInvoke item (field,method) has no Implementation Map.LError: Item (field,method) has Implementation Map but is not marked PInvoke.<Warning: Item (field,method) has invalid Implementation Map.?Error: Implementation Map has invalid Module Ref, token 0x%08x.EError: Implementation Map has invalid Member Forwarded, token 0x%08x.-Error: Implementation Map has no import name.@Error: Implementation Map has invalid calling convention 0x%04x.3Error: Item (field,method) has invalid access flag.
+6Error: Property has invalid calling convention (0x%x).<Error: Property is marked HasDefault but has no const value.=Error: Property has const value but is not marked HasDefault.^Error: Property has related method with invalid semantics (method: 0x%08x; semantics: 0x%08x).?Error: Property has related method with invalid token (0x%08x).\Error: Property has related method belonging to another type (method: 0x%08x; type: 0x%08x).6Error: Constant of type (0x%02x) must have null value.:Error: Constant of type (0x%02x) must have non-null value..Error: Event has invalid scope (token=0x%08x).
+Error: Event has no name.,Error: Event has a duplicate (token=0x%08x).2Error: Event has invalid EventType (token=0x%08x).FError: Event's EventType (token=0x%08x) is not a class (flags=0x%08x).[Error: Event has related method with invalid semantics (method: 0x%08x; semantics: 0x%08x).<Error: Event has related method with invalid token (0x%08x).
+,Error: GenericParamConstraint has nil owner.ZError: GenericParamConstraint has a duplicate based on owner and constraint, token=0x%08x.hError: GenericParamConstraint is non-contiguous with preceding constraints for same owner, token=0x%08x.!Error: MethodSpec has nil method.RError: MethodSpec has a duplicate based on method and instantiation, token=0x%08x.BError: MethodSpec signature has invalid calling convention=0x%08x.<Error: MethodSpec signature is missing arity at byte=0x%08x.:Error: MethodSpec signature is missing type argument # %d.YError: MethodSpec has generic method of arity %d but instantiation of different arity %d.(Error: MethodSpec method is not generic.KError: Signature missing arity of instantiated generic type at byte=0x%08x.`Error: Signature has generic type of arity %d instantiated at different arity %d at byte=0x%08x.=Error: Method cannot be both generic and a class constructor.AError: Method cannot be both generic and an instance constructor.EError: Method cannot be both generic and defined on an imported type.MError: Method cannot be both generic and have non-default calling convention.
+CError: Entry point in CLR header is the token for a generic method.KError: Method signature is generic but is missing its arity at byte=0x%08x.HError: Method signature is generic but its arity is zero at byte=0x%08x.IError: Signature has generic type instantiated at arity 0 at byte=0x%08x.7Error: MethodSpec signature has arity 0 at byte=0x%08x.LError: MethodDef signature has arity %d but the token owns %d GenericParams.MError: Entry point in CLR header is the token for a method in a generic type.RError: MethodImpl overrides non-generic method (token=0x%08x) with generic method.RError: MethodImpl overrides generic method (token=0x%08x) with non-generic method.fError: MethodImpl overrides generic method (token=0x%08x) of arity %d with generic method of arity %d.LError: TypeDef extends a TypeSpec (0x%08x) that is not an instantiated type.AError: Signature has type instantiated at ByRef at offset 0x%08x.BError: MethodSpec has type instantiated at ByRef at offset 0x%08x.$Error: TypeSpec has empty signature.?Error: TypeSpec has signature containing one or more sentinels.2Error: TypeDef is generic but has explicit layout.
+mFailed to delay load library '%hs' (Win32 error: %d).
+This program can no longer run and will now terminate.zFailed to get entry point '%s' in library '%hs'.  Win32 error: %d.
+This program can no longer run and will now terminate.
+,Error: Attempt to access unloaded AppDomain.
+=The module '%1' was expected to contain an assembly manifest.^Cannot load executable '%1' because it contains extra relocations or has relocations stripped.
+aThe assembly is built by a runtime newer than the currently loaded runtime, and cannot be loaded.
++Error: Missing method '%2' from class '%1'.
+Unable to load file '%1'.
+`The located assembly's manifest definition with name '%1' does not match the assembly reference.JThe found private assembly, '%1', was located outside the ApplicationBase.GA module specified in the manifest of assembly '%1' could not be found.
+/Assembly '%1' is required to be strongly named.
+Strong name signature verification failed for assembly '%1'.  The assembly may have been tampered with, or it was delay signed but not fully signed with the correct private key.
+7The given assembly name or codebase, '%1', was invalid.AHTTP download of assemblies has been disabled for this appdomain.
+4The check of the module's hash failed for file '%1'.
+The assembly returned from the host store has a different strong name signature than the corresponding one in GAC. Assembly: '%1'ULoadFrom(), LoadFile(), Load(byte[]) and LoadModule() have been disabled by the host.&Failed to add file to AppDomain cache.sThe requested assembly version conflicts with what is already bound in the app domain or specified in the manifest.{The requested assembly name was neither found in the GAC nor in the manifest or the manifest's specified location is wrong.6Unexpected error while parsing the specified manifest.QThe given assembly name is invalid because a processor architecture is specified.
+fType '%1' cannot be marshaled as an unmanaged structure; no meaningful size or offset can be computed.
+Warning: A StringBuilder buffer has been overflowed by unmanaged code.  The process may become unstable.  Insufficient capacity allocated to the StringBuilder before marshaling it.1Hash validation failed for file or assembly '%1'.\Could not load type '%1' because the module containing it from assembly '%2' failed to load.JCould not load type '%1' from assembly '%2' because the format is invalid.4Could not create array type '%1' from assembly '%2'.:No server registered or could not load class for CLSID %1.XCould not load type '%1' from assembly '%2' because the method '%3' could not be loaded.MMethod '%3' in type '%1' from assembly '%2' cannot be a static and a virtual.IDerived method '%3' in type '%1' from assembly '%2' cannot reduce access.RCould not get PINVOKE information for method '%3' in type '%1' from assembly '%2'.]Array of type '%1' from assembly '%2' cannot be created because base value type is too large.LMethod '%3' in type '%1' from assembly '%2' does not have an implementation.NCould not load type '%1' from assembly '%2' because the parent does not exist.TCould not load type '%1' from assembly '%2' because the parent type is an interface.TCould not load interface '%1' from assembly '%2' because it must extend from Object.
+(StrongName APIs not supported on system.0StrongName APIs could not locate a matching CSP.
+0Policy exception occurred while processing '%1'.5Failed to grant required minimum permissions to '%1'.+Failed to grant permission to execute '%1'.
+0Strong name validation failed for assembly '%1'.2Assembly '%1' is missing the required strong name.$Strong name key container not found.
+-The public key for assembly '%1' was invalid.
+cThe allocated signature slot for assembly '%1' does not correspond to the generated signature size.6Key pair does not match public key from assembly '%1'.
+MAn internal error happened in the Common Language Runtime's Execution Engine.
+"A security violation has occurred.PAn error relating to remoting occurred during the load of file or assembly '%1'.UAn error relating to serialization occurred during the load of file or assembly '%1'.
+ The path is not of a legal form.uIllegal layout for type '%1' from assembly '%2': valuetypes with non-public fields may not overlap with other fields.&Lookup of token information timed out.
+Specified SAFEARRAY is invalid.NMethod '%1' of COM event interface '%2' is not present on event provider '%3'.uMethods on COM event interfaces must take a single delegate derived class as a parameter and have a void return type.
+Strong name validation failed for assembly '%s'.  The file may have been tampered with or it was delay signed, but not fully signed with the correct private key.
+Strong name validation failed.
+Invalid delegate layout.<The Common Language Runtime could not run the given program.5Could not run the given program.  _CorExeMain failed.
+2The UNC path should be of the form \\server\share.HCustom marshaler '%1' does not implement the ICustomMarshaler interface.
+Custom marshaler '%1' does not implement a static GetInstance method that takes a single string parameter and returns an ICustomMarshaler.
+<There is not enough space on the disk.  Unable to load '%1'.
+HThe filename, directory name, or volume label syntax is incorrect: '%1'.
+1A procedure imported by '%1' could not be loaded.
+To resolve a namespace from a custom Windows Runtime component, you must supply the packageGraphFilePaths argument to ResolveNamespace.\Returning a .NET Framework assembly to resolve a Windows Runtime reference is not supported.WTypes from custom Windows Runtime components are not supported in desktop applications.=Target-dependent SIMD vector types may not be used with ngen.>SIMD intrinsics may not be used by partial trust applications.
+\Method '%3' on type '%1' from assembly '%2' is overriding a method that has been overridden.jMethod '%3' on type '%1' from assembly '%2' is overriding a method that is not visible from that assembly.HMethod '%3' on type '%1' from assembly '%2' is overriding a method impl.bMethod '%3' on type '%1' from assembly '%2' tried to override a method with a different signature.iType '%1' from assembly '%2' tried to override method '%3' but does not implement or inherit that method.sMethod '%3' on type '%1' from assembly '%2' tried to implement a method declaration with a different virtual state.pMethod '%3' on type '%1' from assembly '%2' must be virtual to implement a method on an interface or super type.cCould not load type '%1' from assembly '%2' because the method '%3' has no implementation (no RVA).;Size of field of type '%1' from assembly '%2' is too large.
+Cannot connect to URL for '%1'.?Type '%1' from assembly '%2' cannot extend from any other type.+Type '%1' from assembly '%2' has zero size.+Could not load TypeSpec from assembly '%2'.<Type '%1' from assembly '%2' has a field of an illegal type.jBody referenced in a method implementation must be defined in the same type.  Type: '%1'.  Assembly: '%2'.ZBody referenced in a method implementation cannot be static.  Type: '%1'.  Assembly: '%2'.
++The server or proxy was not found for '%1'.ECode execution is prohibited in an assembly loaded as ReflectionOnly.>CriticalHandles cannot be marshaled from unmanaged to managed.9Ref and out CriticalHandle parameters cannot be abstract.
+Invalid managed/unmanaged type combination (CriticalHandles must not have a MarshalAs attribute set and cannot be used in arrays).
+Critical handle has been closedNStructures containing CriticalHandle fields are not allowed in this operation.ACriticalHandle fields cannot be created from an unmanaged handle.,Returned CriticalHandles cannot be abstract.:CriticalHandle derived types cannot be stored in Variants.]CriticalHandle subclasses may not override the finalizer. Put logic in ReleaseHandle instead.RAssemblyResolveEvent handlers cannot return Assemblies loaded for reflection only.YReflectionOnlyAssemblyResolve handlers must return Assemblies loaded for reflection only.yMethod '%3' on type '%1' from assembly '%2' tried to implicitly override a method with weaker type parameter constraints.
+FFile or assembly name '%1', or one of its dependencies, was not found.
+DThe system cannot open file '%1'.  There may be too many open files.
+Access is denied: '%1'.)The actual object was not found for '%1'.BConnection was established, but data cannot be retrieved for '%1'.%WinInet download failed for URL '%1'.
+'The format of the file '%1' is invalid.
+Unknown URL protocol: '%1'.=Security problem encountered when connecting to URL for '%1'.
+"Invalid custom attribute provided.'Invalid custom attribute provided: '%1'3Thread is running or terminated; it cannot restart..Unable to cast transparent proxy to type '%1'.8The current thread has been chosen as a deadlock victim.&Unable to retrieve thread information..Thread is not running; it cannot be suspended.,Thread is not running; it cannot be resumed.3Thread is not user-suspended; it cannot be resumed.,Thread is dead; priority cannot be accessed.)Thread is dead; state cannot be accessed.
+Thread in invalid state.)Thread is suspended; attempting to abort.,PInvoke restriction: cannot return variants. Connection timeout for URL '%1'.%The path contains illegal characters.*Function 0x%08x had not yet been compiled.7The ID 0x%08x had not yet been fully loaded or defined.RThe Module containing function ID 0x%08x is not configured for updateable methods.&Method ID 0x%08x could not be updated.1Profiling error: the method has no associated IL.OProfiling error: the thread is unmanaged and has never run managed code before.QProfiling error: this function may only be called during profiler initialization.UProfiling error: in-process debugging must be enabled during profiler initialization.[Profiling error: cannot get a JIT map because the profiler did not enable JIT map tracking.FProfiling error: BeginInprocDebugging cannot be called more than once.PProfiling error: in-process debugging not allowed during this profiler callback.@Profiling error: the requested information is not yet available.
+FError: Cannot increase the maximum nesting level in Edit-and-Continue.7Error: Module must be loaded in Edit-and-Continue mode.
+ Variable type cannot be changed..Cannot get the local signature for the method.0Field cannot be added to a value or layout type.#Field properties cannot be changed.
+VEdit-and-Continue impossible: Zap file was created without Edit-and-Continue flag set.4Internal data structures missing method information.)JIT unable to update internal structures.
+*Internal type data structures are missing.
+,Not allowed to change interface inheritance.
+0Type library exporter cannot load assembly '%2'.-Type library exporter cannot load type '%hs'.
+CLR assembly '%2' was imported from a type library and cannot be re-exported to a type library.  Make sure the type library from which the assembly was imported is registered._Type library '%s' was exported from a CLR assembly and cannot be re-imported as a CLR assembly.eThe method or field has an invalid managed/unmanaged type combination, check the MarshalAs directive.\Vtable slot number associated with member '%s' of type '%s' in type library '%s' is invalid.ICOM register method is invalid (not static) (method: '%hs'; type: '%hs').
+COM register method has an invalid signature (method: '%hs'; type: '%hs'). The COM register method must have a single string argument and a return type of void.9Type library exporter cannot load type '%hs' (error: %s).?Type library exporter encountered an unknown signature element.[Successful import of type library may require prior import (library: '%ls'; import: '%ls').`Type library has an invalid namespace and cannot be imported (library: '%ls'; namespace: '%ls').aType library exporter encountered an error while attempting to lay out the TypeInfo '%2': (%1) %3TType library importer has encountered an interface not derived from IUnknown: '%ls'.
+Non COM visible value type '%s' is being referenced either from the type currently being exported or from one of its base types.aType '%s' has a method or field with an unmanaged type of LPTStr which cannot be exported to COM.[Type '%s' has a char set of auto.  Types with a char set of auto cannot be exported to COM.MType '%hs' has an IID of IID_IUnknown or IID_IDispatch, which is not allowed.GThe method '%hs.%hs' has a duplicate dispid, %d, which will be ignored.
+The enum member '%hs.%ls' has a value that cannot be expressed as a 32-bit integer.  Type library enum members must be 32-bit integers.2Type '%ls' and type '%ls' both have the same UUID.NType '%hs' contains nested arrays, which cannot be exported to a type library.
+Error while importing type: parameter referenced a type library that is not available (type: '%ls'; parameter: '%ls'; method: '%ls').
+Error while importing type: parameter referenced a type library that is not available (type: '%ls'; parameter: '%d'; method: '%ls').DType library exporter encountered a size agnostic signature element.
+Type library exporter failed.
+Interface '%ls' is marked as [dual], but does not derive from IDispatch. It will be converted as an IUnknown-derived interface.
+4Arrays in structs must be SafeArrays or ByValArrays.QReference types with layout in structs need [MarshalAs(UnmanagedType.Interface)].
+:Type '%ls' is invalid and may only be partially converted.vThere was an error converting a type.  The name of the type cannot be determined.  It is index %d in the type library.
+%ls, while processing '%ls'.MType library exporter encountered an error while processing '%ls'. Error: %lslType library exporter encountered an error while attempting to save the type library '%ls': Error: (%x) %ls.
+Type library exporter warning: Referenced type is defined in managed component, which is imported from a type library that could not be loaded because it was not registered (type: '%ls'; component: '%ls').
+Referenced type is defined in managed component, which is imported from a type library that could not be loaded (type: '%ls'; component: '%ls').bType library importer has encountered an invalid VT type (type: 0x%x; imported member: '%ls.%ls').?Type library exporter cannot load required library MSCOREE.TLB.PType library exporter has encountered an error reading from library MSCOREE.TLB.9Type library importer has encountered an exception: 0x%x.iType library importer has encountered a method with multiple [lcid] parameters while importing '%ls.%ls'.
+Type '%ls' imported.eType library importer has encountered a method with an unexpected [out, retval] parameter: '%ls.%ls'.CType library importer has encountered a duplicate type name: '%ls'.mType library exporter could not find the type library for '%ls'.  IUnknown was substituted for the interface.
+At least one of the arguments for '%ls.%ls' cannot be marshaled by the runtime marshaler.  Such arguments will therefore be passed as a pointer and may require unsafe code to manipulate.SThe type library importer could not convert the signature for the member '%ls.%ls'.
+The type has explicit layout, and has been exported as an empty record. Types with explicit layout can only be properly exported if all members have an offset of 0 (a union).<Type library exporter warning processing '%ls'. Warning: %lsFType library importer has failed to resolve a referenced type library.gType contains [MarshalAs(AsAny)], which is only valid for PInvoke. The MarshalAs directive was ignored.TThe value of the LCID conversion attribute must not exceed the number of parameters.GThe LCIDConversionAttribute is not allowed on dispatch only interfaces.OThe public struct contains one or more non-public fields that will be exported.
+Type '%ls' exported.YThe type had one or more duplicate DISPIDs specified. The duplicate DISPIDs were ignored.
+The names list was not valid.VThe reference type had sequential or explicit layout, and so was exported as a struct.rType library exporter encountered a generic type instance in a signature. Generic code may not be exported to COM.sType library exporter encountered a generic type parameter in a signature. Generic code may not be exported to COM.\Type library exporter encountered a generic type. Generic classes may not be exposed to COM.
+Could not execute CVTRES.EXE.
+2Method's type signature is not PInvoke compatible.
+Exception from HRESULT: <Invalid PInvoke or UnmanagedFunctionPointer metadata format.
+Unable to load DLL '%1': %25Unable to find an entry point named '%2' in DLL '%1'.2Method's type signature is not Interop compatible.
+<Synchronized attribute cannot be used with this method type.rInvalid PInvoke calling convention. Thiscall requires that the first parameter is present and can be enregistered.$Main method not found for type '%1'.0Main method for type '%1' has invalid signature.FThe method returned a COM Variant type that is not Interop compatible.KThe method returned a VT_RECORD Variant, which is not supported by Interop.,Unexpected error occurred loading type '%1'.
+Multiple methods named Invoke.OMethod's type signature contains a type that cannot be automatically converted./Function pointer was not created by a Delegate.
+Not a PInvoke method.
+MSCOREE.DLL load error.
+Two different copies of MSCORWKS.DLL have been loaded.
+First copy:
+Second copy:
+This is typically caused by having a registered MSCOREE.DLL that is different
+from the one that is statically linked with the application.4Custom marshalers can only be specified for classes."No exception available to rethrow.!Specified OLE variant is invalid.&The default domain cannot be unloaded.
+3Mscorlib.dll is missing types required by security.\The list of COM source interfaces for type '%1' contains non interface or generic type '%2'.XObject cannot be coerced to the original type of the ByRef VARIANT it was obtained from.4The new wrapper type must have an empty constructor.kStandard DISPID member name is formed incorrectly.  The name must be in the following format: [DISPID=XXX].(COM target does not implement IDispatch.uAll named parameters must be specified as [DISPID=XXX] when invoking on a standard members specified as [DISPID=XXX}.cVariant returned from an Invoke call with a DISPID of -4 does not contain a valid IUnknown pointer.
+COM object that has been separated from its underlying RCW cannot be used. The COM object was released while it was still in use on another thread.JCOM object that has been separated from its underlying RCW cannot be used.kFunction can only be called from inside the class constructor of a class derived from a COM imported class.
+:Base type has already registered a type creation callback.?Invalid PInvoke or UnmanagedFunctionPointer calling convention.
+Method '%3' on type '%1' from assembly '%2' tried to implicitly implement an interface method with weaker type parameter constraints.
+Method '%3' on type '%1' from assembly '%2' tried to explicitly implement a local method with weaker type parameter constraints.
+Method '%3' on type '%1' from assembly '%2' tried to explicitly implement a parent method with weaker type parameter constraints.
+Method '%3' on type '%1' from assembly '%2' tried to explicitly implement an interface method with weaker type parameter constraints.FA circular dependency was detected when loading file or assembly '%1'.[Invalid PInvoke calling convention. Vararg functions must use the cdecl calling convention.EType '%1' in assembly '%2' cannot be persisted into the native image.NExplicit assembly name must be specified when loading a type as ReflectionOnly|ModuleResolveEvent returned an incompatible Module. ReflectionOnly assemblies cannot bind to normal Modules, nor vice-versa.
+Could not load type '%1' from assembly '%2' because a covariant or contravariant type parameter was used illegally in the signature for an argument in method '%3'.
+Could not load type '%1' from assembly '%2' because a covariant or contravariant type parameter was used illegally in the signature for the result type in method '%3'.
+Could not load type '%1' from assembly '%2' because a covariant or contravariant type parameter was used illegally in an inherited interface.
+Could not load type '%1' from assembly '%2' because a covariant or contravariant type parameter was used illegally in a type parameter constraint in method '%3'.
+Could not load type '%1' from assembly '%2' because it declares a covariant or contravariant type parameter and is not an interface or delegate.oCould not load type '%1' from assembly '%2' because it uses an illegal variance annotation on a type parameter.
+QType '%1' from assembly '%2' contains an invalid method implementation signature.KInternal limitation: too many property methods associated with this method.%Internal limitation: too many fields.UA library name must be specified in a DllImport attribute applied to non-IJW methods.0Generic context-bound objects are not supported.=Context-bound objects with generic methods are not supported.SGenericArguments[%1], '%2', on '%3' violates the constraint of type parameter '%4'.PMethod %1.%2: type argument '%3' violates the constraint of type parameter '%4'.ZType '%1' from assembly '%2' contains more methods than the current implementation allows.|Enumerated types cannot have any generic type parameters, beyond any inherited from their enclosing type (for nested enums).
+DebuggerError/Ignoring managed exception from unknown thread.'Catch handler cannot precede try block.XCould not load type '%1' from assembly '%2' because it has recursive generic definition.GIllegal to load assemblies for ReflectionOnly in a verification domain.0JIT Compiler encountered an internal limitation.
+DCannot access file '%1' because it is being used by another process.QCannot access file '%1' because another process has locked a portion of the file.
+Cannot open file '%1'.
+The path is too long after being fully qualified.  Make sure the full path is less than 260 characters and the directory name is less than 248 characters.
+5The volume does not contain a recognized file system.
+'%1' is not a valid file.
+9The file or directory for '%1' is corrupt and unreadable.CThe disk structure is corrupt and unreadable.  Unable to load '%1'.
+GThe specified user does not have a valid profile.  Unable to load '%1'.
+=Cannot create/shadow copy '%1' when that file already exists.
+4The dll initialization routine failed for file '%1'.
+0Unable to cast object of type '%1' to type '%2'.4Object contains non-primitive or non-blittable data.;Field passed in is not a marshaled member of the type '%1'.2Requested range extends past the end of the array.
+Object type cannot be pinned.+ArrayWithOffset: offset exceeds array size.tRan out of internal resource while executing marshaling operation.  Possible cause: overly complex method signature.VA call to GetInstance() for custom marshaler '%1' returned null, which is not allowed.3Array size control parameter index is out of range.0Array size control parameter type not supported.@Multiple permission sets specified with the same SecurityAction.wSafeArray cannot be marshaled to this array type because it has either nonzero lower bounds or more than one dimension.oType of the VARIANT specified for a parameter with a custom marshaler is not supported by the custom marshaler.oTypes extending from COM objects should override all methods of an interface implemented by the base COM class.
+Error loading file '%s'.
+Error
+Error 0x%08x.
+Error: %s.
+'Unknown import key operation specified.fRetrieving the COM class factory for component with CLSID %2 failed due to the following error: %1 %3.BStrongName APIs could not locate a matching CSP for assembly '%1'.
+Field not found: '%1'.
+Method not found: '%1'.XThe interface does not support late bound calls since it does not derive from IDispatch.
+MSCOREE is not loaded.$Missing entrypoint in MSCOREE: '%1'.
+Unhandled Exception:BCannot print exception string because Exception.ToString() failed.
+Could not load the structure '%1' from assembly '%2'. The structure is marked as eligible for type equivalence, but it has a method.
+Could not load the structure '%1' from assembly '%2'. The structure is marked as eligible for type equivalence, but it has a static or non-public field.
+3Exception from HRESULT: 0x%1.  Failed to load '%2'.5Signature for the entry point has too many arguments.'Entry point not found in assembly '%1'.=Specified entry point in assembly '%1' is not a legal method.
+Entry point must be static.JEntry point must have a return type of void, integer, or unsigned integer.
+yInvalid managed/unmanaged type combination (String fields must be paired with LPStr, LPWStr, LPTStr, BStr, or ByValTStr).9Custom marshalers cannot be used on fields of structures.pFixed sized array fields inside structures must have the MarshalAs SizeConst field set to the size of the array.9Fixed sized array fields cannot have a SizeConst of zero.qInvalid managed/unmanaged type combination  (Classes with layout fields must be paired with Struct or Interface).fInvalid managed/unmanaged type combination (Array fields must be paired with ByValArray or SafeArray).
+Invalid managed/unmanaged type combination (Strings cannot be paired with LPTStr for parameters and return types of methods in interfaces exposed to COM).
+The type definition of this field has layout information but has an invalid managed/unmanaged type combination or is unmarshalable.
+fMismatch has occurred between the runtime type of the array and the sub type recorded in the metadata.OSafeArray of rank %1 has been passed to a method expecting an array of rank %2.+Invalid managed/unmanaged type combination.YInvalid managed/unmanaged type combination (chars must be paired with I1, I2, U1, or U2).gInvalid managed/unmanaged type combination (booleans must be paired with I1, U1, Bool, or VariantBool).UInvalid managed/unmanaged type combination (Byte/SByte must be paired with I1 or U1).WInvalid managed/unmanaged type combination (Int16/UInt16 must be paired with I2 or U2)._Invalid managed/unmanaged type combination (Int32/UInt32 must be paired with I4, U4, or Error).
+Invalid managed/unmanaged type combination (Decimal parameters and return types must be paired with Struct, LPStruct, or Currency).cInvalid managed/unmanaged type combination (the Guid class must be paired with Struct or LPStruct).
+[Invalid managed/unmanaged type combination (the DateTime class must be paired with Struct).oInvalid managed/unmanaged type combination (Arrays can only be marshaled as LPArray, ByValArray, or SafeArray).
+-There is no marshaling support for this type.<Object type must be __ComObject or derived from __ComObject.
+pSource object cannot be converted to the destination type since it does not support all the required interfaces.
+>Pointers cannot reference managed objects.  Use ByRef instead.CPointers cannot reference marshaled structures.  Use ByRef instead.3This type can only be marshaled in restricted ways.TAnsi char arrays cannot be marshaled as ByRef or as unmanaged-to-managed parameters.xAsAny cannot be used on return types, ByRef parameters, ArrayWithOffset, or parameters passed from unmanaged to managed.
+YInvalid managed/unmanaged type combination (Arrays of CriticalHandles are not supported).:Invalid SafeArraySubType/managed element type combination.*Cannot marshal field '%2' of type '%1': %3
+Cannot marshal '%1': %2ZISerializable type '%1' tried to deserialize itself as type '%2' which is an invalid type.
+API restriction: The assembly '%1' has already loaded from a different location. It cannot be loaded from a new location within the same appdomain.
+Cannot resolve dependency to assembly '%1' because it has not been preloaded. When using the ReflectionOnly APIs, dependent assemblies must be pre-loaded or loaded on demand through the ReflectionOnlyAssemblyResolve event.
+This type has a ComVisible(false) parent in its hierarchy, therefore QueryInterface calls for IDispatch or class interfaces are disallowed.}Retrieving the COM class factory for remote component with CLSID %2 from machine %3 failed due to the following error: %1 %3.xCreating an instance of the COM component with CLSID %2 from the IClassFactory failed due to the following error: %1 %3.
+Creating an instance of the licensed COM component with CLSID %2 from the IClassFactory failed due to the following error: %1 %3.
+Unable to cast COM object of type '%2' to interface type '%3'. This operation failed because the QueryInterface call on the COM component for the interface with IID '%4' failed due to the following error: %1.
+Unable to cast COM object of type '%2' to event interface type '%3'. This operation failed because the QueryInterface call on the COM component for the interface with IID '%4' failed due to the following error: '%1' and the COM component does not support the source interface with IID '%5'.
+Unable to cast COM object of type '%2' to interface type '%3'. This operation failed because the QueryInterface call on the COM component for the interface with IID '%4' failed due to the following error: '%1' and the COM component does not support IDispatch::Invoke calls for DISPID_NEWENUM.
+Unable to cast COM object of type '%2' to standard managed interface type '%3'. This operation failed because the QueryInterface call on the COM component for the managed interface with IID '%4' failed due to the following error: '%1' and the QueryInterface call for the native interface with IID '%5' that corresponds to this managed interface failed due to the following error: %6.
+Unable to cast COM object of type '%1' to class type '%2'. COM components that enter the CLR and do not support IProvideClassInfo or that do not have any interop assembly registered will be wrapped in the __ComObject type. Instances of this type cannot be cast to any other class; however they can be cast to interfaces as long as the underlying COM component supports QueryInterface calls for the IID of the interface.WInvalid managed/unmanaged type combination (Int64/UInt64 must be paired with I8 or U8).\Invalid managed/unmanaged type combination (Int/UInt must be paired with SysInt or SysUInt).KInvalid managed/unmanaged type combination (Single must be paired with R4).KInvalid managed/unmanaged type combination (Double must be paired with R8).
+^Invalid managed/unmanaged type combination (pointers must not have a MarshalAs attribute set).;The type definition of this type has no layout information.
+Invalid managed/unmanaged type combination (String parameters and return types must be paired with LPStr, LPWStr, LPTStr, BStr, TBStr, VBByRefStr, or AnsiBStr).iInvalid managed/unmanaged type combination (StringBuilders must be paired with LPStr, LPWStr, or LPTStr).dInvalid managed/unmanaged type combination (Delegates must be paired with FunctionPtr or Interface)._Invalid managed/unmanaged type combination (function pointers must be paired with FunctionPtr).VInvalid managed/unmanaged type combination (Interfaces must be paired with Interface).aInvalid managed/unmanaged type combination (this type must be paired with LPStruct or Interface).XInvalid managed/unmanaged type combination (this value type must be paired with Struct).
+Invalid managed/unmanaged type combination (the Object class must be paired with Interface, IUnknown, IDispatch, AsAny, or Struct).|Invalid managed/unmanaged type combination (the Object class must be paired with Interface, IUnknown, IDispatch, or Struct).aInvalid managed/unmanaged type combination (Marshaling to and from COM VARIANTs isn't supported).kInvalid managed/unmanaged type combination (Marshaling to and from COM interface pointers isn't supported).
+OAttempt to access method %1 in violation of security transparency rules failed.MAttempt to access type %1 in violation of security transparency rules failed.6Application assemblies cannot be directly executed: %13Application code cannot access %1 using Reflection.
+Inheritance security rules violated while overriding member: '%1'. Security accessibility of the overriding method must match the security accessibility of the method being overriden.
+Inheritance security rules violated by type: '%1'. Derived types must either match the security accessibility of the base type or be less accessible.cInvalid managed/unmanaged type combination (Decimal fields must be paired with Struct or Currency).&[A]%1 cannot be cast to [B]%2. %3. %4.@Type %s originates from '%s' in the context '%s' in a byte arrayAType %s originates from '%s' in the context '%s' at location '%s'4Collectible context-bound objects are not supported.
+VThe type '%1' in assembly '%2' has a contracting interface set for some instantiations
+Attempted to load a 64-bit assembly on a 32-bit platform. Use ReflectionOnlyLoad() instead if trying to load for reflection purposes.
+Configuration parser error.Error parsing %s
+Parser returned error 0x%08X.EType names passed to Assembly.GetType() must not specify an assembly.
+Mixed mode assembly is built against version '%1' of the runtime and cannot be loaded in the %2 runtime without additional configuration information.,Unexpected assembly-qualifier in a typename.%Typename needs an assembly qualifier.CCould not load file or assembly '%1' or one of its dependencies. %2$Signature is not Interop compatible.|Invalid managed/unmanaged type combination (String[] must be paired with an ArraySubType of LPStr, LPWStr, BStr, or LPTStr).
+Invalid managed/unmanaged type combination (Object[] or System.Array must be paired with an ArraySubType of Struct, Interface, IUnknown or IDispatch).fInvalid managed/unmanaged type combination (DateTime[] must be paired with an ArraySubType of Struct).qInvalid managed/unmanaged type combination (Decimal[] must be paired with an ArraySubType of Struct or Currency).
+UInvalid managed/unmanaged type combination (Arrays of SafeHandles are not supported).
+&Abort
+&Debug
+&Ignore<Null strings may not be marshaled in Windows Runtime fields.{Invalid managed/unmanaged type combination (Windows Runtime parameters and fields must not have a MarshalAs attribute set).eNull strings may not be marshaled in Windows Runtime arrays. Null string was encountered at index %1.4Windows Runtime marshaler does not support the type.
+8Windows Runtime value types must have sequential layout.DThe PreserveSigAttribute may not be used on Windows Runtime methods.>Windows Runtime delegates may not be used for PInvoke interop.
+Invalid managed/unmanaged type combination (Windows Runtime interfaces, classes and delegates must have a Guid or a default interface).
+LThe default interface must refer to a Windows Runtime interface with a GUID.QThe default interface must refer to an interface that is implemented by the type.YInvalid managed/unmanaged type combination (Delegates must be Windows Runtime delegates).
+$Unexpected change made to file '%1'.eInvalid managed/unmanaged type combination (the DateTimeOffset structure must be paired with Struct).
+There is not enough information to call IEnumerable.GetEnumerator on a Windows Runtime object, please cast the object to IEnumerable<T> first.
+There is not enough information to cast a Windows Runtime object to IEnumerable, please cast the object to IEnumerable<T> first.GWindows Runtime interface '%1' in assembly '%2' must have a valid GUID.
+xUnable to compute GUID for type '%1' because the instantiation contains types that are not supported by Windows Runtime.[Unable to compute GUID because type '%1' does not have a default Windows Runtime interface.SCannot construct type '%1'.  Windows Runtime attribute types are not constructable.IWindows Runtime types can only be declared in Windows Runtime assemblies.
+6Requested Windows Runtime type '%1' is not registered.
+LWindows Runtime factory '%1' is not a factory for Windows Runtime type '%2'.
+The given System.Uri cannot be converted into a Windows.Foundation.Uri. Please see http://go.microsoft.com/fwlink/?LinkID=215849 for details.GWindows Runtime marshaler does not support types with copy constructor.
+?Windows Runtime type '%1' has a invalid Windows Runtime factory
+The Windows Runtime Object can only be used in the threading context where it was created, because it implements INoMarshal or has MarshalingBehaviorAttribute(MarshalingType.None) set.hWindows Runtime type '%1' has invalid namespace that does not begin with the file name in assembly '%2'.
+{The assembly %1 that the application tried to load has a known vulnerability. Please go to %2 to find a fix for this issue.
+Given Windows.Foundation.IReference can not be converted to System.Nullable type. Type arguments can't be empty, string or non-value types. 
+The object resolved by a native IWeakReference has an incompatible type for its managed WeakReference instance.
+Expected WeakReference target type: '%1'
+Native IWeakReference returned type: '%2'
+VCustom marshalers are only allowed on classes, strings, arrays, and boxed value types.GCOM import type '%1' from assembly '%2' cannot have layout information.5Type '%1' has an invalid default COM interface: '%2'.DType '%1' does not support the specified default COM interface: '%2'
+;Type '%1' that has the requested GUID is not a value class.?The specified record cannot be mapped to a managed value class.1Cannot marshal: Encountered unmappable character.
+Invalid marshaling metadata.:SafeHandles cannot be marshaled from unmanaged to managed.5Ref and out SafeHandle parameters cannot be abstract.9SafeHandles cannot be returned from managed to unmanaged.~Invalid managed/unmanaged type combination (SafeHandles must not have a MarshalAs attribute set and cannot be used in arrays).
+Safe handle has been closed
+Application has generated an exception that could not be handled.
+Process ID=0x%x (%d), Thread ID=0x%x (%d).
+Click OK to terminate the application.
+Click CANCEL to debug the application.
+Application has encountered a user-defined breakpoint.
+Process ID=0x%x (%d), Thread ID=0x%x (%d).
+Click ABORT to terminate the application.
+Click RETRY to debug the application.
+Click IGNORE to ignore the breakpoint.LAppDomain cannot be unloaded because it is not local to the current process.FIllegal attempt to replace or redimension a fixed or locked SafeArray.QInvalid unmanaged calling convention: must be one of stdcall, cdecl, or thiscall.TType could not be marshaled because an embedded valuetype has no layout information.
+`Could not load type '%1' from assembly '%2' because field '%3' was not given an explicit offset.cType could not be marshaled because an embedded string could not be converted from Unicode to ANSI.
+~Type could not be marshaled because the length of an embedded array instance does not match the declared length in the layout.*Failure converting Unicode string to ANSI.*Failure converting ANSI string to Unicode.TThe value of the LCID conversion attribute must not exceed the number of parameters.1There is no marshaling support for nested arrays.0Failure decoding embedded permission set object.
+eSafe handle's handle field can only be set if the safe handle is not closed and has a ref count of 1.JStructures containing SafeHandle fields are not allowed in this operation.=SafeHandle fields cannot be created from an unmanaged handle.;Failure decoding embedded permission set collection object.(Returned SafeHandles cannot be abstract.YSafeHandle subclasses may not override the finalizer. Put logic in ReleaseHandle instead.
+6SafeHandle derived types cannot be stored in Variants.eInvalid managed/unmanaged type combination (System.Array must be paired with SafeArray or Interface).-VariantWrappers cannot be stored in Variants.JThe structure contains fields that are not supported in unmanaged records.[The generic type '%1' was used with the wrong number of generic arguments in assembly '%2'.aA method in the type '%1' from assembly '%2' was used with the wrong number of generic arguments.[Could not load type '%1' from assembly '%2' because field '%3' was given a negative offset.
+Unable to set thread priority.9Type '%1' in assembly '%2' is not marked as serializable.[VBByRefStr can only be used in combination with in/out, ByRef managed-to-unmanaged strings.\ArrayWithOffsets can only be marshaled as inout, non-ByRef, managed-to-unmanaged parameters.
+Internal error.8Classes with copy-ctors can only be marshaled non-ByRef.
+Internal error.'ArgIterators cannot be marshaled ByRef.BHandleRefs cannot be marshaled ByRef or from unmanaged to managed.
+8AppDomain cannot be unloaded during object finalization.QAppDomain cannot be unloaded because the thread '%1' cannot be unwound out of it.
+Reached the end of the file.
+File has not been opened.'Buffer is shorter than requested bytes.
+File name was not supplied.
+Undefined seek modifier.+Request for permission of type '%1' failed.
+Unable to cast COM object of type '%1' to class type '%2'. Instances of types that represent COM components cannot be cast to types that do not represent COM components; however they can be cast to interfaces as long as the underlying COM component supports QueryInterface calls for the IID of the interface.
+Unable to cast COM object of type '%1' to class type '%2'. Instances of types that represent COM components cannot be cast to different types that represent COM components; however they can be cast to interfaces as long as the underlying COM component supports QueryInterface calls for the IID of the interface.
+%1"Generic types cannot be marshaled.
+Thread was being aborted.,Thread was interrupted from a waiting state.=Insufficient memory to continue the execution of the program._Unable to load Jit Compiler: (%s): file may be missing or corrupt. Please check or rerun setup.
+Profiling failure<Generic types cannot be marshaled to COM interface pointers.uMixed mode assembly cannot be loaded into version '%1' of the runtime because it is already loaded into version '%2'.GMethod '%1' in ComImport class '%2' must implement an interface method.bInsufficient memory within specified address space range to continue the execution of the program.*Array dimensions exceeded supported range.
+DThe constructor to deserialize an object of type '%1' was not found.
+Member '%1' in class '%2' is not present in the serialized stream and is not marked with System.Runtime.Serialization.OptionalFieldAttribute.IPossible version mismatch. Field '%1' in class '%2' has mismatched types.
+Not all delayed fixup objects could be resolved.  Such objects could be cyclic IObjectReferences, IObjectReferences that return other IObjectReferences too many times (i.e. objects with too long an IObjectReference chain) or nested valuetypes.(Type is not resolved for member '%1,%2'.BObject '%1' has been disconnected or does not exist at the server.+The method '%1' was not found on type '%2'.
+oPaths starting with \\?\GlobalRoot are internal to the kernel and should not be opened by managed applications.NThe generic type '%1' was used with an invalid instantiation in assembly '%2'.0The length for ByValTStr strings cannot be zero.
+Error formatting message.
+[IL]: Error: 
+<GlobalFunction>
+[mdToken=0x%x]
+Assembly '%1' is partially trusted, however it is not entirely security transparent.  If this assembly is meant to be used in partial trust, you will need to apply the SecurityTransparentAttribute to it.
+Attempt by security transparent method '%1' to access LinkDemand protected method '%2' failed.  Methods must be security critical or security safe-critical to satisfy a LinkDemand.QMethod '%1' is security transparent, but is a member of a security critical type.5Assembly '%1' specified an unknown security rule set.VPartial trust applications may not specify an AppDomainManager for the default domain.
+An attempt was made to load an assembly from a network location which would have caused the assembly to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. See http://go.microsoft.com/fwlink/?LinkId=155569 for more information.zThe stub class '%1' specified in ManagedToNativeComInteropStubAttribute and interface '%2' must be from the same assembly.[The type '%1' specified in ManagedToNativeComInteropStubAttribute cannot be a generic type.YThe type '%1' specified in ManagedToNativeComInteropStubAttribute cannot be an interface.
+Cannot find stub method '%1' in '%2' as specified in ManagedToNativeComInteropStubAttribute. Please make sure the stub method is static, non-generic, and has the expected name and signature.
+The interop method '%1' cannot access the stub method '%2' specified in ManagedToNativeComInteropStubAttribute. Please make sure they have compatible access modifiers and security accessibility.
+Code size/Cannot load a reference assembly for execution.5Attempt by method '%1' to access field '%2' failed.%36Attempt by method '%1' to access method '%2' failed.%34Attempt by method '%1' to access type '%2' failed.%3\Attempt by security transparent method '%1' to access security critical field '%2' failed.%3]Attempt by security transparent method '%1' to access security critical method '%2' failed.%3[Attempt by security transparent method '%1' to access security critical type '%2' failed.%3
+YBody token used in a method implementation is out of range.  Type: '%1'.  Assembly: '%2'.`Declaration token used in a method implementation is out of range.  Type: '%1'.  Assembly: '%2'.kDeclaration referenced in a method implementation cannot be on a sealed type.  Type: '%1'.  Assembly: '%2'.iDeclaration referenced in a method implementation cannot be a final method.  Type: '%1'.  Assembly: '%2'.iDeclaration referenced in a method implementation must be a virtual method.  Type: '%1'.  Assembly: '%2'.lSignature of the body and declaration in a method implementation do not match.  Type: '%1'.  Assembly: '%2'.`Signature for the body in a method implementation cannot be found.  Type: '%1'.  Assembly: '%2'.gSignature for the declaration in a method implementation cannot be found.  Type: '%1'.  Assembly: '%2'.KCould not load type '%1' because the assembly containing it failed to load.xCould not load type '%1' from assembly '%2' because objects overlapped at offset %3 and the assembly must be verifiable.
+Configuration error.]Could not load type '%1' from assembly '%2'. Internal limitation: Too many generic arguments.IPInvoke method not permitted on type '%1' from collectible assembly '%2'.DCollectible type '%1' may not have Thread or Context static members.0CLR error: %lx.
+ The program will now terminate.
+Fatal error
+,Could not load type '%1' from assembly '%2'.
+QCould not load type '%1' from assembly '%2' because the interface does not exist.eCould not load type '%1' from assembly '%2' because it attempts to implement a class as an interface.aCould not load the value type '%1' from assembly '%2' because it has an instance field of itself.^Could not load type '%1' from assembly '%2' because generic types cannot have explicit layout.-Type name '%1' from assembly '%2' is invalid.0'%1' from assembly '%2' has too many dimensions.EManaged method '%3' on type '%1' from assembly '%2' is not supported.DNative method '%3' on type '%1' from assembly '%2' is not supported.`Type '%1' from assembly '%2' does not have sufficient permission to override super type methods.oCould not load type '%1' from assembly '%2' because its enclosing type is not specified with a type definition.
+Could not load type '%1' from assembly '%2' because it contains an object field at offset %3 that is incorrectly aligned or overlapped by a non-object field.NCould not load type '%1' from assembly '%2' because the parent type is sealed.7Type '%1' from assembly '%2' has a method with no name.FPrivate method '%3' on type '%1' from assembly '%2' cannot be virtual.]Constructor '%3' on type '%1' from assembly '%2' does not have the correct name or signature.UMethod override '%3' on type '%1' from assembly '%2' cannot find a method to replace.&Method declaration is not a methoddef.=Duplicate definition for runtime implemented delegate method.
+Ecalls must have a 0 RVA.
+The metadata is corrupt.
+The signature is incorrect.!Full Name of Typeref is too long.
+Invalid Typeref token./The ClassInterface custom attribute is invalid.?ClassInterface custom attribute does not have the right format.0Illegal or unimplemented ELEM_TYPE in signature.
+Bad element type in SizeOf.]Type '%1' in assembly '%2' has more than one method with the following custom attribute '%3'.
+Type '%1' in assembly '%2' has method '%3' with an incorrect signature for the serialization attribute that it is decorated with.wStructures defined in untrusted code cannot be marshaled to and from native code as either parameters or return values.RType '%1' from assembly '%2' is attempting to implement an inaccessible interface.
+OAssembly '%1' security permission grant set is incompatible between appdomains./Unverifiable assembly '%1' failed policy check.BAssembly '%1' already loaded without additional security evidence.
+<%General_AppName% has encountered a user-defined breakpoint.
+A breakpoint in an application indicates a program error.  After this dialog is dismissed, the application will continue running, but it may be in an unstable state.QFile '%1' was loaded in a passive domain in a manner that makes it unable to run.PCannot override runtime implemented method '%3' on type '%1' from assembly '%2'.c'%1' has an incompatible metadata format. The assembly must be compiled using metadata format '%2'.
+XCollectible type '%1' has unsupported FixedAddressValueTypeAttribute applied to a field.
+Could not load type '%1' from assembly '%2'. The type is marked as eligible for type equivalence, but either it has generic parameters, or it is not a structure, COM imported interface, enumeration, or delegate.
+Could not load type '%1' from assembly '%2'. The type is marked as eligible for type equivalence, but the containing assembly is not loaded as fully trusted.
+Could not load type '%1' from assembly '%2'. The type is marked as eligible for type equivalence, but either it is not marked as safe-critical or transparent, or it has a field or method that is not marked as safe-critical or transparent.
+Could not load type '%1' from assembly '%2'. The type is marked as eligible for type equivalence, but it is not marked as public.oCould not execute the method because either the method itself or the containing type is not fully instantiated.[Could not load file or assembly '%1'. This assembly was compiled for a different processor.
+Creating an instance of the COM component with CLSID %2 using CoCreateInstanceFromApp failed due to the following error: %1 %3. Please make sure your COM object is in the allowed list of CoCreateInstanceFromApp.
+Cannot resolve dependency to Windows Runtime type '%1'. When using the ReflectionOnly APIs, dependent Windows Runtime assemblies must be resolved on demand through the ReflectionOnlyNamespaceResolve event.)Could not find Windows Runtime type '%1'.
+Invalid custom attribute.PThe permission associated with this attribute is missing a required constructor.BUnable to create an instance of the permission for this attribute.(SecurityAction type invalid on assembly.1SecurityAction type invalid on types and methods.5Security custom attribute attached to invalid parent.
+HSerialized security custom attribute is truncated or incorrectly formed.>Serialized security custom attribute has unrecognized version.5Security custom attribute has invalid SecurityAction.GSecurity custom attributes cannot be referenced from defining assembly.?Invalid SecurityAction for non-Code Access Security permission.
+Failed to load assembly '%s'."Failed to load assembly '%s' - %s.
+Failed to load type '%s'.
+Failed to load type '%s' - %s.-Security custom attribute cannot be abstract.NSecurity custom attributes do not support array or Type fields and properties."Unsupported enumeration base type.
+Failed to locate field '%s'.
+Failed to locate property '%s'.1Unexpected exception processing attribute - '%s'.;Unexpected exception processing attribute - HRESULT 0x%08X.
+`Metadata method count does not match method enumeration length for type '%1' from assembly '%2'.^Metadata field count does not match field enumeration length for type '%1' from assembly '%2'.YType '%1' from assembly '%2' must be declared as a value type to be used as a value type.8Type contains improperly formed type variance signature.\Could not load type '%1' from assembly '%2' because it declares a field in a covariant type.bCustom attributes that are TypeSpecs must be of type ELEMENT_TYPE_VALUETYPE or ELEMENT_TYPE_CLASS.(An unexpected field signature was found.fA valid typedef or typeref token is expected to follow a ELEMENT_TYPE_CLASS or ELEMENT_TYPE_VALUETYPE.3A ELEMENT_TYPE_FNPTR cannot have a field signature.'A ELEMENT_TYPE_FNPTR cannot be generic.RA valid typedef or typeref token is expected to follow a ELEMENT_TYPE_GENERICINST.3Only pointer to void allowed in function arguments.EAn ELEMENT_TYPE_TYPEDBYREF cannot have a ELEMENT_TYPE_BYREF modifier.
+Type '%1' in assembly '%2' has method '%3' which is either static, virtual, abstract or generic, but is marked as being a serialization callback method.
+The security object (Permission or PermissionSet) used for performing a Demand caused an error relating to serialization/deserialization.2Type forwarding chain is too long or is recursive.
+Application: 
+unknown
+Framework Version: FDescription: The process was terminated due to an unhandled exception.
+Exception Info: oDescription: The application requested process termination through System.Environment.FailFast(string message).
+Message: UDescription: The process was terminated due to an internal error in the .NET Runtime >Description: The process was terminated due to stack overflow.
+Stack:
+at at IP %1 (%2) with exit code %3.'exception code %1, exception address %2+The remainder of the message was truncated.
+Assembly '%1' is marked with the AllowPartiallyTrustedCallersAttribute, and uses the level 2 security transparency model.  Level 2 transparency causes all methods in AllowPartiallyTrustedCallers assemblies to become security transparent by default, which may be the cause of this exception.
+Assembly '%1' has had an APTCA killbit set for it, which prevents it from being used by partial trust or security transparent code.
+Assembly '%1' is a conditionally APTCA assembly which is not enabled in the current AppDomain.  To enable this assembly to be used by partial trust or security transparent code, please add assembly name '%2' to the the PartialTrustVisibleAssemblies list when creating the AppDomain.
+Assembly '%1' is partially trusted, which causes the CLR to make it entirely security transparent regardless of any transparency annotations in the assembly itself.  In order to access security critical code, this assembly must be fully trusted.
+An attempt was made to load an assembly that was downloaded from a network location, which would have caused the assembly to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, so this load may be dangerous. If this assembly is trusted, either remove the Zone marker from it or enable the loadFromRemoteSources switch. See http://go.microsoft.com/fwlink/?LinkId=155569 for more information.
+Attempt by security transparent method '%1' to call native code through method '%2' failed.  Methods must be security critical or security safe-critical to call native code.ASecurity transparent method %1 cannot access %2 using reflection.
+^Reflection invocation to internal or private types or members in the framework is not allowed.
+JLoading profiler failed.  Received an improperly formatted attach request.mLoading profiler failed.  A profiler is already loaded, so the request to attach another profiler was denied.FThe CLR received a request to attach a profiler. Profiler CLSID: '%s'.
+The profiler currently in use has requested to be detached from the process.  The CLR has disabled communication with the profiler and will unload the profiler when it is safe to do so.5The CLR has fully detached and unloaded the profiler.
+There was an internal failure in the profiling API detach infrastructure.  The profiler will not be able to be detached.  Error code: %d.pThe profiler has requested that the CLR instance not load the profiler into this process.  Profiler CLSID: '%s'.
+Loading profiler failed.   The profiler that was configured to load was designed for an older version of the CLR.  You can use the COMPlus_ProfAPI_ProfilerCompatibilitySetting environment variable to allow older profilers to be loaded by the current version of the CLR.  Please consult the documentation for information on how to use this environment variable, and the risks associated with it.  Profiler CLSID: '%s'.
+A profiler designed for an older version of the CLR was loaded because of the environment variable setting below.  Older profilers will continue to work in many cases, but if you encounter problems, please consider upgrading the profiler or changing the setting of the environment variable.  Please consult the documentation for information on how to use this environment variable, and the risks associated with it.  Environment variable setting: %s=%s.  Profiler CLSID: '%s'.
+A profiler designed for an older version of the CLR was already loaded by an older version of the CLR in the process, and the profiler will therefore not be loaded into this process again.  Please consider upgrading your profiler in order to gain better support profiling processes that load multiple instances of the CLR. Profiler CLSID: '%s'.
+Profilers will not be loaded by the current version of the CLR because of the environment variable setting below.  Please consult the documentation for information on how to use this environment variable, and the risks associated with it.  Environment variable setting: %s=%s. Profiler CLSID: '%s'.
+Description: The application encountered a bug.  A managed code contract (precondition, postcondition, object invariant, or assert) failed.
+Contract details: 
+Profiler timed out on waiting for concurrent GC to finish after '%d' milliseconds. Please configure your profiler to increase its attaching time out value or consult the documentation for the COMPlus_ProfAPI_AttachProfilerMinTimeoutInMs environment variable and try again. Profiler CLSID: '%s'.
+!IsolatedStorage operation failed.
+Unable to open the store.$Unable to create store file mapping.
+Unable to map the store file.$Unable to determine store file size.
+Unable to create mutex.
+Unable to lock the store.
+File Write failed.
+Cannot set file pointer.%Unable to create the store directory.&Store must be open for this operation.
+Store file is corrupt.
+Store version is not supported.
+Store file is not mapped.
+Block size is too small.
+Allocation size is too large.
+Allowed quota is fully used.
+Row not found.
+Unable to deprecate old store.
+Unable to determine the caller.
+Path length is too long.
+Machine Store is not supported.DThe DACL for the machine store is incorrect or could not be created.
+[HRESULT 0x%08X]
+[offset 0x%08X]
+[opcode %s]
+[operand 0x%08X]
+[token  0x%08X]
+[exception #0x%08X]
+[stack slot 0x%08X]
+[local variable #0x%08X]
+[argument #0x%08x]
+[found %s]
+[expected %s]
+[local variable '%s']
+Unknown opcode [0x%08X].$Unknown calling convention [0x%08X].
+Unknown ELEMENT_TYPE [0x%08x].
+[return sig]
+[field sig]LProtected method access through an open instance delegate is not verifiable.
+Internal error.
+Stack is too large.
+Array name is too long.
+1fall through end of the method without returning.
+try start >= try end.
+try end > code size.
+handler start >= handler end.
+handler end > code size.
++Try starts in the middle of an instruction./Handler starts in the middle of an instruction.
+%Try block overlap with another block.-Try and filter/handler blocks are equivalent.(Shared try has finally or fault handler.*Handler block overlaps with another block.+Handler block is the same as another block.)Filter block overlaps with another block.*Filter block is the same as another block.
+Filter contains try.
+Filter contains handler.
+Nested filters.
+filter >= code size..Filter starts in the middle of an instruction.'fallthru the end of an exception block.#fallthru into an exception handler."fallthru into an exception filter.(Leave from outside a try or catch block.%Rethrow from outside a catch handler.*Endfinally from outside a finally handler.1Endfilter from outside an exception filter block.
+Missing Endfilter.
+Branch into try block.$Branch into exception handler block.#Branch into exception filter block.
+Branch out of try block.&Branch out of exception handler block.%Branch out of exception filter block.
+Branch out of finally block.
+Return out of try block.&Return out of exception handler block.%Return out of exception filter block.2jmp / exception into the middle of an instruction.'Non-compatible types depending on path..Init state for this differs depending on path.0Non-compatible types on stack depending on path.&Stack depth differs depending on path.!Instance variable (this) missing.+Uninitialized this on entering a try block.)Store into this when it is uninitialized.-Return from .ctor when this is uninitialized.
+4Return from .ctor before all fields are initialized.'Branch back when this is uninitialized.%ldftn/ldvirtftn not allowed on .ctor."Non-compatible types on the stack.
+Unexpected type on the stack.!Missing stack slot for exception.
+Stack overflow.
+Stack underflow.
+Stack empty.
+Uninitialized item on stack.#Expected I, I4, or I8 on the stack.#Expected R, R4, or R8 on the stack.)unexpected R, R4, R8, or I8 on the stack.#Expected numeric type on the stack. Expected an ObjRef on the stack.+Expected address of an ObjRef on the stack.
+Expected ByRef on the stack.*Expected pointer to function on the stack.-Expected single dimension array on the stack.*Expected value type instance on the stack.,Expected address of value type on the stack.,Unexpected value type instance on the stack.)Local variable is unusable at this point.#Unrecognized local variable number.
+Unrecognized argument number.
+Unable to resolve token.$Unable to resolve type of the token.2Expected memberRef, memberDef or methodSpec token.%Expected memberRef or fieldDef token.
+Expected signature token.
+Instruction cannot be verified.-Operand does not point to a valid string ref.
+@Return type is ByRef, TypedReference, ArgHandle, or ArgIterator.3Stack must be empty on return from a void function."Return value missing on the stack.)Stack must contain only the return value.
+Return uninitialized data.
+Illegal array access.(Store non Object type into Object array.+Expected single-dimension zero-based array.1Expected single dimension array of pointer types.
+Array field access is denied.
+Allowed only in vararg methods.
+Value type expected.
+Method is not visible.
+Field is not visible.
+Item is unusable at this point.
+Expected static field.
+Expected non-static field.%Address of not allowed for this item.!Address of not allowed for ByRef.)Address of not allowed for literal field./Cannot change initonly field outside its .ctor.
+Cannot throw this object. Callvirt on a value type method.
+Call signature mismatch.
+Static function expected.
+.ctor expected.
+Cannot use callvirt on .ctor.4Only super::ctor or typeof(this)::ctor allowed here.&Possible call to .ctor more than once.
+Unrecognized signature.
+Cannot resolve Array type.
+Array of ELEMENT_TYPE_PTR.
+#Unverifiable PE Header/native stub.+Unrecognized metadata, unable to verify IL.
+Unrecognized appdomain pointer.
+Type load failed.
+Module load failed.*Cannot modify an imaged based (RVA) static
+7Array of ELEMENT_TYPE_BYREF or ELEMENT_TYPE_TYPEDBYREF.$ELEMENT_TYPE_PTR cannot be verified.
+Unexpected vararg.
+Unexpected Void.
+ByRef of ByRef
+Code size is zero.
+Unrecognized use of vararg.
+Missing call/callvirt/calli.!Cannot pass ByRef to a tail call.
+Missing ret.%Void ret type expected for tail call.%Tail call return type not compatible. Stack not empty after tail call.,Method ends in the middle of an instruction.
+Branch out of the method.
+Finally handler blocks overlap.
+Lexical nesting.TMissing ldsfld, stsfld, ldind, stind, ldfld, stfld, ldobj, stobj, initblk, or cpblk.AMissing ldind, stind, ldfld, stfld, ldobj, stobj, initblk, cpblk.4Innermost exception blocks should be declared first.%Calli not allowed on virtual methods.%Call not allowed on abstract methods.#Unexpected array type on the stack.CValue type with NotInGCHeap attribute being created on the GC heap.1Attempt to enter a try block with nonempty stack.*Unrecognized arguments for delegate .ctor.pDelegate .ctor not allowed at the start of a basic block when the function pointer argument is a virtual method.TDup, ldvirtftn, newobj delegate::.ctor() pattern expected (in the same basic block).HLdftn or ldvirtftn instruction required before call to a delegate .ctor..Attempt to load address of an abstract method.+ELEMENT_TYPE_CLASS ValueClass in signature.3ELEMENT_TYPE_VALUETYPE non-ValueClass in signature.;Box operation on TypedReference, ArgHandle, or ArgIterator.3ByRef of TypedReference, ArgHandle, or ArgIterator.3Array of TypedReference, ArgHandle, or ArgIterator.1Stack not empty when leaving an exception filter.2Unrecognized delegate .ctor signature; expected I.7Unrecognized delegate .ctor signature; expected Object.6Mkrefany on TypedReference, ArgHandle, or ArgIterator.%Value type not allowed as catch type. ByRef not allowed as catch type.5filter block should immediately precede handler block
+ldvirtftn on static
+callvirt on staticOinitlocals must be set for verifiable methods with one or more local variables.7branch/leave to the beginning of a catch/filter handlerVcall to .ctor only allowed to initialize this pointer from within a .ctor. Try newobj.
+2Value type, ObjRef type or variable type expected.JExpected address of value type, ObjRef type or variable type on the stack./Unrecognized type parameter of enclosing class.0Unrecognized type parameter of enclosing method.=Unrecognized type argument of referenced class instantiation.>Unrecognized type argument of referenced method instantiation.
+Cannot resolve generic type.9Method instantiation contains non boxable type arguments.@Method parent instantiation contains non boxable type arguments.?Field parent instantiation contains non boxable type arguments.CUnrecognized calling convention for an instantiated generic method.4Unrecognized generic method in method instantiation.2Missing ldelema or call following readonly prefix..Missing callvirt following constrained prefix.<Method parent has circular class type parameter constraints.6Method has circular method type parameter constraints.
+GMethod instantiation has unsatisfied method type parameter constraints.MMethod parent instantiation has unsatisfied class type parameter constraints.LField parent instantiation has unsatisfied class type parameter constraints.QType operand of box instruction has unsatisfied class type parameter constraints.?The 'this' argument to a constrained call must have ByRef type.IThe operand to a constrained prefix instruction must be a type parameter.SThe readonly prefix may only be applied to calls to array methods returning ByRefs. Illegal write to readonly ByRef..A readonly ByRef cannot be used with mkrefany.>Alignment specified for 'unaligned' prefix must be 1, 2, or 4.
+The tail.call (or calli or callvirt) instruction cannot be used to transfer control out of a try, filter, catch, or finally block.OStack height at all points must be determinable in a single forward scan of IL.
+Call to base type of valuetype./Cannot construct an instance of abstract class.-Unmanaged pointers are not a verifiable type.
+Cannot LDFTN a non-final virtual method for delegate creation if target object is potentially not the same type as the method class.'Accessing type with overlapping fields.OThe 'this' parameter to the call must be the calling method's 'this' parameter.
+Expected I4 on the stack.
+Notifies a subscribing client when a specified process is initializing the CLR.  If this service is stopped, the client will not receive such notification.  If this service is disabled, any services that explicitly depend on it will fail to start.
+RTL_False
+Invalid file token.
+Invalid token type.
+Invalid entry point token.
+Invalid token.PInvalid token in v-table fix-up table; use ildasm to find code generation error.%Unable to get nested type properties.
+Method token out of range.
+Method name too long.#Method name is not null terminated.
+Method in an Enum.&Method with non-zero RVA in an Import."Abstract method with non-zero RVA.-Runtime-implemented method with non-zero RVA.'Internal call method with non_NULL RVA.&Abstract method in non-abstract class.
+Non-virtual abstract method.
+0Non-abstract, non-.cctor method in an interface.#Virtual PInvoke implemented method.
+Virtual Static Method.
+Virtual Instance Constructor.&Virtual Non-Abstract Interface Method.%Nonvirtual Instance Interface Method."Synchronized Method in Value Type.
+Non-Static Global Method.
+Global Instance Constructor.iGeneric method or method in generic class is internal call, PInvoke, or is defined in a COM Import class.-Generic method is marked runtime-implemented."Bad use of Runtime Impl attribute."Bad flags on delegate constructor.,Unknown runtime implemented delegate method.0Generic methods should always be mcInstantiated.
+Field token out of range.
+Invalid Field Access Flags.
+Field is Literal and InitOnly.
+Non-Static Global Field.
+Instance Field in an Interface.
+No Instance Field in an Enum.+Non-virtual methods should not be searched.%This method cannot be an Init Method.'Managed native not presently supported.
+Bad implementation flags.
+Bad unmanaged code entry point.
+ Generic code may not be varargs.gCould not load type '%1' from assembly '%2' because it cannot inherit directly from the delegate class.TCould not load type '%1' from assembly '%2' because delegate classes must be sealed.;Enclosing type(s) not found for type '%1' in assembly '%2'.;Illegal definition for runtime implemented delegate method.
+DMissing definition for required runtime implemented delegate method./Duplicate type with name '%1' in assembly '%2'.
+Bad method token.
+Cannot get LinkRef.4ECall methods must be packaged into a system module.
+Could not get classlayout.1Signature is not IMAGE_CEE_CS_CALLCONV_LOCAL_SIG.
+Bad class token.
+Bad IL range.$MethodDef without TypeDef as Parent.3MethodSpec or MemberRef has parent with no members.hFields inside generic classes must be referenced using MemberRefs, even in the same module as the class.(Invalid token saved in ManifestResource.
+Empty assembly simple name.
+Bad IL format.GCould not load type '%1' from assembly '%2' due to value type mismatch.
+"Malformed custom attribute header."Malformed custom attribute string.
+Bad string token. No string associated with token.SImage has a platform-specific fixup type that is not compatible with this platform.BToken specifying generic type must be either a typeref or typedef.
+Array rank may not be zero.*Single-dimensional array rank must be one.LClassLayout has invalid PackingSize; valid set of values is {1,2,4,...,128}.
+Array type not expected here.
+Bad type visibility flag value./Family flag is not allowed on global functions.)Could not find exported type in metadata.
+Expected array type.:Generic member ref must be of type MethodDef or MemberRef.
+Expected interface.RThe type specified by the IBC data is no longer present in the assembly's metadataTThe method specified by the IBC data is no longer present in the assembly's metadata
+Loading profiler failed.  COR_ENABLE_PROFILING was set properly, but COR_PROFILER was not.  COR_PROFILER must be set to the CLSID of the profiler to load.|Loading profiler failed due to an internal profiling services initialization failure.  Profiler CLSID: '%s'.  HRESULT: 0x%x.XLoading profiler failed.  COR_PROFILER is set to an invalid CLSID: '%s'.  HRESULT: 0x%x.
+Loading profiler failed.  COR_PROFILER is set to a CLSID of a COM object that does not implement the interface GUID (IID) requested by the CLR.  This often indicates that the profiler does not support this version of the CLR.  Profiler CLSID: '%s'.  Requested IID: '%s'.WLoading profiler failed during CoCreateInstance.  Profiler CLSID: '%s'.  HRESULT: 0x%x.
+Loading profiler failed.  The profiler COM object was instantiated, but the profiler failed during its initialization callback.  Profiler CLSID: '%s'.  HRESULT: 0x%x..Process ID (decimal): %d.  Message ID: [0x%x].<The profiler was loaded successfully.  Profiler CLSID: '%s'.
+Loading profiler failed.  COR_ENABLE_PROFILING and COR_PROFILER were set properly, but COR_PROFILER_PATH was not.  COR_PROFILER_PATH must be set to the full path of the profiler DLL to load with no more than 260 charaters including the null terminator.
+There was a failure initializing profiling API attach infrastructure.  This process will not allow a profiler to attach.  HRESULT: 0x%x.dLoading profiler failed.  Failed creating interprocess communication infrastructure.  HRESULT: 0x%x.pLoading profiler failed.  Unable to connect to the process that is trying to request the attach.  HRESULT: 0x%x.
+Loading profiler failed.  The inter-process communication mechanism was initialized, but an attach request was not received. HRESULT: 0x%x.vLoading profiler failed.  Failed trying to receive from out of process a request to attach a profiler.  HRESULT: 0x%x.
+Loading profiler failed.  The profiler COM object was instantiated, but the profiler does not support attaching to a live process.  The profiler must be loaded at application startup by using a launcher program included with the profiler (if any) or by setting the COR_ENABLE_PROFILING and COR_PROFILER environment variables before launching the application to be profiled.  Profiler CLSID: '%s'
+Loading profiler failed.  There was an unhandled exception while trying to instantiate the profiler COM object.  Please ensure the CLSID is associated with a valid profiler designed to work with this version of the runtime.  Profiler CLSID: '%s'.
+,Native image cannot be loaded multiple times
+(The remote device closed the connection.6The connection was closed due to a keep-alive failure.UGeneric error that the device connection has been broken with no chance for recovery.8Cannot use JMC on this code (likely wrong JIT settings).SThe stack walk has reached the end of the stack.  There are no more frames to walk.2Internal frame markers have no associated context.'The current frame is not a child frame.9The provided CONTEXT does not match the specified thread.KThe stackwalker is now past the end of stack.  No information is available.
+Func eval cannot update a variable stored in a register on a non-leaf frame.  The most likely cause is that such a variable is passed as a ref/out argument.
+#The state of the thread is invalid.'This process has already been attached.LReturned from a call to Continue that was not matched with a stopping event.
+Invalid entrypoint information.
+cvtres.exe not found.
+Failed to delayload a library.
+Failed to get dll entrypoint.FMultiple copies of mscoree.dll have been loaded into the same process.
+Type has been unloaded.*Attempted to access an unloaded appdomain. Error while unloading appdomain.
+Assembly is still being loaded.#Attempt to create appdomain failed.8The module was expected to contain an assembly manifest.hAttempt to load an unverifiable executable with fixups (IAT with more than 2 sections or a TLS section.)bAttempt to LoadLibrary a managed image in an improper way (only assemblies with EAT area allowed).aThis assembly is built by a runtime newer than the currently loaded runtime and cannot be loaded.dCannot set security policy under MultiDomain after non-GAC assemblies have been loaded in appdomain.
+Cannot specify assembly evidence under MultiDomain after non-GAC assemblies with default evidence have been loaded in appdomain.NThe module cannot be loaded because only single file assemblies are supported.
+1Host detected a deadlock on a blocking operation.
+Host interrupted a wait.
+Invalid operation.1CLR has been disabled due to unrecoverable error.
+A wait has timed out.nThe leave operation has been attempted on a synchronization primitive that is not owned by the current thread.
+An event has been abandoned.-Process exited due to ThreadAbort escalation.+Process exited due to AD Unload escalation.)Process exited due to Timeout escalation.-Process exited due to OutOfMemory escalation./Process exited due to StackOverflow escalation.
+&The check of the module's hash failed.
+QThe located assembly's manifest definition does not match the assembly reference.?The private assembly was located outside the appbase directory.1A module specified in the manifest was not found.7Modules which are not in the manifest were streamed in.&A strongly-named assembly is required.
+Strong name signature could not be verified.  The assembly may have been tampered with, or it was delay signed but not fully signed with the correct private key.CAn unexpected error was encountered in the Assembly Cache database.0The given assembly name or codebase was invalid.AHTTP download of assemblies has been disabled for this appdomain.+Uninstall of given assembly is not allowed.;Application configuration file not allowed in AppX process.
+FAssembly in host store has a different signature than assembly in GAC.ULoadFrom(), LoadFile(), Load(byte[]) and LoadModule() have been disabled by the host.&Failed to add file to AppDomain cache.sThe requested assembly version conflicts with what is already bound in the app domain or specified in the manifest.{The requested assembly name was neither found in the GAC nor in the manifest or the manifest's specified location is wrong.6Unexpected error while parsing the specified manifest.QThe given assembly name is invalid because a processor architecture is specified.<The module was expected to not contain an assembly manifest.xReference assemblies should not be loaded for execution.  They can only be loaded in the Reflection-only loader context.mThe native image could not be loaded, because it was generated for use by a different version of the runtime.
+Contract Windows Runtime assemblies cannot be loaded for execution.  Make sure your application only contains non-contract Windows Runtime assemblies.
+Error occurred during a read.
+Error occurred during a write.
+File is read only.
+Ill-formed name.
+Data value was truncated.
+Old version error.NA shared memory open failed to open at the originally assigned memory address.
+RCreate of shared memory failed.  A memory mapping of the same name already exists.%No .CLB data in the memory or stream.
+Database is read only.:Importing scope is not compatible with the emitting scope.
+File is corrupt.%Required version of schema not found.
+8Cannot open a incrementally build scope for full update.
+6Null value not allowed in unique index or primary key.
+Index has been duplicated.1The columns data type is not allowed in an index.
+Index not found.
+Record not found on lookup.,Too many records were returned for criteria.
+Record is a duplicate.
+Primary key value is required.
+Record is valid but deleted.
+Record is emitted out of order.
+Data too large.
+Column cannot be changed..Too many RID or primary key columns, 1 is max.0Primary key column may not allow the null value.
+(Attempted auto-drop of table while open.!Object not found in the database.
+Column not found.
+Invalid index.
+A blob or string was too big.
+8A token of the wrong type passed to a metadata function.
+,Typelib import: Invalid type, not converted.;Typelib import: Invalid type, not converted - name unknown.!Typelib export: TLBX_E_CTX_NESTEDDTypelib export: General error. See IError info for more information.(Typelib export: SaveAllChanges() failed./Typelib export: Type library is not registered.1Typelib export: Type library could not be loaded./Typelib import: Invalid vartype, not converted.+Typelib export: Could not load mscoree.tlb.CTypelib export: Could not get a required typeinfo from mscoree.tlb.(Typelib import: Fault reading a typelib.7Typelib import: Multiple [lcid] parameters on a method.
+4Typelib import: Duplicate or ambiguous return types.:Typelib import: Duplicate name (due to user-defined name).
+6Typelib export: Cannot convert non-sequential structs.
+,Typelib import: The resolve ref call failed.,Typelib export: Encountered AsAny - ignored.LTypelib export: Encountered an [lcid] attribute set to an invalid parameter.MTypelib export: Encountered an [lcid] attribute on a pure dispatch interface.2Typelib export: Non-public field in public struct.
+Typelib export: Bad names list.
+3TypeLib export: generic type instance in signature.4TypeLib export: generic type parameter in signature.
+2Attempted to define an object that already exists./A guid was not provided where one was required.CMerge: an import typedef matched ns.name, but not version and guid.(Merge: conflict between import and emit.
+.TypeLib export: Detected array of SafeHandles.9Merge: Class already in emit scope, but member not found.9Merge: Class already in emit scope, but member not found.(Merge: Parameter information mismatched./Merge: Inconsistency in meta data import scope.@Merge: Class already in emit scope, but interfaceimpl not found.2TypeLib export: Detected array of CriticalHandles.DMerge: Duplicate classes have inconsistent class layout information.DMerge: Field is duplicated but no matching FieldMarshal information.
+7Merge: Method is duplicated but no matching event info.:Merge: Method is duplicated but no matching property info.
+Bad binary signature.
+Bad input parameters.6Merge: duplicated methods have inconsistent ImplFlags."Merge: Inconsistency in meta data.
+Cannot resolve typeref.
+2No logical space left to create more user strings.
+Unexpected TokenRemap.#Unmark all has been called already.)Must call UnmarkAll first before marking.CMerge: duplicated types or methods have inconsistent GenericParams.8Merge: different event counts in import and emit scopes.;Merge: different property counts in import and emit scopes.KMerge: An input scope has a TypeRef which does not have a matching TypeDef.
+1TypeLib export: cannot open the module to export.$TypeLib export: cannot load a class.ETypeLib export: the hModule of a loaded class is 0; cannot export it.5TypeLib export: no CLSID or Interface subkey to HKCR.DTypeLib export: attempted to export an Assembly imported from a TLB.DTypeLib import: attempted to import a TLB exported from an Assembly.4TypeLib export: bad Native type in method signature.8TypeLib import: non-increasing vtable (duplicate slots).6TypeLib export: the COM register method is non static.VTypeLib export: the specified COM register method does not have the correct signature.%TypeLib export: cannot load CLR type.-TypeLib export: unknown element in signature.1TypeLib import: reference to an external typelib.BTypeLib import: an imported typelib has an invalid namespace name.$Typelib export: an error on Layout()4Typelib import: Interface not derived from IUnknown.?Typelib export: Non COM visible value type in method signature.mTypelib export: Types which contain the native type NATIVE_TYPE_LPTSTR are not allowed to be exported to COM.STypelib export: Types with a charset of auto are not allowed to be exported to COM.
+:Typelib export: The enum value is not legal for a typelib.
+Typelib export: Duplicate IID.'Typelib export: detected nested arrays.6Typelib import: parameter type could not be converted.OTypelib import: parameter type could not be converted - parameter name unknown.3TypeLib export: size agnostic element in signature. TypeLib export: exporter failed.<Typelib import: [dual] interface not derived from IDispatch.
+Typelib export: bad signature.;Typelib export: non-fixed or non-safearray array in struct..Typelib export: non-interface class in struct.
+)Known custom attribute on invalid target.)Known custom attribute had invalid value.+Known custom attribute blob has bad format.8Known custom attribute blob has repeated named argument.5Known custom attribute named argument not recognized.8Known attribute named argument does not support variant.6Known attribute named argument does not support array.-Known attribute parser found unexpected type.;Known attribute parser only handles fields, not properties.YKnown attribute parser found an argument that is invalid for the object it is applied to.#The format of the UUID was invalid.[The MarshalAs attribute has fields set that are not valid for the specified unmanaged type.5The specified unmanaged type is only valid on fields.'The parameter index cannot be negative."The multiplier cannot be negative.%The constant size cannot be negative.
+A fixed string requires a size.6A custom marshaler requires the custom marshaler type.*A DllImport attribute requires a filename.>TypeLib import: Detected properties in a source dispinterface./SaveDelta was called without being in EnC mode.
+9Merge: different method counts in import and emit scopes.8Merge: different field counts in import and emit scopes.<Merge: different parameter counts in import and emit scopes.
++TypeLib export: Exporting a TypedReference.
+RTypeLib export: bitness of assembly does not match bitness of output type library.
+LInternalsVisibleTo can't have a version, culture, or processor architecture.
+Rid is out of range.!Coded token type is out of range.
+Coded rid is out of range.
+String offset is invalid.
+GUID offset is invalid.
+Blob offset if invalid.
+Multiple module records found.
+Module has null MVID.
+TypeRef name is NULL.
+TypeRef has a duplicate.
+TypeDef name is NULL.0TypeDef has a duplicate based on name+namespace.&TypeDef has a duplicate based on GUID.
+JTypeDef that is not an Interface and not System.Object extends nil parent.'System.Object extends a non-nil parent.
+TypeDef extends sealed class.5TypeDef is Deleted but not marked with RTSpecialName.=TypeDef is marked RTSpecialName, but is not a Deleted record.
+MethodImpl's Decl is private..Assembly [Ref] name has path and/or extension.-File has a system name (con, com, aux, etc.).
+MethodImpl's body is static.-TypeDef is marked Interface but not Abstract.2TypeDef is marked Interface but parent is not Nil.-TypeDef is marked Interface but GUID is NULL.
+TMethodImpl's Decl is final.2TypeDef is marked ValueType but not marked Sealed."Parameter has extra bits in flags.
+InterfaceImpl has a duplicate.
+MemberRef name is NULL.)MemberRef has an invalid name, _VtblGap*.)MemberRef has an invalid name, _Deleted*."MemberRef parent Nil in a PE file.)MemberRef has invalid calling convention.AMemberRef has Method parent but calling convention is not VARARG./MemberRef name different from parent MethodDef.4MemberRef signature different from parent MethodDef.
+MemberRef has a duplicate.0ClassLayout parent TypeDef is marked AutoLayout. ClassLayout has bad PackingSize.
+ClassLayout has a duplicate.
+FieldLayout2 has bad offset.'FieldLayout2 has field with nil parent.'FieldLayout2 has no ClassLayout record.>FieldLayout2 parent TypeDef is not marked with ExplicitLayout.
+%FieldLayout2 has field marked Static.
+FieldLayout2 has a duplicate.
+ModuleRef name is NULL.
+ModuleRef has a duplicate.#TypeRef has a bad resolution scope.&TypeDef marked nested has no encloser.ITypeDef extends a TypeRef which resolves to a TypeDef in the same module."Signature specified is zero-sized.6Signature does not have enough data at specified byte.0Method signature has invalid calling convention.SMethod is marked static but has HASTHIS/EXPLICITTHIS set on the calling convention.?Method is not marked static but is not HASTHIS or EXPLICITTHIS./Method signature is missing the argument count.
+Signature missing element type.
+Signature missing token.
+Signature has bad token.
+&Signature is missing function pointer.6Signature has function pointer missing argument count.(Signature is missing rank specification./Signature is missing count of sized dimensions.'Signature is missing size of dimension.+Signature is missing count of lower bounds.#Signature is missing a lower bound.
+Signature has bad element type.'Signature has value array missing size./Field signature has invalid calling convention.
+Method name is NULL.
+Method has parent NIL.
+Method has a duplicate.
+Field name is NULL.
+Field parent is Nil.
+Field has a duplicate.
+ Multiple Assembly records found.
+Assembly name is NULL.5E_T_VALUETYPE<class token> or E_T_CLASS<vtype token>.
+Class layout on an Interface.
+AssemblyOS platform ID invalid.
+AssemblyRef name is NULL. TypeDef not nested has encloser.&AssemblyRefOS has invalid platform ID.
+File name is NULL.
+ExportedType name is NULL.
+TypeDef extends its own child.
+ManifestResource name is NULL.
+File has a duplicate.
+File name is fully qualified.
+ExportedType has a duplicate.!ManifestResource has a duplicate.
+/ManifestResource is neither Public nor Private.
+Enum has no value__ field.
+Enum's value__ field is static.(Enum's value__ field is not SpecialName.
+Enum's field is not static.
+Enum's field is not literal.
+Enum has no literal fields.8Enum's field signature does not match value__ signature."Enum's value__ field is not first./Field is RTSpecialName but name is not value__. Field value__ in not Enum class.
+Instance field in interface.
+Non-public field in interface.:Global field or method is neither Public nor PrivateScope.%Global field or method is not static.
+Global field has no RVA.
+.ctor or .cctor has zero RVA.7Field is marked marshaled but has no marshaling record.8Field has marshaling record but is not marked marshaled.2Field is marked HasDefault but has no const value.:Field has const value record but is not marked HasDefault.AField or method is marked HasSecurity but has no security record.BField or method has security record but is not marked HasSecurity.4Field or method is PInvoke but is not marked Static.5Field or method is marked PInvoke but has no ImplMap.6Field or method has ImplMap but is not marked PInvoke.$Field or method has invalid ImplMap.
+ImplMap has invalid ModuleRef.$ImplMap has invalid MemberForwarded.
+ImplMap has invalid ImportName.
+ImplMap has invalid call conv.(Field or method has invalid access flag.
+Field is InitOnly and Literal. Field is Literal but not Static.1Field or method is RTSpec.Name but not Spec.Name."Method is abstract, parent is not.+Method not static or abstract in interface.
+Method not public in interface.
+.ctor in interface.
+global .ctor or .cctor.
+static .ctor.8.ctor or .cctor not marked SpecialName or RTSpecialName.
+virtual .ctor or .cctor.
+abstract .ctor or .cctor.
+instance .cctor.KRVA set to zero, but method not abstract or pinvoke or runtime, or reverse. Method is final and not virtual.&Method is static and final or virtual.
+Method is abstract and final.#Method is abstract and implemented.
+Method is abstract and pinvoke.#Method is abstract and not virtual.+Method is not abstract and not implemented.DMethod is not abstract and not (non-zero RVA or PInvoke or runtime)./Method is PrivateScope and has RVA set to zero.%Global method is abstract or virtual.
+Signature uses long form.(Method has multiple semantics (warning).5Method has invalid semantics (not event or property.)5Method has semantics association that does not exist.!MethodImpl's Decl is not virtual.&Global field or method (warning, CLS).'Method has multiple semantic flags set.!Method has no semantic flags set.
+"Field in Interface (warning, CLS).#Unrecognized Hash Alg ID (warning)./Unrecognized Processor ID in Assembly(warning).2Unrecognized Processor ID in AssemblyRef(warning).$Constant: parent token out of range.
+Invalid flags in Assembly.5There is TypeDef with same name as TypeRef (warning).8In InterfaceImpl, the implementing token is not TypeDef.BIn InterfaceImpl, the implemented token is not TypeDef or TypeRef.=TypeDef has security record but it is not marked HasSecurity.6TypeDef marked HasSecurity but has no security record.
+.cctor has arguments.(ExportedType has invalid Implementation.%MethodImpl has body from other class.&.cctor has invalid calling convention.#MethodImpl has invalid Class token.
+!MethodImpl declared in Interface./MethodImpl has invalid MethodDeclaration token.(MethodImpl has invalid MethodBody token.
+MethodImpl has duplicate.
+Bad field parent.$Parameter out of sequence (warning).8Parameter's sequence number exceeds number of arguments.4Parameter marked HasMarshal, has no marshaling info.5Parameter has marshaling info, not marked HasMarshal.
+0Parameter marked HasDefault, has no const value.1Parameter has const value, not marked HasDefault.
+Property has invalid scope.
+Property has no name.
+Property has no signature.
+Property has a duplicate.
+$Property has bad calling convention./Property marked HasDefault, has no const value.0Property has const value, not marked HasDefault.:Property has method that is neither a Setter nor a Getter.'Property has method with invalid token.'Property has method from another class.+Const has non-null blob when it should not.
+Const has null value blob.
+Event has invalid scope.
+Event has no name.
+Event has a duplicate.
+Event has invalid EventType.!Event's EventType is not a class.1Event has method not (AddOn,RemoveOn,Fire,Other).$Event has method with invalid token.
+$Event has method from another class.
+Event has no AddOn method.
+Event has no RemoveOn method.&ExportedType has same name as TypeDef.0MRes refers to non-PE file with non-zero offset.-Declarative security has invalid owner token..Declarative security has invalid action flags.,Declarative security has no permission blob.-Manifest resource has invalid Implementation.
+1MemberRef has VARARG calling conv. (CLS warning).2.ctor or .cctor returns something other than void..Fire method returns something other than void.
+Invalid locale.$Constant has parent of invalid type.$E_T_SENTINEL in MethodDef signature.
+E_T_SENTINEL <=> VARARG.
+Multiple E_T_SENTINELs."E_T_SENTINEL not followed by type.
+Signature missing argument.
+Field of ByRef type.#Synchronized method in value class.
+TypeDef name too long.
+Duplicate Assembly Processor./Duplicate Assembly OS (ID+ver.major+ver.minor). Manifest Resource has bad flags.
+ExportedType has nil TypeDefId.
+File has bad flags.
+File has no hash blob.
+Module has no name. Module has fully-qualified name.1TypeDef is tdRTSpecialName but not tdSpecialName.
+TypeDef extends interface.
+.ctor or .cctor is PInvokeImpl.
+System.Enum is not a class.)System.Enum extends not System.ValueType./MethodImpl's Decl and Body signatures mismatch.,TypeDef extends System.Enum but has methods.8TypeDef extends System.Enum but implements an interface./TypeDef extends System.Enum but has a property.-TypeDef extends System.Enum but has an event.$TypeDef has MethodList > Nmethods+1."TypeDef has FieldList > Nfields+1.
+Constant has wrong type.
+Enum has no instance fields."Enum has multiple instance fields.0Validator has been interrupted by the VEHandler.)Validator failed to initialize correctly.
+Unrecoverable API error.
+Process was terminated.
+Process not synchronized.
+A class is not loaded.9An IL variable is not available at the current native IP.;A reference value was found to be bad during dereferencing.KA field in a class is not available, because the runtime optimized it away.2'Native-frame-only' operation on non-native frame.-Cannot Continue on non-continuable exception."The code is currently unavailable.AAttempt to get a ICorDebugFunction for a function that is not IL.
+SetIP is not possible because SetIP would move EIP from outside of an exception handling finally clause to a point inside of one.{SetIP is not possible because it would move EIP from within an exception handling finally clause to a point outside of one.
+SetIP is not possible, because SetIP would move EIP from outside of an exception handling catch clause to a point inside of one.8SetIP cannot be done on any frame except the leaf frame.
+SetIP is not allowed.*Func eval cannot work. Bad starting point.%This object value is no longer valid.:CordbEval::GetResult called before func eval has finished.
+KThe in-process version of the debugging API does not support this function.
+KA static variable is not available because it has not been initialized yet.(Cannot copy a VC with object refs in it.%SetIP cannot leave or enter a filter./JIT settings for ZAP modules cannot be changed.zSetIP is not possible because it would move EIP from within a finally clause to a point outside of one on WIN64 platforms.xSetIP is not possible because it would move EIP from within a catch clause to a point outside of one on WIN64 platforms.
++Cannot perfrom SetValue on non-leaf frames.|When doing Edit and Continue, some JITs do not allow increasing the maximum level to which exception handling can be nested.YTried to do Edit and Continue on a module that was not started in Edit and Continue mode.&SetIP cannot be done on any exception.UThe 'variable' does not exist because it is a literal optimized away by the compiler.
+Process has been detached.:Not allowed to change the signature of an existing method..Cannot get the local signature for the method.8Adding a field to a value or layout class is prohibited.!Cannot change field after adding.)Only support addition of private members.1GetStaticFieldValue called on a non-static field.NReturned if someone tries to call GetStaticFieldValue on a non-instance field.|If a zap file was created without the Edit and Continue flag set, then we cannot do Edit and Continue on it, no matter what.!Lacking information about method.'The JIT is unable to update the method.
+1An internal structure about the class is missing.5Internal Runtime Error while doing Edit-and-Continue.EThe field was added via Edit and Continue after the class was loaded.
+Module not loaded.!Not allowed to change base class.
+Cannot set a breakpoint here.RDebugging is not possible due to an incompatibility within the CLR implementation.bA kernel debugger is enabled on the system.  User-mode debugging will trap to the kernel debugger.bA kernel debugger is present on the system.  User-mode debugging will trap to the kernel debugger..The debugger's internal helper thread is dead.,Not allowed to change interface inheritance.:The debugger's protocol is incompatible with the debuggee.:The debugger can only handle a finite number of debuggees.#Interop debugging is not supported.>Cannot call RemapFunction until have received RemapBreakpoint.
+Object is in a zombie state.
+Function not yet compiled.'The ID is not fully loaded/defined yet.4The Module is not configured for updateable methods.+The Method could not be updated for re-JIT. The Method has no associated IL.-The thread has never run managed code before.?The function may only be called during profiler initialization.;In-process debugging must be enabled during initialization.2Cannot get a JIT map becuase they are not enabled.$BeginInprocDebugging already called./In-process debugging not allowed at this point.+Requested information is not yet available.@The given type is a generic and cannot be used with this method.DThe given function is a generic and cannot be used with this method.
+Failed to convert XML to ASN.OLoading this assembly would produce a different grant set from other instances.&Unverifiable code failed policy check.=Assembly already loaded without additional security evidence.
+ Failure decoding permission set. Failure encoding permission set.
+Unrecognized encoding format.(StrongName APIs not supported on system.0StrongName APIs could not locate a matching CSP."Invalid security custom attribute.
+PolicyException thrown.,Failed to grant minimum permission requests.&Failed to grant permission to execute.
+XML Syntax error.
+Strong name validation failed.
+Assembly is not strong named.$Strong name key container not found.
+Invalid assembly file format.
+Invalid assembly public key.
+Signature size mismatch.8Public key of assembly did not match signing public key.HInvalid signature public key specified in AssemblySignatureKeyAttribute.DInvalid countersignature specified in AssemblySignatureKeyAttribute.
+'Failure during Cryptographic operation.#Unexpected Cryptographic operation.
+(Generic problem with a custom attribute.
+Missing a required constructor.1Unable to create a permission for this attribute.(SecurityAction type invalid on assembly.1SecurityAction type invalid on types and methods.5Security custom attribute attached to invalid parent.%Bad custom attribute serialized blob.-Bad custom attribute serialized blob version.
+Invalid security action code./CA reference to CA definition in same assembly..Use of non-CAS permission with invalid action.<Failed to load assembly containing CA (or required CA type).<Failed to load assembly containing CA (or required CA type).-Failed to load CA type (or required CA type).-Failed to load CA type (or required CA type).
+CA type is abstract.NSecurity custom attributes do not support array or Type fields and properties.1Unsupported base type for enum field or property.
+Could not find a CA field.
+Could not find a CA property.
+Unexpected exception.
+Unexpected exception.
+!IsolatedStorage operation failed.
+Unable to open the store.$Unable to create store file mapping.
+Unable to map the store file.$Unable to determine store file size.
+Unable to create mutex.
+Unable to lock the store.
+File Write failed.
+Cannot set file pointer.%Unable to create the store directory.&Store must be open for this operation.
+Store file is corrupt.
+Store version is not supported.
+Store file is not mapped.
+Block size is too small.
+Allocation size is too large.
+Allowed quota is fully used.
+Row not found.
+Unable to deprecate old store.
+Unable to determine the caller.
+Path length is too long.
+Machine Store is not supported.DThe DACL for the machine store is incorrect or could not be created.
+General Exception
+System.Exception'An argument was out of its legal range.;Attempted to store an object of the wrong type in an array.9Attempted to marshal an object across a context boundary.
+Operation timed out.
+Internal CLR error.
+Access to this field is denied.
+Array subscript out of range./An operation is not legal in the current state.'An error relating to security occurred.'An error relating to remoting occurred.,An error relating to serialization occurred.$A verification failure has occurred.'An error relating to remoting occurred.0An error relating to ServicedComponent occurred.
+ Access to this method is denied.
+Field does not exist.
+Member does not exist.
+Method does not exist.4Attempt to combine delegates that are not multicast.
+Operation is not supported.FArithmetic, casting or conversion operation overflowed or underflowed.GAn array has the wrong number of dimensions for a particular operation.8This operation must be called from a synchronized block.,Thread was interrupted from a waiting state. Access to this member is denied.
+1Thread is in an invalid state for this operation.
+Thread is stopping.
+Could not find or load a type.2Could not find the specified DllImport entrypoint.+Could not find the specified DllImport Dll.
+%An invalid __ComObject has been used.
+Not a Number.;An object appears more than once in the wait objects array.
+$Reached maximum count for semaphore.&No semaphore of the given name exists.-The wait completed due to an abandoned mutex.
+Thread has aborted. OLE Variant has an invalid type.:An expected resource in the assembly manifest was missing.hA mismatch has occurred between the runtime type of the array and the sub type recorded in the metadata..Uncaught exception during type initialization.
+Invalid marshaling directives.
+An expected satellite assembly containing the ultimate fallback resources for a given culture was not found or could not be loaded.DThe format of one argument does not meet the contract of the method.dA mismatch has occurred between the runtime rank of the array and the rank recorded in the metadata.,Operation is not supported on this platform.
+Invalid IL or CLR metadata.
+The operation was cancelled.
+Devices not supported.DA datatype misalignment was detected in a load or store instruction.WA managed code contract (ie, precondition, postcondition, invariant, or assert) failed.
+Access to this type is denied.SFail to access a CCW because the corresponding managed object is already collected.JA method in this assembly is greater than the maximum allowed method size.
+0The given key was not present in the dictionary.
+Insufficient stack to continue executing the program safely. This can happen from having too many functions on the call stack or function on the stack using too much stack space.
+Application exception<The given filter criteria does not match the filter content.NCould not find or load a specific class that was requested through Reflection.7Attempt to invoke non-static method with a null Object.>Uncaught exception thrown by method called through Reflection.$Custom attribute has invalid format.
+Error during managed I/O.'Could not find or load a specific file.%The object has already been disposed.BRuntime operation halted by call to System.Environment.FailFast().
+&The host has forbidden this operation.ZAttempted to call into managed code when executing inside a low level extensibility point.
+Failed to load the runtime.0Failed to find a required export in the runtime.
+Install root is not defined.3Expected component of the runtime is not available.BA runtime has already been bound for legacy activation policy use.BThe operation is invalid because the process may be shutting down.
+Unknown opcode.
+Unknown calling convention.
+Unknown ELEMENT_TYPE.
+[return sig]
+[field sig]LProtected method access through an open instance delegate is not verifiable.
+Internal error.
+Stack is too large.
+Array name is too long.
+0fall through end of the method without returning
+try start >= try end
+try end > code size
+handler start >= handler end
+handler end > code size
++Try starts in the middle of an instruction./Handler starts in the middle of an instruction.
+%Try block overlap with another block.-Try and filter/handler blocks are equivalent.(Shared try has finally or fault handler.*Handler block overlaps with another block.+Handler block is the same as another block.)Filter block overlaps with another block.*Filter block is the same as another block.
+Filter contains try.
+Filter contains handler.
+Nested filters.
+filter >= code size.Filter starts in the middle of an instruction.&fallthru the end of an exception block"fallthru into an exception handler!fallthru into an exception filter(Leave from outside a try or catch block.%Rethrow from outside a catch handler.)Endfinally from outside a finally handler0Endfilter from outside an exception filter block
+Missing Endfilter.
+Branch into try block.$Branch into exception handler block.#Branch into exception filter block.
+Branch out of try block.&Branch out of exception handler block.%Branch out of exception filter block.
+Branch out of finally block.
+Return out of try block.&Return out of exception handler block.%Return out of exception filter block.2jmp / exception into the middle of an instruction.'Non-compatible types depending on path..Init state for this differs depending on path.0Non-compatible types on stack depending on path.&Stack depth differs depending on path.!Instance variable (this) missing.+Uninitialized this on entering a try block.)Store into this when it is uninitialized.-Return from .ctor when this is uninitialized.
+4Return from .ctor before all fields are initialized.'Branch back when this is uninitialized.)ldftn and ldvirtftn not allowed on .ctor."Non-compatible types on the stack.
+Unexpected type on the stack.!Missing stack slot for exception.
+Stack overflow.
+Stack underflow.
+Stack empty.
+Uninitialized item on stack.#Expected I, I4, or I8 on the stack.#Expected R, R4, or R8 on the stack.)unexpected R, R4, R8, or I8 on the stack.#Expected numeric type on the stack. Expected an ObjRef on the stack.+Expected address of an ObjRef on the stack.
+Expected ByRef on the stack.*Expected pointer to function on the stack.-Expected single dimension array on the stack.*Expected value type instance on the stack.,Expected address of value type on the stack.,Unexpected value type instance on the stack.)Local variable is unusable at this point.#Unrecognized local variable number.
+Unrecognized argument number.
+Unable to resolve token.$Unable to resolve type of the token.2Expected memberRef, memberDef or methodSpec token.%Expected memberRef or fieldDef token.
+Expected signature token.
+Instruction cannot be verified.-Operand does not point to a valid string ref.
+@Return type is ByRef, TypedReference, ArgHandle, or ArgIterator.3Stack must be empty on return from a void function."Return value missing on the stack.)Stack must contain only the return value.
+Return uninitialized data.
+Illegal array access.(Store non Object type into Object array. Expected single dimension array.1Expected single dimension array of pointer types.
+Array field access is denied.
+Allowed only in vararg methods.
+Value type expected.
+Method is not visible.
+Field is not visible.
+Item is unusable at this point.
+Expected static field.
+Expected non-static field.%Address of not allowed for this item.!Address of not allowed for ByRef.)Address of not allowed for literal field./Cannot change initonly field outside its .ctor.
+Cannot throw this object. Callvirt on a value type method.
+Call signature mismatch.
+Static function expected.
+.ctor expected.
+Cannot use callvirt on .ctor.4Only super::ctor or typeof(this)::ctor allowed here.&Possible call to .ctor more than once.
+Unrecognized signature.
+Cannot resolve Array type.
+Array of ELEMENT_TYPE_PTR.
+7Array of ELEMENT_TYPE_BYREF or ELEMENT_TYPE_TYPEDBYREF.$ELEMENT_TYPE_PTR cannot be verified.
+Unexpected vararg.
+Unexpected Void.
+ByRef of ByRef
+Code size is zero.
+Unrecognized use of vararg. Missing call, callvirt or calli.!Cannot pass ByRef to a tail call.
+Missing ret.%Void ret type expected for tail call.%Tail call return type not compatible. Stack not empty after tail call.,Method ends in the middle of an instruction.
+Branch out of the method.
+Finally handler blocks overlap.
+Lexical nesting.SMissing ldsfld, stsfld, ldind, stind, ldfld, stfld, ldobj, stobj, initblk or cpblk.CMissing ldind, stind, ldfld, stfld, ldobj, stobj, initblk or cpblk.4Innermost exception blocks should be declared first.%Calli not allowed on virtual methods.%Call not allowed on abstract methods.#Unexpected array type on the stack.CValue type with NotInGCHeap attribute being created on the GC heap.1Attempt to enter a try block with nonempty stack.*Unrecognized arguments for delegate .ctor.pDelegate .ctor not allowed at the start of a basic block when the function pointer argument is a virtual method.TDup, ldvirtftn, newobj delegate::.ctor() pattern expected (in the same basic block).HLdftn or ldvirtftn instruction required before call to a delegate .ctor..Attempt to load address of an abstract method.+ELEMENT_TYPE_CLASS ValueClass in signature.
+3ELEMENT_TYPE_VALUETYPE non-ValueClass in signature.;Box operation on TypedReference, ArgHandle, or ArgIterator.3ByRef of TypedReference, ArgHandle, or ArgIterator.3Array of TypedReference, ArgHandle, or ArgIterator.1Stack not empty when leaving an exception filter.2Unrecognized delegate .ctor signature; expected I.7Unrecognized delegate .ctor signature; expected Object.6Mkrefany on TypedReference, ArgHandle, or ArgIterator.%Value type not allowed as catch type. ByRef not allowed as catch type.5filter block should immediately precede handler block
+ldvirtftn on static
+callvirt on staticOinitlocals must be set for verifiable methods with one or more local variables.:branch or leave to the beginning of a catch/filter handlerVCall to .ctor only allowed to initialize this pointer from within a .ctor. Try newobj.
+2Value type, ObjRef type or variable type expected.JExpected address of value type, ObjRef type or variable type on the stack./Unrecognized type parameter of enclosing class.0Unrecognized type parameter of enclosing method.=Unrecognized type argument of referenced class instantiation.>Unrecognized type argument of referenced method instantiation.
+Cannot resolve generic type.9Method instantiation contains non boxable type arguments.@Method parent instantiation contains non boxable type arguments.?Field parent instantiation contains non boxable type arguments.CUnrecognized calling convention for an instantiated generic method.4Unrecognized generic method in method instantiation.3Missing ldelema or call following readonly. prefix./Missing callvirt following constrained. prefix.<Method parent has circular class type parameter constraints.6Method has circular method type parameter constraints.
+GMethod instantiation has unsatisfied method type parameter constraints.MMethod parent instantiation has unsatisfied class type parameter constraints.LField parent instantiation has unsatisfied class type parameter constraints.QType operand of box instruction has unsatisfied class type parameter constraints.?The 'this' argument to a constrained call must have ByRef type.IThe operand to a constrained prefix instruction must be a type parameter.SThe readonly prefix may only be applied to calls to array methods returning ByRefs. Illegal write to readonly ByRef..A readonly ByRef cannot be used with mkrefany.>Alignment specified for 'unaligned' prefix must be 1, 2, or 4.
+The tail.call (or calli or callvirt) instruction cannot be used to transfer control out of a try, filter, catch, or finally block.OStack height at all points must be determinable in a single forward scan of IL.
+Call to base type of valuetype./Cannot construct an instance of abstract class.-Unmanaged pointers are not a verifiable type.(Cannot LDFTN a non-final virtual method.'Accessing type with overlapping fields.OThe 'this' parameter to the call must be the calling method's 'this' parameter.
+Expected I4 on the stack.
+#Unverifiable PE Header/native stub.+Unrecognized metadata, unable to verify IL.
+Unrecognized appdomain pointer.
+Type load failed.
+Module load failed.*Cannot modify an imaged based (RVA) static\Ldtoken instruction required before call to System.Runtime.CompilerServices.InitializeArray.
+5Interface in InterfaceImpl is not marked tdInterface.1Field marked fdHasFieldRVA but has no RVA record./Field marked fdHasFieldRVA has RVA set to zero.)Method has both non-zero RVA and ImplMap.%TypeDef has extraneous bits in flags.
+TypeDef extends itself./System.ValueType does not extend System.Object.!Class extends TypeSpec (warning).
+Value Class has zero size.
+Interface is sealed."Bad 'nested' token in NestedClass.%Bad 'enclosing' token in NestedClass.
+Duplicate NestedClass record..Duplicate NestedClass with different encloser.#RVA set to zero in FieldRVA record.
+'Invalid field token in FieldRVA record.!Duplicate RVA in FieldRVA record.#Duplicate field in FieldRVA record.'Bad token as entry point in CLR header.8Entry point in CLR header is a token of instance method.&Enum has non-integral underlying type.
+Method has bogus RVA.!Literal field has no const value.BClass implementing an interface does not implement one of methods.
+CA has invalid owner.
+CA has invalid type.
+CA type is not .ctor.
+CA type has bad signature.
+CA type has no signature.'CA blob has bad prolog (not 0x01 0x00)."Method has invalid LocalSig token.
+Method has invalid header.'Entry point has more than one argument. Entry point has bad return type.
+Entry point has bad argument.
+Illegal 'void' in signature."Multiple implementation of method.
+GenericParam name is NULL.
+GenericParam has nil owner.-GenericParam has duplicate by owner and name./GenericParam has duplicate by owner and number.(GenericParam is non sequential by owner.)GenericParam is non sequential by number.HGenericParam has variance but its owner is not an interface or delegate.@GenericParam is a method type parameter and must be non-variant.2GenericParam has illegal value for variance flags.OGenericParam has incompatible special constraints reference type and valuetype.
+%GenericParamConstraint has nil owner.=GenericParamConstraint has duplicate by owner and constraint.TGenericParamConstraint is non-contiguous with preceeding constraints for same owner.
+MethodSpec has nil method.;MethodSpec has duplicate based on method and instantiation.4MethodSpec signature has invalid calling convention.4MethodSpec signature is missing arity specification..MethodSpec signature is missing type argument.BMethodSpec arity of generic method and instantiation do not match.!MethodSpec method is not generic.5Signature missing arity of instantiated generic type.DSignature has generic type of arity instantiated at different arity.6Method cannot be both generic and a class constructor.:Method cannot be both generic and an instance constructor.>Method cannot be both generic and defined on an imported type.FMethod cannot be both generic and have non-default calling convention.
+<Entry point in CLR header is the token for a generic method.5Method signature is generic but is missing its arity.2Method signature is generic but its arity is zero.3Signature has generic type instantiated at arity 0.!MethodSpec signature has arity 0.9MethodDef signature has arity n but owns m GenericParams.FEntry point in CLR header is the token for a method in a generic type.<MethodImpl overrides non-generic method with generic method.<MethodImpl overrides non-generic method with generic method.NMethodImpl overrides generic method of arity n with generic method of arity m.<TypeDef extends a TypeSpec that is not an instantiated type.5Signature has type instantiated at ByRef at offset i.5Signature has type instantiated at ByRef at offset i.
+TypeSpec has empty signature.8TypeSpec has signature containing one or more sentinels.+TypeDef is generic but has explicit layout.
+_Signature has token following ELEMENT_TYPE_CLASS (_VALUETYPE) that is not a TypeDef or TypeRef.BWarning: Class does not implement interface method in this module.DTypeLib export: attempted to export an Assembly imported from a TLB.
+MThread is not scheduled. Thus we may not have OSThreadId, handle, or context.
+Handle has been disposed. Cannot intercept this exception.IWhen intercepting an exception, cannot intercept above the current frame.<The intercept frame for this exception has already been set..There is no native patch at the given address.0This API is only allowed when interop debugging./There is already a native patch at the address.3A wait timed out, likely an indication of deadlock."Cannot use the API on this thread.!Method was not JIT'd in EnC mode.AFrame cannot be updated due to change in max nesting of handlers.>Method is in a callable handler/filter. Cannot increase stack.(Frame cannot be updated due to localloc.$Attempt to perform unsupported edit.1Attempt to func eval abort on a suspended thread.
+@The LS is not in a good spot to perform the requested operation.nWe failed to resolve assembly given an AssemblyRef token. Assembly may be not loaded yet or not a valid token.IMust be in context of LoadModule callback to perform requested operation.CRequested operation cannot be performed during an attach operation.:NGEN must be supported to perform the requested operation. Trying to shutdown out of order.6Debugging fiber mode managed process is not supported.LMust be in context of CreateProcess callback to perform requested operation.UAll outstanding func-evals have not completed, detaching is not allowed at this time.UAll outstanding steppers have not been closed, detaching is not allowed at this time.
+5Cannot have an ICorDebugStepper do a native step-out.XAll outstanding breakpoints have not been closed, detaching is not allowed at this time.5The operation is illegal because of a stack overflow.5The operation failed because it is a GC unsafe point.9The operation failed because the thread is in the prolog.:The operation failed because the thread is in native code.=The operation failed because the thread is in optimized code.8The information requested is not supported by minidumps.9A supplied object or type belongs to the wrong AppDomain.&The thread's context is not available.
+QThe operation failed because debuggee and debugger are on incompatible platforms.<The operation failed because the debugging has been disabled9Detach is illegal after an Edit and Continue on a module.>Cannot intercept the current exception at the specified frame.VThe debugger helper thread cannot obtain the locks it needs to perform this operation.EThe operation failed because the debugger could not get the metadata.#The debuggee is in a corrupt state.DDetach failed because there are outstanding resources in the target.
+The debuggee is read-only.ZThe version of clr.dll in the target does not match the one mscordacwks.dll was built for.6Symbols are not supplied for modules loaded from disk.lThe application did not supply symbols when it loaded or created this module, or they are not yet available.#A debug component is not installed.@Connection authentication failed due to mismatched certificates.7Connection failed due to a miscellaneous network error.NConnection failed due to no endpoint at remote machine (no proxy configured?).<Connection failed due to inability to locate remote machine.4Local debugger configuration was missing or invalid.WConnection failed due to protocol version mismatch between local and remote components.^The ICLRDebuggingLibraryProvider callback returned an error or did not provide a valid handle.DThe module at the base address indicated was not recognized as a CLRcThe provided data target does not implement the required interfaces for this version of the runtime<This debugging model is unsupported by the specified runtimeUThe debugger is not designed to support the version of the CLR the debuggee is using.?The version struct has an unrecognized value for wStructVersion9A call into a ReadVirtual implementation returned failureBThe Debugging API doesn't support dereferencing function pointers.>The address provided does not point to a valid managed object.>The GC heap structures are not in a valid state for traversal.FThe specified IL offset or opcode is not supported for this operation.CThe specified action is unsupported by this version of the runtime.LThe debuggee memory space does not have the expected debugging export table.
+*Failure when calling a data target method.5Couldn't find metadata for the given executable code.%Given executable code is not managed.
+Couldn't find a native image.+The type doesn't exist in the given module.,Couldn't find metadata for the given vtable.'Couldn't find any generics information.
+File is empty.
+File has no NT headers.
+File is PE32+.
+File has no COR header.
+Flag IL_ONLY not set.
+Bad import DLLs. EXE file has no mgd entry point.
+Bad base relocations.
+Bad managed entry point.$OptHeader.SizeOfCode is set to zero.
+File has invalid COR header.
+File is PE32
+IThe operation was interrupted by the CLR Optimization Service controller.
+(Failed to get dependencies for assembly.
+Failed to delete native image.HModule contains too many interfaces to successfully compile all methods.5Requested runtime does not support side-by-side NGen.)Worker exited unexpectedly during startup0Failed to synchronize with worker during startupENGen cannot proceed because Mscorlib.dll does not have a native image
+The image file is not compatible with the version of Ngen you're running.  Use 32bit Ngen for 32bit assemblies, and 64bit Ngen for 64bit assemblies.@There was an error parsing the NGen assembly exclusion Xml file..A hardbound dependent native image is missing.(NGen is not running in expected package./The image being compiled is not a .NET assembly
+HThe bound assembly has a version that is lower than that of the request.TThe assembly version has a public key token that does not match that of the request.4The requested image was not found or is unavailable./The provided identity format is not recognized.8A binding for the specified assembly name was not found.4A binding for the specified type name was not found.ICould not use native image because Mscorlib.dll is missing a native imageMNative image was generated in a different trust level than present at runtime?Native image identity mismatch with respect to its dependencies"Failfast due to an OOM during a GC
+:The format of a DLL or executable being loaded is invalid.
+QWRN: Found match in cache, but cannot create assembly from the cache information.!LOG: GAC Lookup was unsuccessful.
+?WRN: Comparing the assembly name resulted in the mismatch: NAMEHWRN: Comparing the assembly name resulted in the mismatch: Major VersionHWRN: Comparing the assembly name resulted in the mismatch: Minor VersionJWRN: Comparing the assembly name resulted in the mismatch: Revision NumberGWRN: Comparing the assembly name resulted in the mismatch: Build NumberKWRN: Comparing the assembly name resulted in the mismatch: PUBLIC KEY TOKENBWRN: Comparing the assembly name resulted in the mismatch: CULTUREAWRN: Comparing the assembly name resulted in the mismatch: CUSTOM
+PERR: Fatal error occurred attempting to canonicalize the codebase for this bind.
++LOG: Unable to prepare policy cache object.GLOG: Download of application configuration file is already in progress."=== Pre-bind state information ===
+LOG: DisplayName = %ws
+ (%ws)#LOG: Where-ref bind. Location = %ws
+LOG: Appbase = %ws
+LOG: Initial PrivatePath = %ws
+LOG: Dynamic Base = %ws
+LOG: Cache Base = %ws
+LOG: AppName = %ws
+===8LOG: Attempting application configuration file download.GLOG: Download of application configuration file was attempted from %ws.CLOG: Reusing an assembly instance that was previously loaded (%ws).+LOG: Configuration file %ws does not exist.
+0LOG: Found application configuration file (%ws).
+zLOG: Found assembly in DEVOVERRIDE location [%ws], but the assembly reference did not match the assembly definition found.SLOG: Found assembly in DEVOVERRIDE location [%ws], but signature validation failed.
+QWRN: Binding redirects specified for assemblies without strong names are ignored.
+0ERR: There was an error parsing XML (hr = 0x%x).SWRN: The assemblyIdentity was not processed because the name attribute was missing.@WRN: bindingRedirect tag not processed due to insufficient data.9WRN: codeBase tag not processed because href not present.eWRN: Invalid XML. Encountered more than 1 assemblyIdentity inside single dependentAssembly. Ignoring.0WRN: Private path set. Ignoring duplicate entry.tLOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+(LOG: Re-apply policy for where-ref bind.5LOG: Switch from LoadFrom context to default context.5LOG: Switch from default context to LoadFrom context.&LOG: Codebase matches assembly in GAC.-LOG: Codebase does not match assembly in GAC.jLOG: Where-ref bind Codebase matches what is found in default context. Keep the result in default context.rLOG: Where-ref bind Codebase does not match what is found in default context. Keep the result in LoadFrom context.<LOG: Input is partial name. Skip host assembly store lookup.dERR: Downloaded file was not cached. The web server may be configured to expire content immediately.WWRN: The assembly returned from host store has different signature from the one in GAC.ILOG: Host store returns assembly stream with id = %I64u, context = %I64u..LOG: Host store does not provide debug stream..LOG: Using application configuration file: %ws-LOG: No application configuration file found.
+LOG: Assembly Name is: %wsBLOG: The same bind was seen before, and was failed with hr = 0x%x.
+'LOG: Using host configuration file: %ws'LOG: Host configuration file not found.
+FLOG: Redirect found in host configuration file: %ws redirected to %ws.2LOG: No redirect found in host configuration file.MLOG: Redirect found in application configuration file: %ws redirected to %ws.4LOG: Safe mode is set (publisher policy disallowed).(LOG: Publisher policy file is not found.+LOG: Publisher policy file is found at %ws.DLOG: Publisher policy file redirect is found: %ws redirected to %ws.6LOG: Machine configuration file does not exist at %ws./LOG: Using machine configuration file from %ws.MLOG: Machine configuration policy file redirect found: %ws redirected to %ws.CWRN: Binding redirect encountered, but could not retrieve codebase.*LOG: Using codebase from policy file: %ws.
+LOG: Post-policy reference: %ws
+LOG: AssemblyStore path = %ws7ERR: Run-from-source setup phase failed with hr = 0x%x.LWRN: Comparing the assembly name resulted in the mismatch: Retargetable flag"LOG: Retarget policy is not found.CLOG: Name redirect found in retarget config: %ws redirected to %ws.FLOG: Version redirect found in retarget config: %ws redirected to %ws.MLOG: PublicKeyToken redirect found in retarget config: %ws redirected to %ws.$ERR: Parse XML memory stream failed.CERR: bindingRetarget tag is not processed due to insufficient data.
+WRN: Invalid processor architecture is specified in assemblyIdentity. Valid processor architectures are neutral/x86/IA64/AMD64.
+1LOG: Binding succeeds. Returns assembly from %ws.
+9WRN: Application configuration file safe mode disallowed.AWRN: Application configuration file binding redirects disallowed.$WRN: App base probing is disallowed.
+7LOG: IJW assembly bind returned the same manifest path./LOG: IJW assembly bind returned file not found.=ERR: Assembly with the same identity has already been loaded.
+EERR: Publisher policy assembly is found, but there is no config file.
+(ERR: Failed to apply policy (hr = 0x%x).7LOG: Private path hint found in configuration file: %s.*WRN: Error parsing XML file %ws. Ignoring.SERR: A fatal error occurred when retrieving next codebase for download (hr = 0x%x).(LOG: Attempting download of new URL %ws.[LOG: Probing in application directory failed, but assembly bind was still able to complete.JERR: Failed to complete setup of assembly (hr = 0x%x). Probing terminated.HERR: Unrecoverable error occurred during pre-download check (hr = 0x%x).@WRN: Unable to find URLMON.DLL. Assemblies cannot be downloaded.ALOG: Duplicate download found. Re-using the download in progress.DLOG: Assembly download was successful. Attempting setup of file: %ws3ERR: Unable to extract last modified time from %ws.[WRN: Current version does not support CODEBASEs to .MSI files. Setup is unable to complete.>LOG: Unable to find assembly from extracted CAB location: %ws.+LOG: All probing URLs attempted and failed.PERR: Partial binds to assemblies in the global assembly cache are not supported.
+5LOG: Found assembly by looking in the download cache.
+LOG: Setting up CAB file.8ERR: Unable to create a temporary directory (hr = 0x%x).0ERR: Unable to extract the CAB file (hr = 0x%x).0LOG: Found matching assembly from CAB file: %ws.3LOG: Successfully extracted assembly from CAB file.=ERR: Unable to create assembly in download cache (hr = 0x%x).0LOG: Unable to find target assembly in CAB file./ERR: Unable to remove temporary directory: %ws.<ERR: Error extracting manifest import from file (hr = 0x%x).PERR: Error retrieving assembly name definition from manifest import (hr = 0x%x).0LOG: Private assembly found in invalid location.kLOG: A partially-specified assembly bind succeeded from the application directory. Need to re-apply policy.?LOG: The post-policy assembly reference requires probing again.QWRN: A duplicate assembly was found while copying the assembly item to the cache.BERR: Invalid assembly platform or ContentType in file (hr = 0x%x).
+kLOG: Assembly in default load context is loaded from a different location than the one in LoadFrom context.LERR: Loader location access permission check failed for URL %ws (hr = 0x%x).bERR: Attempt to load an assembly with ProcessorArchitecture incompatible with the running process.|ERR: Partial Name Binding is not allowed when the same assembly exists in both the host assembly store and application base.
+/LOG: Lookup in global assembly cache succeeded.<LOG: Attempting to install assembly using Windows Installer.=LOG: Successfully installed assembly using Windows Installer.
+-ERR: Error inserting entry into policy cache.fWRN: Windows Installer was able to provide the requested assembly, but setup of resulting file failed.*LOG: Entering run-from-source setup phase.#ERR: Module integrity check failed.)LOG: Entering download cache setup phase.HERR: The assembly reference did not match the assembly definition found.!ERR: Setup failed with hr = 0x%x.QWRN: Not probing location %ws, because the location falls outside of the appbase.*LOG: Found assembly by looking in the GAC.NERR: Expected to find a pre-jit assembly in cache, but assembly was not found.;ERR: Error occurred constructing the probing codebase list.)ERR: No codebases found to download from.
++ERR: Unable to copy file to cache location.KERR: The private assembly was located outside of appbase. Source Url = %ws._LOG: The asynchronous application configuration file download successful. Download location %ws?LOG: The asynchronous configuration file download unsuccessful.6ERR: Unable to create assembly cache item (hr = 0x%x).\ERR: Unable to commit cache item. Attempt to put assembly in cache unsuccessful (hr = 0x%x).
+The operation was successful.
+The operation failed.#--- A detailed error log follows. 
+*** Assembly Binder Log Entry 
+Bind result: hr = 0x%x. %ws
+No description available.
+Assembly manager loaded from: 
+Running under executable FLOG: Partial reference qualified from config file. New reference: %ws.
+Calling assembly : %ws.
+VNote: There is some performance penalty associated with assembly bind failure logging._To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+bERR: Partial GAC binds disallowed. [Partial Name = %ws : Calling Assembly = %ws : EXE Name = %ws].>WRN: Partial binding information was supplied for an assembly:
+WRN: A partial bind occurs when only part of the assembly display name is provided.
+WRN: This might result in the binder loading an incorrect assembly.
+WRN: It is recommended to provide a fully specified textual identity for the assembly,
+WRN: that consists of the simple name, version, culture, and public key token.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.&WRN: Assembly Name: %s | Domain ID: %dbWRN: Multiple versions of the same assembly were loaded into one context of an application domain:
+WRN: This might lead to runtime failures.
+WRN: It is recommended that you remove the dependency on multiple versions, and change the app.config file to point to the required version of the assembly only.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information.4WRN: Context: %s | Domain ID: %d | Assembly Name: %sRWRN: The same assembly was loaded into multiple contexts of an application domain:%LOG: This is an inspection only bind.*LOG: This bind starts in %ws load context.,LOG: Assembly is loaded in %ws load context.IERR: An assembly with different processor architecture is already loaded.
+#Log: framework config is not found.GLOG: Version redirect found in framework config: %ws redirected to %ws.BWRN: appliesTo has already been set. Ignoring duplicate appliesTo."LOG: Global DEVOVERRIDE path = %ws!LOG: Local DEVOVERRIDE path = %ws+LOG: Found assembly in DEVOVERRIDE path %ws2LOG: Did not find assembly in DEVOVERRIDE path %ws
+LOG: DEVPATH = %wsBWRN: assemblyStore has already been set. Ignoring duplicate entry.DWRN: devOverridePath has already been set. Ignoring duplicate entry.
+bWRN: Comparing the assembly name resulted in mismatch of Processor Architecture: Ref %ws, Def %ws.GWRN: Comparing the assembly name resulted in the mismatch: Content Type
+WRN: This might lead to runtime failures.
+WRN: It is recommended to inspect your application on whether this is intentional or not.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.
+FLOG: Name redirect found in portability config: %ws redirected to %ws.ILOG: Version redirect found in portability config: %ws redirected to %ws.PLOG: PublicKeyToken redirect found in portability config: %ws redirected to %ws.JWRN: supportPortability tag is not processed due to missing PKT attribute.MWRN: supportPortability tag is not processed due to missing enable attribute.aWRN: supportPortability tag is not processed due to enable attribute not being 'true' or 'false'.
+BEGIN : %s
+END   : %s
+Native image dependency bind.
+ALOG: Reusing a host assembly instance that was previously loaded..LOG: Assembly binding is resolved by the host.4LOG: Codebase hint found in machine config file: %ws,LOG: ProcessorArchitecture is locked to %ws.6LOG: Fusion is hosted. Check host about this assembly.DLOG: Assembly is not in CLR Loaded list. Asking host assembly store.?LOG: Assembly is in CLR Loaded list. Proceed to normal probing./LOG: Try host assembly store with assembly %ws.8WRN: Host assembly store does not contain this assembly.,WRN: Host did not provide an assembly store.
+$LOG: Bind to native image succeeded.JERR: Error encountered when binding to native image assembly. (hr = 0x%x).
+WRN: Native image will not be probed in LoadFrom context. Native image will only be probed in default load context, like with Assembly.Load().
+tWRN: Dependency assembly was not found at ngen time, but is found at binding time. Disallow using this native image.
+&LOG: IJW explicit bind. File path:%ws.&LOG: EXE explicit bind. File path:%ws.*ERR: IJW assembly bind failure. hr = 0x%x.MLOG: IJW assembly bind returned a different path: %ws. Use the file provided.
+,WRN: Assembly binding logging is turned OFF.xTo enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+3ERR: Unsupported linked configuration location: %ws7ERR: Error processing linked configurations (hr = 0x%x),WRN: Ignoring duplicate linked configuration)LOG: Processing linked configuration: %ws
+Immersive bind.
+Framework bind.
+Assembly.LoadFile bind.
+Windows Runtime Type bind.
+Dependency name: %s
+Found: %s
+IL image bind.
+Native image bind.7Found .NET Framework assembly is not supported in AppX.
++LOG: Start validating all the dependencies.
+*LOG: Validation of dependencies succeeded.
+!LOG: IL assembly loaded from %ws.
+<LOG: [Level %d]Start validating native image dependency %ws.2LOG: [Level %d]Start validating IL dependency %ws.
+VWRN: Native image compile options do not match request. Looking for next native image.$WRN: No matching native image found.
+*WRN: Cannot load IL assembly. (hr = 0x%x).
+HERR: Rejecting native image due to corrupted or missing .aux file (%ws).=LOG: Successfully updated stale timestamp in .aux file (%ws).WWRN: Signature of the IL assembly does not match record in .aux file. Validation stops.TWRN: TPBand of the IL assembly does not match record in .aux file. Validation stops.fWRN: Timestamp of the IL assembly does not match record in .aux file. Loading IL to compare signature.cWRN: Timestamp of the IL assembly does not match record in .aux file. Loading IL to compare TPBand.
+WRN: Assembly resolved to a different version or identity than expected. Check if binding policy changed since native image built.LWRN: The application has opted out of using native images for this assembly.
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+210902183259Z
+220901183259Z0t1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Corporation0
+(NI51
+Microsoft Corporation1
+230012+4675960
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+v0B5V,
+b}x`i
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20110
+110708205909Z
+260708210909Z0~1
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+S0Q0O
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+R0P0N
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+Legal_policy_statement
+e_.,>
+D=xz#
+*?*kXIc
+QEX82q'
+WqVNHE
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 2011
+<#,u|JO
+Microsof
+http://www.microsoft.com0
+20220408230346.395Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:462F-E319-3F201%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+220302185118Z
+230511185118Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:462F-E319-3F201%0#
+Microsoft Time-Stamp Service0
+za3;OVK3
+L!?*b
+#UNO]8
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+z'h=@IV
+Y5i$}B<d
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:462F-E319-3F201%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220409005847Z
+20220410005847Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+i(6eD
+C/QHWr
+!\c]{6

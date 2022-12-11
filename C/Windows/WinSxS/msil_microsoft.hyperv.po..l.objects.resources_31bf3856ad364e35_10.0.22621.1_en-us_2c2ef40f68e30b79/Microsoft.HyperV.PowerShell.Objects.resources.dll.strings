@@ -1,0 +1,653 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADPXm2
+"86V>;
+_}7$`
+je('o
+ArgumentOutOfRange_InvalidEnumValue
+CannotFindDismountedDevice7
+CannotFindVacantControllerLocationb
+ClusterPath_AvailableStorage
+ClusterPath_ConfigurationUpdateCmdletNotInstalledOrLoaded
+ClusterPath_FailedToRefreshConfiguration
+ClusterPath_FailedToVerify
+ClusterPath_NoClusterGroup
+ClusterPath_NonCluster
+ClusterPath_NotInGroup
+ClusterPath_NotValid
+DeviceNaming_NotApply
+Import_InvalidFileName
+InvalidArgument_ReplicaBrokerInvalidPort
+InvalidArgument_ReplicaNodeExpectingFqdn
+InvalidOperation_DestinationMigrationsAreDisabled
+InvalidOperation_DestinationNetworksAreNotConfigured
+InvalidOperation_DownlevelManagementNotSupported
+InvalidOperation_MetricsOnPlannedVMNotSupported
+InvalidOperation_SetVMHostNoParameterProvided
+InvalidOperation_SourceMigrationsAreDisabled
+InvalidParameter_FileNameNotGuid
+InvalidParameter_HashContainsInvalidKeys
+InvalidParameter_HashDoesNotContainDestination
+InvalidParameter_HashDoesNotContainSource
+InvalidParameter_HashtableKeyIsNotString
+InvalidParameter_InvalidClusterObjectType
+InvalidParameter_MatchesMultipleTemplates
+InvalidParameter_MatchesNoTemplates
+InvalidParameter_NoPropertyFound
+InvalidParameter_UnknownFormat
+InvalidParameter_VHDIsRDSUserProfileDisk
+InvalidParameter_VHDIsSharable
+MoreThanOneSnapshotFound
+NumaAwarePlacement_DoesNotApply
+OperationFailed_InvalidState
+OperationFailed_NotSupportedInClusteredVM
+OperationFailed_RollbackFailed
+PacketDirect_DoesNotApply
+PhysicalDvdDrive_NotFound
+PhysicalHardDrive_NotFound
+SnapshotNotFound
+VHD_InvalidDiskNumberForVirtualHardDisk
+VHD_MountedDiskImageNotFound
+VMAssignableDevice_NotFound
+VMBios_Generation2NotSupported
+VMEthernetPool_MissingResource
+VMFibreChannelHba_WorldWideNameFormatError
+VMFirmware_Generation1NotSupported
+VMFloppyDiskDrive_Generation2NotSupported
+VMGpuPartitionAdapter_GpuPartitionPoolNotFound
+VMGpuPartitionAdapter_NotFound
+VMGroup_VMGroupType_IncorrectType
+VMGroup_VMType_IncorrectType
+VMHostPartitionableGpu_NotFound
+VMIdeController_Generation2NotSupported
+VMIntegrationService_IntegrationComponentNotFound
+VMNetworkAdapter_ConnectionNotFound
+VMNotFoundById
+VMNotFoundByName
+VMPciExpressResourcePool_MissingResource
+VMPmemController_NotFound
+VMRemoteFx3DVideoAdapter_AdapterAlreadyExists
+VMRemoteFx3DVideoAdapter_DevNotInstalledError
+VMRemoteFx3DVideoAdapter_DeviceNotFound
+VMRemoteFx3DVideoAdapter_NotGpuCapable
+VMRemoteFx3DVideoAdapter_Synth3dVideoPoolNotFound
+VMReplication_ActionNotApplicableOnPrimary
+VMReplication_ActionNotApplicableOnReplica
+VMReplication_ActionNotApplicableOnTestReplica
+VMReplication_ActionNotApplicable_None
+VMReplication_AuthorizationEntryNotFound
+VMReplication_BrokerResourceNotFound
+VMReplication_BrokerResourcePortMappingNotSpecified
+VMReplication_CapNameNotSpecified
+VMReplication_ClusterNameSpecified
+VMReplication_ClusterStorageError
+VMReplication_DomainShouldBeSpecified
+VMReplication_ExpectingFqdn
+VMReplication_InvalidPortValue
+VMReplication_KerberosAndCertificatePortsShouldBeDifferent
+VMReplication_NoReplicatedDisk
+VMReplication_NodePortMappingNotSpecified
+VMReplication_PortValueNotSpecified
+VMReplication_PrimaryBrokerNotEnabled
+VMReplication_ReplicaBrokerNotEnabled
+VMReplication_SameClusterError
+VMReplication_SameHostError
+VMReplication_UniquePortsNotSpecified
+VMResourcePool_MissingResource
+VMResourcePool_ParentPoolNotFound
+VMSan_InitiatorPortNotFound
+VMSan_MissingResource
+VMScsiController_NotFound
+VMStorageResourcePool_MissingResource
+VMSwitchExtension_NotFound
+VMSwitch_ExternalPortNotFound
+VMSwitch_IovSwitchCannotChangeSwitchType
+VMSwitch_NotFoundByName
+VMSwitch_NotFoundInPool
+VMTPM_NotFound
+VirtualSystemIdentifiers_DoesNotApply
+Warning_VMAlreadyInDesiredState
+5'{0}' is not a valid member of the '{1}' enumeration.
+)Cannot find dismounted assignable device.
+fThe operation could not be completed because no available locations were found on the disk controller.
+The path '{0}' specifies a disk that is still in available storage and has not been moved into the virtual machine's cluster group. To move the disk, use the Failover Cluster Manager or the Move-ClusterResource cmdlet.
+The configuration of virtual machine '{0}' was not refreshed within cluster '{1}' because the 'Failover Cluster Module for Windows PowerShell' feature is not enabled.  The virtual machine's configuration can be refreshed manually using the Update-ClusterVirtualMachineConfiguration cmdlet or Failover Cluster Manager.
+MThe Update-ClusterVirtualMachineConfiguration command could not be completed.
+HWindows could not verify that path '{0}' can be accessed by the cluster.
+7Failed to get the virtual machine's cluster group name.
+The cmdlet could not verify that the path '{0}' can be accessed by the cluster. If the cluster uses a non-Microsoft file system, or you are sure that the path can be accessed by the cluster, run the cmdlet again and use the -AllowUnverifiedPaths parameter to continue.
+The path '{0}' specifies a disk that is in another cluster group. To move the disk into the virtual machine's cluster group, use the Failover Cluster Manager or the Move-ClusterResource cmdlet.
+EThe path '{0}' is not a valid path that is accessible to the cluster.
+The device naming setting only applies to synthetic network adapters on Generation 2 virtual machines with configuration version 6.2 or above.
+-The file name at "{0}" is not in GUID format.
+dSpecified port value "{0}" for "{1}" is not valid. Port value should be within the range 1 to 65535.
+WThe node "{0}" specified in "{1}" should be a valid fully qualified domain name (FQDN).
+The destination host is not configured for live migration. Use the Enable-VMMigration cmdlet to modify the Hyper-V settings on the destination host to enable migration.
+Live migrations of virtual machines cannot be sent to the destination host because no migration networks are specified for incoming live migrations. To specify networks, run the Add-VMMigrationNetwork cmdlet on the destination host. To use any available network for live migration, run the command Set-VMHost -UseAnyNetworkForMigration $true on the destination host.
+The Hyper-V module used in this Windows PowerShell session cannot be used for remote management of the server '{0}'. Load a compatible version of the Hyper-V module, or use Powershell remoting to connect directly to the remote server. For more information, see https://go.microsoft.com/fwlink/p/?LinkID=532650.
+Resource metering is not supported on virtual machine '{0}' because it is part of a VMCompatibilityReport. Complete the operation used to create the report, and then enable resource metering on the resulting virtual machine.
+No changes were made to the host because no parameters were specified. To make changes to the host, run Set-VMHost with one or more parameters.
+The source host is not configured for live migration. Use the Enable-VMMigration cmdlet to modify the Hyper-V settings on the source host to enable migration.
+.The file name provided must be in GUID format.
+,Hash table contains keys that are not valid.
+Hash tables in the Vhds parameter must contain 'DestinationFilePath' key which points to the destination virtual hard drive file path.
+|Hash tables in the Vhds parameter must contain 'SourceFilePath' key which points to the source virtual hard drive file path.
+Hash table key is not a string.
+The cluster object '{0}' is not a valid cluster group or virtual machine cluster resource. Run the command again and specify an object that represents a cluster group or virtual machine cluster resource.
+1'{0}' matches more than one secure boot template.
+0'{0}' matches none of the secure boot templates.
+=The type '{0}' does not implement a property with name '{1}'.
+ The format specifier is unknown.
+rThe virtual hard disk '{0}' cannot be moved because Remote Desktop Services has flagged it as a user profile disk.
+`The virtual hard disk '{0}' cannot be moved because it is sharable by multiple virtual machines.
+=More than one snapshot was found matching the given criteria.
+The Numa-Aware placement is supported on synthetic network adapters on virtual machines with configuration version 8.4 or above.
+TThe operation cannot be performed while the virtual machine is in its current state.
+This operation is not supported on a clustered virtual machine. To perform this operation, remove the virtual machine from the cluster and then try again.
+ARolling back the results of an unsuccessful operation has failed.
+yThe packet direct is supported on synthetic network adapters on virtual machines with configuration version 6.2 or above.
+@Unable to find a physical DVD drive matching the given criteria.
+AUnable to find a physical hard drive matching the given criteria.
+6Unable to find a snapshot matching the given criteria.
+OWindows cannot find a mounted virtual hard disk with the specified disk number.
+CThe path "{0}" is not the path to a mounted virtual hard disk file.
+9The specified device '{0}' was not found on server '{1}'.
+The Generation 2 virtual machine or snapshot "{0}" does not support the VMBios cmdlets. Use Get-VMFirmware and Set-VMFirmware instead.
+\The virtual Ethernet switch "{0}" is not available through any of the parent resource pools.
+The format of the World Wide Name "{0}" contains an error. Specify the World Wide Name as a value with 16 hexadecimal digits, such as C003FF0000FFFF00.
+The Generation 1 virtual machine or snapshot "{0}" does not support the VMFirmware cmdlets. Use Get-VMBios and Set-VMBios instead.
+;Generation 2 virtual machines do not support floppy drives.
+pHyper-V was unable to find WMI object, GPU Partition Pool, to retrieve necessary information for this operation.
+CUnable to find a GPU partition adapter matching the given criteria.
+_The group specified only permits other virtual machines groups as members not virtual machines.
+kThe group specified only permits virtual machines as members of the group not other virtual machine groups.
+AThe partitionable GPU device '{0}' was not found on server '{1}'.
+1Generation 2 virtual machines do not support IDE.
+<No integration component with the given name could be found.
++The network adapter is in an invalid state.
+;Hyper-V was unable to find a virtual machine with id "{0}".
+=Hyper-V was unable to find a virtual machine with name "{0}".
+WThe PCI Express device "{0}" is not available through any of the parent resource pools.
+=Unable to find a PMEM controller matching the given criteria.
+Hyper-V was unable to perform this operation because the RemoteFX 3D video adapter already exists on this virtual machine. A virtual machine can have only one RemoteFX 3D video adapter.
+iTo enable this device, use Server Manager to install the Remote Desktop Virtualization Host role service.
+&No device was found by given criteria.
+Hyper-V cannot add a RemoteFX 3D video adapter to this virtual machine. To add this adapter, the host must have at least one graphics processing unit (GPU) that supports RemoteFX and that meets the minimum requirements for DirectX.
+uHyper-V was unable to find WMI object, Synthetic 3D Video Pool, to retrieve necessary information for this operation.
+9"{0}" is not applicable on primary virtual machine "{1}".
+9"{0}" is not applicable on Replica virtual machine "{1}".
+\"{0}" is not applicable on virtual machine "{1}" because it is being used for test failover.
+1"{0}" is not applicable on virtual machine "{1}".
+&The authorization entry was not found.
+The operation cannot be performed because Hyper-V Replica Broker is not configured. Configure the Hyper-V Replica Broker using the Failover Cluster Manager and try again. If you are using the IsBrokerOptional registry key, retry the operation directly from WMI or through a management suite of your choice.
+The port for Hyper-V Replica Broker '{0}' is not specified in '{1}'. Include the Hyper-V Replica Broker in the '{1}' and try again.
+The specified Replica server is part of a failover cluster. For clusters, use the name of the Hyper-V Replica Broker as the Replica server name. The Hyper-V Replica Broker for the cluster is "{0}".
+The specified Replica server is the name of a failover cluster. For clusters, use the name of the Hyper-V Replica Broker as the Replica server name. Hyper-V Replica Broker for the cluster is "{0}".
+Shared storage must be specified in a clustered environment. Specify a Cluster Shared Volume or shared folder and retry the operation.
+The node '{0}' specified in '{1}' does not contain the domain name '{2}' of the cluster. Correct the name of this node and try again.
+WThe node '{0}' specified in '{1}' should be a valid fully qualified domain name (FQDN).
+dSpecified port value '{0}' for '{1}' is not valid. Port value should be within the range 1 to 65535.
+FKerberos and Certificate port specified for '{0}' should be different.
+OThere is no supported virtual hard disk to replicate for virtual machine '{0}'.
+oThe ports for the following nodes are not specified in '{1}'. Include these nodes in '{1}' and try again. '{0}'
+4Port value is not specified for node '{0}' in '{1}'.
+A Hyper-V Replica Broker needs to be created on this failover cluster. Create the Hyper-V Replica Broker using Failover Cluster Manager and try again. If you are using the IsBrokerOptional registry key, retry the operation directly from WMI or through a management suite of your choice.
+The specified Replica server is part of a failover cluster. For clusters, a valid Hyper-V Replica Broker is required for the Replica server name. Create the Hyper-V Replica Broker using the Failover Cluster Manager and try again. If you are using the IsBrokerOptional registry key, retry the operation using the recovery cluster node name directly from WMI or through a management suite of your choice.
+nCannot replicate virtual machine to the same cluster. Enter another Hyper-V Replica Broker name and try again.
+eCannot replicate virtual machine to the same server. Enter another Replica server name and try again.
+PFollowing ports are specified for multiple nodes. Do you want to continue? '{0}'
+MThe resource "{0}" is not available through any of the parent resource pools.
+,One or more parent pools could not be found.
+NAn initiator port with node name "{0}" and port name "{1}" could not be found.
+HThe HBA "{0}" is not available through any of the parent resource pools.
+=Unable to find a SCSI controller matching the given criteria.
+IThe path "{0}" is not available through any of the parent resource pools.
+FHyper-V was unable to find a virtual switch extension with name "{0}".
+=The external port of virtual switch "{0}" could not be found.
+aExternal virtual switches created with SR-IOV enabled cannot be converted to Internal or Private.
+<Hyper-V was unable to find a virtual switch with name "{0}".
+DThe resource pool does not contain a virtual switch with name "{0}".
+5TPM device is not found on the virtual machine "{0}".
+The Virtual System Identifiers is supported on synthetic network adapters on virtual machines with configuration version 8.4 or above.
+6The virtual machine is already in the specified state.
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+Error_CannotConvertValue
+ICStatus_None'
+ICStatus_RequiresUpdate)
+ICStatus_UpToDate:
+TaskStatus_CompletedF
+TaskStatus_CompletedWithWarningQ
+TaskStatus_Deletedi
+TaskStatus_Exceptionr
+TaskStatus_Killed}
+TaskStatus_New
+TaskStatus_Running
+TaskStatus_ShuttingDown
+TaskStatus_Starting
+TaskStatus_Suspended
+TaskStatus_Terminated
+ThreadCount_Automatic
+ThreadCount_High
+ThreadCount_Low
+ThreadCount_Medium
+VMMemoryStatus_Low
+VMMemoryStatus_None
+VMMemoryStatus_Ok
+VMMemoryStatus_Paging
+VMMemoryStatus_Spanning
+VMMemoryStatus_Warning
+%The value {0} could not be converted.
+Update required
+Up to date
+Completed
+Completed with warning
+Deleted
+Exception
+Killed
+Running
+Shutting down
+Starting
+Suspended
+Terminated
+Automatic
+Medium
+Paging
+Spanning
+Warning
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADPZ}
+0;7(1
+%ED\ICF
+L4+eNu_
+;N^ao
+`BfLX
+AddPciExpressDevice_ToResourcePool
+AddVMAssignableDevice,
+AddVMBattery[
+AddVMDvdDrive{
+AddVMFibreChannelHba
+AddVMFibreChannelHba_RollbackPartialAdd
+AddVMGpuPartitionAdapter
+AddVMGroupMember
+AddVMHIDDevices
+AddVMHardDiskDrive
+AddVMNetworkAdapterFeature
+AddVMNetworkAdapter_ManagementOS
+AddVMNetworkAdapter_RollbackPartialAdd
+AddVMNetworkAdapter_VirtualMachine
+AddVMPmemController
+AddVMRemoteFx3dVideoAdapter
+AddVMScsiController
+AddVMStoragePath
+AddVMSwitch
+AddVMSwitchFeature
+AddVMSyntheticDisplayController
+AddVMSyntheticKeyboardController
+AddVMSyntheticMouseController
+CheckpointVM
+CompareVM
+ConnectVMSan
+ConvertVHD
+CopyFileToGuestJob
+DebugVM_InjectNMI
+DeleteVHDSnapshot
+DisconnectVMSan
+DismountVHD
+DriveConfigurationRollback
+ExportVMSnapshot
+GetVMKeyProtector
+GrantVMConnectAccess
+MergeVHD
+MountVHD
+MoveVM
+MoveVMStorage
+NewVFD
+NewVHD
+NewVM
+NewVMGroup
+NewVMResourcePool
+NewVMSwitch
+OptimizeVHD
+OptimizeVHDSet
+PercentCompleteTemplate
+RemovePciExpressDevice_FromResourcePool
+RemoveVM
+RemoveVMAssignableDevice
+RemoveVMBattery
+RemoveVMDvdDrive
+RemoveVMFibreChannelHba
+RemoveVMGpuPartitionAdapter
+RemoveVMGroup
+RemoveVMGroupMember
+RemoveVMHIDDevices
+RemoveVMHardDiskDrive
+RemoveVMNetworkAdapterFeature
+RemoveVMNetworkAdapter_FromSwitch
+RemoveVMNetworkAdapter_FromVM
+RemoveVMPmemController
+RemoveVMRemoteFx3DVideoAdapter
+RemoveVMResourcePool
+RemoveVMSavedState
+RemoveVMScsiController
+RemoveVMSnapshot
+RemoveVMSnapshotSavedState
+RemoveVMSnapshot_IncludeAllChildSnapshots
+RemoveVMStoragePath
+RemoveVMSwitch
+RemoveVMSwitchFeature
+RemoveVMSwitch_FromResourcePool
+RenameVMResourcePool
+ResizeVHD
+RestartVM
+RestoreVMSnapshot
+ResumeVM
+RevokeVMConnectAccess
+SaveVM
+SetReplicationService
+SetVHD
+SetVHDSnapshot
+SetVM
+SetVMAssignedDevice
+SetVMBattery
+SetVMBios
+SetVMComPort
+SetVMDataExchangeComponent
+SetVMDvdDrive
+SetVMDvdDrive_EjectDisk
+SetVMDvdDrive_InsertDisk
+SetVMFibreChannelHba
+SetVMFibreChannelHba_AttachConnection
+SetVMFirmware
+SetVMFloppyDiskDrive
+SetVMFloppyDiskDrive_EjectDisk
+SetVMGpuPartitionAdapter
+SetVMGroupName
+SetVMGuestServiceIntegrationComponent
+SetVMHardDiskDrive
+SetVMHardDiskDrive_AttachVirtualDisk
+SetVMHardDiskDrive_DetachVirtualDisk
+SetVMHost
+SetVMHostCluster
+SetVMIdeController
+SetVMIntegrationComponent
+SetVMKeyProtector
+SetVMKeyboard
+SetVMMemory
+SetVMMetrics
+SetVMMigrationNetwork
+SetVMMigrationService
+SetVMMouse
+SetVMNetworkAdapter
+SetVMNetworkAdapterFeature
+SetVMNetworkAdapter_InternalOrExternal
+SetVMPartitionableGpuPartitionCount
+SetVMPmemController
+SetVMProcessor
+SetVMRemoteFXPhysicalVideoAdapter
+SetVMRemoteFx3DVideoAdapter
+SetVMReplicationSettings
+SetVMResourcePool_SetParentNames
+SetVMS3DisplayController
+SetVMSanHbas
+SetVMScsiController
+SetVMSecuritySettings
+SetVMShutdownComponent
+SetVMSnapshot
+SetVMStorageSettings
+SetVMSwitch
+SetVMSwitchExtension
+SetVMSwitchFeature
+SetVMVideo
+ShutdownVM
+StageVM
+StartVM
+StopVM
+SuspendVM
+Task_AddReplicationAuthorizationEntry
+Task_ChangeReplicationModeToPrimary
+Task_CommitFailover
+Task_CreateReplicationRelationship
+Task_DeleteVMAuthorizationEntry
+Task_ExportingVM
+Task_ImportReplication
+Task_ImportSnapshots
+Task_ImportVM
+Task_InitiateFailover
+Task_InjectNonMaskableInterruptVM
+Task_RealizeVM
+Task_RemoveReplication
+Task_ResetReplicationStatistics
+Task_Resynchronize
+Task_ReverseReplicationRelationship
+Task_RevertVMFailover
+Task_SetAuthorizationEntry
+Task_SetVMAuthorizationEntry
+Task_SetVMReplicationState
+Task_StartFailover
+Task_StartReplication
+Task_StopFailover
+Task_TestReplicaSystem
+Task_TestReplicationConnection
+Task_UpdateNetworkAdapterFailoverConfiguration
+Task_UpdateVMConfigurationVersion
+Task_ValidateVM
+TestSharedVHD
+TestVHD
+*Add PCI Express devices to a resource pool
+-Add an assignable device to a virtual machine
+Enable virtual machine battery
+$Add a DVD drive to a virtual machine
+9Add a Fibre Channel host bus adapter to a virtual machine
+:Roll back partially added Fibre Channel adapter on failure
+0Add a GPU partition adapter to a virtual machine
+Add a member to a VMGroup
+(Add the HID devices to a virtual machine
+$Add a DVD drive to a virtual machine
+4Add advanced feature properties to a network adapter
+7Add a management OS network adapter to a virtual switch
+4Roll back partially added network adapter on failure
+*Add a network adapter to a virtual machine
+*Add a PMEM controller to a virtual machine
+7Add a RemoteFX 3D display adapter to a virtual machine.
+*Add a SCSI controller to a virtual machine
+Add storage paths to a pool
+Add virtual switches to a pool
+5Add advanced feature properties to an Ethernet switch
+8Add a synthetic display controller to a virtual machine.
+9Add a synthetic keyboard controller to a virtual machine.
+6Add a synthetic mouse controller to a virtual machine.
+Create a snapshot
+ACompare a virtual machine for compatibility with another computer
+JConnect a virtual storage area network to a Fibre Channel host bus adapter
+@Convert a virtual hard disk or physical disk into another format
+"Copying a file to virtual machine.
+Inject a non-maskable interrupt
+#Delete a snapshot in a VHD Set file
+ODisconnect a virtual storage area network from a Fibre Channel host bus adapter
+Dismount a virtual hard disk
+4Roll back drive configuration changes after an error
+!Export a virtual machine snapshot
+!Get virtual machine key protector
+(Grant virtual machine connection access.
+EMerge a differencing virtual hard disk into another virtual hard disk
+Mount a virtual hard disk
+Move a virtual machine
+ Move a virtual machine's storage
+Create a virtual floppy drive
+Create a virtual hard disk
+Create a virtual machine
+Create a virtual machine group
+Create a resource pool
+Create a virtual switch
+1Compact dynamic or differencing virtual hard disk
+Optimize a VHD Set file
+/Remove PCI Express devices from a resource pool
+Delete a virtual machine
+2Remove an assignable device from a virtual machine
+Disable virtual machine battery
+)Remove a DVD drive from a virtual machine
+5Remove a Fibre Channel adapter from a virtual machine
+5Remove a GPU partition adapter from a virtual machine
+Delete a virtual machine group
+Remove a member from a VMGroup
+-Remove the HID devices from a virtual machine
+*Remove a hard drive from a virtual machine
+7Remove advanced feature properties of a network adapter
+3Remove a switch port from a virtual Ethernet switch
+/Remove a network adapter from a virtual machine
+/Remove a PMEM controller from a virtual machine
+9Remove a RemoteFX 3D Video Adapter from a virtual machine
+Remove a resource pool
+&Delete the virtual machine saved state
+/Remove a SCSI controller from a virtual machine
+Delete a snapshot
+Delete the snapshot saved state
+Delete a snapshot subtree
+ Remove storage paths from a pool
+Delete a virtual switch
+-Remove advanced networking feature properties
+#Remove virtual switches from a pool
+Set the resource pool name
+Resize a virtual hard disk
+Reset a virtual machine
+Apply a snapshot
+Resume a virtual machine
+)Revoke virtual machine connection access.
+Save a virtual machine
+ Set replication service settings
+ Set virtual hard disk properties
+*Add or modify a snapshot in a VHD Set file
+Set virtual machine properties
+Set assigned device properties
+,Configure virtual machine battery properties
+#Set virtual machine BIOS properties
+'Set virtual machine COM port properties
+6Set virtual machine data exchange component properties
+(Set virtual machine DVD drive properties
+"Eject virtual DVD from a DVD drive
+#Insert virtual DVD into a DVD drive
+0Set virtual machine Fibre Channel HBA properties
+1Configure a virtual machine Fibre Channel adapter
+'Set virtual machine firmware properties
+0Set virtual machine floppy disk drive properties
+AEject a virtual floppy disk from a virtual machine's floppy drive
+6Set a virtual machine GPU partition adapter properties
+Set virtual machine group name
+CSet virtual machine guest services integration component properties
+.Set virtual machine hard disk drive properties
+1Configure a hard drive to use a virtual hard disk
+Configure a hard drive
+Set host properties
+Set cluster properties
+-Set virtual machine IDE controller properties
+4Set virtual machine integration component properties
+!Set virtual machine key protector
+2Set virtual machine keyboard controller properties
+%Set virtual machine memory properties
+#Set host metrics service properties
+%Set virtual system migration network.
+%Set host migration service properties
+/Set virtual machine mouse controller properties
+,Set virtual machine network adapter settings
+4Set advanced feature properties of a network adapter
+Set network adapter properties
+1Set partition count of the host partitionable GPU
+#Set virtual machine PMEM controller
+(Set virtual machine processor properties
+&Set RemoteFX physical adapter settings
+8Set virtual machine RemoteFX 3D Video Adapter properties
+Sets replication settings.
+Set resource pool parent(s)
+&Set virtual machine S3 Display adapter
+LSets the Fibre Channel host bus adapter(s) of a virtual storage area network
+.Set virtual machine SCSI controller properties
+'Set virtual machine security properties
+=Set virtual machine shutdown integration component properties
+Set snapshot properties
+$Set virtual machine storage settings
+Set virtual switch properties
+Set switch extension properties
+5Set advanced feature properties of an Ethernet switch
+1Set virtual machine display controller properties
+Shut down a virtual machine
+#Staging a virtual machine migration
+Start a virtual machine
+Stop a virtual machine
+Pause a virtual machine
+'Adds a replication authorization entry.
+"Change replication mode to primary
+Commit failover
+Create replication relationship
+(Delete a replication authorization entry
+Exporting virtual machine
+Import a replication
+Importing snapshots
+Importing virtual machine
+$Initiate a virtual machine failover.
+Inject a non-maskable interrupt
+Realizing virtual machine
+Remove a replication
+2Reset replication statistics for a virtual machine
+Resynchronize a virtual machine
+*Will reverse the replication relationship.
+#Reverts a virtual machine failover.
+<Adds a replication authorization entry to a virtual machine.
+%Set a replication authorization entry
+"Will modify the replication state.
+Start failover
+Start replication
+Stop failover
+3Create a test replica virtual machine for failover.
+Test the replication connection
+<Will modify network adapter failover configuration settings.
+Upgrade a virtual machine
+Validating virtual machine
+#Validate a shared virtual hard disk
+Validate a virtual hard disk[
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADPX
+VMNetworkAdapter_DefaultName_Legacy
+VMNetworkAdapter_DefaultName_Synthetic
+VMNetworkAdapter_SwitchName_SoftAffinity)
+VMSwitch_SETInterfaceDescription?
+Legacy Network Adapter
+Network Adapter
+Automatic Connection
+Teamed-Interface
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+Microsoft.HyperV.PowerShell.Objects.resources
+Microsoft.HyperV.PowerShell.Objects.Common.ErrorMessages.en.resources
+Microsoft.HyperV.PowerShell.Objects.Common.EnumValues.en.resources
+Microsoft.HyperV.PowerShell.Objects.Common.TaskDescriptions.en.resources
+Microsoft.HyperV.PowerShell.Objects.Common.ObjectDescriptions.en.resources
+Microsoft.HyperV.PowerShell.Objects.resources.dll
+_CorDllMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+040904b0
+CompanyName
+Microsoft Corporation
+FileDescription
+FileVersion
+10.0.22621.1
+InternalName
+Microsoft.HyperV.PowerShell.Objects.resources.dll
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+Microsoft.HyperV.PowerShell.Objects.resources.dll
+ProductName
+Microsoft (R) Windows (R) Operating System
+ProductVersion
+10.0.22621.1

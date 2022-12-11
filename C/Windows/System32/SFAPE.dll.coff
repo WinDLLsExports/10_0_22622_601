@@ -1,0 +1,100 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\SFAPE.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ucrtbase_enclave.dll
+    bcrypt.dll
+    vertdll.dll
+
+  Section contains the following exports for SFAPE.dll
+
+    00000000 characteristics
+    67F4A440 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000052F0 CharactersInput
+          2    1 000053D0 CloseCcHandle
+          3    2 00005540 Initialize
+          4    3 000055C0 MeasurePerformance
+          5    4 00005710 UserCredentials
+          6    5 00004180 VtliCharactersInput
+          7    6 00004830 VtliCloseCcHandle
+          8    7 00004930 VtliUserCredentials
+
+  Section contains the following imports:
+
+    ucrtbase_enclave.dll
+             180006210 Import Address Table
+             1800078B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         237 malloc
+                          E8 _seh_filter_dll
+                          90 _initialize_onexit_table
+                          E0 _register_onexit_function
+                          67 _execute_onexit_table
+                          56 _crt_atexit
+                          4B _cexit
+                          49 _callnewh
+                          3B memcpy
+                          13 __CxxFrameHandler4
+                          27 __std_exception_destroy
+                          26 __std_exception_copy
+                           C __C_specific_handler
+                          2A __std_type_info_destroy_list
+                           1 _CxxThrowException
+                          92 _initterm_e
+                          91 _initterm
+                         1F2 free
+                          94 _invalid_parameter_noinfo_noreturn
+                          3A memcmp
+                         244 memset
+                          3C memmove
+
+    bcrypt.dll
+             1800061F0 Import Address Table
+             180007898 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1D BCryptGenRandom
+                           C BCryptDeriveKeyPBKDF2
+                          22 BCryptHash
+
+    vertdll.dll
+             1800062C8 Import Address Table
+             180007970 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          93 TlsAlloc
+                          95 TlsGetValue
+                          2A GetLastError
+                           0 AcquireSRWLockExclusive
+                          68 ReleaseSRWLockShared
+                           1 AcquireSRWLockShared
+                          41 InitializeSListHead
+                          67 ReleaseSRWLockExclusive
+                          96 TlsSetValue
+                          27 GetCurrentThreadId
+                           2 CallEnclave
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        5000 .text

@@ -1,0 +1,645 @@
+!This program cannot be run in DOS mode.
+(Rich:
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+OLEAUT32.dll
+api-ms-win-security-logon-l1-1-1.dll
+api-ms-win-security-base-l1-1-0.dll
+SspiCli.dll
+WLDAP32.dll
+samcli.dll
+api-ms-win-core-com-l1-1-0.dll
+CRYPT32.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+ext-ms-win-printer-winspool-l1-1-0.dll
+ext-ms-win-printer-winspool-core-l1-1-0.dll
+member;range=%d-*
+member;range=
+%d-%d
+description
+member
+Description
+LocalityName
+PostalAddress
+street
+SeeAlso
+FaxNumber
+facsimileTelephoneNumber
+TelephoneNumber
+BusinessCategory
+PrintDevices
+PortName
+Location
+location
+HostComputer
+serverName
+Model
+DriverName
+StartTime
+PrintStartTime
+UntilTime
+PrintEndTime
+Priority
+BannerPage
+PrintSeparatorfile
+uNCName
+WinNT://
+Kerberos
+msDS-UserAccountDisabled
+userAccountControl
+AccountExpirationDate
+LDAP://
+lockoutTime
+msDS-User-Account-Control-Computed
+lockoutDuration
+LoginHours
+LoginWorkstations
+MaxStorage
+msDS-UserPasswordExpiryTimeComputed
+pwdLastSet
+maxPwdAge
+ms-DS-UserPasswordNotRequired
+minPwdLength
+pwdHistoryLength
+SetPassword: Unable to get ADsPath: hr = 0x%x.
+SetPassword: Unable to get LDAP server,dn, and port: hr = 0x%x.
+SetPassword: Setting password for user %s.
+SetPassword: Server is %s.
+SetPassword: Port is %d.
+SetPassword: Unable to get LDAP_SERVER option: hr = 0x%x.
+SetPassword: Actual Server is %s.
+SetPassword: Unable to get password port number: hr = 0x%x.
+SetPassword: Password port is %d.
+SetPassword: Unable to get password method: hr = 0x%x.
+SetPassword: Password method is %d.
+SetPassword: Server does not support Ssl, Kerberos or NetUser, resetting cache.
+SetPassword: Server not marked as not supporting Ssl, trying Ssl....
+SetPassword: Auth flags is %d.
+SetPassword: Null creds and auth flags do not contain ADS_SECURE_AUTHENTICATION, adding ADS_USE_SSL | ADS_SECURE_AUTHENTICATION to auth flags.
+SetPassword: LdapOpenObject with added ADS_USE_SSL | ADS_SECURE_AUTHENTICATION flags failed, hr = 0x%x, trying without ADS_SECURE_AUTHENTICATION.
+SetPassword: Adding ADS_USE_SSL to auth flags.
+SetPassword: Channel cipher strength is not good enough, cannot use Ssl for setting password, supported cipherStrength = %d.
+SetPassword: LdapOpenObject failed, hr = 0x%x.
+SetPassword: LDAP Secure Ssl connection established successfully, trying Ldap password set....
+SetPassword: LDAP connection established successfully, trying Ldap password set....
+unicodePwd
+SetPassword: LdapModifyS failed, hr = 0x%x.
+SetPassword: Server marked as not supporting Kerberos, checking if mutual auth status has changed....
+SetPassword: GetOption for LDAP_MUTUAL_AUTH_STATUS failed, hr = 0x%x.
+SetPassword: Server supports Kerberos, server status updated.
+SetPassword: Mutual auth status unchanged.
+SetPassword: Server not marked as not supporting Kerberos, trying Kerberos....
+sAMAccountName
+SetPassword: ADsBuildVarArrayStr failed, hr = 0x%x.
+SetPassword: GetInfoEx for sAMAccountName failed, hr = 0x%x.
+SetPassword: Get for sAMAccountName failed, hr = 0x%x.
+SetPassword: GetAuthIdentityForCaller failed, hr = 0x%x, marking server as not supporting Kerberos.
+SetPassword: ConvertAuthIdentityToCredHandle failed, hr = 0x%x, marking server as not supporting Kerberos.
+SetPassword: KerbSetPasswordUserEx failed, hr = 0x%x.
+SetPassword: GetDomainDNSNameFromHost failed, hr = 0x%x.
+SetPassword: Server not marked as not supporting Netapi, trying NetUserSetInfo....
+SetPassword: GetAuthIdentityForCaller failed, hr = 0x%x.
+SetPassword: Error during impersonation, hr = 0x%x.
+SetPassword: RevertToSelf failed, hr = 0x%x.
+SetPassword: NetUserSetInfo failed, hr = 0x%x.
+SetPassword: NetUserSetInfo failed with ERROR_LOGON_FAILURE, marking server as not supporting Netapi.
+SetPassword: Failed, hr = 0x%x.
+SetPassword: Succeeded.
+ChangePassword: Unable to get ADsPath: hr = 0x%x.
+ChangePassword: Unable to get LDAP server,dn, and port: hr = 0x%x.
+ChangePassword: Changing password for user %s.
+ChangePassword: Server is %s.
+ChangePassword: Port is %d.
+ChangePassword: Unable to get LDAP_SERVER option: hr = 0x%x.
+ChangePassword: Actual Server is %s.
+ChangePassword: Unable to get password port number: hr = 0x%x.
+ChangePassword: Password port is %d.
+ChangePassword: Unable to get password method: hr = 0x%x.
+ChangePassword: Password method is %d.
+ChangePassword: Server not marked as not supporting Ssl, trying Ssl....
+ChangePassword: Auth flags is %d.
+ChangePassword: Null creds and auth flags do not contain ADS_SECURE_AUTHENTICATION, adding ADS_USE_SSL | ADS_SECURE_AUTHENTICATION to auth flags.
+ChangePassword: LdapOpenObject with added ADS_USE_SSL | ADS_SECURE_AUTHENTICATION flags failed, hr = 0x%x, trying without ADS_SECURE_AUTHENTICATION.
+ChangePassword: Adding ADS_USE_SSL to auth flags.
+ChangePassword: Channel cipher strength is not good enough, cannot use Ssl for setting password, supported cipherStrength = %d.
+ChangePassword: LdapOpenObject failed, hr = 0x%x.
+ChangePassword: LDAP connection established successfully, trying Ldap password change....
+ChangePassword: LDAP Secure Ssl connection established successfully, trying Ldap password change....
+ChangePassword: LdapModifyS failed, hr = 0x%x.
+ChangePassword: Server marked as not supporting Kerberos, checking if mutual auth status has changed....
+ChangePassword: GetOption for LDAP_MUTUAL_AUTH_STATUS failed, hr = 0x%x.
+ChangePassword: Server supports Kerberos, server status updated.
+ChangePassword: Mutual auth status unchanged.
+ChangePassword: Server not marked as not supporting Kerberos, trying Kerberos....
+ChangePassword: ADsBuildVarArrayStr failed, hr = 0x%x.
+ChangePassword: GetInfoEx for sAMAccountName failed, hr = 0x%x.
+ChangePassword: Get for sAMAccountName failed, hr = 0x%x.
+ChangePassword: GetAuthIdentityForCaller failed, hr = 0x%x, marking server as not supporting Kerberos.
+ChangePassword: KerbChangePasswordUser failed, hr = 0x%x.
+ChangePassword: GetDomainDNSNameFromHost failed, hr = 0x%x.
+ChangePassword: Trying NetUserChangePassword....
+ChangePassword: GetAuthIdentityForCaller failed, hr = 0x%x.
+ChangePassword: Error during impersonation, hr = 0x%x.
+ChangePassword: RevertToSelf failed, hr = 0x%x.
+ChangePassword: NetUserChangePassword failed, hr = 0x%x.
+ChangePassword: Failed, hr = 0x%x.
+ChangePassword: Succeeded.
+defaultNamingContext
+BadLoginCount
+LastLogin
+LastLogoff
+LastFailedLogin
+PasswordLastChanged
+Department
+Division
+EmployeeID
+FirstName
+FullName
+LastName
+Manager
+OfficeLocations
+Picture
+PostalAddresses
+PostalCodes
+TelephoneHome
+TelephoneMobile
+TelephonePager
+Title
+HomePage
+NamePrefix
+NameSuffix
+OtherName
+memberOf
+EmailAddress
+HomeDirectory
+Profile
+LoginScript
+badPwdCount
+lastLogon
+lastLogoff
+badPasswordTime
+division
+department
+employeeID
+displayName
+givenName
+middleName
+personalTitle
+generationQualifier
+title
+manager
+telephoneNumber
+homePhone
+mobile
+pager
+physicalDeliveryOfficeName
+postalAddress
+postalCode
+seeAlso
+accountExpires
+logonHours
+userWorkstations
+maxStorage
+homeDirectory
+profilePath
+scriptPath
+thumbnailPhoto
+wWWHomePage
+accountExpirationDate
+Active Directory
+Kerberos
+adsmsext.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+QQSVW
+;F0|:3
+9wPuD
+9_Lui9_Pu
+O\;O`u
+O\;O`s
+G\_^[]
+QQSVW
+GdPSj
+D$HPW
+D$,PW
+D$LWPhP!
+D$ WP
+D$<P!
+t^QWh
+9{Puo
+D$$Pj
+QQSVWjX
+t^QWh
+t^QWh
+t^QWh
+SVWj<
+twQSh$W
+[u$B;
+D$xPj
+D$XPh
+Xf9D$Xt
+D$4PQ
+D$0PQ
+D$hPh
+Xf9D$h
+D$DPQ
+D$@PQ
++D$4j
+D$dWP
+D$hPh
+Xf;D$ht
+D$(PhdW
+D$XPh
+Xf;D$X
+D$$PhdW
+D$HPh
+Xf;D$H
+D$ PhdW
+t#+\$
+D$8PQ
+D$@Ph
+D$DPhTW
+u)hX*
+D$lSP
+D$|PQj
+u?9T$tu99T$|u3R
+L$0Qj
+yaWhp:
+D$LPQ
+t$`h`=
+D$TPh
+f;D$4u
+D$XPhTW
+yMPh@B
+tdh(G
+f;D$4u
+f;D$4u
+f;D$4u
+f;D$4u
+D$8P3
+t^QWhtW
+QQSVW
+D$(PSj
+D$ PW
+x0h V
+uc;D$
+Xf9D$ 
+4SVW3
+D$ P3
+9|$(u
+x-hLV
+VWPQQ
+ta!0WS
+VWPQQ
+j,h@.
+Y__^[
+QRPh</
+QRPh\/
+QRPh|/
+LogonUserW
+ImpersonateLoggedOnUser
+RevertToSelf
+AcquireCredentialsHandleW
+FreeCredentialsHandle
+NetUserSetInfo
+NetUserChangePassword
+CoCreateInstance
+CryptUnprotectMemory
+CryptProtectMemory
+FileTimeToDosDateTime
+DosDateTimeToFileTime
+SetPrinterW
+OpenPrinterW
+GetPrinterW
+ClosePrinter
+LsaConnectUntrusted
+LsaDeregisterLogonProcess
+LsaCallAuthenticationPackage
+LsaLookupAuthenticationPackage
+LsaFreeReturnBuffer
+adsmsext.dll
+DllCanUnloadNow
+DllGetClassObject
+_wcsicmp
+swprintf_s
+_wcsnicmp
+wcschr
+swscanf_s
+_purecall
+wcscpy_s
+wcscat_s
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+msvcrt.dll
+_except_handler4_common
+wcstok
+LocalFree
+EnterCriticalSection
+LeaveCriticalSection
+LocalAlloc
+GetLastError
+CompareStringOrdinal
+CloseHandle
+GetSystemTime
+SystemTimeToFileTime
+FileTimeToLocalFileTime
+FileTimeToSystemTime
+DisableThreadLibraryCalls
+InitializeCriticalSection
+DeleteCriticalSection
+LocalFileTimeToFileTime
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+RaiseException
+FormatMessageW
+SystemTimeToTzSpecificLocalTime
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+ntdll.dll
+ACTIVEDS.dll
+BuildADsPathFromLDAPPath
+BuildLDAPPathFromADsPath2
+LdapCompareExt
+ADsObject
+LdapGetSyntaxOfAttributeOnServer
+LdapOpenObject
+LdapModifyS
+FreeObjectInfo
+LdapCloseObject
+ReadServerSupportsIsADControl
+ChangeSeparator
+LdapCrackUserDNtoNTLMUser2
+GetDefaultServer
+ReadServerSupportsIsADAMControl
+ADSIPrint
+LdapReadAttributeFast
+LdapValueFree
+adsldpc.dll
+RtlInitUnicodeString
+RtlInitString
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+ADs LDAP Provider DLL
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+adsmsext.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+adsmsext.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 888p8
+<$<-<7<A<H<M<S<a<f<k<r<
+>'?e?
+0'0-0c0{0
+101K1T1Y1_1r1
+3?3~3
+4 414@4N4
+5:5N5i5
+6 616
+8+8L8]8
+9-999I9
+:>:E:Y:q:}:
+;4<M<d<
+<6=Q=X=g=u=
+>&>C>R>b>s>
+? ?*?}?
+050V0
+1@1k1w1
+2%2.2K2
+4%4Z4i4x4
+4@5g5
+6/787S7k7y7
+9&9H9R9p9
+:0:A:
+;$;e;
+<%=n=
+=)>Y>
+>'?O?V?k?
+0&0;0S0
+1#1E1f1|1
+2&2-2?2N2{2
+465f5
+5/6O6W6
+7$7-7?7J7`7}7
+858D8~8
+:/:I:R:z:
+;%;c;
+<&<X<y<
+=(>_>
+?3?`?g?|?
+00070L0u0
+1)1J1U1n1
+1-2G2h2
+3<3\3|3
+4"5O5V5k5
+6;6B6I6P6r6
+7>7E7L7S7Z7l7{7
+8<8\8|8
+:2:_:f:{:
+;";*;K;R;Y;`;
+;#<N<U<\<c<j<|<
+<!=L=l=
+?4?u?
+051~1
+292i2
+273_3f3{3
+4/464K4c4
+5"5)50575M5T5[5b5i5p5
+6,656N6s6
+777S7y7
+8<8\8|8
+9<9\9|9
+:;:E:`:j:
+;%;K;[;f;
+<F<V<d<
+<#=~=
+?^?q?{?
+4)4A4K4V4u4~4
+8*898H8
+969?9Z9
+9k:t:
+;g;y;
+<?<`<h<
+=P=u=
+>->P>
+?^?q?{?
+0$050F0\0i0t0
+1<1a1
+2%202;2G2U2
+3+3Y3
+4j4s4
+4&5,54595c5i5
+6'646?6J6U6
+7(7W7
+888Q8o8
+9 9T9w9
+:$:\:h:
+:@;N;\;r;
+<.<<<p<
+= =&=.=M=[=m=u=
+>&>.>R>b>k>
+?n?v?
+0A0p0y0
+1 1(1V1
+2.2?2P2a2
+3,3S3]3t3|3
+31484G4
+5%5G5S5|5
+6%6O6]6q6
+787A7V7^7
+9#9,9D9M9r9
+:8:F:d:j:s:
+;';/;T;^;f;u;};
+;@<I<h<w<
+<.=7=I=y=
+>]>t>|>
+>'?[?j?
+0%030Z0b0y0
+1$181@1H1o1
+112<2L2W2m2v2
+3!3*383@3q3
+414b4t4
+435<5}5
+6;6Y6
+898i8
+9;9T9
+:,:L:l:
+;,;L;l;
+<,<Q<|<
+=A=l=
+>1>\>|>
+?<?\?|?
+0R0\0|0
+1<1\1
+1"2O2V2k2
+3;3B3I3P3r3
+4>4E4L4S4Z4l4{4
+7#7o7
+8%8w8
+899D9Z9k9
+:&;0;8;B;K;R;X;a;q;z;
+;*<0<5<;<@<F<\<h<r<|<
+<O=c=~=
+>1>X>~>
+>;?r?
+070c0q0
+1>1L1~1
+2:2H2p2
+253B3P3
+545E5{5
+626C6^6p6x6
+6@7i7
+7.8;8D8w8
+8&9H9p9
+:5:Q:`:
+;";-;4;:;N;`;~;
+;&<B<
+='=2=N=
+>7?g?y?
+1T1b1p1{1
+3%3m3
+6;6S6g6n6{6
+7%7.73797
+878^8g8
+9+9\9
+:0:N:v:
+;!;3;r;
+<7<A<]<s<
+=)=f=
+>B>Q>\>
+?#?g?
+1>1N1S1~1
+2"2P2g2
+6.6R6r6
+687=7O7m7
+7J8h8w8
+9L9U9`9g9
+:*:::@:K:Q:]:m:v:
+;+;;;K;[;k;{;
+</<<<P<`<m<
+=#=3=C=S=`=t=
+>4>8>X>`>d>l>p>x>|>
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+0 0$0(0,0004080<0@0D0H0L0P0T0X0`0d0h0l0p0t0x0

@@ -1,0 +1,1120 @@
+!This program cannot be run in DOS mode.
+%Rich
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+SLC.dll
+sppc.dll
+SLWGA.dll
+wevtapi.dll
+ext-ms-win-shell-shell32-l1-2-1.dll
+tokens.dat
+ntdll.dll
+EtwEventRegister
+EtwEventUnregister
+EtwEventEnabled
+EtwEventWrite
+LastProductKeyError
+an error occurred in MSXML parser:
+    reason: %s
+    line: %d
+    linepos: %d
+    text: %s
+TAMPERED
+<HealthCheck>
+  <Result>%s</Result>
+  <TamperedItems>%s</TamperedItems>
+</HealthCheck>
+<LicensingData>
+  <%s>%s</%s>
+</LicensingData>
+LicensingStatus
+WMI:Win32_ComputerSystem:Manufacturer
+Win32_ComputerSystem
+Manufacturer
+WMI:Win32_ComputerSystem:Model
+Model
+WMI:Win32_OperatingSystem:InstallDate
+Win32_OperatingSystem
+InstallDate
+LicensingStatusReason
+LocalGenuineState
+LocalGenuineResultP
+LastOnlineGenuineResult
+GraceTimeMinutes
+TotalGraceDays
+ValidityExpiration
+ActivePartialProductKey
+ActiveProductKeyPid2
+OSVersion
+ProductName
+ProcessorArchitecture
+EditionId
+BuildLab
+TimeZone
+ActiveSkuId
+ActiveSkuDescription
+ProductUniquenessGroups
+ActiveProductKeyPKeyId
+ActiveProductKeyPidEx
+ActiveProductKeyChannel
+ActiveVolumeCustomerPid
+OfflineInstallationId
+DomainJoined
+ComputerSid
+ProductLCID
+UserLCID
+SystemLCID
+CodeSigning
+ServiceAvailable
+OemMarkerVersion
+OemId
+OemTableId
+OA3ProductKey
+ActivationScenarioCode
+ProductKeyCode
+%d.%d.%d.%d
+ToolVersion
+SL_GET_GENUINE_AUTHZ:LicensingDiag
+<GenuineAuthz>
+  <ServerProps>%s</ServerProps>
+</GenuineAuthz>
+/genuineProperties[@origin="sppserver"]/properties
+<genuineProperties origin="sppserver">
+</genuineProperties>
+ClientKey
+ClientLockboxKey
+%s=%s;
+<Collect error='0x%08X'/>
+<Health error='0x%08X'/>
+<GenAuthz error='0x%08X'/>
+<DiagReport>
+%s%s%s</DiagReport>
+<QueryList>  <Query Id='0'>    <Select Path='Application'>*[System/Provider/@Name = "Microsoft-Windows-Security-Licensing-SLC" or System/Provider/@Name = "Software Licensing Service" or System/Provider/@Name = "Microsoft-Windows-Security-SPP" or System/Provider/@Name = "Software Protection Platform Service"]</Select>  </Query>  <Query Id='1'>    <Select Path='System'>Event/System[EventID=4] and Event/System/Provider/@Name = "Microsoft-Windows-Kernel-General"</Select>  </Query>  <Query Id='2'>    <Select Path='Microsoft-Windows-CodeIntegrity/Operational'>*[System/Provider/@Name = "Microsoft-Windows-CodeIntegrity"]</Select>  </Query></QueryList>
+<QueryList>  <Query Id='0'>    <Select Path='Microsoft-Client-Licensing-Platform/Admin'>*[System/Provider/@Name = "Microsoft-Client-Licensing-Platform"]</Select>  </Query></QueryList>
+<QueryList>  <Query Id='0'>    <Select Path='Microsoft-Client-License-Flexible-Platform/Admin'>*[System/Provider/@Name = "Microsoft-Client-License-Flexible-Platform"]</Select>  </Query></QueryList>
+<QueryList>  <Query Id='0'>    <Select Path='Microsoft-Windows-Store/Operational'>*[System/Provider/@Name = "Microsoft-Windows-Store"]</Select>  </Query></QueryList>
+<QueryList>  <Query Id='0'>    <Select Path='Microsoft-Windows-TWinUI/Operational'>*[System/Provider/@Name = "Microsoft-Windows-Immersive-Shell"]</Select>  </Query></QueryList>
+<QueryList>  <Query Id='0' Path='Microsoft-Windows-TaskScheduler/Operational'>    <Select Path='Microsoft-Windows-TaskScheduler/Operational'>*[System/Provider/@Name='Microsoft-Windows-TaskScheduler' and EventData/Data[@Name='TaskName']='\Microsoft\Windows\Subscription\LicenseAcquisition']</Select>  </Query>  <Query Id='1' Path='Microsoft-Windows-TaskScheduler/Operational'>    <Select Path='Microsoft-Windows-TaskScheduler/Operational'>*[System/Provider/@Name='Microsoft-Windows-TaskScheduler' and EventData/Data[@Name='TaskName']='\Microsoft\Windows\Subscription\EnableLicenseAcquisition']</Select>  </Query></QueryList>
+data.dat
+%s\%s
+TokenStore
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
+export HKLM\System\WPA "%s"
+reg.exe
+/status
+dsregcmd.exe
+-type=srv _vlmcs._tcp
+nslookup.exe
+export "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DeviceLicensing" "%s"
+Tasks
+RegisteredTask
+\Microsoft\Windows\Subscription
+EnableLicenseAcquisition
+LicenseAcquisition
+<?xml version="1.0" encoding="utf-8"?>
+</%s>
+    <p name='%s'>%s</p>
+    <p name='%s' error='0x%08X'/>
+  <%s>
+%s  </%s>
+  <%s error='0x%08X'/>
+false
+Enabled
+NextRunTine
+LastRunTine
+0x%08X
+LastTaskResult
+NumberOfMissedRuns
+<?xml version="1.0" encoding="UTF-16"?>
+      
+TaskDefinition
+CE163B38-1AEC-47AF-854D-FC90ABD6951C
+Gathering relevant event logs...
+export SPP event log
+SPP\SppDiagEvents.evtx
+export TWinUI event log
+CLIP\Microsoft-Windows-TWinUI.evtx
+export CLiP event log
+CLIP\Client-Licensing.evtx
+export Windows Store event log
+CLIP\Microsoft-Windows-Store.evtx
+Security-SPP-FlexibleClipEnabled
+export FClip event log
+CLIP\FClipEvents.evtx
+Gathering desktop license data...
+copying SPP token store
+SPP\Tokens.dat
+copying SPP trusted store
+SPP\data.dat
+Gathering desktop diagnostics data...
+export SPP diagnostics
+SPP\SppDiagReport.xml
+export WPA registry keys
+SPP\WPAKeys.reg.txt
+lookup KMS DNS SRV records
+SPP\nslookup-kms-srv.txt
+Gathering desktop task data...
+Task Scheduler events
+CLIP\Microsoft-Windows-TaskScheduler.evtx
+Task Scheduler tasks
+CLIP\Tasks.xml
+Gathering environment data...
+Check domain join status
+CLIP\dsregcmd.txt
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\DeviceLicensing
+Gathering subscription state...
+export Subscription State
+CLIP\SubscriptionState.txt
+SL_LICENSING_STATUS_UNLICENSED
+SL_LICENSING_STATUS_LICENSED
+SL_LICENSING_STATUS_IN_GRACE_PERIOD
+SL_LICENSING_STATUS_NOTIFICATION
+SL_LICENSING_STATUS_UNKNOWN
+alpha
+alpha64
+ia32_on_win64
+unknown
+SIGNED_INFO_PRS_SIGNED
+SIGNED_INFO_TEST_SIGNED
+SIGNED_INFO_UNKNOWN
+SL_GEN_STATE_IS_GENUINE
+SL_GEN_STATE_INVALID_LICENSE
+SL_GEN_STATE_TAMPERED
+%04u-%02u-%02dT%02u:%02u:%02u%+03d:%02u
+Security-SPP-LastWindowsActivationHResult
+Security-SPP-GenuineLocalStatus
+%systemroot%\system32\slwga.dll
+%systemroot%\system32\sppobjs.dll
+%systemroot%\system32\sppc.dll
+%systemroot%\system32\sppcext.dll
+%systemroot%\system32\sppwinob.dll
+%systemroot%\system32\slc.dll
+%systemroot%\system32\slcext.dll
+%systemroot%\system32\slui.exe
+%systemroot%\system32\sppcomapi.dll
+%systemroot%\system32\genvalobj.exe
+%systemroot%\system32\SppExtComObj.exe
+%systemroot%\system32\sppsvc.exe
+kernel32
+Wow64RevertWow64FsRedirection
+Wow64DisableWow64FsRedirection
+IsWow64Process
+"%s" %s
+kernelBase.dll
+GetSystemFirmwareTable
+kernel32.dll
+GetProductInfo
+%d.%d.%d.%d.%08x.%d.%d.%03d
+SELECT * FROM %s
+Description
+CustomerPID
+DigitalPID2
+DigitalPID
+Channel
+PartialProductKey
+DependsOn
+ProductUniquenessGroupId
+ProductId
+SOFTWARE\Microsoft\Windows NT\CurrentVersion
+DigitalProductId
+DigitalProductId4
+Volume:CSVLK
+Volume:MAK
+SL_GENUINE_RESULT
+%s%s%s.mui
+Diagnostics
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\ClipSVC
+BIOSRedeemPKeyCode
+DownlevelSetupPKeyCode
+PreviousHwid
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\ClipSVC\Diagnostics
+root\cimv2
+\\%s\%s
+%s(GMT)
+%s(GMT%+03d:%02u)
+RtlNtStatusToDosError
+\VarFileInfo\Translation
+\StringFileInfo\%04x%04x\OriginalFilename
+cryptsvc
+&amp;
+&quot;
+&apos;
+SelectionLanguage
+XPath
+SelectionNamespaces
+xmlns:xsl='http://www.w3.org/1999/XSL/Transform'
+/xsl:stylesheet
+%windir%\system32\ntdll.dll
+%04u-%02u-%02uT%02u:%02u:%02uZ
+%08lx-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>@@@?456789:;<=@@@@@@@
+@@@@@@
+ !"#$%&'()*+,-./0123@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@S
+OFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
+OemAcpiMsdmTable
+WinSta0
+Default
+Segoe UI Light
+Segoe UI SemiBold
+Segoe UI
+Segoe Pseudo
+Yu Gothic UI Light
+Yu Gothic UI Semibold
+Yu Gothic UI
+Malgun Gothic Semilight
+Malgun Gothic Bold
+Malgun Gothic
+Leelawadee UI Semilight
+Leelawadee UI Bold
+Leelawadee UI
+Microsoft YaHei UI Light
+Microsoft YaHei UI Bold
+Microsoft YaHei UI
+Microsoft JhengHei UI Light
+Microsoft JhengHei UI Bold
+Microsoft JhengHei UI
+bWti^
+ul%G1
+byjA`
+w9X!P/
+oLW\f
+f4Og|
+X\?E/5
+l6s+o
+sQPI[5T
+bgOne
+m]#0D
+Da6N^
+@W=7A=
+d|BNeU
+,B>DY
+Vving1
+gxI3!'
+ew0hp
+WAxK0i
+FWph?r
+'R{=f
+xv#?H
+7T})gW
+%UM;%
+hwp1p0
++dBVY
+Ly^X`
+hgtlCm
+^BNQ,^
+z?801i:It6
+$>b~t
+1o?-XfF
+$(SQO
+rY&'K
+VY$[X
+VG2/iI
+S~=5p
+NtQuerySystemInformation
+BCDFGHJKMPQRTVWXY2346789
+LicensingDiagSpp.pdb
+.rdata$brc
+.rdata$T$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+DSVW3
+9t$,t
+!t$(!t$,9t$0t7
+9|$0u
+t#f97t
+D$(Qh@
+(SVW3
+SVWQ3
+jD_Wj
+D$ hh5
+D$ ht5
+PQPjB
+j Xj`W
+t/j Xf9
+RQPPWRQ
+PQPjB
+j Xj`W
+t1j Xf9
+QPSSWQP
+j Xj`W
+t/j Xf9
+tGh(?
+QQVW3
+j/Yf;
+j;Zf9
+j Xj`_WS
+j Xf9
+QPRRWQP
+j Xj`_WS
+j Xf9
+QPRRWQP
+QQVWj
+j`_WS
+j Xf9
+QPRRWQP
+QQSVW
+94;tX
+t!h G
+t!h@G
+QSVWh
+tHh`G
+hMSDM
+QQSV3
+wGt:H
+QQQVP
+8f;:u
+QSVW3
+QQSVW3
+hSLIC
+PhXSDT
+PhRSDT
+YY_^[
+RRPQj
+_L_^[
+SVWj,Y3
+Z9S4u
+hIPCA
+hIPCA
+Wj4[Sj
+D$hPj
+D$hPj
+D$,j4SP
+tcWWWP
+PVShPI
+QQSVW
+j-Xf;F
+f;F$u
+f;F.u
+QQSVW
+t&hTY
+Y__^[
+QRPhDJ
+QRPhdJ
+SLGetGenuineInformation
+SLClose
+SLOpen
+SLGetLicensingStatusInformation
+SLGetProductSkuInformation
+SLGetServiceInformation
+SLGenerateOfflineInstallationId
+SLGetPKeyInformation
+SLGetSLIDList
+SLIsGenuineLocalEx
+SLIsGenuineLocal
+EvtExportLog
+SHParseDisplayName
+SHOpenFolderAndSelectItems
+ILFree
+LicensingDiagSpp.dll
+InitializeCollector
+ew|>&=4_
+wprintf
+_vsnwprintf
+wcsstr
+wcschr
+wcsrchr
+_wcsicmp
+_wcsnicmp
+memcpy_s
+_purecall
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+_lock
+_unlock
+__dllonexit
+_onexit
+msvcrt.dll
+_except_handler4_common
+HeapFree
+GetModuleHandleExW
+HeapAlloc
+GetProcAddress
+GetProcessHeap
+LocalFree
+GetLastError
+MultiByteToWideChar
+GetVersionExA
+ExpandEnvironmentStringsW
+CloseHandle
+CreateFileW
+CoCreateInstance
+LockResource
+LoadResource
+FindResourceExW
+VirtualQuery
+DisableThreadLibraryCalls
+RegCloseKey
+GetModuleFileNameW
+LeaveCriticalSection
+EnterCriticalSection
+VerQueryValueW
+CoUninitialize
+CoInitializeEx
+GetTimeZoneInformation
+GetSystemDirectoryW
+RegOpenKeyExW
+RegQueryValueExW
+GetNativeSystemInfo
+InitializeCriticalSectionAndSpinCount
+GetFileVersionInfoSizeExW
+GetFileVersionInfoExW
+GetModuleHandleW
+GetCurrentProcess
+CreateProcessW
+WaitForSingleObject
+GetExitCodeProcess
+GetFileAttributesW
+DecodePointer
+FreeLibrary
+LocalAlloc
+LoadLibraryExW
+FileTimeToSystemTime
+GetVersionExW
+LookupAccountNameW
+ConvertSidToStringSidW
+GetUserDefaultLCID
+GetFileMUIPath
+GetUserPreferredUILanguages
+CoSetProxyBlanket
+DeleteCriticalSection
+CloseServiceHandle
+OpenSCManagerW
+OpenServiceW
+QueryServiceStatus
+CertVerifyCertificateChainPolicy
+IsWow64Process
+EncodePointer
+Sleep
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+WakeAllConditionVariable
+SleepConditionVariableSRW
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+SetLastError
+GetProcessMitigationPolicy
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+OLEAUT32.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-util-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-service-management-l1-1-0.dll
+api-ms-win-service-winsvc-l1-1-0.dll
+CRYPT32.dll
+api-ms-win-core-wow64-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+GetComputerNameW
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+GetSystemDefaultUILanguage
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+LsaClose
+LsaOpenPolicy
+LsaQueryInformationPolicy
+LsaFreeMemory
+api-ms-win-security-lsapolicy-l1-1-0.dll
+WinVerifyTrust
+CryptCATAdminReleaseContext
+CryptCATAdminCalcHashFromFileHandle
+CryptCATAdminAcquireContext
+CryptCATAdminEnumCatalogFromHash
+CryptCATCatalogInfoFromContext
+CryptCATAdminReleaseCatalogContext
+WTHelperProvDataFromStateData
+WTHelperGetProvSignerFromChain
+WINTRUST.dll
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+memcmp
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Licensing Diagnostics SPP Plugin
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+Licensing Diagnostics SPP Plugin
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+LicensingDiagSpp.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+ Gathering relevant event logs...!Gathering desktop license data...%Gathering desktop diagnostics data...
+Gathering desktop task data...
+Gathering environment data...
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1\1d1l1t1|1
+2\2`2h2p2
+;!;A;F;K;Q;U;[;`;e;k;q;w;
+<$<)</<7<?<K<Q<W<]<l<
+=/=C=I=j=z=
+>#>u>|>l?x?
+011T1|172E2
+3)3D3\3e3q3
+5"5(5,52565<5B5F5L5P5V5\5`5f5j5p5v5z5
+6 6&6,60666:6@6F6J6P6T6Z6`6d6j6n6t6z6~6
+7 7$7*70747:7>7D7J7N7T7X7^7d7h7n7r7x7~7
+8#8)8-83898=8C8G8M8S8W8]8a8g8m8q8w8{8
+:#;);Y;t;
+<"<.<I<P<j=
+090Y0c0
+1)2.2Y2^2
+3 4S4[4a4
+525Z5c5
+5#6.6p6
+7:7`7
+8A9Q9X9j9
+:F:Z:z:
+;7;Y;^;u;z;
+=-===H=
+464i4t4
+5 5.5g5{5
+5)6/686\6p6|6
+6-7o7
+738:8f8t8{8
+8n9u9l=
+0N1U142;2U7\7
+:$;+;S;{;
+<&<9<@<a<g<
+<9=@=[=b=w=~=
+> >5><>I>P>c>j>
+2J7Q7
+7[8b859<9h9o9
+;+;2;G;N;[;b;><E<
+31:1b1i1}1
+2!202A2S2^2f2m2r2
+7Y8j8
+9*90979t9
+>3?C?X?_?~?
+10C0v0
+1S1Z1
+3=3z3
+4X8d8
+819M9q9
+:H;O;
+<G<Q<
+>H>W>c>
+?(?a?w?
+0 1(1M1v1
+1!202
+2Y3u3
+4(444
+5-5<5
+737C7T7\7m7
+:5:L:]:l:);:;F;Q;c;
+;H<Z<
+=$=,=4=B=U=]=}=
+0 1)1=1\1
+2]2o2
+3#3C3K3g3q3
+6!6^6
+9'9]9
+:):Y:b:
+;[;m;
+<7<?<[<e<z>
+0a0h0
+1&1C1O1Y1d1u1
+7G7P7f7
+9.9N9V9r9|9
+<%<9<T<
+>$>H>S>d>w>|>
+?"?,?7?H?U?Z?d?
+0+020M0S0
+<,<3<F<M<`<g<
+5)606
+7=7C7
+7p8w8}9
+9r:y:
+5"5/<
+9'9.9H9O9i9p9
+95:<:
+;2;};
+<9<@<S<Z<u<{<
+=$>+>E>L>f>m>
+? ?;?B?U?\?o?v?
+137:7
+8^>e>
+1+121?1F1
+1?2F2
+>8>D>J>\>k>|>
+=0V0w0~0
+6*6?6F6k6v6
+;#;8;
+;c<t<
+='=,=:=@=G=a=
+=H>T>
+?,?^?i?
+50X0q0w0
+1)1I1P1
+1P5\5
+696]6x6
+748;8
+9T:p:
+:W;a;
+<(<Z<i<u<
+>*>9>g>
+>6?^?~?
+0.0z0
+041>1l1
+1.2H2P2g2o2
+4'4j4
+4t5~5
+5J6Z6f6x6
+767D7V7
+8$808;8M8}8
+829D9
+:$:1:J:i:q:
+>L>U>i>
+>"?4?
+0"0*020A0Z0y0
+323F3
+5)6;6L6[6~6
+6@7K7W7b7t7
+7S8k8
+:":*:7:P:o:w:
+=-=]=f=
+?%?2?K?j?r?
+2%2?2S2t2
+3+3K3T3`3i3{3
+4%4j4q4
+5)565;5E5N5T5b5j5}5
+9C:#;4;~;
+=G=N=i=
+=.=5=M=T=e=l=
+>1?8?R?Y?l?s?
+0&01080J0Q0
+2!3(3
+4!4'486?6
+;6;@;
+2C2J2R3Y3=4D4m4t4
+4W6^6p6w6
+4A6H6*:1:U:\:n:u:
+;";';<;"<@<E<J<Z<m<r<w<
+=7=>=X=
+3S3\3p3w3
+4L4`4l4
+5D5X5d5
+6X7_7z7
+44;4w5~5Q<X<
+=e=l=
+>i>{>
+?$?+?<?C?^?d?
+9f9(?/?
+2Q3X3k3r3
+Q2X2T3[3t3{3
+4$4=4D4]4d4u4|4
+4t:{:
+;);8;G;Y;
+<'<x<
+!0-0@0k0
+2,292>2R2X2_2
+8Z8h8
+8H9Z9
+:';1;
+<%<3<?<Y<z<
+232u2
+5M6g6}6
+6/787n7
+7'868B8
+:#:+:O:t:
+;7;R;a;
+;!<3<j<y<
+= =(=L=q=
+>5>D>z>.?C?K?e?u?
+0-0=0E0U0
+1&161C1H1T1
+1.2C2Q2f2
+2g3x3
+5=5E5R5`5i5q5y5
+8+8:8H8\8
+9&9V9_9s9
+;';4;M;l;t;
+> >4>B>
+1#161E1h1
+1 212A2M2V2h2q2
+4"4'414:4@4N4V4i4
+8+9=9m9v9
+9 :4:{:
+;5;T;\;x;
+50G0q0
+171A1
+464R4x4
+6 646:6A6
+7$7-7k7r7
+759<9~9
+;/;6;N;U;m;t;
+<$=H=O=
+>7>=>}?
+8)8i8
+0w1~1
+1`3g3z3
+5 52595K5R5k5r5
+91969;9I9Z9y9~9
+:*:/:4:B:Z:_:d:r:
+;0<6<H<
+>.>E>
+>(?G?U?p?
+1.232:2A2H2O2V2]2d2k2r2y2
+2F3M3T3
+4$5.5
+5!6>6i6
+6A7^7
+7a8~8
+969~9
+9>:[:
+;^;{;
+<6<~<
+=.=Y=
+=1>N>y>
+?Q?n?
+1.1Y1
+:_:i:
+<*<;<H<R<
+<"=)=T=
+>l>s>
+121@1`1:2A2g2r2
+5o6y6
+="=m=(>9>
+?$?.?9?K?X?]?y?
+90?0H0n0
+0;1~1
+1?2F2
+93;:;
+;H<O<
+2+323N3U3q3x3
+334:4T4~4
+5 555<5U5]5I6P6
+8 8'8@8G8
+<'<3<u<
+(1/1c1j1
+3*313M3T3i3p3
+8-848H8O8j8q8
+>Z>o>u>
+>-?>?^?e?
+V3b3o3
+3g4x4
+4)5J5Q5
+5H9T9a9
+;";(;/;J;
+<'<v<
+=?=W=
+=H>k>
+?0?K?R?
+4R4s4z4
+5>6N6y6
+7K8a8s8
+8)949l9
+:@:L:
+;4;<;c;~;
+<M<s<
+=(=:=\=n=
+>+>3>Z>u>
+?'?5?l?
+0-090K0S0e0
+1#1/1u1
+2(282J2R2d2
+333J3`3r314B4N4Y4k4
+4J5^5
+6(6;6C6d6
+;@;H;U;c;l;t;|;
+;#>+>C>M>U>^>
+0-1?1J1T1q1
+1B2M2Y2d2v2
+2O3a3
+4,4E4f4n4
+9&9C9K9X9f9o9w9
+9 <(<@<J<R<[<|<
+=3=<=H=Q=c=l=s=
+>R>Y>t>|>
+?#?(?2?;?A?O?W?j?
+5&6-6B6I6U6`6p6}6
+;l<s<
+434:4O4V4c4j4
+5t5{5
+6 6>6E6_6f6y6
+9\=c=
+7$777>7
+7R:Y:`=g=
+>9>@>S>Z>n>u>x?
+)0;0J0T0_0q0~0
+0&1;1B1b1i1
+:s>z>;?B?
+E0L0F6M6
+6[7b7
+7A8H8f8m8
+8*919
+9*;1;\;c;
+3E4^4l4
+;U;\;$<+<
+=-=4=R=Y=s=z=
+=&?-?B?I?^?e?r?y?
+3&3@3G3Z3a3u3|3
+40474
+<$<G<[<g<y<
+=(=L=S=
+B1N1[1
+1S2d2
+3&3-3`3
+7(757
+9*9x9
+:!:l:x:
+;5;M;{;
+;;<`<q<
+=+=F=M=
+=5>w>
+5D6X6j6
+7=7H7
+8"8.8T8`8$9L9T9{9
+:":e:
+;A;W;i;
+<&<><Z<b<
+="=8=@=V=e=
+=1>F>N>h>t>
+?!?-?8?J?W?\?h?
+(0?0G0a0q0
+0#131A1Q1l1
+1`2q2}2
+4+444<4D4S4f4n4
+7#7+747
+838<8b8
+9/9S9u9}9
+:":s<{<
+<K=]=
+2,242A2O2X2`2h2w2
+5-575?5H5
+6G6P6h6z6
+7M7T7
+8)888B8M8]8j8o8y8
+<$=d=
+=%>7>[>x>
+?!?+?
+2/2I2W2
+3]3h3{3
+4.4;4@4J4Z4c4
+5P9W9
+;:;A;\;c;x;
+<#<8<?<L<S<g<n<
+=.=5=G=N=
+3H3O3
+4.454
+5P5W5q5x5
+;,<8<H<
+.151n1u1
+363=3W3^3q3x3
+9:9E9
+:P;V;
+;]<r<
+2F2Q2^2f2m2
+3"3>3^3j3
+444T4`4|4
+6*696C6N6`6m6r6~6
+7#787>7l7
+8F9M9
+9E:L:
+;4;;;N;U;t;|;
+;!=(=
+9<9C9
+;.;5;O;V;i;p;
+=+=2=
+w;~;K>R>
+1-141I1P1]1d1x1
+9(9@9F9X9g9v9
+:&:l:
+?a?g?n?
+4;4F4U4\4h4s4
+495J5
+6)6V6a6p6w6
+7\7c7
+9*9D9k9
+9k:r:
+;.?:?
+0%0Z0{0
+0?1r1
+1a2s2
+3]3s3
+3-4C4Q4s4
+5%6@6J6b6x6
+777W7k7|7
+8S8b8n8
+9#9-9_9|9
+;e;n;w;
+;"<2<B<T<
+?H?Q?s?
+0.0@0d0
+1)131i3q3
+3@4Q4a4s4
+4R5f5
+6!606C6K6l6
+9&9W9
+<3<j<
+=&=8=h=q=
+>!>N>`>~>
+?&?.?J?T?
+1e2p2
+3%3.353y3
+464>4[4c4
+5,5E5m5t5:9F9S9
+9`:r:
+;&;.;=;V;w;
+>8>h>
+0^0r0
+1'151<1K1Q1x1
+2.2;2@2
+5k6r6v7}7
+8&8-8A8H8c8j8
+?Q?X?
+0*111O1V1p1w1
+2Q4X4m7t7
+81=8=q=x= >'>
+?9?@?Z?a?t?{?
+3#3*3
+4$5v5f6w6
+7&7A7`7
+0$1.171>1M1Y1
+1!2(2
+3-4]4g4
+555p5x5
+9G9a9h9{9
+9):V;];
+0,060
+021y1
+213@3s3
+5,6h6s6
+9a9o9
+92:<:u:
+:=;;<B<
+<?=k=
+=F>N>
+>E?_?
+0*0n0u0|0
+0"1T1
+2!2;2C2{2
+3C4J4Q4l4
+8A9d9v9
+:8:I:e:
+;a;k;
+>1>7>4?U?\?
+0j0q0
+2d3k3
+5%5A5L5n5
+7.7|7
+7(8N9{9
+9,:c:m:
+;';4;
+?L?k?
+5#5h6o6;8B8
+8$9-979`9
+98:C:W:p:
+:><E<:?Y?u?|?
+0&0-0O0
+2/2`2
+3=4G4i4
+595b5
+6j7q7
+93:::
+<O<V<`<
+8Z8a8
+;5<?<R<]<
+<0=K=~=
+> ?*?
+(0/0g1t1
+3G4N42696
+7"7`7l7t7~7
+8$8D8d8
+9D9d9
+9Y:n:
+<'<,<1<^<n<s<
+='=/=6=<=B=p=
+0 1N1r1
+1S2Z2`2j2y2
+3#3,373>3V3\3b3h3n3t3{3
+4"4(444D4M4b4n4z4
+51575
+6'60696N6c6r6z6
+7-797E7X7z7
+8(8<8I8]8j8~8
+919C9H9M9R9c9m9
+: :<:@:
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0l0p0t0x0|0
+1(141@1L1X1
+0 0(0004080@0H0

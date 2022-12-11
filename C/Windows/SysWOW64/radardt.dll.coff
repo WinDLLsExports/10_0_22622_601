@@ -1,0 +1,250 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\SysWOW64\radardt.dll
+
+File Type: DLL
+
+  Image has the following delay load dependencies:
+
+    wdi.dll
+    ADVAPI32.dll
+    POWRPROF.dll
+    VERSION.dll
+    WTSAPI32.dll
+
+  Section contains the following exports for radardt.dll
+
+    00000000 characteristics
+    D12F5392 time date stamp
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000ADF0 RdrSysprepSpecialize
+          2    1 0000B2E0 RdrSysprepSpecializeOffline
+          3    2 000026D0 WdiDiagnosticModuleMain
+          4    3 00003AD0 WdiGetDiagnosticModuleInterfaceVersion
+          5    4 00002AA0 WdiHandleInstance
+
+  Section contains the following delay load imports:
+
+    wdi.dll
+              00000001 Characteristics
+              100123A4 Address of HMODULE
+              10014080 Import Address Table
+              1001195C Import Name Table
+              10011C64 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          10005F4A               D WdiGetEvent
+          10005F3A              14 WdiGetParameterData
+          10005F2A              32 WdiSetResolution
+          10005F1A              13 WdiGetParameterCount
+          10005F0A              30 WdiSetProblemDetectionResult
+          10005F5A               4 WdiAddParameter
+          10005F6A              11 WdiGetParameterByIndex
+          10005EE9               C WdiGetDiagnosticModuleId
+
+    ADVAPI32.dll
+              00000001 Characteristics
+              100123A8 Address of HMODULE
+              10014000 Import Address Table
+              100118DC Import Name Table
+              10011C88 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000604B             105 EqualSid
+          100060BB              65 CloseServiceHandle
+          100060AB             20D OpenSCManagerW
+          1000609B              FF EnumServicesStatusExW
+          1000608B             241 QueryServiceConfigW
+          1000607B             20F OpenServiceW
+          1000606B             269 RegDeleteValueW
+          10005F7A             282 RegOpenKeyExW
+          1000605B             25A RegCreateKeyExW
+          10005F9B             270 RegEnumKeyExW
+          10005FAB             289 RegQueryInfoKeyW
+          10005FBB             260 RegDeleteKeyExW
+          10005FCB             251 RegCloseKey
+          10005FDB             28F RegQueryValueExW
+          10005FEB             29F RegSetValueExW
+          10005FFB             15B GetTokenInformation
+          1000600B             136 GetLengthSid
+          1000601B             20B OpenProcessToken
+          1000602B             189 IsValidSid
+          1000603B              85 CopySid
+
+    POWRPROF.dll
+              00000001 Characteristics
+              100123AC Address of HMODULE
+              10014054 Import Address Table
+              10011930 Import Name Table
+              10011CDC Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          100060EC              66 PowerSettingUnregisterNotification
+          100060CB              64 PowerSettingRegisterNotification
+
+    VERSION.dll
+              00000001 Characteristics
+              100123B0 Address of HMODULE
+              10014060 Import Address Table
+              1001193C Import Name Table
+              10011CE8 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000612D               8 GetFileVersionInfoW
+          1000611D              10 VerQueryValueW
+          100060FC               7 GetFileVersionInfoSizeW
+
+    WTSAPI32.dll
+              00000001 Characteristics
+              100123B4 Address of HMODULE
+              10014070 Import Address Table
+              1001194C Import Name Table
+              10011CF8 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000613D              29 WTSQueryUserToken
+          1000616E              17 WTSFreeMemory
+          1000615E              16 WTSEnumerateSessionsW
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    KERNELBASE.dll
+    ntdll.dll
+    KERNEL32.dll
+
+  Section contains the following imports:
+
+    msvcrt.dll
+              100130E4 Import Address Table
+              100132B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  58A wcsrchr
+                  173 _except_handler4_common
+                  1F3 _initterm
+                  508 malloc
+                  4D0 free
+                  11A _amsg_exit
+                   74 _XcptFilter
+                  418 _wcsicmp
+                  524 qsort
+                  3F7 _vsnwprintf
+                  518 memset
+
+    KERNELBASE.dll
+              100130D4 Import Address Table
+              100132A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  156 Sleep
+                   EE LocalAlloc
+                  184 WTSGetServiceSessionId
+
+    ntdll.dll
+              10013114 Import Address Table
+              100132E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  1AE NtOpenEvent
+                  471 RtlInitUnicodeString
+                  3C6 RtlEqualUnicodeString
+                   3B EtwEventRegister
+                   39 EtwEventEnabled
+                  400 RtlFreeSid
+                  2E5 RtlAllocateAndInitializeSid
+                   3D EtwEventUnregister
+                  1E5 NtQueryEvent
+                  20B NtQuerySystemInformation
+                   56 EtwUnregisterTraceGuids
+                   46 EtwGetTraceEnableFlags
+                   48 EtwGetTraceLoggerHandle
+                   47 EtwGetTraceEnableLevel
+                   4F EtwRegisterTraceGuidsW
+                   3E EtwEventWrite
+                   54 EtwTraceMessage
+                  507 RtlNtStatusToDosError
+
+    KERNEL32.dll
+              10013000 Import Address Table
+              100131CC Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  2CD GetProcessHeap
+                   F6 CreateProcessW
+                  1AC FindVolumeClose
+                  2FA GetSystemDirectoryW
+                  25A GetFileAttributesW
+                  19A FindFirstVolumeW
+                  303 GetSystemTimeAsFileTime
+                  4E8 ResetEvent
+                  5CF TryEnterCriticalSection
+                  110 CreateWaitableTimerExW
+                   CE CreateEventW
+                  1C0 FreeLibraryAndExitThread
+                  5FE WaitForMultipleObjectsEx
+                  59D SetWaitableTimer
+                  42B OpenProcess
+                  3C3 K32GetModuleFileNameExW
+                  1BF FreeLibrary
+                  22D GetCurrentProcessId
+                  11F DelayLoadFailureHook
+                  4EB ResolveDelayLoadedAPI
+                  366 HeapDestroy
+                  104 CreateThread
+                  2D7 GetProcessTimes
+                  3B1 IsWow64Process
+                  3EF LocalFree
+                  2CF GetProcessId
+                  28B GetModuleFileNameW
+                  555 SetLastError
+                  325 GetTickCount
+                  231 GetCurrentThreadId
+                  46D QueryPerformanceCounter
+                  5B4 TerminateProcess
+                  22C GetCurrentProcess
+                  594 SetUnhandledExceptionFilter
+                  5D5 UnhandledExceptionFilter
+                  244 GetDriveTypeW
+                  367 HeapFree
+                  363 HeapAlloc
+                  145 EnterCriticalSection
+                  3DD LeaveCriticalSection
+                  37C InitializeCriticalSection
+                  5FF WaitForSingleObject
+                  277 GetLastError
+                  538 SetEvent
+                  130 DisableThreadLibraryCalls
+                  122 DeleteCriticalSection
+                   94 CloseHandle
+                  365 HeapCreate
+                  28E GetModuleHandleExW
+                  176 ExpandEnvironmentStringsW
+                  44E ProcessIdToSessionId
+                  1A5 FindNextVolumeW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .idata
+        2000 .reloc
+        3000 .rsrc
+       11000 .text

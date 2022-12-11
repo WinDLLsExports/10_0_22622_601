@@ -1,0 +1,2405 @@
+!This program cannot be run in DOS mode.
+[Rich
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+SspiCli.dll
+WINHTTP.dll
+CRYPT32.dll
+CRYPTSP.dll
+api-ms-win-shcore-stream-l1-1-0.dll
+api-ms-win-shell-shdirectory-l1-1-0.dll
+ext-ms-win-shell32-shellfolders-l1-1-0.dll
+ext-ms-win-ole32-bindctx-l1-1-0.dll
+api-ms-win-security-accesshlpr-l1-1-0.dll
+CEMAPI.dll
+PIMSTORE.dll
+UserDataTypeHelperUtil.dll
+UserDataTimeUtil.dll
+InprocLogger.dll
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+ntdll.dll
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+onecoreuap\base\MailContactsCalendarSync\
+MCCS\
+onecoreuap\base\appmodel\UserDataAccess\
+APPID
+Local\SM0:%lu:%lu:%hs
+InProcLogger.DLL
+FlushInProcTraceSession
+ShouldReportAssertionFailure
+DefaultStoreDirty
+GoldenPartnershipId
+Software\Microsoft\ActiveSync
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\contactsyncutils.cpp
+success
+FALSE
+( ( 0x10a40000 | 31 ) ) == propertyValues[0].propid
+PIMPR_DISPLAY_NAME == propertyValues[0].propid
+nullptr != pDisplayName
+((*pPropNotEmptyFilterIndices)[i] >= 0) && ((*pPropNotEmptyFilterIndices)[i] < c_numGalContactPimProps)
+TempContact:DisplayName
+0.w/X#
+onecoreuap\private\base\inc\HashKeyHelper.h
+pKey != 0
+pKey != NULL
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\SyncPersistentObjectManager.h
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\syncpersistentobjectmanager.cpp
+s_objectManager != 0
+s_objectManager != NULL
+info != nullptr
+pDisplayState != nullptr
+RtlIsCriticalSectionLockedByThread(&(_pAtlModule->m_csStaticDataInitAndTypeInfo.m_sec))
+accountAbsent
+it != m_objectMap.npos()
+(((HRESULT)(hr)) >= 0) && (info != 0)
+SUCCEEDED(hr) && (info != NULL)
+(((HRESULT)(hr)) >= 0) && (info != nullptr)
+SUCCEEDED(hr) && (info != nullptr)
+!( ( ((PSecHandle) (&info->sslCredentialHandle[(UINT)handleType]))->dwLower != ((ULONG_PTR) ((INT_PTR) -1 ))) && ( ((PSecHandle) (&info->sslCredentialHandle[(UINT)handleType]))->dwUpper != ((ULONG_PTR) ((INT_PTR) -1 ))) )
+!SecIsValidHandle(&info->sslCredentialHandle[(UINT)handleType])
+SsoId
+Padding
+Scope
+Scheme
+Authority
+AuthUri
+RefreshUri
+%s\WebAuth\%s
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\webauthsettings.cpp
+tlx::assign_sprintf( keyPath, L"%s\\WebAuth\\%s", c_wszActiveSyncKey, pProviderId)
+_statusTemp == 0L
+((HRESULT)(50L) <= 0 ? ((HRESULT)(50L)) : ((HRESULT) (((50L) & 0x0000FFFF) | (7 << 16) | 0x80000000))) == hr
+0 == (clientSecretSize % sizeof(WCHAR))
+clientSecret.reserve(clientSecretSize / sizeof(WCHAR))
+WinHttpCrackUrl(providerUri.c_str(), 0, 0, &urlComponents)
+Software\Microsoft\ActiveSync
+onecoreuap\internal\base\inc\WRLWinRTHelpers.h
+m_completedEvent != 0
+hr == ((HRESULT)0L)
+hr == S_OK
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Inc\SyncResettableTimer.h
+nullptr != m_pTpTimer
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\tokenbrokerutils.cpp
+WebTokenRequestStatus_Success != requestStatus
+%x - %s
+authority
+accountInternal->get_Properties(&accountProperties)
+accountProperties->HasKey( HStringReference(AccountAutorityPropertyName).Get(), &hasAuthrority)
+accountProperties->Lookup( HStringReference(AccountAutorityPropertyName).Get(), authority.GetAddressOf())
+pRequest->get_Properties(&requestProperties)
+requestProperties->Insert( HStringReference(RequestAutorityPropertyName).Get(), authority.Get(), &replaced)
+GetActivationFactory( HStringReference(RuntimeClass_Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager).Get(), &webAuthCore)
+webAuthCore->FindAccountProviderAsync( HStringReference(pProviderUri).Get(), &findAccountProviderOperation)
+webAuthCore->FindAccountProviderWithAuthorityAsync( HStringReference(pProviderUri).Get(), HStringReference(pAuthority).Get(), &findAccountProviderOperation)
+_TranslateNotFoundErrors(AwaitOperationResult( findAccountProviderOperation.p, &webAccountProvider))
+webAuthCore->FindAccountAsync( pProvider, HStringReference(pAccountId).Get(), &findAccountOperation)
+_TranslateNotFoundErrors(AwaitOperationResult( findAccountOperation.p, &webAccount))
+GetActivationFactory( HStringReference(RuntimeClass_Windows_Internal_Security_Authentication_Web_TokenBrokerInternal).Get(), &tokenBroker)
+tokenBroker->GetDefaultSignInAccountAsync( &getDefaultSignInAccountResultOperation)
+_TranslateNotFoundErrors(AwaitOperationResult( getDefaultSignInAccountResultOperation.p, &result))
+result->get_DefaultWebAccount(&account)
+consumers
+organizations
+pProvider->get_Id(providerId.GetAddressOf())
+https://login.microsoft.com
+providerWithAuthotity->get_Authority(authority.GetAddressOf())
+pAccount->get_UserName(userName.GetAddressOf())
+pUserName->assign( WindowsGetStringRawBuffer(userName.Get(), nullptr))
+accountInternal->get_Id(accountId.GetAddressOf())
+pAccountId->assign( WindowsGetStringRawBuffer(accountId.Get(), nullptr))
+accountInternal->get_Properties(&properties)
+properties->HasKey( HStringReference(pPropertyName).Get(), &hasProperty)
+properties->Lookup( HStringReference(pPropertyName).Get(), propertyValue.GetAddressOf())
+pProperty->assign( WindowsGetStringRawBuffer(propertyValue.Get(), nullptr))
+pAccount->get_WebAccountProvider(&provider)
+GetActivationFactory( HStringReference(RuntimeClass_Windows_Security_Authentication_Web_Core_WebTokenRequest).Get(), &requestFactory)
+requestFactory->Create( pProvider, HStringReference(pScope).Get(), HStringReference(pClientId).Get(), &request)
+request->get_Properties(&properties)
+properties->Insert( HStringReference(parameter.first.c_str()).Get(), HStringReference(parameter.second.c_str()).Get(), &replaced)
+client_secret
+properties->Insert( HStringReference(L"client_secret").Get(), HStringReference(pClientSecret).Get(), &replaced)
+webAuthCore->GetTokenSilentlyWithWebAccountAsync( pRequest, pAccount, &webTokenRequestResultOperation)
+webAuthCore->GetTokenSilentlyAsync( pRequest, &webTokenRequestResultOperation)
+AwaitOperationResult( webTokenRequestResultOperation.p, &result)
+pResult->get_ResponseStatus(&requestStatus)
+pResult->get_ResponseData(&responseData)
+responseData->GetAt(0, &response)
+response->get_Token(token.GetAddressOf())
+pToken->assign( WindowsGetStringRawBuffer(token.Get(), nullptr))
+outcome
+GetWebTokenSilentlyEx
+RefreshWebTokenSilentlyEx
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Inc\SyncDeadlockWatchDog.h
+Windows.Internal.Security.Authentication.Web.TokenBrokerInternal
+Windows.Security.Authentication.Web.WebAuthenticationBroker
+Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager
+Windows.Security.Authentication.Web.Core.WebTokenRequest
+Windows.Foundation.Uri
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\serverreadyindictor.cpp
+g_hServerReady != 0
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\registryutils.cpp
+WindowsLiveServiceTarget
+onecoreuap\base\MailContactsCalendarSync\Porting\Inc\AutoVariant.h
+GO:#cR
+(accessorType == __uuidof(PopImapAccountAccessor)) || (accessorType == __uuidof(ExternalAccountAccessor)) || (accessorType == __uuidof(ActiveSyncAccountAccessor))
+mode != Access_Create
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Idl\objfre\i386\AccountAccessorTypes.h
+SUCCEEDED(hr)
+(((HRESULT)(hr)) >= 0)
+IsNotSupposedToSync
+ScheduledSyncPeriod
+LastSyncSuccess
+LastSyncAttempt
+Software\Microsoft\ActiveSync\Environment
+outlook.at
+outlook.be
+outlook.ca
+outlook.ch
+outlook.cl
+outlook.cn
+outlook.co.id
+outlook.co.il
+outlook.co.in
+outlook.co.jp
+outlook.co.kr
+outlook.co.nz
+outlook.co.th
+outlook.co.uk
+outlook.co.za
+outlook.com
+outlook.com.ar
+outlook.com.au
+outlook.com.br
+outlook.com.hk
+outlook.com.mx
+outlook.com.my
+outlook.com.pt
+outlook.com.sg
+outlook.com.tr
+outlook.com.tw
+outlook.com.vn
+outlook.cz
+outlook.de
+outlook.dk
+outlook.es
+outlook.fi
+outlook.fr
+outlook.gr
+outlook.hk
+outlook.hu
+outlook.ie
+outlook.in
+outlook.it
+outlook.jp
+outlook.lt
+outlook.lv
+outlook.my
+outlook.nl
+outlook.no
+outlook.ph
+outlook.rs
+outlook.ru
+outlook.se
+outlook.sg
+outlook.sk
+icloud.com
+mac.com
+me.com
+gmail.com
+163.com
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\asutil.cpp
+pName
+pszMultiByteStr
+*ppwszWideCharStr == 0
+*ppwszWideCharStr == NULL
+pwszWideCharStr
+*ppszMultiByteStr == 0
+*ppszMultiByteStr == NULL
+WLAccountSyncEnabled
+pPeriod != nullptr
+accessor.CoCreateInstance(__uuidof(ActiveSyncAccountAccessor))
+0 != pServerName
+NULL != pServerName
+CryptAcquireContextW( tlx::replace(provider), 0, 0, 1, 0xF0000000)
+CryptCreateHash( provider, ((4 << 13) | (0) | 4), 0, 0, tlx::replace(hash))
+CryptHashData(hash, (LPBYTE)pUserId, (DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\utils\\syncutil\\lib\\asutil.cpp", 524 ); } } while(0,0); return out; }(userIdSize), 0)
+CryptGetHashParam( hash, 0x0004, (LPBYTE)&hashValueSize, &dwordSize, 0)
+0 != hashValueSize
+CryptGetHashParam( hash, 0x0002, hashValue, &hashValueSize, 0)
+accountId.reserve(accountIdBufferLength)
+tempUserId.assign(pDomain)
+tempUserId.append(L"\\")
+tempUserId.append(pUserName)
+m.google.com
+pServerName->assign(L"m.google.com")
+deviceID.valid()
+ASync3dF[^
+(size > 0)
+pDeviceId->assign(deviceID)
+accessor.CoCreateInstance(__uuidof(PopImapAccountAccessor))
+ConvertVariantTimeToFileTime(0, &(lastSyncTimeAsDate.date), &lastSyncTime)
+syncPeriodInMinutes != invalidPeriod
+deviceFamily < 100
+%s%s-%d/%u.%u.%u
+tlx::assign_sprintf(userAgent, L"%s%s-%d/%u.%u.%u", c_wszHttpUserAgent, pwszDevice.get(), deviceFamily, OSVersionInfo.dwMajorVersion, OSVersionInfo.dwMinorVersion, OSVersionInfo.dwBuildNumber)
+::StringCchCopyW(pwszUserAgent, userAgentLength, userAgent.c_str())
+StringCchPrintfExW( deviceTypeFamily, sizeof(*__countof_helper(deviceTypeFamily)), nullptr, nullptr, 0x00000800, L"%u", deviceFamily)
+::StringCchCatW(deviceTypeDefault, sizeof(*__countof_helper(deviceTypeDefault)), deviceTypeFamily)
+pDeviceType->assign(deviceTypeDefault)
+(((NTSTATUS)(_ntStatus)) >= 0)
+.hotmail.com
+.outlook.com
+MSFT-
+DeviceID
+Device
+EnabledDavFeatures
+WindowsMail
+DeviceType
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\updaterestoreutils.cpp
+Gmail
+www.google.com
+apidata.googleusercontent.com
+Email
+Yahoo
+carddav.address.yahoo.com
+caldav.calendar.yahoo.com
+pszValue
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\sourcelock.cpp
+hr == ((HRESULT)0L) || 0 != rghObjects[1]
+hr == S_OK || NULL != rghObjects[1]
+hr == ((HRESULT)0L) || hMutex != 0
+hr == S_OK || hMutex != 0
+StringFromGUID2 ( partnerGuid, wszDataStoresLockName, 40 )
+CloseHandle ( lockHandle )
+ActiveSyncUnistoreLockTemplate
+( *pMutexHandle ) != 0
+it == 0
+#$#$#DataStoresLock#$#$#
+onecoreuap\private\base\inc\SafeMapiProps.h
+props==0
+props==NULL
+props!=0
+props!=NULL
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\syncstatshelpers.cpp
+added.first != nullptr
+MailReceivedCountOver40k
+MailReceivedCount20kTo40k
+MailReceivedCount10kTo20k
+MailReceivedCount5kTo10k
+MailReceivedCountUnder5k
+ClientUnreadToReadCount
+MailReceivedKB
+UpdatedMailCount
+DeletedMailCount
+ReceivedMailCount
+SentMailCount
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\DelayedDBPropertiesStream.h
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Inc\EnumMAPITable.h
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\mapiutils.cpp
+pMsgStore
+cNames
+rgName
+ppTagArray
+OneStopFactory
+resourcesLib.valid()
+StringCchLengthW(pBody, c_maxNDRBodySize, &contentLength)
+StringCchLengthW(pSubjectFormat, c_maxSubjectSize, &subjectFormatSize)
+tlx::assign_sprintf( subject, pSubjectFormat, c_maxSubjectSize - subjectFormatSize, pOriginalSubject)
+ndrPropValues[0].ulPropTag == ((((ULONG)(0x0037))<<16)|((ULONG)(((ULONG) 31))))
+ndrPropValues[1].ulPropTag == ((((ULONG)(0x0C1F))<<16)|((ULONG)(((ULONG) 31))))
+syncServices.CoCreateInstance(__uuidof(POSyncServices))
+SyncRes.dll
+AirSync:SyncOptionsHash
+AirSync:IsSearchResult
+AirSync:ParentServerID
+AirSync:LongID
+Meeting:Occurences
+Meeting:DisallowNewTimeProposal
+Meeting:Timezone
+Meeting:Reminder
+Meeting:AllDay
+REPORT.IPM.Note.NDR
+AirSync:PermanentDelete
+ServerSync:FolderName
+ServerSync:AttOID
+ServerSync:FileURI
+AirSync:ParentID
+AirSync:PermanentID
+AirSync:FolderSyncFlags
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\domutil.cpp
+(((HRESULT)(error)) < 0)
+FAILED(error)
+XPath
+SelectionLanguage
+SelectionNamespaces
+Elevation:Highest!new:%s
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\comelevation.cpp
+tlx::assign_sprintf( monikerName, L"Elevation:Highest!new:%s", classIdString)
+CoGetObject( monikerName.c_str(), &bindOptions, interfaceId, ppInstance)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\enumsourcereg.cpp
+res == 0L
+hr == ((HRESULT)0x85050013)
+hr == E_ACCOUNT_NOTFOUND
+serverSourcesList.push_back(guidSource)
+CLSID_MailSyncEngine == sds.engineID
+mailSourcesList.push_back(guidSource)
+m_sources.push_back(serverSourcesList[i])
+m_sources.push_back(mailSourcesList[i])
+Software\Microsoft\ActiveSync\Partners
+Fonecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\sourceinfo.cpp
+wszName != 0
+accessor.CoCreateInstance(m_accessorType)
+((&nameVar)->vt) == VT_BSTR
+V_VT(&nameVar) == VT_BSTR
+m_Name != 0
+pSyncAttemptTime
+pSyncSuccessTime
+pdhrResult != 0
+pGuid != 0
+m_EngineGuid != GUID_INVALID
+StoreId
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\authhandler.cpp
+backendType == c_pMSAServiceType
+%s\%s
+tlx::assign_sprintf( m_account, L"%s\\%s", domain.c_str(), userId.c_str())
+credential.assign(password)
+OMTP11
+Microsoft.PPI.CredentialManagement.PPIDeviceCredentialReader
+Microsoft.PPI.CredentialManagement.DeviceCredentialUtility
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\radiomanager.cpp
+m_activityRefCount == 0
+0 != m_activityRefCount
+RadioManager::MarkInterfaceAsActive
+m_pPdcReference
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Inc\SyncPdcReference.h
+nullptr != m_activationHandle
+true == m_watchdogDisabled
+m_watchdogDisabled
+nullptr == m_activationHandle
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Inc\SyncDeadlockWatchdog.h
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\syncbufferedstream.cpp
+cbWrite == chunkSize
+bytesWritten == bytesToCommit
+Exchange
+MailIncoming
+MailOutgoing
+OAuth
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\credutil.cpp
+source != GUID_NULL
+StringFromGUID2(source, wszDataSource, (sizeof(*RtlpNumberOf(wszDataSource)))) != 0
+StringCchCopyW(pwszBuffer, cchBufferSize, wszCredentialName)
+StringCchCatW(pwszBuffer, cchBufferSize, wszDataSource)
+StringCchCatW(pwszBuffer, cchBufferSize, s_ServerTypeTable[type])
+StringCchLengthW(pwszBuffer, cchBufferSize, &cchTempTargetName)
+ActiveSyncCredentialSchema
+ActiveSyncCredential
+ActiveSyncCredentialDefaultUser
+pUser->assign(((&userVar)->bstrVal))
+StringCchCopyExW( target, targetLength, pPrefix, &pEnd, &countCharsRemaining, 0)
+(StringFromGUID2(accountId, pEnd, (INT)[](size_t num) { INT out = 2147483647; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToInt(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\utils\\syncutil\\lib\\credutil.cpp", 580  ); } } while(0,0); return out; }(countCharsRemaining)) > 0)
+SYNC_CERT
+SyncUseSSL
+SyncServer
+SyncPassword
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\base64.cpp
+CryptBinaryToStringW( pInputBuffer, inputBufferLength, 0x00000001 | 0x40000000, pOutputString, outputStringLength)
+CryptBinaryToStringA( pInputBuffer, inputBufferLength, 0x00000001 | 0x40000000, pOutputString, outputStringLength)
+CryptStringToBinaryW( pInputString, inputStringLength, 0x00000001, pOutputBuffer, pOutputBufferLength, 0, 0)
+CryptStringToBinaryA( pInputString, inputStringLength, 0x00000001, pOutputBuffer, pOutputBufferLength, 0, 0)
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\password.cpp
+StringCchCopyW(pPassword, passwordLen, pTmp)
+StringCbLengthW( credentialValue, credentialValueMaxLength * sizeof(WCHAR), &pwdSizeInBytes)
+ULongAdd((ULONG)[](size_t num) { ULONG out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\utils\\syncutil\\lib\\password.cpp", 139  ); } } while(0,0); return out; }(pwdSizeInBytes), sizeof(WCHAR), &blobSizeInBytes)
+StringCchLengthW(pwszServer, MAX_SERVER_NAME_LENGTH, &cchServerSize)
+ppwszPassword
+StringCchCopyW(pwszPassword, dwPasswordLen, szNoPassword)
+OAuthRefreshToken
+SyncUseSSL
+SyncServer
+SyncPassword
+DefaultWindowsLiveCid
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\syncds.cpp
+StringFromGUID2(dataTypeID, wszType, (sizeof(*RtlpNumberOf(wszType))))
+outlookApp.CoCreateInstance(__uuidof(Application))
+pTags->cValues == (sizeof(*RtlpNumberOf(spta.aulPropTag)))
+pTags->cValues == ARRAYSIZE(spta.aulPropTag)
+pCidTemp.valid()
+DeleteInProgress
+Domain
+Enabled
+StoreId
+StoreType
+Server
+Engine
+Software\Microsoft\ActiveSync\Partners
+ServerLog
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\fileutil.cpp
+%s\%s-%d.txt
+%s\Ping %s-%d.txt
+%s\SKZ %s.txt
+packages\ActiveSync\LocalState\DiagOutputDir
+SHGetKnownFolderPath( knownFolderId, KF_FLAG_DONT_VERIFY, nullptr, replace(localDataPath))
+PathCchCombine(pPath, pathLength, localDataPath, pRelativePath)
+PathCchAddBackslash(pPath, pathLength)
+StringCchCatW(filePath, (sizeof(*RtlpNumberOf(filePath))), pFileName)
+fileHandle != ((HANDLE)(LONG_PTR)-1)
+NumberOfLogs
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\synccalendaringutils.cpp
+storeIds[0] != storeIds[1]
+sizeof(CEENTRYID) == storeEntryIdPropVal->Value.bin.cb
+pusOid != 0
+onecoreuap\private\base\inc\unistorehelper.h
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\syncsessionhelpers.cpp
+0 != pSyncPartner
+NULL != pSyncPartner
+0 == sessionScope
+NULL == sessionScope
+0 != pScopeMetadata
+NULL != pScopeMetadata
+0 != sessionScope
+NULL != sessionScope
+0 != ppResumeState
+NULL != ppResumeState
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\ssoutils.cpp
+WinHttpCrackUrl(pResourceUri, 0, 0, &urlComponents)
+resourceUri.assign(pResourceUri, uriLength)
+resource
+requestParameters.emplace(L"resource", utl::move(resourceUri)).first != nullptr
+requestParameters.emplace(L"authority", pAuthUri).first != nullptr
+_GetAADToken
+(((HRESULT)(hr)) >= 0) || (((HRESULT)0x85050002) == hr)
+account->get_WebAccountProvider(&provider)
+GoogleOAuthURI
+GoogleOAuthTokenURI
+GoogleOAuthRedirectURI
+GoogleUserInfoURI
+GoogleDefaultPadding
+862726500644-mba83qqf9kq69c5mk9u5h2dn4iocdspq.apps.googleusercontent.com
+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email
+https%3A%2F%2Fmail.google.com
+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcarddav
+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar
+YahooOAuthURI
+YahooOAuthTokenURI
+YahooOAuthRedirectURI
+YahooUserInfoURI
+YahooDefaultPadding
+dj0yJmk9QzFFaHJsUnphMjlnJmQ9WVdrOVZUVk9iMWhCTXpZbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1lYw--
+sdpp-w
+mail-x
+sdct-w
+ycal-w
+MicrosoftOAuthURI
+MicrosoftOAuthTokenURI
+MicrosoftOAuthRedirectURI
+MicrosoftUserInfoURI
+MicrosoftDefaultPadding
+000000004011621F
+service::ssl.live.com::MBI_SSL
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\oauthaccountutil.cpp
+scopes->append(pProviderInfo->ScopeAccountInfo)
+scopes->append(pProviderInfo->ScopeSeperator)
+scopes->append(pProviderInfo->ScopeMail)
+scopes->append(pProviderInfo->ScopeContacts)
+scopes->append(pProviderInfo->ScopeCalendar)
+emails
+account
+pUsername->assign(hstrAccount.GetRawBuffer(nullptr))
+email
+pUsername->assign(account.GetRawBuffer(nullptr))
+url.append(pAppend->c_str(), c_MaxParamSize)
+url.append(pAppend->c_str())
+pUrlParam->append(escapedUrl.c_str())
+device_id=
+pIdParams->append(L"device_id=")
+deviceName.assign(values)
+&device_name=
+pIdParams->append(L"&device_name=")
+deviceModel.assign(values)
+&device_model=
+pIdParams->append(L"&device_model=")
+username=
+customAuthParams.append(L"username=")
+customAuthParams.append(escapedUsername.c_str())
+access_type=offline
+customAuthParams.append(L"access_type=offline")
+customAuthParams.append(L"&")
+customAuthParams.append(idParams)
+((HRESULT)0x80070057L) != hr
+E_INVALIDARG != hr
+request.append(accountInfoURI)
+?access_token=
+request.append(L"?access_token=")
+request.append(pAccessToken)
+(200 == httpStatus)
+StringCchCopyW(retVal, bufferLength, localUsername.c_str())
+accountConfig.CoCreateInstance(__uuidof(ActiveSyncApp))
+RPSToken
+StringCchLengthW(pMatchedAddress, (2147483647 - 1), &addressLength)
+StringCchCopyW(retVal, addressLength, pMatchedAddress)
+2UuwarE
+Windows.Data.Json.JsonObject
+SNProviderAccountName
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\msautils.cpp
+SsoProviderMSA == providerType
+SafeCustomerId
+SafeCustomerId is: '%S', parsed value: %I64d, end index: %d
+GetMsaCustomerId
+0 != *pCustomerId
+Software\Microsoft\AccountSettings
+HRESULT
+LASTATTEMPTTIME
+LASTSUCCESSTIME
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\pluginerror.cpp
+dwRC == 0L
+dwSize == sizeof(DWORD)
+WindowsLiveActiveSync
+WindowsLiveStorage
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\liveendpoints.cpp
+pEndPoint->assign(pStringValue.get())
+((HRESULT)0x80070057L)
+onecoreuap\base\MailContactsCalendarSync\Porting\Inc\EntryIdEx.h
+(0 != nSize)
+pEntryId->assign(tempEntryId)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\synchttputils.cpp
+packageName.assign(c_emailProductId)
+packageName.append(L"!")
+packageName.append(storeIdAsString)
+{5B04B775-356B-4AA0-AAF8-6491FFEA5614}
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\oauthtokenutil.cpp
+currRefreshTokenValid
+newAccessTokenValid
+(((HRESULT)(_IsValidToken(currentToken, &valid))) >= 0) && (0 != valid)
+SUCCEEDED(_IsValidToken(currentToken, &valid)) && (FALSE != valid)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\accountpropertyutils.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\policyutil.cpp
+StringFromGUID2(partner, partnerString, (sizeof(*RtlpNumberOf(partnerString))))
+policyKey.append(pPolicyInfo->pwszPolicyKey)
+policyKey.append(L"\\")
+policyKey.append(pPolicyInfo->pwszPolicyName)
+policyKey.append(partnerString)
+0L == lResult
+(dwType == ( 4ul ))
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\guidenumerator.cpp
+gvType == GUID_VALIDATION_GUID || gvType == GUID_VALIDATION_DATASOURCE
+DeleteInProgress
+Engine
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\easheartbeatcontroller.cpp
+pReportError
+pIsTimeoutError
+LastSuccessfulHeartbeat
+StoreType
+MaxEmailHTMLBodyTruncationSize
+MaxAttachmentSize
+MaxEmailBodyTruncationSize
+MaxEmailAgeFilter
+MaxCalendarAgeFilter
+RequireManualSyncWhenRoaming
+RequiredSignedSMIMEAlgorithm
+RequiredEncryptionSMIMEAlgorithm
+AllowSMIMESoftCerts
+AllowSMIMEEncryptionAlgorithmNegotiation
+RequireSignedSMIMEMessages
+RequireEncryptedSMIMEMessages
+SMIMEAlwaysSign
+SMIMEAlwaysEncrypt
+Software\Microsoft\ActiveSync\Security\Provision
+HTMLTruncation
+MailBodyTruncation
+MailFileAttachments
+PreferredBodyType
+CalendarAgeFilter
+EmailAgeFilter
+SyncWhenRoaming
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\heartbeatalgorithmbase.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\synclogger.cpp
+StringCchCopyW( m_logPrefix, (sizeof(*RtlpNumberOf(m_logPrefix))), pSettings->logFilePrefix)
+StringCchCopyW( m_logPostfix, (sizeof(*RtlpNumberOf(m_logPostfix))), pSettings->logFilePostfix)
+m_accountName.assign(pSettings->pAccountName)
+StringCchCopyW(pDestinationFileName, 260, pDefaultName)
+m_accountName.assign(L"ServerLog")
+%s%s%s-%d.txt
+StringCchPrintfW( pFileName, 260, L"%s%s%s-%d.txt", m_logPrefix, sanitizedFileName, m_logPostfix, logNumber)
+originTag.assign(pOriginTag)
+[%02d/%02d/%04d %02d:%02d:%02d.%03d] 
+StringCchPrintfA(timeStamp, (sizeof(*RtlpNumberOf(timeStamp))), "[%02d/%02d/%04d %02d:%02d:%02d.%03d] \r\n", SystemTime.wDay, SystemTime.wMonth, SystemTime.wYear, SystemTime.wHour, SystemTime.wMinute, SystemTime.wSecond, SystemTime.wMilliseconds)
+originTag.append(timeStamp)
+StringCchPrintfA( partnerHeader, (sizeof(*RtlpNumberOf(partnerHeader))), c_partnerMapping, partnerGuid, TraceGetPartnerId(m_partner))
+StringCchCopyW(lineBuffer + HEX_LINE_CHARS, destinationSize, L"\r\n\0")
+StringCbLengthA(pData, 2147483647 * sizeof(CHAR), &stringSize)
+data.reserve((1024 * 60)+1)
+*pEndToken == 0
+*pEndToken == NULL
+pEndToken == pToken
+--= Protocol logs for PARTNER='%S', CTRLLOG ID=0x%08X =--
+=-=-=-= Client Request =-=-=-  Timestamp: 
+=-=-=-= Server Response =-=-=- Timestamp: 
+=-= Build %d =-=
+NextLogNumber
+DefaultLogging
+DisablePIIStripping
+LogRollOverSize
+NumberOfLogs
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\enumsource.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\popimapsourceinfo.cpp
+source != GUID_INVALID
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\activesyncsourceinfo.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\authtargettype.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\basicauthhandler.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\oauthhandler.cpp
+!accessToken.empty() && !_IsCurrentTimePastExpirationTime(expirationTime)
+EASAccountId
+Software\Microsoft\PPI\Settings\DeviceAccount
+UseBuiltInTeamDeviceAccount
+https://outlook.office.com
+GetActivationFactory( HStringReference(RuntimeClass_Microsoft_PPI_CredentialManagement_DeviceCredentialUtility).Get(), &credentialUtilities)
+ResourceUrl
+credentialUtilities->GetAccessToken( HStringReference(c_scope).Get(), HStringReference(resource.get()).Get(), tokenResult.GetAddressOf())
+credentialUtilities->GetAccessToken( HStringReference(c_scope).Get(), HStringReference(c_defaultResource).Get(), tokenResult.GetAddressOf())
+_IsValidToken(refreshToken)
+client_id=%s&client_secret=%s&grant_type=refresh_token&refresh_token=%s&scope=%s
+tlx::assign_sprintf( requestBody, L"client_id=%s&client_secret=%s&grant_type=refresh_token&refresh_token=%s&scope=%s", _GetClientId().c_str(), _GetClientSecret().c_str(), pRefreshToken, _GetScope().c_str())
+postLocation.assign(m_refreshUri)
+Content-Type: application/x-www-form-urlencoded
+(!!parsed)
+access_token
+jsonObject->GetNamedString( HStringReference(L"access_token").Get(), accessToken.GetAddressOf())
+_IsValidToken(accessToken.GetRawBuffer(nullptr))
+token_type
+refresh_token
+expires_in
+pRefreshToken->assign(refreshToken.GetRawBuffer(nullptr))
+pAccessToken->assign(accessToken.GetRawBuffer(nullptr))
+nullptr == buffer.insert( buffer.end(), readBuffer, readBuffer + readCount)
+UIntPtrToInt(buffer.size(), &bufferSize)
+0 != wideCount
+responseBody.reserve(++wideCount)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\easauthtargettype.cpp
+ACTIVESYNC_DATASOURCE_EXCHANGE == accountType
+pBackendServiceType->assign(pServiceType)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\easaadauthhandler.cpp
+pTargetType == AuthTargetType::GetAuthTargetType(AuthTargetKind::ExchangeActiveSync)
+_GetBackendType() == c_pExchangeServiceType
+(nullptr != pAuthTarget) && (L'\0' != *pAuthTarget)
+https://
+http://
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\ssoauthhandler.cpp
+name.assign(pName)
+value.assign(pValue)
+position != nullptr
+SsoTokenTarget
+!token.empty() && ((nullptr == pCurrentToken) || (token != pCurrentToken))
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\ppiauthhandler.cpp
+ActivateInstance( HStringReference(RuntimeClass_Microsoft_PPI_CredentialManagement_PPIDeviceCredentialReader).Get(), &reader)
+reader->Read(&credential)
+credential->get_Password(&securePassword)
+securePassword->Get(&passwordLength, &pPassword)
+pCredential->assign(pPassword, passwordLength)
+pCredential->get_UserPrincipalName(&userPrincipalName)
+pCredential->get_Username(&userName)
+pCredential->get_Domain(&domain)
+pString->Get(&length, &pStringValue)
+pValue == tlx::iwstring_view_ascii(pStringValue, length)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\enumsourceregsimple.cpp
+m_ge.IsInitialized()
+Software\Microsoft\ActiveSync\Partners
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\enumdatatypereg.cpp
+m_datatypeList.reserve(4)
+m_datatypeList.push_back(guidType)
+onecoreuap\private\base\inc\CommsPoomHelpers.h
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\syncstatusnotification.cpp
+pEventData
+notificationData && (0 != byteCountNotificationData)
+SyncStatusEventType_None == pEventData->eventType || SyncStatusEventType_Reset == pEventData->eventType
+konecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\ssoaccountscallbackregistration.cpp
+ActivateInstance( HStringReference(RuntimeClass_Windows_Internal_Security_Authentication_Web_TokenBrokerInternal).Get(), &listener)
+listener->add_AccountAdded(addedHandler.Get(), &addedToken)
+listener->add_AccountChanged(changedHandler.Get(), &changedToken)
+listener->add_AccountDeleted(deletedHandler.Get(), &deletedToken)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\jsonhelpers.cpp
+convertedBufferSize != 0
+charsConverted != 0
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\oauthhelper.cpp
+m_startURL.assign(pStartURL)
+m_endURL.assign(pEndURL)
+m_refreshURL.assign(pRefreshURL)
+m_clientId.assign(pClientId)
+m_clientSecret.assign(pClientSecret)
+m_scopes.assign(pScopes)
+m_redirectURL.assign(pRedirectURL)
+m_userNameHint.assign(pUsernameHint)
+m_customAuthParams.assign(pCustomAuthParams)
+request.append(m_startURL)
+?client_id=
+request.append(L"?client_id=")
+request.append(m_clientId)
+&response_type=
+request.append(L"&response_type=")
+token
+request.append( (OAuthGrantType::Implicit == grantType) ? L"token" : L"code")
+&scope=
+request.append(L"&scope=")
+request.append(m_scopes)
+&login_hint=
+request.append(L"&login_hint=")
+request.append(escapedUsername.c_str())
+&redirect_uri=
+request.append(L"&redirect_uri=")
+request.append(escapedRedirectUri.c_str())
+request.append(L"&")
+request.append(m_customAuthParams)
+GetActivationFactory( HStringReference(RuntimeClass_Windows_Foundation_Uri).Get(), &uriFactory)
+uriFactory->CreateUri(HStringReference(request.c_str()).Get(), &startUri)
+uriFactory->CreateUri(HStringReference(m_redirectURL.c_str()).Get(), &callbackUri)
+GetActivationFactory( HStringReference(RuntimeClass_Windows_Security_Authentication_Web_WebAuthenticationBroker).Get(), &wabBrokerStatics)
+factory->ActivateInstance(&inspectable)
+inspectable.As(&initWithWindow)
+initWithWindow->Initialize(callerWindow)
+wabBrokerStatics->AuthenticateWithCallbackUriAndContinue( startUri.Get(), callbackUri.Get())
+protocolReturnData.assign(pAuthCodeResponse)
+code=
+(utl::wstring::npos != beginIndex)
+client_id=
+request.append(L"client_id=")
+&client_secret=
+request.append(L"&client_secret=")
+request.append(m_clientSecret)
+&grant_type=authorization_code
+request.append(L"&grant_type=authorization_code")
+&code=
+request.append(L"&code=")
+request.append(protocolReturnData, beginIndex, authCodeLength)
+uri.assign(pProtocolReturnData)
+&grant_type=refresh_token
+request.append(L"&grant_type=refresh_token")
+&refresh_token=
+request.append(L"&refresh_token=")
+request.append(pRefreshToken)
+(expirationTime == (double)((int)expirationTime))
+(_itow_s((int)expirationTime, conversionBuffer, 10) == 0)
+pAcessToken->assign(accessToken.GetRawBuffer(nullptr))
+pTokenExpirationTime->assign(conversionBuffer)
+pTokenType->assign(tokenType.GetRawBuffer(nullptr))
+StringCchCopyW(pBuffer, bufferLength, value.c_str())
+tlx::append_sprintf(tempString, L"%s=", paramName)
+pValue->append(uri, beginIndex, valueLength)
+UrlUnescapeW(pValue->data(), nullptr, nullptr, 0x00100000)
+Tonecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\internetmailauthtargettype.cpp
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\smtpauthtargettype.cpp
+Basic
+%s:%s
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\plaintextauthhandler.cpp
+tlx::assign_sprintf( wideCredentials, L"%s:%s", GetAccount(), pCredential)
+tlx::assign_wide( multiByteCredentials, wideCredentials, 0)
+encodedCredentials.reserve(encodedSize)
+Basic %hs
+tlx::assign_sprintf( *pAuthorization, L"Basic %hs", encodedCredentials.c_str())
+%s %s
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\webauthhandler.cpp
+tlx::assign_sprintf( *pAuthorization, L"%s %s", m_authScheme.c_str(), pCredential)
+onecoreuap\base\mailcontactscalendarsync\utils\syncutil\lib\accessorutils.cpp
+pValue->assign(GetVariantString(&propValue, L""))
+1.3.6.1.4.1.311.71.1.1
+1.3.6.1.4.1.311.71.1.2
+1.3.6.1.5.5.7.3.2
+Microsoft Smart Card Key Storage Provider
+Software\Microsoft\ActiveSync\Security\Provision
+Software\Microsoft\ActiveSync\Partners
+Software\Microsoft\ActiveSync
+\MailContactsCalendarSync\LiveDomainList.txt
+onecoreuap\base\mailcontactscalendarsync\utils\syncsqm\lib\sqmpartnertype.cpp
+yahoo
+(0 != ret)
+pDomain->assign(pszDomainName)
+*~*~*~*~*~*~*~*~*~*
+IeRtUtil.dll
+00000000-0000-0000-0000-000000000000
+rpmsg.message
+IPM.Schedule.Meeting.Notification.Forward
+IPM.Schedule.Meeting.Canceled
+IPM.Schedule.Meeting.Resp.Tent
+IPM.Schedule.Meeting.Resp.Neg
+IPM.Schedule.Meeting.Resp.Pos
+IPM.Schedule.Meeting.Request
+Assert
+FallbackError
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+FallbackError
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+FailureTrigger
+errorCode
+expression
+Warning
+Error
+GetWebTokenTimedOut
+componentId
+componentName
+functionName
+watchdogStartTime
+watchdogDurationMs
+TokenBrokerError
+Status
+TokenBrokerError
+OneSyncError
+providerErrorText
+SyncUtil_XMLParse_LoadFailFilePos
+filePos
+SyncUtil_XMLParse_LoadFailSrcText
+srcText
+SyncUtil_XMLParse_LoadFailUrl
+SyncUtil_XMLParse_LoadFailReason
+reason
+SyncUtil_XMLParse_LoadFailHresult
+error
+CredUtil_UpdatePasswordForAccount
+partnerId
+hrDelete
+hrRewrite
+Trace
+SyncUtil_OAuth_RefreshTokens
+partnerId
+tokenType
+expirationTime
+SyncUtil_OAuth_RefreshTokens
+tokenType
+expirationTime
+SyncUtil_OAuth_GetTokensFromAuthCode
+tokenType
+expirationTime
+Microsoft.Windows.Unistack.FailureTrigger
+Microsoft.Windows.OneSync.DiagCritical
+Microsoft.Windows.OneSync.DiagWarning
+Microsoft.Windows.OneSync.DiagError
+Microsoft.Windows.OneSync.SyncUtil
+Microsoft.Windows.OneSync.DiagTrace
+RSDS8k
+SyncUtil.pdb
+.rdata$brc
+.rdata$T$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+ATL$__a
+ATL$__m
+ATL$__z
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+u$WSQ
+q(9>u
+90u:hpc
+vThH'
+v,Shd'
+QQhL(
+QQSVW
+93uHWV
+&PWSV
+D$<L(
+QQhH(
+D$4H(
+L$l_^[3
+y'Qj4
+yBQji
+f9;t-
+QQSVW
+u7j"[
+QQSVW
+u*QhY
+D$4Pj
+y:Qhx
+QSh8/
+QQSVW
+QWh8/
+$tG9T
+YY_^[
+t;jE^V
+t&j<_
+t1j_^V
+u!ja_
+YYQjv3
+gj<_W3
+D$(VP
+|$$PVV
+QQVWh
+D$0Pj
+QWh@5
+u6j1^V
+D$(9D$ t
+D$$Ph,F
+L$ QW
+D$0SVW
+\$$Pj@hpD
+D$ Ph
+Pj8h@F
+|$$PQQ
+QQVWh
+QPh$J
+Qj6Q3
+QjNQ3
+QjcQ3
+QQSVW
+QQVWQ
+y5jC_
+D$ SV
+u5j*[S
+L$,_^[3
+SVWu4jS_W
+90t6jb_W
+SVWu6
+,SVWPj
+|$ PQ
+|$ PQ
+D$09D$(t
+WVh0Y
+VVh0Y
+L$8Qj7P
+D$DPj
+L$(Qj,P
+VWhDY
+PWh$Y
+L$8hxV
+D$ 9D$
+D$ j@3
+D$(Ph
+D$dSP
+SSj P
+D$`Pj Z
+|$$PQQ
+M QRSP
+9D$ u?
+D$ Pj
+Xf9D$ 
+Xf9D$
+L$0Qj
+[f9\$0t
+L$ Qj
+f9\$ u
+L$pQj
+L$`Qj
+L$PQj
+L$@Qj
+u1jX[S
+y1jf[S
+t8WjJ_W
+u8WjP_W
+QShH_
+QSh$_
+QShl_
+QSh|^
+QShH^
+D$(SVW
+|$$PQQ
+QQSVW
+$Qjv3
+QQSVW
+u4j`^V
+r=VWju_
+PQQQQ
+VPhPb
+s!Qh>
+D$DS3
+tk!\$
+t+Qho
+L$L^[3
+D$ Pj
+y1Qh_
+aSPh6&
+QSh0`
+D$4PW
+QWh0`
+SVWj$
+L$$QP
+9|$$|7Q
+D$0Pj
+L$ QP
+D$0Pj
+D$0Pj
+D$0Pj
+L$(QP
+D$0Pj
+L$d_^[3
+D$Hj'PV
+D$(SP
+y"j"_
+L$DGW
+D$|j@SP
+SVWu4
+L$(Qhb
+tDjV^V
+u5jC^V
+D$ 9D$
+D$ 9D$
+A0+A4
+t6j@^
+If90u
+C ;L$
+D$@9D$8t
+D$ 9D$
+D$09D$(t
+RQh`k
+D$(9D$ t
+D$89D$0t
+u<Sj=[S
+QjRh8m
+u0j]^V
+QjaW3
+QjkW3
+QjoW3
+t\jN_W
+|$$PQQ
+|$$PQQ
+SVWj8
+tcPRQ
+D$$PV
+u2j@^
+y!jF_
+jI_PQ
+y$jK_
+L$t_^[3
+D$Hxr
+D$0xr
+D$TPh
+D$(xr
+D$DPh
+L$(Qj
+j=Zf;T^
+|$$PQQ
+QjbQ3
+D$`SVW
+L$l_^[3
+_^[Y]
+QjCQB
+C(QPh
+C@QPh
+C8QPh
+C<QPh
+~$9~(t
+~(9~<t
+~<9~8t
+~89~,t
+~,_^]
+VPhl|
+u)j@3
+PVVVVC
+VWSh0}
+y]Qhg
+D$ SVW
+y!j\_
+tSWSW
+y"ju_
+u1j:^V
+t$ Yt@+
+D$ QQ
+L$<_^[3
+y)Qh<
+u:j6_W
+t:j7^V
+u5j>^V
+L$<_^[3
+u8Sjn[S
+|$$PQQ
+ij<^V
+u,jT_
+u,j[_
+y#Qjm3
+QQSVWh
+YY_^]
+y Qjn3
+@v4j@V
+D$HPWh
+D$(Pj
+D$09D$(
+D$(;D$,
+L$8+D$(
+#D$<PS
+D$P9D$Ht
+D$@9D$8t
+D$(9D$ t
+D$89D$0t
+SVWPh$
+@f94Bu
+yMQjH3
+D$LPj
+D$d9D$\t
+D$49D$,t
+D$D9D$<t
+D$T9D$Lt
+D$d9D$\t
+D$49D$,t
+D$D9D$<t
+D$T9D$Lt
+D$$9D$
+D$$SP
+D$ Pj
+\$ PR
+PWSSh
+PSSh 
+PSSh@
+u2jB_
+j)[SP
+u/j+^
+u4j0_
+u!j:_
+L$0+D$ 
+uVj;_
+D$(9D$ t
+D$(9D$ t
+D$89D$0t
+y%Qjj
+L$,QP
+9t$ u<
+|$ h@
+1f;2u
+L$0j(QP
+u7jU_
+u$jY_
+u*j[_
+u!j\_
+u.j]_
+D$0PVV
+t+ju_
+D$ 9D$
+y*Qh8
+QQQQQ
+w PQQQQS
+^SSSSh
+u5jo^V
+u5jp^V
+D$`PS
+L$PQhz
+kD$X<
+L$@Qh{
+kD$H<
+L$0Qh|
+kD$8<
+L$ Qh}
+kD$(<
+D$`SVW
+L$<Pj
+L$l_^[3
+Q 9Q(}
+Nf9>u?h
+G Ph$
+PPPPQ
+L$\_^[3
+t$VSW
+D$$SP
+D$FPh
+D$8QP
+D$ 9D$
+PPPPQ
+u!j!_
+u!j!_
+QSVW3
+y&QjR3
+D$09D$(t3S
+D$09D$(t
+D$ 9D$
+y'QjpQ3
+D$ 9D$
+rXQPW
+PPPPVRP
+SSRPV
+D$ 9D$
+$VWP3
+u/jj^
+u5j<^V
+u3WjK_W
+D$ 9D$
+D$09D$(t
+D$@9D$8t
+u,jt_
+90u0jz_
+9D$(t
+D$09D$(
+9D$(t
+D$ 9D$
+D$0Pj<h l
+y'j5^
+L$$QP
+y$jC^
+u-jR^
+t$(PQ
+F$u3Q
+u(jL_
+VWPhl|
+u2j8_W
+u5j<^V
+D$ PQ
+Pj@hpD
+L$HQVP
+y'j6^
+L$PQVP
+y,jF^
+t$ PQ
+L$`QVP
+y)jW^
+t$ PQ
+PPSWPh
+VSWRh
+u)j _
+u)j"_
+u!jP_
+u)jQ_
+L$ +C<
+u)jS_
+u$jV_
+L$ +C\
+u*jX_
+u5j\_
+D$TPj
+uLj`_
+D$\9D$T
+D$\9D$Tt
+D$DPj
+u$jf_
+u$jg_
+u!jl_
+u5jm_
+D$XPj
+y'jt_
+y'jw_
+y'jz_
+L$8Qhh
+L$4QP
+D$L9D$Dt
+D$(9D$ t
+F@+F<
+C0+C,
+D$ 9D$
+D$$PW
+D$(9D$ t
+D$@hP
+D$<Q+
+L$,SP
++|$(PSW
+u!j/_
+y$j=_
+D$ 9D$
+D$09D$(t
+D$@9D$8t
+D$(9D$ t
+D$89D$0t
+D$H9D$@t
++9>u6
+ SVW3
+1f;2u
+D$4CV3
+D$(Pj
+;D$<u
+D$@9D$8t
+VVVVGW
+VVVVj
+QQVW3
+WWWRQ
+xZSVW
+jPRPj
+SSShh
+PWSh?
+PVQh?
+PVSh?
+jPSPQRV
+PSSh<%
+QjlQ3
+u.QhY
+D$ YY
+L$ HP
+D$ Pj
+D$,Ph
+WWWWWWhN
+t&hDk
+Y__^[
+QRPh<?
+QRPh\?
+QRPh|?
+QRPh<@
+QRPh\@
+QRPh|@
+PQQSVW
+Y__^[
+FreeCredentialsHandle
+WinHttpCrackUrl
+CryptBinaryToStringW
+CryptBinaryToStringA
+CryptStringToBinaryW
+CryptStringToBinaryA
+CertFreeCertificateChain
+CertFreeCertificateChainEngine
+CertGetEnhancedKeyUsage
+CertGetCertificateContextProperty
+CertGetNameStringW
+CertCompareCertificateName
+CertGetCertificateChain
+CryptAcquireContextW
+CryptCreateHash
+CryptHashData
+CryptGetHashParam
+CryptDestroyHash
+CryptReleaseContext
+SHCreateMemStream
+SHGetKnownFolderPath
+CoGetObject
+QueryTransientObjectSecurityDescriptor
+FreeTransientObjectSecurityDescriptor
+MAPIFreeBuffer
+HrGetOneProp
+GetMsgStoreFromMessage
+FreeProws
+MAPILogonEx
+MAPIUninitialize
+MAPIInitialize
+HrSetOneProp
+SetConversationId
+USOIDfromCEENTRYID
+MAPIAllocateBuffer
+POutlookAppManager_CreateInstance
+GetPartnerGUID
+GetMeetingNotificationFromMessage
+SafeLPWSTR
+BytesToDigits
+CreateWrapFileStm
+EscapeURL
+ParseDelimitedString
+ConvertVariantTimeToFileTime
+MinutesBetweenFT
+EnableInProcTracingForProvider
+CompressWhitespaceNW
+LMNOPQYZ[_`abdemq
+SYNCUTIL.dll
+DeviceNeedsProvisioning
+GetAuthority
+GetGalSearchResultsFolderAndPartnerGuidEx
+GetProviderUri
+GetWebAccountId
+GetWebAccountProvider
+GetWebAccountProviderFromProviderId
+InitializeServerReadyEvents
+IsACOn
+IsScreenOn
+MarkServerReady
+MarkServerShutdown
+OpenProviderKey
+UninitializeServerReadyEvents
+UpdateYahooAccountType
+WaitForServerReady
+WaitForSignalOrShutdown
+AcquireDataStoreLock
+AcquireDataStoreLockEx
+AggregateAccountSyncStats
+AggregateSessionSyncStats
+CloseDataStoreLock
+CoCreateInstanceElevated
+CreateAuthHandler
+CreateDataStoreLock
+CreateSyncBufferedStream
+CredVaultDelete
+CredVaultRead
+CredVaultWrite
+DeleteAuthCertHash
+DeleteDataSource
+DeleteHttpTransport
+DeleteOAuthRefreshTokenForPartnership
+DeletePwd
+DllCanUnloadNow
+DllGetClassObject
+DoesServerSupportAutoMoveSentItem
+FindErrorCode
+GetAADToken
+GetAccountSyncStats
+GetAccountUsernameFromToken
+GetAuthCertHash
+GetAuthCertTargetAndUser
+GetBatterySaverWnfName
+GetCurrentSyncStats
+GetCurrentSyncStatsForMessage
+GetCurrentSyncStatsForStore
+GetDefaultDeviceType
+GetDefaultMsaWebAccountId
+GetDefaultStoreDirty
+GetDomainFromEmail
+GetGoldenPartnershipId
+GetMonitorDisplayState
+GetMsaCustomerId
+GetOAuthAccessTokenForPartnership
+GetOAuthHelperForAccount
+GetOAuthHelperForProvider
+GetOutgoingMessageSizeLimit
+GetSHA1HashOfString
+GetSessionSyncStats
+GetSyncTargetName
+GetSyncWorkOnBehalfTicket
+HasNeverSyncedSuccessfully
+InitializeCredVault
+InitializeMeContact
+InitializeMsaStore
+InitializeSyncStatus
+InvalidateOAuthAccessTokenForPartnership
+IsFirstSyncEver
+IsMatchingClientCertificateEx
+IsPwdSaved
+IsValidAADAuthUri
+LoadHeartbeatValues
+LogSyncBiweeklySQM
+MarkUserDataAccountAsHidden
+OAuthHelper_CreateInstance
+OpenMimeBufferedStream
+ReadOAuthRefreshTokenForPartnership
+ReadPasswordForPartnership
+RegisterSsoAccountsCallback
+ReleaseDataStoreLock
+SetAuthCertHash
+SetBatterySaverWnfName
+SetDefaultStoreDirty
+SetMonitorDisplayState
+SetOutgoingMessageSizeLimit
+SetSyncWorkOnBehalfTicket
+SyncSqmUpdateStats
+TryGetDefaultSignInAccountInfo
+VerifyDataStoreLockOwner
+WriteOAuthRefreshTokenForPartnership
+WritePasswordForPartnership
+_vsnwprintf
+memcpy_s
+_purecall
+_strnicmp
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+_except_handler4_common
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+_errno
+RtlCaptureContext
+RtlReportException
+ntdll.dll
+MCCSPal.dll
+VaultGetItemType
+VaultCreateItemType
+VaultOpenVault
+VaultAddItem
+VaultGetItem
+VaultRemoveItem
+VaultCloseVault
+VaultFree
+VAULTCLI.dll
+GetModuleFileNameA
+InitOnceBeginInitialize
+CreateSemaphoreExW
+HeapFree
+SetLastError
+EnterCriticalSection
+ReleaseSemaphore
+GetModuleHandleExW
+CoCreateInstance
+EventUnregister
+LeaveCriticalSection
+InitializeCriticalSection
+WaitForSingleObject
+GetCurrentThreadId
+ReleaseMutex
+EventSetInformation
+FormatMessageW
+GetLastError
+OutputDebugStringW
+InitOnceComplete
+WaitForSingleObjectEx
+OpenSemaphoreW
+CloseHandle
+RaiseException
+HeapAlloc
+EventRegister
+GetProcAddress
+CreateMutexExW
+DeleteCriticalSection
+GetCurrentProcessId
+GetProcessHeap
+EventWriteTransfer
+GetModuleHandleW
+DebugBreak
+IsDebuggerPresent
+MultiByteToWideChar
+WideCharToMultiByte
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetTickCount
+RegGetValueW
+LoadLibraryW
+FreeLibrary
+LocalAlloc
+LocalFree
+RoGetActivationFactory
+WindowsDeleteString
+WindowsGetStringRawBuffer
+WindowsCreateStringReference
+SetEvent
+CreateEventExW
+CoWaitForMultipleObjects
+GetTickCount64
+SetThreadpoolTimer
+WaitForThreadpoolTimerCallbacks
+CloseThreadpoolTimer
+CreateThreadpoolTimer
+CoInitializeEx
+CoUninitialize
+GetSystemTime
+RegCloseKey
+CreateEventW
+ResetEvent
+WaitForMultipleObjects
+SystemTimeToFileTime
+GetVersionExW
+OpenThreadToken
+GetCurrentThread
+OpenProcessToken
+GetTokenInformation
+StringFromGUID2
+CreateMutexW
+OpenMutexW
+InitializeCriticalSectionEx
+LoadLibraryExW
+LoadStringW
+RegOpenKeyExW
+CLSIDFromString
+ReleaseSRWLockExclusive
+RegDeleteTreeW
+DeleteFileW
+PathCchCombine
+PathCchAddBackslash
+CreateFileW
+GetFileAttributesExW
+CoTaskMemFree
+GetLocalTime
+RegQueryValueExW
+FileTimeToSystemTime
+RegQueryInfoKeyW
+RegEnumKeyExW
+GetModuleFileNameW
+InitializeSRWLock
+AcquireSRWLockExclusive
+CompareFileTime
+GetProductInfo
+RegSetValueExW
+CoTaskMemAlloc
+RoActivateInstance
+WindowsCreateString
+DuplicateHandle
+GetFileSize
+ReadFile
+RegCreateKeyExW
+RegDeleteValueW
+RegEnumValueW
+LCMapStringW
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+OLEAUT32.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-path-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-2-0.dll
+GetSystemPowerStatus
+RegOpenKeyW
+RegDeleteKeyW
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-registry-l2-1-0.dll
+lstrcmpiW
+api-ms-win-core-string-obsolete-l1-1-0.dll
+UrlUnescapeW
+api-ms-win-core-url-l1-1-0.dll
+SyncGetDeviceUniqueID
+DMCfgUtils.dll
+GetOrCreateNullPowerDependencyCoordinatorManager
+CHttpTransport_CreateInstance
+SyncWerReportComponentName
+SyncWerReportGenerator
+SyncPdcReference_WatchdogsEnabled
+SyncPdcReference_WatchdogReport
+NetworkHelper.dll
+StrStrIW
+api-ms-win-downlevel-shlwapi-l1-1-0.dll
+_vscwprintf
+_vsnwprintf_s
+_wcsicmp
+wcschr
+wcscat_s
+wcsnlen
+wcsncmp
+_i64tow_s
+_wcstoui64
+_vsnprintf
+wcsrchr
+isalnum
+strspn
+strcspn
+_wtoi
+_itow_s
+wcstok_s
+wcsstr
+wcscspn
+__CxxFrameHandler3
+RtlIsCriticalSectionLockedByThread
+RtlGetDeviceFamilyInfoEnum
+RtlIsMultiSessionSku
+RtlGetThreadWorkOnBehalfTicket
+RtlClearThreadWorkOnBehalfTicket
+RtlSetThreadWorkOnBehalfTicket
+WinSqmStartSession
+WinSqmEndSession
+WinSqmAddToStreamEx
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+WakeAllConditionVariable
+SleepConditionVariableSRW
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+lstrcmpW
+_ftol2_sse
+memcmp
+memcpy
+memmove
+memset
+WEVT_TEMPLATE
+EventData
+P1_HResult
+P2_String
+P3_UInt32
+P1_HResult
+P2_String
+P3_UInt32
+EventData
+P1_HexInt32
+P1_HexInt32
+EventData
+P1_UnicodeString
+P1_UnicodeString
+H!ZIg\
+EventData
+P1_Int32
+P1_Int32
+TEMPP
+EventData
+Prop_String1
+Prop_String2
+Prop_String3
+Prop_AnsiString
+Prop_String1
+Prop_String2
+Prop_String3
+Prop_AnsiString
+EventData
+Prop_Dword
+Prop_StringA_1
+Prop_StringA_2
+Prop_Dword
+Prop_StringA_1
+Prop_StringA_2
+TEMPT
+f&8).
+EventData
+Prop_String1
+Prop_FileTime1
+Prop_String1
+Prop_FileTime1
+TEMPH
+EventData
+Prop_HexInt32
+Prop_String
+Prop_HexInt32
+Prop_String
+PRVAT
+Microsoft-Windows-MCCS-SyncUtil
+OPCOT
+win:Start
+win:Stop
+win:Error
+win:Warning
+win:Informational
+win:Verbose
+TASKX
+SPERF_TAG_LOAD_XMLDOM
+Error
+Performance
+CommsService
+Warning
+StateTransition
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Sync utilities for mail, contacts, calendar
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+SyncUtil
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+SyncUtil.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+WEVT_TEMPLATE
+en-US
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7,7D7H7L7P7X7`7l7p7t7
+8,80848L8P8T8\8l8p8t8|8
+949L9d9|9
+:8:P:X:\:`:d:t:x:|:
+6E7Q7d7
+7a9Q;
+<1=Q=r=v=|=
+>#>)>->A>P>Y>b>
+?1?v?
+30:0S0Z0
+0a1i1o1
+2(212:2@2Z2
+3=4]4q4
+6@6\6
+8-9^9o9|9
+:B:b:x:
+;!;<;V;g;
+<$<-<I<b<t<
+=r=y=
+0H1c1
+2>2G2S2`2v2
+3*323?3
+505d5
+5=6U6_6}6
+7A7]7i7
+8(939N9X97:u:
+<0<e<k<x<
+=(=1===E=W=
+0?1F1_1v1
+2&2:2@2D2I2O2S2
+3R3X3v3
+3E4g4z4
+555C5I5P5V5^5d5j5q5}5
+7J7Y7
+9>9O9^9e9
+9$:1:l:y:
+;3<9<@<T<`<g<
+1.1?1G1b1j1{1
+2,2E2s2
+5+535N5V5g5o5
+6#6Q6^6g6s6 7<7Y7w7
+7"8Z8
+8+9i9
+9%:U:a:y:
+;*<A<}<
+>-?4?@?p?z?
+4)414w4
+5=6r6
+7!7%7*70747b7
+8&8M8W8k8q8u8z8
+8L9_9g9t9|9
+:R:g:s:%;/;5;H;P;Y;y;
+;B<|<
+=)=3=J=i=s=
+>)>3>G>
+>"?B?
+1%1+181Z1a1
+2f2q2
+2'3A3V3`3t3
+5 5L5X5{5
+6+676<6`6
+7.7E7T7[7`7
+8%8*8W8
+9/9?9
+9$:L:j:
+:';7;<;i;
+<3<C<H<u<
+<*=9=>=k=
+>B>L>
+?B?g?q?
+1,1R1w1
+1O2_2d2
+3S3o3
+4!4m4}4
+4C5[5c5
+6'6/6
+8!8g8
+839K9S9#:\:
+;.;4;H;
+<N=o=O>o>|>
+???M?
+60=0T0
+0?1F1
+2C2|2
+2N3X3
+637G7O7
+8>8R8Z8
+959j9
+:1:D:L:Y:a:
+;.;9;c;t;
+;,<6<J<P<T<Y<_<c<
+?C?I?V?
+040>0~0
+101>1T1q1
+343O3v3
+4$434Q4m4
+4#5V5i5
+5<6\6
+8/8^8r8
+949p9
+=/=@=g=~=
+>(>6>C>v>
+040Q0r0
+1?1c1
+1*2D2
+3,3{3
+5%6]6
+6B7\7n7
+9Z:_:z:
+;S<X<s<
+?V?a?
+0 0P0[1
+1-2c2
+3)313n3
+3 444<4
+4%595A5
+6-6g6{6
+6(7R7i7
+8 8A8
+899M9U9
+:I:]:e:
+;";a;u;};
+;+<G<
+<:=N=V=
+>E>Y>a>
+?U?i?q?
+1 1P1x1
+2/2:2i2
+3 3P3O4q4
+5+5=5E5g5
+6+6J6P6]6o6w6
+727h7u7
+8!838=8Y8
+859~9
+:1:<:B:H:S:Y:r:x:
+;];u;};
+<1<a<
+232?2c2
+3?3V3m3
+4+4N4a4i4v4~4
+5b5{5
+5A6K6f6
+6$7=7\7h7
+8(8L8
+:$:k:
+;1;H;
+;!<(<7<
+=6>@>
+?9?U?_?
+2;2]2o2
+3I4]4}4
+455=5G5
+5+6B6[6|6
+6O7w7
+738:8A8Z8
+9?:y:
+;/<[<
+041L1T1
+2E2Y2a2
+3P3d3l3
+4*5>5F5
+556I6Q6
+7@7T7\7
+:<;S;
+;;<U<
+=8=E=
+?$?K?d?
+070e0
+181^1g1
+2&2H2
+3a3u3}3
+4G4V4a4
+5K5`5o5
+5.656O6|6
+6,7J7
+8/8P8
+969y9
+:,:4:x:
+;$;*;H;m;
+<X<p<x<
+<$=<=D=
+>V>n>v>
+?P?d?k?
+;>;x;
+;!<><P<^<g<q<y<
+=+?u?
+20282m2s2
+3<3~3
+6?6R6Z6g6o6
+7C7}7
+8$8\8
+9@9q9
+;/;J;
+;,<Y<|<
+>[>p>
+111J1i1x1
+292k2
+344T4
+4+5C5T5[5s5
+636i6
+6<7S7
+838I8W8
+949k9
+:V:i:
+:$;_;
+<S<}<
+?h?|?
+1-1R1
+1*2a2
+2$3z3
+4+4H4W4`4f4
+4\5p5x5
+676v6
+6$7N7
+7:8N8V8
+9A9J9P9v9
+:(:.:F:o:
+:';,;];
+<U<\<
+<E=Q=\=|=
+>k>w>
+?;?E?O?
+1<1~1
+253I3Q3
+6$6I6a6
+6 7%7
+:J:b:
+;Y;m;
+<)</<C<
+>P>c>k>x>
+>-?]?
+10Z0t0
+031@1V1
+2<2a2
+363H3`3
+545T5
+6B6n6.7W7d7
+96:J:R:
+;C;W;_;
+<.<U<k<
+?!?G?}?
+4'4.494@4
+6(606m6
+737;7]7p7x7
+7U8x8
+8/9?9Q9k9
+:,:Y:
+:6;I;b;
+<6=`=
+>&>Y>`>
+?;?`?
+0T0p0
+0"1>1
+4#404
+;9;F;[;r;
+<%=8=@=M=U=
+>#?(?
+1)2V2}2
+3<4d4
+6U7h7r7
+7$8*8
+;K;_;g;
+<Y<m<u<
+<O=\=g=
+?\?f?
+0[0g0
+1)181C1b2<3Y3
+:,;<;
+;A<^=3>
+0F0^0f0
+1*121x1
+1"2(2F2m2w2
+3?3u3
+4F5W5h5y5
+7"7c7
+798R8
+;%;b;
+;0<Y<
+<I=\=d=p=
+?Z?{?
+0)1^1
+3"3c3
+3:4?4I4
+4*5/595y5)646E6R6
+737;7
+8M8e8m8
+8,9P9
+: :A:n:y:
+;";9;i;
+>4?H?P?r?
+0C0s0
+011E1
+2A2O2Y2
+3*3\3
+5,5=5D5V5]5v5
+8H9m9
+9!:W:t:
+;-;5;{;
+<!<.<9<k<t<
+>.>D>K>
+?h?|?
+Q0X0j1
+2[2w2
+30383\3k3v3
+3B5L5L6
+7M8d8{8
+8:9?9z9
+<1<9<v<
+=c=w=
+=4><>~>
+2!2.262[2
+3[4`4
+7$757X7|7
+8.8h8
+;v<}<
+<A=g=
+>)>G>l>q>
+>*?/?R?s?
+2!2v2
+3/3H3\3~3
+5H5Q5[5
+8M8a8i8
+9_9w9
+:#:+:h:|:
+;.;6;s;
+;%<9<A<~<
+<D=\=d=
+>)>K>^>f>s>{>
+1&1X1
+6+6L6
+718O8
+8'9;9C9e9x9
+:[:k:{:
+;";s;z;
+<;<K<
+= =G=
+?I?l?
+0W0k0
+1 121
+2(292N2l2
+3"3*3g3{3
+4-454
+555Z5x5
+:-;A;I;
+<:<H<u<
+=3=R=
+=E>T>_>
+>#?j?
+0&191f1u1
+6\6p6x6
+7"7*7g7{7
+:#:M:e:v:
+;7;?;Y;h;x;
+<><n<
+=J=n=
+=\>c>
+111\1x1
+2R2n2
+3&3.3k3
+4&4O4|4
+5%5-53595>5C5I5O5x5
+6#606D6
+7w8A9
+3N4m4
+4'505
+5:6z6
+7)8p839[9w9
+:?;O;
+=,>s>
+171Z1b1l1
+2Q3Q4
+6a6u6}6
+727:7y7
+7+8?8G8
+8?9W9_9
+:]:q:y:
+;!;5;
+<C<o<~<
+=!=L=
+>#?Y?
+0T0l0t0
+1%282@2M2U2
+4,4<4x4~4
+6-6<6L6i6n6>7D7Q7f7
+8+818E8
+:+:8:b:o:
+=?>o>u>
+1 1+1Q1~1
+2"2:2
+3F3`3
+3$6;6M6
+9&9<9I9m9
+:Q;h;
+>->^>d>
+>&?`?
+:0P0`0k0
+4%434
+5*525s5
+5#676?6|6
+6.7B7J7
+798M8U8
+9D9X9`9}9
+90:M:Z:
+:8;B;a<
+?9?G?V?y?
+1P2d2l2
+373F3V3
+5.6~6
+6 7e7y7
+9$9*9>9
+9+;l<
+<J=O=
+=I>^>
+2"2A2
+3"3*3
+4 444:5
+9%9?9q9
+9+:\:
+= =]=q=y=
+>#>+>h>|>
+?0?8?
+0 1V1m1
+2H2k2
+3A3g3
+4$575G6[6c6
+7F7z7
+7,8A8o8
+9C9W9
+;";&;*;.;2;6;:;
+;C<M<[<
+=6=<=P=
+=4>C>d>j>~>
+?$?,?i?}?
+0R0m0
+1K1g1
+5b5v5~5
+7$787
+8)8@8p8
+9$9A9\9b9o9
+9M:`:h:u:}:
+;J<V<
+<==C=c=n=u=
+=.>z>
+1=1o1
+282f2
+3V3[3|3
+4C4[4
+7!7C7O7V7
+7/8=8D8`8
+8G9a9
+9%:N:r:
+;L;^;
+=:>Q>h>
+R0m0y0
+1+1T1
+2!272
+4%444
+5J6k6
+6$7@7]7z7
+9/9a9
+:+:1:I:z:
+; ;>;j;
+>#>.>7>
+?5?n?
+071K1S1
+3B3V3^3
+4M4a4i4
+5X5l5t5
+6&6c6w6
+7)717n7
+7<8P8X8
+819Y9_9s9
+94:G:O:\:d:
+>$?3?>?a?
+0@1Z1t1S2g2o2
+3!3^3r3z3
+7#7+7`7t7
+9"9/979
+9V:^:
+;=;K;`;
+<1<E<O<r<
+-1D1M2
+3 4u4
+:(;e;
+>2><>
+>#?M?X?
+0/0q0|0
+1:1E1U1a1
+1"2E2}2
+283e3
+8)8H8i8r8
+:':8:Y:
+<9<F<f<
+<g=n=
+>(>H>h>
+?(?f?o?
+0Y0`0
+4#4+4
+5=5j5p5
+6/6I6W6|6
+7*777p7
+8]8j8
+:-:::W:`:f:
+;3;8;D;U;];p;|;
+<1<H<]<
+?(?3?:?U?[?a?g?m?s?z?
+0!0'030C0L0c0i0o0u0{0
+1 1.1?1G1]1e1
+2"2.2
+4"4*494E4b4
+5#575G5W5g5w5
+6(686H6U6i6v6
+7.7>7N7^7n7~7
+8 808@8P8`8m8
+91989>9H9W9_9k9p9v9
+:H:#;/;;;G;S;w;
+<1<H<a<q<
+= =,=4=L=T=l=
+> >$>,>0>P>l>p>
+0 0(0,0004080D0H0L0P0X0`0h0t0
+0$1L1p1t1x1
+2 2$2(2,2024282<2@2D2H2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3X3d3h3l3
+0 0$0(0004080<0@0D0H0L0P0T0X0`0d0h0l0p0t0|0

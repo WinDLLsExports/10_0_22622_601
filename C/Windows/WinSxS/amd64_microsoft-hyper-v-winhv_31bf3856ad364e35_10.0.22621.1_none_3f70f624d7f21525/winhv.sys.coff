@@ -1,0 +1,118 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-hyper-v-winhv_31bf3856ad364e35_10.0.22621.1_none_3f70f624d7f21525\winhv.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000D000 Import Address Table
+             1C000D1D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          BD ExAllocatePool2
+                         84C RtlCopyUnicodeString
+                          EE ExFreePoolWithTag
+                         326 IoCreateDriver
+                         33D IoDeleteDriver
+                         BDC ZwSetSystemInformation
+                         4B9 KeGetCurrentIrql
+                         5D6 MmGetPhysicalAddress
+                          F0 ExFreeToNPagedLookasideList
+                          BA ExAllocateFromNPagedLookasideList
+                         138 ExReleaseFastMutex
+                         539 KeReleaseSpinLock
+                          A2 ExAcquireFastMutex
+                         475 KeAcquireSpinLockRaiseToDpc
+                         100 ExInitializeNPagedLookasideList
+                          D5 ExDeleteNPagedLookasideList
+                         4D5 KeInitializeSpinLock
+                         4CD KeInitializeEvent
+                         2C1 HvlInvokeHypercall
+                         500 KeQueryActiveProcessorCountEx
+                         566 KeSetSystemGroupAffinityThread
+                         54F KeRevertToUserGroupAffinityThread
+                         587 KfRaiseIrql
+                         4F3 KeLowerIrql
+                         8F8 RtlInitializeGenericTable
+                         5B8 MmAllocatePagesForMdlEx
+                         5F1 MmMapLockedPagesSpecifyCache
+                         61F MmUnmapLockedPages
+                         5D0 MmFreePagesFromMdl
+                         8FE RtlInsertElementGenericTable
+                         943 RtlLookupElementGenericTable
+                         866 RtlDeleteElementGenericTable
+                         5EF MmMapIoSpaceEx
+                         505 KeQueryGroupAffinity
+                         61E MmUnmapIoSpace
+                         8F4 RtlInitializeBitMap
+                         9C4 RtlTestBit
+                         9A3 RtlSetBit
+                         828 RtlClearAllBits
+                         510 KeQueryMaximumProcessorCountEx
+                         509 KeQueryHighestNodeNumber
+                         511 KeQueryNodeActiveAffinity
+                         4BF KeGetProcessorIndexFromNumber
+                         BF7 __C_specific_handler
+                         4C0 KeGetProcessorNumberFromIndex
+                         8DF RtlGetVersion
+
+  Section contains the following exports for winhv.sys
+
+    00000000 characteristics
+    D5284B69 time date stamp
+        0.00 version
+           1 ordinal base
+          25 number of functions
+          25 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000110A0 DllInitialize
+          2    1 0000E010 DllUnload
+          3    2 00011140 DriverEntry
+          4    3 00002DD0 WinHvAllocateOverlayPages
+          5    4 00004370 WinHvControlHypervisorIptTrace
+          6    5 00004040 WinHvDisablePartitionVtl
+          7    6 000040D0 WinHvDisableVpVtl
+          8    7 00004170 WinHvEnablePartitionVtl
+          9    8 00004240 WinHvEnableVpVtl
+         10    9 00002DF0 WinHvFreeOverlayPages
+         11    A 00003BA0 WinHvGetCurrentVpIndex
+         12    B 00001010 WinHvGetSintEventFlags
+         13    C 000034A0 WinHvGetSintMessage
+         14    D 00003C00 WinHvGetVpRegisters
+         15    E 00001F30 WinHvModifySparseGpaPageHostVisibility
+         16    F 00003C90 WinHvNtProcessorToVpIndex
+         17   10 00003300 WinHvPostMessage
+         18   11 00003CD0 WinHvProcessorNumberToVpIndex
+         19   12 00001120 WinHvQueryReferenceCounter
+         20   13 000034E0 WinHvReconnectSynic
+         21   14 00003500 WinHvSetEndOfMessage
+         22   15 00003540 WinHvSetSint
+         23   16 00003650 WinHvSetSintOnCurrentProcessor
+         24   17 00003D10 WinHvSetVpRegisters
+         25   18 00001050 WinHvSignalEvent
+
+  Summary
+
+        6000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

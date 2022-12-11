@@ -1,0 +1,201 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\SysWOW64\dmutil.dll
+
+File Type: DLL
+
+  Image has the following delay load dependencies:
+
+    api-ms-win-service-winsvc-l1-1-0.dll
+    api-ms-win-service-management-l1-1-0.dll
+    USER32.dll
+
+  Section contains the following exports for dmutil.dll
+
+    00000000 characteristics
+    985F677A time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00002DE0 AddEntryBootFileGpt
+          4    1 00002A70 AddEntryBootFileMbr
+          1    2 00003900 CoDisableDynamicVolumes
+          5    3 00001C80 DisplayError
+          6    4 00001CE0 DisplayErrorRgszw
+          7    5 00001870 DllMain
+          8    6 00002420 DmCommonNtOpenFile
+          9    7 00003790 DynamicSupport
+         10    8 00001DC0 FTrace
+         11    9 00001DB0 FTraceValist
+         12    A 000035B0 FreeRgszw
+         13    B 00001BA0 GetErrorData
+         14    C 00002CF0 GetInstallDirectoryPath
+          2    D 00002360 GetSystemVolume
+         15    E 00003850 IsPersonalSKU
+         16    F 00002900 LowAcquirePrivilege
+         17   10 00002A00 LowGetPartitionInfo
+         18   11 000024D0 LowNtAddBootEntry
+         19   12 00002990 LowNtReadFile
+         20   13 00002890 LowNtReadOnlyAttributeOff
+         21   14 00002930 LowNtWriteFile
+         22   15 00003610 RgszwDupRgszw
+         23   16 00003590 RgszwFromArgs
+         24   17 000031E0 RgszwFromValist
+         25   18 00003740 SafeLoadVdsService
+         26   19 00002080 ShowMessage
+         27   1A 00001E20 ShowMessageValist
+         28   1B 00003130 SzwDupSzw
+         29   1C 00003180 SzwFromSza
+         30   1D 000018F0 TranslateError
+
+  Section contains the following delay load imports:
+
+    api-ms-win-service-winsvc-l1-1-0.dll
+              00000001 Characteristics
+              67A25344 Address of HMODULE
+              67A2701C Import Address Table
+              67A24618 Import Name Table
+              67A2468C Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          67A24439               A QueryServiceStatus
+
+    api-ms-win-service-management-l1-1-0.dll
+              00000001 Characteristics
+              67A25348 Address of HMODULE
+              67A2700C Import Address Table
+              67A24608 Import Name Table
+              67A24694 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          67A2445A               4 OpenSCManagerW
+          67A2447B               5 OpenServiceW
+          67A2448B               0 CloseServiceHandle
+
+    USER32.dll
+              00000001 Characteristics
+              67A2534C Address of HMODULE
+              67A27000 Import Address Table
+              67A245FC Import Name Table
+              67A246A4 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          67A2449B             264 LoadStringW
+          67A244BC             287 MessageBoxW
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    ntdll.dll
+    api-ms-win-core-registry-l1-1-0.dll
+    KERNEL32.dll
+
+  Section contains the following imports:
+
+    msvcrt.dll
+              67A26090 Import Address Table
+              67A26204 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  514 memcpy
+                  173 _except_handler4_common
+                  3F7 _vsnwprintf
+                  1F3 _initterm
+                  11A _amsg_exit
+                   74 _XcptFilter
+                  12B _callnewh
+                  50F mbstowcs
+                  4D0 free
+                  508 malloc
+                  45A _wgetenv
+                  3F1 _vsnprintf
+                  590 wcstok
+                  518 memset
+
+    ntdll.dll
+              67A260CC Import Address Table
+              67A26240 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  106 NtClose
+                  159 NtDeviceIoControlFile
+                  21A NtReadFile
+                  2A8 NtWriteFile
+                  2E3 RtlAdjustPrivilege
+                  259 NtSetInformationFile
+                  6BB VerSetConditionMask
+                  246 NtSetBootEntryOrder
+                  1DB NtQueryBootEntryOrder
+                   D1 NtAddBootEntry
+                  403 RtlFreeUnicodeString
+                  1B0 NtOpenFile
+                  362 RtlCreateUnicodeString
+                  1EB NtQueryInformationFile
+
+    api-ms-win-core-registry-l1-1-0.dll
+              67A26080 Import Address Table
+              67A261F4 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 RegCloseKey
+                   25 RegQueryValueExW
+                   1E RegOpenKeyExW
+
+    KERNEL32.dll
+              67A26000 Import Address Table
+              67A26174 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  22A GetCurrentProcess
+                  5E8 VerifyVersionInfoW
+                  653 lstrcmpW
+                  65E lstrlenA
+                  65F lstrlenW
+                  223 GetCurrentDirectoryW
+                  59F Sleep
+                  365 HeapFree
+                  361 HeapAlloc
+                  2CB GetProcessHeap
+                  102 CreateThread
+                  3ED LocalFree
+                  1B9 FormatMessageW
+                  3DB LeaveCriticalSection
+                  143 EnterCriticalSection
+                  120 DeleteCriticalSection
+                  37B InitializeCriticalSectionAndSpinCount
+                  11D DelayLoadFailureHook
+                  4E7 ResolveDelayLoadedAPI
+                  12E DisableThreadLibraryCalls
+                  323 GetTickCount
+                  301 GetSystemTimeAsFileTime
+                  22F GetCurrentThreadId
+                  22B GetCurrentProcessId
+                  469 QueryPerformanceCounter
+                  5AF TerminateProcess
+                  3E2 LoadLibraryW
+                  58F SetUnhandledExceptionFilter
+                  5D0 UnhandledExceptionFilter
+                  1BD FreeLibrary
+                  2C4 GetProcAddress
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .idata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

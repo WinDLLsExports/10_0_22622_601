@@ -1,0 +1,1327 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+SYSTEM\CurrentControlSet\Services\adsi\Tracing\
+MWS2_32.dll
+USERENV.dll
+api-ms-win-security-base-l1-1-0.dll
+SspiCli.dll
+api-ms-win-security-lsapolicy-l1-1-0.dll
+wkscli.dll
+netutils.dll
+logoncli.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+CRYPT32.dll
+ext-ms-win-security-credui-l1-1-1.dll
+ext-ms-win-advapi32-lsa-l1-1-0.dll
+FALSE
+%I64d
+SYSTEM\CurrentControlSet\Services\ADSI
+QueryCacheLocation: registry key %s for cache location does not exist, setting to default
+QueryCacheLocation: Value %s under key %s which determines cache location does not exist, setting to default
+QueryCacheLocation: Value %s under key %s is of the wrong type, setting to default
+QueryCacheLocation: Value %s under key %s has an invalid value, setting to default
+QueryCacheLocation: Value %s under key %s which determines whether to cache DS schema does not exist, setting to default
+LdapGetSchema: ADsPath is serverless, calling dc locator to find a server.
+LdapGetSchema: Getting schema for server %s.
+LdapGetSchema: Explicit username is %s.
+LdapGetSchema: Found v2 schema in memory for the server, returning this cached schema.
+LdapGetSchema: Found v2 schema in memory for the server, but server appears to be V2 and creds are different, not reusing.
+LdapGetSchema: pszSubSchemaEntry is %s.
+LdapGetSchema: Found schema for equivalent server in cache.
+LdapGetSchema: GetSchemaInfoTime failed, hr = 0x%x.
+LdapGetSchema: schemaInfo check says schema changed get updated schema, schemaNeededFromDS=0x%x
+LdapGetSchema: Cached schema (which was marked obsolete) is still current.
+LdapGetSchema: LdapReadSchemaInfoFromServer failed, hr=0x%x, falling back to default schema.
+LdapGetSchema: LdapReadDefaultSchema failed, hr=0x%x.
+LdapGetSchema: ReadSubSchemaSubEntry failed, hr=0x%x, falling back to default schema.
+LdapGetSchema: ReadSubSchemaSubEntry failed, hr=0x%x, not falling back to default schema since there is no indication that bind is successful.
+attributeTypes
+objectClasses
+ditContentRules
+objectClass=*
+objectClass=subSchema
+LdapReadSchemaInfoFromServer: schema timestamp on server is %s.
+LdapReadSchemaInfoFromServer: Looking for schema cache info in registry at %s.
+LdapReadSchemaInfoFromServer: ADSI configured to not read from DS, force reading from local registry cache if it exists
+ProcessAUX
+LdapReadSchemaInfoFromServer: ProcessSchemaInfo (from registry) failed, hr = 0x%x.
+LdapReadSchemaInfoFromServer: ReadSchemaInfoFromRegistry failed, dwStatus = %d.
+LdapReadSchemaInfoFromServer: Exception occured while reading schema from registry, dwStatus = %d.
+LdapReadSchemaInfoFromServer: reading schema from registry failed and ADSI is configured to not read from DS; builtin schema will be used
+LdapReadSchemaInfoFromServer: reading schema from registry is successful
+LdapReadSchemaInfoFromServer: Downloading schema from server.
+LdapReadSchemaInfoFromServer: HelperReadLDAPSchemaInfo failed, hr = 0x%x.
+LdapReadSchemaInfoFromServer: unable to get class or attributes, nCountAttribTypes = %d, nCountObjClasses = %d.
+LdapReadSchemaInfoFromServer: ProcessSchemaInfo failed, hr = 0x%x.
+LdapReadSchemaInfoFromServer: Storing schema in registry.
+LdapReadSchemaInfoFromServer: StoreSchemaInfoInRegistry, dwStatus = %d.
+LdapReadSchemaInfoFromServer: RegCreateKeyEx for %s failed, dwStatus = %d.
+ExpandEnvStringsIfImpersonating: OpenThreadToken failed, err = %d.
+ExpandEnvStringsIfImpersonating: ExpandEnvironmentStringsForUser failed, err = %d.
+NeverCacheDS
+PerMachine
+Cache
+%s:%d
+%s://%s:%d
+%s://%s
+%s=%s
+%s://%s:%d/%s
+%s://%s/%s
+%s://
+ADsPath
+distinguishedName
+fc8cb04d-311d-406c-8cb9-1ae8b843b419
+fc8cb04d-311d-406c-8cb9-1ae8b843b418
+objectClass
+rootdse
+(objectClass=*)
+currentTime
+subschemaSubentry
+serverName
+namingContexts
+defaultNamingContext
+schemaNamingContext
+configurationNamingContext
+rootDomainNamingContext
+supportedControl
+supportedLDAPVersion
+lowestUncommittedUSN
+allowedAttributesEffective
+supportedExtension
+altServer
+1.2.840.113556.1.4.801
+1.2.840.113556.1.4.1413
+ntSecurityDescriptor
+( 2.5.4.0 NAME 'objectClass' EQUALITY objectIdentifierMatch SYNTAX 'OID' )
+( 2.5.4.1 NAME 'aliasedObjectName' EQUALITY distinguishedNameMatch SYNTAX 'DN' SINGLE-VALUE )
+( 2.5.4.2 NAME 'knowledgeInformation' EQUALITY caseIgnoreMatch SYNTAX 'DirectoryString' )
+( 2.5.4.3 NAME 'cn' SUP name )
+( 2.5.4.4 NAME 'sn' SUP name )
+( 2.5.4.5 NAME 'serialNumber' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'PrintableString' )
+( 2.5.4.6 NAME 'c' SUP name SINGLE-VALUE )
+( 2.5.4.7 NAME 'l' SUP name )
+( 2.5.4.8 NAME 'st' SUP name )
+( 2.5.4.9 NAME 'street' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.10 NAME 'o' SUP name )
+( 2.5.4.11 NAME 'ou' SUP name )
+( 2.5.4.12 NAME 'title' SUP name )
+( 2.5.4.13 NAME 'description' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.14 NAME 'searchGuide' SYNTAX 'Guide' )
+( 2.5.4.15 NAME 'businessCategory' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.16 NAME 'postalAddress' EQUALITY caseIgnoreListMatch SUBSTR caseIgnoreListSubstringsMatch SYNTAX 'PostalAddress' )
+( 2.5.4.17 NAME 'postalCode' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.18 NAME 'postOfficeBox' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.19 NAME 'physicalDeliveryOfficeName' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.20 NAME 'telephoneNumber' EQUALITY telephoneNumberMatch SUBSTR telephoneNumberSubstringsMatch SYNTAX 'TelephoneNumber' )
+( 2.5.4.21 NAME 'telexNumber' SYNTAX 'TelexNumber' )
+( 2.5.4.22 NAME 'teletexTerminalIdentifier' SYNTAX 'TeletexTerminalIdentifier' )
+( 2.5.4.23 NAME 'facsimileTelephoneNumber' SYNTAX 'FacsimileTelephoneNumber' )
+( 2.5.4.24 NAME 'x121Address' EQUALITY numericStringMatch SUBSTR numericStringSubstringsMatch SYNTAX 'NumericString' )
+( 2.5.4.25 NAME 'internationaliSDNNumber' EQUALITY numericStringMatch SUBSTR numericStringSubstringsMatch SYNTAX 'NumericString' )
+( 2.5.4.26 NAME 'registeredAddress' SUP postalAddress SYNTAX 'PostalAddress' )
+( 2.5.4.27 NAME 'destinationIndicator' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'PrintableString' )
+( 2.5.4.28 NAME 'preferredDeliveryMethod' SYNTAX 'DeliveryMethod' SINGLE-VALUE )
+( 2.5.4.29 NAME 'presentationAddress' EQUALITY presentationAddressMatch SYNTAX 'PresentationAddress' SINGLE-VALUE )
+( 2.5.4.30 NAME 'supportedApplicationContext' EQUALITY objectIdentifierMatch SYNTAX 'OID' )
+( 2.5.4.31 NAME 'member' SUP distinguishedName )
+( 2.5.4.32 NAME 'owner' SUP distinguishedName )
+( 2.5.4.33 NAME 'roleOccupant' SUP distinguishedName )
+( 2.5.4.34 NAME 'seeAlso' SUP distinguishedName )
+( 2.5.4.35 NAME 'userPassword' EQUALITY octetStringMatch SYNTAX 'Password')
+( 2.5.4.36 NAME 'userCertificate' SYNTAX 'Certificate' )
+( 2.5.4.37 NAME 'cACertificate' SYNTAX 'Certificate' )
+( 2.5.4.38 NAME 'authorityRevocationList' SYNTAX 'CertificateList' )
+( 2.5.4.39 NAME 'certificateRevocationList' SYNTAX 'CertificateList' )
+( 2.5.4.40 NAME 'crossCertificatePair' SYNTAX 'CertificatePair' )
+( 2.5.4.41 NAME 'name' DESC 'The name attribute type is the attribute supertype from which string attribute types typically used for naming may be formed.' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 2.5.4.42 NAME 'givenName' SUP name )
+( 2.5.4.43 NAME 'initials' DESC 'The initials attribute type contains the initials of some or all of an individuals names, but not the surname(s).' SUP name )
+( 2.5.4.44 NAME 'generationQualifier'  DESC 'e.g. Jr or II.' SUP name )
+( 2.5.4.45 NAME 'x500UniqueIdentifier'  DESC 'used to distinguish between objects when a distinguished name has been reused.' EQUALITY bitStringMatch SYNTAX 'BitString' )
+( 2.5.4.46 NAME 'dnQualifier' DESC 'The dnQualifier attribute type specifies disambiguating information to add to the relative distinguished name of an entry.  It is intended to be used for entries held in multiple DSAs which would otherwise have the same name, and that its value be the same in a given DSA for all entries to which this information has been added.' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'PrintableString' )
+( 2.5.4.47 NAME 'enhancedSearchGuide' SYNTAX 'EnhancedGuide' )
+( 2.5.4.48 NAME 'protocolInformation' EQUALITY protocolInformationMatch SYNTAX 'ProtocolInformation' )
+( 2.5.4.49 NAME 'distinguishedName'  DESC 'This is not the name of the object itself, but a base type from which attributes with DN syntax inherit.' EQUALITY distinguishedNameMatch SYNTAX 'DN' )
+( 2.5.4.50 NAME 'uniqueMember' EQUALITY uniqueMemberMatch SYNTAX 'NameAndOptionalUID' )
+( 2.5.4.51 NAME 'houseIdentifier' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.1 NAME 'uid' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.2 NAME 'textEncodedORaddress' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.3 NAME 'mail' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 'IA5String' )
+( 0.9.2342.19200300.100.1.4 NAME 'info' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.5 NAME 'drink' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.6 NAME 'roomNumber' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.7 NAME 'photo' SYNTAX 'Fax' )
+( 0.9.2342.19200300.100.1.8 NAME 'userClass' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.9 NAME 'host' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.10 NAME 'manager' EQUALITY distinguishedNameMatch SYNTAX 'DN' )
+( 0.9.2342.19200300.100.1.11 NAME 'documentIdentifier' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.12 NAME 'documentTitle' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.13 NAME 'documentVersion' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.14 NAME 'documentAuthor' EQUALITY distinguishedNameMatch SYNTAX 'DN' )
+( 0.9.2342.19200300.100.1.15 NAME 'documentLocation' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch  SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.20 NAME 'homePhone' EQUALITY telephoneNumberMatch SUBSTR telephoneNumberSubstringsMatch SYNTAX 'TelephoneNumber' )
+( 0.9.2342.19200300.100.1.21 NAME 'secretary' EQUALITY distinguishedNameMatch SYNTAX 'DN' )
+( 0.9.2342.19200300.100.1.22 NAME 'otherMailbox' SYNTAX 'OtherMailbox' )
+( 0.9.2342.19200300.100.1.25 NAME 'dc' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 'IA5String' )
+( 0.9.2342.19200300.100.1.26 NAME 'dNSRecord' EQUALITY caseExactIA5Match SYNTAX 'IA5String' )
+( 0.9.2342.19200300.100.1.37 NAME 'associatedDomain' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 'IA5String' )
+( 0.9.2342.19200300.100.1.38 NAME 'associatedName' EQUALITY distinguishedNameMatch SYNTAX 'DN' )
+( 0.9.2342.19200300.100.1.39 NAME 'homePostalAddress' EQUALITY caseIgnoreListMatch SUBSTR caseIgnoreListSubstringsMatch SYNTAX 'PostalAddress' )
+( 0.9.2342.19200300.100.1.40 NAME 'personalTitle' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.41 NAME 'mobile' EQUALITY telephoneNumberMatch SUBSTR telephoneNumberSubstringsMatch SYNTAX 'TelephoneNumber' )
+( 0.9.2342.19200300.100.1.42 NAME 'pager' EQUALITY telephoneNumberMatch SUBSTR telephoneNumberSubstringsMatch SYNTAX 'TelephoneNumber' )
+( 0.9.2342.19200300.100.1.43 NAME 'co' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.44 NAME 'pilotUniqueIdentifier' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.45 NAME 'organizationalStatus' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.46 NAME 'janetMailbox' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 'IA5String' )
+( 0.9.2342.19200300.100.1.47 NAME 'mailPreferenceOption' SYNTAX 'INTEGER' SINGLE-VALUE NO-USER-MODIFICATION  USAGE directoryOperation )
+( 0.9.2342.19200300.100.1.48 NAME 'buildingName' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.49 NAME 'dSAQuality' SYNTAX 'DSAQualitySyntax' SINGLE-VALUE )
+( 0.9.2342.19200300.100.1.50 NAME 'singleLevelQuality' SYNTAX 'DataQualitySyntax' SINGLE-VALUE )
+( 0.9.2342.19200300.100.1.51 NAME 'subtreeMinimumQuality' SYNTAX 'DataQualitySyntax' SINGLE-VALUE )
+( 0.9.2342.19200300.100.1.52 NAME 'subtreeMaximumQuality' SYNTAX 'DataQualitySyntax' SINGLE-VALUE )
+( 0.9.2342.19200300.100.1.53 NAME 'personalSignature' SYNTAX 'Fax' )
+( 0.9.2342.19200300.100.1.54 NAME 'dITRedirect' EQUALITY distinguishedNameMatch SYNTAX 'DN' )
+( 0.9.2342.19200300.100.1.55 NAME 'audio' SYNTAX 'Audio' )
+( 0.9.2342.19200300.100.1.56 NAME 'documentPublisher' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 'DirectoryString' )
+( 0.9.2342.19200300.100.1.60 NAME 'jpegPhoto' SYNTAX 'JPEG' )
+( 2.5.18.1 NAME 'createTimestamp' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 'GeneralizedTime' SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+( 2.5.18.2 NAME 'modifyTimestamp' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 'GeneralizedTime' SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+( 2.5.18.3 NAME 'creatorsName' EQUALITY distinguishedNameMatch SYNTAX 'DN' SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+( 2.5.18.4 NAME 'modifiersName' EQUALITY distinguishedNameMatch SYNTAX 'DN' SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+( 2.5.18.10 NAME 'subschemaSubentry' DESC 'The value of this attribute is the name of a subschema subentry, an entry in which the server makes available attributes specifying the schema.' EQUALITY distinguishedNameMatch SYNTAX 'DN' NO-USER-MODIFICATION SINGLE-VALUE USAGE directoryOperation )
+( 2.5.21.5 NAME 'attributeTypes' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 'AttributeTypeDescription' USAGE directoryOperation )
+( 2.5.21.6 NAME 'objectClasses' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 'ObjectClassDescription' USAGE directoryOperation )
+( 1.3.6.1.4.1.1466.101.120.1 NAME 'administratorsAddress' DESC 'This attribute
+s values are string containing the addresses of the LDAP server
+s human administrator.  This information may be of use when tracking down problems in an Internet distributed directory.  For simplicity the syntax of the values are limited to being URLs of the mailto form with an RFC 822 address: "mailto:user@domain".  Future versions of this protocol may permit other forms of addresses.' SYNTAX 'IA5String' USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.2 NAME 'currentTime' DESC 'This attribute has a single value, a string containing a GeneralizedTime character string.  This attribute need only be present if the server supports LDAP strong or protected simple authentication. Otherwise if the server does not know the current time, or does not choose to present it to clients, this attribute need not be present. The client may wish to use this value to detect whether a strong or protected bind is failing because the client and server clocks are not sufficiently synchronized.  Clients should not use this time field for setting their own system clock.' SYNTAX 'GeneralizedTime' SINGLE-VALUE USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.3 NAME 'serverName' DESC 'This attribute
+s value is the server
+s Distinguished Name.  If the server does not have a Distinguished Name it will not be able to accept X.509-style strong authentication, and this attribute should be absent.  However the presence of this attribute does not guarantee that the server will be able to perform strong authentication.  If the server acts as a gateway to more than one X.500 DSA capable of strong authentication, there may be multiple values of this attribute, one per DSA.  (Note: this attribute is distinct from myAccessPoint, for it is not required that a server have a presentation address in order to perform strong authentication.)  (Note: it is likely that clients will retrieve this attribute in binary.)' SYNTAX 'DN' USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.4 NAME 'certificationPath' DESC 'This attribute contains a binary DER encoding of an AF.CertificatePath data type, which is the certificate path for a server.  If the server does not have a certificate path this attribute should be absent.  (Note: this attribute may only be retrieved in binary.)' SYNTAX 'CertificatePath' USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.5 NAME 'namingContexts' DESC 'The values of this attribute correspond to naming contexts which this server masters or shadows.  If the server does not master any information (e.g. it is an LDAP gateway to a public X.500 directory) this attribute should be absent.  If the server believes it contains the entire directory, the attribute should have a single value, and that value should be the empty string (indicating the null DN of the root). This attribute will allow clients to choose suitable base objects for searching when it has contacted a server.' SYNTAX 'DN' USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.6 NAME 'altServer' DESC 'The values of this attribute are URLs of other servers which may be contacted when this server becomes unavailable.  If the server does not know of any other servers which could be used this attribute should be absent. Clients should cache this information in case their preferred LDAP server later becomes unavailable.' SYNTAX 'IA5String' USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.7 NAME 'supportedExtension' DESC 'The values of this attribute are OBJECT IDENTIFIERs, the names of supported extensions which the server supports.   If the server does not support any extensions this attribute should be absent.' SYNTAX 'OID' USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.8 NAME 'entryName' SYNTAX 'DN' SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+( 1.3.6.1.4.1.1466.101.120.9 NAME 'modifyRights' SYNTAX 'ModifyRight' NO-USER-MODIFICATION USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.10 NAME 'incompleteEntry' SYNTAX 'BOOLEAN' NO-USER-MODIFICATION USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.120.11 NAME 'fromEntry' SYNTAX 'BOOLEAN' NO-USER-MODIFICATION USAGE dSAOperation )
+( 1.3.6.1.4.1.1466.101.121.1 NAME 'url' DESC 'Uniform Resource Locator' EQUALITY caseExactIA5Match SYNTAX 'IA5String' )
+( 2.16.840.1.113730.3.1.18 NAME 'mailHost' DESC 'mailHost attribute on some V2 servers' SYNTAX 'DirectoryString' )
+( 2.5.6.0 NAME 'top' ABSTRACT MUST objectClass )
+( 2.5.6.1 NAME 'alias' SUP top STRUCTURAL MUST aliasedObjectName )
+( 2.5.6.2 NAME 'country' SUP top STRUCTURAL MUST c MAY ( searchGuide $ description ) )
+( 2.5.6.3 NAME 'locality' SUP top STRUCTURAL MAY ( street $ seeAlso $ searchGuide $ st $ l $ description ) )
+( 2.5.6.4 NAME 'organization' SUP top STRUCTURAL MUST o MAY ( userPassword $ searchGuide $ seeAlso $ businessCategory $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ st $ l $ description ) )
+( 2.5.6.5 NAME 'organizationalUnit' SUP top STRUCTURAL MUST ou MAY ( userPassword $ searchGuide $ seeAlso $ businessCategory $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ st $ l $ description ) )
+( 2.5.6.6 NAME 'person' SUP top STRUCTURAL MUST ( sn $ cn ) MAY ( userPassword $ telephoneNumber $ seeAlso $ description ) )
+( 2.5.6.7 NAME 'organizationalPerson' SUP person STRUCTURAL MAY ( title $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ ou $ st $ l ) )
+( 2.5.6.8 NAME 'organizationalRole' SUP top STRUCTURAL MUST cn MAY ( x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ seeAlso $ roleOccupant $ preferredDeliveryMethod $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ ou $ st $ l $ description ) )
+( 2.5.6.9 NAME 'groupOfNames' SUP top STRUCTURAL MUST ( member $ cn ) MAY ( businessCategory $ seeAlso $ owner $ ou $ o $ description ) )
+( 2.5.6.10 NAME 'residentialPerson' SUP person STRUCTURAL MUST l MAY ( businessCategory $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ preferredDeliveryMethod $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ st ) )
+( 2.5.6.11 NAME 'applicationProcess' SUP top STRUCTURAL MUST cn MAY ( seeAlso $ ou $ l $ description ) )
+( 2.5.6.12 NAME 'applicationEntity' SUP top STRUCTURAL MUST ( presentationAddress $ cn ) MAY ( supportedApplicationContext $ seeAlso $ ou $ o $ l $ description ) )
+( 2.5.6.13 NAME 'dSA' SUP applicationEntity STRUCTURAL MAY knowledgeInformation )
+( 2.5.6.14 NAME 'device' SUP top STRUCTURAL MUST cn MAY ( serialNumber $ seeAlso $ owner $ ou $ o $ l $ description ) )
+( 2.5.6.15 NAME 'strongAuthenticationUser' SUP top STRUCTURAL MUST userCertificate )
+( 2.5.6.16 NAME 'certificationAuthority' SUP top STRUCTURAL MUST ( authorityRevocationList $ certificateRevocationList $ cACertificate ) MAY crossCertificatePair )
+( 2.5.6.17 NAME 'groupOfUniqueNames' SUP top STRUCTURAL MUST ( uniqueMember $ cn ) MAY ( businessCategory $ seeAlso $ owner $ ou $ o $ description ) )
+( 0.9.2342.19200300.100.4.3 NAME 'pilotObject' SUP top STRUCTURAL MAY ( jpegPhoto $ audio $ dITRedirect $ lastModifiedBy $ lastModifiedTime $  pilotUniqueIdentifier $ manager $ photo $ info ) )
+( 0.9.2342.19200300.100.4.4 NAME 'newPilotPerson' SUP person STRUCTURAL MAY ( personalSignature $ mailPreferenceOption $ organizationalStatus $ pagerTelephoneNumber $ mobileTelephoneNumber $ otherMailbox $ janetMailbox $ businessCategory $ preferredDeliveryMethod $ personalTitle $ secretary $ homePostalAddress $ homePhone $ userClass $ roomNumber $ favouriteDrink $ rfc822Mailbox $ textEncodedORaddress $ userid ) )
+( 0.9.2342.19200300.100.4.5 NAME 'account' SUP top STRUCTURAL MUST userid MAY ( host $ ou $ o $ l $ seeAlso $ description ) )
+( 0.9.2342.19200300.100.4.6 NAME 'document' SUP ( top $ pilotObject ) STRUCTURAL MUST documentIdentifier MAY ( documentPublisher $ documentStore $ documentAuthorSurName $ documentAuthorCommonName $ abstract $ subject $ keywords $ updatedByDocument $ updatesDocument $ obsoletedByDocument $ obsoletesDocument $ documentLocation $ documentAuthor $ documentVersion $ documentTitle $ ou $ o $ l $ seeAlso $ description $ cn ) )
+( 0.9.2342.19200300.100.4.7 NAME 'room' SUP top STRUCTURAL MUST cn MAY ( telephoneNumber $ seeAlso $ description $ roomNumber ) )
+( 0.9.2342.19200300.100.4.9 NAME 'documentSeries' SUP top STRUCTURAL MUST cn MAY ( ou $ o $ l $ telephoneNumber $ seeAlso $ description ) )
+( 0.9.2342.19200300.100.4.13 NAME 'domain' SUP top STRUCTURAL MUST dc MAY ( userPassword $ searchGuide $ seeAlso $ businessCategory $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ st $ l $ description $ o $ associatedName ) ) 
+( 0.9.2342.19200300.100.4.14 NAME 'rFC822localPart' SUP domain STRUCTURAL MAY ( x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ streetAddress $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ telephoneNumber $ seeAlso $ description $ sn $ cn ) ) 
+( 0.9.2342.19200300.100.4.15 NAME 'dNSDomain' SUP domain STRUCTURAL MAY dNSRecord ) 
+( 0.9.2342.19200300.100.4.17 NAME 'domainRelatedObject' SUP top STRUCTURAL MUST associatedDomain )
+( 0.9.2342.19200300.100.4.18 NAME 'friendlyCountry' SUP country STRUCTURAL MUST co )
+( 0.9.2342.19200300.100.4.19 NAME 'simpleSecurityObject' SUP top STRUCTURAL MUST userPassword )
+( 0.9.2342.19200300.100.4.20 NAME 'pilotOrganization' SUP ( organization $ organizationalUnit ) STRUCTURAL MAY buildingName )
+( 0.9.2342.19200300.100.4.21 NAME 'pilotDSA' SUP dSA STRUCTURAL MUST dSAQuality )
+( 0.9.2342.19200300.100.4.23 NAME 'qualityLabelledData' SUP top STRUCTURAL MUST singleLevelQuality MAY ( subtreeMaximumQuality $ subtreeMinimumQuality ) ) 
+%02hX
+OBSOLETE
+EQUALITY
+ORDERING
+SUBSTR
+SYNTAX
+SINGLE-VALUE
+COLLECTIVE
+DYNAMIC
+NO-USER-MODIFICATION
+USAGE
+ABSTRACT
+STRUCTURAL
+AUXILIARY
+LdapRemoveSchemaInfoOnServer: ReadSchemaEntries failed, hr = 0x%x.
+LdapRemoveSchemaInfoOnServer: pszSchemaNC is %s.
+LdapRemoveSchemaInfoOnServer: pszSubSchemaSubEntry is %s.
+LdapRemoveSchemaInfoOnServer: schema made obsolete for NULL server.
+LdapRemoveSchemaInfoOnServer: schema version set to invalid value.
+19800719000000.0Z
+LdapRemoveSchemaInfoOnServer: schema time set to ancient value.
+LdapRemoveSchemaInfoOnServer: schema made obsolete for %s.
+cn=Schema
+GetSchemaInfoTimeAndVersionCheck: unable to get registry path to schema, he = 0x%x.
+(objectClass=dMD)
+whenChanged
+GetSchemaInfoTimeAndVersionCheck: unable to get whenChanged attribute on schemaNC. hr = 0x%x.
+(objectClass=subschema)
+modifyTimeStamp
+GetSchemaInfoTimeAndVersionCheck: unable to get modifyTimeStamp attribute on subSchemaSubEntry.
+schemaInfo
+GetSchemaInfoTimeAndVersionCheck: unable to get schemaInfo attribute on schemaNC. hr = 0x%x.
+GetSchemaInfoTimeAndVersionCheck: schemaInfo attribute on schemaNC has wrong length. length = 0x%x.
+GetSchemaInfoTimeAndVersionCheck: Looking for schema cache info in registry at %s.
+GetSchemaInfoTimeAndVersionCheck: unable to get cache key from registry. hr = 0x%x.
+GetSchemaInfoTimeAndVersionCheck: unable to get time from registry. hr = 0x%x.
+SchemaInfo
+GetSchemaInfoTimeAndVersionCheck: schemaInfo value in registry has wrong length. length = 0x%x.
+GetSchemaInfoTimeAndVersionCheck: schemaversion in memory is older than registry version
+GetSchemaInfoTimeAndVersionCheck: schemaversion in memory is older than registry version (full check)
+GetSchemaInfoTimeAndVersionCheck: schemaversion in memory is Ok versus registry version
+GetSchemaInfoTimeAndVersionCheck: schemaversion in memory is older than DS version (full check)
+GetSchemaInfoTimeAndVersionCheck: schemaversion in memory is Ok versus DS version (full check)
+GetSchemaInfoTimeAndVersionCheck: schemaversion in registry is older than DS version
+LdapGetSchemaInfoTimeAndVersionCheck: Ignore cache timestamp since from different server. Force read from server.
+LdapGetSchemaInfoTimeAndVersionCheck: Schema timestamp in memory is older than reg.
+LdapGetSchemaInfoTimeAndVersionCheck: Schema timestamp in memory is same or newer than reg.
+LdapGetSchemaInfoTimeAndVersionCheck: Schema timestamp in memory is older than server.
+LdapGetSchemaInfoTimeAndVersionCheck: Schema timestamp in memory is same or newer than than server.
+LdapGetSchemaInfoTimeAndVersionCheck: Schema in reg is older than server.
+LdapGetSchemaInfoTimeAndVersionCheck: Schema in reg is same or newer than server.
+LdapGetSchemaInfoTimeAndVersionCheck: Can't do time check, force reading from server.
+ProcessSchemaInfo: FillPropertyInfoArray failed, hr = 0x%x.
+ProcessSchemaInfo: FillClassInfoArray failed, hr = 0x%x.
+ProcessSchemaInfo: FillAuxClassInfoArray failed, hr = 0x%x.
+ProcessSchemaInfo: ProcessClassInfoArray failed, hr = 0x%x.
+HelperReadLDAPSchemaInfo: pszSubSchemaSubEntry is %s.
+HelperReadLDAPSchemaInfo: LdapOpenObject2 failed, hr = 0x%x.
+HelperReadLDAPSchemaInfo: LdapSearchS failed, hr = 0x%x.
+HelperReadLDAPSchemaInfo: LdapFirstEntry failed, hr = 0x%x.
+HelperReadLDAPSchemaInfo: LdapGetValues (0) failed, hr = 0x%x.
+HelperReadLDAPSchemaInfo: LdapGetValues (1) failed, hr = 0x%x.
+HelperReadLDAPSchemaInfo: LdapGetValues (2) failed, hr = 0x%x, non-critical failure.
+ProcessClassInfoArray: When processing AUX classes, it is found that the schema tree is more than maximum 30 depth.
+[attributeTypes]
+[objectClasses]
+[DITContentRules]
+[attributeTypes]
+[objectClasses]
+[DITContentRules]
+ReadSchemaInfoFromRegistry: No server name was passed.
+Default.sch
+ReadSchemaInfoFromRegistry: Schema cache file name is %s.
+ReadSchemaInfoFromRegistry: ReadSchemaInfoFromFile failed, err = %d.
+SchCache\
+Default
+StoreSchemaInfoInRegistry: location of schema cache file is %s.
+StoreSchemaInfoInRegistry: Delete schema file reg value.
+StoreSchemaInfoInRegistry: StoreSchemaInfoToFile failed, err = %d.
+StoreSchemaInfoInRegistry: RegSetValueEx (SCHEMA_FILE_NAME)  failed, err = %d.
+StoreSchemaInfoInRegistry: RegSetValueEx (SCHEMA_TIME)  failed, err = %d.
+StoreSchemaInfoInRegistry: RegSetValueEx (SCHEMA_INFO_NAME)  failed, err = %d.
+StoreSchemaInfoInRegistry: RegSetValueExW (SCHEMA_PROCESSAUX)  failed, err = %d.
+AttributeTypeDescription: Failed to get next element in the attributeType, hr = 0x%x.
+AttributeTypeDescription: AttributeType should start with '('.
+AttributeTypeDescription: Failure in parsing AttributeType identifier, hr = 0x%x.
+AttributeTypeDescription: Failure in parsing attributeType NAME, hr = 0x%x.
+AttributeTypeDescription: NAME is not defined in this AttributeType, it is mandatory.
+AttributeTypeDescription: Failure in parsing attributeType DESC, hr = 0x%x.
+AttributeTypeDescription: Failure in parsing AttributeType SUP, hr = 0x%x.
+AttributeTypeDescription: Failure in parsing AttributeType EQUALITY, hr = 0x%x.
+AttributeTypeDescription: Failure in parsing AttributeType ORDERING, hr = 0x%x.
+AttributeTypeDescription: Failure in parsing AttributeType SUBSTR, hr = 0x%x.
+AttributeTypeDescription: Failure in parsing AttributeType SYNTAX, hr = 0x%x.
+userApplications
+directoryOperation
+distributedOperation
+dSAOperation
+AttributeTypeDescription: Failed to get next element in the attributeType when parsing AttributeType syntax, hr = 0x%x.
+AttributeTypeDescription: Did not get expected length element after '{' when parsing AttributeType syntax.
+AttributeTypeDescription: Failed to get next element } in the attributeType when parsing AttributeType syntax, hr = 0x%x.
+AttributeTypeDescription: Did not get expected '}' when parsing AttributeType syntax.
+AttributeTypeDescription: Failure in parsing AttributeType X-, hr = 0x%x.
+AttributeTypeDescription: Element %s is not a keyword.
+AttributeTypeDescription: The troubled AttributeType is %s.
+ObjectClassDescription: Failed to get next element in the objectClass, hr = 0x%x.
+ObjectClassDescription: ObjectClass should start with '('.
+ObjectClassDescription: Failure in parsing ObjectClass identifier, hr = 0x%x.
+ObjectClassDescription: Failure in parsing objectClass NAME, hr = 0x%x.
+ObjectClassDescription: NAME is not defined in this objectClass, it is mandatory.
+ObjectClassDescription: Failure in parsing objectClass DESC, hr = 0x%x.
+ObjectClassDescription: Failure in parsing objectClass SUP, hr = 0x%x.
+ObjectClassDescription: Failed in parsing objectClass SUP, hr = 0x%x.
+ObjectClassDescription: Failure in parsing objectClass MUST, hr = 0x%x.
+ObjectClassDescription: Failure in parsing objectClass MAY, hr = 0x%x.
+ObjectClassDescription: Failure in parsing objectClass X-, hr = 0x%x.
+ObjectClassDescription: Element %s is not a keyword, parsing failed.
+ObjectClassDescription: The troubled objectClass is %s.
+DITContentRuleDescription: Failed to get next element in the ditContentRule, hr = 0x%x.
+DITContentRuleDescription: ditContentRule should start with '('.
+DITContentRuleDescription: Failure in parsing ditContentRule identifier, hr = 0x%x.
+DITContentRuleDescription: Failure in parsing ditContentRule NAME, hr = 0x%x.
+DITContentRuleDescription: Failure in parsing ditContentRule DESC, hr = 0x%x.
+DITContentRuleDescription: Failure in parsing ditContentRule AUX, hr = 0x%x.
+DITContentRuleDescription: Failure in parsing ditContentRule MUST, hr = 0x%x.
+DITContentRuleDescription: Failure in parsing ditContentRule MAY, hr = 0x%x.
+DITContentRuleDescription: Failure in parsing ditContentRule NOT, hr = 0x%x.
+DITContentRuleDescription: Element is not a keyword.
+DITContentRuleDescription: The troubled ditContentRule is %s.
+Oid: Failed to get next element, hr = 0x%x.
+Oid: Encountered an invalid element %s.
+Oids: Failed to get next element, hr = 0x%x.
+Oids: Did not get an expected ')'.
+Oids: Encountered an invalid AttributeType element %s.
+PropOids: Failed to get next element, hr = 0x%x.
+PropOids: Did not get an expected ')'.
+PropOids: Encountered an invalid objectClass element, it should have syntax as oids.
+DirectoryString: Failed to get next element, hr = 0x%x.
+DirectoryString: Did not get an expected " ' ".
+DirectoryString: Encountered an invalid element %s.
+DirectoryStrings: Failed to get next element, hr = 0x%x.
+DirectoryStrings: Did not get an expected " ' ".
+DirectoryStrings: Did not get an expected ')'.
+%4hd%2hd%2hd%2hd%2hd%2hd
+supportedCapabilities
+1.2.840.113556.1.4.319
+1.2.840.113556.1.4.473
+1.2.840.113556.1.4.416
+1.2.840.113556.1.4.1339
+2.16.840.1.113730.3.4.9
+1.2.840.113556.1.4.1504
+1.2.840.113556.1.4.800
+1.2.840.113556.1.4.1670
+1.2.840.113556.1.4.1851
+%SYSTEMROOT%\
+%LOCALAPPDATA%\Microsoft\Windows\
+SOFTWARE\Microsoft\ADs\Providers\LDAP
+SOFTWARE\Microsoft\ADs\Providers\LDAP
+SYSTEM\CurrentControlSet\Services\adsi\Tracing
+LDAP Provider
+LdapOpenBindWithCredentials: domainName = %s, Username = %s, flags = %d.
+LdapOpenBindWithCredentials: LdapOpen failed, hr = 0x%x.
+LdapOpenBindWithCredentials: LdapBind failed, hr = 0x%x.
+LdapOpenBindWithCredentials: Trying V2 bind.
+LdapOpenBindWithCredentials: LdapBind failed for v2, hr = 0x%x.
+LdapOpenBindWithDefaultCredentials: domainName = %s, flags = %d.
+LdapOpenBindWithDefaultCredentials: LdapOpen failed, hr = 0x%x.
+LdapOpenBindWithDefaultCredentials: LdapBind failed, hr = 0x%x.
+LdapOpenBindWithDefaultCredentials: Trying V2 bind.
+LdapOpenBindWithDefaultCredentials: LdapBind failed for v2, hr = 0x%x.
+LdapOpenBindWithDefaultCredentials: Trying simple bind.
+LdapOpenBindWithDefaultCredentials: Ldap simple bind failed, hr = 0x%x.
+QueryForConnection: no server name, cannot do a lookup without a server name.
+QueryForConnection: server = %s, port = %d, username = %s, authflags = %d.
+QueryForConnection: server = %s, port = %d, authflags = %d.
+QueryForConnection: connection found.
+QueryForConnection: connection not found.
+NotifyNewConnection: server = %s, port = %d, username = %s, authflags = %d.
+NotifyNewConnection: server = %s, port = %d, authflags = %d.
+NotifyNewConnection: Error adding referral to primary connection.
+NotifyNewConnection: Error adding connection to the bind cache, error = %d.
+DisableAdsiTimeout
+CommonRemoveEntry: Removing connection from bind cache: Server = %s, port = %d, authflags = %d.
+BindCacheLookup: Can potentially reuse connection: server = %s, cached port = %d, requested port = %d.
+BindCacheLookup: Credentials and flags also match, reusing connection: server = %s, port = %d.
+BindCacheLookup: Explicit credentials do not match, not reusing connection.
+BindCacheLookup: Non-explicit credentials do not match, not reusing connection.
+EquivalentPortNumbers: Port 1 = %d, Port 2 = USE_DEFAULT_LDAP_PORT, no Ssl specified, so ports are equivalent.
+EquivalentPortNumbers: Port 1 = %d, Port 2 = USE_DEFAULT_LDAP_PORT Ssl specified, so ports are equivalent.
+EquivalentPortNumbers: Port 1 = %d, Port 2 = USE_DEFAULT_GC_PORT, no Ssl specified, so ports are equivalent.
+EquivalentPortNumbers: Port 1 = %d, Port 2 = USE_DEFAULT_GC_PORT, Ssl specified, so ports are equivalent.
+EquivalentPortNumbers: Port 1 = %d, Port 2 = %d, ports are NOT equivalent.
+CanCredentialsBeReused: Credentials can be reused: Username = %s, AuthFlags = %d.
+CanCredentialsBeReused: Credentials can be reused: Username = NULL, AuthFlags = %d.
+BindCacheAdd: Added new connection to bind cache: Server = %s, port = %d, authflags = %d.
+BindCacheAddRef: Added reference to connection in bind cache: Server = %s, port = %d, authflags = %d.
+AddReferralLink: Added referral to connection in bind cache.
+AddReferralLink: Primary connection: Server = %s, port = %d, authflags = %d.
+AddReferralLink: New connection: Server = %s, port = %d, authflags = %d.
+BindCacheDerefHelper: Removed reference to connection in bind cache: Server = %s, port = %d, authflags = %d.
+%02d%02d%02d%02d%02d%02dZ
+%04d%02d%02d%02d%02d%02d.%03dZ
+S:%lu:
+B:%lu:
+Domain
+Country
+schema
+SCHEMAINFO:~SCHEMAINFO(): Clearing a cache.
+SCHEMAINFO:~SCHEMAINFO(): Cleared a cache.
+SYSTEM\CurrentControlSet\Services\adsi\Options\
+CachingOptions
+SCHEMAINFO:CheckAggressiveCaching: Aggressive caching is enabled.
+SCHEMAINFO:CheckAggressiveCaching: Aggressive caching is disabled.
+SCHEMAINFO:CheckAggressiveCaching: Aggressive caching is defaulting to disabled.
+SCHEMAINFO:Release(): Looking for a cache to clear.
+SCHEMAINFO:Release(): Releasing last schema, destroying default schema.
+LdapGetSyntaxOfAttributeOnServer: Unable to find the syntax of the property, marking schema as obsolete.
+LdapMakeSchemaCacheObsolete: Marking schema as obsolete.
+Container
+organizationalUnit
+organization
+country
+locality
+device
+mSFTDSA
+S-%u-
+0x%02hx%02hx%02hx%02hx%02hx%02hx
+(Sid=
+Calling GetNextRow can potentially return more results.
+1.2.840.113556.1.4.841
+1.2.840.113556.1.4.417
+1.2.840.113556.1.4.529
+{iiO}
+{iio}
+}IsCallerVirtualAccount: could not obtain thread token
+IsCallerVirtualAccount: could not obtain process token
+IsCallerVirtualAccount: could not get user token size
+IsCallerVirtualAccount: could not allocate memory for user token
+IsCallerVirtualAccount: could not get user token
+GetUserDomainFlatName: CallerName does not contain a domain name, falling back to machine's domain, caller name = %s.
+GetUserDomainFlatName: LsaCallAuthenticationPackage returned username = %s, domain name = %s.
+GetUserDomainFlatName: LsaCallAuthenticationPackage failed, dwStatus = %d, dwSubstatus = %d.
+GetUserDomainFlatName: LsaGetUserName returned username = %s, domain name = %s.
+GetUserDomainFlatName: LsaGetUserName failed, dwStatus = %d.
+GetUserDomainFlatName: domain is NTAUTHORITY, falling back to machine's domain.
+GetUserDomainFlatName: NetWkstaGetInfo failed, error = %d.
+GetUserDomainFlatName: NetWkstaGetInfo returned domain name = %s.
+GetDefaultDomainName: fWriteable = %d, fVerify = %d.
+GetDefaultDomainName: Looking up domain %s in cached domain list.
+GetDefaultDomainName: Found a match in cached domain list.
+GetDefaultDomainName: Already tried the DC %s that was in cache but failed, marking entry as invalid.
+GetDefaultDomainName: DC in cached list is valid and a close DC, returning cached entry.
+GetDefaultDomainName: Valid DC %s found in cache but not used as it is not the closest DC.
+GetDefaultDomainName: Calling dc locator. Either fVerify is TRUE, or no entry was found in the cache or the current entry is not an optimal dc.
+GetDefaultDomainName: GetDomainDNSNameForDomain2 failed: error = %d.
+GetDefaultDomainName: Dc locator returned dc %s.
+GetDefaultDomainName: found a match in the cache before updating the current entry, someone else updated first, dc is %s.
+GetDefaultDomainName: found a non optimal dc in the cached list but the dc returned by locator is also not optimal, go with the cached dc %s.
+GetDefaultDomainName: found a more optimal dc %s, updating cached value.
+GetDefaultDomainName: found a valid dc %s, updating cached value.
+GetDefaultDomainName: entry not found in cache, added a new one for domain = %s, dc = %s.
+GetGCDomainName: Calling DsGetDcName with forest name = NULL, dc flags = %d.
+GetGCDomainName: server name = %s, forest name = %s.
+GetGCDomainName failed: error = %d.
+NT AUTHORITY
+AccessPointDN
+AttributeTypeDescription
+Audio
+Binary
+BitString
+Boolean
+CaseExactString
+CaseIgnoreString
+Certificate
+CertificateList
+CertificatePair
+DataQualitySyntax
+DeliveryMethod
+DirectoryString
+DSAQualitySyntax
+EnhancedGuide
+FacsimileTelephoneNumber
+GeneralizedTime
+Guide
+IA5String
+INTEGER
+INTEGER8
+MailPreference
+NameAndOptionalUID
+NumericString
+ObjectClassDescription
+ObjectSecurityDescriptor
+OctetString
+ORAddress
+ORName
+OtherMailbox
+Password
+PostalAddress
+PresentationAddress
+PrintableString
+TelephoneNumber
+TeletexTerminalIdentifier
+TelexNumber
+UTCTIME
+1.2.840.113556.1.4.1221
+1.2.840.113556.1.4.1222
+1.2.840.113556.1.4.1362
+1.2.840.113556.1.4.903
+1.2.840.113556.1.4.904
+1.2.840.113556.1.4.905
+1.2.840.113556.1.4.906
+1.2.840.113556.1.4.907
+1.3.6.1.4.1.1466.115.121.1.10
+1.3.6.1.4.1.1466.115.121.1.11
+1.3.6.1.4.1.1466.115.121.1.12
+1.3.6.1.4.1.1466.115.121.1.13
+1.3.6.1.4.1.1466.115.121.1.14
+1.3.6.1.4.1.1466.115.121.1.15
+1.3.6.1.4.1.1466.115.121.1.19
+1.3.6.1.4.1.1466.115.121.1.2
+1.3.6.1.4.1.1466.115.121.1.21
+1.3.6.1.4.1.1466.115.121.1.22
+1.3.6.1.4.1.1466.115.121.1.23
+1.3.6.1.4.1.1466.115.121.1.24
+1.3.6.1.4.1.1466.115.121.1.25
+1.3.6.1.4.1.1466.115.121.1.26
+1.3.6.1.4.1.1466.115.121.1.27
+1.3.6.1.4.1.1466.115.121.1.28
+1.3.6.1.4.1.1466.115.121.1.3
+1.3.6.1.4.1.1466.115.121.1.32
+1.3.6.1.4.1.1466.115.121.1.33
+1.3.6.1.4.1.1466.115.121.1.34
+1.3.6.1.4.1.1466.115.121.1.36
+1.3.6.1.4.1.1466.115.121.1.37
+1.3.6.1.4.1.1466.115.121.1.38
+1.3.6.1.4.1.1466.115.121.1.39
+1.3.6.1.4.1.1466.115.121.1.4
+1.3.6.1.4.1.1466.115.121.1.40
+1.3.6.1.4.1.1466.115.121.1.41
+1.3.6.1.4.1.1466.115.121.1.43
+1.3.6.1.4.1.1466.115.121.1.44
+1.3.6.1.4.1.1466.115.121.1.5
+1.3.6.1.4.1.1466.115.121.1.50
+1.3.6.1.4.1.1466.115.121.1.51
+1.3.6.1.4.1.1466.115.121.1.52
+1.3.6.1.4.1.1466.115.121.1.53
+1.3.6.1.4.1.1466.115.121.1.6
+1.3.6.1.4.1.1466.115.121.1.7
+1.3.6.1.4.1.1466.115.121.1.8
+1.3.6.1.4.1.1466.115.121.1.9
+adsldpc.pdb
+.rdata$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.text$lp01adsldpc.dll!20_pri7
+.text$lp03adsldpc.dll!30_clientonly
+.text$mn
+.text$zy
+.text$zz
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$zz$brc
+.data
+.data$00
+.data$zz
+.bss$00
+.bss$01
+.bss$03
+.bss$pr00
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+Y__^[
+QRPh<
+QRPh\
+QRPh|
+QRPh<
+Sj\[f
+_j\Xf;
+tKWSP
+D$0p8
+D$$PWj
+D$8Ph
+uOWVV
+;E0se
+D$DPW
+D$HPW
+|$LtO
+D$DPj
+j:Zf;
+j:Xf;
+QQSVW
+PV@PQ
+$wUtF
+4wPtD
+wlPj@
+_,jLX
+<SVW3
+wuPj@
+j\_f9
+4SVW3
+yCVhX%
+y&Vhx#
+KVhH+
+QQSVW
+t29w$u
+(w/t=
+j'Xf;
+j'[9V
+u.Pj@
+u(PSWV
+D$xPV
+D$DtF
+t69|$dt0
+t$,VQ
+StchH'
+@QPjqZ
+PSh03
+Yf98t
+wzPj@
+LSVW3
+t(Wh@'
+Xj(j@
+WjZj@
+VWj8j
+$VWj8j
+$VWj83
+\$\QS
+t$@PVVW
+D$LPh
+D$(Ph
+D$,Ph
+D$0Phh9
+;D$D|
+L$t_^[3
+VWj8j
+ SVW3
+VWj83
+$VWj83
+VWj83
+SVWj8j
+VWj8j
+VWj8j
+uqj\XPV
+Jj\Xf
+w|Pj@
+tXPPj
+u#9F<u
+u=9F$tRh
+D$hPRQ
+D$\WP
+!D$$f
+D$TPS
+PPPPP
+E$SV3
+VWhH7
+&9~<t
+~49^8v0
+C;^8r
+_90^[u
+t]Wh0?
+YVh8H
+[j2j@
+9f;>u
+9f;>u
+f97tB
+Af97u
+f97tT
+tij"Xf;
+8j\Yf;
+j/Yf;
+:wDt2
+j/Yf;
+/w[tD
+j/Yf;
+t8Wj@
+QQSVW
+3VWt#
+D$$SP
+u-h<5
+t=PSW
+D$0PW
+f;D$$u
+t$$WV
+t$ WV
+t$$WV
+D$ !0
+D$0PS
+D$$VP
+D$ PW
+t$(WV
+xZj;XPW
+LSWj;[S
+98t'3
+F@j-hh
+F@j.h
+t}h,N
+tkh<N
+tYhPN
+tGh`N
+t5hhN
+t#hhH
+O@Pj@
+SPhxN
+GY;~(v
+8f;:u
+8f;:u
+8f;:u
+f;D$(u
+f;D$(u
+f;D$(u
+9D$hv,
+;|$hr
+9O0u(h
+N$9^lt=
+t0=7 
+t"=> 
+9^lt8
+N 9N$r:
+t]=7 
+tO=> 
+tH=? 
+@t}SV
+G$;G(s43
+O$;O(
+9;u6SW
+t=j Y;
+9O`u.
+QSVWj
+RVVVVQ
+WVPVVVVQ
+u&f90t
+PWWWWQ
+tI98tEj
+RPSSQS
+PVSSSS
+SVWjDXjdYP3
+jWX_^[]
+SVWj;[S
+G@j-hh
+tb!0WSj@
+ExpandEnvironmentStringsForUserW
+WSAStringToAddressW
+GetTokenInformation
+LsaDeregisterLogonProcess
+IsValidSid
+GetSidIdentifierAuthority
+GetSidSubAuthorityCount
+GetSidSubAuthority
+GetSidLengthRequired
+LsaConnectUntrusted
+LsaCallAuthenticationPackage
+LsaFreeReturnBuffer
+LsaFreeMemory
+NetWkstaGetInfo
+NetApiBufferFree
+DsGetDcNameW
+CreateWellKnownSid
+LookupAccountSidW
+CryptUnprotectMemory
+CryptProtectMemory
+CredUIParseUserNameW
+LsaGetUserName
+!"#%$'&(*)+,-./01
+2345689:<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]_^`acbdefghijklmnopq
+rstuvwxy
+z{|}~
+adsldpc.dll
+??0CLexer@@QAE@XZ
+??1CLexer@@QAE@XZ
+ADSIPrint
+ADsAbandonSearch
+ADsCloseSearchHandle
+ADsCreateAttributeDefinition
+ADsCreateClassDefinition
+ADsCreateDSObject
+ADsCreateDSObjectExt
+ADsDeleteAttributeDefinition
+ADsDeleteClassDefinition
+ADsDeleteDSObject
+ADsEnumAttributes
+ADsEnumClasses
+ADsExecuteSearch
+ADsFreeColumn
+ADsGetColumn
+ADsGetFirstRow
+ADsGetNextColumnName
+ADsGetNextRow
+ADsGetObjectAttributes
+ADsGetPreviousRow
+ADsHelperGetCurrentRowMessage
+ADsObject
+ADsSetObjectAttributes
+ADsSetSearchPreference
+ADsWriteAttributeDefinition
+ADsWriteClassDefinition
+AdsTypeToLdapTypeCopyConstruct
+AdsTypeToLdapTypeCopyDNWithBinary
+AdsTypeToLdapTypeCopyDNWithString
+AdsTypeToLdapTypeCopyGeneralizedTime
+AdsTypeToLdapTypeCopyTime
+BerBvFree
+BerEncodingQuotaControl
+BuildADsParentPath
+BuildADsParentPathFromObjectInfo2
+BuildADsParentPathFromObjectInfo
+BuildADsPathFromLDAPPath2
+BuildADsPathFromLDAPPath
+BuildADsPathFromParent
+BuildLDAPPathFromADsPath2
+BuildLDAPPathFromADsPath
+ChangeSeparator
+Component
+ConvertSidToString
+ConvertSidToU2Trustee
+ConvertU2TrusteeToSid
+FindEntryInSearchTable
+FindSearchTableIndex
+FreeObjectInfo
+GetDefaultServer
+GetDisplayName
+GetDomainDNSNameForDomain
+GetLDAPTypeName
+?GetNextToken@CLexer@@QAEJPAGPAK@Z
+GetServerAndPort
+GetSyntaxOfAttribute
+InitObjectInfo
+?InitializePath@CLexer@@QAEJPAG@Z
+IsGCNamespace
+LdapAddExtS
+LdapAddS
+LdapAttributeFree
+LdapCacheAddRef
+LdapCloseObject
+LdapCompareExt
+LdapControlFree
+LdapControlsFree
+LdapCountEntries
+LdapCrackUserDNtoNTLMUser2
+LdapCreatePageControl
+LdapDeleteExtS
+LdapDeleteS
+LdapFirstAttribute
+LdapFirstEntry
+LdapGetDn
+LdapGetNextPageS
+LdapGetSchemaObjectCount
+LdapGetSubSchemaSubEntryPath
+LdapGetSyntaxIdOfAttribute
+LdapGetSyntaxOfAttributeOnServer
+LdapGetValues
+apGetValuesLen
+LdapInitializeSearchPreferences
+LdapIsClassNameValidOnServer
+LdapMakeSchemaCacheObsolete
+LdapMemFree
+LdapModDnS
+LdapModifyExtS
+LdapModifyS
+LdapMsgFree
+LdapNextAttribute
+LdapNextEntry
+LdapOpenObject2
+LdapOpenObject
+LdapParsePageControl
+LdapParseResult
+LdapReadAttribute2
+LdapReadAttribute
+LdapReadAttributeFast
+LdapRenameExtS
+LdapResult
+LdapSearch
+LdapSearchAbandonPage
+LdapSearchExtS
+LdapSearchInitPage
+LdapSearchS
+LdapSearchST
+LdapTypeBinaryToString
+LdapTypeCopyConstruct
+LdapTypeFreeLdapModList
+LdapTypeFreeLdapModObject
+LdapTypeFreeLdapObjects
+LdapTypeToAdsTypeDNWithBinary
+LdapTypeToAdsTypeDNWithString
+LdapTypeToAdsTypeGeneralizedTime
+LdapTypeToAdsTypeUTCTime
+LdapValueFree
+LdapValueFreeLen
+LdapcKeepHandleAround
+LdapcSetStickyServer
+PathName
+ReadPagingSupportedAttr
+ReadSecurityDescriptorControlType
+ReadServerSupportsIsADAMControl
+ReadServerSupportsIsADControl
+SchemaAddRef
+SchemaClose
+SchemaGetClassInfo
+SchemaGetClassInfoByIndex
+SchemaGetObjectCount
+SchemaGetPropertyInfo
+SchemaGetPropertyInfoByIndex
+SchemaGetStringsFromStringTable
+SchemaGetSyntaxOfAttribute
+SchemaIsClassAContainer
+SchemaOpen
+?SetAtDisabler@CLexer@@QAEXH@Z
+?SetExclaimnationDisabler@CLexer@@QAEXH@Z
+?SetFSlashDisabler@CLexer@@QAEXH@Z
+SortAndRemoveDuplicateOIDs
+UnMarshallLDAPToLDAPSynID
+intcmp
+ADSIAbandonSearch
+ADSICloseDSObject
+ADSICloseSearchHandle
+ADSICreateDSObject
+ADSIDeleteDSObject
+ADSIExecuteSearch
+ADSIFreeColumn
+ADSIGetColumn
+ADSIGetFirstRow
+ADSIGetNextColumnName
+ADSIGetNextRow
+ADSIGetObjectAttributes
+ADSIGetPreviousRow
+ADSIModifyRdn
+ADSIOpenDSObject
+ADSISetObjectAttributes
+ADSISetSearchPreference
+ADsDecodeBinaryData
+ADsEncodeBinaryData
+ADsGetLastError
+ADsSetLastError
+AdsTypeFreeAdsObjects
+AllocADsMem
+AllocADsStr
+FreeADsMem
+FreeADsStr
+LdapTypeToAdsTypeCopyConstruct
+MapADSTypeToLDAPType
+MapLDAPTypeToADSType
+ReallocADsMem
+ReallocADsStr
+wcscpy_s
+wcsncpy_s
+_wcsicmp
+swprintf_s
+wcscat_s
+wcsrchr
+_vsnwprintf
+_wtol
+_wtoi
+iswdigit
+swscanf_s
+wcsncat_s
+wcschr
+qsort
+bsearch
+wcsstr
+_wcsnicmp
+wcstoul
+_itow_s
+memcpy_s
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+msvcrt.dll
+_except_handler4_common
+LocalAlloc
+LocalFree
+EnterCriticalSection
+LeaveCriticalSection
+GetCurrentThreadId
+GetCurrentProcess
+CloseHandle
+GetCurrentProcessId
+GetModuleFileNameW
+GetLastError
+RegOpenKeyExW
+RegQueryValueExW
+RegGetValueW
+RegCloseKey
+EtwEventRegister
+EtwEventUnregister
+EtwEventWrite
+SystemTimeToFileTime
+FileTimeToSystemTime
+SystemTimeToTzSpecificLocalTime
+CreateDirectoryW
+RegCreateKeyExW
+GetFileSize
+ReadFile
+CreateFileW
+WriteFile
+DeleteFileW
+RegSetValueExW
+ExpandEnvironmentStringsW
+RegDeleteValueW
+CompareFileTime
+CompareStringOrdinal
+OpenThreadToken
+GetCurrentThread
+MultiByteToWideChar
+OpenProcessToken
+GetTickCount
+InitializeCriticalSection
+DeleteCriticalSection
+RtlIdentifierAuthoritySid
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+TerminateProcess
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+RaiseException
+WLDAP32.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+ntdll.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+memcmp
+memcpy
+memset
+WEVT_TEMPLATE
+CHAN\
+Microsoft-Windows-ADSI/Debug
+EventData
+Message
+Message
+PRVAD
+Microsoft-Windows-ADSI
+LEVLd
+win:Error
+win:Informational
+schema
+changepwd
+setpwd
+bindcache
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+ADs LDAP Provider C DLL
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+adsldpc.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+adsldpc.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+!ThZG}
+WEVT_TEMPLATE
+en-US
+0D0H0P0X0p0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3\3d3l3t3|3
+4 4(40484@4H4P4X4`4h4p4x4
+5 5(50585@5H5P5X5`5h5p5x5
+6 6(60686@6H6P6X6`6h6p6x6
+50676=6C6P6V6f6k6p6u6z6
+7+717@7F7V7
+:<:W:\:a:
+;';0;6;W;_;f;l;r;
+<%<-<@<L<T<
+=-=Q>i>
+>P?~?
+0*00060<0B0H0O0V0]0d0k0r0y0
+1!181>1D1J1P1V1]1d1k1r1y1
+2h2m2
+424u4
+5*5>5N5^5n5~5
+6!6.6B6R6_6s6
+767w7
+7;8A8I8Y8_8i8
+9$9*92989=9C9H9N9S9Y9^9d9i9o9t9z9
+:#:':+:/:
+=+=1=7=v=|=
+>a>1?A?p?
+4a4}4
+6\6f6m6
+7I7]7f7k7
+9>9H9[9g9
+>,?_?
+3F4[4
+4K5Q5
+;9;a;
+;K<g<
+?g?}?
+2!2%2
+5/5M5k5
+060Z0~061k1r1
+1"262j2u2}2
+3$353G3Y3
+3T4z4
+5Z6y6
+6;7O7
+<?<F<P<_<s<}<
+=:=k=|=
+=D>o>w>
+?'?;?
+)0?0T0e0
+1'1I1~1
+2L2c2
+3@4V4\4c4l4t4}4
+465n5
+8&8+8Z8d8j8
+999C9H9h9
+:";A;G;
+;1<8<?<J<V<
+=#=4=N=b=~=
+=2>}>
+010Y0h0
+2-2A2H2
+343<3L3m3y3
+4(4h4
+5%5+515D5k5r5
+6f6q6y6
+;#;9;M;
+<#<.<
+?<?O?
+1i2y2
+7!7+7<7\7l7u7{7
+8 818?8K8Q8
+96:<:B:a:g:
+;@;Y;r;
+;><D<l<{<
+<U=[=
+>%>9>B>V>_>
+1?1o1}1
+2#232<2
+3#3,3
+3S4n4u4
+5G5^5t5y5
+646A6u6n9x9
+9?:J:
+;-;7;A;
+;R<Z<g<o<
+=)=2===s=
+>%>C>L>X>
+?*?I?
+0E0e0x0
+1%181J1
+5(5,5
+;);I;g;
+<(<4<N<d<
+=-=<=K=R=W=
+=D>S>|>
+?3?:?
+5H6[6
+838k8
+9*:S:
+;.;j;
+<9<]<|<
+>)?I?k?
+101P1
+2F2V2|2
+3h4o4
+>:>V>i>{>
+1/1A1N1f1~1
+2'2A2Y2
+3 3&303\3p3
+4&4,424I4R4v4
+6'6D6K6U6h6o6y6
+7P9c9Y:g:
+;=;f;
+<u<~<
+<!>(>
+,0E0M0
+2E2N2w2
+2<6K6D7M7\7e7
+=$=4=@=}=
+=">*>
+>*?6?A?M?y?
+90B0j0
+3G3O3[3
+4D4M4]4e4m4|4
+717=7N7Z7
+8A8I8
+:':\:
+;!<)<8<H<P<
+<J=i=Q>]>m?|?
+1T2M3
+6$6o6
+7&7X7b7q7x7
+8X9l9
+9@:&;X;`;f;t;
+<#<H<O<h<
+=p>U?
+0&0-080?0J0Q0\0c0n0u0
+0>1\1u1
+2Q2Y2j2
+424F4K4Y4
+4*5L5b5
+7b7t7/8
+8I9e9
+9F:X:j:
+:1;o;-<
+<&=6=U=^=
+1$1U1[1o1'2.292@2e2l2
+2I3P3t3
+4;4B4V4
+6}8O9w9
+; =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=q>
+1-1F1a1z1
+2)2W2
+2J3p3
+4C4Y4`4p4
+545;5T5i5
+5,6M6*7B7r7y7
+8p98:K:n:w:
+:*;3;`<d<h<l<p<t<x<|<
+<#=t=
+!0U0v0
+1#1*161_1j1
+2"2d2~2
+3#3)3.3p3
+3>4R4X4
+556;6]6d6
+9I9O9W9]9g9
+9Z:w:
+<)</<N<T<}<
+=(=M=w=~=
+>2>G>c>
+?+?>?I?P?W?]?d?l?}?
+6Z6e6
+8 8$8,80888<8D8H8P8T8\8`8h8l8t8x8
+0 0(0,00040<0@0D0H0L0P0T0\0d0l0t0|0

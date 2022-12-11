@@ -1,0 +1,155 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\fsdepends.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    FLTMGR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00060E0 Import Address Table
+             1C0006408 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         216 FsRtlMupGetProviderIdFromName
+                         924 RtlIsCloudFilesPlaceholder
+                         B91 ZwQueryInformationFile
+                         35F IoGetAttachedDeviceReference
+                          D7 ExDeleteResourceLite
+                         52B KeRegisterBugCheckReasonCallback
+                         240 FsRtlQueryMaximumVirtualDiskNestingLevel
+                         588 KiBugCheckData
+                         49C KeDeregisterBugCheckReasonCallback
+                         5DB MmGetSystemRoutineAddress
+                         BA8 ZwQueryValueKey
+                         441 IoWMIRegistrationControl
+                         103 ExInitializeResourceLite
+                         367 IoGetDeviceAttachmentBaseRef
+                         217 FsRtlMupGetProviderInfoFromFileObject
+                         486 KeBugCheck
+                         836 RtlCompareUnicodeString
+                         4B9 KeGetCurrentIrql
+                          A7 ExAcquirePushLockExclusiveEx
+                         13F ExReleasePushLockExclusiveEx
+                         559 KeSetEvent
+                         102 ExInitializePushLock
+                         73E PsCreateSystemThread
+                         6CD ObfReferenceObject
+                         A4B SePrivilegeCheck
+                         933 RtlIsSandboxedToken
+                         48D KeClearEvent
+                         6C7 ObSetSecurityObjectByPointer
+                         8F1 RtlInitUnicodeString
+                         583 KeWaitForMultipleObjects
+                          BD ExAllocatePool2
+                         BAA ZwQueryVolumeInformationFile
+                         459 KdDebuggerNotPresent
+                         883 RtlEqualUnicodeString
+                         6B9 ObQueryNameString
+                         458 KdDebuggerEnabled
+                         B17 ZwClose
+                         B22 ZwCreateEvent
+                         BF4 ZwWaitForSingleObject
+                         BA5 ZwQuerySystemInformation
+                         4EF KeLeaveCriticalRegion
+                         585 KeWaitForSingleObject
+                         4CD KeInitializeEvent
+                          EE ExFreePoolWithTag
+                         44E IofCallDriver
+                         1A0 FsRtlAreVolumeStartupApplicationsComplete
+                         144 ExReleaseResourceLite
+                         302 IoBuildDeviceIoControlRequest
+                          A9 ExAcquireResourceExclusiveLite
+                         6CB ObfDereferenceObject
+                         375 IoGetFileObjectGenericMapping
+                         4A2 KeEnterCriticalRegion
+                         A06 SeAccessCheck
+                         487 KeBugCheckEx
+                         B69 ZwOpenKey
+                         499 KeDelayExecutionThread
+
+    HAL.dll
+             1C00060D0 Import Address Table
+             1C00063F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 KeStallExecutionProcessor
+
+    FLTMGR.SYS
+             1C0006000 Import Address Table
+             1C0006328 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          48 FltDeviceIoControlFile
+                          C9 FltQuerySecurityObject
+                          97 FltGetVolumeName
+                           B FltAllocateContext
+                          D0 FltReferenceContext
+                          AE FltObjectReference
+                          FD FltStartFiltering
+                          D2 FltRegisterFilter
+                          60 FltFreeGenericWorkItem
+                          CD FltQueueGenericWorkItem
+                          6C FltGetDiskDeviceObject
+                          6B FltGetDeviceObject
+                          47 FltDetachVolume
+                          11 FltAllocateGenericWorkItem
+                          64 FltFsControlFile
+                         107 FltUnregisterFilter
+                          91 FltGetVolumeFromFileObject
+                          AD FltObjectDereference
+                          96 FltGetVolumeInstanceFromName
+                          28 FltClose
+                          D5 FltReleaseContext
+                          AF FltOpenVolume
+                          59 FltFlushBuffers
+                          76 FltGetInstanceContext
+                          F1 FltSetInstanceContext
+
+  Section contains the following exports for FSDEPENDS.SYS
+
+    00000000 characteristics
+    80BBEB3B time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008830 DependentFSCheckFileHandle
+          2    1 0000D830 DependentFSCheckStoragePrivilege
+          3    2 0000CA70 DependentFSDereferenceDependency
+          4    3 0000A450 DependentFSDismountForSystemEvent
+          5    4 0000A600 DependentFSDismountForUnsurface
+          6    5 0000D910 DependentFSGetVirtualStoragePolicies
+          7    6 0000CB40 DependentFSReferenceDependency
+          8    7 0000CC10 DependentFSRegister
+          9    8 0000D740 DependentFSRegisterDeviceName
+         10    9 0000EB00 DependentFSUnregister
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+        A000 PAGE
+        1000 fothk

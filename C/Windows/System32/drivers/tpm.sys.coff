@@ -1,0 +1,195 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\tpm.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    cng.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00490C0 Import Address Table
+             1C00495E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         354 IoFreeKsrPersistentMemory
+                         CA6 wcsncpy_s
+                         CA3 wcsncat_s
+                         8D4 RtlGetPersistedStateLocation
+                         B23 ZwCreateFile
+                         BF5 ZwWriteFile
+                         C4C _vsnwprintf
+                         3CE IoRegisterPlugPlayNotification
+                         429 IoUnregisterPlugPlayNotificationEx
+                         956 RtlNtStatusToDosError
+                         117 ExIsSoftBoot
+                         3B5 IoQueryKsrPersistentMemorySize
+                         2E9 IoAcquireKsrPersistentMemory
+                         36E IoGetDeviceProperty
+                         32F IoCreateSymbolicLink
+                         33E IoDeleteSymbolicLink
+                          94 EtwUnregister
+                          8F EtwRegister
+                          92 EtwSetInformation
+                          BD ExAllocatePool2
+                          EE ExFreePoolWithTag
+                         48D KeClearEvent
+                         522 KeReadStateEvent
+                         4CE KeInitializeGuardedMutex
+                         46A KeAcquireGuardedMutex
+                         52F KeReleaseGuardedMutex
+                         4D1 KeInitializeMutex
+                         585 KeWaitForSingleObject
+                         536 KeReleaseMutex
+                         4D4 KeInitializeSemaphore
+                         538 KeReleaseSemaphore
+                         B66 ZwOpenEvent
+                         A1F SeCaptureSubjectContext
+                          F8 ExGetPreviousMode
+                         A06 SeAccessCheck
+                         A5C SeReleaseSubjectContext
+                         51B KeQueryTimeIncrement
+                         583 KeWaitForMultipleObjects
+                         6B6 ObOpenObjectByPointer
+                         B96 ZwQueryInformationToken
+                         499 KeDelayExecutionThread
+                         32A IoCreateNotificationEvent
+                         BF2 ZwUpdateWnfStateData
+                         279 HalDispatchTable
+                         C31 _purecall
+                         B17 ZwClose
+                         61E MmUnmapIoSpace
+                         5D6 MmGetPhysicalAddress
+                         3E8 IoReserveKsrPersistentMemory
+                         413 IoSizeofWorkItem
+                         396 IoInitializeWorkItem
+                         3B9 IoQueueWorkItem
+                         422 IoUninitializeWorkItem
+                         6CD ObfReferenceObject
+                         397 IoInvalidateDeviceRelations
+                         5AE MmAllocateContiguousMemorySpecifyCache
+                         5B0 MmAllocateContiguousNodeMemory
+                         836 RtlCompareUnicodeString
+                         C71 memmove_s
+                         C5E bsearch
+                         83F RtlConvertSidToUnicodeString
+                         8B3 RtlFreeUnicodeString
+                         A42 SeLocateProcessImageName
+                         C52 _wcsnicmp
+                         B26 ZwCreateKey
+                         6AD ObGetObjectSecurity
+                         A10 SeAssignSecurityEx
+                         9A8 RtlSetControlSecurityDescriptor
+                         BDA ZwSetSecurityObject
+                         A31 SeDeassignSecurity
+                         6C4 ObReleaseObjectSecurity
+                         B69 ZwOpenKey
+                         B43 ZwEnumerateKey
+                         B39 ZwDeleteKey
+                         B3A ZwDeleteValueKey
+                         BA8 ZwQueryValueKey
+                         981 RtlQueryRegistryValuesEx
+                         B45 ZwEnumerateValueKey
+                         C80 strcmp
+                         9A9 RtlSetDaclSecurityDescriptor
+                         3A3 IoIsWdmVersionAvailable
+                         93D RtlLengthSid
+                         7FD RtlAddAccessAllowedAce
+                         7FC RtlAbsoluteToSelfRelativeSD
+                         C9C wcschr
+                          C1 ExAllocatePoolWithTag
+                         856 RtlCreateSecurityDescriptor
+                         A38 SeExports
+                         9E4 RtlUnregisterFeatureConfigurationChangeNotification
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         975 RtlQueryFeatureConfiguration
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         81D RtlCapabilityCheck
+                         7EE PsTerminateSystemThread
+                         561 KeSetPriorityThread
+                         C4F _wcsicmp
+                         10C ExInterlockedInsertTailList
+                         54A KeResetEvent
+                         449 IoWriteKsrPersistentMemory
+                          71 DbgPrintEx
+                         84C RtlCopyUnicodeString
+                         BF7 __C_specific_handler
+                         635 NtClose
+                         6BB ObReferenceObjectByHandle
+                         73E PsCreateSystemThread
+                         8F1 RtlInitUnicodeString
+                         559 KeSetEvent
+                         74B PsGetCurrentProcess
+                         517 KeQueryPriorityThread
+                         10F ExInterlockedRemoveHeadList
+                         4D5 KeInitializeSpinLock
+                         6CB ObfDereferenceObject
+                         8D5 RtlGetProductInfo
+                         5CB MmFreeContiguousMemory
+                         8DF RtlGetVersion
+                          9A EtwWriteTransfer
+                         44E IofCallDriver
+                         302 IoBuildDeviceIoControlRequest
+                         5EF MmMapIoSpaceEx
+                         4CD KeInitializeEvent
+                         C9D wcscmp
+
+    cng.sys
+             1C0049030 Import Address Table
+             1C0049550 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 BCryptGenerateSymmetricKey
+                           4 BCryptDecrypt
+                           9 BCryptDestroyKey
+                           D BCryptEncrypt
+                          14 BCryptGenRandom
+                          12 BCryptFinishHash
+                          1A BCryptHashData
+                           1 BCryptCloseAlgorithmProvider
+                           8 BCryptDestroyHash
+                           2 BCryptCreateHash
+                          18 BCryptGetProperty
+                          1E BCryptOpenAlgorithmProvider
+                          2B EntropyProvideData
+                          2E EntropyUnregisterSource
+                          2C EntropyRegisterCallback
+                          2D EntropyRegisterSource
+                          24 BCryptSetProperty
+
+    WDFLDR.SYS
+             1C0049000 Import Address Table
+             1C0049520 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 WdfVersionBindClass
+                           3 WdfLdrQueryInterface
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           8 WdfVersionUnbind
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        3000 .pdata
+        2000 .reloc
+        5000 .rsrc
+       39000 .text
+        1000 GFIDS
+        1000 INIT
+        B000 NONPAGE
+        2000 PAGERO
+        1000 fothk

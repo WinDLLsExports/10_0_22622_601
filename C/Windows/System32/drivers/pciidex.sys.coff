@@ -1,0 +1,203 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\pciidex.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008010 Import Address Table
+             1C0008318 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4F3 KeLowerIrql
+                         8F1 RtlInitUnicodeString
+                         323 IoCreateDevice
+                         4D5 KeInitializeSpinLock
+                         2FE IoAttachDeviceToDeviceStack
+                         33C IoDeleteDevice
+                         33F IoDetachDevice
+                         44F IofCompleteRequest
+                          C1 ExAllocatePoolWithTag
+                         6BE ObReferenceObjectByPointer
+                          EE ExFreePoolWithTag
+                         44E IofCallDriver
+                         394 IoInitializeRemoveLockEx
+                         398 IoInvalidateDeviceState
+                         35F IoGetAttachedDeviceReference
+                         6CB ObfDereferenceObject
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                         2EB IoAcquireRemoveLockEx
+                         3D3 IoReleaseRemoveLockEx
+                         3D2 IoReleaseRemoveLockAndWaitEx
+                         C96 vDbgPrintExWithPrefix
+                          95 EtwWrite
+                         728 PoStartNextPowerIrp
+                         71F PoSetPowerState
+                         6DA PoCallDriver
+                         4CD KeInitializeEvent
+                         585 KeWaitForSingleObject
+                         559 KeSetEvent
+                         587 KfRaiseIrql
+                         3A9 IoOpenDeviceRegistryKey
+                         B17 ZwClose
+                         5EF MmMapIoSpaceEx
+                         5D6 MmGetPhysicalAddress
+                         31E IoConnectInterruptEx
+                         344 IoDisconnectInterruptEx
+                         304 IoBuildSynchronousFsdRequest
+                         9DA RtlUnicodeStringToInteger
+                         473 KeAcquireSpinLockAtDpcLevel
+                         53B KeReleaseSpinLockFromDpcLevel
+                         374 IoGetDriverObjectExtension
+                         2F2 IoAllocateDriverObjectExtension
+                         322 IoCreateController
+                         33B IoDeleteController
+                         2F1 IoAllocateController
+                         351 IoFreeController
+                         84C RtlCopyUnicodeString
+                         C4C _vsnwprintf
+                         2F9 IoAllocateWorkItem
+                         359 IoFreeWorkItem
+                         3B9 IoQueueWorkItem
+                         279 HalDispatchTable
+                         61E MmUnmapIoSpace
+                         C4A _vsnprintf
+                         80F RtlAnsiStringToUnicodeString
+                         8E8 RtlInitAnsiString
+                         36E IoGetDeviceProperty
+                          8F EtwRegister
+                          94 EtwUnregister
+                         718 PoRequestPowerIrp
+                         372 IoGetDmaAdapter
+                         2F4 IoAllocateIrp
+                         353 IoFreeIrp
+                          BD ExAllocatePool2
+                         B20 ZwCreateDirectoryObject
+                         6BB ObReferenceObjectByHandle
+                         AF1 WmiTraceMessageVa
+                         441 IoWMIRegistrationControl
+                         AEF WmiQueryTraceInformation
+                         980 RtlQueryRegistryValues
+                         5DB MmGetSystemRoutineAddress
+                         187 ExpInterlockedPushEntrySList
+                         4B9 KeGetCurrentIrql
+                         4E0 KeInsertQueueDpc
+                         186 ExpInterlockedPopEntrySList
+                         2F3 IoAllocateErrorLogEntry
+                         448 IoWriteErrorLogEntry
+                         2E6 InitializeSListHead
+                         4C9 KeInitializeDpc
+                         B26 ZwCreateKey
+
+    HAL.dll
+             1C0008000 Import Address Table
+             1C0008308 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 KeStallExecutionProcessor
+
+  Section contains the following exports for PCIIDEX.SYS
+
+    00000000 characteristics
+    4D0EADA3 time date stamp
+        0.00 version
+           1 ordinal base
+          67 number of functions
+          67 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001380 AtaPortAllocateQueueTag
+          2    1 000013E0 AtaPortBuildRequestSenseIrb
+          3    2 00001440 AtaPortCompleteAllActiveRequests
+          4    3 000014A0 AtaPortCompleteRequest
+          5    4 000014F0 AtaPortConvertPhysicalAddressToUlong
+          6    5 00001500 AtaPortConvertUlongToPhysicalAddress
+          7    6 00001510 AtaPortCopyMemory
+          8    7 00001530 AtaPortDebugBreak
+          9    8 00001540 AtaPortDebugPrint
+         10    9 000015B0 AtaPortDeviceStateChange
+         11    A 00001610 AtaPortEtwTraceLog
+         12    B 000032F0 AtaPortGetBusData
+         13    C 00001720 AtaPortGetDeviceBase
+         14    D 00001730 AtaPortGetPhysicalAddress
+         15    E 00001780 AtaPortGetScatterGatherList
+         16    F 00001790 AtaPortGetUnCachedExtension
+         17   10 0000C210 AtaPortInitializeEx
+         18   11 000017F0 AtaPortInitializeQueueTag
+         19   12 00001850 AtaPortLogError
+         20   13 00001510 AtaPortMoveMemory
+         21   14 000018A0 AtaPortNotification
+         22   15 00001940 AtaPortQuerySystemTime
+         23   16 00001960 AtaPortReadPortBufferUchar
+         24   17 00001980 AtaPortReadPortBufferUlong
+         25   18 000019A0 AtaPortReadPortBufferUshort
+         26   19 000019C0 AtaPortReadPortUchar
+         27   1A 000019D0 AtaPortReadPortUlong
+         28   1B 000019E0 AtaPortReadPortUshort
+         29   1C 00001A00 AtaPortReadRegisterBufferUchar
+         30   1D 00001A30 AtaPortReadRegisterBufferUlong
+         31   1E 00001A60 AtaPortReadRegisterBufferUshort
+         32   1F 00001A90 AtaPortReadRegisterUchar
+         33   20 00001AA0 AtaPortReadRegisterUlong
+         34   21 00001AB0 AtaPortReadRegisterUshort
+         35   22 00001AC0 AtaPortRegistryAllocateBuffer
+         36   23 00001B20 AtaPortRegistryFreeBuffer
+         37   24 00001B80 AtaPortRegistryRead
+         38   25 00001BF0 AtaPortRegistryWrite
+         39   26 00001C60 AtaPortRegistryWriteDeferred
+         40   27 00001CD0 AtaPortReleaseQueueTag
+         41   28 00001D30 AtaPortReleaseRequestSenseIrb
+         42   29 00001D80 AtaPortRequestCallback
+         43   2A 00003330 AtaPortSetBusData
+         44   2B 00001DD0 AtaPortStallExecution
+         45   2C 00001DF0 AtaPortTraceNotification
+         46   2D 00002010 AtaPortWritePortBufferUchar
+         47   2E 00002030 AtaPortWritePortBufferUlong
+         48   2F 00002050 AtaPortWritePortBufferUshort
+         49   30 00002070 AtaPortWritePortUchar
+         50   31 00002080 AtaPortWritePortUlong
+         51   32 00002090 AtaPortWritePortUshort
+         52   33 000020B0 AtaPortWriteRegisterBufferUchar
+         53   34 000020E0 AtaPortWriteRegisterBufferUlong
+         54   35 00002110 AtaPortWriteRegisterBufferUshort
+         55   36 00002140 AtaPortWriteRegisterUchar
+         56   37 00002150 AtaPortWriteRegisterUlong
+         57   38 00002160 AtaPortWriteRegisterUshort
+         58   39 0000AAC0 DllInitialize
+         59   3A 0000ABC0 DllUnload
+         60   3B 00001540 PciIdeXDebugPrint
+         61   3C 00003370 PciIdeXGetBusData
+         62   3D 0000AA40 PciIdeXInitialize
+         63   3E 000033C0 PciIdeXSetBusData
+         64   3F 00003530 PciIdexGetBusLocation
+         65   40 00003EC0 memcpy
+         66   41 00003EC0 memmove
+         67   42 0000E010 memset
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        5000 PAGE
+        1000 fothk

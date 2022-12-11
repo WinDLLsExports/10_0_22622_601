@@ -1,0 +1,501 @@
+!This program cannot be run in DOS mode.
+.text
+`.rdata
+@.data
+.pdata
+@.rsrc
+@.reloc
+L$HH3
+\$ UVWH
+t$ E3
+L$`H3
+@SVWH
+D$PL+
+f94Au
+D$(E3
+L$ E3
+D$ E3
+t$ UWAVH
+L$PH3
+UATAUAVAWH
+D9d$0t
+fD9$Au
+fD9$Au
+fF9$qu
+A_A^A]A\]
+D$ E3
+@USVWATAVAWH
+y6L9e
+A_A^A\_^[]
+t$ UWAVH
+fD94Cu
+UVWAVAWH
+fD94Au
+L9t$xv:H
+A_A^_^]
+\$ UVWATAVH
+A^A\_^]
+UWAWH
+fA94Qu
+y8H9u
+f94Zu
+f94Zu
+u^H9S
+L$HH3
+WAVAWH
+9A98uCA9x
+pcPZt
+0A_A^_
+x UAVAWH
+)D$@D
+A_A^]
+D$(E3
+D$ E3
+L$XH3
+BT9AT
+ADH;BD
+ALH;BL
+UWAUAVAWH
+L$0fE
+D9=fz
+A_A^A]_]
+@SVWH
+L$pH3
+D$(E3
+@SVWH
+L$0H3
+l$ VWAVH
+D$ E3
+l$`E3
+0A^_^
+UVWATAUAVAWH
+D$4E3
+D$(E3
+A_A^A]A\_^]
+L$XH3
+UVWAVAWH
+D$0fD
+A_A^_^]
+tNf9l$TtGH
+@SUVWAVH
+D$(E3
+D$@E3
+A^_^][
+L$ SVWAVH
+(A^_^[
+\$ E3
+L$ SUVWH
+G$H;A$
+WATAUAVAWH
+fD98u
+fD9<Bu
+fF9<Bu
+ A_A^A]A\_
+x UAVAWH
+D$(E3
+A_A^]
+q0R^G'
+ATAVAWH
+p0R^G'
+ A_A^A\
+q:_0#
+VWAVH
+\$ E3
+D$HE3
+D$HE3
+LcA<E3
+HcQ<H
+\$ UH
+ H3E H3E
+E(=csm
+E8=csm
+EH=csm
+EX=csm
+Eh=csm
+Ex=csm
++TimezoneAI
+TimeZone Advanced Installer
+TimezoneAI::BasicInstaller::Install()
+TimezoneAI::BasicInstaller::Uninstall()
+onecore\base\wcp\plugins\timezoneai\dll\timezoneai.cpp
+Windows::WCP::TimezoneAI::BasicInstaller::_InstallUninstall
+Not-null check failed: Success
+TimezoneResourceAI::BasicInstaller::Install()
+TimezoneResourceAI::BasicInstaller::Uninstall()
+Windows::WCP::TimezoneResourceAI::BasicInstaller::_InstallUninstall
+DoOfflineAI(Services, Success)
+_dstoff
+MUI_Std
+MUI_Dlt
+Display
+MUI_Display
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones
+StandardName
+DaylightName
+SeSystemtimePrivilege
+SeTimeZonePrivilege
+user32.dll
+BroadcastSystemMessageW
+ntdll.dll
+RtlPublishWnfStateData
+NTSTATUS
+RtlPublishWnfStateData returned with result:{NTSTATUS}
+\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones
+@tzres.dll,-
+\Registry\Machine\System\CurrentControlSet\Control\TimeZoneInformation
+TimeZoneKeyName
+DynamicDaylightTimeDisabled
+\Registry\Machine\System\CurrentControlSet
+Control\Nls\Language
+InstallLanguage
+InstallLanguageFallback
+Control\MUI\Settings
+PreferredUILanguages
+Control\MUI\Settings\LanguageConfiguration
+DefaultFallback
+onecore\base\wcp\plugins\timezoneai\dll\offlineai.cpp
+GetRegistryString
+hkey->OpenExistingKey( Flags, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), ObjAttr, &hkeyChild, &Disposition)
+$(runtime.windows)\system32\%s\tzres.dll.mui
+LoadTzResDllMui
+sil->OpenRegistryKey(0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), sc_lus_CurrentControl, &hkeyCurrentControlSet, 0)
+Control\MUI\UILanguages\%s
+\Registry\Machine\System\CurrentControlSet\Control\MUI\UILanguages
+hkeyUILanguages->EnumerateKeys(0, &UILanguagesIterator)
+UILanguagesIterator->Next(Windows::MakeVector(KeyInfos), &cFetched)
+UpdateValueIfNecessary
+hkeyTZ->QueryValue( Windows::Rtl::IRtlKey::QueryValueFlags::ValueMissingIsOk, lusMuiValueName, KeyValuePartialInformation, &lbMuiString, &DispositionMui)
+hkeyTZ->QueryValue( Windows::Rtl::IRtlKey::QueryValueFlags::ValueMissingIsOk, lusLegacyValueName, KeyValuePartialInformation, &lbLegacyString, &DispositionLegacy)
+hkeyTZ->SetValue( 0, lusLegacyValueName, ( 1ul ), szMuiString, (cchString + 1) * sizeof(WCHAR), 0)
+UpdateTimeZone
+UpdateValueIfNecessary(hkeyTZ, sc_STR_MUI_Display, sc_STR_LEGACY_Display)
+UpdateValueIfNecessary(hkeyTZ, sc_STR_MUI_Dlt, sc_STR_LEGACY_Dlt)
+UpdateValueIfNecessary(hkeyTZ, sc_STR_MUI_Std, sc_STR_LEGACY_Std)
+EnumAndUpdateTimeZones
+sil->OpenRegistryKey( 0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))) | ((((0x00020000L)) | (0x0002) | (0x0004)) & (~(0x00100000L))), sc_STR_TimeZonesRoot, &hkeyTimezones, 0)
+hkeyTimezones->EnumerateKeys( 0, &TimeZoneIterator)
+TimeZoneIterator->Next(Windows::MakeVector(KeyInfos), &cFetched)
+hkeyTimezones->OpenExistingKey( 0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))) | ((((0x00020000L)) | (0x0002) | (0x0004)) & (~(0x00100000L))), ObjAttr, &TimeZoneKey, &Disposition)
+UpdateTimeZone(TimeZoneKey)
+UpdateCurrentTimezoneNames
+sil->OpenRegistryKey(0, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), sc_STR_TimeZonesRoot, &hkeyTimezones, 0)
+hkeyTimeZoneInformation->SetValue(0, sc_STR_StandardName, ( 1ul ), szMUI_Std, (wcslen(szMUI_Std)+1) * sizeof(WCHAR), 0)
+hkeyTimeZoneInformation->SetValue(0, sc_STR_DaylightName, ( 1ul ), szMUI_Std, (wcslen(szMUI_Std)+1) * sizeof(WCHAR), 0)
+hkeyTimeZoneInformation->SetValue(0, sc_STR_DaylightName, ( 1ul ), szMUI_Dlt, (wcslen(szMUI_Dlt)+1) * sizeof(WCHAR), 0)
+DoOfflineAI
+status
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+kernelbase.dll
+GetPersistedRegistryLocationW
+TimeZoneInformationSettings
+IsObsolete
+IsCustom
+FirstEntry
+LastEntry
+Dynamic DST
+\tzres.dll
+@tzres.dll,
+sr-Latn-CS
+sr-SP-Latn
+sr-Cyrl-CS
+sr-SP-Cyrl
+sr-Latn-BA
+sr-BA-Latn
+sr-Cyrl-BA
+sr-BA-Cyrl
+iu-Latn-CA
+iu-CA-Latn
+bs-Cyrl-BA
+bs-BA-Cyrl
+bs-Latn-BA
+bs-BA-Latn
+zh-Hant
+zh-CHT
+zh-Hans
+zh-CHS
+%s\%s\%s.mui
+%s\%s.mui
+.\%s\%s.mui
+.\%s.mui
+%s\%s
+RSDSo
+timezoneai.pdb
+.text$mn
+.text$mn$00
+.text$x
+.rdata$brc
+.idata$5
+.00cfg
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gehcont
+.gfids
+.giats
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.xdata
+.edata
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.data$brc
+.data
+.pdata
+.rsrc$01
+.rsrc$02
+timezoneai.DLL
+DllCanUnloadNow
+DllCsiGetHandler
+_wcsicmp
+swprintf_s
+wcstoul
+_wcsnicmp
+_wtoi
+__C_specific_handler
+_purecall
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+OpenProcessToken
+GetCurrentProcess
+GetLastError
+LookupPrivilegeValueW
+AdjustTokenPrivileges
+CloseHandle
+RegGetValueW
+RegSetValueExW
+RegOpenKeyExW
+GetLocalTime
+RegCloseKey
+GetDynamicTimeZoneInformation
+CompareStringW
+SetDynamicTimeZoneInformation
+HeapSetInformation
+LoadLibraryExW
+GetProcAddress
+FreeLibrary
+SetLastError
+LCIDToLocaleName
+LoadStringW
+DisableThreadLibraryCalls
+DeleteCriticalSection
+InitializeCriticalSection
+HeapDestroy
+Sleep
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-rtlsupport-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+?RtlTraceVa@Rtl@WCP@Windows@@YAXKKPEAU_RTL_TRACING_FACILITY@123@QEBD_KPEAD@Z
+ConvertNtStatusToHResult
+RtlReportErrorOrigination
+?RtlTraceFormat_PCNTSTATUS@Rtl@WCP@Windows@@YAXPEAUIRtlFormattedOutputStream@13@PEBX@Z
+RtlInitLUnicodeStringFromNullTerminatedString
+ConvertHResultToNtStatus
+RtlFreeLBlob
+?RtlGetFacilityTracingFlags@Rtl@WCP@Windows@@YAKPEAU_RTL_TRACING_FACILITY@123@@Z
+WCP.dll
+_itow_s
+wcschr
+RegQueryValueExW
+EnterCriticalSection
+LeaveCriticalSection
+GetTimeZoneInformation
+RegEnumKeyExW
+GetSystemDirectoryW
+LockResource
+FindResourceExW
+LoadResource
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+_vsnwprintf
+SearchPathW
+GetLocaleInfoEx
+CreateFileW
+GetVersionExW
+UnmapViewOfFile
+CreateFileMappingW
+MapViewOfFile
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+memcmp
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Timezone Advanced Installer plug-in
+FileVersion
+10.0.22621.440 (WinBuild.160101.0800)
+InternalName
+timezoneai.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+timezoneai.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.440
+VarFileInfo
+Translation
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,/BLH90/ZIQnOMDEvGgCuPl2gk8JKC0MCHUu+Iys1sv8=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+woeGN
+ilQ#<
+T'HK^
+20220720041327.602Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:7BF1-E3EA-B8081%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211202190522Z
+230228190522Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:7BF1-E3EA-B8081%0#
+Microsoft Time-Stamp Service0
+"m!u4W
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+7%k'`
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:7BF1-E3EA-B8081%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220720082144Z
+20220721082144Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+,7K|\
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+xu`N`
+W2z +x

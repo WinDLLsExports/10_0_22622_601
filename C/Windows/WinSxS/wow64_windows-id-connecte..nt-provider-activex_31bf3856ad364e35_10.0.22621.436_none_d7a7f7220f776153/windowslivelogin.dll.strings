@@ -1,0 +1,1627 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+bad array new length
+OLEAUT32.dll
+SspiCli.dll
+ext-ms-win-devmgmt-policy-l1-1-0.dll
+ext-ms-win-devmgmt-policy-l1-1-0
+ext-ms-win-devmgmt-policy-l1-1-1
+ext-ms-win-devmgmt-policy-l1-1-2
+ext-ms-win-devmgmt-policy-l1-1-3
+USER32.dll
+@Qm6t
+WININET.dll
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+RegDeleteKeyExW
+advapi32.dll
+RegDeleteKeyW
+CLSID
+AppID
+ForceRemove
+NoRemove
+Delete
+Component Categories
+FileType
+Interface
+Hardware
+SECURITY
+SYSTEM
+Software
+TypeLib
+HKEY_CLASSES_ROOT
+HKEY_CURRENT_USER
+HKEY_LOCAL_MACHINE
+HKEY_USERS
+HKEY_PERFORMANCE_DATA
+HKEY_DYN_DATA
+HKEY_CURRENT_CONFIG
+Module
+Module_Raw
+REGISTRY
+https
+idsbho
+idsbho2
+DADomain
+DeviceIdTrustedDomain
+DIDManagementDomain
+wlidcli
+SignupDomain
+AllowGetProperty
+{acb1d076-e5e5-49ea-b14e-404e03920325}
+TrustedDomain
+WLDomain
+IdnToAscii
+normaliz.dll
+Cw48?
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+ntdll.dll
+RtlNtStatusToDosErrorNoTeb
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+{062C56BD-B2FF-4405-88D9-93154F27D785}
+Failure - VERIFYBOOL macro: g_hModuleInstance != NULL, HRESULT: E_UNEXPECTED
+clientcore\ds\ext\live\identity\activex\idbho.cpp
+Failure - VERIFYBOOL macro: ::GetModuleFileName(g_hModuleInstance, szFilePath, MAX_PATH) > 0, HRESULT: HRESULT_FROM_WIN32(::GetLastError())
+hr = GetBHOPath(wszPathTemp)
+GetIDCRLModulePath
+Failure - VERIFYBOOL macro: ::GetModuleFileName(NULL, pszLoader, MAX_PATH) > 0, HRESULT: HRESULT_FROM_WIN32(::GetLastError())
+hr = GetIDCRLModulePath(wszPathTemp)
+GetIDCRLPath
+Local\SM0:%lu:%lu:%hs
+APPID
+Unknown exception
+CIDBHOCtrl::CheckSiteLockDomainList
+clientcore\ds\ext\live\identity\activex\idbhoctrl.cpp
+hr = g_BHOHelper.GetDADomain(wszDomain)
+hr = g_BHOHelper.GetTrustedSites(eDomainType, m_awszDomain)
+hr = HrInApproveDomain()
+CIDBHOCtrl::Enable
+hr = CheckSiteLockDomainList(eDADomain)
+hr = g_BHOHelper.Enable()
+CIDBHOCtrl::Disable
+hr = g_BHOHelper.Disable()
+CIDBHOCtrl::InitNotForBrowser
+CIDBHOCtrl::get_Version
+Failure - VERIFYBOOL macro: pbstrVersion != NULL, HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: g_BHOHelper.IsInitialized(), HRESULT: PP_E_CRL_NOT_INITIALIZED
+Failure - VERIFYBOOL macro: g_BHOHelper.IsEnabled(), HRESULT: E_NOTIMPL
+hr = CheckSiteLockDomainList(eSLDomain)
+hr = g_BHOHelper.GetVersions(bstrVersion)
+CIDBHOCtrl::GetAuthBufferEx
+hr = CheckSiteLockDomainList(eSignupDomain)
+Failure - VERIFYBOOL macro: userName != NULL && userName[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: password != NULL && password[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: pAuthBuffer != NULL, HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: daToken != NULL && daToken[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: daTokenExpiryTime != NULL && daTokenExpiryTime[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: daTokenCreationTime != NULL && daTokenCreationTime[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: flowToken != NULL && flowToken[0] != L'\0', HRESULT: E_INVALIDARG
+CredSerializationHelper::SerializePasswordCredentials Failed. (0x%x)
+hr = PassportEncode::Base64Encode(spAuthBufferLocal, authBufferLengthBytes, encodedString)
+Failure - VERIFYBOOL macro: comAuthBuffer != NULL, HRESULT: E_OUTOFMEMORY
+hr = SaveDATokenInternal( g_BHOHelper.GetClientExecutionContext(), daToken, daTokenExpiryTime, daTokenCreationTime, encodedSessionKey)
+CIDBHOCtrl::SaveDAToken
+CIDBHOCtrl::SaveDATokenInternal
+Failure - VERIFYBOOL macro: daToken != nullptr && daToken[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: daTokenExpiryTime != nullptr && daTokenExpiryTime[0] != L'\0', HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: daTokenCreationTime != nullptr && daTokenCreationTime[0] != L'\0', HRESULT: E_INVALIDARG
+pExecutionContext->GetSystemStoreLiteFunctions()->IsConnected(&isConnected, nullptr)
+hr = HRESULT_FROM_WIN32(ERROR_NO_SUCH_USER)
+hr = pExecutionContext->GetNtServiceFunctions()->WLIDCCreateContextEx( L"", c_browserHelperAppId, CREATECONTEXT_SET_APP_IDENTITY, &serviceHandle)
+hr = StringCchLength(encodedSessionKey, STRSAFE_MAX_CCH, &encodedLengthCharacters)
+hr = CWLIDCCHelper::Base64Decode( &localAllocMemoryManager, encodedSessionKey, static_cast<DWORD>(encodedLengthCharacters), &spSessionKey, &decodedByteLength)
+hr = E_INVALIDARG
+http://Passport.NET/tb
+hr = pExecutionContext->GetNtServiceFunctions()->WLIDCUpdateToken( serviceHandle, &tokenParam )
+ps:password
+hr = pExecutionContext->GetNtServiceFunctions()->WLIDCPersistCredential( serviceHandle, PPCRL_CREDTYPE_PASSWORD, 0)
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+//
+CBHOHelper::Enable
+clientcore\ds\ext\live\identity\activex\idbhohelper.cpp
+http://%s
+Failure - IF_FAILETRACE macro: GetVersions(wszVersion), HRESULT: 0x%08X
+hr = SetDomainCookie(wszDomain, c_wszBHOVersionCookie, wszVersion, false)
+CBHOHelper::Disable
+Failure - IF_FAILETRACE macro: hr = SetDomainCookie(m_wszDADomain, c_wszBHODisabledCookie, L"1", false), HRESULT: 0x%08X
+IDBHO Initialized at %s
+CBHOHelper::Initialize
+hr = InitConfig()
+CBHOHelper::GetConfig
+Failure - VERIFYBOOL macro: lpwszCfg && *lpwszCfg, HRESULT: E_INVALIDARG
+hr = ::WLIDCGetServiceConfig(lpwszCfg, &wszTemp)
+Failure - VERIFYBOOL macro: !wszValue.IsEmpty(), HRESULT: PP_E_CRL_GET_ITEM_FAILED
+CBHOHelper::InitConfig
+hr = GetConfig(c_wszConfigDADomain, m_wszDADomain)
+hr = GetConfig(c_wszConfigWLDomain, m_wszWLDomain)
+hr = GetConfig(c_wszConfigTrustedDomain, wszTrustedDomain)
+Unable to retrieve '%s', Continue initialization.
+Failure - VERIFYBOOL macro: strUrl && *strUrl && strName && *strName && strValue && *strValue, HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: CWininetHandler::SetCookie( strUrl, strName, fPerm ? (LPCWSTR)wszCookie : strValue ), HRESULT: HRESULT_FROM_WIN32(::GetLastError())
+Failure - VERIFYBOOL macro: strDomain && *strDomain && strName && *strName && strValue && *strValue, HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: *wszDomain, HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: strUrl && *strUrl && strName && *strName, HRESULT: E_INVALIDARG
+; expires = Sat, 01-Jan-2000 00:00:00 GMT
+Failure - VERIFYBOOL macro: CWininetHandler::SetCookie( strUrl, strName, L"; expires = Sat, 01-Jan-2000 00:00:00 GMT"), HRESULT: HRESULT_FROM_WIN32(::GetLastError())
+CBHOHelper::GetFileVer
+Failure - VERIFYBOOL macro: lpwszFile && *lpwszFile, HRESULT: E_INVALIDARG
+Failure - VERIFYBOOL macro: dwSize > 0, HRESULT: HRESULT_FROM_WIN32(GetLastError())
+Failure - VERIFYBOOL macro: spVersionInfo != NULL, HRESULT: E_OUTOFMEMORY
+Failure - VERIFYBOOL macro: GetFileVersionInfoExW( FILE_VER_GET_LOCALISED | FILE_VER_GET_NEUTRAL, lpwszFile, 0, dwSize, (LPVOID)(PBYTE)spVersionInfo), HRESULT: HRESULT_FROM_WIN32(GetLastError())
+Failure - VERIFYBOOL macro: VerQueryValueW((LPBYTE)spVersionInfo, L"\\\\", (LPVOID*)(&pFileVer), &cbFixedFileInfo), HRESULT: HRESULT_FROM_WIN32(GetLastError())
+Failure - VERIFYBOOL macro: pFileVer && cbFixedFileInfo == sizeof(VS_FIXEDFILEINFO), HRESULT: E_UNEXPECTED
+%d.%d.%d.%d
+hr = GetVersions(wstrVersion)
+CBHOHelper::GetVersions
+Failure - IF_FAILETRACE macro: hr = GetFileVer(wszPathTemp, wszBHOVersion), HRESULT: 0x%08X
+Failure - IF_FAILETRACE macro: hr = GetFileVer(wszPathTemp, wszIDCRLVersion), HRESULT: 0x%08X
+Failure - IF_FAILETRACE macro: hr = GetFileVer(wszPathTemp, wszProcessVersion), HRESULT: 0x%08X
+%d.%d.%d.%d.%d(%s)
+%s$%s$%s$%s
+=L9o<
+RtlQueryFeatureConfiguration
+RtlRegisterFeatureConfigurationChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlNotifyFeatureUsage
+LogStagedFeatureUsage
+NtQueryWnfStateData
+NtUpdateWnfStateData
+onecore\internal\sdk\inc\wil\Staging.h
+WilStaging_02
+Software\Microsoft\Windows\CurrentVersion\Policies\System
+EnterpriseDeviceAuthOnly
+ASspiFunctions::SspiEncryptAuthIdentityEx
+onecoreuap\ds\ext\live\identity\lib\executioncontextlite\sspifunctions.cpp
+SspiEncryptAuthIdentityEx
+GetSspiEncryptAuthIdentityEx failed. 0x%X
+SspiFunctions::SspiDecryptAuthIdentityEx
+SspiDecryptAuthIdentityEx
+GetSspiDecryptAuthIdentityEx failed. 0x%X
+SspiFunctions::GetSspiFunction
+sspicli.dll
+LoadLibrary(sspicli.dll) failed, 0x%X.
+GetProcAddress(%hs) failed, 0x%X.
+onecore\internal\sdk\inc\wil\opensource\wil\result.h
+bad allocation
+QueryWlidsvcProperties
+TraceServiceStatus
+onecoreuap\ds\ext\live\identity\lib\rpcclient\wlidclient.cpp
+ServicesActive
+WlidSvc
+Service status: dwCheckPoint=0x%x, dwControlsAccepted=0x%x, dwCurrentState=0x%x, dwServiceSpecificExitCode=0x%x, dwServiceType=0x%x, dwWaitHint=0x%x, dwWin32ExitCode=0x%x.
+wlidsvc
+AllowMicrosoftAccountSignInAssistant
+Accounts
+RPC AsyncInitializeHandle failed, hr = %#x
+RPC failed to create new event, hr = %#x
+RPC call threw an exception code, hr = %#x
+RPC call failed, hr = %#x
+Encountered error while waiting on RPC call, hr = %#x
+RPC Async complete call failed, hr = %#x
+WLIDCpGetConfigDWORDValue
+RPC call timed out, hr = %#x
+RPC call was cancelled, hr = %#x
+WLIDCConnectIdentity
+WLIDCUpdateConnectedIdentity
+WLIDCDisconnectIdentity
+WLIDCCreateContextEx
+WLIDCCreateContextWithLogonId
+WLIDCSetAuthData
+WLIDCDeleteContextEx
+WLIDCGetServiceConfig
+WLIDCAcquireTokens
+WLIDCAcquireTokensEx
+WLIDCGetCachedTokens
+WLIDCGetUserExtendedProperty
+WLIDCGetIdentityProperty
+WLIDCEnumIdentities
+WLIDCHasPersistedCredential
+WLIDCPersistCredential
+WLIDCPersistCredentialForConnectedUser
+WLIDCRemovePersistedCredential
+WLIDCGetConfigDWORDValue
+WLIDCGetUserPropertiesFromSystemStore
+WLIDCRenewCertificate
+WLIDCGetConfigString
+WLIDCGetKeyLatest
+WLIDCGetKeyWithVersion
+WLIDCUpdateToken
+WLIDCGetSignedTokens
+WLIDCGetDeviceDAToken
+WLIDCGetProofOfPossessionTokens
+WLIDCRegisterUserIdkey
+WLIDCGetScenarioInlineUrlWithContextData
+WLIDCAcquireTokensWithNGC
+WLIDCCleanupIdentity
+WLIDCProvisionIdentityWithTransferToken
+6666666@
+%\F\$
+Security=impersonation dynamic false
+ncalrpc
+RPC error=%d.
+onecoreuap\ds\ext\Live\identity\Include\SerializationDefinition.h
+onecoreuap\ds\ext\live\identity\lib\serialization\credserializationhelper.cpp
+CredSerializationHelper::SerializeCredentials
+CredSerializationHelper::SerializePasswordAndDATokenCredentials
+ULongAdd hr = 0x%x.
+RpcExceptionCode hr = 0x%x.
+SerializeObject() completed with hr = 0x%x.
+Keywords
+Connected
+AccountType
+LocalConnected
+SystemStoreLite::IsConnected
+onecoreuap\ds\ext\live\identity\lib\systemstorelite\systemstorelite.cpp
+Failed to retrieve the current user's SID string. (hr = 0x%0x)
+SystemStoreLite::IsConnectedSID
+GetStoredIdentityProperty failed. (hr = 0x%0x)
+SystemStoreLite::GetStoredIdentityProperty
+Failed to retrieve the SYSTEM user's SID string. (hr = 0x%0x)
+Software\Microsoft\IdentityCRL\StoredIdentities
+%s\%s
+StringCchPrintf failed. (hr = 0x%0x)
+System store not found.
+RegOpenKeyEx failed. (win32 = 0x%0x)
+SystemStore property not found.
+RegEnumKey failed. (win32 = 0x%0x)
+StringCchPrintf failed for user SID path. (hr = 0x%0x)
+StringCchPrintf failed for full user SID path. (localHr = 0x%0x)
+SID missing from LiveID key. (win32 = 0x%0x)
+RegGetValue failed. (win32 = 0x%0x)
+StringCbLengthW failed. (hr = 0x%0x)
+StringCchCopyW failed. (hr = 0x%0x)
+SystemStoreLite::GetCurrentUserSidString
+OpenThreadToken failed. (win32 = 0x%0x)
+OpenProcessToken failed. (win32 = 0x%0x)
+OpenProccessToken failed. (win32 = 0x%0x)
+LocalAlloc failed. (win32 = 0x%0x)
+ConvertSidToStringSid failed. (win32 = 0x%0x)
+SystemStoreLite::GetSystemSidString
+CreateWellKnownSid failed. (win32 = 0x%0x)
+ConvertSidToStringSidW failed. (win32 = 0x%0x)
+Software\Microsoft\IdentityCRL\Trace
+AssertFlags
+onecoreuap\ds\ext\live\identity\lib\utilitieslite\authbufferhelper.cpp
+MicrosoftAccount
+AuthBufferHelper::CreateAuthBuffer
+hr = StringCbLengthW(wszUserName, USHRT_MAX, &cbUserName)
+hr = SizeTAdd(cbAuthData, cbAuthBuffer, &cbAuthBuffer)
+hr = SizeTAdd(cbUserName, cbAuthBuffer, &cbAuthBuffer)
+hr = SizeTAdd(cbDomainName, cbAuthBuffer, &cbAuthBuffer)
+hr = spAuthBuffer.Allocate(cbAuthBuffer)
+hr = SafeCopyMemory(pWhere, cbAuthData, pAuthData, cbAuthData)
+hr = SafeCopyMemory(pWhere, cbUserName, wszUserName, cbUserName)
+hr = SafeCopyMemory(pWhere, cbDomainName, wszDomainName, cbDomainName)
+SspiCopyAuthIdentity failed. 0x%X
+SspiEncryptAuthIdentityEx failed. 0x%X
+SspiMarshalAuthIdentity failed. 0x%X
+hr = spAuthBuffer.Allocate(cbMarshaledAuthId)
+hr = SafeCopyMemory(spAuthBuffer, cbAuthBuffer, spMarshaledAuthId, cbMarshaledAuthId)
+AuthBufferHelper::GetAuthDataFromBuffer
+ValidateAuthIdEx2 failed. 0x%X
+hr = SafeCopyMemory(spAuthData, authDataSizeBytes, pCredUICredentials->AuthInfo.ByteArrayOffset + reinterpret_cast<const BYTE*>(pCredUICredentials), authDataSizeBytes)
+hr = SafeCopyMemory(spUsername, usernameSizeBytes, reinterpret_cast<const BYTE*>(pCredEx2) + pCredEx2->UserOffset, pCredEx2->UserLength)
+onecoreuap\ds\ext\live\identity\lib\utilitieslite\wlidcchelper.cpp
+CWLIDCCHelper::Base64Decode
+CryptStringToBinary failed. err = %d.
+hr = HRESULT_FROM_WIN32(win32Error)
+hr = E_OUTOFMEMORY
+WLIDRes.DLL
+hr = CacheResStrings(lcid)
+CStringSrv::Initialize
+onecoreuap\ds\ext\live\identity\lib\utilities\stringsrv.cpp
+hr = CStringSrv::Initialize()
+CStringSrv::GetStringForID
+hr = SearchError( errHr, node )
+CStringSrv::GetMappedErrorMsg
+hr = CStringSrv::GetStringForID( node.dwErrorMsgId, wstrErrMsg)
+CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOCi CNT"
+ActiveX_GetIDCRLPath
+PartA_PrivTags
+ActiveX_GetProcessPath
+PartA_PrivTags
+ActiveX_GetIDCRLModulePath
+PartA_PrivTags
+ActiveX_GetBHOPath
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_SaveDATokenInternal
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_SaveDAToken
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetWgaTicket
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetAuthBufferEx
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetAutoSSOUserName
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_get_Version
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_InitNotForBrowser
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_DeleteSSOCreds
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_SaveSSOCreds
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetUserProperty
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_SetUserExtendedProperty
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetUserExtendedProperty
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_EnumerateEIDs
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GenerateCertToken
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_DeleteUserExtendedProperty
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_Disable
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_Enable
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_SetUserTile
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetUserListEx
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetUserList
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_get_ComputerSetting
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_put_ComputerSetting
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetAuthenticatedUserName
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetAuthenticatedUserToken
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_DeleteAllAccounts
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_AddAccount
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_DeleteAccount
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_CheckSiteLockDomainList
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_CleanDomainList
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetTrustedSiteList
+PartA_PrivTags
+ActiveX_CIDBHOCtrl_GetTrustedSiteCount
+PartA_PrivTags
+ActiveX_CBHOHelper_GetVersions_CStringW
+PartA_PrivTags
+ActiveX_CBHOHelper_GetVersions
+PartA_PrivTags
+ActiveX_CBHOHelper_GetFileVer
+PartA_PrivTags
+ActiveX_CBHOHelper_DeleteCookie
+PartA_PrivTags
+ActiveX_CBHOHelper_SetDomainCookie
+PartA_PrivTags
+ActiveX_CBHOHelper_SetCookie
+PartA_PrivTags
+ActiveX_CBHOHelper_GetTrustedSites
+PartA_PrivTags
+ActiveX_CBHOHelper_GetDADomain
+PartA_PrivTags
+ActiveX_CBHOHelper_IsEnabled
+PartA_PrivTags
+ActiveX_CBHOHelper_IsInitialized
+PartA_PrivTags
+ActiveX_CBHOHelper_InitConfig
+PartA_PrivTags
+ActiveX_CBHOHelper_GetConfig
+PartA_PrivTags
+ActiveX_CBHOHelper_Initialize
+PartA_PrivTags
+ActiveX_CBHOHelper_Disable
+PartA_PrivTags
+ActiveX_CBHOHelper_Enable
+PartA_PrivTags
+RPCServerUnavailable
+ApiContext
+ServiceEnabledByPolicy
+ServiceStartType
+ServiceState
+PartA_PrivTags
+RPCCallTimedOut
+RpcFunction
+RpcTimeoutInterval
+PartA_PrivTags
+ActivityError
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+ActivityIntermediateStop
+PartA_PrivTags
+wilActivity
+hresult
+threadId
+FallbackError
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+ActivityFailure
+PartA_PrivTags
+wilActivity
+hresult
+threadId
+currentContextName
+currentContextMessage
+ActivityStoppedAutomatically
+QueryWlidsvcProperties
+PartA_PrivTags
+wilActivity
+threadId
+ActivityFailure
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+FallbackError
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+QueryWlidsvcProperties
+PartA_PrivTags
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+QueryWlidsvcProperties
+PartA_PrivTags
+wilActivity
+hresult
+threadId
+ActivityError
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+MSAClientTraceLoggingProvider
+MSAClientTraceLoggingProvider
+WindowsLiveLogin.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+ATL$__a
+ATL$__m
+ATL$__z
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data$r$brc
+.data$rs$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+E(SVW
+u$WSQ
+QQRhx 
+X[_^]
+QSVWj
+D$<PV
+VjiSW
+awJtd
+toj'[f;
+QQQQQQQPQQQ
+?=u/W
+j%Yf;
+j{Xf;
+j}Xf9
+j=Xf9
+PPVPPWS
+j=Xf9
+j{Xf9
+j{Xf9
+j}Xf9
+@_^[]
+tyj.Z
+j*Xf;
+j=Xf;
+j.Yf9H
+j\Yf9
+t?h@+
+PQQSVW
+v,Sh45
+Z\9;s
+~p_^]
+QQh 6
+QQh 6
+VWjbZ
+VWjkZ
+97s/j
+PQQSVW
+93uHWV
+q(9>u
+90u:h
+93t89w
+PQSVW
+tPh|a
+uWh`=
+yPh$E
+y[h(E
+y_h F
+u!h`=
+ttf9>to
+PPh8L
+PQSVW
+tLVW3
+t_f99tZ
+u$ht*
+u%h<*
+u h`=
+u h`=
+j@SWP
+tJf98tE
+t>f99t9h
+j@h@W
+PQQSVW
+sAhpM
+s(hpM
+>,uQW3
+xM;~$}H
+G;~$|
+u$hXb
+u$hlb
+u$h(b
+YY_^]
+D$(PQ
+T$0QQV
+L$4^3
+PQSVW
+PQSVW
+SVPh 
+PQQSVW
+0SVWQQP
+93uHWV
+QQPWQ
+RRRQWS
+PPPPPP
+u<h|e
+RQhxr
+PQQSVW
+D$(Pj
+PSShL
+y)Vh(
+y,Vhx
+SSPWj
+!w(^_
+u"h|&
+PQSVW
+Y__^[
+5ineI
+5ntel
+QRPh<
+QRPh\
+QRPh|
+Y__^[
+>@s5f
+?@s-f
+LogonUserExExW
+LsaRegisterLogonProcess
+LsaConnectUntrusted
+LsaLookupAuthenticationPackage
+LsaCallAuthenticationPackage
+LsaDeregisterLogonProcess
+SspiCopyAuthIdentity
+SspiMarshalAuthIdentity
+SspiUnmarshalAuthIdentity
+SspiLocalFree
+SspiFreeAuthIdentity
+PolicyManager_GetPolicyInt
+UnregisterClassA
+LoadImageW
+GetSystemMetrics
+GetThreadDesktop
+GetUserObjectInformationW
+InternetSetCookieExW
+WindowsLiveLogin.DLL
+DllCanUnloadNow
+DllGetClassObject
+DllRegisterServer
+DllUnregisterServer
+.?AVbad_array_new_length@std@@
+.?AVCAtlException@ATL@@
+.?AVbad_alloc@std@@
+.?AVResultException@wil@@
+.?AVexception@std@@
+.?AVCPassportException@@
+.?AVtype_info@@
+_time64
+wcsspn
+wcscspn
+_initterm
+_initterm_e
+api-ms-win-crt-time-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+__CxxFrameHandler3
+__std_terminate
+wcsrchr
+strrchr
+wcsstr
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___std_type_info_destroy_list
+_o___stdio_common_vsnprintf_s
+_o___stdio_common_vswprintf
+_o___stdio_common_vswprintf_s
+_o__callnewh
+_o__cexit
+_o__configure_narrow_argv
+_o__crt_atexit
+_o__errno
+_o__execute_onexit_table
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__invalid_parameter_noinfo
+_o__localtime64_s
+_o__purecall
+_o__recalloc
+_o__register_onexit_function
+_o__seh_filter_dll
+_o__set_errno
+_o__wcsicmp
+_o__wcslwr_s
+_o_calloc
+_o_free
+_o_iswspace
+_o_malloc
+_o_memcpy_s
+_o_terminate
+_o_toupper
+_o_wcsftime
+_o_wcsncpy_s
+_o_wcstol
+_o_wmemcpy_s
+_except_handler4_common
+__current_exception
+__current_exception_context
+memset
+_CxxThrowException
+api-ms-win-crt-private-l1-1-0.dll
+SizeofResource
+EnterCriticalSection
+CoTaskMemAlloc
+RegDeleteValueW
+GetModuleFileNameW
+RegOpenKeyExW
+LeaveCriticalSection
+InitializeCriticalSection
+CoTaskMemFree
+CharNextW
+RegSetValueExW
+GetSystemDirectoryW
+RegEnumKeyExW
+MultiByteToWideChar
+GetLastError
+RegCreateKeyExW
+LockResource
+CloseHandle
+RaiseException
+FindResourceExW
+LoadResource
+CoTaskMemRealloc
+GetProcAddress
+DeleteCriticalSection
+GetModuleHandleW
+FreeLibrary
+RegQueryInfoKeyW
+RegCloseKey
+LoadLibraryExW
+EventSetInformation
+FormatMessageW
+GetCurrentThreadId
+HeapAlloc
+GetProcessHeap
+HeapFree
+GetModuleHandleExW
+GetModuleFileNameA
+DebugBreak
+IsDebuggerPresent
+OutputDebugStringW
+SetLastError
+ReleaseSemaphore
+ReleaseMutex
+WaitForSingleObjectEx
+WaitForSingleObject
+OpenSemaphoreW
+EventUnregister
+EventRegister
+EventWriteTransfer
+GetCurrentProcessId
+CreateMutexExW
+CreateSemaphoreExW
+CoCreateInstance
+GetFileVersionInfoSizeExW
+GetFileVersionInfoExW
+VerQueryValueW
+GetVersionExW
+HeapSize
+HeapReAlloc
+HeapDestroy
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+InitializeSListHead
+CoUninitialize
+CoGetCallerTID
+AcquireSRWLockExclusive
+ReleaseSRWLockExclusive
+AcquireSRWLockShared
+ReleaseSRWLockShared
+SetThreadpoolTimer
+WaitForThreadpoolTimerCallbacks
+CloseThreadpoolTimer
+InitializeCriticalSectionEx
+CreateThreadpoolTimer
+RegGetValueW
+RegQueryValueExW
+RegSetKeySecurity
+LocalAlloc
+LocalFree
+RegOpenCurrentUser
+RegDeleteKeyExW
+RegDeleteTreeW
+RegEnumValueW
+MesEncodeFixedBufferHandleCreate
+MesBufferHandleReset
+MesHandleFree
+MesDecodeBufferHandleCreate
+UuidCreate
+I_RpcBindingInqLocalClientPID
+CreateEventW
+CreateEventExW
+WaitForMultipleObjectsEx
+CryptProtectData
+CryptUnprotectData
+CryptProtectMemory
+CryptUnprotectMemory
+GetCurrentThread
+GetThreadPreferredUILanguages
+GetTokenInformation
+LookupAccountNameW
+ConvertSidToStringSidW
+CreateWellKnownSid
+IsValidSid
+OpenThread
+OpenThreadToken
+RevertToSelf
+ImpersonateLoggedOnUser
+GetProcessIdOfThread
+GetUserDefaultLocaleName
+OpenProcessToken
+GetProfileType
+GetSecurityDescriptorDacl
+GetSecurityDescriptorSacl
+LoadLibraryW
+EventActivityIdControl
+RpcAsyncInitializeHandle
+InitOnceBeginInitialize
+RpcSsDestroyClientContext
+OpenServiceW
+QueryServiceConfigW
+NdrAsyncClientCall2
+RpcAsyncCompleteCall
+RpcAsyncCancelCall
+InitOnceComplete
+OpenSCManagerW
+CloseServiceHandle
+QueryServiceStatus
+RpcBindingFromStringBindingW
+RpcStringBindingComposeW
+RpcBindingSetAuthInfoExW
+RpcStringFreeW
+RpcBindingFree
+NdrMesTypeEncode2
+NdrMesTypeAlignSize2
+CryptStringToBinaryW
+ResetEvent
+SetEvent
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+RPCRT4.dll
+CRYPT32.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+USERENV.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-service-management-l1-1-0.dll
+api-ms-win-service-management-l2-1-0.dll
+api-ms-win-service-winsvc-l1-1-0.dll
+UrlGetPartW
+api-ms-win-core-url-l1-1-0.dll
+SetNamedSecurityInfoW
+GetComputerNameW
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-security-provider-l1-1-0.dll
+lstrcmpiW
+GetUserDefaultUILanguage
+api-ms-win-core-string-obsolete-l1-1-0.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+ApiSetQueryApiSetPresence
+api-ms-win-core-apiquery-l1-1-0.dll
+memcmp
+memcpy
+memmove
+REGISTRY
+TYPELIB
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft
+ Account Login Helper
+FileVersion
+10.0.22621.436 (WinBuild.160101.0800)
+InternalName
+WindowsLiveLogin.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+WindowsLiveLogin.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.436
+VarFileInfo
+Translation
+NoRemove AppID
+'%APPID%' = s 'IDBHO'
+'IDBHO.DLL'
+val AppID = s '%APPID%'
+IDBHO.IDBrowserExtension.1 = s 'Windows Live Sign-in Helper'
+CLSID = s '{9030D464-4C02-4ABF-8ECC-5164760863C6}'
+IDBHO.IDBrowserExtension = s 'Windows Live Sign-in Helper'
+CLSID = s '{9030D464-4C02-4ABF-8ECC-5164760863C6}'
+CurVer = s 'IDBHO.IDBrowserExtension.1'
+NoRemove CLSID
+ForceRemove {9030D464-4C02-4ABF-8ECC-5164760863C6} = s 'Windows Live Sign-in Helper'
+InprocServer32 = s '%MODULE%'
+val ThreadingModel = s 'Apartment'
+val AppID = s '%APPID%'
+    NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Windows
+            {
+                NoRemove CurrentVersion
+                {
+                    NoRemove Explorer
+                    {
+                        NoRemove 'Browser Helper Objects'
+                        {
+                            ForceRemove '{9030D464-4C02-4ABF-8ECC-5164760863C6}'
+                            {
+                                val 'NoExplorer' = d '1'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+IDBHO.IDBHOCtrl.1 = s 'Windows Live Sign-in Control'
+CLSID = s '{D2517915-48CE-4286-970F-921E881B8C5C}'
+IDBHO.IDBHOCtrl = s 'Windows Live Sign-in Control'
+CLSID = s '{D2517915-48CE-4286-970F-921E881B8C5C}'
+CurVer = s 'IDBHO.IDBHOCtrl.1'
+NoRemove CLSID
+ForceRemove {D2517915-48CE-4286-970F-921E881B8C5C} = s 'Windows Live Sign-in Control'
+ProgID = s 'IDBHO.IDBHOCtrl.1'
+VersionIndependentProgID = s 'IDBHO.IDBHOCtrl'
+InprocServer32 = s '%MODULE%'
+val ThreadingModel = s 'Apartment'
+val AppID = s '%APPID%'
+    NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Windows
+            {
+                NoRemove CurrentVersion
+                {
+                    NoRemove Ext
+                    {
+                        NoRemove PreApproved
+                        {
+                            ForceRemove '{D2517915-48CE-4286-970F-921E881B8C5C}'
+                        }
+                    }
+                }
+            }
+        }
+    }
+stdole2.tlbWWW
+tQIDBHOLib
+IDBHOCtrlWWWd
+IIDBHOCtrlWWd
+DeleteAllAccountsWWWd
+ATGetAuthenticatedUserTokenWWW
+pbstrAuthenticatedUserTokenWd
+DeleteAccountWWW
+e!bstrAccountNameWd
+~AddAccountWW
+bstrPassword
+$iOptionWd
+[ComputerSettingW
+pVald
+yGetUserListW
+CbstrForcePwdUser
+pbstrUserListWWWd
+SetUserTileW
+bstrTSWW
+bstrUrlWd
+IDisableWd
+DeleteUserExtendedPropertyWW
+!proptodelete
+propFilterWW
++filterValueW
+fExtendedFilterWd
+GenerateCertTokenWWW
+bstrMemberNameWW
+bstrThumbprintWW
+PiLen
+bstrPINW
+pbstrOutPutCertTokend
+GetUserExtendedPropertyW
+lbstrPropName
+pbstrPropValueWWd
+fGetUserPropertyWd
+SaveSSOCredsd
+?DeleteSSOCredsWWd
+^InitNotForBrowserWWWd
+kEnumerateEIDsWWW
+J/bstrCSPs
+bstrThumbprintsW
+pbstrEID_JS_DefineWWd
+h&GetUserListExWWWd
+GetAutoSSOUserNameWW
+dwSSOGroupWW
+;pbstrUserNameWWWd
+VersionW
+pbstrVersiond
+GetAuthenticatedUserName
+[pbstrAuthenticatedUserNameWWd
+SetUserExtendedPropertyW
+bstrPropValueWWWd
+GetWgaTicket
+pbstrWgaTicketWWd
+GetAuthBufferExW
+userName
+password
+$daTokenW
+daTokenExpiryTimeWWW
+daTokenCreationTimeW
+encodedSessionKeyWWW
+flowTokenWWW
+pAuthBufferWd
+SaveDATokenW
+IDBHO 1.0 Type Library
+Windows Live Login Control$
+Windows Live Login Control InterfaceWW
+method DeleteAllAccountsWW 
+method GetAuthenticatedUserTokenWW
+method DeleteAccountWW
+method AddAccountW
+property ComputerSettingWW
+method UserListWWW
+method SetUserTile
+method Disable!
+method DeleteUserExtendedPropertyW
+method GenerateCertTokenWW
+method GetUserExtendedProperty
+method GetUserProperty
+method SaveSSOCredsWWW
+method DeleteSSOCredsW
+method InitNotForBrowserWW
+method EnumerateEIDsWW
+method UserListExW
+method GetAutoSSOUserNameW
+property VersionWW
+method GetAuthenticatedUserNameWWW
+method SetUserExtendedProperty
+method GetWgaTicketWWW
+method GetAuthBufferEx
+method SaveDAToken
+<0@0H0P0h0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9094989<9P9
+9 :$:(:,:0:4:8:@:H:P:X:`:h:p:x:
+; ;$;(;,;0;4;8;<;@;d;h;x;|;
+<0<@<D<T<X<\<`<h<
+7R7Y7
+8!8|8
+1 1&1*10141:1>1D1H1N1R1X1\1v1
+2!20272=2Q2`2i2r2
+31373<3B3F3c3m3w3
+3+494
+4/5@5
+516{6
+747r7
+8 8*8w8
+91:E:d:
+:?;0<
+=">E>]>o>
+>*?]?
+0L1i1|1
+2e2|2
+</<6<*=B=
+1'1;1O1
+1a2}2
+2<3{3
+4_4l4
+495N5V5h5
+5&6L6f6
+7A7[7f7x7
+8$8=8w8
+9:9U9
+:R:l:v:
+<(=H=
+=J?a?
+0g0s0
+0M1Z1z142C2
+3'4L4
+4$515O5g5
+6H6N6U6\6i6
+8H8l8
+8-939:9A9U9x9
+:8:E:e:
+;!;;;
+<-<d=
+> >)>P>f>o>
+?8?C?`?
+0h1e2
+2A3{3
+4!595J5
+6A6W6
+8(8<8T8a8h8u8|8
+9$9G9]9t9
+:v:}:
+;<;C;
+<6<i<
+=%=0=B=W=]=b=i=
+=f?t?
+2 3N3
+344l4
+6#60686K6t6}6
+7*7b7q7y7
+9W9c9
+;?;\;
+<*<N<X<g<
+=2=>=P=|=C>M>
+0;1L1g1
+2$2D2J2W2b2{2
+3#3X3e3w3
+4&4r4
+6H6U6
+7,7]7k7
+8^8h8
+999C9W9^9
+:<:D:I:
+;&;4;:;B;H;N;T;c;i;q;w;};
+<3<@<S<t<
+=)=/=
+>$>=>k>
+>3?G?M?~?
+1>2E2w2
+4-5A5
+6!6=6d6m6y6
+7.777C798
+8P9d9
+:#:6:>:Z:n:v:
+:#;2;:;F;
+>,>3>o>
+1d2i2o2
+9>9m9s9
+:!:4:K:l:z:
+:;;F;K;W;b;g;
+<.<><I<N<_<n<
+=J=Y=q=
+>1>j>y>
+>*?9?Q?
+0J0Y0q0
+1=1V1c1l1z1
+1"2L2m2
+313j3y3
+3*494Q4
+5J5Y5q5
+6%6=6O6
+6#787L7k7
+8R8k8x8
+9F9U9c9
+9):A:
+<3===z=
+=H>R>
+>E?P?U?}?
+0$0D0j0t0
+1%121;1I1Z1
+313J3W3a3p3
+3#414S4b4|4
+4-5F5W5b5g5t5
+6*6B6G6R6b6
+757R7b7z7
+;<;`;
+?@?K?k?
+0,040F0N0`0
+1!1@1Y1e1
+2+272c2
+3P3a3g3t3
+4+4/43474;4?4C4G4K4O4Z4
+5D5J5P5i5
+6#6+646<6E6M6V6^6g6o6x6F7X7&8
+:7:W:g:
+;$;,;?;M;m;
+<7<D<[<a<f<t<
+<*=X=r=
+>C>P>y>
+>.?:?D?I?[?a?}?
+%000?0O0W0
+1"1V1y1
+2"212<2K2V2e2p2u2
+2S3Y3n3s3
+4 4*4K4b4g4q4
+4/5E5T5l5
+656?6K6Z6`6n6
+6!7(787>7L7c7
+8%858D8e8
+9/999N9]9~9
+:":1:A:O:f:
+;';4;Z;v;
+<$<5<E<S<d<
+= =1=@=X=
+=6>@>w>
+?1?@?N?n?
+!0W0m0
+1!161C1V1w1
+4.4@4R4
+5)5;5C5I5O5U5[5a5g5m5
+8?8e8
+8-999@9E9J9P9Y9^9d9k9u9y9
+;.;U;^;~;
+<o<v<|<
+=2=H=
+?b?p?
+0:0F0R0Z0{0
+2c4r4
+7!7*70757:7A7I7^7x7
+9.:7:C:K:Z:
+3_4u4{5
+7"7(717:7D7V7u7{7
+9+9F9M9
+:6:w:
+;";<;R;
+;L<p<
+=(=K=
+>l>~>
+?@?P?
+K0[0~0
+0 1H1i1|1
+2-2F2L2
+2(373Q3w3
+4.4;4C4K4Q4l4v4
+6%6K6}6
+7;7R7c7z7
+7T8^8q8|8
+:0:;:h:r:
+:O;\;
+=1=7=h=->
+?#?)?4?:?@?F?L?R?
+0`0k0r0
+0s1{1
+1I2j2
+213S3n3}3
+3>4o4s5
+7M7j7
+8:8l8
+8!9T9h9{9
+:9:j:
+:);J;p;
+<7<c<
+<,=P=p=
+>0>P>h>
+?8?c?
+0*0M0p0
+1D1s1
+282c2
+3"4-474S4e4m4
+5.5B5e5
+6%6-6H6N6[6m6
+747@7`7
+9$9_91:
+;&;:;
+0"0.0F0M0Y0u0
+212C2U2w2
+2M3Z3a3"4z4
+5O5Z5
+6&6:6X6p6}6
+747}7
+8E8P8
+9(9F9[9h9
+:(:5:[:h:z:
+:';=;^;
+<-<q<
+=0=5=;=J=
+>,>>>N>b>
+0P0[0
+1%191W1o1|1
+1d2x2
+3J3U3
+434Q4q4
+435G5T5z5
+6M6c6
+7&737S7
+878D8V8m8r8x8
+9$9E9k9~9
+:J:p:
+;);;;T;Y;_;n;
+<#<I<\<n<~<
+=!>.>@>
+?A?Y?z?
+0'0G0s0
+1,1R1_1q1
+1 2+2f2{2
+3&3>3K3k3
+3%494F4l4y4
+5O5h5
+6.6;6[6
+7%7K7X7j7
+8.8O8r8
+:#:9:>:D:S:
+:";5;G;W;k;
+="=(=7=r=}=
+>%>7>G>[>y>
+?X?l?y?
+#0.0c0y0
+1$1D1d1
+2;2H2Z2s2x2~2
+3?3b3u3
+5"5(575r5}5
+616A6U6s6
+6C7W7d7
+8"8W8m8
+989X9
+:B:O:a:w:|:
+;=;`;s;
+="=;=@=F=U=
+>*>=>O>_>s>
+0:0E0z0
+1=1U1b1
+1,2@2M2s2
+373M3n3
+5,5R5_5q5
+546M6n6
+8#8I8V8h8
+8+9D9e9
+;*;7;I;\;a;g;v;
+<"<E<X<j<z<
+>.>c>n>
+?"?2?F?d?|?
+Q0e0r0
+1&1[1q1
+242A2a2
+3.3;3a3n3
+344J4k4
+676D6V6~6
+7,7M7s7
+919G9L9R9a9
+:0:C:U:e:y:
+;_<d<j<y<
+=6=Y=l=~=
+?!?&?,?;?p?{?
+0/0?0S0q0
+2 2&252p2{2
+3#353E3Y3w3
+8g9u:
+:7;k;[<
+<)=G=
+>5?S?
+0-0u0
+1U1y1
+172U2v2
+;#;u;
+>M>q>
+?)?.?3?<?Y?c?
+111@1_1e1
+22393
+444>4O4X4
+606A6_6
+8!8+8r8
+:0;I;x;
+<!<+<K<e<y<
+=4=d=v=
+=K>a>
+?%?/?O?f?
+090B0
+1I1W1}1
+3"4,464@4J4t4~4
+5%5/595b5i5s5z5
+7 7S7m7x7
+838M8X8r8}8
+9-989Q9\9v9
+:1:<:V:a:{:
+;6;A;[;f;
+<#<+<A<
+<.=X=
+?3?Q?}?
+60l0z0
+0-1>1j1x1
+2>2c2
+2"3-3I3
+4%4_4w4
+5(5Y5o5y5
+6C6[6s6
+8X8c8h8
+8`9o9
+9P:c:
+;F<e<
+=<=^=l=
+>H>j>u>
+?%?3?>?C?W?i?z?
+0+0B0]0n0
+1!181O1{1
+252N2\2y2
+2?3\3
+4.4D4
+4 5y5
+627A7
+9<9J9
+:,:f:s:
+;Q;%<G<R<\<a<x<
+=J=W=|=
+?2?8?P?k?{?
+0&0/050=0C0
+0.1Z1g1
+2;2E2S2n2
+5$52585>5D5J5P5W5^5e5l5s5z5
+6:6H6N6T6Z6`6f6m6t6{6
+6=7u7
+:D:S:j:p:v:|:
+:W;l;
+<;<Y<
+<%=4===J=f=
+?-?>?C?V?r?w?
+"0@0F0r0
+181S1]1f1
+2 2\2f2o2x2
+363F3R3^3r3~3
+424>4J4V4b4n4z4
+4?6L6`6p6
+7!717A7Q7a7q7
+8.8>8K8_8
+9!:Q:n:
+;a<r<
+>/?z?
+242d2
+4=4`4
+6<6|6
+738V8y8
+:,;\;
+<1<a<
+=/=_=
+=/>R>
+?>?n?
+132c2
+2+3c3
+5;5S5b5
+6"6'616A6Q6a6q6w6}6
+7(7@7T7h7x7
+8(808H8`8
+9 9,949h9x9
+:8:@:H:P:X:d:
+;$;,;L;h;x;
+<0<8<@<H<P<X<`<l<
+= =(=4=T=\=h=
+> >,>4>T>p>x>
+? ?,?4?T?\?x?
+0$0,040<0D0L0T0\0d0l0t0|0
+141<1D1L1T1\1d1p1
+2(20282@2H2T2t2|2
+3,343<3D3L3T3\3d3l3t3|3
+4 4@4L4l4t4
+5<5L5X5`5
+6(606<6\6h6
+787D7d7l7x7
+8,888X8x8
+94989T9X9t9x9
+:4:8:T:X:t:x:
+;4;8;T;X;t;x;
+<4<8<T<X<t<x<
+= =,=L=T=l=p=|=
+>$>,>4><>D>L>X>x>
+?$?D?P?p?
+0(00080@0H0T0t0|0
+1(141T1`1
+102@2L2T2
+303<3T3X3x3
+4 484@4H4L4T4h4p4x4
+5 5(5,545
+0 0$0(0l0p0t0|0
+1<1d1
+0 0$0(0,0004080<0@0D0H0P0T0X0\0`0h0p0

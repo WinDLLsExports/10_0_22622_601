@@ -1,0 +1,6665 @@
+!This program cannot be run in DOS mode.
+Rich@
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+ChildEBP RetAddr  Caller, Callee
+ESP/REG  Object   Name
+ChildFP  RetAddr  Caller, Callee
+SP/REG  Object   Name
+Command cancelled at the user's request.
+%02X 
+    method      size   = %04X
+    prolog      size   = %2u 
+    epilog      size   = %2u 
+    epilog     count   = %2u 
+    epilog      end    = %s  
+    callee-saved regs  = 
+    ebp frame          = %s  
+    fully interruptible= %s  
+    double align       = %s  
+    arguments size     = %2u DWORDs
+    stack frame size   = %2u DWORDs
+    untracked count    = %2u 
+    var ptr tab count  = %2u 
+    security check obj = yes
+    exception handlers = yes
+    localloc           = yes
+    edit & continue    = yes
+    profiler callbacks = yes
+    varargs            = yes
+    GuardStack cookie  = [%s%u]
+    Sync region = [%u,%u]
+    epilog #%2u    at   %04X
+    epilog        at   %04X
+    argTabOffset = %x  
+            [E%cP-%02XH] 
+            [E%cP+%02XH] 
+byref
+pinned 
+an untracked %s%s local
+  [E%s%02XH] a 
+byref 
+%s%s pointer
+        reg %s becoming %s
+ 'this'
+ (iptr)
+        pop %2d 
+args (%d)
+        push ptr %2d
+  (%d)
+        push non-ptr (%d)
+        kill args %2d
+Unexpected special code %04X
+            thisptr in 
+        call [ 
+EDI%c
+ESI%c
+EBX%c
+] ptrArgs=[
+] argMask=%02X
+ (iargs=%02X)
+        push
+       push %d
+        pop %d
+        call %d [ 
+EBP%c
+ argOffs(%d) =
+ argMask=%02X
+            iptrMask = %02X
+            thisptr in %s
+>>> %s:%d
+qword ptr [
+dword ptr [
+qword ptr ds:[
+dword ptr ds:[
+offset 
+EHHandler %d: %s HANDLER END
+EHHandler %d: %s CLAUSE END
+EHHandler %d: %s HANDLER BEGIN
+ catch(%S) 
+EHHandler %d: %s CLAUSE BEGIN
+EHHandler %d: %s FILTER BEGIN
+%p %s 
+(MethodDesc %s 
++%#x 
+ [%s:%d]
+ (stub for %S)
+%s (MethodDesc %s %S)
+ (JitHelp: %s)
+Current frame: 
+, calling 
+ ====> Exception 
+Code %x 
+cxr@%p
+ exr@%p
+Method info block:
+Pointer table:
+ntdll
+    Unable to read PEB_LDR_DATA address at %p
+PEB_LDR_DATA
+InMemoryOrderModuleList
+    Unable to read InMemoryOrderModuleList address at %p
+LDR_DATA_TABLE_ENTRY
+InMemoryOrderLinks
+FullDllName
+DllBase
+SizeOfImage
+    Unable to read FullDllName address at %p
+exception during reading PEB
+Unknown exception
+bad array new length
+Statistics:
+String Value
+TotalSize
+Count
+%8s %12s %s
+Class Name
+%8s %8s %12s %s
+%8d %12I64u "%S"
+%s %8d %12I64u 
+UNKNOWN
+Total %d objects
+generation %d starts at 0x%p
+ephemeral segment allocation context: 
+(0x%p, 0x%p)
+Error requesting heap segment %p
+%p  %p  %p  0x%I32x(%I32d)
+allocated
+begin
+segment
+%8s  %8s  %8s  %8s
+Large object heap starts at 0x%p
+Skipping allocation context: [%#p-%#p)
+bad object: %#p - bad MT %#p
+generation %d has %d finalizable objects 
+(%p->%p)
+Finalizable but not rooted:  
+Ready for finalization %d objects 
+<heap walk interrupted>
+curr_object: %p > heap_segment_allocated (seg: %p)
+Last good object: %p
+curr_object: %p > end_youngest: %p
+Last good object: %s
+curr_object:      %s
+----------------
+<heap traverse interrupted>
+Error requesting gc heap details
+Error requesting GC Heap data
+Failed to get GCHeaps:  integer overflow error
+Failed to get GCHeaps
+Error requesting details
+Traversing a gc heap failed
+Failed to retrieve segments for gc heap
+More than %d heap segments, there must be an error
+strike: Failed to store segment
+Object %p has no generation
+%p(%x:%x) 
+Size: 0x%I32x (%I32lu) bytes
+ total, 0x%I32x (%I32lu) bytes wasted
+Unable to get JIT info
+Unable to get array of JIT Managers
+Error getting EEJitManager code heaps
+Unable to get code heap info
+LoaderCodeHeap:    
+HostCodeHeap:      
+Unknown Jit encountered, ignored
+Total size:        
+  IndcellHeap:     
+  LookupHeap:      
+  ResolveHeap:     
+  DispatchHeap:    
+  CacheEntryHeap:  
+Unable to get information for %s.
+--------------------------------------
+LowFrequencyHeap:  
+HighFrequencyHeap: 
+StubHeap:          
+Virtual Call Stub Heap:
+<no information>
+Unable to read module %p
+Module %s: 
+Total size:      
+{36PrM
+<unknown>
+(Unhandled CorElementType: 0x%x)
+struct
+class
+signed byte
+short
+unsigned short
+unsigned int
+unsigned long
+float
+double
+object
+string
+IntPtr
+UIntPtr
+<unknown>
+System.Enum
+System.Object
+System.ValueType
+param_%d
+local_%d
+<interrupted>
+GetFrameContext failed: %lx
+(g9SOS does not support the current target architecture (%x).
+SOS failure!
+SOS failure
+----------------------------------------------------------------------------
+The user dump currently examined is a minidump. Consequently, only a subset
+of sos.dll functionality will be available. If needed, attaching to the live
+process or debugging a full dump will allow access to sos.dll's full feature
+To create a full user dump use the command: .dump /ma <filename>
+----------------------------------------------------------------------------
+SOS: Failed to register callback events
+Failed to find runtime DLL (clr.dll), 0x%08x
+Extension commands need clr.dll in order to have something to do.
+Failed to load data access DLL, 0x%08x
+Verify that 1) you have a recent build of the debugger (6.2.14 or newer)
+            2) the file mscordacwks.dll that matches your version of clr.dll is 
+                in the version directory or on the symbol path
+            3) or, if you are debugging a dump file, verify that the file 
+                mscordacwks_<arch>_<arch>_<version>.dll is on your symbol path.
+            4) you are debugging on supported cross platform architecture as 
+                the dump file. For example, an ARM dump file must be debugged
+                on an X86 or an ARM machine; an AMD64 dump file must be
+                debugged on an AMD64 machine.
+You can also run the debugger command .cordll to control the debugger's
+load of mscordacwks.dll.  .cordll -ve -u -l will do a verbose reload.
+If that succeeds, the SOS command should work on retry.
+If you are debugging a minidump, you need to make sure that your executable
+path is pointing to clr.dll as well.
+{ =========== BEGINGC %d, (requested generation = %lu, collect_classes = %lu) ==========
+    GC Root %p RELOCATED %p -> %p  MT = %pT
+    GCHeap::Promote: Promote GC Root *%p = %p MT = %pT
+GC_HEAP RELOCATING Objects in heap within range [%p %p) by -0x%x bytes
+Relocs
+Promotes
+GCCount
+%8s %8s %8s
+-----------------------------------
+%8d %8d %8d
+Root %p promoted multiple times in gc %d
+Root %p relocated multiple times in gc %d
+No duplicate promote or relocate messages found in the log.
+!Root <valid object pointer>
+Notes
+Promoted?
+Value
+%8s %8s %8s %9s %20s
+---------------------------------------------------------
+%8d %p %p %9s 
+promote/reloc records in error 
+Duplicate promote/relocs
+Error: There is a promote record for root %p, but no relocation record
+!ObjSearch <valid object pointer>
+Message
+Object
+%8s %8s %40s
+%8d %p 
+Promotion for root %p (MT = %p)
+NEWVALUE
+PREVVALUE
+Relocation %s for root %p
+!object <valid object pointer>
+Roots
+differing reloc values for this object!
+Unable to find stress log via DAC
+Attempting to read Stress log
+SUCCESS: GCHist structures initialized
+No Stress log in the image, GCHist commands unavailable
+FAILURE: Stress log unreadable
+Completed successfully.
+string too long
+<error>
+User interrupt.
+weak short
+weak long
+strong
+pinned
+ref counted
+dependent
+async pinned
+sized ref
+unknown
+Failed to walk dependent handles.  GCRoot may miss paths.
+Error walking dependent handles.  GCRoot may miss paths.
+Warning: These roots are from finalizable objects that are not yet ready for finalization.
+This is to handle the case where objects re-register themselves for finalization.
+These roots may be false positives.
+%p %S
+ (dependent handle)
+  -> %p %S%s
+unknown type
+Handle (%s): %p -> %p: %d (0x%x) bytes (%S)
+Thread %x (%S): %S: %d (0x%x) bytes (%S)
+HandleTable:
+    %p (%s handle)
+    -> %p %S%s
+Thread %x:
+    %p %p %S
+    %p %S
+        %S
+            ->  %p %S%s
+Finalizer Queue:
+    %p
+Older Generation:
+Error requesting gc heap analyze data
+Failed to gather needed data, possibly due to memory contraints in the debuggee.
+To try again re-issue the !FindRoots -gen <N> command.
+internal_root_array = %#p
+internal_root_array_index = %#p
+Failed to get GCHeaps:  integer overflow
+Error requesting gc heap analyze data for heap %p
+Error requesting heap data.
+Error requesting heap data for heap %d.
+Failed to walk thread %x
+Failed to walk the HandleTable!
+Failed to request more handles.
+Failed to request number of entries.
+Failed to read GCDesc for MethodTable %p.
+Failed to enumerate GC handles.  HRESULT=%x.
+Buffer overflow while enumerating handles.
+Error getting card table lowest address
+Error getting next card table
+Error reading card bits
+Failed to read card table entry.
+object %s: bad member %p at %p
+object %s contains free object %p at %p
+object %s:%s missing card_table entry for %p
+object %s: size %d too small
+Error requesting heap segment %p.
+Error during heap traverse
+tracing roots...
+Walking heap...
+&amp;
+&quot;
+&apos;
+<type id="%zd" name="%S"/>
+t %zd 0 %S
+<object address="0x%p" typeid="%zd" size="%zd">
+n %zd 1 %zd %zd
+! 1 0x%p %zd
+o 0x%p %zd %zd 
+ dependentHandle="1"
+    <member address="0x%p"%s/>
+ 0x%p
+</object>
+<root kind="%S" address="0x%p"/>
+0x%p 
+<gcheap>
+<types>
+<roots>
+<objects>
+</gcheap>
+</types>
+</roots>
+</objects>
+INVALID TYPE %d
+Failed to enumerate threads in the process.
+stack
+handle
+Last good object: %p.
+Object %s has a bad GCDesc.
+Object %s: Failed to read members.
+object %s: bad member %p at %p
+object %s contains free object %p at %p
+Object %s: %s missing card_table entry for %p
+Object %s: Bad member %p at %p.
+Object %s contains free object %p at %p.
+Object %s:%s missing card_table entry for %p
+Object %s: Size %d is too small.
+Object %s is too large.  End of segment at %p.
+invalid string position
+list too long
+unordered_map/set too long
+invalid hash bucket count
+Boolean
+String
+ByRef
+ValueClass
+Class
+CopyCtor
+MDArray
+GENArray
+TypedByRef
+VALUEARRAY
+FNPTR
+Object
+SZArray
+GENERICArray
+CMOD_REQD
+CMOD_OPT
+INTERNAL
+[DEFAULT]
+[STDCALL]
+[THISCALL]
+[FASTCALL]
+[VARARG]
+[FIELD]
+[LOCALSIG]
+[PROPERTY]
+[UNMANAGED]
+Unsupported token type
+Dynamic 
+Module in 
+Unknown Module
+ mdToken: %08x (%ws)
+Unable to get IMetaDataImport for module %p
+ERROR IN SIGNATURE:  Signature should be larger.
+ERROR IN SIGNATURE:  Not all of signature blob was consumed.  %d byte(s) remain
+ERROR!! Bad signature blob value!
+ [hasThis]
+ [explicit]
+NoName
+[InvalidReference]
+<ELEMENT_TYPE_SENTINEL> 
+PINNED 
+__Canon
+[explicit] 
+[hasThis] 
+break
+ldarg.0
+ldarg.1
+ldarg.2
+ldarg.3
+ldloc.0
+ldloc.1
+ldloc.2
+ldloc.3
+stloc.0
+stloc.1
+stloc.2
+stloc.3
+ldarg.s
+ldarga.s
+starg.s
+ldloc.s
+ldloca.s
+stloc.s
+ldnull
+ldc.i4.m1
+ldc.i4.0
+ldc.i4.1
+ldc.i4.2
+ldc.i4.3
+ldc.i4.4
+ldc.i4.5
+ldc.i4.6
+ldc.i4.7
+ldc.i4.8
+ldc.i4.s
+ldc.i4
+ldc.i8
+ldc.r4
+ldc.r8
+unused
+calli
+brfalse.s
+brtrue.s
+beq.s
+bge.s
+bgt.s
+ble.s
+blt.s
+bne.un.s
+bge.un.s
+bgt.un.s
+ble.un.s
+blt.un.s
+brfalse
+brtrue
+bne.un
+bge.un
+bgt.un
+ble.un
+blt.un
+switch
+ldind.i1
+ldind.u1
+ldind.i2
+ldind.u2
+ldind.i4
+ldind.u4
+ldind.i8
+ldind.i
+ldind.r4
+ldind.r8
+ldind.ref
+stind.ref
+stind.i1
+stind.i2
+stind.i4
+stind.i8
+stind.r4
+stind.r8
+div.un
+rem.un
+shr.un
+conv.i1
+conv.i2
+conv.i4
+conv.i8
+conv.r4
+conv.r8
+conv.u4
+conv.u8
+callvirt
+cpobj
+ldobj
+ldstr
+newobj
+castclass
+isinst
+conv.r.un
+unbox
+throw
+ldfld
+ldflda
+stfld
+ldsfld
+ldsflda
+stsfld
+stobj
+conv.ovf.i1.un
+conv.ovf.i2.un
+conv.ovf.i4.un
+conv.ovf.i8.un
+conv.ovf.u1.un
+conv.ovf.u2.un
+conv.ovf.u4.un
+conv.ovf.u8.un
+conv.ovf.i.un
+conv.ovf.u.un
+newarr
+ldlen
+ldelema
+ldelem.i1
+ldelem.u1
+ldelem.i2
+ldelem.u2
+ldelem.i4
+ldelem.u4
+ldelem.i8
+ldelem.i
+ldelem.r4
+ldelem.r8
+ldelem.ref
+stelem.i
+stelem.i1
+stelem.i2
+stelem.i4
+stelem.i8
+stelem.r4
+stelem.r8
+stelem.ref
+ldelem
+stelem
+unbox.any
+conv.ovf.i1
+conv.ovf.u1
+conv.ovf.i2
+conv.ovf.u2
+conv.ovf.i4
+conv.ovf.u4
+conv.ovf.i8
+conv.ovf.u8
+refanyval
+ckfinite
+mkrefany
+ldtoken
+conv.u2
+conv.u1
+conv.i
+conv.ovf.i
+conv.ovf.u
+add.ovf
+add.ovf.un
+mul.ovf
+mul.ovf.un
+sub.ovf
+sub.ovf.un
+endfinally
+leave
+leave.s
+stind.i
+conv.u
+prefix7
+prefix6
+prefix5
+prefix4
+prefix3
+prefix2
+prefix1
+prefixref
+arglist
+cgt.un
+clt.un
+ldftn
+ldvirtftn
+ldarg
+ldarga
+starg
+ldloc
+ldloca
+stloc
+localloc
+endfilter
+unaligned.
+volatile.
+tail.
+initobj
+constrained.
+cpblk
+initblk
+rethrow
+sizeof
+refanytype
+readonly.
+illegal
+endmac
+codelabel
+<unknown token type %08x>
+<unknown type def>
+<unknown type ref>
+<unknown field def>
+%S::%S
+<unknown method def>
+<unknown member ref>
+<Invalid record>
+<unknown type spec>
+<unknown type token>
+%S::%S 
+error decoding IL
+ilAddr = %p
+Failed to read memory
+%*s.try
+%*s} // end .try
+%*s.finally
+%*s.catch
+%*s} // end .finally
+%*s} // end .catch
+%*sIL_%04x: 
+VAR OR ARG %d
+IL_%04x
+TOKEN %x
+STRING %x
+Error, unexpected opcode type
+<unknown token type (token=%08x)>
+m_handle
+%x "%S"
+<invalid MethodTable>
+%x (%p)
+m_value
+%x %S
+uint8
+int16
+uint16
+int32
+uint32
+int64
+uint64
+float32
+float64
+native uint
+native int
+object
+string
+typedref
+valuetype 
+class 
+[ERROR! NIL TOKEN]
+[BAD: RANK == 0!]
+method 
+METHOD
+ pinned
+/* UNKNOWN TYPE (0x%X)*/
+ [ERROR: INVALID TOKEN 0x%8.8X] 
+ [ERROR: Invalid TypeRef record 0x%8.8X] 
+ [ERROR: Invalid TypeDef record 0x%8.8X] 
+$%s$%X
+ [ERROR: Invalid token 0x%8.8X] 
+ [ERROR: INVALID TOKEN TYPE 0x%8.8X] 
+token_0x%8.8X
+Could not read address %p.
+Object %p is misaligned.
+Failed to get header for object %p.
+Object %s has an invalid method table.
+Failed to request object data for %s.
+Could not request method table data for object %p (MethodTable: %p).
+<Unloaded Type>
+Attempt to move past the end of the iterator.
+Failed to get size of object.
+Failed to request GCDesc.
+Could not request segment data at %p.
+Failed to request segment data at %p.
+Failed to request GC heap data.
+Failed to get GCHeaps: Integer overflow.
+Failed to get GCHeaps.
+Failed to get GC heap details at %p.
+Failed to request GC details data.
+Failed to request SyncBlk at index %d.
+%s: "%s"
+<invalid object: '%s'>
+StressLog TaskSwitch Marker
+BAD TIME
+HH:mm:ss
+LF_GC
+LF_GCINFO
+LF_STUBS
+LF_JIT
+LF_LOADER
+LF_METADATA
+LF_SYNC
+LF_EEMEM
+LF_GCALLOC
+LF_CORDB
+LF_CLASSLOADER
+LF_CORPROF
+LF_REMOTING
+LF_DBGALLOC
+LF_EH
+LF_ENC
+LF_ASSERT
+LF_VERIFIER
+LF_THREADPOOL
+LF_GCROOTS
+LF_INTEROP
+LF_MARSHALER
+LF_IJW
+LF_ZAP
+LF_STARTUP
+LF_APPDOMAIN
+LF_CODESHARING
+LF_STORE
+LF_SECURITY
+LF_LOCKS
+LF_BCL
+LF_ALWAYS
+`ALL`
+%4x %13.9f : 
+%-20s 
+ (MethodDesc: %Ix)
+ (BAD Method)
+UNKNOWN METHODDESC
+ (%S)
+(MethodTable: %Ix)
+ Low Bit(s) Set
+ (BAD MethodTable)
+ (%s)
+ (Unknown VTable)
++%#llx
+ (Unknown function)
+(#Could not read address of string#)
+(#Could not read address of string#)
+----- No thread logs in the image: The stress log was probably not initialized correctly. -----
+Writing to file: %s
+Stress log in module 0x%p
+Stress log address = 0x%p
+ReadVirtual failed with code hr = %x.
+Invalid stress log chunk: %p
+STRESS LOG:
+    facilitiesToLog  = 0x%x
+    levelToLog       = %d
+    MaxLogSizePerThread = 0x%x (%d)
+    MaxTotalLogSize = 0x%x (%d)
+    CurrentTotalLogChunk = %d
+    ThreadsWithLogs  = %d
+    Clock frequency  = %5.3f GHz
+    Start time         %S
+    Last message time  %S
+    Total elapsed time %5.3f sec
+THREAD  TIMESTAMP     FACILITY                              MESSAGE
+  ID  (sec from start)
+--------------------------------------------------------------------------------------
+----- Interrupted by user -----
+Could not read address of format string
+Task was switched from %x
+------------ Last message from thread %x -----------
+---------------------------- %d total entries ------------------------------------
+pre short
+post short
+merged pins
+converted pins
+pre pin
+post pin
+pre and post pin
+pre short padded
+post short padded
+low on ephemeral space
+high fragmetation
+couldn't allocate gaps
+user specfied compact LOH
+last GC before OOM
+induced compacting GC
+fragmented gen0 (ephemeral GC)
+high memory load (ephemeral GC)
+high memory load and frag
+very high memory load and frag
+no gc mode
+reused seg with normal fit
+reused seg with best fit
+expand promoting eph
+expand with a new seg
+no memory for a new seg
+expand in next full GC
+using mark list
+demotion
+concurrent GCs
+compacting GCs
+promoting GCs
+GCs that did demotion
+card bundles
+elevation logic
+There was no managed OOM due to allocations on the GC heap
+This is likely to be a bug in GC
+Didn't have enough memory to commit
+Didn't have enough memory to allocate an LOH segment
+Low on memory during GC
+Could not do a full GC
+There was no failure to allocate memory
+Failed to reserve memory
+Didn't have enough memory to commit beginning of the segment
+Didn't have enough memory to commit the new ephemeral segment
+Didn't have enough memory to grow the internal GC datastructures
+Didn't have enough memory to commit the internal GC datastructures
+Thread Abort Requested
+GC Suspend Pending
+User Suspend Pending
+Debug Suspend Pending
+GC On Transitions
+Legal to Join
+Yield Requested
+Hijacked by the GC
+Blocking GC for Stack Overflow
+Background
+Unstarted
+CLR Owns
+CoInitialized
+In Single Threaded Apartment
+In Multi Threaded Apartment
+Reported Dead
+Fully initialized
+Task Reset
+Sync Suspended
+Debug Will Sync
+Stack Crawl Needed
+Suspend Unstarted
+Aborted
+Thread Pool Worker Thread
+Interruptible
+Interrupted
+Completion Port Thread
+Abort Initiated
+Finalized
+Failed to Start
+Detached
+%-*.*s
+%*.*s
+%-*.*S
+%*.*S
+map/set too long
+disabled
+enabled
+Current mode: %s - unsafe minidump commands are %s.
+Mode must be 0 or 1
+Unsafe minidump commands are %s.
+This command is not supported in a minidump without full memory
+To try the command anyway, run !MinidumpMode 0
+%s is not IP
+Failed to request MethodData, not in JIT code range
+MethodDesc:   %s
+Source file:  %s @ %d
+TEB information is not available so a stack size of 0xFFFF is assumed
+Wrong option: stack selection wrong
+Some functionality may be impaired
+OS Thread Id: 0x%x 
+-short
+Failed to request ThreadStore
+Failed to request Thread at %p
+---------------------------------------------
+Thread %3d
+wrong option: %s
+Unable to determine bounds of gc heap
+-verify
+m_resolver
+m_code
+m_scope
+m_tokens
+_items
+Must pass a valid expression
+Unable to build snapshot of the garbage collector state
+%p is not a MethodDesc
+Unable to print IL for DynamicMethodDesc %p
+Unable to get module
+bad import
+error in import
+FindIL failed
+Error gathering dynamic info from object at %s.
+Not enough memory to read IL
+This is dynamic IL. Exception info is not reported at this time.
+If a token is unresolved, run "!do <addr>" on the addr given
+in parenthesis. You can also look at the token table yourself, by
+running "!DumpArray %p".
+Invalid signature
+Out of memory
+!DumpSig <sigaddr> <moduleaddr>
+Invalid parameters %s %s
+!DumpSigElem <sigaddr> <moduleaddr>
+Missing EEClass address
+Invalid EEClass address
+EEClass has an invalid MethodTable address
+Class Name:      %S
+mdToken:         %p
+File:            %S
+Parent Class:    %s
+Module:          %s
+Method Table:    %s
+Vtable Slots:    %x
+Total Method Slots:  %x
+Class Attributes:    %x  
+Interface, 
+Abstract, 
+ComImport, 
+Transparency:        %s
+NumInstanceFields:   %x
+NumStaticFields:     %x
+NumThreadStaticFields: %x
+ContextStaticOffset: %x
+ContextStaticsSize:  %x
+Missing MethodTable address
+ is not a MethodTable
+Free MethodTable
+EEClass:
+Module:
+Name:
+mdToken:
+File:
+BaseSize:
+ComponentSize:
+Slots in VTable:
+Number of IFaces in IFaceMap:
+MethodDesc Table
+MethodDesc
+Entry
+<error getting slot 
+PreJIT
+FCALL
+Name:        %S
+MethodTable: %s
+EEClass:     %s
+Size:        %d(0x%x) bytes
+File:        %S
+Fields:
+Type Name:   %S
+Type MT:     %s
+<Note: this object has an invalid CLASS field>
+Invalid object
+Free Object
+Size:        %I32d(0x%I32x) bytes
+RCW:         %s
+CCW:         %s
+System.RuntimeType
+System.RuntimeType+RuntimeTypeCache
+m_runtimeType
+Error when reading RuntimeType field
+Array:       Rank %d, Number of elements %I32d, Type %s
+ (<exec cmd="!DumpArray /d %p">Print Array</exec>)
+<exec cmd="%s %x L%x">Content</exec>:     
+Content:     
+String:      
+Object
+ThinLock owner %x (%p), Recursive %x
+<integer underflow>
+-start
+-length
+-details
+-nofields
+Invalid parameter %s
+Not an array, please use !DumpObj instead
+For multi-dimension array, length and start index are supported
+Start index out of range
+-nofields has no effect unless -details is specified
+Name:        %S[
+Array:       Rank %d, Number of elements %I32d, Type %s
+Element Methodtable: %s
+Integer overflow on array rank
+Failed to read lower bounds info from the array
+Failed to read bounds info from the array
+interrupted by user
+Failed to read element at 
+ null
+-refs
+GC Refs:
+offset
+System.Security.SecurityException
+    SP       IP       Function
+_xcode
+_HResult
+    %s
+    %s [%S @ %d]
+Not a valid exception object
+Exception object: %s
+Exception type:   %S
+Exception type:   <Unknown>
+_message
+Message:          
+<none>
+_innerException
+InnerException:   
+Use <exec cmd="!PrintException /d %p">!PrintException %p</exec> to see more.
+Use !PrintException %p to see more.
+<invalid MethodTable of inner exception>
+<none>
+_stackTrace
+StackTrace (generated):
+Unable to decipher generated stack trace
+<Not Available>
+_stackTraceString
+StackTraceString: 
+HResult: %lx
+m_debugString
+SecurityException Message: 
+-nested
+-lines
+In order for the option -lines to enable display of source information
+the debugger must be configured to load the line number information from
+the symbol files. Use the ".lines; .reload" command to achieve this.
+No CCW pointer specified
+The current thread is unmanaged
+There is no current managed exception on this thread
+Invalid CCW pointer %s
+Invalid exception object %s
+There are nested exceptions on this thread. Run with -nested for details
+Error retrieving nested exception info %p
+<aborted>
+Nested exception -------------------------------------------------------------
+Usage: !DumpVC <Method Table> <Value object start addr>
+Not a managed object
+Missing RCW address
+Invalid RCW %s
+Error requesting RCW data
+Managed object:             %s
+Creating thread:            %p
+IUnknown pointer:           %p
+COM Context:                %p
+Managed ref count:          %d
+IUnknown V-table pointer :  %p (captured at RCW creation time)
+IsDCOMProxy 
+IsUnique 
+IsFreeThreaded 
+IsJupiterObject 
+IsContained 
+IsAggregated 
+SupportsIInspectable 
+IsDisconnected 
+Flags:                      %s%s%s%s%s%s%s%s
+IJupiterObject:    %p
+COM interface pointers:
+Error requesting COM interface pointers
+Context
+%8s %8s %8s Type
+%p %p %s %S
+Missing CCW address
+Invalid CCW %s
+Error requesting CCW data
+CCW:               %p
+Managed object:    %s
+Outer IUnknown:    %p
+ (NEUTERED)
+Ref count:         %d%s
+IsExtendsCOMObject 
+Flags:             %s%s
+ CLR 
+ Jupiter 
+, Pegged by
+Jupiter ref count: %d%s%s%s%s
+ (STRONG)
+ (WEAK)
+RefCounted Handle: %p%s
+%8s %8s Type
+IDispatch/IUnknown
+%p %s %S
+The garbage collector data structures are not in a valid state for traversal.
+It is either in the "plan phase," where objects are being moved around, or
+we are at the initialization or shutdown of the gc heap. Commands related to 
+displaying, finding or traversing objects as well as gc heap segments may not 
+work properly. !dumpheap and !verifyheap may incorrectly complain of heap 
+consistency errors.
+-loader
+Unable to get AppDomain information
+Loader Heap:
+System Domain
+Shared Domain
+Unable to get the array of all AppDomains.
+Domain %d
+Jit code heap:
+Failed to request module list.
+Module Thunk heaps:
+Module Lookup Table heaps:
+Total LoaderHeap size:   
+=======================================
+Number of GC Heaps: %d
+Total Size:              
+Failed to get GCHeaps: integer overflow
+------------------------------
+Heap %d (%p)
+Heap Size:       
+GC Heap Size:    
+print
+Exception occurred while trying to %s the GC stats.
+usage: HeapTraverse [-xml] filename
+Unable to open file
+Assuming a uncorrupted GC heap.  If this is a crash dump consider -verify option
+CLRProfiler
+Writing %s format to file %s
+Gathering types...
+Error initializing heap traversal
+Unable to write heap report
+file %s saved
+Error getting System.RuntimeType.m_handle offset
+Shared
+System
+ %s %S
+Domain
+Address
+%8s %8s %8s Type Name              
+------------------------------------------------------------------------------
+-type
+-stat
+-strings
+-thinlock
+-live
+-dead
+Failed to parse command line arguments.
+Cannot specify both -mt and -type
+Cannot specify both -live and -dead.
+wrong argument
+In a minidump without full memory, most gc heap structures will not be valid.
+If you need this functionality, get a full memory dump with ".dump /ma mydump.dmp"
+SyncBlock %d corrupted, points to invalid object %p
+Failed to get object header for object %p while inspecting syncblock at index %d.
+Object header for %p should have a SyncBlock index of %d.
+ Free
+     
+%s %s %8d%s
+%s %s %8d
+ ThinLock owner %x (%p) Recursive %x
+Found %d objects.
+Fragmented blocks larger than 0.5 MB:
+Followed by
+%8s %8s %16s
+%p %6.1fMB         %p %S
+No heap corruption detected.
+Managed OOM occured after GC #%d (Requested to allocate %d bytes)
+%s, please contact PSS
+Reason: %s
+Detail: %s: %s (%d bytes)
+ - on GC entry available commit space was %d MB
+GC Heap not initialized yet.
+Error requesting OOM data
+Heap %d: Error requesting OOM data
+---------Heap %#-2d---------
+object %#p does not have valid method table
+object %#p is a valid object
+%S %s %12d (0x%x)
+Usage: !ListNearObj <obj_address>
+Address %p does not lie in the managed heap
+Failed to find the segment of the managed heap where the object %p resides
+Before: 
+Before: couldn't find any object between %#p and %#p
+Current:
+After:  
+After:  couldn't find any object between %#p and %#p
+Heap local consistency confirmed.
+Heap local consistency not confirmed.
+-inclUnrooted
+%-8s %12s %12s %12s %12s
+Heap%-4d %12I32u %12I32u %12I32u %12I32u
+Free space:                                                 Percentage
+Heap%-4d %12I32u %12I32u %12I32u %12I32u
+SOH:%3d%% LOH:%3d%%
+Unrooted objects:                                           Percentage
+Total    %12I32u %12I32u %12I32u %12I32u
+Error requesting SyncBlk data
+Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBlock Owner
+, continuing...
+SyncBlock %d is invalid%s
+%11d 
+ orphaned 
+ XXX 
+    none  
+  %8d
+  %s %S
+-----------------------------
+Total           %d
+CCW             %d
+RCW             %d
+ComClassFactory %d
+Free            %d
+RuntimeCallableWrappers (RCW) to be cleaned:
+THREAD
+CONTEXT
+%8s %8s %8s Apartment
+(FreeThreaded)
+(MTA)
+(STA)
+%8p %8p %8p %9s
+Free-Threaded Interfaces to be released: %d
+MTA Interfaces to be released: %d
+STA Interfaces to be released: %d
+An error occurred while traversing the cleanup list.
+-detail
+-allReady
+SyncBlocks to be cleaned by the finalizer thread:
+ComClassFactory
+SyncBlock
+%8s %8s %8s %8s
+%8p %8p %8p %8p
+SyncBlocks to be cleaned up: %d
+----------------------------------
+Heap %d
+Statistics for all finalizable objects that are no longer rooted:
+Statistics for all finalizable objects (including all objects ready for finalization):
+%s 0x%08x %S
+Usage: DumpModule [-mt] <Module Address>
+Fail to fill Module %p
+Name:       %S
+Attributes: 
+PEFile 
+Reflection 
+SupportsUpdateableMethods
+Assembly:   %s
+LoaderHeap:              %p
+TypeDefToMethodTableMap: %p
+TypeRefToMethodTableMap: %p
+MethodDefToDescMap:      %p
+FieldDefToDescMap:       %p
+MemberRefToDescMap:      %p
+FileReferencesMap:       %p
+AssemblyReferencesMap:   %p
+MetaData start address:  %p (%d bytes)
+Types defined in this module
+TypeDef
+%8s %8s %s
+Types referenced in this module
+TypeRef
+%8s   %8s %s
+Fail to fill AppDomain
+Shared Domain:      %s
+System Domain:      %s
+Domain %d:%s          %s
+Unable to get system domain info.
+Unable to get shared domain info
+Unable to get array of AppDomains
+Failed to get appdomain %p, error %lx
+Invalid Assembly %s
+Fail to fill Assembly
+Parent Domain:      %s
+Name:               %S
+Name:               Unknown
+Memory
+Threadpool
+IOCompletion
+Assembly
+Security
+ThreadCount:
+UnstartedThread:
+BackgroundThread:
+PendingThread:
+DeadThread:
+Hosted Runtime:
+GC Alloc Context
+GC Mode
+State
+ThreadOBJ
+Fiber
+Exception
+Failed to request Thread at 
+<<<< 
+XXXX 
+Cooperative
+Preemptive
+%p:%p
+<error>
+n(Finalizer) 
+(GC) 
+(Threadpool Worker) 
+(Threadpool Completion Port) 
+<Invalid Object> (
+ (nested exceptions)
+Failed to retrieve Tls Data index
+Failed to require current Thread ID
+Failed to require total thread number
+Special thread type
+Failed to get thread ID for thread 
+Failed to switch to thread 
+Failed to get Teb for Thread 
+Failed to get Tls expansion slots for thread 
+Failed to get CLR Tls data for thread 
+Failed to get thread type info not found for thread 
+Timer 
+Gate 
+DbgHelper 
+Shutdown 
+SuspendEE 
+Finalizer 
+ADUnloadHelper 
+ShutdownHelper 
+IOCompletion 
+ThreadpoolWorker 
+Wait 
+ProfilingAPIAttach 
+ProfilingAPIDetach 
+Failed to switch to original thread
+    %s
+    No thread states for '%s'.
+-special
+Special thread information is not available in mini dumps.
+Not supported on mini dumps.
+Can't get Watson Buckets
+Watson Bucket parameters:
+b1: %S
+b2: %S
+b3: %S
+b4: %S
+b5: %S
+b6: %S
+b7: %S
+b8: %S
+b9: %S
+bp %p
+Setting breakpoint: %s [%S]
+!bpmd pending breakpoint list
+ Breakpoint index - Location, ModuleID, Method Token
+%d - %ws!%ws+%d, 0x%p, 0x%08x
+%d - %ws:%d, 0x%p, 0x%08x
+%d - %ws, %ws, %p
+Cleared
+Invalid pending breakpoint index.
+All pending breakpoints cleared.
+SOS error: IXCLRDataModule->GetFileName failed hr=0x%x
+SOS error: GetClrModuleImages failed hr=0x%x
+SOS warning: No symbols for module %S, source line breakpoints in this module will not bind hr=0x%x
+Failed to set code notification
+JITTED %S!%S
+Failed to request module address.
+`SOS: warning, optimizations for this module could not be suppressed because this CLR version doesn't support the functionality
+SOS: warning, optimizations for this module could not be surpressed because an optimized prejitted image was loaded
+SOS: warning, optimizations for this module could not be surpressed hr=0x%x
+CLR notification: GC - Performing a gen %d collection. Determined surviving objects...
+bp /1 %p
+Expecting first chance CLRN exception
+Error processing exception notification
+!bpmd is not supported on a dump file.
+-nofuturemodule
+-list
+-clear
+-clearall
+Unable to parse line number
+Line number must be positive
+Usage: !bpmd -md <MethodDesc pointer>
+Usage: !bpmd [-nofuturemodule] <module name> <managed function name> [<il offset>]
+Usage: !bpmd <filename>:<line number>
+Usage: !bpmd -list
+Usage: !bpmd -clear <pending breakpoint number>
+Usage: !bpmd -clearall
+See "!help bpmd" for more details.
+Error getting MethodDescs for module %p
+Found %d methods in module %p...
+MethodDesc = %p
+%p is not a valid MethodDesc
+This DynamicMethodDesc is not yet JITTED. Placing memory breakpoint at %p
+ba w4 /1 %p "bp poi(%p); g"
+Unable to set breakpoint with IDebugControl::Execute: %x
+Attempted to run: %s
+Unable to get method name for MethodDesc %p
+Adding pending breakpoints...
+sxe -c "!HandleCLRN" clrn
+Warmup
+Initializing
+RandomMove
+ClimbingMove
+ChangePoint
+Stabilizing
+Starvation
+ThreadTimedOut
+Undefined
+CPU utilization: %d%%
+Worker Thread:
+ Total: %d
+ Running: %d
+ Idle: %d
+ MaxLimit: %d
+ MinLimit: %d
+    Failed to examine a WorkRequest
+Work Request in Queue: %d
+    AsyncTimerCallbackCompletion TimerInfo@%p
+    Unknown Function: %p  Context: %p
+Thread Injection History
+    Time Transition     New #Threads      #Samples   Throughput
+    Failed to examine a HillClimbing log entry
+%8.2lf %-14s %12d  %12d  %11.2lf
+Number of Timers: %d
+Completion Port Thread:
+Total: %d
+ Free: %d
+ MaxFree: %d
+ CurrentLimit: %d
+Failed to request ThreadpoolMgr information
+%p is not a valid object
+Error getting AppDomain information
+AppDomain: %s
+Name:      Shared Domain
+ID:        (shared domain)
+Name:      System Domain
+ID:        (system domain)
+Error getting AppDomain %p.
+Name:      %S
+ID:        %d
+The type is declared in the shared domain and other
+methods of finding the AppDomain failed. Try running
+<exec cmd="!gcroot /d %p">!gcroot %p</exec>, and if you find a root on a
+!gcroot %p, and if you find a root on a
+stack, check the AppDomain of that stack with !threads.
+Note that the Thread could have transitioned between
+multiple AppDomains.
+  Error!  integer overflow on numThread 0x%08x
+     ID     TEB   APT    APTId CallerTID Context
+%3d %4x %p
+  %8x
+EHHandler %d: %s 
+catch(%S) 
+(duplicate)
+Clause:  [%p, %p] [%x, %x]
+Handler: [%p, %p] [%x, %x]
+Filter: [%p] [%x]
+No EH info available
+Unable to get codeHeader information
+<user aborted>
+Failed to perform EHInfo traverse
+No GC info available
+entry point %p
+unknown Jit
+Normal JIT generated code
+preJIT generated code
+GC info %p
+<integer overflow>
+Could not allocate memory to read the gc info.
+Could not read memory %p
+Untracked:
+-gcinfo
+-ehinfo
+Unmanaged code
+Failed to get method desc for %p.
+Not jitted yet
+not a valid MethodDesc
+Begin %p, size %x. Cold region begin %p, size %x
+Begin %p, size %x
+Failed to gather EHInfo data
+Hot region:
+Cold region:
+StressLog.txt
+-addr
+clr!StressLog::theLog
+Please provide the -addr argument for the address of the stress log, since no recognized runtime is loaded.
+Attempting to dump Stress log to file '%s'
+SUCCESS: Stress log dumped
+No Stress log in the image, no file written
+FAILURE: Stress log not dumped
+CLR not loaded
+GCConfigLog.txt
+clr!SVR::gc_config_log_buffer
+clr!SVR::gc_config_log_buffer_offset
+clr!WKS::gc_config_log_buffer
+clr!WKS::gc_config_log_buffer_offset
+Can't get either WKS or SVR GC's config log buffer
+Dumping GC log at %08x
+Attempting to dump GC log to file '%s'
+failed to create file: %d
+failed to read memory from %08x
+Interesting data points
+%20s: %d
+Compacting reasons
+[%s]%35s: %d
+Expansion mechanisms
+%30s: %d
+Other mechanisms enabled
+%-30s: %d
+[info per heap]
+Error requesting interesting GC info
+Heap %d: Error requesting interesting GC info
+--------info for heap %d--------
+%u.%u.%u.%u
+ Checked or debug build
+ retail
+ free
+GC Heap not initialized, so GC mode is not determined yet.
+Server mode with %d gc heaps
+Workstation mode
+In plan phase of garbage collection
+SOS Version: %u.%u.%u.%u
+ retail build
+!ProcInfo is not supported on a dump file.
+-time
+---------------------------------------
+Environment
+ProcessParameters
+_RTL_USER_PROCESS_PARAMETERS
+Environment
+Kernel32.dll
+GetProcessTimes
+Process Times
+Process Started at: %4d %s %2d %d:%d:%d.%02d
+Kernel CPU time   : %d days %02d:%02d:%02d.%02d
+User   CPU time   : %d days %02d:%02d:%02d.%02d
+Total  CPU time   : %d days %02d:%02d:%02d.%02d
+ntdll.dll
+NtQueryInformationProcess
+Process Memory
+WorkingSetSize: %8d KB       PeakWorkingSetSize: %8d KB
+VirtualSize:    %8d KB       PeakVirtualSize:    %8d KB
+PagefileUsage:  %8d KB       PeakPagefileUsage:  %8d KB
+%ld percent of memory is in use.
+Memory Availability (Numbers in MB)
+Avail
+Total
+                  %8s     %8s
+Physical Memory   %8d     %8d
+Page File         %8d     %8d
+Virtual Memory    %8d     %8d
+Usage: !Token2EE module_name mdToken
+       You can pass * for module_name to search all modules.
+Module:      %s
+Assembly:    %S
+Usage: !Name2EE module_name item_name
+  or    !Name2EE module_name!item_name
+       use * for module_name to search all loaded modules
+Examples: !Name2EE  mscorlib.dll System.String.ToString
+          !Name2EE *!System.String
+Invalid argument %s
+Did not find a path from %p to %p.
+-nostacks
+Interrupted, data may be incomplete.
+Found %d roots.
+Found %d unique roots (run '!GCRoot -all' to see all roots).
+-brick
+-card
+Couldn't get size for object %#p: possible heap corruption.
+Address            Gen   Heap   segment            begin              allocated           size
+%p   %d     %2d     %p   %p   %p    0x%x(%d)
+Address          Gen Heap segment          begin            allocated         size
+Address %#p not found in the managed heap.
+!FindRoots is not supported on a dump file.
+Incorrect options.  Usage:
+!FindRoots -gen <N>
+where N is 0, 1, 2, or "any". OR
+!FindRoots <obj>
+Your version of the runtime/DAC do not support this command.
+The command !FindRoots can only be used after the debugger stopped on a CLRN GC notification.
+At this time !GCRoot should be used instead.
+Address %#p is not in the managed heap.
+Object %s will survive this collection:
+gen(%#p) = %d > %d = condemned generation.
+-perdomain
+Pinned
+RefCounted
+WeakShort
+WeakLong
+Strong
+Variable
+AsyncPinned
+SizedRef
+Dependent
+WeakWinRT
+Unknown handle type '%s'.
+Error getting per-appdomain handle information
+Handle
+GC Handle Statistics for AppDomain 
+ (Shared Domain)
+ (System Domain)
+Unable to display GC handles.
+A minidump without full memory may not have this information.
+Failed to walk the handle table.
+Error %x while walking the handle table.
+<free>
+Unknown
+Handles:
+Strong Handles:
+Pinned Handles:
+Async Pinned Handles:
+Ref Count Handles:
+Weak Long Handles:
+Weak Short Handles:
+Weak WinRT Handles:
+Variable Handles:
+SizedRef Handles:
+Dependent Handles:
+Other Handles:
+Pseudo-register number must be between 0 and 19
+r$t%zd=0
+Error initialized register $t%d to zero
+-derived
+-create
+-create2
+Live debugging session required
+usage: StopOnException [-derived] [-create | -create2] <type name>
+                       [<pseudo-register number for result>]
+ex:    StopOnException -create System.OutOfMemoryException 1
+sxe %s "!soe %s %s %zd;.if(@$t%zd==0) {g} .else {.echo '%s hit'}" %x
+Error setting breakpoint: %s
+Breakpoint set
+r$t%zd=1
+Failed to execute the following command: %s
+%p is not a valid object.
+sizeof(%p) = %d (0x%x) bytes (%S)
+-------------------------------------------------------------------------------
+GCHandleLeaks will report any GCHandles that couldn't be found in memory.      
+Strong and Pinned GCHandles are reported at this time. You can safely abort the
+memory scan with Control-C or Control-Break.                                   
+Found %d handles:
+Searching memory
+Reference found in stress log will be ignored
+Failed to read whole or part of stress log, some references may come from stress log
+Quitting at %p due to user abort
+Searching %p...
+Found %p in stress log at location %p, reference not counted
+Found %p at location %p
+only read %x bytes at %p
+Some handles were not found. If the number of not-found handles grows over the
+lifetime of your application, you may have a GCHandle leak. This will cause   
+the GC Heap to grow larger as objects are being kept alive, referenced only   
+by the orphaned handle. If the number doesn't grow over time, note that there 
+may be some noise in this output, as an unmanaged application may be storing  
+the handle in a non-standard way, perhaps with some bits flipped. The memory  
+scan wouldn't be able to find those.                                          
+Didn't find %d handles:
+All handles found
+ even though you aborted.
+A leak may still exist because in a general scan of process memory SOS can't  
+differentiate between garbage and valid structures, so you may have false     
+positives. If you still suspect a leak, use this function over time to        
+identify a possible trend.                                                    
+*(...)
+typedbyref
+ = %S
+ | %S
+ = "%S"
+   (empty)
+   (1 element)
+   (%d elements)
+%s.[%d]
+ |- %s = %S
+ |- %s
+ = null
+  (Unhandled CorElementType: 0x%x)
+  = <pointer>
+  = <function pointer 0x%x>
+ @ 0x%I64x
+false
+  = %s
+  = '%C'
+  = %d
+  = %hd
+  = %hu
+  = %u
+  = %I64d
+  = %I64u
+  = %f
+  = object
+PARAMETERS:
+  + (Error 0x%x retrieving parameter '%S')
+  + %S %s
+  + (Error 0x%x printing parameter %d)
+PARAMETERS: (none)
+LOCALS:
+  + (Error 0x%x retrieving local variable '%S')
+  + (Error 0x%x printing local variable %d)
+LOCALS: (none)
+[basetype]
+ |- %S %s
+ |- %S %s
+ |- < unknown type > %S
+Dumping managed stack and managed variables using ICorDebug.
+=============================================================================
+Call Site
+Child SP
+%-8s %-8s %s
+Stack walk complete.
+%p %s [NativeStackFrame]
+[RuntimeUnwindableFrame]
+TODO: Implement GetFrameName
+[%S: p] 
+[IL Stub or LCG]
+ (%S)
+<unknown register>
+ (pinned)
+ (interior)
+Failed to start stack walk: %lx
+Failed to enumerate GC references.
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+    PARAMETERS:
+        
+(<CLR reg>) 
+(0x%p) 
+<unable to retrieve data>
+<no data>
+    LOCALS:
+<CLR reg> 
+!VMMap requires a full memory dump (.dump /ma) or a live process.
+!VMStat requires a full memory dump (.dump /ma) or a live process.
+Usage: SaveModule <address> <file to save>
+Invalid arg
+Module does not have base address
+%p is not a Module or base address
+Failed to retrieve information about segment %p
+%u sections in file
+section %d - VA=%x, VASize=%x, FileAddr=%x, FileSize=%x
+Fail to read PE section info
+File not specified
+Fail to create file %s
+Fail to read memory
+%p %p 
++%#llx
+ * Ctx[BSI]:  %08x  %08x  %08x    
+(TransitionMU)
+(TransitionUM)
+   at 
+    %p %p %s
+_remoteStackTraceString
+-ManagedExcepStack
+Error!
+_EFN_GetManagedExcepStack(%P, wszStr, sizeof(wszStr)) returned:
+_EFN_GetManagedExcepStack(NULL, wszStr, sizeof(wszStr)) returned:
+Error: %lx
+Number of characters requested: %d
+Context information:
+Unsupported platform
+%p %p %p
+Simple Context information:
+SOS: warning, prejitted code optimizations could not be changed. Failed to load ICorDebug HR = 0x%x
+SOS: warning, prejitted code optimizations could not be changed. This CLR version doesn't support the functionality
+SOS: warning, prejitted code optimizations could not be changed. This CLR version doesn't support NGEN
+SOS: warning, prejitted code optimizations could not be changed. GetDesiredNGENCompilerFlags failed hr=0x%x
+SOS: warning, prejitted code optimizations could not be changed at this time. This setting is fixed once CLR starts
+SOS: warning, prejitted code optimizations could not be changed at this time. SetDesiredNGENCompilerFlags hr = 0x%x
+DOCUMENTATION
+Error loading documentation resource
+COMMAND: %s.
+Documentation for %s not found.
+Expected newline in documentation resource.
+contents
+vector too long
+Not calculated
+Critical
+Safe critical
+Transparent
+%-*.*p
+%*.*p
+0x%-*.*x
+0x%*.*x
+%-*.*x
+%*.*x
+%-*.*d
+%*.*d
+<exec cmd="!DumpMT /d %s">%s</exec>
+<exec cmd="!DumpMD /d %s">%s</exec>
+<exec cmd="!DumpClass /d %s">%s</exec>
+<exec cmd="!DumpModule /d %s">%s</exec>
+<exec cmd="!U /d %s">%s</exec>
+<exec cmd="!DumpObj /d %s">%s</exec>
+<exec cmd="!DumpDomain /d %s">%s</exec>
+<exec cmd="!DumpAssembly /d %s">%s</exec>
+<exec cmd="~~[%s]s">%s</exec>
+<exec cmd="!DumpVC /d %s %s">%s</exec>
+<exec cmd="!DumpHeap /d -mt %s">%s</exec>
+<exec cmd="!ListNearObj /d %s">%s</exec>
+<exec cmd="!ThreadState %s">%s</exec>
+<exec cmd="!PrintException /d %s">%s</exec>
+<exec cmd="!DumpRCW /d %s">%s</exec>
+<exec cmd="!DumpCCW /d %s">%s</exec>
+<exec cmd="!ClrStack -i %S %d">%S</exec>
+Boolean
+SByte
+Int16
+UInt16
+Int32
+UInt32
+Int64
+UInt64
+Single
+Double
+String
+TypedReference
+IntPtr
+UIntPtr
+<CLSID>
+Failed to instantiate {%ls} from installed .NET framework locations.
+Failed to instantiate {%ls} from DAC location.
+Unable to query IDebugSymbol3 HRESULT=0x%x.
+Failed to instantiate {%ls} from debugger's image path.
+mscoree.dll
+CLRCreateInstance
+DllGetClassObject
+%d.%d.%d
+%d.%d
+SOS Error: Out of memory
+The version of SOS does not match the version of CLR you are debugging.  Please
+load the matching version of SOS for the version of CLR you are debugging.
+CLR Version: %u.%u.%u.%u
+SOS Version: %u.%u.%u.%u
+/f clr.dll
+PDB symbol for clr.dll not loaded
+%I64d
+%I64u
+dynamic statics NYI
+dynamic thread statics NYI
+    >> Domain:Value 
+Unable to get AppDomain %lx
+ %s:NotInit 
+ %s:FailInit
+    >> Thread:Value
+  error getting thread %p, aborting this field
+Display of context static variables is not implemented yet
+BYREF
+VALUETYPE
+CLASS
+ARRAY
+FNPTR
+SZARRAY
+Offset
+Field
+%8s %8s %8s %20s %2s %8s %8s %s
+Invalid parent MethodTable
+Invalid parent EEClass
+Unable to display fields
+%s %8x %8x 
+%20.20S 
+%20.20s 
+TLstatic
+CLstatic
+shared
+%8s %8s
+ <no information>
+static
+instance
+Unable to get appdomain store
+Failed to get appdomain list
+Unable to get AppDomain %p
+Unable to get array of Assemblies
+ClassLoader:        %p
+SecurityDescriptor: %p
+  Module Name
+%s    
+Dynamic Module
+CREATING
+READYFORMANAGEDCODE
+ACTIVE
+UNLOAD_REQUESTED
+EXITING
+EXITED
+FINALIZING
+FINALIZED
+HANDLETABLE_NOACCESS
+CLEARED
+COLLECTED
+CLOSED
+UNKNOWN
+LowFrequencyHeap:   %p
+HighFrequencyHeap:  %p
+StubHeap:           %p
+Stage:              %s
+Name:               
+Error getting AppDomain friendly name
+Assembly:           %s
+ (Dynamic)
+%-8s %s 
+(%S[])
+<unknown type>
+Integer overflow error.
+Unable to get array of Assemblies for the given AppDomain..
+Failed to request assembly.
+Failed to get the modules for the given assembly.
+Failed to request Module data from assembly.
+-----------------------
+Member (mdToken token) of
+Field (mdToken token) of
+This token type is not supported
+<invalid module token>
+Token:       %p
+Field name:  %S
+MethodDesc:  %s
+MethodDesc:  <not loaded yet>
+JITTED Code Address: %s
+Not JITTED yet. Use <exec cmd="!bpmd -md %p">!bpmd -md %p</exec> to break on run.
+Not JITTED yet. Use !bpmd -md %p to break on run.
+<Error getting MethodDesc information>
+Not JITTED yet.
+EEClass:     <error getting EEClass>
+MethodTable: <not loaded yet>
+EEClass:     <not loaded yet>
+FAULT
+FINALLY
+FILTER
+TYPED
+    ReJITID %p: 
+CodeAddr = %s
+ (READY to jit on next call)
+ (CURRENT)
+ (reverted)
+ReJITed versions:
+    (... possibly more reverted versions ...)
+Method Name:  %S
+Class:        %s
+MethodTable:  %s
+mdToken:      %p
+Module:       %s
+IsJitted:     %s
+CodeAddr:     %s
+Transparency: %s
+Unknown MethodDesc (Module %s, mdToken %08x)
+Failed to request threads from the thread store.
+mscoree.dll
+/f mscoree.dll
+<Invalid Object>
+Error getting string data
+<String is invalid or too large to print>
+Missing quote in %s
+Incorrect argument: %s
+Wrong option: %s
+Invalid option %s
+Invalid option: option specified multiple times: %s
+Missing value for option %s
+Unknown option: %s
+0Unable to load '%S'.  HRESULT = 0x%x.
+Failed to read module information for '%S'.  HRESULT = 0x%x.
+Found '%S', but it does not match the CLR being debugged.
+Size: Expected '0x%x', Actual '0x%x'
+Time stamp: Expected '0x%x', Actual '0x%x'
+Loaded %S
+Failed to get the dac module handle. hr=0x%x.
+GetModuleFileName(dacModuleHandle) failed. Last error = 0x%x
+mscordac
+IDebugSystemObjects::GetCurrentProcessHandle HRESULT=0x%x.
+Unable to get symbol path length. IDebugSymbols3::GetSymbolPathWide HRESULT=0x%x.
+Unable to get symbol path. IDebugSymbols3::GetSymbolPathWide HRESULT=0x%x.
+SymFindFileInPath failed for %S. HRESULT=0x%x.
+Please ensure that %S is on your symbol path.
+                                                                
+SOS Warning: Loading symbols for dynamic assemblies is not yet supported
+diasymreader.dll
+SOS Error: Unable to CoCreateInstance class=CLSID_CorSymBinder_SxS, interface=IID_ISymUnmanagedBinder3, hr=0x%x
+This usually means the installation of .Net Framework on your machine is missing or needs repair
+SOS Error: Unable to query IDebugSymbols3 HRESULT=0x%x.
+SOS Error: Unable to get symbol path length. IDebugSymbols3::GetSymbolPathWide HRESULT=0x%x.
+SOS Error: Unable to get symbol path. IDebugSymbols3::GetSymbolPathWide HRESULT=0x%x.
+Frame
+<unknown method>
+Failed to enumerate GC references.
+Failed to enumerate GC reference errors.
+Unknown internal frame.
+Managed to Unmanaged transition
+Unmanaged to Managed transition
+AppDomain transition
+Lightweight function
+Function evaluation
+Internal call
+Class initialization
+JIT Compilation
+[%s: %p]
+ExRdWr
+ExWrCp
+TOTAL
+BLK COUNT
+AVERAGE
+MAXIMUM
+MINIMUM
+%-7s  %*s  %*s  %*s %*s  %*s
+~~~~~
+~~~~~~~~~
+~~~~~~~
+%-7s %*sK %*sK %*sK %*s %*sK
+Small
+Medium
+Large
+Summary
+%08lx
+Commit
+Reserve
+Private
+Mapped
+Image
+Protect
+AllocProtect
+Length
+Start
+%-*s %-*s %-*s  %-13s %-13s %-8s %-8s
+%p-%p %p  %-13s %-13s %-8s %-8s
+ (%S, mdToken: %p)
+ (MT: %S)
+ (Object: %S)
+ (MD: %S)
+%s @ %d:
+%08x 
+ (gcstress)
+call 
+push 
+ntdll!KiUserExceptionDispatcher
+Scalar
+ByRef
+UNSET
+{Scalar, Object}
+{Scalar, ByRef}
+{Object, Object}
+{Object, ByRef}
+{ByRef, Object}
+{ByRef, ByRef}
+<Illegal>
+!Impossible!
+%08x%s interruptible
+%08x is a safepoint: 
+(pinned)
+(interior)
+(untracked)
+ %c%s
+caller.sp
+ %c%s%c%x
+Prolog size: 
+Security object: 
+caller.sp%c%x
+GS cookie: 
+GS cookie valid range: [%x;%x)
+PSPSym: 
+Generics inst context: 
+PSP slot: 
+GenericInst slot: 
+caller.sp%c%x 
+(GENERIC_PARAM_CONTEXT_METHODDESC)
+(GENERIC_PARAM_CONTEXT_METHODHANDLE)
+(GENERIC_PARAM_CONTEXT_THIS)
+Varargs: %u
+Frame pointer: %s
+Has tailcalls: %u
+Size of parameter area: %x
+Return Kind: %s
+Code size: %x
+out of memory
+reported register in caller's frame
+reported frame register
+reported pointer relative to wrong base register
+reported invalid pointer
+decoder failed
+invalid GC info
+ (code for MD: %S)
+de00 
+de01 
+de02 
+f7f0a001
+f7f0a002
+f7f0a003
+movw 
+movt 
+api-ms-win-core-synch-l1-2-0.dll
+kernel32.dll
+SleepConditionVariableCS
+WakeAllConditionVariable
+bad exception
+__based(
+__cdecl
+__pascal
+__stdcall
+__thiscall
+__fastcall
+__vectorcall
+__clrcall
+__eabi
+__swift_1
+__swift_2
+__ptr64
+__restrict
+__unaligned
+restrict(
+ delete
+operator
+`vftable'
+`vbtable'
+`vcall'
+ypeof'
+`local static guard'
+`string'
+`vbase destructor'
+`vector deleting destructor'
+`default constructor closure'
+`scalar deleting destructor'
+`vector constructor iterator'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`virtual displacement map'
+`eh vector constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`copy constructor closure'
+`udt returning'
+`RTTI
+`local vftable'
+`local vftable constructor closure'
+ new[]
+ delete[]
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`managed vector constructor iterator'
+`managed vector destructor iterator'
+`eh vector copy constructor iterator'
+`eh vector vbase copy constructor iterator'
+`dynamic initializer for '
+`dynamic atexit destructor for '
+`vector copy constructor iterator'
+`vector vbase copy constructor iterator'
+`managed vector copy constructor iterator'
+`local static thread guard'
+operator "" 
+operator co_await
+operator<=>
+ Type Descriptor'
+ Base Class Descriptor at (
+ Base Class Array'
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+`anonymous namespace'
+api-ms-win-core-fibers-l1-1-1
+api-ms-win-core-synch-l1-2-0
+kernel32
+api-ms-
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+InitializeCriticalSectionEx
+( 8PX
+700WP
+`h````
+xpxxxx
+('8PW
+700PP
+`h`hhh
+xwpwpp
+(null)
+(null)
+[aOni*{
+eLK(w
+~ $s%r
+@b;zO]
+iu+-,
+obwQ4
+v2!L.2
+^<V7w
+minkernel\crts\ucrt\inc\corecrt_internal_strtox.h
+__crt_strtox::floating_point_value::as_double
+_is_double
+__crt_strtox::floating_point_value::as_float
+!_is_double
+INITY
+inity
+INITY
+inity
+SNAN)
+snan)
+IND)ind)S
+snan)
+IND)ind)
+mscoree.dll
+CorExitProcess
+         (((((                  H
+      (                          
+         (((((                  H
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+January
+February
+March
+April
+August
+September
+October
+November
+December
+MM/dd/yy
+dddd, MMMM dd, yyyy
+HH:mm:ss
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+January
+February
+March
+April
+August
+September
+October
+November
+December
+MM/dd/yy
+dddd, MMMM dd, yyyy
+HH:mm:ss
+en-US
+api-ms-win-appmodel-runtime-l1-1-1
+api-ms-win-core-datetime-l1-1-1
+api-ms-win-core-fibers-l1-1-1
+api-ms-win-core-file-l2-1-1
+api-ms-win-core-localization-l1-2-1
+api-ms-win-core-localization-obsolete-l1-2-0
+api-ms-win-core-processthreads-l1-1-2
+api-ms-win-core-string-l1-1-0
+api-ms-win-core-synch-l1-2-0
+api-ms-win-core-sysinfo-l1-2-1
+api-ms-win-core-winrt-l1-1-0
+api-ms-win-core-xstate-l2-1-0
+api-ms-win-rtcore-ntuser-window-l1-1-0
+api-ms-win-security-systemfunctions-l1-1-0
+ext-ms-win-kernel32-package-current-l1-1-0
+ext-ms-win-ntuser-dialogbox-l1-1-0
+ext-ms-win-ntuser-windowstation-l1-1-0
+advapi32
+kernel32
+user32
+AreFileApisANSI
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+GetCurrentPackageId
+InitializeCriticalSectionEx
+LCMapStringEx
+LocaleNameToLCID
+NAN(SNAN)
+nan(snan)
+NAN(IND)
+nan(ind)
+e+000
+log10
+UTF-8
+UTF-16LEUNICODE
+ja-JP
+zh-CN
+ko-KR
+zh-TW
+zh-CHS
+ar-SA
+bg-BG
+ca-ES
+cs-CZ
+da-DK
+de-DE
+el-GR
+fi-FI
+fr-FR
+he-IL
+hu-HU
+is-IS
+it-IT
+nl-NL
+nb-NO
+pl-PL
+pt-BR
+ro-RO
+ru-RU
+hr-HR
+sk-SK
+sq-AL
+sv-SE
+th-TH
+tr-TR
+ur-PK
+id-ID
+uk-UA
+be-BY
+sl-SI
+et-EE
+lv-LV
+lt-LT
+fa-IR
+vi-VN
+hy-AM
+az-AZ-Latn
+eu-ES
+mk-MK
+tn-ZA
+xh-ZA
+zu-ZA
+af-ZA
+ka-GE
+fo-FO
+hi-IN
+mt-MT
+se-NO
+ms-MY
+kk-KZ
+ky-KG
+sw-KE
+uz-UZ-Latn
+tt-RU
+bn-IN
+pa-IN
+gu-IN
+ta-IN
+te-IN
+kn-IN
+ml-IN
+mr-IN
+sa-IN
+mn-MN
+cy-GB
+gl-ES
+kok-IN
+syr-SY
+div-MV
+quz-BO
+ns-ZA
+mi-NZ
+ar-IQ
+de-CH
+en-GB
+es-MX
+fr-BE
+it-CH
+nl-BE
+nn-NO
+pt-PT
+sr-SP-Latn
+sv-FI
+az-AZ-Cyrl
+se-SE
+ms-BN
+uz-UZ-Cyrl
+quz-EC
+ar-EG
+zh-HK
+de-AT
+en-AU
+es-ES
+fr-CA
+sr-SP-Cyrl
+se-FI
+quz-PE
+ar-LY
+zh-SG
+de-LU
+en-CA
+es-GT
+fr-CH
+hr-BA
+smj-NO
+ar-DZ
+zh-MO
+de-LI
+en-NZ
+es-CR
+fr-LU
+bs-BA-Latn
+smj-SE
+ar-MA
+en-IE
+es-PA
+fr-MC
+sr-BA-Latn
+sma-NO
+ar-TN
+en-ZA
+es-DO
+sr-BA-Cyrl
+sma-SE
+ar-OM
+en-JM
+es-VE
+sms-FI
+ar-YE
+en-CB
+es-CO
+smn-FI
+ar-SY
+en-BZ
+es-PE
+ar-JO
+en-TT
+es-AR
+ar-LB
+en-ZW
+es-EC
+ar-KW
+en-PH
+es-CL
+ar-AE
+es-UY
+ar-BH
+es-PY
+ar-QA
+es-BO
+es-SV
+es-HN
+es-NI
+es-PR
+zh-CHT
+af-za
+ar-ae
+ar-bh
+ar-dz
+ar-eg
+ar-iq
+ar-jo
+ar-kw
+ar-lb
+ar-ly
+ar-ma
+ar-om
+ar-qa
+ar-sa
+ar-sy
+ar-tn
+ar-ye
+az-az-cyrl
+az-az-latn
+be-by
+bg-bg
+bn-in
+bs-ba-latn
+ca-es
+cs-cz
+cy-gb
+da-dk
+de-at
+de-ch
+de-de
+de-li
+de-lu
+div-mv
+el-gr
+en-au
+en-bz
+en-ca
+en-cb
+en-gb
+en-ie
+en-jm
+en-nz
+en-ph
+en-tt
+en-us
+en-za
+en-zw
+es-ar
+es-bo
+es-cl
+es-co
+es-cr
+es-do
+es-ec
+es-es
+es-gt
+es-hn
+es-mx
+es-ni
+es-pa
+es-pe
+es-pr
+es-py
+es-sv
+es-uy
+es-ve
+et-ee
+eu-es
+fa-ir
+fi-fi
+fo-fo
+fr-be
+fr-ca
+fr-ch
+fr-fr
+fr-lu
+fr-mc
+gl-es
+gu-in
+he-il
+hi-in
+hr-ba
+hr-hr
+hu-hu
+hy-am
+id-id
+is-is
+it-ch
+it-it
+ja-jp
+ka-ge
+kk-kz
+kn-in
+kok-in
+ko-kr
+ky-kg
+lt-lt
+lv-lv
+mi-nz
+mk-mk
+ml-in
+mn-mn
+mr-in
+ms-bn
+ms-my
+mt-mt
+nb-no
+nl-be
+nl-nl
+nn-no
+ns-za
+pa-in
+pl-pl
+pt-br
+pt-pt
+quz-bo
+quz-ec
+quz-pe
+ro-ro
+ru-ru
+sa-in
+se-fi
+se-no
+se-se
+sk-sk
+sl-si
+sma-no
+sma-se
+smj-no
+smj-se
+smn-fi
+sms-fi
+sq-al
+sr-ba-cyrl
+sr-ba-latn
+sr-sp-cyrl
+sr-sp-latn
+sv-fi
+sv-se
+sw-ke
+syr-sy
+ta-in
+te-in
+th-th
+tn-za
+tr-tr
+tt-ru
+uk-ua
+ur-pk
+uz-uz-cyrl
+uz-uz-latn
+vi-vn
+xh-za
+zh-chs
+zh-cht
+zh-cn
+zh-hk
+zh-mo
+zh-sg
+zh-tw
+zu-za
+1#INF
+1#QNAN
+1#SNAN
+1#IND
+atan2
+floor
+ldexp
+_cabs
+_hypot
+frexp
+_logb
+_nextafter
+log10
+CONOUT$
+?5Wg4p
+BC .=
+%S#[k
+"B <1=
+#.X'=
+?AqGO
+`_o=8u
+a_o=8u
+b_o=8u
+c_o=8u
+d_o=8u
+ei_/E6D
+4-Wzk
+YoJ1E
+>V<4q
+`lfuFu
+vnffy
+91BMT
+OpenVirtualProcessImpl
+OpenVirtualProcess2
+CLRDEBUGINFOWINDOWSX86
+CLRDEBUGINFO
+mscordbi
+%s_%s.dll
+mscordacwks
+%s.dll
+mscordaccore
+amd64
+arm64
+%s_%s_%s_%u.%u.%u.%02u%s.dll
+H2M>~
+SOS.pdb
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.CRT$XPA
+.CRT$XPX
+.CRT$XPXA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.rdata
+.rdata$T
+.rdata$r
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+.edata
+.data
+.data$r
+.data$rs
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+D$,PQ
+u:h n
+9hhSMu
+PQh4n
+PQhdn
+RVSWh0o
+SVWj@
+t1Gf;
+_^][Y
+D$PVW
+T$<UVW
+\$@t$
+VPh0%
+7QPh\%
++D$$Ph
+7@Ph0&
+t$4hD'
+ Phh'
+3QPhx$
+t$$hd)
+_^][3
+PVhD(
+PVhd(
+|$ < u
+9)u2+
+vhRPQ
+PQSVW
+PQSVW
+scj@j
+scj@j
+sgj@j
+scj@j
+scj@j
+sdj@j
+PVh4-
+\SVW3
+PQRVhX,
+;OHuh
+;GLu`
+x);OHu
+\SVWjX
+G\t!;
+PQVhT-
+vd;Pprt;
+u:h 1
++>WWh80
+VVh80
+PPhX0
+QQh80
+VVhX0
+PRQWhp1
+VVh80
+WWhX0
+PPh80
+PPhX0
+SSh80
+VVhX0
+PPh80
+VVhX0
+OD_^]
+OD_^]
+t*h 3
+PQSVW
+y5h`9
+t&PVS
+PSh0K
+Ad;Adt~
+C@;C@t
+Cd;Cd
+t!hhD
+8;0tos
+PQSVW
+PSQhXK
+_<;_<tH
+t!hhD
+_[hh!
+_[hh!
+v0h(F
+v(h8F
+Q9N$u
+t5;_4r?w
+;w0r8
+t+;~4r2
+;^0r'SV
+sc;~<r^w
+;^8rW;~DwRr
+;^@sKj
+WVQhPM
+R$;Q,r
+v4RPQ
+ u0h0S
+v4RPQ
+v4RPQ
+jjjjjjjj
+jjjjj
+PWhh`
+j1PQW
+j1PQW
+;A,w1r
+;Q(s*
+t.RSPW
+0.mod
+#t>PhXb
+v4RPQ
+t#WVR
+PQSVW
+uejHQ
+F\;Fxr
+C\;C|w
+uO8^Xt/
+r$;r u
+)Ph,i
+G$;G(u
+G$;G(u+;O
+RQh4h
+yxxx+
+yxxx+
+t&PVS
+PQSVW
+t&PVS
+3PhHh
+6;w\u
+yxxx+
+PSVhh
+j!h@r
+t,h@r
+t2RQhd
+u:hhw
+0SVW3
+SVWj`
+SWj`j
+y4RCC
+;F@t3
+RPVQS
+gfffC
+RPSQW
+QSVWhl
+uHj`P
+u!hx5
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+t SWP
+0QhXh
+0Qhhh
+jjjjj
+E VPW
+v$QSP
+yxxx+
+PQSVW
+SVWjHj
+SWhh!
+^4SWhl
+t"hxv
+tLjHR
+t"hxv
+t"hxv
+tQhxv
+[PRPQ
+uLj8P
+[PRPQ
+SRQPh
+tyhxv
+t hxv
+tyhxv
+u.PSh
+u PSh
+u PSh0
+t hxv
+PSSPRQhH
+PQSVW
+tHhxv
+RQPh\?
+RQPh\?
+PVWhL
+u vHj
+scj@j
+t*;O`u
+;Wdt 3
+w8Qht
+<-t}</ty
+SVWj8
+QPQPh
+tzSVj
+SVWj8j
+v4RPQ
+[4RPQ
+H(;H$v
+H$;H s
+H8;H4v
+H4;H0s
+;GLs,
+F;wTr
+9wLv9
+t!Wh`
+>@s5f
+PQSVW
+Y__^[
+5ineI
+5Genu
+QQSVWd
+jjjjj
+BVj(j
+uf_^[
+@_^[]
+9p u"
+ft&9q
+@_^[]
+URPQQh@
+UQPXY]Y[
+F4^[]
+A1<Fu
+A1<Fu
+Tt1jhZ;
+OjlZ;
+^$+^8+
+^$+^8+
+jAZjX
+jXXf;
+jA_f;
+t0jXXf
+jAXf;
+~$+~8+
+F1<at
+F1<gt
+F1<gt
+jgYjG
+F2jgYf;
+jGYf;
+BBF;u
+C;^8u
+C;^8u
+G;~8u
+j:Xf;
+u0jAXf;
+jZXf;
+j0Xf;
+j:Xf;
+u0jAXf;
+jZXf;
+<xt"<Xt
+j:Xf;
+jAXf;
+jZXf;
+j0Xf;
+j:Zf;
+jAXf;
+jZXf;
+PPPPP
+VVVVV
+VVVVV
+rvf;U
+r`f;U
+Xu*f;
+rvf;M
+r`f;M
+j-Xf;
+rvf;M
+r`f;M
+j0Zf;
+rqf;M
+r_f;M
+rMf;M
+Nj)[f9
+u-jAXf;
+jZXf;
+j0Yf;
+j:Zf;
+jAXf;
+jZXf;
+tr;},sm
+W8^.u:
+W8^0u:
+W8^.u:
+W8^0u:
+j%Zf9
+SVW8A
+wIPS3
+f;F,t
+u-jAXj
+Tt.jh^;
+?]tfS
+j]Yf9
+j][f;
+j]Yf9
+SSSSS
+j-ZCf
+SVWjA_jZ+
+uBjAYjZ+
+< t1<
+QQSVW
+PPPPP
+j Y;E
+TVh04
+~0WPQ
+QVWSj
+8] j0
+Wj0XPV
+-jd_;
+PPPPP
+PPPPP
+>=umF8
+PPPPPWS
+PP9E u:PPVWP
+PPPPP
+PPPPP
+WWWPWS
+u-PWWS
+SSVWh 
+f9:t!V
+WSVPP
+j,h(d
+9E WW
+t4SWV
+Ht$;}
+QQSWj0j@
+Y_[^]
+PPPPP
+ SVW3
+ SVW3
+SSSSS
+PPPPP
+PPPPPPPP
+D8(Ht
+D8(HXt:f
+D8(Ht5F
+2D9-$
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1.dll
+AnalyzeOOM
+CLRStack
+COMState
+ClrStack
+DebugExtensionInitialize
+DebugExtensionNotify
+DebugExtensionUninitialize
+DumpArray
+DumpAssembly
+DumpCCW
+DumpClass
+DumpDomain
+DumpGCConfigLog
+DumpGCData
+DumpHeap
+DumpIL
+DumpLog
+DumpMD
+DumpMT
+DumpModule
+DumpObj
+DumpRCW
+DumpRuntimeTypes
+DumpSig
+DumpSigElem
+DumpStack
+DumpStackObjects
+DumpVC
+Dumpccw
+Dumplog
+Dumprcw
+Dumpruntimetypes
+EEHeap
+EEStack
+EEVersion
+EHInfo
+Ehinfo
+FinalizeQueue
+FindAppDomain
+FindRoots
+Findappdomain
+GCHandleLeaks
+GCHandleleaks
+GCHandles
+GCHeapStat
+GCInfo
+GCRoot
+GCWhere
+GcHeapStat
+GcWhere
+Gchandleleaks
+HandleCLRN
+HeapStat
+HistClear
+HistInit
+HistObj
+HistObjFind
+HistRoot
+HistStats
+IP2MD
+ListNearObj
+MinidumpMode
+Minidumpmode
+Name2EE
+ObjSize
+PathTo
+PrintException
+Printexception
+ProcInfo
+RCWCleanupList
+Rcwcleanuplist
+SOSFlush
+SaveModule
+StopOnException
+Stoponexception
+SyncBlk
+ThreadPool
+ThreadState
+Threads
+Token2EE
+TraverseHeap
+Traverseheap
+VMMap
+VMStat
+VerifyHeap
+VerifyObj
+VerifyStackTrace
+Verifyheap
+WatsonBuckets
+_EFN_GetManagedExcepStack
+_EFN_GetManagedExcepStackW
+_EFN_GetManagedObjectFieldInfo
+_EFN_GetManagedObjectName
+_EFN_StackTrace
+analyzeoom
+clrstack
+comstate
+dclog
+dumparray
+dumpassembly
+dumpccw
+dumpclass
+dumpdomain
+dumpgcconfiglog
+dumpgcdata
+dumpheap
+dumpil
+dumplog
+dumpmd
+dumpmodule
+dumpmt
+dumpobj
+dumprcw
+dumpruntimetypes
+dumpsig
+dumpsigelem
+dumpstack
+dumpstackobjects
+dumpvc
+eeheap
+eestack
+eeversion
+ehinfo
+finalizequeue
+findappdomain
+findroots
+gchandleleaks
+gchandles
+gcheapstat
+gcinfo
+gcroot
+gcwhere
+heapstat
+histclear
+histinit
+histobj
+histobjfind
+histroot
+histstats
+ip2md
+listnearobj
+minidumpmode
+name2ee
+objsize
+pathto
+printexception
+procinfo
+rcwcleanuplist
+savemodule
+sosflush
+stoponexception
+syncblk
+threadpool
+threads
+threadstate
+token2ee
+traverseheap
+verifyheap
+verifyobj
+vmmap
+vmstat
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+.?AVbad_array_new_length@std@@
+.?AVbad_alloc@std@@
+.?AVexception@std@@
+.?AVException@sos@@
+.?AVHeapCorruption@sos@@
+.?AVDataRead@sos@@
+.?AVbad_exception@std@@
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+.?AVtype_info@@
+CreateFileA
+GetFileSize
+CloseHandle
+HeapAlloc
+HeapFree
+GetProcessHeap
+MapViewOfFile
+UnmapViewOfFile
+CreateFileMappingA
+MultiByteToWideChar
+InterlockedIncrement
+InterlockedDecrement
+GetLastError
+SystemTimeToTzSpecificLocalTime
+FileTimeToSystemTime
+GetTimeFormatW
+FileTimeToLocalFileTime
+SetFilePointer
+WriteFile
+DebugBreak
+FreeLibrary
+GetProcAddress
+LoadResource
+LockResource
+GlobalMemoryStatus
+CreateFiber
+DeleteFiber
+ConvertThreadToFiber
+SwitchToFiber
+LoadLibraryA
+FindResourceA
+WideCharToMultiByte
+FindClose
+GetCurrentProcess
+GetModuleFileNameW
+LoadLibraryExW
+KERNEL32.dll
+CoCreateInstance
+CoInitialize
+ole32.dll
+SymFindFileInPathW
+dbghelp.dll
+GetFileVersionInfoSizeW
+GetFileVersionInfoW
+VerQueryValueA
+VERSION.dll
+DebugCreate
+dbgeng.dll
+GetModuleInformation
+PSAPI.DLL
+RtlUnwind
+ntdll.dll
+EnterCriticalSection
+LeaveCriticalSection
+InitializeCriticalSectionAndSpinCount
+DeleteCriticalSection
+SetEvent
+ResetEvent
+WaitForSingleObjectEx
+CreateEventW
+GetModuleHandleW
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+GetStartupInfoW
+RaiseException
+InterlockedFlushSList
+SetLastError
+EncodePointer
+TlsAlloc
+TlsGetValue
+TlsSetValue
+TlsFree
+ExitProcess
+GetModuleHandleExW
+GetModuleFileNameA
+GetACP
+LCMapStringW
+GetStdHandle
+GetFileType
+GetStringTypeW
+DecodePointer
+HeapReAlloc
+FindFirstFileExA
+FindNextFileA
+IsValidCodePage
+GetOEMCP
+GetCPInfo
+GetCommandLineA
+GetCommandLineW
+GetEnvironmentStringsW
+FreeEnvironmentStringsW
+FlushFileBuffers
+GetConsoleCP
+GetConsoleMode
+SetStdHandle
+CreateFileW
+HeapSize
+SetFilePointerEx
+WriteConsoleW
+ReadFile
+ReadConsoleW
+SetEndOfFile
+DOCUMENTATION
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft NTSD extension for .NET Runtime
+FileVersion
+4.8.9032.0 built by: NET481REL1
+InternalName
+SOS.dll
+LegalCopyright
+ Microsoft Corporation.  All rights reserved.
+OriginalFilename
+SOS.dll
+ProductName
+Microsoft
+ .NET Framework
+ProductVersion
+4.8.9032.0
+Comments
+Flavor=Retail
+PrivateBuild
+DDBLD344D
+VarFileInfo
+Translation
+-------------------------------------------------------------------------------
+NOTE: THIS FILE CONTAINS SOS DOCUMENTATION. THE FORMAT OF THE FILE IS:
+<optional comments>
+COMMAND: <cmd name, all lower case>
+<descriptive text of the command>
+\\ <these are two backslashes, immediately followed by a newline>
+<repeat the sequence above>
+The first command is "contents" which is the general help screen. The rest 
+correspond to SOS command names. This file is embedded as a resource in the SOS 
+binary. Be sure to list any new commands here.
+-------------------------------------------------------------------------------
+COMMAND: contents.
+SOS is a debugger extension DLL designed to aid in the debugging of managed
+programs. Functions are listed by category, then roughly in order of
+importance. Shortcut names for popular functions are listed in parenthesis.
+Type "!help <functionname>" for detailed info on that function. 
+Object Inspection                  Examining code and stacks
+-----------------------------      -----------------------------
+DumpObj (do)                       Threads
+DumpArray (da)                     ThreadState
+DumpStackObjects (dso)             IP2MD
+DumpHeap                           U
+DumpVC                             DumpStack
+GCRoot                             EEStack
+ObjSize                            CLRStack
+FinalizeQueue                      GCInfo
+PrintException (pe)                EHInfo
+TraverseHeap                       BPMD 
+                                   COMState
+Examining CLR data structures      Diagnostic Utilities
+-----------------------------      -----------------------------
+DumpDomain                         VerifyHeap
+EEHeap                             VerifyObj
+Name2EE                            FindRoots
+SyncBlk                            HeapStat
+DumpMT                             GCWhere
+DumpClass                          ListNearObj (lno)
+DumpMD                             GCHandles
+Token2EE                           GCHandleLeaks
+EEVersion                          FinalizeQueue (fq)
+DumpModule                         FindAppDomain
+ThreadPool                         SaveModule
+DumpAssembly                       ProcInfo 
+DumpSigElem                        StopOnException (soe)
+DumpRuntimeTypes                   DumpLog
+DumpSig                            VMMap
+RCWCleanupList                     VMStat
+DumpIL                             MinidumpMode 
+DumpRCW                            AnalyzeOOM (ao)
+DumpCCW
+Examining the GC history           Other
+-----------------------------      -----------------------------
+HistInit                           FAQ
+HistRoot
+HistObj
+HistObjFind
+HistClear
+COMMAND: faq.
+>> Where can I get the right version of SOS for my build?
+If you are running version 1.1 or 2.0 of the CLR, SOS.DLL is installed in the 
+same directory as the main CLR dll (CLR.DLL). Newer versions of the 
+Windows Debugger provide a command to make it easy to load the right copy of 
+SOS.DLL:
+    ".loadby sos clr"
+That will load the SOS extension DLL from the same place that CLR.DLL is 
+loaded in the process. You shouldn't attempt to use a version of SOS.DLL that 
+doesn't match the version of CLR.DLL. You can find the version of 
+CLR.DLL by running 
+    "lmvm clr"
+in the debugger.  Note that if you are running CoreCLR (e.g. Silverlight)
+then you should replace "clr" with "coreclr".
+If you are using a dump file created on another machine, it is a little bit
+more complex. You need to make sure the mscordacwks.dll file that came with
+that install is on your symbol path, and you need to load the corresponding
+version of sos.dll (typing .load <full path to sos.dll> rather than using the
+.loadby shortcut). Within the Microsoft corpnet, we keep tagged versions 
+of mscordacwks.dll, with names like mscordacwks_<architecture>_<version>.dll
+that the Windows Debugger can load. If you have the correct symbol path to the
+binaries for that version of the Runtime, the Windows Debugger will load the
+correct mscordacwks.dll file.
+>> I have a chicken and egg problem. I want to use SOS commands, but the CLR
+   isn't loaded yet. What can I do?
+In the debugger at startup you can type:
+    "sxe clrn"
+Let the program run, and it will stop with the notice
+    "CLR notification: module 'mscorlib' loaded"
+At this time you can use SOS commands. To turn off spurious notifications,
+type:
+    "sxd clrn"    
+>> I got the following error message. Now what?
+0:000> .loadby sos clr
+0:000> !DumpStackObjects
+Failed to find runtime DLL (clr.dll), 0x80004005
+Extension commands need clr.dll in order to have something to do.
+0:000>
+This means that the CLR is not loaded yet, or has been unloaded. You need to 
+wait until your managed program is running in order to use these commands. If 
+you have just started the program a good way to do this is to type 
+    bp clr!EEStartup "g @$ra"
+in the debugger, and let it run. After the function EEStartup is finished, 
+there will be a minimal managed environment for executing SOS commands.
+>> I have a partial memory minidump, and !DumpObj doesn't work. Why?
+In order to run SOS commands, many CLR data structures need to be traversed. 
+When creating a minidump without full memory, special functions are called at
+dump creation time to bring those structures into the minidump, and allow a 
+minimum set of SOS debugging commands to work. At this time, those commands 
+that can provide full or partial output are:
+CLRStack
+Threads
+PrintException
+EEVersion
+For a minidump created with this minimal set of functionality in mind, you
+will get an error message when running any other commands. A full memory dump
+(obtained with ".dump /ma <filename>" in the Windows Debugger) is often the 
+best way to debug a managed program at this level.
+>> What other tools can I use to find my bug?
+Turn on Managed Debugging Assistants. These enable additional runtime diagnostics, 
+particularly in the area of PInvoke/Interop. Adam Nathan has written some great
+information about that:
+http://blogs.msdn.com/adam_nathan/
+>> Does SOS support DML?
+Yes.  SOS respects the .prefer_dml option in the debugger.  If this setting is
+turned on, then SOS will output DML by default.  Alternatively, you may leave
+it off and add /D to the beginning of a command to get DML based output for it.
+Not all SOS commands support DML output.
+COMMAND: stoponexception.
+!StopOnException [-derived] 
+                 [-create | -create2] 
+                 <Exception> 
+                 [<Pseudo-register number>]
+!StopOnException helps when you want the Windows Debugger to stop on a 
+particular managed exception, say a System.OutOfMemoryException, but continue
+running if other exceptions are thrown. The command can be used in two ways:
+1) When you just want to stop on one particular CLR exception
+   At the debugger prompt, anytime after loading SOS, type:
+   !StopOnException -create System.OutOfMemoryException 1
+   The pseudo-register number (1) indicates that SOS can use register $t1 for
+   maintaining the breakpoint. The -create parameter allows SOS to go ahead
+   and set up the breakpoint as a first-chance exception. -create2 would set
+   it up as a 2nd-chance exception. 
+2) When you need more complex logic for stopping on a CLR exception
+   !StopOnException can be used purely as a predicate in a larger expression.
+   If you type:
+   !StopOnException System.OutOfMemoryException 3
+   then register $t3 will be set to 1 if the last thrown exception on the 
+   current thread is a System.OutOfMemoryException. Otherwise, $t3 will be set
+   to 0. Using the Windows Debugger scripting language, you could chain 
+   such calls together to stop on various exception types. You'll have to 
+   manually create such predicates, for example:
+   sxe -c "!soe System.OutOfMemoryException 3; 
+           !soe -derived System.IOException 4;
+           .if(@$t3==1 || @$t4==1) { .echo 'stop' } .else {g}"
+The -derived option will cause StopOnException to set the pseudo-register to
+1 even if the thrown exception type doesn't exactly match the exception type
+given, but merely derives from it. So, "-derived System.Exception" would catch
+every exception in the System.Exception heirarchy.
+The pseudo-register number is optional. If you don't pass a number, SOS will 
+use pseudo-register $t1.
+Note that !PrintException with no parameters will print out the last thrown
+exception on the current thread (if any). You can use !soe as a shortcut for 
+!StopOnException.
+COMMAND: minidumpmode.
+!MinidumpMode <0 or 1>
+Minidumps created with ".dump /m" or ".dump" have a very small set of 
+CLR-specific data, just enough to run a subset of SOS commands correctly. You 
+are able to run other SOS commands, but they may fail with unexpected errors 
+because required areas of memory are not mapped in or only partially mapped 
+in. At this time, SOS cannot reliably detect if a dump file is of this type 
+(for one thing, custom dump commands can map in additional memory, but there 
+is no facility to read meta-information about this memory). You can turn this 
+option on to protect against running unsafe commands against small minidumps.
+By default, MinidumpMode is 0, so there is no restriction on commands that will
+run against a minidump.
+COMMAND: dumpobj.
+!DumpObj [-nofields] <object address>
+This command allows you to examine the fields of an object, as well as learn 
+important properties of the object such as the EEClass, the MethodTable, and 
+the size.
+You might find an object pointer by running !DumpStackObjects and choosing
+from the resultant list. Here is a simple object:
+0:000> !DumpObj a79d40
+Name: Customer
+MethodTable: 009038ec
+EEClass: 03ee1b84
+Size: 20(0x14) bytes
+ (C:\pub\unittest.exe)
+Fields:
+      MT    Field   Offset                 Type  VT     Attr    Value Name
+009038ec  4000008        4             Customer   0 instance 00a79ce4 name
+009038ec  4000009        8                 Bank   0 instance 00a79d2c bank
+Note that fields of type Customer and Bank are themselves objects, and you can 
+run !DumpObj on them too. You could look at the field directly in memory using
+the offset given. "dd a79d40+8 l1" would allow you to look at the bank field 
+directly. Be careful about using this to set memory breakpoints, since objects
+can move around in the garbage collected heap.
+What else can you do with an object? You might run !GCRoot, to determine what 
+roots are keeping it alive. Or you can find all objects of that type with 
+"!DumpHeap -type Customer".
+The column VT contains the value 1 if the field is a valuetype structure, and
+0 if the field contains a pointer to another object. For valuetypes, you can 
+take the MethodTable pointer in the MT column, and the Value and pass them to 
+the command !DumpVC.
+The abbreviation !do can be used for brevity.
+The arguments in detail:
+-nofields:     do not print fields of the object, useful for objects like 
+                  String
+COMMAND: dumparray.
+!DumpArray 
+[-start <startIndex>]
+[-length <length>]
+[-details]
+[-nofields]
+<array object address>
+This command allows you to examine elements of an array object.
+The arguments in detail:
+ -start <startIndex>: optional, only supported for single dimension array. 
+                      Specify from which index the command shows the elements.
+ -length <length>:    optional, only supported for single dimension array. 
+                      Specify how many elements to show.
+ -details:            optional. Ask the command to print out details
+                      of the element using !DumpObj and !DumpVC format.
+ -nofields:           optional, only takes effect when -details is used. Do
+                      not print fields of the elements. Useful for arrays of
+                      objects like String
+ Example output:
+0:000> !dumparray -start 2 -length 3 -details 00ad28d0 
+Name: Value[]
+MethodTable: 03e41044
+EEClass: 03e40fc0
+Size: 132(0x84) bytes
+Array: Rank 1, Number of elements 10, Type VALUETYPE
+Element Type: Value
+[2] 00ad28f0
+    Name: Value
+    MethodTable 03e40f4c
+    EEClass: 03ef1698
+    Size: 20(0x14) bytes
+     (C:\bugs\225271\arraytest.exe)
+    Fields:
+          MT    Field   Offset                 Type       Attr    Value Name
+    5b9a628c  4000001        0         System.Int32   instance        2 x
+    5b9a628c  4000002        4         System.Int32   instance        4 y
+    5b9a628c  4000003        8         System.Int32   instance        6 z
+[3] 00ad28fc
+    Name: Value
+    MethodTable 03e40f4c
+    EEClass: 03ef1698
+    Size: 20(0x14) bytes
+     (C:\bugs\225271\arraytest.exe)
+    Fields:
+          MT    Field   Offset                 Type       Attr    Value Name
+    5b9a628c  4000001        0         System.Int32   instance        3 x
+    5b9a628c  4000002        4         System.Int32   instance        6 y
+    5b9a628c  4000003        8         System.Int32   instance        9 z
+[4] 00ad2908
+    Name: Value
+    MethodTable 03e40f4c
+    EEClass: 03ef1698
+    Size: 20(0x14) bytes
+     (C:\bugs\225271\arraytest.exe)
+    Fields:
+          MT    Field   Offset                 Type       Attr    Value Name
+    5b9a628c  4000001        0         System.Int32   instance        4 x
+    5b9a628c  4000002        4         System.Int32   instance        8 y
+    5b9a628c  4000003        8         System.Int32   instance       12 z
+COMMAND: dumpstackobjects.
+!DumpStackObjects [-verify] [top stack [bottom stack]]
+This command will display any managed objects it finds within the bounds of 
+the current stack. Combined with the stack tracing commands like K and 
+!CLRStack, it is a good aid to determining the values of locals and 
+parameters.
+If you use the -verify option, each non-static CLASS field of an object
+candidate is validated. This helps to eliminate false positives. It is not
+on by default because very often in a debugging scenario, you are 
+interested in objects with invalid fields.
+The abbreviation !dso can be used for brevity.
+COMMAND: dumpheap.
+!DumpHeap [-stat] 
+          [-strings] 
+          [-short]
+          [-min <size>] 
+          [-max <size>] 
+          [-live]
+          [-dead]
+          [-thinlock] 
+          [-startAtLowerBound]
+          [-mt <MethodTable address>] 
+          [-type <partial type name>] 
+          [start [end]]
+!DumpHeap is a powerful command that traverses the garbage collected heap, 
+collection statistics about objects. With it's various options, it can look for
+particular types, restrict to a range, or look for ThinLocks (see !SyncBlk 
+documentation). Finally, it will provide a warning if it detects excessive 
+fragmentation in the GC heap. 
+When called without options, the output is first a list of objects in the heap,
+followed by a report listing all the types found, their size and number:
+0:000> !dumpheap
+ Address       MT     Size
+00a71000 0015cde8       12 Free
+00a7100c 0015cde8       12 Free
+00a71018 0015cde8       12 Free
+00a71024 5ba58328       68
+00a71068 5ba58380       68
+00a710ac 5ba58430       68
+00a710f0 5ba5dba4       68
+total 619 objects
+Statistics:
+      MT    Count TotalSize Class Name
+5ba7607c        1        12 System.Security.Permissions.HostProtectionResource
+5ba75d54        1        12 System.Security.Permissions.SecurityPermissionFlag
+5ba61f18        1        12 System.Collections.CaseInsensitiveComparer
+0015cde8        6     10260      Free
+5ba57bf8      318     18136 System.String
+"Free" objects are simply regions of space the garbage collector can use later.
+If 30% or more of the heap contains "Free" objects, the process may suffer from
+heap fragmentation. This is usually caused by pinning objects for a long time 
+combined with a high rate of allocation. Here is example output where !DumpHeap
+provides a warning about fragmentation:
+<After the Statistics section>
+Fragmented blocks larger than 1MB:
+    Addr     Size Followed by
+00a780c0    1.5MB    00bec800 System.Byte[]
+00da4e38    1.2MB    00ed2c00 System.Byte[]
+00f16df0    1.2MB    01044338 System.Byte[]
+The arguments in detail:
+-stat     Restrict the output to the statistical type summary
+-strings  Restrict the output to a statistical string value summary
+-short    Limits output to just the address of each object. This allows you
+          to easily pipe output from the command to another debugger 
+          command for automation.
+-min      Ignore objects less than the size given in bytes
+-max      Ignore objects larger than the size given in bytes
+-live     Only print live objects
+-dead     Only print dead objects (objects which will be collected in the
+          next full GC)
+-thinlock Report on any ThinLocks (an efficient locking scheme, see !SyncBlk 
+          documentation for more info)
+-startAtLowerBound 
+          Force heap walk to begin at lower bound of a supplied address range.
+          (During plan phase, the heap is often not walkable because objects 
+          are being moved. In this case, DumpHeap may report spurious errors, 
+          in particular bad objects. It may be possible to traverse more of 
+          the heap after the reported bad object. Even if you specify an 
+          address range, !DumpHeap will start its walk from the beginning of 
+          the heap by default. If it finds a bad object before the specified 
+          range, it will stop before displaying the part of the heap in which 
+          you are interested. This switch will force !DumpHeap to begin its 
+          walk at the specified lower bound. You must supply the address of a 
+          good object as the lower bound for this to work. Display memory at 
+          the address of the bad object to manually find the next method 
+          table (use !dumpmt to verify). If the GC is currently in a call to 
+          memcopy, You may also be able to find the next object's address by 
+          adding the size to the start address given as parameters.) 
+-mt       List only those objects with the MethodTable given
+-type     List only those objects whose type name is a substring match of the 
+          string provided. 
+start     Begin listing from this address
+end       Stop listing at this address
+A special note about -type: Often, you'd like to find not only Strings, but
+System.Object arrays that are constrained to contain Strings. ("new 
+String[100]" actually creates a System.Object array, but it can only hold
+System.String object pointers). You can use -type in a special way to find
+these arrays. Just pass "-type System.String[]" and those Object arrays will
+be returned. More generally, "-type <Substring of interesting type>[]".
+The start/end parameters can be obtained from the output of !EEHeap -gc. For 
+example, if you only want to list objects in the large heap segment:
+0:000> !eeheap -gc
+Number of GC Heaps: 1
+generation 0 starts at 0x00c32754
+generation 1 starts at 0x00c32748
+generation 2 starts at 0x00a71000
+ segment    begin allocated     size
+00a70000 00a71000  010443a8 005d33a8(6108072)
+Large object heap starts at 0x01a71000
+ segment    begin allocated     size
+01a70000 01a71000  01a75000 0x00004000(16384)
+Total Size  0x5d73a8(6124456)
+------------------------------
+GC Heap Size  0x5d73a8(6124456)
+0:000> !dumpheap 1a71000 1a75000
+ Address       MT     Size
+01a71000 5ba88bd8     2064
+01a71810 0019fe48     2032 Free
+01a72000 5ba88bd8     4096
+01a73000 0019fe48     4096 Free
+01a74000 5ba88bd8     4096
+total 5 objects
+Statistics:
+      MT    Count TotalSize Class Name
+0019fe48        2      6128      Free
+5ba88bd8        3     10256 System.Object[]
+Total 5 objects
+Finally, if GC heap corruption is present, you may see an error like this:
+0:000> !dumpheap -stat
+object 00a73d24: does not have valid MT
+curr_object : 00a73d24
+Last good object: 00a73d14
+----------------
+That indicates a serious problem. See the help for !VerifyHeap for more 
+information on diagnosing the cause.
+COMMAND: dumpvc.
+!DumpVC <MethodTable address> <Address>
+!DumpVC allows you to examine the fields of a value class. In C#, this is a 
+struct, and lives on the stack or within an Object on the GC heap. You need
+to know the MethodTable address to tell SOS how to interpret the fields, as
+a value class is not a first-class object with it's own MethodTable as the
+first field. For example:
+0:000> !DumpObj a79d98
+Name: Mainy
+MethodTable: 009032d8
+EEClass: 03ee1424
+Size: 28(0x1c) bytes
+ (C:\pub\unittest.exe)
+Fields:
+      MT    Field   Offset                 Type       Attr    Value Name
+0090320c  4000010        4            VALUETYPE   instance 00a79d9c m_valuetype
+009032d8  400000f        4                CLASS     static 00a79d54 m_sExcep
+m_valuetype is a value type. The value in the MT column (0090320c) is the 
+MethodTable for it, and the Value column provides the start address:
+0:000> !DumpVC 0090320c 00a79d9c
+Name: Funny
+MethodTable 0090320c
+EEClass: 03ee14b8
+Size: 28(0x1c) bytes
+ (C:\pub\unittest.exe)
+Fields:
+      MT    Field   Offset                 Type       Attr    Value Name
+0090320c  4000001        0                CLASS   instance 00a743d8 signature
+0090320c  4000002        8         System.Int32   instance     2345 m1
+0090320c  4000003       10       System.Boolean   instance        1 b1
+0090320c  4000004        c         System.Int32   instance     1234 m2
+0090320c  4000005        4                CLASS   instance 00a79d98 backpointer
+!DumpVC is quite a specialized function. Some managed programs make heavy use 
+of value classes, while others do not.
+COMMAND: gcroot.
+!GCRoot [-nostacks] <Object address>
+!GCRoot looks for references (or roots) to an object. These can exist in four
+places:
+   1. On the stack
+   2. Within a GC Handle
+   3. In an object ready for finalization
+   4. As a member of an object found in 1, 2 or 3 above.
+First, all stacks will be searched for roots, then handle tables, and finally
+the freachable queue of the finalizer. Some caution about the stack roots: 
+!GCRoot doesn't attempt to determine if a stack root it encountered is valid 
+or is old (discarded) data. You would have to use !CLRStack and !U to 
+disassemble the frame that the local or argument value belongs to in order to 
+determine if it is still in use.
+Because people often want to restrict the search to gc handles and freachable
+objects, there is a -nostacks option.
+COMMAND: objsize.
+!ObjSize [<Object address>]
+With no parameters, !ObjSize lists the size of all objects found on managed 
+threads. It also enumerates all GCHandles in the process, and totals the size 
+of any objects pointed to by those handles. In calculating object size, 
+!ObjSize includes the size of all child objects in addition to the parent.
+For example, !DumpObj lists a size of 20 bytes for this Customer object:
+0:000> !do a79d40
+Name: Customer
+MethodTable: 009038ec
+EEClass: 03ee1b84
+Size: 20(0x14) bytes
+ (C:\pub\unittest.exe)
+Fields:
+      MT    Field   Offset                 Type       Attr    Value Name
+009038ec  4000008        4                CLASS   instance 00a79ce4 name
+009038ec  4000009        8                CLASS   instance 00a79d2c bank
+009038ec  400000a        c       System.Boolean   instance        1 valid
+but !ObjSize lists 152 bytes:
+0:000> !ObjSize a79d40
+sizeof(00a79d40) =      152 (    0x98) bytes (Customer)
+This is because a Customer points to a Bank, has a name, and the Bank points to
+an Address string. You can use !ObjSize to identify any particularly large 
+objects, such as a managed cache in a web server.
+While running ObjSize with no arguments may point to specific roots that hold 
+onto large amounts of memory it does not provide information regarding the 
+amount of managed memory that is still alive.  This is due to the fact that a 
+number of roots can share a common subgraph, and that part will be reported in 
+the size of all the roots that reference the subgraph.
+Please note the -aggregate parameter to !ObjSize has been removed.  Please see
+'!DumpHeap -live' and '!DumpHeap -dead' for that functionality.
+COMMAND: finalizequeue.
+!FinalizeQueue [-detail] | [-allReady] [-short]
+This command lists the objects registered for finalization. Here is output from
+a simple program:
+0:000> !finalizequeue
+SyncBlocks to be cleaned up: 0
+MTA Interfaces to be released: 0
+STA Interfaces to be released: 1
+generation 0 has 4 finalizable objects (0015bc90->0015bca0)
+generation 1 has 0 finalizable objects (0015bc90->0015bc90)
+generation 2 has 0 finalizable objects (0015bc90->0015bc90)
+Ready for finalization 0 objects (0015bca0->0015bca0)
+Statistics:
+      MT    Count TotalSize Class Name
+5ba6cf78        1        24 Microsoft.Win32.SafeHandles.SafeFileHandle
+5ba5db04        1        68 System.Threading.Thread
+5ba73e28        2       112 System.IO.StreamWriter
+Total 4 objects
+The GC heap is divided into generations, and objects are listed accordingly. We
+see that only generation 0 (the youngest generation) has any objects registered
+for finalization. The notation "(0015bc90->0015bca0)" means that if you look at
+memory in that range, you'll see the object pointers that are registered:
+0:000> dd 15bc90 15bca0-4
+0015bc90  00a743f4 00a79f00 00a7b3d8 00a7b47c
+You could run !DumpObj on any of those pointers to learn more. In this example,
+there are no objects ready for finalization, presumably because they still have
+roots (You can use !GCRoot to find out). The statistics section provides a 
+higher-level summary of the objects registered for finalization. Note that 
+objects ready for finalization are also included in the statistics (if any).
+Specifying -short will inhibit any display related to SyncBlocks or RCWs.
+The arguments in detail:
+-allReady Specifying this argument will allow for the display of all objects 
+          that are ready for finalization, whether they are already marked by 
+          the GC as such, or whether the next GC will.  The objects that are 
+          not in the "Ready for finalization" list are finalizable objects that 
+          are no longer rooted.  This option can be very expensive, as it 
+          verifies whether all the objects in the finalizable queues are still 
+          rooted or not.
+-short    Limits the output to just the address of each object.  If used in 
+          conjunction with -allReady it enumerates all objects that have a 
+          finalizer that are no longer rooted.  If used independently it lists 
+          all objects in the finalizable and "ready for finalization" queues.
+-detail   Will display extra information on any SyncBlocks that need to be 
+          cleaned up, and on any RuntimeCallableWrappers (RCWs) that await 
+          cleanup.  Both of these data structures are cached and cleaned up by 
+          the finalizer thread when it gets a chance to run.
+COMMAND: printexception.
+!PrintException [-nested] [-lines] [-ccw] [<Exception object address>] [<CCW pointer>]
+This will format fields of any object derived from System.Exception. One of the
+more useful aspects is that it will format the _stackTrace field, which is a 
+binary array. If _stackTraceString field is not filled in, that can be helpful 
+for debugging. You can of course use !DumpObj on the same exception object to 
+explore more fields.
+If called with no parameters, PrintException will look for the last outstanding 
+exception on the current thread and print it. This will be the same exception
+that shows up in a run of !Threads.
+!PrintException will notify you if there are any nested exceptions on the 
+current managed thread. (A nested exception occurs when you throw another
+exception within a catch handler already being called for another exception).
+If there are nested exceptions, you can re-run !PrintException with the 
+"-nested" option to get full details on the nested exception objects. The
+!Threads command will also tell you which threads have nested exceptions.
+!PrintException can display source information if available, by specifying the 
+-lines command line argument.
+!PrintException prints the exception object corresponding to a given CCW pointer, 
+which can be specified using the -ccw option. 
+The abbreviation !pe can be used for brevity.
+COMMAND: traverseheap.
+!TraverseHeap [-xml] [-verify] <filename>
+!TraverseHeap writes out a file in a format understood by the CLR Profiler. 
+You can download the CLR Profiler from this link:
+http://www.microsoft.com/downloads/details.aspx?FamilyId=86CE6052-D7F4-4AEB-
+9B7A-94635BEEBDDA&displaylang=en
+It creates a graphical display of the GC heap to help you analyze the state of
+your application. 
+If you pass the -verify option it will do more sanity checking of the heap
+as it dumps it.   Use this option if heap corruption is suspected.
+If you pass the "-xml" flag, the file is instead written out in an easy to 
+understand xml format:
+    <gcheap>
+        <types>
+            <type id="1" name="System.String">
+            ...
+        </types>
+        <roots>
+            <root kind="handle" address="0x00a73ff0"/>
+            <root kind="stack" address="0x0069f0e0"/>
+            ...
+        </roots>
+        <objects>
+            <object address="0x00b73030" typeid="1" size="300"/>
+            <object address="0x00b75054" typeid="5" size="20">
+                <member address="0x00b75088" />
+                ...
+            </object>
+            ...
+        </objects>
+    </gcheap>
+You can break into your process, load SOS, take a snapshot of your heap with 
+this function, then continue.
+COMMAND: threadstate.
+!ThreadState value
+The !Threads command outputs, among other things, the state of the thread.
+This is a bit field which corresponds to various states the thread is in.
+To check the state of the thread, simply pass that bit field from the
+output of !Threads into !ThreadState.
+Example:
+    0:003> !Threads
+    ThreadCount:      2
+    UnstartedThread:  0
+    BackgroundThread: 1
+    PendingThread:    0
+    DeadThread:       0
+    Hosted Runtime:   no
+                                          PreEmptive   GC Alloc           Lock
+           ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception
+       0    1  250 0019b068      a020 Disabled 02349668:02349fe8 0015def0     0 MTA
+       2    2  944 001a6020      b220 Enabled  00000000:00000000 0015def0     0 MTA (Finalizer)
+    0:003> !ThreadState b220
+        Legal to Join
+        Background
+        CLR Owns
+        CoInitialized
+        In Multi Threaded Apartment
+Possible thread states:
+    Thread Abort Requested
+    GC Suspend Pending
+    User Suspend Pending
+    Debug Suspend Pending
+    GC On Transitions
+    Legal to Join
+    Yield Requested
+    Hijacked by the GC
+    Blocking GC for Stack Overflow
+    Background
+    Unstarted
+    Dead
+    CLR Owns
+    CoInitialized
+    In Single Threaded Apartment
+    In Multi Threaded Apartment
+    Reported Dead
+    Fully initialized
+    Task Reset
+    Sync Suspended
+    Debug Will Sync
+    Stack Crawl Needed
+    Suspend Unstarted
+    Aborted
+    Thread Pool Worker Thread
+    Interruptible
+    Interrupted
+    Completion Port Thread
+    Abort Initiated
+    Finalized
+    Failed to Start
+    Detached
+COMMAND: threads.
+!Threads [-live] [-special] 
+!Threads lists all the mananaged threads in the process. 
+-live:     optional. Only print threads associated with a live thread.
+-special:  optional. With this switch, the command will display all the special
+           threads created by CLR. Those threads might not be managed threads 
+           so they might not be shown in the first part of the command's 
+           output. Example of special threads include: GC threads (in 
+           concurrent GC and server GC), Debugger helper threads, Finalizer 
+           threads, AppDomain Unload threads, and Threadpool timer threads.
+Each thread has many attributes, many of which can be ignored. The important 
+ones are discussed below:
+There are three ID columns: 
+1) The debugger shorthand ID (When the runtime is hosted this column might 
+   display the special string "<<<<" when this internal thread object is not 
+   associated with any physical thread - this may happen when the host reuses
+   the runtime internal thread object)
+2) The CLR Thread ID
+3) The OS thread ID.  
+If PreEmptiveGC is enabled for a thread, then a garbage collection 
+can occur while that thread is running. For example, if you break in while
+a managed thread is making a PInvoke call to a Win32 function, that thread 
+will be in PreEmptive GC mode. 
+The Domain column indicates what AppDomain the thread is currently executing
+in. You can pass this value to !DumpDomain to find out more. 
+The APT column gives the COM apartment mode. 
+Exception will list the last thrown exception (if any) for the thread. More
+details can be obtained by passing the pointer value to !PrintException. If
+you get the notation "(nested exceptions)", you can get details on those
+exceptions by switching to the thread in question, and running 
+"!PrintException -nested".
+COMMAND: clrstack.
+!CLRStack [-a] [-l] [-p] [-n]
+!CLRStack [-a] [-l] [-p] [-i] [variable name] [frame]
+CLRStack attempts to provide a true stack trace for managed code only. It is
+handy for clean, simple traces when debugging straightforward managed 
+programs. The -p parameter will show arguments to the managed function. The 
+-l parameter can be used to show information on local variables in a frame.
+SOS can't retrieve local names at this time, so the output for locals is in
+the format <local address> = <value>. The -a (all) parameter is a short-cut
+for -l and -p combined. 
+If the debugger has the option SYMOPT_LOAD_LINES specified (either by the
+.lines or .symopt commands), SOS will look up the symbols for every managed 
+frame and if successful will display the corresponding source file name and 
+line number. The -n (No line numbers) parameter can be specified to disable 
+this behavior.
+When you see methods with the name "[Frame:...", that indicates a transition 
+between managed and unmanaged code. You could run !IP2MD on the return 
+addresses in the call stack to get more information on each managed method.
+On x64 platforms, Transition Frames are not displayed at this time. To avoid
+heavy optimization of parameters and locals one can request the JIT compiler
+to not optimize functions in the managed app by creating a file myapp.ini 
+(if your program is myapp.exe) in the same directory. Put the following lines
+in myapp.ini and re-run:
+[.NET Framework Debugging Control]
+GenerateTrackingInfo=1
+AllowOptimize=0
+The -i option is a new EXPERIMENTAL addition to CLRStack and will use the ICorDebug
+interfaces to display the managed stack and variables. With this option you can also 
+view and expand arrays and fields for managed variables. If a stack frame number is 
+specified in the command line, CLRStack will show you the parameters and/or locals 
+only for that frame (provided you specify -l or -p or -a of course). If a variable 
+name and a stack frame number are specified in the command line, CLRStack will show 
+you the parameters and/or locals for that frame, and will also show you the fields 
+for that variable name you specified. Here are some examples: 
+   !CLRStack -i -a           : This will show you all parameters and locals for all frames
+   !CLRStack -i -a 3         : This will show you all parameters and locals, for frame 3
+   !CLRStack -i var1 0       : This will show you the fields of 'var1' for frame 0
+   !CLRStack -i var1.abc 2   : This will show you the fields of 'var1', and expand
+                               'var1.abc' to show you the fields of the 'abc' field,
+                               for frame 2.
+   !CLRStack -i var1.[basetype] 0   : This will show you the fields of 'var1', and
+                                      expand the base type of 'var1' to show you its
+                                      fields.
+   !CLRStack -i var1.[6] 0   : If 'var1' is an array, this will show you the element
+                               at index 6 in the array, along with its fields
+The -i options uses DML output for a better debugging experience, so typically you
+should only need to execute "!CLRStack -i", and from there, click on the DML 
+hyperlinks to inspect the different managed stack frames and managed variables.                             
+COMMAND: ip2md.
+!IP2MD <Code address>
+Given an address in managed JITTED code, IP2MD attempts to find the MethodDesc
+associated with it. For example, this output from K:
+0:000> K
+ChildEBP RetAddr
+00a79c78 03ef02ab image00400000!Mainy.Top()+0xb
+00a79c78 03ef01a6 image00400000!Mainy.Level(Int32)+0xb
+00a79c78 5d3725a1 image00400000!Mainy.Main()+0xee
+0012ea04 5d512f59 clr!CallDescrWorkerInternal+0x30
+0012ee34 5d7946aa clr!CallDescrWorker+0x109
+0:000> !IP2MD 03ef01a6
+MethodDesc:   00902f40
+Method Name:  Mainy.Main()
+Class:        03ee1424
+MethodTable:  009032d8
+mdToken:      0600000d
+Module:       001caa38
+IsJitted:     yes
+CodeAddr:     03ef00b8
+Transparency: Critical
+Source file:  c:\Code\prj.mini\exc.cs @ 39
+We have taken a return address into Mainy.Main, and discovered information 
+about that method. You could run !U, !DumpMT, !DumpClass, !DumpMD, or 
+!DumpModule on the fields listed to learn more.
+The "Source line" output will only be present if the debugger can find the 
+symbols for the managed module containing the given <code address>, and if the 
+debugger is configured to load line number information.
+COMMAND: u.
+!U [-gcinfo] [-ehinfo] [-n] <MethodDesc address> | <Code address>
+Presents an annotated disassembly of a managed method when given a MethodDesc
+pointer for the method, or a code address within the method body. Unlike the
+debugger "U" function, the entire method from start to finish is printed,
+with annotations that convert metadata tokens to names.
+<example output>
+03ef015d b901000000       mov     ecx,0x1
+03ef0162 ff156477a25b     call   dword ptr [mscorlib_dll+0x3c7764 (5ba27764)] (System.Console.InitializeStdOutError(Boolean), mdToken: 06000713)
+03ef0168 a17c20a701       mov     eax,[01a7207c] (Object: SyncTextWriter)
+03ef016d 89442414         mov     [esp+0x14],eax
+If you pass the -gcinfo flag, you'll get inline display of the GCInfo for
+the method. You can also obtain this information with the !GCInfo command.
+If you pass the -ehinfo flag, you'll get inline display of exception info
+for the method. (Beginning and end of try/finally/catch handlers, etc.).
+You can also obtain this information with the !EHInfo command.
+If the debugger has the option SYMOPT_LOAD_LINES specified (either by the
+.lines or .symopt commands), and if symbols are available for the managed
+module containing the method being examined, the output of the command will
+include the source file name and line number corresponding to the 
+disassembly. The -n (No line numbers) flag can be specified to disable this
+behavior.
+<example output>
+c:\Code\prj.mini\exc.cs @ 38:
+001b00b0 8b0d3020ab03    mov     ecx,dword ptr ds:[3AB2030h] ("Break in debugger. When done type <Enter> to continue: ")
+001b00b6 e8d5355951      call    mscorlib_ni+0x8b3690 (51743690) (System.Console.Write(System.String), mdToken: 0600091b)
+001b00bb 90              nop
+c:\Code\prj.mini\exc.cs @ 39:
+001b00bc e863cdc651      call    mscorlib_ni+0xf8ce24 (51e1ce24) (System.Console.ReadLine(), mdToken: 060008f6)
+>>> 001b00c1 90              nop
+COMMAND: dumpstack.
+!DumpStack [-EE] [-n] [top stack [bottom stack]]
+[x86 and x64 documentation]
+This command provides a verbose stack trace obtained by "scraping." Therefore
+the output is very noisy and potentially confusing. The command is good for
+viewing the complete call stack when "kb" gets confused. For best results,
+make sure you have valid symbols.
+-EE will only show managed functions.
+If the debugger has the option SYMOPT_LOAD_LINES specified (either by the
+.lines or .symopt commands), SOS will look up the symbols for every managed 
+frame and if successful will display the corresponding source file name and 
+line number. The -n (No line numbers) parameter can be specified to disable 
+this behavior.
+You can also pass a stack range to limit the output. Use the debugger 
+extension !teb to get the top and bottom stack values.
+COMMAND: eestack.
+!EEStack [-short] [-EE]
+This command runs !DumpStack on all threads in the process. The -EE option is 
+passed directly to !DumpStack. The -short option tries to narrow down the 
+output to "interesting" threads only, which is defined by
+1) The thread has taken a lock.
+2) The thread has been "hijacked" in order to allow a garbage collection.
+3) The thread is currently in managed code.
+See the documentation for !DumpStack for more info.
+COMMAND: ehinfo.
+!EHInfo (<MethodDesc address> | <Code address>)
+!EHInfo shows the exception handling blocks in a jitted method. For each 
+handler, it shows the type, including code addresses and offsets for the clause
+block and the handler block. For a TYPED handler, this would be the "try" and
+"catch" blocks respectively.
+Sample output:
+0:000> !ehinfo 33bbd3a
+MethodDesc: 03310f68
+Method Name: MainClass.Main()
+Class: 03571358
+MethodTable: 0331121c
+mdToken: 0600000b
+Module: 001e2fd8
+IsJitted: yes
+CodeAddr: 033bbca0
+Transparency: Critical
+EHHandler 0: TYPED catch(System.IO.FileNotFoundException) 
+Clause: [033bbd2b, 033bbd3c] [8b, 9c]
+Handler: [033bbd3c, 033bbd50] [9c, b0]
+EHHandler 1: FINALLY
+Clause: [033bbd83, 033bbda3] [e3, 103]
+Handler: [033bbda3, 033bbdc5] [103, 125]
+EHHandler 2: TYPED catch(System.Exception)
+Clause: [033bbd7a, 033bbdc5] [da, 125]
+Handler: [033bbdc5, 033bbdd6] [125, 136]
+COMMAND: gcinfo.
+!GCInfo (<MethodDesc address> | <Code address>)
+!GCInfo is especially useful for CLR Devs who are trying to determine if there 
+is a bug in the JIT Compiler. It parses the GCEncoding for a method, which is a
+compressed stream of data indicating when registers or stack locations contain 
+managed objects. It is important to keep track of this information, because if 
+a garbage collection occurs, the collector needs to know where roots are so it 
+can update them with new object pointer values.
+Here is sample output where you can see the change in register state. Normally 
+you would print this output out and read it alongside a disassembly of the 
+method. For example, the notation "reg EDI becoming live" at offset 0x11 of the
+method might correspond to a "mov edi,ecx" statement.
+0:000> !gcinfo 5b68dbb8   (5b68dbb8 is the start of a JITTED method)
+entry point 5b68dbb8
+preJIT generated code
+GC info 5b9f2f09
+Method info block:
+    method      size   = 0036
+    prolog      size   =  19
+    epilog      size   =   8
+    epilog     count   =   1
+    epilog      end    = yes
+    saved reg.  mask   = 000B
+    ebp frame          = yes
+    fully interruptible=yes
+    double align       = no
+    security check     = no
+    exception handlers = no
+    local alloc        = no
+    edit & continue    = no
+    varargs            = no
+    argument   count   =   4
+    stack frame size   =   1
+    untracked count    =   5
+    var ptr tab count  =   0
+    epilog        at   002E
+36 D4 8C C7 AA |
+93 F3 40 05    |
+Pointer table:
+14             |             [EBP+14H] an untracked  local
+10             |             [EBP+10H] an untracked  local
+0C             |             [EBP+0CH] an untracked  local
+08             |             [EBP+08H] an untracked  local
+44             |             [EBP-04H] an untracked  local
+F1 79          | 0011        reg EDI becoming live
+72             | 0013        reg ESI becoming live
+83             | 0016        push ptr  0
+8B             | 0019        push ptr  1
+93             | 001C        push ptr  2
+9B             | 001F        push ptr  3
+56             | 0025        reg EDX becoming live
+4A             | 0027        reg ECX becoming live
+0E             | 002D        reg ECX becoming dead
+10             | 002D        reg EDX becoming dead
+E0             | 002D        pop  4 ptrs
+F0 31          | 0036        reg ESI becoming dead
+38             | 0036        reg EDI becoming dead
+FF             |
+This function is important for CLR Devs, but very difficult for anyone else to 
+make sense of it. You would usually come to use it if you suspect a gc heap 
+corruption bug caused by invalid GCEncoding for a particular method.
+COMMAND: comstate.
+!COMState
+!COMState lists the com apartment model for each thread, as well as a Context 
+pointer if provided.
+COMMAND: bpmd.
+!BPMD [-nofuturemodule] <module name> <method name> [<il offset>]
+!BPMD <source file name>:<line number>
+!BPMD -md <MethodDesc>
+!BPMD -list
+!BPMD -clear <pending breakpoint number>
+!BPMD -clearall
+!BPMD provides managed breakpoint support. If it can resolve the method name
+to a loaded, jitted or ngen'd function it will create a breakpoint with "bp".
+If not then either the module that contains the method hasn't been loaded yet
+or the module is loaded, but the function is not jitted yet. In these cases,
+!bpmd asks the Windows Debugger to receive CLR Notifications, and waits to
+receive news of module loads and JITs, at which time it will try to resolve 
+the function to a breakpoint. -nofuturemodule can be used to suppress 
+creating a breakpoint against a module that has not yet been loaded.
+Management of the list of pending breakpoints can be done via !BPMD -list,
+!BPMD -clear, and !BPMD -clearall commands. !BPMD -list generates a list of 
+all of the pending breakpoints. If the pending breakpoint has a non-zero 
+module id, then that pending breakpoint is specific to function in that 
+particular loaded module. If the pending breakpoint has a zero module id, then
+the breakpoint applies to modules that have not yet been loaded. Use 
+!BPMD -clear or !BPMD -clearall to remove pending breakpoints from the list.
+This brings up a good question: "I want to set a breakpoint on the main
+method of my application. How can I do this?"
+  1) If you know the full path to SOS, use this command and skip to step 6
+       .load <the full path to sos.dll>
+  2) If you don't know the full path to sos, its usually next to clr.dll
+     You can wait for clr to load and then find it.
+     Start the debugger and type: 
+       sxe -c "" clrn
+  3) g
+  4) You'll get the following notification from the debugger:
+     "CLR notification: module 'mscorlib' loaded"
+  5) Now you can load SOS. Type
+       .loadby sos clr
+  6) Add the breakpoint with command such as:
+       !bpmd myapp.exe MyApp.Main
+  7) g
+  8) You will stop at the start of MyApp.Main. If you type "bl" you will 
+     see the breakpoint listed.
+You can specify breakpoints by file and line number if:
+   a) You have some version of .Net Framework installed on your machine. Any OS from
+      Vista onwards should have .Net Framework installed by default.
+   b) You have PDBs for the managed modules that need breakpoints, and your symbol
+      path points to those PDBs.
+This is often easier than module and method name syntax. For example:
+   !bpmd Demo.cs:15
+To correctly specify explicitly implemented methods make sure to retrieve the
+method name from the metadata, or from the output of the "!dumpmt -md" command. 
+For example:
+public interface I1
+    void M1();
+public class ExplicitItfImpl : I1
+    ...
+    void I1.M1()
+// this method's name is 'I1.M1'
+    { ... }
+!bpmd myapp.exe ExplicitItfImpl.I1.M1
+!BPMD works equally well with generic types. Adding a breakpoint on a generic 
+type sets breakpoints on all already JIT-ted generic methods and sets a pending 
+breakpoint for any instantiation that will be JIT-ted in the future.
+Example for generics:
+Given the following two classes:
+class G3<T1, T2, T3> 
+public void F(T1 p1, T2 p2, T3 p3)
+{ ... }
+public class G1<T> {
+// static method
+static public void G<W>(W w)
+{ ... }
+One would issue the following commands to set breapoints on G3.F() and 
+G1.G():
+!bpmd myapp.exe G3`3.F
+!bpmd myapp.exe G1`1.G
+And for explicitly implemented methods on generic interfaces:
+public interface IT1<T>
+    void M1(T t);
+public class ExplicitItfImpl<U> : IT1<U>
+    ...
+    void IT1<U>.M1(U u)
+// this method's name is 'IT1<U>.M1'
+    { ... }
+!bpmd bpmd.exe ExplicitItfImpl`1.IT1<U>.M1
+Additional examples:
+If IT1 and ExplicitItfImpl are types declared inside another class, 
+Outer, the bpmd command would become:
+!bpmd bpmd.exe Outer+ExplicitItfImpl`1.Outer.IT1<U>.M1
+(note that the fully qualified type name for ExplicitItfImpl became
+Outer+ExplicitItfImpl, using the '+' separator, while the method name
+is Outer.IT1<U>.M1, using a '.' as the separator)
+Furthermore, if the Outer class resides in a namespace, NS, the bpmd 
+command to use becomes:
+!bpmd bpmd.exe NS.Outer+ExplicitItfImpl`1.NS.Outer.IT1<U>.M1
+!BPMD does not accept offsets nor parameters in the method name. You can add
+an IL offset as an optional parameter seperate from the name. If there are overloaded
+methods, !bpmd will set a breakpoint for all of them.
+In the case of hosted environments such as SQL, the module name may be 
+complex, like 'price, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+For this case, just be sure to surround the module name with single quotes,
+like:
+!bpmd 'price, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Price.M2
+COMMAND: dumpdomain.
+!DumpDomain [<Domain address>]
+When called with no parameters, !DumpDomain will list all the AppDomains in the
+process. It enumerates each Assembly loaded into those AppDomains as well. 
+In addition to your application domain, and any domains it might create, there
+are two special domains: the Shared Domain and the System Domain.
+Any Assembly pointer in the output can be passed to !DumpAssembly. Any Module 
+pointer in the output can be passed to !DumpModule. Any AppDomain pointer can 
+be passed to !DumpDomain to limit output only to that AppDomain. Other 
+functions provide an AppDomain pointer as well, such as !Threads where it lists
+the current AppDomain for each thread.
+COMMAND: eeheap.
+!EEHeap [-gc] [-loader]
+!EEHeap enumerates process memory consumed by internal CLR data structures. You
+can limit the output by passing "-gc" or "-loader". All information will be 
+displayed otherwise.
+The information for the Garbage Collector lists the ranges of each Segment in 
+the managed heap. This can be useful if you believe you have an object pointer.
+If the pointer falls within a segment range given by "!EEHeap -gc", then you do
+have an object pointer, and can attempt to run "!DumpObj" on it.
+Here is output for a simple program:
+0:000> !eeheap -gc
+Number of GC Heaps: 1
+generation 0 starts at 0x00a71018
+generation 1 starts at 0x00a7100c
+generation 2 starts at 0x00a71000
+ segment    begin allocated     size
+00a70000 00a71000  00a7e01c 0000d01c(53276)
+Large object heap starts at 0x01a71000
+ segment    begin allocated     size
+01a70000 01a71000  01a76000 0x00005000(20480)
+Total Size   0x1201c(73756)
+------------------------------
+GC Heap Size   0x1201c(73756)
+So the total size of the GC Heap is only 72K. On a large web server, with 
+multiple processors, you can expect to see a GC Heap of 400MB or more. The 
+Garbage Collector attempts to collect and reclaim memory only when required to
+by memory pressure for better performance. You can also see the notion of 
+"generations," wherein the youngest objects live in generation 0, and 
+long-lived objects eventually get "promoted" to generation 2.
+The loader output lists various private heaps associated with AppDomains. It 
+also lists heaps associated with the JIT compiler, and heaps associated with 
+Modules. For example:
+0:000> !EEHeap -loader
+Loader Heap:
+--------------------------------------
+System Domain: 5e0662a0
+LowFrequencyHeap:008f0000(00002000:00001000) Size: 0x00001000 bytes.
+HighFrequencyHeap:008f2000(00008000:00001000) Size: 0x00001000 bytes.
+StubHeap:008fa000(00002000:00001000) Size: 0x00001000 bytes.
+Total size: 0x3000(12288)bytes
+--------------------------------------
+Shared Domain: 5e066970
+LowFrequencyHeap:00920000(00002000:00001000) 03e30000(00010000:00003000) Size: 0x00004000 bytes.
+Wasted: 0x00001000 bytes.
+HighFrequencyHeap:00922000(00008000:00001000) Size: 0x00001000 bytes.
+StubHeap:0092a000(00002000:00001000) Size: 0x00001000 bytes.
+Total size: 0x6000(24576)bytes
+--------------------------------------
+Domain 1: 14f000
+LowFrequencyHeap:00900000(00002000:00001000) 03ee0000(00010000:00003000) Size: 0x00004000 bytes.
+Wasted: 0x00001000 bytes.
+HighFrequencyHeap:00902000(00008000:00003000) Size: 0x00003000 bytes.
+StubHeap:0090a000(00002000:00001000) Size: 0x00001000 bytes.
+Total size: 0x8000(32768)bytes
+--------------------------------------
+Jit code heap:
+Normal JIT:03ef0000(00010000:00002000) Size: 0x00002000 bytes.
+Total size: 0x2000(8192)bytes
+--------------------------------------
+Module Thunk heaps:
+Module 5ba22410: Size: 0x00000000 bytes.
+Module 001c1320: Size: 0x00000000 bytes.
+Module 001c03f0: Size: 0x00000000 bytes.
+Module 001caa38: Size: 0x00000000 bytes.
+Total size: 0x0(0)bytes
+--------------------------------------
+Module Lookup Table heaps:
+Module 5ba22410:Size: 0x00000000 bytes.
+Module 001c1320:Size: 0x00000000 bytes.
+Module 001c03f0:Size: 0x00000000 bytes.
+Module 001caa38:03ec0000(00010000:00002000) Size: 0x00002000 bytes.
+Total size: 0x2000(8192)bytes
+--------------------------------------
+Total LoaderHeap size: 0x15000(86016)bytes
+=======================================
+By using !EEHeap to keep track of the growth of these private heaps, we are 
+able to rule out or include them as a source of a memory leak.
+COMMAND: name2ee.
+!Name2EE <module name> <type or method name>
+!Name2EE <module name>!<type or method name>
+This function allows you to turn a class name into a MethodTable and EEClass. 
+It turns a method name into a MethodDesc. Here is an example for a method:
+0:000> !name2ee unittest.exe MainClass.Main
+Module: 001caa38
+Token: 0x0600000d
+MethodDesc: 00902f40
+Name: MainClass.Main()
+JITTED Code Address: 03ef00b8
+and for a class:
+0:000> !name2ee unittest!MainClass
+Module: 001caa38
+Token: 0x02000005
+MethodTable: 009032d8
+EEClass: 03ee1424
+Name: MainClass
+The module you are "browsing" with Name2EE needs to be loaded in the process. 
+To get a type name exactly right, first browse the module with ILDASM. You
+can also pass * as the <module name> to search all loaded managed modules.
+<module name> can also be the debugger's name for a module, such as
+mscorlib or image00400000.
+The Windows Debugger syntax of <module>!<type> is also supported. You can
+use an asterisk on the left of the !, but the type on the right side needs
+to be fully qualified.
+If you are looking for a way to display a static field of a class (and you
+don't have an instance of the class, so !dumpobj won't help you), note that
+once you have the EEClass, you can run !DumpClass, which will display the
+value of all static fields.
+There is yet one more way to specify a module name. In the case of modules
+loaded from an assembly store (such as a SQL db) rather than disk, the
+module name will look like this:
+price, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+For this kind of module, simply use price as the module name:
+0:044> !name2ee price Price
+Module: 10f028b0 (price, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)
+Token: 0x02000002
+MethodTable: 11a47ae0
+EEClass: 11a538c8
+Name: Price
+Where are we getting these module names from? Run !DumpDomain to see a list of
+all loaded modules in all domains. And remember that you can browse all the
+types in a module with !DumpModule -mt <module pointer>.
+COMMAND: syncblk.
+!SyncBlk [-all | <syncblk number>]
+A SyncBlock is a holder for extra information that doesn't need to be created 
+for every object. It can hold COM Interop data, HashCodes, and locking 
+information for thread-safe operations.
+When called without arguments, !SyncBlk will print the list of SyncBlocks 
+corresponding to objects that are owned by a thread. For example, a
+    lock(MyObject)
+    {
+        ....
+    }
+statement will set MyObject to be owned by the current thread. A SyncBlock will
+be created for MyObject, and the thread ownership information stored there 
+(this is an oversimplification, see NOTE below). If another thread tries to 
+execute the same code, they won't be able to enter the block until the first 
+thread exits.
+This makes !SyncBlk useful for detecting managed deadlocks. Consider that the
+following code is executed by Threads A & B:
+    Resource r1 = new Resource();
+    Resource r2 = new Resource();
+    ...
+    lock(r1)                             lock(r2)
+    {                                    {
+        lock(r2)                             lock(r1)
+        {                                    {
+            ...                                  ...
+        }                                    }
+    }                                    }
+This is a deadlock situation, as Thread A could take r1, and Thread B r2, 
+leaving both threads with no option but to wait forever in the second lock 
+statement. !SyncBlk will detect this with the following output:
+0:003> !syncblk
+Index SyncBlock MonitorHeld Recursion Owning Thread Info   SyncBlock Owner
+  238 001e40ec            3         1 001e4e60   e04   3   00a7a194 Resource
+  239 001e4124            3         1 001e5980   ab8   4   00a7a1a4 Resource
+It means that Thread e04 owns object 00a7a194, and Thread ab8 owns object 
+00a7a1a4. Combine that information with the call stacks of the deadlock:
+(threads 3 and 4 have similar output)  
+0:003> k
+ChildEBP RetAddr
+0404ea04 77f5c524 SharedUserData!SystemCallStub+0x4
+0404ea08 77e75ee0 ntdll!NtWaitForMultipleObjects+0xc
+0404eaa4 5d9de9d6 KERNEL32!WaitForMultipleObjectsEx+0x12c
+0404eb38 5d9def80 clr!Thread::DoAppropriateAptStateWait+0x156
+0404ecc4 5d9dd8bb clr!Thread::DoAppropriateWaitWorker+0x360
+0404ed20 5da628dd clr!Thread::DoAppropriateWait+0xbb
+0404ede4 5da4e2e2 clr!CLREvent::Wait+0x29d
+0404ee70 5da4dd41 clr!AwareLock::EnterEpilog+0x132
+0404ef34 5da4efa3 clr!AwareLock::Enter+0x2c1
+0404f09c 5d767880 clr!AwareLock::Contention+0x483
+0404f1c4 03f00229 clr!JITutil_MonContention+0x2c0
+0404f1f4 5b6ef077 image00400000!Worker.Work()+0x79
+By looking at the code corresponding to Worker.Work()+0x79 (run "!u 03f00229"),
+you can see that thread 3 is attempting to acquire the Resource 00a7a1a4, which
+is owned by thread 4.
+NOTE:
+It is not always the case that a SyncBlock will be created for every object 
+that is locked by a thread. In version 2.0 of the CLR and above, a mechanism 
+called a ThinLock will be used if there is not already a SyncBlock for the 
+object in question. ThinLocks will not be reported by the !SyncBlk command. 
+You can use "!DumpHeap -thinlock" to list objects locked in this way.
+COMMAND: dumpmt.
+!DumpMT [-MD] <MethodTable address>
+Examine a MethodTable. Each managed object has a MethodTable pointer at the 
+start. If you pass the "-MD" flag, you'll also see a list of all the methods 
+defined on the object. 
+COMMAND: dumpclass.
+!DumpClass <EEClass address>
+The EEClass is a data structure associated with an object type. !DumpClass 
+will show attributes, as well as list the fields of the type. The output is 
+similar to !DumpObj. Although static field values will be displayed, 
+non-static values won't because you need an instance of an object for that.
+You can get an EEClass to look at from !DumpMT, !DumpObj, !Name2EE, and 
+!Token2EE among others.
+COMMAND: dumpmd.
+!DumpMD <MethodDesc address>
+This command lists information about a MethodDesc. You can use !IP2MD to turn 
+a code address in a managed function into a MethodDesc:
+0:000> !dumpmd 902f40
+Method Name: Mainy.Main()
+Class: 03ee1424
+MethodTable: 009032d8
+mdToken: 0600000d
+Module: 001caa78
+IsJitted: yes
+CodeAddr: 03ef00b8
+If IsJitted is "yes," you can run !U on the CodeAddr pointer to see a 
+disassembly of the JITTED code. You can also call !DumpClass, !DumpMT, 
+!DumpModule on the Class, MethodTable and Module fields above.
+COMMAND: token2ee.
+!Token2EE <module name> <token>
+This function allows you to turn a metadata token into a MethodTable or 
+MethodDesc. Here is an example showing class tokens being resolved:
+0:000> !token2ee unittest.exe 02000003
+Module: 001caa38
+Token: 0x02000003
+MethodTable: 0090375c
+EEClass: 03ee1ae0
+Name: Bank
+0:000> !token2ee image00400000 02000004
+Module: 001caa38
+Token: 0x02000004
+MethodTable: 009038ec
+EEClass: 03ee1b84
+Name: Customer
+The module you are "browsing" with Token2EE needs to be loaded in the process. 
+This function doesn't see much use, especially since a tool like ILDASM can 
+show the mapping between metadata tokens and types/methods in a friendlier way. 
+But it could be handy sometimes.
+You can pass "*" for <module name> to find what that token maps to in every
+loaded managed module. <module name> can also be the debugger's name for a 
+module, such as mscorlib or image00400000.
+COMMAND: eeversion.
+!EEVersion
+This prints the Common Language Runtime version. It also tells you if the code 
+is running in "Workstation" or "Server" mode, a distinction which affects the 
+garbage collector. The most apparent difference in the debugger is that in 
+"Server" mode there is one dedicated garbage collector thread per CPU.
+A handy supplement to this function is to also run "lm v m clr". That 
+will provide more details about the CLR, including where clr.dll is 
+loaded from.
+COMMAND: dumpmodule.
+!DumpModule [-mt] <Module address>
+You can get a Module address from !DumpDomain, !DumpAssembly and other 
+functions. Here is sample output:
+0:000> !DumpModule 1caa50
+Name: C:\pub\unittest.exe
+Attributes: PEFile
+Assembly: 001ca248
+LoaderHeap: 001cab3c
+TypeDefToMethodTableMap: 03ec0010
+TypeRefToMethodTableMap: 03ec0024
+MethodDefToDescMap: 03ec0064
+FieldDefToDescMap: 03ec00a4
+MemberRefToDescMap: 03ec00e8
+FileReferencesMap: 03ec0128
+AssemblyReferencesMap: 03ec012c
+MetaData start address: 00402230 (1888 bytes)
+The Maps listed map metadata tokens to CLR data structures. Without going into 
+too much detail, you can examine memory at those addresses to find the 
+appropriate structures. For example, the TypeDefToMethodTableMap above can be 
+examined:
+0:000> dd 3ec0010
+03ec0010  00000000 00000000 0090320c 0090375c
+03ec0020  009038ec ...
+This means TypeDef token 2 maps to a MethodTable with the value 0090320c. You 
+can run !DumpMT to verify that. The MethodDefToDescMap takes a MethodDef token 
+and maps it to a MethodDesc, which can be passed to !DumpMD.
+There is a new option "-mt", which will display the types defined in a module,
+and the types referenced by the module. For example:
+0:000> !dumpmodule -mt 1aa580
+Name: C:\pub\unittest.exe
+...<etc>...
+MetaData start address: 0040220c (1696 bytes)
+Types defined in this module
+      MT    TypeDef Name
+--------------------------------------------------------------------------
+030d115c 0x02000002 Funny
+030d1228 0x02000003 Mainy
+Types referenced in this module
+      MT    TypeRef Name
+--------------------------------------------------------------------------
+030b6420 0x01000001 System.ValueType
+030b5cb0 0x01000002 System.Object
+030fceb4 0x01000003 System.Exception
+0334e374 0x0100000c System.Console
+03167a50 0x0100000e System.Runtime.InteropServices.GCHandle
+0336a048 0x0100000f System.GC
+COMMAND: threadpool.
+!ThreadPool
+This command lists basic information about the ThreadPool, including the number
+of work requests in the queue, number of completion port threads, and number of
+timers.
+COMMAND: dumpassembly.
+!DumpAssembly <Assembly address>
+Example output:
+0:000> !dumpassembly 1ca248
+Parent Domain: 0014f000
+Name: C:\pub\unittest.exe
+ClassLoader: 001ca060
+  Module Name
+001caa50 C:\pub\unittest.exe
+An assembly can consist of multiple modules, and those will be listed. You can
+get an Assembly address from the output of !DumpDomain.
+COMMAND: dumpruntimetypes.
+!DumpRuntimeTypes 
+!DumpRuntimeTypes finds all System.RuntimeType objects in the gc heap and 
+prints the type name and MethodTable they refer too. Sample output:
+ Address   Domain       MT Type Name
+------------------------------------------------------------------------------
+  a515f4   14a740 5baf8d28 System.TypedReference
+  a51608   14a740 5bb05764 System.Globalization.BaseInfoTable
+  a51958   14a740 5bb05b24 System.Globalization.CultureInfo
+  a51a44   14a740 5bb06298 System.Globalization.GlobalizationAssembly
+  a51de0   14a740 5bb069c8 System.Globalization.TextInfo
+  a56b98   14a740 5bb12d28 System.Security.Permissions.HostProtectionResource
+  a56bbc   14a740 5baf7248 System.Int32
+  a56bd0   14a740 5baf3fdc System.String
+  a56cfc   14a740 5baf36a4 System.ValueType
+This command will print a "?" in the domain column if the type is loaded into multiple
+AppDomains.  For example:
+    0:000> !DumpRuntimeTypes
+     Address   Domain       MT Type Name              
+    ------------------------------------------------------------------------------
+     28435a0        ?   3f6a8c System.TypedReference
+     28435b4        ?   214d6c System.ValueType
+     28435c8        ?   216314 System.Enum
+     28435dc        ?   2147cc System.Object
+     284365c        ?   3cd57c System.IntPtr
+     2843670        ?   3feaac System.Byte
+     2843684        ?  23a544c System.IEquatable`1[[System.IntPtr, mscorlib]]
+     2843784        ?   3c999c System.Int32
+     2843798        ?   3caa04 System.IEquatable`1[[System.Int32, mscorlib]]
+COMMAND: dumpsig.
+!DumpSig <sigaddr> <moduleaddr>
+This command dumps the signature of a method or field given by <sigaddr>.  This is
+useful when you are debugging parts of the runtime which returns a raw PCCOR_SIGNATURE
+structure and need to know what its contents are.
+Sample output for a method:
+    0:000> !dumpsig 0x000007fe`ec20879d 0x000007fe`eabd1000
+    [DEFAULT] [hasThis] Void (Boolean,String,String)
+The first section of the output is the calling convention.  This includes, but is not
+limited to, "[DEFAULT]", "[C]", "[STDCALL]", "[THISCALL]", and so on.  The second
+portion of the output is either "[hasThis]" or "[explicit]" for whether the method
+is an instance method or a static method respectively.  The third portion of the 
+output is the return value (in this case a "void").  Finally, the method's arguments
+are printed as the final portion of the output.
+Sample output for a field:
+    0:000> !dumpsig 0x000007fe`eb7fd8cd 0x000007fe`eabd1000
+    [FIELD] ValueClass System.RuntimeTypeHandle 
+!DumpSig will also work with generics.  Here is the output for the following
+function:
+    public A Test(IEnumerable<B> n)
+    0:000> !dumpsig 00000000`00bc2437 000007ff00043178 
+    [DEFAULT] [hasThis] __Canon (Class System.Collections.Generic.IEnumerable`1<__Canon>)
+COMMAND: dumpsigelem.
+!DumpSigElem <sigaddr> <moduleaddr>
+This command dumps a single element of a signature object.  For most circumstances,
+you should use !DumpSig to look at individual signature objects, but if you find a 
+signature that has been corrupted in some manner you can use !DumpSigElem to read out 
+the valid portions of it.
+If we look at a valid signature object for a method we see the following:
+    0:000> !dumpsig 0x000007fe`ec20879d 0x000007fe`eabd1000
+    [DEFAULT] [hasThis] Void (Boolean,String,String)
+We can look at the individual elements of this object by adding the offsets into the 
+object which correspond to the return value and parameters:
+    0:000> !dumpsigelem 0x000007fe`ec20879d+2 0x000007fe`eabd1000
+    Void
+    0:000> !dumpsigelem 0x000007fe`ec20879d+3 0x000007fe`eabd1000
+    Boolean
+    0:000> !dumpsigelem 0x000007fe`ec20879d+4 0x000007fe`eabd1000
+    String
+    0:000> !dumpsigelem 0x000007fe`ec20879d+5 0x000007fe`eabd1000
+    String
+We can do something similar for fields.  Here is the full signature of a field:
+    0:000> !dumpsig 0x000007fe`eb7fd8cd 0x000007fe`eabd1000
+    [FIELD] ValueClass System.RuntimeTypeHandle 
+Using !DumpSigElem we can find the type of the field by adding the offset of it (1) to 
+the address of the signature:
+    0:000> !dumpsigelem 0x000007fe`eb7fd8cd+1 0x000007fe`eabd1000
+    ValueClass System.RuntimeTypeHandle
+!DumpSigElem will also work with generics.  Let a function be defined as follows:
+    public A Test(IEnumerable<B> n)
+The elements of this signature can be obtained by adding offsets into the signature
+when calling !DumpSigElem:
+    0:000> !dumpsigelem 00000000`00bc2437+2 000007ff00043178 
+    __Canon
+    0:000> !dumpsigelem 00000000`00bc2437+4 000007ff00043178 
+    Class System.Collections.Generic.IEnumerable`1<__Canon>
+The actual offsets that you should add are determined by the contents of the
+signature itself.  By trial and error you should be able to find various elements
+of the signature.
+COMMAND: rcwcleanuplist.
+!RCWCleanupList [address]
+A RuntimeCallableWrapper is an internal CLR structure used to host COM objects
+which are exposed to managed code.  This is exposed to managed code through the
+System.__ComObject class, and when objects of this type are collected, and a
+reference to the underlying COM object is no longer needed, the corresponding
+RCW is cleaned up.  If you are trying to debug an issue related to one of these
+RCWs, then you can use the !RCWCleanupList function to display which COM objects
+will be released the next time a cleanup occurs.
+If given an address, this function will display the RCWCleanupList at that address.
+If no address is specified, it displays the default cleanup list, printing the
+wrapper, the context, and the thread of the object.
+Example:
+    0:002> !rcwcleanuplist 001c04d0 
+    RuntimeCallableWrappers (RCW) to be cleaned:
+         RCW  CONTEXT   THREAD Apartment
+      1d54e0   192008   181180       STA
+      1d4140   192178        0       MTA
+      1dff50   192178        0       MTA
+    MTA Interfaces to be released: 2
+    STA Interfaces to be released: 1
+Note that CLR keeps track of which RCWs are bound to which managed objects through
+the SyncBlock of the object.  As such, you can see more information about RCW
+objects through the !SyncBlk command.  You can find more information about RCW
+cleanup through the !FinalizeQueue command.
+COMMAND: dumpil.
+!DumpIL <Managed DynamicMethod object> | 
+        <DynamicMethodDesc pointer> |
+        <MethodDesc pointer> |
+        /i <IL pointer>
+!DumpIL prints the IL code associated with a managed method. We added this
+function specifically to debug DynamicMethod code which was constructed on
+the fly. Happily it works for non-dynamic code as well.
+You can use it in four ways: 
+  1) If you have a System.Reflection.Emit.DynamicMethod object, just pass
+     the pointer as the first argument. 
+  2) If you have a DynamicMethodDesc pointer you can use that to print the
+     IL associated with the dynamic method.
+  3) If you have an ordinary MethodDesc, you can see the IL for that as well,
+     just pass it as the first argument.
+  4) If you have a pointer directly to the IL, specify /i followed by the
+     the IL address.  This is useful for writers of profilers that instrument
+     IL.
+     
+Note that dynamic IL is constructed a bit differently. Rather than referring
+to metadata tokens, the IL points to objects in a managed object array. Here
+is a simple example of the output for a dynamic method:
+  0:000> !dumpil b741dc
+  This is dynamic IL. Exception info is not reported at this time.
+  If a token is unresolved, run "!do <addr>" on the addr given
+  in parenthesis. You can also look at the token table yourself, by
+  running "!DumpArray 00b77388".
+  IL_0000: ldstr 70000002 "Inside invoked method "
+  IL_0005: call 6000003 System.Console.WriteLine(System.String)
+  IL_000a: ldc.i4.1
+  IL_000b: newarr 2000004 "System.Int32"
+  IL_0010: stloc.0
+  IL_0011: ldloc.0
+  IL_0012: ret
+COMMAND: verifyheap.
+!VerifyHeap
+!VerifyHeap is a diagnostic tool that checks the garbage collected heap for 
+signs of corruption. It walks objects one by one in a pattern like this:
+    o = firstobject;
+    while(o != endobject)
+    {
+        o.ValidateAllFields();
+        o = (Object *) o + o.Size();
+    }
+If an error is found, !VerifyHeap will report it. I'll take a perfectly good 
+object and corrupt it:
+0:000> !DumpObj a79d40
+Name: Customer
+MethodTable: 009038ec
+EEClass: 03ee1b84
+Size: 20(0x14) bytes
+ (C:\pub\unittest.exe)
+Fields:
+      MT    Field   Offset                 Type       Attr    Value Name
+009038ec  4000008        4                CLASS   instance 00a79ce4 name
+009038ec  4000009        8                CLASS   instance 00a79d2c bank
+009038ec  400000a        c       System.Boolean   instance        1 valid
+0:000> ed a79d40+4 01  (change the name field to the bogus pointer value 1)
+0:000> !VerifyHeap
+object 01ee60dc: bad member 00000003 at 01EE6168
+Last good object: 01EE60C4.
+If this gc heap corruption exists, there is a serious bug in your own code or 
+in the CLR. In user code, an error in constructing PInvoke calls can cause 
+this problem, and running with Managed Debugging Assistants is advised. If that
+possibility is eliminated, consider contacting Microsoft Product Support for
+help.
+COMMAND: verifyobj.
+!VerifyObj <object address>
+!VerifyObj is a diagnostic tool that checks the object that is passed as an 
+argument for signs of corruption.
+0:002> !verifyobj 028000ec
+object 0x28000ec does not have valid method table
+0:002> !verifyobj 0680017c 
+object 0x680017c: bad member 00000001 at 06800184
+COMMAND: findroots.
+!FindRoots -gen <N> | -gen any | <object address>
+The "-gen" form causes the debugger to break in the debuggee on the next 
+collection of the specified generation.  The effect is reset as soon as the 
+break occurs, in other words, if you need to break on the next collection you 
+would need to reissue the command.
+The last form of this command is meant to be used after the break caused by the 
+other forms has occurred.  Now the debuggee is in the right state for 
+!FindRoots to be able to identify roots for objects from the current condemned 
+generations.
+!FindRoots is a diagnostic command that is meant to answer the following 
+question:
+"I see that GCs are happening, however my objects have still not been 
+collected. Why? Who is holding onto them?"
+The process of answering the question would go something like this:
+1. Find out the generation of the object of interest using the !GCWhere 
+command, say it is gen 1:
+!GCWhere <object address>
+2. Instruct the runtime to stop the next time it collects that generation using 
+the !FindRoots command:
+!FindRoots -gen 1
+3. When the next GC starts, and has proceeded past the mark phase a CLR 
+notification will cause a break in the debugger:
+(fd0.ec4): CLR notification exception - code e0444143 (first chance)
+CLR notification: GC - end of mark phase.
+Condemned generation: 1.
+4. Now we can use the !FindRoots <object address> to find out the cross 
+generational references to the object of interest.  In other words, even if the 
+object is not referenced by any "proper" root it may still be referenced by an 
+older object (from an older generation), from a generation that has not yet been 
+scheduled for collection.  At this point !FindRoots will search those older 
+generations too, and report those roots.
+0:002> !findroots 06808094 
+older generations::Root:  068012f8(AAA.Test+a)->
+  06808094(AAA.Test+b)
+COMMAND: heapstat.
+!HeapStat [-inclUnrooted | -iu]
+This command shows the generation sizes for each heap and the total, how much free 
+space there is in each generation on each heap.  If the -inclUnrooted option is
+specified the report will include information about the managed objects from the
+GC heap that are not rooted anymore.
+Sample output:
+0:002> !heapstat
+Heap     Gen0         Gen1         Gen2         LOH
+Heap0    177904       12           306956       8784        
+Heap1    159652       12           12           16          
+Total    337556       24           306968       8800        
+Free space:                                                 Percentage
+Heap0    28           12           12           64          SOH:  0% LOH:  0%
+Heap1    104          12           12           16          SOH:  0% LOH:100%
+Total    132          24           24           80          
+0:002> !heapstat -inclUnrooted
+Heap     Gen0         Gen1         Gen2         LOH
+Heap0    177904       12           306956       8784        
+Heap1    159652       12           12           16          
+Total    337556       24           306968       8800        
+Free space:                                                 Percentage
+Heap0    28           12           12           64          SOH:  0% LOH:  0%
+Heap1    104          12           12           16          SOH:  0% LOH:100%
+Total    132          24           24           80          
+Unrooted objects:                                           Percentage
+Heap0    152212       0            306196       0           SOH: 94% LOH:  0%
+Heap1    155704       0            0            0           SOH: 97% LOH:  0%
+Total    307916       0            306196       0           
+The percentage column contains a breakout of free or unrooted bytes to total bytes.
+COMMAND: analyzeoom.
+!AnalyzeOOM
+!AnalyzeOOM displays the info of the last OOM occured on an allocation request to
+the GC heap (in Server GC it displays OOM, if any, on each GC heap). 
+To see the managed exception(s) use the !Threads command which will show you 
+managed exception(s), if any, on each managed thread. If you do see an 
+OutOfMemoryException exception you can use the !PrintException command on it.
+To get the full callstack use the "kb" command in the debugger for that thread.
+For example, to display thread 3's stack use ~3kb.
+OOM exceptions could be because of the following reasons:
+1) allocation request to GC heap 
+   in which case you will see JIT_New* on the call stack because managed code called new.
+2) other runtime allocation failure
+   for example, failure to expand the finalize queue when GC.ReRegisterForFinalize is
+   called.
+3) some other code you use throws a managed OOM exception 
+   for example, some .NET framework code converts a native OOM exception to managed 
+   and throws it.
+The !AnalyzeOOM command aims to help you with investigating 1) which is the most
+difficult because it requires some internal info from GC. The only exception is
+we don't support allocating objects larger than 2GB on CLR v2.0 or prior. And this
+command will not display any managed OOM because we will throw OOM right away 
+instead of even trying to allocate it on the GC heap.
+There are 2 legitimate scenarios where GC would return OOM to allocation requests - 
+one is if the process is running out of VM space to reserve a segment; the other
+is if the system is running out physical memory (+ page file if you have one) so
+GC can not commit memory it needs. You can look at these scenarios by using performance
+counters or debugger commands. For example for the former scenario the "!address 
+-summary" debugger command will show you the largest free region in the VM. For
+the latter scenario you can look at the "Memory\% Committed Bytes In Use" see
+if you are running low on commit space. One important thing to keep in mind is
+when you do this kind of memory analysis it could an aftereffect and doesn't 
+completely agree with what this command tells you, in which case the command should
+be respected because it truly reflects what happened during GC.
+The other cases should be fairly obvious from the callstack.
+Sample output:
+0:011> !ao
+---------Heap 2 ---------
+Managed OOM occured after GC #28 (Requested to allocate 1234 bytes)
+Reason: Didn't have enough memory to commit
+Detail: SOH: Didn't have enough memory to grow the internal GC datastructures (800000 bytes) - 
+        on GC entry available commit space was 500 MB
+---------Heap 4 ---------
+Managed OOM occured after GC #12 (Requested to allocate 100000 bytes)
+Reason: Didn't have enough memory to allocate an LOH segment
+Detail: LOH: Failed to reserve memory (16777216 bytes)
+COMMAND: gcwhere.
+!GCWhere <object address>
+!GCWhere displays the location in the GC heap of the argument passed in.
+0:002> !GCWhere 02800038  
+Address  Gen Heap segment  begin    allocated size
+02800038 2    0   02800000 02800038 0282b740  12
+When the argument lies in the managed heap, but is not a valid *object* address 
+the "size" is displayed as 0:
+0:002> !GCWhere 0280003c
+Address  Gen Heap segment  begin    allocated size
+0280003c 2    0   02800000 02800038 0282b740  0
+COMMAND: listnearobj.
+!ListNearObj <object address>
+!ListNearObj is a diagnostic tool that displays the object preceeding and 
+succeeding the address passed in:
+The command looks for the address in the GC heap that looks like a valid 
+beginning of a managed object (based on a valid method table) and the object 
+following the argument address.
+0:002> !ListNearObj 028000ec
+Before: 0x28000a4           72 (0x48      ) System.StackOverflowException
+After:  0x2800134           72 (0x48      ) System.Threading.ThreadAbortException
+Heap local consistency confirmed.
+0:002> !ListNearObj 028000f0
+Before: 0x28000ec           72 (0x48      ) System.ExecutionEngineException
+After:  0x2800134           72 (0x48      ) System.Threading.ThreadAbortException
+Heap local consistency confirmed.
+The command considers the heap as "locally consistent" if:
+prev_obj_addr + prev_obj_size = arg_addr && arg_obj + arg_size = next_obj_addr
+prev_obj_addr + prev_obj_size = next_obj_addr
+When the condition is not satisfied:
+0:002> !lno 028000ec
+Before: 0x28000a4           72 (0x48      ) System.StackOverflowException
+After:  0x2800134           72 (0x48      ) System.Threading.ThreadAbortException
+Heap local consistency not confirmed.
+COMMAND: dumplog.
+!DumpLog [-addr <addressOfStressLog>] [<Filename>]
+To aid in diagnosing hard-to-reproduce stress failures, the CLR team added an 
+in-memory log capability. The idea was to avoid using locks or I/O which could 
+disturb a fragile repro environment. The !DumpLog function allows you to write 
+that log out to a file. If no Filename is specified, the file "Stresslog.txt" 
+in the current directory is created.
+The optional argument addr allows one to specify a stress log other then the 
+default one.
+0:000> !DumpLog
+Attempting to dump Stress log to file 'StressLog.txt'
+.................
+SUCCESS: Stress log dumped
+To turn on the stress log, set the following registry keys under
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework:
+(DWORD) StressLog = 1
+(DWORD) LogFacility = 0xffffffbf (this is a bit mask, almost all logging is on.
+                                  This is also the default value if the key 
+                                  isn't specified)
+(DWORD) StressLogSize = 65536    (this is the default value if the key isn't
+                                  specified)
+(DWORD) LogLevel = 6             (this is the default value if the key isn't
+                                  specified.  The higher the number the more
+                                  detailed logs are generated.  The maximum 
+                                  value is decimal 10)
+StressLogSize is the size in bytes of the in-memory log allocated for each 
+thread in the process. In the case above, each thread gets a 64K log. You 
+could increase this to get more logging, but more memory will be required for 
+this log in the process. For example, 20 threads with 524288 bytes per thread 
+has a memory demand of 10 Megabytes. The stress log is circular so new entries 
+will replace older ones on threads which have reached their buffer limit.
+The log facilities are defined as follows:
+    GC           0x00000001
+    GCINFO       0x00000002
+    STUBS        0x00000004
+    JIT          0x00000008
+    LOADER       0x00000010
+    METADATA     0x00000020
+    SYNC         0x00000040
+    EEMEM        0x00000080
+    GCALLOC      0x00000100
+    CORDB        0x00000200
+    CLASSLOADER  0x00000400
+    CORPROF      0x00000800
+    REMOTING     0x00001000
+    DBGALLOC     0x00002000
+    EH           0x00004000
+    ENC          0x00008000
+    ASSERT       0x00010000
+    VERIFIER     0x00020000
+    THREADPOOL   0x00040000
+    GCROOTS      0x00080000
+    INTEROP      0x00100000
+    MARSHALER    0x00200000
+    IJW          0x00400000
+    ZAP          0x00800000
+    STARTUP      0x01000000
+    APPDOMAIN    0x02000000
+    CODESHARING  0x04000000
+    STORE        0x08000000
+    SECURITY     0x10000000
+    LOCKS        0x20000000
+    BCL          0x40000000
+Here is some sample output:
+3560   9.981137099 : `SYNC`               RareEnablePremptiveGC: entering. 
+Thread state = a030
+3560   9.981135033 : `GC`GCALLOC`GCROOTS` ========== ENDGC 4194 (gen = 2, 
+collect_classes = 0) ==========={
+3560   9.981125826 : `GC`                         Segment mem 00C61000 alloc 
+= 00D071F0 used 00D09254 committed 00D17000
+3560   9.981125726 : `GC`                     Generation 0 [00CED07C, 00000000
+] cur = 00000000
+3560   9.981125529 : `GC`                     Generation 1 [00CED070, 00000000
+] cur = 00000000
+3560   9.981125103 : `GC`                     Generation 2 [00C61000, 00000000
+] cur = 00000000
+3560   9.981124963 : `GC`                 GC Heap 00000000
+3560   9.980618994 : `GC`GCROOTS`         GcScanHandles (Promotion Phase = 0)
+The first column is the OS thread ID for the thread appending to the log, 
+the second column is the timestamp, the third is the facility category for the 
+log entry, and the fourth contains the log message. The facility field is 
+expressed as `facility1`facility2`facility3`.  This facilitates the creation of 
+filters for displaying only specific message categories.  To make sense of this 
+log, you would probably want the Shared Source CLI to find out exactly where 
+the log comes from.
+COMMAND: findappdomain.
+!FindAppDomain <Object address>
+!FindAppDomain will attempt to resolve the AppDomain of an object. For example,
+using an Object Pointer from the output of !DumpStackObjects:
+0:000> !findappdomain 00a79d98
+AppDomain: 0014f000
+Name: unittest.exe
+ID: 1
+You can find out more about the AppDomain with the !DumpDomain command. Not 
+every object has enough clues about it's origin to determine the AppDomain. 
+Objects with Finalizers are the easiest case, as the CLR needs to be able to 
+call those when an AppDomain shuts down.
+COMMAND: savemodule.
+!SaveModule <Base address> <Filename>
+This command allows you to take a image loaded in memory and write it to a 
+file. This is especially useful if you are debugging a full memory dump, and 
+don't have the original DLLs or EXEs. This is most often used to save a managed
+binary to a file, so you can disassemble the code and browse types with ILDASM.
+The base address of an image can be found with the "LM" debugger command:
+0:000> lm
+start    end        module name
+00400000 00408000   image00400000     (deferred)
+10200000 102ac000   MSVCR80D     (deferred)
+5a000000 5a0b1000   mscoree      (deferred)
+5a140000 5a29e000   clrjit     (deferred)
+5b660000 5c440000   mscorlib_dll     (deferred)
+5d1d0000 5e13c000   clr     (deferred)
+If I wanted to save a copy of clr.dll, I could run:
+0:000> !SaveModule 5d1d0000 c:\pub\out.tmp
+4 sections in file
+section 0 - VA=1000, VASize=e82da9, FileAddr=400, FileSize=e82e00
+section 1 - VA=e84000, VASize=24d24, FileAddr=e83200, FileSize=ec00
+section 2 - VA=ea9000, VASize=5a8, FileAddr=e91e00, FileSize=600
+section 3 - VA=eaa000, VASize=c183c, FileAddr=e92400, FileSize=c1a00
+The diagnostic output indicates that the operation was successful. If 
+c:\pub\out.tmp already exists, it will be overwritten.
+COMMAND: gchandles.
+!GCHandles [-type handletype] [-stat] [-perdomain]
+!GCHandles provides statistics about GCHandles in the process.
+Paremeters:
+    stat - Only display the statistics and not the list of handles and
+           what they point to.
+    perdomain - Break down the statistics by the app domain in which
+                the handles reside.
+    type - A type of handle to filter it by.  The handle types are:
+           Pinned
+           RefCounted
+           WeakShort
+           WeakLong
+           Strong
+           Variable
+           AsyncPinned
+           SizedRef
+Sometimes the  source of a memory leak is a GCHandle leak. For example, code
+might keep a 50 Megabyte array alive because a strong GCHandle points to it,
+and the handle was discarded without freeing it.
+The most common handles are "Strong Handles," which keep the object they point 
+to alive until the handle is explicitly freed. "Pinned Handles" are used to 
+prevent the garbage collector from moving an object during collection. These 
+should be used sparingly, and for short periods of time. If you don't follow 
+that precept, the gc heap can become very fragmented.
+Here is sample output from a very simple program.  Note that the "RefCount"
+field only applies to RefCount Handles, and this field will contain the
+reference count:
+    0:000> !GCHandles
+      Handle Type          Object     Size RefCount Type
+    001611c0 Strong      01d00b58       84          System.IndexOutOfRangeException
+    001611c4 Strong      01d00b58       84          System.IndexOutOfRangeException
+    001611c8 Strong      01d1b48c       40          System.Diagnostics.LogSwitch
+    001611d0 Strong      01cfd2c0       36          System.Security.PermissionSet
+    001611d4 Strong      01cf7484       56          System.Object[]
+    001611d8 Strong      01cf1238       32          System.SharedStatics
+    001611dc Strong      01cf11c8       84          System.Threading.ThreadAbortException
+    001611e0 Strong      01cf1174       84          System.Threading.ThreadAbortException
+    001611e4 Strong      01cf1120       84          System.ExecutionEngineException
+    001611e8 Strong      01cf10cc       84          System.StackOverflowException
+    001611ec Strong      01cf1078       84          System.OutOfMemoryException
+    001611f0 Strong      01cf1024       84          System.Exception
+    001611f8 Strong      01cf2068       48          System.Threading.Thread
+    001611fc Strong      01cf1328      112          System.AppDomain
+    001613ec Pinned      02cf3268     8176          System.Object[]
+    001613f0 Pinned      02cf2258     4096          System.Object[]
+    001613f4 Pinned      02cf2038      528          System.Object[]
+    001613f8 Pinned      01cf121c       12          System.Object
+    001613fc Pinned      02cf1010     4116          System.Object[]
+    Statistics:
+          MT    Count    TotalSize Class Name
+    563266dc        1           12 System.Object
+    56329708        1           32 System.SharedStatics
+    5632bc38        1           36 System.Security.PermissionSet
+    5635f934        1           40 System.Diagnostics.LogSwitch
+    5632759c        1           48 System.Threading.Thread
+    5632735c        1           84 System.ExecutionEngineException
+    56327304        1           84 System.StackOverflowException
+    563272ac        1           84 System.OutOfMemoryException
+    563270c4        1           84 System.Exception
+    56328914        1          112 System.AppDomain
+    56335f78        2          168 System.IndexOutOfRangeException
+    563273b4        2          168 System.Threading.ThreadAbortException
+    563208d0        5        16972 System.Object[]
+    Total 19 objects
+    Handles:
+        Strong Handles:       14
+        Pinned Handles:       5
+COMMAND: gchandleleaks.
+!GCHandleLeaks
+This command is an aid in tracking down GCHandle leaks. It searches all of 
+memory for any references to the Strong and Pinned GCHandles in the process, 
+and reports what it found. If a handle is found, you'll see the address of the
+reference. This might be a stack address or a field within an object, for 
+example. If a handle is not found in memory, you'll get notification of that 
+The command has diagnostic output which doesn't need to be repeated here. One 
+thing to keep in mind is that anytime you search all of memory for a value, you
+can get false positives because even though the value was found, it might be 
+garbage in that no code knows about the address. You can also get false 
+negatives because a user is free to pass that GCHandle to unmanaged code that 
+might store the handle in a strange way (shifting bits, for example).
+For example, a GCHandle valuetype is stored on the stack with the low bit set 
+if it points to a Pinned handle. So !GCHandleLeaks ignores the low bit in it's
+searches.
+That said, if a serious leak is going on, you'll get a ever-growing set of 
+handle addresses that couldn't be found.
+COMMAND: vmmap.
+!VMMap
+!VMMap traverses the virtual address space and lists the type of protection 
+applied to each region. Sample output:
+0:000> !VMMap
+Start    Stop     Length    AllocProtect  Protect       State    Type
+00000000-0000ffff 00010000                NA            Free
+00010000-00011fff 00002000  RdWr          RdWr          Commit   Private
+00012000-0001ffff 0000e000                NA            Free
+00020000-00020fff 00001000  RdWr          RdWr          Commit   Private
+00021000-0002ffff 0000f000                NA            Free
+00030000-00030fff 00001000  RdWr                        Reserve  Private
+COMMAND: vmstat.
+!VMStat
+Provides a summary view of the virtual address space, ordered by each type of 
+protection applied to that memory (free, reserved, committed, private, mapped, 
+image). The TOTAL column is (AVERAGE * BLK COUNT). Sample output below:
+0:000> !VMStat
+~~~~           ~~~~~~~        ~~~~~~~        ~~~~~~~  ~~~~~~~~~          ~~~~~
+TYPE           MINIMUM        MAXIMUM        AVERAGE  BLK COUNT          TOTAL
+Free:
+Small            4,096         65,536         48,393         27      1,306,611
+Medium         139,264        528,384        337,920          4      1,351,680
+Large        6,303,744    974,778,368    169,089,706         12  2,029,076,472
+Summary          4,096    974,778,368     47,249,646         43  2,031,734,778
+Reserve:
+Small            4,096         65,536         43,957         41      1,802,237
+Medium         249,856      1,019,904        521,557          6      3,129,342
+Large        2,461,696     16,703,488     11,956,224          3     35,868,672
+Summary          4,096     16,703,488        816,005         50     40,800,250
+COMMAND: procinfo.
+!ProcInfo [-env] [-time] [-mem]
+!ProcInfo lists the environment variables for the process, kernel CPU time, as 
+well as memory usage statistics.
+COMMAND: histinit.
+!HistInit
+Before running any of the Hist - family commands you need to initialize the SOS 
+structures from the stress log saved in the debuggee.  This is achieved by the 
+HistInit command.
+Sample output:
+0:001> !HistInit
+Attempting to read Stress log
+STRESS LOG:
+    facilitiesToLog  = 0xffffffff
+    levelToLog       = 6
+    MaxLogSizePerThread = 0x10000 (65536)
+    MaxTotalLogSize = 0x1000000 (16777216)
+    CurrentTotalLogChunk = 9
+    ThreadsWithLogs  = 3
+    Clock frequency  = 3.392 GHz
+    Start time         15:26:31
+    Last message time  15:26:56
+    Total elapsed time 25.077 sec
+.....................................
+---------------------------- 2407 total entries -----------------------------
+SUCCESS: GCHist structures initialized
+COMMAND: histobjfind.
+!HistObjFind <obj_address>
+To examine log entries related to an object whose present address is known one 
+would use this command. The output of this command contains all entries that 
+reference the object:
+0:003> !HistObjFind 028970d4 
+ GCCount   Object                                  Message
+---------------------------------------------------------
+    2296 028970d4 Promotion for root 01e411b8 (MT = 5b6c5cd8)
+    2296 028970d4 Relocation NEWVALUE for root 00223fc4
+    2296 028970d4 Relocation NEWVALUE for root 01e411b8
+    2295 028970d4 Promotion for root 01e411b8 (MT = 5b6c5cd8)
+    2295 028970d4 Relocation NEWVALUE for root 00223fc4
+    2295 028970d4 Relocation NEWVALUE for root 01e411b8
+COMMAND: histroot.
+!HistRoot <root>
+The root value obtained from !HistObjFind can be used to track the movement of 
+an object through the GCs.
+HistRoot provides information related to both promotions and relocations of the 
+root specified as the argument.
+0:003> !HistRoot 01e411b8 
+ GCCount    Value       MT Promoted?                Notes
+---------------------------------------------------------
+    2296 028970d4 5b6c5cd8       yes 
+    2295 028970d4 5b6c5cd8       yes 
+    2294 028970d4 5b6c5cd8       yes 
+    2293 028970d4 5b6c5cd8       yes 
+    2292 028970d4 5b6c5cd8       yes 
+    2291 028970d4 5b6c5cd8       yes 
+    2290 028970d4 5b6c5cd8       yes 
+    2289 028970d4 5b6c5cd8       yes 
+    2288 028970d4 5b6c5cd8       yes 
+    2287 028970d4 5b6c5cd8       yes 
+    2286 028970d4 5b6c5cd8       yes 
+    2285 028970d4 5b6c5cd8       yes 
+     322 028970e8 5b6c5cd8       yes Duplicate promote/relocs
+COMMAND: histobj.
+!HistObj <obj_address>
+This command examines all stress log relocation records and displays the chain 
+of GC relocations that may have led to the address passed in as an argument.
+Conceptually the output is:
+GenN    obj_address   root1, root2, root3,
+GenN-1  prev_obj_addr root1, root2,
+GenN-2  prev_prev_oa  root1, root4, 
+Sample output:
+0:003> !HistObj 028970d4 
+ GCCount   Object                                    Roots
+---------------------------------------------------------
+    2296 028970d4 00223fc4, 01e411b8, 
+    2295 028970d4 00223fc4, 01e411b8, 
+    2294 028970d4 00223fc4, 01e411b8, 
+    2293 028970d4 00223fc4, 01e411b8, 
+    2292 028970d4 00223fc4, 01e411b8, 
+    2291 028970d4 00223fc4, 01e411b8, 
+    2290 028970d4 00223fc4, 01e411b8, 
+    2289 028970d4 00223fc4, 01e411b8, 
+    2288 028970d4 00223fc4, 01e411b8, 
+    2287 028970d4 00223fc4, 01e411b8, 
+    2286 028970d4 00223fc4, 01e411b8, 
+    2285 028970d4 00223fc4, 01e411b8, 
+     322 028970d4 01e411b8, 
+       0 028970d4 
+COMMAND: histclear.
+!HistClear
+This command releases any resources used by the Hist-family of commands. 
+Generally there's no need to call this explicitly, as each HistInit will first 
+cleanup the previous resources.
+0:003> !HistClear
+Completed successfully.
+COMMAND: dumprcw.
+!DumpRCW <RCW address>
+This command lists information about a Runtime Callable Wrapper. You can use
+!DumpObj to obtain the RCW address corresponding to a managed object.
+The output contains all COM interface pointers that the RCW holds on to, which
+is useful for investigating lifetime issues of interop-heavy applications.
+COMMAND: dumpccw.
+!DumpCCW <CCW address or COM IP>
+This command lists information about a COM Callable Wrapper. You can use
+!DumpObj to obtain the CCW address corresponding to a managed object or pass
+a COM interface pointer to which the object has been marshaled.
+The output contains the COM reference count of the CCW, which is useful for
+investigating lifetime issues of interop-heavy applications.
+0 0$0(0,0@0D0H0
+1,;0;
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+l3p3t3x3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+= =$=(=,=0=4=8=<=@=D=H=L=P=\=d=l=t=|=
+>$>,>4><>D>L>T>
+5(50545@5\5`5d5h5l5p5t5x5|5
+5l6p6t6x6|6
+<9@9D9H9
+; ;$;(;,;0;4;8;
+7 7(70787@7H7P7X7`7h7p7x7
+8 8(80888@8H8P8X8`8h8p8x8
+9 9(90989@9H9P9X9`9h9p9x9
+: :(:0:8:@:H:P:X:`:h:p:x:
+0 0,04080<0@0D0
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<d<h<l<p<t<x<|<
+4585<5@5
+6$6,646<6D6L6T6\6d6l6t6|6
+7$7,747<7D7L7T7\7d7l7t7|7
+8$8,848<8D8L8T8\8d8l8t8|8
+9$9,949<9D9L9T9\9d9l9t9|9
+:$:,:4:<:D:L:T:\:d:l:t:|:
+;$;,;4;<;D;L;T;\;d;l;t;|;
+<$<,<4<<<D<L<T<\<d<l<t<|<
+7 7(70787@7H7P7X7`7h7p7x7
+8 8(80888@8H8P8X8`8h8p8x8
+9 9(90989@9H9P9X9`9h9p9x9
+: :(:0:8:@:H:P:X:`:h:p:x:
+; ;(;0;8;@;H;P;X;`;h;p;x;
+< <(<0<8<@<H<P<X<`<h<p<x<
+= =(=0=8=@=H=P=X=`=h=p=x=
+7$7,747<7D7L7T7\7d7l7t7|7
+7:9>9B9F9
+2 2$2(2,20242
+0@1X1
+2$24282H2L2P2X2p2
+3,3034383@3X3h3l3|3
+=E=V=g=q=
+010Z0
+203G3b3y3
+3T4j4q4
+5.5{5
+5$6r7?8
+< <'<V<c<
+=?>K>p>{>
+1!1'1<1B1T1[1i1o1}1
+2 2.272I2N2T2i2o2
+2)3/3>3H3p3w3
+4.484D4J4X4^4
+5T5Z5h5
+7#8)8B8H8
+9 9*949
+:o:u:
+;*;6;_;d;
+<%<+<f<l<
+=+=1=T=\=|=
+>h>l>p>t>x>|>
+0 0&0;0A0V0\0q0w0
+1(1.1?1E1V1\1m1s1
+2(2/282@2Y2_2
+3B3J3
+4'424J4U4k4
+4/5N5\5
+6'646S6a6
+8$82888E8
+:2:G:U:e:
+;&;4;@;
+;A<I<_<m<
+=(=6===
+=#>.><>L>\>j>
+>A?P?u?
+0;0U0|0
+091G1r1
+2(2]2{2
+3.3I3P3c3n3s3
+4A4P4
+5'5U5\5n5
+6#636Y6g6w6
+7+7;7V7r7
+8@8m8x8
+9/9b9n9|9
+:-:b:n:|:
+:/;n;z;
+<H=V=p=
+>'>.>w>`?
+`1d1h1l1p1t1x1|1
+2 2D2P2q2z2
+3K3l3
+4 4,474E4]4h4o4t4
+5-5;5M5Y5d5r5
+6!636J6X6h6t6
+7!7-767=7B7`7l7u7|7
+8-8A8M8Z8
+9!949H9
+: :@:G:
+;&<4<
+<N=U=
+=*>1>
+>f?x?
+0j0q0
+1d1k1
+2e2l2
+3]3d3
+4$4>4b4
+5#5:5D5M5Z5
+6f7s7
+8F8T8
+9f9t9
+;-;4;V;g;
+=6=B=W=
+>&>f>s>
+?B?I?
+0:1A1
+2f3m3
+3-4U4~4
+5&5-5J5\5g5
+5.656G6
+7?7P7
+:-:J:s:
+;(;@;
+</<9<><C<H<M<
+<!=`=v=
+>S>r>~>
+2%2M2Z2d2r2{2
+2$3*3p3v3
+4V5j5
+6(6@6
+7&787
+7/8A8L8w8
+9B:N:\:l:x:
+:8;P;^;
+>,>P>e>
+?r?~?
+0l0w0H1
+2f2x2
+2:3U3
+4(494V4a4
+5R5^5l5|5
+576S6t6
+7-7C7J7]7
+8-848
+9$999A9G9N9a9n9
+:):D:J:U:v:
+:V;h;
+<1<f<t<
+=F=X=v=
+>.>Q>o>
+?#?1?G?T?
+0?0\0l0
+1Y1c1q1{1
+5+6W6f6
+7F7S7n7
+8$8;8L8
+8"959=9Q:a:q:
+:1;A;U;d;l;
+<7<=<a<o<
+=&=7=^=w=
+>,>1>7>>>u>
+?T?d?~?
+0$050H0[0o0y0
+1%161=1B1M1^1e1j1u1
+2!2&212?2r2x2
+3'313C3K3U3g3o3y3
+374P4W4w4
+535C5
+5'6.646U6b6
+7%7/797C7M7W7a7k7u7
+8,868\8b8s8
+9A9G9\9f9
+:!:(:2:Q:p:
+;?;E;Y;
+< <K<q<
+=F=X=
+=I>_>g>n>s>x>}>
+>!?2?<?G?d?
+&080q0w0
+0&1<1D1K1P1U1Z1_1d1q1
+2B2\2i2
+3V3h3
+4$4)434H4P4}4
+4#5Z5l5
+6O6r6
+7Z7v7
+7f9x9 :':[:q:x;
+;P<W<~<
+1F1T1q1
+363B3
+3&434v4
+465C5
+5&676n6u6
+8%8l8
+869s9
+:":::
+;*;1;
+<V<h<
+<1=N=S=^=c=t=y=
+=H>N>_>w>
+?;?@?X?
+3!3`3
+4,515I5q5x5
+6A8O8\9f9p9
+9J:Q:
+:);D;O;
+;8<?<
+031P1f1m1}1
+1.252L2p2
+2^3s3
+4 4$464F4
+606G6n6z6
+6d7k7
+8Q8q8
+9V9p9{9
+:!;/;<;X;_;
+<(<-<8<=<K<P<^<c<q<v<
+>:>F>v>
+2S2e2p2
+393D3
+4E4L4
+5Q5e5
+5,6X6f6
+7$787G7l7z7
+7P8W8r8
+939>9b9
+:F:X:
+: ;T;`;n;~;
+<)<0<<<Y<e<x<
+>(>q>
+>m?{?
+0#0*0H0i0
+1'131H1j1}1
+222y2
+3(3E3Q3d3
+4w4~4
+5@5G5p5w5
+8(8n8
+9+9u9
+:6;H;
+<b<z<
+=)>0>J>c>
+?M?S?
+0$0k0
+1>1U1
+282>2D2v2~2
+2:3W3
+5?5G5
+7>9V9h9
+:2:v:
+:1;8;\;c;
+=9=L=X=
+0R0b0s0
+0/1q1
+252l2
+2;3\3
+8Z8b8m8t8
+869G9
+:/:M:
+;=;v;
+<F<X<
+=L=t=y=
+0;0w0
+4!404;4S4Z4`4e4r4x4
+5#5)5<5A5P5U5f5l5
+6)6/6C6P6a6h6u6z6
+7J7v7
+7a8h8n8t8
+8+969<9F9O9[9o9~9
+:%:8:=:L:T:g:l:{:
+;';];
+<(<4<J<Q<e<q<
+=!='=7=<=X=e=y=
+>,>8>N>]>
+?#?M?T?d?
+0&0A0X0i0o0
+1Q1w1
+1.2<2
+4U4e4
+6T7h7
+9 :2:N:`:k:}:
+:*;b;k;
+=->2>
+?*?1?`?g?
+1d1{1&282V2~2
+2a3h3
+3&4=4D4p4
+5,636[6b6
+647;7B7
+8?9P9W9
+"0+050T0]0
+232:2
+3Z3a3
+4 4$4(4,4044484<4@4D4H4L4
+6J6d6
+6@7G7
+7)8{8
+8h9}9E:J;d;z;
+;F<T<
+<B=U=k=
+?G?y?
+080?0Y0h0n0
+0-1D1
+1Y2v2
+363H3c3
+4&4A4
+445R5
+6?7F7`7
+9*9L9m9
+:&:H:h:v<
+>:>~>
+?0?u?
+0*1m1z1
+6#7@7]7m7}7
+9R:x:
+<5<=<C<X<b<l<
+=0>~>
+?%?,?B?M?W?d?y?~?
+0C0l0
+1M2X2
+3*3B3|3
+525L5Y5
+8`8w8
+8U9`9
+9[:f:
+&050:1{1
+3&3^3p3
+<I=P=
+?C?q?
+2&232
+3.4V4]4
+5$5D5d5
+5&6-6:6A6
+6&737v7
+8V8c8
+:6;D;
+;(</<V<d<
+=+=2=V=b=
+=B>N>Z>a>
+?q?}?
+0\0c0~0
+0&151p1
+1V2e2
+2H3O3
+415K5q5
+7.7M7\7q7
+8/969m9
+?%?u?|?
+0,0E0U0a0q0
+1[1b1
+1h2o2
+2a3h3
+5,535N5l5y5
+6$646g6w6
+6(7:7
+7+888C8H8p8}8
+8&9M9}9
+:3:Q:g:r:
+:";C;g;
+</<W<
+=G=o=
+>>>f>
+?.?V?j?y?
+373i3
+4M4h4
+5$595L5f5x5
+6L768=8
+8Y9j9
+:O:V:
+:$;9;J;
+<[=a=
+=6>H>
+>B?N?\?l?
+1!3(3
+899@9
+;";j;
+;?<s<
+<6=Q=`=
+=6>W>b>
+0F0M0t0{0
+0'121f1u1
+122>2L2\2
+3<3K3V3t3{3
+4!424>4L4\4y4
+5&5>5u5
+6+6T6\6r6
+7"7C7T7d7
+7!8.8W8
+939^9i9
+:-:2:P:g:v:}:
+:";I;
+;C<J<
+>]>i>u>
+0"1-1N1U1w1
+3O3|3
+3%444>4F4O4
+41585[5b5
+616E6m6
+717J7Z7~7
+8G8|8
+9&9C9J9`9w9
+:O:V:s:z:
+<0<7<M<z<
+=<=C=`=g=}=
+> >7>l>s>
+?3?:?P?g?
+0>0E0b0i0
+1F1X1y1
+1 2N2\2t2
+3(3O3q3
+4/4G4_4w4
+575O5g5
+626:6T6m6u6}6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8,8I8r8
+9+9l9
+9F:X:
+;);>;
+< <*<E<Q<v<
+=6=a=
+0 0A0
+0R1Y1
+292b2
+3)4W4
+636<6V6j6u6|6
+767F7
+8I8]8
+9&:5:K:~:
+;+;O;{;
+<U<a<n<
+<4=D=O=o=z=
+=T>_>
+?3?{?
+000Y0
+232{2
+303Y3
+4'5N5
+6%6:6A6Q6X6
+8W8~8
+:2:9:v:
+;1;D;v;|;
+<&<B<u<{<
+>-?9?G?W?
+0J0P0
+1=1G1[1i1r1
+1U2b2
+283F3d3q3
+5h6{6
+6 7H7p7
+8 8$8(8,8084888p8u8
+889q9
+;&;8;
+<#<*<3<R<p<
+=8=E=V=g=n={=
+>+>T>h>r>y>
+?;?Y?y?
+%0+0T0{0
+1I1O1p1
+2=2k2{2
+2.353?3N3t3
+3,4=4w4
+4&5<5
+5/6@6
+737y7
+8D8Q8
+9B9y9
+<,<B<
+===X=r=
+>H?O?~?
+0&0?0
+1=1H1M1
+2P2a2
+263K3a3f3{3
+4$4=4O4
+595>5a5s5
+5&6+6
+6,717
+9 9O9V9l9s9
+:0:[:b:}:
+;-;P;{;
+<-<4<M<p<
+=.=5=P=W=p=
+>)>T>[>v>}>
+?)?O?z?
+0/060O0u0
+0#1*1F1W1d1
+2Y2`2
+2&3<3
+4$484H4
+5Z5g5
+536@6
+6*7R7z7
+7*8R8z8
+9L9[9h9}9
+;?;W;h;|;
+0/0I0Z0h0q0
+0&1;1`1x1
+192s2
+3 313x3
+4,434F4[4
+5.5C5X5m5
+526>6L6\6h6
+:,:]:
+;J;Z;
+=*=3=<=
+>G>X>r>
+>$?o?
+0>1p1
+2X2_2
+2a3h3
+4!4/4f4x4
+53595{5
+6f6x6
+8M8Z8u8
+9$9*989F9T9b9m9v9
+:@:d:h:l:p:t:x:|:
+;j<w<
+>>>|>
+?"?q?
+010H0s0
+2F2S2
+414Y4
+4$5{5
+6+7[7v7
+8!8[8
+939N9j9u9
+;K<i<
+=.=z=
+>4?>?H?R?\?f?|?
+2,2<2k2p2
+3D3I3u3
+4#484Z4
+556]6n6
+787M7
+8%8,8=8V8{8
+9%9:9O9n9
+:::E:b:
+;\;`;d;h;l;p;t;x;
+<!=F=y=
+>C?s?}?
+010?0
+00171R1s1
+212H2X2h2x2
+<%=J=
+>u>~>
+?3?[?x?
+0B0H0Y0s0
+081R1n1y1
+2,2K2
+3)3R3X3l3
+4/464U4e4l4~4
+565b5
+6f6x6
+;7<><_<f<|<
+<A=G=\=f=
+>#?+?;?Y?
+020v0
+1)1C1M1
+2*2[2u2
+3F3[3
+4"5Q5s5
+6/666B6L6e6
+7!7K7U7i7
+8!8@8v8
+9%999Z9d9
+9,:v:
+;!;i;
+;*<n<
+=&=@=M=t=
+=3>E>a>
+?T?Z?o?y?
+0,1d1z1
+2:2J2h2
+2 343A3e3q3
+4&4k4z4
+5(5a5g5|5
+6%6d6
+7E7S7Y7f7s7
+8#8B8
+8&9,9@9]9j9
+:&:+:@:Z:f:}:
+:!;|;
+< <-<Z<v<
+=<=B=W=a=
+=D>R>
+?T?Z?o?y?
+1 1[1
+262C2R2\2f2u2
+3?3J3\3}3
+3&484q4w4
+6-6;6R6Y6c6
+7'7`7f7{7
+8E9K9`9j9
+9G:q:";s;x;
+=->3>w>
+1'1E1c1
+5R6v6
+6!7'7<7F7o7u7
+9Q9i9
+:A:i:
+;A;[;e;j;o;t;~;
+<6<H<
+='>\>
+0f0m0
+1D1J1_1i1
+1H2^2f2w2
+3+3g3
+4)424;4B4K4R4[4b4k4r4
+4-5K5X5v5{5
+5Z6a6w6
+6 7&7;7E7n7t7
+8$8Q8x8
+8!9'9<9F9o9u9
+:':2:=:`:|:
+;(;a;g;|;
+;L<_<g<r<}<
+=V=h=
+>2><>
+>&?8?v?
+0V0h0
+1 1*1
+2$282?2U2t2
+3&3O3U3f3
+3$4B4
+41575L5V5
+5'6C6_6
+7"7I7w7
+8B8N8\8h8~8
+9"9X9g9q9
+:g:y:
+;M;f;
+<%<A<w<
+=f=x=
+>&>@>J>
+?'?>?V?c?
+0"010>0c0x0
+1,1R1q1
+2 2*2S2Y2j2
+323A3W3
+364K4
+5-5L5
+556U6
+7 717C7T7v7
+8!868@8i8o8
+869R9n9
+99:O:
+;B;l;r;
+<(<o<
+=5=D=U=
+>f>{>
+?3?=?z?
+0Q0w0
+1$111J1Q1[1v1
+2F2X2
+3 3-3I3
+3B4f4n4
+4-545;5N5j5t5
+6W6b6
+697P7
+8)838E8O8Y8c8m8
+8+959L9y9
+:5:;:O:V:e:
+;&;K;Y;
+<:<O<d<
+=#=9=
+>3>@>`>
+>)?M?
+0d0m0y0
+141F1X1
+2(2r2
+2$3<3G3
+3"4J4\4t4
+565X5j5
+5'6@6]6h6
+677e7M8r8|8
+9!939Z9~9
+:A:j:
+;$;+;`;
+;4<:<O<Y<
+>E>c>}>
+?R?p?
+090a0
+1)1/1@1Z1d1
+2F3X3
+4 4*4
+7@7K7
+7(8G8N8s8
+9&989x9~9
+:&:I:X:w:
+:F;V;
+<!<(<V<h<
+=6=@=
+>!>>>K>
+>)?X?z?
+0K0Q0f0p0
+1g1u1
+6'6`6f6{6
+7#72777>7Y7h7o7v7|7
+8K8Q8f8p8
+:+;U;a;o;
+<%<^<l<
+=f={=
+>3>=>x>
+?%?d?
+&0:0s0y0
+2F2X2
+4B4[4s4
+505B5J5]5d5
+5+656
+7.7^7e7{7
+7>8D8Y8c8
+8'9F9s9}9
+:(:4:=:F:Z:e:j:o:
+</<8<B<
+<.===G=c=x=
+3'3-3<3C3I3O3U3q3|3
+4(4@4X4v4
+5&555{5
+6 6T6c6l6
+6F7X7
+8,8F8
+9B9H9b9
+:+:D:n:
+;7;c;
+;E<j< =Y=k=
+0,0;0Z0a0w0
+1Q1W1l1v1
+152]2
+2+3f3n3
+536C6b6z6
+7+7@7U7_7i7
+768K8
+:*:b:n:|:
+;G;T;a;q;
+<#<;<I<[<j<
+>'>]>o>z>
+?2?8?I?c?m?
+0+0;0K0[0k0u0
+1:1I1[1~1
+142\2
+3(353B3I3[3y3
+4%4:4D4W4_4r4z4
+4+515F5P5|5
+5t6y6
+6f7x7
+8)8F8P8
+9(9]9
+;O;V;l;
+;#<)<><H<q<w<
+=N=`=n=
+><>^>
+?Q?W?l?v?
+0V0h0
+101P1j1
+2]2f2u2
+5%5?5I5
+666B6l6
+727<7e7k7
+889B9y9
+:):/:T:g:n:y:
+;!;';/;E;K;Y;i;o;
+<0<C<J<V<]<g<}<
+=!=4=;=F=M=\=o=v=
+>!>J>P>d>
+?$?.???P?a?r?
+0f0x0
+1&282q2w2
+3'3f3u3
+5+5v5
+6&787q7w7
+838v8
+:C:k:
+:a;z;
+<3<U<r<
+=e>y>
+0 0N0
+3&424V4]4x4
+5e5w5
+6>6R6\6f6|6
+7!7(7
+8?8E8Y8
+9.:C:
+:%;=;g;
+<A<i<u<
+>b>j>
+>D?I?f?q?
+0`0w0}0
+0f2x2
+2H3d3e4
+5!5r5y5
+5V6d6}6
+8f8r8
+:#:0:T:[:v:
+:#;);X;|;
+<V<e<
+?^?u?
+20373L3
+4!4x4
+545r5y5
+6(6C6u6
+6#7P7
+949A9G9l9z9
+:9:H:\:
+:7;z;
+;><E<|<
+=6>H>
+?<?^?
+010;0v0
+10272`2
+3?3F3
+4F4U4\4}4
+4T5_5f5k5
+6$6u6
+7&777m7
+8%8.898I8T8i8s8
+9+959b9
+9%:1:Q:V:x:|:
+;!;&;+;0;5;:;?;D;R;
+=-=9=S=X=^=n=
+=\>o>
+?A?M?u?}?
+0L0S0Y0
+121_1y1
+2#2O2
+3+3;3Q3k3}3
+5,515;5]5p5
+5(6;6@6E6
+74787<7@7D7H7L7P7T7X7\7`7d7h7
+808;8O8Z8e8
+8-939|9
+98:>:
+:+;b;i;s;
+= =J=X=\=`=d=h=l=p=t=x=|=
+>&>->a>{>
+?1?s?
+0[0}0
+1E1t1
+1[2x2
+3!3/3:3H3]3x3
+494H4M4j4
+525B5R5i5n5u5|5
+6#6.6?6E6L6R6~6
+7P7V7|7
+8+8J8Q8q8|8
+8E9y9
+:-:8:B:^:c:z:
+;8;k;q;
+<&<9<@<G<M<x<
+=[=d=
+>.>3>:>A>H>N>l>p>t>x>
+?*?b?n?|?
+0=0s0
+181i1r1
+1$252<2X2c2m2r2
+3(313:3C3L3U3^3n3w3
+414M4R4X4h4
+5#606C6p6
+7:7D7v7
+8<8[8~8
+8)9>9h9o9
+9k:y:
+;:;[;
+=/>K>
+?1?Q?`?
+0D0P0^0n0
+0!161D1T1
+2B3N3\3l3
+595\5
+8a8o8{8
+:$:;:E:L:g:r:
+;);x;
+<!<D<O<V<o<z<
+=-=8=H=f=
+>.>M>s>z>
+?2?=?c?u?
+0 010=0B0h0{0
+1A1h1
+3!4c4
+4&585
+646\6w6
+8>8f8u8
+8'9M9q9
+:0:R:
+;q;z;
+<2<U<o<
+=8=[=
+=2>a>y>
+>!?I?
+080h0
+0O1h1o1
+2-2]2
+3:3G3p3
+3 4B4d4
+4B5G5_5n5
+6B6Q6h6
+768H8o8u8
+8!9(9M9T9
+:%:8:
+:";.;<;L;h;
+;,<3<
+=(=I=[=
+=.>V>k>q>
+?,?E?n?
+0)000
+1(1B1H1U1n1
+2&272=2L2Q2V2c2s2
+3$3M3o3u3{3
+414D4
+5$5H5
+676r6z6
+7(7R7d7o7
+8#8.8T8`8n8~8
+969L9Y9g9v9
+9 :+:6:=:]:}:
+;";_;
+<1<A<V<c<
+=-=J=U=v=
+=A>J>P>a>m>r>
+1)1I1O1\1i1
+2.252Q2n2
+363f3x3
+434V4]4h4x4
+5&505[5
+616@6z6
+7#7e7
+898M8
+9#9a9h9
+:%:Z:a:
+:[;j;
+;-<D<O<
+=C=t={=
+>(>Q>z>
+?D?h?
+1B1e1
+3(3/3\3c3
+3!4(4I4P4W4^4e4l4z4
+5+525
+676B6u6
+8I8^8d8r8{8
+:1:l:
+>:>c>s>
+1E1K1X1e1
+252\2f2}2
+2+3W3f3
+4*4G4s4
+42595P5W5
+5\6y647R7n7
+8&81868G8N8[8g8r8w8
+98:`:g:
+=S=Z=
+=E>L>
+2b3u3|3
+414F4X4
+7 7'7.7?7V7n7t7
+8)808@8^8e8
+9%91999A9O9\9i9y9
+:&:/:j:
+=R=y=
+>">.><>L>X>t>
+?!?(?
+212@2G2N2U2\2c2h2r2y2
+3(393J3T3^3c3w3
+4#474H4Y4j4t4~4
+6"7>7J7e7t7
+8"818V8z8
+9%9C9W9n9
+98:C:H:]:
+;";G;k;
+<;<G<a<|<Z=
+90R0k0
+1I1u1
+1<2j2
+5 5(5K5f5
+717?7
+:":E:K:Y:_:r:x:
+;$;*;@;F;i;o;};
+<#<0<7<?<R<X<j<y<
+=#=*=1=8=?=F=P=V=g=m=
+>]>d>k>r>y>
+2E6i6
+7"7W7z7
+;:;E;J;U;};
+<W<b<g<o<
+=!=[=m>t>
+?#?+?4?A?\?b?w?
+2%3+3>3D3
+4.464?4L4S4Z4x4~4
+4B5N5\5l5
+:R:Z:
+:=;O;
+<K<e<
+=,>R>a>x>~>
+>W?d?
+0&0D0
+2 2+212<2C2H2Q2_2d2t2y2
+3 3'3O3W3d3o3x3
+4%43494?4E4K4Q4X4_4f4m4t4{4
+5+595?5E5K5Q5W5^5e5l5s5z5
+717A7d7D8S8\8i8
+: :):.:A:U:Z:m:
+< <)<X<a<j<x<
+1Y1q1v1
+637g7o7
+959C9
+:(;/;4;8;<;@;
+?0?B?
+3-5[5p5
+696C6M6[6v6
+<(?p?
+1e2p4u4
+6&6F6T6[6a6
+7?7Z7_7d7
+838=8I8N8S8t8
+819:9B9
+;1;F;`;s;
+;A=[=j=x=
+>0>=>K>Y>d>z>
+;";7;
+<T=X=\=`=d=h=l=p=
+4D5`516N6t6d7
+171T1_1
+2]7u9
+>X>`>
+>#?,?
+2E2M2
+6<:D=L=
+0i2q2
+'6h6l6p6t6x6|6
+6M7c7
+8#8/8B8G8S8X8i8
+8=9O9W9a9j9{9
+:!:':
+=2>J>|>
+0\0g0
+213D3
+4"4C4`4
+5%6V6
+9F9`9w9~9
+:::K:e:n:
+;';3;=;C;W;c;
+<K<Q<}<
+=&=M=f=u=
+>!>&>A>K>g>r>w>|>
+?#?(?F?P?l?w?|?
+0:0V0a0f0k0
+1)171F1m1
+4I4y4
+5N5s5
+5*606
+738O8
+W0"3a3h3x3
+5'696?6
+7*7T7_7j7p7y7
+8#868U8
+989x9
+=I=h=
+5"555C5J5P5k5r5
+9(91:
+;";3;8;M;
+?&?1?H?x?
+0F0Y0
+1B2G2M2R2
+4D4f4
+575U5`5
+5@6M6Z6g6~6E7
+7"8P8
+>)>;>M>_>q>
+1R1g1x1
+2T2p2
+2K3j3
+8.8P8
+9::D:
+</<6<M<c<
+< =3===^=
+>,>g>n>
+^01898p8w8
+%3,333:3
+;M<h<~<
+1:3L3^3
+<,<6<T<_<
+<9=Q=
+1!264<4E4x4
+606A6
+8(838@8p8
+;-<@<v<
+<#=l=
+?"?Q?h?
+6!6)6G6O6
+7P7z7
+8A9x9
+<6<F<
+2@2`2
+2F3K3]3{3
+5#5'5+5/53575A5
+8)9o9
+9!:g:
+;1<i<
+=#=g=
+0A0q0
+1!1C1Q1s1
+5=6q6
+:A:q:
+:9;t;
+=1=a=
+4$4}4
+515a5
+6G6q6
+8k9G:
+?V?a?{?
+8!9a9
+4!5w5
+071y1
+2(3b3
+6Q6w6
+:,;i;
+=g>U?
+010|0
+011a1
+2&222J2W2^2d2
+3&323D3H3U3Y3q3
+3(4H4P4X4`4h4p4x4
+5<5D5P5p5x5
+60686@6H6T6x6
+7 7@7L7l7x7
+8$808P8\8|8
+9(909<9\9h9
+:(:H:P:X:`:h:p:x:
+;$;,;4;<;D;L;T;\;d;l;t;|;
+<(<4<T<`<
+= =,=L=T=\=d=p=
+>(>P>X>\>d>
+?$?,?4?@?`?h?p?x?
+0(0H0T0t0|0
+1$1H1h1p1x1
+2$2,282X2d2
+3 3,3L3X3x3
+4$404P4\4|4
+5<5H5h5t5
+6 646D6L6`6h6
+7 7@7H7P7\7|7
+808<8\8h8
+9 9,9T9x9
+: :@:L:l:x:
+;4;@;`;l;
+<$<D<L<p<|<
+=8=D=d=l=
+>8>D>d>p>
+?$?,?4?<?D?L?T?`?
+0$0D0L0T0`0
+1 1(141X1x1
+2 2(20282@2H2T2x2
+3(3H3P3X3`3h3p3x3
+4$404T4t4|4
+5$5,585X5`5h5p5x5
+6$6,646<6H6h6p6x6
+7 7(70787D7d7l7t7|7
+8,888@8\8|8
+9$9,949@9`9h9p9|9
+:(:0:8:@:H:P:X:`:h:p:x:
+;(;H;P;X;`;h;p;x;
+<,<8<@<X<`<h<x<
+=<=D=L=T=`=
+>,>8>@>\>|>
+?@?`?h?p?x?
+0$0,040<0D0L0T0\0d0l0t0
+1 1(10181@1H1P1X1`1h1p1x1
+20282@2H2`2h2p2|2
+383@3H3P3\3|3
+444<4D4L4T4\4d4l4t4|4
+5(5L5l5t5|5
+60686@6H6P6X6d6
+7$7,747@7`7h7p7|7
+8$8,848<8D8L8T8\8d8l8t8
+9 9(909<9\9d9l9t9|9
+: :@:L:l:x:
+;(;0;H;P;X;h;|;
+<$<D<L<T<\<d<l<t<|<
+=,=L=T=\=d=l=t=|=
+><>\>d>l>t>|>
+?$?,?4?<?H?h?p?x?
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1H1h1p1|1
+2<2D2P2
+3 3(343\3
+484@4L4l4t4
+585X5`5h5p5x5
+6(6H6P6\6|6
+70787D7d7l7x7
+888X8`8h8p8x8
+9@9`9h9p9x9
+: :(:0:8:D:d:p:
+;0;P;X;`;h;p;x;
+<$<0<P<X<`<l<
+=,=4=@=`=l=
+><>\>d>l>t>|>
+>0?P?\?t?x?
+0,080@0l0p0
+14181T1X1`1h1p1t1|1
+282X2t2x2
+383X3d3
+4 4@4`4
+5 5@5H5\5d5l5t5x5|5
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0
+1 1$1(1,1014181<1D1T1d1t1
+2$242D2T2d2t2
+3$343D3T3d3t3
+4$444D4T4d4t4
+5$545D5T5d5t5
+6$646D6T6d6t6
+7$747D7T7d7t7
+8$848D8T8d8t8
+9$949D9T9d9t9
+:$:4:D:T:d:t:
+;$;4;D;T;d;t;
+<$<4<D<T<d<t<
+=$=4=D=T=d=t=
+>$>4>D>T>d>t>
+?$?4?D?T?d?t?
+0$040D0T0d0t0
+1$141D1T1d1t1
+2$242D2T2d2t2
+3$343D3T3d3t3
+4$4,444<4D4L4T4\4d4l4t4|4
+9,9094989<9@9D9H9L9P9T9X9`9d9
+:,:<:L:\:l:|:
+;,;<;
+= =8=D=H=L=h=l=
+3 3$3(3,3@4h4
+5<5\5|5
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+210902183259Z
+220901183259Z0t1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Corporation0
+(NI51
+Microsoft Corporation1
+230012+4675960
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+v0B5V,
+b}x`i
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20110
+110708205909Z
+260708210909Z0~1
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+S0Q0O
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+R0P0N
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+Legal_policy_statement
+e_.,>
+D=xz#
+*?*kXIc
+QEX82q'
+WqVNHE
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 2011
+Microsof
+http://www.microsoft.com0
+;-^pb
+@$/ct
+20220408230424.425Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:0842-4BE6-C29A1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192739Z
+230126192739Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:0842-4BE6-C29A1%0#
+Microsoft Time-Stamp Service0
+SF_#C
+0w?2WP/
+lq0rN
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+3oGmt
+FL7t%
+_Nl&It
+D0$F3
+pPUq*
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:0842-4BE6-C29A1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220409004155Z
+20220410004155Z0t0:
+1,0*0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+ZPWl$
+::Vq#
+m|<rJc
+%A(5)

@@ -1,0 +1,445 @@
+!This program cannot be run in DOS mode.
+$Rich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+%s\%s
+sqlite3_open
+sqlite3_open_v2
+sqlite3_open16
+sqlite3_exec
+sqlite3_free
+sqlite3_close
+sqlite3_prepare_v2
+sqlite3_prepare16_v2
+sqlite3_column_count
+sqlite3_column_int
+sqlite3_column_int64
+sqlite3_column_text
+sqlite3_column_text16
+sqlite3_step
+sqlite3_reset
+sqlite3_finalize
+mozcrt19.dll
+sqlite3.dll
+mozsqlite3.dll
+select b.id, b.title, b.dateAdded, b.lastModified, b.type, b.fk, b.position from moz_bookmarks as b where b.parent=%d order by b.position
+select b.id, b.title, b.dateAdded, b.lastModified from moz_bookmarks as b where b.type=2 and b.parent=%d
+select b.id, b.title, p.url, b.dateAdded, b.lastModified, i.url from moz_bookmarks as b, moz_places as p left outer join moz_favicons as i on p.favicon_id=i.id where b.fk=p.id and b.parent=%d
+select b.id, b.title, p.url, b.dateAdded, b.lastModified from moz_bookmarks as b left outer join moz_places as p on b.fk=p.id where b.id=%d;
+select count(*), p.url from moz_places as p where p.id=%d
+select count(*), b.title,ai.content,a.name from moz_bookmarks as b inner join moz_items_annos as ai inner join moz_anno_attributes as a on b.id=ai.item_id and a.id=ai.anno_attribute_id where a.name='livemark/feedURI' and b.id=%d
+Smart Bookmarks
+<DT><H3 FOLDED ADD_DATE="%.0f">%s</H3>
+<DL><p>
+</DL><p>
+<DT><A HREF="%s" ADD_DATE="%.0f" FEEDURL="%s">%s</A>
+<DT><A HREF="%s" ADD_DATE="%.0f" LAST_MODIFIED="%.0f" ICON_URI="%s">%s</A>
+ieframe.dll
+<DT><H3 FOLDED>%s</H3>
+<TITLE>Bookmarks</TITLE>
+<H1>Bookmarks</H1>
+<!DOCTYPE NETSCAPE-Bookmark-file-
+<!-- This is an automatically generated file.
+It will be read and overwritten.
+Do Not Edit! -->
+</DL><p>
+children
+GetFolderChildren
+FIREFOX
+folder
+SetBookmarkUrl
+GetBookmarkUrl
+GetSortedBookmarksFromParentId
+roots
+bookmark_bar
+Bookmarks bar
+other
+Bookmarks Menu
+Unsorted Bookmarks
+version
+GetSerializedJSONInCoTaskMemory
+CreateTempBookmarkFile
+\u003C
+select b.id, b.title, b.create_time, b.last_modify_time, b.is_folder, b.pos, b.url from tb_fav as b where b.parent_id=%d order by b.pos
+ConvertUserInputId
+ExportFavoritesJson
+ExportFavoritesHTML
+InitDatabase
+360SE
+%windir%\System32\ieframe.dll
+Links
+Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache
+@%windir%\System32\ieframe.dll,-12385
+Local Settings\Software\Microsoft\Windows\Shell\MuiCache
+Software\Microsoft\Windows\ShellNoRoam\MuiCache
+@%windir%\System32\ieframe.dll.mui,-12385
+[IECleanup LIB] CleanupMuiCache()
+[IECleanup LIB] CleanupMuiCache() - Successfully deleted '%s'
+[IECleanup LIB] CleanupMuiCache() - Unable to delete '%s', Result=%d
+IEXPLORE.EXE
+MSFEEDSSYNC.EXE
+SYSPREP.EXE
+EXPLORER.EXE
+LOADER42.EXE
+WWAHOST.EXE
+IEUTLAUNCH.EXE
+TE.EXE
+Te.ProcessHost.exe
+FAKEVIRTUALSURFACETESTAPP.EXE
+MSOOBE.EXE
+NETPLWIZ.EXE
+USERACCOUNTBROKER.EXE
+MSHTMPAD.EXE
+FirstLogonAnim.exe
+RESTOREOPTIN.EXE
+DCIScanner
+microsoftedge.exe
+microsoftedgecp.exe
+microsoftedgebchost.exe
+microsoftedgedevtools.exe
+microsoftedgesh.exe
+pickerhost.exe
+browser_broker.exe
+jshost.exe
+authhost.exe
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+ntdll.dll
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+RtlAreLongPathsEnabled
+\UNC\
+\\?\UNC\
+::$DATA
+{00000000-0000-0000-0000-000000000000}
+\\?\Volume
+Local\SM0:%lu:%lu:%hs
+#9Vu7
+ExtExportFailed
+userInputID
+reason
+browserType
+hrValue
+param
+@ExtExportFailedPII
+userInputID
+reason
+browserType
+hrValue
+databaseLocation
+dllLocation
+tempBookmarkLocation
+ExtExportBegin
+userInputID
+ExtExportEnd
+userInputID
+hrValue
+Microsoft.Windows.App.Browser
+extexport.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.text
+.text$di
+.text$mn
+.text$yd
+.xdata$x
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+E(SVW
+)_^[]
+VVhS.@
+\u.Rh
+uRh  @
+PQRRh
+D$,WP
+VWPh<"@
+t(ha0
+Ph<"@
+x3ha0
+PQh0%@
+Ph0%@
+w$hh)@
+w h<*@
+w hT*@
+SVWRQ
+VWhh*@
+E(SV3
+u'h\+@
+j\_f9~`u
+f9^bu
+t,j\Yf;H
+QhH"@
+Yf9>u
+`f9>u6
+TSVW3
+j:Yf9H
+j:Yf9H
+PhD,@
+ufj.[f9
+j.[f9
+j.[f9X
+tnj.^f;
+u*f9p
+j.Xf9
+j.Zf9
+j:Zf9W
+j\^f;
+uof92
+93uFV
+&PWSV
+t$hVQ
+t$hVQ
+Y__^[
+EventWriteTransfer
+EventUnregister
+EventSetInformation
+EventRegister
+ADVAPI32.dll
+GetLastError
+GetProcAddress
+FreeLibrary
+LoadLibraryExW
+WriteFile
+CreateFileW
+CloseHandle
+lstrcmpW
+KERNEL32.dll
+_vsnwprintf
+_itow_s
+malloc
+_callnewh
+_XcptFilter
+__p__commode
+_amsg_exit
+__getmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+_controlfp
+_except_handler4_common
+CoTaskMemFree
+CoTaskMemRealloc
+IIDFromString
+ole32.dll
+StrCmpNIW
+SHLWAPI.dll
+RegOpenKeyExW
+RegDeleteValueW
+RegCloseKey
+Sleep
+SetUnhandledExceptionFilter
+GetModuleHandleW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+DeleteFileW
+MoveFileW
+CreateDirectoryW
+GetModuleFileNameW
+DecodePointer
+GetModuleFileNameA
+CreateSemaphoreExW
+HeapFree
+SetLastError
+ReleaseSemaphore
+GetModuleHandleExW
+WaitForSingleObject
+LocalAlloc
+ReleaseMutex
+FormatMessageW
+OutputDebugStringW
+WaitForSingleObjectEx
+OpenSemaphoreW
+HeapAlloc
+CreateMutexExW
+LocalFree
+GetProcessHeap
+DebugBreak
+IsDebuggerPresent
+LoadStringW
+USER32.dll
+_wcsicmp
+memcpy_s
+wcspbrk
+iswalpha
+wcschr
+wcsncmp
+StrCmpNW
+StrStrW
+PathFileExistsW
+PathFindFileNameW
+StrStrIW
+SHSetLocalizedName
+SHGetFolderPathAndSubDirW
+SHELL32.dll
+ExpandEnvironmentStringsW
+iertutil.dll
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity version="5.1.0.0"
+       processorArchitecture="x86"
+       name="extexport"
+       type="win32"/>
+    <description>External Import Export for Internet Explorer</description>
+    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+        <security>
+            <requestedPrivileges>
+                <requestedExecutionLevel level="asInvoker" />
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+    <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+        <application>
+            <!--The ID below indicates application support for Windows 8 -->
+            <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>
+        </application>
+    </compatibility>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Internet Explorer ImpExp FF exporter
+FileVersion
+11.00.22621.1 (WinBuild.160101.0800)
+InternalName
+extexport
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+extexport.exe
+ProductName
+Internet Explorer
+ProductVersion
+11.00.22621.1
+OleSelfRegister
+VarFileInfo
+Translation
+0L0P0X0`0x0
+3$3:3D3
+3"4A4a4
+5$5(5.525i5
+5&636Q6{6
+7'7/747B7G7U7Z7h7m7{7
+8"80858C8H8V8a8
+9 :U:
+0U1d1
+414;4W4]4c4h4
+647c7
+8.848T8d8n8
+: :%:]:h:$;.;3;
+<b<|<
+???D?u?
+.030J0O0x0
+1>1C1Z1_1
+1 2&202=2E2J2R2`2m2s2~2
+656G6X6u6
+6G7T7}8
+8!9:9
+:F:V:[:p:
+;*;S;
+;L<R<\<i<o<u<
+=+=6=N=a=f=
+>L>f>}>
+?"?,?U?o?
+0(0H0P0V0b0m0
+1%101;1Q1j1q1
+2$2*282E2P2V2
+2&3N3
+3D4M4Z4k4
+6%61676A6S6b6o6
+6&707M7b7i7p7
+8&858<8K8R8d8k8}8
+9'9.9=9D9O9V9f9m9
+:k:q:
+=P=`=p=
+>R>x>
+?-?H?b?s?
+0&0/0?0H0i0
+6!686K6Z6m6
+7,767L7w7
+90:b:
+;&;D;h;r;
+< <,<U=_=
+0S0a0
+1E1K1X1c1|1
+2"2.262J2
+343~3
+4,5|5
+=D>l>
+2/2c2
+4'4>4D4r4w5
+6g7n7
+;(<4<:<A<J<P<X<^<k<s<y<
+=%=-=2=7=Y=_=f=k=x=
+>">'>g>
+?'?8?@?V?^?
+90Q0W0f0s0
+3#323:3S3b3m3
+474=4C4I4O4U4\4c4j4q4x4
+5%5.5A5M5Y5e5
+64686X6t6x6
+0(0,04080@0D0L0

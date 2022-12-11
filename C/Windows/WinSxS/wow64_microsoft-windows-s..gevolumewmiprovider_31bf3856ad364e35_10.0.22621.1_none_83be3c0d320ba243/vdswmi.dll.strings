@@ -1,0 +1,1231 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+CVolume::EnumInstance
+VolumeHoldsPagefile
+VolumeIsDirty
+INCSTRH
+base\stor\wmi\inc\vs_str.hxx
+INCVOLH
+GetDeviceName
+\\?\GLOBALROOT
+CVssAutoString::CopyFrom
+base\stor\wmi\vds\volutil.cpp
+CVssAutoString::AllocateString
+base\stor\wmi\inc\vs_vol.hxx
+GetVolumeDrive
+CVssVolumeIterator::SelectNewVolume
+base\stor\wmi\vds\vdsclasses.cpp
+Label
+Caption
+DeviceID
+Capacity
+Automount
+DriveType
+BlockSize
+FreeSpace
+SystemName
+FileSystem
+Compressed
+BootVolume
+IsBootDrive
+DriveLetter
+DirtyBitSet
+SerialNumber
+SystemVolume
+VolumeIsReady
+VolumeIsValid
+QuotasEnabled
+VolumeIsFloppy
+IndexingEnabled
+PageFilePresent
+QuotasIncomplete
+QuotasRebuilding
+VolumeIsMountable
+SupportsDiskQuotas
+CVolume::LoadInstance
+MaximumFileNameLength
+VssGetVolumeDisplayName
+SupportsFileBasedCompression
+CVssVolumeIterator::IsVolumeValid
+base\stor\wmi\vds\instanceprov.cpp
+CInstanceProv::DoCreateInstanceEnumAsync
+CVolume::Initialize
+base\stor\wmi\provider\util.cpp
+INCLISTH
+CreateClass
+Win32_Volume
+Win32_MountPoint
+Win32_VolumeQuota
+Win32_VolumeUserQuota
+CInstanceProv::Initialize
+INCTYPEH
+CVssSafeCriticalSection::Init
+base\stor\wmi\inc\vs_types.hxx
+SYSTEM\CurrentControlSet\Services\VSS\Debug\Tracing
+SYSTEM\Setup
+SystemSetupInProgress
+bad allocation
+generic
+unknown error
+iostream
+iostream stream error
+system
+invalid string position
+string too long
+permission denied
+file exists
+no such device
+filename too long
+device or resource busy
+io error
+directory not empty
+invalid argument
+no space on device
+no such file or directory
+function not supported
+no lock available
+not enough memory
+resource unavailable try again
+cross device link
+operation canceled
+too many files open
+permission_denied
+address_in_use
+address_not_available
+address_family_not_supported
+connection_already_in_progress
+bad_file_descriptor
+connection_aborted
+connection_refused
+connection_reset
+destination_address_required
+bad_address
+host_unreachable
+operation_in_progress
+interrupted
+invalid_argument
+already_connected
+too_many_files_open
+message_size
+filename_too_long
+network_down
+network_reset
+network_unreachable
+no_buffer_space
+no_protocol_option
+not_connected
+not_a_socket
+operation_not_supported
+protocol_not_supported
+wrong_protocol_type
+timed_out
+operation_would_block
+address family not supported
+address in use
+address not available
+already connected
+argument list too long
+argument out of domain
+bad address
+bad file descriptor
+bad message
+broken pipe
+connection aborted
+connection already in progress
+connection refused
+connection reset
+destination address required
+executable format error
+file too large
+host unreachable
+identifier removed
+illegal byte sequence
+inappropriate io control operation
+invalid seek
+is a directory
+message size
+network down
+network reset
+network unreachable
+no buffer space
+no child process
+no link
+no message available
+no message
+no protocol option
+no stream resources
+no such device or address
+no such process
+not a directory
+not a socket
+not a stream
+not connected
+not supported
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+owner dead
+protocol error
+protocol not supported
+read only file system
+resource deadlock would occur
+result out of range
+state not recoverable
+stream timeout
+text file busy
+timed out
+too many files open in system
+too many links
+too many symbolic link levels
+value too large
+wrong protocol type
+Y&iSan
+hr: 0x%08x
+%s %s
+Memory allocation error
+Volume object path initialization failed
+CVolume::AddMountPoint
+CVolume::AddMountPoint: SetVolumeMountPoint failed %#x
+CVolume::Mount
+CVolume::Mount: CreateFile failed %#x
+CVolume::Dismount
+Cannot offline the volume because it has mountpoints
+DeviceIoControl(IOCTL_VOLUME_SUPPORTS_ONLINE_OFFLINE) failed %#x
+DeviceIoControl(FSCTL_LOCK_VOLUME) failed %#x
+DeviceIoControl(FSCTL_DISMOUNT_VOLUME) failed %#x
+DeviceIoControl(IOCTL_VOLUME_OFFLINE) failed %#x
+Volume cannot be force dismounted because it is already locked
+CreateFile failed %#x
+CVolume::ScheduleAutoChk
+Invalid volume name, %lS
+\\?\Volume
+StringCchPrintf failed, %#x
+chkntfs.exe
+CCmdProcessor::InitializeAsClient failed, %#x
+CCmdProcessor::LaunchProcess failed, %#x
+CCmdProcessor::Wait failed, %#x
+CVolume::Format
+Format returned unexpected error code: %#x
+MountPoint volume key property not found
+MountPoint directory key property not found
+Directory object path initialization failed
+MountPoint volume key property DeviceID not found
+MountPoint directory key property Name not found
+CMountPoint::PutInstance
+CMountPoint::PutInstance Volume<%lS> Directory<%lS>
+CMountPoint:PutInstance mount point already exists
+C MountPoint: PutInstance: SetVolumeMountPoint failed %#x
+StringCchCopy() [0x%08lx]
+invalid map/set<T> iterator
+Storage Volume WMI Provider
+Directory
+Volume
+VolumeIsSystem
+SystemPartition
+SYSTEM\Setup
+base\stor\wmi\provider\vs_trace.cxx
+****************************************************************
+**  TRACING FINISHED - ProcessId: 0x%x, ContextId: 0x%x
+**  Current time: %s
+**  Elapsed time: %d seconds
+**  Command-line: %s
+**  TRACING STARTED - ProcessId: 0x%x, ContextId: 0x%x
+TraceFile
+TraceLevel
+TraceEnterExit
+TraceToFile
+TraceToDebugger
+TraceTimestamp
+TraceFileLineInfo
+TraceForceFlush
+(Unknown source file)
+CBsDbgTrace::PrePrint: TRACING ERROR: Unable to open trace file, dwRet: %u
+CBsDbgTrace::PrePrint: TRACING ERROR: Unable to lock trace file, skipping trace record, dwRet: %u
+CBsDbgTrace::PrePrint: TRACING ERROR: Unable to set end of file, skipping trace record, dwRet: %u
+CBsDbgTrace::PrePrint: TRACING ERROR: Unable to unlock trace file, dwRet: %u
+[%010u,
+0x%06x:0x%04x:0x%08x] 
+%s(%04u): 
+Software\Classes\CLSID\%lS
+InprocServer32
+ThreadingModel
+InProcServer32
+Software\Classes\CLSID
+%s: %s
+%s: Throwing HRESULT code 0x%08lx. Previous HRESULT code = 0x%08lx
+HRESULT EXCEPTION CAUGHT: hr: 0x%x
+Standard out of memory exception caught!
+UNKNOWN EXCEPTION CAUGHT, returning hr: 0x%x
+GetVolumePathNamesForVolumeName(%s, 0, 0, %p)
+GetVolumePathNamesForVolumeName(%s, %p, %lu, 0)
+StringCchCopyW
+Rethrowing 0x%08lx
+FindFirstVolumeW( [%s], MAX_PATH)
+FindNextVolumeW( %p, [%s], MAX_PATH)
+SpawnInstance failed, hr<%#x>
+CVolume::GetObject
+CVolume::GetObject: volume key property not found
+Unsupported volume GUID, hr<%lS>
+GetComputerName failed %#x
+GetDiskFreeSpace failed for volume %lS, %#x
+GetVolumeInformation failed for volume %lS, %#x
+GetDiskFreeSpace failed for volume, %lS
+GetFileAttributes failed for volume %lS, %#x
+unable to CoCreate IDiskQuotaControl
+IDiskQuotaControl::Initialize failed for volume %lS
+CVolume::PutInstance
+Volume key property DeviceID not found
+CVolume::PutInstance: NULL volume name
+Attempt to modify an unsupported or unmountedable volume, %lS
+CVolume::SetDriveLetter
+SetDriveLetter: invalid drive letter, %lS
+SetDriveLetter: unexpected drive letter format from GetVolumeDrivePath, %lS
+drive letter is assigned to another volume
+drive letter is unavailable until reboot
+Drive letter deletion is blocked for this volume %lS
+StringCchPrintf failed %#x
+SetVolumeMountPoint failed, volume<%lS> drivePath<%lS>
+CVolume::SetLabel
+SetVolumeLabel failed, volume<%lS> label<%lS>
+CVolume::SetContentIndexing
+GetFileAttributes failed, volume<%lS>
+SetFileAttributes failed, volume<%lS>
+CVolume::ExecuteMethod
+Invalid method called, %lS, hr<%#x>
+CVolume::ExecAddMountPoint
+Volume::AddMountPoint called with no parameters, hr<%#x>
+ExecAddMountPoint: volume key property not found
+Volume::AddMountPoint: out of memory, hr<%#x>
+ExecAddMountPoint: Directory param is NULL
+AddMountPoint GetMethod failed, hr<%#x>
+CVolume::ExecMount
+CVolume::ExecMount: Volume object path initialization failed
+ExecMount: volume key property not found
+Mount GetMethod failed, hr<%#x>
+CVolume::ExecDismount
+Volume::Dismount called with no parameters, hr<%#x>
+ExecDismount: volume key property not found
+Volume::Dismount out of memory, hr<%#x>
+ExecDismount: Force param is NULL
+ExecDismount: Permanent param is NULL
+Dismount GetMethod failed, hr<%#x>
+CVolume::ExecDefrag
+Volume::Defrag called with no parameters, hr<%#x>
+ExecDefrag: volume key property not found
+ExecDefrag: Force param is NULL
+Defrag GetMethod failed, hr<%#x>
+DefragAnalysis object creation failed, hr<%#x>
+CVolume::ExecDefragAnalysis
+ExecDefragAnalysis: volume key property not found
+DefragAnalysis GetMethod failed, hr<%#x>
+CVolume::Chkdsk
+Volume::Chkdsk called with no parameters, hr<%#x>
+ExecChkdsk: volume key property not found
+ExecChkdsk: FixErrors param is NULL
+ExecChkdsk: VigorousCheck param is NULL
+ExecChkdsk: SkipFolderCycle param is NULL
+ExecChkdsk: ForceDismount param is NULL
+ExecChkdsk: RecoverBadSectors param is NULL
+ExecChkdsk: OkToRunAtBootUp param is NULL
+Chkdsk GetMethod failed, hr<%#x>
+CVolume::ExecScheduleAutoChk
+Volume::ExecScheduleAutoChk called with no parameters, hr<%#x>
+Volume::ExecScheduleAutoChk: out of memory, hr<%#x>
+ExecScheduleAutoChk: volume array param is NULL
+ExecScheduleAutoChk GetMethod failed, hr<%#x>
+CVolume::ExecExcludeAutoChk
+Volume::ExecExcludeAutoChk called with no parameters, hr<%#x>
+Volume::ExecExcludeAutoChk: out of memory, hr<%#x>
+ExecExcludeAutoChk: volume array param is NULL
+ExecExcludeAutoChk GetMethod failed, hr<%#x>
+CVolume::ExecFormat
+Volume::Format called with no parameters, hr<%#x>
+ExecFormat: volume key property not found
+ExecFormat: QuickFormat param is NULL
+ExecFormat: EnableCompression param is NULL
+ExecFormat: ClusterSize param is NULL
+ExecFormat: FileSystem param is NULL
+ExecFormat: Label param is NULL
+%s: %d
+%s: %u
+Format GetMethod failed, hr<%#x>
+CVolume::Defrag
+CVolume::DefragAnalysis
+fmifs.dll
+Unable to load library fmifs.dll, %#x
+ChkdskEx
+GetProcAddress failed for ChkdskEx, %#x
+CMountPoint::Initialize
+CMountPoint::EnumInstance
+CMountPoint::GetObject
+CMountPoint::LoadInstance
+unable to add Name property to Directory object path
+unable to add DeviceID property to Volume object path
+CMountPoint::DeleteInstance
+CMountPoint::DeleteInstance Volume<%lS> Directory<%lS>
+DeleteVolumeMountPoint failed %#x
+CVolume::LoadDefragAnalysis
+PercentDiskFragged<%d>
+map/set<T> too long
+FAT32
+EXFAT
+CVolumeQuota::Initialize
+base\stor\wmi\vds\quota.cpp
+CVolumeQuota::EnumInstance
+CVolumeQuota::LoadInstance
+QuotaSetting Object path parse failed
+unable to add VolumePath property to QuotaSetting object path
+Volume Object path parse failed
+unable to add DeviceId property to Volume object path
+CVolumeUserQuota::Initialize
+CVolumeUserQuota::EnumInstance
+IDiskQuotaControl::InvalidateSidNameCache failed for volume %lS
+IDiskQuotaControl::CreateEnumUsers failed for volume %lS
+IEnumDiskQuotaUsers::Next failed for volume %lS
+CVolumeUserQuota::GetObject
+Account object path initialization failed
+VolumeUserQuota key property DeviceID not found
+VolumeUserQuota key property Name not found
+VolumeUserQuota key property Domain not found
+unable to CoCreate IDiskQuotaControl, %#x
+IDiskQuotaControl::Initialize failed for volume %lS, %#x
+CVolumeQuotaUser::GetObject: could not find user %lS\%lS
+CVolumeUserQuota::LoadInstance
+IDiskQuotaUser::GetName failed for volume %lS
+Unexpected failure translating %s to machine name
+IDiskQuotaUser::GetQuotaInformation failed for volume %lS
+Account Object path parse failed
+unable to add Domain property to Account object path
+unable to add Name property to Account object path
+CVolumeUserQuota::PutInstance
+Unexpected failure searching for quota account
+QuotaUser %lS\%lS not found
+VolumeUserQuota %lS/%lS already exists
+CVolumeUserQuota::PutInstance flag not supported %d
+CVolumeUserQuota::Create
+Unable to get localized 'NT Authority' name
+Unable to get localized 'BuiltIn' name
+CVolumeUserQuota::DeleteInstance
+CVolumeQuotaUser::DeleteInstance: could not find user %lS\%lS
+FindQuotaUserWithRecord
+FindQuotaUser
+InitializeCriticalSectionAndSpinCount(&m_cs, 0x80000400)
+Initialization failed
+Unexpected error
+IWbemClassObject::EnumInstance failed, %#x
+HRESULT exception caught, %#x
+CProvException exception caught, %#x
+_com_error exception caught, %#x
+std::bad_alloc exception caught, %#x
+Unexpected std::exception exception caught, %#x
+CInstanceProv::DoGetObjectAsync
+IWbemClassObject::GetObject failed, %#x
+CInstanceProv::DoPutInstanceAsync
+__CLASS
+IWbemClassObject::Get("__CLASS") failed, %#x
+IWbemClassObject::PutInstance failed, %#x
+CInstanceProv::DoDeleteInstanceAsync
+IWbemClassObject::DeleteInstance failed, %#x
+CInstanceProv::DoExecMethodAsync
+IWbemClassObject::ExecuteMethod failed, %#x
+CInstanceProv::SetExtendedStatus
+SetStatus <%#x>
+MapVdsErrorToMsg
+Input HR: 0x%08x
+Output Msg#: 0x%08x
+CHKNTFS /C
+CHKNTFS /X
+Win32_DefragAnalysis
+Win32_Directory
+Win32_QuotaSetting
+Win32_Account
+AddMountPoint
+Defrag
+DefragAnalysis
+Dismount
+Format
+Mount
+Chkdsk
+ScheduleAutoChk
+ExcludeFromAutoChk
+Description
+DefragRecommended
+VolumeSize
+ClusterSize
+UsedSpace
+FreeSpacePercent
+TotalPercentFragmentation
+FilePercentFragmentation
+FreeSpacePercentFragmentation
+TotalFiles
+AverageFileSize
+TotalFragmentedFiles
+TotalExcessFragments
+AverageFragmentsPerFile
+PageFileSize
+TotalPageFileFragments
+TotalFolders
+FragmentedFolders
+ExcessFolderFragments
+TotalMFTSize
+MFTRecordCount
+MFTPercentInUse
+TotalMFTFragments
+AverageFreeSpacePerExtent
+LargestFreeSpaceExtent
+TotalFreeSpaceExtents
+TotalUnmovableFiles
+Permanent
+Force
+Setting
+VolumePath
+Account
+Domain
+DiskSpaceUsed
+Limit
+Status
+WarningLimit
+FixErrors
+VigorousIndexCheck
+SkipFolderCycle
+ForceDismount
+RecoverBadSectors
+OkToRunAtBootup
+QuickFormat
+EnableCompression
+Version
+StringCChCopy failed %#x
+Volume %s is not found or the device is not connected
+Unable to open volume %lS, %#x
+Volume %s is not valid because it is on a floppy drive
+Unable to get volume device name %lS
+DeviceIoControl failed for device %lS, %#x
+VolumeHasMountPoints
+CreateFile failed, %#x
+Reg key open failed, %#x
+Unable to get volume device name, %lS, %#x
+NtQuerySystemInformation failed, %#x
+QueryDosDevice failed, %#x
+Unexpected pagefile name format, %.*lS
+StringCchCopy failed, %#x
+GetDeviceName: DeviceIoControl() failed: %X
+Mountpoint name from IOCTL_MOUNTDEV_QUERY_DEVICE_NAME was zero length
+StringCchCopy failed: %#x
+StringCchCopyN failed: %#x
+VolumeMountPointExists
+DeleteVolumeDriveLetter
+CreateFile(OPEN_EXISTING) failed for %lS, %#x
+volume %lS locked
+Unable to lock volume %lS, %#x
+DeleteVolumeMountPoint failed %#x, drivepath<%lS>
+DeleteDriveLetterFromDB failed %#x, drivepath<%lS>
+DeleteDriveLetterFromDB
+\DosDevices\%c:
+\\.\MountPointManager
+DeleteDriveLetterFromDB CreateFile failed %#x
+DeleteDriveLetterFromDB DeviceIoControl failed %#x
+IsDriveLetterAvailable
+GetLogicalDriveStrings failed %#x
+IsDriveLetterSticky
+GetSystemDirectory failed %#x
+\pagefile.sys
+ENTER
+EXIT 
+0x%06x:0x%04x:0x%08x] %s {%s}: 
+Out of memory detected. %s
+Unexpected error: %s  [hr = 0x%08lx]
+CWbemClassObject::GetPropertyMultiSz
+base\stor\wmi\provider\objectpath.cpp
+Error: zero length string found at index %d in safe array
+StringCchCopy(%s, %d, %s) failed
+__ExtendedStatus
+StatusCode
+Element
+ReturnValue
+ProviderName
+CVssAdminCLI::GetMsg
+ARSDS
+vdswmi.pdb
+.rdata$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.text$di
+.text$lp00vdswmi.dll!30_clientonly
+.text$mn
+.text$np
+.text$x
+.text$yd
+.text$zy
+.text$zz
+.xdata$x
+.edata
+.data$brc
+.data$00$brc
+.data$r$brc
+.data
+.bss$00
+.bss$dk00
+.bss$pr00
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+PWWhx
+9^4t<9
+t!f9\F
+j,hpi
+Y__^[
+Y__^[
+PVh(H
+PVh0I
+QVh@E
+QWh@E
+t`SSWQh
+t0SSWQh
+v,h :
+SSWQh
+SSWQh
++F0Ph
+t`SSWQh
+t(SSWQh
+u\hTC
+t,;:u
+t"VWj
+PPPSSV
+t'9>t
+u2hH.
+QPh@e
+PVVVVh
+PVVVVh
+PVVVVh 
+PVVVVh
+PVVVVh
+PVVVVh 
+QSh@E
+f9>t/
+u*hH.
+u*hH.
+t h Z
+t#hxZ
+t#h [
+y!Phx[
+u*hH.
+u*hH.
+y/PhPX
+u*hH.
+t hHU
+QWWPV
+u.hH.
+t#hh`
+QWWPV
+t<=($
+t.=)$
+t =*$
+t,=.$
+t!=/$
+t'9>t
+u2hH.
+g`h0|
+g`h`|
+wX+wP
+t,jdY
+u$hH.
+QWWWWh
+u6h8r
+t'9>t
+u2hH.
+RPh(s
+u6h8r
+u6h8r
+PRRRRRRRQj
+t'9>t
+u2hH.
+u$h`h
+u6Vhpn
+u5hPo
+u.hH.
+RPhHq
+Hu&9>t
+tE9] t@
+y/Ph0y
+PShlw
+DVWjD3
+QWVj4
+PSSSSh
+QVh@E
+QVh@E
+f9;tn
+PPVVQ
+QWVWSP
+^TW9F
+^TW9F
+t"PVh
+QQSQPV
+QQSQPV
+QQSQPV
+QQSQPV
+QQSQPV
+QWQPS
+QSQPW
+QWQPS
+!7_^[
+vdswmi.dll
+DllCanUnloadNow
+DllGetClassObject
+DllRegisterServer
+DllUnregisterServer
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+.?AVbad_alloc@std@@
+.?AW4_DISMOUNT_ERROR@@
+.?AVexception@@
+.?AVCProvException@@
+.?AV_com_error@@
+__CxxFrameHandler3
+_vsnwprintf
+_wcsicmp
+_purecall
+_wcsnicmp
+towupper
+wcschr
+wcsstr
+_callnewh
+malloc
+??0exception@@QAE@XZ
+??0exception@@QAE@ABV0@@Z
+??1exception@@UAE@XZ
+?what@exception@@UBEPBDXZ
+_CxxThrowException
+??0exception@@QAE@ABQBD@Z
+memcpy
+memmove
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+?terminate@@YAXXZ
+_lock
+_unlock
+__dllonexit
+_onexit
+??1type_info@@UAE@XZ
+_except_handler4_common
+NtQuerySystemInformation
+NtQueryVolumeInformationFile
+ntdll.dll
+lstrlenW
+GetModuleFileNameW
+GetVolumeInformationW
+CompareStringW
+FindFirstVolumeW
+EnterCriticalSection
+GetDiskFreeSpaceW
+DeviceIoControl
+LeaveCriticalSection
+LocalAlloc
+CreateFileW
+GetFileAttributesW
+GetCurrentThreadId
+SetFileAttributesW
+Sleep
+SetVolumeLabelW
+GetLastError
+GetDiskFreeSpaceExW
+CloseHandle
+LoadLibraryW
+SetVolumeMountPointW
+GetProcAddress
+LocalFree
+DeleteCriticalSection
+GetComputerNameW
+FindVolumeClose
+FreeLibrary
+GetVolumePathNamesForVolumeNameW
+DeleteVolumeMountPointW
+FindNextVolumeW
+GetDriveTypeW
+InitializeCriticalSectionAndSpinCount
+WaitForSingleObject
+GetCurrentThread
+GetExitCodeProcess
+QueryDosDeviceW
+GetSystemDirectoryW
+GetVolumeNameForVolumeMountPointW
+GetLogicalDriveStringsW
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetSystemTimeAsFileTime
+GetTickCount
+KERNEL32.dll
+OLEAUT32.dll
+RegOpenKeyW
+RegCreateKeyW
+RegSetValueExW
+RegDeleteKeyW
+RegCloseKey
+LookupAccountSidW
+FreeSid
+AllocateAndInitializeSid
+OpenThreadToken
+DuplicateTokenEx
+CreateProcessAsUserW
+RegQueryValueExW
+RegOpenKeyExW
+ADVAPI32.dll
+DestroyEnvironmentBlock
+CreateEnvironmentBlock
+USERENV.dll
+StringFromGUID2
+CoTaskMemAlloc
+CoCreateInstance
+CoTaskMemFree
+CoImpersonateClient
+api-ms-win-core-com-l1-1-0.dll
+wcsftime
+localtime
+_wtoi64
+_ui64tow
+GetFileSizeEx
+GetCommandLineW
+WriteFile
+InitializeCriticalSection
+UnlockFileEx
+OutputDebugStringW
+SetFilePointerEx
+LockFileEx
+FlushFileBuffers
+FormatMessageW
+?Free@CObjectPathParser@@QAEXPAUParsedObjectPath@@@Z
+?Unparse@CObjectPathParser@@SGHPAUParsedObjectPath@@PAPAG@Z
+?Parse@CObjectPathParser@@QAEHPBGPAPAUParsedObjectPath@@@Z
+??1CObjectPathParser@@QAE@XZ
+??0CObjectPathParser@@QAE@W4ObjectParserFlags@@@Z
+?AddKeyRef@ParsedObjectPath@@QAEHPBGPBUtagVARIANT@@@Z
+framedynos.dll
+memcmp
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+WMI Provider for VDS
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+vdswmi.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+vdswmi.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+x12&-Z
+en-US
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2$2,242<2D2L2T2\2d2l2t2|2
+3$3,343<3D3L3T3\3d3l3t3|3
+4$4,444<4D4T4\4d4l4t4|4
+5$5,545<5D5L5T5\5d5l5t5|5
+6$6,646<6D6L6T6\6d6l6t6|6
+7 7$7(7l7p7x7
+2!2F2a2
+3%3v3
+5.5C5p5
+5(6:6v6
+7(8:8R8[8
+9X9j9
+:3:p:
+;*;N;Z;
+=/=5=<=z=
+>&>N>\>i>
+050h0
+0&1:1v1
+1Q2[2{2
+2&3W3`3
+344T4{4
+606E6~6
+6<7P7
+9-9[9j9
+<,<y<
+=+=p=
+>J>S>|>
+?<?c?x?
+0h0|0
+1T1h1
+132G2}2
+3)3_3
+4A4a4
+525x5
+6]6q6
+7^7r7
+8F8Z8
+8,9@9v9
+:4:e:
+=E=W=f=p=
+=!>3>i>
+>5?m?
+0%0.0w0~0
+0(1/1F1
+2D2[2
+2 3(383T3a3
+4!484u4~4
+40595
+7H7]7~7
+7<8F8b8i8
+9/9G9
+:H:Z:t:}:
+:&;:;A;
+<!<><^<p<
+>n?x?
+2)222u2|2
+3(4:4y4
+5!5)525B5L5Q5
+7,797G7T7`7e7
+7(898r8
+9*90979
+:B;|;
+<8<e<
+=!=+=N=
+=6>@>J>m>
+22292N2
+4h4z4
+5*5g5
+6*71787h7v7
+7;8X8l8q8
+9;:e;r;
+<)=?=~=
+>&>,>;>E>K>V>[>a>h>n>t>
+>$?3?d?j?y?
+0(1S1Y1c1r1
+1s2z2
+4(565
+696F6r6
+:$;9;X<e<
+<+=$>P>
+?G?L?Q?~?
+0 0&0G0O0V0\0b0
+101<1D1
+2A3Y3
+3@4n4
+5%5,535:5A5I5Q5Y5e5n5s5y5
+6%6,636:6A6H6O6U6a6l6q6v6|6
+787A7
+828>8J8
+8%9a9
+:/:M:a:g:*;H;W;`;i;~;
+;B<G<]<i<u<
+< =,=
+=,>i>
+435y5
+7D7t7
+8Q8t8
+9J9m9
+1>2v2
+2&3`3
+526r6
+:#;[;
+<;<^<
+<"=R=
+=+>[>r>v>
+?1?H?U?Z?r?
+0+000b0
+031A1N1^1c1
+2$2C2R2g2l2
+3*3:3D3I3e3v3
+4&40454N4_4v4
+565D5T5^5c5
+6+6A6F6_6n6
+7!7*7@7O7n7
+7 8I8i8w8
+9$999>9h9
+9Q:v:
+;E;n;
+;1<8<M<R<q<x<
+282U2a2
+3%3*3C3T3b3r3|3
+4%424>4C4~4
+5.535Q5i5~5
+6.6?6M6]6g6l6
+7)7.7i7o7
+8.8<8I8U8Z8r8
+9&90959Q9a9w9
+9#:6:;:X:f:s:~:
+;6;H;Z;p;u;
+<#<1<><J<O<g<u<
+=5=F=T=d=n=s=
+>#>0><>A>
+?"?B?Y?s?x?
+0%01060N0\0l0v0{0
+101F1K1x1
+2 2%2;2U2n2s2
+3$31363W3h3w3
+4%474J4O4e4u4
+6/6;6E6o6
+6*7b7
+8B8z8
+8"9Z9
+:*:/:E:U:o:t:
+:R;_;
+<5<?<e<m<
+=0=:=?=e=t=
+=m>}>
+?/?4?F?Z?n?s?
+0-060C0f0k0}0
+161M1R1n1
+2*2/2?2D2T2Y2i2n2~2
+4L4g4x4
+5.545A5`5k5r5
+5,6;6V6g6
+7X7n7~7
+;&;.;
+<I<T<^<u<
+0)070n0y0
+0E1u1
+2V2e2r2
+3$3~3
+5>5k5
+6%6J6u6
+7d7n7
+8!808H8N8i8n8
+;&;+;Y;
+<M=|=
+>c?}?
+1,1H1
+1b2w2|2
+353?3G3Y3o3t3
+3$4i4
+4&5I5c5h5r5
+5-676=6R6W6w6
+7 7%7E7_7m7s7
+818?8G8M8\8i8
+9<9I9\9}9
+9#:@:E:O:f:
+;:;G;[;q;v;
+=4=V=m=
+> >5>N>X>
+>)?^?
+1 1*1U1k1x1
+2'2a2
+3&3F3W3w3
+4$454F4W4h4
+5=5L5
+5'6R6k6x6
+8 8N8y8
+9 :h:
+;(;b;
+;*<V<l<q<
+=A=s=
+=)>G>\>r>
+?"?\?
+020<0P0d0
+0&1T1c1
+1/2Z2w2|2
+4<4F4f4
+5#5(525L5u5
+7(7b7s7
+83888Q8V8k8p8
+999e9
+9S:y:
+:4;u;
+<-<H<_<r<
+=I=t=
+>8>h>
+?!?8?M?R?x?
+080`0
+0-1K1P1
+2@2G2i2p2
+323G3L3e3
+455F5_5
+5U6]6c6
+7V7_7
+7 8\8e8
+9M9V9
+:\:u:
+; <7<O<
+? ?%?/?M?c?q?
+0,1u1
+192H2^2c2
+2-3g3
+4@4i4
+6I6y6
+6#747F7Q7~7
+9`9o9
+:":5:N:y:
+;+;B;[;i;
+<*<8<p<
+>;>K>]>b>
+3;3U3[3u3z3
+4F4d4i4
+405L5Q5
+6>6r6
+717E7R7\7q7|7
+8-8O8T8^8
+849q9
+91:L:h:
+;";';:;R;\;v;
+= >%>7>S>b>
+>_?f?n?
+0T3q3
+3 4A4F4P4b4
+7Y7z7
+8 959S9
+:-:2:<:]:z:
+;E;_;d;
+;+<b<
+<5===C=P=f=k=
+=7>^>
+050f0
+1W1i1
+232P2U2_2v2
+3G3V3k3p3
+3=4L4]4b4
+5(5:5Y5
+:Z:o:
+;L;|;
+<E<J<T<e<
+?b?{?
+1-1t1
+222R2^2
+2 3F3}3
+4(4-4Z4v4
+4-5z5
+656:6r6
+6+7:7}7
+949]9
+:*:L:Y:c:p:
+:);I;Z;t;
+;F<s<
+=&=+=S=z=
+>'><>A>_>s>
+>4?j?
+0N0n0
+1,1s1
+2-2C2H2u2
+4&454?4E4R4h4m4
+4!5^5
+898b8
+909T9q9
+:;:\:g:r:
+;.<T<
+?4?J?O?e?w?
+0*080N0S0i0
+031O1T1^1
+2U2f2|2
+3,3>3T3Y3o3
+404K4
+5$5.5R5
+6/6E6J6o6
+7"787J7`7e7{7
+8#9H9Q9`9v9{9
+:$:,:@:V:[:q:
+; ;6;D;Z;_;u;
+<Q<o<t<~<
+?$?,?<?A?g?o?
+1 161;1Q1c1y1~1
+2$2:2?2U2
+7h7r7
+898>8H8
+889>9L9h9
+95:Y:^:h:}:
+;.;D;I;e;z;
+<1<H<Y<v<{<
+="='=I=W=h=
+?!?7?J?
+0E0R0f0|0
+1G1}1
+1;2C2n2w2
+3*3D3h3
+4%4+41474T4b4n4
+5%5+585X5b5h5n5u5{5
+6:6@6V6q6
+7Q7W7m7
+:#:3:L:R:d:m:
+:Z;k;
+<$<6<><\<
+050d0z0
+2"2'2H2
+393]3u3
+5K5u5
+6)6S6w6
+898c8
+9.9I9
+9%:<:A:
+;<;W;y;
+<0<8<D<L<d<l<
+= =,=L=T=\=d=p=
+>$>,>4>@>d>l>t>|>
+?$?,?4?<?D?L?T?\?d?l?t?|?
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1P1t1|1
+2(2L2T2\2d2l2t2|2
+3(303H3\3d3l3t3|3
+4 484H4X4`4t4|4
+5<5D5T5\5d5l5t5|5
+6$6X6h6t6
+7 7,7L7|7
+8 8(8,848H8X8h8
+9,949<9D9H9L9T9h9
+:$:(:0:8:@:T:\:p:x:
+;@;P;\;d;
+<,<4<<<D<L<T<\<l<t<
+=8=@=H=P=X=`=p=x=
+> >8>@>P>X>`>|>
+?$?,?8?X?`?h?p?|?
+080@0L0T0l0|0
+1$1,141<1D1L1T1\1h1p1
+2$242<2D2L2T2l2x2
+3$3,343@3d3l3t3|3
+4,444<4D4L4T4`4
+5$505P5\5d5|5
+6(60686D6d6p6
+7$7,787\7d7l7t7|7
+8 8@8H8P8`8h8
+9,949<9D9L9T9\9d9l9t9|9
+:$:4:<:H:h:p:x:
+;$;,;4;<;L;T;`;h;
+<(<0<L<T<\<h<
+=$=,=4=<=D=L=T=\=d=p=x=
+>$>0>8>P>`>h>p>
+?$?4?<?D?L?\?d?l?t?|?
+0$0,040<0D0L0T0\0d0l0x0
+1$10181P1X1|1
+2 2,2L2T2`2
+3 3@3L3T3l3
+0<0\0|0

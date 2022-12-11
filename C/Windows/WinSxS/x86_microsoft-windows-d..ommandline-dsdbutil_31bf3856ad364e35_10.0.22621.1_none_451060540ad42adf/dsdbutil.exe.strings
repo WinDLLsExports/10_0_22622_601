@@ -1,0 +1,2018 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ntdsbsrv.dll
+string too long
+invalid string position
+Invalid parameter passed to C runtime function.
+link_deltime
+link_deactivetime
+link_usnchanged
+DNT_col
+PDNT_col
+ATTj131073
+ATTi131120
+ATTk589827
+ATTc0
+ATTq131192
+ATTl131075
+link_DNT
+link_base
+backlink_DNT
+link_metadata
+DNT_index
+datatable
+link_index
+link_table
+ar_%S_objects.txt
+ (%d) %S
+backlink_present_active_index
+INDEX_00090002
+PDNT_index
+OBJ_col
+ATTk589826
+NCDNT_col
+JetGetTableColumnInfo
+JetRetrieveColumn
+%ws;%ws%c%c
+%ws;%c%c
+%.04d%.02d%.02d-%.02d%.02d%.02d
+%02d-%02d-%02d %02d:%02d.%02d
+ATTb131088
+NCDNT
+ncInstType
+JetSetCurrentIndex
+JetMakeKey
+JetSeek
+<GUID=
+Qkkbal
+wn>Jj
+-NULL
+hiddentable
+dsa_col
+state_col
+usn_col
+JetCloseDatabase
+JetEndSession
+ATTm589825
+RDNtyp_col
+DRA_USN_index
+ATTk131187
+ATTb131108
+System\CurrentControlSet\Services\NTDS\Parameters
+ATTj131122
+ATTm131532
+ATTr589970
+ATTj131406
+cnt_col
+LinkID
+SearchFlags
+LDAP Display Name
+objectSID
+DSUtilGetTempPathA
+JetBeginTransaction(dbState->sessionId)
+JetMove(dbState->sessionId, tableState->tableId, JET_MoveFirst, 0)
+JetRetrieveColumn(dbState->sessionId, tableState->tableId, dbColumns->cidInstType, &dwInstanceType, sizeof(dwInstanceType), &cbData, 0, NULL)
+JetPrepareUpdate(dbState->sessionId, tableState->tableId, JET_prepReplace)
+JetSetColumn(dbState->sessionId, tableState->tableId, dbColumns->cidInstType, &dwInstanceType, sizeof(dwInstanceType), 0, NULL)
+JetUpdate(dbState->sessionId, tableState->tableId, NULL, 0, NULL)
+JetCommitTransaction(dbState->sessionId, 0)
+jetErr
+quota_table
+JetDeleteTable(dbState->sessionId, dbState->databaseId, g_szQuotaTable)
+quota_rebuild_progress_table
+JetDeleteTable(dbState->sessionId, dbState->databaseId, g_szQuotaRebuildProgressTable)
+JetMove(dbState->sessionId, linkTableState->tableId, JET_MoveFirst, 0)
+JetRetrieveColumn(dbState->sessionId, linkTableState->tableId, dwLinkColumnIDs[0], &linkBase, sizeof(linkBase), &cbData, 0, NULL)
+JetRetrieveColumn(dbState->sessionId, linkTableState->tableId, dwLinkColumnIDs[1], &backlinkDNT, sizeof(backlinkDNT), &cbData, 0, NULL)
+JetEscrowUpdate(dbState->sessionId, tableState->tableId, dbColumns->cidRefCount, &lDelta, sizeof(lDelta), NULL, 0, NULL, JET_bitNil)
+JetDelete(dbState->sessionId, linkTableState->tableId)
+ar_%S_links_%ws.ldf
+<GUID=%s>
+# %ws
+# dn: %S
+dn:: %ws
+changetype: modify
+%ws: %ws
+# %ws
+# %ws: %S
+%ws:: %ws
+delete
+STREET
+%c%s:%s
+ATTi591882
+ATTp131353
+Ancestors_col
+time_col
+recycle_time_col
+ATTb49
+extendedprocesslinks_col
+[RDN missing]
+No Instancetype for Dnt %d[%ws]
+Dnt %d [%ws] does not have a PDNT
+Object %d has reference (colid %d) to non-existent SD. Removed
+Unable to remove reference to invalid SD from object %d(colid %d)
+JetRetrieveColumn error[%S] [Colid %d Size %d]
+Real object[DNT %d(%ws)] has no distinguished name!
+Cannot get GUID for object DNT %d(%ws). Jet Error [%S]
+DNT %d(%ws) has zero refcount
+Deleted
+The phantom %d(%ws) has a distinguished name!
+Phantom %d(%ws) has deleted bit turned on!
+Mangled phantom %d(%ws) found under the root.
+Fixed
+Not fixed
+Dnt %d does not have an RDN [%s]
+Error while walking data table. Last Dnt = %d. JetMove failed [%S]
+DName
+JetGetColumnInfo
+ATTb131079
+Deleted Objects
+WARNING: Record %s appears to be a Deleted Objects container. Setting deletion time to 9999-12-29
+WARNING: Record %s appears to be a Deleted Objects container. Aborting attempt to set recycle time
+%s object %u does not have a deletion time. Error [%S]
+WARNING: %s object %u has timestamp[%02d/%02d/%4d] later than now
+WARNING: %s object %u has old timestamp[%02d/%02d/%4u]
+Live object %u has a deletion time
+Fixed deletion time of object %u
+Failed to fix deletion time of object %u
+Recycled object %u does not have a recycle time. Error [%S]
+WARNING: Recycled object %u has timestamp[%02d/%02d/%4d] later than now
+WARNING: Recycled object %u has old timestamp[%02d/%02d/%04d]
+Unrecycled object %u has a recycle time
+Fixed recycled time of object %u
+Failed to fix recycle time of object %u
+Phantom
+Live object %u is recycled
+UuidFromStringW(%ws, %p) returned %d!
+Deleted object %d(%ws) does not have a mangled rdn
+Object guid for deleted object %d(%ws) does not match the mangled version
+Cannot get ancestor for %d(%ws)
+Object %d(%ws) does not have an ancestor
+Last entry[%d] of ancestor list does not match current DNT %d(%ws)
+Second to last entry[%d] of ancestor list does not match PDNT[%d] of current DNT %d(%ws)
+Object %d(%ws) does not have a Security descriptor.
+Jet Error [%S] retrieving security descriptor for object %d(%ws).
+Non object %d(%ws) has a security descriptor
+Object %d(%ws) has a null SD
+Object %d(%ws) has an invalid Security Descriptor [error %x]
+Error(0x%x) getting SD control for %d(%ws). Rev %d
+Warning SE_DACL_PROTECTED for %d(%ws)
+Error(0x%x) getting DACL for %d(%ws)
+No DACL found for %d(%ws)
+NULL DACL for %d(%ws)
+No ACEs in DACL for %d(%ws)
+Cannot retrieve backlink column. Error [%S].
+Data Table has missing backlink entry DNT %d.
+Cannot retrieve link column. Error [%S].
+Data Table has missing link entry DNT %d.
+Cannot retrieve link deactive time column. Error [%S].
+Link Table has inappropriate deactivated link from DNT %d to DNT %d [%s].
+Link Table has inappropriate activated link from DNT %d to DNT %d [%s].
+%d total records walked.
+JetEscrowUpdate
+JetMove
+sdproptable
+JetOpenTable
+sdpropcounttable
+begindnt_col
+trimmable_col
+order_col
+sdprows_col
+JetBeginTransaction
+Propagation to fix Ancestry already enqueued (id=%d). Skipped.
+Enqueing a propagation to fix Ancestry
+JetPrepareUpdate
+Propagation to fix Ancestry Enqueued (id=%d). Propagation will be done the next time the DS is restarted.
+UpdateRowCountTable
+JetCommitTransaction
+JetSetColumn
+JetUpdate
+Corrected NCDNT of DNT %d, new value %d.
+Ancestor crc inconsistency for DNT %d PDNT %d.
+Ancestor count mismatch for DNT %d.
+parent [PDNT %d] of entry [dnt %d] is missing.
+Ancestor [dnt %d] of entry [dnt %d] is missing.
+Expecting %d to be instantiated NC head. Referring entry %d
+Unexpected termination of search on non NC Head %d
+Did not find the NCDNT for object %d
+Invalid instance type %x for Dnt %d
+Parent [PDNT %d] of DNT %d missing
+Inconsistent Instance type for %d and parent %d [%x != %x]
+Non Nc Head %d marked as SubRef
+Missing subref entry for %d on %d.
+Found extra subref entry for %d on %d.
+Error: Missing subrefs detected.
+Summary:
+Active Objects 
+Phantoms 
+Deleted 
+Not Fixed
+RefCount mismatch for DNT %u [RefCount %4u References %4u] [%s]
+Error: Inconsistent refcounts detected.
+Cannot find subref %d on object %d
+Added subref %d to object %d.
+Deleted subref %d from object %d.
+Removing Non-existent references:
+JetRetrieveColumns error: %S.
+Cannot retrieve back link column. Error [%S].
+Object %d has reference (colid %d) to non-existent DNT %d. Removed
+Unable to remove reference to non-existent DNT %d from object %d(colid %d)
+JetDelete
+A LinkTable record has a backlink reference to bogus DNT %d. Record removed
+Unable to remove backlink reference to bogus DNT %d
+alloc failed
+JetRetrieveColumns
+DNT %d(%ws) refers to a missing SD: SDID %I64x
+Error while walking SD table. Last sdId = %016I64x. JetMove failed [%S]
+Fixed (SD deleted)
+Zero RefCount for SD %016I64x [%s]
+RefCount mismatch for SD %016I64x [RefCount %4u References %4u] [%s]
+Security descriptor summary:
+SD count: 
+Total SD size before single-instancing: 
+%12u Kb
+Total SD size after single-instancing:  
+%12u Kb
+Error: Inconsistent SD refcounts detected.
+JetRollback
+[Missing RDN]
+MangleRDNWithStatus
+ATTk590464
+JetGetTableColumnInfo (Partial Attribute Set) for %d(%ws) failed [%S]
+JetGetTableColumnInfo (Property Metadata) for %d(%ws) failed [%S]
+ATTk589828
+JetGetTableColumnInfo (UpToDate Vector) for %d(%ws) failed [%S]
+JetGetTableColumnInfo (Subref List) for %d(%ws) failed [%S]
+Cannot allocate buffer for repl attribute #%d.
+JetRetrieveColumn fetching replication blobs for %d(%ws) failed [%S]
+Property Metadata vector missing for %d(%ws)
+Retrieving property MetaData for %d(%ws) failed [%S]
+Replication Metadata Vector for %d(%ws) has invalid version %d
+Size[%d] of metadata vector for %d(%ws) does not match required size %d
+INFO: UpToDate vector found for NC head %d(%ws)
+UpToDate vector for %d(%ws) has the wrong version [%d]
+UpToDate vector for %d(%ws) has the wrong size [actual %d expected %d]
+Retrieving the UpToDate Vector for %d(%ws) failed [%S]
+INFO: Partial Attributes List found for NC head %d(%ws)
+quota_table2
+sd_table
+sd_value
+Fixing conflict mangled name: %ws
+Fixing by rename with structural collision.
+Error: failed to seek to MangledDnt %d
+Successfully converted mangled Naming Context %S
+Error<%x>: failed to fix mangled dn %S. Retrying.
+Error: failed to get mangled DN
+Error: failed to allocate memory for mangled DN
+ [DBG] Can't unmangle name %S
+Error <%x>: can't seek to %S
+Error <%x>: failed to get good named dnt
+The phantom %S lacks a guid.
+Error <%x>: Failed to reparent object
+Error <%x>: Failed to create Uuid
+Error: failed to mangle RDN.
+Error <0x%X>: failed to seek to dntUnMangled %d
+Error <0x%x>: Failed to mangle phantom %S
+Successfully converted Mangled phantom <<%S>>
+Successfully recovered mangled Naming Context %S
+Error <0x%x>: Failed to Unmangle conflicted name %S
+ DBG: Rolling back transaction due to error %x.
+Fixing DEL mangled name: %ws
+ Successfully renamed mangled Rdn to %ws
+Error: failed to seek to unmangled Dn %ws
+Error <%x>: failed to get unmangled DNT 
+Error: failed to seek to UnMangledDnt %d
+Found object that needs to be undeleted.
+Error <%x>: failed to clear is deleted
+Error <%x>: failed to clear deletion time
+Successfully cleared deletion status for Naming Context %S
+Fix cross ref by resetting ncname attribute.
+Error: failed to seek to CrossRefDnt %d
+Error <%x>: failed to get NCNAME
+Cross reference NCNAME did not have expected contents.
+Error <%x>: can't seek to old mangled dnt %d
+Error <%x>: failed to get old mangled dnt refcount
+Old mangled dnt has unexpected refcount.
+Error <%x>: failed to set old mangled refCount
+Error <%x>: failed to set NCNAME
+Error <%x>: can't seek to new unmangled %d
+Error <%x>: failed to get new unmangled dnt refcount
+Error <%x>: failed to set new unmangled refCount 
+Error <%x>: Invalid Guid for unmangled name
+Error: Failed to convert UuidToString
+The cross ref NCNAME will now refer to NC with guid %ws.
+Successfully adjusted NCNAME on cross ref (DNT %d) from DNT %d to DNT %d.
+Error <%x>: failed to get RDN
+Error <%x>: RDN is too long
+Error <%x>: failed to get RDNTYPE
+Error <%x>: failed to set index to SZPDNTINDEX
+Error <%x>: failed to seek to conflicting child with parent %d and rdn '%ws'
+Error <%x>: failed to confict child dnt
+Both child and conflict-child have guids. Cannot rename.
+Manual intervention required.
+Rename one of the instances of '%ws' under either parent dnts %d or %d.
+Winning parent dnt %d, Losing parent dnt %d, new name of losing rdn '%ws'
+Error <%x>: failed to set index to SZDNTINDEX
+Error <%x>: can't seek to loser dnt %d
+Error <0x%x>: Failed to mangle child %S
+Note: record %d was renamed to avoid a conflict. New name: %ws
+Error <%x>: Failed to reparent children from %d to %d
+This record should have no more references and will be garbage collected.
+Error <%x>: can't seek to %d
+Error <%x>: failed to get partitions SZPDNT
+Error: expected old parent %d but found %d
+Warning <%x>: child dnt %d, failed to set new parent dnt %d col SZPDNT - retrying
+Error <%x>: failed to handle reparenting conflict
+Error <%x>: failed to set new parent col SZPDNT
+Error <%x>: failed to get ancestors size
+Error: not enough memory in ReParent
+Error <%x>: failed to get ancestors 
+Error <%x>: failed to set new ancestor list
+Error <%x>: can't seek to old folk %d
+Error <%x>: failed to get old folk refcount
+Error <%x>: failed to set old parent refCount 
+Error <%x>: can't seek to new folk %d
+Error <%x>: failed to get new folk refcount
+Error <%x>: failed to set new parent refCount 
+Error <%x>: failed to get obj dnt
+Error <%x>: failed to get parent SZPDNT
+Error <%x>: failed to get partitions DNT 
+Error<0x%x>: Failed ot reparent dnt %d
+ Logic Error: Failed to find bad char in %S
+Error: failed to allocate memory in MangleRdn
+%s%c%s:%s
+Error <0x%x>: failed to seek link
+Error <%x>: failed to get link base
+Error <%x>: failed to get configuration (link)
+Error <%x>: failed to get configuration (back link)
+Error: failed to seek to back link dnt %d
+Error <%x>: failed to read object flag
+Error: failed to seek to nc dnt %d
+ Can't fix Mangled NC
+link_present_active_index
+Error <%x>: failed to get enabledFeatures (link)
+Error <%x>: failed to get enabledFeatures (linkbase)
+Error <%x>: failed to get enabledFeatures (object)
+ATTk591886
+CN=Configuration
+Error: found an empty DN with DNT %d
+Inconsistency Error: failed to find Configuration NC.
+Error: memory allocation failed for partitions
+CN=Partitions
+%s,%s
+Error <%x>: failed to get partitions
+Error <%x>: failed to get partitions dnt
+DBInitializeJetDatabase
+sd_id_index
+sd_id
+sd_refcount
+dsdit.dmp.%u
+[DSLOGS] Cannot write to log file error %ld
+vsstrace.dll
+Create ldif file(s) from %s
+Restore subtree %s
+Restore subtree %s verinc %d
+Restore subtree %s links verinc %d
+Restore object %s
+Restore object %s verinc %d
+List NC CRs
+Toggle recycled objects flag
+LoadResStrings
+AddExpr
+FAILURE: SetEvent: 
+FAILURE: ReadFile: 
+ (header)
+ERROR: page %d%s checksum failed
+WARNING: page %d%s checksum verification failed but the corruption ( bit %d ) can be corrected
+FAILURE: GetQueuedCompletionsStatus: 
+(Completion Info: ipage=%d, cpage=%d, dwTickDuration=%d)
+FAILURE: GetQueuedCompletionsStatus got the wrong number of bytes: 
+(Completion Info: ipage=%d, cpage=%d, dwTickDuration=%d, dwBytesTransferred=%d != cbRead=%d)
+<unprintable>
+File: %.64ls
+FAILURE: CreateFile: 
+FAILURE: CreateIoCompletionPort: 
+FAILURE: CreateThread: 
+FAILURE: GetFileSize: 
+FAILURE: VirtualAlloc buffer size underflow or overflow: 
+FAILURE: VirtualAlloc: 
+FAILURE: CreateEvent: 
+Checksum Status (% complete)
+FAILURE: WaitForSingleObjectEx: 
+Default
+scrub_off
+DSA Database file
+Database log files path
+Database backup path
+DSA Working Directory
+%s\edb*.*
+edb.chk
+%s - %s
+System\CurrentControlSet\Services\VSS\VssAccessControl
+Reading Config Info 
+System\CurrentControlSet\Services\DirectoryServices\Linkage
+Export
+Setting Config Info 
+Reading config information 
+Activate Instance 
+ADAM_
+DsRoleGetPrimaryDomainInformation()
+ATTb590606
+NTDSDSA
+nTDSDSARO
+Reading values 
+Retrieving Service Handle 
+Querying Service Status 
+Port LDAP
+Port SSL
+Unable to initialize WinSock 
+Unable to create socket 
+Not able to make socket exclusive 
+Failed while binding to port 
+%windir%\ADAM\adamwizard.dll
+RemoveFWExceptions
+CreateFWExceptions
+Long instance name
+BinPath
+DSA Database file
+Database log files path
+DSA Working Directory
+System\CurrentControlSet\Services\
+\Parameters
+GetDSServiceHandle
+MACHINE
+%ws\%hs
+Service account SID
+SetConfigParam
+LookupAccountSid
+ImpersonateLoggedOnUser
+RevertToSelf
+%ws\%ws
+GetNameSecurityInfo
+SetEntiresInAcl
+SetNameSecurityInfo
+GetVersionExW
+ChangeServiceConfig
+SeServiceLogonRight
+SeDenyServiceLogonRight
+LsaOpenPolicy
+LsaEnumerateAccountRights
+LsaAddAccountRights
+Header
+Checkpoint
+Logfile %s
+Metadata
+Space usage
+Dump page %d
+Recover
+Integrity
+Checksum
+Compact to %s
+Move logs to %s
+Move DB to %s
+Set path DB %s
+Set path backup %s
+Set path logs %s
+Set path working dir %s
+Set backup exclusion key
+Set default folder security
+%s\edb.chk
+%s\%ls
+ESEUTIL
+The ESE engine did not return expected stat data size.
+The ESE engine did not return expected catalog data.
+******************************** SPACE DUMP ***********************************
+Name                   Type   ObjidFDP    PgnoFDP  PriExt      Owned  Available
+===============================================================================
+%-23.23ws Db  
+%-23.23ws Tbl 
+<Long Values>
+  %-21.21ws LV  
+  %-21.21ws Idx 
+Eseutil did not recognize the B-Tree type, incompatible engine and utility versions?
+Does not look like a proper util argument
+-------------------------------------------------------------------------------
+                                                                     
+fDefragmentation
+Upgrade
+Restore
+Scanning
+Securing
+Upgrading Record Format
+ Status (% complete)
+          
+%s\%s
+%s\DSADATA.BAK
+%s\temp.edb
+TelnetSrvWinSta
+Memory Allocation Error reading Resource Strings
+Error reading Resource Strings
+*** Error: Cannot Find Resource String in memory
+Verbose %s
+Go Fixup
+Get %d
+Check Quota
+Rebuild Quota
+OpenProcessToken
+AdjustTokenPrivileges
+GetWindowsDirectory
+Security template path is too long
+\inf\defltdc.inf
+Update folder security
+NT SERVICE\%s
+StringCchPrintfW
+GetNamedSecurityInfo
+SetEntriesInAcl
+SetNamedSecurityInfo
+%s\%s
+GetSecurityDescriptorControl
+%d.%s %s
+DSREPAIR
+%SAFEBOOT_OPTION%
+Popups on
+Popups off
+Activate Instance %s
+LDAP Port %d
+SSL Port %d
+Files
+Semantic database analysis
+Authoritative restore
+List Instances
+Change Service Account %s %s
+Change Service Account %s1 %s2
+Snapshot
+ERROR: Out of Memory. Exiting. 
+ERROR reading resource file. Exiting. 
+13INDEX_%8x%n
+INDEX_P_%8x%n
+INDEX_LP_%8x_%4x%n
+INDEX_T_%8x%n
+INDEX_S_%8x%n
+LCL_ABVIEW_index%8x%n
+kernelbase.dll
+GetTempPath2A
+Index Name
+Attribute Name
+AttributeIndexRebuild
+DS Drive Mappings
+Database logging/recovery
+Maximum Open Tables
+EDB delete out of range logs
+LCL_ABVIEW_index
+LCL_PHABVIEW_index
+Delete Unicode Indices
+\temp.edb
+backupusn_col
+backupexpiration_col
+Microsoft Enhanced RSA and AES Cryptographic Provider
+ar_temp_invoc_id
+1O%R{o
+Microsoft NTDS
+System\CurrentControlSet\Services\NTDS
+System\CurrentControlSet\Services\NTDS\Diagnostics
+SOFTWARE\Microsoft\NTDS\Language
+SOFTWARE\Microsoft\NTDS\Security
+SOFTWARE\Microsoft\NTDS\Setup
+NTDS General
+System\CurrentControlSet\Services\Eventlog\Directory Service
+<NULL>
+ADAM_%S
+ADAM [%s] General
+System\CurrentControlSet\Services\Eventlog\ADAM (%s)
+System\CurrentControlSet\Services\ADAM_%s
+System\CurrentControlSet\Services\ADAM_%s\Parameters
+System\CurrentControlSet\Services\ADAM_%s\Diagnostics
+System\CurrentControlSet\Services\ADAM_%s\Language
+System\CurrentControlSet\Services\ADAM_%s\Security
+System\CurrentControlSet\Services\ADAM_%s\Setup
+JET_paramBaseName
+JET_paramTempPath
+JET_paramRecovery
+JET_paramDatabasePageSize
+JET_paramCacheSizeMax
+JET_paramCheckpointDepthMax
+JET_paramProcessFriendlyName
+JET_paramEventLogCache
+JET_paramAssertAction
+JET_paramEventSourceKey
+JET_paramMaxSessions
+JET_paramCacheSizeMin
+JET_paramLogBuffers
+JET_paramStartFlushThreshold
+JET_paramStopFlushThreshold
+JET_paramMaxOpenTables
+JET_paramMaxTemporaryTables
+JET_paramMaxVerPages
+JET_paramMaxCursors
+JET_paramIndexTuplesLengthMin
+JET_paramIndexTuplesLengthMax
+JET_paramIndexTuplesToIndexMax
+JET_paramEnableTempTableVersioning
+JET_paramUnicodeIndexDefault
+JET_paramDeleteOldLogs
+JET_paramEnableIndexChecking
+JET_paramEventSource
+JET_paramLogFileSize
+JET_paramCircularLog
+JET_paramDeleteOutOfRangeLogs
+JET_paramEnablePersistedCallbacks
+JET_paramEnableIndexCleanup
+JET_paramSystemPath
+JET_paramLogFilePath
+JET_paramAlternateDatabaseRecoveryPath
+<NONE>
+{;\\.\
+quota_NCDNT
+quota_SID
+quota_tombstoned
+quota_total
+quota2_NCDNT
+quota2_SID
+quota2_tombstoned
+quota2_total
+quota2_link
+quota_rebuild_fLinkOn
+quota_rebuild_fDone
+bad allocation
+Create Full %s
+Create Sysvol Full %s
+Create RODC %s
+Create Sysvol RODC %s
+Create Full NoDefrag %s
+Create Sysvol Full NoDefrag %s
+Create
+Delete %s
+Mount %s
+Unmount %s
+List All
+List Mounted
+CheckIfDSInstanceStopped
+domainFunctionality
+localhost
+GetRootAttr()
+SeBackupPrivilege
+SYSVOL
+RODC_REMOVE_SECRETS;
+ADAM (%S) Writer
+%.3ws
+%SystemRoot%
+%s$SNAP_%04d%02d%02d%02d%02d_VOLUME%c$
+CreateFile(%S)
+malloc()
+FindFirstFile(szFindMask, &findData)
+DfsrPrivate
+DO_NOT_REMOVE_NtFrs_PreInstall_Directory
+NtFrs_PreExisting___See_EventLog
+NTFRS_CMD_FILE_MOVE_ROOT
+%s\registry
+%s\SYSVOL
+%s\Active Directory
+adamntds.dit
+ntds.dit
+%S\%s
+adamntds.dit
+ntds.dit
+adamntds.jfm
+ntds.jfm
+SYSTEM
+SECURITY
+%s\registry\%s
+%%SystemRoot%%\System32\config\%s
+SeSecurityPrivilege
+SeRestorePrivilege
+%s\*%c
+{????}
+%04d/%02d/%02d:%02d:%02d
+map/set<T> too long
+invalid map/set<T> iterator
+NP(45U
+Memory allocation error while reading resource string
+Memory allocation error while reading resource Strings
+%I64d
+%I64d%s
+No language defined
+%s %s
+%-30s - %s
+Error %08lx while reading input
+Error while parsing input - illegal syntax?
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+(objectCategory=*)
+dsdbutil.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+t)SQWRh.
+9p t/
+u j Z
+D$XPhh
+D$DPj
+D$hSV
+y3ShN
+QQSVW
+u j+j
+E(PVW
+u j+j
+<_^[]
+t>90t:
+QQSV3
+Y_^[]
+SVWj$
+QQSVW
+xPjDj
+D$(Ph
+D$LPQ
+Qh8 @
+D$,Pj
+PhH @
+PhP @
+YYh` @
+Php @
+Ph0!@
+D$,Pj
+PPPPj
+Qh8 @
+D$,Pj
+Phx!@
+D$0PhP @
+j;XPV
+;w<tN
+SVWj<Xj>f
+Gf9\U
+PQPSP
+jC[jc_;
+wHt&+
+f;F8u
+Ff99u
+r3j\[f9
+j\[f9
+rZj\[f9
+r*j\[f9
+f99uv
+j\[f9
+tSj"X
+j\Zf9
+[j"Xr
+j\[f9
+jK^93w
+^f;tQ
+D$HSVW
+t(VR3
+t$$ShF
+L$4Q@
+Qh8 @
+f;D$(u
+Xf;DN
+f;D$(u
+L$T_^[3
+j(Ph 
+VjDPj
+PWhp(@
+:j@j@
+)vKVj
+^f;tQ
+Ph$,@
+Ph0/@
+Phd0@
+PhX1@
+Phh1@
+VVhp1@
+Php1@
+PhX2@
+PhX2@
+Vh$3@
+ShP3@
+Wh05@
+SVWPh 
+G;~ r
+YY_^[
+YY_^[
+ u\hD
+PhX2@
+u#WQh
+PhX2@
+Ph07@
+PhP7@
+QQSVW
+Whp8@
+Wh 8@
+Qh8 @
+6h`9@
+WPh4:@
+YY_^[
+PhX2@
+PhX2@
+PhX2@
+Qh8=@
+t 9>t
+SSh` @
+PSSSh
+PhL%@
+uu!D$
+u$9D$
+QQSVW
+QQVWh
+Sh0@@
+ShP@@
+Sh<A@
+bhhA@
+Vh8B@
+Vh<A@
+|hhA@
+VhXB@
+Vh4C@
+Phh%@
+Phh%@
+Vh\C@
+Vh D@
+t hDD@
+Vh|D@
+Vh<E@
+Vh`E@
+y;Sh@G@
+YYh(H@
+PhHH@
+Sh<I@
+WhhI@
+ShpG@
+Vh,J@
+VhLJ@
+Vh0K@
+PhX%@
+VhdK@
+Vh8L@
+VhhL@
+D$ Wj
+|$$9|$
+D$ Wj
+D$ Wj
+t$$;t$
+xn9|$
+x+G;|$
+AVhLJ@
+VhpM@
+ VhDM@
+Vh M@
+Sh$N@
+Vh8N@
+Vh\N@
+y9PhN
+PhpM@
+PhLJ@
+y WhN
+y"hdO@
+Ph8P@
+Vh8N@
+WhXP@
+Vh4Q@
+ybVh\Q@
+WWWVh
+D$ SVWhd(@
+Ph|O@
+L$,_^[3
+SSh|0C
+t@SSh|0C
+_^[Y]
+FN;5T
+;=LEC
+;NDr=w
+;F@v6
+PhHT@
+~T;~Xv
+~X;~\s
+PPSh0
+PWVSR
+u j+P
+E(PQRj
+PWRQVj
+QQSVW
+RWVSQPj
+},RWVSQPj
+jT_WV
+Rh,[@
+t#h0[@
+u/h0[@
+t#hD[@
+t#h\[@
+t!ht[@
+PVShP
+Shd(@
+D$HPjq
+D$DPP3
+D$$PS
+D$`SV
+L$HQP
+L$l_^[3
+PSh0\@
+SVWP3
+Qh@]@
+u?Whq
+PVhP]@
+Ph|O@
+D$ SVW
+VPh ^@
+L$,_^[3
+PhT^@
+Ph`^@
+PVhl^@
+PVh(_@
+D$ VPhd_@
+Qh\\@
+s:jW^Q
+PQjAZ
+PShT^@
+PSh`^@
+PSh$`@
+PShT`@
+PSh$`@
+L$(Wf
+D$0j\P
+PVh@a@
+f;D$,u
+D$(_^[3
+PVh`a@
+QPQQj
+PVh(b@
+PVhPb@
+RVVVVj
+PVhlb@
+PSh<c@
+PVh0\@
+D$`Ph
+PVh0\@
+D$`Ph
+D$`Ph
+SSSSSSj
+Qf9\$lux
+PVh0\@
+D$pPh
+PVh0\@
+D$`Ph
+PVh0\@
+D$`Ph
+PVh0\@
+D$`Ph
+PVh0\@
+D$xPhj
+x|jT^V
+PVh0\@
+u j+j
+SSj-SV
+SSj6SV
+SSj.SV
+Sj"SV
+D$8Pu
+D$8PSj
+PWh0\@
+Sj"SV
+jd^+5
+;;s!j
+Y@_^[
+PVh0\@
+u j+S
+4_^[Y]
+PVhLl@
+PVhpl@
+Wh<m@
+PVh\m@
+QPQQj
+t$Vh@
+jd^+5X
+Phtn@
+PShxn@
+(_^[3
+\u}8N
+PWVh$
+3D$(1D$
+;\$,s
+3D$(1D$
+;\$,s
+T$X8U
+N#t$T
+Ph$r@
+Ph4r@
+PhHr@
+PhXr@
+Phhr@
+u j+j
+u j+j
+u j+j
+E$Pj%h
+u j+j
+;\u\<\u(8F
+D$$Pj
+D$$VP
+ttSVh
+PPPWV
+SVWjL3
+D$HPV
+L$,Qh
+D$(Vj
+D$,Ph
+\$(Pj
+D$,Ph
+D$8PV
+!D$ 9D$8
+D$(jAP
+D$(j@
+t$4^j
+L$89L$ 
+WWWWh
+QSVWj
+j#QSj
+j$QS3
+D$$Pj
+PPPSW
+RVPWQSj
+E(PQRj
+U(SVWj
+WRSVj
+<_^[]
+u&8\$
+t+hdu@
+L$LVQWP
+L$<QWP
+L$`QVP
+L$tQVP
+U8SVW
+E(PQVjlh
+U8SVW
+E<PWRj
+E(PQVjmh
+$wDt<
+ow?t7
+D$0SV
+D$$PW
+Ph0~@
+Ph<~@
+PhH~@
+Ph\~@
+Phh~@
+Phx~@
+t*WWQj
+uZ9E$t.j
+PSSSh
+PSSSh
+PSSSh
+Vh` @
+u0RVQWPSj
+u0WVSRj
+E(PQRj!h
+VWuUj
+SVWPj(
+"WWWj
+9G4tS
+D$<PV
+Qj QP
+QVVSP
+PVSh(
+D$Thl
+D$Th$
+Ph,[@
+Ph,[@
+j$QPQ
+j(QPQ
+D$xSVW3
+uz!D$
+D$(Ph
+PPPPP
+t{WVj
+PPPPP
+;0u.9E
+t);>u
+;0u.9E
+QQPVP
+9>~@S
+QQSVW
+trk|$
+t_98t[
+tQ98tMh
+D$8Ph
+f9L$8tk
+tQf9|$8tJ
+97~ S
+Y__^[
+QRPhT
+Y__^[
+NtdsbsrvDllInit
+UpdateBackupExclusionKey
+.?AVbad_alloc@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVexception@@
+.?AVout_of_range@std@@
++Index Name
+password
+admin
+RegOpenKeyExA
+RegQueryValueExA
+RegCloseKey
+LookupAccountNameW
+RegQueryValueExW
+LookupAccountSidW
+LsaClose
+LsaAddAccountRights
+LsaOpenPolicy
+LsaNtStatusToWinError
+LsaEnumerateAccountRights
+GetLengthSid
+OpenServiceW
+ChangeServiceConfigW
+RegOpenKeyExW
+LogonUserW
+RegSetValueExW
+ImpersonateLoggedOnUser
+GetNamedSecurityInfoW
+SetNamedSecurityInfoW
+OpenSCManagerA
+SetEntriesInAclW
+CloseServiceHandle
+QueryServiceStatus
+LsaFreeMemory
+RevertToSelf
+OpenProcessToken
+RegSetValueExA
+GetNamedSecurityInfoA
+GetSecurityDescriptorControl
+SetNamedSecurityInfoA
+RegOpenKeyA
+AdjustTokenPrivileges
+RegisterTraceGuidsA
+UnregisterTraceGuids
+GetTraceEnableLevel
+GetTraceEnableFlags
+GetTraceLoggerHandle
+ADVAPI32.dll
+LocalAlloc
+GetLastError
+FileTimeToSystemTime
+LocalFree
+SystemTimeToFileTime
+SystemTimeToTzSpecificLocalTime
+GetSystemTimeAsFileTime
+GetSystemTime
+CompareStringW
+LocalReAlloc
+MultiByteToWideChar
+GetLocalTime
+GetTickCount
+FindFirstFileA
+WriteFile
+FindClose
+CreateFileA
+CloseHandle
+GetModuleHandleA
+FormatMessageW
+ReadFile
+VirtualFree
+VirtualAlloc
+GetQueuedCompletionStatus
+WaitForSingleObject
+CreateFileW
+PostQueuedCompletionStatus
+Sleep
+SetEvent
+GetCurrentThread
+WaitForSingleObjectEx
+CreateThread
+SetThreadPriorityBoost
+IsProcessorFeaturePresent
+GetFileSize
+CreateEventA
+CreateIoCompletionPort
+GetFileAttributesExA
+GetDriveTypeA
+FindNextFileA
+GetVolumeInformationA
+GetDiskFreeSpaceA
+GetLogicalDriveStringsA
+ExpandEnvironmentStringsW
+GetVersionExW
+GetProcAddress
+ExitProcess
+FreeLibrary
+LoadLibraryExW
+GetSystemInfo
+MoveFileA
+DeleteFileA
+GetConsoleScreenBufferInfo
+SetConsoleScreenBufferSize
+GetStdHandle
+SetConsoleMode
+SetThreadUILanguage
+GetConsoleMode
+ReadConsoleW
+SearchPathA
+WriteConsoleW
+SetConsoleCursorPosition
+FindFirstFileW
+FindNextFileW
+GetCurrentProcess
+GetWindowsDirectoryA
+FormatMessageA
+ExpandEnvironmentStringsA
+GetFileAttributesW
+GetFileAttributesA
+CreateDirectoryA
+KERNEL32.dll
+_vsnwprintf
+fclose
+realloc
+_vsnprintf
+_setmode
+fprintf
+wcspbrk
+_fileno
+putchar
+_wfopen
+printf
+_wcsnicmp
+vfwprintf
+sprintf_s
+fwprintf
+malloc
+wcsncpy_s
+iswspace
+wcscpy_s
+wcscat_s
+qsort
+strcpy_s
+bsearch
+ferror
+fgetwc
+wcschr
+towlower
+wcstol
+wcstoul
+iswxdigit
+_wcsicmp
+strncmp
+vsprintf_s
+swprintf_s
+wcsstr
+wcsrchr
+wprintf
+iswascii
+strncpy_s
+wcstombs
+_stricmp
+strcat_s
+strnlen
+strstr
+strrchr
+wcsnlen
+_itoa_s
+_wsplitpath_s
+wcstombs_s
+mbstowcs
+_strnicmp
+_wcsdup
+vswprintf_s
+strchr
+_XcptFilter
+__p__commode
+_amsg_exit
+__getmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+_except_handler4_common
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+_controlfp
+UuidFromStringW
+UuidToStringW
+RpcStringFreeW
+RpcStringFreeA
+UuidToStringA
+UuidCreate
+LoadStringW
+DsRoleFreeMemory
+CoUninitialize
+DsRoleGetPrimaryDomainInformation
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+TerminateProcess
+GetModuleHandleW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+SetLastError
+GetTempPathA
+RegDeleteValueA
+DeviceIoControl
+TraceMessageVa
+GetSecurityDescriptorOwner
+EqualSid
+GetConsoleOutputCP
+CreateDirectoryW
+NetShareGetInfo
+GetFileInformationByHandleEx
+SetPriorityClass
+SetSecurityDescriptorControl
+RemoveDirectoryW
+InitializeSecurityDescriptor
+CoTaskMemFree
+GetFileSecurityW
+CoInitializeSecurity
+SetFileInformationByHandle
+GetPriorityClass
+CopyFileW
+GetVolumePathNamesForVolumeNameW
+SetFileSecurityW
+CoInitializeEx
+GetSecurityDescriptorDacl
+NetApiBufferFree
+GetSecurityDescriptorSacl
+LookupPrivilegeValueW
+GetProcessTimes
+RPCRT4.dll
+WLDAP32.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+WS2_32.dll
+DSROLE.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-file-l1-2-2.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-console-l1-1-0.dll
+srvcli.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-file-l2-1-2.dll
+netutils.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+JetSetCurrentIndexA
+JetCommitTransaction
+JetPrepareUpdate
+JetSeek
+JetSetColumn
+JetGetTableColumnInfoA
+JetMakeKey
+JetRetrieveColumn
+JetUpdate
+JetRollback
+JetBeginTransaction
+JetMove
+JetRetrieveKey
+JetOpenTableA
+JetGetColumnInfoA
+JetSetCurrentIndex2A
+JetTerm2
+JetCloseTable
+JetCloseDatabase
+JetDelete
+JetEscrowUpdate
+JetEndSession
+JetRetrieveColumns
+JetDeleteTableA
+JetTerm
+JetInit
+JetDBUtilitiesA
+JetSetSystemParameterW
+JetBeginSessionA
+JetSetSystemParameterA
+JetGetDatabaseFileInfoA
+JetGetSystemParameterA
+JetInit2
+JetDetachDatabaseA
+JetAttachDatabaseA
+JetOpenDatabaseA
+JetGetTableIndexInfoA
+JetCreateTableColumnIndexA
+JetGotoBookmark
+JetOpenTempTable
+JetSetTableSequential
+JetSetColumns
+ESENT.dll
+GetVolumeNameForVolumeMountPointA
+RtlSubAuthoritySid
+RtlSubAuthorityCountSid
+RtlGetControlSecurityDescriptor
+RtlValidRelativeSecurityDescriptor
+RtlInitializeGenericTable
+RtlDeleteElementGenericTable
+RtlIsGenericTableEmpty
+RtlInsertElementGenericTable
+RtlEnumerateGenericTableWithoutSplaying
+RtlGetElementGenericTable
+RtlLookupElementGenericTable
+RtlGetDaclSecurityDescriptor
+RtlInitUnicodeString
+RtlGetNtProductType
+RtlExtendedIntegerMultiply
+RtlExtendedLargeIntegerDivide
+ntdll.dll
+DsCrackNamesW
+DsFreeNameResultW
+NTDSAPI.dll
+CoInitialize
+ole32.dll
+SHFileOperationW
+SHELL32.dll
+MessageBoxW
+GetFocus
+GetProcessWindowStation
+GetUserObjectInformationA
+USER32.dll
+VssFreeSnapshotPropertiesInternal
+CreateVssBackupComponentsInternal
+VSSAPI.DLL
+CryptReleaseContext
+CryptGetHashParam
+CryptDestroyHash
+CryptHashData
+CryptCreateHash
+CryptAcquireContextA
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+__iob_func
+sscanf_s
+tolower
+isalpha
+_makepath_s
+_ultoa_s
+_splitpath_s
+_itow_s
+setlocale
+__CxxFrameHandler3
+memcpy_s
+_wtoi
+?what@exception@@UBEPBDXZ
+??1exception@@UAE@XZ
+??0exception@@QAE@XZ
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABV0@@Z
+_wfullpath
+memmove_s
+swscanf_s
+fgetws
+_callnewh
+_CxxThrowException
+??1type_info@@UAE@XZ
+wcstok
+OutputDebugStringA
+memcmp
+memcpy
+memmove
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.DS.DSDbUtil"
+    type="win32"
+<description>NT5DS</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="highestAvailable"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+NT5DS
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+dsDbUtil.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+dsDbUtil.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0 0$0(0,0004080<0@0D0H0P0T0X0\0`0d0h0l0p0t0x0|0
+181P1X1p1
+202@2D2H2L2P2d2h2x2
+>1>Q>q>
+0$0(060f0n0u0
+1&11171G1M1X1p1
+1'2J2Y2
+3'373F3L3S3\3b3i3s3}3
+4&404:4D4I4O4V4\4i4
+5"565<5F5K5Q5W5a5g5q5
+636:6Q6V6]6y6
+7$7-73797?7F7S7`7j7u7
+8!8+858?8J8U8a8g8
+9M9`9
+:":):4:N:h:r:
+;&;.;
+;4<E<u<
+=7=d=l=s={=
+>k>q>x>~>
+>j?t?
+G0T0o0{0
+3#3N3
+444H4N4X4n4t4{4
+575C5I5P5V5]5y5
+5(6p6|6
+8A8e8
+92999?9D9N9X9]9e9m9
+:>:W:|:
+;8;u;
+<9<W<
+=0=W=~=
+=e>|>
+1:1C1l1U2g2p2
+3X3a3p3u3
+30454e4j4
+4%5>5
+5&6g6
+688D8
+9O9n9
+:6:a:
+;!;L;z;
+;K<j<
+>N>Z>~>
+>#???D?|?
+1!1]1j1
+3X3`3
+4<4f4k4w4
+6"636R6
+7 717D7
+9*:W:h;
+<B<s<
+<$=k=
+=:>^>
+?4?<?w?
+111B1P1w1
+2&292P2X2
+3)3I3k3
+4'4J4Z4d4k4
+7'7A7I7c7
+8(9y9
+:#:4:E:h:y:
+;:<c<o=
+172Q2z2
+2%3q3
+414<4E4[4
+5 5R5
+5@6F6[6`6
+707?7K7b7q7}7
+8 828>8U8~8
+8!9-9D9I9r9
+92:m:
+<*<7<N<S<r<
+='=:=?=v=
+>W>m>y>
+?S?X?r?x?
+0.0k0
+1%1H1N1b1
+2!20262=2I2Z2d2p2
+4$4]4r4
+5-5?5Q5o5u5
+7(8:8p8
+:=<g<
+1 1h1y1
+2)252q2
+<,<C<
+>M>r>
+>@?h?
+1$1)1.141@1F1L1R1e1k1q1
+2&2E2h2o2|2
+3(3.3=3B3L3X3m3s3
+4B4G4M4o4
+51575=5C5X5v5
+6(606;6A6Q6X6p6v6{6
+7'7-7:7@7F7Z7_7e7}7
+8!8+8;8A8G8W8]8c8s8y8
+8 9c9i9n9
+: :::R:d:i:s:x:
+;';-;3;E;
+<J<]<g<v<|<
+=!=&=/=5=A=J=R=
+>#>)>;>@>K>[>a>s>~>
+?"?*?2?>?D?_?
+010E0W0]0c0i0
+1J1c1h1
+2)2>2P2V2\2b2{2
+2+373<3P3V3\3f3l3y3
+474@4L4^4
+595J5V5]5u5z5
+6"6'6A6H6N6z6
+7,72787D7J7O7Y7q7w7|7
+8&818Q8W8\8l8r8w8
+9$9*9/9B9H9M9X9h9w9}9
+:&:,:1:@:F:K:[:a:f:
+;>;t;z;
+<W<^<j<~<
+=1=c=i=|=
+>,>2>8>>>Y>g>p>v>
+?%?+?<?P?V?r?x?
+0-030O0U0]0r0x0
+1-131A1G1[1
+2%2\2b2h2y2
+223;3
+5.676R6
+7"717V7k7p7
+8>8D8b8q8
+9"9(9;9C9M9Y9_9t9
+96:=:S:Z:k:s:
+:8;>;D;J;g;v;
+<h<n<t<z<
+=:=G=c=i=o=u={=
+=)>B>H>N>T>^>x>~>
+>%?+?1?
+0!0B0p0
+1<1B1H1[1t1z1
+2,2d2j2p2v2|2
+3>3`3h3n3
+4:4@4W4]4x4~4
+4!5,5@5G5b5
+686L6V6\6f6l6r6
+6!7'7/757^7
+768<8K8X8]8x8
+90969<9M9_9e9k9q9
+:F:L:R:[:f:l:r:{:
+;*;8;J;
+<e<k<q<w<
+<9=?=X=s=
+=&>,>2>8>N>f>l>r>
+?'?9?O?U?[?a?s?y?~?
+0,050;0A0G0Y0_0d0q0w0
+1$1)181L1b1h1
+20262;2[2~2
+3+31373=3C3a3i3
+454H4N4T4Z4
+5+51575=5U5^5d5y5
+6 656@6I6O6`6i6o6
+72787>7D7Q7[7a7i7
+7+82888>8J8S8Y8_8
+90979D9
+;=;K;c;
+<+<9<[<
+=)=Q=b=
+>9>D>K>
+?,?=?F?y?
+060D0g0w0
+1,1S1a1
+2#272>2
+3%3O3
+4C4T4g4
+5'5<5N5g5x5
+6(6<6b6k6z6
+7Y7p7
+8&888B8Q8
+9$9+999M9[9
+:):::H:
+;4;B;b;q;|;
+<&<5<P<h<w<
+="=1=]=n=
+>/>L>b>w>
+>3?U?
+020I0
+1!101C1
+2-2<2D2L2_2
+4.494A4L4T4\4d4s4
+6H7`7
+748Q8n8
+<<<W<_<g<o<~<
+===k=q=
+>$>F>c>t>
+?+?Z?h?y?
+0%040;0C0I0O0U0a0o0y0
+1%191C1I1O1U1\1k1x1
+2 2%2E2K2Q2W2j2
+3$3*3/3:3@3F3K3U3h3y3
+4?4J4
+4D5]5b5p5
+9M9_9h9n9t9z9
+:0:9:S:m:
+;2;N;g;p;x;
+<%<L<|<
+> >)>1>6>>>F>O>
+O0W0c0x0~0
+1 1T1z1
+2A3H3P3
+4C4M4S4Y4^4d4m4
+515@5V5d5p5x5
+6:6N6m6x6
+7&7/787A7J7V7`7g7m7u7~7
+7"8)80878F8P8c8m8z8
+<@<O<
+>0>=>
+,0Y0f0
+0<1O1
+5"616E6J6|6
+7&7+7Z7x7
+8$8D8S8m8}8
+8%919F9v9
+:I:z:
+=H?~?
+141O1v1
+1T2{2
+333U3z3
+4+4E4g4p4
+4J5P5
+:(:1:\:i:
+;6<T<
+<*=7=H=x=
+>7>T>
+?*?3?U?`?g?t?{?
+70L0h0q0
+0*1C1
+2 2O2[2
+4>4J4y4
+4J5k5
+6*7_7
+7(8E8T8[8n8
+989Y9e9j9
+:N:X:v:
+;+<5<
+=U>y>
+?R?g?
+1D1u1
+202Z2e2v2
+3(3D3S3
+4-4J4S4X4^4x4
+5-5G5
+7`7z7
+8/9f9
+96:D:S:Z:e:k:|:
+<B<H<^<q<w<
+=2=9=@=K=Q=
+=&>4>C>U>[>l>
+>_?m?{?
+0)0p0
+0,1F1
+1R2s2x2
+2-3b3w3
+3 4,4<4H4X4k4
+465J5U5
+7 7R7X7]7c7i7
+;H;d;
+<$<5<`<p<
+>?>a>
+2=2Q2
+3"3O3z3
+3%4,454s4
+535L5W5r5
+606>6L6Y6
+7)757o7
+7%878e8
+9$9?9E9P9W9f9w9
+9!:G:q:
+:2;=;W;m;w;
+<9<R<q<
+=J=X=m=t=~=
+><>i>
+?&?P?[?g?
+060`0
+0'1<1T1i1
+2N2[2
+2*3\3
+3E4Z4}4
+5 5?5
+8%9i9
+9':W:
+;,;8;>;D;c;t;{;
+< <,<7<=<O<]<d<
+=/=^=o=
+=5>H>q>
+>9?x?
+0-0w0
+2"212
+:K:Z:w:
+>T>d>h>m>s>y>
+?$?g?v?
+030J0Y0f0p0u0
+1M1R1a1v1
+2'2,2F2Z2k2
+3J3W3w3~3
+4N4V4a4h4|4
+768K8~8
+9)9/939>9c9o9}9
+:/:A:L:a:
+;#;I;
+;=<H<]<
+=H=v=
+>0>e>
+? ?5?Q?m?
+0E1Y1
+1)2;2p2
+273K3h3
+3S4g4
+4,5@5
+5L6a6
+8k9r9
+:%:E:M:l:w:
+;!;8;C;J;
+<f<k<r<
+?6?]?u?
+1-2[2
+50565G5O5
+5H6r6
+627[7
+7K8P8b8
+9f9|9
+:#:;:E:c:h:s:
+;);E;K;W;_;~;
+<#<8<
+=I=r=
+=B>a>n>
+?I?j?p?
+#0/080j0v0
+2#3X3g3
+4+5I5T5i5u5
+5.6}6
+7%7M7^7i7
+8,8S8h8
+949g9u9
+:$:4:i:r:{:
+:*;3;9;?;G;T;Z;`;f;l;r;x;~;
+<$<(<.<2<8<<<B<F<L<P<V<Z<`<d<j<n<
+<B=v=
+>Y>l>
+>@?S?{?
+0$0S0
+0$1G1L1R1X1^1d1j1p1v1|1
+2$2*2P2V2\2b2h2n2
+2 3?3b3
+4.4m4
+5e6l6
+7 787@7U7
+7;8{8
+9 9&949?9]9h9y9
+9 :+:I:T:i:u:}:
+:.;I;S;
+=<=~=
+>4?U?n?
+0/0I0^0
+2'2E2c2y2
+303K3h3
+4K4r4
+6G6u6
+708=8_8
+:!:7:H:U:u:
+;";,;3;@;\;f;p;z;
+=#=@=a={=
+N0d0O1
+1"2D2f2
+3-3<3Z3g3
+4A4G4[4k4{4
+5S5g5x5
+6V6}6
+8G9O9X9
+9&:?:
+:";8;
+<=<R<Y<k<q<
+=2=:=F=f=o=w=
+>*>7>Q>[>e>
+?9?R?q?
+0.0N0^0t0
+121k1u1
+2J2Y2y2
+4&4C4^4
+5P5Y5
+9V9h9
+:Z:c:
+;6<f<l<v<
+>.>g>p>
+?/?Q?r?
+0?0n0w0
+071[1~1
+474L4
+6K6T6
+8$8f8
+829x9
+;4;O;r;
+<:<L<V<g<
+>?>N>h>
+?"?5?<?O?V?i?p?
+080d0u0
+1&2E2j2
+3@3l3
+6n6w6
+8=8Y8`8
+9d9m9
+90:?:i:s:
+<\<}<
+=B=I=
+=6>h>q>
+>#?.?G?P?{?
+!0A0x0
+0+1y1
+1F2T2
+3-3^3z3
+4#404;4C4J4S4`4i4q4x4
+8@9U9
+9+:B:
+;6;l;
+<3=V=
+6P7K8{9
+<L=W=o=
+=D>R>~>
+424L5
+;*;6;>;
+<?=P=f=
+=V>l>
+?9?Y?h?m?
+70F0K0a0M1W1d1
+2S3k3r3
+3&4U4k4t4|4
+6&7-7d7
+7@8\8c8
+8^:O;
+="=*=0=A=g=x=
+=`>l>
+?,?F?h?s?
+0!0'040:0D0c0i0s0y0
+1'111<1r1w1
+2#2*21292A2I2U2^2c2i2s2}2
+3#3*31383?3E3Q3\3a3f3l3v3
+6/6M6a6g6*7H7W7`7i7~7
+7=8I8U8a8
+9A9U9k9x9
+;0;<;H;
+0)0F0
+172g2
+3O3r3
+4!414X4x4
+585X5x5
+686X6x6
+787X7
+8<8H8h8t8
+9(949T9`9
+90:D:T:d:|:
+; ;(;4;T;\;d;x;
+< <$<,<0<4<<<@<D<L<P<
+0(0,080<0H0L0X0\0h0l0x0|0
+1(1,181<1H1L1X1\1h1l1x1|1
+2(2,282<2H2L2X2\2h2l2x2|2
+3(3,383<3H3L3P3T3d3h3x3|3
+4,404@4D4P4T4X4h4l4
+5 5$50545@5D5P5T5`5d5p5t5
+6@6d6
+949X9\9`9d9h9l9p9t9x9|9

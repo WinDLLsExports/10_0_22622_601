@@ -1,0 +1,1173 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+DEVRTL.dll
+"~^Unable to update reboot required reason. Error = 0x%08x
+Delete Device
+{Delete Device - %ws}
+Devnode Status = 0x%08x
+Devnode problem = 0x%02x: %ws.
+CM_Query_And_Remove_Subtree_Ex returns 0x%08x
+Devnode Status after CM_Query_And_Remove_Subtree_Ex = 0x%08x
+Can't get status
+Query-and-Remove succeeded
+Access denied from Query and Remove
+Query-removal was vetoed by %ws (veto type %u: %ws)
+Setting needs reboot
+Query-and-Remove failed: 0x%02x: %ws.
+Unable to Uninstall the Device Instance
+Device Instance uninstalled.
+Exception encountered
+{Delete Device - exit(0x%08x)}
+Uninstall device subtree
+{Uninstall device subtree for %ws: Enter}
+{Uninstall device subtree (0x%08x): Exit}
+Restart Device
+Change Device State
+{Change Device State - %ws}
+%ws: %ws
+Device required reboot: Could not enable device: %02x: %ws
+Skipped starting device due to caller request.
+Device required reboot: Could not enable device for hardware profile.
+Device failed: Could not enable device for hardware profile: %02x: %ws
+Device failed: Could not disable device: %02x: %ws
+Disable was vetoed by %ws (veto type %u: %ws)
+Device required reboot: Could not disable device: %02x: %ws
+Skipped stopping device due to caller request.
+Device required reboot: Could not disable device for hardware profile.
+Device failed: Could not disable device for hardware profile: %02x: %ws
+Device will not be restarted.
+Device could not be restarted.
+Unable to retrieve device info data to check presence.
+Device required reboot: Query remove failed: %02x: %ws
+{Change Device State - exit(0x%08x)}
+Device required reboot: Device has problem: 0x%02x (%ws), problem status: 0x%08x.
+Device pending start: Device has problem: 0x%02x (%ws), problem status: 0x%08x.
+Device not started: Device has problem: 0x%02x (%ws), problem status: 0x%08x.
+Device required reboot: Marked as having private problem.
+Device not started (unknown reason): Device has no problem.
+Device '%ws' required reboot: Retrieve device status failed: 0x%02x: %ws.
+Restart verified: %ws
+Device '%ws' required reboot: Device has problem: 0x%02x (%ws), problem status: 0x%08x.
+Device '%ws' pending start: Device has problem: 0x%02x (%ws), problem status: 0x%08x.
+Device '%ws' not started: Device has problem: 0x%02x (%ws), problem status: 0x%08x.
+Device '%ws' required reboot: Device has private problem.
+Device '%ws' not started (unknown reason): Device has no problem.
+Install Device: Starting device '%ws'.
+Install Device: Starting device completed.
+Install Device: Removing device '%ws' and sub-tree.
+Install Device: Removing device sub-tree completed.
+Install Device: Restarting device.
+Install Device: Restarting device completed.
+Query-removal during install of '%ws' was vetoed by '%ws' (veto type %u: %ws).
+Device required reboot: Query remove failed (install) 0x%02x: %ws.
+{Restarting Devices}
+Unable to mark device '%ws' to temporarily prevent driver loads.  Error = 0x%08x
+Query-remove: %ws
+Query-remove complete
+Query-removal vetoed by '%ws' (veto type %u: %ws).
+Device required reboot: Query remove failed : 0x%02x: %ws.
+Driver '%ws' required reboot: Driver did not unload.
+Unable to clear marking on device '%ws' to allow driver loads again.  Error = 0x%08x
+Start: %ws
+Start complete.
+Start failed with error: 0x%02x: %ws.
+%ws: Status changed after initial check: [0x%08x, 0x%02x] -> [0x%08x, 0x%02x]
+Device '%ws' requires reboot: Unable to retrieve list of related devices.
+%ws: Status changed after start verified: [0x%08x, 0x%02x] -> [0x%08x, 0x%02x]
+{Restarting Devices exit}
+Restart Devices
+Device Status: 0x%08x
+Device Status: 0x%08x [0x%02x - 0x%08x]
+Restart of device '%ws' was skipped (NEEDREBOOT/NEEDRESTART).
+Device restart was skipped (NEEDREBOOT/NEEDRESTART).
+Restart of device '%ws' was skipped (DONOTCALLCONFIGMG).
+Device restart was skipped (DONOTCALLCONFIGMG).
+Unable to clear HW Profile Flags!
+ntdll.dll
+Current
+RtlQueryUnbiasedInterruptTime
+\REGISTRY\MACHINE
+\REGISTRY\MACHINE\SOFTWARE\Classes
+\REGISTRY\USER
+\REGISTRY\MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current
+CM_PROB_NONE
+CM_PROB_NOT_CONFIGURED
+CM_PROB_DEVLOADER_FAILED
+CM_PROB_OUT_OF_MEMORY
+CM_PROB_ENTRY_IS_WRONG_TYPE
+CM_PROB_LACKED_ARBITRATOR
+CM_PROB_BOOT_CONFIG_CONFLICT
+CM_PROB_FAILED_FILTER
+CM_PROB_DEVLOADER_NOT_FOUND
+CM_PROB_INVALID_DATA
+CM_PROB_FAILED_START
+CM_PROB_LIAR
+CM_PROB_NORMAL_CONFLICT
+CM_PROB_NOT_VERIFIED
+CM_PROB_NEED_RESTART
+CM_PROB_REENUMERATION
+CM_PROB_PARTIAL_LOG_CONF
+CM_PROB_UNKNOWN_RESOURCE
+CM_PROB_REINSTALL
+CM_PROB_REGISTRY
+CM_PROB_VXDLDR
+CM_PROB_WILL_BE_REMOVED
+CM_PROB_DISABLED
+CM_PROB_DEVLOADER_NOT_READY
+CM_PROB_DEVICE_NOT_THERE
+CM_PROB_MOVED
+CM_PROB_TOO_EARLY
+CM_PROB_NO_VALID_LOG_CONF
+CM_PROB_FAILED_INSTALL
+CM_PROB_HARDWARE_DISABLED
+CM_PROB_CANT_SHARE_IRQ
+CM_PROB_FAILED_ADD
+CM_PROB_DISABLED_SERVICE
+CM_PROB_TRANSLATION_FAILED
+CM_PROB_NO_SOFTCONFIG
+CM_PROB_BIOS_TABLE
+CM_PROB_IRQ_TRANSLATION_FAILED
+CM_PROB_FAILED_DRIVER_ENTRY
+CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
+CM_PROB_DRIVER_FAILED_LOAD
+CM_PROB_DRIVER_SERVICE_KEY_INVALID
+CM_PROB_LEGACY_SERVICE_NO_DEVICES
+CM_PROB_DUPLICATE_DEVICE
+CM_PROB_FAILED_POST_START
+CM_PROB_HALTED
+CM_PROB_PHANTOM
+CM_PROB_SYSTEM_SHUTDOWN
+CM_PROB_HELD_FOR_EJECT
+CM_PROB_DRIVER_BLOCKED
+CM_PROB_REGISTRY_TOO_LARGE
+CM_PROB_SETPROPERTIES_FAILED
+CM_PROB_WAITING_ON_DEPENDENCY
+CM_PROB_UNSIGNED_DRIVER
+CM_PROB_USED_BY_DEBUGGER
+CM_PROB_DEVICE_RESET
+CM_PROB_CONSOLE_LOCKED
+CM_PROB_NEED_CLASS_CONFIG
+CM_PROB_GUEST_ASSIGNMENT_FAILED
+CR_SUCCESS
+CR_DEFAULT
+CR_OUT_OF_MEMORY
+CR_INVALID_POINTER
+CR_INVALID_FLAG
+CR_INVALID_DEVNODE
+CR_INVALID_RES_DES
+CR_INVALID_LOG_CONF
+CR_INVALID_ARBITRATOR
+CR_INVALID_NODELIST
+CR_DEVNODE_HAS_REQS
+CR_INVALID_RESOURCEID
+CR_DLVXD_NOT_FOUND
+CR_NO_SUCH_DEVNODE
+CR_NO_MORE_LOG_CONF
+CR_NO_MORE_RES_DES
+CR_ALREADY_SUCH_DEVNODE
+CR_INVALID_RANGE_LIST
+CR_INVALID_RANGE
+CR_FAILURE
+CR_NO_SUCH_LOGICAL_DEV
+CR_CREATE_BLOCKED
+CR_NOT_SYSTEM_VM
+CR_REMOVE_VETOED
+CR_APM_VETOED
+CR_INVALID_LOAD_TYPE
+CR_BUFFER_SMALL
+CR_NO_ARBITRATOR
+CR_NO_REGISTRY_HANDLE
+CR_REGISTRY_ERROR
+CR_INVALID_DEVICE_ID
+CR_INVALID_DATA
+CR_INVALID_API
+CR_DEVLOADER_NOT_READY
+CR_NEED_RESTART
+CR_NO_MORE_HW_PROFILES
+CR_DEVICE_NOT_THERE
+CR_NO_SUCH_VALUE
+CR_WRONG_TYPE
+CR_INVALID_PRIORITY
+CR_NOT_DISABLEABLE
+CR_FREE_RESOURCES
+CR_QUERY_VETOED
+CR_CANT_SHARE_IRQ
+CR_NO_DEPENDENT
+CR_SAME_RESOURCES
+CR_NO_SUCH_REGISTRY_KEY
+CR_INVALID_MACHINENAME
+CR_REMOTE_COMM_FAILURE
+CR_MACHINE_UNAVAILABLE
+CR_NO_CM_SERVICES
+CR_ACCESS_DENIED
+CR_CALL_NOT_IMPLEMENTED
+CR_INVALID_PROPERTY
+CR_DEVICE_INTERFACE_ACTIVE
+CR_NO_SUCH_DEVICE_INTERFACE
+CR_INVALID_REFERENCE_STRING
+CR_INVALID_CONFLICT_LIST
+CR_INVALID_INDEX
+CR_INVALID_STRUCTURE_SIZE
+Create Device
+{Create Device - %ws}
+Class GUID  - %ws
+<none>
+Description - %ws
+Flags       - 0x%08x
+Created device '%ws'
+Unable to retrieve device instance path of created device.  Error = 0x%08x
+Failed to set Driver Description property: %ws
+Failed to set ClassGUID property
+{Create Device - exit(0x%08x)}
+Register Device
+{Register Device - %ws}
+Registered: %ws
+Error in attempt to register DeviceInfo
+{Register Device - exit(0x%08x)}
+Dependencies:
+Failed getting device info for devnode %ws (Error %08x)
+Uninstalling devnode %ws
+Enable Device
+Disable Device
+Unknown state change
+Global
+Config specific
+Unknown scope
+DriverList
+WudfRd
+Failed to retrieve WDF extensions used by device, including all devices using %ws.
+%ws has changed, including all related devices.
+%ws has not changed, including only related devices using same WDF extensions as current device.
+Failed to retrieve WDF extensions used by %ws, including device.
+Can't find service %ws
+Failed to retrieve list of devices using this driver
+\Driver
+Failed to set CONFIGFLAG_REINSTALL on device : Status = 0x%02x: %ws.
+Needs Reinstall: %ws
+Failed to get the hardware configuration GUID for Id = %d.
+Failed to set hardware configuration %ws (Id = %d) to run Respecialize on next use (0x%08x).
+Needs Respecialize: Hardware configuration %ws (Id = %d).
+Failed to generate list of devices
+Respecialize
+LastConfig
+RtlGetPersistedStateLocation
+HardwareConfigState
+System\HardwareConfig
+PNP_VetoTypeUnknown
+PNP_VetoLegacyDevice
+PNP_VetoPendingClose
+PNP_VetoWindowsApp
+PNP_VetoWindowsService
+PNP_VetoOutstandingOpen
+PNP_VetoDevice
+PNP_VetoDriver
+PNP_VetoIllegalDeviceRequest
+PNP_VetoInsufficientPower
+PNP_VetoNonDisableable
+PNP_VetoLegacyDriver
+PNP_VetoInsufficientRights
+PNP_VetoAlreadyRemoved
+???? - UNKNOWN VETO TYPE
+Software\Microsoft\Windows\CurrentVersion\Setup
+SetupOverride
+LogPath
+setupapi.dev.log
+LogLevel
+LogMask
+LogMaxFileSize
+setupapi.app.log
+setupapi.offline.log
+SYSTEM\Setup\SetupapiLogStatus
+SYSTEM\Setup\SetupapiLogRename
+no title
+[%s - %s]
+[Boot Session: %04d/%02d/%02d %02d:%02d:%02d.%03d]
+     Hardware Configuration: %s
+Section start
+ os: Version = %d.%d.%d, Service Pack = %d.%d, Suite = 0x%04x, ProductType = %d, Architecture = %s
+cmd: %s
+<ins>
+[Exit status: SUCCESS]
+DI_DO_DEFAULT
+REBOOT_INITIATED
+REBOOT_REQUIRED
+RESTART_REQUIRED
+[Exit status: SUCCESS (%s)]
+[Exit status: FAILURE(0x%08x)]
+[Exit]
+Section end
+[Device Install Log]
+     OS Version = %d.%d.%d
+     Service Pack = %d.%d
+     Suite = 0x%04x
+     ProductType = %d
+     Architecture = %s
+[BeginLog]
+!!!  
+!    
+>>>  
+<<<  
+   . 
+     
+ %02d:%02d:%02d.%03d
+ %04d/%02d/%02d
+%s.%04d%02d%02d_%02d%02d%02d.%s
+%s.????????_??????.%s
+System\CurrentControlSet\Control
+PortableOperatingSystem
+LastUse
+setupapi.ev1
+setupapi.ev2
+setupapi.ev3
+RSDSN
+devobj.pdb
+.rdata$brc
+.rdata$00$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.giats
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$lp00devobj.dll!20_pri7
+.text$lp01devobj.dll!20_pri7
+.text$lp08devobj.dll!50_coldboot
+.text$lp09devobj.dll!50_coldboot
+.text$mn
+.text$zy
+.text$zz
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$dk01$brc
+.data
+.data$00
+.bss$00
+.bss$dk00
+.bss$pr00
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+@_^[]
+tFjPj
+N ;^$s(
+jjjjj
+9^ tG
+W u&=
+PVPVh
+QWWWj
+Y__^[
+5ineI
+5ntel
+D$89\$
+D$@Ph
+D$8Ph$
+D$4Ph
+9\$ u
+8t29t$
+D$DPh
+D$DPh
+D$DPh@
+D$8t!j
+SSSWV
+D$(;C
+D$,;C
+D$0;C
+$Vh@=
+"Vh`>
+wDSSh
+PVWQRj+
+sDWPWj
+D$<PV
+D$<PW
+QQSVW
+QQSVW
+f93tw
+f92t:R
+PVVSW
+D$,SP
+D$<Ph
+9|$(u
+|$ QPh
+Pj(h0
+"uSSh
+"uSSh
+Ej3Y;
+;V$s 
+D$(Phl
+PWWWh
+t?Wh$?
+PQh<!
+pDVVVVh`%
+%tSVh
+PQh$"
+D$<Pht%
+PVh( 
+f90te
+f93t7
+t?j(Y
+f97t"
+WWWWW
+PRVQh
+PWVSRj
+RQVPW
+PQRjRh
+PQRjQh
+QQSVW
+QQSV3
+QQSV3
+9w$v8
+9W$v63
+9^$vx3
+u<950
+PQPQh
+L$ CSQ
+QQVWQ
+/Ph0K
+Qj QP
+QQSVW
+D$4+D$0;F
+D$LPR
+D$tPh
+T$,Qh
+QQVWQ
+PWWWh
+j/[f;
+u9Vj0
+QQPVSWQQ
+jWX_^[
+PSSSSSSSj
+PSSSSSSh 
+QQVWR
+QQVWR
+f97tVj{X
+j\_f9^
+t0VSSh
+u,W@f
+QQSVWQ
+DevRtlGetThreadLogToken
+DevRtlSetThreadLogToken
+DevRtlWriteTextLog
+DevRtlWriteTextLogError
+ !"#$%&'()*+,-./0123
+DEVOBJ.dll
+DevObjBuildClassInfoList
+DevObjChangeState
+DevObjClassGuidsFromName
+DevObjClassNameFromGuid
+DevObjCreateClassDeviceInfoList
+DevObjCreateDevRegKey
+DevObjCreateDeviceInfo
+DevObjCreateDeviceInfoList
+DevObjCreateDeviceInterface
+DevObjCreateDeviceInterfaceRegKey
+DevObjDeleteAllInterfacesForDevice
+DevObjDeleteDevRegKey
+DevObjDeleteDevice
+DevObjDeleteDeviceInfo
+DevObjDeleteDeviceInterfaceData
+DevObjDeleteDeviceInterfaceRegKey
+DevObjDestroyDeviceInfoList
+DevObjEnumDeviceInfo
+DevObjEnumDeviceInterfaces
+DevObjGetClassDescription
+DevObjGetClassDevs
+DevObjGetClassProperty
+DevObjGetClassPropertyKeys
+DevObjGetClassRegistryProperty
+DevObjGetDeviceInfoDetail
+DevObjGetDeviceInfoListClass
+DevObjGetDeviceInfoListDetail
+DevObjGetDeviceInstanceId
+DevObjGetDeviceInterfaceAlias
+DevObjGetDeviceInterfaceDetail
+DevObjGetDeviceInterfaceProperty
+DevObjGetDeviceInterfacePropertyKeys
+DevObjGetDeviceProperty
+DevObjGetDevicePropertyKeys
+DevObjGetDeviceRegistryProperty
+DevObjLocateDevice
+DevObjOpenClassRegKey
+DevObjOpenDevRegKey
+DevObjOpenDeviceInfo
+DevObjOpenDeviceInterface
+DevObjOpenDeviceInterfaceRegKey
+DevObjRegisterDeviceInfo
+DevObjRemoveDeviceInterface
+DevObjRestartDevices
+DevObjSetClassProperty
+DevObjSetClassRegistryProperty
+DevObjSetDeviceInfoDetail
+DevObjSetDeviceInterfaceDefault
+DevObjSetDeviceInterfaceProperty
+DevObjSetDeviceProperty
+DevObjSetDeviceRegistryProperty
+DevObjUninstallDevice
+_initterm
+_initterm_e
+api-ms-win-crt-runtime-l1-1-0.dll
+_o___std_type_info_destroy_list
+_o___stdio_common_vsprintf
+_o___stdio_common_vswprintf
+_o__cexit
+_o__configure_narrow_argv
+_o__execute_onexit_table
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__resetstkoflw
+_o__seh_filter_dll
+_o__wcsicmp
+_o_toupper
+_except_handler4_common
+memset
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+EtwTraceMessage
+RtlNtStatusToDosErrorNoTeb
+RtlInitUnicodeString
+NtOpenDirectoryObject
+NtQueryObject
+NtQueryDirectoryObject
+RtlCompareUnicodeString
+NtClose
+RtlGUIDFromString
+RtlInitUnicodeStringEx
+ntdll.dll
+SetLastError
+ReleaseMutex
+CM_Get_Device_IDW
+GetLastError
+RegEnumKeyExW
+RegCloseKey
+SetEvent
+CreateEventW
+WaitForSingleObject
+CloseHandle
+Sleep
+CM_Get_DevNode_Status
+CM_Get_DevNode_PropertyW
+RegQueryValueExW
+RegOpenKeyExW
+FreeLibrary
+GetProcessHeap
+HeapFree
+HeapAlloc
+GetProcAddress
+LoadLibraryExW
+RegSetValueExW
+CM_Get_Class_Registry_PropertyW
+CM_Set_Class_Registry_PropertyW
+WaitForMultipleObjectsEx
+DisableThreadLibraryCalls
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+GetModuleHandleW
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-devices-config-l1-1-1.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+lstrcmpiW
+api-ms-win-core-string-obsolete-l1-1-0.dll
+CM_Connect_MachineW
+CM_Enumerate_Classes_Ex
+CM_Get_Class_Name_ExW
+CM_Disconnect_Machine
+CM_Locate_DevNode_ExW
+CM_Create_DevNode_ExW
+CM_Set_DevNode_Property_ExW
+CM_Uninstall_DevNode_Ex
+CM_Get_Device_Interface_List_ExW
+CM_Get_Device_ID_List_ExW
+CM_Get_Device_Interface_List_Size_ExW
+CM_Get_Device_ID_List_Size_ExW
+CM_Get_Class_Property_ExW
+CM_Set_Class_Property_ExW
+CM_Get_DevNode_Property_ExW
+CM_Get_First_Log_Conf_Ex
+CM_Get_Next_Res_Des_Ex
+CM_Get_Res_Des_Data_Size_Ex
+CM_Get_Res_Des_Data_Ex
+CM_Get_Parent_Ex
+CM_Free_Res_Des_Handle
+CM_Free_Log_Conf_Handle
+CM_Get_Device_ID_Size_Ex
+CM_Get_Device_ID_ExW
+CM_Get_Device_Interface_Alias_ExW
+CM_Register_Device_Interface_ExW
+CM_Unregister_Device_Interface_ExW
+CM_Open_Class_Key_ExW
+CM_Set_DevNode_Problem_Ex
+CM_Get_DevNode_Status_Ex
+CM_Query_And_Remove_SubTree_ExW
+CM_Setup_DevNode_Ex
+CM_Enable_DevNode_Ex
+CM_Get_HW_Prof_Flags_ExW
+CM_Set_HW_Prof_Flags_ExW
+CM_Open_DevNode_Key_Ex
+CM_Get_DevNode_Registry_Property_ExW
+CM_Set_DevNode_Registry_Property_ExW
+CM_Get_DevNode_Property_Keys_Ex
+CM_Get_Device_Interface_Property_Keys_ExW
+CM_Get_Device_Interface_Property_ExW
+CM_Set_Device_Interface_Property_ExW
+CM_Get_Class_Property_Keys_Ex
+CM_Delete_DevNode_Key_Ex
+CM_Open_Device_Interface_Key_ExW
+CM_Delete_Device_Interface_Key_ExW
+CFGMGR32.dll
+DevGetObjects
+DevFreeObjects
+DevCreateObjectQuery
+DevCloseObjectQuery
+api-ms-win-devices-query-l1-1-0.dll
+wcsrchr
+wcschr
+RtlNtStatusToDosError
+RtlGetVersion
+NtQuerySystemInformation
+RtlFormatCurrentUserKeyPath
+RtlFreeUnicodeString
+NtOpenKey
+NtCreateKey
+NtQueryValueKey
+NtSetValueKey
+NtDeleteValueKey
+NtQueryInformationFile
+NtSetInformationFile
+WaitForSingleObjectEx
+ExpandEnvironmentStringsW
+GetSystemWindowsDirectoryW
+RaiseException
+LCMapStringW
+CompareStringOrdinal
+GetThreadLocale
+UnmapViewOfFile
+GetModuleFileNameA
+GetCommandLineA
+FileTimeToLocalFileTime
+FileTimeToSystemTime
+WriteFile
+GetLocalTime
+GetFileSize
+FlushFileBuffers
+SetFilePointer
+CreateHardLinkW
+GetFileInformationByHandle
+DeleteFileW
+FindFirstFileW
+SetFileAttributesW
+FindNextFileW
+FindClose
+MoveFileExW
+HeapReAlloc
+WideCharToMultiByte
+CreateFileW
+DeviceIoControl
+CreateMutexW
+GetTickCount64
+AllocateAndInitializeSid
+CheckTokenMembership
+FreeSid
+SleepEx
+CreateFileMappingW
+MapViewOfFile
+SetEndOfFile
+GetFullPathNameW
+GetFileAttributesW
+CreateDirectoryW
+CM_MapCrToWin32Err
+CM_Set_DevNode_PropertyW
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+memcmp
+memcpy
+memmove
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Device Information Set DLL
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+devinfoset.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+devinfoset.DLL
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+<0@0H0P0h0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+383=3O3v3|3
+3(4@4
+4A5x5
+536I6N6
+7+81888=8`8
+9'9A9r9|9
+9-:3:
+:G;L;
+=7=<=h=m=
+>#>(>->h>m>
+?6?=?B?G?
+2=2B2z2
+2(3-3?3]3b3
+4X5]5o5
+6X6]6o6
+6#7)7c7h7
+788=8O8t8y8
+9"9B9I9N9S9
+:X:]:o:
+</<M<S<
+<?=D=
+=H>M>_>x>}>
+?6?;?_?d?
+0 0)0/0N0Y0`0t0z0
+1!1'1X1]1o1
+2*2H2M2R2
+3#3x3V4
+6s637
+8#8a8g8
+:-;3;J;W;];
+<l<r<w<|<
+=L=~=
+>B>v>{>
+>#?(?T?
+1$2*2
+3:3?3~3
+4J4S4
+5p5w5
+5T6Z6
+7H7M7_7
+8_8e8
+9a9g9
+98:=:O:
+=x>}>
+>8?=?O?p?v?
+4;4B4z4
+6"6'616
+6l7s7x7}7
+8E8h8
+8X9]9o9
+9H:M:_:
+; ;%;*;j;o;
+<%<s<
+<B=G=x=
+=f>l>
+0&0+080z0
+3"3=3F3Q3X3s3
+4,4<4L4U4
+5(5;5@5
+8?8N8e8k8q8w8}8
+8R9g9
+;A;^;
+;b<k<s<
+=!=*=8=A=c=j=
+>)>5>A>L>Y>m>}>
+1060I0i0
+1#1F1w1
+2&2}2
+3*3j3
+4&4,454<4D4L4R4Z4g4
+6)606Q6n6 7,787
+7l8x8~8
+9$9*9
+9':D:Z:{:
+;!;7;=;C;N;};
+=7=F=u=
+>-?=?H?^?
+0,070B0Z0
+2:2U2
+3>3C3H3^3
+4-4V4
+5(5>5w5
+5K6r6
+6$7X7g7q7
+8.8w8
+8 9;9X9
+:6:[:`:s:
+;L;Q;d;
+;#<:<?<R<~<
+>/>X>
+>>?D?]?
+0+000R0W0
+1j1p1
+2"2H2
+5!5O5a5
+646r6
+677\7k7x7}7
+9+949:9D9a9
+:*:V:
+:B;d;t;
+;@<c<
+=k>t>y>~>
+?<?}?
+232i2
+2*3C3W3\3r3
+4$4)4?4v4
+5"585a5
+6.6q6
+8<8B8X8k8
+9N9T9
+96:i:n:
+:5;0<7<<<A<W<
+=9=@=E=J=`=
+=R>Y>^>c>y>
+>Y?`?e?j?
+D0K0P0U0k0
+1$1@1E1J1`1
+2E3z3
+3 4@4F4g4m4
+556L6a6g6y6
+6.7R7Z7s7}7
+9C9R9W9m9
+:C:U:Z:r:
+;E<L<Q<V<l<\=o=
+=H>h>o>t>y>
+0-121E1k1r1
+1'2,2P2c2l2}2
+3 3&353V3y3~3
+3$4:4[4
+5D5P5V5\5b5x5
+6P6Z6
+767a7w7
+8.8A8
+969j9}9
+:B:S:i:
+:&;;;o;t;
+<j<o<
+=T=i=
+>$>o>
+?#?8?w?}?
+0 090B0g0p0w0
+10151R1_1r1x1
+1<2x2
+3#3S3
+4J4S4Z4}4
+5'51565;5Q5
+5&666;6X6x6
+8*8:8d8s8
+9#999F9V9
+9/:4:J:W:g:v:|:
+;;;P;];b;x;
+<)<^<t<y<~<
+=C=S=^=c=y=
+=+>;>^>e>j>o>
+?L?u?|?
+E0d0z0
+1%1;1E1a1h1~1
+1H2l2s2x2}2
+2 3%383S3b3l3q3v3
+4 4,4;4w4
+585=5P5w5~5
+6!6'6B6H6N6T6
+6;7D7h7
+8&858<8T8Z8`8~8
+9(9/9>9I9f9
+:3:P:Y:
+;*;0;;;A;\;c;z;
+<5<:<P<
+=;=@=S=c=
+1 151d1y1
+212Z2i2
+3W3p3
+586M6
+91979<9T9\9a9w9
+9#:,:R:y:
+;(;9;P;x;
+<#<2<B<V<
+=$=7=@=`=i=p=
+>m?r?
+(0i0z0
+0+121
+2(252:2A2F2V2a2n2s2
+414H4z4
+6u6{6
+7$70767F7L7h7m7
+898?8
+:?:D:a:g:l:q:
+;8;A;f;l;w;};
+<$<*<\<p<
+= =Z=f=
+>&>1>7>J>k>p>
+?,?6?;?@?S?
+0D1l1|1
+2#2)2I2
+2,3;3I3
+4'555C5n5
+6c6s6
+737L7Q7g7
+8_8h8m8r8
+9D:[:
+;#<5<:<P<
+<8=A=F=K=a=
+=#>1>6>L>
+?%?*?@?
+0#0S0e0j0
+1 1%1*1@1s1
+3E3K3Q3
+4+4c4m4r4
+4+5A5F5^5l5q5
+6&797>7T7r7
+838o8u8
+989C9V9
+:<:B:U:
+;5;;;N;o;
+=1=[=n=s=
+=%>*>/>E>o>
+J0O0T0j0
+1@1z1
+2"252k2p2
+3"3*3=3^3c3y3
+4(4X4]4p4
+6$676@6W6`6x6
+6=7V7
+829<9g9
+: :\:
+;+;1;:;@;z;
+=T>o>
+0Y1`1r1x1
+2,222H2N2`2g2
+2,3E3
+5G5d5
+6l6s6
+7{7[8
+:,:X:b:
+=a=h=
+>6>A>
+0,080D0P0W0a0r0
+1"292\2d2
+383S3c3
+4&464<4B4Y4i4o4u4
+5;5@5Y5o5t5
+6$6*60656A6G6M6n6
+8g8y8
+949F9b9
+:6:m:
+:/;5;\;
+<O<U<
+>*>5>_>e>
+?V?_?
+0/050T0[0a0n0
+1D2b2
+32393]3u3
+4K5Q5u5
+5#6A6^6i6w6
+6'7{7
+:&:L:
+; ;Q;f;q;
+<$=Q=
+>;>`>r>
+0(0@0S0]0g0
+0 1*1;1B1q1
+2%2+21262;2M2Y2_2e2j2o2
+3q3w3
+5g5m5|5
+6,606L6P6X6\6t6x6
+7 7<7@7\7`7|7
+8 8<8@8\8`8|8
+9$9(9D9H9d9h9
+:T:X:t:x:
+; ;<;@;\;`;|;
+<$<(<D<H<d<h<p<t<
+=$=(=D=H=d=h=
+>$>(>D>H>d>h>
+?$?(?D?H?d?h?
+0$0(0D0H0d0h0
+1$1(1D1H1d1h1
++^&T&
+N?K;<
+_bInm
+  >D|
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+9Ocr4
+Ge]L*
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+229879+4675790
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+jFtg)]
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,78Ul6I21/fIC0O0YalZAb1mQX+/EFAAW6aV64PdKs70=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+CZZ+\\
+20220506220656.444Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:8D41-4BF7-B3B71%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192740Z
+230126192740Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:8D41-4BF7-B3B71%0#
+Microsoft Time-Stamp Service0
+w&KD~
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+]\;^.OG
+rx"6|
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:8D41-4BF7-B3B71%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220507041618Z
+20220508041618Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+`y]H0
+g)jinQ
+\{)X"
+%s~%&

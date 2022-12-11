@@ -1,0 +1,1025 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.pdata
+@.sdbid
+.rsrc
+@.reloc
+bad allocation
+CStrW
+CStrA
+OSVERSIONINFOEXW
+EXCEPTION_RECORD
+0123456789ABCDEF
+<XeptFilter|CATCH|ERR> %p{EXCEPTION_RECORD}  NumParams: %d unexpected.
+<XeptFilter|CATCH> %p{EXCEPTION_RECORD}  IP: %p  AV at: %p  write: %d{BOOL}
+<XeptFilter|CATCH> %p{EXCEPTION_RECORD}  %08X{SEH_CODE}  IP: %p  bRethrow: %d{BOOL}
+Next:    %p{EXCEPTION_RECORD}
+Code:    %08X{SEH_CODE}
+Flags:   %08X
+Addr:    %p
+nParams: %d
+Inf[00]: %p
+Inf[01]: %p
+Inf[02]: %p
+Inf[03]: %p
+Inf[04]: %p
+Inf[05]: %p
+Inf[06]: %p
+Inf[07]: %p
+Inf[08]: %p
+Inf[09]: %p
+Inf[10]: %p
+Inf[11]: %p
+Inf[12]: %p
+Inf[13]: %p
+Inf[14]: %p
+<GetStrLenA|ERR> %p{PCSTR}  len: %u - no terminator
+f:\dd\ndp\fx\src\bid\adonetdiag\yawl\basertl.cpp
+<GetStrLenA|CATCH|ERR> %p{PCSTR}  R/O AV at: %p
+<GetStrLenW|ERR> %p{PCWSTR}  len: %u - no terminator
+<GetStrLenW|CATCH|ERR> %p{PCWSTR}  R/O AV at: %p
+MajorVer: %u
+MinorVer: %u
+BuildNum: %u (0x%08X)
+PlatfId:  %u{VER_PLATFORM}
+CSDVer:   L"%ls"
+SPMajor:  %u
+SPMinor:  %u
+SuiteMsk: 0x%04X{VER_SUITE}
+ProdType: %u{VER_NT}
+Reserved: 0x%02X
+kernel32.dll
+<GetKernelApi|INFO|FAIL> %d{WINERR}  "%hs"
+SwitchToThread
+f:\dd\ndp\fx\src\bid\adonetdiag\yawl\cstr_impl.cpp
+<nullStr>
+StrDataW %p %c%c%c%c Ref %d  Len %3d  Alloc %3d  L"%ls"
+<MemBlkRaw|THROW|XC_ABORT> %p{.}  %u total bytes, overflow
+<MemBlk|THROW|XC_MEM> %p{.}  %u bytes
+<MemBlk|ADV> %p{.}  %p AutoCleanup
+<StrDataA::allocate|THROW|XC_MEM> %p bytes(hex)
+<StrDataA::allocate|PERF|ADV> dup %p{.} %u  from %p{StrDataT} %u
+<nullStr>
+StrDataA %p %c%c%c%c Ref %d  Len %3d  Alloc %3d  "%s"
+<StrDataW::allocate|THROW|XC_MEM> %p bytes(hex)
+<StrDataW::allocate|PERF|ADV> dup %p{.} %u  from %p{StrDataT} %u
+<Guid::convert|ERR|ARGS> %p{.}  Bad input: "%s"
+f:\dd\ndp\fx\src\bid\adonetdiag\yawl\guid.cpp
+<CStrW::operator =|PERF|ADV> %p{.} Copy %d chars from %p{.}
+<CStrW::convertCopy|PERF|CVTCP|ADV> %p{.}  srcLen: %d  srcCP: %d{CODE_PAGE}  dstLen: %d
+<BadPtr>
+<Guid::Init|ADV> %p{.}  "%s"  input: "%s"
+BindingContract
+BidSectionHeader
+f:\dd\ndp\fx\src\bid\adonetdiag\services.cpp
+<ServiceMessage::setActiveImplementation|ADV> %p{ServiceMessage}
+<ServiceMessage::resetDefaultImplementation|ADV> %p{ServiceMessage}
+00:WARNING - %u internal exception(s) caught. Possible problems with diagnostic instrumentation.
+<ExecutionContextLocalStorage::Init|MULTICALL|PERF|ADV> 
+<ExecutionContextLocalStorage::Init|ADV> TlsIndex: %d
+<ExecutionContextLocalStorage::Done|MULTICALL|PERF|ADV> 
+<ExecutionContextLocalStorage::Done|ADV> TlsIndex: %d
+<GetModuleHandleFromAddress|ERR> %p
+00:WARNING - Current version doesn't support compressed diagnostic metadata
+*sdbid*
+<BidSectionHeader::Init|ERR|AV> %p{PBIDSECTHDR}
+marker:     %p{PBIDMARKER}
+attributes: %08X
+  HdrSize:  %d
+  nMarkers: %d
+  Version:  %d
+checksum:   %08X
+bValid:     %d{bool}
+ntdll.dll
+kernel32.dll
+rpcrt4.dll
+wintrust.dll
+secur32.dll
+advapi32.dll
+user32.dll
+<ModuleHandle::GetFileName|ERR> GetModuleFileNameW: %u{WINERR}
+%p{BidSectionHeader}  cfgBits: %08X  identity: %s
+modPath:   "%s" (%s)
+modHandle: %p{HMODULE}  "%s"
+extInfo:   %p{HMODULE}  "%s"
+<ModulePath::Init|ADV> name: "%s"  nameExt: "%s"  path: "%s"
+<ModuleHandle::Init|ERR> hModule: %p  codeAddress: %p
+<ModuleHandle::Init> %p{HMODULE}  codeAddress: %p  "%s"
+<BidExtendedInfo::Init|WARN> %p{BIDEXTINFO}  hModule=NULL; making it %p
+<UnloadCallback::Init|CATCH|ERR> pHooks: %p  sizeInBytes: %d
+<UnloadCallback::Init|ADV> callbackPtr NULL
+<UnloadCallback::Init|WARN> %p{BIDUNLOADCB}  requested: %u  accessible: %u bytes
+<UnloadCallback::Init|ERR> %p{BIDUNLOADCB}  %u bytes R/O AV
+<UnloadCallback::isCodeTheSame|ERR> was: %p{BIDUNLOADCB}  now: %p{BIDUNLOADCB}  offset: %u  pattern: %02X  current: %02X
+<BindingContract::Init> %p{.}  ver:%d  "%hs"  cfg: %08X  ctlCB: %p  %p{PBIDEXTINFO}  %p{PBIDSECTHDR}
+ADONETDIAG.ETW
+%02d:WARNING - UnloadCallback wasn't called.
+%02d:WARNING - UnloadCallback possibly broken.
+<UnloadCallback::Execute|ADV|NOOP> empty
+f:\dd\ndp\fx\src\bid\adonetdiag\etwobject.cpp
+<EtwApi::traceEvent|ERR> %p{.}  %d{STATUS}
+%03X:%02d: %.*hs
+<EtwApi::Done> ID:%02d  disabling: 0x%016I64X
+<EtwApi::Done|ERR> %p{.}  ID:%02d  UnregisterTraceGuids: %d  hRegister: 0x%016I64X
+<EtwApi::CtrlCallback> %p{.}  %d{WMIDPREQUESTCODE}
+<EtwApi::CtrlCallback|ERR> ID:%02d  Unknown command code %d
+WMI_DISABLE_EVENTS: ID:%02d  0x%016I64X
+WMI_ENABLE_EVENTS: ID:%02d  %016I64X  Buffer: %p  Flags: %08X  Level: %02X
+%03X:%02d: %.*ls
+<EtwApi::Init|ERR> %p{.} ID:%02d  RegisterTraceGuids: %d  L"%s"
+<EtwApi::Init|WARN> %p{.} ID:%02d  Requested rejection
+ModuleObject
+f:\dd\ndp\fx\src\bid\adonetdiag\moduleobject.cpp
+<ModuleObject::IsValidPtr|RET> false  %p{PModuleObject}
+enter_Xx 
+leave_Xx
+enter_Xx 
+<getCmdSpaceID|CATCH|ERR> idx: %d, textID: %p{PCSTR}
+<getCmdSpaceName|CATCH|ERR> dstBuf: %p{PSTR}  dstCapacity: %d  cmdSpaceIdx: %d
+%02d:DISCONNECTED [%p]"%s"%s
+ : FORCED
+00:REJECTED(%d) [%p]%s  "%s"
+<strippedScope %d>
+<ModuleObject::ScopeEnterVA|ERR> %u#  %p{PCSTR}
+<strippedScope %d>
+<ModuleObject::ScopeEnterVW|ERR> %u#  %p{PCWSTR}
+<ModuleObject::CtlProc|ERR> %u# ID:%02d  Unsupported command space %p for predefined command %d
+<ModuleObject::CtlProc|WARN> %u#  ID:%02d  Unknown command %d.
+ID:%02d  [%p]%s "%s"
+bInUse: %d{bool}  bActivated: %d{bool}  apiGroupBits: %08X  cfgBits: %08X
+%p{ModuleHandle}
+%p{ModulePath}
+%p{ModuleIdentity}
+%p{UnloadCallback}
+<ModuleObject::ModuleObject|ID|OBJ> %p{.}
+<ModuleObject::Done> %p{.} ID:%02d  %s%s
+<ModuleObject::Init> %p{.}
+<ModuleObject::Init|ID|OBJ> %s
+<ModuleObject::Init|RET> %u#  %d{bool}  ID:%02d  %s
+%02d:CONNECTED [%p]%s  %s
+%02X 
+%08X:  
+%08X:  %02X %02X %02X %02X %02X %02X %02X %02X | %02X %02X %02X %02X %02X %02X %02X %02X  %hs
+<strippedFormat %d>
+<ModuleObject::TraceVA|ERR> %u#  %p{PCSTR}
+<strippedFormat %d>
+<ModuleObject::TraceVW|ERR> %u#  %p{PCWSTR}
+<strippedTextID %d>
+<ModuleObject::traceItemIDA|ERR> %u#  %p{PCSTR}
+<strippedTextID %d>
+<ModuleObject::traceItemIDW|ERR> %u#  %p{PCWSTR}
+RecycleIDw %u# 
+RecycleIDa %u# 
+UpdateIDw %u# 
+UpdateIDa %u# 
+ObtainIDw %u# 
+ObtainIDa %u# 
+<ModuleObject::~ModuleObject|ID|OBJ> 
+<ModuleObject::InitSelfDescriptior|ERR> %p{.}
+ModulePool
+f:\dd\ndp\fx\src\bid\adonetdiag\modulepool.cpp
+<ModulePool::Allocate|WARN|RES> All %d slots occupied.
+<ModulePool::Allocate|WARN|ADV> %p{ModulePool}
+%00:DISCONNECT FAILURE pID: %p{HANDLE*}, pCtlFlags: %p{DWORD*}
+<ModulePool::Done|MULTICALL|PERF|ADV> 
+<ModulePool::Activate|CATCH> %p{PModuleObject}  pID: %p{HANDLE*}  pCtlFlags: %p{DWORD*}
+<ModulePool::allocObjects|THROW|XC_MEM> ModuleObject(i)
+<ModulePool::Release|MULTICALL|PERF|ADV> idx:%d
+capacity:%d  connected:%d
+%p{ModuleObject} :(self)
+%p{ModuleObject} %s
+f:\dd\ndp\fx\src\bid\adonetdiag\adonetdiag.cpp
+<Trace|BLOB> %p %u
+<Trace|BLOB|BINMODE> %p %u
+<Trace|BLOB2|COPY> %p %u %p
+<Trace|BLOB|COPY> %p %u
+<Trace|BLOB2> %p %u %p
+<Trace|ERR> %u{WINERR} line %d
+0123456789ABCDEF
+<BadPtr>
+DllBidEntryPoint
+*** "
+*** [HKLM\
+:Path
+:LdrMsg
+BidLab_Self.dll
+:NoName
+<ValidHandleHolder|RET> false  %p{HANDLE*}  %p
+<ModuleScope::DoInitialize> %p{HMODULE}
+<ModuleScope::DoFinalize> 
+" could not be loaded.
+*** "
+<SetApiHooks|ERR> Invalid SanityCheck: %08X
+<DllBidEntryPoint> bInitAndVer:%d
+<DllBidEntryPoint|ARGS> %p{HANDLE*}  sIdentity:"%hs"  cfgBits:%08X  pCtlFlags:%p{DWORD*}  %p{BID_CTLCALLBACK}  %p{PBIDEXTINFO}  %p{PBIDHOOKS}  %p{PBIDSECTHDR}
+<DllBidEntryPoint|RSRC> %p{ModulePool}
+<DllBidEntryPoint|RET> %d{BOOL}
+CorExitProcess
+mscoree.dll
+.mixcrt
+EncodePointer
+KERNEL32.DLL
+DecodePointer
+runtime error 
+TLOSS error
+SING error
+DOMAIN error
+R6034
+An application has made an attempt to load the C runtime library incorrectly.
+Please contact the application's support team for more information.
+R6033
+- Attempt to use MSIL code from this assembly during native code initialization
+This indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.
+R6032
+- not enough space for locale information
+R6031
+- Attempt to initialize the CRT more than once.
+This indicates a bug in your application.
+R6030
+- CRT not initialized
+R6028
+- unable to initialize heap
+R6027
+- not enough space for lowio initialization
+R6026
+- not enough space for stdio initialization
+R6025
+- pure virtual function call
+R6024
+- not enough space for _onexit/atexit table
+R6019
+- unable to open console device
+R6018
+- unexpected heap error
+R6017
+- unexpected multithread lock error
+R6016
+- not enough space for thread data
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+R6009
+- not enough space for environment
+R6008
+- not enough space for arguments
+R6002
+- floating point support not loaded
+Microsoft Visual C++ Runtime Library
+<program name unknown>
+Runtime Error!
+Program: 
+bad exception
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+(null)
+(null)
+( 8PX
+700WP
+`h````
+xpxxxx
+Unknown exception
+e+000
+InitializeCriticalSectionAndSpinCount
+ Complete Object Locator'
+ Class Hierarchy Descriptor'
+ Base Class Array'
+ Base Class Descriptor at (
+ Type Descriptor'
+`local static thread guard'
+`managed vector copy constructor iterator'
+`vector vbase copy constructor iterator'
+`vector copy constructor iterator'
+`dynamic atexit destructor for '
+`dynamic initializer for '
+`eh vector vbase copy constructor iterator'
+`eh vector copy constructor iterator'
+`managed vector destructor iterator'
+`managed vector constructor iterator'
+`placement delete[] closure'
+`placement delete closure'
+`omni callsig'
+ delete[]
+ new[]
+`local vftable constructor closure'
+`local vftable'
+`RTTI
+`udt returning'
+`copy constructor closure'
+`eh vector vbase constructor iterator'
+`eh vector destructor iterator'
+`eh vector constructor iterator'
+`virtual displacement map'
+`vector vbase constructor iterator'
+`vector destructor iterator'
+`vector constructor iterator'
+`scalar deleting destructor'
+`default constructor closure'
+`vector deleting destructor'
+`vbase destructor'
+`string'
+`local static guard'
+`typeof'
+`vcall'
+`vbtable'
+`vftable'
+operator
+ delete
+__unaligned
+__restrict
+__ptr64
+__clrcall
+__fastcall
+__thiscall
+__stdcall
+__pascal
+__cdecl
+__based(
+GetProcessWindowStation
+GetUserObjectInformationA
+GetLastActivePopup
+GetActiveWindow
+MessageBoxA
+USER32.DLL
+         (((((                  H
+         h((((                  H
+                                 H
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+HH:mm:ss
+dddd, MMMM dd, yyyy
+MM/dd/yy
+December
+November
+October
+September
+August
+April
+March
+February
+January
+Saturday
+Friday
+Thursday
+Wednesday
+Tuesday
+Monday
+Sunday
+SunMonTueWedThuFriSat
+JanFebMarAprMayJunJulAugSepOctNovDec
+1#QNAN
+1#INF
+1#IND
+1#SNAN
+CONOUT$
+('8PW
+700PP
+`h`hhh
+xppwpp
+AdoNetDiag.pdb
+L$8fff
+L$8fff
+QZ^&A
+r'f=f
+(D$0f
+(D$0f
+(D$@f
+(D$@f
+D$4vT2
+t|f={
+(D$ f
+(D$ f
+t$@Hcr
+|$HHc
+~kHcj
+t$@I;
+t$0Hc
+l$8Lch
+d$@Lcb
+l$XI;
+l$8M;
+t$@Hcr
+t$0Hc
+l$8Lch
+d$@Lcb
+l$XI;
+l$8M;
+|$HIc
+\$0HcX
+|$XHc~
+|$HE3
+|$H@2
+|$8fff
+\$@E3
+FXH+F@H
+QhtFH
+QhtFH
+D$Gu$H
+D$Nu$H
+u+fff
+L$@H3
+l$ E3
+A8,$L
+l$8t=H
+(D$@f
+t$0Hcw
+teMcl$
+D$Pt;L
+T$ E3
+L$Hff
+D$;\L
+L$hff
+HcA H
+D$(E3
+t=f=\
+tuf=/
+D9d$0A
+L$8fD
+L$pH;
+rPfff
+L$8fD
+u2D9d$\L
+r!fff
+L$PE3
+L$PE3
+L$XE3
+eSkt?
+L$hE3
+t$8wC
+WATAUAVAWH
+D$8A9}
+<$csm
+A_A^A]A\_
+|$8ff
+l$ WATAUAVAWH
+T$PE3
+ A_A^A]A\_
+ A_A^A]A\_
+l$ VWATAUAVH
+~KD;c
+T$`E3
+ A^A]A\_^
+WATAUH
+t)IcL$
+ A]A\_
+D$`Hc
+|$ ATH
+D$8t#A
+D$8H;
+uDfff
+ATAUAVH
+T$ I;
+ A^A]A\
+L$0E3
+L$ WH
+\$hH;
+L$0E3
+L$ E3
+L$ SH
+L$0E3
+WATAUH
+t8fff
+\$ H;
+0A]A\_
+VWATH
+HcH<H
+ A\_^
+HcH<H
+t)fff
+VWATH
+HcH<H
+ A\_^
+|$ ATAUAVH
+HcH<H
+ A^A]A\
+L$0H;
+H;=2Z
+|$ ATH
+|$ ATH
+d$ AUAVAWH
+sQfff
+A_A^A]
+tjfff
+|$ ATAUAVH
+< t[<
+ A^A]A\
+t$ WH
+L$@E3
+Hct$@H
+shHcD$HH
+t$ WH
+\$8L3
+LcA<E3
+D$XE3
+VWATH
+0A\_^
+0A\_^
+0A\_^
+ugIc@
+L$@;|
+SVWATAUAVAWH
+0A_A^A]A\_^[
+B(I9A(u
+t HcP
+l$x@2
+t$(E3
+l$pD92
+|$ E3
+G0HcH
+G0HcH
+99~R3
+@SVWATAUAVAWH
+D$0L9gXt+
+D$8HcH
+pA_A^A]A\_^[
+ATAUAVH
+t7LcG
+t!LcW
+0A^A]A\
+VATAVAWH
+<$MOC
+xA_A^A\^
+SUWATAUAVAWH
+N0HcQ
+N0HcQ
+HcE H
+A_A^A]A\_][
+|$ ATH
+HcO H
+K0HcQ
+l$ WH
+D$p H
+\$0H;
+L$0H;
+|$ ATH
+@SUVWH
+@8l$&H
+T$&t5
+tHfff
+L$8H3
+H_^][
+ATAUAVH
+0A^A]A\
+T$Ht#A
+D$@H;
+@UVWATAVAWH
+l$DE3
+l$DE3
+l$DE3
+|$`t>H
+|$`t:H
+|$`Hc
+D$Ps-
+|$hD+|$PD+
+8*u:A
+D$lE3
+D$lE3
+A_A^A\_^]
+@SVWAUAVH
+|$XtK
+|$Xt7H
+|$XtMH
+|$XHc
+|$XHc
+d$@E+
+8*u=A
+L$hLc
+A^A]_^[
+l$X@2
+l$8utH
+d$hE2
+d$8utH
+SVWATAUAWH
+XA_A]A\_^[
+XA_A]A\_^[
+80tWE
+gfffA
+XA_A]A\_^[
+@SUVWH
+L$pH3
+UVWATAUAVAWH
+|$Hux
+gfffffffH
+PA_A^A]A\_^]
+WATAUAVAWH
+A_A^A]A\_
+@SUVWH
+L$`H3
+x_^][
+@UVWAUH
+L$pH3
+A]_^]
+WATAUH
+ A]A\_
+|$ ATH
+WATAUAVAWH
+L$0E3
+t$ E3
+@A_A^A]A\_
+|$ ATH
+|$ E3
+UVWAUAVH
+PA^A]_^]
+@UATAUAVAWH
+e A_A^A]A\]
+D$PH;5
+L$ UATAUAVAWH
+A_A^A]A\]
+D$@H;5^
+@UATAUAVAWH
+fD9)t
+e A_A^A]A\]
+D$@H;5
+D$Ht%
+D$PL;
+8T$Xf
+D$8u 
+VWATAUAVH
+|$ E3
+|$ E3
+0A^A]A\_^
+@SUVWAUAVH
+|$PMk
+D$XE3
+D9d$D
+f;D$@
+f;D$@upA
+L$HD+
+t2HcD$HH
+L$pH+
+L$HD+
+t2HcD$HH
+L$pH+
+D$PHc
+D$XD+
+\$HD;
+t$HE3
+A^A]_^][
+VWATAUAVH
+|$ E3
+|$ E3
+0A^A]A\_^
+L$ VWATAUH
+hA]A\_^
+hA]A\_^
+l$Xu~
+hA]A\_^
+|$`@2
+|$ ATH
+l$ VWATH
+9t$ ~
+;t$ |
+L$0H3
+@A\_^
+D$8t#A
+D$8H;
+T$(t#A
+D$ H;
+D$Xt&A
+D$XH;
+8D$ht
+\$ WH
+D$Ht#A
+D$HH;
+L$xH3
+\$ WH
+D$Ht#A
+D$HH;
+L$xH3
+@SUVH
+T$Dr&ff
+T$DfE
+L$pH3
+L$(H3
+L$(H3
+@USVWATAUAVAWH
+eHA_A^A]A\_^[]
+@UATAUAVAWH
+e A_A^A]A\]
+D$@H;5
+d$ AUH
+L$PH3
+L$PH3
+ATAUAVH
+0A^A]A\
+HcM H
+@SWATH
+ A\_[
+ A\_[
+ A\_[
+ A\_[
+\$ VH
+D$Ht#A
+D$HH;
+u"8D$Xt
+D$(u:3
+x-fff
+t$HD+=
+D$(u:3
+x-fff
+t$HD+= 
+UVWATAUAVAWH
+D$0|Ifff
+l$Pf3
+9l$du
+9l$`u
+D$Pf=
+T$Tf=
+f9l$8D
+D$4fA
+A_A^A]A\_^]
+D$pff
+\$df3
+u'A9_
+D$`f=
+\$ff=
+r:f9\$2D
+\$hfD3
+D$`f=
+\$ff=
+T$rfA
+\$xyFA
+~;fff
+ATAUAVH
+\$8t%
+D$@L;
+PA^A]A\
+@8t$Ht
+PA^A]A\
+VWATH
+|$ E3
+|$ E3
+0A\_^
+t$ WH
+VWATH
+\$ E3
+\$ E3
+0A\_^
+IsBadReadPtr
+IsBadWritePtr
+QueryPerformanceCounter
+GetModuleHandleA
+SetLastError
+GetLastError
+GetProcAddress
+Sleep
+GetCurrentThreadId
+WideCharToMultiByte
+MultiByteToWideChar
+IsBadStringPtrW
+lstrlenW
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+VirtualQuery
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleW
+lstrcmpiA
+FreeLibrary
+LoadLibraryW
+lstrcpynW
+ExpandEnvironmentStringsW
+GetDriveTypeW
+GetFullPathNameW
+SearchPathW
+OutputDebugStringW
+DisableThreadLibraryCalls
+FlsSetValue
+GetCommandLineA
+HeapFree
+GetVersionExA
+HeapAlloc
+GetProcessHeap
+HeapReAlloc
+RtlUnwindEx
+RaiseException
+RtlPcToFileHeader
+RtlLookupFunctionEntry
+ExitProcess
+FlsGetValue
+FlsFree
+FlsAlloc
+HeapSetInformation
+HeapCreate
+HeapDestroy
+SetHandleCount
+GetStdHandle
+GetFileType
+GetStartupInfoA
+DeleteCriticalSection
+FreeEnvironmentStringsA
+GetEnvironmentStrings
+FreeEnvironmentStringsW
+GetEnvironmentStringsW
+GetTickCount
+GetCurrentProcessId
+GetSystemTimeAsFileTime
+HeapSize
+TerminateProcess
+GetCurrentProcess
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+IsDebuggerPresent
+RtlCaptureContext
+RtlVirtualUnwind
+WriteFile
+GetCPInfo
+GetACP
+GetOEMCP
+IsValidCodePage
+LeaveCriticalSection
+EnterCriticalSection
+LoadLibraryA
+InitializeCriticalSection
+LCMapStringA
+LCMapStringW
+GetStringTypeA
+GetStringTypeW
+GetLocaleInfoA
+SetFilePointer
+GetConsoleCP
+GetConsoleMode
+SetStdHandle
+WriteConsoleA
+GetConsoleOutputCP
+WriteConsoleW
+CreateFileA
+CloseHandle
+FlushFileBuffers
+KERNEL32.dll
+TraceEvent
+UnregisterTraceGuids
+GetTraceEnableLevel
+GetTraceEnableFlags
+GetTraceLoggerHandle
+RegisterTraceGuidsW
+RegQueryValueExW
+RegCloseKey
+RegOpenKeyExW
+ADVAPI32.dll
+AdoNetDiag.dll
+DllBidEntryPoint
+NullGUID
+.?AVXept@@
+0123456789ABCDEF
+0123456789ABCDEF
+SOFTWARE\Microsoft\BidInterface\SelfDiag\
+<NotFound>
+.?AVtype_info@@
+.?AVbad_alloc@std@@
+.?AVexception@std@@
+.?AVbad_exception@std@@
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+z?aUY
+zc%C1
+-64OS
+*sdbid*
+-sdbid-
+ADONETDIAG.ETW
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+.NET Framework
+FileVersion
+2.0.50727.9157 (WinRelRS6.050727-9100)
+InternalName
+AdoNetDiag.dll
+LegalCopyright
+ Microsoft Corporation.  All rights reserved.
+OriginalFilename
+AdoNetDiag.dll
+ProductName
+Microsoft
+ .NET Framework
+ProductVersion
+2.0.50727.9157
+Comments
+Flavor=Retail
+VarFileInfo
+Translation
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+201215213145Z
+211202213145Z0t1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Corporation0
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+230012+4630090
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+DLYwh
+bf&!D
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20110
+110708205909Z
+260708210909Z0~1
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+S0Q0O
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+R0P0N
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+Legal_policy_statement
+e_.,>
+D=xz#
+*?*kXIc
+QEX82q'
+WqVNHE
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 2011
+Microsof
+http://www.microsoft.com0
+kwr50
+20210504061832.159Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:C4BD-E37F-5FFC1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+210114190213Z
+220411190213Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:C4BD-E37F-5FFC1%0#
+Microsoft Time-Stamp Service0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+#3DS=D
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+100701213655Z
+250701214655Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+|hK,_
+$`2X`F
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+Legal_Policy_Statement
+oK0D$"<
+z.9Wv
+r~akow
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:C4BD-E37F-5FFC1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20210504041201Z
+20210505041201Z0w0=
+1/0-0
+1(0&0
+U7tb!
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+D1"xR
+6t\YZA
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+5"T]:

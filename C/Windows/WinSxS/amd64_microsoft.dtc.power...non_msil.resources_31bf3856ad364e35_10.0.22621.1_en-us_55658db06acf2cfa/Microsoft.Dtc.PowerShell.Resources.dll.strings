@@ -1,0 +1,178 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+BeginPullTransactionFromRM
+BeginPullTransactionToRM6
+BeginPushTransactionFromRMj
+BeginPushTransactionToRM
+BeginRMEnListmentRequest
+CannotStartRM
+CommunicationError
+DtcFirewallEnabled
+DurableEnlistmentDone
+ExportCookieRequestDone
+GetExportCookieDone
+GetExportCookieFailed
+GetExportCookieFailedEx
+GetPropTokenDone
+GetPropTokenFailed
+GetPropTokenFailedEx
+GetTransactionFromExportCookieFailed
+GetTransactionFromPropTokenFailed
+GetTransactionFromPropTokenFailedEx
+GetWhereaboutsDone
+GetWhereaboutsRequestDone
+GetWhereaboutsRequestFailed
+HostNameFromIPLookupFailed
+HostedDiagnosticRM
+InboundEnabled
+InnerException
+InnerExceptionEmbedded
+NotCommittableTransaction
+OutboundEnabled
+PropTokenRequestDone
+PullPropagationDone
+PullPropagationRequestDone
+PushPropagationDone
+PushPropagationRequestDone
+RMCommunicationFailed
+RMEnlistRequestDone
+RMFirewallEnabled
+RMJobNotFound
+RMRemoved
+RMRunning
+RMStartFailed
+RMStarted
+RMStopped
+ReceivedCommit
+ReceivedEnlistmentRequest
+ReceivedExportCookieRequest
+ReceivedGetWhereAboutsRequest
+ReceivedInDoubt
+ReceivedPrepare
+ReceivedPropTokenRequest
+ReceivedPullPropagationRequest
+ReceivedPushPropagationRequest
+ReceivedRollback
+RemoteRMNotFailed
+RemoteTMWorking
+StopRMFailed
+TM2TMCommunicationFailed
+TMFailed
+TMOrTM2TMCommunicationFailed
+TMRunning
+TransactionAlreadyCompleted
+TransactionCommitted
+TransactionCompleted
+TransactionCreated
+TransactionError
+TransactionNotFound
+TransactionRollback
+TxCommitFailed
+TxPromotionFailed
+TxRollbackFailed
+VolatileEnlsitmentDone
+4Starting PULL Propagation from Resource Manager {0}.
+2Starting PULL Propagation to Resource Manager {0}.
+4Starting PUSH Propagation from Resource Manager {0}.
+2Starting PUSH Propagation to Resource Manager {0}.
+(Starting Enlistment Request from RM {0}.
+8Resource Manager cannot be started at the current state.
+OAn unknown error occurred, please see the inner exception for more information.
+MFirewall rules for DTC communication between DTCs of {0} and {1} are enabled.
+.{0} Enlisted DurableRM-{1} on Transaction {2}.
+ERequest to get a ExportCookie from the ResourceManager {0} completed.
+:{0} obtained an ExportCookie for Transaction {1} from DTC.
+{{0} failed to obtain an ExportCookie for the Transaction {1} from DTC. Please see the inner exception for more information.
+{0} failed to obtain an ExportCookie for the Transaction {1} from DTC. Please see the exception details for more information. Exception: {2}
+={0} obtained a PropagationToken for Transaction {1} from DTC.
+~{0} failed to obtain a PropagationToken for the Transaction {1} from DTC. Please see the inner exception for more information.
+{0} failed to obtain a PropagationToken for the Transaction {1} from DTC. Please see the exception details for more information. Exception: {2}
+t{0} failed to obtain a Transaction from the given ExportCookie. Please see the inner exception for more information.
+x{0} failed to obtain a Transaction from the given PropagationToken. Please see the inner exception for more information.
+{0} failed to obtain a Transaction from the given PropagationToken. Please see the exception details for more information. Exception: {1}
+&{0} obtained the Whereabouts from DTC.
+IRequest to get DTC Whereabouts from the ResourceManager at {0} completed.
+{Request to get DTC Whereabouts from the ResourceManager at {0} failed. Please see the inner exception for more information.
+HResolution of IP address to hostname failed, just using IP address: {0}.
+*Diagnostic Resource Manager hosted at {0}.
+9'Allow Inbound' security setting is enabled on {0}'s DTC.
+4Please see the inner exception for more information.
+9Please see the inner exception for more information: {0}.
+sTransaction {0} is not committable from this Cmdlet. Please make sure it was created by the same PowerShell client.
+:'Allow Outbound' security setting is enabled on {0}'s DTC.
+IRequest to get a PropagationToken from the ResourceManager {0} completed.
+A{0} obtained the Transaction {1} from the given PropagationToken.
+IRequest to do a PULL Propagation by the ResourceManager at {0} completed.
+={0} obtained the Transaction {1} from the given ExportCookie.
+aRequest to do a PUSH Propagation by the ResourceManager at {0} for the Transaction {1} completed.
+An attempt to communicate to the specified Diagnostic Resource Manager at {0} failed. Please make sure: (1) {1}, (2) {2} (3) {3}. {4}
+VRequest to do a Resource Manager Enlistment from the ResourceManager at {0} completed.
+TThe firewall rules for Diagnostic Resource Manager communication at {0} are enabled.
+HCould not find the DtcDiagnosticResourceManagerJob for given parameters.
+&Resource Manager {0} - {1} is removed.
+0A Diagnostic Resource Manager is running at {0}.
+~Resource Manager could not be started due to a failure in opening a host. Please see the inner exception for more information.
+{0} is now listening at {1}.
+&Resource Manager {0} - {1} is stopped.
+AResource Manager {0} received Commit request for Transaction {1}.
+B{0} received a request to create an Enlistment on Transaction {1}.
+DResourceManager {0} received a request for an ExportCookie from {1}.
+4{0} received a request for DTC Whereabouts from {1}.
+DResourceManager {0} received an InDoubt request for Transaction {1}.
+CResourceManager {0} received a Prepare request for Transaction {1}.
+5{0} received a request for PropagationToken from {1}.
+9{0} received a request to do a PULL propagation from {1}.
+9{0} received a request to do a PUSH propagation from {1}.
+6ResourceManager {0} received Rollback request for {1}.
+lThe Diagnostic Resource Manager at {0} received the request and was able to perform the requested operation.
+If {0} is configured to use a remote DTC, remote DTC's 'Allow Remote Clients' security setting is enabled and the firewall rules for DTC communication is activated.
+dA failure occurred in trying to close the host. Please see the inner exception for more information.
+yThe transaction {0} could not be propagated from {1} to {2}, Please make sure: (1) {3}, (2) {4}, (3) {5} and (4) {6}. {7}
+T{0} was unable to communicate to its DTC. Please make sure: (1) {1} and (2) {2}. {3}
+The transaction {0} could not be propagated from {1} to {2}, Please make sure: (1) {3}, (2) {4}, (3) {5}, (4) {6}, (5) {7} and (6) {8}. {9}
+{0}'s DTC is running.
+The transaction {0} has already been completed. The possible causes are: (1) Transaction timed out or committed, (2) A participant of the transaction aborted the transaction asynchronously. {1}
+Transaction {0} was committed.
+.Transaction {0} completed in {1} state at {2}.
+{0} created Transaction {1}.
+\A Transaction related failure occurred. Please see the inner exception for more information.
+{0} could not find an active Transaction with the ID {1}. Please make sure that the Transaction is first propagated to {0} and is not completed.
+ Transaction {0} was rolled back.
+WCommitting transaction {0} failed. Please see the inner exception for more information.
+b{0} failed to promote the Transaction to DTC. Please see the inner exception for more information.
+`Attempt to rollback Transaction {0} failed. Please see the inner exception for more information.
++{0} Enlisted VolatileRM on Transaction {1}.
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+Microsoft.Dtc.PowerShell.resources
+Microsoft.Dtc.PowerShell.Resources.en.resources
+Microsoft.Dtc.PowerShell.resources.dll
+_CorDllMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+040904b0
+CompanyName
+Microsoft Corporation
+FileDescription
+FileVersion
+10.0.22621.1
+InternalName
+Microsoft.Dtc.PowerShell.resources.dll
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+Microsoft.Dtc.PowerShell.resources.dll
+ProductName
+Microsoft (R) Windows (R) Operating System
+ProductVersion
+10.0.22621.1

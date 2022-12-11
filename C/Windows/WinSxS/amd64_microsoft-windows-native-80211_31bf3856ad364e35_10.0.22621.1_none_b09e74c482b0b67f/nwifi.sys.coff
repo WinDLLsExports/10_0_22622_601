@@ -1,0 +1,230 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-native-80211_31bf3856ad364e35_10.0.22621.1_none_b09e74c482b0b67f\nwifi.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+    ksecdd.sys
+    cng.sys
+    NETIO.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C009E2C0 Import Address Table
+             1C009E8B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         84F RtlCreateAcl
+                         93D RtlLengthSid
+                         A38 SeExports
+                         94A RtlMapGenericMask
+                         375 IoGetFileObjectGenericMapping
+                         BE1 ZwSetValueKey
+                         BA8 ZwQueryValueKey
+                         8B3 RtlFreeUnicodeString
+                         9BB RtlStringFromGUID
+                         9A9 RtlSetDaclSecurityDescriptor
+                         856 RtlCreateSecurityDescriptor
+                         B17 ZwClose
+                         B26 ZwCreateKey
+                         3AA IoOpenDriverRegistryKey
+                         3BA IoQueueWorkItemEx
+                         2F9 IoAllocateWorkItem
+                         B69 ZwOpenKey
+                         4B9 KeGetCurrentIrql
+                         121 ExQueueWorkItem
+                          9A EtwWriteTransfer
+                         486 KeBugCheck
+                         5F1 MmMapLockedPagesSpecifyCache
+                         337 IoCsqInsertIrpEx
+                         44F IofCompleteRequest
+                         585 KeWaitForSingleObject
+                         559 KeSetEvent
+                         339 IoCsqRemoveNextIrp
+                         539 KeReleaseSpinLock
+                         475 KeAcquireSpinLockRaiseToDpc
+                         335 IoCsqInitializeEx
+                         4D5 KeInitializeSpinLock
+                         B7C ZwPowerInformation
+                         5BC MmBuildMdlForNonPagedPool
+                         617 MmSizeOfMdl
+                         356 IoFreeMdl
+                         2F6 IoAllocateMdl
+                         BF7 __C_specific_handler
+                         3A9 IoOpenDeviceRegistryKey
+                          94 EtwUnregister
+                          92 EtwSetInformation
+                          8F EtwRegister
+                         36D IoGetDeviceObjectPointer
+                         302 IoBuildDeviceIoControlRequest
+                         44E IofCallDriver
+                         6CB ObfDereferenceObject
+                         3D1 IoReleaseCancelSpinLock
+                         B39 ZwDeleteKey
+                         2E8 IoAcquireCancelSpinLock
+                         303 IoBuildPartialMdl
+                         5DB MmGetSystemRoutineAddress
+                         7FD RtlAddAccessAllowedAce
+                         441 IoWMIRegistrationControl
+                         B9C ZwQueryLicenseValue
+                         8B4 RtlGUIDFromString
+                         359 IoFreeWorkItem
+                         C9F wcscpy_s
+                         C9B wcscat_s
+                         100 ExInitializeNPagedLookasideList
+                          D5 ExDeleteNPagedLookasideList
+                         487 KeBugCheckEx
+                         8C6 RtlGetEnabledExtendedFeatures
+                         8DF RtlGetVersion
+                         C4A _vsnprintf
+                         422 IoUninitializeWorkItem
+                         413 IoSizeofWorkItem
+                         396 IoInitializeWorkItem
+                         3B9 IoQueueWorkItem
+                         833 RtlCompareMemory
+                         4D7 KeInitializeTimer
+                         4C9 KeInitializeDpc
+                         488 KeCancelTimer
+                         557 KeSetCoalescableTimer
+                         9D4 RtlUTF8ToUnicodeN
+                         9E9 RtlUpcaseUnicodeString
+                         4CD KeInitializeEvent
+                          BA ExAllocateFromNPagedLookasideList
+                          BD ExAllocatePool2
+                          F0 ExFreeToNPagedLookasideList
+                          EE ExFreePoolWithTag
+                         8F1 RtlInitUnicodeString
+
+    NDIS.SYS
+             1C009E000 Import Address Table
+             1C009E5F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          AB NdisFreeNetBuffer
+                          2A NdisAllocateTimerObject
+                          25 NdisAllocateRWLock
+                         1C7 NdisReadConfiguration
+                          DA NdisGetVersion
+                          19 NdisAllocateMemoryWithTag
+                         18F NdisMSleep
+                          78 NdisDeregisterDeviceEx
+                         1CF NdisRegisterDeviceEx
+                          8E NdisFDirectOidRequest
+                          8F NdisFDirectOidRequestComplete
+                         1C5 NdisQueueIoWorkItem
+                          16 NdisAllocateIoWorkItem
+                          A6 NdisFreeIoWorkItem
+                          99 NdisFRestartFilter
+                          97 NdisFRegisterFilterDriver
+                          93 NdisFNetPnPEvent
+                          8D NdisFDevicePnPEventNotify
+                          8C NdisFDeregisterFilterDriver
+                          A8 NdisFreeMemory
+                          9E NdisFSetAttributes
+                         1DE NdisRetreatNetBufferListDataStart
+                           F NdisAdvanceNetBufferListDataStart
+                          34 NdisCancelTimerObject
+                         1E6 NdisSetCoalescableTimerObject
+                          74 NdisCopySendNetBufferListInfo
+                          9D NdisFSendNetBufferListsComplete
+                          8B NdisFCancelSendNetBufferLists
+                          1E NdisAllocateNetBufferListContext
+                          AD NdisFreeNetBufferListContext
+                          92 NdisFIndicateStatus
+                          73 NdisCopyReceiveNetBufferListInfo
+                          9B NdisFReturnNetBufferLists
+                         1DD NdisRetreatNetBufferDataStart
+                          95 NdisFOidRequestComplete
+                         1DC NdisResetEvent
+                          94 NdisFOidRequest
+                          A3 NdisFreeCloneOidRequest
+                          13 NdisAllocateCloneOidRequest
+                          1B NdisAllocateNetBuffer
+                         1D5 NdisReleaseRWLock
+                          1D NdisAllocateNetBufferList
+                          AF NdisFreeNetBufferPool
+                          AE NdisFreeNetBufferListPool
+                          21 NdisAllocateNetBufferPool
+                          1F NdisAllocateNetBufferListPool
+                          AC NdisFreeNetBufferList
+                          44 NdisCloseConfiguration
+                         1AF NdisOpenConfigurationEx
+                         20A NdisWaitEvent
+                         109 NdisInitializeEvent
+                          D7 NdisGetSystemUpTimeEx
+                         1E7 NdisSetEvent
+                          91 NdisFIndicateReceiveNetBufferLists
+                          9C NdisFSendNetBufferLists
+                           7 NdisAcquireRWLockRead
+                          B2 NdisFreeRWLock
+                           8 NdisAcquireRWLockWrite
+                          B8 NdisFreeTimerObject
+
+    ksecdd.sys
+             1C009E220 Import Address Table
+             1C009E810 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           C BCryptDestroySecret
+                           7 BCryptDeriveKey
+                          22 BCryptSecretAgreement
+                          1D BCryptImportKeyPair
+                          12 BCryptExportKey
+                          13 BCryptFinalizeKeyPair
+                          17 BCryptGenerateKeyPair
+                          1A BCryptGetProperty
+                          23 BCryptSetProperty
+                          1F BCryptOpenAlgorithmProvider
+                           4 BCryptCloseAlgorithmProvider
+                           A BCryptDestroyHash
+                          14 BCryptFinishHash
+                          1B BCryptHashData
+                           5 BCryptCreateHash
+                           6 BCryptDecrypt
+                           B BCryptDestroyKey
+                           F BCryptEncrypt
+                          18 BCryptGenerateSymmetricKey
+
+    cng.sys
+             1C009E210 Import Address Table
+             1C009E800 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 SystemPrng
+
+    NETIO.SYS
+             1C009E1E0 Import Address Table
+             1C009E7D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         18D NotifyUnicastIpAddressChange
+                           3 CancelMibChangeNotify2
+                          5B GetUnicastIpAddressEntry
+                         206 WfpNblInfoClone
+                          4F GetIpInterfaceEntry
+
+  Summary
+
+        3000 .data
+        2000 .idata
+        5000 .pdata
+        D000 .rdata
+        4000 .reloc
+       10000 .rsrc
+       88000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        1000 fothk

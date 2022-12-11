@@ -1,0 +1,163 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\tdx.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NETIO.SYS
+    TDI.SYS
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C001B100 Import Address Table
+             1C001B500 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         533 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         9DA RtlUnicodeStringToInteger
+                         6BB ObReferenceObjectByHandle
+                         34C IoFileObjectType
+                         BF7 __C_specific_handler
+                         323 IoCreateDevice
+                         32F IoCreateSymbolicLink
+                         33E IoDeleteSymbolicLink
+                         33C IoDeleteDevice
+                         4D4 KeInitializeSemaphore
+                         4D1 KeInitializeMutex
+                         2F9 IoAllocateWorkItem
+                         4D7 KeInitializeTimer
+                         4C9 KeInitializeDpc
+                         569 KeSetTimer
+                         488 KeCancelTimer
+                         4B2 KeFlushQueuedDpcs
+                         359 IoFreeWorkItem
+                         536 KeReleaseMutex
+                         46D KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         C4C _vsnwprintf
+                         4B9 KeGetCurrentIrql
+                         499 KeDelayExecutionThread
+                         3B9 IoQueueWorkItem
+                         559 KeSetEvent
+                         37F IoGetIrpExtraCreateParameter
+                         39A IoIs32bitProcess
+                         2F6 IoAllocateMdl
+                         605 MmProbeAndLockPages
+                         61C MmUnlockPages
+                         356 IoFreeMdl
+                          BE ExAllocatePool3
+                         538 KeReleaseSemaphore
+                         5DB MmGetSystemRoutineAddress
+                         441 IoWMIRegistrationControl
+                         366 IoGetCurrentProcess
+                         84C RtlCopyUnicodeString
+                         510 KeQueryMaximumProcessorCountEx
+                         422 IoUninitializeWorkItem
+                         6CB ObfDereferenceObject
+                          CF ExCreateCallback
+                         B17 ZwClose
+                         BA8 ZwQueryValueKey
+                         B69 ZwOpenKey
+                         4F3 KeLowerIrql
+                         4BB KeGetCurrentProcessorNumberEx
+                         5F1 MmMapLockedPagesSpecifyCache
+                         3D1 IoReleaseCancelSpinLock
+                         2E8 IoAcquireCancelSpinLock
+                         38E IoGetTopLevelIrp
+                         4D5 KeInitializeSpinLock
+                         6A9 ObDereferenceSecurityDescriptor
+                          BD ExAllocatePool2
+                          EE ExFreePoolWithTag
+                         6B2 ObLogSecurityDescriptor
+                         A74 SeUnlockSubjectContext
+                         375 IoGetFileObjectGenericMapping
+                         A0F SeAssignSecurity
+                         A43 SeLockSubjectContext
+                         44F IofCompleteRequest
+                         585 KeWaitForSingleObject
+                         74B PsGetCurrentProcess
+                         473 KeAcquireSpinLockAtDpcLevel
+                         53B KeReleaseSpinLockFromDpcLevel
+                         11A ExNotifyCallback
+                         4CD KeInitializeEvent
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                         8BC RtlGetCallersAddress
+                         833 RtlCompareMemory
+                         8F1 RtlInitUnicodeString
+                         531 KeReleaseInStackQueuedSpinLock
+                         413 IoSizeofWorkItem
+                         396 IoInitializeWorkItem
+                         3BA IoQueueWorkItemEx
+                         46C KeAcquireInStackQueuedSpinLock
+
+    NETIO.SYS
+             1C001B010 Import Address Table
+             1C001B410 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         184 NmrRegisterProvider
+                         1BF RtlCopyMdlToBuffer
+                         1BE RtlCopyBufferToMdl
+                         183 NmrRegisterClient
+                         180 NmrDeregisterClient
+                         185 NmrWaitForClientDeregisterComplete
+                         17E NmrClientAttachProvider
+                         17F NmrClientDetachProviderComplete
+                         19C NsiGetParameter
+                         197 NsiGetAllParameters
+                         1A3 NsiSetAllParameters
+                         182 NmrProviderDetachClientComplete
+                         186 NmrWaitForProviderDeregisterComplete
+                         181 NmrDeregisterProvider
+                         1C0 RtlCopyMdlToMdl
+                         190 NsiDeregisterChangeNotification
+                         19F NsiRegisterChangeNotification
+                         196 NsiFreeTable
+                         18E NsiAllocateAndGetTable
+
+    TDI.SYS
+             1C001B0B0 Import Address Table
+             1C001B4B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          37 TdiRegisterProvider
+                          31 TdiProviderReady
+                          27 TdiDeregisterProvider
+                          24 TdiDeregisterNetAddress
+                          23 TdiDeregisterDeviceObject
+                          33 TdiRegisterDeviceObject
+                          34 TdiRegisterNetAddress
+                          30 TdiPnPPowerRequest
+                          2C TdiMapUserRequest
+
+    NDIS.SYS
+             1C001B000 Import Address Table
+             1C001B400 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          F7 NdisIfGetInterfaceIndexFromNetLuid
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        3000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       15000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

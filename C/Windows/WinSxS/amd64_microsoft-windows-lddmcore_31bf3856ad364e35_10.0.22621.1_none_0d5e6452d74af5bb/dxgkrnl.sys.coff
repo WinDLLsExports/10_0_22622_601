@@ -1,0 +1,956 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-lddmcore_31bf3856ad364e35_10.0.22621.1_none_0d5e6452d74af5bb\dxgkrnl.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    watchdog.sys
+    ext-ms-win-ntos-ksr-l1-1-4.dll
+    WMILIB.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0155080 Import Address Table
+             1C01562B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         701 PoFxReportDevicePoweredOn
+                         6EF PoFxIdleComponent
+                         6E7 PoFxActivateComponent
+                         569 KeSetTimer
+                         46D KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         488 KeCancelTimer
+                         533 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         50C KeQueryInterruptTimePrecise
+                          A7 ExAcquirePushLockExclusiveEx
+                         167 ExTryAcquirePushLockExclusiveEx
+                         4A2 KeEnterCriticalRegion
+                         4EF KeLeaveCriticalRegion
+                         13F ExReleasePushLockExclusiveEx
+                         BF2 ZwUpdateWnfStateData
+                          EE ExFreePoolWithTag
+                         359 IoFreeWorkItem
+                          BD ExAllocatePool2
+                         74D PsGetCurrentProcessSessionId
+                         522 KeReadStateEvent
+                         702 PoFxSetComponentLatency
+                         121 ExQueueWorkItem
+                         703 PoFxSetComponentResidency
+                         140 ExReleasePushLockSharedEx
+                          A8 ExAcquirePushLockSharedEx
+                         168 ExTryAcquirePushLockSharedEx
+                         115 ExIsResourceAcquiredExclusiveLite
+                         116 ExIsResourceAcquiredSharedLite
+                         74B PsGetCurrentProcess
+                          AA ExAcquireResourceSharedLite
+                          A9 ExAcquireResourceExclusiveLite
+                         144 ExReleaseResourceLite
+                         4D5 KeInitializeSpinLock
+                         4CD KeInitializeEvent
+                         4D7 KeInitializeTimer
+                         4C9 KeInitializeDpc
+                          D7 ExDeleteResourceLite
+                         981 RtlQueryRegistryValuesEx
+                         6FA PoFxRegisterDevice
+                         51B KeQueryTimeIncrement
+                         705 PoFxSetDeviceIdleTimeout
+                         2E6 InitializeSListHead
+                         73E PsCreateSystemThread
+                         708 PoFxUnregisterDevice
+                         C5E bsearch
+                         CA8 wcsrchr
+                         837 RtlCompareUnicodeStrings
+                         8B3 RtlFreeUnicodeString
+                         103 ExInitializeResourceLite
+                         367 IoGetDeviceAttachmentBaseRef
+                         6CB ObfDereferenceObject
+                         AF8 ZwAllocateLocallyUniqueId
+                         54A KeResetEvent
+                         499 KeDelayExecutionThread
+                         6CD ObfReferenceObject
+                         4B2 KeFlushQueuedDpcs
+                         BF4 ZwWaitForSingleObject
+                         B17 ZwClose
+                         72A PoUnregisterPowerSettingCallback
+                         304 IoBuildSynchronousFsdRequest
+                         44E IofCallDriver
+                          8B EtwActivityIdControl
+                         8E8 RtlInitAnsiString
+                         80F RtlAnsiStringToUnicodeString
+                         8F1 RtlInitUnicodeString
+                         5C5 MmCreateSection
+                         5FA MmMapViewInSystemSpace
+                         2F6 IoAllocateMdl
+                         605 MmProbeAndLockPages
+                         61C MmUnlockPages
+                         356 IoFreeMdl
+                         623 MmUnmapViewInSystemSpace
+                         5FB MmMapViewInSystemSpaceEx
+                         A38 SeExports
+                         826 RtlCheckTokenMembership
+                         51E KeQueryUnbiasedInterruptTime
+                         48D KeClearEvent
+                         B69 ZwOpenKey
+                         B9B ZwQueryKey
+                         B39 ZwDeleteKey
+                         580 KeUnstackDetachProcess
+                         570 KeStackAttachProcess
+                         413 IoSizeofWorkItem
+                         396 IoInitializeWorkItem
+                          71 DbgPrintEx
+                         77B PsGetProcessSessionId
+                         4D9 KeInitializeTimerEx
+                         32A IoCreateNotificationEvent
+                         B22 ZwCreateEvent
+                         6BB ObReferenceObjectByHandle
+                          E5 ExEventObjectType
+                         177 ExUuidCreate
+                         56B KeSetTimerEx
+                         583 KeWaitForMultipleObjects
+                         C74 qsort
+                          D4 ExDeleteLookasideListEx
+                         CAA wcsstr
+                         104 ExInitializeRundownProtection
+                          FF ExInitializeLookasideListEx
+                         179 ExWaitForRundownProtectionRelease
+                         128 ExReInitializeRundownProtection
+                         CA7 wcsnlen
+                         813 RtlAppendUnicodeToString
+                         6B6 ObOpenObjectByPointer
+                         6AE ObGetObjectType
+                         145 ExReleaseRundownProtection
+                          AB ExAcquireRundownProtection
+                          D6 ExDeletePagedLookasideList
+                         101 ExInitializePagedLookasideList
+                          F1 ExFreeToPagedLookasideList
+                          BB ExAllocateFromPagedLookasideList
+                         6EB PoFxCompleteDirectedPowerDown
+                         820 RtlCaptureStackBackTrace
+                         70F PoNotifyVSyncChange
+                         6EC PoFxCompleteIdleCondition
+                         6EA PoFxCompleteDevicePowerNotRequired
+                         626 MmUserProbeAddress
+                         123 ExRaiseDatatypeMisalignment
+                         36D IoGetDeviceObjectPointer
+                          F8 ExGetPreviousMode
+                         8D2 RtlGetNtSystemRoot
+                         C50 _wcslwr
+                         736 PsAttachSiloToCurrentThread
+                         75F PsGetHostSilo
+                         CA4 wcsncmp
+                         A1F SeCaptureSubjectContext
+                         856 RtlCreateSecurityDescriptor
+                         93B RtlLengthRequiredSid
+                         8FB RtlInitializeSid
+                         9BF RtlSubAuthoritySid
+                         93D RtlLengthSid
+                         84F RtlCreateAcl
+                         7FD RtlAddAccessAllowedAce
+                         9A9 RtlSetDaclSecurityDescriptor
+                         A06 SeAccessCheck
+                         A5C SeReleaseSubjectContext
+                         B78 ZwOpenThreadTokenEx
+                         B96 ZwQueryInformationToken
+                         B70 ZwOpenProcessTokenEx
+                         9BE RtlSubAuthorityCountSid
+                         881 RtlEqualSid
+                         465 KdRefreshDebuggerNotPresent
+                         770 PsGetProcessImageFileName
+                         754 PsGetCurrentThreadId
+                         60F MmRotatePhysicalView
+                         5D0 MmFreePagesFromMdl
+                          EF ExFreeToLookasideListEx
+                         7A2 PsIsProtectedProcess
+                         7A3 PsIsProtectedProcessLight
+                         BA9 ZwQueryVirtualMemory
+                         B9F ZwQuerySection
+                         6A1 ObCloseHandle
+                         610 MmSectionObjectType
+                         74C PsGetCurrentProcessId
+                         755 PsGetCurrentThreadPreviousMode
+                         76F PsGetProcessId
+                         538 KeReleaseSemaphore
+                         7A7 PsIsThreadTerminating
+                         4A7 KeExpandKernelStackAndCalloutEx
+                         7EE PsTerminateSystemThread
+                         15C ExSubscribeWnfStateChange
+                         175 ExUnsubscribeWnfStateChange
+                         2DE InbvNotifyDisplayOwnershipChange
+                         B67 ZwOpenFile
+                         B91 ZwQueryInformationFile
+                         BAD ZwReadFile
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                          B9 ExAllocateFromLookasideListEx
+                         76B PsGetProcessDxgProcess
+                         6AA ObDuplicateObject
+                         83E RtlConvertHostPerfCounterToPerfCounter
+                         625 MmUnsecureVirtualMemory
+                         611 MmSecureVirtualMemory
+                         6F3 PoFxPowerControl
+                         11F ExQueryWnfStateData
+                          8F EtwRegister
+                         7B5 PsProcessType
+                         B09 ZwAlpcDisconnectPort
+                         B0C ZwAlpcQueryInformation
+                         C4C _vsnwprintf
+                         2F9 IoAllocateWorkItem
+                         B0E ZwAlpcSendWaitReceivePort
+                          79 DbgkWerCaptureLiveKernelDump
+                         B7C ZwPowerInformation
+                         BA5 ZwQuerySystemInformation
+                         B43 ZwEnumerateKey
+                         836 RtlCompareUnicodeString
+                         928 RtlIsMultiSessionSku
+                         B9C ZwQueryLicenseValue
+                         8D5 RtlGetProductInfo
+                         833 RtlCompareMemory
+                         397 IoInvalidateDeviceRelations
+                         9FF RtlWriteRegistryValue
+                         36B IoGetDeviceInterfaces
+                         CA6 wcsncpy_s
+                         797 PsInitialSystemProcess
+                         72F ProbeForWrite
+                         6A2 ObCreateObject
+                         6AF ObInsertObject
+                         6BC ObReferenceObjectByHandleWithTag
+                         81D RtlCapabilityCheck
+                         59A LpcPortObjectType
+                         6CC ObfDereferenceObjectWithTag
+                         C31 _purecall
+                         518 KeQueryRuntimeThread
+                         AFA ZwAllocateVirtualMemory
+                         8AB RtlFormatCurrentUserKeyPath
+                         904 RtlInt64ToUnicodeString
+                          95 EtwWrite
+                         587 KfRaiseIrql
+                         4F3 KeLowerIrql
+                         35F IoGetAttachedDeviceReference
+                         302 IoBuildDeviceIoControlRequest
+                         7E8 PsSetThreadWin32Thread
+                          FD ExInitializeFastOwnerEntry
+                         75B PsGetCurrentThreadWin32Thread
+                         84C RtlCopyUnicodeString
+                         7F0 PsTlsAlloc
+                         7F1 PsTlsFree
+                         7D6 PsSetCreateProcessNotifyRoutineEx2
+                         8D9 RtlGetSuiteMask
+                         975 RtlQueryFeatureConfiguration
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                         3D0 IoRegisterShutdownNotification
+                         42B IoUnregisterShutdownNotification
+                         33C IoDeleteDevice
+                         44F IofCompleteRequest
+                         7D5 PsSetCreateProcessNotifyRoutineEx
+                          94 EtwUnregister
+                         B23 ZwCreateFile
+                         B38 ZwDeleteFile
+                         B2D ZwCreateSection
+                         5FC MmMapViewOfSection
+                         597 LdrResFindResource
+                         624 MmUnmapViewOfSection
+                         BCC ZwSetInformationFile
+                         BF5 ZwWriteFile
+                         C52 _wcsnicmp
+                         B89 ZwQueryDirectoryFile
+                         B45 ZwEnumerateValueKey
+                         5B8 MmAllocatePagesForMdlEx
+                         5F1 MmMapLockedPagesSpecifyCache
+                          92 EtwSetInformation
+                         BF6 ZwYieldExecution
+                         8D1 RtlGetNtProductType
+                         8B8 RtlGetActiveConsoleId
+                         483 KeAreAllApcsDisabled
+                         487 KeBugCheckEx
+                         160 ExSystemTimeToLocalTime
+                         95A RtlNumberOfClearBits
+                         8F4 RtlInitializeBitMap
+                         AFB ZwAllocateVirtualMemoryEx
+                         B4B ZwFreeVirtualMemory
+                         61F MmUnmapLockedPages
+                         554 KeSetActualBasePriorityThread
+                         B26 ZwCreateKey
+                         BE1 ZwSetValueKey
+                         892 RtlFindClearBitsAndSet
+                         82C RtlClearBits
+                         783 PsGetServerSiloServiceSessionId
+                         750 PsGetCurrentServerSilo
+                         5D6 MmGetPhysicalAddress
+                         BA8 ZwQueryValueKey
+                         BDC ZwSetSystemInformation
+                         C86 strncmp
+                         6B4 ObOpenObjectByName
+                         6A3 ObCreateObjectType
+                         6B1 ObIsKernelHandle
+                         94A RtlMapGenericMask
+                         151 ExSemaphoreObjectType
+                         844 RtlCopyLuid
+                         4D4 KeInitializeSemaphore
+                         6A5 ObDeleteCapturedInsertInfo
+                         76C PsGetProcessExitProcessCalled
+                         7DE PsSetProcessDxgProcess
+                         79E PsIsHostSilo
+                         77A PsGetProcessServerSilo
+                         7F2 PsTlsGetValue
+                         7F3 PsTlsSetValue
+                         7BD PsReferencePrimaryToken
+                         A4F SeQueryInformationToken
+                         A5F SeSecurityAttributePresent
+                         97A RtlQueryPackageClaims
+                         742 PsDereferencePrimaryToken
+                         97B RtlQueryPackageIdentity
+                         782 PsGetProcessWow64Process
+                         B93 ZwQueryInformationProcess
+                         76D PsGetProcessExitStatus
+                         B6E ZwOpenProcess
+                         A68 SeSinglePrivilegeCheck
+                         744 PsDetachSiloFromCurrentThread
+                         77C PsGetProcessSessionIdEx
+                         AA7 TtmNotifyDeviceArrival
+                         AA8 TtmNotifyDeviceDeparture
+                         C9F wcscpy_s
+                         6BE ObReferenceObjectByPointer
+                         588 KiBugCheckData
+                         47B KeAddTriageDumpDataBlock
+                         5DF MmIsAddressValid
+                         52B KeRegisterBugCheckReasonCallback
+                         4DA KeInitializeTriageDumpDataArray
+                         49C KeDeregisterBugCheckReasonCallback
+                         6AD ObGetObjectSecurity
+                         8C1 RtlGetDaclSecurityDescriptor
+                         8D3 RtlGetOwnerSecurityDescriptor
+                         8C9 RtlGetGroupSecurityDescriptor
+                         8B7 RtlGetAce
+                         849 RtlCopySid
+                         9AC RtlSetOwnerSecurityDescriptor
+                         9AB RtlSetGroupSecurityDescriptor
+                         803 RtlAddAce
+                         6C4 ObReleaseObjectSecurity
+                         458 KdDebuggerEnabled
+                         883 RtlEqualUnicodeString
+                             Ordinal     2
+                         BE7 ZwTerminateProcess
+                         4E7 KeIsAttachedProcess
+                         78D PsGetThreadProcess
+                         C99 vswprintf_s
+                         34C IoFileObjectType
+                         3A9 IoOpenDeviceRegistryKey
+                         3B9 IoQueueWorkItem
+                         7B0 PsLookupProcessByProcessId
+                         4FB KePulseEvent
+                         C79 sqrt
+                         6ED PoFxCompleteIdleState
+                         187 ExpInterlockedPushEntrySList
+                         10F ExInterlockedRemoveHeadList
+                         5DB MmGetSystemRoutineAddress
+                         323 IoCreateDevice
+                         342 IoDeviceObjectType
+                         BDA ZwSetSecurityObject
+                         3A3 IoIsWdmVersionAvailable
+                         7FC RtlAbsoluteToSelfRelativeSD
+                         C9C wcschr
+                          C1 ExAllocatePoolWithTag
+                         93C RtlLengthSecurityDescriptor
+                         C37 _snwprintf
+                         A1E SeCaptureSecurityDescriptor
+                         8D6 RtlGetSaclSecurityDescriptor
+                         C23 __chkstk
+                         559 KeSetEvent
+                         10C ExInterlockedInsertTailList
+                         585 KeWaitForSingleObject
+                         4B9 KeGetCurrentIrql
+                         186 ExpInterlockedPopEntrySList
+                          A2 ExAcquireFastMutex
+                         138 ExReleaseFastMutex
+                         8AD RtlFreeAnsiString
+                         15F ExSystemExceptionFilter
+                          ED ExFreePool2
+                         87E RtlEnumerateGenericTableWithoutSplaying
+                         B16 ZwClearEvent
+                         BCA ZwSetEvent
+                         866 RtlDeleteElementGenericTable
+                         8FE RtlInsertElementGenericTable
+                         943 RtlLookupElementGenericTable
+                         8C3 RtlGetElementGenericTable
+                         958 RtlNumberGenericTableElements
+                         5F8 MmMapViewInSessionSpace
+                         622 MmUnmapViewInSessionSpace
+                         8F8 RtlInitializeGenericTable
+                         BF3 ZwWaitForMultipleObjects
+                         635 NtClose
+                          9C EtwpReenableStackWalkApc
+                          9B EtwpDisableStackWalkApc
+                         4EA KeIsExecutingDpc
+                         3BA IoQueueWorkItemEx
+                          9A EtwWriteTransfer
+                         531 KeReleaseInStackQueuedSpinLock
+                         46C KeAcquireInStackQueuedSpinLock
+                         716 PoRegisterPowerSettingCallback
+                         707 PoFxStartDevicePowerManagement
+                         AFE ZwAlpcConnectPort
+                         BF7 __C_specific_handler
+                         7FD RtlAnsiCharToUnicodeChar
+                         5D0 MmHighestUserAddress
+                         377 IoGetIommuInterfaceEx
+                         5A1 MmAllocateContiguousMemorySpecifyCache
+                         5BE MmFreeContiguousMemory
+                          B1 ExAcquireSpinLockExclusive
+                         149 ExReleaseSpinLockExclusive
+                         14B ExReleaseSpinLockShared
+                         158 ExShareAddressSpaceWithDevice
+                         9CA RtlUnicodeStringToInteger
+                         52D KeReleaseMutex
+                         2E5 IoAcquireRemoveLockEx
+                         3CC IoReleaseRemoveLockEx
+                         B63 ZwOpenSection
+                         B4D ZwMapViewOfSection
+                         5E1 MmMapIoSpaceEx
+                         BE1 ZwUnmapViewOfSection
+                         610 MmUnmapIoSpace
+                         4D8 KeInsertQueueDpc
+                         56B KeSynchronizeExecution
+                         3ED IoSetDevicePropertyData
+                         3AB IoQueryFullDriverPath
+                         3C0 IoRegisterDeviceInterface
+                         3EC IoSetDeviceInterfaceState
+                         708 PoRequestPowerIrp
+                         332 IoCsqRemoveNextIrp
+                         6CA PoCallDriver
+                         718 PoStartNextPowerIrp
+                         391 IoInvalidateDeviceState
+                         70F PoSetPowerState
+                         36D IoGetDriverObjectExtension
+                         897 RtlFindUnicodeSubstring
+                         38D IoInitializeRemoveLockEx
+                         2F8 IoAttachDeviceToDeviceStack
+                         367 IoGetDeviceProperty
+                         4C9 KeInitializeMutex
+                         8CF RtlGetVersion
+                          F6 ExGetFirmwareType
+                         338 IoDetachDevice
+                         2EC IoAllocateDriverObjectExtension
+                          CF ExCreateCallback
+                         12C ExRegisterCallback
+                         3DA IoReportRootDevice
+                         813 RtlCheckRegistryKey
+                         117 ExIsSoftBoot
+                         5CA MmGetPhysicalMemoryRanges
+                         100 ExInitializeNPagedLookasideList
+                         278 HalDispatchTable
+                         3C7 IoRegisterPlugPlayNotification
+                          D5 ExDeleteNPagedLookasideList
+                         422 IoUnregisterPlugPlayNotificationEx
+                         8F7 RtlIntegerToUnicodeString
+                         802 RtlAppendUnicodeStringToString
+                          BE ExAllocatePool3
+                         368 IoGetDevicePropertyData
+                         2DD InbvSetVirtualFrameBuffer
+                         318 IoConnectInterruptEx
+                         33D IoDisconnectInterruptEx
+                         348 IoForwardIrpSynchronously
+                         32F IoCsqInsertIrp
+                         3CB IoReleaseRemoveLockAndWaitEx
+                         32D IoCsqInitialize
+                         848 RtlCreateUnicodeString
+                         8A4 RtlGUIDFromString
+                         9AB RtlStringFromGUID
+                         9D9 RtlUpcaseUnicodeString
+                         685 NtShutdownSystem
+                         6B7 ObSetSecurityObjectByPointer
+                         A9A VerSetConditionMask
+                         9E8 RtlVerifyVersionInfo
+                          BA ExAllocateFromNPagedLookasideList
+                          F0 ExFreeToNPagedLookasideList
+                          DD ExEnterCriticalRegionAndAcquireFastMutexUnsafe
+                         13A ExReleaseFastMutexUnsafeAndLeaveCriticalRegion
+                         697 ObDereferenceObjectDeferDelete
+                         34C IoFreeIrp
+                         2EE IoAllocateIrp
+                         51B KeReadStateMutex
+                         379 IoGetLowerDeviceObject
+                         301 IoCancelIrp
+                         6A9 ObQueryNameString
+                         37D IoGetRelatedDeviceObject
+                         801 RtlAppendStringToString
+                         421 IoUnregisterPlugPlayNotification
+                         173 ExUnregisterCallback
+                         B2D ZwDeviceIoControlFile
+                         8A6 RtlGenerateClass5Guid
+                         328 IoCreateSymbolicLink
+                         337 IoDeleteSymbolicLink
+                         85D RtlDeleteRegistryValue
+                         9F2 RtlxAnsiStringToUnicodeSize
+                         B91 ZwQuerySecurityObject
+                         7EE RtlAddAccessAllowedAceEx
+                         9E4 RtlValidSecurityDescriptor
+                         13E ExReleasePushLockEx
+                         4C6 KeInitializeGuardedMutex
+                         463 KeAcquireGuardedMutex
+                         526 KeReleaseGuardedMutex
+                         8D0 RtlHashUnicodeString
+                         9C7 RtlUnicodeStringToAnsiString
+                         C4A _wtoi
+                         6D8 PoFxAddComponentRelation
+                         6EF PoFxRemoveComponentRelation
+                         3EB IoSetDeviceInterfacePropertyData
+                         B2A ZwDeleteValueKey
+                         113 ExIsManufacturingModeEnabled
+                         794 PsIsSystemProcess
+                         A1A SeCreateAccessState
+                         690 ObCheckObjectAccess
+                         A22 SeDeleteAccessState
+                         887 RtlFindExportedRoutineByName
+                         552 KeSetImportanceDpc
+                          C3 ExAllocateTimer
+                          D8 ExDeleteTimer
+                         156 ExSetTimer
+                         47E KeAttachProcess
+                         498 KeDetachProcess
+                          C7 ExCancelTimer
+                         80C RtlAvlRemoveNode
+                         80B RtlAvlInsertNodeEx
+                         5B6 MmCreateMdl
+                          B4 ExAcquireSpinLockSharedAtDpcLevel
+                         14C ExReleaseSpinLockSharedFromDpcLevel
+                          B3 ExAcquireSpinLockShared
+                         C9D wcscmp
+
+    HAL.dll
+             1C0155000 Import Address Table
+             1C0156230 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3D HalSetBusDataByOffset
+                          54 KeQueryPerformanceCounter
+                          57 x86BiosCall
+                          55 KeStallExecutionProcessor
+                          19 HalGetBusDataByOffset
+
+    watchdog.sys
+             1C0156030 Import Address Table
+             1C0157260 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          33 WdDbgCreateSnapshot
+                          34 WdDbgDestroySnapshot
+                          13 DMgrReleaseGdiViewId
+                          14 DMgrWriteDeviceCountToRegistry
+                          10 DMgrAcquireGdiViewId
+                          57 WdLogGetEventOrder
+                          11 DMgrGetSmbiosInfo
+                          58 WdLogGetRecentEvents
+                          36 WdDbgReportCancel
+                          39 WdDbgReportQueryInfo
+                          3A WdDbgReportRecreate
+                          6B WdQueryDebugFlag
+                          42 WdDiagShutdown
+                          3F WdDiagInit
+                          2D SMgrUnregisterSessionChangeCallout
+                          2C SMgrRegisterSessionChangeCallout
+                          4A WdInitialize
+                          35 WdDbgGetSecondaryDataMaxSize
+                          64 WdLogSingleEntry0
+                          37 WdDbgReportComplete
+                          3B WdDbgReportSecondaryData
+                          38 WdDbgReportCreate
+                           1 ??1WatchdogTimeoutReport@@QEAA@XZ
+                           0 ??0WatchdogTimeoutReport@@QEAA@K_K000T_WD_LIVEREPORT_FLAGS@@P6AXPEAV0@@ZP6A_N2@Z_NI@Z
+                          27 DisplayScenarioJournalVidPnSourceVisibility
+                          4B WdIsDebuggerPresent
+                          41 WdDiagNotifyUser
+                          68 WdLogSingleEntry4
+                          66 WdLogSingleEntry2
+                          62 WdLogNewEntry5_WdTrace
+                          28 SMgrGdiCallout
+                          67 WdLogSingleEntry3
+                          69 WdLogSingleEntry5
+                          7D WdpInterfaceReferenceNop
+                          12 DMgrIsSetupRunning
+                          15 DisplayLogSetMonitorPowerStage
+                          18 DisplayRestoreVidPnResult
+                          24 DisplayScenarioJournalSetSetTimingPathInfo
+                          21 DisplayScenarioJournalSetCommitVidPnStatus
+                          1B DisplayScenarioJournalCCDRetrieval
+                          65 WdLogSingleEntry1
+                          1C DisplayScenarioJournalDPIInfo
+
+    ext-ms-win-ntos-ksr-l1-1-4.dll
+             1C0155040 Import Address Table
+             1C0156270 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 KsrEnumeratePersistedMemory
+                           5 KsrFreePersistedMemory
+                          16 KsrQueryMetadata
+                           0 KsrClaimPersistedMemory
+                          14 KsrPersistMemoryWithMetadata
+                           7 KsrGetFirmwareInformation
+                           B KsrMdlToMemoryRuns
+
+    WMILIB.SYS
+             1C0155030 Import Address Table
+             1C0156260 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WmiSystemControl
+
+  Section contains the following exports for dxgkrnl.sys
+
+    00000000 characteristics
+    456E225F time date stamp
+        0.00 version
+           1 ordinal base
+         319 number of functions
+         319 number of names
+
+    ordinal hint RVA      name
+
+         35    0 00138030 ?g_TdrForceDodPresentTimeout@@3JC
+         36    1 00137B30 ?g_TdrForceDodVSyncTimeout@@3JC
+         38    2 00012F70 DpSynchronizeExecution
+         39    3 0020B880 DpiGetDriverVersion
+         40    4 00012570 DpiGetDxgAdapter
+         41    5 000163A0 DpiGetSchedulerCallbackState
+         42    6 00027610 DpiSetSchedulerCallbackState
+         43    7 0008A830 DxgCoreInterface
+          1    8 002B9AA0 DxgCreateLiveDumpWithWdLogs
+          2    9 00050680 DxgKrnlTelemetryGlobal_LogTelemetryEvent
+         44    A 001B6110 DxgkCloseAdapterInternal
+         45    B 00011F80 DxgkGetSessionTokenManager
+         46    C 001B5BD0 DxgkOpenAdapterFromLuidInternal
+         47    D 00316990 DxgkOpenBundleObjectNtHandleFromName
+          3    E 0000F460 DxgkOpenDwmHandleForCompositionObjectReference
+          4    F 0006E440 DxgkOpenHandleForCompositionObjectReference
+          5   10 0001A4D0 DxgkReferenceCompositionObject
+          6   11 0001C8A0 DxgkReleaseCompositionObjectReference
+          7   12 00079B20 DxgkSetCompositionSurfaceInkCookie
+         48   13 002D0DD0 DxgkSubmitPresentBltToHwQueue
+         49   14 0030C320 DxgkSubmitPresentToHwQueue
+          8   15 001996C0 DxgkUnreferenceDxgAllocation
+          9   16 0019A4A0 DxgkUnreferenceDxgResource
+         10   17 002BA660 DxgkVidMmAllowFailOnOfferReclaimErrors
+         50   18 001A1910 DxgkWaitForVerticalBlankEventInternal
+         51   19 00010D70 NtBindCompositionSurface
+         52   1A 0001A3F0 NtCreateCompositionSurfaceHandle
+         53   1B 00330C90 NtDxgkCancelPresents
+         54   1C 002DC050 NtDxgkCheckSinglePlaneForMultiPlaneOverlaySupport
+         55   1D 0030E430 NtDxgkConnectDoorbell
+         56   1E 0030E450 NtDxgkCreateDoorbell
+         57   1F 002D0DD0 NtDxgkCreateNativeFence
+         58   20 0034CC40 NtDxgkCreateTrackedWorkload
+         59   21 0030E470 NtDxgkDestroyDoorbell
+         60   22 0034CDE0 NtDxgkDestroyTrackedWorkload
+         61   23 001CD740 NtDxgkDispMgrOperation
+         62   24 0004CEE0 NtDxgkDisplayPortOperation
+         63   25 00317D50 NtDxgkDuplicateHandle
+         64   26 00160690 NtDxgkEnumAdapters3
+         65   27 00336170 NtDxgkEnumProcesses
+         66   28 0034D200 NtDxgkGetAvailableTrackedWorkloadIndex
+         67   29 002C1930 NtDxgkGetProcessList
+         68   2A 0019B2C0 NtDxgkGetProperties
+         69   2B 0034D540 NtDxgkGetTrackedWorkloadStatistics
+         70   2C 0030E490 NtDxgkNotifyWorkSubmission
+         71   2D 002D0DD0 NtDxgkOpenNativeFenceFromNtHandle
+         72   2E 0030E4B0 NtDxgkOutputDuplPresentToHwQueue
+         73   2F 002DE5C0 NtDxgkPinResources
+         74   30 00351EC0 NtDxgkRegisterVailProcess
+         75   31 0034D860 NtDxgkResetTrackedWorkloadStatistics
+         76   32 001CA4D0 NtDxgkSetProperties
+         77   33 002D0DD0 NtDxgkSubmitPresentBltToHwQueue
+         78   34 0030C320 NtDxgkSubmitPresentToHwQueue
+         79   35 002DE650 NtDxgkUnpinResources
+         80   36 0034DA50 NtDxgkUpdateTrackedWorkload
+         81   37 00352280 NtDxgkVailConnect
+         82   38 00352730 NtDxgkVailDisconnect
+         83   39 00352B20 NtDxgkVailPromoteCompositionSurface
+         84   3A 0007D700 NtFlipObjectAddContent
+         85   3B 0007D850 NtFlipObjectAddPoolBuffer
+         86   3C 0007D9E0 NtFlipObjectConsumerAcquirePresent
+         87   3D 0007DB40 NtFlipObjectConsumerAdjustUsageReference
+         88   3E 0007DC40 NtFlipObjectConsumerBeginProcessPresent
+         89   3F 0007DD70 NtFlipObjectConsumerEndProcessPresent
+         90   40 0007DE10 NtFlipObjectConsumerPostMessage
+         91   41 0007DEF0 NtFlipObjectConsumerQueryBufferInfo
+         92   42 0007E090 NtFlipObjectCreate
+         93   43 0007E170 NtFlipObjectDisconnectEndpoint
+         94   44 0007E210 NtFlipObjectEnablePresentStatisticsType
+         95   45 0007E2B0 NtFlipObjectOpen
+         96   46 0007E400 NtFlipObjectPresentCancel
+         97   47 0007E4E0 NtFlipObjectQueryBufferAvailableEvent
+         98   48 0007E630 NtFlipObjectQueryEndpointConnected
+         99   49 0007E720 NtFlipObjectQueryLostEvent
+        100   4A 0007E820 NtFlipObjectQueryNextMessageToProducer
+        101   4B 0007E920 NtFlipObjectReadNextMessageToProducer
+        102   4C 0007EA20 NtFlipObjectRemoveContent
+        103   4D 0007EB20 NtFlipObjectRemovePoolBuffer
+        104   4E 0007EC10 NtFlipObjectSetContent
+        105   4F 00348360 NtGdiDdDDIAbandonSwapChain
+        106   50 0033FBF0 NtGdiDdDDIAcquireKeyedMutex
+        107   51 0033FF00 NtGdiDdDDIAcquireKeyedMutex2
+        108   52 003484D0 NtGdiDdDDIAcquireSwapChain
+        109   53 00348AD0 NtGdiDdDDIAddSurfaceToSwapChain
+        110   54 002BBA20 NtGdiDdDDIAdjustFullscreenGamma
+        111   55 001CB770 NtGdiDdDDICacheHybridQueryValue
+        112   56 002C4350 NtGdiDdDDIChangeVideoMemoryReservation
+        113   57 00212570 NtGdiDdDDICheckExclusiveOwnership
+        114   58 001DC070 NtGdiDdDDICheckMonitorPowerState
+        115   59 002D9EF0 NtGdiDdDDICheckMultiPlaneOverlaySupport
+        116   5A 002DA640 NtGdiDdDDICheckMultiPlaneOverlaySupport2
+        117   5B 002DADD0 NtGdiDdDDICheckMultiPlaneOverlaySupport3
+        118   5C 001CFE20 NtGdiDdDDICheckOcclusion
+        119   5D 002C4850 NtGdiDdDDICheckSharedResourceAccess
+        120   5E 001DBE00 NtGdiDdDDICheckVidPnExclusiveOwnership
+        121   5F 0019AA20 NtGdiDdDDICloseAdapter
+        122   60 0018D930 NtGdiDdDDIConfigureSharedResource
+        123   61 001CA3B0 NtGdiDdDDICreateAllocation
+        124   62 003151A0 NtGdiDdDDICreateBundleObject
+        125   63 002D0580 NtGdiDdDDICreateContext
+        126   64 001D6480 NtGdiDdDDICreateContextVirtual
+        127   65 001D59B0 NtGdiDdDDICreateDevice
+        128   66 002D0DD0 NtGdiDdDDICreateHwContext
+        129   67 00212FE0 NtGdiDdDDICreateHwQueue
+        130   68 00340240 NtGdiDdDDICreateKeyedMutex
+        131   69 003405C0 NtGdiDdDDICreateKeyedMutex2
+        132   6A 0031DE80 NtGdiDdDDICreateOutputDupl
+        133   6B 00323A20 NtGdiDdDDICreateOverlay
+        134   6C 001D6460 NtGdiDdDDICreatePagingQueue
+        135   6D 003371F0 NtGdiDdDDICreateProtectedSession
+        136   6E 00348EE0 NtGdiDdDDICreateSwapChain
+        137   6F 001D1020 NtGdiDdDDICreateSynchronizationObject
+        138   70 00171CA0 NtGdiDdDDIDDisplayEnum
+        139   71 001D0900 NtGdiDdDDIDestroyAllocation
+        140   72 00197450 NtGdiDdDDIDestroyAllocation2
+        141   73 001797E0 NtGdiDdDDIDestroyContext
+        142   74 001797C0 NtGdiDdDDIDestroyDevice
+        143   75 002D0DD0 NtGdiDdDDIDestroyHwContext
+        144   76 0030BEB0 NtGdiDdDDIDestroyHwQueue
+        145   77 003409D0 NtGdiDdDDIDestroyKeyedMutex
+        146   78 0031E100 NtGdiDdDDIDestroyOutputDupl
+        147   79 003241E0 NtGdiDdDDIDestroyOverlay
+        148   7A 00179800 NtGdiDdDDIDestroyPagingQueue
+        149   7B 00338040 NtGdiDdDDIDestroyProtectedSession
+        150   7C 001D6440 NtGdiDdDDIDestroySynchronizationObject
+        151   7D 001D8DC0 NtGdiDdDDIDispMgrCreate
+        152   7E 002E8410 NtGdiDdDDIDispMgrSourceOperation
+        153   7F 002E8740 NtGdiDdDDIDispMgrTargetOperation
+        154   80 002BC860 NtGdiDdDDIEnumAdapters
+        155   81 001717F0 NtGdiDdDDIEnumAdapters2
+        156   82 00192280 NtGdiDdDDIEscape
+        157   83 0018C4C0 NtGdiDdDDIEvict
+        158   84 00315F20 NtGdiDdDDIExtractBundleObject
+        159   85 00324800 NtGdiDdDDIFlipOverlay
+        160   86 001CB950 NtGdiDdDDIFlushHeapTransitions
+        161   87 002C4B20 NtGdiDdDDIFreeGpuVirtualAddress
+        162   88 002C4F10 NtGdiDdDDIGetAllocationPriority
+        163   89 001CA050 NtGdiDdDDIGetCachedHybridQueryValue
+        164   8A 002DC840 NtGdiDdDDIGetContextInProcessSchedulingPriority
+        165   8B 002DCCD0 NtGdiDdDDIGetContextSchedulingPriority
+        166   8C 00161CB0 NtGdiDdDDIGetDWMVerticalBlankEvent
+        167   8D 001A6A80 NtGdiDdDDIGetDeviceState
+        168   8E 002EE3D0 NtGdiDdDDIGetDisplayModeList
+        169   8F 002074E0 NtGdiDdDDIGetMemoryBudgetTarget
+        170   90 00175F00 NtGdiDdDDIGetMultiPlaneOverlayCaps
+        171   91 002EED10 NtGdiDdDDIGetMultisampleMethodList
+        172   92 00324DE0 NtGdiDdDDIGetOverlayState
+        173   93 001762F0 NtGdiDdDDIGetPostCompositionCaps
+        174   94 0032F6A0 NtGdiDdDDIGetPresentHistory
+        175   95 003346C0 NtGdiDdDDIGetProcessDeviceRemovalSupport
+        176   96 00334910 NtGdiDdDDIGetProcessSchedulingPriorityBand
+        177   97 00334CD0 NtGdiDdDDIGetProcessSchedulingPriorityClass
+        178   98 002C52B0 NtGdiDdDDIGetResourcePresentPrivateDriverData
+        179   99 002C58B0 NtGdiDdDDIGetRuntimeData
+        180   9A 002BCA70 NtGdiDdDDIGetScanLine
+        181   9B 00349850 NtGdiDdDDIGetSetSwapChainMetadata
+        182   9C 002BD150 NtGdiDdDDIGetSharedPrimaryHandle
+        183   9D 002C5950 NtGdiDdDDIGetSharedResourceAdapterLuid
+        184   9E 002C5950 NtGdiDdDDIGetSharedResourceAdapterLuidFlipManager
+        185   9F 00349A70 NtGdiDdDDIGetSwapChainSurfacePhysicalAddress
+        186   A0 00207260 NtGdiDdDDIGetYieldPercentage
+        187   A1 002EF400 NtGdiDdDDIInvalidateActiveVidPn
+        188   A2 002C8B90 NtGdiDdDDIInvalidateCache
+        189   A3 0018F760 NtGdiDdDDILock
+        190   A4 001AFF10 NtGdiDdDDILock2
+        191   A5 001AFEF0 NtGdiDdDDIMakeResident
+        192   A6 001A31D0 NtGdiDdDDIMapGpuVirtualAddress
+        193   A7 002DD160 NtGdiDdDDIMarkDeviceAsError
+        194   A8 002BE510 NtGdiDdDDINetDispGetNextChunkInfo
+        195   A9 002BE880 NtGdiDdDDINetDispQueryMiracastDisplayDeviceStatus
+        196   AA 002BEAC0 NtGdiDdDDINetDispQueryMiracastDisplayDeviceSupport
+        197   AB 002BEB70 NtGdiDdDDINetDispStartMiracastDisplayDevice
+        198   AC 002BEE00 NtGdiDdDDINetDispStopMiracastDisplayDevice
+        199   AD 001B8640 NtGdiDdDDIOfferAllocations
+        200   AE 0016D4E0 NtGdiDdDDIOpenAdapterFromDeviceName
+        201   AF 001CF700 NtGdiDdDDIOpenAdapterFromHdc
+        202   B0 0016D1E0 NtGdiDdDDIOpenAdapterFromLuid
+        203   B1 00316990 NtGdiDdDDIOpenBundleObjectNtHandleFromName
+        204   B2 00340AD0 NtGdiDdDDIOpenKeyedMutex
+        205   B3 00340E00 NtGdiDdDDIOpenKeyedMutex2
+        206   B4 00316B60 NtGdiDdDDIOpenKeyedMutexFromNtHandle
+        207   B5 00316EB0 NtGdiDdDDIOpenNtHandleFromName
+        208   B6 003383A0 NtGdiDdDDIOpenProtectedSessionFromNtHandle
+        209   B7 001CB540 NtGdiDdDDIOpenResource
+        210   B8 0018E620 NtGdiDdDDIOpenResourceFromNtHandle
+        211   B9 00349C20 NtGdiDdDDIOpenSwapChain
+        212   BA 00317080 NtGdiDdDDIOpenSyncObjectFromNtHandle
+        213   BB 00213B50 NtGdiDdDDIOpenSyncObjectFromNtHandle2
+        214   BC 00317520 NtGdiDdDDIOpenSyncObjectNtHandleFromName
+        215   BD 00341140 NtGdiDdDDIOpenSynchronizationObject
+        216   BE 0031E2F0 NtGdiDdDDIOutputDuplGetFrameInfo
+        217   BF 0031E4D0 NtGdiDdDDIOutputDuplGetMetaData
+        218   C0 0031E6D0 NtGdiDdDDIOutputDuplGetPointerShapeData
+        219   C1 0032F940 NtGdiDdDDIOutputDuplPresent
+        220   C2 0031EA00 NtGdiDdDDIOutputDuplReleaseFrame
+        221   C3 002BF090 NtGdiDdDDIPollDisplayChildren
+        222   C4 001B2880 NtGdiDdDDIPresent
+        223   C5 003132D0 NtGdiDdDDIPresentMultiPlaneOverlay
+        224   C6 00313C00 NtGdiDdDDIPresentMultiPlaneOverlay2
+        225   C7 001A9C80 NtGdiDdDDIPresentMultiPlaneOverlay3
+        226   C8 0032FDC0 NtGdiDdDDIPresentRedirected
+        227   C9 0019F9D0 NtGdiDdDDIQueryAdapterInfo
+        228   CA 002C5E00 NtGdiDdDDIQueryAllocationResidency
+        229   CB 002BF3A0 NtGdiDdDDIQueryClockCalibration
+        230   CC 001D95B0 NtGdiDdDDIQueryFSEBlock
+        231   CD 001D0400 NtGdiDdDDIQueryProcessOfferInfo
+        232   CE 00338930 NtGdiDdDDIQueryProtectedSessionInfoFromNtHandle
+        233   CF 00338E30 NtGdiDdDDIQueryProtectedSessionStatus
+        234   D0 0004F9B0 NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+        235   D1 00182B50 NtGdiDdDDIQueryResourceInfo
+        236   D2 0018EBE0 NtGdiDdDDIQueryResourceInfoFromNtHandle
+        237   D3 002119A0 NtGdiDdDDIQueryStatistics
+        238   D4 002C0400 NtGdiDdDDIQueryVidPnExclusiveOwnership
+        239   D5 002C61C0 NtGdiDdDDIQueryVideoMemoryInfo
+        240   D6 002C6850 NtGdiDdDDIReclaimAllocations
+        241   D7 001B7D60 NtGdiDdDDIReclaimAllocations2
+        242   D8 00341160 NtGdiDdDDIReleaseKeyedMutex
+        243   D9 00341420 NtGdiDdDDIReleaseKeyedMutex2
+        244   DA 00334E40 NtGdiDdDDIReleaseProcessVidPnSourceOwners
+        245   DB 0034A420 NtGdiDdDDIReleaseSwapChain
+        246   DC 0034A880 NtGdiDdDDIRemoveSurfaceFromSwapChain
+        247   DD 0033B7F0 NtGdiDdDDIRender
+        248   DE 001CAE10 NtGdiDdDDIReserveGpuVirtualAddress
+        249   DF 002C6CC0 NtGdiDdDDISetAllocationPriority
+        250   E0 001795C0 NtGdiDdDDISetContextInProcessSchedulingPriority
+        251   E1 002DD690 NtGdiDdDDISetContextSchedulingPriority
+        252   E2 00166E20 NtGdiDdDDISetDisplayMode
+        253   E3 002C0880 NtGdiDdDDISetDodIndirectSwapchain
+        254   E4 001D95B0 NtGdiDdDDISetFSEBlock
+        255   E5 002DDB50 NtGdiDdDDISetGammaRamp
+        256   E6 0004FA80 NtGdiDdDDISetHwProtectionTeardownRecovery
+        257   E7 00334FB0 NtGdiDdDDISetMemoryBudgetTarget
+        258   E8 001D95B0 NtGdiDdDDISetMonitorColorSpaceTransform
+        259   E9 001D0000 NtGdiDdDDISetProcessDeviceRemovalSupport
+        260   EA 00335270 NtGdiDdDDISetProcessSchedulingPriorityBand
+        261   EB 001D0310 NtGdiDdDDISetProcessSchedulingPriorityClass
+        262   EC 00179890 NtGdiDdDDISetQueuedLimit
+        263   ED 003355B0 NtGdiDdDDISetStablePowerState
+        264   EE 00303F00 NtGdiDdDDISetStereoEnabled
+        265   EF 001A2740 NtGdiDdDDISetSyncRefreshCountWaitTarget
+        266   F0 002C12B0 NtGdiDdDDISetVidPnSourceHwProtection
+        267   F1 00169920 NtGdiDdDDISetVidPnSourceOwner
+        268   F2 00335B40 NtGdiDdDDISetYieldPercentage
+        269   F3 0018E160 NtGdiDdDDIShareObjects
+        270   F4 00341700 NtGdiDdDDISignalSynchronizationObject
+        271   F5 00341720 NtGdiDdDDISignalSynchronizationObjectFromCpu
+        272   F6 001A4DE0 NtGdiDdDDISignalSynchronizationObjectFromGpu
+        273   F7 001A4630 NtGdiDdDDISignalSynchronizationObjectFromGpu2
+        274   F8 001AA560 NtGdiDdDDISubmitCommand
+        275   F9 0030C300 NtGdiDdDDISubmitCommandToHwQueue
+        276   FA 002135B0 NtGdiDdDDISubmitSignalSyncObjectsToHwQueue
+        277   FB 0030E410 NtGdiDdDDISubmitWaitForSyncObjectsToHwQueue
+        278   FC 00335DF0 NtGdiDdDDITrimProcessCommitment
+        279   FD 0034AB70 NtGdiDdDDIUnOrderedPresentSwapChain
+        280   FE 0018C280 NtGdiDdDDIUnlock
+        281   FF 001B14A0 NtGdiDdDDIUnlock2
+        282  100 00325BE0 NtGdiDdDDIUpdateAllocationProperty
+        283  101 002C7540 NtGdiDdDDIUpdateGpuVirtualAddress
+        284  102 003254B0 NtGdiDdDDIUpdateOverlay
+        285  103 002DE210 NtGdiDdDDIWaitForIdle
+        286  104 00342010 NtGdiDdDDIWaitForSynchronizationObject
+        287  105 001C60E0 NtGdiDdDDIWaitForSynchronizationObjectFromCpu
+        288  106 00192250 NtGdiDdDDIWaitForSynchronizationObjectFromGpu
+        289  107 001A17F0 NtGdiDdDDIWaitForVerticalBlankEvent
+        290  108 001D35C0 NtGdiDdDDIWaitForVerticalBlankEvent2
+        291  109 00002B70 NtNotifyPresentToCompositionSurface
+        292  10A 00017EC0 NtOpenCompositionSurfaceDirtyRegion
+        293  10B 000191C0 NtOpenCompositionSurfaceRealizationInfo
+        294  10C 00079DE0 NtOpenCompositionSurfaceSectionInfo
+        295  10D 00019660 NtQueryCompositionSurfaceBinding
+        296  10E 0002C850 NtQueryCompositionSurfaceFrameRate
+        297  10F 00004B30 NtQueryCompositionSurfaceHDRMetaData
+        298  110 00017A80 NtQueryCompositionSurfaceRenderingRealization
+        299  111 00079FE0 NtQueryCompositionSurfaceStatistics
+        300  112 0007A130 NtSetCompositionSurfaceAnalogExclusive
+        301  113 00004F40 NtSetCompositionSurfaceBufferUsage
+        302  114 0007A240 NtSetCompositionSurfaceDirectFlipState
+        303  115 0007A3B0 NtSetCompositionSurfaceIndependentFlipInfo
+        304  116 0007A690 NtSetCompositionSurfaceStatistics
+        305  117 00077230 NtTokenManagerConfirmOutstandingAnalogToken
+        306  118 00016420 NtTokenManagerCreateCompositionTokenHandle
+        307  119 000772D0 NtTokenManagerCreateFlipObjectReturnTokenHandle
+        308  11A 00077510 NtTokenManagerCreateFlipObjectTokenHandle
+        309  11B 00077840 NtTokenManagerGetAnalogExclusiveSurfaceUpdates
+        310  11C 00077AB0 NtTokenManagerGetAnalogExclusiveTokenEvent
+        311  11D 00010960 NtTokenManagerOpenSectionAndEvents
+        312  11E 00011B80 NtTokenManagerThread
+        313  11F 00011DC0 NtUnBindCompositionSurface
+        314  120 00019C50 NtValidateCompositionSurfaceHandle
+         11  121 000707E0 SysMmMapIommuContiguousRange
+         12  122 0002C730 SysMmMapIommuRange
+         13  123 00070870 SysMmUnmapIommuContiguousRange
+         14  124 0002C7B0 SysMmUnmapIommuRange
+         15  125 002FB960 TdrAllowToDebugEngineTimeout
+         16  126 002FBB60 TdrCollectDbgInfoStage1
+         17  127 002FC650 TdrCollectDbgInfoStage2
+         18  128 002FC860 TdrCompleteRecoveryContext
+         19  129 002FC990 TdrCreateRecoveryContext
+         20  12A 001CA480 TdrHistoryInit
+         21  12B 002FCC70 TdrHistoryIsLimitExhausted
+         22  12C 002FCD00 TdrHistoryUpdate
+         23  12D 0020B9D0 TdrIsEnabled
+         24  12E 002FCDA0 TdrIsRecoveryRequired
+         25  12F 002FCFD0 TdrIsTimeoutForcedFlip
+         26  130 002FD010 TdrResetFromTimeout
+         27  131 002FD0F0 TdrResetFromTimeoutAsync
+         28  132 002FD2E0 TdrUpdateDbgReport
+        315  133 00027820 TraceDxgkBlockThread
+        316  134 00028410 TraceDxgkContext
+        317  135 000285C0 TraceDxgkDevice
+        318  136 00027850 TraceDxgkFunctionProfiler
+        319  137 00027930 TraceDxgkPerformanceWarning
+         29  138 00136B90 g_DxgKrnlTelemetryProviderGlobal
+         30  139 00136158 g_DxgMmsBugcheckExportIndex
+         31  13A 00136BD2 g_IsInternalRelease
+         32  13B 00136BD1 g_IsInternalReleaseOrDbg
+         33  13C 00138160 g_OutputDuplicationTestControl
+         34  13D 00136BB0 g_TdrConfig
+         37  13E 00138034 g_TdrForceTimeout
+
+  Summary
+
+        4000 .data
+        1000 .dxgknpd
+        4000 .edata
+        6000 .idata
+       1C000 .pdata
+       AC000 .rdata
+       1E000 .reloc
+       8A000 .rsrc
+       87000 .text
+        3000 GFIDS
+        2000 INIT
+        1000 NONPAGE
+      26B000 PAGE
+        1000 fothk

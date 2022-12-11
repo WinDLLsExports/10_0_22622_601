@@ -1,0 +1,170 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-onecore-unifiedwritefilter_31bf3856ad364e35_10.0.22621.1_none_8ae6495e571acc04\uwfs.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    uwfrtl.sys
+    FLTMGR.SYS
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008170 Import Address Table
+             1C00085A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         73E PsCreateSystemThread
+                         BF5 ZwWriteFile
+                         BAD ZwReadFile
+                         836 RtlCompareUnicodeString
+                         BC9 ZwSetEaFile
+                          71 DbgPrintEx
+                         B8D ZwQueryEaFile
+                         BDA ZwSetSecurityObject
+                         BCC ZwSetInformationFile
+                         62E NtAdjustPrivilegesToken
+                         BD2 ZwSetInformationThread
+                         B40 ZwDuplicateToken
+                          BD ExAllocatePool2
+                         BA1 ZwQuerySecurityObject
+                         B70 ZwOpenProcessTokenEx
+                         B78 ZwOpenThreadTokenEx
+                         A74 SeUnlockSubjectContext
+                         A6E SeTokenIsAdmin
+                         A43 SeLockSubjectContext
+                         A1F SeCaptureSubjectContext
+                         38F IoGetTransactionParameterBlock
+                         3D9 IoReplaceFileObjectName
+                         837 RtlCompareUnicodeStrings
+                         C4C _vsnwprintf
+                         8A6 RtlFindUnicodePrefix
+                         536 KeReleaseMutex
+                         585 KeWaitForSingleObject
+                         559 KeSetEvent
+                         993 RtlRemoveUnicodePrefix
+                         952 RtlNextUnicodePrefix
+                         138 ExReleaseFastMutex
+                         903 RtlInsertUnicodePrefix
+                          A2 ExAcquireFastMutex
+                         84C RtlCopyUnicodeString
+                         8F1 RtlInitUnicodeString
+                         8FD RtlInitializeUnicodePrefix
+                         4CD KeInitializeEvent
+                         4D1 KeInitializeMutex
+                         B4C ZwFsControlFile
+                         B91 ZwQueryInformationFile
+                         327 IoCreateFile
+                         B17 ZwClose
+                         35F IoGetAttachedDeviceReference
+                         6CB ObfDereferenceObject
+                         812 RtlAppendUnicodeStringToString
+                          EE ExFreePoolWithTag
+                         7EE PsTerminateSystemThread
+
+    uwfrtl.sys
+             1C00082F0 Import Address Table
+             1C0008728 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1F ?UwfrtlIsProtectedVolume@@YAJPEAU_DEVICE_OBJECT@@PEAEPEAKPEAU_GUID@@@Z
+                          24 ?UwfrtlQueryBcdHiveFileLocation@@YAJPEAPEBG@Z
+                          22 ?UwfrtlIssueStateNotification@@YAXPEBUUWFRTL_STATE_NOTIFICATION@@@Z
+                          16 ?UwfrtlGetOverlayFlags@@YAKXZ
+                          20 ?UwfrtlIsReadOnlyMediaMode@@YA_NPEAW4_UWFVOL_ROM_MODE_DISPOSITION@@@Z
+                          45 UwflogCompleteEntry_UWFLOG_LEVEL_INFORMATION
+                          4C UwflogNewEntry_UWFLOG_LEVEL_INFORMATION
+                          15 ?UwfrtlGetGlobalConfigPtr@@YAJPEAPEAU_UWFRTL_UWF_CONFIG@@@Z
+                          1B ?UwfrtlInitialize@@YAJXZ
+                          48 UwflogCompleteEntry_UWFLOG_LEVEL_WARNING
+                          4E UwflogNewEntry_UWFLOG_LEVEL_TRACE
+                          42 UwflogCompleteEntry_UWFLOG_LEVEL_ASSERTION
+                          49 UwflogNewEntry_UWFLOG_LEVEL_ASSERTION
+                          44 UwflogCompleteEntry_UWFLOG_LEVEL_ERROR
+                          4B UwflogNewEntry_UWFLOG_LEVEL_ERROR
+                          43 UwflogCompleteEntry_UWFLOG_LEVEL_CRITICAL
+                          4A UwflogNewEntry_UWFLOG_LEVEL_CRITICAL
+                          46 UwflogCompleteEntry_UWFLOG_LEVEL_LOW_RESOURCES
+                          4D UwflogNewEntry_UWFLOG_LEVEL_LOW_RESOURCES
+                          2A ?UwfrtlSendIoctlSynchronously@@YAJPEAU_DEVICE_OBJECT@@KPEAXK1KPEA_K_N@Z
+                          4F UwflogNewEntry_UWFLOG_LEVEL_WARNING
+
+    FLTMGR.SYS
+             1C0008000 Import Address Table
+             1C0008438 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          28 FltClose
+                          64 FltFsControlFile
+                          AF FltOpenVolume
+                          8F FltGetVolumeContext
+                         107 FltUnregisterFilter
+                          FD FltStartFiltering
+                          D2 FltRegisterFilter
+                          6C FltGetDiskDeviceObject
+                          97 FltGetVolumeName
+                          1A FltCancellableWaitForSingleObject
+                          60 FltFreeGenericWorkItem
+                          D5 FltReleaseContext
+                          CD FltQueueGenericWorkItem
+                          D0 FltReferenceContext
+                          11 FltAllocateGenericWorkItem
+                          17 FltCancelFileOpen
+                          D8 FltReleaseFileNameInformation
+                          5D FltFreeExtraCreateParameter
+                          EC FltSetEcpListIntoCallbackData
+                          9D FltInsertExtraCreateParameter
+                           F FltAllocateExtraCreateParameterList
+                          5E FltFreeExtraCreateParameterList
+                          58 FltFindExtraCreateParameter
+                          6D FltGetEcpListFromCallbackData
+                           D FltAllocateExtraCreateParameter
+                           B FltAllocateContext
+                          FB FltSetVolumeContext
+                           8 FltAdjustDeviceStackSizeForIoRedirection
+                          E9 FltSetCallbackDataDirty
+                          ED FltSetFileContext
+                          6F FltGetFileNameInformation
+                          B9 FltParseFileNameInformation
+                          70 FltGetFileNameInformationUnsafe
+                          21 FltCheckAndGrowNameControl
+                          35 FltCreateFileEx2
+                          C3 FltQueryDirectoryFile
+                          F0 FltSetInformationFile
+                          6E FltGetFileContext
+                          34 FltCreateFileEx
+
+    WDFLDR.SYS
+             1C0008140 Import Address Table
+             1C0008578 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 WdfVersionUnbind
+                           3 WdfLdrQueryInterface
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        6000 PAGE
+        1000 fothk

@@ -1,0 +1,204 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\WdiWiFi.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+    NDIS.SYS
+    NETIO.SYS
+    cng.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00FA208 Import Address Table
+             1C00FA670 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         833 RtlCompareMemory
+                          8F EtwRegister
+                          92 EtwSetInformation
+                          94 EtwUnregister
+                         9E4 RtlUnregisterFeatureConfigurationChangeNotification
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         C91 tolower
+                         C74 qsort
+                         4B9 KeGetCurrentIrql
+                          F0 ExFreeToNPagedLookasideList
+                          BA ExAllocateFromNPagedLookasideList
+                         100 ExInitializeNPagedLookasideList
+                          D5 ExDeleteNPagedLookasideList
+                         80D RtlAnsiCharToUnicodeChar
+                         BA8 ZwQueryValueKey
+                         B69 ZwOpenKey
+                         716 PoRegisterPowerSettingCallback
+                         B7C ZwPowerInformation
+                         72A PoUnregisterPowerSettingCallback
+                         955 RtlNotifyFeatureUsage
+                         975 RtlQueryFeatureConfiguration
+                         883 RtlEqualUnicodeString
+                         8F1 RtlInitUnicodeString
+                         4A7 KeExpandKernelStackAndCalloutEx
+                         36D IoGetDeviceObjectPointer
+                         4CD KeInitializeEvent
+                         302 IoBuildDeviceIoControlRequest
+                         44E IofCallDriver
+                         585 KeWaitForSingleObject
+                         6CB ObfDereferenceObject
+                         5E8 MmIsVerifierEnabled
+                         4D5 KeInitializeSpinLock
+                          9A EtwWriteTransfer
+                         5F1 MmMapLockedPagesSpecifyCache
+                         503 KeQueryDpcWatchdogInformation
+                         539 KeReleaseSpinLock
+                         475 KeAcquireSpinLockRaiseToDpc
+                         B17 ZwClose
+                         84C RtlCopyUnicodeString
+                         C23 __chkstk
+                         C9F wcscpy_s
+                         C9B wcscat_s
+                         9D4 RtlUTF8ToUnicodeN
+                          71 DbgPrintEx
+                          EE ExFreePoolWithTag
+                         58D KseQueryDeviceFlags
+                          BD ExAllocatePool2
+                         C31 _purecall
+
+    WppRecorder.sys
+             1C00FA1B8 Import Address Table
+             1C00FA620 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           D imp_WppRecorderLogDumpLiveData
+                           E imp_WppRecorderLogGetDefault
+                           6 imp_WppRecorderDumpLiveDriverData
+
+    NDIS.SYS
+             1C00FA000 Import Address Table
+             1C00FA468 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          BF NdisGetDataBuffer
+                          A6 NdisFreeIoWorkItem
+                          16 NdisAllocateIoWorkItem
+                         1C5 NdisQueueIoWorkItem
+                          1E NdisAllocateNetBufferListContext
+                           F NdisAdvanceNetBufferListDataStart
+                         1DE NdisRetreatNetBufferListDataStart
+                          AD NdisFreeNetBufferListContext
+                         1C2 NdisQueryNetBufferPhysicalCount
+                         18F NdisMSleep
+                         109 NdisInitializeEvent
+                         1E7 NdisSetEvent
+                         15B NdisMIndicateStatusEx
+                         164 NdisMOidRequestComplete
+                         158 NdisMIndicateReceiveNetBufferLists
+                         183 NdisMSendNetBufferListsComplete
+                         121 NdisMAllocatePort
+                         181 NdisMRestartComplete
+                         165 NdisMPauseComplete
+                         1CB NdisReadNetworkAddress
+                         18A NdisMSetMiniportAttributes
+                         224 NdisWriteConfiguration
+                         1C7 NdisReadConfiguration
+                          44 NdisCloseConfiguration
+                         1AF NdisOpenConfigurationEx
+                         14B NdisMFreePort
+                         162 NdisMNetPnPEvent
+                          A2 NdisFreeCloneNetBufferList
+                           E NdisAdvanceNetBufferDataStart
+                          70 NdisCopyFromNetBufferToNetBuffer
+                         1DD NdisRetreatNetBufferDataStart
+                          12 NdisAllocateCloneNetBufferList
+                         225 NdisWriteErrorLogEntry
+                         143 NdisMDeregisterMiniportDriver
+                          D1 NdisGetRoutineAddress
+                         179 NdisMRegisterMiniportDriver
+                         155 NdisMIdleNotificationComplete
+                         157 NdisMIdleNotificationConfirm
+                          D7 NdisGetSystemUpTimeEx
+                         1E8 NdisSetOptionalHandlers
+                         20A NdisWaitEvent
+                         1DC NdisResetEvent
+                          DA NdisGetVersion
+
+    NETIO.SYS
+             1C00FA160 Import Address Table
+             1C00FA5C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         181 NmrDeregisterProvider
+                         186 NmrWaitForProviderDeregisterComplete
+                           B ConvertInterfaceLuidToGuid
+                         184 NmrRegisterProvider
+
+    cng.sys
+             1C00FA1F8 Import Address Table
+             1C00FA660 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 SystemPrng
+
+    WDFLDR.SYS
+             1C00FA188 Import Address Table
+             1C00FA5F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 WdfLdrQueryInterface
+                           7 WdfVersionBindClass
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           8 WdfVersionUnbind
+
+  Section contains the following exports for WdiWiFi.sys
+
+    00000000 characteristics
+    E7E2A58C time date stamp
+        0.00 version
+           1 ordinal base
+           6 number of functions
+           6 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000B4C00 DllInitialize
+          2    1 00077C60 DllUnload
+          3    2 00048C50 Wdi_NdisMDeregisterWdiMiniportDriver
+          4    3 00048C70 Wdi_NdisMIndicateStatusEx
+          5    4 00048D50 Wdi_NdisMOidRequestComplete
+          6    5 00048E30 Wdi_NdisMRegisterWdiMiniportDriver
+
+  Summary
+
+        3000 .data
+        1000 .edata
+        2000 .idata
+        8000 .pdata
+       1B000 .rdata
+        5000 .reloc
+        1000 .rsrc
+       D3000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

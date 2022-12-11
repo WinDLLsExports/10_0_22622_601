@@ -1,0 +1,678 @@
+!This program cannot be run in DOS mode.
+URich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+.cvsignore
+.gitignore
+.gitattributes
+.gitmodules
+.arch-ids
+{arch}
+=RELEASE-ID
+=meta-update
+=update
+.bzrignore
+.bzrtags
+.hgignore
+.hgtags
+_darcs
+bsdtar
+Failed to set default locale
+\\.\tape0
+Out of memory
+Invalid or out of range (1..8192) argument to -b
+Can't specify both --uuencode and --b64encode
+b64encode
+Meaningless option: -C ''
+Couldn't exclude %s
+Invalid argument to --gid
+Can't specify both -%c and -%c
+grzip
+Failed to add %s to inclusion list
+bzip2
+lrzip
+Error : %s
+-s is not supported by this version of bsdtar
+Invalid argument to --strip-components
+Invalid argument to --uid
+uuencode
+compress
+Must specify one of -c, -r, -t, -u, -x
+--one-file-system
+--fast-read
+--hfsCompression
+--nopreserveHFSCompression
+--nodump
+--acls
+--no-acls
+--xattrs
+--no-xattrs
+--fflags
+--no-fflags
+--mac-metadata
+--no-mac-metadata
+ustar
+--check-links
+--use-compress-program
+--format
+Error exit delayed from previous errors.
+Option %s is not permitted in mode -%c
+Usage:
+  List:    %s -tf <archive-filename>
+  Extract: %s -xf <archive-filename>
+  Create:  %s -cf <archive-filename> [filenames...]
+  Help:    %s --help
+3.5.2
+bsdtar %s - %s 
+First option must be a mode specifier:
+  -c Create  -r Add/Replace  -t List  -u Update  -x Extract
+Common Options:
+  -b #  Use # 512-byte records per I/O block
+  -f <filename>  Location of archive (default \\.\tape0)
+  -v    Verbose
+  -w    Interactive
+Create: %p -c [options] [<file> | <dir> | @<archive> | -C <dir> ]
+  <file>, <dir>  add these items to archive
+  -z, -j, -J, --lzma  Compress archive with gzip/bzip2/xz/lzma
+  --format {ustar|pax|cpio|shar}  Select archive format
+  --exclude <pattern>  Skip files that match pattern
+  -C <dir>  Change to <dir> before processing remaining files
+  @<archive>  Add entries from <archive> to output
+List: %p -t [options] [<patterns>]
+  <patterns>  If specified, list only entries that match
+Extract: %p -x [options] [<patterns>]
+  <patterns>  If specified, extract only entries that match
+  -k    Keep (don't overwrite) existing files
+  -m    Don't restore modification times
+  -O    Write entries to stdout, don't restore to disk
+  -p    Restore permissions (including ACLs, owner, file flags)
+(bsdtar)
+%s%s: manipulate archive files
+aBb:C:cf:HhI:JjkLlmnOoPpqrSs:T:tUuvW:wX:xyZz
+absolute-paths
+append
+auto-compress
+block-size
+blocking-factor
+bunzip2
+check-links
+chroot
+clear-nochange-fflags
+confirmation
+create
+dereference
+directory
+disable-copyfile
+exclude
+exclude-from
+exclude-vcs
+extract
+fast-read
+fflags
+files-from
+format
+gname
+gunzip
+hfsCompression
+ignore-zeros
+include
+insecure
+interactive
+keep-newer-files
+keep-old-files
+mac-metadata
+modification-time
+newer
+newer-ctime
+newer-ctime-than
+newer-mtime
+newer-mtime-than
+newer-than
+no-acls
+no-fflags
+no-mac-metadata
+no-recursion
+no-safe-writes
+no-same-owner
+no-same-permissions
+no-xattr
+no-xattrs
+nodump
+nopreserveHFSCompression
+norecurse
+numeric-owner
+older
+older-ctime
+older-ctime-than
+older-mtime
+older-mtime-than
+older-than
+one-file-system
+options
+passphrase
+posix
+preserve-permissions
+read-full-blocks
+safe-writes
+same-owner
+same-permissions
+strip-components
+to-stdout
+totals
+uname
+uncompress
+unlink
+unlink-first
+update
+use-compress-program
+verbose
+version
+xattrs
+Option %c requires an argument
+Option -%c requires an argument
+Option %s%s is not supported
+Ambiguous option %s%s (matches --%s and --%s)
+Option %s%s requires an argument
+Option %s%s does not allow an argument
+.lzma
+arbsd
+.cpio
+iso9960
+.mtree
+mtree
+.shar
+.warc
+.tar.gz
+.tar.bz2
+.tbz2
+.tar.lzma
+.tar.xz
+.tar.lzo
+.tar.Z
+.tzst
+.tar.zst
+No memory
+Not found in archive
+Cannot allocate disk writer object
+Error inclusion pattern: %s
+TAR_READER_OPTIONS
+__ignore_wrong_module_name__,
+read_concatenated_archives
+Error opening archive: %s
+chroot isn't supported on this platform
+Retrying...
+Archive entry has empty or unreadable filename ... skipping.
+extract '%s'
+Archive Format: %s,  Compression: %s
+%s: %s
+ (y/N)? 
+Keyboard read failed
+%s/%s
+could not chdir to '%s'
+Removing leading '%c' from member names
+Removing leading drive letter from member names
+Enter passphrase:
+%s %d 
+%-*s 
+%lu,%lu
+%d %b  %Y
+%b %d  %Y
+%d %b %H:%M
+%b %d %H:%M
+ link to %s
+ -> %s
+TAR_WRITER_OPTIONS
+no files or directories specified
+pax restricted
+Can't use format %s: %s
+Unsupported compression option --%s
+Cannot open %s
+Can't read archive %s: %s
+Cannot append to compressed archive.
+Format %s is incompatible with the archive %s.
+Could not seek to archive end
+Can't open %s: %s
+cannot allocate memory
+cannot create link resolver
+Cannot create read_disk object
+Missing argument for -C
+Meaningless argument for -C: ''
+Total bytes written: %s
+Unexpected end of filename list; directory expected after -C
+mtree:checkfs
+Error reading archive %s: %s
+copy '%s'
+%s: Truncated write; file may have grown while being archived.
+add '%s'
+Cannot append to stdout.
+Cannot append to %s: not a regular file.
+Can't open %s
+Couldn't open %s
+Line too long in %s
+Can't read %s
+Couldn't read passphrase
+RSDS8)6
+tar.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$mn
+.xdata$x
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+<ct+<xt
+ !"#$%&'()*+,-./0123
+QQQQQQQQ45QQQQ678Q9QQ:;QQ<7=QQ>Q?QQQQQQ@ABQQCQDQEF
+GHIJKBLMBNOBEP
+F<PWh
+YYVh8
+VSVW3
+uOj?Zf9V
+.u7f9^
+u`f9^
+j?_u8
+WhT'@
+Wht'@
+Y@_^[
+PhH*@
+Phh*@
+t$,Ph`O@
+PhH*@
+PhH*@
+PhH*@
+PhH*@
+PhH*@
+PhH*@
+PhH*@
+PhH*@
+>hL+@
+>fF+u
+QQSVW
+</t#<\t
+WShx+@
+Y_^[t
+t </t
+t"VhH*@
+PhH*@
+QPh0,@
+Phd,@
+PhH*@
+Phl,@
+Phx,@
+tXVWj
+PhH*@
+tDVWj
+PhH*@
+PhH*@
+Ph\-@
+PhH*@
+PhH*@
+Wh@p@
+PhH*@
+PhH*@
+PhH*@
+wxt'j
+PhL.@
+PhH*@
+PhH*@
+PhD+@
+PhH*@
+PhH*@
+Ph0/@
+Ph0/@
+PhH*@
+PhH*@
+QQSVW
+PhD+@
+F\98u
+t49>u
+6hX/@
+YY_^]
+SVWj j
+QQSVWj
+Y__^[
+5ineI
+5ntel
+wcsncpy
+strncmp
+_time32
+_open
+strcspn
+_initterm
+_initterm_e
+_c_exit
+_register_thread_local_exe_atexit_callback
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-crt-time-l1-1-0.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+strchr
+strrchr
+_o___acrt_iob_func
+_o___p___argc
+_o___p___argv
+_o___p__commode
+_o___stdio_common_vfprintf
+_o___stdio_common_vsprintf
+_o__cexit
+_o__close
+_o__configthreadlocale
+_o__configure_narrow_argv
+_o__controlfp_s
+_o__crt_atexit
+_o__errno
+_o__exit
+_o__get_initial_narrow_environment
+_o__get_osfhandle
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__localtime64_s
+_o__read
+_o__register_onexit_function
+_o__seh_filter_exe
+_o__set_app_type
+_o__set_fmode
+_o__set_new_mode
+_o__setmode
+_o__stat32
+_o__strdup
+_o_calloc
+_o_exit
+_o_fclose
+_o_feof
+_o_ferror
+_o_fflush
+_o_fopen
+_o_fputs
+_o_fread
+_o_free
+_o_getenv
+_o_isprint
+_o_isspace
+_o_iswctype
+_o_malloc
+_o_mbtowc
+_o_putchar
+_o_realloc
+_o_setlocale
+_o_strerror
+_o_strftime
+_o_strtol
+_o_terminate
+__current_exception
+__current_exception_context
+memset
+_except_handler4_common
+api-ms-win-crt-private-l1-1-0.dll
+GetFullPathNameW
+SetCurrentDirectoryA
+MultiByteToWideChar
+GetLastError
+SetCurrentDirectoryW
+SetFilePointerEx
+ReadFile
+GetStdHandle
+WriteFile
+SetConsoleMode
+GetConsoleMode
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+GetModuleHandleW
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-console-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+_archive_match_set_inclusion_recursion@8
+_archive_match_exclude_pattern@8
+_archive_error_string@4
+_archive_match_include_pattern@8
+_archive_match_new@0
+_archive_match_free@4
+_archive_match_exclude_pattern_from_file@12
+_archive_match_include_file_time@12
+_archive_version_details@0
+_archive_match_include_date@12
+_archive_read_support_filter_program@8
+_archive_write_add_filter_by_name@8
+_archive_write_add_filter_program@8
+_archive_read_data_into_fd@8
+_archive_read_set_options@8
+_archive_match_path_unmatched_inclusions_next@8
+_archive_read_extract2@12
+_archive_entry_set_uname@8
+_archive_entry_set_gid@12
+_archive_read_extract_set_progress_callback@12
+_archive_read_add_passphrase@8
+_archive_read_support_format_all@4
+_archive_read_new@0
+_archive_entry_set_uid@12
+_archive_read_support_filter_all@4
+_archive_write_disk_set_standard_lookup@4
+_archive_entry_size@4
+_archive_read_free@4
+_archive_match_include_pattern_from_file@12
+_archive_filter_bytes@8
+_archive_read_data_skip@4
+_archive_entry_set_gname@8
+_archive_write_disk_new@0
+_archive_write_free@4
+_archive_entry_pathname@4
+_archive_clear_error@4
+_archive_read_next_header@8
+_archive_write_disk_set_options@8
+_archive_filter_name@8
+_archive_read_open_filename@12
+_archive_match_excluded@8
+_archive_read_close@4
+_archive_format_name@4
+_archive_match_path_unmatched_inclusions@4
+_archive_read_set_passphrase_callback@12
+_archive_entry_rdevmajor@4
+_archive_entry_hardlink@4
+_archive_entry_copy_hardlink@8
+_archive_entry_strmode@4
+_archive_entry_copy_pathname@8
+_archive_entry_mtime@4
+_archive_entry_symlink@4
+_archive_entry_filetype@4
+_archive_entry_nlink@4
+_archive_entry_gid@4
+_archive_entry_uname@4
+_archive_entry_rdevminor@4
+_archive_entry_uid@4
+_archive_entry_gname@4
+_archive_entry_linkresolver_set_strategy@8
+_archive_write_header@8
+_archive_write_open_fd@8
+_archive_read_disk_gname@12
+_archive_write_set_passphrase_callback@12
+_archive_read_support_format_tar@4
+_archive_read_disk_set_matching@16
+_archive_errno@4
+_archive_entry_free@4
+_archive_write_set_format_by_name@8
+_archive_write_set_options@8
+_archive_write_data@12
+_archive_read_disk_new@0
+_archive_read_support_format_gnutar@4
+_archive_entry_linkresolver_free@4
+_archive_entry_linkify@12
+_archive_write_set_format@8
+_archive_write_set_bytes_in_last_block@8
+_archive_write_new@0
+_archive_read_next_header2@8
+_archive_read_data_block@16
+_archive_filter_code@8
+_archive_entry_set_size@12
+_archive_read_disk_set_symlink_hybrid@4
+_archive_read_open_fd@12
+_archive_format@4
+_archive_read_disk_open@8
+_archive_read_disk_descend@4
+_archive_entry_linkresolver_new@0
+_archive_match_exclude_entry@12
+_archive_write_set_passphrase@8
+_archive_write_set_bytes_per_block@8
+_archive_entry_sourcepath@4
+_archive_write_set_format_pax_restricted@4
+_archive_entry_new@0
+_archive_read_disk_can_descend@4
+_archive_read_support_format_empty@4
+_archive_read_disk_set_behavior@8
+_archive_read_disk_set_symlink_physical@4
+_archive_read_disk_set_symlink_logical@4
+_archive_read_disk_set_metadata_filter_callback@12
+_archive_read_header_position@4
+_archive_read_disk_set_standard_lookup@4
+_archive_write_close@4
+_archive_read_disk_uname@12
+_archive_write_open_filename@8
+archiveint.dll
+memcpy
+memmove
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+bsdtar archive tool
+FileVersion
+3.5.2 (WinBuild.160101.0800)
+InternalName
+bsdtar
+LegalCopyright
+Copyright (c) libarchive authors
+OriginalFilename
+bsdtar
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+<0@0H0P0
+1 1,181D1P1\1h1t1
+2(242@2L2X2d2p2|2
+3$303<3H3T3`3l3x3
+4 4,484D4P4\4h4t4
+5(545@5L5X5d5p5|5
+6 6$6(6,6064686<6@6D6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7
+4a4j4r4x4~4
+5&5p5w5
+7+767
+9 9&9<90:::
+:$;9;D;
+;A<]<
+=&=6=;=R=Z=s=x=
+>->J>g>
+?+?0?M?i?n?
+0.070E0n0
+282=2N2a2o2
+3!3%3)3-3135393=3A3E3I3M3Q3U3Y3]3a3e3i3m3q3u3y3}3
+5'5?5L5R5W5g5
+516J6b6w6
+8%8D8S8\8v8
+8=9C9
+9&:,:P:n:
+:0;f;
+;"<3<Z<
+<%=6=T=}=
+>P>s>
+?B?J?
+00070<0B0n0
+1)141:1[1f1q1
+232?2S2_2r2
+3-333M3{3
+41474O4U4q4
+565>5D5\5m5s5
+9&9@9M9Y9p9
+:S:s:
+:*;><v<
+=7=@=
+>M>U>[>c>k>q>
+? ?A?V?g?x?
+0(0/0P0l0u0
+1#1.1T1k1
+1 272Q2Z2i2r2w2
+393@3H3S3Y3d3z3
+4$4:4M4\4j4u4
+5 5+515G5[5a5q5y5
+6.6@6]6h6x6
+7 767G7V7}7
+8#8/898?8K8d8l8t8z8
+8:9E9\9r9z9
+:K:W:n:
+;,<5<<<H<O<a<h<p<
+<*=A=G=a=
+>'>H>e>
+?O?v?
+010T0Z0t0
+1B1X1b1y1
+2-2B2S2p2
+3>3D3Z3b3h3z3
+424A4U4i4r4
+5/5A5a5h5v5|5
+7"7(7L7_7u7
+768B8
+8K9v9
+;3;A;G;M;S;Y;_;f;m;t;{;
+<I<W<]<c<i<o<u<|<
+>,>C>I>O>U>[>a>g>
+>0?E?u?
+0Q0Z0
+242y2
+353:3M3q3
+5!5*535H5Q5
+6'636?6K6W6c6o6{6
+7#7/7;7G7S7
+:$:(:D:H:

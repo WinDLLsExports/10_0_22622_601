@@ -1,0 +1,1056 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\SysWOW64\wlanapi.dll
+
+File Type: DLL
+
+  Image has the following delay load dependencies:
+
+    RPCRT4.dll
+    IPHLPAPI.DLL
+    api-ms-win-service-management-l1-1-0.dll
+    api-ms-win-service-winsvc-l1-1-0.dll
+    profapi.dll
+    api-ms-win-core-com-l1-1-0.dll
+    api-ms-win-security-sddl-l1-1-0.dll
+    OLEAUT32.dll
+    api-ms-win-rtcore-ntuser-window-l1-1-0.dll
+    bcrypt.dll
+    ext-ms-win-networking-wlanstorage-l1-1-0.dll
+    ext-ms-win-wlan-onexui-l1-1-0.dll
+    MobileNetworking.dll
+    OneX.DLL
+    eappcfg.dll
+    WFDSConMgr.dll
+    api-ms-win-stateseparation-helpers-l1-1-0.dll
+    CRYPT32.dll
+    DEVOBJ.dll
+
+  Section contains the following exports for wlanapi.dll
+
+    00000000 characteristics
+    839E1DCE time date stamp
+        0.00 version
+           1 ordinal base
+         283 number of functions
+         283 number of names
+
+    ordinal hint RVA      name
+
+          6    0 00019DC0 AcmGenerateConnectionId
+          7    1 00019E20 AcmGenerateConnectionIdForNotification
+          8    2 00019F70 AcmGenerateNetworkId
+          9    3 000186E0 ConvertFrequencyToBandChannel
+         10    4 00046290 ConvertPassPhraseKeyStringToBuffer
+         11    5 0001ADF0 FreeMSMSecConfig
+         12    6 0001AEA0 MSMSecCreateDefaultProfileStatic
+         13    7 0001E1A0 MSMSecGetNetworkCapabilitiesFromBSSDescriptionList
+         14    8 0001E360 MSMSecGetSupportedAuthCiphers
+         15    9 0001B0E0 MSMSecProfileValidForSafeMode
+         16    A 0001E7B0 MSMSecSanitizeAuthCipherList
+         17    B 0001E900 MSMSecValidateL2UIRequest
+         18    C 00038530 QueryNetconStatus
+         19    D 00038750 QueryNetconVirtualCharacteristic
+         20    E 000187B0 ShouldUseWlanString
+         21    F 00018800 SsidToStringW
+         22   10 0003DE00 WFDAbortSessionInt
+         23   11 00015C00 WFDAcceptConnectRequestAndOpenSessionInt
+         24   12 0003DE20 WFDAcceptGroupRequestAndOpenSessionInt
+         25   13 0003E5D0 WFDCancelConnectorPairWithOOB
+         26   14 00038840 WFDCancelListenerPairWithOOB
+         27   15 00037AB0 WFDCancelOpenSession
+         28   16 00037AB0 WFDCancelOpenSessionInt
+         29   17 00037AD0 WFDCloseHandle
+         30   18 0003DE60 WFDCloseHandleInt
+         31   19 0003DE80 WFDCloseLegacySessionInt
+         32   1A 00038A90 WFDCloseOOBPairingSession
+         33   1B 00037AF0 WFDCloseSession
+         34   1C 0003DEA0 WFDCloseSessionInt
+         35   1D 0003DEC0 WFDConfigureFirewallForSessionInt
+         36   1E 0003DEE0 WFDCreateDHPrivatePublicKeyPairInt
+         37   1F 0003DF10 WFDDeclineConnectRequestInt
+         38   20 0003DF30 WFDDeclineGroupRequestInt
+         39   21 0003DF50 WFDDiscoverDeviceServiceInformationInt
+         40   22 0003DF80 WFDDiscoverDevicesExInt
+         41   23 0003DFA0 WFDDiscoverDevicesInt
+         42   24 0003DFC0 WFDFlushVisibleDeviceListInt
+         43   25 0003DFE0 WFDForceDisconnectInt
+         44   26 0003E000 WFDForceDisconnectLegacyPeerInt
+         45   27 00032980 WFDFreeMemoryInt
+         46   28 0003E020 WFDGetDefaultGroupProfileInt
+         47   29 0003E040 WFDGetDeviceDescriptorForPendingRequestInt
+         48   2A 0003E060 WFDGetNFCCarrierConfigBlobInt
+         49   2B 00038C80 WFDGetOOBBlob
+         50   2C 0003E090 WFDGetPrimaryAdapterStateInt
+         51   2D 0003E0B0 WFDGetProfileKeyInfoInt
+         52   2E 0003E0E0 WFDGetSessionEndpointPairsInt
+         53   2F 0003E100 WFDGetVisibleDevicesExInt
+         54   30 0003E120 WFDGetVisibleDevicesInt
+         55   31 00038F30 WFDIsInterfaceWiFiDirect
+         56   32 00039030 WFDIsWiFiDirectRunningOnWiFiAdapter
+         57   33 0003E900 WFDLowPrivCancelOpenSessionInt
+         58   34 0003E920 WFDLowPrivCloseHandleInt
+         59   35 0003E940 WFDLowPrivCloseLegacySessionInt
+         60   36 0003E960 WFDLowPrivCloseSessionInt
+         61   37 0003E980 WFDLowPrivConfigureFirewallForSessionInt
+         62   38 0003E9A0 WFDLowPrivDeclineDeviceApiConnectionRequestInt
+         63   39 0003E9C0 WFDLowPrivGetPendingGroupRequestDetailsInt
+         64   3A 0003E9E0 WFDLowPrivGetSessionEndpointPairsInt
+         65   3B 0003EA00 WFDLowPrivIsWfdSupportedInt
+         66   3C 0003EA20 WFDLowPrivOpenHandleInt
+         67   3D 0003EA40 WFDLowPrivOpenLegacySessionInt
+         68   3E 0003EA60 WFDLowPrivOpenSessionByDafObjectIdInt
+         69   3F 0003EAA0 WFDLowPrivQueryPropertyInt
+         70   40 0003EAC0 WFDLowPrivRegisterNotificationInt
+         71   41 0003EAF0 WFDLowPrivRegisterVMgrCallerInt
+         72   42 0003EB10 WFDLowPrivSetPropertyInt
+         73   43 0003EB30 WFDLowPrivStartDeviceApiConnectionRequestListenerInt
+         74   44 0003EB50 WFDLowPrivStartUsingGroupInt
+         75   45 0003EB70 WFDLowPrivStopDeviceApiConnectionRequestListenerInt
+         76   46 0003EB90 WFDLowPrivStopUsingGroupInt
+         77   47 0003EBB0 WFDLowPrivUnregisterVMgrCallerInt
+         78   48 00037B10 WFDOpenHandle
+         79   49 0000D030 WFDOpenHandleInt
+         80   4A 00037B30 WFDOpenLegacySession
+         81   4B 0003E140 WFDOpenLegacySessionInt
+         82   4C 0003E160 WFDPairCancelByDeviceAddressInt
+         83   4D 0003E180 WFDPairCancelInt
+         84   4E 0003E1A0 WFDPairContinuePairWithDeviceInt
+         85   4F 00015C30 WFDPairEnumerateCeremoniesInt
+         86   50 0003E1C0 WFDPairSelectCeremonyInt
+         87   51 0003E1E0 WFDPairWithDeviceAndOpenSessionExInt
+         88   52 0003E210 WFDPairWithDeviceAndOpenSessionInt
+         89   53 00039120 WFDParseOOBBlob
+         90   54 000391D0 WFDParseOOBBlobTypeAndGetPayloadInt
+         91   55 0003E240 WFDParseProfileXmlInt
+         92   56 0003E260 WFDParseWfaNfcCarrierConfigBlobInt
+         93   57 0003E280 WFDQueryPropertyInt
+         94   58 0003E2A0 WFDRegisterNotificationInt
+         95   59 0003E2D0 WFDRegisterVMgrCallerInt
+         96   5A 0003E2F0 WFDResetSelectedWfdMgrInt
+         97   5B 0003E310 WFDSetAdditionalIEsInt
+         98   5C 0003E320 WFDSetPropertyInt
+         99   5D 0003E340 WFDSetSecondaryDeviceTypeListInt
+        100   5E 0003E360 WFDSetSelectedWfdMgrInt
+        101   5F 0003E380 WFDStartBackgroundDiscoveryInt
+        102   60 0003E680 WFDStartConnectorPairWithOOB
+        103   61 000392E0 WFDStartListenerPairWithOOB
+        104   62 0003E3A0 WFDStartOffloadedDiscoveryInt
+        105   63 00037B50 WFDStartOpenSession
+        106   64 0003E3C0 WFDStartOpenSessionInt
+        107   65 0003E3F0 WFDStartUsingGroupExInt
+        108   66 0003E410 WFDStartUsingGroupInt
+        109   67 0003E430 WFDStopBackgroundDiscoveryInt
+        110   68 0003E450 WFDStopDiscoverDevicesExInt
+        111   69 0003E470 WFDStopDiscoverDevicesInt
+        112   6A 0003E490 WFDStopOffloadedDiscoveryInt
+        113   6B 0003E4B0 WFDStopUsingGroupInt
+        114   6C 0003EBD0 WFDSvcLowPrivAcceptSessionInt
+        115   6D 0003EBF0 WFDSvcLowPrivCancelSessionInt
+        116   6E 0003EC10 WFDSvcLowPrivCloseSessionInt
+        117   6F 0003EC30 WFDSvcLowPrivConfigureSessionInt
+        118   70 0003EC50 WFDSvcLowPrivConnectSessionInt
+        119   71 0003EC70 WFDSvcLowPrivGetProvisioningInfoInt
+        120   72 0003ECA0 WFDSvcLowPrivGetSessionEndpointPairsInt
+        121   73 00016110 WFDSvcLowPrivOpenAdvertiserSessionInt
+        122   74 00016140 WFDSvcLowPrivOpenSeekerSessionInt
+        123   75 0003ECC0 WFDSvcLowPrivPublishServiceInt
+        124   76 0003ECF0 WFDSvcLowPrivUnpublishServiceInt
+        125   77 0003E4D0 WFDUnregisterVMgrCallerInt
+        126   78 00037B80 WFDUpdateDeviceVisibility
+        127   79 0003E4F0 WiFiDisplayResetSinkStateInt
+        128   7A 0003E510 WiFiDisplaySetSinkClientHandleInt
+        129   7B 0003E530 WiFiDisplaySetSinkStateInt
+        130   7C 00031BD0 WlanAllocateMemory
+        131   7D 00017AA0 WlanAllocateProfileIpConfiguration
+        132   7E 00039780 WlanCancelPlap
+        133   7F 00031C40 WlanCloseHandle
+        134   80 00031E00 WlanConnect
+        135   81 00031E60 WlanConnectEx
+        136   82 00039860 WlanConnectWithInput
+        137   83 00039A60 WlanDeinitPlapParams
+        138   84 00031EB0 WlanDeleteProfile
+        139   85 00031EE0 WlanDeviceServiceCommand
+        140   86 00032170 WlanDisconnect
+        141   87 00039A70 WlanDoPlap
+        142   88 0003A960 WlanDoesBssMatchSecurity
+        143   89 00014F40 WlanEnumAllInterfaces
+        144   8A 000323A0 WlanEnumInterfaces
+        145   8B 000325B0 WlanExtractPsdIEDataList
+        146   8C 00032980 WlanFreeMemory
+        147   8D 0003F710 WlanGenerateProfileXmlBasicSettings
+        149   8E 00032D10 WlanGetAvailableNetworkList
+        148   8F 00032C60 WlanGetAvailableNetworkList2
+        150   90 00020B30 WlanGetExtensibilityInfo
+        151   91 00032DC0 WlanGetFilterList
+        152   92 00032F70 WlanGetInterfaceCapability
+        153   93 0003AB20 WlanGetMFPNegotiated
+        154   94 00033180 WlanGetNetworkBssList
+        155   95 00033460 WlanGetProfile
+        156   96 00033700 WlanGetProfileCustomUserData
+        157   97 0003AC00 WlanGetProfileEapUserDataInfo
+        158   98 0003ACF0 WlanGetProfileIndex
+        159   99 0003ADE0 WlanGetProfileKeyInfo
+        160   9A 00033930 WlanGetProfileList
+        161   9B 0003AEE0 WlanGetProfileMetadata
+        162   9C 0003AFE0 WlanGetProfileMetadataWithProfileGuid
+        163   9D 0003FA20 WlanGetProfileSsidList
+        164   9E 0003B2D0 WlanGetRadioInformation
+        165   9F 00033B90 WlanGetSecuritySettings
+        166   A0 0003B3C0 WlanGetStoredRadioState
+        167   A1 00033DC0 WlanGetSupportedDeviceServices
+        168   A2 00033FD0 WlanHostedNetworkForceStart
+        169   A3 00034060 WlanHostedNetworkForceStop
+        170   A4 0003B4B0 WlanHostedNetworkFreeWCNSettings
+        171   A5 0003B550 WlanHostedNetworkHlpQueryEverUsed
+        172   A6 000340F0 WlanHostedNetworkInitSettings
+        173   A7 00034180 WlanHostedNetworkQueryProperty
+        174   A8 00034390 WlanHostedNetworkQuerySecondaryKey
+        175   A9 00034620 WlanHostedNetworkQueryStatus
+        176   AA 0003B620 WlanHostedNetworkQueryWCNSettings
+        177   AB 00034820 WlanHostedNetworkRefreshSecuritySettings
+        178   AC 000348B0 WlanHostedNetworkSetProperty
+        179   AD 00034AE0 WlanHostedNetworkSetSecondaryKey
+        180   AE 0003B700 WlanHostedNetworkSetWCNSettings
+        181   AF 00034D20 WlanHostedNetworkStartUsing
+        182   B0 00034DB0 WlanHostedNetworkStopUsing
+        183   B1 00034E40 WlanIhvControl
+        184   B2 0003B7E0 WlanInitPlapParams
+        185   B3 00015070 WlanInternalCancelFTMRequest
+        186   B4 00015230 WlanInternalGetNetworkBssListWithFTMData
+        187   B5 0003B800 WlanInternalNonDisruptiveScan
+        188   B6 000153F0 WlanInternalNonDisruptiveScanEx
+        189   B7 00015720 WlanInternalRequestFTM
+        190   B8 0003B820 WlanInternalScan
+        191   B9 00045960 WlanIsActiveConsoleUser
+        192   BA 0003B980 WlanIsNetworkSuppressed
+        193   BB 0003BAE0 WlanIsUIRequestPending
+        194   BC 0003ED10 WlanLowPrivCloseHandle
+        195   BD 0003EEC0 WlanLowPrivEnumInterfaces
+        196   BE 00032980 WlanLowPrivFreeMemory
+        197   BF 0003F090 WlanLowPrivNotifyVsIeProviderInt
+        198   C0 0003F0C0 WlanLowPrivOpenHandle
+        199   C1 0003F380 WlanLowPrivQueryInterface
+        200   C2 0003F570 WlanLowPrivSetInterface
+        201   C3 0003E550 WlanNotifyVsIeProviderExInt
+        202   C4 0003E580 WlanNotifyVsIeProviderInt
+        203   C5 0000C7B0 WlanOpenHandle
+        204   C6 0003FC20 WlanParseProfileXmlBasicSettings
+        205   C7 00010A30 WlanPrivateCanDeleteProfile
+        206   C8 0003BBE0 WlanPrivateClearAnqpCache
+        207   C9 00010C30 WlanPrivateDeleteProfile
+        208   CA 0003BCE0 WlanPrivateGetAnqpCacheResponse
+        209   CB 0003BDF0 WlanPrivateGetAnqpOSUProviderList
+        210   CC 0003BF60 WlanPrivateGetAvailableNetworkList
+        211   CD 00010E30 WlanPrivateGetBssInfo
+        212   CE 0003C130 WlanPrivateParseAnqpRawData
+        213   CF 000350B0 WlanPrivateQuery11adPairedConfig
+        214   D0 00035260 WlanPrivateQueryInterface
+        215   D1 0003C240 WlanPrivateRefreshAnqpCache
+        216   D2 00035420 WlanPrivateSetInterface
+        217   D3 00011000 WlanPrivateSetProfile
+        218   D4 00017B40 WlanProfileIpConfigurationGetAddressList
+        219   D5 00017B70 WlanProfileIpConfigurationGetDnsServerConfigurationList
+        220   D6 00017BB0 WlanProfileIpConfigurationGetDnsServerList
+        221   D7 00017BE0 WlanProfileIpConfigurationGetGatewayList
+        222   D8 000355C0 WlanQueryAutoConfigParameter
+        223   D9 00040100 WlanQueryCreateAllUserProfileRestricted
+        224   DA 000357C0 WlanQueryInterface
+        225   DB 0003C350 WlanQueryPlapCredentials
+        226   DC 0003C450 WlanQueryPreConnectInput
+        227   DD 0000D060 WlanQueryVirtualInterfaceType
+        228   DE 000359D0 WlanReasonCodeToString
+        229   DF 0003C600 WlanRefreshConnections
+        230   E0 00011230 WlanRegisterDeviceServiceNotification
+        231   E1 0000D210 WlanRegisterNotification
+        232   E2 00035A40 WlanRegisterVirtualStationNotification
+        233   E3 0003C700 WlanRemoveUIForwardingNetworkList
+        234   E4 00035C20 WlanRenameProfile
+        235   E5 00035E20 WlanSaveTemporaryProfile
+        236   E6 00036040 WlanScan
+        237   E7 0003C7E0 WlanSendUIResponse
+        238   E8 000403D0 WlanSetAllUserProfileRestricted
+        239   E9 00036290 WlanSetAutoConfigParameter
+        240   EA 00020E00 WlanSetExtensibilityInfo
+        241   EB 00036410 WlanSetFilterList
+        242   EC 000365A0 WlanSetInterface
+        243   ED 00036740 WlanSetProfile
+        244   EE 00036770 WlanSetProfileCustomUserData
+        245   EF 00036980 WlanSetProfileEapUserData
+        246   F0 00036BC0 WlanSetProfileEapXmlUserData
+        247   F1 00037100 WlanSetProfileList
+        248   F2 00037300 WlanSetProfileListForOffload
+        249   F3 0003C8C0 WlanSetProfileMetadata
+        250   F4 00037310 WlanSetProfilePosition
+        251   F5 00015B20 WlanSetProtectedScenario
+        252   F6 00037520 WlanSetPsdIEDataList
+        253   F7 000376C0 WlanSetSecuritySettings
+        254   F8 0003C9C0 WlanSetUIForwardingNetworkList
+        255   F9 00045A60 WlanSignalValueToBar
+        256   FA 00045A80 WlanSignalValueToBarEx
+        257   FB 00045AB0 WlanSsidToDisplayName
+        258   FC 0003CAB0 WlanStartAP
+        259   FD 00015B40 WlanStartMovementDetector
+        260   FE 0003CDE0 WlanStopAP
+        261   FF 00015B60 WlanStopMovementDetector
+        262  100 0003CEB0 WlanStoreRadioStateOnEnteringAirPlaneMode
+        263  101 00045C50 WlanStringToSsid
+        264  102 00045D00 WlanStringToUtf8Ssid
+        265  103 0003CFA0 WlanTryUpgradeCurrentConnectionAuthCipher
+        266  104 000378B0 WlanUpdateBasicProfileSecurity
+        267  105 0003D9F0 WlanUpdateProfileWithAuthCipher
+        268  106 00045DC0 WlanUtf8SsidToDisplayName
+        269  107 0003E5B0 WlanVMgrQueryCurrentScenariosInt
+        270  108 00017C10 WlanVerifyProfileIpConfiguration
+          1  109 00014600 WlanWcmDisconnect
+          2  10A 000146E0 WlanWcmGetInterface
+          3  10B 000147D0 WlanWcmGetProfileList
+          4  10C 00014930 WlanWcmSetInterface
+          5  10D 00014A20 WlanWcmSetProfile
+        271  10E 0003DC10 WlanWfdGOSetWCNSettings
+        272  10F 0003DCF0 WlanWfdGetPeerInfo
+        273  110 0003DDF0 WlanWfdStartGO
+        274  111 0003DDF0 WlanWfdStopGO
+        275  112 0001F770 WpAllocMemory
+        276  113 0001F790 WpDuplicateProfile
+        277  114 0001F820 WpFreeMemory
+        278  115 00047B90 WpFreeProfile
+        279  116 00047BD0 WpGenerateProfileXml
+        280  117 0001F840 WpLoadProfile
+        281  118 00047DE0 WpParseProfileXml
+        282  119 0001F950 WpSaveProfile
+        283  11A 0001FA00 WpValidateProfile
+
+  Section contains the following delay load imports:
+
+    RPCRT4.dll
+              00000001 Characteristics
+              1005968C Address of HMODULE
+              1005C090 Import Address Table
+              1005522C Import Name Table
+              10055AFC Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EAA3             210 RpcStringFreeW
+          1000EA93             181 RpcBindingSetAuthInfoExW
+          1000E8B0             169 RpcAsyncInitializeHandle
+          1000E8C0             201 RpcSsDestroyClientContext
+          1000E8DC              A5 NdrClientCall4
+          1000E8EC              9A NdrAsyncClientCall2
+          1000EA83             1AF RpcMgmtInqServerPrincNameW
+          1000EA73             184 RpcBindingSetOption
+          1000E85F             167 RpcAsyncCompleteCall
+          1000EA63             192 RpcEpResolveBinding
+          1000EA53             171 RpcBindingFromStringBindingW
+          1000EA43             20C RpcStringBindingComposeW
+          1000EA33             16F RpcBindingFree
+          1000E880             19D RpcExceptionFilter
+          1000E890             168 RpcAsyncGetCallStatus
+          1000E8A0             166 RpcAsyncCancelCall
+
+    IPHLPAPI.DLL
+              00000001 Characteristics
+              10059690 Address of HMODULE
+              1005C020 Import Address Table
+              100551BC Import Name Table
+              10055B20 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000E97F              FD NotifyUnicastIpAddressChange
+          1000E8FC              11 ConvertInterfaceLuidToGuid
+          1000E98F               5 CancelMibChangeNotify2
+
+    api-ms-win-service-management-l1-1-0.dll
+              00000001 Characteristics
+              10059694 Address of HMODULE
+              1005C118 Import Address Table
+              100552B4 Import Name Table
+              10055B28 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000E93E               5 OpenServiceW
+          1000E91D               4 OpenSCManagerW
+          1000E96F               0 CloseServiceHandle
+
+    api-ms-win-service-winsvc-l1-1-0.dll
+              00000001 Characteristics
+              10059698 Address of HMODULE
+              1005C128 Import Address Table
+              100552C4 Import Name Table
+              10055B34 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000E94E               2 ControlService
+
+    profapi.dll
+              00000001 Characteristics
+              1005969C Address of HMODULE
+              1005C1A8 Import Address Table
+              10055344 Import Name Table
+              10055B48 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000E99F                 Ordinal   104
+
+    api-ms-win-core-com-l1-1-0.dll
+              00000001 Characteristics
+              100596A0 Address of HMODULE
+              1005C0E0 Import Address Table
+              1005527C Import Name Table
+              10055B50 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EEC1               2 CLSIDFromString
+          1000E9C0              54 StringFromGUID2
+          1000EF11              53 StringFromCLSID
+          1000EA02              43 CoTaskMemFree
+          1000EAB3              46 CoUninitialize
+          1000EAC3              28 CoInitializeEx
+          1000EF21               9 CoCreateInstance
+          1000EFB1              4E IIDFromString
+
+    api-ms-win-security-sddl-l1-1-0.dll
+              00000001 Characteristics
+              100596A4 Address of HMODULE
+              1005C10C Import Address Table
+              100552A8 Import Name Table
+              10055B58 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000E9E1               2 ConvertStringSecurityDescriptorToSecurityDescriptorW
+          1000EE4F               0 ConvertSecurityDescriptorToStringSecurityDescriptorW
+
+    OLEAUT32.dll
+              00000001 Characteristics
+              100596A8 Address of HMODULE
+              1005C05C Import Address Table
+              100551F8 Import Name Table
+              10055B64 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EF41                 Ordinal    12
+          1000EAF4                 Ordinal   150
+          1000EF51                 Ordinal     7
+          1000EA23                 Ordinal     6
+          1000EE90                 Ordinal     9
+          1000EE80                 Ordinal     8
+          1000EF31                 Ordinal     2
+
+    api-ms-win-rtcore-ntuser-window-l1-1-0.dll
+              00000001 Characteristics
+              100596AC Address of HMODULE
+              1005C104 Import Address Table
+              100552A0 Import Name Table
+              10055B94 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EAD3              1A GetDesktopWindow
+
+    bcrypt.dll
+              00000001 Characteristics
+              100596B0 Address of HMODULE
+              1005C138 Import Address Table
+              100552D4 Import Name Table
+              10055BA0 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EDFF               D BCryptDestroyHash
+          1000EE3F              27 BCryptOpenAlgorithmProvider
+          1000EDDF               2 BCryptCloseAlgorithmProvider
+          1000EFA1              35 BCryptSetProperty
+          1000EF91              19 BCryptExportKey
+          1000EDEF               6 BCryptCreateHash
+          1000EE0F              1B BCryptFinishHash
+          1000EE2F              23 BCryptHashData
+          1000EE1F              21 BCryptGetProperty
+          1000EF81              1E BCryptGenerateKeyPair
+          1000EF71              1A BCryptFinalizeKeyPair
+          1000EB04              1D BCryptGenRandom
+          1000EF61               E BCryptDestroyKey
+
+    ext-ms-win-networking-wlanstorage-l1-1-0.dll
+              00000001 Characteristics
+              100596B8 Address of HMODULE
+              1005C190 Import Address Table
+              1005532C Import Name Table
+              10055BA8 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EFC1               0 GetCustomRegRootPath
+          1000EB70               1 GetCustomStorageRootPath
+
+    ext-ms-win-wlan-onexui-l1-1-0.dll
+              00000001 Characteristics
+              100596C0 Address of HMODULE
+              1005C19C Import Address Table
+              10055338 Import Name Table
+              10055BB0 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EBFD               0 OneXShowUI
+          1000EBDC               1 OneXShowUIFromEAPCreds
+
+    MobileNetworking.dll
+              00000001 Characteristics
+              100596C4 Address of HMODULE
+              1005C030 Import Address Table
+              100551CC Import Name Table
+              10055BBC Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EC8E              36 RaDestroySid
+          1000EC7E              35 RaCreateWellKnownSid
+          1000EFD1              10 FreeMemory
+          1000EFE1               3 AllocateMemory
+          1000EC6E              1E HtDestroyHandleTable
+          1000EC5E              1C HtCreateHandleTable
+          1000EC4E              12 GetAdapterConnectivity
+          1000EC3E              1D HtDereferenceHandleWithTag
+          1000EC2E              21 HtReferenceHandleWithTag
+          1000EC0D              1F HtNewHandle
+
+    OneX.DLL
+              00000001 Characteristics
+              100596C8 Address of HMODULE
+              1005C07C Import Address Table
+              10055218 Import Name Table
+              10055BE0 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000ECBF               4 OneXCreateDefaultProfile
+          1000EC9E               5 OneXCreateDefaultProfileWithEapMethodId
+          1000ECCF               C OneXFreeMemory
+          1000ECDF              14 OneXReasonCodeToString
+
+    eappcfg.dll
+              00000001 Characteristics
+              100596CC Address of HMODULE
+              1005C170 Import Address Table
+              1005530C Import Name Table
+              10055BF4 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000ED50               1 EapHostPeerConfigXml2Blob
+          1000ED40               7 EapHostPeerGetMethods
+          1000ED20               4 EapHostPeerFreeErrorMemory
+          1000ED10               3 EapHostPeerCredentialsXml2Blob
+          1000ECEF               5 EapHostPeerFreeMemory
+          1000ED30               6 EapHostPeerGetMethodProperties
+          1000ED60               0 EapHostPeerConfigBlob2Xml
+
+    WFDSConMgr.dll
+              00000001 Characteristics
+              100596D0 Address of HMODULE
+              1005C0D4 Import Address Table
+              10055270 Import Name Table
+              10055C14 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000ED70               7 WFDSConMgrGetOpenSessionList
+          1000ED91               6 WFDSConMgrFreeMemory
+
+    api-ms-win-stateseparation-helpers-l1-1-0.dll
+              00000001 Characteristics
+              100596D4 Address of HMODULE
+              1005C130 Import Address Table
+              100552CC Import Name Table
+              10055C20 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EDBE               2 GetPersistedRegistryValueW
+
+    CRYPT32.dll
+              00000001 Characteristics
+              100596D8 Address of HMODULE
+              1005C000 Import Address Table
+              1005519C Import Name Table
+              10055C48 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EE5F              E6 CryptUnprotectData
+
+    DEVOBJ.dll
+              00000001 Characteristics
+              100596DC Address of HMODULE
+              1005C008 Import Address Table
+              100551A4 Import Name Table
+              10055C58 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000EEF1              11 DevObjEnumDeviceInfo
+          1000EEE1              14 DevObjGetClassDevs
+          1000EED1               7 DevObjCreateDeviceInfoList
+          1000EF01              10 DevObjDestroyDeviceInfoList
+          1000EEA0              25 DevObjOpenDevRegKey
+
+  Image has the following dependencies:
+
+    msvcp_win.dll
+    api-ms-win-crt-string-l1-1-0.dll
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-private-l1-1-0.dll
+    ntdll.dll
+    api-ms-win-core-synch-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    api-ms-win-core-handle-l1-1-0.dll
+    api-ms-win-core-threadpool-l1-2-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-eventing-provider-l1-1-0.dll
+    api-ms-win-core-localization-l1-2-0.dll
+    api-ms-win-core-heap-l1-1-0.dll
+    api-ms-win-core-libraryloader-l1-2-0.dll
+    api-ms-win-core-debug-l1-1-0.dll
+    api-ms-win-core-synch-l1-2-0.dll
+    api-ms-win-core-file-l1-1-0.dll
+    api-ms-win-core-registry-l1-1-0.dll
+    api-ms-win-core-heap-l2-1-0.dll
+    api-ms-win-security-base-l1-1-0.dll
+    api-ms-win-core-string-obsolete-l1-1-0.dll
+    api-ms-win-core-string-l1-1-0.dll
+    api-ms-win-core-kernel32-legacy-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-2-0.dll
+    api-ms-win-core-kernel32-legacy-l1-1-1.dll
+    api-ms-win-core-processthreads-l1-1-1.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-interlocked-l1-1-0.dll
+    api-ms-win-core-apiquery-l1-1-0.dll
+    api-ms-win-eventing-classicprovider-l1-1-0.dll
+    api-ms-win-core-processenvironment-l1-1-0.dll
+    api-ms-win-core-delayload-l1-1-1.dll
+    api-ms-win-core-delayload-l1-1-0.dll
+
+  Section contains the following imports:
+
+    msvcp_win.dll
+              1005A2DC Import Address Table
+              1005A8BC Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  28E ?_Xlength_error@std@@YAXPBD@Z
+
+    api-ms-win-crt-string-l1-1-0.dll
+              1005A270 Import Address Table
+              1005A850 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   83 memset
+                   A6 wcsncmp
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+              1005A264 Import Address Table
+              1005A844 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   39 _initterm_e
+                   38 _initterm
+
+    api-ms-win-crt-private-l1-1-0.dll
+              1005A1C4 Import Address Table
+              1005A7A4 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   C8 _o__configure_narrow_argv
+                   CF _o__crt_atexit
+                   E6 _o__endthreadex
+                   E8 _o__errno
+                   EA _o__execute_onexit_table
+                  163 _o__initialize_narrow_environment
+                  164 _o__initialize_onexit_table
+                  166 _o__invalid_parameter_noinfo
+                  167 _o__invalid_parameter_noinfo_noreturn
+                  281 _o__register_onexit_function
+                  288 _o__seh_filter_dll
+                  483 memmove
+                  3B1 _o_free
+                  3CF _o_iswalnum
+                  3D5 _o_iswdigit
+                  3DC _o_iswxdigit
+                  3FA _o_malloc
+                  404 _o_mbtowc
+                  405 _o_memcpy_s
+                  45A _o_towlower
+                  463 _o_wcscpy_s
+                  466 _o_wcsncpy_s
+                  477 _o_wmemcpy_s
+                   32 _except_handler4_common
+                    1 _CxxThrowException
+                   BB _o__cexit
+                   B9 _o__callnewh
+                   B7 _o__beginthreadex
+                   88 _o___std_type_info_destroy_list
+                   87 _o___std_exception_destroy
+                   86 _o___std_exception_copy
+                   9A _o___stdio_common_vswprintf_s
+                   98 _o___stdio_common_vswprintf
+                   96 _o___stdio_common_vsprintf_s
+                   92 _o___stdio_common_vsnprintf_s
+                   26 __std_terminate
+                   10 __CxxFrameHandler3
+                  481 memcmp
+                  482 memcpy
+
+    ntdll.dll
+              1005A2E4 Import Address Table
+              1005A8C4 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   47 EtwGetTraceEnableLevel
+                   46 EtwGetTraceEnableFlags
+                   4F EtwRegisterTraceGuidsW
+                   56 EtwUnregisterTraceGuids
+                  60D RtlUnsubscribeWnfNotificationWaitForCompletion
+                  213 NtQueryWnfStateData
+                  5D6 RtlSubscribeWnfStateChangeNotification
+                   54 EtwTraceMessage
+                  60F RtlUnsubscribeWnfStateChangeNotification
+                  507 RtlNtStatusToDosError
+                  6CF WinSqmIncrementDWORD
+                   48 EtwGetTraceLoggerHandle
+                   45 EtwEventWriteTransfer
+
+    api-ms-win-core-synch-l1-1-0.dll
+              1005A118 Import Address Table
+              1005A6F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   29 SetEvent
+                   1D LeaveCriticalSection
+                   37 WaitForSingleObjectEx
+                    6 CreateEventW
+                   18 InitializeCriticalSection
+                   1B InitializeSRWLock
+                   31 TryAcquireSRWLockExclusive
+                   24 ReleaseSRWLockExclusive
+                    0 AcquireSRWLockExclusive
+                   25 ReleaseSRWLockShared
+                    B CreateSemaphoreExW
+                    9 CreateMutexExW
+                   27 ResetEvent
+                   11 EnterCriticalSection
+                   36 WaitForSingleObject
+                   35 WaitForMultipleObjectsEx
+                    F DeleteCriticalSection
+                   26 ReleaseSemaphore
+                   21 OpenSemaphoreW
+                   23 ReleaseMutex
+                    1 AcquireSRWLockShared
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+              1005A0BC Import Address Table
+              1005A69C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    6 CreateThread
+                    C GetCurrentProcess
+                   37 ProcessIdToSessionId
+                   11 GetCurrentThreadId
+                   55 TerminateProcess
+                    D GetCurrentProcessId
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+              1005A028 Import Address Table
+              1005A608 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    5 GetLastError
+                    D SetLastError
+                   11 UnhandledExceptionFilter
+                    F SetUnhandledExceptionFilter
+                    7 RaiseException
+
+    api-ms-win-core-handle-l1-1-0.dll
+              1005A050 Import Address Table
+              1005A630 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 CloseHandle
+
+    api-ms-win-core-threadpool-l1-2-0.dll
+              1005A198 Import Address Table
+              1005A778 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   22 WaitForThreadpoolTimerCallbacks
+                    6 CloseThreadpoolTimer
+                   1A SetThreadpoolTimer
+                   1C SetThreadpoolWait
+                    D CreateThreadpoolWait
+                    A CreateThreadpoolCleanupGroup
+                    7 CloseThreadpoolWait
+                    C CreateThreadpoolTimer
+                    4 CloseThreadpoolCleanupGroupMembers
+                    3 CloseThreadpoolCleanupGroup
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+              1005A178 Import Address Table
+              1005A758 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   19 GetSystemWindowsDirectoryW
+                   1A GetTickCount
+                   1B GetTickCount64
+                   1E GetVersionExW
+                   16 GetSystemTimeAsFileTime
+
+    api-ms-win-eventing-provider-l1-1-0.dll
+              1005A284 Import Address Table
+              1005A864 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    9 EventWriteTransfer
+                    5 EventUnregister
+                    0 EventActivityIdControl
+                    3 EventRegister
+                    4 EventSetInformation
+
+    api-ms-win-core-localization-l1-2-0.dll
+              1005A0AC Import Address Table
+              1005A68C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    9 FormatMessageW
+
+    api-ms-win-core-heap-l1-1-0.dll
+              1005A058 Import Address Table
+              1005A638 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    2 HeapAlloc
+                    0 GetProcessHeap
+                    5 HeapDestroy
+                    6 HeapFree
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+              1005A08C Import Address Table
+              1005A66C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   15 GetModuleHandleW
+                   10 GetModuleFileNameA
+                   14 GetModuleHandleExW
+                    D FreeLibrary
+                    1 DisableThreadLibraryCalls
+                   16 GetProcAddress
+                   1D LoadStringW
+
+    api-ms-win-core-debug-l1-1-0.dll
+              1005A008 Import Address Table
+              1005A5E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    7 OutputDebugStringW
+                    5 IsDebuggerPresent
+                    4 DebugBreak
+
+    api-ms-win-core-synch-l1-2-0.dll
+              1005A170 Import Address Table
+              1005A750 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   2D Sleep
+
+    api-ms-win-core-file-l1-1-0.dll
+              1005A040 Import Address Table
+              1005A620 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    7 CreateFileW
+                    2 CompareFileTime
+                   31 GetFileTime
+
+    api-ms-win-core-registry-l1-1-0.dll
+              1005A0E8 Import Address Table
+              1005A6C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   25 RegQueryValueExW
+                   1E RegOpenKeyExW
+                    0 RegCloseKey
+                   14 RegGetValueW
+                    3 RegCreateKeyExW
+                   2E RegSetValueExW
+
+    api-ms-win-core-heap-l2-1-0.dll
+              1005A06C Import Address Table
+              1005A64C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    A LocalFree
+
+    api-ms-win-security-base-l1-1-0.dll
+              1005A29C Import Address Table
+              1005A87C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   23 CreateWellKnownSid
+                   2C EqualSid
+                   4D IsValidSid
+                   2F GetAce
+                   38 GetSecurityDescriptorDacl
+                   63 SetSecurityDescriptorGroup
+                   48 InitializeSecurityDescriptor
+                   50 MakeSelfRelativeSD
+                    7 AddAccessAllowedAce
+                   3A GetSecurityDescriptorLength
+                   62 SetSecurityDescriptorDacl
+                   64 SetSecurityDescriptorOwner
+                   35 GetLengthSid
+                    A AddAccessDeniedAce
+                   47 InitializeAcl
+
+    api-ms-win-core-string-obsolete-l1-1-0.dll
+              1005A110 Import Address Table
+              1005A6F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    3 lstrcmpW
+
+    api-ms-win-core-string-l1-1-0.dll
+              1005A104 Import Address Table
+              1005A6E4 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    6 MultiByteToWideChar
+                    7 WideCharToMultiByte
+
+    api-ms-win-core-kernel32-legacy-l1-1-0.dll
+              1005A07C Import Address Table
+              1005A65C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   64 WTSGetActiveConsoleSessionId
+
+    api-ms-win-core-sysinfo-l1-2-0.dll
+              1005A190 Import Address Table
+              1005A770 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  6BB VerSetConditionMask
+
+    api-ms-win-core-kernel32-legacy-l1-1-1.dll
+              1005A084 Import Address Table
+              1005A664 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   63 VerifyVersionInfoW
+
+    api-ms-win-core-processthreads-l1-1-1.dll
+              1005A0D8 Import Address Table
+              1005A6B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   32 IsProcessorFeaturePresent
+
+    api-ms-win-core-profile-l1-1-0.dll
+              1005A0E0 Import Address Table
+              1005A6C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 QueryPerformanceCounter
+
+    api-ms-win-core-interlocked-l1-1-0.dll
+              1005A074 Import Address Table
+              1005A654 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 InitializeSListHead
+
+    api-ms-win-core-apiquery-l1-1-0.dll
+              1005A000 Import Address Table
+              1005A5E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 ApiSetQueryApiSetPresence
+
+    api-ms-win-eventing-classicprovider-l1-1-0.dll
+              1005A27C Import Address Table
+              1005A85C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    5 TraceMessage
+
+    api-ms-win-core-processenvironment-l1-1-0.dll
+              1005A0B4 Import Address Table
+              1005A694 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    1 ExpandEnvironmentStringsW
+
+    api-ms-win-core-delayload-l1-1-1.dll
+              1005A020 Import Address Table
+              1005A600 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    1 ResolveDelayLoadedAPI
+
+    api-ms-win-core-delayload-l1-1-0.dll
+              1005A018 Import Address Table
+              1005A5F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 DelayLoadFailureHook
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .idata
+        6000 .reloc
+        1000 .rsrc
+       58000 .text

@@ -1,0 +1,1469 @@
+!This program cannot be run in DOS mode.
+KRich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+=L9o<
+onecore\base\ntsetup\panther\engine\engine.cpp
+WDS_DATA.Type == WDS_TYPE_NONE, but the other members of WDS_DATA are non zero!
+WDS_DATA.Type == BINARY, STRING, or STRING_ANSI, but other members of WDS_DATA are zero!
+WDS_DATA.Type == UINT32 but size != sizeof(UINT32)
+WDS_DATA.Type == UINT64, but size != sizeof(UINT64)
+WDS_DATA.Type == RESERVED, which is not available to modules!
+WdsUnpackCollection
+WdsUnPackCollection -- Data->Type != WDS_TYPE_PACKED_COLLECTION
+WdsUnPackCollection -- Invalid type passed
+WdsUnPackCollection -- couldn't add value
+onecore\base\ntsetup\panther\engine\bb.cpp
+CStorage::CheckAndRestoreIntegrity
+<null>
+CBlackboard::CheckAndRestoreIntegrity(%s) done with Result=%d
+CBlackboard::Close
+<unnamed>
+CBlackboard::Close: %s.
+fWdsSetupLogInit
+Global\WdsSetupLogInit
+SetupLog
+Global\SetupLog
+\CONOUT$
+SACSetupAct
+Windows Setup activity log
+SACSetupErr
+Windows Setup error log
+setupact.log
+%S\%s
+setuperr.log
+setuplog.xml
+diagerr.xml
+diagwrn.xml
+debug.log
+setuplog.cfg
+%WINDIR%\Minidump
+onecore\base\ntsetup\panther\wdslog\setuplog.cpp
+Unable to load global log filter.
+SYSTEM\Setup\Panther
+TelemetryAssertList
+PANTHER_ENABLE_TELASSERT
+ExecutableName: 
+ || SourceFunction: 
+ || SourceName: 
+ || LogMessage: 
+Log: Failed To Get Msg From ID
+sConstructPartialMsgVW: MALLOC failed
+XMLLogFormatter
+ntdll.dll
+MicrosoftTelemetryAssertTriggeredUM
+StandardSetupLogFilter
+StandardSetupLogFormatter
+DebugFormatterAndDevice
+DebugFilter
+Assert
+FatalError
+Error
+Warning
+Status
+Verbose
+Trace
+Undefined
+LogGlobalFilter
+pLock
+onecore\base\ntsetup\panther\engine\seq.c
+ExecQueue->csLock.DebugInfo is NULL.
+SEQ Control
+pResolveBinaryName
+Module '%s' with binary '%s' was prevented from loading by negative response to EVENT_LOADING_MODULE
+Module '%s' with binary '%s' was prevented from loading by improper use of EVENT_LOADING_MODULE's associated data
+ValidateModule
+A Module did not subscribe to any events, so it was unloaded.
+Module '%s' did not subscribe to any events, so it was unloaded.
+InitializeModule
+InitializeModule: Initializing ExecQueue->csLock;
+Failed to resolve binary for module '%s'
+InitializeModule - Failed to load %s
+InitializeModule - Failed to find entry point %s
+WdsAddModule
+WdsInitializeCallbackArray
+Could not alloc memory in WdsInitializeCallbackArray
+pConstructEvent
+pConstructEvent() -- invalid WDS_DATA specified: %s
+Could not allocate event list item
+Could not associate Module name, Major or Minor event with new event
+pSerializeEvent
+Loading Event: EventType(%s,%d) PublishedBy(%s)
+pConstructGroup
+Could not allocate group list item (SEQ3)
+WdsLockExecutionGroup
+SeqLockExecutionGroup
+SeqLockExecutionGroup: Initializing ExecQueue->csLock;
+Attempt to use SeqLockExecutionGroup from another thread
+WdsUnlockExecutionGroup
+SeqUnlockExecutionGroup
+Attempt to use WdsUnlockExecutionGroup from another thread
+Trying to unlock queue which is already unlocked! (SEQ4)
+SeqGetCurrentExecutionGroup
+Attempt to use SeqGetCurrentExecutionGroup from another thread
+WdsSetNextExecutionGroup
+SeqSetNextExecutionGroup
+Attempt to use SeqSetNextExecutionGroup from another thread
+WdsSetNextExecutionGroup failed - the queue is currently locked
+Group: %s not found! (SEQ5)
+Failed to backup PERMANENT event during SetNextExecutionGroup!!
+Successfully backed up PERMANENT event during SetNextExecutionGroup
+SeqConstruct
+InitializedCriticalSection for pExecQueue->csLock;
+There was a problem creating a PEXEC_QUEUE_LIST_ITEM member
+SeqDestruct
+DeleteCriticalSection for pExecQueue->csLock;
+Destroying any unreferenced modules! (SEQ6)
+pWorkerThreadFunc
+pWorkerThreadFunc -- Stopping
+pWorkerThreadFunc -- WaitForMultipleObjects failed
+pStartWorkerThreads
+Couldn't reset ExecQueue->hStopWorkerThreads
+SeqExecute
+Unable to startup async event processing threads
+Could not wait on event queue handle (SEQ7)
+SeqExecute -- stopping, since WdsExitImmediate() was called
+SeqExecute -- stopping, since termination group# < current group#
+SeqExecute -- stopping, since termination group reached
+Failed to backup PERMANENT event!!
+Successfully backed up PERMANENT event
+Couldn't Publish EVENT_SERIALIZE_BEFORE_EXIT
+WdsEnableExit
+SeqEnableExit
+WdsEnableExit already called
+won't
+WdsEnableExit called!  When group #%d is empty, execution will stop, and the queue %s be saved.
+WdsExitImmediate
+SeqExitImmediately
+WdsExitImmediate already called
+WdsExitImmediate called!  Execution will stop, and the queue %s be saved.
+SeqSetUILanguage
+pSetUILanguage
+kernel32.dll
+SetThreadPreferredUILanguages
+pCopySubscription
+Failed to allocate memory for copy of subscription (SEQ8)
+pSerializeSubscription
+Error serializing callback in '%s'
+WdsSubscribeEx
+SeqSubscribeEx
+Module %s can't subscribe.  Did you call WdsInitializeCallbackArray in your ModuleInit()?
+Invalid callback 0x%X given to WdsSubscribe by %s. Did you put this callback in the initial callback table?
+Invalid Major/Minor Event pair given to WdsSubscribe by %s
+Could not allocate major event (SEQ9)
+%d %d
+Could not allocate subscription list item (SEQ10)
+Could not allocate subscription list (SEQ11)
+Could add subscription list item to hash table (SEQ12)
+pGetAllSubscriptions
+Could not allocate temporary subscription list (SEQ13)
+CallSubscribers
+CallSubscribers() -- invalid data given by subscription callback!  The event's data won't be modified! (%s)
+WdsUnsubscribe
+WdsUnsubscribeEx
+SeqUnsubscribeEx
+WdsUnsubscribeEx(%s, %s, %d, %d) called
+Invalid Major/Minor Event pair given to WdsUnsubscribeEx by %s
+WdsUnsubscribeEx could not allocate major event
+<Null>
+WdsUnsubscribeEx(%s, %s, %d, %d) removed subscription (%s, %d, Callback:%d)
+WdsPublish
+SeqPublish
+WdsPublish() -- The PriorityGroupStr must be null if an actual queue position is given from an iterator
+WdsPublish() -- MajorEvent and MinorEvent cannot be 0
+WdsPublish() -- Invalid event data submitted by '%s': %s
+WdsPublish() by module %s - invalid group name %s
+SeqPublishImmediateEx
+SeqPublishImmediate() -- MajorEvent and MinorEvent cannot be 0
+WdsPublishImmediateEx() -- Invalid event data submitted by '%s': %s
+Could not allocate event list item (SEQ16)
+Could not duplicate data (SEQ17)
+SeqPublishImmediateAsync
+SeqPublishImmediateAsync() -- MajorEvent and MinorEvent cannot be 0
+WdsPublishImmediateAsync() -- Invalid event data submitted by '%s': %s
+Could not allocate event list item (SEQ16a)
+Could not set ExecQueue->hProcessAsyncEvent
+WdsIterateQueue
+WdsDeleteEvent
+SeqDeleteEvent
+WdsDeleteEvent - must pass in a WDS_QUEUE_POSITION from the iteration callback only!
+SeqSerializeToFile
+SerializeToFile: %s
+Saving Main Event Queue
+Saving Permanent Event Queue
+pMergePersistentQueue
+pMergePersistentQueue - Prepending Group %d: %s
+pMergePersistentQueue - processing Perm Event: (%s,%s)  by: %s
+SeqSerializeFromFile
+SerializeFromFile '%s'
+Failed to Merge the Persistent Queue into the Event Queue
+SeqSerializeToFile OF_Close failed for %s
+pHandleSerialize
+Could not start save operation for '%s'
+Could not save queue '%s' to '%s'
+Could not close file for '%s'
+Could not save save engine state for executing queue '%s'
+Queue Serialization Failed!
+Queue Serialization Succeeded
+pExecuteSEQControlEvent
+SEQ EVENT_SERIALIZE Received
+SEQ EVENT_SERIALIZE_BEFORE_EXIT Received.  Will only save modules with persistent subscriptions!
+Unknown SEQ Control Event received %d
+OF_Open
+onecore\base\ntsetup\panther\engine\objectfile.c
+The file '%s' couldn't be opened for input
+The header for '%s' couldn't be read
+The version of '%s' is %d, but the required version is %d
+The file '%s' couldn't be opened for output
+The header for '%s' couldn't be written
+OF_Close
+%s*.%s
+pGetHighestNumberedFile
+pGetNewFileName couldn't find next file!
+%s%s%d.%s
+%s\%s%d.
+pSerializeFileVersion
+Saving FileVersion %s%d.%s
+Contents
+pConstructContentsFile
+Failed to open contents file '%s'
+Failed to read in ContentsFile->FileVersions
+%s\%s%d.%s
+pUpdateContentsFile
+pUpdateContentsFile StringCchPrintf failed
+pSaveNewContentsFile
+Failed to open contents file for output '%s'
+Saving Contents File %s
+Failed to write out ContentsFile->FileVersions
+pCreateCleanTempDir
+No working dir has been given to panther.  The temp dir for modules will be unavailable.  Call WdsInitialize(ReInit=TRUE) to specify a working directory
+GetModuleFileName failed in engine::pCleanOutTempDir
+Directory %s is not useable by panther
+StringCchCopy fails for %s
+EngineBeginSaveOperation
+No working dir has been given to panther.  Call WdsInitialize(ReInit=TRUE) to specify one
+EngineBegineSaveOperation couldn't create contents file
+EngineCompleteSaveOperation
+EngineCompleteSaveOperation couldn't obtain new file version!
+EngineCompleteSaveOperation couldn't create %s
+EngineCompleteSaveOperation couldn't save %s
+EngineCompleteSaveOperation couldn't save contents file
+pLookupContentsFileEntry
+No working dir has been given to panther.  Call WdsInitialize(Reinit=TRUE) to specify one (2nd msg)
+Couldn't construct contents file!
+Couldn't find queue '%s' in contents file
+Couldn't copy pFV->FileName in pLookupContentsFileEntry
+pGetOfflineQueue
+Failed to load offline queue '%s' from file '%s'
+Failed to add group to offline queue '%s'
+IsWorkQueueAccessible
+Function %s was called, but the panther work queue is not running!
+Online
+pInitializeWorkQueue
+Failed to create online queue name
+Failed to initialize SEQ
+Failed to alloc WorkQueue->OfflineQueuesTable
+The names of all offline queues and offline groups must be unique.  '%s' is already used
+Failed to add to WorkQueue->OfflineQueuesTable
+WdsExecuteWorkQueue
+Couldn't create clean panther temp dir
+WdsExecuteWorkQueue with WDS_START_EMPTY_QUEUE given 0 modules or 0 groups
+Failed to initialize setup groups
+Failed to initialize setup modules
+Could not locate saved '%s' in working directory
+Could not load SEQ state from '%s'
+stringcchprintf failed for '%s'
+WdsExecuteWorkQueue2
+Failed to add all setup modules
+WdsExecuteWorkQueue2 with WDS_START_EMPTY_QUEUE given 0 modules or 0 groups
+WdsDuplicateData
+WdsDuplicateData failed, invalid source data - %s
+WdsGetTempDir
+Module Temp Directory %s is not useable
+WdsAddModule given invalid parameters
+WdsPublishOffline
+WdsPublishOffline - must provide an actual group name, not NULL or WDS_CURRENT_GROUP
+Invalid Queue Name '%s' specified to WdsPublishOffline
+WdsEnableExitEx
+WdsEnableExitEx couldn't duplicate exit data
+WdsExitImmediatelyEx
+WdsExitImmediatelyEx couldn't duplicate exit data
+WdsIterateOfflineQueue
+Invalid Group Name '%s' passed to WdsIterateOfflineQueue
+CConsistentFileMapping::Open
+CConsistentFileMapping::Open: CreateFile failed.
+FM.%I64x
+CSpinLockFileMappingArray::Create
+CSpinLockFileMappingArray::Create: m_pMapping->Create(%s) failed.
+MemoryControlBlock
+CMemoryManager::InitializeMemMapsAsForNewFile
+CMemoryManager::InitializeMemMapsAsForNewFile: pFileMapping->MapViewOfFile failed.
+CMemoryManager::InitializeMemMapsAsForNewFile: pFileMapping->UnmapViewOfFile failed.
+CMemoryManager::InitializeSharedControlBlock
+CMemoryManager::InitializeSharedControlBlock: m_pFileMapping->MapViewOfFile failed.
+%I64x
+%s.%s.spl
+CTypeManager::Open
+CTypeManager::Open: m_SpinLocks.Create(%s) failed
+Storage
+CStorage::Open
+CStorage::Open: CConsistentMappingFactory::CreateObject failed.
+CStorage::Open: m_pMapping->Create(%s) failed.
+CBlackboard::~CBlackboard
+CBlackboard::m_lAccessSpinLock = %d for BB="%s"
+CBlackboard::Open
+CBlackboard::Open: m_Storage.CreateType(%s) failed.
+CBlackboard::Open: %s succeeded.
+CBlackboard::FindValue
+CBlackboard::FindValue: negative lock count.
+CBlackboard::FindNodeByUniqueID
+(sizeof(SValue) + ((SValue *)Node.GetBuffer())->uiNameSize + ((SValue *)Node.GetBuffer())->uiSize) != uiItemSize
+Blackboard Corruption: %s
+CBlackboardFactory::Remove
+pBlackboard(0x%x)has %d outstanding access reference count. Client probably did not close Enum handle(s).
+ACCESS_VIOLATION
+DATATYPE_MISALIGNMENT
+BREAKPOINT
+SINGLE_STEP
+ARRAY_BOUNDS_EXCEEDED
+FLT_DENORMAL_OPERAND
+FLT_DIVIDE_BY_ZERO
+FLT_INEXACT_RESULT
+FLT_INVALID_OPERATION
+FLT_OVERFLOW
+FLT_STACK_CHECK
+FLT_UNDERFLOW
+INT_DIVIDE_BY_ZERO
+INT_OVERFLOW
+PRIV_INSTRUCTION
+IN_PAGE_ERROR
+ILLEGAL_INSTRUCTION
+NONCONTINUABLE_EXCEPTION
+STACK_OVERFLOW
+INVALID_DISPOSITION
+GUARD_PAGE
+INVALID_HANDLE
+<unknown>
+diagerr.mdmp
+Exception (code 0x%08X: %s) occurred at 0x%p in %s (+%p).  Minidump attached (%d bytes) to diagerr.xml and %s.
+Exception (code 0x%08X: %s) occurred at 0x%p in %s (+%p).
+WdsLogStructuredException
+WdsVectoredExceptionHandler
+Exception (code 0x%08X: %s) occurred at 0x%p in %s.
+<unknown>
+Section
+Log: Cannot convert ansi->unicode.
+kernel32
+AddVectoredExceptionHandler
+%windir%\system32\dbghelp.dll
+MiniDumpWriteDump
+DEPLOY
+IBSLIB
+DIAGER
+HWARE
+MIGUI
+MOUPG
+PANTHR
+WINPE
+SYSPRP
+%d-%02d-%02d %02d:%02d:%02d,
+NoSeverity
+%-20S %-21S [0x%06x] %s
+%-20S %-21S [0x%06x] %S
+%-20S %-21S %-6S %s
+%-20S %-21S %-6S %S
+%-20S %-10S [0x%06x] %-6S %s
+%-20S %-10S [0x%06x] %-6S %S
+%-21S %-6S %s
+%-21S %-6S %S
+%-10S [0x%06x] %-6S %s
+%-10S [0x%06x] %-6S %S
+[gle=0x%.8x]
+%S(%d) : %S
+%S(%d) : 
+%s%-S(%S)
+%s%-20S%S
+<program name unknown>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="%S" rs:number="%d">
+<s:datatype dt:type="%s"/>
+</s:AttributeType>
+%d-%02d-%02dT%02d:%02d:%02d
+<z:row
+ %S="
+</rs:data>
+</xml>
+hexBinary
+dateTime
+string
+&apos;
+&amp;
+&quot;
+SUPPRESS
+default
+%s %s "%[^"]"
+%s %[^
+%u/%u/%u
+%u-%u-%u
+\\.\SAC
+ORSDSo<
+wdscore.pdb
+.rdata$brc
+.rdata$r$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.text$di
+.text$lp00wdscore.dll!20_pri7
+.text$mn
+.text$x
+.text$yd
+.text$zy
+.text$zz
+.xdata$x
+.edata
+.data$dk00$brc
+.data$pr00$brc
+.data$r$brc
+.data$rs$brc
+.data$zz$brc
+.data
+.data$00
+.data$dk00
+.data$pr00
+.data$zz
+.bss$00
+.bss$dk00
+.bss$pr00
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+PQSVW
+Y__^[
+PWVVh$&
+tgj;^
+t^SVh
+SVWPh
+Y__^[
+t]9NdtX9N
+tS9N tN9N$tI9N(tD9N,t?9NDt:9M
+9^Pt?SS
+H 9OX
+9w\tYVVj
+9^Tt?SS
+;FhtE
+;Ght;VV
+PWjdZ
+t%SV3
+;GhtH
+9O`tD;
+;GhtC3
+@_^[]
+SVWj(j
+SVj(j
+t19^ uM
+9>u:WW
+W ;P 
+VSh(R
+t!j\V
+tQhp_
+PVWhP
+3_^[]
+QQSVW
+SSVWh
+YYSSVWh
+YYSSVWh
+YYSSVWh
+SSVWh
+SSVWh
+0f;2u
+SSVWh
+QQVWh
+YYSSVWh
+YYSSVWh
+YYSSVWh
+SSVWh
+YYSSVWh
+YYSSVWh
+YYSSVWh
+SSVWh
+YYSSVWh
+QQVWh
+QQVWh
+QQVWh
+SSVWh
+YYSSVWh
+YYSSVWh
+YYSSVWh
+SSVWh
+SSVWh
+YYSSVWh
+wGt7+
+QQVWh|x
+QQVWh|x
+YYSSVWh|x
+SSVWh|x
+QQVWh|x
+QQVWh|x
+QQVWh|x
+QQVWh|x
+QQVWh|x
+YYSSVWh|x
+YYSSVWh|x
+QQVWh|x
+QQVWh
+QQVWh
+QQVWh
+QQVWh
+QQVWh
+QQVWh
+QQVWh
+YYSSVWh
+QQVWh
+QQVWhly
+YYSSVWh
+QQVWh
+QQVWh
+QQVWh
+QQSVW
+VPhX"
+QQVWh
+QQSVW
+QQSVW
+t)j?V
+j\Zf;
+thVVVVh
+@_^[]
+L$ 9O
+8DRBKu
+L$ ;O
+kT$$(
+t: QQ
+VVVVf
+DRBK;
+LBSM;B
+j\_f;
+tRVV3
+@_^[]
+VVWPj
+9KlwVr
+9ShwO
+9Spv~
+9Wht"
+G\;Gh
+QQSVW
+GLtB3
+F\;Fhv
+t=j@j
+;{<wJr
+;C8s@
+;{<w)r
+K,VWj
+9E$t$
+SSVWh
+9E t5
+YYSSVWh
+W0_^[
+$@_^[]
+j\Zf;
+9u$t4
+YYSSVWh
+hLBSMhDRBKh
+QQVWh
+Qj\^f;
+QQVWhX
+GRRRR
+j\Xf;
+PSSSSSSSj
+SSWVh 
+QQVWh
+|$ 9=t
+D$@j\P
+D$8QQ
+t$HVWS
+9|$ t
+D$`VP
+t$095t
+D$Hj\P
+D$8QQ
+t$0VWS
+9\$0t
+9s8ur
+;{ s)k
+VWks 
+9C v0
+@_^[]
+9f;:u
+QSVWj
+1f;2u
+j?Yf;
+j?Yf;
+9^,u4
+C9~4u
+PSSSSSSh 
+PSSSSSSSj
+PSSSSSSSj
+@_^[]
+u+j_Xf;
+j-Xf;
+j.Xf;
+QQSVW
+t#VSj
+D$$hh
+QVQPh8
+QSVWj
+PSSSSSSh 
+t+PPj
+ !"#$%&')(*+,-./0123456
+789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ab
+WDSCORE.dll
+WdsGetPointer
+g_Kernel32
+g_bEnableDiagnosticMode
+ConstructPartialMsgIfA
+ConstructPartialMsgIfW
+ConstructPartialMsgVA
+ConstructPartialMsgVW
+CurrentIP
+DecrementPartialMsgIndent
+DestructPartialMsg
+EndMajorTask
+EndMinorTask
+GetMajorTask
+GetMajorTaskA
+GetMinorTask
+GetMinorTaskA
+GetPartialMsgIndent
+IncrementPartialMsgIndent
+StartMajorTask
+StartMinorTask
+WdsAbortBlackboardItemEnum
+WdsAddModule
+WdsAddUsmtLogStack
+WdsAllocCollection
+WdsCollectionAddValue
+WdsCollectionGetValue
+WdsCopyBlackboardItems
+WdsCopyBlackboardItemsEx
+WdsCreateBlackboard
+WdsDeleteBlackboardValue
+WdsDeleteEvent
+WdsDestroyBlackboard
+WdsDuplicateData
+WdsEnableDiagnosticMode
+WdsEnableExit
+WdsEnableExitEx
+WdsEnumFirstBlackboardItem
+WdsEnumFirstCollectionValue
+WdsEnumNextBlackboardItem
+WdsEnumNextCollectionValue
+WdsExecuteWorkQueue2
+WdsExecuteWorkQueue
+WdsExecuteWorkQueueEx
+WdsExitImmediately
+WdsExitImmediatelyEx
+WdsFreeCollection
+WdsFreeData
+WdsGenericSetupLogInit
+WdsGetAssertFlags
+WdsGetBlackboardBinaryData
+WdsGetBlackboardStringA
+WdsGetBlackboardStringW
+WdsGetBlackboardUintPtr
+WdsGetBlackboardValue
+WdsGetCurrentExecutionGroup
+WdsGetSetupLog
+WdsGetTempDir
+WdsInitialize
+WdsInitializeCallbackArray
+WdsInitializeDataBinary
+WdsInitializeDataStringA
+WdsInitializeDataStringW
+WdsInitializeDataUInt32
+WdsInitializeDataUInt64
+WdsIsDiagnosticModeEnabled
+WdsIterateOfflineQueue
+WdsIterateQueue
+WdsLockBlackboardValue
+WdsLockExecutionGroup
+WdsLogCreate
+WdsLogDestroy
+WdsLogRegStockProviders
+WdsLogRegisterProvider
+WdsLogStructuredException
+WdsLogUnRegStockProviders
+WdsLogUnRegisterProvider
+WdsPackCollection
+WdsPublish
+WdsPublishEx
+WdsPublishImmediateAsync
+WdsPublishImmediateEx
+WdsPublishOffline
+WdsSeqAlloc
+WdsSeqFree
+WdsSetAssertFlags
+WdsSetBlackboardValue
+WdsSetNextExecutionGroup
+WdsSetUILanguage
+WdsSetupLogDestroy
+WdsSetupLogInit
+WdsSetupLogMessageA
+WdsSetupLogMessageW
+WdsSubscribeEx
+WdsTerminate
+WdsUnlockExecutionGroup
+WdsUnpackCollection
+WdsUnsubscribe
+WdsUnsubscribeEx
+WdsValidBlackboard
+.?AVCAtlException@ATL@@
+.?AVCIlKernel32@@
+.?AUIKernel32Interface@@
+.?AVCConsistentFileMapping@@
+.?AVCConsistentMemoryMapping@@
+.?AVCConsistentMapping@@
+.?AVCSimpleBuffer@@
+.?AUHashtableImpl@@
+<unknown>
+<unknown>
+?:\wdslog.inf
+_vsnwprintf
+_wcsicmp
+_wtoi
+wcsncmp
+wcsrchr
+__CxxFrameHandler3
+_vsnprintf
+_purecall
+_wcslwr
+wcschr
+towlower
+strrchr
+calloc
+memcpy_s
+_wcslwr_s
+memmove_s
+malloc
+iswctype
+_wcsnicmp
+swscanf_s
+fclose
+wcstok_s
+_wfopen
+fgetws
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+_except_handler4_common
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+??1type_info@@UAE@XZ
+HeapFree
+SetLastError
+EnterCriticalSection
+LeaveCriticalSection
+InitializeCriticalSection
+WaitForMultipleObjectsEx
+WaitForSingleObject
+GetCurrentThreadId
+CreateEventW
+Sleep
+GetLastError
+SetEvent
+CloseHandle
+CreateThread
+ResetEvent
+HeapAlloc
+GetProcAddress
+DeleteCriticalSection
+GetProcessHeap
+GetModuleHandleW
+FreeLibrary
+LoadLibraryExW
+ReadFile
+FindFirstFileW
+FindNextFileW
+WriteFile
+RemoveDirectoryW
+SetFilePointer
+FindClose
+CreateFileW
+DeleteFileW
+GetTempFileNameW
+CreateDirectoryW
+GetModuleFileNameA
+GetModuleFileNameW
+HeapReAlloc
+DebugBreak
+GetVolumeInformationW
+GetLogicalDrives
+HeapCreate
+VirtualFree
+GetCommandLineW
+GetFullPathNameW
+GetCurrentProcess
+ExpandEnvironmentStringsW
+GetShortPathNameW
+GetDiskFreeSpaceW
+VirtualAlloc
+TerminateProcess
+SetFileTime
+SetErrorMode
+SetEndOfFile
+GetTempPathW
+GetLocaleInfoW
+GetFileAttributesW
+OpenEventW
+GetVersionExW
+GetComputerNameExW
+HeapWalk
+UnmapViewOfFile
+DuplicateHandle
+HeapValidate
+OpenProcess
+SetFileAttributesW
+GetLogicalDriveStringsW
+GetPrivateProfileStringW
+GlobalSize
+GetDiskFreeSpaceExW
+GetVersionExA
+GlobalAlloc
+GlobalFree
+RaiseException
+GetSystemInfo
+GetOverlappedResult
+HeapCompact
+HeapDestroy
+GetWindowsDirectoryW
+GlobalLock
+MoveFileExW
+GetFileSize
+ExitProcess
+CreateProcessW
+CreateProcessA
+GetFileType
+GlobalMemoryStatus
+CopyFileExW
+CreateFileMappingW
+MapViewOfFile
+GetTickCount
+GlobalUnlock
+GetDriveTypeW
+GetExitCodeProcess
+CreateMutexW
+ReleaseMutex
+FlushFileBuffers
+RegQueryValueExW
+TlsSetValue
+RegOpenKeyExW
+CheckTokenMembership
+GetEnvironmentVariableW
+FreeSid
+FormatMessageW
+TlsAlloc
+GetWindowsDirectoryA
+AllocateAndInitializeSid
+GetLocalTime
+LocalFree
+GetCurrentProcessId
+RegCloseKey
+TlsGetValue
+TlsFree
+FormatMessageA
+VirtualQuery
+SetUnhandledExceptionFilter
+SizeofResource
+LockResource
+FindResourceExW
+LoadResource
+GetTokenInformation
+OpenThreadToken
+AddAccessAllowedAce
+GetLengthSid
+InitializeAcl
+InitializeSecurityDescriptor
+OpenProcessToken
+CreateMutexA
+GetVersion
+CreateFileA
+GetCurrentThread
+DeleteFileA
+EqualSid
+CreateFileMappingA
+SetSecurityDescriptorDacl
+GetModuleHandleExA
+GetFileSizeEx
+OutputDebugStringA
+MultiByteToWideChar
+WideCharToMultiByte
+IsDebuggerPresent
+HeapSize
+UnhandledExceptionFilter
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-privateprofile-l1-1-0.dll
+api-ms-win-core-heap-obsolete-l1-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+OLEAUT32.dll
+DeviceIoControl
+_CxxThrowException
+_ftol2
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Panther Engine Module
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+wdscore.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+WDSCORE.DLL
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+2(3@3T3X3\3d3|3
+4(484<4L4P4T4X4`4t4x4|4
+54585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6
+3!3'3,3A3b3g3m3q3v3|3
+4 4%4*40444:4>4D4K4U4Y4c4t4}4
+5(666H6r6
+828;8A8F8L8P8V8Z8`8i8|8
+9.9>9C9n9
+:@:W:q:
+:U;s;
+>R>W>r>
+?!?)?5?>?C?I?S?]?m?}?
+0B0K0
+2(3-3?3]3q3w3:4X4g4p4y4
+455A5M5Y5
+6'6M6T6
+7/7:7?7F7O7T7Z7
+808<8K8T8z8
+8-9i9
+9#:/:;:G:t:
+;;;^;
+<=<u<
+=:=r=
+=$>T>
+?C?f?
+071Z1
+292\2
+3?3R3V3s3
+3(4>4T4k4w4|4
+5.54595?5I5O5X5n5z5
+606:6I6b6
+8"9)9n9
+:k:t:y:
+: ;8;A;F;Q;a;
+=G>f>m>
+?@?|?
+"0+000<0F0
+041R1`1i1n1y1
+2(2w2
+3'3,373A3y3
+4(4-484B4Z4(51565A5K5X5a5f5q5{5
+5"6+606;6E6v6
+7E7l7u7z7
+858R8e8n8s8~8
+8!9/9
+::;N;g;p;v;
+<0<i<r<w<
+=#=/===1>:>?>J>X>r>{>
+;0D0I0T0^0
+111:1?1J1T1y1
+1?2F2K2W2e2
+3&3W3`3e3p3z3
+4%445@5E5P5Z5
+666v6}6
+6B7K7P7\7f7
+788Q8n8
+9"9,9P9Y9^9i9v9
+:$:):4:>:
+;I;Z;
+<I<U<Z<e<y<
+= =*=H=
+>+>0>;>E>
+>#?7?R?a?j?o?z?
+0g0u0
+1#1.1;1x1
+1W2g2p2u2
+565|5
+5.6j6s6y6
+6?7I7U7_7
+8J8O8
+8H9_9
+9!:(:8:A:F:Q:[:
+;#;*;c;|;
+=8=A=F=Q=[=
+>H?|?
+1^1j1o1z1
+1>2J2O2Z2d2
+566B6G6S6p627
+8$8/8;8
+8(9s9x92:e;j;
+<m=v={=
+>#>l?s?
+R1Y1i1p1
+3&3_3
+3)4W4u4
+535;5
+646F6O6T6_6i6
+:d:y:
+:$;-;2;=;K;m;
+<%<.<3<;<F<z<
+=0=9=>=I=T=
+>=>D>\>v>}>
+4^4e4
+61666M6q6
+7#7(7s7z7
+969M9z9
+:3:H:Y:o:t:
+;'<@<V<[<f<
+<,=X=f=p=
+>!>6>;>H>P>`>j>v>
+?/?A?W?\?r?
+0>0O0T0e0s0
+141A1W1\1
+3C3M3d3i3
+4*4@4E4P495D5P5[5g5s5{5
+6O6n6x6
+7"707F7L7S7[7e7z7
+7-898@8F8K8Q8b8
+9/9C9Y9^9r9
+:4:9:v:
+:";V;h;v;
+<C<W<\<w<|<
+<c=!>+>C>H>S>
+?$?)?D?I?T?i?
+E0L0j0v0
+1#1-1B1G1n1x1}1
+2"2'2?2D2Z2|2
+2*393C3Z3_3|3
+4#4?4I4`4e4p4
+4.585O5T5a5
+6*6;6S6X6n6
+7!707:7?7W7\7
+83888s8
+9:9Q9o9
+;3;P;Y;{;
+0!2(2R2
+3m3s3
+3'4.4;4B4b4
+5%5L5R5b5
+6-777N7S7
+8K8h8
+9(9B9R9h9
+:8:X:r:
+;(;H;h;
+<(<H<h<
+=8=X=x=
+>(>H>h>
+?(?B?R?n?
+0"080X0x0
+181R1b1x1
+2(2H2U2g2s2
+4,484m4|4
+4)565J5
+6I6b6o6
+7(717E7N7a7j7
+9:9J9
+;C;V;
+; <2<_<s<
+>,>Y>o>
+1:3Z3
+5X5d5s5
+5G6W6k6{6
+7'7-7V7`7
+878C9
+9&:=:
+?%?*?5?U?v?
+2U3l3
+3N5k5
+7>8W8
+?$?.?I?W?k?
+0(1B1U1d1
+1A2K2g2
+7)7-9
+0n192D2
+798x8
+4*464D4I4_4d4o49557
+=B>i>
+!0#1:3F3T3^3v3
+4!5:5T5l5!6y6
+697P7c7i7
+7D9N9p9|9
+:':-:
+;0<<<E<`<e<p<
+2T3t3
+4[5W6
+687r7
+8U9k9
+93:V:
+= =.=F=K=V=s=
+=N>v>
+?:?v?
+1,1\1l1~1
+2.2:2O2c2}2
+3W3e3q3}3
+4Y4y4
+4S5c5s5
+8.8F8K8X8
+;T<\<h<~<
+=!>/?<?G?N?
+0 0+020
+0G3S3a3k3
+5#6y6
+6M7g7
+7>8I8[8a8s8
+;*;f;
+;Z<g<
+=%>5>G>M>
+?5?D?]?j?
+2Y2f2|2
+4.4K4X4
+4\5k5
+6]7j7
+7[8j8
+9B9L9\9i9
+:d:k:w:
+:";,;Z;h;
+<(<7<=<E<b<v<
+='=7=?=h=o={=
+>2>]>d>
+?@?G?Y?
+0%0E0x0}0
+1-191>1D1L1U1\1b1h1o1u1{1
+2#2.292?2E2K2P2V2n2x2
+363I3R3W3b3k3p3
+3"4]4r4
+5-595
+7A7M7
+8:8[8j8p8
+9$9E9K9n9s9}9
+:!:':-:3:a:g:m:s:y:
+;L<W<g<p<v<
+=O=Z=c=
+> >5>R>X>
+?"?(?I?b?h?
+0D0J0a0j0
+2*222S2;3E3O3Y3c3m3
+444@4L4U4
+5B5N5W5c5v5{5
+6)616c6y6
+6"7)747?7P7\7b7i7q7
+8)828;8D8T8`8j8t8{8
+9!9&9,969=9E9Q9X9`9
+:1:R:c:q:w:
+<-<;<A<
+=-=3=>=O=Z=e=
+?$?3?9?@?H?i?q?
+1%1/1?1I1S1]1
+212=2^2j2
+313;3]3
+4%4+40464H4f4r4~4
+5#5.5=5G5W5w5
+6&616M6Y6e6n6~6
+7!7&7,767>7F7R7Z7b7
+8E8^8~8
+9F9v9
+9!:(:-:E:K:
+:/;|;
+<C<V<e<
+=*=0=j=
+>[>l>t>{>
+?$?W?a?y?
+0<0F0e0o0
+263c3
+4:4P4W4
+5=6|6
+6L7Q7
+7+8C8
+9#9U9c9j9
+>&>c>
+0,1R1
+1#2#4f4m4
+5m6w6
+1W1t1
+2Q2V2`2e2o2t2~2
+3!313i3p3
+434>4
+4W5d5
+7,7A7K7U7
+7]8+9k9
+><>N>
+>g?w?
+5A6h7u7
+718<8J8
+9(9]9d9
+:0;7;<;W;
+=#=w=
+> >]>
+?+?9?K?U?u?
+0 040G0o0v0
+131u1
+1'2c2
+333y3
+5'5N5Y5
+556L6e6p6
+7#7G7Q7x7
+8D8R8
+9%9.959>9F9J9P9T9Z9^9d9h9n9r9x9|9
+:#:':-:4:;:@:H:L:n:z:
+:2;F;
+<'</<
+<%=.=C=R=[=e=
+>T?_?
+'0B0K0l0z0
+1.181
+2%2*2
+4:5F5W5^5
+5p6w6L7X7
+879P9
+:&;U;
+;T<u<
+<D=i=
+>&>;>d>y>
+1!262k2
+2>3U3
+3.4F4o4
+4!5B5q5
+6.6V6
+7$7F7
+9q9~9
+:6:S:
+;e;v;
+; <,<3<?<K<R<^<
+0$0B0\0e0p0y0
+081?1c1t1
+5Q5Z5
+51686
+7-747d7
+7$8+8V8f8
+=S=f=m=s=
+=/>J>g>
+?.?9?A?J?g?
+2I3P3^3{3
+3,404<4\4h4
+505L5P5p5
+6 6@6`6
+7 7@7`7
+8 8@8`8
+9 9@9`9
+: :@:`:
+; ;@;`;
+< <@<`<
+= =@=`=
+> >@>L>l>t>
+? ?(?H?h?t?
+0$0,040<0D0L0X0x0
+101P1p1
+242<2H2h2p2
+303P3p3
+4 4(4H4T4t4
+545@5`5l5
+64686T6X6x6
+7 7@7`7
+808P8\8|8
+9(9H9\9|9
+9,:<:H:P:
+;4;D;P;p;|;
+< <,<4<L<p<x<
+= =@=H=h=
+>,>0>P>X>\>t>x>
+0(0D0h0
+1$1,141<1D1L1T1\1d1l1t1|1
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+?Q5!L bc!G
+,aZgDcPpUffP/qFh1mxuInCa2Ng37MhoNdoLDSH3vT7o=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+20220506220650.89Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:D082-4BFD-EEBA1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192746Z
+230126192746Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:D082-4BFD-EEBA1%0#
+Microsoft Time-Stamp Service0
+MDLNxx
+@dx'\
+.+D8B1Qy
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:D082-4BFD-EEBA1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220507030505Z
+20220508030505Z0t0:
+1,0*0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+YDD*S
+!^G*a

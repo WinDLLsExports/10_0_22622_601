@@ -1,0 +1,2131 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-win32k_31bf3856ad364e35_10.0.22621.601_none_1b34ddf26386e55d\win32k.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    watchdog.sys
+    WIN32KSGD.SYS
+    ext-ms-win-core-win32k-flipmgr-l1-1-1.dll
+    ext-ms-win-core-win32k-surfmgr-l1-1-1.dll
+    ext-ms-win-core-win32k-tokenmgr-l1-1-0.dll
+    ext-ms-win-core-win32k-dxgk-l1-1-0.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+      FFFFF97FFF07F880 Import Address Table
+      FFFFF97FFF080330 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          C1 ExAllocatePoolWithTag
+                         366 IoGetDeviceObjectPointer
+                         B45 ZwLoadDriver
+                         BDB ZwUnloadDriver
+                         492 KeDelayExecutionThread
+                         6BB ObfDereferenceObject
+                         970 RtlQueryRegistryValues
+                         73B PsGetCurrentProcess
+                         579 KeWaitForSingleObject
+                         447 IofCallDriver
+                         2FC IoBuildDeviceIoControlRequest
+                         837 RtlCompareUnicodeStrings
+                         5DB MmLoadSystemImage
+                         7E3 PsSetProcessWin32Process
+                         780 PsGetProcessWin32Process
+                         602 MmPageEntireDriver
+                         4CD KeInitializeEvent
+                         548 KeRemoveSystemServiceTable
+                          EE ExFreePoolWithTag
+                         74D PsGetCurrentProcessSessionId
+                          BD ExAllocatePool2
+                         47A KeAddSystemServiceTable
+                          DD ExEnterCriticalRegionAndAcquireFastMutexUnsafe
+                         326 IoCreateDriver
+                         747 PsEstablishWin32Callouts
+                         13A ExReleaseFastMutexUnsafeAndLeaveCriticalRegion
+                         8F1 RtlInitUnicodeString
+                         7E8 PsSetThreadWin32Thread
+                         793 PsGetThreadWin32Thread
+                         7AA PsIsWin32KFilterEnabled
+                         897 RtlFindExportedRoutineByName
+                         774 PsGetProcessPeb
+                         811 RtlAppendStringToString
+                         79B PsIsCurrentThreadInServerSilo
+                         75F PsGetHostSilo
+                         736 PsAttachSiloToCurrentThread
+                         B92 ZwQueryInformationJobObject
+                         744 PsDetachSiloFromCurrentThread
+                         60C MmUnloadSystemImage
+
+    watchdog.sys
+      FFFFF97FFF07F9C0 Import Address Table
+      FFFFF97FFF080470 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2B SMgrNotifySessionChange
+                          64 WdLogSingleEntry0
+                          65 WdLogSingleEntry1
+
+    WIN32KSGD.SYS
+      FFFFF97FFF07F000 Import Address Table
+      FFFFF97FFF07FAB0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           C SGDSessionUninitialize
+                           B SGDSessionInitialize
+                           8 SGDGetSessionState
+
+    ext-ms-win-core-win32k-flipmgr-l1-1-1.dll
+      FFFFF97FFF07F6F0 Import Address Table
+      FFFFF97FFF0801A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 NtFlipObjectAddContent
+                           1 NtFlipObjectAddPoolBuffer
+                           2 NtFlipObjectConsumerAcquirePresent
+                           3 NtFlipObjectConsumerAdjustUsageReference
+                           4 NtFlipObjectConsumerBeginProcessPresent
+                           5 NtFlipObjectConsumerEndProcessPresent
+                           6 NtFlipObjectConsumerPostMessage
+                           7 NtFlipObjectConsumerQueryBufferInfo
+                           8 NtFlipObjectCreate
+                           9 NtFlipObjectDisconnectEndpoint
+                           A NtFlipObjectEnablePresentStatisticsType
+                           B NtFlipObjectOpen
+                           C NtFlipObjectPresentCancel
+                           D NtFlipObjectQueryBufferAvailableEvent
+                           E NtFlipObjectQueryEndpointConnected
+                           F NtFlipObjectQueryLostEvent
+                          10 NtFlipObjectQueryNextMessageToProducer
+                          11 NtFlipObjectReadNextMessageToProducer
+                          12 NtFlipObjectRemoveContent
+                          13 NtFlipObjectRemovePoolBuffer
+                          14 NtFlipObjectSetContent
+
+    ext-ms-win-core-win32k-surfmgr-l1-1-1.dll
+      FFFFF97FFF07F7A0 Import Address Table
+      FFFFF97FFF080250 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 NtOpenCompositionSurfaceRealizationInfo
+                           3 NtOpenCompositionSurfaceDirtyRegion
+                           2 NtNotifyPresentToCompositionSurface
+                           1 NtCreateCompositionSurfaceHandle
+                           0 NtBindCompositionSurface
+                           5 NtOpenCompositionSurfaceSectionInfo
+                           6 NtQueryCompositionSurfaceBinding
+                           7 NtQueryCompositionSurfaceFrameRate
+                           8 NtQueryCompositionSurfaceHDRMetaData
+                           9 NtQueryCompositionSurfaceRenderingRealization
+                           A NtQueryCompositionSurfaceStatistics
+                           B NtSetCompositionSurfaceAnalogExclusive
+                           C NtSetCompositionSurfaceBufferUsage
+                           D NtSetCompositionSurfaceDirectFlipState
+                           E NtSetCompositionSurfaceIndependentFlipInfo
+                           F NtSetCompositionSurfaceStatistics
+                          10 NtUnBindCompositionSurface
+                          11 NtValidateCompositionSurfaceHandle
+
+    ext-ms-win-core-win32k-tokenmgr-l1-1-0.dll
+      FFFFF97FFF07F838 Import Address Table
+      FFFFF97FFF0802E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 NtTokenManagerConfirmOutstandingAnalogToken
+                           1 NtTokenManagerCreateCompositionTokenHandle
+                           2 NtTokenManagerCreateFlipObjectReturnTokenHandle
+                           3 NtTokenManagerCreateFlipObjectTokenHandle
+                           4 NtTokenManagerGetAnalogExclusiveSurfaceUpdates
+                           5 NtTokenManagerGetAnalogExclusiveTokenEvent
+                           6 NtTokenManagerOpenSectionAndEvents
+                           7 NtTokenManagerThread
+
+    ext-ms-win-core-win32k-dxgk-l1-1-0.dll
+      FFFFF97FFF07F020 Import Address Table
+      FFFFF97FFF07FAD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          D3 NtGdiDdDDIWaitForIdle
+                          D2 NtGdiDdDDIUpdateOverlay
+                          D1 NtGdiDdDDIUpdateGpuVirtualAddress
+                          D0 NtGdiDdDDIUpdateAllocationProperty
+                          CF NtGdiDdDDIUnlock2
+                          CE NtGdiDdDDIUnlock
+                          CD NtGdiDdDDIUnOrderedPresentSwapChain
+                          CC NtGdiDdDDITrimProcessCommitment
+                          CB NtGdiDdDDISubmitWaitForSyncObjectsToHwQueue
+                          CA NtGdiDdDDISubmitSignalSyncObjectsToHwQueue
+                          C9 NtGdiDdDDISubmitCommandToHwQueue
+                          C8 NtGdiDdDDISubmitCommand
+                          D4 NtGdiDdDDIWaitForSynchronizationObject
+                          D5 NtGdiDdDDIWaitForSynchronizationObjectFromCpu
+                          C7 NtGdiDdDDISignalSynchronizationObjectFromGpu2
+                          C6 NtGdiDdDDISignalSynchronizationObjectFromGpu
+                          C5 NtGdiDdDDISignalSynchronizationObjectFromCpu
+                          C4 NtGdiDdDDISignalSynchronizationObject
+                          C3 NtGdiDdDDIShareObjects
+                          C2 NtGdiDdDDISetYieldPercentage
+                          C1 NtGdiDdDDISetVidPnSourceOwner
+                          D6 NtGdiDdDDIWaitForSynchronizationObjectFromGpu
+                          BF NtGdiDdDDISetSyncRefreshCountWaitTarget
+                          BE NtGdiDdDDISetStereoEnabled
+                          BD NtGdiDdDDISetStablePowerState
+                          BC NtGdiDdDDISetQueuedLimit
+                          BB NtGdiDdDDISetProcessSchedulingPriorityClass
+                          BA NtGdiDdDDISetProcessSchedulingPriorityBand
+                          B9 NtGdiDdDDISetProcessDeviceRemovalSupport
+                          B8 NtGdiDdDDISetMonitorColorSpaceTransform
+                          B7 NtGdiDdDDISetMemoryBudgetTarget
+                          B6 NtGdiDdDDISetHwProtectionTeardownRecovery
+                          B5 NtGdiDdDDISetGammaRamp
+                          B4 NtGdiDdDDISetFSEBlock
+                          B3 NtGdiDdDDISetDodIndirectSwapchain
+                          B2 NtGdiDdDDISetDisplayMode
+                          B1 NtGdiDdDDISetContextSchedulingPriority
+                          B0 NtGdiDdDDISetContextInProcessSchedulingPriority
+                          AF NtGdiDdDDISetAllocationPriority
+                          AE NtGdiDdDDIReserveGpuVirtualAddress
+                          AD NtGdiDdDDIRender
+                          AC NtGdiDdDDIRemoveSurfaceFromSwapChain
+                          AB NtGdiDdDDIReleaseSwapChain
+                          AA NtGdiDdDDIReleaseProcessVidPnSourceOwners
+                          A9 NtGdiDdDDIReleaseKeyedMutex2
+                          D7 NtGdiDdDDIWaitForVerticalBlankEvent
+                          D8 NtGdiDdDDIWaitForVerticalBlankEvent2
+                          C0 NtGdiDdDDISetVidPnSourceHwProtection
+                          3F NtGdiDdDDICreateSynchronizationObject
+                          A8 NtGdiDdDDIReleaseKeyedMutex
+                          A7 NtGdiDdDDIReclaimAllocations2
+                          A6 NtGdiDdDDIReclaimAllocations
+                          A5 NtGdiDdDDIQueryVideoMemoryInfo
+                          A4 NtGdiDdDDIQueryVidPnExclusiveOwnership
+                          A3 NtGdiDdDDIQueryStatistics
+                          A2 NtGdiDdDDIQueryResourceInfoFromNtHandle
+                          A1 NtGdiDdDDIQueryResourceInfo
+                          A0 NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+                          9F NtGdiDdDDIQueryProtectedSessionStatus
+                          9E NtGdiDdDDIQueryProtectedSessionInfoFromNtHandle
+                          9D NtGdiDdDDIQueryProcessOfferInfo
+                          9C NtGdiDdDDIQueryFSEBlock
+                          9B NtGdiDdDDIQueryClockCalibration
+                          9A NtGdiDdDDIQueryAllocationResidency
+                          99 NtGdiDdDDIQueryAdapterInfo
+                          98 NtGdiDdDDIPresentRedirected
+                          97 NtGdiDdDDIPresentMultiPlaneOverlay3
+                          96 NtGdiDdDDIPresentMultiPlaneOverlay2
+                          95 NtGdiDdDDIPresentMultiPlaneOverlay
+                          94 NtGdiDdDDIPresent
+                          93 NtGdiDdDDIPollDisplayChildren
+                          92 NtGdiDdDDIOutputDuplReleaseFrame
+                          91 NtGdiDdDDIOutputDuplPresent
+                          90 NtGdiDdDDIOutputDuplGetPointerShapeData
+                          8F NtGdiDdDDIOutputDuplGetMetaData
+                          8E NtGdiDdDDIOutputDuplGetFrameInfo
+                          8D NtGdiDdDDIOpenSynchronizationObject
+                          8C NtGdiDdDDIOpenSyncObjectNtHandleFromName
+                          8B NtGdiDdDDIOpenSyncObjectFromNtHandle2
+                          8A NtGdiDdDDIOpenSyncObjectFromNtHandle
+                          89 NtGdiDdDDIOpenSwapChain
+                          88 NtGdiDdDDIOpenResourceFromNtHandle
+                          87 NtGdiDdDDIOpenResource
+                          86 NtGdiDdDDIOpenProtectedSessionFromNtHandle
+                          85 NtGdiDdDDIOpenNtHandleFromName
+                          84 NtGdiDdDDIOpenKeyedMutexFromNtHandle
+                          83 NtGdiDdDDIOpenKeyedMutex2
+                          82 NtGdiDdDDIOpenKeyedMutex
+                          81 NtGdiDdDDIOpenBundleObjectNtHandleFromName
+                          80 NtGdiDdDDIOpenAdapterFromLuid
+                          7F NtGdiDdDDIOpenAdapterFromHdc
+                          7E NtGdiDdDDIOpenAdapterFromDeviceName
+                          7D NtGdiDdDDIOfferAllocations
+                          7C NtGdiDdDDINetDispStopMiracastDisplayDevice
+                          7B NtGdiDdDDINetDispStartMiracastDisplayDevice
+                          7A NtGdiDdDDINetDispQueryMiracastDisplayDeviceSupport
+                          79 NtGdiDdDDINetDispQueryMiracastDisplayDeviceStatus
+                          78 NtGdiDdDDINetDispGetNextChunkInfo
+                          77 NtGdiDdDDIMarkDeviceAsError
+                           0 NtDxgkCancelPresents
+                           1 NtDxgkCheckSinglePlaneForMultiPlaneOverlaySupport
+                           2 NtDxgkConnectDoorbell
+                           3 NtDxgkCreateDoorbell
+                           4 NtDxgkCreateNativeFence
+                           5 NtDxgkCreateTrackedWorkload
+                           6 NtDxgkDestroyDoorbell
+                           7 NtDxgkDestroyTrackedWorkload
+                           8 NtDxgkDispMgrOperation
+                           9 NtDxgkDisplayPortOperation
+                           A NtDxgkDuplicateHandle
+                           B NtDxgkEnumAdapters3
+                           C NtDxgkEnumProcesses
+                           D NtDxgkGetAvailableTrackedWorkloadIndex
+                           E NtDxgkGetProcessList
+                           F NtDxgkGetProperties
+                          10 NtDxgkGetTrackedWorkloadStatistics
+                          11 NtDxgkNotifyWorkSubmission
+                          12 NtDxgkOpenNativeFenceFromNtHandle
+                          13 NtDxgkOutputDuplPresentToHwQueue
+                          14 NtDxgkPinResources
+                          15 NtDxgkRegisterVailProcess
+                          16 NtDxgkResetTrackedWorkloadStatistics
+                          17 NtDxgkSetProperties
+                          18 NtDxgkSubmitPresentBltToHwQueue
+                          19 NtDxgkSubmitPresentToHwQueue
+                          1A NtDxgkUnpinResources
+                          1B NtDxgkUpdateTrackedWorkload
+                          1C NtDxgkVailConnect
+                          1D NtDxgkVailDisconnect
+                          1E NtDxgkVailPromoteCompositionSurface
+                          1F NtGdiDdDDIAbandonSwapChain
+                          20 NtGdiDdDDIAcquireKeyedMutex
+                          21 NtGdiDdDDIAcquireKeyedMutex2
+                          22 NtGdiDdDDIAcquireSwapChain
+                          23 NtGdiDdDDIAddSurfaceToSwapChain
+                          24 NtGdiDdDDIAdjustFullscreenGamma
+                          25 NtGdiDdDDICacheHybridQueryValue
+                          26 NtGdiDdDDIChangeVideoMemoryReservation
+                          27 NtGdiDdDDICheckExclusiveOwnership
+                          28 NtGdiDdDDICheckMonitorPowerState
+                          29 NtGdiDdDDICheckMultiPlaneOverlaySupport
+                          2A NtGdiDdDDICheckMultiPlaneOverlaySupport2
+                          2B NtGdiDdDDICheckMultiPlaneOverlaySupport3
+                          2C NtGdiDdDDICheckOcclusion
+                          2D NtGdiDdDDICheckSharedResourceAccess
+                          2E NtGdiDdDDICheckVidPnExclusiveOwnership
+                          2F NtGdiDdDDICloseAdapter
+                          30 NtGdiDdDDIConfigureSharedResource
+                          31 NtGdiDdDDICreateAllocation
+                          32 NtGdiDdDDICreateBundleObject
+                          33 NtGdiDdDDICreateContext
+                          34 NtGdiDdDDICreateContextVirtual
+                          35 NtGdiDdDDICreateDevice
+                          36 NtGdiDdDDICreateHwContext
+                          37 NtGdiDdDDICreateHwQueue
+                          38 NtGdiDdDDICreateKeyedMutex
+                          39 NtGdiDdDDICreateKeyedMutex2
+                          3A NtGdiDdDDICreateOutputDupl
+                          3B NtGdiDdDDICreateOverlay
+                          3C NtGdiDdDDICreatePagingQueue
+                          3D NtGdiDdDDICreateProtectedSession
+                          3E NtGdiDdDDICreateSwapChain
+                          76 NtGdiDdDDIMapGpuVirtualAddress
+                          40 NtGdiDdDDIDDisplayEnum
+                          41 NtGdiDdDDIDestroyAllocation
+                          42 NtGdiDdDDIDestroyAllocation2
+                          43 NtGdiDdDDIDestroyContext
+                          44 NtGdiDdDDIDestroyDevice
+                          45 NtGdiDdDDIDestroyHwContext
+                          46 NtGdiDdDDIDestroyHwQueue
+                          47 NtGdiDdDDIDestroyKeyedMutex
+                          48 NtGdiDdDDIDestroyOutputDupl
+                          49 NtGdiDdDDIDestroyOverlay
+                          4A NtGdiDdDDIDestroyPagingQueue
+                          4B NtGdiDdDDIDestroyProtectedSession
+                          4C NtGdiDdDDIDestroySynchronizationObject
+                          4D NtGdiDdDDIDispMgrCreate
+                          4E NtGdiDdDDIDispMgrSourceOperation
+                          4F NtGdiDdDDIDispMgrTargetOperation
+                          50 NtGdiDdDDIEnumAdapters
+                          51 NtGdiDdDDIEnumAdapters2
+                          52 NtGdiDdDDIEscape
+                          53 NtGdiDdDDIEvict
+                          54 NtGdiDdDDIExtractBundleObject
+                          55 NtGdiDdDDIFlipOverlay
+                          56 NtGdiDdDDIFlushHeapTransitions
+                          57 NtGdiDdDDIFreeGpuVirtualAddress
+                          58 NtGdiDdDDIGetAllocationPriority
+                          59 NtGdiDdDDIGetCachedHybridQueryValue
+                          5A NtGdiDdDDIGetContextInProcessSchedulingPriority
+                          5B NtGdiDdDDIGetContextSchedulingPriority
+                          5C NtGdiDdDDIGetDWMVerticalBlankEvent
+                          5D NtGdiDdDDIGetDeviceState
+                          5E NtGdiDdDDIGetDisplayModeList
+                          5F NtGdiDdDDIGetMemoryBudgetTarget
+                          60 NtGdiDdDDIGetMultiPlaneOverlayCaps
+                          61 NtGdiDdDDIGetMultisampleMethodList
+                          62 NtGdiDdDDIGetOverlayState
+                          63 NtGdiDdDDIGetPostCompositionCaps
+                          64 NtGdiDdDDIGetPresentHistory
+                          65 NtGdiDdDDIGetProcessDeviceRemovalSupport
+                          66 NtGdiDdDDIGetProcessSchedulingPriorityBand
+                          67 NtGdiDdDDIGetProcessSchedulingPriorityClass
+                          68 NtGdiDdDDIGetResourcePresentPrivateDriverData
+                          69 NtGdiDdDDIGetRuntimeData
+                          6A NtGdiDdDDIGetScanLine
+                          6B NtGdiDdDDIGetSetSwapChainMetadata
+                          6C NtGdiDdDDIGetSharedPrimaryHandle
+                          6D NtGdiDdDDIGetSharedResourceAdapterLuid
+                          6E NtGdiDdDDIGetSharedResourceAdapterLuidFlipManager
+                          6F NtGdiDdDDIGetSwapChainSurfacePhysicalAddress
+                          70 NtGdiDdDDIGetYieldPercentage
+                          71 NtGdiDdDDIInvalidateActiveVidPn
+                          72 NtGdiDdDDIInvalidateCache
+                          73 NtGdiDdDDILock
+                          74 NtGdiDdDDILock2
+                          75 NtGdiDdDDIMakeResident
+
+  Section contains the following exports for WIN32K.SYS
+
+    00000000 characteristics
+    E767A8E8 time date stamp
+        0.00 version
+           1 ordinal base
+        1727 number of functions
+        1727 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001B90 BRUSHOBJ_hGetColorTransform
+          2    1 00001BC0 BRUSHOBJ_pvAllocRbrush
+          3    2 00001BF0 BRUSHOBJ_pvGetRbrush
+          4    3 00001C20 BRUSHOBJ_ulGetBrushColor
+          5    4 00001C50 CLIPOBJ_GetRgn
+          6    5 00003250 CLIPOBJ_bEnum
+          7    6 00003280 CLIPOBJ_cEnumStart
+          8    7 00001C80 CLIPOBJ_ppoGetPath
+          9    8 000016E0 DxDdCleanupDxGraphics
+         10    9 000013D0 DxDdGetDxgkWin32kInterface
+         11    A 000013F0 DxDdIsTearDownLddmSpriteDisabled
+         12    B 00001770 DxDdProcessCallout
+         13    C 000017F0 DxDdThreadCallout
+         14    D 000018D0 DxGetGpuUsageStatistics
+         15    E 00001880 DxGetProcessInterferenceCount
+         16    F 00001840 DxNotifyProcessFreezeCallout
+         17   10 00001910 DxNotifyProcessThawCallout
+         18   11 00003A30 EngAcquireFastMutex
+         19   12 00003AC0 EngAcquireSemaphore
+         20   13 00003B20 EngAcquireSemaphoreNoWait
+         21   14 00003AF0 EngAcquireSemaphoreShared
+         22   15 00003B50 EngAcquireSemaphoreSharedNoWait
+         23   16 00004560 EngAllocMem
+         24   17 00001D10 EngAllocPrivateUserMem
+         25   18 00003B80 EngAllocSectionMem
+         26   19 000045C0 EngAllocUserMem
+         27   1A 000032C0 EngAlphaBlend
+         28   1B 00003BB0 EngAssociateSurface
+         29   1C 00003310 EngBitBlt
+         30   1D          EngBugCheckEx (forwarded to NTOSKRNL.KeBugCheckEx)
+         31   1E 00003420 EngCTGetCurrentGamma
+         32   1F 000033F0 EngCTGetGammaTable
+         33   20 00001D40 EngCheckAbort
+         34   21 00001D70 EngClearEvent
+         35   22 00003D40 EngCombineRgn
+         36   23 00001DD0 EngComputeGlyphSet
+         37   24 00001E00 EngControlSprites
+         38   25 000033B0 EngCopyBits
+         39   26 00003D70 EngCopyRgn
+         40   27 00003BE0 EngCreateBitmap
+         41   28 00003C10 EngCreateClip
+         42   29 00003C40 EngCreateDeviceBitmap
+         43   2A 00003C70 EngCreateDeviceSurface
+         44   2B 00001E30 EngCreateDriverObj
+         45   2C 00001E60 EngCreateEvent
+         46   2D 000039D0 EngCreateFastMutex
+         47   2E 00003CA0 EngCreatePalette
+         48   2F 00001E90 EngCreatePath
+         49   30 00003CE0 EngCreateRectRgn
+         50   31 00003F80 EngCreateRedirectionDeviceBitmap
+         51   32 00003FB0 EngCreateSemaphore
+         52   33 00001EC0 EngCreateWnd
+         53   34          EngDebugBreak (forwarded to NTOSKRNL.DbgBreakPoint)
+         54   35 00003FE0 EngDebugPrint
+         55   36 00004010 EngDeleteClip
+         56   37 00004040 EngDeleteDriverObj
+         57   38 00001EF0 EngDeleteEvent
+         58   39 00003A00 EngDeleteFastMutex
+         59   3A 00001F20 EngDeleteFile
+         60   3B 00004070 EngDeletePalette
+         61   3C 00001F50 EngDeletePath
+         62   3D 00003D10 EngDeleteRgn
+         63   3E 000040A0 EngDeleteSafeSemaphore
+         64   3F 000040D0 EngDeleteSemaphore
+         65   40 00004100 EngDeleteSurface
+         66   41 00001F80 EngDeleteWnd
+         67   42 00004130 EngDeviceIoControl
+         68   43 00001FB0 EngDitherColor
+         69   44 00001CE0 EngDxIoctl
+         70   45 00002140 EngEnumForms
+         71   46 00003E90 EngEqualRgn
+         72   47 00002180 EngEraseSurface
+         73   48 000021B0 EngFileIoControl
+         74   49 00002200 EngFileWrite
+         75   4A 00003450 EngFillPath
+         76   4B 00002260 EngFindImageProcAddress
+         77   4C 000022F0 EngFindResource
+         78   4D 00002320 EngFntCacheAlloc
+         79   4E 00002350 EngFntCacheFault
+         80   4F 00002380 EngFntCacheLookUp
+         81   50 00004590 EngFreeMem
+         82   51 000023B0 EngFreeModule
+         83   52 00001CB0 EngFreePrivateUserMem
+         84   53 00004180 EngFreeSectionMem
+         85   54 000045F0 EngFreeUserMem
+         86   55 000023E0 EngGetCurrentCodePage
+         87   56          EngGetCurrentProcessId (forwarded to NTOSKRNL.PsGetCurrentProcessId)
+         88   57          EngGetCurrentThreadId (forwarded to NTOSKRNL.PsGetCurrentThreadId)
+         89   58 00002410 EngGetDriverName
+         90   59 00002440 EngGetFileChangeTime
+         91   5A 00002470 EngGetFilePath
+         92   5B 000020A0 EngGetForm
+         93   5C 000041E0 EngGetLastError
+         94   5D 00002110 EngGetPrinter
+         95   5E 00002020 EngGetPrinterData
+         96   5F 000024A0 EngGetPrinterDataFileName
+         97   60 00001FE0 EngGetPrinterDriver
+         98   61 00004210 EngGetProcessHandle
+         99   62 00003F20 EngGetRgnBox
+        100   63 00003EC0 EngGetRgnData
+        101   64 000024D0 EngGetTickCount
+        102   65 00002500 EngGetType1FontList
+        103   66 000034A0 EngGradientFill
+        104   67 00002540 EngHangNotification
+        105   68 00004240 EngInitializeSafeSemaphore
+        106   69 00003DA0 EngIntersectRgn
+        107   6A 00003540 EngIsCddDeviceBitmap
+        108   6B 00004270 EngIsSemaphoreOwned
+        109   6C 000042A0 EngIsSemaphoreOwnedByCurrentThread
+        110   6D 000042D0 EngIsSemaphoreSharedByCurrentThread
+        111   6E 000031D0 EngLineTo
+        112   6F 00002230 EngLoadImage
+        113   70 00002570 EngLoadModule
+        114   71 000025A0 EngLoadModuleForWrite
+        115   72 000025D0 EngLockDirectDrawSurface
+        116   73 00004300 EngLockDriverObj
+        117   74 00004330 EngLockSurface
+        118   75 00002600 EngLpkInstalled
+        119   76 00002630 EngMapEvent
+        120   77 00002660 EngMapFile
+        121   78 00002690 EngMapFontFile
+        122   79 000026C0 EngMapFontFileFD
+        123   7A 000022C0 EngMapModule
+        124   7B 00004360 EngMapSection
+        125   7C 000026F0 EngMarkBandingSurface
+        126   7D 00004390 EngModifySurface
+        127   7E 00002720 EngMovePointer
+        128   7F 00004620 EngMulDiv
+        129   80 00004400 EngMultiByteToUnicodeN
+        130   81 00002750 EngMultiByteToWideChar
+        131   82 00002790 EngNineGrid
+        132   83 00003F50 EngOffsetRgn
+        133   84 00002820 EngPaint
+        134   85 00003570 EngPlgBlt
+        135   86 00004430 EngProbeForRead
+        136   87          EngProbeForReadAndWrite (forwarded to NTOSKRNL.ProbeForWrite)
+        137   88 00002850 EngQueryDeviceAttribute
+        138   89 00002890 EngQueryLocalTime
+        139   8A 000028C0 EngQueryPalette
+        140   8B 00004460 EngQueryPerformanceCounter
+        141   8C 00004490 EngQueryPerformanceFrequency
+        142   8D 000044C0 EngQuerySystemAttribute
+        143   8E 000044F0 EngQueryW32kCddInterface
+        144   8F 00001DA0 EngReadStateEvent
+        145   90 00003E60 EngRectInRgn
+        146   91 00003A60 EngReleaseFastMutex
+        147   92 00004530 EngReleaseSemaphore
+        148   93 00004860 EngRestoreFloatingPointState
+        149   94 00004890 EngSaveFloatingPointState
+        150   95 00004650 EngSecureMem
+        151   96 000028F0 EngSetEvent
+        152   97 000041B0 EngSetLastError
+        153   98 00002920 EngSetPointerShape
+        154   99 000029C0 EngSetPointerTag
+        155   9A 00002060 EngSetPrinterData
+        156   9B 00003EF0 EngSetRectRgn
+        157   9C 000029F0 EngSort
+        158   9D 00003610 EngStretchBlt
+        159   9E 000036B0 EngStretchBltROP
+        160   9F 00003750 EngStrokeAndFillPath
+        161   A0 000037F0 EngStrokePath
+        162   A1 00003DD0 EngSubtractRgn
+        163   A2 00003860 EngTextOut
+        164   A3 00003900 EngTransparentBlt
+        165   A4 00004680 EngUnicodeToMultiByteN
+        166   A5 00003E00 EngUnionRgn
+        167   A6 00002290 EngUnloadImage
+        168   A7 00002A20 EngUnlockDirectDrawSurface
+        169   A8 000046B0 EngUnlockDriverObj
+        170   A9 000046E0 EngUnlockSurface
+        171   AA 00002A50 EngUnmapEvent
+        172   AB 00002A80 EngUnmapFile
+        173   AC 00002AB0 EngUnmapFontFile
+        174   AD 00002AE0 EngUnmapFontFileFD
+        175   AE          EngUnsecureMem (forwarded to NTOSKRNL.MmUnsecureVirtualMemory)
+        176   AF 00003A90 EngUpdateDeviceSurface
+        177   B0 00002B10 EngWaitForSingleObject
+        178   B1 00002B40 EngWideCharToMultiByte
+        179   B2 000020E0 EngWritePrinter
+        180   B3 00003E30 EngXorRgn
+        181   B4 00002B80 FONTOBJ_cGetAllGlyphHandles
+        182   B5 00002BB0 FONTOBJ_cGetGlyphs
+        183   B6 00002C70 FONTOBJ_pQueryGlyphAttrs
+        184   B7 00002BE0 FONTOBJ_pfdg
+        185   B8 00002C10 FONTOBJ_pifi
+        186   B9 00002C40 FONTOBJ_pjOpenTypeTablePointer
+        187   BA 00002CA0 FONTOBJ_pvTrueTypeFontFile
+        188   BB 00002CD0 FONTOBJ_pwszFontFilePaths
+        189   BC 00002D00 FONTOBJ_pxoGetXform
+        190   BD 00002D30 FONTOBJ_vGetInfo
+        191   BE 00002D90 HT_ComputeRGBGammaTable
+        192   BF 00002DD0 HT_Get8BPPFormatPalette
+        193   C0 00002E00 HT_Get8BPPMaskPalette
+        194   C1 00002D60 HeapVidMemAllocAligned
+        195   C2 00001420 InitializeGraphicsInfrastructure
+        196   C3 00001010 IsSysEntryApiExtSupported
+        197   C4 00001390 NtUserInitialize
+        198   C5 00003970 PALOBJ_cGetColors
+        199   C6 00004710 PATHOBJ_bCloseFigure
+        200   C7 00004740 PATHOBJ_bEnum
+        201   C8 00002E40 PATHOBJ_bEnumClipLines
+        202   C9 00004770 PATHOBJ_bMoveTo
+        203   CA 000047A0 PATHOBJ_bPolyBezierTo
+        204   CB 000047D0 PATHOBJ_bPolyLineTo
+        205   CC 00004800 PATHOBJ_vEnumStart
+        206   CD 00002E70 PATHOBJ_vEnumStartClipLines
+        207   CE 00004830 PATHOBJ_vGetBounds
+        208   CF          RtlAnsiCharToUnicodeChar (forwarded to NTOSKRNL.RtlAnsiCharToUnicodeChar)
+        209   D0          RtlCaptureContext (forwarded to NTOSKRNL.RtlCaptureContext)
+        210   D1          RtlCopyMemory (forwarded to NTOSKRNL.RtlCopyMemory)
+        211   D2          RtlCopyMemoryNonTemporal (forwarded to NTOSKRNL.RtlCopyMemoryNonTemporal)
+        212   D3          RtlFillMemory (forwarded to NTOSKRNL.RtlFillMemory)
+        213   D4          RtlLookupFunctionEntry (forwarded to NTOSKRNL.RtlLookupFunctionEntry)
+        214   D5          RtlMoveMemory (forwarded to NTOSKRNL.RtlMoveMemory)
+        215   D6          RtlMultiByteToUnicodeN (forwarded to NTOSKRNL.RtlMultiByteToUnicodeN)
+        216   D7          RtlPcToFileHeader (forwarded to NTOSKRNL.RtlPcToFileHeader)
+        217   D8          RtlRaiseException (forwarded to NTOSKRNL.RtlRaiseException)
+        218   D9          RtlRestoreContext (forwarded to NTOSKRNL.RtlRestoreContext)
+        219   DA          RtlUnicodeToMultiByteN (forwarded to NTOSKRNL.RtlUnicodeToMultiByteN)
+        220   DB          RtlUnicodeToMultiByteSize (forwarded to NTOSKRNL.RtlUnicodeToMultiByteSize)
+        221   DC          RtlUnwind (forwarded to NTOSKRNL.RtlUnwind)
+        222   DD          RtlUnwindEx (forwarded to NTOSKRNL.RtlUnwindEx)
+        223   DE          RtlUpcaseUnicodeChar (forwarded to NTOSKRNL.RtlUpcaseUnicodeChar)
+        224   DF          RtlUpcaseUnicodeToMultiByteN (forwarded to NTOSKRNL.RtlUpcaseUnicodeToMultiByteN)
+        225   E0          RtlVirtualUnwind (forwarded to NTOSKRNL.RtlVirtualUnwind)
+        226   E1          RtlZeroMemory (forwarded to NTOSKRNL.RtlZeroMemory)
+        227   E2 00002EA0 STROBJ_bEnum
+        228   E3 00002ED0 STROBJ_bEnumPositionsOnly
+        229   E4 00002F00 STROBJ_bGetAdvanceWidths
+        230   E5 00002F30 STROBJ_dwGetCodePage
+        231   E6 00002F60 STROBJ_fxBreakExtra
+        232   E7 00002F90 STROBJ_fxCharacterExtra
+        233   E8 00002FC0 STROBJ_vEnumStart
+        234   E9 00001020 SysEntryGetDispatchTableValues
+        235   EA 00001060 SysEntryGetDispatchTableValuesFilter
+        236   EB 00001050 SysEntryGetW32pArgumentTable
+        237   EC 00001090 SysEntryGetW32pArgumentTableFilter
+        238   ED 00001040 SysEntryGetW32pServiceLimit
+        239   EE 00001080 SysEntryGetW32pServiceLimitFilter
+        240   EF 00001030 SysEntryGetW32pServiceTable
+        241   F0 00001070 SysEntryGetW32pServiceTableFilter
+        242   F1 00001230 SysEntryPsEstablishWin32Callouts
+        243   F2 000012C0 SysEntryRegisterWin32kDriverUnload
+        244   F3 00001290 SysEntrySMgrNotifySessionChange
+        245   F4 00002FF0 VidMemFree
+        246   F5 00084C64 W32pArgumentTable
+        247   F6 00086E84 W32pArgumentTableFilter
+        248   F7 00084C60 W32pServiceLimit
+        249   F8 00086E80 W32pServiceLimitFilter
+        250   F9 00083000 W32pServiceTable
+        251   FA 00085220 W32pServiceTableFilter
+        252   FB 00003020 WNDOBJ_bEnum
+        253   FC 00003050 WNDOBJ_cEnumStart
+        254   FD 00003080 WNDOBJ_vSetConsumer
+        255   FE 000030B0 XFORMOBJ_bApplyXform
+        256   FF 000030E0 XFORMOBJ_iGetFloatObjXform
+        257  100 00003110 XFORMOBJ_iGetXform
+        258  101 00003140 XLATEOBJ_cGetPalette
+        259  102 00003170 XLATEOBJ_hGetColorTransform
+        260  103 000039A0 XLATEOBJ_iXlate
+        261  104 000031A0 XLATEOBJ_piVector
+        262  105          __C_specific_handler (forwarded to NTOSKRNL.__C_specific_handler)
+        263  106          __chkstk (forwarded to NTOSKRNL.__chkstk)
+        264  107 00014680 __win32kstub_NtBindCompositionSurface
+        265  108 00014690 __win32kstub_NtCloseCompositionInputSink
+        266  109 000146A0 __win32kstub_NtCompositionInputThread
+        267  10A 000146B0 __win32kstub_NtCompositionSetDropTarget
+        268  10B 000146C0 __win32kstub_NtCompositorNotifyExitWindows
+        269  10C 000146D0 __win32kstub_NtConfigureInputSpace
+        270  10D 000146E0 __win32kstub_NtCreateCompositionInputSink
+        271  10E 000146F0 __win32kstub_NtCreateCompositionSurfaceHandle
+        272  10F 00014700 __win32kstub_NtCreateImplicitCompositionInputSink
+        273  110 00014710 __win32kstub_NtDCompositionAddCrossDeviceVisualChild
+        274  111 00014720 __win32kstub_NtDCompositionBeginFrame
+        275  112 00014730 __win32kstub_NtDCompositionBoostCompositorClock
+        276  113 00014740 __win32kstub_NtDCompositionCommitChannel
+        277  114 00014750 __win32kstub_NtDCompositionCommitSynchronizationObject
+        278  115 00014760 __win32kstub_NtDCompositionConfirmFrame
+        279  116 00014770 __win32kstub_NtDCompositionConnectPipe
+        280  117 00014780 __win32kstub_NtDCompositionCreateAndBindSharedSection
+        281  118 00014790 __win32kstub_NtDCompositionCreateChannel
+        282  119 000147A0 __win32kstub_NtDCompositionCreateConnection
+        283  11A 000147B0 __win32kstub_NtDCompositionCreateDwmChannel
+        284  11B 000147C0 __win32kstub_NtDCompositionCreateSharedResourceHandle
+        285  11C 000147D0 __win32kstub_NtDCompositionCreateSynchronizationObject
+        286  11D 000147E0 __win32kstub_NtDCompositionDestroyChannel
+        287  11E 000147F0 __win32kstub_NtDCompositionDestroyConnection
+        288  11F 00014800 __win32kstub_NtDCompositionDuplicateHandleToProcess
+        289  120 00014810 __win32kstub_NtDCompositionDuplicateSwapchainHandleToDwm
+        290  121 00014820 __win32kstub_NtDCompositionEnableMMCSS
+        291  122 00014830 __win32kstub_NtDCompositionGetBatchId
+        292  123 00014840 __win32kstub_NtDCompositionGetChannels
+        293  124 00014850 __win32kstub_NtDCompositionGetConnectionBatch
+        294  125 00014860 __win32kstub_NtDCompositionGetDeletedResources
+        295  126 00014870 __win32kstub_NtDCompositionGetFrameId
+        296  127 00014880 __win32kstub_NtDCompositionGetFrameIdFromBatchId
+        297  128 00014890 __win32kstub_NtDCompositionGetFrameLegacyTokens
+        298  129 000148A0 __win32kstub_NtDCompositionGetFrameStatistics
+        299  12A 000148B0 __win32kstub_NtDCompositionGetFrameSurfaceUpdates
+        300  12B 000148C0 __win32kstub_NtDCompositionGetMaterialProperty
+        301  12C 000148D0 __win32kstub_NtDCompositionGetStatistics
+        302  12D 000148E0 __win32kstub_NtDCompositionGetTargetStatistics
+        303  12E 000148F0 __win32kstub_NtDCompositionNotifySuperWetInkWork
+        304  12F 00014900 __win32kstub_NtDCompositionProcessChannelBatchBuffer
+        305  130 00014910 __win32kstub_NtDCompositionReferenceSharedResourceOnDwmChannel
+        306  131 00014920 __win32kstub_NtDCompositionRegisterThumbnailVisual
+        307  132 00014930 __win32kstub_NtDCompositionRegisterVirtualDesktopVisual
+        308  133 00014940 __win32kstub_NtDCompositionReleaseAllResources
+        309  134 00014950 __win32kstub_NtDCompositionRemoveCrossDeviceVisualChild
+        310  135 00014960 __win32kstub_NtDCompositionSetBlurredWallpaperSurface
+        311  136 00014970 __win32kstub_NtDCompositionSetChannelCommitCompletionEvent
+        312  137 00014980 __win32kstub_NtDCompositionSetChannelConnectionId
+        313  138 00014990 __win32kstub_NtDCompositionSetChildRootVisual
+        314  139 000149A0 __win32kstub_NtDCompositionSetDebugCounter
+        315  13A 000149B0 __win32kstub_NtDCompositionSetMaterialProperty
+        316  13B 000149C0 __win32kstub_NtDCompositionSubmitDWMBatch
+        317  13C 000149D0 __win32kstub_NtDCompositionSuspendAnimations
+        318  13D 000149E0 __win32kstub_NtDCompositionSynchronize
+        319  13E 000149F0 __win32kstub_NtDCompositionTelemetrySetApplicationId
+        320  13F 00014A00 __win32kstub_NtDCompositionUpdatePointerCapture
+        321  140 00014A10 __win32kstub_NtDCompositionWaitForChannel
+        322  141 00014A20 __win32kstub_NtDCompositionWaitForCompositorClock
+        323  142 00014A30 __win32kstub_NtDesktopCaptureBits
+        324  143 00014A40 __win32kstub_NtDuplicateCompositionInputSink
+        325  144 00014A50 __win32kstub_NtDxgkCancelPresents
+        326  145 00014A60 __win32kstub_NtDxgkCheckSinglePlaneForMultiPlaneOverlaySupport
+        327  146 00014A70 __win32kstub_NtDxgkConnectDoorbell
+        328  147 00014A80 __win32kstub_NtDxgkCreateDoorbell
+        329  148 00014A90 __win32kstub_NtDxgkCreateNativeFence
+        330  149 00014AA0 __win32kstub_NtDxgkCreateTrackedWorkload
+        331  14A 00014AB0 __win32kstub_NtDxgkDestroyDoorbell
+        332  14B 00014AC0 __win32kstub_NtDxgkDestroyTrackedWorkload
+        333  14C 00014AD0 __win32kstub_NtDxgkDispMgrOperation
+        334  14D 00014AE0 __win32kstub_NtDxgkDisplayPortOperation
+        335  14E 00014AF0 __win32kstub_NtDxgkDuplicateHandle
+        336  14F 00014B00 __win32kstub_NtDxgkEnumAdapters3
+        337  150 00014B10 __win32kstub_NtDxgkEnumProcesses
+        338  151 00014B20 __win32kstub_NtDxgkGetAvailableTrackedWorkloadIndex
+        339  152 00014B30 __win32kstub_NtDxgkGetProcessList
+        340  153 00014B40 __win32kstub_NtDxgkGetProperties
+        341  154 00014B50 __win32kstub_NtDxgkGetTrackedWorkloadStatistics
+        342  155 00014B60 __win32kstub_NtDxgkNotifyWorkSubmission
+        343  156 00014B70 __win32kstub_NtDxgkOpenNativeFenceFromNtHandle
+        344  157 00014B80 __win32kstub_NtDxgkOutputDuplPresentToHwQueue
+        345  158 00014B90 __win32kstub_NtDxgkPinResources
+        346  159 00014BA0 __win32kstub_NtDxgkRegisterVailProcess
+        347  15A 00014BB0 __win32kstub_NtDxgkResetTrackedWorkloadStatistics
+        348  15B 00014BC0 __win32kstub_NtDxgkSetProperties
+        349  15C 00014BD0 __win32kstub_NtDxgkSubmitPresentBltToHwQueue
+        350  15D 00014BE0 __win32kstub_NtDxgkSubmitPresentToHwQueue
+        351  15E 00014BF0 __win32kstub_NtDxgkUnpinResources
+        352  15F 00014C00 __win32kstub_NtDxgkUpdateTrackedWorkload
+        353  160 00014C10 __win32kstub_NtDxgkVailConnect
+        354  161 00014C20 __win32kstub_NtDxgkVailDisconnect
+        355  162 00014C30 __win32kstub_NtDxgkVailPromoteCompositionSurface
+        356  163 00014C40 __win32kstub_NtEnableOneCoreTransformMode
+        357  164 00014C50 __win32kstub_NtFlipObjectAddContent
+        358  165 00014C60 __win32kstub_NtFlipObjectAddPoolBuffer
+        359  166 00014C70 __win32kstub_NtFlipObjectConsumerAcquirePresent
+        360  167 00014C80 __win32kstub_NtFlipObjectConsumerAdjustUsageReference
+        361  168 00014C90 __win32kstub_NtFlipObjectConsumerBeginProcessPresent
+        362  169 00014CA0 __win32kstub_NtFlipObjectConsumerEndProcessPresent
+        363  16A 00014CB0 __win32kstub_NtFlipObjectConsumerPostMessage
+        364  16B 00014CC0 __win32kstub_NtFlipObjectConsumerQueryBufferInfo
+        365  16C 00014CD0 __win32kstub_NtFlipObjectCreate
+        366  16D 00014CE0 __win32kstub_NtFlipObjectDisconnectEndpoint
+        367  16E 00014CF0 __win32kstub_NtFlipObjectEnablePresentStatisticsType
+        368  16F 00014D00 __win32kstub_NtFlipObjectOpen
+        369  170 00014D10 __win32kstub_NtFlipObjectPresentCancel
+        370  171 00014D20 __win32kstub_NtFlipObjectQueryBufferAvailableEvent
+        371  172 00014D30 __win32kstub_NtFlipObjectQueryEndpointConnected
+        372  173 00014D40 __win32kstub_NtFlipObjectQueryLostEvent
+        373  174 00014D50 __win32kstub_NtFlipObjectQueryNextMessageToProducer
+        374  175 00014D60 __win32kstub_NtFlipObjectReadNextMessageToProducer
+        375  176 00014D70 __win32kstub_NtFlipObjectRemoveContent
+        376  177 00014D80 __win32kstub_NtFlipObjectRemovePoolBuffer
+        377  178 00014D90 __win32kstub_NtFlipObjectSetContent
+        378  179 00014DA0 __win32kstub_NtGdiAbortDoc
+        379  17A 00014DB0 __win32kstub_NtGdiAbortPath
+        380  17B 00014DC0 __win32kstub_NtGdiAddEmbFontToDC
+        381  17C 00014590 __win32kstub_NtGdiAddFontMemResourceEx
+        382  17D 00014DD0 __win32kstub_NtGdiAddFontResourceW
+        383  17E 00014DE0 __win32kstub_NtGdiAddInitialFonts
+        384  17F 00014DF0 __win32kstub_NtGdiAddRemoteFontToDC
+        385  180 00014E00 __win32kstub_NtGdiAddRemoteMMInstanceToDC
+        386  181 00013D20 __win32kstub_NtGdiAlphaBlend
+        387  182 00014E10 __win32kstub_NtGdiAngleArc
+        388  183 00014E20 __win32kstub_NtGdiAnyLinkedFonts
+        389  184 00014E30 __win32kstub_NtGdiArcInternal
+        390  185 00014E40 __win32kstub_NtGdiBRUSHOBJ_DeleteRbrush
+        391  186 00014E50 __win32kstub_NtGdiBRUSHOBJ_hGetColorTransform
+        392  187 00014E60 __win32kstub_NtGdiBRUSHOBJ_pvAllocRbrush
+        393  188 00014E70 __win32kstub_NtGdiBRUSHOBJ_pvGetRbrush
+        394  189 00014E80 __win32kstub_NtGdiBRUSHOBJ_ulGetBrushColor
+        395  18A 00014E90 __win32kstub_NtGdiBeginGdiRendering
+        396  18B 00014530 __win32kstub_NtGdiBeginPath
+        397  18C 00013630 __win32kstub_NtGdiBitBlt
+        398  18D 00014EA0 __win32kstub_NtGdiCLIPOBJ_bEnum
+        399  18E 00014EB0 __win32kstub_NtGdiCLIPOBJ_cEnumStart
+        400  18F 00014EC0 __win32kstub_NtGdiCLIPOBJ_ppoGetPath
+        401  190 00014ED0 __win32kstub_NtGdiCancelDC
+        402  191 00014EE0 __win32kstub_NtGdiChangeGhostFont
+        403  192 00014EF0 __win32kstub_NtGdiCheckBitmapBits
+        404  193 00014F00 __win32kstub_NtGdiClearBitmapAttributes
+        405  194 00014F10 __win32kstub_NtGdiClearBrushAttributes
+        406  195 000144A0 __win32kstub_NtGdiCloseFigure
+        407  196 00014F20 __win32kstub_NtGdiColorCorrectPalette
+        408  197 000138C0 __win32kstub_NtGdiCombineRgn
+        409  198 000143A0 __win32kstub_NtGdiCombineTransform
+        410  199 00013E00 __win32kstub_NtGdiComputeXformCoefficients
+        411  19A 00014F30 __win32kstub_NtGdiConfigureOPMProtectedOutput
+        412  19B 00014F40 __win32kstub_NtGdiConvertMetafileRect
+        413  19C 00013C30 __win32kstub_NtGdiCreateBitmap
+        414  19D 00014F50 __win32kstub_NtGdiCreateBitmapFromDxSurface
+        415  19E 00014F60 __win32kstub_NtGdiCreateBitmapFromDxSurface2
+        416  19F 00014090 __win32kstub_NtGdiCreateClientObj
+        417  1A0 00014650 __win32kstub_NtGdiCreateColorSpace
+        418  1A1 00014F70 __win32kstub_NtGdiCreateColorTransform
+        419  1A2 00013A30 __win32kstub_NtGdiCreateCompatibleBitmap
+        420  1A3 00013AC0 __win32kstub_NtGdiCreateCompatibleDC
+        421  1A4 00013CA0 __win32kstub_NtGdiCreateDIBBrush
+        422  1A5 00013EF0 __win32kstub_NtGdiCreateDIBSection
+        423  1A6 00013F30 __win32kstub_NtGdiCreateDIBitmapInternal
+        424  1A7 00014F80 __win32kstub_NtGdiCreateEllipticRgn
+        425  1A8 00014370 __win32kstub_NtGdiCreateHalftonePalette
+        426  1A9 00014F90 __win32kstub_NtGdiCreateHatchBrushInternal
+        427  1AA 00014FA0 __win32kstub_NtGdiCreateMetafileDC
+        428  1AB 00014FB0 __win32kstub_NtGdiCreateOPMProtectedOutput
+        429  1AC 00014FC0 __win32kstub_NtGdiCreateOPMProtectedOutputs
+        430  1AD 00013FB0 __win32kstub_NtGdiCreatePaletteInternal
+        431  1AE 00014000 __win32kstub_NtGdiCreatePatternBrushInternal
+        432  1AF 00013AE0 __win32kstub_NtGdiCreatePen
+        433  1B0 00013D90 __win32kstub_NtGdiCreateRectRgn
+        434  1B1 00014FD0 __win32kstub_NtGdiCreateRoundRectRgn
+        435  1B2 00014FE0 __win32kstub_NtGdiCreateServerMetaFile
+        436  1B3 00014FF0 __win32kstub_NtGdiCreateSessionMappedDIBSection
+        437  1B4 00014070 __win32kstub_NtGdiCreateSolidBrush
+        438  1B5 00015000 __win32kstub_NtGdiDDCCIGetCapabilitiesString
+        439  1B6 00015010 __win32kstub_NtGdiDDCCIGetCapabilitiesStringLength
+        440  1B7 00015020 __win32kstub_NtGdiDDCCIGetTimingReport
+        441  1B8 00015030 __win32kstub_NtGdiDDCCIGetVCPFeature
+        442  1B9 00015040 __win32kstub_NtGdiDDCCISaveCurrentSettings
+        443  1BA 00015050 __win32kstub_NtGdiDDCCISetVCPFeature
+        444  1BB 00015060 __win32kstub_NtGdiDdCreateFullscreenSprite
+        445  1BC 00015070 __win32kstub_NtGdiDdDDIAbandonSwapChain
+        446  1BD 00015080 __win32kstub_NtGdiDdDDIAcquireKeyedMutex
+        447  1BE 00015090 __win32kstub_NtGdiDdDDIAcquireKeyedMutex2
+        448  1BF 000150A0 __win32kstub_NtGdiDdDDIAcquireSwapChain
+        449  1C0 000150B0 __win32kstub_NtGdiDdDDIAddSurfaceToSwapChain
+        450  1C1 000150C0 __win32kstub_NtGdiDdDDIAdjustFullscreenGamma
+        451  1C2 000150D0 __win32kstub_NtGdiDdDDICacheHybridQueryValue
+        452  1C3 000150E0 __win32kstub_NtGdiDdDDIChangeVideoMemoryReservation
+        453  1C4 000150F0 __win32kstub_NtGdiDdDDICheckExclusiveOwnership
+        454  1C5 00015100 __win32kstub_NtGdiDdDDICheckMonitorPowerState
+        455  1C6 00015110 __win32kstub_NtGdiDdDDICheckMultiPlaneOverlaySupport
+        456  1C7 00015120 __win32kstub_NtGdiDdDDICheckMultiPlaneOverlaySupport2
+        457  1C8 00015130 __win32kstub_NtGdiDdDDICheckMultiPlaneOverlaySupport3
+        458  1C9 00015140 __win32kstub_NtGdiDdDDICheckOcclusion
+        459  1CA 00015150 __win32kstub_NtGdiDdDDICheckSharedResourceAccess
+        460  1CB 00015160 __win32kstub_NtGdiDdDDICheckVidPnExclusiveOwnership
+        461  1CC 00015170 __win32kstub_NtGdiDdDDICloseAdapter
+        462  1CD 00015180 __win32kstub_NtGdiDdDDIConfigureSharedResource
+        463  1CE 00015190 __win32kstub_NtGdiDdDDICreateAllocation
+        464  1CF 000151A0 __win32kstub_NtGdiDdDDICreateBundleObject
+        465  1D0 000151B0 __win32kstub_NtGdiDdDDICreateContext
+        466  1D1 000151C0 __win32kstub_NtGdiDdDDICreateContextVirtual
+        467  1D2 000151D0 __win32kstub_NtGdiDdDDICreateDCFromMemory
+        468  1D3 000151E0 __win32kstub_NtGdiDdDDICreateDevice
+        469  1D4 000151F0 __win32kstub_NtGdiDdDDICreateHwContext
+        470  1D5 00015200 __win32kstub_NtGdiDdDDICreateHwQueue
+        471  1D6 00015210 __win32kstub_NtGdiDdDDICreateKeyedMutex
+        472  1D7 00015220 __win32kstub_NtGdiDdDDICreateKeyedMutex2
+        473  1D8 00015230 __win32kstub_NtGdiDdDDICreateOutputDupl
+        474  1D9 00015240 __win32kstub_NtGdiDdDDICreateOverlay
+        475  1DA 00015250 __win32kstub_NtGdiDdDDICreatePagingQueue
+        476  1DB 00015260 __win32kstub_NtGdiDdDDICreateProtectedSession
+        477  1DC 00015270 __win32kstub_NtGdiDdDDICreateSwapChain
+        478  1DD 00015280 __win32kstub_NtGdiDdDDICreateSynchronizationObject
+        479  1DE 00015290 __win32kstub_NtGdiDdDDIDDisplayEnum
+        480  1DF 000152A0 __win32kstub_NtGdiDdDDIDestroyAllocation
+        481  1E0 000152B0 __win32kstub_NtGdiDdDDIDestroyAllocation2
+        482  1E1 000152C0 __win32kstub_NtGdiDdDDIDestroyContext
+        483  1E2 000152D0 __win32kstub_NtGdiDdDDIDestroyDCFromMemory
+        484  1E3 000152E0 __win32kstub_NtGdiDdDDIDestroyDevice
+        485  1E4 000152F0 __win32kstub_NtGdiDdDDIDestroyHwContext
+        486  1E5 00015300 __win32kstub_NtGdiDdDDIDestroyHwQueue
+        487  1E6 00015310 __win32kstub_NtGdiDdDDIDestroyKeyedMutex
+        488  1E7 00015320 __win32kstub_NtGdiDdDDIDestroyOutputDupl
+        489  1E8 00015330 __win32kstub_NtGdiDdDDIDestroyOverlay
+        490  1E9 00015340 __win32kstub_NtGdiDdDDIDestroyPagingQueue
+        491  1EA 00015350 __win32kstub_NtGdiDdDDIDestroyProtectedSession
+        492  1EB 00015360 __win32kstub_NtGdiDdDDIDestroySynchronizationObject
+        493  1EC 00015370 __win32kstub_NtGdiDdDDIDispMgrCreate
+        494  1ED 00015380 __win32kstub_NtGdiDdDDIDispMgrSourceOperation
+        495  1EE 00015390 __win32kstub_NtGdiDdDDIDispMgrTargetOperation
+        496  1EF 000153A0 __win32kstub_NtGdiDdDDIEnumAdapters
+        497  1F0 000153B0 __win32kstub_NtGdiDdDDIEnumAdapters2
+        498  1F1 000153C0 __win32kstub_NtGdiDdDDIEscape
+        499  1F2 000153D0 __win32kstub_NtGdiDdDDIEvict
+        500  1F3 000153E0 __win32kstub_NtGdiDdDDIExtractBundleObject
+        501  1F4 000153F0 __win32kstub_NtGdiDdDDIFlipOverlay
+        502  1F5 00015400 __win32kstub_NtGdiDdDDIFlushHeapTransitions
+        503  1F6 00015410 __win32kstub_NtGdiDdDDIFreeGpuVirtualAddress
+        504  1F7 00015420 __win32kstub_NtGdiDdDDIGetAllocationPriority
+        505  1F8 00015430 __win32kstub_NtGdiDdDDIGetCachedHybridQueryValue
+        506  1F9 00015440 __win32kstub_NtGdiDdDDIGetContextInProcessSchedulingPriority
+        507  1FA 00015450 __win32kstub_NtGdiDdDDIGetContextSchedulingPriority
+        508  1FB 00015460 __win32kstub_NtGdiDdDDIGetDWMVerticalBlankEvent
+        509  1FC 00015470 __win32kstub_NtGdiDdDDIGetDeviceState
+        510  1FD 00015480 __win32kstub_NtGdiDdDDIGetDisplayModeList
+        511  1FE 00015490 __win32kstub_NtGdiDdDDIGetMemoryBudgetTarget
+        512  1FF 000154A0 __win32kstub_NtGdiDdDDIGetMultiPlaneOverlayCaps
+        513  200 000154B0 __win32kstub_NtGdiDdDDIGetMultisampleMethodList
+        514  201 000154C0 __win32kstub_NtGdiDdDDIGetOverlayState
+        515  202 000154D0 __win32kstub_NtGdiDdDDIGetPostCompositionCaps
+        516  203 000154E0 __win32kstub_NtGdiDdDDIGetPresentHistory
+        517  204 000154F0 __win32kstub_NtGdiDdDDIGetPresentQueueEvent
+        518  205 00015500 __win32kstub_NtGdiDdDDIGetProcessDeviceRemovalSupport
+        519  206 00015510 __win32kstub_NtGdiDdDDIGetProcessSchedulingPriorityBand
+        520  207 00015520 __win32kstub_NtGdiDdDDIGetProcessSchedulingPriorityClass
+        521  208 00015530 __win32kstub_NtGdiDdDDIGetResourcePresentPrivateDriverData
+        522  209 00015540 __win32kstub_NtGdiDdDDIGetRuntimeData
+        523  20A 00015550 __win32kstub_NtGdiDdDDIGetScanLine
+        524  20B 00015560 __win32kstub_NtGdiDdDDIGetSetSwapChainMetadata
+        525  20C 00015570 __win32kstub_NtGdiDdDDIGetSharedPrimaryHandle
+        526  20D 00015580 __win32kstub_NtGdiDdDDIGetSharedResourceAdapterLuid
+        527  20E 00015590 __win32kstub_NtGdiDdDDIGetSharedResourceAdapterLuidFlipManager
+        528  20F 000155A0 __win32kstub_NtGdiDdDDIGetSwapChainSurfacePhysicalAddress
+        529  210 000155B0 __win32kstub_NtGdiDdDDIGetYieldPercentage
+        530  211 000155C0 __win32kstub_NtGdiDdDDIInvalidateActiveVidPn
+        531  212 000155D0 __win32kstub_NtGdiDdDDIInvalidateCache
+        532  213 000155E0 __win32kstub_NtGdiDdDDILock
+        533  214 000155F0 __win32kstub_NtGdiDdDDILock2
+        534  215 00015600 __win32kstub_NtGdiDdDDIMakeResident
+        535  216 00015610 __win32kstub_NtGdiDdDDIMapGpuVirtualAddress
+        536  217 00015620 __win32kstub_NtGdiDdDDIMarkDeviceAsError
+        537  218 00015630 __win32kstub_NtGdiDdDDINetDispGetNextChunkInfo
+        538  219 00015640 __win32kstub_NtGdiDdDDINetDispQueryMiracastDisplayDeviceStatus
+        539  21A 00015650 __win32kstub_NtGdiDdDDINetDispQueryMiracastDisplayDeviceSupport
+        540  21B 00015660 __win32kstub_NtGdiDdDDINetDispStartMiracastDisplayDevice
+        541  21C 00015670 __win32kstub_NtGdiDdDDINetDispStopMiracastDisplayDevice
+        542  21D 00015680 __win32kstub_NtGdiDdDDIOfferAllocations
+        543  21E 00015690 __win32kstub_NtGdiDdDDIOpenAdapterFromDeviceName
+        544  21F 000156A0 __win32kstub_NtGdiDdDDIOpenAdapterFromHdc
+        545  220 000156B0 __win32kstub_NtGdiDdDDIOpenAdapterFromLuid
+        546  221 000156C0 __win32kstub_NtGdiDdDDIOpenBundleObjectNtHandleFromName
+        547  222 000156D0 __win32kstub_NtGdiDdDDIOpenKeyedMutex
+        548  223 000156E0 __win32kstub_NtGdiDdDDIOpenKeyedMutex2
+        549  224 000156F0 __win32kstub_NtGdiDdDDIOpenKeyedMutexFromNtHandle
+        550  225 00015700 __win32kstub_NtGdiDdDDIOpenNtHandleFromName
+        551  226 00015710 __win32kstub_NtGdiDdDDIOpenProtectedSessionFromNtHandle
+        552  227 00015720 __win32kstub_NtGdiDdDDIOpenResource
+        553  228 00015730 __win32kstub_NtGdiDdDDIOpenResourceFromNtHandle
+        554  229 00015740 __win32kstub_NtGdiDdDDIOpenSwapChain
+        555  22A 00015750 __win32kstub_NtGdiDdDDIOpenSyncObjectFromNtHandle
+        556  22B 00015760 __win32kstub_NtGdiDdDDIOpenSyncObjectFromNtHandle2
+        557  22C 00015770 __win32kstub_NtGdiDdDDIOpenSyncObjectNtHandleFromName
+        558  22D 00015780 __win32kstub_NtGdiDdDDIOpenSynchronizationObject
+        559  22E 00015790 __win32kstub_NtGdiDdDDIOutputDuplGetFrameInfo
+        560  22F 000157A0 __win32kstub_NtGdiDdDDIOutputDuplGetMetaData
+        561  230 000157B0 __win32kstub_NtGdiDdDDIOutputDuplGetPointerShapeData
+        562  231 000157C0 __win32kstub_NtGdiDdDDIOutputDuplPresent
+        563  232 000157D0 __win32kstub_NtGdiDdDDIOutputDuplReleaseFrame
+        564  233 000157E0 __win32kstub_NtGdiDdDDIPollDisplayChildren
+        565  234 000157F0 __win32kstub_NtGdiDdDDIPresent
+        566  235 00015800 __win32kstub_NtGdiDdDDIPresentMultiPlaneOverlay
+        567  236 00015810 __win32kstub_NtGdiDdDDIPresentMultiPlaneOverlay2
+        568  237 00015820 __win32kstub_NtGdiDdDDIPresentMultiPlaneOverlay3
+        569  238 00015830 __win32kstub_NtGdiDdDDIPresentRedirected
+        570  239 00015840 __win32kstub_NtGdiDdDDIQueryAdapterInfo
+        571  23A 00015850 __win32kstub_NtGdiDdDDIQueryAllocationResidency
+        572  23B 00015860 __win32kstub_NtGdiDdDDIQueryClockCalibration
+        573  23C 00015870 __win32kstub_NtGdiDdDDIQueryFSEBlock
+        574  23D 00015880 __win32kstub_NtGdiDdDDIQueryProcessOfferInfo
+        575  23E 00015890 __win32kstub_NtGdiDdDDIQueryProtectedSessionInfoFromNtHandle
+        576  23F 000158A0 __win32kstub_NtGdiDdDDIQueryProtectedSessionStatus
+        577  240 000158B0 __win32kstub_NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+        578  241 000158C0 __win32kstub_NtGdiDdDDIQueryResourceInfo
+        579  242 000158D0 __win32kstub_NtGdiDdDDIQueryResourceInfoFromNtHandle
+        580  243 000158E0 __win32kstub_NtGdiDdDDIQueryStatistics
+        581  244 000158F0 __win32kstub_NtGdiDdDDIQueryVidPnExclusiveOwnership
+        582  245 00015900 __win32kstub_NtGdiDdDDIQueryVideoMemoryInfo
+        583  246 00015910 __win32kstub_NtGdiDdDDIReclaimAllocations
+        584  247 00015920 __win32kstub_NtGdiDdDDIReclaimAllocations2
+        585  248 00015930 __win32kstub_NtGdiDdDDIReleaseKeyedMutex
+        586  249 00015940 __win32kstub_NtGdiDdDDIReleaseKeyedMutex2
+        587  24A 00015950 __win32kstub_NtGdiDdDDIReleaseProcessVidPnSourceOwners
+        588  24B 00015960 __win32kstub_NtGdiDdDDIReleaseSwapChain
+        589  24C 00015970 __win32kstub_NtGdiDdDDIRemoveSurfaceFromSwapChain
+        590  24D 00015980 __win32kstub_NtGdiDdDDIRender
+        591  24E 00015990 __win32kstub_NtGdiDdDDIReserveGpuVirtualAddress
+        592  24F 000159A0 __win32kstub_NtGdiDdDDISetAllocationPriority
+        593  250 000159B0 __win32kstub_NtGdiDdDDISetContextInProcessSchedulingPriority
+        594  251 000159C0 __win32kstub_NtGdiDdDDISetContextSchedulingPriority
+        595  252 000159D0 __win32kstub_NtGdiDdDDISetDisplayMode
+        596  253 000159E0 __win32kstub_NtGdiDdDDISetDodIndirectSwapchain
+        597  254 000159F0 __win32kstub_NtGdiDdDDISetFSEBlock
+        598  255 00015A00 __win32kstub_NtGdiDdDDISetGammaRamp
+        599  256 00015A10 __win32kstub_NtGdiDdDDISetHwProtectionTeardownRecovery
+        600  257 00015A20 __win32kstub_NtGdiDdDDISetMemoryBudgetTarget
+        601  258 00015A30 __win32kstub_NtGdiDdDDISetMonitorColorSpaceTransform
+        602  259 00015A40 __win32kstub_NtGdiDdDDISetProcessDeviceRemovalSupport
+        603  25A 00015A50 __win32kstub_NtGdiDdDDISetProcessSchedulingPriorityBand
+        604  25B 00015A60 __win32kstub_NtGdiDdDDISetProcessSchedulingPriorityClass
+        605  25C 00015A70 __win32kstub_NtGdiDdDDISetQueuedLimit
+        606  25D 00015A80 __win32kstub_NtGdiDdDDISetStablePowerState
+        607  25E 00015A90 __win32kstub_NtGdiDdDDISetStereoEnabled
+        608  25F 00015AA0 __win32kstub_NtGdiDdDDISetSyncRefreshCountWaitTarget
+        609  260 00015AB0 __win32kstub_NtGdiDdDDISetVidPnSourceHwProtection
+        610  261 00015AC0 __win32kstub_NtGdiDdDDISetVidPnSourceOwner
+        611  262 00015AD0 __win32kstub_NtGdiDdDDISetYieldPercentage
+        612  263 00015AE0 __win32kstub_NtGdiDdDDIShareObjects
+        613  264 00015AF0 __win32kstub_NtGdiDdDDISharedPrimaryLockNotification
+        614  265 00015B00 __win32kstub_NtGdiDdDDISharedPrimaryUnLockNotification
+        615  266 00015B10 __win32kstub_NtGdiDdDDISignalSynchronizationObject
+        616  267 00015B20 __win32kstub_NtGdiDdDDISignalSynchronizationObjectFromCpu
+        617  268 00015B30 __win32kstub_NtGdiDdDDISignalSynchronizationObjectFromGpu
+        618  269 00015B40 __win32kstub_NtGdiDdDDISignalSynchronizationObjectFromGpu2
+        619  26A 00015B50 __win32kstub_NtGdiDdDDISubmitCommand
+        620  26B 00015B60 __win32kstub_NtGdiDdDDISubmitCommandToHwQueue
+        621  26C 00015B70 __win32kstub_NtGdiDdDDISubmitSignalSyncObjectsToHwQueue
+        622  26D 00015B80 __win32kstub_NtGdiDdDDISubmitWaitForSyncObjectsToHwQueue
+        623  26E 00015B90 __win32kstub_NtGdiDdDDITrimProcessCommitment
+        624  26F 00015BA0 __win32kstub_NtGdiDdDDIUnOrderedPresentSwapChain
+        625  270 00015BB0 __win32kstub_NtGdiDdDDIUnlock
+        626  271 00015BC0 __win32kstub_NtGdiDdDDIUnlock2
+        627  272 00015BD0 __win32kstub_NtGdiDdDDIUpdateAllocationProperty
+        628  273 00015BE0 __win32kstub_NtGdiDdDDIUpdateGpuVirtualAddress
+        629  274 00015BF0 __win32kstub_NtGdiDdDDIUpdateOverlay
+        630  275 00015C00 __win32kstub_NtGdiDdDDIWaitForIdle
+        631  276 00015C10 __win32kstub_NtGdiDdDDIWaitForSynchronizationObject
+        632  277 00015C20 __win32kstub_NtGdiDdDDIWaitForSynchronizationObjectFromCpu
+        633  278 00015C30 __win32kstub_NtGdiDdDDIWaitForSynchronizationObjectFromGpu
+        634  279 00015C40 __win32kstub_NtGdiDdDDIWaitForVerticalBlankEvent
+        635  27A 00015C50 __win32kstub_NtGdiDdDDIWaitForVerticalBlankEvent2
+        636  27B 00015C60 __win32kstub_NtGdiDdDestroyFullscreenSprite
+        637  27C 00015C70 __win32kstub_NtGdiDdNotifyFullscreenSpriteUpdate
+        638  27D 00015C80 __win32kstub_NtGdiDdQueryVisRgnUniqueness
+        639  27E 00013DC0 __win32kstub_NtGdiDeleteClientObj
+        640  27F 00014660 __win32kstub_NtGdiDeleteColorSpace
+        641  280 00015C90 __win32kstub_NtGdiDeleteColorTransform
+        642  281 000137D0 __win32kstub_NtGdiDeleteObjectApp
+        643  282 00015CA0 __win32kstub_NtGdiDescribePixelFormat
+        644  283 00015CB0 __win32kstub_NtGdiDestroyOPMProtectedOutput
+        645  284 00015CC0 __win32kstub_NtGdiDestroyPhysicalMonitor
+        646  285 00015CD0 __win32kstub_NtGdiDoBanding
+        647  286 000139F0 __win32kstub_NtGdiDoPalette
+        648  287 00015CE0 __win32kstub_NtGdiDrawEscape
+        649  288 00013B90 __win32kstub_NtGdiDrawStream
+        650  289 00015CF0 __win32kstub_NtGdiDwmCreatedBitmapRemotingOutput
+        651  28A 00015D00 __win32kstub_NtGdiEllipse
+        652  28B 00015D10 __win32kstub_NtGdiEnableEudc
+        653  28C 00015D20 __win32kstub_NtGdiEndDoc
+        654  28D 00015D30 __win32kstub_NtGdiEndGdiRendering
+        655  28E 00015D40 __win32kstub_NtGdiEndPage
+        656  28F 00014540 __win32kstub_NtGdiEndPath
+        657  290 00015D50 __win32kstub_NtGdiEngAlphaBlend
+        658  291 00015D60 __win32kstub_NtGdiEngAssociateSurface
+        659  292 00015D70 __win32kstub_NtGdiEngBitBlt
+        660  293 00015D80 __win32kstub_NtGdiEngCheckAbort
+        661  294 00015D90 __win32kstub_NtGdiEngComputeGlyphSet
+        662  295 00015DA0 __win32kstub_NtGdiEngCopyBits
+        663  296 00015DB0 __win32kstub_NtGdiEngCreateBitmap
+        664  297 00015DC0 __win32kstub_NtGdiEngCreateClip
+        665  298 00015DD0 __win32kstub_NtGdiEngCreateDeviceBitmap
+        666  299 00015DE0 __win32kstub_NtGdiEngCreateDeviceSurface
+        667  29A 00015DF0 __win32kstub_NtGdiEngCreatePalette
+        668  29B 00015E00 __win32kstub_NtGdiEngDeleteClip
+        669  29C 00015E10 __win32kstub_NtGdiEngDeletePalette
+        670  29D 00015E20 __win32kstub_NtGdiEngDeletePath
+        671  29E 00015E30 __win32kstub_NtGdiEngDeleteSurface
+        672  29F 00015E40 __win32kstub_NtGdiEngEraseSurface
+        673  2A0 00015E50 __win32kstub_NtGdiEngFillPath
+        674  2A1 00015E60 __win32kstub_NtGdiEngGradientFill
+        675  2A2 00015E70 __win32kstub_NtGdiEngLineTo
+        676  2A3 00015E80 __win32kstub_NtGdiEngLockSurface
+        677  2A4 00015E90 __win32kstub_NtGdiEngMarkBandingSurface
+        678  2A5 00015EA0 __win32kstub_NtGdiEngPaint
+        679  2A6 00015EB0 __win32kstub_NtGdiEngPlgBlt
+        680  2A7 00015EC0 __win32kstub_NtGdiEngStretchBlt
+        681  2A8 00015ED0 __win32kstub_NtGdiEngStretchBltROP
+        682  2A9 00015EE0 __win32kstub_NtGdiEngStrokeAndFillPath
+        683  2AA 00015EF0 __win32kstub_NtGdiEngStrokePath
+        684  2AB 00015F00 __win32kstub_NtGdiEngTextOut
+        685  2AC 00015F10 __win32kstub_NtGdiEngTransparentBlt
+        686  2AD 00015F20 __win32kstub_NtGdiEngUnlockSurface
+        687  2AE 00015F30 __win32kstub_NtGdiEnsureDpiDepDefaultGuiFontForPlateau
+        688  2AF 00015F40 __win32kstub_NtGdiEnumFonts
+        689  2B0 00015F50 __win32kstub_NtGdiEnumObjects
+        690  2B1 000145A0 __win32kstub_NtGdiEqualRgn
+        691  2B2 00015F60 __win32kstub_NtGdiEudcLoadUnloadLink
+        692  2B3 00013EE0 __win32kstub_NtGdiExcludeClipRect
+        693  2B4 00013FA0 __win32kstub_NtGdiExtCreatePen
+        694  2B5 00013DF0 __win32kstub_NtGdiExtCreateRegion
+        695  2B6 000145F0 __win32kstub_NtGdiExtEscape
+        696  2B7 00015F70 __win32kstub_NtGdiExtFloodFill
+        697  2B8 00013AA0 __win32kstub_NtGdiExtGetObjectW
+        698  2B9 00013860 __win32kstub_NtGdiExtSelectClipRgn
+        699  2BA 00013900 __win32kstub_NtGdiExtTextOutW
+        700  2BB 00015F80 __win32kstub_NtGdiFONTOBJ_cGetAllGlyphHandles
+        701  2BC 00015F90 __win32kstub_NtGdiFONTOBJ_cGetGlyphs
+        702  2BD 00015FA0 __win32kstub_NtGdiFONTOBJ_pQueryGlyphAttrs
+        703  2BE 00015FB0 __win32kstub_NtGdiFONTOBJ_pfdg
+        704  2BF 00015FC0 __win32kstub_NtGdiFONTOBJ_pifi
+        705  2C0 00015FD0 __win32kstub_NtGdiFONTOBJ_pvTrueTypeFontFile
+        706  2C1 00015FE0 __win32kstub_NtGdiFONTOBJ_pxoGetXform
+        707  2C2 00015FF0 __win32kstub_NtGdiFONTOBJ_vGetInfo
+        708  2C3 00014550 __win32kstub_NtGdiFillPath
+        709  2C4 000141E0 __win32kstub_NtGdiFillRgn
+        710  2C5 00016000 __win32kstub_NtGdiFlattenPath
+        711  2C6 000136D0 __win32kstub_NtGdiFlush
+        712  2C7 00016010 __win32kstub_NtGdiFontIsLinked
+        713  2C8 00016020 __win32kstub_NtGdiForceUFIMapping
+        714  2C9 00016030 __win32kstub_NtGdiFrameRgn
+        715  2CA 00016040 __win32kstub_NtGdiFullscreenControl
+        716  2CB 00013BE0 __win32kstub_NtGdiGetAndSetDCDword
+        717  2CC 000139B0 __win32kstub_NtGdiGetAppClipBox
+        718  2CD 00014280 __win32kstub_NtGdiGetBitmapBits
+        719  2CE 00014460 __win32kstub_NtGdiGetBitmapDimension
+        720  2CF 00016050 __win32kstub_NtGdiGetBitmapDpiScaleValue
+        721  2D0 00016060 __win32kstub_NtGdiGetBoundsRect
+        722  2D1 00016070 __win32kstub_NtGdiGetCOPPCompatibleOPMInformation
+        723  2D2 00016080 __win32kstub_NtGdiGetCertificate
+        724  2D3 00016090 __win32kstub_NtGdiGetCertificateByHandle
+        725  2D4 000160A0 __win32kstub_NtGdiGetCertificateSize
+        726  2D5 000160B0 __win32kstub_NtGdiGetCertificateSizeByHandle
+        727  2D6 000160C0 __win32kstub_NtGdiGetCharABCWidthsW
+        728  2D7 00013640 __win32kstub_NtGdiGetCharSet
+        729  2D8 00014170 __win32kstub_NtGdiGetCharWidthInfo
+        730  2D9 00014120 __win32kstub_NtGdiGetCharWidthW
+        731  2DA 000160D0 __win32kstub_NtGdiGetCharacterPlacementW
+        732  2DB 000160E0 __win32kstub_NtGdiGetColorAdjustment
+        733  2DC 000160F0 __win32kstub_NtGdiGetColorSpaceforBitmap
+        734  2DD 00016100 __win32kstub_NtGdiGetCurrentDpiInfo
+        735  2DE 00016110 __win32kstub_NtGdiGetDCDpiScaleValue
+        736  2DF 00013970 __win32kstub_NtGdiGetDCDword
+        737  2E0 000138D0 __win32kstub_NtGdiGetDCObject
+        738  2E1 00013C90 __win32kstub_NtGdiGetDCPoint
+        739  2E2 00013F00 __win32kstub_NtGdiGetDCforBitmap
+        740  2E3 00013DA0 __win32kstub_NtGdiGetDIBitsInternal
+        741  2E4 00016120 __win32kstub_NtGdiGetDeviceCaps
+        742  2E5 00016130 __win32kstub_NtGdiGetDeviceCapsAll
+        743  2E6 00016140 __win32kstub_NtGdiGetDeviceWidth
+        744  2E7 00016150 __win32kstub_NtGdiGetDhpdev
+        745  2E8 00016160 __win32kstub_NtGdiGetETM
+        746  2E9 00016170 __win32kstub_NtGdiGetEmbUFI
+        747  2EA 00016180 __win32kstub_NtGdiGetEmbedFonts
+        748  2EB 00016190 __win32kstub_NtGdiGetEntry
+        749  2EC 000161A0 __win32kstub_NtGdiGetEudcTimeStampEx
+        750  2ED 00014210 __win32kstub_NtGdiGetFontData
+        751  2EE 000161B0 __win32kstub_NtGdiGetFontFileData
+        752  2EF 000161C0 __win32kstub_NtGdiGetFontFileInfo
+        753  2F0 000161D0 __win32kstub_NtGdiGetFontResourceInfoInternalW
+        754  2F1 000161E0 __win32kstub_NtGdiGetFontUnicodeRanges
+        755  2F2 000161F0 __win32kstub_NtGdiGetGlyphIndicesW
+        756  2F3 00016200 __win32kstub_NtGdiGetGlyphIndicesWInternal
+        757  2F4 00016210 __win32kstub_NtGdiGetGlyphOutline
+        758  2F5 00016220 __win32kstub_NtGdiGetKerningPairs
+        759  2F6 00016230 __win32kstub_NtGdiGetLinkedUFIs
+        760  2F7 00016240 __win32kstub_NtGdiGetMiterLimit
+        761  2F8 00016250 __win32kstub_NtGdiGetMonitorID
+        762  2F9 00013C70 __win32kstub_NtGdiGetNearestColor
+        763  2FA 00014110 __win32kstub_NtGdiGetNearestPaletteIndex
+        764  2FB 00016260 __win32kstub_NtGdiGetNumberOfPhysicalMonitors
+        765  2FC 00016270 __win32kstub_NtGdiGetOPMInformation
+        766  2FD 00016280 __win32kstub_NtGdiGetOPMRandomNumber
+        767  2FE 00016290 __win32kstub_NtGdiGetObjectBitmapHandle
+        768  2FF 00014020 __win32kstub_NtGdiGetOutlineTextMetricsInternalW
+        769  300 000162A0 __win32kstub_NtGdiGetPath
+        770  301 000162B0 __win32kstub_NtGdiGetPerBandInfo
+        771  302 000162C0 __win32kstub_NtGdiGetPhysicalMonitorDescription
+        772  303 000162D0 __win32kstub_NtGdiGetPhysicalMonitors
+        773  304 000140E0 __win32kstub_NtGdiGetPixel
+        774  305 000162E0 __win32kstub_NtGdiGetProcessSessionFonts
+        775  306 000162F0 __win32kstub_NtGdiGetPublicFontTableChangeCookie
+        776  307 00013830 __win32kstub_NtGdiGetRandomRgn
+        777  308 00014310 __win32kstub_NtGdiGetRasterizerCaps
+        778  309 00016300 __win32kstub_NtGdiGetRealizationInfo
+        779  30A 00013980 __win32kstub_NtGdiGetRegionData
+        780  30B 00013BD0 __win32kstub_NtGdiGetRgnBox
+        781  30C 00016310 __win32kstub_NtGdiGetServerMetaFileBits
+        782  30D 00016320 __win32kstub_NtGdiGetSpoolMessage
+        783  30E 00016330 __win32kstub_NtGdiGetStats
+        784  30F 00016340 __win32kstub_NtGdiGetStringBitmapW
+        785  310 00016350 __win32kstub_NtGdiGetSuggestedOPMProtectedOutputArraySize
+        786  311 000145B0 __win32kstub_NtGdiGetSystemPaletteUse
+        787  312 00013A50 __win32kstub_NtGdiGetTextCharsetInfo
+        788  313 00013E90 __win32kstub_NtGdiGetTextExtent
+        789  314 00016360 __win32kstub_NtGdiGetTextExtentExW
+        790  315 00013D50 __win32kstub_NtGdiGetTextFaceW
+        791  316 00013CB0 __win32kstub_NtGdiGetTextMetricsW
+        792  317 00014260 __win32kstub_NtGdiGetTransform
+        793  318 00016370 __win32kstub_NtGdiGetUFI
+        794  319 00016380 __win32kstub_NtGdiGetUFIPathname
+        795  31A 00013C00 __win32kstub_NtGdiGetWidthTable
+        796  31B 00016390 __win32kstub_NtGdiGradientFill
+        797  31C 000163A0 __win32kstub_NtGdiHLSurfGetInformation
+        798  31D 000163B0 __win32kstub_NtGdiHLSurfSetInformation
+        799  31E 000163C0 __win32kstub_NtGdiHT_Get8BPPFormatPalette
+        800  31F 000163D0 __win32kstub_NtGdiHT_Get8BPPMaskPalette
+        801  320 00013B40 __win32kstub_NtGdiHfontCreate
+        802  321 000163E0 __win32kstub_NtGdiIcmBrushInfo
+        803  322 000163F0 __win32kstub_NtGdiInit
+        804  323 00016400 __win32kstub_NtGdiInitSpool
+        805  324 000137B0 __win32kstub_NtGdiIntersectClipRect
+        806  325 00013BC0 __win32kstub_NtGdiInvertRgn
+        807  326 00013990 __win32kstub_NtGdiLineTo
+        808  327 00016410 __win32kstub_NtGdiMakeFontDir
+        809  328 00016420 __win32kstub_NtGdiMakeInfoDC
+        810  329 00016430 __win32kstub_NtGdiMakeObjectUnXferable
+        811  32A 00016440 __win32kstub_NtGdiMakeObjectXferable
+        812  32B 00013BF0 __win32kstub_NtGdiMaskBlt
+        813  32C 00016450 __win32kstub_NtGdiMirrorWindowOrg
+        814  32D 00014200 __win32kstub_NtGdiModifyWorldTransform
+        815  32E 00016460 __win32kstub_NtGdiMonoBitmap
+        816  32F 00016470 __win32kstub_NtGdiMoveTo
+        817  330 00016480 __win32kstub_NtGdiOffsetClipRgn
+        818  331 00013D30 __win32kstub_NtGdiOffsetRgn
+        819  332 00014240 __win32kstub_NtGdiOpenDCW
+        820  333 00016490 __win32kstub_NtGdiPATHOBJ_bEnum
+        821  334 000164A0 __win32kstub_NtGdiPATHOBJ_bEnumClipLines
+        822  335 000164B0 __win32kstub_NtGdiPATHOBJ_vEnumStart
+        823  336 000164C0 __win32kstub_NtGdiPATHOBJ_vEnumStartClipLines
+        824  337 000164D0 __win32kstub_NtGdiPATHOBJ_vGetBounds
+        825  338 00013B10 __win32kstub_NtGdiPatBlt
+        826  339 000164E0 __win32kstub_NtGdiPathToRegion
+        827  33A 000164F0 __win32kstub_NtGdiPlgBlt
+        828  33B 00016500 __win32kstub_NtGdiPolyDraw
+        829  33C 00013C50 __win32kstub_NtGdiPolyPatBlt
+        830  33D 00013A00 __win32kstub_NtGdiPolyPolyDraw
+        831  33E 00016510 __win32kstub_NtGdiPolyTextOutW
+        832  33F 00016520 __win32kstub_NtGdiPtInRegion
+        833  340 00016530 __win32kstub_NtGdiPtVisible
+        834  341 000143F0 __win32kstub_NtGdiQueryFontAssocInfo
+        835  342 00016540 __win32kstub_NtGdiQueryFonts
+        836  343 000140C0 __win32kstub_NtGdiRectInRegion
+        837  344 000138B0 __win32kstub_NtGdiRectVisible
+        838  345 00013E50 __win32kstub_NtGdiRectangle
+        839  346 000145C0 __win32kstub_NtGdiRemoveFontMemResourceEx
+        840  347 00016550 __win32kstub_NtGdiRemoveFontResourceW
+        841  348 00016560 __win32kstub_NtGdiRemoveMergeFont
+        842  349 00016570 __win32kstub_NtGdiResetDC
+        843  34A 00016580 __win32kstub_NtGdiResizePalette
+        844  34B 00013920 __win32kstub_NtGdiRestoreDC
+        845  34C 00016590 __win32kstub_NtGdiRoundRect
+        846  34D 000165A0 __win32kstub_NtGdiSTROBJ_bEnum
+        847  34E 000165B0 __win32kstub_NtGdiSTROBJ_bEnumPositionsOnly
+        848  34F 000165C0 __win32kstub_NtGdiSTROBJ_bGetAdvanceWidths
+        849  350 000165D0 __win32kstub_NtGdiSTROBJ_dwGetCodePage
+        850  351 000165E0 __win32kstub_NtGdiSTROBJ_vEnumStart
+        851  352 00013930 __win32kstub_NtGdiSaveDC
+        852  353 000165F0 __win32kstub_NtGdiScaleRgn
+        853  354 00016600 __win32kstub_NtGdiScaleValues
+        854  355 00016610 __win32kstub_NtGdiScaleViewportExtEx
+        855  356 00016620 __win32kstub_NtGdiScaleWindowExtEx
+        856  357 00013660 __win32kstub_NtGdiSelectBitmap
+        857  358 00016630 __win32kstub_NtGdiSelectBrush
+        858  359 00016640 __win32kstub_NtGdiSelectClipPath
+        859  35A 00013910 __win32kstub_NtGdiSelectFont
+        860  35B 00016650 __win32kstub_NtGdiSelectPen
+        861  35C 00016660 __win32kstub_NtGdiSetBitmapAttributes
+        862  35D 00014030 __win32kstub_NtGdiSetBitmapBits
+        863  35E 00014600 __win32kstub_NtGdiSetBitmapDimension
+        864  35F 00014450 __win32kstub_NtGdiSetBoundsRect
+        865  360 00016670 __win32kstub_NtGdiSetBrushAttributes
+        866  361 00013FC0 __win32kstub_NtGdiSetBrushOrg
+        867  362 00016680 __win32kstub_NtGdiSetColorAdjustment
+        868  363 00016690 __win32kstub_NtGdiSetColorSpace
+        869  364 00013820 __win32kstub_NtGdiSetDIBitsToDeviceInternal
+        870  365 00014610 __win32kstub_NtGdiSetFontEnumeration
+        871  366 000166A0 __win32kstub_NtGdiSetFontXform
+        872  367 000166B0 __win32kstub_NtGdiSetIcmMode
+        873  368 00013EB0 __win32kstub_NtGdiSetLayout
+        874  369 000166C0 __win32kstub_NtGdiSetLinkedUFIs
+        875  36A 000166D0 __win32kstub_NtGdiSetMagicColors
+        876  36B 000142E0 __win32kstub_NtGdiSetMetaRgn
+        877  36C 000142F0 __win32kstub_NtGdiSetMiterLimit
+        878  36D 000166E0 __win32kstub_NtGdiSetOPMSigningKeyAndSequenceNumbers
+        879  36E 000166F0 __win32kstub_NtGdiSetPUMPDOBJ
+        880  36F 00013FE0 __win32kstub_NtGdiSetPixel
+        881  370 00016700 __win32kstub_NtGdiSetPixelFormat
+        882  371 00016710 __win32kstub_NtGdiSetRectRgn
+        883  372 00016720 __win32kstub_NtGdiSetSizeDevice
+        884  373 00016730 __win32kstub_NtGdiSetSystemPaletteUse
+        885  374 00016740 __win32kstub_NtGdiSetTextJustification
+        886  375 00016750 __win32kstub_NtGdiSetUMPDSandboxState
+        887  376 00014300 __win32kstub_NtGdiSetVirtualResolution
+        888  377 00016760 __win32kstub_NtGdiStartDoc
+        889  378 00016770 __win32kstub_NtGdiStartPage
+        890  379 00013890 __win32kstub_NtGdiStretchBlt
+        891  37A 00013D60 __win32kstub_NtGdiStretchDIBitsInternal
+        892  37B 00016780 __win32kstub_NtGdiStrokeAndFillPath
+        893  37C 00016790 __win32kstub_NtGdiStrokePath
+        894  37D 000167A0 __win32kstub_NtGdiSwapBuffers
+        895  37E 00013C80 __win32kstub_NtGdiTransformPoints
+        896  37F 000167B0 __win32kstub_NtGdiTransparentBlt
+        897  380 000167C0 __win32kstub_NtGdiUMPDEngFreeUserMem
+        898  381 000167D0 __win32kstub_NtGdiUnloadPrinterDriver
+        899  382 000167E0 __win32kstub_NtGdiUnmapMemFont
+        900  383 00013E30 __win32kstub_NtGdiUnrealizeObject
+        901  384 000167F0 __win32kstub_NtGdiUpdateColors
+        902  385 00016800 __win32kstub_NtGdiUpdateTransform
+        903  386 00016810 __win32kstub_NtGdiWaitForTextReady
+        904  387 00016820 __win32kstub_NtGdiWidenPath
+        905  388 00016830 __win32kstub_NtGdiXFORMOBJ_bApplyXform
+        906  389 00016840 __win32kstub_NtGdiXFORMOBJ_iGetXform
+        907  38A 00016850 __win32kstub_NtGdiXLATEOBJ_cGetPalette
+        908  38B 00016860 __win32kstub_NtGdiXLATEOBJ_hGetColorTransform
+        909  38C 00016870 __win32kstub_NtGdiXLATEOBJ_iXlate
+        910  38D 00016890 __win32kstub_NtHWCursorUpdatePointer
+        911  38E 000168A0 __win32kstub_NtInputSpaceRegionFromPoint
+        912  38F 000168B0 __win32kstub_NtIsOneCoreTransformMode
+        913  390 000168C0 __win32kstub_NtKSTInitialize
+        914  391 000168D0 __win32kstub_NtKSTWait
+        915  392 000168E0 __win32kstub_NtMITAccessibilityTimerNotification
+        916  393 000168F0 __win32kstub_NtMITActivateInputProcessing
+        917  394 00016900 __win32kstub_NtMITConfigureVirtualTouchpad
+        918  395 00016910 __win32kstub_NtMITCoreMsgKOpenConnectionTo
+        919  396 00016920 __win32kstub_NtMITDeactivateInputProcessing
+        920  397 00016930 __win32kstub_NtMITDisableMouseIntercept
+        921  398 00016940 __win32kstub_NtMITDispatchCompletion
+        922  399 00016950 __win32kstub_NtMITEnableMouseIntercept
+        923  39A 00016960 __win32kstub_NtMITGetCursorUpdateHandle
+        924  39B 00016970 __win32kstub_NtMITInitMinuserThread
+        925  39C 00016980 __win32kstub_NtMITMinuserSetInputTransformOffset
+        926  39D 00016990 __win32kstub_NtMITMinuserWindowDestroyed
+        927  39E 000169A0 __win32kstub_NtMITPostMouseInputMessage
+        928  39F 000169B0 __win32kstub_NtMITPostThreadEventMessage
+        929  3A0 000169C0 __win32kstub_NtMITPostWindowEventMessage
+        930  3A1 000169D0 __win32kstub_NtMITPrepareReceiveInputMessage
+        931  3A2 000169E0 __win32kstub_NtMITPrepareSendInputMessage
+        932  3A3 000169F0 __win32kstub_NtMITProcessDelegateCapturedPointers
+        933  3A4 00016A00 __win32kstub_NtMITSetInputCallbacks
+        934  3A5 00016A10 __win32kstub_NtMITSetInputDelegationMode
+        935  3A6 00016A20 __win32kstub_NtMITSetInputObservationState
+        936  3A7 00016A30 __win32kstub_NtMITSetKeyboardInputRoutingPolicy
+        937  3A8 00016A40 __win32kstub_NtMITSetKeyboardOverriderState
+        938  3A9 00016A50 __win32kstub_NtMITSetLastInputRecipient
+        939  3AA 00016A60 __win32kstub_NtMITSynthesizeKeyboardInput
+        940  3AB 00016A70 __win32kstub_NtMITSynthesizeMouseInput
+        941  3AC 00016A80 __win32kstub_NtMITSynthesizeTouchInput
+        942  3AD 00016A90 __win32kstub_NtMITUninitMinuserThread
+        943  3AE 00016AA0 __win32kstub_NtMITUpdateInputGlobals
+        944  3AF 00016AB0 __win32kstub_NtMapVisualRelativePoints
+        945  3B0 00016AC0 __win32kstub_NtMinGetInputTransform
+        946  3B1 00016AD0 __win32kstub_NtMinInteropCoreMessagingWithInput
+        947  3B2 00016AE0 __win32kstub_NtMinQPeekForInput
+        948  3B3 00016AF0 __win32kstub_NtMinQSuspendInputProcessing
+        949  3B4 00016B00 __win32kstub_NtMinQUpdateWakeMask
+        950  3B5 00016B10 __win32kstub_NtModerncoreBeginLayoutUpdate
+        951  3B6 00016B20 __win32kstub_NtModerncoreCreateDCompositionHwndTarget
+        952  3B7 00016B30 __win32kstub_NtModerncoreCreateGDIHwndTarget
+        953  3B8 00016B40 __win32kstub_NtModerncoreDestroyDCompositionHwndTarget
+        954  3B9 00016B50 __win32kstub_NtModerncoreDestroyGDIHwndTarget
+        955  3BA 00016B60 __win32kstub_NtModerncoreEnableResizeLayoutSynchronization
+        956  3BB 00016B70 __win32kstub_NtModerncoreGetNavigationWindowVisual
+        957  3BC 00016B80 __win32kstub_NtModerncoreGetResizeDCompositionSynchronizationObject
+        958  3BD 00016B90 __win32kstub_NtModerncoreGetWindowContentVisual
+        959  3BE 00016BA0 __win32kstub_NtModerncoreIdleTimerThread
+        960  3BF 00016BB0 __win32kstub_NtModerncoreIsResizeLayoutSynchronizationEnabled
+        961  3C0 00016BC0 __win32kstub_NtModerncoreProcessConnect
+        962  3C1 00016BD0 __win32kstub_NtModerncoreRegisterEnhancedNavigationWindowHandle
+        963  3C2 00016BE0 __win32kstub_NtModerncoreRegisterNavigationWindowHandle
+        964  3C3 00016BF0 __win32kstub_NtModerncoreSetNavigationServiceSid
+        965  3C4 00016C00 __win32kstub_NtModerncoreUnregisterNavigationWindowHandle
+        966  3C5 00016C10 __win32kstub_NtNotifyPresentToCompositionSurface
+        967  3C6 00016C20 __win32kstub_NtOpenCompositionSurfaceDirtyRegion
+        968  3C7 00016C30 __win32kstub_NtOpenCompositionSurfaceRealizationInfo
+        969  3C8 00016C40 __win32kstub_NtOpenCompositionSurfaceSectionInfo
+        970  3C9 00016C50 __win32kstub_NtQueryCompositionInputIsImplicit
+        971  3CA 00016C60 __win32kstub_NtQueryCompositionInputQueueAndTransform
+        972  3CB 00016C70 __win32kstub_NtQueryCompositionInputSink
+        973  3CC 00016C80 __win32kstub_NtQueryCompositionInputSinkLuid
+        974  3CD 00016C90 __win32kstub_NtQueryCompositionInputSinkViewId
+        975  3CE 00016CA0 __win32kstub_NtQueryCompositionSurfaceBinding
+        976  3CF 00016CB0 __win32kstub_NtQueryCompositionSurfaceFrameRate
+        977  3D0 00016CC0 __win32kstub_NtQueryCompositionSurfaceHDRMetaData
+        978  3D1 00016CD0 __win32kstub_NtQueryCompositionSurfaceRenderingRealization
+        979  3D2 00016CE0 __win32kstub_NtQueryCompositionSurfaceStatistics
+        980  3D3 00016CF0 __win32kstub_NtRIMAddInputObserver
+        981  3D4 00016D00 __win32kstub_NtRIMAreSiblingDevices
+        982  3D5 00016D10 __win32kstub_NtRIMDeviceIoControl
+        983  3D6 00016D20 __win32kstub_NtRIMEnableMonitorMappingForDevice
+        984  3D7 00016D30 __win32kstub_NtRIMFreeInputBuffer
+        985  3D8 00016D40 __win32kstub_NtRIMGetDevicePreparsedData
+        986  3D9 00016D50 __win32kstub_NtRIMGetDevicePreparsedDataLockfree
+        987  3DA 00016D60 __win32kstub_NtRIMGetDeviceProperties
+        988  3DB 00016D70 __win32kstub_NtRIMGetDevicePropertiesLockfree
+        989  3DC 00016D80 __win32kstub_NtRIMGetPhysicalDeviceRect
+        990  3DD 00016D90 __win32kstub_NtRIMGetSourceProcessId
+        991  3DE 00016DA0 __win32kstub_NtRIMObserveNextInput
+        992  3DF 00016DB0 __win32kstub_NtRIMOnAsyncPnpWorkNotification
+        993  3E0 00016DC0 __win32kstub_NtRIMOnPnpNotification
+        994  3E1 00016DD0 __win32kstub_NtRIMOnTimerNotification
+        995  3E2 00016DE0 __win32kstub_NtRIMQueryDevicePath
+        996  3E3 00016DF0 __win32kstub_NtRIMReadInput
+        997  3E4 00016E00 __win32kstub_NtRIMRegisterForInputEx
+        998  3E5 00016E10 __win32kstub_NtRIMRemoveInputObserver
+        999  3E6 00016E20 __win32kstub_NtRIMSetDeadzoneRotation
+       1000  3E7 00016E30 __win32kstub_NtRIMSetExtendedDeviceProperty
+       1001  3E8 00016E40 __win32kstub_NtRIMSetTestModeStatus
+       1002  3E9 00016E50 __win32kstub_NtRIMUnregisterForInput
+       1003  3EA 00016E60 __win32kstub_NtRIMUpdateInputObserverRegistration
+       1004  3EB 00016E70 __win32kstub_NtSetCompositionSurfaceAnalogExclusive
+       1005  3EC 00016E80 __win32kstub_NtSetCompositionSurfaceBufferUsage
+       1006  3ED 00016E90 __win32kstub_NtSetCompositionSurfaceDirectFlipState
+       1007  3EE 00016EA0 __win32kstub_NtSetCompositionSurfaceIndependentFlipInfo
+       1008  3EF 00016EB0 __win32kstub_NtSetCompositionSurfaceStatistics
+       1009  3F0 00016EC0 __win32kstub_NtSetCursorInputSpace
+       1010  3F1 00016ED0 __win32kstub_NtSetPointerDeviceInputSpace
+       1011  3F2 00016EE0 __win32kstub_NtSetShellCursorState
+       1012  3F3 00016EF0 __win32kstub_NtTokenManagerConfirmOutstandingAnalogToken
+       1013  3F4 00016F00 __win32kstub_NtTokenManagerCreateCompositionTokenHandle
+       1014  3F5 00016F10 __win32kstub_NtTokenManagerCreateFlipObjectReturnTokenHandle
+       1015  3F6 00016F20 __win32kstub_NtTokenManagerCreateFlipObjectTokenHandle
+       1016  3F7 00016F30 __win32kstub_NtTokenManagerGetAnalogExclusiveSurfaceUpdates
+       1017  3F8 00016F40 __win32kstub_NtTokenManagerGetAnalogExclusiveTokenEvent
+       1018  3F9 00016F50 __win32kstub_NtTokenManagerOpenSectionAndEvents
+       1019  3FA 00016F60 __win32kstub_NtTokenManagerThread
+       1020  3FB 00016F70 __win32kstub_NtUnBindCompositionSurface
+       1021  3FC 00016F80 __win32kstub_NtUpdateInputSinkTransforms
+       1022  3FD 00016F90 __win32kstub_NtUserAcquireIAMKey
+       1023  3FE 00016FA0 __win32kstub_NtUserAcquireInteractiveControlBackgroundAccess
+       1024  3FF 00014670 __win32kstub_NtUserActivateKeyboardLayout
+       1025  400 00016FB0 __win32kstub_NtUserAddClipboardFormatListener
+       1026  401 00016FC0 __win32kstub_NtUserAddVisualIdentifier
+       1027  402 00016FD0 __win32kstub_NtUserAllowSetForegroundWindow
+       1028  403 000141D0 __win32kstub_NtUserAlterWindowStyle
+       1029  404 00016FE0 __win32kstub_NtUserArrangeIconicWindows
+       1030  405 00016FF0 __win32kstub_NtUserAssociateInputContext
+       1031  406 00014360 __win32kstub_NtUserAttachThreadInput
+       1032  407 00017000 __win32kstub_NtUserAutoPromoteMouseInPointer
+       1033  408 00017010 __win32kstub_NtUserAutoRotateScreen
+       1034  409 00017020 __win32kstub_NtUserBeginDeferWindowPos
+       1035  40A 00017030 __win32kstub_NtUserBeginLayoutUpdate
+       1036  40B 00013720 __win32kstub_NtUserBeginPaint
+       1037  40C 00014160 __win32kstub_NtUserBitBltSysBmp
+       1038  40D 00017040 __win32kstub_NtUserBlockInput
+       1039  40E 00017050 __win32kstub_NtUserBroadcastImeShowStatusChange
+       1040  40F 00017060 __win32kstub_NtUserBroadcastThemeChangeEvent
+       1041  410 00017070 __win32kstub_NtUserBuildHimcList
+       1042  411 00013770 __win32kstub_NtUserBuildHwndList
+       1043  412 00013FD0 __win32kstub_NtUserBuildNameList
+       1044  413 00017080 __win32kstub_NtUserBuildPropList
+       1045  414 00013EC0 __win32kstub_NtUserCalcMenuBar
+       1046  415 00017090 __win32kstub_NtUserCalculatePopupWindowPosition
+       1047  416 00013700 __win32kstub_NtUserCallMsgFilter
+       1048  417 00013790 __win32kstub_NtUserCallNextHookEx
+       1049  418 000170A0 __win32kstub_NtUserCanBrokerForceForeground
+       1050  419 000170B0 __win32kstub_NtUserCancelQueueEventCompletionPacket
+       1051  41A 00014620 __win32kstub_NtUserChangeClipboardChain
+       1052  41B 000170C0 __win32kstub_NtUserChangeDisplaySettings
+       1053  41C 000170D0 __win32kstub_NtUserChangeWindowMessageFilter
+       1054  41D 000170E0 __win32kstub_NtUserChangeWindowMessageFilterEx
+       1055  41E 000170F0 __win32kstub_NtUserCheckAccessForIntegrityLevel
+       1056  41F 00017100 __win32kstub_NtUserCheckImeShowStatusInThread
+       1057  420 000144D0 __win32kstub_NtUserCheckMenuItem
+       1058  421 00017110 __win32kstub_NtUserCheckProcessForClipboardAccess
+       1059  422 00017120 __win32kstub_NtUserCheckProcessSession
+       1060  423 00017130 __win32kstub_NtUserCheckWindowThreadDesktop
+       1061  424 00017140 __win32kstub_NtUserChildWindowFromPointEx
+       1062  425 00017150 __win32kstub_NtUserCitSetInfo
+       1063  426 00017160 __win32kstub_NtUserClearForeground
+       1064  427 00017170 __win32kstub_NtUserClearRunWakeBit
+       1065  428 00017180 __win32kstub_NtUserClearWakeMask
+       1066  429 00017190 __win32kstub_NtUserClearWindowState
+       1067  42A 000171A0 __win32kstub_NtUserClipCursor
+       1068  42B 00014190 __win32kstub_NtUserCloseClipboard
+       1069  42C 00013F60 __win32kstub_NtUserCloseDesktop
+       1070  42D 00014040 __win32kstub_NtUserCloseWindowStation
+       1071  42E 000171B0 __win32kstub_NtUserCompositionInputSinkLuidFromPoint
+       1072  42F 000171C0 __win32kstub_NtUserCompositionInputSinkViewInstanceIdFromPoint
+       1073  430 000171D0 __win32kstub_NtUserConfigureActivationObject
+       1074  431 000171E0 __win32kstub_NtUserConfirmResizeCommit
+       1075  432 00014290 __win32kstub_NtUserConsoleControl
+       1076  433 00014470 __win32kstub_NtUserConvertMemHandle
+       1077  434 00013840 __win32kstub_NtUserCopyAcceleratorTable
+       1078  435 00014580 __win32kstub_NtUserCountClipboardFormats
+       1079  436 000143B0 __win32kstub_NtUserCreateAcceleratorTable
+       1080  437 000171F0 __win32kstub_NtUserCreateActivationObject
+       1081  438 00017200 __win32kstub_NtUserCreateBaseWindow
+       1082  439 000138A0 __win32kstub_NtUserCreateCaret
+       1083  43A 00017210 __win32kstub_NtUserCreateDCompositionHwndTarget
+       1084  43B 00017220 __win32kstub_NtUserCreateDesktopEx
+       1085  43C 00017230 __win32kstub_NtUserCreateEmptyCursorObject
+       1086  43D 00017240 __win32kstub_NtUserCreateInputContext
+       1087  43E 00014350 __win32kstub_NtUserCreateLocalMemHandle
+       1088  43F 00017250 __win32kstub_NtUserCreateMenu
+       1089  440 00017260 __win32kstub_NtUserCreatePalmRejectionDelayZone
+       1090  441 00017270 __win32kstub_NtUserCreatePopupMenu
+       1091  442 00017280 __win32kstub_NtUserCreateSystemThreads
+       1092  443 00013CC0 __win32kstub_NtUserCreateWindowEx
+       1093  444 00017290 __win32kstub_NtUserCreateWindowStation
+       1094  445 000172A0 __win32kstub_NtUserCsDdeUninitialize
+       1095  446 000172B0 __win32kstub_NtUserCtxDisplayIOCtl
+       1096  447 000172C0 __win32kstub_NtUserDWP_GetEnabledPopupOffset
+       1097  448 00014560 __win32kstub_NtUserDdeInitialize
+       1098  449 00013D40 __win32kstub_NtUserDefSetText
+       1099  44A 000172D0 __win32kstub_NtUserDeferWindowDpiChanges
+       1100  44B 000172E0 __win32kstub_NtUserDeferWindowPosAndBand
+       1101  44C 000172F0 __win32kstub_NtUserDeferredDesktopRotation
+       1102  44D 00017300 __win32kstub_NtUserDelegateCapturePointers
+       1103  44E 00017310 __win32kstub_NtUserDelegateInput
+       1104  44F 000140B0 __win32kstub_NtUserDeleteMenu
+       1105  450 00017320 __win32kstub_NtUserDeregisterShellHookWindow
+       1106  451 00014480 __win32kstub_NtUserDestroyAcceleratorTable
+       1107  452 00017330 __win32kstub_NtUserDestroyActivationObject
+       1108  453 00017340 __win32kstub_NtUserDestroyCaret
+       1109  454 00013F10 __win32kstub_NtUserDestroyCursor
+       1110  455 00017350 __win32kstub_NtUserDestroyDCompositionHwndTarget
+       1111  456 00017360 __win32kstub_NtUserDestroyInputContext
+       1112  457 00014270 __win32kstub_NtUserDestroyMenu
+       1113  458 00017370 __win32kstub_NtUserDestroyPalmRejectionDelayZone
+       1114  459 00013F20 __win32kstub_NtUserDestroyWindow
+       1115  45A 00017380 __win32kstub_NtUserDisableImmersiveOwner
+       1116  45B 00017390 __win32kstub_NtUserDisableProcessWindowFiltering
+       1117  45C 000173A0 __win32kstub_NtUserDisableProcessWindowsGhosting
+       1118  45D 000173B0 __win32kstub_NtUserDisableThreadIme
+       1119  45E 000173C0 __win32kstub_NtUserDiscardPointerFrameMessages
+       1120  45F 000138E0 __win32kstub_NtUserDispatchMessage
+       1121  460 000173D0 __win32kstub_NtUserDisplayConfigGetDeviceInfo
+       1122  461 000173E0 __win32kstub_NtUserDisplayConfigSetDeviceInfo
+       1123  462 000173F0 __win32kstub_NtUserDoInitMessagePumpHook
+       1124  463 00017400 __win32kstub_NtUserDoSoundConnect
+       1125  464 00017410 __win32kstub_NtUserDoSoundDisconnect
+       1126  465 00017420 __win32kstub_NtUserDoUninitMessagePumpHook
+       1127  466 00017430 __win32kstub_NtUserDownlevelTouchpad
+       1128  467 00017440 __win32kstub_NtUserDragDetect
+       1129  468 00017450 __win32kstub_NtUserDragObject
+       1130  469 00017460 __win32kstub_NtUserDrainThreadCoreMessagingCompletions
+       1131  46A 00017470 __win32kstub_NtUserDrawAnimatedRects
+       1132  46B 00017480 __win32kstub_NtUserDrawCaption
+       1133  46C 00017490 __win32kstub_NtUserDrawCaptionTemp
+       1134  46D 00013B70 __win32kstub_NtUserDrawIconEx
+       1135  46E 000174A0 __win32kstub_NtUserDrawMenuBar
+       1136  46F 000174B0 __win32kstub_NtUserDrawMenuBarTemp
+       1137  470 000174C0 __win32kstub_NtUserDwmGetRemoteSessionOcclusionEvent
+       1138  471 000174D0 __win32kstub_NtUserDwmGetRemoteSessionOcclusionState
+       1139  472 000174E0 __win32kstub_NtUserDwmKernelShutdown
+       1140  473 000174F0 __win32kstub_NtUserDwmKernelStartup
+       1141  474 00017500 __win32kstub_NtUserDwmLockScreenUpdates
+       1142  475 00017510 __win32kstub_NtUserDwmValidateWindow
+       1143  476 00014420 __win32kstub_NtUserEmptyClipboard
+       1144  477 00017520 __win32kstub_NtUserEnableChildWindowDpiMessage
+       1145  478 00017530 __win32kstub_NtUserEnableIAMAccess
+       1146  479 000141C0 __win32kstub_NtUserEnableMenuItem
+       1147  47A 00017540 __win32kstub_NtUserEnableModernAppWindowKeyboardIntercept
+       1148  47B 00017550 __win32kstub_NtUserEnableMouseInPointer
+       1149  47C 00017560 __win32kstub_NtUserEnableMouseInPointerForThread
+       1150  47D 00017570 __win32kstub_NtUserEnableMouseInPointerForWindow
+       1151  47E 00017580 __win32kstub_NtUserEnableMouseInputForCursorSuppression
+       1152  47F 00017590 __win32kstub_NtUserEnableNonClientDpiScaling
+       1153  480 000175A0 __win32kstub_NtUserEnableResizeLayoutSynchronization
+       1154  481 00014060 __win32kstub_NtUserEnableScrollBar
+       1155  482 000175B0 __win32kstub_NtUserEnableSessionForMMCSS
+       1156  483 000175C0 __win32kstub_NtUserEnableShellWindowManagementBehavior
+       1157  484 000175D0 __win32kstub_NtUserEnableSoftwareCursorForScreenCapture
+       1158  485 000175E0 __win32kstub_NtUserEnableTouchPad
+       1159  486 000175F0 __win32kstub_NtUserEnableWindow
+       1160  487 00017600 __win32kstub_NtUserEnableWindowGDIScaledDpiMessage
+       1161  488 00017610 __win32kstub_NtUserEnableWindowResizeOptimization
+       1162  489 00013800 __win32kstub_NtUserEndDeferWindowPosEx
+       1163  48A 00017620 __win32kstub_NtUserEndMenu
+       1164  48B 00013740 __win32kstub_NtUserEndPaint
+       1165  48C 00017630 __win32kstub_NtUserEnsureDpiDepSysMetCacheForPlateau
+       1166  48D 00017640 __win32kstub_NtUserEnumClipboardFormats
+       1167  48E 00014410 __win32kstub_NtUserEnumDisplayDevices
+       1168  48F 00013A20 __win32kstub_NtUserEnumDisplayMonitors
+       1169  490 000145D0 __win32kstub_NtUserEnumDisplaySettings
+       1170  491 00017650 __win32kstub_NtUserEvent
+       1171  492 00013A80 __win32kstub_NtUserExcludeUpdateRgn
+       1172  493 00013DE0 __win32kstub_NtUserFillWindow
+       1173  494 00013960 __win32kstub_NtUserFindExistingCursorIcon
+       1174  495 00013C40 __win32kstub_NtUserFindWindowEx
+       1175  496 00017660 __win32kstub_NtUserFlashWindowEx
+       1176  497 00017670 __win32kstub_NtUserForceEnableNumpadTranslation
+       1177  498 00017680 __win32kstub_NtUserForceWindowToDpiForTest
+       1178  499 00017690 __win32kstub_NtUserFrostCrashedWindow
+       1179  49A 000176B0 __win32kstub_NtUserFunctionalizeDisplayConfig
+       1180  49B 000176C0 __win32kstub_NtUserGetActiveProcessesDpis
+       1181  49C 000143D0 __win32kstub_NtUserGetAltTabInfo
+       1182  49D 00014010 __win32kstub_NtUserGetAncestor
+       1183  49E 000176D0 __win32kstub_NtUserGetAppImeLevel
+       1184  49F 000139C0 __win32kstub_NtUserGetAsyncKeyState
+       1185  4A0 00013F90 __win32kstub_NtUserGetAtomName
+       1186  4A1 000176E0 __win32kstub_NtUserGetAutoRotationState
+       1187  4A2 000176F0 __win32kstub_NtUserGetCIMSSM
+       1188  4A3 000139D0 __win32kstub_NtUserGetCPD
+       1189  4A4 000143E0 __win32kstub_NtUserGetCaretBlinkTime
+       1190  4A5 00017700 __win32kstub_NtUserGetCaretPos
+       1191  4A6 00017710 __win32kstub_NtUserGetClassIcoCur
+       1192  4A7 00014080 __win32kstub_NtUserGetClassInfoEx
+       1193  4A8 00013D10 __win32kstub_NtUserGetClassName
+       1194  4A9 00017720 __win32kstub_NtUserGetClipCursor
+       1195  4AA 00017730 __win32kstub_NtUserGetClipboardAccessToken
+       1196  4AB 00014430 __win32kstub_NtUserGetClipboardData
+       1197  4AC 00014330 __win32kstub_NtUserGetClipboardFormatName
+       1198  4AD 00017740 __win32kstub_NtUserGetClipboardMetadata
+       1199  4AE 00014140 __win32kstub_NtUserGetClipboardOwner
+       1200  4AF 00013AD0 __win32kstub_NtUserGetClipboardSequenceNumber
+       1201  4B0 00017750 __win32kstub_NtUserGetClipboardViewer
+       1202  4B1 00017760 __win32kstub_NtUserGetComboBoxInfo
+       1203  4B2 00013D00 __win32kstub_NtUserGetControlBrush
+       1204  4B3 000142D0 __win32kstub_NtUserGetControlColor
+       1205  4B4 00017770 __win32kstub_NtUserGetCurrentDpiInfoForWindow
+       1206  4B5 00017780 __win32kstub_NtUserGetCurrentInputMessageSource
+       1207  4B6 00017790 __win32kstub_NtUserGetCursor
+       1208  4B7 000143C0 __win32kstub_NtUserGetCursorFrameInfo
+       1209  4B8 000177A0 __win32kstub_NtUserGetCursorInfo
+       1210  4B9 000177B0 __win32kstub_NtUserGetCursorPos
+       1211  4BA 00013650 __win32kstub_NtUserGetDC
+       1212  4BB 00013E70 __win32kstub_NtUserGetDCEx
+       1213  4BC 000177C0 __win32kstub_NtUserGetDCompositionHwndBitmap
+       1214  4BD 000177D0 __win32kstub_NtUserGetDManipHookInitFunction
+       1215  4BE 000177E0 __win32kstub_NtUserGetDesktopID
+       1216  4BF 000177F0 __win32kstub_NtUserGetDesktopVisualTransform
+       1217  4C0 00017800 __win32kstub_NtUserGetDeviceChangeInfo
+       1218  4C1 00017810 __win32kstub_NtUserGetDisplayAutoRotationPreferences
+       1219  4C2 00017820 __win32kstub_NtUserGetDisplayAutoRotationPreferencesByProcessId
+       1220  4C3 00017830 __win32kstub_NtUserGetDisplayConfigBufferSizes
+       1221  4C4 00014050 __win32kstub_NtUserGetDoubleClickTime
+       1222  4C5 00017840 __win32kstub_NtUserGetDpiForCurrentProcess
+       1223  4C6 00017850 __win32kstub_NtUserGetDpiForMonitor
+       1224  4C7 00017860 __win32kstub_NtUserGetExtendedPointerDeviceProperty
+       1225  4C8 00013940 __win32kstub_NtUserGetForegroundWindow
+       1226  4C9 00014490 __win32kstub_NtUserGetGUIThreadInfo
+       1227  4CA 00017870 __win32kstub_NtUserGetGestureConfig
+       1228  4CB 00017880 __win32kstub_NtUserGetGestureExtArgs
+       1229  4CC 00017890 __win32kstub_NtUserGetGestureInfo
+       1230  4CD 000178A0 __win32kstub_NtUserGetGuiResources
+       1231  4CE 000178B0 __win32kstub_NtUserGetHDevName
+       1232  4CF 000178C0 __win32kstub_NtUserGetHimetricScaleFactorFromPixelLocation
+       1233  4D0 000178D0 __win32kstub_NtUserGetIMEShowStatus
+       1234  4D1 00013A70 __win32kstub_NtUserGetIconInfo
+       1235  4D2 00013DD0 __win32kstub_NtUserGetIconSize
+       1236  4D3 000178E0 __win32kstub_NtUserGetImeHotKey
+       1237  4D4 000178F0 __win32kstub_NtUserGetImeInfoEx
+       1238  4D5 00017900 __win32kstub_NtUserGetInputContainerId
+       1239  4D6 00017910 __win32kstub_NtUserGetInputDesktop
+       1240  4D7 00017920 __win32kstub_NtUserGetInputEvent
+       1241  4D8 00017930 __win32kstub_NtUserGetInputLocaleInfo
+       1242  4D9 00017940 __win32kstub_NtUserGetInteractiveControlDeviceInfo
+       1243  4DA 00017950 __win32kstub_NtUserGetInteractiveControlInfo
+       1244  4DB 00017960 __win32kstub_NtUserGetInteractiveCtrlSupportedWaveforms
+       1245  4DC 00017970 __win32kstub_NtUserGetInternalWindowPos
+       1246  4DD 00017980 __win32kstub_NtUserGetKeyNameText
+       1247  4DE 000135F0 __win32kstub_NtUserGetKeyState
+       1248  4DF 00017990 __win32kstub_NtUserGetKeyboardLayout
+       1249  4E0 00013B00 __win32kstub_NtUserGetKeyboardLayoutList
+       1250  4E1 000179A0 __win32kstub_NtUserGetKeyboardLayoutName
+       1251  4E2 00013CE0 __win32kstub_NtUserGetKeyboardState
+       1252  4E3 000179B0 __win32kstub_NtUserGetKeyboardType
+       1253  4E4 000179C0 __win32kstub_NtUserGetLayeredWindowAttributes
+       1254  4E5 000179D0 __win32kstub_NtUserGetListBoxInfo
+       1255  4E6 00014100 __win32kstub_NtUserGetMenuBarInfo
+       1256  4E7 000179E0 __win32kstub_NtUserGetMenuIndex
+       1257  4E8 000179F0 __win32kstub_NtUserGetMenuItemRect
+       1258  4E9 00013610 __win32kstub_NtUserGetMessage
+       1259  4EA 00017A00 __win32kstub_NtUserGetMessagePos
+       1260  4EB 00017A10 __win32kstub_NtUserGetMinuserIdForBaseWindow
+       1261  4EC 00017A20 __win32kstub_NtUserGetModernAppWindow
+       1262  4ED 00017A30 __win32kstub_NtUserGetMouseMovePointsEx
+       1263  4EE 00013C20 __win32kstub_NtUserGetObjectInformation
+       1264  4EF 00017A40 __win32kstub_NtUserGetOemBitmapSize
+       1265  4F0 00014220 __win32kstub_NtUserGetOpenClipboardWindow
+       1266  4F1 00016880 __win32kstub_NtUserGetOwnerTransformedMonitorRect
+       1267  4F2 00017A50 __win32kstub_NtUserGetPhysicalDeviceRect
+       1268  4F3 00017A60 __win32kstub_NtUserGetPointerCursorId
+       1269  4F4 00017A70 __win32kstub_NtUserGetPointerDevice
+       1270  4F5 00017A80 __win32kstub_NtUserGetPointerDeviceCursors
+       1271  4F6 00017A90 __win32kstub_NtUserGetPointerDeviceInputSpace
+       1272  4F7 00017AA0 __win32kstub_NtUserGetPointerDeviceOrientation
+       1273  4F8 00017AB0 __win32kstub_NtUserGetPointerDeviceProperties
+       1274  4F9 00017AC0 __win32kstub_NtUserGetPointerDeviceRects
+       1275  4FA 00017AD0 __win32kstub_NtUserGetPointerDevices
+       1276  4FB 00017AE0 __win32kstub_NtUserGetPointerFrameTimes
+       1277  4FC 00017AF0 __win32kstub_NtUserGetPointerInfoList
+       1278  4FD 00017B00 __win32kstub_NtUserGetPointerInputTransform
+       1279  4FE 00017B10 __win32kstub_NtUserGetPointerProprietaryId
+       1280  4FF 00017B20 __win32kstub_NtUserGetPointerType
+       1281  500 00017B30 __win32kstub_NtUserGetPrecisionTouchPadConfiguration
+       1282  501 00017B40 __win32kstub_NtUserGetPriorityClipboardFormat
+       1283  502 00017B50 __win32kstub_NtUserGetProcessDefaultLayout
+       1284  503 00017B60 __win32kstub_NtUserGetProcessDpiAwarenessContext
+       1285  504 00017B70 __win32kstub_NtUserGetProcessUIContextInformation
+       1286  505 000137C0 __win32kstub_NtUserGetProcessWindowStation
+       1287  506 00013690 __win32kstub_NtUserGetProp
+       1288  507 00017B80 __win32kstub_NtUserGetQueueIocp
+       1289  508 00017B90 __win32kstub_NtUserGetQueueStatus
+       1290  509 00017BA0 __win32kstub_NtUserGetQueueStatusReadonly
+       1291  50A 00017BB0 __win32kstub_NtUserGetRawInputBuffer
+       1292  50B 00017BC0 __win32kstub_NtUserGetRawInputData
+       1293  50C 00017BD0 __win32kstub_NtUserGetRawInputDeviceInfo
+       1294  50D 00017BE0 __win32kstub_NtUserGetRawInputDeviceList
+       1295  50E 00017BF0 __win32kstub_NtUserGetRawPointerDeviceData
+       1296  50F 00017C00 __win32kstub_NtUserGetRegisteredRawInputDevices
+       1297  510 00017C10 __win32kstub_NtUserGetRequiredCursorSizes
+       1298  511 00017C20 __win32kstub_NtUserGetResizeDCompositionSynchronizationObject
+       1299  512 00013E80 __win32kstub_NtUserGetScrollBarInfo
+       1300  513 00017C30 __win32kstub_NtUserGetSendMessageReceiver
+       1301  514 00017C40 __win32kstub_NtUserGetSharedWindowData
+       1302  515 00017C50 __win32kstub_NtUserGetSysMenuOffset
+       1303  516 00017C60 __win32kstub_NtUserGetSystemContentRects
+       1304  517 00017C70 __win32kstub_NtUserGetSystemDpiForProcess
+       1305  518 00013B80 __win32kstub_NtUserGetSystemMenu
+       1306  519 00013D80 __win32kstub_NtUserGetThreadDesktop
+       1307  51A 000135D0 __win32kstub_NtUserGetThreadState
+       1308  51B 00013E40 __win32kstub_NtUserGetTitleBarInfo
+       1309  51C 00017C80 __win32kstub_NtUserGetTopLevelWindow
+       1310  51D 00017C90 __win32kstub_NtUserGetTouchInputInfo
+       1311  51E 00017CA0 __win32kstub_NtUserGetTouchValidationStatus
+       1312  51F 00017CB0 __win32kstub_NtUserGetUniformSpaceMapping
+       1313  520 00017CC0 __win32kstub_NtUserGetUnpredictedMessagePos
+       1314  521 00013AB0 __win32kstub_NtUserGetUpdateRect
+       1315  522 00013DB0 __win32kstub_NtUserGetUpdateRgn
+       1316  523 00017CD0 __win32kstub_NtUserGetUpdatedClipboardFormats
+       1317  524 00017CE0 __win32kstub_NtUserGetWOWClass
+       1318  525 00017CF0 __win32kstub_NtUserGetWinStationInfo
+       1319  526 00017D00 __win32kstub_NtUserGetWindowBand
+       1320  527 00017D10 __win32kstub_NtUserGetWindowCompositionAttribute
+       1321  528 00017D20 __win32kstub_NtUserGetWindowCompositionInfo
+       1322  529 00017D30 __win32kstub_NtUserGetWindowContextHelpId
+       1323  52A 00013BB0 __win32kstub_NtUserGetWindowDC
+       1324  52B 00017D40 __win32kstub_NtUserGetWindowDisplayAffinity
+       1325  52C 00017D50 __win32kstub_NtUserGetWindowFeedbackSetting
+       1326  52D 00017D60 __win32kstub_NtUserGetWindowMinimizeRect
+       1327  52E 000141F0 __win32kstub_NtUserGetWindowPlacement
+       1328  52F 00017D70 __win32kstub_NtUserGetWindowProcessHandle
+       1329  530 00017D80 __win32kstub_NtUserGetWindowRgnEx
+       1330  531 00017D90 __win32kstub_NtUserGetWindowThreadProcessId
+       1331  532 00017DA0 __win32kstub_NtUserGetWindowTrackInfoAsync
+       1332  533 00017DB0 __win32kstub_NtUserGhostWindowFromHungWindow
+       1333  534 00017DC0 __win32kstub_NtUserHandleDelegatedInput
+       1334  535 00017DD0 __win32kstub_NtUserHandleSystemThreadCreationFailure
+       1335  536 00017DE0 __win32kstub_NtUserHardErrorControl
+       1336  537 000137A0 __win32kstub_NtUserHideCaret
+       1337  538 00017DF0 __win32kstub_NtUserHideCursorNoCapture
+       1338  539 00017E00 __win32kstub_NtUserHidePointerContactVisualization
+       1339  53A 00017E10 __win32kstub_NtUserHiliteMenuItem
+       1340  53B 00017E20 __win32kstub_NtUserHungWindowFromGhostWindow
+       1341  53C 00017E30 __win32kstub_NtUserHwndQueryRedirectionInfo
+       1342  53D 00017E40 __win32kstub_NtUserHwndSetRedirectionInfo
+       1343  53E 00017E50 __win32kstub_NtUserImpersonateDdeClientWindow
+       1344  53F 00017E60 __win32kstub_NtUserInheritWindowMonitor
+       1345  540 00017E70 __win32kstub_NtUserInitAnsiOem
+       1346  541 00017E80 __win32kstub_NtUserInitRunThread
+       1347  542 00017E90 __win32kstub_NtUserInitThreadCoreMessagingIocp
+       1348  543 00017EA0 __win32kstub_NtUserInitialize
+       1349  544 00017EB0 __win32kstub_NtUserInitializeClientPfnArrays
+       1350  545 00017EC0 __win32kstub_NtUserInitializeGenericHidInjection
+       1351  546 00017ED0 __win32kstub_NtUserInitializeInputDeviceInjection
+       1352  547 00017EE0 __win32kstub_NtUserInitializePointerDeviceInjection
+       1353  548 00017EF0 __win32kstub_NtUserInitializePointerDeviceInjectionEx
+       1354  549 00017F00 __win32kstub_NtUserInitializeTouchInjection
+       1355  54A 00017F10 __win32kstub_NtUserInjectDeviceInput
+       1356  54B 00017F20 __win32kstub_NtUserInjectGenericHidInput
+       1357  54C 00017F30 __win32kstub_NtUserInjectGesture
+       1358  54D 00017F40 __win32kstub_NtUserInjectKeyboardInput
+       1359  54E 00017F50 __win32kstub_NtUserInjectMouseInput
+       1360  54F 00017F60 __win32kstub_NtUserInjectPointerInput
+       1361  550 00017F70 __win32kstub_NtUserInjectTouchInput
+       1362  551 00017F80 __win32kstub_NtUserInteractiveControlQueryUsage
+       1363  552 00017F90 __win32kstub_NtUserInternalGetWindowIcon
+       1364  553 00013BA0 __win32kstub_NtUserInternalGetWindowText
+       1365  554 00017FA0 __win32kstub_NtUserInternalToUnicode
+       1366  555 00013600 __win32kstub_NtUserInvalidateRect
+       1367  556 00014130 __win32kstub_NtUserInvalidateRgn
+       1368  557 00017FB0 __win32kstub_NtUserIsChildWindowDpiMessageEnabled
+       1369  558 00013870 __win32kstub_NtUserIsClipboardFormatAvailable
+       1370  559 00017FC0 __win32kstub_NtUserIsMouseInPointerEnabled
+       1371  55A 00017FD0 __win32kstub_NtUserIsMouseInputEnabled
+       1372  55B 00017FE0 __win32kstub_NtUserIsNonClientDpiScalingEnabled
+       1373  55C 00017FF0 __win32kstub_NtUserIsResizeLayoutSynchronizationEnabled
+       1374  55D 00018000 __win32kstub_NtUserIsTopLevelWindow
+       1375  55E 00018010 __win32kstub_NtUserIsTouchWindow
+       1376  55F 00018020 __win32kstub_NtUserIsWindowBroadcastingDpiToChildren
+       1377  560 00018030 __win32kstub_NtUserIsWindowGDIScaledDpiMessageEnabled
+       1378  561 00018040 __win32kstub_NtUserKillSystemTimer
+       1379  562 00013760 __win32kstub_NtUserKillTimer
+       1380  563 00018050 __win32kstub_NtUserLW_LoadFonts
+       1381  564 00018060 __win32kstub_NtUserLayoutCompleted
+       1382  565 00018070 __win32kstub_NtUserLinkDpiCursor
+       1383  566 00018080 __win32kstub_NtUserLoadCursorsAndIcons
+       1384  567 00018090 __win32kstub_NtUserLoadKeyboardLayoutEx
+       1385  568 000180A0 __win32kstub_NtUserLoadUserApiHook
+       1386  569 000180B0 __win32kstub_NtUserLockCursor
+       1387  56A 000180C0 __win32kstub_NtUserLockSetForegroundWindow
+       1388  56B 000180D0 __win32kstub_NtUserLockWindowStation
+       1389  56C 00014500 __win32kstub_NtUserLockWindowUpdate
+       1390  56D 000180E0 __win32kstub_NtUserLockWorkStation
+       1391  56E 000180F0 __win32kstub_NtUserLogicalToPerMonitorDPIPhysicalPoint
+       1392  56F 00018100 __win32kstub_NtUserLogicalToPhysicalDpiPointForWindow
+       1393  570 00018110 __win32kstub_NtUserLogicalToPhysicalPoint
+       1394  571 00018120 __win32kstub_NtUserMNDragLeave
+       1395  572 00018130 __win32kstub_NtUserMNDragOver
+       1396  573 00018140 __win32kstub_NtUserMagControl
+       1397  574 00018150 __win32kstub_NtUserMagGetContextInformation
+       1398  575 00018160 __win32kstub_NtUserMagSetContextInformation
+       1399  576 00018170 __win32kstub_NtUserMapDesktopObject
+       1400  577 00018180 __win32kstub_NtUserMapPointsByVisualIdentifier
+       1401  578 00013B20 __win32kstub_NtUserMapVirtualKeyEx
+       1402  579 00018190 __win32kstub_NtUserMarkWindowForRawMouse
+       1403  57A 000181A0 __win32kstub_NtUserMenuItemFromPoint
+       1404  57B 000181B0 __win32kstub_NtUserMessageBeep
+       1405  57C 00013620 __win32kstub_NtUserMessageCall
+       1406  57D 000181C0 __win32kstub_NtUserMinInitialize
+       1407  57E 000181D0 __win32kstub_NtUserMinMaximize
+       1408  57F 00014570 __win32kstub_NtUserModifyUserStartupInfoFlags
+       1409  580 000181E0 __win32kstub_NtUserModifyWindowTouchCapability
+       1410  581 00013B50 __win32kstub_NtUserMoveWindow
+       1411  582 000181F0 __win32kstub_NtUserMsgWaitForMultipleObjectsEx
+       1412  583 00018200 __win32kstub_NtUserNavigateFocus
+       1413  584 00018210 __win32kstub_NtUserNlsKbdSendIMENotification
+       1414  585 00018220 __win32kstub_NtUserNotifyIMEStatus
+       1415  586 00018230 __win32kstub_NtUserNotifyOverlayWindow
+       1416  587 00013E20 __win32kstub_NtUserNotifyProcessCreate
+       1417  588 00013850 __win32kstub_NtUserNotifyWinEvent
+       1418  589 000141A0 __win32kstub_NtUserOpenClipboard
+       1419  58A 00013F70 __win32kstub_NtUserOpenDesktop
+       1420  58B 00018240 __win32kstub_NtUserOpenInputDesktop
+       1421  58C 00018250 __win32kstub_NtUserOpenThreadDesktop
+       1422  58D 00013F40 __win32kstub_NtUserOpenWindowStation
+       1423  58E 000145E0 __win32kstub_NtUserPaintDesktop
+       1424  58F 00014380 __win32kstub_NtUserPaintMenuBar
+       1425  590 00018260 __win32kstub_NtUserPaintMonitor
+       1426  591 000135E0 __win32kstub_NtUserPeekMessage
+       1427  592 00018270 __win32kstub_NtUserPerMonitorDPIPhysicalToLogicalPoint
+       1428  593 00018280 __win32kstub_NtUserPhysicalToLogicalDpiPointForWindow
+       1429  594 00018290 __win32kstub_NtUserPhysicalToLogicalPoint
+       1430  595 000182A0 __win32kstub_NtUserPlayEventSound
+       1431  596 000182B0 __win32kstub_NtUserPostKeyboardInputMessage
+       1432  597 000136A0 __win32kstub_NtUserPostMessage
+       1433  598 000182C0 __win32kstub_NtUserPostQuitMessage
+       1434  599 00013B60 __win32kstub_NtUserPostThreadMessage
+       1435  59A 000182D0 __win32kstub_NtUserPrepareForLogoff
+       1436  59B 000182E0 __win32kstub_NtUserPrintWindow
+       1437  59C 00014400 __win32kstub_NtUserProcessConnect
+       1438  59D 000182F0 __win32kstub_NtUserProcessInkFeedbackCommand
+       1439  59E 00018300 __win32kstub_NtUserPromoteMouseInPointer
+       1440  59F 00018310 __win32kstub_NtUserPromotePointer
+       1441  5A0 00018320 __win32kstub_NtUserQueryBSDRWindow
+       1442  5A1 00018330 __win32kstub_NtUserQueryDisplayConfig
+       1443  5A2 00018340 __win32kstub_NtUserQueryInformationThread
+       1444  5A3 00018350 __win32kstub_NtUserQueryInputContext
+       1445  5A4 00018360 __win32kstub_NtUserQuerySendMessage
+       1446  5A5 000136B0 __win32kstub_NtUserQueryWindow
+       1447  5A6 00018370 __win32kstub_NtUserRealChildWindowFromPoint
+       1448  5A7 00014340 __win32kstub_NtUserRealInternalGetMessage
+       1449  5A8 00018380 __win32kstub_NtUserRealWaitMessageEx
+       1450  5A9 00018390 __win32kstub_NtUserRealizePalette
+       1451  5AA 000183A0 __win32kstub_NtUserReassociateQueueEventCompletionPacket
+       1452  5AB 000183B0 __win32kstub_NtUserRedrawFrame
+       1453  5AC 000183C0 __win32kstub_NtUserRedrawFrameAndHook
+       1454  5AD 000183D0 __win32kstub_NtUserRedrawTitle
+       1455  5AE 000136E0 __win32kstub_NtUserRedrawWindow
+       1456  5AF 000183E0 __win32kstub_NtUserRegisterBSDRWindow
+       1457  5B0 00013FF0 __win32kstub_NtUserRegisterClassExWOW
+       1458  5B1 000183F0 __win32kstub_NtUserRegisterDManipHook
+       1459  5B2 00018400 __win32kstub_NtUserRegisterEdgy
+       1460  5B3 00018410 __win32kstub_NtUserRegisterErrorReportingDialog
+       1461  5B4 00018420 __win32kstub_NtUserRegisterForCustomDockTargets
+       1462  5B5 00018430 __win32kstub_NtUserRegisterForTooltipDismissNotification
+       1463  5B6 00018440 __win32kstub_NtUserRegisterGhostWindow
+       1464  5B7 00018450 __win32kstub_NtUserRegisterHotKey
+       1465  5B8 00018460 __win32kstub_NtUserRegisterLPK
+       1466  5B9 00018470 __win32kstub_NtUserRegisterLogonProcess
+       1467  5BA 00018480 __win32kstub_NtUserRegisterManipulationThread
+       1468  5BB 00018490 __win32kstub_NtUserRegisterPointerDeviceNotifications
+       1469  5BC 000184A0 __win32kstub_NtUserRegisterPointerInputTarget
+       1470  5BD 000184B0 __win32kstub_NtUserRegisterRawInputDevices
+       1471  5BE 000184C0 __win32kstub_NtUserRegisterServicesProcess
+       1472  5BF 000184D0 __win32kstub_NtUserRegisterSessionPort
+       1473  5C0 000184E0 __win32kstub_NtUserRegisterShellHookWindow
+       1474  5C1 000184F0 __win32kstub_NtUserRegisterShellPTPListener
+       1475  5C2 00018500 __win32kstub_NtUserRegisterSiblingFrostWindow
+       1476  5C3 00018510 __win32kstub_NtUserRegisterSystemThread
+       1477  5C4 00018520 __win32kstub_NtUserRegisterTasklist
+       1478  5C5 00018530 __win32kstub_NtUserRegisterTouchHitTestingWindow
+       1479  5C6 00018540 __win32kstub_NtUserRegisterTouchPadCapable
+       1480  5C7 00018550 __win32kstub_NtUserRegisterUserApiHook
+       1481  5C8 00018560 __win32kstub_NtUserRegisterWindowArrangementCallout
+       1482  5C9 000138F0 __win32kstub_NtUserRegisterWindowMessage
+       1483  5CA 00018570 __win32kstub_NtUserReleaseCapture
+       1484  5CB 00018580 __win32kstub_NtUserReleaseDC
+       1485  5CC 00018590 __win32kstub_NtUserReleaseDwmHitTestWaiters
+       1486  5CD 000185A0 __win32kstub_NtUserRemoteConnect
+       1487  5CE 000185B0 __win32kstub_NtUserRemoteConnectState
+       1488  5CF 000185C0 __win32kstub_NtUserRemoteConsoleShadowStop
+       1489  5D0 000185D0 __win32kstub_NtUserRemoteDisconnect
+       1490  5D1 000185E0 __win32kstub_NtUserRemoteNotify
+       1491  5D2 000185F0 __win32kstub_NtUserRemotePassthruDisable
+       1492  5D3 00018600 __win32kstub_NtUserRemotePassthruEnable
+       1493  5D4 00018610 __win32kstub_NtUserRemoteReconnect
+       1494  5D5 00018620 __win32kstub_NtUserRemoteRedrawRectangle
+       1495  5D6 00018630 __win32kstub_NtUserRemoteRedrawScreen
+       1496  5D7 00018640 __win32kstub_NtUserRemoteShadowCleanup
+       1497  5D8 00018650 __win32kstub_NtUserRemoteShadowSetup
+       1498  5D9 00018660 __win32kstub_NtUserRemoteShadowStart
+       1499  5DA 00018670 __win32kstub_NtUserRemoteShadowStop
+       1500  5DB 00018680 __win32kstub_NtUserRemoteStopScreenUpdates
+       1501  5DC 00018690 __win32kstub_NtUserRemoteThinwireStats
+       1502  5DD 000186A0 __win32kstub_NtUserRemoveClipboardFormatListener
+       1503  5DE 000186B0 __win32kstub_NtUserRemoveInjectionDevice
+       1504  5DF 00014440 __win32kstub_NtUserRemoveMenu
+       1505  5E0 000139E0 __win32kstub_NtUserRemoveProp
+       1506  5E1 000186C0 __win32kstub_NtUserRemoveQueueCompletion
+       1507  5E2 000186D0 __win32kstub_NtUserRemoveVisualIdentifier
+       1508  5E3 000186E0 __win32kstub_NtUserReplyMessage
+       1509  5E4 000186F0 __win32kstub_NtUserReportInertia
+       1510  5E5 00018700 __win32kstub_NtUserResetDblClk
+       1511  5E6 00018710 __win32kstub_NtUserResolveDesktopForWOW
+       1512  5E7 00018720 __win32kstub_NtUserRestoreWindowDpiChanges
+       1513  5E8 00013A60 __win32kstub_NtUserSBGetParms
+       1514  5E9 00018730 __win32kstub_NtUserScaleSystemMetricForDPIWithoutCache
+       1515  5EA 00018740 __win32kstub_NtUserScheduleDispatchNotification
+       1516  5EB 00013C10 __win32kstub_NtUserScrollDC
+       1517  5EC 000140D0 __win32kstub_NtUserScrollWindowEx
+       1518  5ED 00013780 __win32kstub_NtUserSelectPalette
+       1519  5EE 00018750 __win32kstub_NtUserSendEventMessage
+       1520  5EF 00013D70 __win32kstub_NtUserSendInput
+       1521  5F0 00018760 __win32kstub_NtUserSendInteractiveControlHapticsReport
+       1522  5F1 00018770 __win32kstub_NtUserSetActivationFilter
+       1523  5F2 00018780 __win32kstub_NtUserSetActiveProcessForMonitor
+       1524  5F3 000142A0 __win32kstub_NtUserSetActiveWindow
+       1525  5F4 00018790 __win32kstub_NtUserSetAdditionalForegroundBoostProcesses
+       1526  5F5 000187A0 __win32kstub_NtUserSetAppImeLevel
+       1527  5F6 000187B0 __win32kstub_NtUserSetAutoRotation
+       1528  5F7 000187C0 __win32kstub_NtUserSetBridgeWindowChild
+       1529  5F8 000187D0 __win32kstub_NtUserSetBrokeredForeground
+       1530  5F9 000187E0 __win32kstub_NtUserSetCalibrationData
+       1531  5FA 000187F0 __win32kstub_NtUserSetCancelRotationDelayHintWindow
+       1532  5FB 00013A10 __win32kstub_NtUserSetCapture
+       1533  5FC 00018800 __win32kstub_NtUserSetCaretBlinkTime
+       1534  5FD 00018810 __win32kstub_NtUserSetCaretPos
+       1535  5FE 00018820 __win32kstub_NtUserSetChildWindowNoActivate
+       1536  5FF 000140F0 __win32kstub_NtUserSetClassLong
+       1537  600 00019070 __win32kstub_NtUserSetClassLongPtr
+       1538  601 00018830 __win32kstub_NtUserSetClassWord
+       1539  602 000141B0 __win32kstub_NtUserSetClipboardData
+       1540  603 00014630 __win32kstub_NtUserSetClipboardViewer
+       1541  604 00018840 __win32kstub_NtUserSetCoreWindow
+       1542  605 00018850 __win32kstub_NtUserSetCoreWindowPartner
+       1543  606 00013750 __win32kstub_NtUserSetCursor
+       1544  607 00013F50 __win32kstub_NtUserSetCursorIconData
+       1545  608 00018860 __win32kstub_NtUserSetCursorIconDataEx
+       1546  609 00018870 __win32kstub_NtUserSetCursorPos
+       1547  60A 00018880 __win32kstub_NtUserSetDesktopColorTransform
+       1548  60B 00018890 __win32kstub_NtUserSetDesktopVisualInputSink
+       1549  60C 000188A0 __win32kstub_NtUserSetDialogControlDpiChangeBehavior
+       1550  60D 000188B0 __win32kstub_NtUserSetDialogPointer
+       1551  60E 000188C0 __win32kstub_NtUserSetDialogSystemMenu
+       1552  60F 000188D0 __win32kstub_NtUserSetDisplayAutoRotationPreferences
+       1553  610 000188E0 __win32kstub_NtUserSetDisplayConfig
+       1554  611 000188F0 __win32kstub_NtUserSetDisplayMapping
+       1555  612 00018900 __win32kstub_NtUserSetDoubleClickTime
+       1556  613 00018910 __win32kstub_NtUserSetDpiForWindow
+       1557  614 00018920 __win32kstub_NtUserSetFallbackForeground
+       1558  615 00018930 __win32kstub_NtUserSetFeatureReportResponse
+       1559  616 00013A90 __win32kstub_NtUserSetFocus
+       1560  617 00018940 __win32kstub_NtUserSetForegroundRedirectionForActivationObject
+       1561  618 00018950 __win32kstub_NtUserSetForegroundWindow
+       1562  619 00018960 __win32kstub_NtUserSetForegroundWindowForApplication
+       1563  61A 00018970 __win32kstub_NtUserSetFullscreenMagnifierOffsetsDWMUpdated
+       1564  61B 00018980 __win32kstub_NtUserSetGestureConfig
+       1565  61C 00018990 __win32kstub_NtUserSetImeHotKey
+       1566  61D 000189A0 __win32kstub_NtUserSetImeInfoEx
+       1567  61E 000189B0 __win32kstub_NtUserSetImeOwnerWindow
+       1568  61F 000142B0 __win32kstub_NtUserSetInformationThread
+       1569  620 000189C0 __win32kstub_NtUserSetInputServiceState
+       1570  621 000189D0 __win32kstub_NtUserSetInteractiveControlFocus
+       1571  622 000189E0 __win32kstub_NtUserSetInteractiveCtrlRotationAngle
+       1572  623 000189F0 __win32kstub_NtUserSetInternalWindowPos
+       1573  624 00014390 __win32kstub_NtUserSetKeyboardState
+       1574  625 00018A00 __win32kstub_NtUserSetLayeredWindowAttributes
+       1575  626 00018A10 __win32kstub_NtUserSetMagnificationDesktopMagnifierOffsetsDWMUpdated
+       1576  627 00018A20 __win32kstub_NtUserSetManipulationInputTarget
+       1577  628 00018A30 __win32kstub_NtUserSetMenu
+       1578  629 00018A40 __win32kstub_NtUserSetMenuContextHelpId
+       1579  62A 000144C0 __win32kstub_NtUserSetMenuDefaultItem
+       1580  62B 00018A50 __win32kstub_NtUserSetMenuFlagRtoL
+       1581  62C 00018A60 __win32kstub_NtUserSetMessageExtraInfo
+       1582  62D 00018A70 __win32kstub_NtUserSetMirrorRendering
+       1583  62E 00018A80 __win32kstub_NtUserSetModernAppWindow
+       1584  62F 00018A90 __win32kstub_NtUserSetMonitorWorkArea
+       1585  630 00018AA0 __win32kstub_NtUserSetMouseInputRateLimitingTimer
+       1586  631 00018AB0 __win32kstub_NtUserSetMsgBox
+       1587  632 00018AC0 __win32kstub_NtUserSetObjectInformation
+       1588  633 00013CD0 __win32kstub_NtUserSetParent
+       1589  634 00018AD0 __win32kstub_NtUserSetPrecisionTouchPadConfiguration
+       1590  635 00018AE0 __win32kstub_NtUserSetProcessDefaultLayout
+       1591  636 00018AF0 __win32kstub_NtUserSetProcessDpiAwarenessContext
+       1592  637 00018B00 __win32kstub_NtUserSetProcessInteractionFlags
+       1593  638 00018B10 __win32kstub_NtUserSetProcessLaunchForegroundPolicy
+       1594  639 00018B20 __win32kstub_NtUserSetProcessMousewheelRoutingMode
+       1595  63A 00018B30 __win32kstub_NtUserSetProcessRestrictionExemption
+       1596  63B 00018B40 __win32kstub_NtUserSetProcessUIAccessZorder
+       1597  63C 00013F80 __win32kstub_NtUserSetProcessWindowStation
+       1598  63D 00018B50 __win32kstub_NtUserSetProgmanWindow
+       1599  63E 00013A40 __win32kstub_NtUserSetProp
+       1600  63F 00013880 __win32kstub_NtUserSetScrollInfo
+       1601  640 000176A0 __win32kstub_NtUserSetSensorPresence
+       1602  641 00018B60 __win32kstub_NtUserSetSharedWindowData
+       1603  642 00018B70 __win32kstub_NtUserSetShellChangeNotifyHWND
+       1604  643 00018B80 __win32kstub_NtUserSetShellWindowEx
+       1605  644 00018B90 __win32kstub_NtUserSetSysColors
+       1606  645 00018BA0 __win32kstub_NtUserSetSysMenu
+       1607  646 00018BB0 __win32kstub_NtUserSetSystemContentRects
+       1608  647 00018BC0 __win32kstub_NtUserSetSystemCursor
+       1609  648 00014510 __win32kstub_NtUserSetSystemMenu
+       1610  649 00018BD0 __win32kstub_NtUserSetSystemTimer
+       1611  64A 00018BE0 __win32kstub_NtUserSetTSFEventState
+       1612  64B 00018BF0 __win32kstub_NtUserSetTargetForResourceBrokering
+       1613  64C 00018C00 __win32kstub_NtUserSetTaskmanWindow
+       1614  64D 00013E60 __win32kstub_NtUserSetThreadDesktop
+       1615  64E 00018C10 __win32kstub_NtUserSetThreadInputBlocked
+       1616  64F 00018C20 __win32kstub_NtUserSetThreadLayoutHandles
+       1617  650 00018C30 __win32kstub_NtUserSetThreadQueueMergeSetting
+       1618  651 00014230 __win32kstub_NtUserSetThreadState
+       1619  652 00013730 __win32kstub_NtUserSetTimer
+       1620  653 00018C40 __win32kstub_NtUserSetVisible
+       1621  654 00018C50 __win32kstub_NtUserSetWaitForQueueAttach
+       1622  655 00018C60 __win32kstub_NtUserSetWatermarkStrings
+       1623  656 000144E0 __win32kstub_NtUserSetWinEventHook
+       1624  657 00018C70 __win32kstub_NtUserSetWindowBand
+       1625  658 00018C80 __win32kstub_NtUserSetWindowCompositionAttribute
+       1626  659 00018C90 __win32kstub_NtUserSetWindowCompositionTransition
+       1627  65A 00018CA0 __win32kstub_NtUserSetWindowContextHelpId
+       1628  65B 00018CB0 __win32kstub_NtUserSetWindowDisplayAffinity
+       1629  65C 00013EA0 __win32kstub_NtUserSetWindowFNID
+       1630  65D 00018CC0 __win32kstub_NtUserSetWindowFeedbackSetting
+       1631  65E 00013B30 __win32kstub_NtUserSetWindowLong
+       1632  65F 00019080 __win32kstub_NtUserSetWindowLongPtr
+       1633  660 000142C0 __win32kstub_NtUserSetWindowPlacement
+       1634  661 000137E0 __win32kstub_NtUserSetWindowPos
+       1635  662 00014150 __win32kstub_NtUserSetWindowRgn
+       1636  663 00018CD0 __win32kstub_NtUserSetWindowRgnEx
+       1637  664 00018CE0 __win32kstub_NtUserSetWindowShowState
+       1638  665 00018CF0 __win32kstub_NtUserSetWindowState
+       1639  666 00018D00 __win32kstub_NtUserSetWindowStationUser
+       1640  667 00014320 __win32kstub_NtUserSetWindowWord
+       1641  668 000144B0 __win32kstub_NtUserSetWindowsHookAW
+       1642  669 00013E10 __win32kstub_NtUserSetWindowsHookEx
+       1643  66A 00018D10 __win32kstub_NtUserShellMigrateWindow
+       1644  66B 00018D20 __win32kstub_NtUserShellSetWindowPos
+       1645  66C 000137F0 __win32kstub_NtUserShowCaret
+       1646  66D 00018D30 __win32kstub_NtUserShowCursor
+       1647  66E 00018D40 __win32kstub_NtUserShowOwnedPopups
+       1648  66F 00013950 __win32kstub_NtUserShowScrollBar
+       1649  670 00018D50 __win32kstub_NtUserShowStartGlass
+       1650  671 00018D60 __win32kstub_NtUserShowSystemCursor
+       1651  672 00013AF0 __win32kstub_NtUserShowWindow
+       1652  673 00014640 __win32kstub_NtUserShowWindowAsync
+       1653  674 00018D70 __win32kstub_NtUserShutdownBlockReasonCreate
+       1654  675 00018D80 __win32kstub_NtUserShutdownBlockReasonQuery
+       1655  676 00018D90 __win32kstub_NtUserShutdownReasonDestroy
+       1656  677 00018DA0 __win32kstub_NtUserSignalRedirectionStartComplete
+       1657  678 00018DB0 __win32kstub_NtUserSlicerControl
+       1658  679 00018DC0 __win32kstub_NtUserSoundSentry
+       1659  67A 00018DD0 __win32kstub_NtUserStopAndEndInertia
+       1660  67B 00018DE0 __win32kstub_NtUserSwapMouseButton
+       1661  67C 00018DF0 __win32kstub_NtUserSwitchDesktop
+       1662  67D 00018E00 __win32kstub_NtUserSwitchToThisWindow
+       1663  67E 000139A0 __win32kstub_NtUserSystemParametersInfo
+       1664  67F 00018E10 __win32kstub_NtUserSystemParametersInfoForDpi
+       1665  680 00018E20 __win32kstub_NtUserTestForInteractiveUser
+       1666  681 00018E30 __win32kstub_NtUserThreadMessageQueueAttached
+       1667  682 00014520 __win32kstub_NtUserThunkedMenuInfo
+       1668  683 00013ED0 __win32kstub_NtUserThunkedMenuItemInfo
+       1669  684 00013CF0 __win32kstub_NtUserToUnicodeEx
+       1670  685 00018E40 __win32kstub_NtUserTraceLoggingSendMixedModeTelemetry
+       1671  686 00014250 __win32kstub_NtUserTrackMouseEvent
+       1672  687 00018E50 __win32kstub_NtUserTrackPopupMenuEx
+       1673  688 00018E60 __win32kstub_NtUserTransformPoint
+       1674  689 00018E70 __win32kstub_NtUserTransformRect
+       1675  68A 000136C0 __win32kstub_NtUserTranslateAccelerator
+       1676  68B 00013680 __win32kstub_NtUserTranslateMessage
+       1677  68C 00018E80 __win32kstub_NtUserUndelegateInput
+       1678  68D 000144F0 __win32kstub_NtUserUnhookWinEvent
+       1679  68E 00018E90 __win32kstub_NtUserUnhookWindowsHook
+       1680  68F 00013C60 __win32kstub_NtUserUnhookWindowsHookEx
+       1681  690 00018EA0 __win32kstub_NtUserUnloadKeyboardLayout
+       1682  691 00018EB0 __win32kstub_NtUserUnlockWindowStation
+       1683  692 000140A0 __win32kstub_NtUserUnregisterClass
+       1684  693 00018EC0 __win32kstub_NtUserUnregisterHotKey
+       1685  694 00018ED0 __win32kstub_NtUserUnregisterSessionPort
+       1686  695 00018EE0 __win32kstub_NtUserUnregisterUserApiHook
+       1687  696 00018EF0 __win32kstub_NtUserUpdateClientRect
+       1688  697 00018F00 __win32kstub_NtUserUpdateDefaultDesktopThumbnail
+       1689  698 00018F10 __win32kstub_NtUserUpdateInputContext
+       1690  699 00018F20 __win32kstub_NtUserUpdateInstance
+       1691  69A 00018F30 __win32kstub_NtUserUpdateLayeredWindow
+       1692  69B 00018F40 __win32kstub_NtUserUpdatePerUserImmEnabling
+       1693  69C 00018F50 __win32kstub_NtUserUpdatePerUserSystemParameters
+       1694  69D 00018F60 __win32kstub_NtUserUpdateWindow
+       1695  69E 00018F70 __win32kstub_NtUserUpdateWindowInputSinkHints
+       1696  69F 00018F80 __win32kstub_NtUserUpdateWindowTrackingInfo
+       1697  6A0 00018F90 __win32kstub_NtUserUpdateWindows
+       1698  6A1 00018FA0 __win32kstub_NtUserUserHandleGrantAccess
+       1699  6A2 00018FB0 __win32kstub_NtUserUserPowerCalloutWorker
+       1700  6A3 00018FC0 __win32kstub_NtUserValidateHandleSecure
+       1701  6A4 00014180 __win32kstub_NtUserValidateRect
+       1702  6A5 00018FD0 __win32kstub_NtUserValidateRgn
+       1703  6A6 00013710 __win32kstub_NtUserValidateTimerCallback
+       1704  6A7 00013810 __win32kstub_NtUserVkKeyScanEx
+       1705  6A8 00018FE0 __win32kstub_NtUserWaitAvailableMessageEx
+       1706  6A9 00018FF0 __win32kstub_NtUserWaitForInputIdle
+       1707  6AA 00019000 __win32kstub_NtUserWaitForRedirectionStartComplete
+       1708  6AB 00013670 __win32kstub_NtUserWaitMessage
+       1709  6AC 00019010 __win32kstub_NtUserWakeRITForShutdown
+       1710  6AD 00019020 __win32kstub_NtUserWindowFromDC
+       1711  6AE 00019030 __win32kstub_NtUserWindowFromPhysicalPoint
+       1712  6AF 000136F0 __win32kstub_NtUserWindowFromPoint
+       1713  6B0 00019040 __win32kstub_NtUserZapActiveAndFocus
+       1714  6B1 00019050 __win32kstub_NtValidateCompositionSurfaceHandle
+       1715  6B2 00019060 __win32kstub_NtVisualCaptureBits
+       1716  6B3          _itoa (forwarded to NTOSKRNL._itoa)
+       1717  6B4          _itow (forwarded to NTOSKRNL._itow)
+       1718  6B5          _local_unwind (forwarded to NTOSKRNL._local_unwind)
+       1719  6B6          _setjmp (forwarded to NTOSKRNL._setjmp)
+       1720  6B7          _setjmpex (forwarded to NTOSKRNL._setjmpex)
+       1721  6B8 00064000 ext_ms_win_moderncore_win32k_base_sysentry_l1_table
+       1722  6B9 00058160 ext_ms_win_moderncore_win32k_base_sysentry_l1_table_size
+       1723  6BA          longjmp (forwarded to NTOSKRNL.longjmp)
+       1724  6BB 00011F60 memcmp
+       1725  6BC 00057780 memcpy
+       1726  6BD 00057780 memmove
+       1727  6BE 00088010 memset
+
+  Summary
+
+        D000 .data
+       14000 .edata
+        4000 .idata
+        E000 .pdata
+        C000 .rdata
+        8000 .reloc
+        1000 .rsrc
+       57000 .text
+        3000 GFIDS
+        1000 INIT
+        5000 TABLERO
+        1000 fothk

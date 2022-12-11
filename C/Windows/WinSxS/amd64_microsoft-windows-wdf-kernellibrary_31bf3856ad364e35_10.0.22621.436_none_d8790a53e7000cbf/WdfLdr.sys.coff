@@ -1,0 +1,114 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-wdf-kernellibrary_31bf3856ad364e35_10.0.22621.436_none_d8790a53e7000cbf\WdfLdr.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000E040 Import Address Table
+             1C000E248 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         8F1 RtlInitUnicodeString
+                         C3D _strnicmp
+                         9D7 RtlUnicodeStringToAnsiString
+                          BD ExAllocatePool2
+                         8DF RtlGetVersion
+                         144 ExReleaseResourceLite
+                          94 EtwUnregister
+                         5DB MmGetSystemRoutineAddress
+                          8F EtwRegister
+                         BA8 ZwQueryValueKey
+                          EE ExFreePoolWithTag
+                         441 IoWMIRegistrationControl
+                         907 RtlIntegerToUnicodeString
+                         875 RtlDuplicateUnicodeString
+                          A9 ExAcquireResourceExclusiveLite
+                         103 ExInitializeResourceLite
+                         CA4 wcsncmp
+                         B69 ZwOpenKey
+                         833 RtlCompareMemory
+                         4EF KeLeaveCriticalRegion
+                         BEB ZwUnloadDriver
+                         6CB ObfDereferenceObject
+                         84C RtlCopyUnicodeString
+                         36D IoGetDeviceObjectPointer
+                         559 KeSetEvent
+                         4CD KeInitializeEvent
+                         585 KeWaitForSingleObject
+                          9A EtwWriteTransfer
+                         487 KeBugCheckEx
+                         80D RtlAnsiCharToUnicodeChar
+                         B55 ZwLoadDriver
+                         4A2 KeEnterCriticalRegion
+                         C4F _wcsicmp
+                          D7 ExDeleteResourceLite
+                          92 EtwSetInformation
+                         4B9 KeGetCurrentIrql
+                         B17 ZwClose
+                         8AD RtlFreeAnsiString
+                         BF7 __C_specific_handler
+                         BA5 ZwQuerySystemInformation
+                          C0 ExAllocatePoolWithQuotaTag
+                         794 PsGetVersion
+
+    WppRecorder.sys
+             1C000E000 Import Address Table
+             1C000E208 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 imp_WppRecorderConfigure
+                           B imp_WppRecorderLogCreate
+                           4 WppAutoLogTrace
+                           E imp_WppRecorderLogGetDefault
+                          10 imp_WppRecorderReplay
+                           2 WppAutoLogStart
+                           3 WppAutoLogStop
+
+  Section contains the following exports for WDFLDR.SYS
+
+    00000000 characteristics
+    6BD872B1 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004C80 DllInitialize
+          2    1 00008960 DllUnload
+          3    2 00004EB0 WdfLdrDiagnosticsValueByNameAsULONG
+          4    3 00008BF0 WdfLdrQueryInterface
+          5    4 0000F9F0 WdfRegisterClassLibrary
+          6    5 0000F6D0 WdfRegisterLibrary
+          7    6 0000FDD0 WdfVersionBind
+          8    7 000015C0 WdfVersionBindClass
+          9    8 00010420 WdfVersionUnbind
+         10    9 00008D50 WdfVersionUnbindClass
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        1000 fothk

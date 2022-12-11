@@ -1,0 +1,175 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-crashdump_31bf3856ad364e35_10.0.22621.436_none_07b34fd8dfe9f698\crashdmp.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    ext-ms-win-ntos-ksr-l1-1-1.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0018070 Import Address Table
+             1C0018480 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         536 KeReleaseMutex
+                         B7C ZwPowerInformation
+                          9A EtwWriteTransfer
+                         71C PoSetHiberRange
+                         34C IoFileObjectType
+                         6BB ObReferenceObjectByHandle
+                         588 KiBugCheckData
+                         49C KeDeregisterBugCheckReasonCallback
+                         BDC ZwSetSystemInformation
+                          8F EtwRegister
+                         5D0 MmFreePagesFromMdl
+                          EE ExFreePoolWithTag
+                         B67 ZwOpenFile
+                         61F MmUnmapLockedPages
+                         5F1 MmMapLockedPagesSpecifyCache
+                         585 KeWaitForSingleObject
+                         B17 ZwClose
+                         35F IoGetAttachedDeviceReference
+                         173 ExUnregisterCallback
+                         160 ExSystemTimeToLocalTime
+                         B4C ZwFsControlFile
+                         372 IoGetDmaAdapter
+                         C4C _vsnwprintf
+                         BA5 ZwQuerySystemInformation
+                         897 RtlFindExportedRoutineByName
+                         353 IoFreeIrp
+                         384 IoGetRelatedDeviceObject
+                         8F1 RtlInitUnicodeString
+                         5B0 MmAllocateContiguousNodeMemory
+                         5CB MmFreeContiguousMemory
+                         5D6 MmGetPhysicalAddress
+                         2F4 IoAllocateIrp
+                         44E IofCallDriver
+                         4CD KeInitializeEvent
+                         B91 ZwQueryInformationFile
+                         BF7 __C_specific_handler
+                         829 RtlClearAllBitsEx
+                         5BC MmBuildMdlForNonPagedPool
+                         C4A _vsnprintf
+                         C9F wcscpy_s
+                         8D1 RtlGetNtProductType
+                         8F5 RtlInitializeBitMapEx
+                         500 KeQueryActiveProcessorCountEx
+                         4D5 KeInitializeSpinLock
+                         5DF MmIsAddressValid
+                         981 RtlQueryRegistryValuesEx
+                         475 KeAcquireSpinLockRaiseToDpc
+                         B9C ZwQueryLicenseValue
+                         BAD ZwReadFile
+                         448 IoWriteErrorLogEntry
+                         9A9 RtlSetDaclSecurityDescriptor
+                         2F6 IoAllocateMdl
+                         8A5 RtlFindSetBitsEx
+                         68B NtSetInformationFile
+                         B26 ZwCreateKey
+                         41C IoSynchronousPageWrite
+                         302 IoBuildDeviceIoControlRequest
+                         819 RtlAreBitsSetEx
+                         539 KeReleaseSpinLock
+                         93D RtlLengthSid
+                         7FD RtlAddAccessAllowedAce
+                         8E5 RtlImageNtHeader
+                         559 KeSetEvent
+                          BD ExAllocatePool2
+                         64D NtFsControlFile
+                         BCC ZwSetInformationFile
+                         356 IoFreeMdl
+                         CAA wcsstr
+                         327 IoCreateFile
+                         66F NtQueryInformationFile
+                         B38 ZwDeleteFile
+                         5F4 MmMapMemoryDumpMdl
+                         84F RtlCreateAcl
+                         821 RtlCharToInteger
+                         BDA ZwSetSecurityObject
+                         856 RtlCreateSecurityDescriptor
+                         2F3 IoAllocateErrorLogEntry
+                         BE1 ZwSetValueKey
+                         CA8 wcsrchr
+                         A38 SeExports
+                         CA4 wcsncmp
+                         CA6 wcsncpy_s
+                         4D1 KeInitializeMutex
+                          92 EtwSetInformation
+                         298 HalPrivateDispatchTable
+                         52B KeRegisterBugCheckReasonCallback
+                          CF ExCreateCallback
+                         6CB ObfDereferenceObject
+                         9CA RtlTimeToTimeFields
+                         C4F _wcsicmp
+                         634 NtBuildNumber
+                         117 ExIsSoftBoot
+                         12C ExRegisterCallback
+                         679 NtQuerySystemInformation
+                         4B9 KeGetCurrentIrql
+                         60A MmQueryMemoryRanges
+                         9FF RtlWriteRegistryValue
+                         833 RtlCompareMemory
+                         5B8 MmAllocatePagesForMdlEx
+
+    HAL.dll
+             1C0018000 Import Address Table
+             1C0018410 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 KeStallExecutionProcessor
+                          10 HalDmaFreeCrashDumpRegistersEx
+                           F HalDmaAllocateCrashDumpRegistersEx
+                          1B HalGetEnvironmentVariableEx
+                          54 KeQueryPerformanceCounter
+
+    ext-ms-win-ntos-ksr-l1-1-1.dll
+             1C0018030 Import Address Table
+             1C0018440 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 KsrFreePersistedMemory
+                           5 KsrFreePersistedMemoryBlock
+                           0 KsrClaimPersistedMemory
+                           9 KsrMdlToMemoryRuns
+                           6 KsrGetFirmwareInformation
+                           E KsrPersistMemory
+                           3 KsrEnumeratePersistedMemory
+
+  Section contains the following exports for CRASHDMP.SYS
+
+    00000000 characteristics
+    368C22A6 time date stamp
+        0.00 version
+           1 ordinal base
+           1 number of functions
+           1 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001B750 DriverEntry
+
+  Summary
+
+        4000 .data
+        1000 .edata
+        2000 .idata
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        E000 .text
+        1000 GFIDS
+        1000 INIT
+        7000 PAGE
+        1000 fothk

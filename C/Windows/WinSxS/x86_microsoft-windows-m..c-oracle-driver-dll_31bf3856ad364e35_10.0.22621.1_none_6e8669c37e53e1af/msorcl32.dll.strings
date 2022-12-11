@@ -1,0 +1,1042 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+%s/%s
+like '
+' escape '
+is null 
+owner 
+varchar2
+integer
+number
+float
+longraw
+TINYINT
+SMALLINT
+select null, co.owner, co.table_name,
+ co.column_name, decode(data_type, 'CHAR', 1, 'DATE', 11, 'FLOAT', 8, 'LONG', -1, 'LONG RAW', -4, 'NUMBER', 3, 'RAW', -3, 'VARCHAR2', 12, 'ROWID', 1, 0), data_type, decode(data_type, 'DATE', 19, 'FLOAT', 15, 'LONG', 2147483647, 'LONG RAW', 2147483647, 'ROWID', 18, 'NUMBER', decode(data_precision, null, decode(data_scale, null, 15, 0, 38, 38), data_precision), data_length), decode(data_type, 'LONG', 2147483647, 'FLOAT', 8, 'NUMBER', decode(data_precision, null, decode(data_scale, null, 8, 0, 40, 40), data_precision + 2), 'DATE', 16, 'ROWID', 18, data_length), decode(data_type, 'DATE', 0, 'FLOAT', null, data_scale), decode(data_type, 'NUMBER', 10, 'FLOAT', 10, 'DATE', 10, null), decode(nullable, 'N', 0, 'Y', 1, 2),
+ cm.comments, co.column_id 
+from all_tab_columns co, all_col_comments cm where co.table_name = cm.table_name and co.column_name = cm.column_name and co.owner = cm.owner 
+ null, co.column_id 
+from all_tab_columns co where 1=1 
+union select null, decode (sy.owner, 'PUBLIC', chr(0), sy.owner), sy.synonym_name,
+from all_tab_columns co, all_col_comments cm, all_synonyms sy where co.table_name = cm.table_name and co.table_name = sy.table_name and co.column_name = cm.column_name and co.owner = cm.owner  and co.owner = sy.table_owner 
+from all_tab_columns co, all_synonyms sy where co.owner = sy.table_owner  and co.table_name = sy.table_name 
+ order by 1, 2, 3, 13 
+and co.owner = 'PUBLIC'
+and co.owner 
+and co.table_name 
+and co.column_name 
+and sy.owner = 'PUBLIC'
+and sy.owner 
+and sy.synonym_name 
+TranslationDLL
+TranslationOption
+TranslationName
+Description
+User Name
+Password
+SERVER
+Oracle Server Name
+BufferSize
+Minimum Fetch Buffer Size
+65535
+SynonymColumns
+Include SYNONYMs in SQLColumns
+Remarks
+Include REMARKS in Catalog Functions
+CatalogCap
+Capitalize Catalog Arguments
+ConnectString
+NumberFloat
+RDOSupport
+RowLimit
+SystemTable
+TxnCap
+StdDayOfWeek
+Use ODBC DayOfWeek Ordering
+ThreadPerDBC
+Create Thread for each DBC
+GuessTheColDef
+SQLDescribeCol always returns a value for precision
+StripTrailingZero
+Strip trailing zero when using null scale.
+DRIVER
+Datasource or Driver
+DSN | DRIVER
+select 99 / 100, 1 - to_number(to_char(to_date('1997-11-02','yyyy-mm-dd'), 'D')), '00.00.0000 '||banner from v$version where banner like 'Oracle%'
+select 99 / 100, 1 - to_number(to_char(to_date('1997-11-02','yyyy-mm-dd'), 'D')), '00.00.0000 Oracle00 no version available' from dual
+07.00.0000
+00.00.0000
+ODBC.INI
+DEFAULT
+ from 
+MSORCL32.DLL:NO ORACLE MESSAGE MUTEX
+msorc32r.dll
+[Microsoft][ODBC driver for Oracle]
+[Oracle]
+:V%03d
+:R%03dC%03d
+%s=>:V%03d
+SQL_CUR%p
+msorclr.
+ where %s.ROWID=:V%d 
+msorclc.
+select to_char(null), pk.owner, pk.table_name, pc.column_name, to_char(null), fk.owner, fk.table_name, fc.column_name, pc.position, 1, decode(fk.delete_rule,'CASCADE',0,'NO ACTION', 1,1), fk.constraint_name, pk.constraint_name from all_constraints pk, all_cons_columns pc, all_constraints fk, all_cons_columns fc where pk.owner=pc.owner  and pk.constraint_name=pc.constraint_name and fk.owner=fc.owner and fk.constraint_name=fc.constraint_name and pk.constraint_type='P' and fk.constraint_type='R' and pk.constraint_name=fk.r_constraint_name and pk.owner=fk.r_owner and pc.position=fc.position 
+order by 6, 7, 9 
+order by 2, 3, 9 
+ and pk.owner 
+ and pk.table_name 
+ and fk.owner 
+ and fk.table_name 
+Oracle
+02.50
+10.00.22621
+ACCESS,ADD,ALL,ALTER,AND,ANY,AS,ASC,AUDIT,BETWEEN,BY,CHAR,CHECK,CLUSTER,COLUMN,COMMENT,COMPRESS,CONNECT,CREATE,CURRENT,DATE,DECIMAL,DEFAULT,DELETE,DESC,DISTINCT,DROP,ELSE,EXCLUSIVE,EXISTS,FILE,FLOAT,FOR,FROM,GRANT,GROUP,HAVING,IDENTIFIED,IMMEDIATE,IN,INCREMENT,INDEX,INITIAL,INSERT,INTEGER,INTERSECT,INTO,IS,LEVEL,LIKE,LOCK,LONG,MAXEXTENTS,MINUS,MODE,MODIFY,NOAUDIT,NOCOMPRESS,NOT,NOWAIT,NULL,NUMBER,OF,OFFLINE,ON,ONLINE,OPTION,OR,ORDER,PCTFREE,PRIOR,PRIVILEGES,PUBLIC,RAW,RENAME,RESOURCE,REVOKE,ROW,ROWID,ROWLABEL,ROWNUM,ROWS,SELECT,SESSION,SET,SHARE,SIZE,SMALLINT,START,SUCCESSFUL,SYNONYM,SYSDATE,TABLE,THEN,TO,TRIGGER,UID,UNION,UNIQUE,UPDATE,USER,VALIDATE,VALUES,VARCHAR,VARCHAR2,VIEW,WHENEVER,WHERE,WITH
+Stored Procedure
+Database Link
+Table
+LONG RAW
+max length
+NUMBER
+precision,scale
+FLOAT
+{ ts '
+VARCHAR2
+opinit
+odefinps
+ologTransacted
+Enlist
+obndra
+obndrv
+obreak
+oclose
+odefin
+odessp
+odescr
+oerhms
+oexec
+oexfet
+oflng
+ologof
+oopen
+oparse
+MTXOCI.DLL
+MTxOciInit
+where
+order
+union
+group
+having
+compute
+select 
+delete
+insert
+select
+update
+values
+exists
+between
+ FROM 
+ UPDATE 
+.rowid, 
+ rowid, 
+ for update 
+update +* +* +where +current +of +*
+delete +from +* +where +current +of +*
+*where *
+ROWID=%s
+begin 
+update +* *
+delete +from +* *
+abs(%1)
+ascii
+ascii(%1)
+ceiling
+ceil(%1)
+chr(%1)
+concat
+concat(%1,%2)
+convert
+cos(%1)
+curdate
+trunc(sysdate)
+curtime
+to_char(sysdate, 'HH24:MI:SS')
+dayname
+rtrim(to_char(%1, 'Day'))
+dayofmonth
+to_number(to_char(%1, 'DD'))
+dayofweek
+to_number(to_char(%1, 'D'))
+dayofyear
+to_number(to_char(%1, 'DDD'))
+exp(%1)
+floor
+floor(%1)
+to_number(to_char(%1, 'HH24'))
+ifnull
+nvl(%1,%2)
+lcase
+lower(%1)
+substr(%1, 1, %2)
+length
+length(rtrim(%1))
+ln(%1)
+log10
+log(10,%1)
+ltrim
+ltrim(%1)
+minute
+to_number(to_char(%1, 'MI'))
+mod(%1,%2)
+month
+to_number(to_char(%1, 'MM'))
+monthname
+rtrim(to_char(%1, 'Month'))
+sysdate
+3.14159265358979
+power
+power(%1, %2)
+quarter
+to_number(to_char(%1, 'Q'))
+replace
+replace(%1,%2,%3)
+right
+substr(%1, -(least((%2),length(%1))))
+round
+round(%1, %2)
+rtrim
+rtrim(%1)
+second
+to_number(to_char(%1, 'SS'))
+sign(%1)
+sin(%1)
+soundex
+soundex(%1)
+sqrt(%1)
+substring
+substr(%1,%2,%3)
+tan(%1)
+truncate
+trunc(%1, %2)
+ucase
+upper(%1)
+to_number(to_char(%1, 'WW'))
+to_number(to_char(%1, 'YYYY'))
+SQL_BIGINT
+to_number(trunc(%1))
+SQL_BINARY
+to_char(%1)
+SQL_BIT
+to_number(%1)
+SQL_CHAR
+SQL_DATE
+to_date(%1)
+SQL_DECIMAL
+SQL_DOUBLE
+SQL_FLOAT
+SQL_INTEGER
+SQL_LONGVARBINARY
+SQL_LONGVARCHAR
+SQL_REAL
+SQL_SMALLINT
+SQL_TIME
+SQL_TIMESTAMP
+SQL_TINYINT
+SQL_VARBINARY
+SQL_VARCHAR
+to_date(
+to_char(sysdate,'yyyy-mm-dd ')||'
+','yyyy-mm-dd hh24:mi:ss')
+','yyyy-mm-dd')
+vendor(Microsoft),
+product(ODBC)
+escape 
+mod((
+), 7) + 1
+ - 1 + %d), 7) + 1
+outer
+(+) =
+ and 
+ where
+resultset
+:V001 := NULL; 
+:V001 := 
+=>:R%03dC%03d
+;end;
+escape
+select to_char(null), ac.owner, ac.table_name, acc.column_name, acc.position, ac.constraint_name from all_constraints ac, all_cons_columns acc where ac.owner=acc.owner  and ac.constraint_type='P' and ac.constraint_name=acc.constraint_name 
+and 0 = 1
+ and ac.owner 
+ and ac.table_name 
+select null, owner, decode(package_name,NULL,object_name,package_name||'.'||object_name), decode(position,0,'RETURN_VALUE',nvl(argument_name,chr(0))), decode(data_type,'REF CURSOR',3,decode(in_out,'IN',1,'IN/OUT',2,'OUT',decode(argument_name,null,5,4),0)), decode(data_type, 'CHAR', 1, 'DATE', 11, 'FLOAT', 8, 'LONG', -1, 'LONG RAW', -4, 'NUMBER', 3, 'RAW', -3, 'VARCHAR2', 12,
+'ROWID',1, 0), data_type, decode(data_type, 'CHAR', decode(data_length, null, 
+, data_length), 'DATE', 19, 'FLOAT', 15, 'LONG', 2147483647, 'LONG RAW', 2147483647, 'ROWID',18, 'NUMBER', decode(data_precision, null, 38, data_precision), 'RAW', decode(data_length, null, 
+, data_length), 'VARCHAR2', decode(data_length, null, 
+, data_length), data_length), decode(data_type, 'CHAR', decode(data_length, null, 
+, data_length), 'DATE', 16, 'FLOAT', 8, 'LONG', 2147483647, 'LONG RAW', 2147483647, 'ROWID',18, 'NUMBER', decode(data_precision, null, decode(data_scale, 0, 40, 40), 40), 'RAW', decode(data_length, null, 
+, data_length), data_length), decode(data_type, 'DATE', 0, 'FLOAT', null, 'NUMBER', 0, data_scale), decode(data_type, 'NUMBER', 10, 'FLOAT', 10, 'DATE', 10, null), 2, null, overload,  position from all_arguments where data_level = 0 
+ order by 2,3,14,15
+and owner 
+and decode(package_name,NULL,object_name,package_name||'.'||object_name) 
+and argument_name 
+select null, owner, object_name, null, null, null, null, decode (object_type, 'PROCEDURE',1, 'FUNCTION',2, 0) from all_objects where object_type in ('PROCEDURE','FUNCTION') 
+union select distinct null, owner, package_name||'.'||object_name, null, null, null, null, 0 from all_arguments where package_name is not null 
+ order by 1,2,3
+ and 0 = 1
+ and owner 
+ and object_name 
+ and 1 = 1
+ and package_name||'.'||object_name 
+begin :V2 := :V1; end;
+insert into 
+) values (
+delete from %s where rowid = :rid
+update 
+ set 
+ where rowid = ?
+ROWID
+select rowid from 
+select null, i.owner, i.table_name, decode (i.uniqueness,'UNIQUE',0,1), null, i.index_name, 3, c.column_position, c.column_name, 'A', i.distinct_keys, i.leaf_blocks, null from all_indexes i, all_ind_columns c where i.owner = c.index_owner and i.index_name = c.index_name and i.table_owner = c.table_owner and i.table_name = c.table_name 
+union select null, owner, table_name, to_number(null), null, null, 0, to_number(null), null, null, num_rows, blocks, null from all_tables where 
+and 1=0 
+and i.owner 
+and i.table_name 
+and i.uniqueness = 'UNIQUE'
+table_name 
+select * from (select null table_qualifier, decode (o1.owner, 'PUBLIC', chr(0), o1.owner) table_owner, o1.object_name table_name, decode(o1.owner,'SYS',decode(o1.object_type,'TABLE','SYSTEM TABLE','VIEW','SYSTEM VIEW',o1.object_type),'SYSTEM',decode(o1.object_type,'TABLE','SYSTEM TABLE','VIEW','SYSTEM VIEW',o1.object_type),o1.object_type) table_type, null remarks from all_objects o1 where o1.object_type in ('TABLE', 'VIEW')union select null table_qualifier, decode (o2.owner , 'PUBLIC', chr(0), o2.owner) table_owner, o2.object_name table_name, 'SYNONYM' table_type, null remarks from all_objects o2, all_objects o3, all_synonyms s where o2.object_type = 'SYNONYM' and o3.object_type in ('TABLE','VIEW') and o2.owner = s.owner and o2.object_name = s.synonym_name and s.table_owner = o3.owner and s.table_name = o3.object_name) tables where 1=1 
+ order by 4,2,3
+select NULL, username, NULL, NULL, NULL from all_users order by username
+SYNONYM
+SYSTEM TABLE
+SYSTEM VIEW
+TABLE
+table_type = 'SYNONYM'
+table_type = 'SYSTEM TABLE'
+table_type = 'SYSTEM VIEW'
+table_type = 'TABLE'
+table_type = 'VIEW'
+and 0=1
+and ((
+) or (
+and table_owner is NULL 
+and table_owner 
+and table_name 
+SQLDriverToDataSource
+SQLDataSourceToDriver
+%4d-%02d-%02d %02d:%02d:%02d
+%4d-%02d-%02d
+%02d:%02d:%02d
+%4d-%02d-%02d %02d:%02d:%02d.%04d
+SQLWriteDSNToIni
+SQLRemoveDSNFromIni
+SQLGetTranslator
+SQLWritePrivateProfileString
+SQLGetPrivateProfileString
+odbccp32.dll
+ODBC Installer Error
+The program %s, or one of its DLLs attempted to call the function %S which is not supported in the loaded ODBC installer DLL (%s). Press OK to proceed.
+The ODBC installer DLL (ODBCCP32.DLL) is not installed on this system.
+CLSID\{ADB880A6-D8FF-11CF-9377-00AA003B7A11}\InprocServer32
+hhctrl.ocx
+msorcl32.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.xdata$x
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+SSj-SS
+PPj(PP
+w@SVW
+u&WWj-WW
+u)PPj(PP
+PPj(PP
+t!<\u
+JFAJFAf
+PPj(PP
+t"PPj?PP
+"uaJN
+PWSh@
+FOOFf
+FOOFf
+u~PPj
+u"PPj
+O8t/j
+WeVQS
+H#D$$
+D$<Ph
+D$8PS
+D$<Ph
+D$XPQ
+PPj(PP
+jjjjj
+D$hSVWj
+D$HPj
+|$(t9j
+D$@Pj
+L$8Qj
+L$@QP
+D$TPj
+D$0Pj
+L$t_^[3
+t_f;V4wY
+VWhX^
+jjjjjj
+w8t0-y
+t-=z/
+SVWh ^
+ughX^
+D$0SVW
+hf;_4
+D$(_^[3
+t$RRjS3
+t#PWR
+Ad_^[
+T$ Rh
+F0RQRQ
+D$(Pj
+f;F4s
+f;F4s
+|tf;T$
+@t>;J
+9D$$|
+L$,tW
+\$L@j
+t$\RPj
+D$DQR@PSj
+PPj'PP
+9D$T_^
+PPjHPP3
+_[hX^
+u7hX^
+9~du9f
+Gd_^[
+{ "Vtz
+f;A4w3
+hf;q4v
+uTGK;
+FGKGFK;
+<'t{<"tw</uZ
+<'t9<"t5</u.
+>VuA3
+3Ph$&
+<3)t,
+3Ph4&
+3Ph8&
+3Ph<&
+3Ph@&
+3PhD&
+<=t+<!t
+3PhL&
+3PhP&
+3PhT&
+3Ph<&
+3Ph\&
+3Ph<&
+3Phd&
+3Phh&
+3Ph<&
+3Phl&
+iuQf;U
+3Ph@&
+3Ph8&
+3Ph8&
+FGht&
+<"u_<'u!
+>F<'u
+>F<"u
+<'t3<.
+<,t2<)t.
+tb<%u<
+<=uG3
+u$<}uD
+<,t3<)t/<}t+
+< t"<
+t,<}t(<(t$
+<,tB<)t>
+PQh\.
+<(t$<,u
+SPQPQj
+u$h<5
+y "t#
+4qf94Y
+QQj;QQ
+D$$PW
+D$,+D$$
+D$0+D$(
+D$TPV
+D$XPj
+T$`+T$X
+L$\+L$T+L$
+T$@9T$0~
+D$<9D$,~
+D$,+D$
+L$DQP
+D$hPh
+L$$Qh
+(PSW3
+D$8Pj
+D$0Pj
+D$@Pj
+f9E$u
+9x$u4
+Fd^[]
+>.uEF3
+9E$|if;
+D$(PW
+9'u!A
+D$,Pj
+D$(Pj
+;E$|3
+;E$}*
+;E$|]
+FDRPj
+u'PPj(PP
+C0QRP
+OTPQP
+E(f9M
+PPj(PP
+uvf;E
+D$XPV
+F<PRf
+L$XPQ
+t$(f;
+D$8FP
+D$XPS
+tD<0u@F;
+VVh4B
+j,h`%
+Y__^[
+*,-.<=>
+CD2345
+MSORCL32.dll
+ConfigDSN
+DllMain
+DllRegisterServer
+DllUnregisterServer
+LoadByOrdinal
+SQLAllocConnect
+SQLAllocEnv
+SQLAllocStmt
+SQLBindCol
+SQLBindParameter
+SQLBrowseConnect
+SQLCancel
+SQLColAttributes
+SQLColumns
+SQLConnect
+SQLDescribeCol
+SQLDescribeParam
+SQLDisconnect
+SQLDriverConnect
+SQLError
+SQLExecDirect
+SQLExecute
+SQLExtendedFetch
+SQLFetch
+SQLForeignKeys
+SQLFreeConnect
+SQLFreeEnv
+SQLFreeStmt
+SQLGetConnectOption
+SQLGetCursorName
+SQLGetData
+SQLGetInfo
+SQLGetStmtOption
+SQLGetTypeInfo
+SQLMoreResults
+SQLNativeSql
+SQLNumParams
+SQLNumResultCols
+SQLParamData
+SQLPrepare
+SQLPrimaryKeys
+SQLProcedureColumns
+SQLProcedures
+SQLPutData
+SQLRowCount
+SQLSetConnectOption
+SQLSetCursorName
+SQLSetPos
+SQLSetScrollOptions
+SQLSetStmtOption
+SQLSpecialColumns
+SQLStatistics
+SQLTables
+SQLTransact
+TABLE_QUALIFIER
+TABLE_OWNER
+TABLE_NAME
+COLUMN_NAME
+DATA_TYPE
+TYPE_NAME
+PRECISION
+LENGTH
+SCALE
+RADIX
+NULLABLE
+REMARKS
+ORDINAL_POSITION
+PKTABLE_QUALIFIER
+PKTABLE_OWNER
+PKTABLE_NAME
+PKCOLUMN_NAME
+FKTABLE_QUALIFIER
+FKTABLE_OWNER
+FKTABLE_NAME
+FKCOLUMN_NAME
+KEY_SEQ
+UPDATE_RULE
+DELETE_RULE
+FK_NAME
+PK_NAME
+TYPE_NAME
+DATA_TYPE
+PRECISION
+LITERAL_PREFIX
+LITERAL_SUFFIX
+CREATE_PARAMS
+NULLABLE
+CASE_SENSITIVE
+SEARCHABLE
+UNSIGNED_ATTRIBUTE
+MONEY
+AUTO_INCREMENT
+LOCAL_TYPE_NAME
+MINIMUM_SCALE
+MAXIMUM_SCALE
+SELECT
+WHERE
+GROUP
+ORDER
+UNION
+INTERSECT
+MINUS
+DISTINCT
+TABLE_QUALIFIER
+TABLE_OWNER
+TABLE_NAME
+COLUMN_NAME
+KEY_SEQ
+PK_NAME
+PROCEDURE_QUALIFIER
+PROCEDURE_OWNER
+PROCEDURE_NAME
+COLUMN_NAME
+COLUMN_TYPE
+DATA_TYPE
+TYPE_NAME
+PRECISION
+LENGTH
+SCALE
+RADIX
+NULLABLE
+REMARKS
+OVERLOAD
+ORDINAL_POSITION
+PROCEDURE_QUALIFIER
+PROCEDURE_OWNER
+PROCEDURE_NAME
+NUM_INPUT_PARAMS
+NUM_OUTPUT_PARAMS
+NUM_RESULT_SETS
+REMARKS
+PROCEDURE_TYPE
+SCOPE
+COLUMN_NAME
+DATA_TYPE
+TYPE_NAME
+PRECISION
+LENGTH
+SCALE
+PSEUDO_COLUMN
+TABLE_QUALIFIER
+TABLE_OWNER
+TABLE_NAME
+NON_UNIQUE
+INDEX_QUALIFIER
+INDEX_NAME
+SEQ_IN_INDEX
+COLUMN_NAME
+COLLATION
+CARDINALITY
+PAGES
+FILTER_CONDITION
+TABLE_QUALIFIER
+TABLE_OWNER
+TABLE_NAME
+TABLE_TYPE
+REMARKS
+_beginthreadex
+_vsnprintf
+toupper
+isalpha
+_strnicmp
+isalnum
+isdigit
+_wmakepath_s
+_wsplitpath_s
+strrchr
+isspace
+strstr
+ftell
+fclose
+_fdopen
+fseek
+_open
+fwrite
+_tempnam
+fread
+_endthreadex
+isxdigit
+strchr
+strcspn
+strncmp
+bsearch
+_stricmp
+strtoul
+_ultoa_s
+_HUGE
+_gcvt
+strtod
+tolower
+localeconv
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+_except_handler4_common
+msvcrt.dll
+HeapFree
+LoadLibraryExA
+WaitForSingleObject
+CloseHandle
+HeapReAlloc
+IsDBCSLeadByte
+EnterCriticalSection
+LeaveCriticalSection
+GetModuleFileNameA
+GetModuleFileNameW
+InitializeCriticalSection
+CreateMutexA
+DisableThreadLibraryCalls
+GetSystemInfo
+DeleteCriticalSection
+LoadLibraryExW
+GetTempPathA
+HeapCreate
+HeapAlloc
+HeapDestroy
+ReleaseMutex
+SetEvent
+ResetEvent
+GetProcAddress
+FreeLibrary
+CreateEventA
+lstrcmpA
+GlobalAlloc
+GlobalFree
+GlobalLock
+lstrcmpiA
+GlobalUnlock
+GetLocalTime
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+KERNEL32.dll
+SetCursor
+SetDlgItemTextA
+SetWindowTextA
+GetWindowLongA
+SetWindowLongA
+GetDlgItemTextA
+DialogBoxParamA
+EndDialog
+GetCursor
+LoadStringA
+MessageBoxA
+LoadStringW
+PeekMessageA
+TranslateMessage
+MsgWaitForMultipleObjects
+MessageBoxW
+DispatchMessageA
+EnableWindow
+GetParent
+GetDesktopWindow
+CheckDlgButton
+GetDlgItem
+GetClientRect
+SendDlgItemMessageA
+SetFocus
+IsDlgButtonChecked
+MoveWindow
+MapWindowPoints
+SetWindowPos
+GetWindowRect
+CharUpperA
+USER32.dll
+_vsnwprintf_s
+ntdll.dll
+LoadLibraryA
+ExpandEnvironmentStringsA
+RegOpenKeyExA
+RegQueryValueExA
+RegCloseKey
+ADVAPI32.dll
+_ftol2_sse
+floor
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+ODBC Driver for Oracle
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+msorcl32.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+msorcl32.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0D0H0P0X0
+6&6,6j6p6
+8%82888E8O8Y8m8s8
+8U9x9
+96:<:u:{:
+3 3$3
+;P;V;`;f;
+;'<-<
+<+=1=_=i=
+=L>R>
+?E?O?i?p?
+3#373>3R3Y3m3t3
+4%464=4\4o4v4
+5d5t5x5|5
+6 6$6
+9'9>9d9
+:+:A:
+0g1t1
+21383T3
+304Q4
+6[6f6l6
+8 8H8M8
+9Z9e9k9
+:&;1;7;x;
+?(?5?G?c?s?
+041P1j1
+2+2=2s2!4M4S4]4s4
+7e7j7z7
+9%9@9P9t9|9
+:0:>:D:
+;A<|<^=g=
+=0>N>
+5<6o6
+7(7\7g7s7y7
+8#868<8B8L8Z8e8m8
+989=9O9
+: :B:H:_:e:
+;";-;3;=;H;N;T;Z;
+;1<7<C<I<T<\<g<m<s<z<
+<$=+=o=v=
+> >$>(>,>0>4>8><>@>D>H>L>P>
+?h?l?
+)03090>0H0R0X0n0v0
+081=1O1
+2H3N3Z3`3k3s3
+4&4,4L4
+596?6
+61777o7u7
+; ;*;0;o;
+(0.091
+3I3P3
+>9>R>m>v>
+1@2F2
+3$494
+5D8J8
+8,9G9
+1Z2l6
+8:8k8
+:$:7:]:c:
+;F;L;p;v;
+?B?H?t?
+0:0@0q0w0
+1X1c1i1
+3F5M5'787<7
+849>9T94:D:H:L:P:T:X:\:
+>2?K?R?
+0(0,0`0f0
+1!2I2Z2f2m2}2
+3%3+3I3
+4'4A4L4f4w4
+5-5P5j5
+696q6
+7 7$7(7,70747v7
+8.8I8S8m8w8
+9:9T9v9
+:B:\:
+;#;8;<;@;D;H;L;P;T;X;\;`;d;h;l;
+<$<9<T<
+02181G1M1\1b1q1w1
+3"3(3B3
+666f6
+8L9R9h9n9
+9A:G:V:\:k:q:
+;M<T=
+2m2s2
+486>6_6e6
+6q7w7
+7*808S8Y8
+:e:k:
+1%1K1
+1O3i3
+4S4g4u4
+4@5Y5o5v5
+6 6$6d6h6l6p6t6x6|6
+=.=W=
+=q>.?5?l?s?
+1&1M1n1w1A2\2
+3%4,4
+5x6|6
+6G7M7h7n7
+8)808T8j8q8
+9 949:9K9Q9
+9t:z:
+;C<I<d<h<l<p<t<x<|<
+P1T1X1\1`1d1h1l1
+365O5V5
+506{6&7C7J7i7
+;-;l;p;t;x;|;
+;&<X<_<k<r<
+=Z>a>
+2K2R2
+3@3D3H3L3l3
+3F4f4z4
+5&5T5[5
+7F8L8
+:B;l;
+>.>H>b>{>
+?8?N?d?~?
+353O3
+6u6|6u7{7
+8084888<8@8D8H8L8x8|8
+;#<Q=d=h=l=p=t=x=
+545Y5
+8:8C8[8
+;@<7>
+0&1,1u6
+9H;L;P;T;X;\;`;d;h;l;p;t;
+;%<G<[<n<w<
+=?=w=
+>!>3>j>~>
+>O?}?
+031L1f1
+21282M2e2j2q2
+3M3f3
+3'4Z4r4
+545H5O5]5m5t5
+586<6@6D6H6,7D7]7i7
+9.979
+94:::M:S:f:
+?%?v?
+2 2S2
+2'3G3M3
+3!4'4C4R4X4
+4*505R5`5
+7K7r7
+8%8D8Z8
+;G<M<
+=c>j>
+>!?'?f?
+3i3y3
+6?7D7
+7'868
+9"9j9
+:i:p:
+6=7L8~8
+9U9h9
+; ;$;(;,;0;4;i;
+<N=U=
+:<:*;6;h;n;
+>[>a>
+?4?;?L?V?`?j?t?
+0$0+0
+2D2H2L2P2d2h2l2p2t2
+2 3'3=3D3I3O3U3l3s3x3~3
+4$4(4,4044484<4
+5 5$585<5@5D5H5t5x5|5
+6\9`9d9h9l9p9t9x9|9
+:+:2:h:l:p:t:x:|:
+; ;&;
+?0d0j0h2
+3J3]3
+506T6
+7W7a7m7s7x7
+8 8G8b8o8
+9@9`9m9
+:7:<:A:n:~:
+;7;?;F;L;R;
+< <,<4<
+=1>I>
+>0?^?
+0 0'0.050<0C0J0Q0Y0a0i0u0~0
+1"1(1.151<1C1J1Q1X1_1e1q1|1
+1H2M2_2}2
+2Z3x3
+5,50585<5T5X5x5
+0,0@0T0h0|0
+1 1(1,1@1H1L1`1h1l1
+2 2(2,2@2H2L2`2h2l2
+3 3(3,3@3H3L3`3h3l3
+5D5L5T5
+6D6L6\6d6l6
+7P7`7h7
+8(888@8H8`8p8
+989H9X9`9h9
+: :(:0:8:@:H:P:X:`:l:t:|:
+;$;(;0;4;<;@;H;L;T;X;`;d;l;p;x;|;
+< <$<,<0<8<<<D<H<P<T<\<`<h<l<t<x<
+= =$=,=0=8=<=D=H=P=T=\=`=h=l=t=x=
+> >$>,>0>8>`>

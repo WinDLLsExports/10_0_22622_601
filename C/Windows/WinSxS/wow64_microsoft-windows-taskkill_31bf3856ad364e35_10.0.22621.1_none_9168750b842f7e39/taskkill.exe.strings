@@ -1,0 +1,552 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+%1 %2
+root\cimv2
+Win32_Process
+Terminate
+ProcessId
+ %s %s = %s
+Caption
+ %s %s = "%s"
+WHERE
+%s %s
+%s (%s)
+Reason
+ReturnValue
+csrss.exe
+smss.exe
+services.exe
+winlogon.exe
+__PATH
+CSName
+ParentProcessId
+SessionId
+%s\%s
+GetOwner
+Domain
+KernelModeTime
+UserModeTime
+%d:%02d:%02d
+WorkingSetSize
+SELECT Name FROM Win32_Service WHERE ProcessId = %d and State="Running"
+ASSOCIATORS OF {%s} WHERE ResultClass = CIM_DataFile
+FileName
+Extension
+%s.%s
+/[]:|<>+=;,?*
+`~!@#$^&*()+=[]{}|\<>,?/"':;
+Win32_OperatingSystem
+Version
+Win32_ComputerSystem
+SystemType
+AMD64
+IDispatch error #%d
+Unknown error 0x%0lX
+Winsta.dll
+WinStationFreeMemory
+WinStationCloseServer
+WinStationOpenServerW
+WinStationFreeGAPMemory
+WinStationGetAllProcesses
+WinStationEnumerateProcesses
+SeDebugPrivilege
+PARSER2
+SELECT __PATH, ProcessId, CSName, Caption, SessionId, ThreadCount, WorkingSetSize, KernelModeTime, UserModeTime, ParentProcessId FROM Win32_Process
+WHERE (
+ %s %s %s %d
+ %s %s %s '%s'
+ %s %s %s %lu
+BUFFER
+localhost
+ \/[]:|<>+=;,?$#()!@^"`{}*%
+\\%s\%s
+=| eq 
+!=| ne 
+>| gt 
+<| lt 
+>=| ge 
+<=| le 
+\VarFileInfo\Translation
+\StringFileInfo\%04x%04x\InternalName
+PARSER2
+taskkill.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.text$x
+.xdata$x
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+KDQQPQ
+GLPSQ
+Ph0-@
+tF9_(u
+Ft9~lu6
+^X;Nxsmk
+@D;FXj
+AD;FXt
+RTI#u
+uT9;u63
+QPWWh
+u@9wd
+MVh@/@
+Vh@/@
+tPj@WWP
+9CXti
+h;A u
+9_8u"
+QSj0WP
+A;J r
+QSj0VP
+f98t#Q
+tH9;uDWW
+x}WWWj
+FVWWj
+xeSh`
+SSSSRQPW
+SSSSSSPQ
+PPPPP
+QWj0PV
+QWWPV
+PQSVW
+9_lu"9_ttB
+_t9_pt0
+QQSVWh
+t_9^,u
+tN9^<u
+N0QWQQ
+9Wlt"
+jejyY
+jejyY
+jejz[
+jejyY
+jejyY
+jejyY
+jejyY
+u*jmY
+u#jnY
+u#jpY
+j-Yf;
+tlj+Yf;
+tcj\W
+QQPQSQh
+>-PVu
+VQQj*Z
+QSVW3
+PRPVQ
+WWWWVPW
+QSVW3
+uTQP3
+tgSSj
+t*SVh<
+w&t@=
+QQSVW
+QSVWj
+tiQQj|Z
+QSVWj
+QQj:Z
+;D$(s
+L$$;L$(
+Y__^[
+Y__^[
+.?AVCHeap_Exception@@
+.?AV_com_error@@
+RegConnectRegistryW
+RegCloseKey
+LookupAccountSidW
+OpenSCManagerW
+EnumServicesStatusExW
+CloseServiceHandle
+RegQueryValueExW
+OpenProcessToken
+LookupPrivilegeValueW
+AdjustTokenPrivileges
+ADVAPI32.dll
+GetLastError
+SetLastError
+GetCurrentThreadId
+OpenProcess
+CloseHandle
+GetExitCodeProcess
+TerminateProcess
+WriteConsoleW
+GetStdHandle
+LocalAlloc
+FormatMessageW
+FreeLibrary
+GetCurrentProcessId
+GetSystemDirectoryW
+LoadLibraryW
+GetProcAddress
+GetCurrentProcess
+KERNEL32.dll
+__CxxFrameHandler3
+_wcsdup
+wcsrchr
+_wcsicmp
+_wtoi64
+wcschr
+wcstoul
+_errno
+malloc
+_callnewh
+_XcptFilter
+__p__commode
+_amsg_exit
+__wgetmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+msvcrt.dll
+??1type_info@@UAE@XZ
+?terminate@@YAXXZ
+_controlfp
+_except_handler4_common
+RtlTimeToElapsedTimeFields
+RtlLargeIntegerToChar
+ntdll.dll
+GetFileVersionInfoSizeExW
+GetFileVersionInfoExW
+VerQueryValueW
+VERSION.dll
+EnumWindowStationsW
+GetProcessWindowStation
+OpenWindowStationW
+SetProcessWindowStation
+CloseWindowStation
+EnumDesktopsW
+GetThreadDesktop
+OpenDesktopW
+SetThreadDesktop
+CloseDesktop
+EnumWindows
+FindWindowExW
+GetWindowThreadProcessId
+GetWindowLongW
+GetWindow
+IsHungAppWindow
+GetWindowTextW
+PostMessageW
+wsprintfW
+LoadStringW
+CharUpperW
+USER32.dll
+WNetGetLastErrorW
+WNetAddConnection2W
+WNetCancelConnection2W
+MPR.dll
+OLEAUT32.dll
+GetAddrInfoW
+GetNameInfoW
+FreeAddrInfoW
+WS2_32.dll
+??4CHString@@QAEABV0@PBG@Z
+?GetData@CHString@@IBEPAUCHStringData@@XZ
+??4CHString@@QAEABV0@ABV0@@Z
+?Format@CHString@@QAAXPBGZZ
+?GetBuffer@CHString@@QAEPAGH@Z
+?GetBufferSetLength@CHString@@QAEPAGH@Z
+?ReleaseBuffer@CHString@@QAEXH@Z
+??0CHString@@QAE@XZ
+??1CHString@@QAE@XZ
+??YCHString@@QAEABV0@ABV0@@Z
+??4CHString@@QAEABV0@PBD@Z
+?FindOneOf@CHString@@QBEHPBG@Z
+?Find@CHString@@QBEHG@Z
+?Mid@CHString@@QBE?AV1@H@Z
+?Compare@CHString@@QBEHPBG@Z
+?Left@CHString@@QBE?AV1@H@Z
+?Empty@CHString@@QAEXXZ
+?Mid@CHString@@QBE?AV1@HH@Z
+?Find@CHString@@QBEHPBG@Z
+??YCHString@@QAEABV0@PBG@Z
+framedynos.dll
+EnumerateLoadedModulesW64
+dbghelp.dll
+StrChrW
+SHLWAPI.dll
+CoInitializeEx
+CoInitializeSecurity
+CoCreateInstance
+CoTaskMemAlloc
+CoTaskMemFree
+CoUninitialize
+api-ms-win-core-com-l1-1-0.dll
+GetUserNameExW
+SspiCli.dll
+NetServerGetInfo
+srvcli.dll
+NetApiBufferFree
+netutils.dll
+LocalFree
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetModuleHandleW
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetTickCount
+SetThreadUILanguage
+VerSetConditionMask
+FindStringOrdinal
+WideCharToMultiByte
+GetFileType
+GetConsoleMode
+lstrlenA
+lstrlenW
+CompareStringW
+GetThreadLocale
+CompareStringA
+ExitProcess
+GetConsoleOutputCP
+MultiByteToWideChar
+SetConsoleMode
+ReadFile
+ReadConsoleW
+GetProcessHeap
+HeapFree
+HeapValidate
+HeapAlloc
+HeapReAlloc
+HeapSize
+GetComputerNameExW
+GetModuleFileNameW
+__iob_func
+_memicmp
+_vsnwprintf
+wcstod
+wcstol
+_fileno
+_get_osfhandle
+fprintf
+fflush
+wcsstr
+wcstok
+RtlVerifyVersionInfo
+_CxxThrowException
+memcpy
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.CmdLine.TaskKill"
+    type="win32"
+<description>Terminates Processes</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+<application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+        <disableWindowFiltering xmlns="http://schemas.microsoft.com/SMI/2011/WindowsSettings">true</disableWindowFiltering>
+    </windowsSettings>
+</application>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Terminates Processes
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+taskkill.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+taskkill.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0L0P0X0`0
+2&282?2Z2y2
+2C3o3
+4.4>4d4z4
+626f6
+7G7Q7e7o7
+8K8Z8-989a9q9|9
+9H:q:
+:P;W;
+;'<a<i<p<x<
+=%=O=a=r=
+>&>:>O>d>q>
+1<2U2x2
+4M7z7
+8A8>:
+<+<A<u<
+>%>4>W>a>p>w>
+?1?^?
+1*1B1c1
+4)4H4
+5"5;5H5
+5.6B6L6[6x6
+7 7-7B7U7y7
+8M9`9
+:*:@:N:{:
+<:<j<
+<#=L=Y=`=k=
+?(?F?i?s?
+0G0Q0
+1N1p1
+212Q2y2
+343e3
+3#434\4a4j4}4
+505n5
+5#666K6m6
+=#=O=]=u=
+>Q>s>
+?&?;?I?d?q?
+0-0:0D0M0c0
+2/2M2g2p2
+3L4`4u4
+5:6\6e6t6~6
+747d7w7
+878M8`8
+9#909N9h9
+:E:k:
+:1;Z;x;
+; <;<R<o<
+=)=A=h=
+>2>K>v>
+?&?G?a?k?t?
+0"0G0g0q0
+1 2,2K2
+2*3v3
+4%424?4L4Y4
+5E6i6|6
+6#7.7
+8-868;8J8O8^8c8r8w8
+9(9[9b9x9
+:3:H:q:
+:%;:;e;z;
+;"<7<
+<V=j=
+>$>E>
+?7?~?
+3C3u3
+3M4S4
+5!5V5h5{5
+729J9v9
+9=:b:
+: ;J;];o;
+<0<E<K<Z<f<v<
+=C=J=
+>3>F>R>^>s>
+?"?P?]?x?
+161d1o1{1
+2g2s2
+2?3M3Z3f3
+4$4C4O4
+5Q5x5
+6+6[6g6
+6O7e7q7
+7$8m8
+939I9
+9 :?:t:{:
+;#;5;n;
+< <`<t<
+?,?^?n?{?
+"0U0w0~0
+1'1.1@1I1e1l1{1
+2,282I2Z2f2n2
+2:3R3\3h3
+6,6[6j6
+6R7^7d7
+7N8~8
+:^:h:t:
+<K<`<w<
+=X=d=s=
+=P>~>
+!0G0p0
+0&191U1Y1]1a1e1i1m1q1u1
+1`2k2
+3S3p3
+6&7I7
+8:8Q9
+9*:W:
+;";,;8;C;R;
+;4<I<P<
+=4===f=r=
+>:>_>o>
+61E1R1V1Z1^1b1f1j1n1r1v1
+4*5T5R6e6
+748Y8
+8C9|9
+<F<U<
+<(=4=:=A=J=P=X=^=k=s=y=
+>%>->2>7>Y>_>f>k>x>
+?"?'?g?
+0:0Z0f0r0
+1+14191?1I1S1c1s1y1
+2'22272<2B2L2V2f2o2
+3(4-4?4]4q4w4:5X5g5p5y5
+6b6g6}6
+6$7]7
+808x8
+9!9>9a9
+:#:7:T:h:q:z:
+:&;:;C;};
+<:<]<q<z<
+?#?S?g?x?
+1%111=1I1f1
+282@2H2T2\2|2
+3 3(343<3p3x3
+3 4(404<4D4\4d4
+5$5P5d5l5t5|5
+6 686\6d6l6x6
+7 7D7L7T7`7h7
+808D8L8T8\8d8p8x8
+9,949D9L9T9\9h9p9
+:(:0:H:X:t:|:
+;$;4;<;D;L;T;\;d;l;t;|;
+<,<4<<<H<P<h<p<
+<$=8=H=P=X=d=l=
+> >(>0><>D>\>
+?$?@?H?P?`?h?
+0 000L0T0\0d0l0x0
+1$1D1L1T1\1d1l1x1
+2$282@2H2P2X2t2x2
+3$3,3

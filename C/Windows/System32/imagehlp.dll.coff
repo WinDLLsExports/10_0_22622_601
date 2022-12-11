@@ -1,0 +1,577 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\imagehlp.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    api-ms-win-crt-string-l1-1-0.dll
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-private-l1-1-0.dll
+    ntdll.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-core-heap-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    api-ms-win-core-file-l1-1-0.dll
+    api-ms-win-core-synch-l1-1-0.dll
+    api-ms-win-core-memory-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-core-handle-l1-1-0.dll
+    api-ms-win-core-libraryloader-l1-1-0.dll
+    api-ms-win-core-string-l1-1-0.dll
+    api-ms-win-core-misc-l1-1-0.dll
+    api-ms-win-core-processenvironment-l1-1-0.dll
+    api-ms-win-core-localregistry-l1-1-0.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-interlocked-l1-1-0.dll
+    api-ms-win-core-debug-l1-1-0.dll
+    api-ms-win-eventing-provider-l1-1-0.dll
+
+  Image has the following delay load dependencies:
+
+    dbghelp.dll
+
+  Section contains the following exports for imagehlp.dll
+
+    00000000 characteristics
+    84FCF073 time date stamp
+        0.00 version
+           1 ordinal base
+         164 number of functions
+         164 number of names
+
+    ordinal hint RVA      name
+
+         10    0 00007E70 BindImage
+         11    1 00007EA0 BindImageEx
+         12    2 00008730 CheckSumMappedFile
+         13    3 000024C0 EnumerateLoadedModules
+         14    4 000024C0 EnumerateLoadedModules64
+         15    5 000024E0 EnumerateLoadedModulesEx
+         16    6 00002500 EnumerateLoadedModulesExW
+         17    7 00002520 EnumerateLoadedModulesW64
+         18    8 00002540 FindDebugInfoFile
+         19    9 00002560 FindDebugInfoFileEx
+         20    A 00002580 FindExecutableImage
+         21    B 000025A0 FindExecutableImageEx
+         22    C 000025C0 FindFileInPath
+         23    D 000025E0 FindFileInSearchPath
+         24    E 00008FF0 GetImageConfigInformation
+         25    F 00008410 GetImageUnusedHeaderBytes
+         26   10 00002600 GetSymLoadError
+         27   11 00008530 GetTimestampForLoadedLibrary
+         28   12 0000AF30 ImageAddCertificate
+         29   13 00001010 ImageDirectoryEntryToData
+         30   14 00001030 ImageDirectoryEntryToDataEx
+         31   15 0000B300 ImageEnumerateCertificates
+         32   16 0000B550 ImageGetCertificateData
+         33   17 000011C0 ImageGetCertificateDataEx
+         34   18 00004D10 ImageGetCertificateHeader
+         35   19 0000B570 ImageGetDigestStream
+         36   1A 00004980 ImageLoad
+         37   1B 00001110 ImageNtHeader
+         38   1C 0000BCD0 ImageRemoveCertificate
+         39   1D 00004880 ImageRvaToSection
+         40   1E 000048F0 ImageRvaToVa
+         41   1F 000090B0 ImageUnload
+         42   20 00002620 ImagehlpApiVersion
+         43   21 00002640 ImagehlpApiVersionEx
+         44   22 00001B00 IsBufferCleanOfInvalidMarkers
+         45   23 00002660 MakeSureDirectoryPathExists
+         46   24 00009130 MapAndLoad
+         47   25 000046A0 MapFileAndCheckSumA
+         48   26 000047D0 MapFileAndCheckSumW
+         49   27 00009E70 ReBaseImage
+         50   28 00009E70 ReBaseImage64
+         51   29 00002680 RemoveInvalidModuleList
+         52   2A 0000A6D0 RemovePrivateCvSymbolic
+         53   2B 0000A720 RemovePrivateCvSymbolicEx
+          1   2C 00009D10 RemoveRelocations
+         54   2D 000026A0 ReportSymbolLoadSummary
+         55   2E 000026C0 SearchTreeForFile
+         56   2F 000026E0 SetCheckUserInterruptShared
+         57   30 000093E0 SetImageConfigInformation
+         58   31 00002700 SetSymLoadError
+         59   32 0000A300 SplitSymbols
+         60   33 00002720 StackWalk
+         61   34 00002740 StackWalk2
+         62   35 00002720 StackWalk64
+         63   36 00002760 StackWalkEx
+         64   37 00002780 SymAddrIncludeInlineTrace
+          2   38 00002340 SymAllocDiaString
+         65   39 000027A0 SymCleanup
+         66   3A 000027C0 SymCompareInlineTrace
+         67   3B 000027E0 SymEnumSym
+         68   3C 00002800 SymEnumSymbols
+         69   3D 00002820 SymEnumSymbolsEx
+         70   3E 00002840 SymEnumSymbolsExW
+         71   3F 00002860 SymEnumSymbolsForAddr
+         72   40 00002880 SymEnumTypes
+         73   41 000028A0 SymEnumTypesByName
+         74   42 000028C0 SymEnumTypesByNameW
+         75   43 000028E0 SymEnumTypesW
+         76   44 00002900 SymEnumerateModules
+         77   45 00002900 SymEnumerateModules64
+         78   46 00002920 SymEnumerateSymbols
+         79   47 00002920 SymEnumerateSymbols64
+         80   48 00002940 SymEnumerateSymbolsW
+         81   49 00002940 SymEnumerateSymbolsW64
+         82   4A 00002960 SymFindFileInPath
+         83   4B 00002980 SymFindFileInPathW
+          3   4C 000023E0 SymFreeDiaString
+         84   4D 000029A0 SymFromAddr
+         85   4E 000029C0 SymFromInlineContext
+         86   4F 000029E0 SymFromInlineContextW
+         87   50 00002A00 SymFromName
+         88   51 00002A20 SymFunctionTableAccess
+         89   52 00002A20 SymFunctionTableAccess64
+         90   53 00002A40 SymFunctionTableAccess64AccessRoutines
+          4   54 00002400 SymGetDiaSession
+          5   55 00002420 SymGetDiaSource
+         91   56 00002A60 SymGetExtendedOption
+         92   57 00002A80 SymGetLineFromAddr
+         93   58 00002A80 SymGetLineFromAddr64
+         94   59 00002AA0 SymGetLineFromInlineContext
+         95   5A 00002AC0 SymGetLineFromInlineContextW
+         96   5B 00002AE0 SymGetLineFromName
+         97   5C 00002AE0 SymGetLineFromName64
+         98   5D 00002B00 SymGetLineNext
+         99   5E 00002B00 SymGetLineNext64
+        100   5F 00002B20 SymGetLinePrev
+        101   60 00002B20 SymGetLinePrev64
+        102   61 00002B40 SymGetModuleBase
+        103   62 00002B40 SymGetModuleBase64
+        104   63 00002B60 SymGetModuleInfo
+        105   64 00002B60 SymGetModuleInfo64
+        106   65 00002B80 SymGetModuleInfoW
+        107   66 00002B80 SymGetModuleInfoW64
+        108   67 00002BA0 SymGetOptions
+        109   68 00002BC0 SymGetSearchPath
+        110   69 00002BE0 SymGetSourceFileChecksumW
+        111   6A 00002C00 SymGetSourceFileFromTokenByTokenName
+        112   6B 00002C20 SymGetSourceFileFromTokenByTokenNameW
+        113   6C 00002C40 SymGetSourceFileFromTokenW
+        114   6D 00002C60 SymGetSourceFileTokenByTokenName
+        115   6E 00002C80 SymGetSourceFileTokenByTokenNameW
+        116   6F 00002CA0 SymGetSourceFileTokenW
+        117   70 00002CC0 SymGetSourceVarFromTokenW
+        118   71 00002CE0 SymGetSymFromAddr
+        119   72 00002CE0 SymGetSymFromAddr64
+        120   73 00002D00 SymGetSymFromName
+        121   74 00002D00 SymGetSymFromName64
+        122   75 00002D20 SymGetSymNext
+        123   76 00002D20 SymGetSymNext64
+        124   77 00002D40 SymGetSymPrev
+        125   78 00002D40 SymGetSymPrev64
+        126   79 00002D60 SymGetSymbolFile
+        127   7A 00002D80 SymGetSymbolFileW
+        128   7B 00002DA0 SymGetTypeFromName
+        129   7C 00002DC0 SymGetTypeFromNameW
+        130   7D 00002DE0 SymGetTypeInfo
+        131   7E 00002E00 SymGetTypeInfoEx
+        132   7F 00002E20 SymInitialize
+        133   80 00002E40 SymLoadModule
+        134   81 00002E40 SymLoadModule64
+        135   82 00002E60 SymMatchFileName
+        136   83 00002E80 SymMatchFileNameW
+        137   84 00002EA0 SymMatchString
+        138   85 00002EC0 SymMatchStringA
+        139   86 00002EE0 SymMatchStringW
+        140   87 00002F00 SymQueryInlineTrace
+        141   88 00002F20 SymRegisterCallback
+        142   89 00002F20 SymRegisterCallback64
+        143   8A 00002F40 SymRegisterFunctionEntryCallback
+        144   8B 00002F40 SymRegisterFunctionEntryCallback64
+          6   8C 00002440 SymRegisterGetSourcePathPartCallback
+          7   8D 00002460 SymRegisterSourceFileUrlListCallback
+        145   8E 00002F60 SymSetContext
+          8   8F 00002480 SymSetDiaSession
+        146   90 00002F80 SymSetExtendedOption
+        147   91 00002FA0 SymSetOptions
+        148   92 00002FC0 SymSetScopeFromAddr
+        149   93 00002FE0 SymSetScopeFromIndex
+        150   94 00003000 SymSetScopeFromInlineContext
+        151   95 00003020 SymSetSearchPath
+          9   96 000024A0 SymSetServiceManager
+        152   97 00003040 SymSrvGetFileIndexString
+        153   98 00003060 SymSrvGetFileIndexStringW
+        154   99 00003080 SymSrvGetFileIndexes
+        155   9A 000030A0 SymSrvGetFileIndexesW
+        156   9B 000030C0 SymUnDName
+        157   9C 000030C0 SymUnDName64
+        158   9D 000030E0 SymUnloadModule
+        159   9E 000030E0 SymUnloadModule64
+        160   9F 00008870 TouchFileTimes
+        161   A0 00003100 UnDecorateSymbolName
+        162   A1 00009570 UnMapAndLoad
+        163   A2 0000AA70 UpdateDebugInfoFile
+        164   A3 0000AA90 UpdateDebugInfoFileEx
+
+  Section contains the following imports:
+
+    api-ms-win-crt-string-l1-1-0.dll
+             18000D818 Import Address Table
+             180014458 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          8E strncmp
+                          83 memset
+                          91 strnlen
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             18000D800 Import Address Table
+             180014440 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          36 _initterm
+                          37 _initterm_e
+
+    api-ms-win-crt-private-l1-1-0.dll
+             18000D750 Import Address Table
+             180014390 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          93 _o__cexit
+                          A0 _o__configure_narrow_argv
+                          C2 _o__execute_onexit_table
+                         13C _o__initialize_narrow_environment
+                         13D _o__initialize_onexit_table
+                         259 _o__seh_filter_dll
+                         271 _o__splitpath_s
+                         464 memmove
+                         27D _o__stricmp
+                         287 _o__strnicmp
+                         2B0 _o__ultoa_s
+                         356 _o_atoi
+                         420 _o_strcat_s
+                         422 _o_strcpy_s
+                         427 _o_strncpy_s
+                          12 __CxxFrameHandler3
+                          60 _o___std_type_info_destroy_list
+                         468 strrchr
+                           C __C_specific_handler
+                         462 memcmp
+                         463 memcpy
+
+    ntdll.dll
+             18000D848 Import Address Table
+             180014488 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         5A7 RtlRunOnceExecuteOnce
+                         305 RtlCaptureContext
+                         476 RtlImageNtHeaderEx
+                         509 RtlLookupFunctionEntry
+                         64E RtlVirtualUnwind
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             18000D680 Import Address Table
+             1800142C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2E TlsGetValue
+                          2D TlsFree
+                          2A TerminateProcess
+                           D GetCurrentThreadId
+                          2C TlsAlloc
+                           A GetCurrentProcess
+                           B GetCurrentProcessId
+                          2F TlsSetValue
+
+    api-ms-win-core-heap-l1-1-0.dll
+             18000D598 Import Address Table
+             1800141D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 HeapFree
+                           0 GetProcessHeap
+                           2 HeapAlloc
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             18000D528 Import Address Table
+             180014168 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 GetLastError
+                           5 SetUnhandledExceptionFilter
+                           6 UnhandledExceptionFilter
+                           2 RaiseException
+                           4 SetLastError
+
+    api-ms-win-core-file-l1-1-0.dll
+             18000D558 Import Address Table
+             180014198 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3F SetEndOfFile
+                           3 CreateFileA
+                          25 GetFileSize
+                          45 SetFileTime
+                          43 SetFilePointer
+
+    api-ms-win-core-synch-l1-1-0.dll
+             18000D6F0 Import Address Table
+             180014330 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D DeleteCriticalSection
+                           0 AcquireSRWLockExclusive
+                          1B ReleaseSRWLockExclusive
+                           F InitializeCriticalSection
+
+    api-ms-win-core-memory-l1-1-0.dll
+             18000D620 Import Address Table
+             180014260 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 MapViewOfFile
+                           3 MapViewOfFileEx
+                           D VirtualQuery
+                           B VirtualProtect
+                           1 FlushViewOfFile
+                           0 CreateFileMappingW
+                           6 UnmapViewOfFile
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             18000D718 Import Address Table
+             180014358 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 GetSystemTime
+                          19 SystemTimeToFileTime
+                           B GetSystemTimeAsFileTime
+                          13 GetVersionExA
+                           8 GetSystemInfo
+                          12 GetVersion
+
+    api-ms-win-core-handle-l1-1-0.dll
+             18000D588 Import Address Table
+             1800141C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CloseHandle
+
+    api-ms-win-core-libraryloader-l1-1-0.dll
+             18000D5C8 Import Address Table
+             180014208 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E LoadLibraryExA
+                           4 FreeLibrary
+                           F LoadLibraryExW
+                           D GetProcAddress
+                           7 GetModuleFileNameA
+                           A GetModuleHandleExA
+
+    api-ms-win-core-string-l1-1-0.dll
+             18000D6D8 Import Address Table
+             180014318 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 WideCharToMultiByte
+                           6 MultiByteToWideChar
+
+    api-ms-win-core-misc-l1-1-0.dll
+             18000D660 Import Address Table
+             1800142A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          18 lstrcmpiA
+
+    api-ms-win-core-processenvironment-l1-1-0.dll
+             18000D670 Import Address Table
+             1800142B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D SearchPathW
+
+    api-ms-win-core-localregistry-l1-1-0.dll
+             18000D600 Import Address Table
+             180014240 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 RegCloseKey
+                          1E RegQueryValueExW
+                          19 RegOpenKeyExW
+
+    api-ms-win-core-profile-l1-1-0.dll
+             18000D6C8 Import Address Table
+             180014308 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-interlocked-l1-1-0.dll
+             18000D5B8 Import Address Table
+             1800141F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 InitializeSListHead
+
+    api-ms-win-core-debug-l1-1-0.dll
+             18000D518 Import Address Table
+             180014158 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 IsDebuggerPresent
+
+    api-ms-win-eventing-provider-l1-1-0.dll
+             18000D838 Import Address Table
+             180014478 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 EventUnregister
+
+  Section contains the following delay load imports:
+
+    dbghelp.dll
+              00000001 Characteristics
+      00000001800157C0 Address of HMODULE
+      0000000180018000 Import Address Table
+      0000000180011BB0 Import Name Table
+      00000001800128B8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180002323    34 SymAllocDiaString
+                                    00000001800030CC    E3 SymUnloadModule64
+                                    00000001800023C5    59 SymFreeDiaString
+                                    00000001800023EC    67 SymGetDiaSession
+                                    000000018000240C    68 SymGetDiaSource
+                                    000000018000242C    BF SymRegisterGetSourcePathPartCallback
+                                    000000018000244C    C0 SymRegisterSourceFileUrlListCallback
+                                    000000018000246C    C4 SymSetDiaSession
+                                    000000018000248C    CF SymSetServiceManager
+                                    00000001800024AC     5 EnumerateLoadedModules64
+                                    00000001800024CC     6 EnumerateLoadedModulesEx
+                                    00000001800024EC     7 EnumerateLoadedModulesExW
+                                    000000018000250C     8 EnumerateLoadedModulesW64
+                                    000000018000252C     A FindDebugInfoFile
+                                    000000018000254C     B FindDebugInfoFileEx
+                                    000000018000256C     D FindExecutableImage
+                                    000000018000258C     E FindExecutableImageEx
+                                    00000001800025AC    10 FindFileInPath
+                                    00000001800025CC    11 FindFileInSearchPath
+                                    00000001800025EC    12 GetSymLoadError
+                                    000000018000260C    19 ImagehlpApiVersion
+                                    000000018000262C    1A ImagehlpApiVersionEx
+                                    000000018000264C    1B MakeSureDirectoryPathExists
+                                    000000018000266C    24 RemoveInvalidModuleList
+                                    000000018000268C    25 ReportSymbolLoadSummary
+                                    00000001800026AC    26 SearchTreeForFile
+                                    00000001800026CC    28 SetCheckUserInterruptShared
+                                    00000001800026EC    29 SetSymLoadError
+                                    000000018000270C    2C StackWalk64
+                                    000000018000272C    2B StackWalk2
+                                    000000018000274C    2D StackWalkEx
+                                    000000018000276C    33 SymAddrIncludeInlineTrace
+                                    000000018000278C    35 SymCleanup
+                                    00000001800027AC    36 SymCompareInlineTrace
+                                    00000001800027CC    41 SymEnumSym
+                                    00000001800027EC    42 SymEnumSymbols
+                                    000000018000280C    43 SymEnumSymbolsEx
+                                    000000018000282C    44 SymEnumSymbolsExW
+                                    000000018000284C    45 SymEnumSymbolsForAddr
+                                    000000018000286C    48 SymEnumTypes
+                                    000000018000288C    49 SymEnumTypesByName
+                                    00000001800028AC    4A SymEnumTypesByNameW
+                                    00000001800028CC    4B SymEnumTypesW
+                                    00000001800028EC    4D SymEnumerateModules64
+                                    000000018000290C    50 SymEnumerateSymbols64
+                                    000000018000292C    52 SymEnumerateSymbolsW64
+                                    000000018000294C    57 SymFindFileInPath
+                                    000000018000296C    58 SymFindFileInPathW
+                                    000000018000298C    5A SymFromAddr
+                                    00000001800029AC    5E SymFromInlineContext
+                                    00000001800029CC    5F SymFromInlineContextW
+                                    00000001800029EC    60 SymFromName
+                                    0000000180002A0C    65 SymFunctionTableAccess64
+                                    0000000180002A2C    66 SymFunctionTableAccess64AccessRoutines
+                                    0000000180002A4C    69 SymGetExtendedOption
+                                    0000000180002A6C    6E SymGetLineFromAddr64
+                                    0000000180002A8C    71 SymGetLineFromInlineContext
+                                    0000000180002AAC    72 SymGetLineFromInlineContextW
+                                    0000000180002ACC    74 SymGetLineFromName64
+                                    0000000180002AEC    78 SymGetLineNext64
+                                    0000000180002B0C    7C SymGetLinePrev64
+                                    0000000180002B2C    80 SymGetModuleBase64
+                                    0000000180002B4C    82 SymGetModuleInfo64
+                                    0000000180002B6C    84 SymGetModuleInfoW64
+                                    0000000180002B8C    87 SymGetOptions
+                                    0000000180002BAC    8A SymGetSearchPath
+                                    0000000180002BCC    8E SymGetSourceFileChecksumW
+                                    0000000180002BEC    90 SymGetSourceFileFromTokenByTokenName
+                                    0000000180002C0C    91 SymGetSourceFileFromTokenByTokenNameW
+                                    0000000180002C2C    92 SymGetSourceFileFromTokenW
+                                    0000000180002C4C    94 SymGetSourceFileTokenByTokenName
+                                    0000000180002C6C    95 SymGetSourceFileTokenByTokenNameW
+                                    0000000180002C8C    96 SymGetSourceFileTokenW
+                                    0000000180002CAC    99 SymGetSourceVarFromTokenW
+                                    0000000180002CCC    9B SymGetSymFromAddr64
+                                    0000000180002CEC    9D SymGetSymFromName64
+                                    0000000180002D0C    9F SymGetSymNext64
+                                    0000000180002D2C    A1 SymGetSymPrev64
+                                    0000000180002D4C    A2 SymGetSymbolFile
+                                    0000000180002D6C    A3 SymGetSymbolFileW
+                                    0000000180002D8C    A4 SymGetTypeFromName
+                                    0000000180002DAC    A5 SymGetTypeFromNameW
+                                    0000000180002DCC    A6 SymGetTypeInfo
+                                    0000000180002DEC    A7 SymGetTypeInfoEx
+                                    0000000180002E0C    A9 SymInitialize
+                                    0000000180002E2C    AC SymLoadModule64
+                                    0000000180002E4C    AF SymMatchFileName
+                                    0000000180002E6C    B0 SymMatchFileNameW
+                                    0000000180002E8C    B1 SymMatchString
+                                    0000000180002EAC    B2 SymMatchStringA
+                                    0000000180002ECC    B3 SymMatchStringW
+                                    0000000180002EEC    B8 SymQueryInlineTrace
+                                    0000000180002F0C    BB SymRegisterCallback64
+                                    0000000180002F2C    BE SymRegisterFunctionEntryCallback64
+                                    0000000180002F4C    C3 SymSetContext
+                                    0000000180002F6C    C5 SymSetExtendedOption
+                                    0000000180002F8C    C8 SymSetOptions
+                                    0000000180002FAC    CA SymSetScopeFromAddr
+                                    0000000180002FCC    CB SymSetScopeFromIndex
+                                    0000000180002FEC    CC SymSetScopeFromInlineContext
+                                    000000018000300C    CD SymSetSearchPath
+                                    000000018000302C    D4 SymSrvGetFileIndexString
+                                    000000018000304C    D5 SymSrvGetFileIndexStringW
+                                    000000018000306C    D6 SymSrvGetFileIndexes
+                                    000000018000308C    D7 SymSrvGetFileIndexesW
+                                    00000001800030AC    E1 SymUnDName64
+                                    00000001800030EC    E4 UnDecorateSymbolName
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        4000 .mrdata
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        C000 .text

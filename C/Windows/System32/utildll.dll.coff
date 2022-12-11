@@ -1,0 +1,257 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\utildll.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntdll.dll
+    msvcrt.dll
+    KERNEL32.dll
+    ADVAPI32.dll
+    WINSTA.dll
+    USER32.dll
+    samcli.dll
+    netutils.dll
+
+  Image has the following delay load dependencies:
+
+    SETUPAPI.dll
+    BROWCLI.dll
+
+  Section contains the following exports for UTILDLL.dll
+
+    00000000 characteristics
+    3F9E3021 time date stamp
+        0.00 version
+           1 ordinal base
+          34 number of functions
+          34 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002510 AsyncDeviceEnumerate
+          2    1 00001010 CachedGetUserFromSid
+          3    2 000028C0 CalculateDiffTime
+          4    3 000028F0 CalculateElapsedTime
+          5    4 00002C00 CompareElapsedTime
+          6    5 00002C50 ConfigureModem
+          7    6 00002DF0 CurrentDateTimeString
+          8    7 00002FC0 DateTimeString
+          9    8 000032A0 ElapsedTimeString
+         10    9 000033C0 EnumerateMultiUserServers
+         11    A 00003C10 FormDecoratedAsyncDeviceName
+         12    B 00003C50 GetAssociatedPortName
+         13    C 00003D60 GetSystemMessageA
+         14    D 00003E10 GetSystemMessageW
+         15    E 00004050 GetUnknownString
+         16    F 000040C0 GetUserFromSid
+         17   10 000042F0 HaveAnonymousUsersChanged
+         18   11 00004410 InitializeAnonymousUserCompareList
+         19   12 00004460 InstallModem
+         20   13 000045A0 IsPartOfDomain
+         21   14 00004660 NetBIOSDeviceEnumerate
+         22   15 000049E0 NetworkDeviceEnumerate
+         23   16 00004C30 ParseDecoratedAsyncDeviceName
+         24   17 00004CE0 QueryCurrentWinStation
+         25   18 00004E20 RegGetNetworkDeviceName
+         26   19 00005490 RegGetNetworkServiceName
+         27   1A 000059E0 StandardErrorMessage
+         28   1B 00005D20 StrAsyncConnectState
+         29   1C 00005D90 StrConnectState
+         30   1D 00005EF0 StrProcessState
+         31   1E 00005F70 StrSdClass
+         32   1F 00006070 StrSystemWaitReason
+         33   20 000063C0 TestUserForAdmin
+         34   21 00006490 WinEnumerateDevices
+
+  Section contains the following imports:
+
+    ntdll.dll
+             1300073B0 Import Address Table
+             130009308 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         8FC __chkstk
+                         3C3 RtlEnterCriticalSection
+                         492 RtlInitializeCriticalSection
+                         4ED RtlLeaveCriticalSection
+                         93C _wcsnicmp
+                         20C NtQueryVolumeInformationFile
+                         9AD wcsrchr
+                         96E memcpy
+                         98D strstr
+                         9AF wcsstr
+                         411 RtlFreeSid
+                         992 swprintf_s
+                         93A _wcslwr
+                         2E1 RtlAllocateAndInitializeSid
+                         99D vswprintf_s
+                         99F wcscat_s
+                         9A3 wcscpy_s
+                         939 _wcsicmp
+                         96F memcpy_s
+                         936 _vsnwprintf
+                         8FB __C_specific_handler
+                         972 memset
+
+    msvcrt.dll
+             130007360 Import Address Table
+             1300092B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         493 malloc
+                          B7 _amsg_exit
+                         462 fwprintf
+                          5A _XcptFilter
+                         189 _initterm
+                          8A __iob_func
+                         459 free
+
+    KERNEL32.dll
+             1300071D8 Import Address Table
+             130009130 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4EF ResolveDelayLoadedAPI
+                         120 DelayLoadFailureHook
+                         467 QueryDosDeviceW
+                         564 SetLastError
+                         3ED LocalAlloc
+                          DA CreateFileW
+                         412 MultiByteToWideChar
+                         1C1 FormatMessageW
+                         27D GetLastError
+                         184 FileTimeToSystemTime
+                         354 GlobalAlloc
+                         35B GlobalFree
+                          94 CloseHandle
+                         3E7 LoadLibraryW
+                         183 FileTimeToLocalFileTime
+                         27E GetLocalTime
+                         240 GetDefaultCommConfigW
+                         2CD GetProcAddress
+                         3F2 LocalFree
+                         331 GetTimeFormatW
+                         53D SetDefaultCommConfigW
+                         5C0 SystemTimeToFileTime
+                         295 GetModuleHandleW
+                         1C5 FreeLibrary
+                         637 WideCharToMultiByte
+                          A4 CommConfigDialogW
+                         670 lstrcmpiW
+                         23D GetDateFormatW
+                         5B4 Sleep
+                         4F5 RtlCaptureContext
+                         4FD RtlLookupFunctionEntry
+                         504 RtlVirtualUnwind
+                         5E6 UnhandledExceptionFilter
+                         5A4 SetUnhandledExceptionFilter
+                         232 GetCurrentProcess
+                         5C4 TerminateProcess
+                         32C GetTickCount
+                         233 GetCurrentProcessId
+                         237 GetCurrentThreadId
+                         30A GetSystemTimeAsFileTime
+                         470 QueryPerformanceCounter
+
+    ADVAPI32.dll
+             130007150 Import Address Table
+             1300090A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         105 EqualSid
+                          85 CopySid
+                         136 GetLengthSid
+                         273 RegEnumValueW
+                         194 LookupAccountSidW
+                         1A0 LsaClose
+                         1C9 LsaOpenPolicy
+                         1D4 LsaQueryInformationPolicy
+                         282 RegOpenKeyExW
+                         281 RegOpenKeyExA
+                          5F CheckTokenMembership
+                         270 RegEnumKeyExW
+                         28E RegQueryValueExA
+                         28F RegQueryValueExW
+                         251 RegCloseKey
+                         1B1 LsaFreeMemory
+
+    WINSTA.dll
+             130007350 Import Address Table
+             1300092A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          66 WinStationQueryInformationW
+
+    USER32.dll
+             130007328 Import Address Table
+             130009280 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         268 LoadStringW
+                         259 LoadCursorW
+                         32C SetCursor
+                         28B MessageBoxW
+
+    samcli.dll
+             130007468 Import Address Table
+             1300093C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          12 NetLocalGroupGetMembers
+
+    netutils.dll
+             1300073A0 Import Address Table
+             1300092F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 NetApiBufferFree
+
+  Section contains the following delay load imports:
+
+    SETUPAPI.dll
+              00000001 Characteristics
+      000000013000A5A0 Address of HMODULE
+      0000000130016010 Import Address Table
+      0000000130008AB8 Import Name Table
+      0000000130008B70 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000130001DE3    E3 SetupDiCallClassInstaller
+                                    0000000130001DF5    F0 SetupDiCreateDeviceInfoList
+                                    0000000130001DD1   137 SetupDiSetClassInstallParamsW
+                                    0000000130001D46    FC SetupDiDestroyDeviceInfoList
+
+    BROWCLI.dll
+              00000001 Characteristics
+      000000013000A5A8 Address of HMODULE
+      0000000130016000 Import Address Table
+      0000000130008AA8 Import Name Table
+      0000000130008B98 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000130001E07     0 NetServerEnum
+
+  Summary
+
+        B000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

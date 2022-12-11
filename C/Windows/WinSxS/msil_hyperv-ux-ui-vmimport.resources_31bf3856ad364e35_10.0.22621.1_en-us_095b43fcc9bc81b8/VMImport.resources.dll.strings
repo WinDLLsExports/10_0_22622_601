@@ -1,0 +1,455 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+Button_CancelRunningOperation
+Button_CloseDialog
+Button_ConnectToVirtualMachineAfterCreation
+Button_EditVirtualMachineSettings
+Button_ImportVirtualMachine.
+Error_ConfigFileNotFoundG
+Error_InvalidArgument
+Label_FileSize
+Label_ShareVM
+Label_VMName
+Label_VirtualMachineCreatedSuccessfullyTitle
+Label_VirtualMachineSharedSuccessfullyTitle
+MessageBoxTitle_Error
+TaskDescription_CleaningUpFiles
+TaskDescription_CompressingFiles
+TaskDescription_ExtractingVhdFile
+TaskDescription_PerformingExport
+TaskDescription_RealizingVirtualMachine
+WindowTitle
+C_ancel
+_Close
+_Connect
+Edit _settings...
+_Import Virtual Machine
+8The target file is not a valid exported virtual machine.
+Please supply an argument.
+Disk space required
+Share Virtual Machine
+_Name
+$Virtual machine created successfully
+#Virtual machine shared successfully
+Error
+Cleaning up...
+Compressing files...
+Extracting {0}...
+Exporting files...
+(Completing the virtual machine import...
+Import Virtual Machine
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADPA*
+app.baml
+importvirtualmachinewindow.baml
+resources/hypvmdl2.1.72.ttf
+resources/importvirtualmachine.ico
+views/importvmformview.baml
+views/newvmsuccessview.baml
+views/operationview.baml
+MSBAML
+LVMImport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+G(clr-namespace:ImportVirtualMachineDialog
+ImportVirtualMachineDialog
+]3clr-namespace:ImportVirtualMachineDialog.Properties%ImportVirtualMachineDialog.Properties
+ImportVirtualMachineDialog.App
+NWindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+SPresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+XPresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+ZWindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+9http://schemas.microsoft.com/winfx/2006/xaml/presentation
+NSystem.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+x,http://schemas.microsoft.com/winfx/2006/xaml
+local(clr-namespace:ImportVirtualMachineDialog
+resx3clr-namespace:ImportVirtualMachineDialog.Properties
+Resources
+VisibilityConverter 
+HyperVAssets 
+SuccessIconColor
+Color
+TargetType
+Property
+Value 
+TitleText 
+VMNameTitleText
+Triggers
+Property
+Value
+RelativeSource
+Path 
+CaptionStyle 
+ExplanationText 
+Glyph
+BasedOn 
+CommonButton 
+ConfirmButton 
+ControlsGroup
+IEpack://application:,,,/Resources/HypVMDL2.1.72.ttf#HyperV MDL2 Assets)
+#128b44
+Segoe UI)
+Segoe UI)
+Wrap=
+Padding$
+Segoe UI)
+Padding$
+Segoe UI)
+CaretBrush
+ErrorTemplate
+HasError
+ToolTip
+Self+
+,(Validation.Errors).CurrentItem.ErrorContent
+Wrap=
+Padding$
+5,8,8,8q
+Center=
+Center=
+Segoe UI)
+Center=
+Regular"
+Bottom=
+10,50,5,50q
+Segoe UI)
+MSBAML
+LVMImport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+G(clr-namespace:ImportVirtualMachineDialog
+ImportVirtualMachineDialog
+]3clr-namespace:ImportVirtualMachineDialog.Properties%ImportVirtualMachineDialog.Properties
+5ImportVirtualMachineDialog.ImportVirtualMachineWindow
+NWindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+SPresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+XPresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+ZWindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+9http://schemas.microsoft.com/winfx/2006/xaml/presentation
+NSystem.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+x,http://schemas.microsoft.com/winfx/2006/xaml
+d2http://schemas.microsoft.com/expression/blend/2008
+mc;http://schemas.openxmlformats.org/markup-compatibility/2006
+local(clr-namespace:ImportVirtualMachineDialog
+resx3clr-namespace:ImportVirtualMachineDialog.Properties
+/ImportVirtualMachineDialog.Properties.Resources
+WindowTitle
+Title#
+ResizeMode$
+CanMinimize=
+Icon$(
+"Resources/ImportVirtualMachine.ico
+Name$
+frameMain
+NavigationUIVisibility$
+Hidden=
+pOS/2JZu
+`VDMX
+cmap*H
+*fpgm
+Ygasp
+'Hhead
+6hhea
+$hmtx
+ name
+ prepx
+;:<9=8>7?6@5A4B3C2D1E0*Up
+_^-,  EiD
+*!-, F
+%FRX#Y 
+ F had
+%F hadRX#e
+@eYY:-, F
+%FRX#
+Y F jad
+%F jadRX#
+&PXQX
+!YY-,  EiD
+`  E}i
+*-,K 
+&SX#!
+&SX#!
+&SX#!
+&SX#!
+%E#!#!Y
+!YD-,KSXED
+v_!s)x
+x)s!_v
+(JjA:Q
+Q:AjJ(
+#"'&'&'.
+7676$32
+NP97ee
+}[^bPN
+%0|BEz[5
+!9K+&91,
+%025[z
+R.R@-
+,19&+K9!
+#-159
+#5!54>
+3!265%#
+/)(3A-
+-A3()/
+"&54632
+!5!5!5!
+#"&546
+3\WT+H
+ :.75
+PQ,)),QP
+!5!5!5!53
+BtW33WtBBuW22Wu
+R_i7]
+]7i_R
+2WuBBtW33WtBBuW2
+4&#!"
+4654>
+!'!5!'!5!
+#654.
+!5!5!
+i<@#f??f##f??f
+x?f##f??f##f
+ $(,048<@DHLPTX\
+'7!5!'%53
+"&*.26
+ $(,048
+!54&#"
+!5!5!5!535!
+#'+/37;?CWkq
+#'+/37;?CGKOSW[_
+!5!5!5!535!
+!5!5!5!535;
+(XYV%
+%VYX((XYU&
+&UYX((XXT&
+,qyx22xyr+
+s6O9%
+#535#535#535#535#535#535#5!53
+#'+/37;?CGKOSW[_cgkosw{
+!5!5!
+uS..Su
+uS..Su
+uS..Su
+#5267
+Normalob
+normalStandar
+ 2014 Microsoft Corporation. All Rights Reserved.HyperV MDL2 AssetsRegularVersion 1.72HyperVMDL2AssetsSegoe is a trademark of the Microsoft group of companies.Microsoft Corporationhttp://www.microsoft.com/typography/fonts/You may use this font as permitted by the EULA for the product in which this font is included to display and print content. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content.NormaaliNorm
+lNormaleStandaardNormaln
+9Norm
+lneNavadnot
+ngArrunta
+IDATx
+R)CAJ>X
+W[6E<
+?00`y
+|>z{{
+V4,811
+UUexx
+t:m9fo
+D"AgG
+aw+pq
+_~Yp7e7
+D C9<
+\@ww/
+;3L&+
+$]]]%/!
+^N$yr
+@ZAo,
+}=VK|`;
+B I"g
+u]!vv
+2CCC%
+*2xWs
+Y09Tg
+Hg44C
+nY&)4
+{+g+6
+Ud`3td
+IDAT<
++L29A"
+.1::J$
+bf_/{n
+50g]}
+<Iwwwa
+=IGw7
+eDQFS
+t-]A2
+&b1G3x
+8UfU`U
+&`|0H
+Avt,g
+Lv&&2
+ +>zz
+MM31z
+g,(zH
+w3aZN
+cccd2
+o\Gg<
+IIDAT
+iVEhM
+BSX*i
+$V\Wi
+'O.%Y=
+;OGG7[
+>G30*
+uKs/w
+?88#3g
+MSBAML
+LVMImport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+S.clr-namespace:ImportVirtualMachineDialog.Views ImportVirtualMachineDialog.Views
+[2clr-namespace:ImportVirtualMachineDialog.ViewModel$ImportVirtualMachineDialog.ViewModel
+]3clr-namespace:ImportVirtualMachineDialog.Properties%ImportVirtualMachineDialog.Properties
+1ImportVirtualMachineDialog.Views.ImportVMFormView
+NWindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+SPresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+XPresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+ZWindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+9http://schemas.microsoft.com/winfx/2006/xaml/presentation
+NSystem.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+x,http://schemas.microsoft.com/winfx/2006/xaml
+mc;http://schemas.openxmlformats.org/markup-compatibility/2006
+d2http://schemas.microsoft.com/expression/blend/2008
+local.clr-namespace:ImportVirtualMachineDialog.Views
+viewmodel2clr-namespace:ImportVirtualMachineDialog.ViewModel
+resx3clr-namespace:ImportVirtualMachineDialog.Properties
+ControlsGroup#
+Name$
+tbName
+VMNameTitleText#
+Name+
+tbFileSize
+TitleText#
+FormattedFileSize+
+Bottom=
+5,5,5,15q
+ColumnDefinitions
+Name$
+btnImportVM
+/ImportVirtualMachineDialog.Properties.Resources
+Button_ImportVirtualMachine#
+ConfirmButton#
+IsDataLoaded+
+btnCloseDialog
+Button_CloseDialog#
+IsCancel
+IsDataLoaded+
+MSBAML
+LVMImport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+S.clr-namespace:ImportVirtualMachineDialog.Views ImportVirtualMachineDialog.Views
+[2clr-namespace:ImportVirtualMachineDialog.ViewModel$ImportVirtualMachineDialog.ViewModel
+]3clr-namespace:ImportVirtualMachineDialog.Properties%ImportVirtualMachineDialog.Properties
+1ImportVirtualMachineDialog.Views.NewVMSuccessView
+NWindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+SPresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+XPresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+ZWindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+9http://schemas.microsoft.com/winfx/2006/xaml/presentation
+NSystem.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+x,http://schemas.microsoft.com/winfx/2006/xaml
+mc;http://schemas.openxmlformats.org/markup-compatibility/2006
+d2http://schemas.microsoft.com/expression/blend/2008
+local.clr-namespace:ImportVirtualMachineDialog.Views
+viewmodel2clr-namespace:ImportVirtualMachineDialog.ViewModel
+resx3clr-namespace:ImportVirtualMachineDialog.Properties
+Name$
+gridOperationComplete
+/ImportVirtualMachineDialog.Properties.Resources
+,Label_VirtualMachineCreatedSuccessfullyTitle#
+Center=
+TitleText#
+0,20,0,20q
+Wrap=
+Name$
+tbCheckMarkGlyph
+HyperVAssets#
+Center=
+SuccessIconColor#
+0,10q
+Wrap=
+Center=
+VMNameTitleText#
+0,8,0,22q
+Wrap=
+Name+
+Mode$
+OneWay=
+Name$
+btnVMConnect
++Button_ConnectToVirtualMachineAfterCreation#
+ConfirmButton#
+0,22,0,0q
+btnOpenVMSettings
+!Button_EditVirtualMachineSettings#
+0,22,0,0q
+MSBAML
+LVMImport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+S.clr-namespace:ImportVirtualMachineDialog.Views ImportVirtualMachineDialog.Views
+[2clr-namespace:ImportVirtualMachineDialog.ViewModel$ImportVirtualMachineDialog.ViewModel
+]3clr-namespace:ImportVirtualMachineDialog.Properties%ImportVirtualMachineDialog.Properties
+.ImportVirtualMachineDialog.Views.OperationView
+NWindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+SPresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+XPresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+ZWindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+9http://schemas.microsoft.com/winfx/2006/xaml/presentation
+NSystem.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+x,http://schemas.microsoft.com/winfx/2006/xaml
+mc;http://schemas.openxmlformats.org/markup-compatibility/2006
+d2http://schemas.microsoft.com/expression/blend/2008
+local.clr-namespace:ImportVirtualMachineDialog.Views
+viewmodel2clr-namespace:ImportVirtualMachineDialog.ViewModel
+resx3clr-namespace:ImportVirtualMachineDialog.Properties
+Name$
+gridOperationInProgress
+ZIndex$
+Center=
+Name$
+lblTaskDescription
+TaskDescription+
+Mode$
+OneWay=
+Name$
+pbTaskProgress
+Minimum$
+Maximum$
+IsIndeterminate
+IsIndeterminate+$
+OneWay=
+Value
+ProgressPercentage+$
+OneWay=
+Name$
+btnCancelTask
+/ImportVirtualMachineDialog.Properties.Resources
+Button_CancelRunningOperation#
+ConfirmButton#
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+VMImport.resources
+ImportVirtualMachineDialog.Properties.Resources.en.resources
+VMImport.g.en.resources
+VMImport.resources.dll
+_CorDllMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+040904b0
+CompanyName
+Microsoft Corporation
+FileDescription
+FileVersion
+10.0.22621.1
+InternalName
+VMImport.resources.dll
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+VMImport.resources.dll
+ProductName
+Microsoft (R) Windows (R) Operating System
+ProductVersion
+10.0.22621.1

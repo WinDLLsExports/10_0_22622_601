@@ -1,0 +1,190 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\pid.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-private-l1-1-0.dll
+    api-ms-win-crt-string-l1-1-0.dll
+    KERNEL32.dll
+    ADVAPI32.dll
+    USER32.dll
+    HID.DLL
+
+  Section contains the following exports for pid.dll
+
+    00000000 characteristics
+    E325C148 time date stamp
+        0.00 version
+           1 ordinal base
+           4 number of functions
+           4 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000027D0 DllCanUnloadNow
+          2    1 000027F0 DllGetClassObject
+          3    2 00006FE0 PID_GetFFEffectSettingsFromMemory
+          4    3 00007530 PID_WriteFFEffectSettingsToMemory
+
+  Section contains the following imports:
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             180008458 Import Address Table
+             1800097A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          37 _initterm_e
+                          36 _initterm
+
+    api-ms-win-crt-private-l1-1-0.dll
+             180008400 Import Address Table
+             180009750 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          93 _o__cexit
+                          A0 _o__configure_narrow_argv
+                          C2 _o__execute_onexit_table
+                         13C _o__initialize_narrow_environment
+                         13D _o__initialize_onexit_table
+                         259 _o__seh_filter_dll
+                         463 memcpy
+                          70 _o___stdio_common_vswprintf
+                          60 _o___std_type_info_destroy_list
+                           C __C_specific_handler
+
+    api-ms-win-crt-string-l1-1-0.dll
+             180008470 Import Address Table
+             1800097C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          83 memset
+
+    KERNEL32.dll
+             180008238 Import Address Table
+             180009588 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         3ED LocalAlloc
+                         3F2 LocalFree
+                         679 lstrlenW
+                         149 EnterCriticalSection
+                         3E0 LeaveCriticalSection
+                         295 GetModuleHandleW
+                         5C4 TerminateProcess
+                         232 GetCurrentProcess
+                         3A8 IsProcessorFeaturePresent
+                         5A4 SetUnhandledExceptionFilter
+                         5E6 UnhandledExceptionFilter
+                         3A0 IsDebuggerPresent
+                         504 RtlVirtualUnwind
+                         4FD RtlLookupFunctionEntry
+                         4F5 RtlCaptureContext
+                         38A InitializeSListHead
+                         30A GetSystemTimeAsFileTime
+                         237 GetCurrentThreadId
+                         233 GetCurrentProcessId
+                         470 QueryPerformanceCounter
+                         1C6 FreeLibraryAndExitThread
+                         64C WriteFileEx
+                         499 ReadFileEx
+                         342 GetVersionExW
+                         340 GetVersion
+                         5B4 Sleep
+                         103 CreateThread
+                          CE CreateEventW
+                         291 GetModuleFileNameW
+                          DA CreateFileW
+                         1C5 FreeLibrary
+                         3E7 LoadLibraryW
+                         4D5 ReleaseMutex
+                         610 WaitForSingleObject
+                         411 MulDiv
+                         548 SetEvent
+                         4EC ResetEvent
+                         60E WaitForMultipleObjects
+                         27D GetLastError
+                         64B WriteFile
+                         123 DeleteCriticalSection
+                         5E9 UnmapViewOfFile
+                         401 MapViewOfFile
+                          94 CloseHandle
+                          D7 CreateFileMappingW
+                          EA CreateMutexW
+                         385 InitializeCriticalSection
+                         134 DisableThreadLibraryCalls
+                         2CD GetProcAddress
+                         3F5 LocalReAlloc
+
+    ADVAPI32.dll
+             180008150 Import Address Table
+             1800094A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         282 RegOpenKeyExW
+                          20 AllocateAndInitializeSid
+                          58 BuildTrusteeWithSidW
+                         2CE SetEntriesInAclW
+                         17A InitializeSecurityDescriptor
+                         2DE SetSecurityDescriptorDacl
+                         25A RegCreateKeyExW
+                         11F FreeSid
+                         29F RegSetValueExW
+                         251 RegCloseKey
+                         28F RegQueryValueExW
+
+    USER32.dll
+             1800083D0 Import Address Table
+             180009720 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2AA PeekMessageW
+                         3B6 TranslateMessage
+                          BD DispatchMessageW
+                         293 MsgWaitForMultipleObjectsEx
+                         2B1 PostThreadMessageW
+
+    HID.DLL
+             1800081B0 Import Address Table
+             180009500 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1C HidP_GetSpecificValueCaps
+                          1B HidP_GetSpecificButtonCaps
+                          28 HidP_SetScaledUsageValue
+                          29 HidP_SetUsageValue
+                          11 HidD_SetFeature
+                          1A HidP_GetScaledUsageValue
+                          23 HidP_InitializeReportForID
+                           4 HidD_GetFeature
+                          19 HidP_GetLinkCollectionNodes
+                           1 HidD_FreePreparsedData
+                          2B HidP_SetUsages
+                          1F HidP_GetUsages
+                           2 HidD_GetAttributes
+                           C HidD_GetPreparsedData
+                          16 HidP_GetCaps
+                          2A HidP_SetUsageValueArray
+LINK : warning LNK4078: multiple '.text' sections found with different attributes (C0000040)
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+        7000 .text

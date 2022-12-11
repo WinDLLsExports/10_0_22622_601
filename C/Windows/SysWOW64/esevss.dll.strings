@@ -1,0 +1,1520 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+EseShadowInit
+Entering %hs.
+%hs: Failed allocating EseShadowInformation.
+ds\esent\src\noncore\eseshadow\eseshadow.cxx
+CreateVssBackupComponents( &pvbc )
+Failed! %hs returned hr = %#x, [%hs %hs:%d]
+pvbc->InitializeForBackup()
+pvbc->SetContext( VSS_CTX_BACKUP | VSS_VOLSNAP_ATTR_ROLLBACK_RECOVERY )
+EseRecoveryWriter::GetSingleton()->Initialize()
+Leaving %hs (returning %#x).
+EseShadowTerm
+VssIdToString
+UuidToStringW( &vssId, &strGuid )
+StringCchPrintfW( szStr, cch, L"{%s}", strGuid )
+EseShadowIMountShadow
+Entering %hs( %s ).
+pvbc->GetSnapshotProperties( vssIdVolume, &prop )
+VssIdToString( vssIdVolume, szID, ARRAYSIZE( szID ) )
+Device name is %s.
+StringCchCopyW( szOutPath, cchOutPath, pProp->m_pwszSnapshotDeviceObject )
+Failed to open %s: Error %d.
+Failed GetFinalPathNameByHandleW( %s ): returned %d.
+StringCchCatW( szOutPath, cchOutPath, fullPath )
+EseShadowMountShadow
+EseShadowIMountShadow( pvbc, pesi->m_vssIdDbSnapshot, pesi->m_databaseFile, szOutDatabasePath, cchOutDatabasePath )
+EseShadowIMountShadow( pvbc, pesi->m_vssIdLogSnapshot, pesi->m_logFilePath, szOutLogPath, cchOutLogPath )
+EseShadowIMountShadow( pvbc, pesi->m_vssIdSystemSnapshot, pesi->m_systemFilePath, szOutSystemPath, cchOutSystemPath)
+EseShadowMountSimpleShadow
+EseShadowICreateShadow
+pvbc->SetBackupState( true, false, VSS_BT_FULL, true )
+pvbc->DisableWriterClasses( &guidSystemWriter, 1 )
+pvbc->GatherWriterMetadata( &pAsync )
+pAsync->Wait()
+pvbc->GetWriterMetadataCount(&cWriters)
+pvbc->StartSnapshotSet( pvssIdSnapshotSet )
+pvbc->GetWriterMetadata(iWriter, &idInstance, &pMetadata )
+pMetadata->GetIdentity( &idInstanceT, &idWriter, &bstrWriterName, &vssUsageType, &vssSourceType )
+VssIdToString( idWriter, szID, _countof( szID ) )
+Looking at writer GUID %s.
+Found a suitable writer to invoke: %s
+%hs: No writer found.
+pMetadata->GetFileCounts( &cIncludeFiles, &cExcludeFiles, &cComponents )
+pMetadata->GetComponent( iComponent, &pComponent )
+pComponent->GetComponentInfo( &pInfo )
+pvbc->AddComponent( idInstance, idWriter, pInfo->type, pInfo->bstrLogicalPath, pInfo->bstrComponentName )
+Failed GetVolumePathNameW( %s ): returned %d.
+pvbc->AddToSnapshotSet(szDbDrive, GUID_NULL, pvssIdDbSnapshot )
+pvbc->AddToSnapshotSet( szLogDrive, GUID_NULL, pvssIdLogSnapshot )
+pvbc->AddToSnapshotSet( szSystemDrive, GUID_NULL, pvssIdSystemSnapshot )
+pvbc->PrepareForBackup( &pAsync )
+pvbc->DoSnapshotSet( &pAsync )
+pvbc->GatherWriterStatus( &pAsync )
+pvbc->GetWriterStatusCount(&cWriters)
+pvbc->GetWriterStatus( iWriter, &idInstance, &idWriter, &bstrWriterName, &vssWriterState, &hrStatus )
+hrStatus
+pvbc->BackupComplete( &pAsync )
+VssIdToString( *pvssIdSnapshotSet, szID, ARRAYSIZE(szID ) )
+EseShadowCreateShadow
+EseShadowPurgeShadow() called with a NULL context!
+EseShadowCreateShadow ran out of memory!
+Need to provide a database name!
+EseShadowICreateShadow( pvbc, szDatabaseFile, szLogDirectory, szSystemDirectory, &pesi->m_vssIdSnapshotSet, &pesi->m_vssIdDbSnapshot, &pesi->m_vssIdLogSnapshot, &pesi->m_vssIdSystemSnapshot )
+VssIdToString( pesi->m_vssIdSnapshotSet, szID, _countof( szID ) )
+VSS Snapshot ID = %s
+VssIdToString( pesi->m_vssIdDbSnapshot, szID, _countof( szID ) )
+VSS Database dir ID = %s
+VssIdToString( pesi->m_vssIdLogSnapshot, szID, _countof( szID ) )
+VSS Log dir ID = %s
+VssIdToString( pesi->m_vssIdSystemSnapshot, szID, _countof( szID ) )
+VSS System dir ID = %s
+EseShadowICreateShadow was successful!
+EseShadowCreateSimpleShadow
+EseShadowCreateSimpleShadow ran out of memory!
+EseShadowICreateShadow( pvbc, szArbitraryFile, NULL, NULL, &pesi->m_vssIdSnapshotSet, &pesi->m_vssIdDbSnapshot, &pesi->m_vssIdLogSnapshot, &pesi->m_vssIdSystemSnapshot )
+EseShadowPurgeShadow
+EseRecoveryWriter
+%s\%s*.%s
+GetLogFileSizeAndExtensionFromDirectoryAndBaseName
+%hs() FindFirstFile say that '%s' is %Id bytes.
+EseRecoveryWriter::Initialize
+ds\esent\src\noncore\eseshadow\esewriter.cxx
+__super::Initialize( EseRecoveryWriterId, EseRecoveryWriterName, VSS_UT_USERDATA, VSS_ST_OTHER )
+Subscribe()
+EseRecoveryWriter::Uninitialize
+Unsubscribe()
+EseRecoveryWriter::OnIdentify
+FilesComponent
+pMetadata->SetBackupSchema( dwBackupSchema )
+pMetadata->SetRestoreMethod( VSS_RME_RESTORE_IF_CAN_REPLACE, NULL, NULL, VSS_WRE_ALWAYS, false )
+recovered_database
+pMetadata->AddComponent( VSS_CT_FILEGROUP, NULL, szComponent, L"recovered_database", NULL, 0, false, true, true, true, VSS_CF_BACKUP_RECOVERY | VSS_CF_APP_ROLLBACK_RECOVERY )
+Warning: g_eseRecoveryWriterConfig->m_szDatabaseFileFullPath is NULL.
+Adding directory '%s' (file=*) to the file group
+pMetadata->AddFilesToFileGroup( NULL, szComponent, g_eseRecoveryWriterConfig.m_szDatabasePath, L"*", false, NULL )
+Adding '%s' to the file group
+pMetadata->AddFilesToFileGroup( NULL, szComponent, g_eseRecoveryWriterConfig.m_szLogDirectory, L"*", false, NULL )
+pMetadata->AddFilesToFileGroup( NULL, szComponent, g_eseRecoveryWriterConfig.m_szSystemDirectory, L"*", false, NULL )
+Leaving %hs (returning hr=%#x).
+EseRecoveryWriter::OnPrepareBackup
+Entering %hs (and returning true).
+EseRecoveryWriter::OnPrepareSnapshot
+EseRecoveryWriter::OnFreeze
+EseRecoveryWriter::OnThaw
+EseRecoveryWriter::OnPostSnapshot
+OnPostSnapshot() begin.
+%hs(): Not an auto-recovery snapshot. Doing nothing.
+%hs(): The input database name was not set!
+GetSnapshotDeviceName( szVolume, &szDeviceName )
+StringCchPrintfW( szOutPaths[ i ], _countof( szOutPaths[ i ]), L"%s%s", szDeviceName, szRelativePathFromRoot )
+Snapshot database file: %s
+Snapshot log directory: %s
+Snapshot system directory: %s
+EseRecoveryWriter::OnAbort
+EseRecoveryWriter::OnBackupComplete
+EseRecoveryWriter::OnBackupShutdown
+EseRecoveryWriter::OnPreRestore
+EseRecoveryWriter::OnPostRestore
+EseRecoveryWriter::RecoverEseDatabase
+ErrOSFSCreate( &pfsapi )
+Failed! %hs returned err = %#x, [%hs %hs:%d]
+pfsapi->ErrGetTempFolder( wszTempPath, _countof( wszTempPath ) )
+pfsapi->ErrGetTempFileName( wszTempPath, L"ewe", wszDefaultTempDB )
+JetGetDatabaseFileInfoW( szNewDbName, &cbPage, sizeof( cbPage ), JET_DbInfoPageSize )
+%ls\%lstmp.%ls
+Failed to create temporary log file %s: Error %d.
+JetInit3W( &instance, &rstInfo, grbit )
+RecoverJetDB successfully replayed the logs.
+EseRecoveryWriter::CreateWriter
+%hs() failed with hr=%#x
+EseRecoveryWriter::DestroyWriter
+Leaving %hs.
+DllMain
+Leaving %hs (returning %d).
+onecore\ds\esent\src\os\string.cxx
+GlobalMemoryStatusEx
+NtQueryInformationProcess
+NtQuerySystemInformation
+GetProcessMemoryInfo
+QueryWorkingSetEx
+api-ms-win-core-psapi-l1-1-0.dll
+psapi.dll
+api-ms-win-core-psapi-l1-1-0.dll
+psapi.dll
+kernel32.dll
+ntdll.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+kernel32.dll
+EventWrite
+EventWriteTransfer
+EventRegister
+EventUnregister
+api-ms-win-eventing-provider-l1-1-0.dll
+advapi32.dll
+%u (0x%08x)
+NtQueryVolumeInformationFile
+onecore\ds\esent\src\os\osfs.cxx
+$FlushFS
+UNKNOWN.PTH
+GetTempPathW
+GetTempPath2W
+SeManageVolumePrivilege
+ErrFileCreate( %ws, 0x%x ) -> 0x%p{0x%p} )
+FILE_FLAG_RANDOM_ACCESS
+FILE_FLAG_NO_BUFFERING
+FILE_FLAG_WRITE_THROUGH
+OS CreateFileW( path, %#x, %#x, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL | FILE_FLAG_OVERLAPPED | %hs | %hs, NULL )
+SectorSizeTooBig
+FirewallTag%s%s
+ErrFileOpen( %ws, 0x%x ) -> 0x%p{0x%p} )
+OpenProcessToken
+AdjustTokenPrivileges
+LookupPrivilegeValueW
+SeBackupPrivilege
+\\.\PhysicalDrive%u
+MBR:%08X
+GPT:%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X
+Volume=%ws, eosDiskType = %d, fFixed = %d
+WARNING: Volume=%ws is not detected as fixed, MemoryMapping operations will all be forcibly COW'd
+ThereCanBeOnlyOne
+Add Ref Volume p=%p, Path=%ws, CanonicalPath=%ws, Cref=%d
+Created Volume p=%p, Path=%ws, CanonicalPath=%ws
+Deleted Volume p=%p, Path=%ws, CanonicalPath=%ws
+Del Ref Volume p=%p, Path=%ws, CanonicalPath=%ws, Cref=%d
+CloseState
+GetStateFolder
+OpenState
+api-ms-win-appmodel-state-l1-1-0.dll
+( State().m_cw & 0x00007fff ) != 0x00007fff
+( State().m_cw & 0xffff0000 ) != 0xffff0000
+onecore\ds\esent\src\os\blockcache\_fswrapper.hxx
+%s ctor
+%s dtor
+%s ErrSetSize %llu -> %llu
+%s ErrRename %S fOverwriteExisting=%s
+%s ErrIOTrim ib=%llu cb=%llu
+%s ErrIOIssue iom=%u
+%s ErrIOWrite ib=%llu cb=%u fZeroed=%s fCachedFileHeader=%s iom=%d
+False
+%s ErrIORead ib=%llu cb=%u fZeroed=%s fCachedFileHeader=%s iom=%d
+pfnIOComplete || !pioreq
+err != errDiskTilt
+onecore\ds\esent\src\os\blockcache\_cachedfileheader.hxx
+%S (0x%08x:0x%016I64x)
+%s ErrFlushFileBuffers
+onecore\ds\esent\src\os\blockcache\_filefilter.hxx
+onecore\ds\esent\src\os\blockcache\_filewrapper.hxx
+onecore\ds\esent\src\os\blockcache\_fsfilter.hxx
+onecore\ds\esent\src\os\blockcache\_cacheheader.hxx
+onecore\ds\esent\src\os\blockcache\_passthroughcache.hxx
+JBCAUX
+0x%08x-0x%016I64x-0x%08x
+onecore\ds\esent\src\os\blockcache\_passthroughcachedfiletableentry.hxx
+onecore\ds\esent\src\os\blockcache\_headerhelpers.hxx
+onecore\ds\esent\src\os\blockcache\_hashedlrukcacheheader.hxx
+HASHED LRUK CACHE HEADER:
+Fields:
+                                      Checksum:  0x%08lx
+                                          Type:  %08lx-%04hx-%04hx-%02hx%02hx-%02hx%02hx%02hx%02hx%02hx%02hx
+onecore\ds\esent\src\os\blockcache\_hashedlrukcache.hxx
+onecore\ds\esent\src\os\blockcache\_cachebase.hxx
+onecore\ds\esent\src\os\blockcache\_cachethreadlocalstorage.hxx
+Too many active threads/workers in this section, must quit to avoid consistency issues!
+onecore\ds\esent\published\inc\sync.hxx
+Underflow of a metered section, left a group we didn't enter!!!
+onecore\ds\esent\src\os\blockcache\_cachefactory.hxx
+0x%08x
+0x%016I64x
+%08lx-%04hx-%04hx-%02hx%02hx-%02hx%02hx%02hx%02hx%02hx%02hx
+onecore\ds\esent\src\os\blockcache\_cacherepository.hxx
+onecore\ds\esent\src\os\blockcache\_fileidentification.hxx
+api-ms-win-security-lsalookup-l2-1-0.dll
+advapi32.dll
+api-ms-win-security-base-l1-1-0.dll
+advapi32.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+advapi32.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-file-l1-1-0.dll
+kernel32.dll
+kernelbase.dll
+%i (0x%08x)
+RtlGetCompressionWorkSpaceSize
+RtlCompressBuffer
+RtlDecompressBuffer
+RaiseFailFastException
+PV: %u.%u.%u.%u SV: %u.%u.%u.%u GLE: %u ERR: %d(%hs%hs:%u): %hs%hs(%u)
+FORMAT STRING FAIL
+AssertTrackTag%s%s
+onecore\ds\esent\src\os\error.cxx
+#BadFileName#
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+kernel32.dll
+onecore\ds\esent\src\os\thread.cxx
+onecore\ds\esent\src\os\sysinfo.cxx
+ESENT
+0123456789
+%ws%ws
+%ws[%I32u.%I32u.%I32u.%I32u]
+ RETAIL
+ MBCS
+RegOpenKeyExW
+RegQueryValueExW
+RegCloseKey
+GetCurrentPackageFullName
+Beta Feature %d staging value %d (usbsmCurrent = %d).
+api-ms-win-appmodel-runtime-l1-1-0.dll
+api-ms-win-core-localregistry-l1-1-0.dll
+advapi32.dll
+SystemSetupInProgress
+System\Setup
+onecore\ds\esent\src\os\library.cxx
+onecore\ds\esent\src\os\trace.cxx
+[%ws %03x.%03x %04d/%02d/%02d-%02d:%02d:%02d]  
+[%ws %03x.%03x %04d/%02d/%02d-%02d:%02d:%02d.%d]  
+[%ws %03x.%03x %I64d]  
+%-*.*s
+%.*s%s
+%ws version %d.%02d.%04d.%04d (%ws)
+%s unloaded
+ (open failed)
+<not used>
+%s loaded.
+Image:              "%ws"
+Process:            "%ws"
+Trace File:         "%ws"%s
+<null>
+\Debug\ESE.TXT
+Global\{5E5C36C0-5E7C-471f-84D7-110FDC1AFD0D}
+GetNLSVersionEx
+api-ms-win-core-localization-l1-1-0.dll
+kernel32.dll
+onecore\ds\esent\src\os\osfile.cxx
+ErrOSFileIIoControlReadOnly
+%s:  pinst %s failed to do operation (ioctl=%d) with error %s (0x%x).
+GetCompressedFileSizeW
+FfbFailedWithSuccess
+%0.3f
+COSFile::Flush Failed[%8x] err %d (error %d) - %ws
+FFbError:%I32u
+COSFile::ErrRename() %ws --> %ws
+::$ATTRIBUTE_LIST
+COSFile::ErrIOSetFileSize
+%s:  pinst %s failed to set file size with error %s (0x%x) at offset %I64d.
+COSFile::ErrIOGetAllocatedRange
+%s:  pinst %s failed to query the allocated region from %#I64x with error %s (0x%x).
+%0*I64X
+%I64d
+onecore\ds\esent\src\os\osdisk.cxx
+OutOfReservedIoreqs
+%I64i (0x%016I64x)
+Deleted Disk p=%p, PathId=%ws
+Del Ref Disk p=%p, PathId=%ws, Cref=%d
+EseNoLo-S%d-E%d
+SmartData
+%hs%hs
+Failed S.M.A.R.T. load: %hs 
+EseNoLo
+FAILED: DevIoCtrl( query prop \ %hs ) -> %d / %d / %d in %I64u us 
+StorageDeviceSeekPenaltyProperty
+ m_osdi.m_osdspd = { Ver.Size=%d.%d, IncursSeekPenalty=%d };
+Created Disk p=%p, PathId=%ws
+Add Ref Disk p=%p, PathId=%ws, Cref=%d
+Add[Fast] Ref Disk p=%p, PathId=%ws, Cref=%d
+JustFoundIoMismatchFileId
+JustFoundIoMismatchOffset
+CombinedIoRunShouldMatchInsertTargetFileId
+CombinedIoRunShouldMatchInsertTargetOffset
+JustFoundIoCouldntDelete
+AllocationlessInsertShouldSucceed
+AllocationlessInsertShouldSucceedPossDupEntry
+Searched00AndNotEmptyRbt
+TransferShouldLeaveBuildingQEmpty
+FoundIoKeyShouldNotBeMaxNotFound
+FoundIoKeyAndObjectMismatchFileId
+FoundIoKeyAndObjectMismatchOffset
+( CioreqIOHeap() + 1 ) <= m_cioreqMax
+p_osf == piorun->P_OSF()
+pioreqBaseMid->ibOffset != pioreqToAddMid->ibOffset
+cbRunT < ulMax
+SmallDurationNotSoSmallTruncation
+SmallDurationLargerThan35MinTruncation
+write
+IOREQ-Heap-Enqueue %I64X:%016I64X for TID 0x%x into I/O %hs (%s at %016I64X for %08X bytes), EngineFile=%d:0x%I64x ql=%d
+IOREQ-Heap-Dequeue, %I64X:%016I64X, for TID 0x%x IOR, %d, %d, %d, 0x%x, from I/O Heap %hs, OP, %s, 0x%08X, 0x%I64x, %I64u, EngineFile=%d:0x%I64x, ql=%d
+0 == cbData % OSMemoryPageCommitGranularity()
+fAdded
+ExclusiveIoAcquireTooLong
+COSDisk::Flush[%8x] Res: %d Delta: +%8.3f +(%8.3f op) - %I64d - %ws
+Long IO, %I64u msec, fReport = %d
+%I64u
+%I64u.%03I64u
+MultiIoru
+SingleIoru
+MultiIors
+SingleIors
+MultiIorp
+SingleIorp
+IO, IO-Completion, %I64X, IOR, %s, %d, %s, %d, %s, %d, 0x%x, OP, %s, 0x%016I64X, 0x%08X, Err=%d, Disp=%d, %d, 0x%x, TM, %I64u, %lu, for TID 0x%x, EngineFile=%d:0x%I64x, Fmf=0x%x
+UnhandledProcessIoErr=%d
+Heap A
+Heap B
+Heap A&B
+VIP List
+Meted Queue
+UnknownQ
+onecore\ds\esent\src\os\task.cxx
+PUTIL_THREAD_PROC( TMDispatch )
+cpi.pfnCompletion
+QueueUserWorkItem
+api-ms-win-core-threadpool-l1-1-0.dll
+kernel32.dll
+CreateThreadpoolTimer
+SetThreadpoolTimer
+WaitForThreadpoolTimerCallbacks
+CloseThreadpoolTimer
+EnforceFail: %ws, %ws, %hs
+AssertFail: %ws, %hs
+TrackFileWriteError: %d, %d, %I64d
+TrackFileError: %d, %d
+RegCreateKeyExW
+RegDeleteValueW
+RegSetValueExW
+onecore\ds\esent\src\os\osblockcache.cxx
+onecore\ds\esent\src\os\reftrace.cxx
+onecore\ds\esent\src\sync\sync.cxx
+Could not allocate a Kernel Semaphore
+Too many threads are attached to the Synchronization Library!
+api-ms-win-core-synch-l1-1-0.dll
+kernel32.dll
+CreateSemaphoreW
+CreateSemaphoreExW
+m_handle
+m_cAvail
+m_irksem
+m_cWaitNeg
+m_fSet
+m_sem
+m_pclsOwner
+m_cEntry
+m_cWait
+m_cOOW1
+m_fQ1
+m_cOOW2
+m_fQ2
+m_cOwner
+m_sem1
+m_sem2
+m_cOAOWW
+m_fQW
+m_cOOWR
+m_fQR
+m_semWriter
+m_semReader
+m_pfnPartitionComplete
+m_dwPartitionCompleteKey
+m_cCurrent
+m_groupCurrent
+m_cQuiesced
+m_groupQuiesced
+m_cOAWX
+m_cOOWS
+m_fQS
+m_cQS
+m_semS
+m_semX
+m_semW
+Usage: Dump <Object> <Address> [<Depth>|*]
+0x%0*I64X bytes @ 0x%0*I64X
+Error: Could not fetch the requested object.
+%*.*s <0x%0*I64x,%3i>:  
+Bit-Field
+%*.*s <%-*.*s>:  
+%I64u (0x%0*I64x)
+0123456789abcdef
+esevss.pdb
+.rdata$brc
+.rdata$T$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+wFSVW
+VWjTj
+tTjsh
+t jwh
+wIQPQ
+L$PQP
+L$ QWP
+L$,QP
+G;|$0
+D$$;D$
+D$<VP
+D$xPWS
+x]G;|$
+tIh(=
+tCjsh
+uzh,?
+D$XPj
+D$ Pj
+D$8Pj
+D$ Pj
+D$ Pj
+D$(Pj
+VVhdY
+SShdY
+t*QPQ
+?\u#f
+SVPWh
+D$xPQ
+D$@Pj
+D$dPh
+tJj\V
+D$ PQ
+D$,SSSP
+WQPWWh
+D$\PS
+PPPPf
+D$ Pj
+D$,Ph@
+D$LPS
+t$LSP
+D$<PV
+t$ PhPZ
+|$89=
+D$\PS
+PPPPf
+D$(Pj
+D$(Ph@
+D$PPS
+D$0Pj
+L$ PV
+t$<SP
+|L.\u
+D$,PVWj
+D$,VP
+t$(SVVhP
+PShX]
+D$Hh^
+t$ZPhT^
+D$<h^
+D$ PV
+x-_^[
+D$@PV
+_^[Y]
+_^[Y]
+D$<9F(te
+u(VSR
+x}j(j
+x}j(j
+L$ WP
+9D$$tC
+D$8Pj
+G<^[9G
+G@PQj
+G<_^[
+;G$ue
+QSVWPhP_
+uq95<z
+9{@tN9{DtI
+_^[Y]
+9u$u09u,
+jjjjjj
+D$(Ph
+u(VSR
+]$VW3
+OPhPg
+ub9=<z
+790t2hh
+D$4tC
+L$l_^[3
+9]8t-jxj
+u(SQR
+;]$s(
+9}8t%jxj
+u(QVR
+t%jxj
+t%jxj
+CD_^[
+CD_^[
+SVWP3
+t$ u=
+D$@Pj
+t$(uG
+D$PPj
+|$Pu{
+D$8PW
+D$8PW
+t=h<w
+VPhXj
+tNj\W
+u9hxw
+L$$_^[3
+u4hxw
+D$Lhhk
+VPQRh\k
+SVWuU
+PVQh\k
+PWQh\k
+VSWPh\k
+u7j\h
+VWPh(o
+uoVjpj
+ s2QP
+VWPPj
+D$,Pj
+L$LPQ
+$RVQW
+L$hWS
++D$`V
+T$hWRP
+VVhdY
+D$<Pj
+t$Phdq
+\$<Sh
+PQhXj
+K PQQQ
+D$ Ph
+t#+D$
+D$$Ph
+vH%Pn
+9D$4v&
+D$,90uv
+t$4;t$4uE
+t$4;t$4u
+y|;F@u
+L$$PQ
+U4jpj
+F@9^Drww
+AD;CDr
+A@;C@v
+PVhHs
+PVhhs
+PVhhs
+T$$Pj
+D$0Ph
+T$ RP
+x$+Y 
+Xx+Yx
+X +Y 
+_x+Xx
+X +Y 
+Xx+Yx
+P$+Y 
+Yx+Xx
+Y +Z 
+Kx+Jx
+Y +Z 
+Jx+Kx
+y _^[
+;H u6
+;H$u.
+;Fxu&
+;A$t;
+;F|t;
+;H$t;
+;C|t;
+;X$tL
+;G|tL
+P +W(
+Vx+W0
+P$+y 
+V|+xx
+P$+y 
+V|+xx
+;p|whr
+;Xxsa
+;Gxu 
+C|;G|u
+C|;G|w
+Cx;Gxs
+OD3KD
+s]9T$
+9D$$w
+9t$ w
+CD@u)
+AD3CD%
+1ADQS
+u RP+~8
+vxRSh
+L$d^3
+_x;w|
+9z(|Y
+$SVW3
+@1AD;u
+T$0RP
+D$@Pj
+SWSWh s
+PPhdY
+PQhhy
+QPQPh s
+PPhdY
+QRWSh|y
+SShdY
+FX:G`t
+FY:Gat
+FZ:Gbt
+F[:Gct
+Fd:Glt
+F`;Ght
+^t9^|r
+9^<tW
+L$ WSQVP
+VWShDy
+D$(tS
+D$$tK
+uDhxw
+D$<Pj
+T$$RP
+D$ Pj
+92u)9J
+D$Du(
+D$(9O8u
+L$0;Hdu
+t$09w8td
+|$$u7
+D$8Pj
+<HSVW
+D$,Pj
+D$ WQP
+D$,Pj
+D$ WQP
+<HSVW
+D$,Pj
+D$ WQP
+D$,Pj
+D$ WQP
+<HSVW
+D$,Pj
+D$ WQP
+<HSVW
+D$,Pj
+D$ WQP
+D$,Pj
+D$ WQP
+<HSVW
+D$,Pj
+D$ WQP
+D$,Pj
+D$ WQP
+Y__^[
+eseshadow.dll
+EseShadowCreateShadow
+EseShadowCreateSimpleShadow
+EseShadowInit
+EseShadowMountShadow
+EseShadowMountSimpleShadow
+EseShadowPurgeShadow
+EseShadowTerm
+VssIdToString
+wprintf
+_vsnwprintf
+_wcsicmp
+wcscpy_s
+wcsrchr
+_purecall
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+msvcrt.dll
+_except_handler4_common
+_lock
+_unlock
+__dllonexit
+_onexit
+GetFinalPathNameByHandleW
+CoUninitialize
+UuidToStringW
+GetVolumePathNameW
+CreateFileW
+RpcStringFreeW
+GetLastError
+CloseHandle
+CoInitializeEx
+FindFirstFileW
+FindClose
+DisableThreadLibraryCalls
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+RPCRT4.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+JetSetSystemParameterW
+JetTerm2
+JetGetDatabaseFileInfoW
+JetInit3W
+ESENT.dll
+VirtualQueryEx
+GetProcessHeap
+HeapDestroy
+HeapSetInformation
+SetLastError
+GetNativeSystemInfo
+GetSystemInfo
+GlobalMemoryStatusEx
+HeapAlloc
+HeapFree
+VirtualAlloc
+VirtualFree
+VirtualProtect
+CreateFileMappingW
+MapViewOfFileEx
+UnmapViewOfFile
+FormatMessageW
+LocalFree
+GetFileAttributesW
+GetDiskFreeSpaceExW
+GetVolumeNameForVolumeMountPointW
+DeviceIoControl
+GetFileAttributesExW
+GetTempFileNameW
+CreateDirectoryW
+RemoveDirectoryW
+DeleteFileW
+MoveFileExW
+CopyFileExW
+SetHandleInformation
+GetFileInformationByHandle
+CreateEventW
+GetOverlappedResult
+FlushFileBuffers
+FindNextFileW
+LCMapStringEx
+OpenFileById
+FindVolumeClose
+FindNextVolumeW
+GetVolumeInformationW
+FindFirstVolumeW
+GetFileInformationByHandleEx
+GetFullPathNameW
+WaitForSingleObject
+OpenThread
+GetDriveTypeW
+GetWindowsDirectoryW
+DebugBreak
+WaitForSingleObjectEx
+EnterCriticalSection
+LeaveCriticalSection
+DeleteCriticalSection
+InitializeCriticalSectionAndSpinCount
+TlsAlloc
+TlsSetValue
+TlsFree
+GetExitCodeThread
+TlsGetValue
+LocalAlloc
+DuplicateHandle
+GetCurrentThread
+SleepEx
+CreateThread
+SetThreadPriority
+SetThreadPriorityBoost
+ResumeThread
+IsProcessorFeaturePresent
+QueryPerformanceFrequency
+GetSystemTime
+SetConsoleCtrlHandler
+GetVersionExW
+GetModuleFileNameW
+LoadLibraryExW
+GetProcAddress
+FreeLibrary
+SetThreadErrorMode
+GetModuleHandleW
+GetLocalTime
+OutputDebugStringA
+SetFilePointerEx
+WriteFile
+ReleaseMutex
+GetSystemWindowsDirectoryW
+CreateMutexW
+SetEvent
+SetFileValidData
+SetFileInformationByHandle
+GetFileSizeEx
+SetEndOfFile
+ReadFile
+WriteFileGather
+ReadFileScatter
+CreateIoCompletionPort
+PostQueuedCompletionStatus
+GetQueuedCompletionStatus
+RtlCaptureStackBackTrace
+ReleaseSemaphore
+GetThreadIdealProcessorEx
+GetLogicalProcessorInformationEx
+KERNEL32.dll
+VssFreeSnapshotPropertiesInternal
+CreateVssBackupComponentsInternal
+CreateWriter
+VSSAPI.DLL
+wcsncmp
+_vsnprintf
+strrchr
+memmove_s
+_wfullpath
+_wsplitpath_s
+_wmakepath_s
+iswalpha
+_wcsnicmp
+swprintf_s
+rand_s
+wcspbrk
+_wtol
+strcspn
+isprint
+vprintf
+strstr
+strtoul
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+WakeAllConditionVariable
+SleepConditionVariableSRW
+api-ms-win-core-synch-l1-1-0.dll
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft(R) ESENT shadow utilities
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+esevss
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+esevss
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1$1,141<1D1L1T1\1d1l1t1|1
+2$2,242<2D2L2T2\2d2l2t2|2
+3$3,343<3D3L3T3\3d3l3t3|3
+4$4,444<4D4L4T4\4d4l4t4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+607P7p7x7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+?0?h?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+4!4A4a4
+5)5A5a5
+6!6A6e6
+7!7C7M7a7
+8)8/898C8L8R8q8
+919Q9s9}9
+:!:+:A:a:
+;!;A;a;
+=(=0=5=;=J=W=g=m=s=x=
+> >.><>A>G>b>p>z>
+?=?M?S?]?t?z?
+0$01070A0G0X0f0l0}0
+1!1'111K1X1]1c1h1n1
+2?2N2
+3#3K3\3a3g3l3r3
+3&454;4G4M4|4
+4)565;5A5F5L5Y5d5j5s5x5~5
+6"6'6-6j6{6
+7g7q7v7|7
+8O8^8
+929W9e9v9{9
+:#:1:B:G:M:m:{:
+;/;i;{;
+<,<2<V<
+<$=F=[=c=h=n=
+>/>4>:>E>V>[>a>l>}>
+?!?(?0?8?L?Z?k?p?v?
+020@0Q0V0\0
+1 1(101D1R1c1h1n1
+1 2.2?2D2J2c2q2
+3(393>3D3|3
+4 4%4+40464G4_4m4
+5"5\5g5
+6%6-636L6[6d6
+7&727:7m7s7
+8!8&8,81878E8Q8W8r8
+9:9K9P9V9[9a9l9x9~9
+:%:*:0:?:K:Q:
+: ;.;4;B;H;
+<(<.<L<Y<^<d<i<o<{<
+<)=3=A=F=L=Q=t=z=
+=N>`>u>
+?:?G?L?R?i?q?y?
+0(0-03080>0p0
+1"1,11171S1m1
+2)2:2?2E2J2P2r2w2
+3 3%3.3<3M3R3X3]3c3p3
+4'4-4>4D4J4W4`4e4k4
+525:5?5E5b5j5o5u5
+6%696@6F6b6v6
+7<7c7
+7=8J8O8U8Z8`8p8
+9)9.94999?9M9S9_9e9
+9^:l:r:{:
+;#;.;8;=;C;r;z;
+<2<:<?<E<
+="='=-=2=8=f=x=
+>#>4>9>?>Y>s>
+?:?Q?
+0=0C0x0
+1%161;1A1L1T1Z1v1
+2*282N2X2]2c2n2y2
+3%3/373<3B3L3W3`3e3k3
+4!4C4J4`4
+51676
+7*7Y7c7m7y7
+2'2l2
+6,7c7
+:R:Y<d<o<
+=G=V=
+5<7G7
+9I9T9_9
+9W:b:
+;";g;r;
+<?<N<'>o>~>
+5)545?5y5
+6'666I7T7
+7G8R8
+8l9w9
+;$;v;
+<I<T<_<
+<l=x=
+>,?7?
+7<8G84:
+1g1v1,272/3@3y3
+3/4n4}4
+7,878F8
+9I:T:_:
+:i;t;
+=Z>i>
+0/1>1
+3_3n3M5
+8i8t8
+939D9
+:$:S:d:
+:9;D;s;
+<Y<d<
+<#=4=y=
+>C>T>
+>)?4?c?t?
+0I0T0
+1$1i1t1
+232D2
+3$3S3d3
+394D4s4
+5Y5d5
+5#646y6
+7C7T7
+7)848c8t8
+9I9T9
+:$:i:t:
+;3;D;
+<$<S<d<
+<9=D=s=
+>Y>d>
+>#?4?y?
+0C0T0
+0)141c1t1
+2I2T2
+3$3i3t3
+434D4
+5$5S5d5
+596D6s6
+7Y7d7
+7#848y8
+9C9T9
+9a:n:t:~:
+;,;4;:;@;I;O;V;`;l;r;};
+<)<:<@<o<
+="=&=,=0=6=:=@=G=M=W=a=j=n=t=x=~=
+>%>/>9>B>F>L>P>V>Z>`>g>m>w>
+?%?/?9?C?M?W?a?k?u?
+0(020<0F0K0T0Y0^0d0q0w0
+1!1+151F1J1P1T1Z1^1d1k1q1{1
+2.3>3D3N3W3]3g3
+484d4
+5"5L5
+7&898C8^8i8o8y8<9|9
+:!:3:o:
+;C;R;[;
+<+<]<
+=R=[=
+2:2H2d2
+3T3b3r3
+5*6=6z6
+8H9l9
+:*:4:J:
+; <C<M<c<
+<#=-=C=s=
+>=>G>]>
+?(?-?7?=?L?\?f?o?{?
+0%0.0\0
+161M1W1g1
+1,2]2x2~2
+3$3.3D3
+4$4Y4
+5:5v5
+7-7e7
+8*8G8Z8c8
+8s9}9
+9N:[:s:
+<7<P<W<r<
+=r={=
+>">0>Q>t>
+L0X0d0p0x0~0
+021?1W1
+132d2i2n2s2
+2;3E3c3r3y3
+3<4\4f4|4
+566@6V6
+7"7)70777>7E7
+7+8?8H8
+9;9^9i9
+9+:T:j:s:
+;(;o;
+<I<]<f<
+<6===S=j=
+>4>>>c>
+>"???n?x?
+0,0n0
+3K3[3c3
+4&5k5
+5J6Z6b6
+6(787@7
+7(888@8~8
+8?9E9O9z9
+:<:I:N:a:g:v:
+:.;9;?;I;x;
+<5<\<
+<>=d=
+=&>/>8>A>J>P>d>
+:0L0[0a0v0{0
+122;2D2M2V2\2w2
+3&3/353T3r3
+4B4W4x4|4
+5+515R5[5d5m5s5
+6'6"777@7X7j7p7
+8A8P8p8w8
+8#929]9{9
+:B:V:\:f:
+:X;a;m;s;
+<.<T<t<
+=(=>=C=V=i=
+>I>N>m>r>
+?-?2?i?n?
+!0&0E0J0o0t0
+0#1(1G1L1u1z1
+292>2^2c2
+2$3)3H3M3
+4>4I4O4Y4
+515L5^5h5
+6I6v6
+7,8Y8
+:L;o;I<
+0'151;1E1Z1y1
+1Z2`2
+3;4[4
+676G6R6X6b6
+657i7
+8F8p8
+9F9i9
+;#;i;w;
+= =*=2=;=@=I=O=
+=K>}>
+0/0:0?0E0Y0m0
+0#1u1
+2$23292C2
+3O3]3y3
+5F5v5
+606`6
+6!7,747=7C7z7
+7V8u8
+9S9]9s9
+9C:M:h:r:
+<$=L={=
+0?0t0
+5A5O5U5_5t5
+=2><>R>
+>W?t?
+1R1X1b1<2B2L2~2
+3#3S3Z3
+5C6o6y6
+6V7\7M8
+8Z9`9
+:':_:e:
+<:=d=
+?Y?c?y?
+0A0K0a0#3*313E3v5|5
+<+=1=
+3(464<4F4p4v4
+7b829x9
+:<;B;L;n;
+;"<.<6<?<H<Q<W<r<
+=!=E=_=i=
+>#>,>5>>>G>M>y>\?
+3s4z4
+70868
+8+959K9
+;];k;
+===G=]=
+>*>}>
+0*040
+1%1*1W1a1w1
+5#5+5j5
+6)6B6L6
+7[7i7r7{7
+9'9=9
+:?:{:
+=*>E>K>U>
+162@2V2
+2'4.4D4
+5E6K6U6v6|6
+617C7:8k8u8
+8:9@9[9c9y9
+:):m:~:
+;'<u<{<
+<$=.=D=
+>'>9>E>b>
+0,070<0B0V0j0}0
+192H2N2X2a2g2q2
+6"6+616;6z6
+:>:I:O:Y:
+;Z;d;k;r;
+<$<N<Y<_<i<
+<:=@=
+>D>l>
+1M2S263<3b3l3
+465S5|5/6s6
+7?7g7w7
+8(8a8v8
+929<9R9m9w9
+9(:c:m:
+:!;1;W;a;w;
+<#<L<
+0"0:0D0j0~0
+1*1C1\1i2
+2c4,6H6r6|6
+6/7O7d7n7
+<5<;<E<
+0U0[061
+4)4?4O5U5w5
+606C6
+919>9P9i9
+;)<0<F<c<
+02080B0
+485?5F5Z5?6Q6j6
+7$7=7J7R7Z7c7
+8+858K8
+:):3:N:X:
+;S;];s;
+<)<0<C<J<
+=&>,>
+>O?h?o?
+0L1S1Z1n1
+474A4W4
+6W7i7c:j:q:
+<'=V=s=
+>,?3?:?N?
+4'5$6-6
+6u7z7
+9&9<9T9
+:V;i;
+;/<5<d<
+=E=N=l=
+=A>r>
+?%?@?
+1(1B1[1z1
+1"2.2m2w2
+3&3,363^3w3
+4<4o4
+8,9_9%:/:>:
+;t<~<
+=;=_=
+>!>%>+>/>7>F>O>U>_>c>~>
+>7?X?
+0#1*2k2
+3S3y4
+6.696?6I6
+6A7N7u7
+8 868
+9`:j:
+>Z>g>
+>;?A?c?m?
+0'010;0Q0h0
+0$202U2_2u2
+3#3,323<3X3u3
+5t6~6
+7A7O7
+8k:}:
+;0<X<c<
+=<>V>f>
+?"?+?4?=?C?^?
+0)0K0Q0W0`0s0y0
+1.171@1I1R1X1x1
+2.3>3D3J3R3X3`3n3v3|3
+4'4=4`4j4
+5)535I5l5v5
+6#696i6y6
+8&878B8M8d8
+9"90969G9P9V9c9t9
+:":4:=:D:L:V:`:n:y:
+;H;Q;
+<(<2<H<w<
+="=)=;=A=X=|=
+>,>;>A>]>s>{>
+?$?)?.?e?m?s?}?
+0-060K0[0o0u0~0
+3 3&3/3:3@3I3T3Z3c3n3t3}3
+3"4/4O4u4z4
+4%5*5m5y5
+616D6U6^6g6p6w6
+7n7t7
+8-83898^8o8
+8%9,92979i9
+9+:5:=:
+;.;3;W;`;
+<4<?<j<~<
+>!?d?
+0"0(0.0:0@0F0L0_0d0l0x0
+1%1Q1g1p1
+2 2&2T2^2t2
+2(3-3?3q3}3
+3 4%4M4U4
+586?6v6
+707h7|7
+9(:Q:
+;";';1;Y;y;
+;-<2<=<J<T<[<f<l<{<
+=,=3=:=S=
+>@>J>`>
+0"01070k0p0x0
+0z1J2P2Z2
+5.6<6
+7F7L7R7
+858<8t8
+:):4:?:^:p:
+<C<T<
+<.=`=
+>(>>>C>P>s>
+?.?3?D?R?n?s?
+0$0)050K0P0x0
+1Y1`1
+2 2F2a2
+3$3J3e3
+676A6g6
+7/7J7b7g7
+8-999X9p9
+:$:.:
+:P;u;
+<Y=&>->C>W>k>q>
+0-1;1B1x1}1
+3!3'3
+4y4/5
+6X6a6j6s6y6
+7#7T7
+8)8?8l8
+;%;/;b;
+=!=;=
+0P0y0i1
+7$7A7O7
+8/848l8v8
+9$:;:
+<0<L<V<a<f<
+=_=g=
+=+>>>
+0.070A0
+9$9.999?9I9+:::@:J:S:Y:c:+;0;t;
+=+=Q=q={=
+=e>o>v>
+?1?Q?m?r?
+1#171I1V1c1p1y1
+3<5J5
+6/6H6Y6i6{6
+6:7b7l7
+9:9D9Z9k9
+91:i:
+;3<T<c<i<s<
+<,=D=Q=}=
+>J>Y>n>w>
+?&?/?8?>?Z?x?
+0)0.0B0K0T0]0f0l0
+0O1W1g1o1w1
+2d3n3
+3/4_4
+4^5h5~5
+6'6Q6
+7C7R7d7j7
+848;8C8J8P8]8i8u8
+9#9A9J9S9\9e9k9
+?`?e?j?o?
+0R0W0\0a0
+0)1L1T1\1
+1I2r2}2
+2I3N3S3X3
+4b4g4l4q4
+5 5%5*5
+6'6>6D6N6~6
+8&808F8U8[8e8t8z8
+9Y<p<
+2 2.636
+9m:}:
+;J<O<g<l<q<v<
+=)=5=A=I=O=o=
+1I7P7\7n7
+858+9;9S9
+:E:M:
+;8;@;L;c;j;|;
+<Z=n>x>
+647E7S7X7
+;*</<<<
+=Q>`>e>
+3/343@3V3[3o3
+4_4t4
+4V5g5
+9F9m9
+=(=1=G=S=\=g=n=
+<!<G<S<Y<g<q<w<
+<M=U=[=e=k=q=
+?&?,?:?i?
+0Y1r1
+4#474
+<\=a=N>Y>_>i>
+?/?:?`?k?
+0\1a1
+2o2x2
+4<4R4b4k4w4}4
+5/545=5E5l5
+6'636X6b6j6u6
+7)757?7I7S7^7d7v7
+7'898[8c8k8s83999G9
+:B:L:b:
+;(;_;v;
+?9?n?
+0'030?0G0o0t0|0
+1;1E1_1d1q1
+212A2i2n2
+4+404{4
+5"5k5
+7W9i9
+:C;L;d;l;r;|;
+<!<'<9<I<Q<Y<a<t<
+=%=1=9=?=D=U=Z=r=|=
+>)>7>\>~>
+>6?B?
+T0c0s0
+131Q1|1
+1C2O2c2
+3#373l3
+4(4<4p4
+535K5`5u5
+6&626Q6]6t6z6
+7(727;7m7s7
+9E9R9W9}9
+;9;F;K;q;
+<1<?<
+?I?V?[?
+1:1G1L1f1{1
+2#2,2H2
+465e5r5w5
+6)767;7a7y7
+8!8/8
+8F9u9
+;9;F;K;q;
+<)<7<l<
+=&=:=l=
+>0>l>
+?&?:?
+0!0a0l0~0
+1.131^1x1
+202G2a2t2y2
+2E3c3o3
+4h5r5
+626R6^6j6
+7!7'7
+8 8)8>8S8b8j8y8
+9,9=9E9[9c9
+:#:):/:5:;:B:I:P:W:^:e:l:t:|:
+;+;1;7;=;C;I;P;W;^;e;l;s;z;
+<#<)<3<B<J<V<[<a<v<}<
+>"?.?<?F?Q?Z?r?~?
+0,060A0J0b0n0|0
+1&111:1R1^1l1v1
+2!2*2B2N2\2f2q2z2
+32363Q3W3[3f3j3
+424>4L4V4a4j4
+5$5-565<5U5
+62666R6V6r6~6
+6"7.7<7F7Q7Z7r7~7
+8,868A8J8b8n8|8
+9"9&9B9F9b9f9
+:":&:B:F:b:f:
+; ;(;,;4;8;@;D;L;P;X;\;d;h;p;t;|;
+04080<0@0D0H0X0\0`0p0t0x0
+1 1014181H1L1P1`1d1h1x1|1
+2(2,202@2D2H2X2|2
+3 3$3

@@ -1,0 +1,1312 @@
+!This program cannot be run in DOS mode.
+RichM
+.rdata
+@.rsrc
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+APPCOMPAT_FAQ
+APPCOMPAT_XSL
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Setup Wizard Page Resources
+FileVersion
+10.0.22621.436 (WinBuild.160101.0800)
+InternalName
+w32uiRes.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+w32uiRes.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.436
+VarFileInfo
+Translation
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY id = body>
+<H1><P><STRONG><U>Sample data for app compat report</U></STRONG>:</P></H1>
+<P> Make these changes before installing windows </P>
+<P><ul><li><FONT COLOR="red">Update the driver software for these hardware devices to proceed with Setup</FONT></li></ul></P>
+<ul type="circle"><li>Video card X</li></ul></P>
+<ul type="circle"><li>WebCam X</li></ul></P>
+<P><A href="#help1"><FONT COLOR="blue" >How do I update driver software ? </FONT></A></P>
+<P> Update after you install Windows: </P>
+<P><ul><li><FONT COLOR="red">Install new versions of these programs</FONT></li></ul></P>
+<ul type="circle"><li>Fabrikam Antivirus</li></ul></P>
+<ul type="circle"><li>FabrikamDelete</li></ul></P>
+<P><A href="#help2"><FONT COLOR="blue">Where do I get new versions ? </FONT></A></P>
+<A name="help1"><FONT COLOR="green">Please go to micrososft update website.This is under construction</FONT></A><BR>
+<A name="help2"><FONT COLOR="green">Please go to micrososft update website.This is under construction</FONT></A>
+<?xml version="1.0"?>
+<xsl:stylesheet
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns="http://www.w3.org/TR/REC-html40"
+  version="1.0"><xsl:output method="html"/>
+<xsl:template match="/">
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  <xsl:for-each select="CompatReport/HardBlocks">
+             <h2><font color="black"><xsl:value-of select="Message"/></font></h2>
+  </xsl:for-each>
+  <xsl:for-each select="CompatReport/HardBlocks">
+             <h3><font color="blue"><xsl:value-of select="AppHead"/></font></h3>
+  </xsl:for-each>
+  <xsl:for-each select="CompatReport/HardBlocks/AppNames/AppName">
+              <font color="green"> <li><xsl:value-of select="Name"/></li></font>
+  </xsl:for-each>
+  <xsl:for-each select="CompatReport/HardBlocks/AppNames">
+      <p><a href="#{generate-id(.)}">
+<font color="blue"><b><xsl:value-of select="./Help"/></b></font>
+         </a>
+      </p>
+  </xsl:for-each>
+  <br/><br/>
+  <xsl:for-each select="CompatReport/SoftBlocks">
+             <h2><font color="black"><xsl:value-of select="Message"/></font></h2>
+  </xsl:for-each>
+  <xsl:for-each select="CompatReport/SoftBlocks">
+             <h3><font color="blue"><xsl:value-of select="AppHead"/></font></h3>
+  </xsl:for-each>
+  <xsl:for-each select="CompatReport/SoftBlocks/AppNames/AppName">
+              <font color="green"> <li><xsl:value-of select="Name"/></li></font>
+    </xsl:for-each>
+    <xsl:for-each select="CompatReport/SoftBlocks/AppNames">
+      <p><a href="#{generate-id(.)}">
+        <font color="blue"><b><xsl:value-of select="./Help"/></b></font>
+         </a>
+      </p>
+  </xsl:for-each>
+  <br/><br/>
+  <h2></h2>
+  <xsl:for-each select="CompatReport/HardBlocks/AppNames">
+    <h3><a name="{generate-id(.)}"><xsl:value-of select="CompatReport/HardBlocks/AppNames"/></a></h3>
+         <p><xsl:value-of select="./About"/></p>
+         <a href="#toc"><small>Back to issue list</small></a>
+         <br/><br/><br/>
+  </xsl:for-each>
+  <h2></h2>
+  <xsl:for-each select="CompatReport/SoftBlocks/AppNames">
+    <h3><a name="{generate-id(.)}"><xsl:value-of select="CompatReport/SoftBlocks/AppNames"/></a></h3>
+        
+           
+ <p><xsl:value-of select="./About"/></p>
+         <a href="#toc"><small>Back to issue list</small></a>
+         <br/><br/><br/>
+  </xsl:for-each>
+  </body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+{\rtf1\ansi\ansicpg1252\uc1\deff38\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times};}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial{\*\falt Arial};}{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New{\*\falt Arial};}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol{\*\falt Bookshelf Symbol 3};}{\f10\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings{\*\falt Symbol};}
+{\f11\froman\fcharset128\fprq1{\*\panose 02020609040205080304}MS Mincho{\*\falt ?l?r ??\'81\'66c};}{\f37\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Verdana{\*\falt Tahoma};}
+{\f38\fswiss\fcharset0\fprq2{\*\panose 020b0502040204020203}Segoe UI{\*\falt Century Gothic};}{\f39\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma{\*\falt ?? ??};}{\f41\fnil\fcharset0\fprq0 Calibri{\*\falt Times New Roman};}
+{\f205\fmodern\fcharset128\fprq1{\*\panose 02020609040205080304}@MS Mincho{\*\falt @MS Gothic};}{\f206\froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times};}{\f207\froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times};}
+{\f209\froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times};}{\f210\froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times};}{\f211\froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times};}
+{\f212\froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times};}{\f213\froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times};}{\f214\froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times};}
+{\f216\fswiss\fcharset238\fprq2 Arial CE{\*\falt Arial};}{\f217\fswiss\fcharset204\fprq2 Arial Cyr{\*\falt Arial};}{\f219\fswiss\fcharset161\fprq2 Arial Greek{\*\falt Arial};}{\f220\fswiss\fcharset162\fprq2 Arial Tur{\*\falt Arial};}
+{\f221\fswiss\fcharset177\fprq2 Arial (Hebrew){\*\falt Arial};}{\f222\fswiss\fcharset178\fprq2 Arial (Arabic){\*\falt Arial};}{\f223\fswiss\fcharset186\fprq2 Arial Baltic{\*\falt Arial};}{\f224\fswiss\fcharset163\fprq2 Arial (Vietnamese){\*\falt Arial};}
+{\f226\fmodern\fcharset238\fprq1 Courier New CE{\*\falt Arial};}{\f227\fmodern\fcharset204\fprq1 Courier New Cyr{\*\falt Arial};}{\f229\fmodern\fcharset161\fprq1 Courier New Greek{\*\falt Arial};}
+{\f230\fmodern\fcharset162\fprq1 Courier New Tur{\*\falt Arial};}{\f231\fmodern\fcharset177\fprq1 Courier New (Hebrew){\*\falt Arial};}{\f232\fmodern\fcharset178\fprq1 Courier New (Arabic){\*\falt Arial};}
+{\f233\fmodern\fcharset186\fprq1 Courier New Baltic{\*\falt Arial};}{\f234\fmodern\fcharset163\fprq1 Courier New (Vietnamese){\*\falt Arial};}{\f576\fswiss\fcharset238\fprq2 Verdana CE{\*\falt Tahoma};}
+{\f577\fswiss\fcharset204\fprq2 Verdana Cyr{\*\falt Tahoma};}{\f579\fswiss\fcharset161\fprq2 Verdana Greek{\*\falt Tahoma};}{\f580\fswiss\fcharset162\fprq2 Verdana Tur{\*\falt Tahoma};}{\f583\fswiss\fcharset186\fprq2 Verdana Baltic{\*\falt Tahoma};}
+{\f584\fswiss\fcharset163\fprq2 Verdana (Vietnamese){\*\falt Tahoma};}{\f586\fswiss\fcharset238\fprq2 Segoe UI CE{\*\falt Century Gothic};}{\f587\fswiss\fcharset204\fprq2 Segoe UI Cyr{\*\falt Century Gothic};}
+{\f589\fswiss\fcharset161\fprq2 Segoe UI Greek{\*\falt Century Gothic};}{\f590\fswiss\fcharset162\fprq2 Segoe UI Tur{\*\falt Century Gothic};}{\f593\fswiss\fcharset186\fprq2 Segoe UI Baltic{\*\falt Century Gothic};}
+{\f594\fswiss\fcharset163\fprq2 Segoe UI (Vietnamese){\*\falt Century Gothic};}{\f596\fswiss\fcharset238\fprq2 Tahoma CE{\*\falt ?? ??};}{\f597\fswiss\fcharset204\fprq2 Tahoma Cyr{\*\falt ?? ??};}
+{\f599\fswiss\fcharset161\fprq2 Tahoma Greek{\*\falt ?? ??};}{\f600\fswiss\fcharset162\fprq2 Tahoma Tur{\*\falt ?? ??};}{\f601\fswiss\fcharset177\fprq2 Tahoma (Hebrew){\*\falt ?? ??};}{\f602\fswiss\fcharset178\fprq2 Tahoma (Arabic){\*\falt ?? ??};}
+{\f603\fswiss\fcharset186\fprq2 Tahoma Baltic{\*\falt ?? ??};}{\f604\fswiss\fcharset163\fprq2 Tahoma (Vietnamese){\*\falt ?? ??};}{\f605\fswiss\fcharset222\fprq2 Tahoma (Thai){\*\falt ?? ??};}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;
+\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;
+\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\snext0 \sautoupd \styrsid6186706 Normal;}{\s1\ql \li0\ri0\sb240\sa60\sbauto1\saauto1\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \b\f1\fs32\lang1033\langfe1033\kerning32\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext0 \slink15 \styrsid12090386 heading 1;}{\s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext2 \slink16 \styrsid1970378 heading 2;}{\s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext3 \slink17 \styrsid1970378 heading 3;}{\s4\ql \li0\ri0\sb240\sa60\sbauto1\saauto1\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin0\itap0 \b\f41\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext0 \slink18 \slocked \styrsid11880876 heading 4;}{\*\cs10 \additive \slocked \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{\*\cs15 \additive \b\f1\fs32\lang1033\langfe1033\kerning32\langnp1033\langfenp1033 
+\sbasedon10 \slink1 \slocked \styrsid3232289 Heading 1 Char;}{\*\cs16 \additive \b\f38\fs23\lang1033\langfe1033\langnp1033\langfenp1033 \sbasedon10 \slink2 \slocked \styrsid1970378 Heading 2 Char;}{\*\cs17 \additive 
+\b\f38\fs19\lang1033\langfe1033\langnp1033\langfenp1033 \sbasedon10 \slink3 \slocked \styrsid1970378 Heading 3 Char;}{\*\cs18 \additive \b\f41\fs28 \sbasedon10 \slink4 \slocked \ssemihidden \styrsid11880876 Heading 4 Char;}{\*\cs19 \additive \ul\cf0 
+\sbasedon10 \styrsid2558477 Hyperlink;}{\s20\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\sl336\slmult1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f37\fs17\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext20 \slink39 \styrsid2558477 Normal (Web);}{\s21\ql \li240\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin240\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext0 \sautoupd \ssemihidden \styrsid12090386 toc 2;}{\*\cs22 \additive \ul\cf12 \sbasedon10 \styrsid12090386 FollowedHyperlink;}{\*\cs23 \additive \fs16 \sbasedon10 \ssemihidden \styrsid7432185 annotation reference;}{
+\s24\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext24 \slink25 \ssemihidden \styrsid7432185 annotation text;}{\*\cs25 
+\additive \fs20 \sbasedon10 \slink24 \slocked \ssemihidden Comment Text Char;}{\s26\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \b\f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon24 \snext24 \slink27 \ssemihidden \styrsid7432185 annotation subject;}{\*\cs27 \additive \b\fs20 \sbasedon25 \slink26 \slocked \ssemihidden Comment Subject Char;}{
+\s28\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f39\fs16\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext28 \slink29 \ssemihidden \styrsid7432185 Balloon Text;}{\*\cs29 
+\additive \f39\fs16 \sbasedon10 \slink28 \slocked \ssemihidden Balloon Text Char;}{\*\cs30 \additive \b \sbasedon10 \styrsid9524300 Strong;}{\s31\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\tqc\tx4320\tqr\tx8640\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext31 \slink32 \styrsid4285587 header;}{\*\cs32 \additive \fs24 \sbasedon10 \slink31 \slocked \ssemihidden 
+Header Char;}{\s33\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\tqc\tx4320\tqr\tx8640\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext33 \slink34 \styrsid4285587 footer;}
+{\*\cs34 \additive \fs24 \sbasedon10 \slink33 \slocked \ssemihidden Footer Char;}{\*\cs35 \additive \super \sbasedon10 \ssemihidden \styrsid10034950 footnote reference;}{\s36\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls9\adjustright\rin0\lin720\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext36 \styrsid1970378 List Bullet 1;}{\s37\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin720\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext37 \styrsid1970378 List Number 1;}{\s38\ql \li0\ri0\sa160\saauto1\sl-240\slmult0
+\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1033\langfe1033\loch\f37\hich\af37\dbch\af11\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext38 \styrsid6816343 Default Paragraph Font Para Char;}{\*\cs39 \additive \f37\fs17 
+\sbasedon10 \slink20 \slocked \styrsid13250180 Normal (Web) Char;}{\s40\ql \fi-360\li360\ri0\sb60\widctlpar\jclisttab\tx360\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin360\itap0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext40 \sautoupd \styrsid6886822 bulletedlist2;}{\s41\ql \fi-360\li360\ri0\sb60\widctlpar\jclisttab\tx360\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin360\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon40 \snext41 \sautoupd \styrsid6886822 Bullet1;}{\s42\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext42 \shidden \ssemihidden \styrsid4789776 Revision;}{
+\s43\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls11\adjustright\rin0\lin720\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext43 \sautoupd \styrsid4026490 
+Bulleted List 1;}{\s44\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\adjustright\rin0\lin720\itap0 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext44 \styrsid15599990 
+bulletedlist1;}}
+{\*\latentstyles\lsdstimax156\lsdlockeddef0{\lsdlockedexcept Normal;heading 1;heading 2;heading 3;heading 4;heading 5;heading 6;heading 7;heading 8;heading 9;toc 1;toc 2;toc 3;toc 4;toc 5;toc 6;toc 7;toc 8;toc 9;caption;Title;Default Paragraph Font;Subtitle;Strong;Emphasis;Normal (Web);Table Grid;}}
+{\*\listtable{\list\listtemplateid1686115234{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f38\fs17 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600
+\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid289747371{\*\liststylename Style Bulleted 8.5 pt;}}{\list\listtemplateid781474930{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u9679 ?;}{\levelnumbers;}\f38\fs17\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160
+\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760
+\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname 
+;}\listid307250928}{\list\listtemplateid1960759762\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid2033619774\'02\'00.;}{\levelnumbers\'01;}\fbias0 \s37
+\fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1440\jclisttab\tx1440\lin1440 }
+{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\fi-180\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace0\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\fi-180\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698703
+\'02\'06.;}{\levelnumbers\'01;}\fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\fi-360\li5760
+\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\fi-180\li6480\jclisttab\tx6480\lin6480 }{\listname 
+;}\listid334040249}{\list\listtemplateid452906988\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid-667241700\'01\u9679 ?;}{\levelnumbers;}\f38\fbias0 \s36
+\fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid536236027}{\list\listtemplateid-98241734{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\'01\'95;}{\levelnumbers;}\f38\fs17\fbias0 \s44\fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 
+\fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 
+\fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid804936029}{\list\listtemplateid-1081675870
+\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid-77037054\'01\'95;}{\levelnumbers;}\f38\fbias0 \s43\fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers
+;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760
+\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }
+{\listname ;}\listid883374546}{\list\listtemplateid1171001640{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'02\'00.;}{\levelnumbers\'01;}\fi-360\li1080\jclisttab\tx360\lin1080 }
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'04\'00.\'01.;}{\levelnumbers\'01\'03;}\fi-648\li2088\jclisttab\tx1008\lin2088 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'06\'00.\'01.\'02.;}{\levelnumbers\'01\'03\'05;}\fi-720\li1728\jclisttab\tx1728\lin1728 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\'08\'00.\'01.\'02.\'03.;}{\levelnumbers\'01\'03\'05\'07;}\fi-936\li2664\jclisttab\tx2664\lin2664 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'0a\'00.\'01.\'02.\'03.\'04.;}{\levelnumbers\'01\'03\'05\'07\'09;}\fi-1152\li3816\jclisttab\tx3816\lin3816 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'0c\'00.\'01.\'02.\'03.\'04.\'05.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b;}\fi-1368\li5184\jclisttab\tx5184\lin5184 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'0e\'00.\'01.\'02.\'03.\'04.\'05.\'06.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d;}\fi-1080\li3240\jclisttab\tx3600\lin3240 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'10\'00.\'01.\'02.\'03.\'04.\'05.\'06.\'07.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d\'0f;}\fi-1224\li3744\jclisttab\tx3960\lin3744 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'12\'00.\'01.\'02.\'03.\'04.\'05.\'06.\'07.\'08.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d\'0f\'11;}\fi-1440\li4320\jclisttab\tx4680\lin4320 }{\listname ;}\listid1101951797{\*\liststylename Style Outline numbered;}}{\list\listtemplateid1096217304
+\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid-672244976\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \s40\fi-360\li360\jclisttab\tx360\lin360 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li1800\jclisttab\tx1800\lin1800 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2520\jclisttab\tx2520\lin2520 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360
+\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3240\jclisttab\tx3240\lin3240 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li3960\jclisttab\tx3960\lin3960 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li4680\jclisttab\tx4680\lin4680 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}
+\f2\fbias0 \fi-360\li5400\jclisttab\tx5400\lin5400 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6120
+\jclisttab\tx6120\lin6120 }{\listname ;}\listid1824659352}{\list\listtemplateid-333968192{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u9679 ?;}{\levelnumbers;}\f38\fs17\fbias0 
+\fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320
+\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1875728389}{\list\listtemplateid911216674{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u9679 ?;}{\levelnumbers;}\f38\fs17\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160
+\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760
+\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname 
+;}\listid1941133795}}{\*\listoverridetable{\listoverride\listid1101951797\listoverridecount0\ls1}{\listoverride\listid289747371\listoverridecount0\ls2}{\listoverride\listid334040249\listoverridecount0\ls3}{\listoverride\listid1824659352
+\listoverridecount0\ls4}{\listoverride\listid804936029\listoverridecount0\ls5}{\listoverride\listid1875728389\listoverridecount0\ls6}{\listoverride\listid1941133795\listoverridecount0\ls7}{\listoverride\listid334040249\listoverridecount1{\lfolevel
+\listoverridestartat\levelstartat1}\ls8}{\listoverride\listid536236027\listoverridecount0\ls9}{\listoverride\listid307250928\listoverridecount0\ls10}{\listoverride\listid883374546\listoverridecount0\ls11}}{\*\pgptbl {\pgp\ipgp2\itap1\li0\ri0\sb0\sa0}{\pgp
+\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp7\itap1\li0\ri0\sb0\sa0}{\pgp\ipgp6\itap1\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li200\ri100\sb125\sa125}{\pgp\ipgp0
+\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp18\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp12\itap1\li0\ri0\sb113\sa0}{\pgp\ipgp3\itap1\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp8\itap0\li376\ri0\sb0\sa0}{\pgp\ipgp13\itap1\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0
+\ri0\sb0\sa0}{\pgp\ipgp10\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp8\itap0\li63\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp28\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp29\itap0\li0\ri0\sb0\sa0}
+{\pgp\ipgp29\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp27\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp27\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp28\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0
+\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp31\itap1\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp36\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp35\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp43\itap0\li0
+\ri0\sb0\sa0}{\pgp\ipgp40\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp42\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp46\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp45\itap0\li0\ri0\sb240\sa240}{\pgp\ipgp38\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0
+\sa0}{\pgp\ipgp44\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp49\itap0\li750\ri750\sb0\sa300}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp50\itap0\li0\ri0\sb0\sa315}{\pgp\ipgp48\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}
+}{\*\rsidtbl \rsid1697\rsid9478\rsid13592\rsid20218\rsid70138\rsid94439\rsid139345\rsid145374\rsid155088\rsid163723\rsid208250\rsid212071\rsid279853\rsid294843\rsid329039\rsid342394\rsid349468\rsid351852\rsid484509\rsid489175\rsid525922\rsid526616
+\rsid532447\rsid591012\rsid605747\rsid613127\rsid724683\rsid740125\rsid787092\rsid787922\rsid790063\rsid793210\rsid793430\rsid800785\rsid817834\rsid853021\rsid867473\rsid921815\rsid924434\rsid929188\rsid940023\rsid943992\rsid946993\rsid990800\rsid991169
+\rsid996190\rsid996680\rsid1001563\rsid1004864\rsid1006152\rsid1056552\rsid1058532\rsid1069705\rsid1131760\rsid1199290\rsid1202985\rsid1204841\rsid1204872\rsid1207708\rsid1249738\rsid1253389\rsid1311532\rsid1328706\rsid1335934\rsid1336976\rsid1394046
+\rsid1396845\rsid1402624\rsid1407826\rsid1407928\rsid1450880\rsid1454064\rsid1473787\rsid1514025\rsid1515289\rsid1539758\rsid1572989\rsid1584643\rsid1591513\rsid1591943\rsid1595513\rsid1597671\rsid1642512\rsid1663682\rsid1719564\rsid1783980\rsid1793999
+\rsid1800000\rsid1866502\rsid1902272\rsid1904676\rsid1969775\rsid1970378\rsid1977844\rsid1984469\rsid1990627\rsid1990813\rsid2032554\rsid2032918\rsid2035069\rsid2039563\rsid2041101\rsid2110831\rsid2128246\rsid2170100\rsid2172205\rsid2183298\rsid2189636
+\rsid2189839\rsid2192017\rsid2232699\rsid2237241\rsid2240760\rsid2244191\rsid2244592\rsid2247871\rsid2311731\rsid2319807\rsid2360754\rsid2366940\rsid2367515\rsid2372245\rsid2375874\rsid2388678\rsid2431586\rsid2440030\rsid2442244\rsid2447515\rsid2450700
+\rsid2453299\rsid2493816\rsid2504301\rsid2504835\rsid2519768\rsid2521362\rsid2558477\rsid2572406\rsid2577784\rsid2578901\rsid2580483\rsid2585166\rsid2621610\rsid2623370\rsid2639918\rsid2648144\rsid2651653\rsid2653235\rsid2693281\rsid2697217\rsid2753416
+\rsid2765376\rsid2780252\rsid2832325\rsid2842651\rsid2848725\rsid2849005\rsid2849125\rsid2890984\rsid2911810\rsid2959967\rsid2961922\rsid2965960\rsid2972277\rsid3015852\rsid3018880\rsid3033814\rsid3039386\rsid3041741\rsid3086220\rsid3089272\rsid3090072
+\rsid3094776\rsid3104083\rsid3161141\rsid3164350\rsid3170769\rsid3171549\rsid3172543\rsid3173806\rsid3174659\rsid3213556\rsid3225536\rsid3227126\rsid3232289\rsid3238418\rsid3289468\rsid3292410\rsid3296410\rsid3299798\rsid3300742\rsid3346023\rsid3348615
+\rsid3365062\rsid3371816\rsid3372567\rsid3419385\rsid3422435\rsid3436459\rsid3502334\rsid3503548\rsid3560600\rsid3565779\rsid3623741\rsid3625039\rsid3626166\rsid3676466\rsid3677170\rsid3693247\rsid3696090\rsid3696592\rsid3736122\rsid3744077\rsid3755288
+\rsid3759592\rsid3760055\rsid3763920\rsid3764886\rsid3768153\rsid3805259\rsid3825630\rsid3866792\rsid3869384\rsid3870565\rsid3889059\rsid3891359\rsid3893188\rsid3956641\rsid4003510\rsid4017535\rsid4022718\rsid4026490\rsid4027892\rsid4064980\rsid4068981
+\rsid4081510\rsid4133530\rsid4146375\rsid4148797\rsid4160207\rsid4194536\rsid4196335\rsid4201459\rsid4213425\rsid4217672\rsid4265086\rsid4275802\rsid4284540\rsid4285587\rsid4291535\rsid4292548\rsid4328686\rsid4330132\rsid4337346\rsid4343679\rsid4344564
+\rsid4344947\rsid4351315\rsid4351660\rsid4352495\rsid4399929\rsid4409666\rsid4411938\rsid4468152\rsid4472098\rsid4472250\rsid4481280\rsid4523395\rsid4527511\rsid4538150\rsid4596486\rsid4605004\rsid4605070\rsid4610176\rsid4616326\rsid4655325\rsid4663981
+\rsid4675548\rsid4722767\rsid4729093\rsid4729096\rsid4736219\rsid4740650\rsid4742246\rsid4746795\rsid4786084\rsid4786269\rsid4786911\rsid4789776\rsid4797918\rsid4803435\rsid4808775\rsid4850474\rsid4855273\rsid4858908\rsid4868147\rsid4871476\rsid4882062
+\rsid4916021\rsid4916808\rsid4925527\rsid4934237\rsid4945597\rsid4946483\rsid4947390\rsid4985552\rsid5007161\rsid5009765\rsid5050368\rsid5055163\rsid5059069\rsid5062715\rsid5068310\rsid5075125\rsid5126067\rsid5141811\rsid5179510\rsid5192306\rsid5198571
+\rsid5202547\rsid5268466\rsid5309298\rsid5324741\rsid5332093\rsid5336114\rsid5380736\rsid5402996\rsid5445694\rsid5447183\rsid5453732\rsid5463428\rsid5466747\rsid5518896\rsid5527292\rsid5527755\rsid5529162\rsid5533759\rsid5533923\rsid5535628\rsid5537110
+\rsid5537499\rsid5572396\rsid5585624\rsid5586788\rsid5601602\rsid5640298\rsid5646504\rsid5659279\rsid5661674\rsid5703244\rsid5707861\rsid5717752\rsid5778608\rsid5799068\rsid5845706\rsid5857942\rsid5864870\rsid5903592\rsid5909307\rsid5973619\rsid5973681
+\rsid5978916\rsid5980869\rsid5989023\rsid5991021\rsid6036110\rsid6051177\rsid6058806\rsid6105777\rsid6119787\rsid6166986\rsid6170558\rsid6180961\rsid6186706\rsid6226333\rsid6253301\rsid6258495\rsid6291979\rsid6308952\rsid6361766\rsid6367067\rsid6368759
+\rsid6370917\rsid6384704\rsid6387109\rsid6388816\rsid6424578\rsid6431117\rsid6437101\rsid6445171\rsid6446645\rsid6447400\rsid6452412\rsid6488828\rsid6489160\rsid6494638\rsid6517697\rsid6519788\rsid6555160\rsid6576702\rsid6583651\rsid6633015\rsid6640670
+\rsid6646977\rsid6647494\rsid6648482\rsid6685073\rsid6692153\rsid6693507\rsid6705998\rsid6768163\rsid6780159\rsid6816343\rsid6816771\rsid6829219\rsid6844221\rsid6884928\rsid6886742\rsid6886822\rsid6889243\rsid6899134\rsid6906066\rsid6960036\rsid6964127
+\rsid7018457\rsid7044270\rsid7095157\rsid7096537\rsid7100172\rsid7175168\rsid7210237\rsid7216606\rsid7220384\rsid7225751\rsid7236435\rsid7240031\rsid7285505\rsid7289312\rsid7290770\rsid7297658\rsid7300541\rsid7305478\rsid7340698\rsid7341587\rsid7348671
+\rsid7351959\rsid7354436\rsid7355377\rsid7363754\rsid7365295\rsid7408950\rsid7411726\rsid7414354\rsid7422790\rsid7432185\rsid7435924\rsid7471365\rsid7478957\rsid7484378\rsid7484861\rsid7486419\rsid7500318\rsid7547858\rsid7549496\rsid7557823\rsid7611205
+\rsid7625494\rsid7633999\rsid7675686\rsid7684167\rsid7698680\rsid7733719\rsid7734223\rsid7735008\rsid7735573\rsid7739582\rsid7758214\rsid7805424\rsid7817781\rsid7865564\rsid7870555\rsid7879637\rsid7882097\rsid7893869\rsid7895070\rsid7930313\rsid7953448
+\rsid8002396\rsid8004421\rsid8013364\rsid8018345\rsid8067800\rsid8074869\rsid8077251\rsid8092544\rsid8147469\rsid8153870\rsid8156698\rsid8199423\rsid8201204\rsid8203499\rsid8213671\rsid8258062\rsid8259825\rsid8261096\rsid8267344\rsid8269735\rsid8270365
+\rsid8275892\rsid8276203\rsid8332881\rsid8334941\rsid8335783\rsid8393667\rsid8415751\rsid8460425\rsid8468717\rsid8471895\rsid8473740\rsid8474112\rsid8478446\rsid8478498\rsid8478976\rsid8549360\rsid8552318\rsid8586460\rsid8587753\rsid8588517\rsid8590197
+\rsid8596394\rsid8596405\rsid8615617\rsid8651192\rsid8651404\rsid8662648\rsid8665611\rsid8675784\rsid8746554\rsid8783425\rsid8796657\rsid8802117\rsid8807050\rsid8807804\rsid8864700\rsid8874031\rsid8918693\rsid8922096\rsid8924647\rsid8931855\rsid8939505
+\rsid8943663\rsid8944718\rsid8989063\rsid9004244\rsid9008245\rsid9009174\rsid9048655\rsid9051452\rsid9051984\rsid9066670\rsid9072943\rsid9076298\rsid9136436\rsid9140799\rsid9188463\rsid9197341\rsid9206496\rsid9245397\rsid9255069\rsid9268874\rsid9317802
+\rsid9321241\rsid9327692\rsid9336577\rsid9374199\rsid9375357\rsid9378826\rsid9380719\rsid9387456\rsid9399515\rsid9444564\rsid9448487\rsid9456419\rsid9457686\rsid9465360\rsid9503314\rsid9513359\rsid9522835\rsid9524300\rsid9525034\rsid9534669\rsid9579423
+\rsid9589453\rsid9595993\rsid9597630\rsid9633930\rsid9638616\rsid9644220\rsid9644818\rsid9646626\rsid9648905\rsid9652315\rsid9656238\rsid9704590\rsid9705719\rsid9715518\rsid9717145\rsid9718769\rsid9726043\rsid9726946\rsid9783563\rsid9787936\rsid9789135
+\rsid9841221\rsid9848817\rsid9850588\rsid9851793\rsid9860219\rsid9899732\rsid9906194\rsid9973941\rsid9976216\rsid9977048\rsid9990398\rsid9991713\rsid9992237\rsid10034950\rsid10053125\rsid10056428\rsid10096222\rsid10103796\rsid10112945\rsid10122066
+\rsid10158306\rsid10161832\rsid10162186\rsid10169327\rsid10177393\rsid10177888\rsid10231068\rsid10235533\rsid10240407\rsid10241004\rsid10244483\rsid10247047\rsid10249112\rsid10293391\rsid10303727\rsid10310608\rsid10311944\rsid10312811\rsid10320947
+\rsid10355494\rsid10358977\rsid10362439\rsid10364123\rsid10366909\rsid10376450\rsid10376626\rsid10381063\rsid10441696\rsid10447233\rsid10487018\rsid10488029\rsid10491738\rsid10495071\rsid10504109\rsid10504957\rsid10512992\rsid10555537\rsid10562609
+\rsid10622621\rsid10645780\rsid10690756\rsid10694582\rsid10702731\rsid10750137\rsid10753199\rsid10754872\rsid10776363\rsid10776933\rsid10779614\rsid10823320\rsid10830935\rsid10881102\rsid10885141\rsid10960172\rsid10964306\rsid11010763\rsid11013697
+\rsid11027051\rsid11037436\rsid11038874\rsid11041250\rsid11076379\rsid11077031\rsid11096011\rsid11099185\rsid11107784\rsid11149693\rsid11151888\rsid11167574\rsid11168714\rsid11169385\rsid11208192\rsid11231428\rsid11235071\rsid11237374\rsid11283206
+\rsid11284031\rsid11291204\rsid11299380\rsid11303220\rsid11351933\rsid11358637\rsid11364539\rsid11406340\rsid11407841\rsid11418905\rsid11434899\rsid11469691\rsid11478388\rsid11486185\rsid11545159\rsid11561234\rsid11562238\rsid11601731\rsid11613712
+\rsid11614590\rsid11666045\rsid11667450\rsid11669693\rsid11671400\rsid11674139\rsid11747768\rsid11796482\rsid11798912\rsid11802310\rsid11807465\rsid11824425\rsid11866445\rsid11869476\rsid11873586\rsid11879554\rsid11880876\rsid11936561\rsid11945206
+\rsid11946627\rsid12004922\rsid12005197\rsid12008116\rsid12016017\rsid12018968\rsid12020262\rsid12020742\rsid12022230\rsid12025269\rsid12071780\rsid12078274\rsid12081927\rsid12089091\rsid12090386\rsid12127452\rsid12137110\rsid12154745\rsid12204265
+\rsid12209241\rsid12219045\rsid12256192\rsid12275511\rsid12276806\rsid12280311\rsid12343871\rsid12395515\rsid12401990\rsid12403138\rsid12458103\rsid12466251\rsid12466746\rsid12542015\rsid12549729\rsid12585796\rsid12586540\rsid12597508\rsid12603573
+\rsid12612029\rsid12612283\rsid12661924\rsid12666056\rsid12668583\rsid12670104\rsid12675407\rsid12679725\rsid12740561\rsid12785603\rsid12786181\rsid12792866\rsid12803516\rsid12849000\rsid12860998\rsid12869777\rsid12913955\rsid12918569\rsid12934342
+\rsid12984454\rsid13000246\rsid13043751\rsid13052761\rsid13063925\rsid13109795\rsid13182116\rsid13189706\rsid13196128\rsid13202928\rsid13204388\rsid13248594\rsid13250180\rsid13259925\rsid13307104\rsid13319815\rsid13324553\rsid13326781\rsid13371010
+\rsid13371851\rsid13375608\rsid13379718\rsid13400921\rsid13437779\rsid13503671\rsid13508210\rsid13523389\rsid13572375\rsid13581094\rsid13584007\rsid13585000\rsid13644065\rsid13652182\rsid13656478\rsid13662417\rsid13710760\rsid13725173\rsid13774375
+\rsid13775635\rsid13789987\rsid13795290\rsid13839016\rsid13843672\rsid13849350\rsid13964701\rsid13969557\rsid14027136\rsid14033837\rsid14049259\rsid14057466\rsid14099289\rsid14113600\rsid14118844\rsid14186460\rsid14233676\rsid14241716\rsid14248594
+\rsid14251692\rsid14312235\rsid14378395\rsid14419601\rsid14420629\rsid14422713\rsid14426021\rsid14449755\rsid14489781\rsid14494759\rsid14499683\rsid14500753\rsid14505995\rsid14512445\rsid14513654\rsid14549668\rsid14571374\rsid14628613\rsid14630438
+\rsid14637359\rsid14684818\rsid14685646\rsid14689771\rsid14690179\rsid14712247\rsid14712321\rsid14753122\rsid14754775\rsid14816230\rsid14817323\rsid14826950\rsid14837499\rsid14881921\rsid14901611\rsid14906030\rsid14946734\rsid14967138\rsid15008887
+\rsid15010423\rsid15021150\rsid15023858\rsid15076809\rsid15080225\rsid15082818\rsid15092732\rsid15147062\rsid15163194\rsid15166612\rsid15166740\rsid15204469\rsid15210167\rsid15215977\rsid15222108\rsid15230379\rsid15275664\rsid15302407\rsid15354356
+\rsid15364708\rsid15366606\rsid15401547\rsid15408936\rsid15412690\rsid15422085\rsid15433028\rsid15469470\rsid15471088\rsid15472318\rsid15478519\rsid15479146\rsid15483593\rsid15558715\rsid15564568\rsid15599725\rsid15599990\rsid15608330\rsid15612362
+\rsid15612433\rsid15612992\rsid15622206\rsid15671823\rsid15684863\rsid15687703\rsid15729178\rsid15737443\rsid15745474\rsid15758133\rsid15805929\rsid15812746\rsid15821615\rsid15868893\rsid15874742\rsid15878001\rsid15925862\rsid15929728\rsid15932723
+\rsid15946446\rsid15952338\rsid16008709\rsid16063604\rsid16071698\rsid16075769\rsid16080342\rsid16121969\rsid16136358\rsid16140181\rsid16145186\rsid16149276\rsid16150661\rsid16153816\rsid16188389\rsid16194022\rsid16194843\rsid16200051\rsid16214092
+\rsid16219431\rsid16261829\rsid16262417\rsid16280184\rsid16282814\rsid16319902\rsid16335810\rsid16397539\rsid16398441\rsid16399614\rsid16401841\rsid16469965\rsid16532277\rsid16532642\rsid16534152\rsid16534410\rsid16535232\rsid16544956\rsid16580764
+\rsid16581272\rsid16584680\rsid16595128\rsid16608269\rsid16610450\rsid16651820\rsid16654673\rsid16661921\rsid16666727\rsid16713963\rsid16717308\rsid16733021}{\*\generator Microsoft Word 11.0.6568;}{\info{\title Windows Vista Release Candidate 1}
+{\creatim\yr2006\mo9\dy22\hr9\min58}{\revtim\yr2006\mo9\dy22\hr17\min28}{\printim\yr2006\mo9\dy19\hr13\min43}{\version4}{\edmins3}{\nofpages12}{\nofwords4585}{\nofchars26642}{\nofcharsws30899}{\vern24579}}\margl1440\margr1440 
+\widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\formshade\horzdoc\dgmargin\dghspace180\dgvspace180\dghorigin1440\dgvorigin1440\dghshow1\dgvshow1
+\jexpand\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\viewnobound1\snaptogridincell\rempersonalinfo
+\allowfieldendsel\wrppunct\asianbrkrule\rsidroot16713963\newtblstyruls\nogrowautofit \fet0{\*\ftnsep \pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 
+\f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9255069 \chftnsep 
+\par }}{\*\ftnsepc \pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9255069 \chftnsepc 
+\par }}{\*\aftnsep \pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9255069 \chftnsep 
+\par }}{\*\aftnsepc \pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9255069 \chftnsepc 
+\par }}\sectd \linex0\endnhere\sectlinegrid360\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}
+{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang 
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain 
+\s1\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin0\lin0\itap0\pararsid9841221 \b\f1\fs32\lang1033\langfe1033\kerning32\cgrid\langnp1033\langfenp1033 {\f38\insrsid12090386\charrsid15599990 
+Windows Vista Privacy Statement}{\f38\insrsid5537110\charrsid15599990  for Installation Features}{\f38\insrsid12090386\charrsid15599990 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12090386 
+At Microsoft, we're working hard to protect your privacy, while delivering products that bring }{\insrsid12090386\charrsid15758133 performance, }{\insrsid9597630\charrsid15758133 power,}{\insrsid12090386\charrsid15758133  and convenience }{
+\insrsid9726946 to}{\insrsid9726946\charrsid15758133  }{\insrsid12090386\charrsid15758133 your personal computing}{\insrsid9726946  experience}{\insrsid12090386\charrsid15758133 . This privacy statement explains the data collection and use practices of }{
+\insrsid9374199 these }{\insrsid12090386\charrsid15758133 Windows Vista }{\insrsid5537110\charrsid15758133 installation }{\insrsid12090386\charrsid15758133 features}{\insrsid9374199 :}{\insrsid12090386\charrsid15758133  Activation, }{\insrsid279853 
+Dial-up Networking, }{\insrsid3292410 Installation Improvement Program, }{\insrsid12090386\charrsid15758133 Dynamic Update, }{\insrsid3174659\charrsid15758133 Microsoft Error Reporting Service}{\insrsid12090386\charrsid15758133 ,}{
+\insrsid5909307\charrsid15758133  Phishing Filter,}{\insrsid12090386\charrsid15758133  }{\insrsid2577784\charrsid15758133 Windows Defender, }{\insrsid12090386\charrsid15758133 and Windows Update. }{\insrsid9374199 These}{\insrsid12090386\charrsid15758133 
+ features }{\insrsid5062715\charrsid15758133 send information to and from}{\insrsid12090386\charrsid15758133  the Internet}{\insrsid7432185\charrsid15758133  }{\insrsid10823320 when you're installing and setting up Windows Vista}{
+\insrsid12090386\charrsid15758133 . }{\insrsid9374199 This disclosure}{\insrsid12090386\charrsid15758133  does not apply to other online or offline Microsoft }{\insrsid9374199 web}{\insrsid12090386\charrsid15758133 sites, }{
+\insrsid9597630\charrsid15758133 products,}{\insrsid12090386\charrsid15758133  or services. }{\insrsid4026490 
+\par }{\insrsid5009765 For a}{\insrsid12090386\charrsid15758133  more comprehensive privacy statement for this }{\insrsid11545159\charrsid6646977 software}{\insrsid5009765 , see the online }{\insrsid6685073\charrsid15758133 Windows Vista Privacy Statement}{
+\insrsid9374199  at}{\insrsid9787936  }{\insrsid591012\charrsid591012 http://go.microsoft.com/fwlink/?LinkId}{\insrsid591012\charrsid10754872 =52526}{\insrsid12090386\charrsid15758133 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid11667450 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid7735008 
+Collection of information about your computer}{\insrsid8651404 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4736219 Windows Vista}{
+\insrsid8651404\charrsid14816230  contains several Internet}{\insrsid8651404 -}{\insrsid8651404\charrsid14816230 enabled features that collect standard information from your computer ("standard computer information")}{\insrsid6646977 .}{
+\insrsid8651404\charrsid14816230  Standard computer information generally includes such information as your }{\insrsid8651404 computer's Internet Protocol (}{\insrsid8651404\charrsid14816230 IP}{\insrsid8651404 )}{\insrsid8651404\charrsid14816230  address
+}{\insrsid8651404 ;}{\insrsid8651404\charrsid14816230  operating system version}{\insrsid8651404 ;}{\insrsid8651404\charrsid14816230  browser version}{\insrsid8651404 ;}{\insrsid8651404\charrsid14816230  hardware ID}{\insrsid8651404 ,}{
+\insrsid8651404\charrsid14816230  which indicates the device manufacturer, device name, and version}{\insrsid8651404 ;}{\insrsid8651404\charrsid14816230  and your regional and language settings.}{\insrsid4789776  Some }{\insrsid349468 
+features may collect }{\insrsid4789776 additional information}{\insrsid349468 .}{\insrsid4789776  }{\insrsid8651404\charrsid14816230 The privacy details for each Windows feature listed in this privacy statement will disclose }{\insrsid6646977 the}{
+\insrsid8651404  additional}{\insrsid8651404\charrsid14816230  information }{\insrsid6646977 that }{\insrsid8651404\charrsid14816230 is collected and}{\insrsid8651404 , if the feature sends the information to Microsoft, how it is used}{
+\insrsid8651404\charrsid14816230 . 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid4337346 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4337346\charrsid10754872 
+Use of information
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4947390 
+Information that is collected by or sent to Microsoft may be stored and processed in the United States or any }{\insrsid4947390\charrsid16534410 other }{\insrsid16534410\charrsid16534410 country or region }{\insrsid4947390\charrsid16534410 
+in which Microsoft or its affiliates, subsidiaries, or agents maintain facilities. Microsoft abides by the safe}{\insrsid4947390\charrsid15812746  
+harbor framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of data from the European Union.}{\insrsid4947390  Microsoft may disclose information }{\insrsid5537110 about you }{\insrsid4947390 
+if required to do so by law or in the good faith belief that such action is necessary to: (a) conform to the edicts of the law or comply with legal process served on Microsoft or the site; (b
+) protect or defend the rights or property of Microsoft and its family of websites}{\insrsid16535232 ;}{\insrsid4947390 
+ or (c) act in urgent circumstances to protect the personal safety of Microsoft employees, users of Microsoft software or services, or members of the public. 
+\par Microsoft occa
+sionally hires other companies to provide limited services on its behalf, such as providing customer support, processing transactions, or performing statistical analysis of reports. Microsoft will provide these companies only the information they need to 
+deliver the service}{\insrsid1407928 s}{\insrsid4947390 . They are required to maintain the confidentiality of the information and are prohibited from using it for any other purpose. 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\keep\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid7817781 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4947390\charrsid10754872 
+Security practices
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4947390 
+Microsoft is committed to protecting the security of your information. We use a variety of security technologies and procedures }{\insrsid1793999 to }{\insrsid4947390 
+help protect your information from unauthorized access, use, or disclosure. For example, we store the information }{\insrsid5402996 that }{\insrsid4947390 you provide on computer servers }{\insrsid5402996 that }{\insrsid4736219 have limited}{
+\insrsid4947390  access }{\insrsid5402996 and }{\insrsid4947390 that are located in controlled facilities.
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid11013697 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid11013697 For m}{
+\insrsid11013697\charrsid16713963 ore }{\insrsid11013697 i}{\insrsid11013697\charrsid16713963 nformation
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid11013697 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid11013697\charrsid13710760 
+If you have questions about this privacy statement, please contact us }{\insrsid11013697 by submitting your questions online to }{\insrsid11013697\charrsid15758133 Privacy Feedback}{\insrsid11013697  }{\insrsid7698680 at }{
+\insrsid11013697\charrsid5324741 https://support.microsoft.com/common/survey.aspx?scid=sw;en;1213&showpage=1&ws=WindowsVista}{\insrsid11013697\charrsid13710760 
+\par Or by postal mail:
+\par Windows Vista Privacy Statement}{\insrsid11013697  for Installation Features\line }{\insrsid11013697\charrsid4868147 c/o Microsoft Privacy Response Center\line }{\insrsid11013697\charrsid13710760 Microsoft Corporation}{\insrsid11013697 \line }{
+\insrsid11013697\charrsid13710760 One Microsoft Way}{\insrsid11013697 \line }{\insrsid11013697\charrsid13710760 Redmond, Washington 98052}{\insrsid11013697 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs32\insrsid1514025\charrsid1514025 
+{\*\bkmkstart _Toc111952495}Installation Features}{\fs32\insrsid11613712\charrsid1514025 
+\par }{\insrsid16713963\charrsid16713963 Activation{\*\bkmkend _Toc111952495}
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid16713963\charrsid10754872 What }{
+\insrsid16535232\charrsid10754872 this feature does}{\insrsid16713963\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15612433 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4736219\charrsid6186706 Activation helps reduce software counterfeiting, }{
+\insrsid9380719 thereby helping to }{\insrsid4736219\charrsid6186706 
+ensure that Microsoft customers receive the software quality they expect. Once your software is activated, a specific product key becomes associated with the computer (the hardware) on which your software is installed. This association prevents the produc
+t key from being used to activate the same copy of the software on multiple computers}{\insrsid8201204  as counterfeit software}{\insrsid4736219\charrsid6186706 .}{\insrsid5466747 
+ Some changes to your computer components or the software may require you to reactivate the software.}{\f0\fs24\insrsid5466747  }{\f0\fs24\insrsid16713963\charrsid15612433 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid16713963\charrsid10754872 
+Information }{\insrsid16535232\charrsid10754872 collected}{\insrsid16713963\charrsid10754872 , }{\insrsid16535232\charrsid10754872 processed}{\insrsid12612029 ,}{\insrsid16535232\charrsid10754872  }{\insrsid16713963\charrsid10754872 or }{
+\insrsid16535232\charrsid10754872 transmitted}{\insrsid16713963\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid16713963 
+During activation, product key information is sent to Microsoft along with a hardware hash}{\insrsid2848725 , which is}{\insrsid349468  }{\insrsid16713963 
+a non-unique number generated from the computer's hardware configuration. The hardware hash does not represent any personal information or }{\insrsid8478976 information }{\insrsid16713963 
+about the software. The hardware hash cannot be used to determine the make or model of the computer}{\insrsid2848725  and }{\insrsid10750137 it }{\insrsid2848725 cannot}{\insrsid16713963  be }{\insrsid6119787 backward calculated}{\insrsid16713963 
+ to determine }{\insrsid4736219 any additional information about your computer}{\insrsid16713963 .}{\insrsid5324741  }{\insrsid14499683\charrsid12025269 Along with standard computer information, some additional language settings are collected. }{
+\insrsid16713963\charrsid10096222 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid16713963\charrsid10754872 Use of }{
+\insrsid16535232\charrsid10754872 information}{\insrsid16713963\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid11869476 Microsoft use}{\insrsid4722767 s}{
+\insrsid11869476  the information}{\insrsid16713963  to confirm that you have a licensed copy of the software}{\insrsid5324741\charrsid10096222 , and }{\insrsid12078274 then it }{\insrsid5463428 is }{\insrsid5324741\charrsid10096222 
+aggregated for statistical analysis}{\insrsid16713963\charrsid10096222 .}{\insrsid12078274  }{\insrsid11869476 Microsoft does not use the information }{\insrsid12078274\charrsid10096222 to identify you}{\insrsid12078274  or contact you}{
+\insrsid12078274\charrsid10096222 .}{\insrsid12078274   }{\insrsid12078274\charrsid10096222 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid16713963\charrsid10754872 Choice}{
+\insrsid16535232\charrsid10754872  and control}{\insrsid16713963\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid16713963 Activation is mandatory}{\insrsid16188389 
+ and must be completed within a predefined grace period}{\insrsid16713963 . If you choose not to activate the software, you cannot use it after the grace period expires.}{\insrsid8474112 
+ If the software is not correctly licensed, you will not be able to activate it. }{\insrsid16713963 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid14881921 {\*\bkmkstart _Toc114658875
+}{\*\bkmkstart _Toc121803764}{\*\bkmkstart Dialup_Networking}Installation Improvement Program}{\insrsid349468  }{\insrsid11880876 
+\par }\pard\plain \s20\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid4797918 \f37\fs17\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 What }{
+\cs17\b\f38\fs20\insrsid2244191\charrsid3676466 t}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 his }{\cs17\b\f38\fs20\insrsid2244191\charrsid3676466 f}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 eature }{
+\cs17\b\f38\fs20\insrsid2244191\charrsid3676466 d}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 oes}{\cs17\b\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid10355494\charrsid329039 If you choose to}{\f38\fs20\insrsid11880876\charrsid329039  participate}{\f38\fs20\insrsid14881921\charrsid329039  in the Installation Improvement Program}{\f38\fs20\insrsid11880876\charrsid329039 , }{
+\f38\fs20\insrsid15082818 the feature sends a single}{\f38\fs20\insrsid7893869  report }{\f38\fs20\insrsid15082818 to Microsoft. The report contains }{\f38\fs20\insrsid11880876\charrsid329039 basic}{\f38\fs20\insrsid11880876\charrsid3676466 
+ information about your computer and how you }{\f38\fs20\insrsid4736219\charrsid3676466 installed }{\f38\fs20\insrsid11880876\charrsid3676466 Windows Vista}{\f38\fs20\insrsid10235533 .}{\f38\fs20\insrsid10355494  We}{\f38\fs20\insrsid8276203  }{
+\f38\fs20\insrsid11880876\charrsid3676466 use }{\f38\fs20\insrsid349468\charrsid3676466 this information}{\f38\fs20\insrsid11880876\charrsid3676466  to help improve the }{\f38\fs20\insrsid4736219\charrsid3676466 installation experience }{
+\f38\fs20\insrsid11880876\charrsid3676466 and to create solutions to common }{\f38\fs20\insrsid4736219\charrsid3676466 installation }{\f38\fs20\insrsid11880876\charrsid3676466 problems.
+\par }{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 Information }{\cs17\b\f38\fs20\insrsid14251692\charrsid3676466 c}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 ollected, }{\cs17\b\f38\fs20\insrsid14251692\charrsid3676466 p}{
+\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 rocessed, or }{\cs17\b\f38\fs20\insrsid14251692\charrsid3676466 t}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 ransmitted}{\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid4003510 The r}{\f38\fs20\insrsid11880876\charrsid3676466 eport generally include}{\f38\fs20\insrsid4003510 s}{\f38\fs20\insrsid11880876\charrsid3676466  information }{\f38\fs20\insrsid4003510\charrsid4003510 
+about your installation and setup experience}{\f38\fs20\insrsid4003510 ,}{\f38\fs20\insrsid4003510\charrsid4003510  }{\f38\fs20\insrsid6768163\charrsid3676466 such as the date of installation, the time it took for each installation phase}{
+\f38\fs20\insrsid8276203  to complete}{\f38\fs20\insrsid6768163\charrsid3676466 , whether the installation was an upgrade or a new install}{\f38\fs20\insrsid8276203 ation of the product}{\f38\fs20\insrsid6768163\charrsid3676466 , version details, }{
+\f38\fs20\insrsid8276203 operating system }{\f38\fs20\insrsid6768163\charrsid3676466 language, media type, }{\f38\fs20\insrsid940023 computer}{\f38\fs20\insrsid6768163\charrsid3676466 
+ configuration, and success or failure status, along with any error codes.}{\f38\fs20\cf9\insrsid6768163\charrsid3676466 
+\par }{\f38\fs20\insrsid4003510 The r}{\f38\fs20\insrsid14881921\charrsid3676466 eport}{\f38\fs20\insrsid11880876\charrsid3676466  }{\f38\fs20\insrsid4003510 is}{\f38\fs20\insrsid11880876\charrsid3676466  sent to Microsoft when 
+you are connected to the Internet. }{\f38\fs20\insrsid4003510 This r}{\f38\fs20\insrsid11880876\charrsid3676466 eport do}{\f38\fs20\insrsid4003510 es}{\f38\fs20\insrsid11880876\charrsid3676466  not contain }{\f38\fs20\insrsid940023 contact}{
+\f38\fs20\insrsid940023\charrsid3676466  }{\f38\fs20\insrsid11880876\charrsid3676466 information such as your name, address, or phone number}{\f38\fs20\insrsid6119787\charrsid3676466 . }{\f38\fs20\insrsid11880876\charrsid3676466  }{
+\f38\fs20\insrsid9188463 A }{\f38\fs20\insrsid11880876\charrsid3676466 globally unique identifier (GUID) is }{\f38\fs20\insrsid9789135\charrsid3676466 generated }{\f38\fs20\insrsid11880876\charrsid3676466 and sent with }{
+\f38\fs20\insrsid9789135\charrsid3676466 the}{\f38\fs20\insrsid15082818  report}{\f38\fs20\insrsid11880876\charrsid3676466 . The GUID is a randomly generated number that }{\f38\fs20\insrsid9188463 uniquely identifies your computer}{
+\f38\fs20\insrsid6705998 ; it}{\f38\fs20\insrsid9188463  }{\f38\fs20\insrsid11880876\charrsid3676466 does not contain personal information.}{\f38\fs20\insrsid14881921\charrsid3676466  }{\f38\fs20\insrsid11880876\charrsid3676466 
+\par }{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 Use of }{\cs17\b\f38\fs20\insrsid14251692\charrsid3676466 i}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 nformation}{\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid11880876\charrsid3676466 Microsoft uses }{\f38\fs20\insrsid10487018\charrsid3676466 the }{\f38\fs20\insrsid14881921\charrsid3676466 report}{\f38\fs20\insrsid11880876\charrsid3676466  to improve our software}{
+\f38\fs20\insrsid4808775\charrsid3676466  installation experience}{\f38\fs20\insrsid11880876\charrsid3676466 . We use the GUID to }{\f38\fs20\insrsid4808775\charrsid3676466 correlate }{\f38\fs20\insrsid10487018\charrsid3676466 this}{
+\f38\fs20\insrsid4808775\charrsid3676466  data with data collected by the Customer Experience Improvement Program}{\f38\fs20\insrsid4328686  (CEIP)}{\f38\fs20\insrsid4808775\charrsid3676466 
+, a program you can choose to participate in when you are using Windows Vista. This GUID enables us to }{\f38\fs20\insrsid11880876\charrsid3676466 distinguish how widespread the feedback we receive is and how to prioritiz
+e it. For example, the GUID allows Microsoft to distinguish between one customer experiencing a problem }{\f38\fs20\insrsid5586788 100}{\f38\fs20\insrsid11880876\charrsid3676466  times and other customers experiencing the same problem once.}{
+\f38\fs20\insrsid15082818  }{\f38\fs20\insrsid15082818\charrsid3676466 Microsoft will not use the information in the report to identify you or contact you.}{\f38\fs20\insrsid11880876 
+\par }{\f38\fs20\insrsid11936561\charrsid3676466 For more information, about the Customer Experience Improvement Program}{\f38\fs20\insrsid11936561 ,}{\f38\fs20\insrsid11936561\charrsid3676466  see the}{\f38\fs20\insrsid11936561 se}{
+\f38\fs20\insrsid11936561\charrsid3676466  frequently asked questions }{\field\fldedit{\*\fldinst {\f38\fs20\insrsid11936561\charrsid3676466  HYPERLINK "http://go.microsoft.com/fwlink/?LinkID=52095" }{\f38\fs20\insrsid5336114\charrsid3676466 
+{\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b0200000003000000e0c9ea79f9bace118c8200aa004ba90b5a00000068007400740070003a002f002f0067006f002e006d006900630072006f0073006f00660074002e0063006f006d002f00660077006c0069006e006b002f003f004c0069006e006b00490044003d0035003200
+300039003500000000000000000000000000}}}{\fldrslt {\f38\fs20\insrsid11936561 online}}}{\f38\fs20\insrsid13523389  at}{\f38\fs20\insrsid11936561\charrsid3676466  http://go.microsoft.com/fwlink/?LinkID=52095
+\par }{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 Choice}{\cs17\b\f38\fs20\insrsid14251692\charrsid3676466  and c}{\cs17\b\f38\fs20\insrsid11880876\charrsid3676466 ontrol}{\cs17\b\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid4003510\charrsid4003510 You }{\f38\fs20\insrsid7175168 can choose}{\f38\fs20\insrsid4003510\charrsid4003510  to participate in this program when you set up Windows Vista.}{\f38\fs20\insrsid11880876\charrsid3676466  
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid13250180\charrsid13250180 
+Dial-up Networking{\*\bkmkend _Toc114658875}{\*\bkmkend _Toc121803764}{\*\bkmkend Dialup_Networking}
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\insrsid13250180\charrsid13250180 What }{\b\insrsid11291204 t
+}{\b\insrsid13250180\charrsid13250180 his }{\b\insrsid11291204 f}{\b\insrsid13250180\charrsid13250180 eature }{\b\insrsid11291204 d}{\b\insrsid13250180\charrsid13250180 oes}{\b\insrsid4026490 
+\par }{\insrsid13250180\charrsid13250180 Dial-}{\insrsid11291204 u}{\insrsid13250180\charrsid13250180 p }{\insrsid12016017 N}{\insrsid13250180\charrsid13250180 etworking allows you to access the }{\insrsid11291204 I}{\insrsid13250180\charrsid13250180 
+nternet using }{\insrsid11291204 a }{\insrsid13250180\charrsid13250180 dial-up modem and }{\insrsid11291204 a }{\insrsid13250180\charrsid13250180 broadband technolog}{\insrsid11291204 y, }{\insrsid13250180\charrsid13250180 such as }{\insrsid11291204 a }{
+\insrsid13250180\charrsid13250180 cable modem and}{\insrsid11291204  digital subscriber line}{\insrsid13250180\charrsid13250180  }{\insrsid11291204 (}{\insrsid13250180\charrsid13250180 DSL)}{\insrsid11291204 . It also allows you to }{
+\insrsid13250180\charrsid13250180 connect to private networks}{\insrsid11291204  }{\insrsid13250180\charrsid13250180 using }{\insrsid2965960 a }{\insrsid11291204 v}{\insrsid13250180\charrsid13250180 irtual }{\insrsid11291204 p}{
+\insrsid13250180\charrsid13250180 rivate }{\insrsid11291204 n}{\insrsid13250180\charrsid13250180 etwork (VPN)}{\insrsid12016017  }{\insrsid2965960 connection }{\insrsid11291204 and }{\insrsid13250180\charrsid13250180 Remote Access Service (RAS)}{
+\insrsid11291204 . RAS}{\insrsid13250180\charrsid13250180  is a component that connects a client}{\insrsid11291204  computer}{\insrsid13250180\charrsid13250180  }{\insrsid8802117 (}{\insrsid4468152 typically }{\insrsid8802117 your computer) }{
+\insrsid13250180\charrsid13250180 to a host computer }{\insrsid16319902 (}{\insrsid11291204 also }{\insrsid13250180\charrsid13250180 known as a remote access server}{\insrsid16319902 )}{\insrsid13250180\charrsid13250180 
+ using industry standard protocols. VPN technolog}{\insrsid12016017 ies}{\insrsid13250180\charrsid13250180  allow users to connect to a private network}{\insrsid11291204 , such as a}{\insrsid11291204\charrsid13250180  corporate network}{\insrsid11291204 ,
+}{\insrsid13250180\charrsid13250180  over the Internet while maintaining secure}{\insrsid12016017 d}{\insrsid13250180\charrsid13250180  communications. 
+\par }{\insrsid10312811 Dial-u}{\insrsid13250180\charrsid13250180 p Networking includes dialer components such as RAS Client, Connection Manager}{\insrsid6647494 ,}{\insrsid13250180\charrsid13250180  and RAS Phone}{\insrsid6647494 ,}{
+\insrsid13250180\charrsid13250180  as well as command}{\insrsid12016017 -}{\insrsid13250180\charrsid13250180 line dialers like }{\insrsid16335810 R}{\insrsid13250180\charrsid13250180 asdial.}{\insrsid6647494  }{\insrsid13250180\charrsid13250180 
+\par }\pard\plain \s20\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9906194 \f37\fs17\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 
+Information }{\cs17\b\f38\fs20\insrsid11291204\charrsid3676466 c}{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 ollected, }{\cs17\b\f38\fs20\insrsid11291204\charrsid3676466 p}{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 rocessed, or }{
+\cs17\b\f38\fs20\insrsid11291204\charrsid3676466 t}{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 ransmitted}{\cs17\b\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid13250180\charrsid9906194 The dialer }{\f38\fs20\insrsid9009174 component}{\f38\fs20\insrsid3172543 s}{\f38\fs20\insrsid9009174  collect information from your computer}{\f38\fs20\insrsid13250180\charrsid9906194  such as }{
+\f38\fs20\insrsid12016017\charrsid9906194 your }{\f38\fs20\insrsid13250180\charrsid9906194 user name, password, domain name, and phone number. }{\f38\fs20\insrsid6119787\charrsid9906194 
+This information is sent to the system that you are attempting to connect with. }{\f38\fs20\insrsid13250180\charrsid9906194  }{\f38\fs20\insrsid16319902\charrsid9906194 To help protect your privacy and the security of your computer, s}{
+\f38\fs20\insrsid12016017\charrsid9906194 ecurity-related}{\f38\fs20\insrsid13250180\charrsid9906194  information such as}{\f38\fs20\insrsid12016017\charrsid9906194  your}{\f38\fs20\insrsid13250180\charrsid9906194  user}{\f38\fs20\insrsid7739582  }{
+\f38\fs20\insrsid13250180\charrsid9906194 name and password are }{\f38\fs20\insrsid5445694 encrypted and stored}{\f38\fs20\insrsid15684863  }{\f38\fs20\insrsid13250180\charrsid9906194 on your computer.
+\par The Connection Manager Administration Kit (CMAK) is a server component that allows administrators to }{\f38\fs20\insrsid4194536\charrsid9906194 collect information}{\f38\fs20\insrsid13250180\charrsid9906194  from users}{
+\f38\fs20\insrsid8807050\charrsid9906194  on a network}{\f38\fs20\insrsid13250180\charrsid9906194 . The }{\f38\fs20\insrsid4194536\charrsid9906194 information that is }{\f38\fs20\insrsid13250180\charrsid9906194 
+collected is determined by the administrator. For }{\f38\fs20\insrsid4194536\charrsid9906194 more}{\f38\fs20\insrsid13250180\charrsid9906194  information}{\f38\fs20\insrsid4194536\charrsid9906194 , contact}{\f38\fs20\insrsid13250180\charrsid9906194  your}
+{\f38\fs20\insrsid4194536\charrsid9906194  system or network}{\f38\fs20\insrsid13250180\charrsid9906194  administrator. 
+\par }{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 Use of }{\cs17\b\f38\fs20\insrsid4351315\charrsid3676466 i}{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 nformation}{\cs17\b\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid13250180\charrsid3676466 Dialer information is used to }{\f38\fs20\insrsid4351315\charrsid3676466 help your computer }{\f38\fs20\insrsid13250180\charrsid3676466 connect to the }{\f38\fs20\insrsid9976216\charrsid3676466 I}{
+\f38\fs20\insrsid13250180\charrsid3676466 nternet. For CMAK, the information }{\f38\fs20\insrsid4351315\charrsid3676466 that is collected }{\f38\fs20\insrsid13250180\charrsid3676466 is used to create connection profiles}{\f38\fs20\insrsid9009174 
+, which help administrators}{\f38\fs20\insrsid5202547\charrsid3676466  }{\f38\fs20\insrsid7100172\charrsid3676466 deploy and manage connections across a network. }{\f38\fs20\insrsid13250180\charrsid3676466  
+\par }{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 Choice}{\cs17\b\f38\fs20\insrsid11486185\charrsid3676466  and c}{\cs17\b\f38\fs20\insrsid13250180\charrsid3676466 ontrol}{\cs17\b\f38\fs20\insrsid4026490 
+\par }{\f38\fs20\insrsid13250180\charrsid3676466 For non}{\f38\fs20\insrsid11486185\charrsid3676466 -}{\f38\fs20\insrsid13250180\charrsid3676466 command}{\f38\fs20\insrsid11486185\charrsid3676466 -}{\f38\fs20\insrsid13250180\charrsid3676466 line dialers, you }
+{\f38\fs20\insrsid13581094 can choose to}{\f38\fs20\insrsid13250180\charrsid3676466  save your password}{\f38\fs20\insrsid13581094 . However,}{\f38\fs20\insrsid13250180\charrsid3676466  this option is }{\f38\fs20\insrsid70138 turned }{
+\f38\fs20\insrsid13250180\charrsid3676466 off by default}{\f38\fs20\insrsid12585796 ,}{\f38\fs20\insrsid70138  so}{\f38\fs20\insrsid3172543  you}{\f38\fs20\insrsid70138  may be prompted to provide your password to connect to the Internet or a network.}{
+\f38\fs20\insrsid13250180\charrsid3676466  For command}{\f38\fs20\insrsid13581094 -}{\f38\fs20\insrsid13250180\charrsid3676466 line dialers like }{\f38\fs20\insrsid16335810 R}{\f38\fs20\insrsid6119787\charrsid3676466 asdial}{\f38\fs20\insrsid13581094 ,}{
+\f38\fs20\insrsid13250180\charrsid3676466  there is no option to save your password.}{\f38\fs20\insrsid13250180 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid4026490 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4026490 Dynamic Update}{
+\insrsid4026490\charrsid3676466 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519\charrsid10754872 
+{\*\bkmkstart _Toc111952496}What }{\insrsid16535232\charrsid10754872 this feature does}{\insrsid15478519\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519\charrsid15478519 Dynamic Update enab
+les Windows Vista to }{\insrsid4616326 perform a one-time }{\insrsid10512992 check}{\insrsid12022230  with}{\insrsid10512992  }{\insrsid15478519\charrsid15478519 the Microsoft Update }{\insrsid16535232 w}{\insrsid16535232\charrsid15478519 eb}{
+\insrsid15478519\charrsid15478519 site }{\insrsid3289468 to get}{\insrsid15478519\charrsid15478519  }{\insrsid6886822 the latest updates for your computer }{\insrsid15478519\charrsid15478519 while }{\insrsid15478519 your}{
+\insrsid15478519\charrsid15478519  operating system is being installed. If updates are found, Dynamic Update automatically download}{\insrsid5062715 s}{\insrsid15478519\charrsid15478519  and }{\insrsid12585796 installs }{\insrsid4596486 them }{
+\insrsid8468717\charrsid8468717 so your computer is up to date the first time that you log on or use it}{\insrsid8203499 .}{\insrsid15478519\charrsid15478519 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519\charrsid10754872 
+Information }{\insrsid16535232\charrsid10754872 collected}{\insrsid15478519\charrsid10754872 , }{\insrsid16535232\charrsid10754872 processed}{\insrsid15478519\charrsid10754872 , or }{\insrsid16535232\charrsid10754872 transmitted}{
+\insrsid15478519\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519 The types of updates }{
+\insrsid15478519\charrsid15478519 Dynamic Update can download }{\insrsid15478519 to your }{\insrsid16535232 computer }{\insrsid15478519 include}{\insrsid15478519\charrsid15478519 :
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid15478519\charrsid9206496 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}\pard\plain \s36\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls9\adjustright\rin0\lin720\itap0\pararsid4026490 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\insrsid15478519\charrsid9206496 Installation }{\b\insrsid16535232\charrsid9206496 updates}{
+\insrsid15478519 : }{\insrsid16335810 I}{\insrsid6886822 mportant }{\insrsid6886822\charrsid8332881 updates for installation files t}{\insrsid6886822 o}{\insrsid6886822\charrsid8332881  help }{\insrsid6886822 ensure a successful}{
+\insrsid6886822\charrsid8332881  install}{\insrsid6886822 ation}{\insrsid6886822\charrsid8332881 
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid15478519\charrsid9206496 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}\pard \s36\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls9\adjustright\rin0\lin720\itap0\pararsid6186706 {\b\insrsid15478519\charrsid9206496 In-box driver updates}{\insrsid15478519 : }{\insrsid16335810 A}{\insrsid15478519\charrsid15478519 dditional hardware drivers }{
+\insrsid15478519 that }{\insrsid15478519\charrsid15478519 enable Windows Vista to successfully interact with your computer\rquote s hardware}{\insrsid15478519 
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid15478519\charrsid9206496 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}{\b\insrsid15478519\charrsid9206496 Windows }{\b\insrsid16535232\charrsid9206496 updates}{\insrsid15478519 : }{\insrsid16335810 I}{
+\insrsid6886822 mportant }{\insrsid6886822\charrsid8332881 updates for the version of Windows }{\insrsid6886822 that }{\insrsid6886822\charrsid8332881 you are installing}{\insrsid6886822  }{\insrsid15478519\charrsid15478519 
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid15478519\charrsid9206496 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}{\b\insrsid15478519\charrsid9206496 Microsoft Windows Malicious Software Removal Tool }{\b\insrsid2247871 u}{
+\b\insrsid15478519\charrsid9206496 pdate}{\b\insrsid2247871 s}{\insrsid15478519 : }{\insrsid16335810 U}{\insrsid4916021\charrsid8332881 pdates for the latest version of this tool}{\insrsid4916021 
+ which can help remove malicious software such as viruses and worms if it detects them on your computer}{\insrsid15478519\charrsid15478519 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15805929 To install compatible}{
+\insrsid15478519\charrsid9633930  drivers, Dynamic Update }{\insrsid8468717 works with }{\insrsid14499683\charrsid9633930 Windows Update (see below)}{\insrsid8468717  }{\insrsid8468717\charrsid8468717 to send information }{\insrsid1783980 to Microsoft }{
+\insrsid8468717\charrsid8468717 about your computer's hardware}{\insrsid15478519\charrsid9633930 . }{\insrsid15478519 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519\charrsid10754872 Use of }{
+\insrsid16535232\charrsid10754872 information}{\insrsid15478519\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519\charrsid15478519 Dynamic Update }{
+\insrsid5202547 software reports information about}{\insrsid5202547\charrsid15478519  }{\insrsid5978916 your computer\rquote s}{\insrsid15478519\charrsid15478519  hardware to }{\insrsid5202547 find compatible drivers. }{\insrsid15412690 For m
+ore information about how information collected by Dynamic Update is used, see Windows Update (below). }{\insrsid15478519\charrsid15478519 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15478519\charrsid10754872 Choice}{
+\insrsid8924647\charrsid10754872  and c}{\insrsid15478519\charrsid10754872 ontrol
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid8203499\charrsid8203499 During Windows Vista }{
+\insrsid9597630 s}{\insrsid9597630\charrsid8203499 etup,}{\insrsid8924647\charrsid8203499  }{\insrsid8203499\charrsid8203499 you }{\insrsid7175168 can choose}{\insrsid8203499  to use Dynamic Update. }{\insrsid15478519\charrsid15478519  
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs30\insrsid10441696\charrsid3232289 
+{\*\bkmkend _Toc111952496}Microsoft Error Reporting Service}{\insrsid10441696\charrsid3232289 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid6105777 What this feature does}{
+\insrsid10441696\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid13371851\charrsid13371851 
+Microsoft Error Reporting Service}{\insrsid13371851  }{\insrsid10441696 helps Microsoft and Windows partners diagnose problems in the software you use and provide solutions. Not all problems have solutions}{\insrsid7805424 ,}{\insrsid10441696 
+ but when solutions are available, they are offered as steps }{\insrsid5380736 to }{\insrsid10441696 solv}{\insrsid5380736 e}{\insrsid10441696  a problem you\rquote ve reported or as updates to install. }{\insrsid3503548 
+As part of setup and installation, the Microsoft Error Reporting Service send}{\insrsid5380736 s}{\insrsid3503548  back information about setup or installation failures in order to attempt to diagnose the problem. }{\insrsid10441696 
+To help prevent problems and make software more reliable, some solutions are also included in service packs and future versions of the software.  
+\par Many Microsoft software programs, including Windows }{\insrsid8468717 Vista}{\insrsid16262417 ,}{\insrsid8468717  }{\insrsid10441696 are designed to work with the reporting service. If a problem occurs in one of these software pro}{\insrsid6226333 grams}{
+\insrsid10441696 , you are asked if you want to }{\insrsid10447233\charrsid10447233 send a report }{\insrsid13371851 so you can }{\insrsid10447233\charrsid10447233 check for a solution}{\insrsid10441696 
+. You can view the details of the report before sending it, although some files might not be in a readable format.  
+\par }{\insrsid4610176 Windows Vista}{\insrsid10441696  also allows you to report problems automatically instead of requesting your consent each time a problem occurs. If you use automatic reporting, you are }{\insrsid10441696\charrsid9633930 not }{
+\insrsid15302407\charrsid9633930 typically }{\insrsid10441696\charrsid9633930 prompted }{\insrsid10441696 to review the information in a report before it is sent. However, no information is }{\insrsid10447233 sent }{\insrsid10441696 
+unless you (or your system or network administrator) choose to report problems. You can choose to stop reporting problems at any time. 
+\par Enterprise customers can use }{\insrsid10441696\charrsid15758133 the Microsoft Corporate Error Reporting Service}{\insrsid4527511\charrsid8259825  }{\insrsid10441696\charrsid8259825 to manage error reporting and data}{\insrsid10441696 
+ collection, and to choose the information that is sent to Microsoft.}{\insrsid16149276  }{\insrsid5857942 
+\par }{\insrsid16149276 For more information, see the Corporate Error Reporting website at}{\insrsid15622206  }{\insrsid5857942 h}{\insrsid16149276\charrsid591012 ttp://go.microsoft.com/fwlink/?LinkId=}{\insrsid16149276\charrsid5309298 55127}{\insrsid5857942  
+}{\insrsid16149276\charrsid5309298 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid5857942 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid5857942\charrsid10754872 
+Information collected, processed, or transmitted
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid10441696 The reporting service can collect }{
+\insrsid5380736 information }{\insrsid10441696 about problems that interrupt you while you work}{\insrsid724683 ,}{\insrsid10441696 
+ and about errors that occur behind the scenes. It is important to diagnose errors that occur behind the scenes because these problems, if left unsolved, }{\insrsid13843672 might }{\insrsid10441696 cause additional problems such as performance o
+r program failures. 
+\par Reports contain information that is most useful for diagnosing and solving the problem that has occurred, such as:
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid10441696\charrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}\pard\plain \s36\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls9\adjustright\rin0\lin720\itap0\pararsid4026490 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid10441696\charrsid4026490 Where the problem happened in the software or }{
+\insrsid6119787\charrsid4026490 hardware;}{\insrsid1591513\charrsid4026490  }{\insrsid6119787\charrsid4026490 occasionally}{\insrsid15302407\charrsid4026490 , empty files might be included as an initial indication of a problem}{
+\insrsid10441696\charrsid4026490 
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid10441696\charrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}T}{\insrsid13843672\charrsid4026490 he t}{\insrsid10441696\charrsid4026490 ype or severity of the problem, if known
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid10441696\charrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Files that help describe the problem (}{\insrsid9597630\charrsid4026490 typically,}{\insrsid10441696\charrsid4026490 
+ system or report-generated files about software behavior before or after the problem occurred)
+\par {\listtext\pard\plain\s36 \f38\fs20\insrsid10441696\charrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Basic software and hardware information (such as operating system version and language, device models and manufacturers, or memory}{
+\insrsid10441696  and hard disk size) 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid10441696 
+Reports might unintentionally contain personal information, but }{\insrsid6519788 Microsoft does not use the information }{\insrsid10441696 to identify you or contact you}{\insrsid10441696\charrsid15812746 . For examp
+le, a report that contains a snapshot of }{\insrsid5380736 computer }{\insrsid10441696\charrsid15812746 memory might include your name, part of a document you were working on, or data that you recently submitted to a }{\insrsid10441696 w}{
+\insrsid10441696\charrsid15812746 ebsite. If you are concerned that a report might contain personal or confidential information, }{\insrsid6226333 you should}{\insrsid10441696\charrsid15812746  not send the report.}{\insrsid8393667  }{
+\insrsid8596405\charrsid8596405 If a report is likely to contain this type of information, Windows will ask if you want to send }{\insrsid8596405 it}{\insrsid3891359\charrsid7216606 , even if you have turned on automatic reporting}{
+\insrsid8596405\charrsid7216606 .}{\insrsid10096222  This gives you the opportunity to review the report before }{\insrsid10103796 sending it to Microsoft}{\insrsid10096222 .}{\insrsid7018457  }{\insrsid7018457\charrsid7018457 Reports }{\insrsid5535628 
+that you}{\insrsid10504957  have not yet sent to Microsoft, including files and}{\insrsid5535628  data attached to those reports}{\insrsid10504957 ,}{\insrsid5535628  m}{\insrsid7018457\charrsid7018457 
+ay be stored on your computer until you have an opportunity to review and send them.  Reports }{\insrsid5535628 t}{\insrsid10504957 hat you }{\insrsid2388678 have already}{\insrsid10504957  sent, including files and}{\insrsid5535628  d
+ata attached to those reports, }{\insrsid7018457\charrsid7018457 may }{\insrsid13259925 also }{\insrsid7018457\charrsid7018457 be stored on your}{\insrsid13259925  computer}{\insrsid10504957 .}{\insrsid5535628  }{\insrsid10441696 
+\par }{\insrsid16651820 After you report a problem, you might be asked to complete a survey about the error experience.
+ If you choose to provide a phone number or e-mail address in response to the survey, your error report will no longer be anonymous. Microsoft may contact you to request additional information to help solve the problem you reported. 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid2240760 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid2240760\charrsid10754872 
+Use of information}{\insrsid7018457  }{\insrsid2240760\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid10441696 Mi
+crosoft uses information about errors and problems to improve Windows }{\insrsid6226333 and the}{\insrsid10441696 
+ software and hardware designed for use with Windows operating systems. Microsoft employees, contractors, vendors, and partners may be provided access to information collected by 
+the reporting service. However, they may use the information only to repair or improve the products that they publish or manufacture. }{\b\insrsid10441696\charrsid10376450 
+\par }{\insrsid10441696 For example, if an error report indicates that a third-party product is involved, Microsoft may send that information to 
+the vendor of the product. The vendor may provide the information to sub-vendors and partners; however, all parties must abide by the terms of this privacy statement. 
+\par To improve the products that run on Microsoft software, Microsoft may share aggregate information about errors and problems. }{\insrsid3764886 Microsoft uses a}{\insrsid10441696 ggregate information for statistical analysis}{\insrsid3764886 
+. Aggregate information }{\insrsid10441696 does not contain specific information from individual reports, nor does it include any personal or confidential information that may have been collected from a report. 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid4409666 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4409666 Choice and control
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4610176 T}{\insrsid2388678 
+o view your problem history, }{\insrsid4610176 check for new solutions, }{\insrsid2388678 or delete problem reports and solutions, }{\insrsid4610176\charrsid4610176 go to Problem Reports and Solutions}{\insrsid8460425  }{\insrsid8460425\charrsid13379718 
+in Control Panel}{\insrsid10447233  or see }{\insrsid12008116 Windows }{\insrsid10447233 Help and Support for more information}{\insrsid4610176\charrsid4610176 . }{\insrsid10960172 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968 Phishing Filter
+\par }{\insrsid4675548\charrsid4675548 What is phishing?
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid2375874 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4675548\charrsid4675548 
+Online phishing is a technique used to trick computer users into revealing personal or financial information through an e-mail message or website. A common online phishing scam starts with an e\_mail message that appears 
+to come from a trusted source but actually directs you to provide information to a fraudulent website. Phishing Filter }{\insrsid10162186 is designed to }{\insrsid4675548\charrsid4675548 
+warn you if you're visiting websites that display phishing characteristics or that have been reported to Microsoft as fraudulent.
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid10754872 
+What this feature does
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968 Phishing Filter }{\insrsid10162186 
+is designed to}{\insrsid12018968  warn you if the website you are visiting might be impersonating a trusted website. Phishing Filter does this by first checking the address of the website you are visiting against a list of websi
+te addresses stored on your computer that have been reported to Microsoft as legitimate ("legitimate list").
+\par The first time you attempt to visit a website that is not on the legitimate list, you will be asked whether you would like to have Phishing Filter automatically check all websites you visit. If you opt in, addresses}{\insrsid4351660  that }{
+\insrsid9597630 are not}{\insrsid12018968  on the legitimate list will be sent to Microsoft and checked against a frequently updated list of websites that have been reported to Microsoft as phishing, suspicious, or le
+gitimate websites. You may also choose to use Phishing Filter manually to verify individual sites}{\insrsid11237374  as you visit them}{\insrsid12018968 .
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid10754872 
+Information collected, processed, or transmitted
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968 
+When you use Phishing Filter to check websites automatically or manually, the address}{\insrsid14033837 es}{\insrsid12018968  of the website}{\insrsid14033837 s}{\insrsid12018968  }{\insrsid2651653 that }{\insrsid12018968 you visit }{\insrsid14033837 ar}{
+\insrsid12018968 e sent to Microsoft, together with some standard information from your computer such as}{\insrsid12401990  Internet Protocol}{\insrsid12018968  }{\insrsid12401990 (}{\insrsid12018968 IP}{\insrsid12401990 )}{\insrsid12018968 
+ address, browser type, and Phishing Filter version number. To help protect your privacy, the address information sent to Microsoft is encrypted using Secure Sockets Layer (SSL) and }{\insrsid14033837 is }{\insrsid12018968 limited to}{\insrsid14033837 
+ the domain and path of the web}{\insrsid12018968 site. Other information that may be associated with the address, such as search terms, data you entered in forms, or cookies, }{\insrsid14033837 is}{\insrsid12018968  not sent.
+\par }{\insrsid1970378 F}{\insrsid12018968 or example, }{\insrsid14033837 if you visit the MSN Search web}{\insrsid12018968 site at }{\insrsid12018968\charrsid1970378 http://search.msn.com}{\insrsid14033837  and enter}{\insrsid12018968  "}{\insrsid2651653 
+weather}{\insrsid12018968 " as the search term, instead of sending the full address "http://search.msn.com/results.aspx?q=}{\insrsid5845706 weather}{\insrsid12018968 &FORM=QBHP}{\insrsid14033837 ,}{\insrsid12018968 " Phishing Filter remove}{
+\insrsid16397539 s}{\insrsid12018968  the search term and send}{\insrsid16397539 s}{\insrsid12018968  }{\insrsid16397539 only }{\insrsid12018968 "http://search.msn.com/results.aspx}{\insrsid14033837 .}{\insrsid12018968 
+" Address strings might unintentionally contain personal information, but }{\insrsid9522835 Microsoft does not use the information}{\insrsid12018968  to identify you or contact you. If you are concerned that an address string might contain personal or c
+onfidential information, you should not report the site.
+\par }{\insrsid1970378 A}{\insrsid12018968 nonymous statistics about your usage of Phishing Filter}{\insrsid16397539 ,}{\insrsid12018968  such as the }{\insrsid16397539 duration }{\insrsid12018968 
+and total number of websites browsed since an address was sent to Microsoft for analysis}{\insrsid14033837 , are also sent to Microsoft}{\insrsid12018968 . 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid10754872 
+Use of information
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968 The information described above }{
+\insrsid12005197 is}{\insrsid12018968  used to analyze the performance and improve the quality of the Phishing Filter service. Microsoft }{\insrsid12005197 does }{\insrsid12018968 not use the information it receives to personally identify you. 
+\par Some URLS that are sent m}{\insrsid7096537 ight}{\insrsid12018968  be saved to be included in the legitimate list and then provided as client updates. When }{\insrsid10249112 URLs are saved, }{\insrsid12018968 additional information }{\insrsid10249112 
+such as }{\insrsid12018968 Phishing Filter and }{\insrsid10249112 o}{\insrsid12018968 perating }{\insrsid10249112 s}{\insrsid12018968 ystem version}{\insrsid10249112  information, as well as your }{\insrsid12018968 browser }{\insrsid5309298 language, is}{
+\insrsid10249112  }{\insrsid12018968 saved.
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid10754872 
+Choice and c}{\insrsid1970378\charrsid10754872 ontrol}{\insrsid12018968\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11946627 
+\hich\af38\dbch\af11\loch\f38 If you choose the recommended settings during}{\insrsid12018968\charrsid8203499  Windows Vista }{\insrsid12018968 s}{\insrsid12018968\charrsid8203499 etup}{\insrsid3623741 ,}{\insrsid12018968\charrsid8203499  you }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11946627 \hich\af38\dbch\af11\loch\f38 turn on}{\insrsid12018968  automatic website checking with Phishing Filter. You }{\insrsid9534669 can}{\insrsid12018968 
+ also turn Phishing Filter on or off in Internet Explorer. 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid10754872 
+To turn Phishing Filter off
+\par {\listtext\pard\plain\s37 \f38\fs20\insrsid12018968\charrsid6051177 \hich\af38\dbch\af0\loch\f38 1.\tab}}\pard\plain \s37\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls8\adjustright\rin0\lin720\itap0\pararsid4026490 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid6051177 In }{\insrsid12018968\charrsid4026490 Internet}{
+\insrsid12018968\charrsid6051177  Explorer, click the }{\b\insrsid12018968\charrsid6051177 Tools}{\insrsid12018968\charrsid6051177  button, click }{\b\insrsid12018968\charrsid6051177 Phishing Filter}{\insrsid12018968\charrsid6051177 , and then click }{
+\b\insrsid12018968\charrsid6051177 Phishing Filter Settings}{\insrsid12018968\charrsid6051177 . 
+\par {\listtext\pard\plain\s37 \f38\fs20\insrsid10161832 \hich\af38\dbch\af0\loch\f38 2.\tab}}\pard \s37\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin720\itap0\pararsid6186706 {
+\insrsid10161832 In the list of options, s}{\insrsid12018968\charrsid6051177 croll to the }{\b\insrsid12018968\charrsid6051177 Phishing Filter}{\insrsid12018968\charrsid6051177  section under }{\b\insrsid12018968\charrsid6051177 Security}{
+\insrsid12018968\charrsid6051177 , click }{\b\insrsid12018968\charrsid6051177 Disable Phishing Filter}{\insrsid12018968\charrsid6051177 , and then click }{\b\insrsid12018968\charrsid6051177 OK}{\insrsid12018968\charrsid6051177 . 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12018968\charrsid6051177 Phishing Filter will }{
+\insrsid921815 no longer}{\insrsid12018968\charrsid6051177  check }{\insrsid921815 for }{\insrsid12018968\charrsid6051177 or warn you about phishing sites}{\insrsid6051177  that you might visit}{\insrsid12018968\charrsid6051177 .
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid6816771\charrsid10310608 
+Windows Defender}{\insrsid6816771 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid7289312 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7289312 \hich\af38\dbch\af11\loch\f38 What this feature does
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid6367067\charrsid6367067 \hich\af38\dbch\af11\loch\f38 Windows Defender }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38 is }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid2232699 \hich\af38\dbch\af11\loch\f38 an }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38 antispyware program }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid2232699 \hich\af38\dbch\af11\loch\f38 included with }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38 Windows. It }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid6367067\charrsid6367067 \hich\af38\dbch\af11\loch\f38 offers }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38 two}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250\charrsid6367067 \hich\af38\dbch\af11\loch\f38  }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid6367067\charrsid6367067 \hich\af38\dbch\af11\loch\f38 ways to help
+\hich\af38\dbch\af11\loch\f38  keep spyware and other potentially unwanted software from infecting your computer:
+\par {\listtext\pard\plain\s43 \fs17\lang1033\langfe1041\loch\af38\hich\af38\dbch\af11\langfenp1041\insrsid6367067\charrsid6367067 \loch\af38\dbch\af11\hich\f38 \u9679\'3f\tab}}\pard\plain \s43\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls10\adjustright\rin0\lin720\itap0\pararsid4026490 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid6367067\charrsid6367067 
+\hich\af38\dbch\af11\loch\f38 Real-time protection}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid6367067\charrsid6367067 \hich\af38\dbch\af11\loch\f38 
+. Windows Defender alerts you when spyware or potentially unwanted software attempts to install itself or run on your computer. It also alerts you whe\hich\af38\dbch\af11\loch\f38 n programs attempt to change important Windows settings. }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid6367067 
+\par {\listtext\pard\plain\s43 \fs17\lang1033\langfe1041\loch\af38\hich\af38\dbch\af11\langfenp1041\insrsid4026490\charrsid6367067 \loch\af38\dbch\af11\hich\f38 \u9679\'3f\tab}}{\b\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid4026490\charrsid6367067 
+\hich\af38\dbch\af11\loch\f38 Scanning options}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid4026490\charrsid6367067 \hich\af38\dbch\af11\loch\f38 
+. You can use Windows Defender to scan for spyware and other potentially unwanted software that might be installed on your computer, to schedule scans on a regular basis, and to au\hich\af38\dbch\af11\loch\f38 
+tomatically remove any malicious software that is detected during a scan.
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 
+\hich\af38\dbch\af11\loch\f38 If you choose the recommended settings during Windows}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11283206 \hich\af38\dbch\af11\loch\f38  Vista}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 
+\hich\af38\dbch\af11\loch\f38  setup, Windows Defender real-time protection}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid2232699 \hich\af38\dbch\af11\loch\f38  will be enabled}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7953448 
+\hich\af38\dbch\af11\loch\f38  and }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38 automatic scanning }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7953448 \hich\af38\dbch\af11\loch\f38 will occur }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38 at 2}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid16717308 \hich\af38\dbch\af11\loch\f38 :00}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 
+\hich\af38\dbch\af11\loch\f38  A.M. each day.}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9644220 \hich\af38\dbch\af11\loch\f38  Wind\hich\af38\dbch\af11\loch\f38 ows Defender }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7735573 
+\hich\af38\dbch\af11\loch\f38 will }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9644220 \hich\af38\dbch\af11\loch\f38 automatically}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid3299798 \hich\af38\dbch\af11\loch\f38 
+ install updated definitions before scanning}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7735573 \hich\af38\dbch\af11\loch\f38 , }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid3299798 \hich\af38\dbch\af11\loch\f38 and then }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9644220 \hich\af38\dbch\af11\loch\f38 remove software with severe alert levels}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38  }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid3299798 \hich\af38\dbch\af11\loch\f38 that it detects}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7735573 \hich\af38\dbch\af11\loch\f38  during the scan}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid3299798 \hich\af38\dbch\af11\loch\f38 . }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9656238 \hich\af38\dbch\af11\loch\f38 If your copy of Windows is genuine, }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38 Windows Defender will also }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9656238 \hich\af38\dbch\af11\loch\f38 remove software with high}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9644220 \hich\af38\dbch\af11\loch\f38  }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9656238 \hich\af38\dbch\af11\loch\f38 alert levels}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid8074869 
+\hich\af38\dbch\af11\loch\f38  that it detects}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7735573 \hich\af38\dbch\af11\loch\f38  during a scheduled scan}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9656238 \hich\af38\dbch\af11\loch\f38 .}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid8415751 \hich\af38\dbch\af11\loch\f38  }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid1642512 
+\par }{\insrsid9457686 For more information about the }{\insrsid6445171 Windows Genuine Advantage, go to }{\insrsid9457686\charrsid9206496 http://go.microsoft.com/fwlink/?LinkID=51371}{\insrsid9457686\charrsid1642512 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid11601731 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid11601731 
+Information collected, processed, and transmitted}{\insrsid11601731\charrsid11601731 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9457686 
+\hich\af38\dbch\af11\loch\f38 If you choose the recommended settings}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid1904676 \hich\af38\dbch\af11\loch\f38  dur\hich\af38\dbch\af11\loch\f38 ing Windows Vista setup}{
+\dbch\af11\insrsid9457686\charrsid10754872 \hich\af38\dbch\af11\loch\f38 , y}{\dbch\af11\insrsid10645780\charrsid10754872 \hich\af38\dbch\af11\loch\f38 ou }{\insrsid3956641\charrsid10754872 will also }{\dbch\af11\insrsid10645780\charrsid10754872 
+\hich\af38\dbch\af11\loch\f38 join}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38  Microsoft SpyNet with a basic }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid16654673 \hich\af38\dbch\af11\loch\f38 
+membership.}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid16654673\charrsid6367067 \hich\af38\dbch\af11\loch\f38  The}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250\charrsid6367067 \hich\af38\dbch\af11\loch\f38 
+ online Microsoft SpyNet community helps you see how other people respond to }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38 software}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250\charrsid6367067 
+\hich\af38\dbch\af11\loch\f38  that has not yet been classified for risks. }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid15023858 \hich\af38\dbch\af11\loch\f38 If you choose to be notified about this software,}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid15023858\delrsid15023858\charrsid6367067 \hich\af38\dbch\af11\loch\f38  }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid15023858 \hich\af38\dbch\af11\loch\f38 s}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250\charrsid6367067 \hich\af38\dbch\af11\loch\f38 eeing if other members of the community }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38 
+permit or deny the }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250\charrsid6367067 \hich\af38\dbch\af11\loch\f38 software }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38 
+or changes made by the software can help you decide what to do}{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250\charrsid6367067 \hich\af38\dbch\af11\loch\f38 . In turn, if you participate, your choices are added to the community rati
+\hich\af38\dbch\af11\loch\f38 ngs to help other people }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid11041250 \hich\af38\dbch\af11\loch\f38 decide what to do. }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid12549729 
+\hich\af38\dbch\af11\loch\f38 You can choose to be notified about software that has not yet been classified for risks by using the options provided in Windows Defender or by joining Microsoft SpyNet with an advanced membership (see below). }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9327692 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid9327692 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9327692 Use of information}{
+\insrsid9327692\charrsid9327692 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10162186 
+\hich\af38\dbch\af11\loch\f38 If you join Microsoft SpyNet, }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid4663981 \hich\af38\dbch\af11\loch\f38 Windows Defender }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10162186 
+\hich\af38\dbch\af11\loch\f38 will }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid4663981 \hich\af38\dbch\af11\loch\f38 automatically send information }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid7953448 \hich\af38\dbch\af11\loch\f38 
+to Microsoft }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid4663981 \hich\af38\dbch\af11\loch\f38 to help Microsoft determine which software to investigate for potential threats and to help improve how Windows Defender works.}{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780 \hich\af38\dbch\af11\loch\f38  }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid9327692 \hich\af38\dbch\af11\loch\f38 The informatio\hich\af38\dbch\af11\loch\f38 
+n that is sent in reports is determined by your Microsoft SpyNet membership (see below).  }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid15433028 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid9327692 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9327692\charrsid10754872 
+Choice and control
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid15433028 
+\hich\af38\dbch\af11\loch\f38 You can change the recommended settings at any time by using }{\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid14817323 \hich\af38\dbch\af11\loch\f38 the options provided in Windows Defender. }{
+\lang1033\langfe1041\dbch\af11\langfenp1041\insrsid10645780\charrsid6367067 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid15302407\charrsid10310608 
+Windows Defender }{\insrsid14684818 \endash }{\insrsid15302407\charrsid10310608  }{\insrsid6829219\charrsid10310608 Microsoft }{\insrsid14118844\charrsid10310608 SpyNet}{\insrsid15302407\charrsid10310608  Feature}{\insrsid14118844\charrsid10310608 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid14118844\charrsid10754872 
+What this feature does
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid6829219 The Microsoft}{
+\insrsid14118844\charrsid3693247  SpyNet }{\insrsid6829219 antispyware community }{\insrsid14118844\charrsid3693247 is a voluntary}{\insrsid1131760 ,}{\insrsid14118844\charrsid3693247  worldwide community of Windows Defender users. Through }{
+\insrsid6829219 Microsoft }{\insrsid14118844\charrsid16580764 Spy}{\insrsid14118844 N}{\insrsid14118844\charrsid16580764 et}{\insrsid14118844\charrsid3693247 , users can report spyware and other forms of }{\insrsid14118844 potentially }{
+\insrsid14118844\charrsid3693247 unwanted software to Microsoft. When you set up Windows }{\insrsid14118844 Vista, you }{\insrsid1131760 can}{\insrsid1131760\charrsid13379718  }{\insrsid6361766\charrsid13379718 choose to join}{\insrsid14118844  }{
+\insrsid6829219 Microsoft }{\insrsid14118844\charrsid3693247 SpyNet. If you }{\insrsid14118844 choose to join,}{\insrsid14118844\charrsid3693247  }{\insrsid2183298 reports about spyware and potentially unwanted software are sent to Microsoft. }{
+\insrsid14118844 The }{\insrsid11076379 type }{\insrsid14118844 of information }{\insrsid10645780 that is sent }{\insrsid14118844 in report}{\insrsid10645780 s}{\insrsid14118844  depends on your level of }{\insrsid6829219 Microsoft }{\insrsid14118844 Spy
+Net membership. 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid14118844\charrsid10754872 
+Information collected, processed, or transmitted
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid6829219\charrsid6829219 Microsoft }{
+\insrsid14118844\charrsid3693247 SpyNet report}{\insrsid6576702 s}{\insrsid14118844\charrsid3693247  include information about the file}{\insrsid14118844 s}{\insrsid14118844\charrsid3693247  }{\insrsid4064980 or programs }{
+\insrsid14118844\charrsid3693247 in question, such as file }{\insrsid817834 names}{\insrsid14118844\charrsid3693247 , cryptographic hash, vendor, size, and date stamps. }{\insrsid11562238\charrsid11562238 In addition, full URLs }{\insrsid4064980 can}{
+\insrsid11562238\charrsid11562238  be collected }{\insrsid4064980 to }{\insrsid11562238\charrsid11562238 indicate the origin of the file, and }{\insrsid4064980\charrsid11562238 m}{\insrsid4064980 ight}{\insrsid4064980\charrsid11562238  }{\insrsid10244483 
+occasionally }{\insrsid11562238\charrsid11562238 contain personal }{\insrsid11562238\charrsid9633930 information}{\insrsid15302407\charrsid9633930  such as search terms or data entered in forms}{\insrsid11562238\charrsid9633930 . }{\insrsid16153816 
+Reports }{\insrsid4064980 can }{\insrsid14118844\charrsid3693247 also include the action}{\insrsid16153816 s that you}{\insrsid14118844\charrsid3693247  }{\insrsid16153816 applied}{\insrsid4064980  when }{\insrsid2572406 
+Windows Defender notified you that }{\insrsid16532642 software }{\insrsid4064980 was detected}{\insrsid14118844\charrsid3693247  (}{\insrsid6886742 deny}{\insrsid6886742\charrsid3693247  }{\insrsid14118844\charrsid3693247 or }{\insrsid6886742 permit}{
+\insrsid14118844\charrsid3693247 ). }{\insrsid13204388 If your copy of Windows is not genuine, some software cannot be removed by Windows Defender}{\insrsid15230379  and an error will be reported to Microsoft}{\insrsid13204388 . }{\insrsid15230379 A}{
+\insrsid13204388 n error code indicating }{\insrsid15230379 that }{\insrsid13204388 software was not removed }{\insrsid15230379 because your copy of Windows is not genuine }{\insrsid13204388 will be included in the report. }{\insrsid10311944 
+Microsoft SpyNet reports include this information }{\insrsid15230379 to }{\insrsid10311944 help Microsoft gauge the effectiveness of Windows Defender\rquote 
+s ability to detect and remove malicious and potentially unwanted software. Microsoft uses the information contained in SpyNet reports to help improve Windows Defender for all users.}{\insrsid13204388 
+\par }\pard \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13204388 {\insrsid8335783 Reports also contain standard computer information, and}{\insrsid5646504 
+ are automatically sent to Microsoft when:
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}\pard\plain \s43\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls7\adjustright\rin0\lin720\itap0\pararsid4026490 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4026490 Windows Defender detects software or changes to your computer by software that 
+has not yet been analyzed for risks
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}You apply actions to software that Windows Defender has detected
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid4026490 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Windows Defender completes a scheduled scan and automatically applies actions to software that it detects, according to your settings
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid8335783 Reports might unintentionally }{
+\insrsid5646504 contain personal information. To the extent that any personal information is included in a report, }{\insrsid9327692 Microsoft does not use the information to}{\insrsid5646504  identify you or contact you. }{
+\insrsid5646504\charrsid3891359 
+\par }{\insrsid14118844 You }{\insrsid4064980 can}{\insrsid14118844  join }{\insrsid6829219 Microsoft }{\insrsid14118844 SpyNet }{\insrsid4945597 with a}{\insrsid14118844  }{\insrsid14753122 b}{\insrsid14118844 asic or }{\insrsid4945597 an }{\insrsid14753122 a
+}{\insrsid14118844 dvanced member}{\insrsid4945597 ship}{\insrsid14118844 . }{\insrsid12020742 If you choose the recommended }{\insrsid5703244 settings during}{\insrsid12597508  Windows}{\insrsid12004922  setup}{\insrsid12020742 , you }{\insrsid3565779 
+automatically }{\insrsid12597508 join}{\insrsid12020742  }{\insrsid12597508 with }{\insrsid12020742 a }{\insrsid6431117 b}{\insrsid12020742 asic member}{\insrsid12597508 ship}{\insrsid12020742 . }{\insrsid14118844 Basic member reports }{
+\insrsid14118844\charrsid4871476 contain }{\insrsid15215977\charrsid4871476 the information described above}{\insrsid12280311 .}{\insrsid14118844  Advanced member reports }{\insrsid12280311 are more comprehensive}{\insrsid4064980  and might}{
+\insrsid15215977\charrsid4871476  }{\insrsid10244483 occasionally }{\insrsid15215977\charrsid4871476 contain}{\insrsid15215977  personal information from}{\insrsid12219045 , for example,}{\insrsid15215977  }{\insrsid15210167 file paths}{\insrsid14118844 
+ and partial memory }{\insrsid6899134 dumps}{\insrsid14118844 . }{\insrsid15215977\charrsid4871476 To the extent }{\insrsid4064980 that }{\insrsid15215977\charrsid4871476 any personal information is included in a report, }{\insrsid1249738 
+Microsoft does not use the information}{\insrsid15215977\charrsid4871476  to identify you or contact you.}{\insrsid15215977\charrsid15215977  }{\insrsid14118844 These reports}{\insrsid14118844\charrsid3693247 , along with }{\insrsid14118844 reports from }
+{\insrsid14118844\charrsid3693247 other}{\insrsid4064980  Windows Defender users who are}{\insrsid14118844\charrsid3693247  participating in }{\insrsid6829219 Microsoft }{\insrsid14118844\charrsid3693247 
+SpyNet, enable Microsoft researchers to discover new }{\insrsid4064980 threats }{\insrsid15215977\charrsid4871476 more rapidly}{\insrsid14118844\charrsid3693247 . }{\insrsid4871476\charrsid13379718 Spyware}{\insrsid4871476  d}{
+\insrsid14118844\charrsid3693247 efinitions are then created for programs that meet the analysis criteria}{\insrsid3565779 ,}{\insrsid14118844\charrsid3693247  and }{\insrsid4064980 the updated definitions are }{\insrsid14118844\charrsid3693247 
+made available to all users}{\insrsid4064980  through Windows Update}{\insrsid14118844\charrsid3693247 .
+\par }{\insrsid15469470 If you join Microsoft SpyNet with a basic or an advanced membership}{\insrsid163723 ,}{\insrsid14118844  Microsoft m}{\insrsid12020262 ight}{\insrsid14118844 
+ request a Sample Submission report. This report contains specific files from your computer that Microsoft suspects }{\insrsid163723 might }{\insrsid14118844 be potentially unwanted software}{\insrsid5778608 .}{\insrsid14118844  }{\insrsid9378826 The }{
+\insrsid740125 report is}{\insrsid5778608  }{\insrsid14118844 used for further analysis. }{\insrsid16075769 Y}{\insrsid16075769\charrsid7733719 ou will be asked each time if you want to send this Sample Submission report to Microsoft.}{\insrsid14118844 
+\par }{\insrsid15302407\charrsid9633930 To help protect your privacy, }{\insrsid943992 reports that are }{\insrsid15302407\charrsid9633930 sent to Microsoft }{\insrsid943992 are}{\insrsid15302407\charrsid9633930  encrypted using }{\insrsid163723 Se
+cure Sockets Layer}{\insrsid10754872 \~}{\insrsid163723 (}{\insrsid15302407\charrsid9633930 SSL}{\insrsid163723 )}{\insrsid15302407\charrsid9633930 .}{\insrsid15302407\charrsid12403138 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid14118844\charrsid10754872 
+Use of information
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid6829219 Microsoft }{\insrsid14118844\charrsid3693247 
+SpyNet reports are used to improve Microsoft software and services. The reports may also be used for statistical or other testing or analytical purposes, trending, and }{\insrsid15210167 definition}{\insrsid15210167\charrsid3693247  }{
+\insrsid14118844\charrsid3693247 generation. }{\insrsid14118844 Only }{\insrsid14118844\charrsid3693247 Microsoft}{\insrsid14118844  }{\insrsid14118844\charrsid3693247 employees, contractors}{\insrsid5778608 ,}{\insrsid14118844\charrsid3693247 
+ and vendors who have a business need to use the reports are provided access to them.}{\insrsid14118844 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid9136436 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid9136436 Choice and control}{
+\insrsid9136436\charrsid3693247 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid14826950\charrsid7733719 You }{\insrsid12020262 can }{
+\insrsid14826950\charrsid7733719 join or leave }{\insrsid6829219 Microsoft }{\insrsid14826950\charrsid7733719 SpyNet at an}{\insrsid12668583\charrsid7733719 y}{\insrsid13662417  time}{\insrsid14826950\charrsid7733719 . }{\insrsid14118844\charrsid7733719 
+If you }{\insrsid793430 join }{\insrsid6829219 Microsoft }{\insrsid14118844\charrsid7733719 SpyNet }{\insrsid793430 with an advanced }{\insrsid14118844\charrsid7733719 member}{\insrsid793430 ship}{\insrsid14118844\charrsid7733719 , you will b
+e asked if you want to }{\insrsid3225536 permit or deny}{\insrsid14118844\charrsid7733719  change}{\insrsid793430 s}{\insrsid14118844\charrsid7733719  made by software }{\insrsid793430 that has }{\insrsid14118844\charrsid7733719 not yet}{\insrsid793430 
+ been}{\insrsid14118844\charrsid7733719  classified for risk}{\insrsid793430 s}{\insrsid14118844\charrsid7733719 .}{\insrsid12668583\charrsid7733719  Basic members will not be asked}{\insrsid793430 
+ to review changes by this software and the changes will be permitted.}{\insrsid787922  To change your Microsoft SpyNet membership, use the options provided in Windows Defender. }{\insrsid793430  }{\insrsid11351933 
+\par }{\insrsid12219045 You can }{\insrsid8662648 turn automatic }{\insrsid8077251 scanning on or off}{\insrsid8918693  and}{\insrsid13839016  }{\insrsid12219045 change the frequency }{\insrsid8077251 and type }{\insrsid12219045 of scans}{\insrsid8918693 
+. You can }{\insrsid2039563 also choose which}{\insrsid8918693  actions are}{\insrsid4858908  }{\insrsid8918693 automatically }{\insrsid532447 applied to}{\insrsid4985552  software }{\insrsid8918693 that Windows Defender detects during a scheduled scan}{
+\insrsid4985552 . }{\insrsid7733719 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938\charrsid10310608 
+Windows Defender }{\insrsid4411938 \endash  }{\insrsid4411938\charrsid10310608 History Feature
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938\charrsid10754872 
+What this feature does
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938\charrsid11562238 
+This feature provides a list of all}{\insrsid6180961  software}{\insrsid4411938\charrsid11562238  on your computer }{\insrsid6180961 that }{\insrsid4411938\charrsid11562238 Windows Defender }{\insrsid6180961 detects and}{\insrsid4411938\charrsid11562238  
+}{\insrsid6180961 the }{\insrsid4411938\charrsid11562238 actions }{\insrsid6180961 that }{\insrsid4411938\charrsid11562238 were taken }{\insrsid4411938 when the programs were detected}{\insrsid13503671 , including errors tha
+t might occur when actions are applied to that software}{\insrsid4411938\charrsid11562238 . }{\insrsid13503671 
+\par }{\insrsid4411938\charrsid11562238 In addition, you can view a list of Allowed items}{\insrsid4411938 , which are programs that Windows Defender does not monitor while th}{\insrsid6180961 ey are running on your computer. You can also view }{
+\insrsid4411938\charrsid11562238 Quarantined items}{\insrsid4411938 , which are programs that Windows Defender prevents from running until you choose to remove them or allow them to run again}{\insrsid4411938\charrsid11562238 .  }{\insrsid4411938 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938\charrsid10754872 
+Information collected, processed, or transmitted
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938 
+The list of software that Windows Defender detects}{\insrsid1311532 ,}{\insrsid4411938  the actions }{\insrsid6517697 that }{\insrsid4411938 you }{\insrsid6517697 and other users }{\insrsid4411938 take}{\insrsid1311532 , and the actions}{\insrsid4411938 
+ that Windows Defender takes automatically are stored on your computer. }{\insrsid6517697 All users }{\insrsid7953448 of the computer }{\insrsid6517697 can view the history in Windows Defender}{\insrsid10244483  }{\insrsid10244483\charrsid10244483 to }{
+\insrsid6517697 see spyware and other}{\insrsid817834  }{\insrsid9051984\charrsid10244483 potentially}{\insrsid10244483\charrsid10244483  unwanted software }{\insrsid6517697 that }{\insrsid817834 has}{\insrsid9051984  }{\insrsid9051984\charrsid10244483 
+attempted}{\insrsid10244483\charrsid10244483  to install}{\insrsid94439  itself}{\insrsid10244483\charrsid10244483  or run on the computer}{\insrsid6517697 ,}{\insrsid817834  or }{\insrsid6517697 that }{\insrsid817834 has been allowed to run by }{
+\insrsid6517697 an}{\insrsid817834 other user}{\insrsid4411938\charrsid11562238 .}{\insrsid6517697  For example, if you hear about a new spyware threat, you can check the history to see if Windows Defender has prevented it from infecting your computer}{
+\insrsid9652315 . }{\insrsid4411938 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938\charrsid10754872 
+Choice and control
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid4411938\charrsid11562238 
+History lists may be deleted by an administrator}{\insrsid4411938 .}{\insrsid4411938\charrsid7733719 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs15\insrsid3232289\charrsid1970378 
+Windows Update}{\insrsid3232289\charrsid1970378 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid13182116 What this feature does}{
+\insrsid3232289 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid7300541 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid7300541 Windows Update is a service from Microsoft }{
+\cf1\insrsid7300541 that provides updates for Windows operating system software and Windows-based hardware.}{\insrsid9444564\charrsid7300541 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid11807465\charrsid10754872 
+Information collected, processed, or transmitted}{\insrsid11807465\charrsid11807465 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid3232289\charrsid6494638 
+Windows Update collects basic information about your computer to identify which updates your computer needs and to improve the updating service. This information includes:
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}\pard\plain \s43\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls7\adjustright\rin0\lin720\itap0\pararsid15599990 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid3232289\charrsid6494638 Computer make and model 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Version information for the operating system, browser, and any other Microsoft software for which updates might be available 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Plug and Play ID numbers of hardware devices 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Region and language setting 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Globally unique identifier (GUID) 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}Product ID and }{\insrsid5062715 p}{\insrsid5062715\charrsid6494638 roduct }{\insrsid5062715 k}{\insrsid5062715\charrsid6494638 ey }{
+\insrsid3232289\charrsid6494638 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid6494638 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}BIOS name, revision number, and revision date 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid3232289\charrsid6494638 
+Your IP address is also collected because you are connecting to an online service (web service) to get updates. However, your IP address is only used to generate aggregate statistics.}{\insrsid3232289 
+\par }{\insrsid8471895 You }{\insrsid8471895\charrsid11824425 might be 
+invited to participate in a survey about the way you use Windows Update. Each survey includes a privacy statement that details the terms and use of any information submitted with that survey. }{\insrsid8471895\charrsid6494638 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid6186706 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid11807465 Use of information}{
+\insrsid7348671\charrsid10754872 
+\par }\pard\plain \ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6186706 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs17\fs19\insrsid5062715\charrsid5062715 The}{
+\cs17\b\fs19\insrsid5062715  }{\insrsid5062715 p}{\insrsid5062715\charrsid11824425 roduct }{\insrsid3232289\charrsid11824425 ID and }{\insrsid5062715 p}{\insrsid5062715\charrsid11824425 roduct }{\insrsid5062715 k}{\insrsid5062715\charrsid11824425 ey}{
+\insrsid5062715  }{\insrsid3232289 are used}{\insrsid3232289\charrsid11824425  to confirm you are }{\insrsid3232289 getting updates for a }{\insrsid3232289\charrsid11824425 validly licensed copy of Windows. }{\insrsid3232289 This information is }{
+\insrsid3232289\charrsid11824425 not }{\insrsid3232289 stored or }{\insrsid3232289\charrsid11824425 retained after you }{\insrsid3232289 finish}{\insrsid3232289\charrsid11824425  using Windows Update, unless the }{\insrsid5062715 p}{
+\insrsid5062715\charrsid11824425 roduct }{\insrsid3232289\charrsid11824425 ID is not valid. }{\insrsid3232289 
+\par The information collected by Windows Update can also be used to generate aggregate statistics about which computer systems need support. Aggregate statistics help improve Windows and the updating service. }{\insrsid3232289\charrsid11824425 
+To generate accurate statistics, Windows Update }{\insrsid3232289 assigns }{\insrsid3232289\charrsid11824425 a }{\insrsid3232289 g}{\insrsid3232289\charrsid11824425 lobally }{\insrsid3232289 u}{\insrsid3232289\charrsid11824425 nique }{\insrsid3232289 i}{
+\insrsid3232289\charrsid11824425 dentifier (GUID) }{\insrsid3232289 and stores it}{\insrsid3232289\charrsid11824425  on your computer}{\insrsid3232289 . The GUID provides a way to uniquely identify your computer without collecting }{
+\insrsid3232289\charrsid11824425 information that can be used to identify you. }{\insrsid3232289 The GUID is also used to record:}{\insrsid3232289\charrsid11824425 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid3232289\charrsid1970378 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}\pard\plain \s43\ql \fi-360\li720\ri0\sb100\sa100\sbauto1\saauto1\widctlpar
+\jclisttab\tx720\aspalpha\aspnum\faauto\ls6\adjustright\rin0\lin720\itap0\pararsid15599990 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid3232289\charrsid1970378 The number of individual computers that use the updating service}{
+\fs17\insrsid3232289\charrsid15599990 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid15599990\charrsid1970378 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}{\insrsid15599990\charrsid1970378 Whether updates were needed and which updates were applied}{\fs17\insrsid15599990\charrsid15599990 
+\par {\listtext\pard\plain\s43 \f38\fs17\insrsid15599990\charrsid1970378 \loch\af38\dbch\af0\hich\f38 \u9679\'3f\tab}}{\insrsid15599990\charrsid1970378 Whether the download and installation of each update succeeded or failed}{
+\fs17\insrsid15599990\charrsid15599990 
+\par }\pard\plain \s36\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid3763920 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid3763920 Microsoft does not use the information}{
+\insrsid10364123  collected by Windows Update}{\insrsid3763920  to identify you or contact you. }{\fs17\insrsid3763920\charrsid8471895 
+\par }\pard\plain \s3\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0\pararsid8471895 \b\f38\fs19\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid8471895 Choice and control
+\par }\pard\plain \s36\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8471895 \f38\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid8471895 You can turn automati
+c updating on or off, change the frequency and time at which updates are installed, and choose which updates to install automatically by going to Windows Update in Control Panel.}{\fs17\insrsid8471895\charrsid1970378 
+\par }\pard\plain \s2\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid5068310 \b\f38\fs23\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid8153870 
+\par }}
+Welcome
+Segoe UI
+Windows Setup
+The installation process consists of a few easy steps, then
+Windows will finish installing on its own.
+&Next
+Finish
+Segoe UI
+Windows needs to restart to continue
+msctls_progress32
+Restarting in 10 seconds
+After you restart the computer, Setup will continue automatically.
+Product key
+Segoe UI
+Activate Windows
+If you're reinstalling Windows, select I don't have a product key. Your copy of Windows will be automatically activated later.
+On-screen keyboard
+&Next
+Segoe UI
+Applicable notices and license terms
+License terms text control
+RichEdit20W
+I &accept the Microsoft Software License Terms. If an organization is licensing it, I am authorized to bind the organization.
+&Next
+Install Type
+Segoe UI
+Which type of installation do you want?
+Static
+App Compat
+Segoe UI
+Compatibility report
+&Next
+Application Compatibility Progress Page
+Segoe UI
+Checking compatibility
+msctls_progress32
+Progress
+Segoe UI
+Installing Windows
+Status
+Cancel
+Segoe UI
+The installation was canceled
+Any changes made to your computer won't be saved.
+Drive Selection
+Segoe UI
+Where do you want to install Windows?
+Listview Control
+SysListView32
+DriveListing
+&Size:
+msctls_updown32
+SizeSelect
+A&pply
+&Cancel
+To make changes to partitions, restart Windows from the installation media.
+This partition doesn't have enough free space to install Windows. Delete files, uninstall applications, extend the partition, or format it to free space on this partition, or select another partition.
+&Next
+Driver Selection
+Segoe UI
+Select the driver to install
+SysListView32
+DriverList
+&Hide drivers that aren't compatible with this computer's hardware.
+Br&owse
+&Rescan
+msctls_progress32
+&Next
+Dynamic Update Welcome Page
+Segoe UI
+Get important updates for Windows Setup
+&I want to help make the Windows installation better
+Dynamic Update Progress Page
+Segoe UI
+Searching for Setup updates
+msctls_progress32
+Download size display
+Time display
+Your computer needs to stay connected to the Internet while Windows installs.
+HW Requirements Page
+Segoe UI
+This PC doesn't meet the minimum system requirements to install this version of Windows. For more information, visit https://aka.ms/WindowsSysReq
+&Next
+Welcome
+Segoe UI
+Windows Setup
+Click Next to begin
+&Next
+Deprecate
+Segoe UI
+Deprecation Notice
+Windows Deployment Services client functionality is being partly deprecated. Please visit https://aka.ms/WDSSupport for more details on what is deprecated and what will continue to be supported.
+ Microsoft Corporation. All rights reserved.
+&Reboot
+Image Selection
+Segoe UI
+&Select the operating system you want to install
+SysListView32
+ImageListing
+Select a &language to install:
+&Next
+Waiting for Server
+Segoe UI
+Waiting for server
+msctls_progress32
+Windows Setup will continue automatically once the server initiates your session.
+Cancel
+Segoe UI
+Windows Setup
+Segoe UI
+&Back
+&Next
+To select another partition or drive, click Back. To delete everything on this drive and continue with Setup, click Next.
+You've chosen to install Windows on drive %d. If you continue, Setup will delete all partitions and data contained on this drive.
+Windows Setup
+Segoe UI
+&Back
+&Next
+To select another partition or drive, click Back. To proceed with Setup and delete everything on this partition, click Next.
+You've chosen to format partition %d on drive %d. If you continue, Setup will delete all information contained on this partition.
+Windows Setup
+Segoe UI
+&Close
+&Next
+Windows Setup
+Segoe UI
+msctls_progress32
+msctls_progress32
+Windows Setup
+Segoe UI
+&Back
+&Next
+Windows Setup
+Segoe UI
+&Try again
+&Continue
+To get updates, your computer must be connected to the Internet. Do you want to try getting updates again or continue installing without the updates?
+We can't connect to the Internet
+Windows Setup
+Segoe UI
+&Try again
+&Continue
+Make sure your computer is connected to the Internet. Do you want to try getting updates again or continue installing without the updates?
+We can't get to the updates
+Windows Setup
+Segoe UI
+&Reconnect
+&Continue
+Do you want to reconnect and get the updates or continue installing without the updates?
+Your computer is disconnected from the Internet
+WIN32UI
+Windows Setup
+Welcome to "Windows" Setup*Windows Setup is getting your drive ready.
+Restarting the computer2Windows Setup is getting ready to move your things
+Product key Microsoft Software License Terms
+Installation type
+Setup is now copying files.
+Copying installation files
+&Back
+Cancel
+,W&hy should I get updates for Windows Setup?+Why should I get updates for Windows Setup?
+&Privacy Statement
+Windows Privacy Statement,&What information will be sent to Microsoft?
+Get the latest updates, such as security updates and hardware drivers, to help successfully install Windows. (Your computer will stay connected to the Internet while Windows installs.)yWithout these updates, Windows might not install properly and your computer might be more vulnerable to security threats.
+&Get important updates to Windows Setup
+Volume
+Checking compatibility
+Windows Setup
+Recovery
+Windows cannot find a Microsoft Reserved partition on the drive selected for installation. Although recommended, this partition is not required to complete installation.
+The partitions on this drive aren't in the recommended order. For information about installing to GPT drives go to the Microsoft website (www.microsoft.com) and search for GPT.
+Windows won't install unless each of these things is taken care of. Close Windows Setup, take care of each one, and then restart Windows Setup to continue.
+Install updated drivers for the following devices. Open Control Panel and search for "update device driver". If you already have an updated device driver, click <B>Load driver</B> and follow the steps.VUninstall these applications. Open Control Panel and search for "uninstall a program."
+Before continuing, make sure the app vendors support your applications on Windows Server 2022. Follow their specific recommendations before and after Windows installs. To make sure your app is compatible and to download tools and documentation, go to https://go.microsoft.com/fwlink/?LinkId=243105 <br></br><br></br>Important: If the software isn't compatible with Windows Server 2022 or if the app vendor doesn't support the app, uninstall it before you install Windows. If you don't uninstall the applications, your system won't be supported, the app might not work, and settings or other information might be lost.-Installing Windows will affect these devices:eTurn off these Windows features. Open Control Panel and search for "turn Windows features on or off."6Installing Windows will affect the following features: Turn off these Windows features.(Uninstall these unsigned system drivers:
+Copying the multicast files
+Copying Windows files8This compatibility report will be saved to your desktop.
+If this is the first time you're installing Windows on this PC (or you're installing a different edition), you need to enter a valid Windows product key. Your product key should be in the confirmation email you received after buying a digital copy of Windows or on a label inside the box that Windows came in. Windows Compatibility Report.htm
+To continue installing Windows, use the Load Driver option to install 32-bit and signed 64-bit drivers. Installing an unsigned 64-bit device driver isn't supported, and Windows might not work if you install it.lInstall updated drivers for the following devices. Open Control Panel and search for "update device driver".
+Before continuing, make sure the app vendors support your applications on Windows Server 2022. Follow their specific recommendations before and after Windows installs. To make sure your app is compatible and to download tools and documentation, go to https://go.microsoft.com/fwlink/?LinkId=243105 <br></br><br></br>Important: If the software isn't compatible with Windows Server 2022 or if the app vendor doesn't support the app, uninstall it before you install Windows. If you don't uninstall the applications, your system won't be supported, the app might not work, and settings or other information might be lost.<br></br><br></br>Note: If you want to use some desktop features, you will have to install Desktop Experience after Windows installs. After Windows installs, run Server Manager, select Add Features, and then install Desktop Experience.*This compatibility report will be saved as
+&I don't have a product key
+6Installing Windows will affect the following features:pYou can still install Windows, but the following Windows features aren't available or might not work in Windows:
+Make these changes:
+These devices might not work properly in Windows. We recommend you close Windows Setup and update device drivers before you continue. Search for "update drivers" in Control Panel or contact the device manufacturer.
+These applications might not work properly in Windows. We recommend you close Windows Setup and uninstall these applications before you continue. (Note: The applications marked with an asterisk (*) can be reinstalled in Windows.)rSetup was unable to use the existing partition because the system volume does not contain the required free space.,Compatibility report (saved to your desktop)
+Compatibility reportzThese devices might not work properly in Windows. We recommend updating the drivers for these devices before you continue.
+Install updated drivers for the following devices. If you already have an updated device driver, click <B>Load driver</B> and follow the steps. Turn off these Windows features.
+Uninstall these applications.
+bThis product key can only be used to add features to Windows. It can't be used to install Windows.
+ARM64
+Windows Setup=Installing Windows will affect these devices or applications:
+sAlthough these problems won't stop Windows from installing, some applications or devices might not work in Windows.)Close Windows Setup and do the following:
+These devices won't work until their drivers are updated. After Windows installs, check Windows Update for device drivers. If this doesn't work, contact the device manufacturer.
+LIf you don't take care of these things, Windows might not finish installing.
+<This product key didn't work. Please check it and try again.
+This product key doesn't match the edition that you're trying to install. Check the edition of Windows you're trying to install and get a product key that will work with it.IWe couldn't verify the product key. Please check your installation media.
+XThis product key is an upgrade key and can't be used to install this edition of Windows.
+This product is an upgrade key and can only be used from your current version of Windows. Start Windows Setup from your current version of Windows.
+&Close
+*Your upgrade may take a while to complete.
+More info
+Beginning installation
+Installing Windows
+Upgrading Windows
+Installing Windows
+Upgrading WindowsBYour computer will restart several times. This might take a while.
+Collecting information
+Installing Windows was canceled1Any changes made to your computer won't be saved.
+QTo install this version of Windows, the system drive needs to be 52 GB or larger.
+&Next5Program: %1!s!<br />Publisher: %2!s!<br />Path: %3!s!
+Not Available
+We found some applications or devices that might have some problems. Take care of the problems listed in %1!s!, and then restart Windows Setup
+CompatibilityIssues.txt
+:&Windows can't be installed on this drive.  (Show details)K&Windows can't be installed on drive %1!d! partition %2!d!.  (Show details)
+The selected drive is offline. The drive needs to be online to install Windows. Click OK to get the drive online or click Cancel to go back.
+Offline3We couldn't get the drive online. [Error: 0x%1!x!].
+>The product key looks like this: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+Welcome to Windows Setup
+Windows SetupYWe haven't finished installing Windows on this computer. Are you sure you want to cancel?
+Image Selection
+Description:
+%1!s!
+No images are available.BEnter your user name in the format domain\user or user@domain.com.
+Connect to %1!s!tSomething happened so we couldn't finish logging on to this computer. Here's more info about what happened: 0x%1!x!.
+Restarting in %1!ld! seconds
+Restarting in 1 secondJDeprecate notice of Windows OS deployment with Windows Deployment Services
+wPlease unplug the following external drive and click OK to restart your computer and finish installing Windows.
+%1!c!:
+This PC can't run Windows 11
+D&Upgrade: Install Windows and keep files, settings, and applications
+The files, settings, and applications are moved to Windows with this option. This option is only available when a supported version of Windows is already running on the computer.
+(&Custom: Install Windows only (advanced)
+The files, settings, and applications aren't moved to Windows with this option. If you want to make changes to partitions and drives, start the computer using the installation disc. We recommend backing up your files before you continue.
+%1!s! - %2!s!
+Welcome to Dynamic Update
+USetup can't be canceled right now because doing so might make your computer unstable.
+&Load driver
+/&Go online to install updates now (recommended)
+N&o thanks
+%1!s! MB
+%1!d! MB
+Partition %1!d!
+Total size
+Free space+What information will be sent to Microsoft?
+Total size
+Free space
+Primary
+Logical
+Unknown
+Extended
+Dynamic
+Time left: about %u minutes
+%u KB of %u KB downloaded
+Time left: about %u seconds
+Searching for updates
+Downloading updates
+Setup is restarting
+Can't connect to the Internet
+Your computer must be connected to the Internet to get updates. Do you want to try getting the updates again or continue without the updates?
+Getting updates was interrupted
+&Refresh
+&FormatkThis partition is too small. Make the size of this partition at least %1!u! MB or select another partition.
+EThis partition type isn't supported. Please select another partition.
+There needs to be at least %1!u! MB of free space on this partition. Free up space on this partition or select another partition.
+We couldn't install Windows in the location you chose. Please check your media drive. Here's more info about what happened: 0x%1!x!.
+System
+BasiclWe couldn't create a new partition or locate an existing one. For more information, see the Setup log files.
+%1!s! GB
+Partition %1!d!: %3!s!
+The amount of free space on the selected partition is smaller than the %1!u! MB recommendation. We recommend making it at least %1!u! MB or selecting another partition.
+OEM (Reserved)
+MSR (Reserved)
+Volume %2!s!%3!s!
+A media driver your computer needs is missing. This could be a DVD, USB or Hard disk driver. If you have a CD, DVD, or USB flash drive with the driver on it, please insert it now.
+Note: If the installation media for Windows is in the DVD drive or on a USB drive, you can safely remove it for this step.tNo device drivers were found. Make sure that the installation media contains the correct drivers, and then click OK.tNo new devices drivers were found. Make sure the installation media contains the correct drivers, and then click OK.{No signed device drivers were found. Make sure that the installation media contains the correct drivers, and then click OK.
+oDrive [%1!c!:] can't store temporary installation files. Select another drive and try installing Windows again.{Drive [%1!c!:] can't be found to store temporary installation files. Select another drive and try installing Windows again.
+Drive [%1!c!:] is a removable drive. Select a local, non-removable drive to store temporary installation files and try installing Windows again.
+Drive [%1!c!:] can't store temporary installation files because all of the partitions were selected to be deleted. Select another drive and try installing Windows again.
+Drive [%1!c!:] can't store temporary installation files because the partition was selected to be formatted. Select another drive and try installing Windows again.
+Drive [%1!c!:] doesn't have enough free space to store temporary installation files. Select another drive and try installing Windows again.
+Windows Setup couldn't find a hard drive to store temporary installation files to. Add a new local, non-removable drive and try installing Windows again.`Drive [%1!c!:] doesn't meet the necessary requirements for storing temporary installation files.
+<This product key only works on computers that are activated.
+HWe couldn't find any drives. To get a storage driver, click Load driver.
+%d minute left
+%d minutes left
+Windows can only be installed on a partition with NTFS formatting. You can reformat or use convert.exe to change this partition to NTFS. Otherwise, select another partition.WWindows can't be installed to this location because it has one or more dynamic volumes.FRestart your computer and verify that your drives are enabled in BIOS.
+YWe couldn't install the [%1!s!] device driver. Contact your vendor for an updated driver.
+(Unknown Driver)
+Load driver2You can only enter a numeric number in this field.<We couldn't format the selected partition. [Error: 0x%1!x!].<We couldn't extend the selected partition. [Error: 0x%1!x!].<We couldn't delete the selected partition. [Error: 0x%1!x!].5We couldn't create a new partition. [Error: 0x%1!x!].FWindows can't be installed to this location. Select another partition.>This location is invalid. Select a location again to continue.
+&Delete
+E&xtend
+Help and Support
+&What do these settings mean?
+What do these settings mean?
+Drive %1!d! %2!s! (%3!c!:)
+ Tell me more about these options
+To install the device driver for your drive, insert the installation media containing the driver files, and then click OK.
+Note: The installation media can be a CD, DVD, or USB flash drive.
+(Browse to the driver, and then click OK.
+Driver listqNo device drivers were found. Make sure that the installation media contains the correct drivers, and then retry.
+This partition might contain important files or applications from your computer manufacturer. If you delete this partition, any data stored on it will be lost.
+MIf you continue and extend a partition, you won't be able to change it later.
+This partition might contain important files or applications from your computer manufacturer. If you format this partition, any data stored on it will be lost.
+Drive %1!d! Unallocated Space
+Unavailable#The size must be at least %1!d! MB."The size must be at most %1!d! MB.
+Drive %1!d!
+Partition %1!d!
+Partition %1!d! (%2!c!:)
+%1!s!, %2!s!
+Click here to add user accounts
+Drive %1!d! %2!s!
+Drive %1!d!
+!&Tell me more about these options-Click here to select where to install Windows"Click here to pick a computer name
+&Restart now
+Drive options (&advanced)
+Windows Setup
+Windows Setup - %s
+If the partition you've chosen contains files from a previous Windows installation, these files and folders will be moved to a folder named Windows.old. You'll be able to access Windows.old, but you won't be able to use your previous version of Windows.
+Getting your data ready to move
+Installation partition
+Copying files
+Getting Windows PE ready
+Are you sure you want to quit?BYour computer will restart several times. This might take a while.>Stay at your computer until the discs are finished being read.'Insert Windows installation disc %1!d!.DThe wrong disc was inserted. Insert Windows installation disc %1!d!.
+Windows Setup
+ (To select another partition, click Back.
+ALPHA
+ALPHA64
+IA32_ON_WIN64
+Unknown
+Operating system
+Language
+Architecture
+Date modified
+%1!s! %2!s!
+Product key edit control
+Size in megabytes Edit Control
+Collecting files
+Copying Windows files
+Expanding the boot files
+Expanding Windows
+Assembling Windows features
+Assembling language features
+Applying Windows updates
+Applying other updates
+Identifying hardware
+Initializing Windows
+Getting the computer ready
+Upgrading Windows
+Initializing the computer
+Cleaning temporary files
+Deleting boot folder
+Sending diagnostic information,Collecting files, settings, and applications$Getting files ready for installation
+Installing features
+Installing updates
+Installing features and updates
+Finishing up4Almost done moving files, settings, and applications
+%1!s! %2!s!
+%1!s! (%2!d!%%) %3!s!
+Updating drivers
+Installing drivers
+Windows setup couldn't download the updates at this time. The latest updates will be available after setup completes through Microsoft Update.
+en-US
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,m0u9BqVLPQs+QsDpSuUzPZiV+kzUumK3kCK4vTkbG34=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+w%591
+r70N|G
+2O.3_
+20220713095419.628Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:86DF-4BBC-93351%0#
+Microsoft Time-Stamp Service
+bG6vf;
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192744Z
+230126192744Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:86DF-4BBC-93351%0#
+Microsoft Time-Stamp Service0
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+=ccgT
+'];,|P
+F-B7Y
+m{"=4
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:86DF-4BBC-93351%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220713093642Z
+20220714093642Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+bG6vf;
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+bG6vf;
+DBLtV|f
+'M$z(
+,Q}E@

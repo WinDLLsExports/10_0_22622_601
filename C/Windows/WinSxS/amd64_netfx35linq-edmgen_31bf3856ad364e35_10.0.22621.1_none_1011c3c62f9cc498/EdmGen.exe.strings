@@ -1,0 +1,1412 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+AG<$:
+i,W(]
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+,$ccV%7'*-
+='J9@
+_^c+c
+ kC>8k)
+t*9wu
+ApplicationLogo
+ArgumentNameListSeperator_
+BadlyFormedParameterc
+CreatingConceptualMetadata
+EdmSchemaErrorSeverityError
+EdmSchemaErrorSeverityUnknown
+EdmSchemaErrorSeverityWarning
+Example1
+Example1Description
+Example2
+Example2Description
+Example3
+Example3Description
+ExampleTitle
+FileExtensionMissing
+FileExtensionNotValid
+FileUnknown
+GenerationComplete
+InvalidEntityContainerName
+InvalidEntityContainerNameFromProject
+InvalidEnumParamValue
+InvalidFileType
+InvalidNamespaceName
+InvalidNamespaceNameFromProject
+InvalidParamSwitch
+LoadingDatabaseInfo
+MissingFileName
+MissingModeDependentProjectGeneratedParameterPlural
+MissingModeDependentProjectGeneratedParameterSingular
+MissingModeDependentRequiredParameterPlural
+MissingModeDependentRequiredParameterSingular
+MissingRequiredParam
+MslWithoutCsdlOrSsdl
+NoArguments
+NoSchemaFilesProvided
+PathArgumentIsNotValid
+ProviderManifestTokenMissing
+TooManyFilesForParameter
+UnableToFindSpecifiedDirPath
+UnableToFindSuitableStorageSpaceEntityContainer
+UsageConnectionStingDescription
+UsageConnectionStringValueName
+UsageDescriptionAndShortForm
+UsageEntityContainerDescription
+UsageFileValueName
+UsageHelpDescription
+UsageInCsdlDescription
+UsageInMslDescription
+UsageInSsdlDescription
+UsageLanguageCSharpDescription
+UsageLanguageVbDescription
+UsageModeEntityClassGenerationDescription
+UsageModeFromSsdlGenerationDescription
+UsageModeFullGenerationDescription
+UsageModeValidateArtifactsDescription
+UsageModeViewGenerationDescription
+UsageNameAndEnum
+UsageNameAndValueName
+UsageNamespaceDescription
+UsageNoLogoDescription
+UsageOutCsdlDescription
+UsageOutMslDescription
+UsageOutObjectLayerDescription
+UsageOutSsdlDescription
+UsageOutViewsDescription
+UsageProjectDescription
+UsageProviderDescription
+UsageRefCsdlDescription
+UsageStringValueName
+UsageTitle
+ValidationComplete
+WritingCsdlFile
+WritingMslFile
+WritingObjectLayerFile
+WritingSsdlFile
+WritingViewsFile
+ZeroFilesForParameter
+]Microsoft (R) {0} version {1}
+Copyright (C) 2008 Microsoft Corporation. All rights reserved.
+The parameter '{0}' is not a correctly formed parameter.  All switches must begin with '/' and separate the name from the value with ':'.
+/Creating conceptual layer from storage layer...
+error
+unknown
+warning
+{0} /mode:FullGeneration /project:Northwind /provider:System.Data.SqlClient /connectionstring:"server=.\sqlexpress;integrated security=true; database=northwind"
+CTo generate a full Entity Model from the Northwind sample database.
+F{0} /mode:FromSSDLGeneration /inssdl:Northwind.ssdl /project:Northwind
+7To generate an Entity Model starting from an ssdl file.
+_{0} /mode:ValidateArtifacts  /inssdl:Northwind.ssdl /inmsl:Northwind.msl /incsdl:Northwind.csdl
+To validate an Entity Model.
+Examples
+QThe argument '{0}' is missing a file extension.  The required extension is '{1}'.
+kThe extension '{0}' specified as part of the argument '{1}' is not valid.  The required extension is '{2}'.
+<File Unknown>
+/Generation Complete -- {0} errors, {1} warnings
+]The /entitycontainer: name provided '{0}' is empty or contains characters that are not valid.
+The /project: value provided '{0}' creates an EntityContainer name of '{1}' which is not a valid EntityContainer name.  If you would like to continue to use the same project name please specify a valid EntityContainer name using the /entitycontainer: parameter.
+[Parameter Value '{0}' is not valid for the parameter '{1}'.  Valid values are one of '{2}'.
+_A file with the extension '{0}' was given for argument '{1}'.  The required extension is '{2}'.
+RThe /namespace: provided '{0}' is empty or contains characters that are not valid.
+The /project: value provided '{0}' creates an namespace name of '{1}' which is not a valid namespace name.  If you would like to continue to use the same project name please specify a valid namespace name using the /namespace: parameter.
+$Parameter switch '{0}' is not valid.
+Loading database information...
+LThe path '{0}' specified in the argument '{1}' does not include a file name.
+mThe argument '{0}' is missing.  The mode '{1}' requires either the 'project' argument or the arguments '{2}'.
+lThe argument '{0}' is missing.  The mode '{1}' requires either the 'project' argument or the '{2}' argument.
+LThe argument '{0}' is missing.  The mode '{1}' requires the arguments '{2}'.
+KThe argument '{0}' is missing.  The mode '{1}' requires the argument '{2}'.
+(The required parameter '{0}' is missing.
+kIn order to validate the given 'inmsl' mappings, both the 'incsdl' and 'inssdl' arguments must be provided.
+FNo arguments were given, use the /help argument for usage information.
+CThe mode '{0}' requires at least one 'incsdl' or 'inssdl' argument.
+MThe path '{0}' given for the argument '{1}' is not a valid file or directory.
+zOne or more of the ssdl files are missing the ProviderManifestToken attribute, please use the /connectionstring: argument.
+The argument '{0}' specifies {1} files.  The mode '{2}' requires the argument specify exactly one file.  If the argument is a directory be sure there is only one file with the extension '{3}' in it.
+MThe directory '{0}' specified in the argument '{1}' is not a valid directory.
+0Unable to find a storage space entity container.
+GThe connection string to the database that you would like to connect to
+connection string
+{0} (short form: /{1})
+?The name to use for the EntityContainer in the conceptual model
+Display the usage message
+*The file to read the conceptual model from
+!The file to read the mapping from
+'The file to read the storage model from
+#Generate code using the C# language
+#Generate code using the VB language
+!Generate objects from a csdl file
+1Generate msl, csdl, and objects from an ssdl file
+7Generate ssdl, msl, csdl, and objects from the database
+&Validate the ssdl, msl, and csdl files
+8Generate mapping views from ssdl, msl, and csdl files   
+/{0}:{1}
+/{0}:<{1}>
+8The namespace name to use for the conceptual model types
+Suppress copyright message
+3The file to write the generated conceptual model to
+*The file to write the generated mapping to
+/The file to write the generated object layer to
+0The file to write the generated storage model to
+3The file to write the pre generated view objects to
+3The base name to be used for all the artifact files
+EThe name of the Ado.Net data provider to be used for ssdl generation.
+GA csdl file that contains types that the /incsdl file is dependent upon
+string
+{0} Options
+/Validation Complete -- {0} errors, {1} warnings
+Writing csdl file...
+Writing msl file...
+Writing object layer file...
+Writing ssdl file...
+Writing views file...
+No files were specified for the argument '{0}'.  The mode '{1}' requires the argument specify exactly one file.  If the current argument value is a directory be sure there is a file with the extension '{2}' in it. 
+v2.0.50727
+#Strings
+#GUID
+#Blob
+q,]84
+'-w9A
+"1v<1
+/767U7m7
+8?8W8
+d9m9}9
+;);K;l;
+<%<:<J<b<
+9!:e:l:
+<Module>
+EdmGen.exe
+ClassGenerationLanguage
+System.Data.Entity.Design
+ArgumentProperty
+System.Data.Entity.Design.EdmExe.CommandLine
+ArgumentPropertyForCollections
+CommandLineArguments
+EnumArgumentDescriptionAttribute
+LineWrap
+StringSegment
+ArgumentAttribute
+ParseResult
+UsageExample
+DirectoryExpandingFilePathCollection
+System.Data.Entity.Design.EdmExe
+EdmGen
+GenerationException
+EdmGenApplicationMode
+EdmGenErrorCode
+EdmGenExeCommandLineArguments
+Extensions
+Strings
+EdmGenExeRes
+Error
+ParseParameterException
+XmlReaderCollection
+FX20Assembly
+FX35Assembly
+FXAssembly
+ThisAssembly
+AssemblyRef
+ResDescriptionAttribute
+ResCategoryAttribute
+mscorlib
+System
+Object
+Attribute
+ValueType
+System.Collections.Generic
+ICollection`1
+IEnumerable`1
+System.Collections
+IEnumerable
+Exception
+IDisposable
+System.Xml
+XmlReader
+System.ComponentModel
+DescriptionAttribute
+CategoryAttribute
+value__
+CSharp
+System.Reflection
+PropertyInfo
+_propertyInfo
+_argumentAttribute
+_instance
+SortedList`2
+_enumerationDescriptions
+.ctor
+get_HasValue
+SetValue
+GetValueAsObject
+GetEnumNameString
+get_Instance
+get_PropertyInfo
+get_PropertyType
+get_IsRequired
+get_Name
+get_ShortForm
+get_IsSwitchOnly
+get_EnumerationDescriptions
+get_ValueName
+get_Description
+Create
+HasValue
+Instance
+PropertyType
+IsRequired
+ShortForm
+IsSwitchOnly
+EnumerationDescriptions
+ValueName
+Description
+ARG_NOLOGO_1
+ARG_NOLOGO_2
+Dictionary`2
+_argumentProperties
+_showUsage
+_noLogo
+Parse
+GetNoLogoArgumentValue
+DisplayLogo
+GetUsageExamples
+SplitNameAndValue
+Initialize
+get_ArgumentProperties
+get_Help
+set_Help
+get_NoLogo
+set_NoLogo
+ShowUsage
+GetUsageTitle
+List`1
+KeyValuePair`2
+Display
+DisplayWrappedMessage
+DisplayCentered
+GetExeName
+GetExeVersion
+SafeGetConsoleBufferWidth
+ArgumentProperties
+NoLogo
+_enumValue
+_description
+_ordinal
+get_Ordinal
+get_EnumValue
+Ordinal
+EnumValue
+_source
+_cleanWrap
+_segments
+DoWrap
+get_CleanWrap
+get_Source
+get_Count
+get_Item
+CollapseWhitespace
+CleanWrap
+Source
+Count
+_startIndex
+_endIndex
+get_StartIndex
+get_EndIndex
+get_Length
+StartIndex
+EndIndex
+Length
+_name
+_shortForm
+_valueName
+_isRequired
+_isSwitchOnly
+_valueWhenSwitchIsPresent
+get_ValueWhenSwitchIsPresent
+ValueWhenSwitchIsPresent
+Normal
+System.Core
+Func`2
+_example
+get_Example
+Example
+_expandedPaths
+_argumentName
+_expansionExtension
+Clear
+Contains
+CopyTo
+get_IsReadOnly
+Remove
+IEnumerator`1
+GetEnumerator
+IEnumerator
+System.Collections.IEnumerable.GetEnumerator
+IsReadOnly
+ConsoleColor
+ERROR_COLOR
+WARNING_COLOR
+MISSING_PROVIDER_MANIFEST_TOKEN_ERROR_CODE
+_totalWarningCount
+_totalErrorCount
+_arguments
+DoViewGeneration
+DoValidateArtifacts
+DoFullGeneration
+DoFromSsdlGeneration
+System.Data.Entity
+System.Data.Metadata.Edm
+EntityContainer
+GenerateMslAndCsdl
+DoEntityClassGeneration
+GenerateViewCode
+EdmItemCollection
+StoreItemCollection
+GenerateObjectLayerCode
+CreateStoreItemCollection
+LoadSsdl
+GenerateSsdl
+LanguageOption
+GetLanguageOption
+IList`1
+EdmSchemaError
+HandleErrors
+HasProviderManifestMissingErrors
+DisplayAndCountErrors
+EdmSchemaErrorSeverity
+GetConsoleColorAndIncrementCount
+DisplayCompletionMessage
+CreateEdmSchemaErrorMessage
+DisplayEdmSchemaErrorMessage
+ExtractFullExceptionMessage
+FallbackToDisplayableCulture
+FullGeneration
+FromSsdlGeneration
+EntityClassGeneration
+ViewGeneration
+ValidateArtifacts
+BaseValue
+ExceptionCaught
+MissingStoreEntityContainer
+InvalidEnumParamValue
+MissingRequiredParam
+BadlyFormedParameter
+InvalidFileType
+PathArgumentIsNotValid
+NoArguments
+MslWithoutCsdlOrSsdl
+NoSchemaFilesProvided
+ZeroFilesForParameter
+TooManyFilesForParameter
+InvalidNamespaceNameFromProject
+InvalidEntityContainerNameFromProject
+InvalidParamSwitch
+FileExtensionMissing
+FileExtensionNotValid
+InvalidNamespaceName
+InvalidEntityContainerName
+UnableToFindSpecifiedDirPath
+MissingFileName
+ProviderManifestTokenMissing
+STORE_NAMESPACE_SUFFIX
+SSDL_EXTENSION
+MSL_EXTENSION
+CSDL_EXTENSION
+CS_EXTENSION
+VB_EXTENSION
+OBJECT_LAYER_NAME_PART
+VIEWS_NAME_PART
+CONTEXT_NAME_PART
+ARG_PROVIDER
+ARG_CONNECTIONSTRING
+ARG_REFCSDL
+ARG_INCSDL
+ARG_INMSL
+ARG_INSSDL
+ARG_OUTCSDL
+ARG_OUTMSL
+ARG_OUTSSDL
+ARG_OUTOBJECTLAYER
+ARG_OUTVIEWS
+_mode
+_project
+_provider
+_connectionString
+_inCsdls
+_inMsls
+_inSsdls
+_outCsdl
+_outMsl
+_outSsdl
+_outObjectLayerGeneration
+_outViews
+_language
+_namespace
+_entityContainer
+_refCsdls
+get_Mode
+set_Mode
+get_Project
+set_Project
+get_Provider
+set_Provider
+get_ConnectionString
+set_ConnectionString
+get_InCsdls
+get_RefCsdls
+get_InMsls
+get_InSsdls
+get_OutCsdl
+set_OutCsdl
+get_OutMsl
+set_OutMsl
+get_OutSsdl
+set_OutSsdl
+get_OutObjectLayerGeneration
+set_OutObjectLayerGeneration
+get_OutViews
+set_OutViews
+get_Language
+set_Language
+get_CsdlNamespace
+set_CsdlNamespace
+get_SsdlNamespace
+get_EntityContainer
+set_EntityContainer
+AutoPopulateAndValidate
+ValidateOneAndOnlyOneFileValue
+GetAppSetting
+PopulateProjectGeneratedValues
+GetCodeFileExtension
+ValidateProjectCompensatingParameters
+ValidateModeInputParameters
+Func`4
+ValidateRequiredParameters
+ValidateFileExtension
+IsValidNamespaceName
+IsValidEntityContainerName
+CreateValidStoreEntityContainer
+ValidateDirectoryExists
+ValidatePathHasFilename
+IsModeIn
+Project
+Provider
+ConnectionString
+InCsdls
+RefCsdls
+InMsls
+InSsdls
+OutCsdl
+OutMsl
+OutSsdl
+OutObjectLayerGeneration
+OutViews
+Language
+CsdlNamespace
+SsdlNamespace
+GetSeparatedList
+ApplicationLogo
+UsageTitle
+get_LoadingDatabaseInfo
+get_WritingSsdlFile
+get_CreatingConceptualMetadata
+get_WritingCsdlFile
+get_WritingMslFile
+get_WritingObjectLayerFile
+get_WritingViewsFile
+GenerationComplete
+ValidationComplete
+UsageNameAndValueName
+UsageNameAndEnum
+UsageDescriptionAndShortForm
+get_UsageModeFullGenerationDescription
+get_UsageModeFromSsdlGenerationDescription
+get_UsageModeEntityClassGenerationDescription
+get_UsageModeViewGenerationDescription
+get_UsageModeValidateArtifactsDescription
+get_UsageProjectDescription
+get_UsageProviderDescription
+get_UsageHelpDescription
+get_UsageConnectionStingDescription
+get_UsageRefCsdlDescription
+get_UsageInCsdlDescription
+get_UsageInMslDescription
+get_UsageInSsdlDescription
+get_UsageOutCsdlDescription
+get_UsageOutMslDescription
+get_UsageOutSsdlDescription
+get_UsageOutObjectLayerDescription
+get_UsageOutViewsDescription
+get_UsageLanguageCSharpDescription
+get_UsageLanguageVbDescription
+get_UsageNamespaceDescription
+get_UsageEntityContainerDescription
+get_UsageNoLogoDescription
+get_UsageStringValueName
+get_UsageConnectionStringValueName
+get_UsageFileValueName
+get_ExampleTitle
+Example1
+get_Example1Description
+Example2
+get_Example2Description
+Example3
+get_Example3Description
+get_NoArguments
+MissingModeDependentRequiredParameterSingular
+MissingModeDependentRequiredParameterPlural
+MissingModeDependentProjectGeneratedParameterSingular
+MissingModeDependentProjectGeneratedParameterPlural
+get_ArgumentNameListSeperator
+get_UnableToFindSuitableStorageSpaceEntityContainer
+get_EdmSchemaErrorSeverityError
+get_EdmSchemaErrorSeverityWarning
+get_EdmSchemaErrorSeverityUnknown
+get_FileUnknown
+get_MslWithoutCsdlOrSsdl
+get_ProviderManifestTokenMissing
+LoadingDatabaseInfo
+WritingSsdlFile
+CreatingConceptualMetadata
+WritingCsdlFile
+WritingMslFile
+WritingObjectLayerFile
+WritingViewsFile
+UsageModeFullGenerationDescription
+UsageModeFromSsdlGenerationDescription
+UsageModeEntityClassGenerationDescription
+UsageModeViewGenerationDescription
+UsageModeValidateArtifactsDescription
+UsageProjectDescription
+UsageProviderDescription
+UsageHelpDescription
+UsageConnectionStingDescription
+UsageRefCsdlDescription
+UsageInCsdlDescription
+UsageInMslDescription
+UsageInSsdlDescription
+UsageOutCsdlDescription
+UsageOutMslDescription
+UsageOutSsdlDescription
+UsageOutObjectLayerDescription
+UsageOutViewsDescription
+UsageLanguageCSharpDescription
+UsageLanguageVbDescription
+UsageNamespaceDescription
+UsageEntityContainerDescription
+UsageNoLogoDescription
+UsageStringValueName
+UsageConnectionStringValueName
+UsageFileValueName
+ExampleTitle
+Example1Description
+Example2Description
+Example3Description
+ArgumentNameListSeperator
+UnableToFindSuitableStorageSpaceEntityContainer
+EdmSchemaErrorSeverityError
+EdmSchemaErrorSeverityWarning
+EdmSchemaErrorSeverityUnknown
+FileUnknown
+ArgumentNull
+ArgumentOutOfRange
+NotImplemented
+NotSupported
+_errorCode
+get_ErrorCode
+ErrorCode
+_readers
+Dispose
+Version
+Title
+DefaultAlias
+Copyright
+InformationalVersion
+DailyBuildNumber
+EcmaPublicKey
+EcmaPublicKeyToken
+EcmaPublicKeyFull
+Mscorlib
+SystemData
+SystemDataOracleClient
+SystemRuntimeRemoting
+SystemWindowsForms
+SystemXml
+MicrosoftPublicKey
+MicrosoftPublicKeyToken
+MicrosoftPublicKeyFull
+SharedLibPublicKey
+SharedLibPublicKeyToken
+SharedLibPublicKeyFull
+SystemComponentModelDataAnnotations
+SystemConfiguration
+SystemConfigurationInstall
+SystemDeployment
+SystemDesign
+SystemDirectoryServices
+SystemDrawingDesign
+SystemDrawing
+SystemEnterpriseServices
+SystemManagement
+SystemMessaging
+SystemRuntimeSerializationFormattersSoap
+SystemSecurity
+SystemServiceProcess
+SystemWeb
+SystemWebAbstractions
+SystemWebDynamicData
+SystemWebDynamicDataDesign
+SystemWebEntityDesign
+SystemWebExtensions
+SystemWebExtensionsDesign
+SystemWebMobile
+SystemWebRegularExpressions
+SystemWebRouting
+SystemWebServices
+MicrosoftVisualStudio
+MicrosoftVisualStudioWindowsForms
+VJSharpCodeProvider
+ASPBrowserCapsPublicKey
+ASPBrowserCapsFactory
+MicrosoftVSDesigner
+MicrosoftVisualStudioWeb
+MicrosoftWebDesign
+MicrosoftVSDesignerMobile
+MicrosoftJScript
+replaced
+GetLocalizedString
+loader
+System.Resources
+ResourceManager
+resources
+GetLoader
+System.Globalization
+CultureInfo
+get_Culture
+get_Resources
+GetString
+GetObject
+Culture
+Resources
+attribute
+instance
+value
+System.Runtime.InteropServices
+OutAttribute
+argumentHelpEntries
+maxNameLength
+firstLinePadding
+restOfLinesPadding
+firstLineWidth
+restOfLinesWidth
+message
+fullWidth
+enumValue
+resourceName
+ordinal
+source
+maxWidth
+index
+startIndex
+endIndex
+descriptionResourceName
+valueNameResourceName
+isRequired
+shortForm
+isSwitchOnly
+valueWhenSwitchIsPresent
+description
+example
+argumentName
+expansionExtension
+array
+arrayIndex
+storeEntityContainer
+ssdlFile
+mslFile
+csdlFile
+ssdlPaths
+mslPaths
+csdlPaths
+items
+storeCollection
+additionalSchemas
+ssdlFilePaths
+errors
+error
+severity
+warningCount
+errorCount
+filePath
+column
+errorCode
+argumentValues
+validExtension
+settingName
+defaultIfNotAvailable
+arumentNames
+argumentNames
+singularMessage
+pluralMessage
+requiredExtension
+namespaceName
+entityContainerName
+modes
+ParamArrayAttribute
+requiredArguments
+separator
+paramName
+paths
+category
+ComVisibleAttribute
+CLSCompliantAttribute
+AssemblyTitleAttribute
+AssemblyDescriptionAttribute
+AssemblyDefaultAliasAttribute
+AssemblyCompanyAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyVersionAttribute
+AssemblyFileVersionAttribute
+AssemblyInformationalVersionAttribute
+SatelliteContractVersionAttribute
+NeutralResourcesLanguageAttribute
+AssemblyDelaySignAttribute
+AssemblyKeyFileAttribute
+System.Diagnostics
+DebuggableAttribute
+DebuggingModes
+System.Runtime.CompilerServices
+CompilationRelaxationsAttribute
+RuntimeCompatibilityAttribute
+ExtensionAttribute
+GetValue
+String
+IsNullOrEmpty
+get_InnerException
+TargetInvocationException
+Boolean
+get_IsEnum
+Array
+GetValues
+get_Current
+ToString
+StringComparison
+Equals
+MoveNext
+System.Text
+StringBuilder
+GetNames
+Append
+RuntimeTypeHandle
+GetTypeFromHandle
+IsAssignableFrom
+ValueCollection
+get_Values
+Enumerator
+ContainsKey
+set_Item
+get_Value
+get_Key
+get_Chars
+IndexOf
+Substring
+Empty
+StringComparer
+get_OrdinalIgnoreCase
+IEqualityComparer`1
+GetType
+BindingFlags
+GetProperties
+MemberInfo
+GetCustomAttributes
+Concat
+Console
+Write
+WriteLine
+Assembly
+GetExecutingAssembly
+AssemblyName
+GetName
+get_Version
+get_BufferWidth
+AttributeUsageAttribute
+AttributeTargets
+DefaultMemberAttribute
+IsWhiteSpace
+StructLayoutAttribute
+LayoutKind
+Invoke
+System.IO
+Exists
+GetExtension
+Directory
+SearchOption
+GetFiles
+AddRange
+STAThreadAttribute
+get_Message
+ResetColor
+MetadataItemCollectionFactory
+CreateEdmItemCollection
+System.Data.Mapping
+StorageMappingItemCollection
+CreateStorageMappingItemCollection
+EntityViewGenerator
+Validate
+EntityModelSchemaGenerator
+GenerateMetadata
+WriteStorageMapping
+WriteModelSchema
+GenerateViews
+EntityClassGenerator
+GenerateCode
+System.Linq
+Enumerable
+ItemCollection
+System.Collections.ObjectModel
+ReadOnlyCollection`1
+GetItems
+EntityStoreSchemaGenerator
+GenerateStoreMetadata
+WriteStoreSchema
+get_SchemaLocation
+get_Severity
+set_ForegroundColor
+get_ForegroundColor
+Int32
+get_Line
+get_Column
+EdmError
+get_CurrentCulture
+IFormatProvider
+Format
+PadLeft
+Environment
+get_NewLine
+System.Threading
+Thread
+get_CurrentThread
+get_CurrentUICulture
+GetConsoleFallbackUICulture
+set_CurrentUICulture
+Encoding
+get_OutputEncoding
+get_CodePage
+TextInfo
+get_TextInfo
+get_OEMCodePage
+get_ANSICodePage
+.cctor
+System.Configuration
+ConfigurationManager
+System.Collections.Specialized
+NameValueCollection
+get_AppSettings
+ArgumentException
+StringReader
+TextReader
+GetEntityContainer
+GetDirectoryName
+GetFileName
+<IsModeIn>b__0
+CompilerGeneratedAttribute
+Where
+ArgumentNullException
+ArgumentOutOfRangeException
+NotImplementedException
+NotSupportedException
+set_DescriptionValue
+get_Assembly
+Interlocked
+CompareExchange
+EdmGenExeRes.resources
+-nologo
+/nologo
+{0} {1:0000}: {2}
+{0}({1},{2}) : {3} {4:0000}: {5}
+outcsdl
+.csdl
+outmsl
+outssdl
+.ssdl
+outobjectlayer
+outviews
+.Store
+incsdl
+inssdl
+Namespace
+EntityContainer
+connectionstring
+inmsl
+EdmGenExeDefaultProvider
+System.Data.SqlClient
+.ObjectLayer
+.Views
+Context
+validEntityContainerName
+validNamespace
+<Schema Namespace='SqlClient' Provider='System.Data.SqlClient' ProviderManifestToken='2005' Alias='Self' xmlns='http://schemas.microsoft.com/ado/2006/04/edm/ssdl'>
+                                  <EntityContainer Name='Temp'/>
+                            </Schema>
+refcsdl
+ApplicationLogo
+UsageTitle
+LoadingDatabaseInfo
+WritingSsdlFile
+CreatingConceptualMetadata
+WritingCsdlFile
+WritingMslFile
+WritingObjectLayerFile
+WritingViewsFile
+GenerationComplete
+ValidationComplete
+UsageNameAndValueName
+UsageNameAndEnum
+UsageDescriptionAndShortForm
+UsageModeFullGenerationDescription
+UsageModeFromSsdlGenerationDescription
+UsageModeEntityClassGenerationDescription
+UsageModeViewGenerationDescription
+UsageModeValidateArtifactsDescription
+UsageProjectDescription
+UsageProviderDescription
+UsageHelpDescription
+UsageConnectionStingDescription
+UsageRefCsdlDescription
+UsageInCsdlDescription
+UsageInMslDescription
+UsageInSsdlDescription
+UsageOutCsdlDescription
+UsageOutMslDescription
+UsageOutSsdlDescription
+UsageOutObjectLayerDescription
+UsageOutViewsDescription
+UsageLanguageCSharpDescription
+UsageLanguageVbDescription
+UsageNamespaceDescription
+UsageEntityContainerDescription
+UsageNoLogoDescription
+UsageStringValueName
+UsageConnectionStringValueName
+UsageFileValueName
+ExampleTitle
+Example1
+Example1Description
+Example2
+Example2Description
+Example3
+Example3Description
+NoArguments
+BadlyFormedParameter
+InvalidParamSwitch
+InvalidEnumParamValue
+MissingRequiredParam
+MissingModeDependentRequiredParameterSingular
+MissingModeDependentRequiredParameterPlural
+MissingModeDependentProjectGeneratedParameterSingular
+MissingModeDependentProjectGeneratedParameterPlural
+ArgumentNameListSeperator
+UnableToFindSuitableStorageSpaceEntityContainer
+MissingFileName
+UnableToFindSpecifiedDirPath
+PathArgumentIsNotValid
+InvalidFileType
+FileExtensionNotValid
+FileExtensionMissing
+EdmSchemaErrorSeverityError
+EdmSchemaErrorSeverityWarning
+EdmSchemaErrorSeverityUnknown
+FileUnknown
+ZeroFilesForParameter
+TooManyFilesForParameter
+NoSchemaFilesProvided
+MslWithoutCsdlOrSsdl
+InvalidEntityContainerName
+InvalidEntityContainerNameFromProject
+InvalidNamespaceName
+InvalidNamespaceNameFromProject
+ProviderManifestTokenMissing
+EdmGenExeRes
+-nologo
+/nologo
+.Store
+.ssdl
+.csdl
+.ObjectLayer
+.Views
+Context
+provider
+connectionstring
+refcsdl
+incsdl
+inmsl
+inssdl
+outcsdl
+outmsl
+outssdl
+outobjectlayer
+outviews
+2.0.0.0
+3.5.0.0
+EdmGen.exe
+ Microsoft Corporation.  All rights reserved.
+3.5.30729.9151
+b77a5c561934e089
+00000000000000000400000000000000
+mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+b03f5f7f11d50a3a
+002400000480000094000000060200000024000052534131000400000100010007D1FA57C4AED9F0A32E84AA0FAEFD0DE9E8FD6AEC8F87FB03766C834C99921EB23BE79AD9D5DCC1DD9AD236132102900B723CF980957FC4E177108FC607774F29E8320E92EA05ECE4E821C0A5EFE8F1645C4C0C93C1AB99285D622CAA652C1DFAD63D745D6F2DE5F17E5EAF0FC4963D261C8A12436518206DC093344D5AD293
+31bf3856ad364e35
+0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9
+System.ComponentModel.DataAnnotations, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Configuration.Install, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Messaging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.Abstractions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Web.DynamicData, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Web.DynamicData.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Web.Entity.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Microsoft.VisualStudio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Microsoft.VisualStudio.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+b7bd7678b977bd8f
+ASP.BrowserCapsFactory, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b7bd7678b977bd8f
+Microsoft.VSDesigner, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Microsoft.VisualStudio.Web, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Microsoft.Web.Design.Client, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Microsoft.VSDesigner.Mobile, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+ApplicationLogo
+UsageTitle
+LoadingDatabaseInfo
+WritingSsdlFile
+CreatingConceptualMetadata
+WritingCsdlFile
+WritingMslFile
+WritingObjectLayerFile
+WritingViewsFile
+GenerationComplete
+ValidationComplete
+UsageNameAndValueName
+UsageNameAndEnum
+UsageDescriptionAndShortForm
+UsageModeFullGenerationDescription
+UsageModeFromSsdlGenerationDescription
+UsageModeEntityClassGenerationDescription
+UsageModeViewGenerationDescription
+UsageModeValidateArtifactsDescription
+UsageProjectDescription
+UsageProviderDescription
+UsageHelpDescription
+UsageConnectionStingDescription
+UsageRefCsdlDescription
+UsageInCsdlDescription
+UsageInMslDescription
+UsageInSsdlDescription
+UsageOutCsdlDescription
+UsageOutMslDescription
+UsageOutSsdlDescription
+UsageOutObjectLayerDescription
+UsageOutViewsDescription
+UsageLanguageCSharpDescription
+UsageLanguageVbDescription
+UsageNamespaceDescription
+UsageEntityContainerDescription
+UsageNoLogoDescription
+UsageStringValueName
+UsageConnectionStringValueName
+UsageFileValueName
+ExampleTitle
+Example1
+Example1Description
+Example2
+Example2Description
+Example3
+Example3Description
+NoArguments
+BadlyFormedParameter
+InvalidParamSwitch
+InvalidEnumParamValue
+MissingRequiredParam
+MissingModeDependentRequiredParameterSingular
+MissingModeDependentRequiredParameterPlural
+MissingModeDependentProjectGeneratedParameterSingular
+MissingModeDependentProjectGeneratedParameterPlural
+ArgumentNameListSeperator
+UnableToFindSuitableStorageSpaceEntityContainer
+MissingFileName
+UnableToFindSpecifiedDirPath
+PathArgumentIsNotValid
+InvalidFileType
+FileExtensionNotValid
+FileExtensionMissing
+EdmSchemaErrorSeverityError
+EdmSchemaErrorSeverityWarning
+EdmSchemaErrorSeverityUnknown
+FileUnknown
+ZeroFilesForParameter
+TooManyFilesForParameter
+NoSchemaFilesProvided
+MslWithoutCsdlOrSsdl
+InvalidEntityContainerName
+InvalidEntityContainerNameFromProject
+InvalidNamespaceName
+InvalidNamespaceNameFromProject
+ProviderManifestTokenMissing
+UsageHelpDescription
+nologo
+UsageNoLogoDescription
+AllowMultiple
+AllowMultiple
+U/System.Data.Entity.Design.EdmGenApplicationMode
+"UsageModeFullGenerationDescription
+U/System.Data.Entity.Design.EdmGenApplicationMode
+&UsageModeFromSsdlGenerationDescription
+U/System.Data.Entity.Design.EdmGenApplicationMode
+)UsageModeEntityClassGenerationDescription
+U/System.Data.Entity.Design.EdmGenApplicationMode
+"UsageModeViewGenerationDescription
+U/System.Data.Entity.Design.EdmGenApplicationMode
+%UsageModeValidateArtifactsDescription
+project
+UsageProjectDescription
+UsageStringValueName
+provider
+UsageProviderDescription
+UsageStringValueName
+connectionstring
+UsageConnectionStingDescription
+UsageConnectionStringValueName
+incsdl
+UsageInCsdlDescription
+UsageFileValueName
+refcsdl
+UsageRefCsdlDescription
+UsageFileValueName
+inmsl
+UsageInMslDescription
+UsageFileValueName
+inssdl
+UsageInSsdlDescription
+UsageFileValueName
+outcsdl
+UsageOutCsdlDescription
+UsageFileValueName
+outmsl
+UsageOutMslDescription
+UsageFileValueName
+outssdl
+UsageOutSsdlDescription
+UsageFileValueName
+outobjectlayer
+UsageOutObjectLayerDescription
+UsageFileValueName
+outviews
+UsageOutViewsDescription
+UsageFileValueName
+language
+U1System.Data.Entity.Design.ClassGenerationLanguage
+UsageLanguageCSharpDescription
+U1System.Data.Entity.Design.ClassGenerationLanguage
+UsageLanguageVbDescription
+namespace
+UsageNamespaceDescription
+UsageStringValueName
+entitycontainer
+UsageEntityContainerDescription
+UsageStringValueName
+EdmGen.exe
+Microsoft Corporation
+Microsoft
+ .NET Framework
+ Microsoft Corporation.  All rights reserved.
+3.5.30729.9151
+3.5.0.0
+en-US
+$f:\dd\tools\devdiv\EcmaPublicKey.snk
+WrapNonExceptionThrows
+RSDSX
+EdmGen.pdb
+_CorExeMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+000004b0
+Comments
+EdmGen.exe
+CompanyName
+Microsoft Corporation
+FileDescription
+EdmGen.exe
+FileVersion
+3.5.30729.9151
+InternalName
+EdmGen.exe
+LegalCopyright
+ Microsoft Corporation.  All rights reserved.
+OriginalFilename
+EdmGen.exe
+ProductName
+Microsoft
+ .NET Framework
+ProductVersion
+3.5.30729.9151
+Assembly Version
+3.5.0.0
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+201215213145Z
+211202213145Z0t1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Corporation0
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+230012+4630090
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+DLYwh
+bf&!D
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20110
+110708205909Z
+260708210909Z0~1
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+S0Q0O
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+R0P0N
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+Legal_policy_statement
+e_.,>
+D=xz#
+*?*kXIc
+QEX82q'
+WqVNHE
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 2011
+bU!60un
+EdmGen.ex
+http://www.microsoft.com0
+20210504074244.596Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:32BD-E3D5-3B1D1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+210114190222Z
+220411190222Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:32BD-E3D5-3B1D1%0#
+Microsoft Time-Stamp Service0
+eU4DD
+yPi o
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+100701213655Z
+250701214655Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+|hK,_
+$`2X`F
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+Legal_Policy_Statement
+oK0D$"<
+z.9Wv
+r~akow
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:32BD-E3D5-3B1D1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20210504024455Z
+20210505024455Z0w0=
+1/0-0
+1(0&0
+;i?Ms
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+1nd*S=N
+/IZ%!

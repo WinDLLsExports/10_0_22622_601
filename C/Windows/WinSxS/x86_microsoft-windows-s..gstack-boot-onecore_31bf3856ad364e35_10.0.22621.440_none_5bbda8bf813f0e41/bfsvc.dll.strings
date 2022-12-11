@@ -1,0 +1,1688 @@
+!This program cannot be run in DOS mode.
+Richy8 
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+api-ms-win-eventing-provider-l1-1-0.dll
+EventSetInformation
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+lntdll.dll
+RtlNtStatusToDosErrorNoTeb
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+RtlRegisterFeatureConfigurationChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlNotifyFeatureUsage
+NtQueryWnfStateData
+NtUpdateWnfStateData
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+onecore\internal\sdk\inc\wil\Staging.h
+WilStaging_02
+BFSVC
+Boot File Servicing AI
+message
+BFSVC: {message}
+onecore\base\wcp\plugins\bfsvcai\bfsvcai.cpp
+Windows::WCP::WCF::BfsvcInstaller::QueueComponent
+static_cast<DWORD>(1L)
+SYSTEM\CurrentControlSet\Control\SecureBoot\Servicing
+SYSTEM\CurrentControlSet\Control\SecureBoot\RestartRequiredForCredGuard
+Windows::WCP::WCF::BfsvcInstaller::CommitChanges
+$(runtime.windows)\boot
+Result
+System\Setup
+SystemSetupInProgress
+Local\SM0:%lu:%lu:%hs
+advapi32.dll
+BCD Warning: %ws
+BCD Error: %ws
+BCD: %ws
+BFSVC Warning: %s
+BFSVC Error: %s
+BFSVC: %s
+WARNING
+ERROR
+%-10ws%ws
+Failed to open file %s for read! Error code = %#x
+Unable to open file %s for read because the file or path does not exist
+Failed to get file size for %s! Error code = %#x
+File %s is too large!
+CreateFileMapping(%s) failed! Error code = %#x
+MapViewOfFile(%s) failed! Error code = %#x
+BfspPrintFileOwnerProcess: Failed to acquire debugprivilege
+BfspPrintFileOwnerProcess: Failed to open file!Last Error = %#x
+BfspPrintFileOwnerProcess: NtQueryInformationFilefailed! Status = %#x
+Printing processes using %s file.
+No process found using %s file.
+BfspPrintFileOwnerProcess: NtOpenProcess failed!Status = %#x
+BfspPrintFileOwnerProcess: NtQueryInformationProcessfailed in unexpected manner! Status = %#x
+BfspPrintFileOwnerProcess: Malloc failed!Size = %#x
+BfspPrintFileOwnerProcess: NtQueryInformationProcessfailed! Status = %#x
+Process Name = %s
+System
+SeDebugPrivilege
+\\?\GLOBALROOT
+Failed to get partition name. Status = %#x
+Logging boot file servicing to bootstat log %ws.
+Failed to log servicing event to bootstat %ws. Status: 0x%x
+FVEAPI.DLL
+Failed to load Fveapi.dll. HRESULT = [%x]
+FveGetStatusW
+Failed GetProcAddress for FveGetStatusW . HRESULT = [%x]
+FveOpenVolumeW
+Failed GetProcAddress for FveOpenVolumeW . HRESULT = [%x]
+FveAddAuthMethodInformation
+Failed GetProcAddress for FveAddAuthMethodInformation . HRESULT = [%x]
+FveCommitChanges
+Failed GetProcAddress for FveCommitChanges . HRESULT = [%x]
+FveCommitChangesEx
+Failed GetProcAddress for FveCommitChangesEx .
+FveCloseVolume
+Failed GetProcAddress for FveCloseVolume . HRESULT = [%x]
+FveGetAuthMethodGuids
+Failed GetProcAddress for FveGetAuthMethodGuids . HRESULT = [%x]
+FveGetAuthMethodInformation
+Failed GetProcAddress for FveGetAuthMethodInformation . HRESULT = [%x]
+FveKeyManagement
+Failed GetProcAddress for FveKeyManagement . HRESULT = [%x]
+InvalidArg
+Failed BfspOpenFveApi.FveApiFound = %d,HRESULT = [%x]
+BfspOpenFveApi
+Failed FveGetStatusW. HRESULT = [%x]
+FveGetStatusW
+BitLocker reseal not required.Flags = [%x]
+ResealNotRequired
+BitLocker reseal required for platform.FirmwareType: %d
+PCATFirmware
+FveOpenVolumeW failed.HRESULT = [%x]
+FveOpenVolumeW
+FveGetAuthMethodGuids failed.HRESULT = [%x]
+FveAuthMethodGuids
+BitLocker reseal not required.ProtectorGuidCount: %d
+NoProtectors
+Memory allocation failed.HRESULT = [%x]
+FveGetAuthMethodGuidsOutOfMemory
+FveGetAuthMethodGuids2
+FveGetAuthMethodInfoOutOfMemory
+FveGetAuthMethodInfo2 failed.HRESULT = [%x]
+FveGetAuthMethodInfo2
+FveGetAuthMethodInfo1 failed.HRESULT = [%x]
+FveGetAuthMethodInfo1
+BitLocker reseal required.Found TPM protector binding to PCR %d
+ResealRequired
+BfsIsBitLockerResealNeededForBootmgrServicing failed.HRESULT = [%x]
+FveCommitChangesEx failed.retry = %dHRESULT = [%x]
+FveCommitChanges failed.retry = %dHRESULT = [%x]
+FveCommitChanges failed (FveCommitChangesEx Unavailable).retry = %dHRESULT = [%x]
+BfsTryCommitFveChanges failed.retry = %dHRESULT = [%x]
+BfspOpenFveApi failed.RetryCount = %dFveApiFound = %d,HRESULT = [%x]
+FveOpenVolumeW failed.RetryCount = %dHRESULT = [%x]
+FveKeyManagement failed.RetryCount = %dHRESULT = [%x]
+FveKeyManagement
+FveKeyManagement Flagout unexpected.RetryCount = %dFlagOut = %d,HRESULT = [%x]
+FveKeyManagementUnexpected
+BfsTryCommitFveChanges failed.RetryCount = %dHRESULT = [%x]
+BfsTryCommitFveChanges
+BfsResealBitLockerWithRetry failed.RetryCount = %dHRESULT = [%x]
+BfspOpenFveApi failed.FveApiFound = %d,HRESULT = [%x]
+FveGetStatusW failed.HRESULT = [%x]
+BitLocker Not enabled.Flags = [%x]
+BitLocker suspended.Flags = [%x]
+FveAddAuthMethodInfo failed.HRESULT = [%x]
+BfsTryCommitFveChanges failed.HRESULT = [%x]
+BfspSuspendBitLocker failed.RebootCount = %dHRESULT = [%x]
+SeSecurityPrivilege
+SeTakeOwnershipPrivilege
+SeBackupPrivilege
+SeRestorePrivilege
+ServiceBootFiles MuiOnly:%c Res:%c Fonts:%c BootMgrOvw:%c BootStatOvw:%c DbgTrn:%c SuspendBDE:%c
+ISPCAT
+|SOURCE|\|FWTYPE|\|BOOTMGR|
+|SYSPART|\|DEST|\|BOOTMGR|
+Failed to get VolumeName for %ws %x
+Source VolumeName %ws
+BfspSuspendBitLocker FAILED Error code = %#x
+BfspSuspendBitLocker SUCCEEDED (Enabled:%c Suspended:%c)
+Boot manager to be overwritten by user policy.
+Failed to validate boot manager checksum (%s)! Error code = %#x
+|SYSPART|\|BOOTMGR|
+|SOURCE|\|FWTYPE|
+|SYSPART|\|DEST|
+Copying boot files CopyBootManager(%s) %s -> %s 
+Error copying boot files from %s to %s! Last Error = %#x
+|SYSPART|\|EFIDEFAULT|
+|SYSPART|\|EFIDEFAULT|\|DEFAULTAPP|
+Failed to expand default EFI application location.
+bootmgr.exe
+Default EFI application is not Windows boot manager, will not update.
+Failed to create path for default EFI application. Last error = %#x
+Updating %s
+Failed to copy Boot Manager to default EFI application. Last error = %#x
+Creating Recovery directory.
+|SYSPART|\EFI\Microsoft\Recovery
+Failed to create Recovery directory. Last error = %#x
+Failed to expand Recovery directory path
+O:%sG:%sD:P(A;;FA;;;%s)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)
+Error uncompressing boor manager (%s)! Last Error = %#x
+Error deleting boot manager(%s)! Last Error = %#x
+|SYSPART|\|DEST|\BOOTSTAT.DAT
+Error creating boot status data log(%s)! Last Error = %#x
+Error creating boot status data log(%s)! Unable to allocate memory
+Error creating boot status data log(%s)! Bytes written = %#x, desired = %#x
+Error uncompressing boot status data log(%s)! Last Error = %#x
+|SYSPART|\|DEST|\BCD
+|SYSPART|\|DEST|\BCD.LOG
+O:%sG:%sD:P(A;CI;GA;;;%s)(A;;0x1201bf;;;SY)(A;IOCIOI;GA;;;SY)(A;;0x1201bf;;;BA)(A;IOCIOI;GA;;;BA)(A;CIOI;GRGX;;;BU)(A;OICIIO;GA;;;CO)
+|SOURCE|\|FONTS|
+|SYSPART|\|DEST|\|FONTS|
+Copying font files from %s to %s...
+Error copying font files from %s to %s.Last Error = %#x
+|SOURCE|\|RESOURCES|
+|SYSPART|\|DEST|\|RESOURCES|
+Copying resource files from %s to %s...
+Resource files missing from %s. These files are required for some editions of Windows. If you are servicing older versions of Windows, you can ignore this message.
+|SYSPART|\|DEST|\BOOTNXT
+Error expanding string %s. Last Error = %#x
+|SYSPART|\BOOTNXT
+|SYSPART|\BOOTTGT
+Error deleting boottgt(%s)! Last Error = %#x
+Error copying %s to %s. Last Error = %#x
+Error deleting bootnxt from the BOOT folder (%s)! Last Error = %#x
+Error setting attributes on %s. Last Error = %#x
+O:SYG:SYD:P(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)
+Error setting security attributes on %s. Last Error = %#x
+Failed to flush system volume. Error = %#x
+ServicingBootFiles failed. Error = %#x
+Error creating %s path! Last Error = %#x
+%ws.{%.8x-%.4x-%.4x-%.2x%.2x-%.2x%.2x%.2x%.2x%.2x%.2x}
+BfspCopyFile failed to delete temporary file (%s)! Last Error = %#x.
+BfspCopyFile(%s, %s) failed! (Attempt %d of %d) Last Error = %#x
+bootmgr
+SOURCE
+SYSROOT
+Failed to get system partition! Last Error = %#x
+SYSPART
+EFI\Microsoft\Boot
+bootmgfw.efi
+FWTYPE
+Fonts
+FONTS
+Resources
+RESOURCES
+BOOTMGR
+|SYSPART|\
+EFI\Boot
+EFIDEFAULT
+bootia32.efi
+DEFAULTAPP
+bootx64.efi
+bootarm.efi
+bootaa64.efi
+bootfix.bin
+Invalid attributes (%#x) specified for %s file!
+GetFileAttributes(%s) failed! Last Error = %#x.
+GetFileAttributes(%s) failed: File not found.
+SetFileAttributes(%s) failed! Last Error = %#x.
+Servicing debugger files
+|SOURCE|\BootDebuggerFiles.ini
+|SYSROOT|
+ServiceDebuggerFiles: %ws does not exist
+BootDebuggerFiles.PCAT
+BootDebuggerFiles.UEFI
+ServiceDebuggerFiles: Failed to allocate config buffer
+List of debugger files is empty
+ServiceDebuggerFiles: ConfigBuffer is too small
+Copying boot debugging files from %ws to %ws (%ws)
+Error copying boot debugging files from %ws to %ws (%ws). Last Error = %#x
+Done servicing debugger files.
+|SYSPART|
+Failed to determine whether the system partition is in a space. Last Error = %#x
+System partition is not in a space
+Failed to retrieve physical partitions. Last Error = %#x
+No physical partitions found
+Servicing spaces files
+|DEST|\bootspaces.dll
+|SOURCE|\Misc\|FWTYPE|\bootspaces.dll
+Failed to service spaces DLL. Last Error = %#x
+|BOOTMGR|
+|EFIDEFAULT|\|DEFAULTAPP|
+Failed to service spaces default bootmgr
+|DEST|\|BOOTMGR|
+Failed to service spaces bootmgr. Last Error = %#x
+|SYSPART|\|DEST|\bootspaces.dll
+Error deleting stale spaces dll (%s)! Last Error = %#x
+ServiceSpaces: %s does not exist
+\\?\Harddisk%uPartition%u\%s
+ServiceSpaces: Failed to create path %s. Last error = %#x
+ServiceSpaces: Skipping non-Windows %s
+ServiceSpaces: Failed to copy %s to %s. Last Error = %#x
+ServiceSpaces: Skipping %s
+|SOURCE|\|RESOURCES|\BOOTRES.DLL
+Failed to determine source OS version.
+Using source OS version %I64x
+Unable to GetVolumeNameForVolumeMountPoint %ws (%u).
+ChkDisk: Finished Succesfully
+ChkDisk: Failed %08x
+BfsRepair: Failed to get system partition size %08x
+BfsRepair: System volume too large for chkdsk. Size: %llu MB Max: %llu MB
+BfsRepair: Failed to get system volume %08x
+BfsChkDsk: %ws
+BfsRepair: Failed to get volume information %08x
+FMIFS.DLL
+BfsRepair: Failed to load FMIFS.DLL %08x
+ChkdskEx
+BfsRepair: Failed to get ChkdskEx proc address %08x
+BFSVC
+BfsRepair: Failed to unload system store. Status: %08x
+BfsRepair: Failed to open system store. Status: %08x
+\Logs\bfsvc\repair.log
+BfsRepairSystemPartition flags(0x%08x), system root: %ws, online: %ws, boot files: %ws, caller: %d
+BfsRepair: BCD failed validation check after file system repair.
+BfsRepair: Failed to repair BCD store. Error: %08x
+Failed to get user token! Error code = %#x
+Failed to adjust token priveleges! Error code = %#x
+Failed to lookup privelege! Error code = %#x
+S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+BfspSetSecurityDescriptor(%s) failed! Last Error = %#x
+Failed to get token information! Error code = %#x
+Failed to convert user SID! Error code = %#x
+ConvertStringSecurityDescriptorToSecurityDescriptor failed! Error code = %#x
+GetSecurityDescriptorControl failed! Error code = %#x
+GetSecurityDescriptorOwner failed! Error code = %#x
+GetSecurityDescriptorGroup failed! Error code = %#x
+SetNamedSecurityInfo failed! Error code = %#x
+version.dll
+VS_VERSION_INFO
+VerQueryValueW
+GetFileVersionInfoW
+GetFileVersionInfoSizeW
+\VarFileInfo\Translation
+\StringFileInfo\%04x%04x\InternalName
+Failed to get element data. Status = [%x]
+Failed to GetVolumePathName for %ws (%u).
+VolumePathName for %ws is %ws
+Invalid VolumePathNameLegth %ws
+Failed to QueryDosDevice for %ws (%u).
+Expected provided path "%ws" to start with %ws
+SystemRoot is %ws
+en-us
+\System32\bootstr.dll
+%s%s%s
+%s%s%s%s
+BCD strings MUI load failure %ws (%u).
+Failed to initialize global state. Status = [%x]
+Failed to get handle to BCD object. Status = [%x]
+Failed to set locale data. Status = [%x]
+Failed to open a handle to the template store. Status = [%x]
+Failed to get a handle to the system store. Status = [%x]
+Failed to set element description. Status = [%x]
+Failed to get handle to the template store. Status = [%x]
+Failed to get handle to the system store. Status = [%x]
+Failed to get element device type. Status = [%x]
+\EFI\Microsoft\Boot\
+\boot\
+Failed to set element application device. Status = [%x]
+Failed to set element OS device. Status = [%x]
+Failed to set element system root. Status = [%x]
+Failed to get element application path. Status = [%x]
+Failed to set element application path. Status = [%x]
+Failed to set element display order. Status = [%x]
+Cleaning up debugger settings.
+Failed to delete debugger settings element %08x. Status = [%x]
+Cleaning up hypervisor settings.
+Failed to enumerate BCD objects. Status = [%x]
+Removing duplicate entries.
+Failed to open a handle to the OS loader element. Status = [%x]
+Failed to get a handle to the OS loader. Status = [%x]
+Removing duplicate object %wZ
+Failed to delete duplicate loader object. Status = [%x]
+Failed to remove duplicate object from bootmgr display order. Status = [%x]
+\EFI\Microsoft\Recovery\BCD
+Opening recovery store from %ws
+Creating General objects.
+Failed to copy objects of type %08x data. Status = [%x]
+Creating MemTest object.
+Memory Tester application not found. Skipping add.
+Failed to open handle to Memtest object. Status = [%x]
+Failed to copy memtest object. Status = [%x]
+Failed to get a handle to the memtest object. Status = [%x]
+memtest.efi
+Creating Resume object.
+Resume application not found. Note, if you are servicing Windows PE or Windows RE boot files, you can ignore this message.
+Failed to open handle to resume object. Status = [%x]
+Failed to copy resume object data. Status = [%x]
+Failed to query object data. Status = [%x]
+Creating OsLoader object.
+Failed to open handle to the OS loader object. Status = [%x]
+Failed to copy OS loader object data. Status = [%x]
+Failed to set element associated resume object. Status = [%x]
+Failed to query OS loader identifier. Status = [%x]
+OsLoader identifier: %wZ
+Failed to copy NTLDR object data. Status = [%x]
+Create BOOTMGR object RetainBootDefault:%c
+Failed to copy bootmgr object data. Status = [%x]
+Failed to open a handle to the bootmgr object. Status = [%x]
+Setting {default} to %wZ
+Failed to set default bootmgr object. Status = [%x]
+Failed to set bootmgr resume object. Status = [%x]
+Failed to set bootmgr display order. Status = [%x]
+Failed to set bootmgr tools display order. Status = [%x]
+Failed to update bootmgr display order. Status = [%x]
+Failed to open handle to fwbootmgr object. Status = [%x]
+Failed to set {bootmgr} locale. Status = [%x]
+Failed to create create {bootmgr} object. Status = [%x]
+\System32\config\BCD-Template
+Opening template from %ws.
+Could not open the BCD template store. Status = [%x]
+Creating new recovery store %ws
+Failed to create a new recovery store. Status = [%x]
+Failed to open recovery store. Status = [%x]
+Failed to create create general objects. Status = [%x]
+Failed to close recovery store. Status = [%x]
+.corrupt
+BfsInitializeBcdStore flags(0x%08x) RetainElementData:%c DelExistinObject:%c
+\EFI\Microsoft\Boot\BCD
+\boot\BCD
+Opening store from %ws
+Reopening system store.
+Failed to forcibly unload the system store. Status = [%x]
+System BCD store does not exist, creating.
+System BCD store is corrupt.
+Failed to backup corrupt BCD store. Status = [%x]
+Failed to create a new system store. Status = [%x]
+Failed to mark store as system store. Status = [%x]
+BcdOpenStore failed with unexpected error code, Status = [%x]
+Failed to populate BCD store. Status = [%x]
+Failed to create recovery store. Status = [%x]
+Failed to add WinRE entry. Status = [%x]
+Failed detect Hyper-V setting. Status = [%x]
+Failed to flush BCD to disk. Status = [%x]
+Failed to close the system store. Status = [%x]
+Failed to flush system partition. Error = [%x]
+DISMAPI.DLL
+DismInitialize
+DismOpenSession
+DismGetFeatureInfo
+DismDelete
+DismCloseSession
+DismShutdown
+REAGENT.DLL
+WinRePostBCDRepair
+DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}
+Microsoft-Hyper-V-Hypervisor
+WdsCopyFileEx: Failed to copy [%s] to [%s], GLE = 0x%x; will retry in %u ms
+WdsCopyFileEx: Failed to strip file attributes for %s, will delete. GLE = 0x%x
+WdsCopyFileEx: Failed to delete %s. GLE = 0x%x
+kernel32.dll
+api-ms-win-core-file-l1-2-2.dll
+FindFirstFileNameW
+FindNextFileNameW
+DeleteFileEx: Unable to allocate hardlink path buffer
+DeleteFileEx: Will not restore attributes on hardlinks of [%s]
+DeleteFileEx: Unable to remove [%s]; GLE = 0x%x
+DeleteFileEx: Trying to set back attributes on hardlink given: %s
+DeleteFileEx: Unable to restore attributes on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to open [%s]; GLE = 0x%x
+DeleteFileEx: Unable to clear out attributes on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to get information on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to delete [%s]; GLE = 0x%x
+DeleteFileEx: Unable to prepare Unicode path for [%s]; GLE = 0x%x
+DeleteFileEx: Unable to form long path name for [%s]; GLE = 0x%x
+\\?\Volume{
+\\?\UNC
+\Device\HarddiskVolume
+\Device\Harddisk
+Partition
+CreatePath: Unable to create [%s]; GLE = 0x%x
+\\?\UNC\
+%s\%s
+\Device
+FirmwareBootDevice
+WindowsSysPartDevice
+Objects
+Failed to get object identifier. Status: %x
+Opening object %s
+Failed to open key for all objects. Status: %x
+Failed to get aliased identifier. Status: %x
+Failed to update object GUID string. Status: %x
+Object alias resolves to %s
+Failed to open object's key. Status: %x
+Description
+Creating object. Version: %d. Type: 0x%08x
+Generating object GUID.
+Object GUID: %s
+Elements
+BcdGetElementDataWithFlags: Failed to acquire BCD sync mutant. Status: %x
+BcdGetElementDataWithFlags: Failed to open elements key.Object: %ws Status: %x
+BcdGetElementDataWithFlags: Failed to open key.Object: %ws Type: %ws Status: %x
+Element
+BcdGetElementDataWithFlags: Failed to get registry value.Object: %ws Reg type: %lu Status: %x
+Setting element %08x
+Failed filtering for element %08x. Status: 0x%x
+Failed to open key for object's elements. Status: %x
+Failed to open key for element %s. Status: %x
+Failed to convert data for element %s. Status: %x
+Failed to set registry data for element %s. Status: %x
+Deleting element %08x
+Deleting element %08x blocked by secure boot policy.
+Failed to filter delete element %08x. Status: %x
+Failed to open key for all object's elements. Status: %x
+Failed to open element %ws key for delete. Status: %x
+Insufficient length for BCD element. Length %lu Required %lu DataType: %lu
+Unexpected length for BCD element. Length %lu Expected: %lu DataType: %lu
+Failed to resolve locate. Status: %x
+Exceeded length for BCD element. Length %lu Expected: %lu DataType: %lu
+Unexpected length for BCD element. Length %lu DataType: %lu
+String not multiple of WCHAR. Length %lu DataType: %lu
+Failed to open object %ws. Status: %x
+Failed to Enumerate elements from %ws. Status: %x
+Failed to enumerate subkeys. Status: %x
+Dropping invalid data type. Element: %ws
+Failed to get registry value. Element: %ws Status: %x
+Failed to get the size needed for the registry data. Element: %ws, Status: %x
+Failed to enumerate subelements. Status: %x
+Failed to enumerate subobject elements. Status: %x
+\KernelObjects\BcdSyncMutant
+BcdOpenSystemStore: Failed to acquire BCD sync mutant.Status: %x
+Creating store %08x.
+\Registry\Machine\System\CurrentControlSet\BootConfigurationData
+Unable to create tempory root key. Status: %x
+NewStoreRoot
+Unable to create tempory new store key. Status: %x
+Failed to create system store path. Status: %x
+Failed to get system store path. Status: %x
+Failed to create hive. Store: %ws Status: %x
+Failed to add new store from file. File: %ws Status: %x
+Failed to close new store. Store: %ws Status: %x
+Failed to adopt new store. File: %ws Status: %x
+Failed to open new system store. Store: %ws Status: %x
+Failed to create store. Status: %x
+BcdOpenStore: Failed to acquire BCD sync Mutant. Store: %wsFlags: 0x%x Status: %x
+Opening store. Flags: 0x%x
+Store will be synchronized with firmware.
+Failed to open system store. Status: %x
+Store path: "%s"
+Store will be accessed with offline registry APIs.
+BcdOpenStore: Failed to add store from file %ws. StoreFlags: 0x%x Status: %x
+Failed to clear system store flag. Status: %x
+BcdCloseStore: Failed to acquire BCD sync mutant. Status: %x
+Closing store. Flags: 0x%x
+BcdForciblyUnloadStore: Failed to acquire BCD sync mutant. Status: %x
+Exporting forcible unload to firmware
+Failed to export unload alterations to firmware. Status: %x
+Exporting alterations to firmware.
+Failed to export alterations to firmware. Status: %x
+KeyName
+TreatAsSystem
+FirmwareModified
+BCD%08d
+Loaded hive at BCD%08d
+Failed to load hive into key %ws from %s. Status: %x
+Too many unexplained failures. File: %s Last status: %x
+Failed to find a key to load store %s. Last attempted key: %ws
+Failed to initialize objects key for store. Store: %s StoreKey: %ws Status: %x
+Failed to initialize description key for store. Store: %s StoreKey: %ws Status: %x
+A valid store must have a description key.
+Failed to open description key for store. Store: %s StoreKey: %ws Status: %x
+Failed to set description key value. Store: %s StoreKey: %ws Status: %x
+Failed to open store from path. File: %ws Status: %x
+Failed clear firmware namespace. File: %ws Flags: 0x%x Status: %x
+\Registry\Machine
+Failed to add system store from file. File: %ws Status: %x
+Failed to mark system store. File: %ws Status: %x
+File is not system store. File: %ws Status: %x
+Opening system store. Flags: 0x%x
+Found loaded store at key %s
+Store %s is the system store
+The system store is not already loaded
+Specified flags prevent opening unloaded system store
+Synchronizing store with firmware
+Failed to bind with firmware. Flags: 0x%x Status: %x
+BcdFlushStore: Failed to acquire BCD sync mutant. Status: %x
+Copying object. Flags: 0x%x
+Failed to acquire BCD sync mutant. Status: %x
+BcdCopyObjectEx: Failed to get object description Flags: 0x%x Status: %x
+BcdCopyObjectEx: Failed to get generate object guid. Flags: 0x%x Status: %x
+BcdCopyObjectEx: Failed to get object identifier. Flags: 0x%x Status: %x
+Failed to convert guid to string. Status: %x
+BcdCopyObjectEx: Failed to create object. Target: %ws Flags: 0x%x  Status: %x
+BcdCopyObjectEx: Failed to set firmware object. Target: %ws Flags: 0x%x Status: %x
+BcdCopyObjectEx: Failed to enumerate source elements. Target: %ws Flags: 0x%x Status: %x
+BcdCopyObjectEx: Failed to set target elements. Target: %ws Flags: 0x%x Element type: %lu Status: %x
+BcdCopyObjectEx: Failed to copy object. Target: %ws Flags: 0x%x Status: %x
+Copying objects. Version: %d. Type: 0x%08x
+Failed to enumerate objects. Status: %x
+System store path: %s
+Failed to get system partition. Status: %x
+System partition: %s
+FirmwareVariable
+multi(%d)disk(%d)rdisk(%d)partition(%d)
+\ArcName\
+\Registry\Machine\SYSTEM\CurrentControlSet\Control
+SystemStartOptions
+MININT
+\??\PhysicalDrive%d
+\Registry\Machine\SYSTEM\CurrentControlSet\Control\Syspart
+SystemPartition
+\Device\Harddisk%lu\Partition%lu
+Directory
+SymbolicLink
+Harddisk
+\EFI\Microsoft\Boot\bootmgfw.efi
+\Device\%s\Partition%lu
+Failed open key %ws. Status: %x
+Failed to acquire permissions to load hive. Status: %x
+Failed load key %ws. Flags: 0x%x File: %s Status: %x
+Failed open newly loaded key %ws. Flags: 0x%x Status: %x
+Unexpected type for BCD element. Expected type: 0x%x Actual type: 0x%x
+ZwUnloadKey2
+ZwLoadKey2
+GuidCache
+\??\PhysicalDrive%lu
+BiResolveLocate: Unsupported parent device type %d. Status: %x
+BiResolveLocate: ParrentOffset is 0. Status: %x
+qAxelR\
+Registry\Machine\System\CurrentControlSet\Control\MiniNT
+PortableOperatingSystem
+Attempting to determine owner of file %ws.
+Failed to open file attributes. Status: %x
+Failed to allocate process ID buffer.
+Failed to query processes. Status: %x
+No processes are using this file.
+Found %d processes using this file.
+Failed to open process. Status: %x
+Failed to query process information for size. Status: %x
+Failed to allocate memory for space for process name.
+Failed to query process info. Status: %x
+Process Name [%d]: %ws
+ZwFilterBootOption
+Binding EFI namespace objects
+BiBindEfiNamespaceObjects failed %x
+Exporting store alterations to efi
+BiExportStoreAlterationsToEfi failed %x
+Exporting store to efi
+BiExportStoreToEfi failed %x
+BiBuildIdentifierList failed %x
+BiBindEfiBootManager failed %x
+Boot entry exists for DontSync with ID 0x%x
+BiBindEfiEntries failed %x
+Created boot entry 0x%x using cached variable
+Created new boot entry 0x%x
+BiCreateEfiEntry failed %x
+BiExportBcdObjects failed %x
+Timeout
+BootNext
+BiExportEfiBootManager failed: %x
+BiSpacesUpdatePhysicalDevicePath null APPLICATION DEVICE
+SyspartIsSpace failed for %s
+\??\GLOBALROOT
+SyspartGetPhysicalPartitions failed with error code: %x
+\Device\Harddisk%u\Partition%u
+BiSpacesUpdatePhysicalDevicePath failed %x
+BiUpdateEfiEntry failed %x
+WINDOWS
+BCDOBJECT=
+Translated a DontSync entry with ID 0x%x
+Translated a DontSync object to ID 0x%x
+SyspartIsSpace failed for partition path: %s
+BiCreateBootEntry: Could not retrieve BCD Object application description. Status: %x
+BiCreateBootEntry: Could not retrieve BCD Object application device. Status: %x
+BiCreateBootEntry: Could not retrieve BCD Object application path. Status: %x
+ZwAddBootEntry
+Failed to add boot entry. Status: %x
+ZwEnumerateBootEntries
+Failed to enumerate boot entries. Status: %x
+Deleting boot entry 0x%x
+ZwDeleteBootEntry
+Failed to delete boot entry 0x%x. Status: %x
+ZwQuerySystemEnvironmentValueEx
+ZwSetSystemEnvironmentValueEx
+Failed to query "%ws" variable. Status: %x
+Failed to delete "%ws" variable. Status: %x
+ZwModifyBootEntry
+Failed to modify boot entry 0x%x. Status: %x
+ZwSetBootEntryOrder
+Failed to set boot entry order. Status: %x
+ZwSetBootOptions
+Failed to set boot options. Status: %x
+ZwTranslateFilePath
+ZwQueryBootEntryOrder
+Failed to query boot entry order. Status: %x
+ZwQueryBootOptions
+Failed to query boot options. Status: %x
+\Boot\BCD
+\ArcName\multi(0)disk(0)rdisk(1)
+\ArcName\multi(0)disk(0)rdisk(0)
+\Partition0
+%s\Partition%lu
+multi(%d)disk(%d)rdisk(%d)
+sr-Latn-CS
+sr-SP-Latn
+sr-Cyrl-CS
+sr-SP-Cyrl
+sr-Latn-BA
+sr-BA-Latn
+sr-Cyrl-BA
+sr-BA-Cyrl
+iu-Latn-CA
+iu-CA-Latn
+bs-Cyrl-BA
+bs-BA-Cyrl
+bs-Latn-BA
+bs-BA-Latn
+zh-Hant
+zh-CHT
+zh-Hans
+zh-CHS
+%s\%s\%s.mui
+%s\%s.mui
+.\%s\%s.mui
+.\%s.mui
+Software\Microsoft\Active Setup\Installed Components\{89820200-ECBD-11CF-8B85-00AA005B4383}
+Locale
+BfsvcChkDsk
+BootFilesServiced
+ChkDskSuccesfull
+ChkDskHelped
+OriginalError
+FinalError
+InitializeBcdStoreStatus
+BfsResealBitLockerWithRetrySucceeded
+PartA_PrivTags
+FlagOut
+RetryCount
+FveApiFound
+BfsIsBitLockerResealNeededForBootmgrServicingFailed
+PartA_PrivTags
+Action
+IsBitlockerResealNeeded
+BfsIsBitLockerResealNeededForBootmgrServicingSucceeded
+PartA_PrivTags
+Action
+IsBitlockerResealNeeded
+BfsResealBitLockerWithRetryFailed
+PartA_PrivTags
+Action
+FlagOut
+RetryCount
+FveApiFound
+BfsvcSyspartRepair
+Caller
+ChkDskRun
+ChkDskErrorCode
+BcdInitialized
+BcdErrorCode
+BootFilesServiced
+ServicingErrorCode
+ErrorCode
+Microsoft.Windows.BootFileServicingAI
+Microsoft.Windows.BootFileServicing
+bfsvc.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.text
+.text$di
+.text$mn
+.text$yd
+.xdata$x
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+u$WSQ
+SVj2^
+VVRh(
+v,Shp
+SVWQQ3
+QQSVW
+D$,PQ
+T$0QQV
+L$$_^[3
+L$4^3
+FxVh@#
+XL93uIW
+VWWWh
+FVWWh8
+93uHWV
+93uHWV
+&PWSV
+tIj\[f9
+Ph(Y-
+ SVW3
+PVh $
+ Vhx/
+QQSVW
+VWh(1
+ylVWh
+yAVWh
+y5VWhp5
+y"Vh@8
+AQRRh
+VShhC
+PVhxD
+PQhxD
+PWhXH
+PWhxI
+VWhHK
+VWh(M
+SVWhP
+SVh8O
+Sj<VW
+u&h<S
+u"Pj 
+WWPWWWW
+QWh@T
+QQQPPQ
+YYW9]
+j\YtGJ
+PVhx^
+PSShH
+PPPPPW
+RPh@a
+QVPWj
+QQSVWh
+u6WPj(
+QQSV3
+ug9\$
+SVWj03
+PVh<m
+v=j\Zf9
+D$,u03
+PWh|t
+D$4PV
+QQVWh
+SVWh z
+|$$WV
+D$$SP
+D$LQP
+T$$VP
+D$LPV
+D$LPh
+y$Vh0
+L$HPP
+nPShp
+SVWPj
+u\!|$
+QQVW3
+j\Zf;Ty
+t`SVhX
+tKWS3
+G.j\P
+j:Xf;F
+j:Xf;F
+j\[SV
+tQVVVW
+tuWWS
+QQSVW
+D$@PjZ
+L$ h?
+L$\_^[3
+tFPPWj
+;7vZS3
+D$(PV
+D$$Z;E
+L$$9M
+L$(QP
+D$(PV
+SWjH3
+{jHWS
+|$@9D$T
+L$PPW
+!D$ !D$$
+D$@;D$T
+D$`SVW
+L$$PSV
+f;D$ u
+f;D$ u
+SPSh?
+YYj _
+Lr-W3
+PPPPP
+t2ShL
+L$|_^[3
+T$pWP
+t$XhX
+D$@9D$
+L$,;L$$
+D$0;t$\r
+D$@;D$
+ SFVP
+u|9\$
+PQQhH
+4SVWQ
+D$(Pj
+D$(Pj
+j0_f;
+L$LPj
+L$HPj
+D$tj PQ
+t$$Ph
+QWWWP
+PSSSSSSh 
+PSSSSSSSj
+uHj\[
+jHXPd
+jHXPj
+Ph(Y-
+SWj<3
+@9F$u
+!9~$u,
+F,j\P
+jH^VR
+jH^VR
+jH^VR
+j0^VR
+D$4u'
+f;D$0u
+f;D$0u
+4SVWQ
+QQSVW
+PQQQV
+PWWWV
+4SVWQ
+j\XPW
+VVVVh(
+twSW3
+PQQQV
+j0_f;
+t$$jXQ
+L$$PS
+L$lPj
+D$HQPj
+T$@9H
+L$8Pf
+K.j\Q
+f;D$<u
+f;D$<u
+L$$;P
+SVWj\X
+PPh!@
+QQVWh
+SVWh 
+L$DQj
++D$0;D$
+A 3F 
+tiG;}
+;D$$u
+f;D$,u
+D$ 9D$
+;D$ t%j
+jl[SPd
+t+Qh8
+WINDP
+y/VhP
+y,Vh0
+tNSSSj
+t4SSSj
+PWWh(
+Y__^[
+BFSVC.DLL
+DllCanUnloadNow
+DllCsiGetHandler
+_vsnwprintf
+memcpy_s
+memmove_s
+wcsrchr
+_purecall
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+_except_handler4_common
+EventUnregister
+EventRegister
+GetModuleHandleExW
+GetProcAddress
+FreeLibrary
+EventWriteTransfer
+FormatMessageW
+GetCurrentThreadId
+HeapAlloc
+GetProcessHeap
+HeapFree
+GetModuleFileNameA
+DebugBreak
+GetModuleHandleW
+GetLastError
+IsDebuggerPresent
+OutputDebugStringW
+AcquireSRWLockExclusive
+ReleaseSRWLockExclusive
+AcquireSRWLockShared
+ReleaseSRWLockShared
+SetLastError
+CloseHandle
+ReleaseSemaphore
+ReleaseMutex
+SetThreadpoolTimer
+WaitForThreadpoolTimerCallbacks
+CloseThreadpoolTimer
+WaitForSingleObjectEx
+EnterCriticalSection
+InitializeCriticalSectionEx
+DeleteCriticalSection
+WaitForSingleObject
+OpenSemaphoreW
+CreateThreadpoolTimer
+GetSystemWindowsDirectoryW
+RegCreateKeyExW
+RegSetValueExW
+RegOpenKeyExW
+RegQueryValueExW
+RegCloseKey
+GetCurrentProcessId
+CreateMutexExW
+CreateSemaphoreExW
+LeaveCriticalSection
+DisableThreadLibraryCalls
+InitializeCriticalSection
+HeapDestroy
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+NtClose
+RtlRaiseStatus
+ntdll.dll
+?RtlTraceVa@Rtl@WCP@Windows@@YIXKKPAU_RTL_TRACING_FACILITY@123@QBDKPAD@Z
+?RtlTraceFormat_PCWSTR@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlFreeLUnicodeString
+?RtlGetFacilityTracingFlags@Rtl@WCP@Windows@@YIKPAU_RTL_TRACING_FACILITY@123@@Z
+RtlReportErrorOrigination
+WCP.dll
+UuidCreate
+CheckSumMappedFile
+RPCRT4.dll
+imagehlp.dll
+CreateDirectoryW
+QueryDosDeviceW
+GetFileSizeEx
+DeviceIoControl
+GetVolumePathNameW
+CreateFileW
+UnmapViewOfFile
+GetVolumeNameForVolumeMountPointW
+GetCurrentThread
+CreateFileMappingW
+MapViewOfFile
+FlushFileBuffers
+LoadLibraryExW
+GetVolumeInformationW
+FindFirstFileW
+FindNextFileW
+WriteFile
+GetPrivateProfileSectionW
+FindClose
+GetFileAttributesW
+SetFileAttributesW
+MoveFileExW
+PathRemoveBackslashW
+LoadLibraryW
+GetTokenInformation
+OpenThreadToken
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+ConvertSidToStringSidW
+OpenProcessToken
+GetSecurityDescriptorOwner
+GetSecurityDescriptorControl
+SetNamedSecurityInfoW
+GetSecurityDescriptorGroup
+LocalFree
+GetSecurityDescriptorDacl
+AdjustTokenPrivileges
+GetSecurityDescriptorSacl
+LookupPrivilegeValueW
+GetFileInformationByHandleEx
+GetFileInformationByHandle
+SetFileInformationByHandle
+DeleteFileW
+CopyFileExW
+GetFullPathNameW
+GetLongPathNameW
+GetLocaleInfoW
+LocaleNameToLCID
+KERNEL32.dll
+ADVAPI32.dll
+SHLWAPI.dll
+fflush
+_wfopen_s
+fclose
+_vsnwprintf_s
+fwprintf
+wcscpy_s
+_wcsicmp
+_wcsnicmp
+wcscat_s
+swprintf_s
+wcschr
+_wcsupr
+wcsncmp
+_ultow_s
+wcstoul
+wcsncpy_s
+_snwscanf_s
+_wcslwr
+wcsstr
+wcsnlen
+strcpy_s
+strncmp
+SearchPathW
+GetSystemDefaultUILanguage
+GetLocaleInfoEx
+GetUserDefaultUILanguage
+GetVersionExW
+LCIDToLocaleName
+FindResourceExW
+LoadResource
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+NtWriteFile
+NtQueryInformationProcess
+NtOpenProcess
+RtlInitUnicodeString
+NtReadFile
+NtSetInformationThread
+NtDeviceIoControlFile
+RtlImageNtHeader
+NtCreateEvent
+NtQueryInformationFile
+NtQueryInformationThread
+RtlNtStatusToDosError
+NtWaitForSingleObject
+NtOpenFile
+NtQuerySystemInformation
+LdrFindResource_U
+LdrAccessResource
+RtlFreeUnicodeString
+NtSetInformationFile
+RtlStringFromGUID
+RtlFreeHeap
+RtlCompareMemory
+RtlAllocateHeap
+ZwQuerySystemInformation
+RtlGUIDFromString
+RtlAppendUnicodeToString
+ZwQueryAttributesFile
+ZwWaitForSingleObject
+ZwQueryKey
+ZwReleaseMutant
+ZwOpenFile
+ZwOpenMutant
+ZwClose
+RtlLengthSecurityDescriptor
+RtlSetOwnerSecurityDescriptor
+NtOpenSymbolicLinkObject
+RtlSetDaclSecurityDescriptor
+NtOpenKey
+NtQuerySymbolicLinkObject
+RtlAddAccessAllowedAceEx
+RtlAllocateAndInitializeSid
+RtlLengthSid
+RtlFreeSid
+RtlCreateAcl
+RtlCreateSecurityDescriptor
+NtQueryValueKey
+NtQueryBootEntryOrder
+NtQueryBootOptions
+NtTranslateFilePath
+NtOpenDirectoryObject
+NtQueryDirectoryObject
+NtEnumerateBootEntries
+ZwCreateFile
+ZwCreateKey
+ZwLoadKey
+ZwFlushKey
+ZwDeleteValueKey
+ZwSaveKey
+ZwDeleteKey
+ZwEnumerateKey
+ZwQueryValueKey
+ZwSetSecurityObject
+ZwUnloadKey
+ZwSetValueKey
+ZwOpenKey
+ZwAllocateUuids
+ZwQuerySymbolicLinkObject
+ZwDeviceIoControlFile
+ZwQueryDirectoryObject
+ZwOpenSymbolicLinkObject
+RtlGetVersion
+ZwOpenDirectoryObject
+LdrGetProcedureAddress
+LdrGetDllHandle
+ZwQueryInformationProcess
+RtlInitAnsiString
+ZwQueryInformationFile
+ZwOpenProcess
+NtAdjustPrivilegesToken
+NtOpenProcessTokenEx
+NtOpenThreadTokenEx
+RtlImpersonateSelf
+__iob_func
+memcmp
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+CMI boot file service plug-in
+FileVersion
+10.0.22621.440 (WinBuild.160101.0800)
+InternalName
+bfsvc.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+bfsvc.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.440
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1(1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2(20282@2H2P2X2
+3$3(3,3034383D3
+>B>I>
+1 1$1*1.14181>1B1H1L1a1
+3%32393@3U3{3
+414Z4r4
+4#5*505=5F5[5d5t5}5
+696x6
+7'7-72797P7
+9U:_:k:D;_;
+<:<C<O<\<r<|<
+=&=.=;=
+?(?1?=?E?T?u?~?
+"090L0f0
+1$10181Y1t1
+2*2P2|2
+363h3
+4,464T4x4
+4"5<5H5q6{6
+7-777
+8A9t9~9
+:E:K:X:c:|:
+=Y=b=n=v=
+?6?h?
+v091@1
+7n8l9
+;!;3;R;X;a;j;t;};
+=C=U=h=
+=,>z>
+081^1
+102D2r2x2
+4>4y4
+5*5/565;5a5
+6%6I6s6y6
+7'7z7
+7"8I8]8g8
+9%9V9
+9.:d:o:
+<6<=<Q<q<
+=+=S=\=c=
+=>>E>a>h>
+?2?I?O?}?
+1;1e2v2
+9&9A9I9Z9b9z9
+:$:R:_:h:t:%;
+<.<N<{<!=}=
+>">*>;>C>[>n>w>
+>%?2?;?G?
+536G6S6
+768D8a8r8|8
+9'91999K9Q9X9_9f9
+:+:5:h:n:s:z:
+<*<2<8<=<x<
+=+=2=9=C=K=v=
+>0?6?s?y?
+0@0I0
+0!1v1
+2-2k2{2
+3#303B3R3^3p3
+4?4Y4~4
+5Y5c5~5
+6 6'6H6O6V6{6
+787h7o7
+8&8a8h8
+9!939:9]9d9r9
+: :2:j:o:
+;);A;M;Z;l;x;
+< <(<:<A<I<[<b<j<|<
+=)>;>[>m>|>
+?(?M?_?n?
+20P0W0
+0(191H1]1e1t1
+1p2{2
+3<3t3{3
+4-4<4X4g4|4
+5!5<5m5|5
+6(676W6c6{6
+7t8y8
+='=b=k=
+>4>>>
+?)?G?a?
+0'0J0P0c0j0v0}0
+1(1C1k1
+2J2_2j2t2
+3&373>3]3j3
+444]4i4z4
+5)5@5I5b5y5
+6/686F6W6`6
+7"7)787?7N7U7d7k7z7
+8*818<8^8
+9 9A9t9
+:h;};
+< <@<R<c<j<x<
+=K=`=u=|=
+>Y?`?
+0P0W0^0e0l0s0y0
+181=1R1b1g1y1~1
+1)2[2b2i2p2u2
+2!3+363=3a3z3
+4-474b4n4
+565J5T5a5h5y5
+7 7'7e7{7
+8 878>8V8[8l8t8~8
+9#9;9B9Q9X9c9
+:-:s:
+<!<z<
+<0=U=\=i=z=
+>^>h>
+?3?=?E?Y?_?o?w?~?
+0)02080I0Q0Z0
+0;1I1Q1f1k1s1
+4&4P4a4r4y4
+4.555n5
+6)6=6O6h6
+7'747;7[7l7x7
+8G8S8[8q8}8
+9<9H9
+:n;u;
+</<6<g<n<
+>*>1>:>^>
+0C0p0}0
+1!1(1/14191?1H1O1V1\1b1k1r1x1
+21282O2[2a2v2
+5/5A5H5
+6)60666;6G6N6T6Y6e6l6r6x6~6
+7-7H7]7
+7/8j8x8
+: :':,:;:M:o:t:
+;-;2;H;];o;
+<b<j<
+? ?&?,?;?B?^?d?n?|?
+3<3C3
+:k:s:
+;,;3;w;};
+</=6=Q=c=
+>+>F>\>|>
+? ?2?{?
+090Q0f0r0
+1"2+222Q2
+3D4I4^4q4
+6)6F6Q6r6
+7 7*7F7S7r7
+8)808A8H8|8
+:5:G:[:a:r:~:
+;4;N;d;
+;%<,<r<
+<,===S=`=g=
+=9>?>F>M>X>d>{>
+>C?Z?t?
+0J0o0
+1R2Y2v2}2
+3$3,383@3L3T3`3h3
+4-4~4
+5%515
+:Y:v:
+;";,;E;R;\;k;v;};
+0 0D0
+061=1
+2$232T2f2s2}2
+3$3.353?3P3X3_3i3z3
+4!4*444E4L4T4]4g4v4
+5L5d5
+616Z6d6
+8S8f8
+9;9W9
+<8<J<Q<c<m<v<
+=0=7=?=H=U=
+0 0&0-0;0F0O0T0Y0p0{0
+5\7j7
+8R8^8n8
+9%919?9v9
+=%>O>a>v>
+0(0B0c0
+031@1
+1%2E2V2t2
+3 3D3
+444K4d4
+5 6[6
+647d7q7
+7T8v8
+;4;u;
+>$>]>
+4(5C5b5
+99:T:`:
+;U;x;
+<8<X<~<
+=6=U=n=
+>3>_>
+?M?g?
+1I1e1t1
+2:2[2
+3n3|3
+3<4`4
+5$5N5j5}5
+5(6]6c6r6
+8-9;9
+:>:e:
+; ;%;6;u;
+<f<z<
+=%=@=O=
+?3?T?\?
+3"454
+6!7f7z7
+8.8<8[8x8
+959:9B9
+:(:3:<:Q:e:m:
+:8;C;m;
+<1<W<{<
+=1=P=m=
+?I?z?
+030Q0q0
+212R2~2
+3(3F3
+4#4=4Y4b4
+5A6Q6z6
+6D7b7}7
+7$8w8
+869L9i9
+:0:I:d:
+<5<<<G<N<[<b<
+<&=k=
+>+>H>g>
+>0?k?
+0-0Q0t0
+1)1B1X1
+2*2e2
+323Q3
+3L4Q4
+4-575O5m5
+7 8v8
+9_9}9
+9":i:&;s;
+;2<K<
+=%=E=
+>">3>b>p>
+>;?_?
+2$2=2L2^2k2v2
+;,;A;Z;i;
+<%<U<u<
+?7?P?
+1T2t2
+2#3x3
+<H=s=
+>$>C>[>|>
+>)?2?C?
+#0,0O0h0
+1&1n1
+3`3~3
+4-4N4u4
+4G5a5
+6'6:6
+8&9>9h9
+=M=n=u=
+=5>r>
+?-?n?
+1d1v1
+1[2r2
+2'343V3q3
+3:4t4
+5.5<5[5|5
+6G6z6
+7$7/7P7Z7h7q7
+8#888?8R8h8
+<P<~<
+==>M>
+2Q3c3
+4W5$6>6T6z6
+7.8<8j8
+;!;?;
+< =J=
+0#1=1W1|1
+4I4b4
+515<5g5s5
+6_7h7
+939A9q9
+:):K:P:W:
+353W3
+4O5Z5y5
+6.6C6
+8<9U9n9
+;+;V;f;
+<;<R<b<
+===L=
+=4>`>
+040z0
+1e1|1
+2'2A2
+223B3J3t3
+4(4D4
+6-696m6
+8%8I8g8u8|8
+959;9E9
+9a:s:
+;&;];d;
+;Y<*>E>k>
+>7?<?A?n?~?
+070?0F0L0R0
+1 1,141
+213I3
+304^4
+5!5)51595E5N5S5Y5c5m5}5
+6!6(6/656A6L6Q6V6\6f6p6
+7b7r7
+7H8M8_8}8
+8Z9x9
+:U:a:m:y:
+:3<?<K<W<r<
+= =(=,=4=8=T=X=t=x=
+>4>8>T>X>t>x>
+?4?8?
+0 0,0P0T0X0\0d0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,77WTN5a8MzzKl5MMKz01IQVcIcPUgACxCfzIA8GaSfU=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+20220720035729.5Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:4D2F-E3DD-BEEF1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+220302185142Z
+230511185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:4D2F-E3DD-BEEF1%0#
+Microsoft Time-Stamp Service0
+g 44B'
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+Ebgcv
+sp^Z6
+g#\!R
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:4D2F-E3DD-BEEF1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220719210203Z
+20220720210203Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+T>Dx0V
+hj"C,

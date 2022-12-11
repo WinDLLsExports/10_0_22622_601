@@ -1,0 +1,2532 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+HCZV1
+)h)5A
+a,>~J
+a,?~J
+d0=(#
+Y1,~)
+Y1,~)
+W3&~)
+_- ~)
+*.r"3
+- r63
+- r63
+-Kr63
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+ArgsAlreadySpecified
+ArgumentFileDoesNotExist
+BadArgsValue
+BadCommandValue
+BadFormatParameterValue
+CannotReadFile
+CommandAlreadySpecified
+DefaultHelp
+InvalidFileArgument
+InvalidFileArgumentExtension
+InvalidWindowStyleArgument
+MissingArgsValue
+MissingCommandParameter
+MissingExecutionPolicyParameter
+MissingFileArgument
+MissingInputFormatParameter
+MissingOutputFormatParameter
+MissingWindowStyleArgument
+StdinNotRedirected
+TooManyParametersToCommand
+UnknownParameter
+Cannot process the command because arguments to -Command or -EncodedCommand have already been specified with -EncodedArguments.
+The argument '{0}' to the -File parameter does not exist. Provide the path to an existing '.ps1' file as an argument to the -File parameter.
+Cannot process the command because the value specified with -EncodedArguments is not properly encoded. The value must be Base64 encoded.
+Cannot process the command because the value specified with -EncodedCommand is not properly encoded. The value must be Base64 encoded.
+xCannot process the command because of an incorrect parameter value. "{0}" is not a valid format.  Valid formats are:
+Unable to read from file '{0}'.
+_Cannot process command because a command is already specified with -Command or -EncodedCommand.
+PowerShell[.exe] [-PSConsoleFile <file> | -Version <version>]
+    [-NoLogo] [-NoExit] [-NoProfile] [-NonInteractive] [-STA]
+    [-OutputFormat {Text | XML}] [-InputFormat {Text | XML}]
+    [-Command { - | <script-block> [-args <arg-array>]
+                  | <string> [<CommandParameters>] } ]
+    [-File fileName [arguments...]] [-ExecutionPolicy <ExecutionPolicy>]
+PowerShell[.exe] -Help | -? | /?
+-PSConsoleFile
+    Loads the specified Windows PowerShell console file. To create a console
+    file, use Export-Console in Windows PowerShell.
+-Version
+    Starts the specified version of Windows PowerShell.
+-NoLogo
+    Hides the copyright banner at startup.
+-NoExit
+    Does not exit after running startup commands.
+-NoProfile
+    Does not use the user profile.
+-NonInteractive
+    Does not present an interactive prompt to the user.
+    Uses a single-threaded apartment for the execution thread.
+-OutputFormat
+    Determines how output from Windows PowerShell is formatted. Valid values
+    are "Text" (text strings) or "XML" (serialized CLIXML format).
+-InputFormat
+    Describes the format of data sent to Windows PowerShell. Valid values are
+    "Text" (text strings) or "XML" (serialized CLIXML format).
+-Command
+    Executes the specified commands (and any parameters) as though they were
+    typed at the Windows PowerShell command prompt, and then exits, unless 
+    NoExit is specified. The value of Command can be "-", a string. or a
+    script block.
+    If the value of Command is "-", the command text is read from standard
+    input.
+    Script blocks must be enclosed in braces ({}). You can specify a script
+    block only when running PowerShell.exe in Windows PowerShell. The results
+    of the script are returned to the parent shell as deserialized XML objects,
+    not live objects.
+    If the value of Command is a string, Command must be the last parameter
+    in the command , because any characters typed after the command are 
+    interpreted as the command arguments.
+       To write a string that runs a Windows PowerShell command, use the format:
+"& {<command>}"
+    where the quotation marks indicate a string and the invoke operator (&)
+    causes the command to be executed.
+-Help, -?, /?
+    Shows this message. If you are typing a PowerShell.exe command in Windows
+    PowerShell, prepend the command parameters with a hyphen (-), not a forward
+    slash (/). You can use either a hyphen or forward slash in Cmd.exe.
+EXAMPLES
+    PowerShell -PSConsoleFile SqlSnapin.Psc1
+    PowerShell -version 1.0 -NoLogo -InputFormat text -OutputFormat XML
+    PowerShell -Command {Get-EventLog -LogName security}
+    PowerShell -Command "& {Get-EventLog -LogName security}"
+PProcessing -File '{0}' failed: {1} Specify a valid path for the -File parameter.
+Processing -File '{0}' failed because the file does not have a '.ps1' extension. Specify a valid PowerShell script file name, and then try again.
+)Processing -WindowStyle '{0}' failed: {1}
+{Cannot process the command because -EncodedArguments requires a value. Specify a value for the -EncodedArguments parameter.
+ZCannot process the command because of a missing parameter. A command must follow -Command.
+qCannot process the execution policy because of a missing policy name. A policy name must follow -ExecutionPolicy.
+The command cannot be run because the File parameter requires a file path. Supply a path for the File parameter and then try the command again.
+Cannot process the command because the -InputFormat parameter requires an argument. Specify a valid format argument for this parameter.  Valid formats are:
+The command cannot be run because no argument has been supplied for the OutputFormat parameter. Specify one of the following formats for this parameter.
+Cannot process the command because -WindowStyle requires an argument that is one of Normal, Hidden, Minimized or Maximized. Specify one of these argument values and try again.
+j'-' was specified as the argument to -Command but standard input has not been redirected for this process.
+\'-' was specified with the -Command parameter; no other arguments to -Command are permitted.
+Unrecognized parameter: '{0}'
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+AddBreakHandlerExceptionMessage
+AttachToParentConsoleExceptionTemplater
+DetachFromConsoleExceptionTemplate
+FillConsoleOutputAttributeExceptionTemplate
+FillConsoleOutputCharacterExceptionTemplate
+FlushConsoleInputBufferExceptionTemplate
+GetActiveScreenBufferHandleExceptionTemplate
+GetConsoleCursorInfoExceptionTemplate
+GetConsoleScreenBufferInfoExceptionTemplate
+GetInputModeExceptionTemplate
+GetLargestConsoleWindowSizeExceptionTemplate
+GetModeExceptionTemplate
+GetNumberOfConsoleInputEventsExceptionTemplate
+PeekConsoleInputExceptionTemplate
+ReadConsoleExceptionTemplate
+ReadConsoleInputExceptionTemplate
+ReadConsoleOutputExceptionTemplate
+RemoveBreakHandlerExceptionTemplate
+ScrollConsoleScreenBufferExceptionTemplate
+SetConsoleCursorInfoExceptionTemplate
+SetConsoleCursorPositionExceptionTemplate
+SetConsoleScreenBufferSizeExceptionTemplate
+SetConsoleTextAttributeExceptionTemplate
+SetConsoleWindowInfoExceptionTemplate
+SetConsoleWindowTitleExceptionTemplate
+SetModeExceptionTemplate
+WriteConsoleExceptionTemplate
+WriteConsoleOutputExceptionTemplate
+pThe Win32 internal error "{0}" 0x{1:X} occurred when adding a break handler. Contact Microsoft Support Services.
+uThe Win32 internal error "{0}" 0x{1:X} occurred when attaching to parent console. Contact Microsoft Support Services.
+pThe Win32 internal error "{0}" 0x{1:X} occurred when detaching from console. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when filling the console output buffer with attribute. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when filling the console output buffer with character. Contact Microsoft Support Services.
+{The Win32 internal error "{0}" 0x{1:X} occurred when flushing the console input buffer. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when retrieving handle for active console output buffer. Contact Microsoft Support Services.
+tThe Win32 internal error "{0}" 0x{1:X} occurred when getting cursor information. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when getting console output buffer information. Contact Microsoft Support Services.
+yThe Win32 internal error "{0}" 0x{1:X} occurred when retrieving input console handle. Contact Microsoft Support Services.
+}The Win32 internal error "{0}" 0x{1:X} occurred when getting largest console window size. Contact Microsoft Support Services.
+nThe Win32 internal error "{0}" 0x{1:X} occurred when getting console mode. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when getting number of events in console input buffer. Contact Microsoft Support Services.
+vThe Win32 internal error "{0}" 0x{1:X} occurred when peeking console input buffer. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when reading characters from console input buffer. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when reading input records from console input buffer. Contact Microsoft Support Services.
+wThe Win32 internal error "{0}" 0x{1:X} occurred when reading console output buffer. Contact Microsoft Support Services.
+rThe Win32 internal error "{0}" 0x{1:X} occurred when removing a break handler. Contact Microsoft Support Services.
+yThe Win32 internal error "{0}" 0x{1:X} occurred when scrolling console output buffer. Contact Microsoft Support Services.
+tThe Win32 internal error "{0}" 0x{1:X} occurred when setting cursor information. Contact Microsoft Support Services.
+qThe Win32 internal error "{0}" 0x{1:X} occurred when setting cursor position. Contact Microsoft Support Services.
+|The Win32 internal error "{0}" 0x{1:X} occurred when setting console output buffer size. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when setting attributes of characters for console output buffer. Contact Microsoft Support Services.
+|The Win32 internal error "{0}" 0x{1:X} occurred when setting console window information. Contact Microsoft Support Services.
+vThe Win32 internal error "{0}" 0x{1:X} occurred when setting console window title. Contact Microsoft Support Services.
+nThe Win32 internal error "{0}" 0x{1:X} occurred when setting console mode. Contact Microsoft Support Services.
+The Win32 internal error "{0}" 0x{1:X} occurred when writing console output buffer at current cursor position. Contact Microsoft Support Services.
+wThe Win32 internal error "{0}" 0x{1:X} occurred when writing console output buffer. Contact Microsoft Support Services.
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP)#
+XRbj_W
+CoordinateOutOfBufferErrorTemplate
+InvalidBufferSizeError
+InvalidConsoleColorError
+InvalidCursorSizeError
+InvalidReadKeyOptionsError
+InvalidRegionErrorTemplate
+InvalidXWindowPositionError
+InvalidYWindowPositionError
+WindowHeightLargerThanBufferError
+WindowHeightTooLargeErrorTemplate
+WindowHeightTooSmallError
+WindowTitleElevatedPrefix
+WindowTitleTemplate
+WindowTitleTooLongErrorTemplate
+WindowTitleTooShortError
+WindowTooNarrowError
+WindowTooShortError
+WindowWidthLargerThanBufferError
+WindowWidthTooLargeErrorTemplate
+WindowWidthTooSmallError
+~Cannot process the operation because the supplied coordinate is not valid. Specify a coordinate within the buffer area of {0}.
+PCannot set the buffer size because the size specified is too large or too small.
+Cannot set the console color because the value specified is invalid. Specify a valid color as defined by the System.ConsoleColor type.
+GCannot process CursorSize because the cursor size specified is invalid.
+`Cannot read key options. To read options either IncludeKeyDown,IncludeKeyUp or both must be set.
++{0} should be greater than or equal to {1}.
+Cannot use the specified Window X (column) position because it extends past the width of the screen buffer. Specify another X position, starting with 0 as the left most column of the buffer.
+Cannot use the specified Window Y (row) position because it extends past the height of the screen buffer. Specify another Y position, starting with 0 as the top most row of the buffer.
+/Window cannot be taller than the screen buffer.
+!Window cannot be taller than {0}.
+!Window height must be at least 1.
+Administrator
+{0}: {1}
+2Window title cannot be longer than {0} characters.
+Window title cannot be empty.
+Window size is too narrow.
+Window size is too short.
+.Window cannot be wider than the screen buffer.
+ Window cannot be wider than {0}.
+#Window width cannot be less than 1.
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+Description
+Vendor
+This Windows PowerShell snap-in contains cmdlets (such as Start-Transcript and Stop-Transcript) that are provided for use with the Windows PowerShell console host.
+Host Windows PowerShell snap-in
+Microsoft Corporation
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADPH
+CommandFailed
+CommandNotExecuted
+ConsoleHostIsSingleton
+DebuggerSourceCodeFormat
+DefaultPrompt
+EnteringDebugger
+ExitOnCtrlBreakMessage
+HitBreakpoint
+HostNotTranscribing
+InitScriptFailed
+InitialCommandNotExecuted
+InputExitCurrentLoopOutOfSyncError
+NestedPromptEntryError
+ShellCannotBeStarted
+TooManyNestedPromptsError
+TranscriptEpilogue
+TranscriptPrologue
+UnhandledExceptionShutdownMessage
+Error executing '{0}': {1}
+iCommand '{0}' was not executed as the session in which it was intended to run was either closed or broken
+OAn instance of the ConsoleHost class has already been created for this process.
+{0}:{1,-3} {2}
+*Entering debug mode. Use h or ? for help. 
+Ctrl-Break typed; exiting
+Hit {0}
+/The console host is not currently transcribing.
+KExecution of initialization script has failed. The shell cannot be started.
+ZCommand '{0}' could not be executed because some Windows PowerShell snap-ins did not load.
+VCannot process input loop. ExitCurrentLoop was called when no InputLoops were running.
+UA nested prompt cannot be entered until the host is running at least one prompt loop.
+FThe shell cannot be started. A failure occurred during initialization:
+JCannot display prompt because too many nested prompts are already running.
+o**********************
+Windows PowerShell Transcript End
+End time: {0:yyyyMMddHHmmss}
+**********************
+**********************
+Windows PowerShell Transcript Start
+Start time: {0:yyyyMMddHHmmss}
+Username  : {1}\{2} 
+Machine
+  : {3} ({4}) 
+**********************
+An error has occurred that was not properly handled. Additional information is shown below. The Windows PowerShell process will exit.
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+PromptForCredential_Password
+PromptForCredential_User
+Password for user {0}: 
+User: 
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+Li0iP
+ChoiceMessage
+DebugFormatString
+DefaultChoiceForMultipleChoices
+DefaultChoicePrompt/
+DefaultChoicesForMultipleChoicesE
+EmptyChoicesErrorTemplate`
+InvalidChoiceHotKeyError
+InvalidDefaultChoiceErrorTemplate
+InvalidDefaultChoiceForMultipleSelection
+NullErrorTemplate
+NullOrEmptyErrorTemplate
+PromptCanceledError
+PromptEmptyDescriptionsErrorTemplate
+PromptFieldPromptInputSeparatorTemplate
+PromptForChoiceHelp
+PromptHelp
+PromptNoHelpAvailableErrorTemplate
+PromptParseFormatErrorTemplate
+PromptParseOverflowErrorTemplate
+PromptTypeLoadErrorTemplate
+PromptUnrecognizedCommandErrorTemplate
+RankZeroArrayErrorTemplate
+ReadFailsOnNonInteractiveFlag
+VerboseFormatString
+WarningFormatString
+Choice[{0}]: 
+DEBUG: {0}
+(default is "{0}")
+(default is "{0}"): 
+(default choices are {0})
+'"{0}" should have at least one element.
+UCannot process the hot key because a question mark ("?") cannot be used as a hot key.
+C"{0}" must be a valid index into "{1}" or -1 for no default choice.
+C"{0}" must be a valid index into "{1}". "{2}" is not a valid index.
+"{0}" cannot be null.
+"{0}" cannot be null or empty.
+The prompt was canceled.
+4The "{0}" collection must have at least one element.
+{0}: 
+[?] Help 
+(Type !? for Help.)
+No help is available for {0}.
+6Cannot recognize "{1}" as a {0} due to a format error.
+9Cannot recognize "{1}" as a {0} due to an overflow error.
+HCannot display the prompt for "{0}" because type "{1}" cannot be loaded.
+5"{0}" cannot be recognized as a valid Prompt command.
+%The field "{0}" is a zero rank array.
+]Windows PowerShell is in NonInteractive mode. Read and Prompt functionality is not available.
+VERBOSE: {0}
+WARNING: {0}
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADPo
+ShellBanner
+ShellHelpT
+RWindows PowerShell 
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+PowerShell[.exe] [-PSConsoleFile <file> | -Version <version>]
+    [-NoLogo] [-NoExit] [-Sta] [-NoProfile] [-NonInteractive]
+    [-InputFormat {Text | XML}] [-OutputFormat {Text | XML}] 
+    [-WindowStyle <style>] [-EncodedCommand <Base64EncodedCommand>] 
+    [-File <filePath> <args>] [-ExecutionPolicy <ExecutionPolicy>]
+    [-Command { - | <script-block> [-args <arg-array>]
+                  | <string> [<CommandParameters>] } ]
+PowerShell[.exe] -Help | -? | /?
+-PSConsoleFile
+    Loads the specified Windows PowerShell console file. To create a console
+    file, use Export-Console in Windows PowerShell.
+-Version
+    Starts the specified version of Windows PowerShell.
+-NoLogo
+    Hides the copyright banner at startup.
+-NoExit
+    Does not exit after running startup commands.
+    Start the shell using a single-threaded apartment.
+-NoProfile
+    Does not use the user profile.
+-NonInteractive
+    Does not present an interactive prompt to the user.
+-InputFormat
+    Describes the format of data sent to Windows PowerShell. Valid values are
+    "Text" (text strings) or "XML" (serialized CLIXML format).
+-OutputFormat
+    Determines how output from Windows PowerShell is formatted. Valid values
+    are "Text" (text strings) or "XML" (serialized CLIXML format).
+-WindowStyle
+    Sets the window style to Normal, Minimized, Maximized or Hidden.
+-EncodedCommand
+    Accepts a base-64-encoded string version of a command. Use this parameter 
+    to submit commands to Windows PowerShell that require complex quotation 
+    marks or curly braces.
+-File
+    Execute a script file.
+-ExecutionPolicy
+    Sets the default execution policy for the session.
+-Command
+    Executes the specified commands (and any parameters) as though they were
+    typed at the Windows PowerShell command prompt, and then exits, unless 
+    NoExit is specified. The value of Command can be "-", a string. or a
+    script block.
+    If the value of Command is "-", the command text is read from standard
+    input.
+    If the value of Command is a script block, the script block must be enclosed
+    in braces ({}). You can specify a script block only when running PowerShell.exe
+    in Windows PowerShell. The results of the script block are returned to the
+    parent shell as deserialized XML objects, not live objects.
+    If the value of Command is a string, Command must be the last parameter
+    in the command , because any characters typed after the command are 
+    interpreted as the command arguments.
+    To write a string that runs a Windows PowerShell command, use the format:
+"& {<command>}"
+    where the quotation marks indicate a string and the invoke operator (&)
+    causes the command to be executed.
+-Help, -?, /?
+    Shows this message. If you are typing a PowerShell.exe command in Windows
+    PowerShell, prepend the command parameters with a hyphen (-), not a forward
+    slash (/). You can use either a hyphen or forward slash in Cmd.exe.
+EXAMPLES
+    PowerShell -PSConsoleFile SqlSnapIn.Psc1
+    PowerShell -version 1.0 -NoLogo -InputFormat text -OutputFormat XML
+    PowerShell -Command {Get-EventLog -LogName security}
+    PowerShell -Command "& {Get-EventLog -LogName security}"
+    # To use the -EncodedCommand parameter:
+    $command = 'dir "c:\program files" '
+    $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
+    $encodedCommand = [Convert]::ToBase64String($bytes)
+    powershell.exe -encodedCommand $encodedCommand
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+InvisibleNodesMessagePlural
+InvisibleNodesMessageSingular
+SecondsRemaining8
+{0} activities not shown...
+{0} activity not shown...
+{0}{1} remaining. 
+lSystem.Resources.ResourceReader, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+CannotStartTranscription
+ErrorStoppingTranscript"
+HostDoesNotSupportTranscriptQ
+MultipleFilesNotSupported|
+ReadWriteFileNotFileSystemProvider
+TranscriptFileExistsNoClobber
+TranscriptFileReadOnly
+TranscriptionInProgress
+TranscriptionNotInProgress
+TranscriptionStarted
+TranscriptionStopped
+ Transcription cannot be started.
+-An error occurred stopping transcription: {0}
+)This host does not support transcription.
+xCannot perform operation because the path resolved to more than one file. This command cannot operate on multiple files.
+.The current provider ({0}) cannot open a file.
+.File {0} already exists and {1} was specified.
+oFile {0} is read-only. Cannot write to this file. "Start-Transcript -Force" will clear the read-only attribute.
+^Transcription has already been started. Use the stop-transcript command to stop transcription.
+\Transcription has not been started. Use the start-transcript command to start transcription.
+&Transcript started, output file is {0}
+&Transcript stopped, output file is {0}BSJB
+v2.0.50727
+#Strings
+#GUID
+#Blob
+[P@!<
+[P@!T
+?S""y
+HW>$Y
+kWE$Y
+wNV%Q
+][S&!
+2:_&a
+(M=)I
+ `y+$
+[P@!4
+~a?-i
+Yc`/q
+d-a.C
+>.a0C
+%0!4C
+ B N Z p 
+ !!S!
+!("="a"t"
+#)#=#I#P#
+%"%=%b%
+%f&p&
+'B'Q'i's'~'
+(&(,(3(c(
+)6)E)L)_
+*3+D+a+k+
+,M,u,z,
+,8-P-
+.+.4.i.
+!/%9&D,U-V4W9Z:[<_=d
+&!8!J!p!w!}!
+""#X#R$r${$
+)`)f)n)w)
+)m*u*
+! " # $ '&(&)&*&/.0.1.2.3.5476
+<Module>
+Microsoft.PowerShell.ConsoleHost.dll
+AssemblyStrings
+CommandLineParameterParser
+Microsoft.PowerShell
+ConsoleControl
+InputRecordEventTypes
+INPUT_RECORD
+ControlKeyStates
+KEY_EVENT_RECORD
+COORD
+CONSOLE_READCONSOLE_CONTROL
+CHAR_INFO
+SMALL_RECT
+CONSOLE_SCREEN_BUFFER_INFO
+CONSOLE_CURSOR_INFO
+FONTSIGNATURE
+CHARSETINFO
+TEXTMETRIC
+ConsoleBreakSignal
+BreakHandler
+StandardHandleId
+ConsoleModes
+BufferCellArrayRowTypeRange
+BufferCellArrayRowType
+NativeMethods
+AccessQualifiers
+ShareModes
+CreationDisposition
+CHAR_INFO_Attributes
+Executor
+ExecutionOptions
+PipelineFinishedWaitHandle
+ConsoleHost
+ConsoleColorProxy
+InitializeStandardHandleDelegate
+InputLoop
+ConsoleHostStartupException
+ConsoleHostRawUserInterface
+ConsoleHostUserInterface
+WordFlags
+ReadLineResult
+PromptCommonInputErrors
+ConsoleShell
+ConsoleTextWriter
+ProgressPane
+PendingProgress
+NodeVisitor
+FindOldestNodeVisitor
+FindByIdNodeVisitor
+AgeAndResetStyleVisitor
+HeightTallyer
+ProgressNode
+RenderStyle
+Serialization
+DataFormat
+WrappedSerializer
+WrappedDeserializer
+StartTranscriptCommand
+Microsoft.PowerShell.Commands
+StopTranscriptCommand
+PSHostPSSnapIn
+EngineInstaller
+UnmanagedPSEntry
+mscorlib
+System
+Object
+ValueType
+MulticastDelegate
+System.Management.Automation
+System.Management.Automation.Host
+PSHost
+IDisposable
+IHostSupportsInteractiveSession
+ApplicationException
+PSHostRawUserInterface
+PSHostUserInterface
+IHostUISupportsMultipleChoiceSelection
+System.IO
+TextWriter
+ProgressRecord
+PSCmdlet
+PSSnapIn
+PSInstaller
+AssemblyVersion
+AssemblyCopyright
+resTableName
+Version
+.ctor
+get_AbortStartup
+get_InitialCommand
+get_WasInitialCommandEncoded
+get_NoExit
+get_ImportSystemModules
+get_SkipProfiles
+get_ExitCode
+get_ReadFromStdin
+get_NoPrompt
+System.Collections.ObjectModel
+Collection`1
+System.Management.Automation.Runspaces
+CommandParameter
+get_Args
+get_ServerMode
+get_OutputFormat
+get_InputFormat
+get_File
+get_ExecutionPolicy
+get_ThrowOnReadAndPrompt
+ShowHelp
+ShowBanner
+get_StaMode
+Parse
+ParseHelper
+MatchSwitch
+ParseFormat
+ParseExecutionPolicy
+ParseCommand
+CollectArgs
+serverMode
+parent
+showHelp
+showBanner
+noInteractive
+bannerText
+helpText
+abortStartup
+skipUserInit
+staMode
+noExit
+readFromStdin
+noPrompt
+commandLineCommand
+wasCommandEncoded
+exitCode
+dirty
+outFormat
+inFormat
+collectedArgs
+executionPolicy
+importSystemModules
+PSTraceSource
+tracer
+AbortStartup
+InitialCommand
+WasInitialCommandEncoded
+NoExit
+ImportSystemModules
+SkipProfiles
+ExitCode
+ReadFromStdin
+NoPrompt
+ServerMode
+OutputFormat
+InputFormat
+ExecutionPolicy
+ThrowOnReadAndPrompt
+StaMode
+SW_HIDE
+SW_SHOWNORMAL
+SW_NORMAL
+SW_SHOWMINIMIZED
+SW_SHOWMAXIMIZED
+SW_MAXIMIZE
+SW_SHOWNOACTIVATE
+SW_SHOW
+SW_MINIMIZE
+SW_SHOWMINNOACTIVE
+SW_SHOWNA
+SW_RESTORE
+SW_SHOWDEFAULT
+SW_FORCEMINIMIZE
+SW_MAX
+StringsResourceBaseName
+AddBreakHandlerTemplateResource
+RemoveBreakHandlerTemplateResource
+AttachToParentConsoleTemplateResource
+DetachFromConsoleTemplateResource
+GetInputHandleTemplateResource
+GetActiveScreenBufferHandleTemplateResource
+GetModeTemplateResource
+SetModeTemplateResource
+ReadConsoleTemplateResource
+ReadConsoleInputTemplateResource
+PeekConsoleInputTemplateResource
+GetNumberOfConsoleInputEventsTemplateResource
+FlushConsoleInputBufferTemplateResource
+GetConsoleScreenBufferInfoTemplateResource
+SetConsoleScreenBufferSizeTemplateResource
+WriteConsoleOutputTemplateResource
+ReadConsoleOutputTemplateResource
+FillConsoleOutputCharacterTemplateResource
+FillConsoleOutputAttributeTemplateResource
+ScrollConsoleScreenBufferTemplateResource
+SetConsoleWindowInfoTemplateResource
+GetLargestConsoleWindowSizeTemplateResource
+SetConsoleWindowTitleTemplateResource
+WriteConsoleTemplateResource
+SetConsoleTextAttributeTemplateResource
+SetConsoleCursorPositionTemplateResource
+GetConsoleCursorInfoTemplateResource
+SetConsoleCursorInfoTemplateResource
+GetConsoleWindow
+ShowWindow
+System.Diagnostics
+ProcessWindowStyle
+SetConsoleMode
+AddBreakHandler
+RemoveBreakHandler
+Microsoft.Win32.SafeHandles
+SafeFileHandle
+GetInputHandle
+GetActiveScreenBufferHandle
+GetStdHandle
+GetMode
+SetMode
+ReadConsole
+ReadConsoleInput
+PeekConsoleInput
+GetNumberOfConsoleInputEvents
+FlushConsoleInputBuffer
+GetConsoleScreenBufferInfo
+SetConsoleScreenBufferSize
+ConsoleColor
+IsConsoleColor
+WORDToColor
+ColorToWORD
+Coordinates
+BufferCell
+WriteConsoleOutput
+Rectangle
+System.Collections.Generic
+List`1
+BuildEdgeTypeInfo
+GetEdgeType
+CheckWriteEdges
+CheckWriteConsoleOutputContents
+WriteConsoleOutputCJK
+WriteConsoleOutputPlain
+ReadConsoleOutput
+ShouldCheck
+ReadConsoleOutputCJKSmall
+ReadConsoleOutputCJK
+ReadConsoleOutputPlain
+FillConsoleOutputCharacter
+FillConsoleOutputAttribute
+ScrollConsoleScreenBuffer
+SetConsoleWindowInfo
+GetLargestConsoleWindowSize
+GetConsoleWindowTitle
+SetConsoleWindowTitle
+WriteConsole
+SetConsoleTextAttribute
+CodePageToCharSet
+IsAvailableFarEastCodePage
+IsAnyDBCSCharSet
+LengthInBufferCellsFE
+LengthInBufferCells
+IsCJKOutputCodePage
+SetConsoleCursorPosition
+GetConsoleCursorInfo
+SetConsoleCursorInfo
+HostException
+ErrorCategory
+CreateHostException
+value__
+KEY_EVENT
+MOUSE_EVENT
+WINDOW_BUFFER_SIZE_EVENT
+MENU_EVENT
+FOCUS_EVENT
+EventType
+KeyEvent
+RIGHT_ALT_PRESSED
+LEFT_ALT_PRESSED
+RIGHT_CTRL_PRESSED
+LEFT_CTRL_PRESSED
+SHIFT_PRESSED
+NUMLOCK_ON
+SCROLLLOCK_ON
+CAPSLOCK_ON
+ENHANCED_KEY
+KeyDown
+RepeatCount
+VirtualKeyCode
+VirtualScanCode
+UnicodeChar
+ControlKeyState
+ToString
+nLength
+nInitialChars
+dwCtrlWakeupMask
+dwControlKeyState
+Attributes
+Right
+Bottom
+BufferSize
+CursorPosition
+WindowRect
+MaxWindowSize
+Padding
+Visible
+fsUsb0
+fsUsb1
+fsUsb2
+fsUsb3
+fsCsb0
+fsCsb1
+ciCharset
+ciACP
+tmHeight
+tmAscent
+tmDescent
+tmInternalLeading
+tmExternalLeading
+tmAveCharWidth
+tmMaxCharWidth
+tmWeight
+tmOverhang
+tmDigitizedAspectX
+tmDigitizedAspectY
+tmFirstChar
+tmLastChar
+tmDefaultChar
+tmBreakChar
+tmItalic
+tmUnderlined
+tmStruckOut
+tmPitchAndFamily
+tmCharSet
+CtrlC
+CtrlBreak
+Close
+Logoff
+Shutdown
+Invoke
+IAsyncResult
+AsyncCallback
+BeginInvoke
+EndInvoke
+Input
+Output
+Error
+ProcessedInput
+LineInput
+EchoInput
+WindowInput
+MouseInput
+Insert
+QuickEdit
+Extended
+AutoPosition
+ProcessedOutput
+WrapEndOfLine
+Start
+LeftTrailing
+RightLeading
+CreateFile
+GetConsoleCP
+GetConsoleOutputCP
+GetDC
+ReleaseDC
+TranslateCharsetInfo
+GetTextMetrics
+GetCharWidth32
+System.Text
+StringBuilder
+GetConsoleTitle
+SetConsoleTitle
+GetConsoleMode
+SetConsoleCtrlHandler
+GenericRead
+GenericWrite
+ShareRead
+ShareWrite
+CreateNew
+CreateAlways
+OpenExisting
+OpenAlways
+TruncateExisting
+COMMON_LVB_LEADING_BYTE
+COMMON_LVB_TRAILING_BYTE
+EventArgs
+OutputObjectStreamHandler
+ErrorObjectStreamHandler
+Exception
+AsyncPipelineFailureHandler
+ExecuteCommandAsync
+Pipeline
+ExecuteCommandAsyncHelper
+CreatePipeline
+PSObject
+ExecuteCommand
+ExecuteCommandHelper
+ExecuteCommandAndGetResultAsString
+Nullable`1
+ExecuteCommandAndGetResultAsBool
+Cancel
+Reset
+get_CurrentExecutor
+set_CurrentExecutor
+CancelCurrentExecutor
+currentExecutor
+staticStateLock
+pipeline
+cancelled
+useNestedPipelines
+instanceStateLock
+isPromptFunctionExecutor
+CurrentExecutor
+AddOutputter
+AddToHistory
+ReadInputObjects
+PipelineStateEventArgs
+PipelineStateChangedHandler
+System.Threading
+ManualResetEvent
+eventHandle
+ExitCodeSuccess
+ExitCodeCtrlBreak
+ExitCodeInitFailure
+ExitCodeBadCommandLineParameter
+resBaseName
+CheckForSevereException
+RunspaceConfiguration
+MyBreakHandler
+SpinUpBreakHandlerThread
+HandleBreak
+CreateSingletonInstance
+get_SingletonInstance
+get_Name
+get_Version
+get_InstanceId
+get_UI
+Runspace
+PushRunspace
+RunspaceStateEventArgs
+HandleRemoteRunspaceStateChanged
+PopRunspace
+get_IsRunspacePushed
+_isRunspacePushed
+get_Runspace
+get_PrivateData
+consoleColorProxy
+System.Globalization
+CultureInfo
+get_CurrentCulture
+get_CurrentUICulture
+SetShouldExit
+EnterNestedPrompt
+ExitNestedPrompt
+NotifyBeginApplication
+NotifyEndApplication
+BindBreakHandler
+UnhandledExceptionEventArgs
+UnhandledExceptionHandler
+Finalize
+Dispose
+get_ShouldEndSession
+set_ShouldEndSession
+System.Management.Automation.Remoting
+RunspaceRef
+get_RunspaceRef
+get_ErrorFormat
+get_IsRunningAsync
+get_OutputSerializer
+get_ErrorSerializer
+get_IsInteractive
+get_ConsoleTextWriter
+RunspaceExitCodeToExitCode
+DoRunspaceLoop
+GenerateEngineShutdown
+InitializeRunspaceHelper
+InitializeRunspace
+CreateRunspace
+RunProfile
+EscapeTickCharacters
+WriteErrorLine
+ReportException
+ReportExceptionFallback
+EventHandler
+RunspacePopped
+add_RunspacePopped
+remove_RunspacePopped
+RunspacePushed
+add_RunspacePushed
+remove_RunspacePushed
+IsStandardHandleRedirected
+get_IsStandardOutputRedirected
+get_IsStandardInputRedirected
+get_IsStandardErrorRedirected
+InitializeStandardInputReader
+InitializeStandardOutputWriter
+InitializeStandardErrorWriter
+get_StandardOutputWriter
+get_StandardErrorWriter
+TextReader
+get_StandardInReader
+DebuggerStopEventArgs
+OnExecutionSuspended
+HostUtilities
+DebuggerCommand
+ProcessDebuggerCommand
+get_InDebugMode
+EnterDebugMode
+DebuggerResumeAction
+ExitDebugMode
+WriteDebuggerMessage
+runspaceRef
+System.Runtime.InteropServices
+GCHandle
+breakHandlerGcHandle
+Thread
+breakHandlerThread
+isDisposed
+savedWindowTitle
+exitCodeFromRunspace
+isCtrlCDisabled
+setShouldExitCalled
+outputFormat
+inputFormat
+isRunningPromptLoop
+wasInitialCommandEncoded
+configuration
+hostGlobalLock
+shouldEndSession
+beginApplicationNotifyCount
+isStandardOutputRedirectionDetermined
+isStandardOutputRedirected
+standardOutputWriter
+isStandardErrorRedirectionDetermined
+isStandardErrorRedirected
+standardErrorWriter
+isStandardInputRedirectionDetermined
+isStandardInputRedirected
+standardInputReader
+initStandardOutDelegate
+initStandardInDelegate
+initStandardErrorDelegate
+consoleWriter
+outputSerializer
+errorSerializer
+DebuggerCommandProcessor
+debuggerCommandProcessor
+inDebugMode
+displayDebuggerBanner
+debuggerStopEventArgs
+theConsoleHost
+exitOnCtrlBreakMessage
+runspaceInitTracer
+get_IsTranscribing
+set_IsTranscribing
+isTranscribing
+StartTranscribing
+transcriptFileName
+StopTranscribing
+WriteToTranscript
+StreamWriter
+transcriptionWriter
+transcriptionStateLock
+SingletonInstance
+InstanceId
+IsRunspacePushed
+PrivateData
+CurrentCulture
+CurrentUICulture
+ShouldEndSession
+ErrorFormat
+IsRunningAsync
+OutputSerializer
+ErrorSerializer
+IsInteractive
+IsStandardOutputRedirected
+IsStandardInputRedirected
+IsStandardErrorRedirected
+StandardOutputWriter
+StandardErrorWriter
+StandardInReader
+InDebugMode
+IsTranscribing
+get_ErrorForegroundColor
+set_ErrorForegroundColor
+get_ErrorBackgroundColor
+set_ErrorBackgroundColor
+get_WarningForegroundColor
+set_WarningForegroundColor
+get_WarningBackgroundColor
+set_WarningBackgroundColor
+get_DebugForegroundColor
+set_DebugForegroundColor
+get_DebugBackgroundColor
+set_DebugBackgroundColor
+get_VerboseForegroundColor
+set_VerboseForegroundColor
+get_VerboseBackgroundColor
+set_VerboseBackgroundColor
+get_ProgressForegroundColor
+set_ProgressForegroundColor
+get_ProgressBackgroundColor
+set_ProgressBackgroundColor
+ErrorForegroundColor
+ErrorBackgroundColor
+WarningForegroundColor
+WarningBackgroundColor
+DebugForegroundColor
+DebugBackgroundColor
+VerboseForegroundColor
+VerboseBackgroundColor
+ProgressForegroundColor
+ProgressBackgroundColor
+RunNewInputLoop
+ExitCurrentLoop
+HandleRunspacePushed
+HandleRunspacePopped
+IsIncompleteParseException
+EvaluateSuggestions
+EvaluatePrompt
+isNested
+shouldExit
+promptExec
+syncObject
+isRunspacePushed
+runspacePopped
+Stack`1
+instanceStack
+System.Runtime.Serialization
+SerializationInfo
+StreamingContext
+StringsBaseName
+InvalidConsoleColorErrorResource
+InvalidCursorSizeErrorResource
+InvalidXWindowPositionErrorResource
+InvalidYWindowPositionErrorResource
+InvalidBufferSizeErrorResource
+WindowWidthTooSmallErrorResource
+WindowHeightTooSmallErrorResource
+WindowWidthLargerThanBufferErrorResource
+WindowHeightLargerThanBufferErrorResource
+WindowWidthTooLargeErrorTemplateResource
+WindowHeightTooLargeErrorTemplateResource
+WindowTooNarrowErrorResource
+WindowTooShortErrorResource
+InvalidReadKeyOptionsErrorResource
+WindowTitleTooShortErrorResource
+WindowTitleTooLongErrorTemplateResource
+InvalidRegionErrorTemplateResource
+CoordinateOutOfBufferErrorTemplateResource
+get_ForegroundColor
+set_ForegroundColor
+get_BackgroundColor
+set_BackgroundColor
+get_CursorPosition
+set_CursorPosition
+get_CursorSize
+set_CursorSize
+get_WindowPosition
+set_WindowPosition
+get_BufferSize
+set_BufferSize
+get_WindowSize
+set_WindowSize
+get_MaxWindowSize
+get_MaxPhysicalWindowSize
+PipelineStoppedException
+NewPipelineStoppedException
+CacheKeyEvent
+KeyInfo
+ReadKeyOptions
+ReadKey
+KEY_EVENT_RECORDToKeyInfo
+FlushInputBuffer
+get_KeyAvailable
+get_WindowTitle
+set_WindowTitle
+SetBufferContents
+GetBufferContents
+ScrollBufferContents
+ClearKeyCache
+CheckCoordinateWithinBuffer
+GetBufferInfo
+defaultForeground
+defaultBackground
+cachedKeyEvent
+ForegroundColor
+BackgroundColor
+CursorSize
+WindowPosition
+WindowSize
+MaxPhysicalWindowSize
+KeyAvailable
+WindowTitle
+maxInputLineLength
+PromptCommandPrefix
+PromptEmptyDescriptionsErrorTemplateResource
+PromptParseOverflowErrorTemplateResource
+PromptParseFormatErrorTemplateResource
+PromptUnrecognizedCommandErrorTemplateResource
+PromptNoHelpAvailableErrorTemplateResource
+PromptFieldPromptInputSeparatorTemplateResource
+RankZeroArrayErrorTemplateResource
+PromptTypeLoadErrorTemplateResource
+NullOrEmptyErrorTemplateResource
+NullErrorTemplateResource
+PromptForChoiceHelpResource
+PromptCanceledErrorResource
+InvalidChoiceHotKeyErrorResource
+EmptyChoicesErrorTemplateResource
+InvalidDefaultChoiceErrorTemplateResource
+CommandCompletion
+commandCompletion
+get_RawUI
+get_IsCommandCompletionRunning
+set_ReadFromStdin
+set_NoPrompt
+ReadLine
+System.Security
+SecureString
+ReadLineAsSecureString
+ReadLineSafe
+WritePrintToken
+WriteBackSpace
+BlankAtCursor
+shouldUnsetMode
+WriteToConsole
+WriteLineToConsole
+Write
+WriteLine
+WrapText
+ChopTextIntoWords
+AddWord
+WriteWrappedLine
+WrapToCurrentWindowWidth
+WriteDebugLine
+WriteVerboseLine
+WriteWarningLine
+WriteProgress
+errorForegroundColor
+errorBackgroundColor
+warningForegroundColor
+warningBackgroundColor
+debugForegroundColor
+debugBackgroundColor
+verboseForegroundColor
+verboseBackgroundColor
+progressForegroundColor
+progressBackgroundColor
+RemoveNulls
+ReadLineWithTabCompletion
+instanceLock
+set_ThrowOnReadAndPrompt
+throwOnReadAndPrompt
+HandleThrowOnReadAndPrompt
+isInteractiveTestToolListening
+isTestingShiftTab
+debugFormatString
+verboseFormatString
+warningFormatString
+rawui
+ResetProgress
+HandleIncomingProgressRecord
+PreWrite
+PostWrite
+PreRead
+PostRead
+progPane
+pendingProgress
+FieldDescription
+AtLeastOneHelpMessageIsPresent
+Dictionary`2
+Prompt
+PromptReadInput
+PromptTryConvertTo
+PromptCommandMode
+ReportUnrecognizedPromptCommand
+ChoiceDescription
+PromptForChoice
+IEnumerable`1
+WriteChoicePrompt
+WriteChoiceHelper
+ShowChoiceHelp
+get_PromptColor
+get_DefaultPromptColor
+PSCredential
+PromptForCredential
+PSCredentialTypes
+PSCredentialUIOptions
+GetMainWindowHandle
+PromptUsingConsole
+RawUI
+IsCommandCompletionRunning
+PromptColor
+DefaultPromptColor
+IsWhitespace
+IsNewline
+CellCount
+Flags
+endedOnEnter
+endedOnTab
+endedOnShiftTab
+endedOnBreak
+Format
+Overflow
+Encoding
+get_Encoding
+get_IsShowing
+location
+bufSize
+savedRegion
+progressRegion
+IsShowing
+maxNodeCount
+Update
+EvictNode
+System.Collections
+ArrayList
+RemoveNode
+RemoveNodeAndPromoteChildren
+AddNode
+FindOldestLeafmostNodeHelper
+FindOldestLeafmostNode
+FindNodeById
+FindOldestNodeOfGivenStyle
+AgeNodesAndResetStyle
+Render
+RenderHelper
+TallyHeight
+CompressToFitHelper
+CompressToFit
+topLevelNodes
+nodeCount
+Visit
+VisitNodes
+FoundNode
+ListWhereFound
+IndexWhereFound
+oldestSoFar
+idToFind
+sourceIdToFind
+Tally
+RenderFull
+RenderCompact
+RenderMinimal
+Children
+Style
+SourceId
+get_LinesRequired
+get_LinesRequiredInFullStyle
+get_LinesRequiredInCompactStyle
+LinesRequired
+LinesRequiredInFullStyle
+LinesRequiredInCompactStyle
+Invisible
+Minimal
+Compact
+XmlCliTag
+streamName
+format
+Serialize
+textWriter
+System.Xml
+XmlWriter
+xmlWriter
+Serializer
+xmlSerializer
+firstCall
+Deserialize
+get_AtEnd
+textReader
+XmlReader
+xmlReader
+Deserializer
+xmlDeserializer
+firstLine
+atEnd
+AtEnd
+get_Path
+set_Path
+SwitchParameter
+get_Append
+set_Append
+get_Force
+set_Force
+force
+get_NoClobber
+set_NoClobber
+noclobber
+BeginProcessing
+ResolveFilePath
+ReportWrongProviderType
+ReportMultipleFilesNotSupported
+shouldAppend
+outFilename
+isFilenameSet
+Append
+Force
+NoClobber
+get_Vendor
+get_VendorResource
+get_Description
+get_DescriptionResource
+Vendor
+VendorResource
+Description
+DescriptionResource
+get_RegKey
+get_EngineVersion
+_regValues
+get_RegValues
+RegKey
+EngineVersion
+RegValues
+switchKey
+match
+smallestUnambiguousMatch
+missingParamResId
+noexitSeen
+isEncoded
+nCmdShow
+style
+handlerDelegate
+handleId
+consoleHandle
+initialContent
+charactersToRead
+endOnTab
+keyState
+OutAttribute
+buffer
+newSize
+attribute
+foreground
+background
+origin
+contents
+contentsRegion
+sameEdgeAreas
+firstLeftTrailingRow
+firstRightLeadingRow
+right
+codePage
+bufferInfo
+rowType
+character
+numberToWrite
+scrollRectangle
+clipRectangle
+destOrigin
+absolute
+windowInfo
+consoleTitle
+output
+charSet
+istmInitialized
+offset
+cursorPosition
+cursorInfo
+win32Error
+errorId
+category
+resId
+object
+method
+callback
+result
+fileName
+desiredAccess
+securityAttributes
+creationDisposition
+flagsAndAttributes
+templateFileWin32Handle
+options
+first
+width
+consoleInput
+consoleOutput
+length
+writeCoord
+numberOfAttrsWritten
+numberOfCharsWritten
+numberOfCharsToWrite
+reserved
+consoleScreenBufferInfo
+numberOfCharsToRead
+numberOfCharsRead
+controlData
+numberOfEventsRead
+numberOfEvents
+handlerRoutine
+attributes
+bufferSize
+bufferCoord
+writeRegion
+readRegion
+destinationOrigin
+consoleCursorInfo
+sender
+command
+exceptionThrown
+tempPipeline
+addToHistory
+value
+preStartWarning
+signal
+newRunspace
+eventArgs
+isDisposingNotFinalizing
+isPrestartWarned
+runspaceExitCode
+initialCommand
+skipProfiles
+initialCommandArgs
+profileFileName
+header
+isHandleRedirectionDetermined
+isHandleRedirected
+handleInit
+stdHandle
+resumeAction
+transcriptFilename
+handle
+message
+context
+innerException
+mshConsole
+input
+cache
+keyEventRecord
+keyInfo
+region
+source
+destination
+paramName
+isSecureString
+printToken
+originalCursorPosition
+flagToUnset
+transcribeResult
+foregroundColor
+backgroundColor
+maxWidthInBufferCells
+startIndex
+endIndex
+isWhitespace
+sourceId
+record
+calledFromPipeline
+descriptions
+caption
+fieldPrompt
+fieldEchoOnPrompt
+listInput
+endListInput
+fieldType
+isFromRemoteHost
+inputString
+convertedObj
+inputDone
+choices
+defaultChoice
+defaultChoices
+hotkeysAndPlainLabels
+defaultChoiceKeys
+shouldEmulateForMultipleChoiceSelection
+lineLen
+lineLenMax
+userName
+targetName
+allowedCredentialTypes
+nodes
+indexToRemove
+nodeToAdd
+treeToSearch
+listWhereFound
+indexWhereFound
+activityId
+maxWidth
+maxHeight
+rawUI
+strings
+indentation
+nodesCompressed
+priorStyle
+newStyle
+activityIdToFind
+unused
+unusedToo
+strCollection
+dataFormat
+filePath
+providerId
+consoleFilePath
+System.Resources
+NeutralResourcesLanguageAttribute
+ComVisibleAttribute
+System.Reflection
+AssemblyVersionAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+AssemblyFileVersionAttribute
+AssemblyKeyFileAttribute
+AssemblyDelaySignAttribute
+AssemblyConfigurationAttribute
+AssemblyInformationalVersionAttribute
+System.Runtime.ConstrainedExecution
+ReliabilityContractAttribute
+Consistency
+AssemblyTitleAttribute
+AssemblyDescriptionAttribute
+System.Security.Permissions
+SecurityPermissionAttribute
+SecurityAction
+DebuggableAttribute
+DebuggingModes
+System.Runtime.CompilerServices
+CompilationRelaxationsAttribute
+RuntimeCompatibilityAttribute
+Microsoft.PowerShell.ConsoleHost
+TraceProperty
+ResourceManagerCache
+GetResourceString
+String
+IsNullOrEmpty
+ToLowerInvariant
+get_Chars
+SpecialCharacters
+IsDash
+Substring
+RuntimeTypeHandle
+GetTypeFromHandle
+get_InvariantCulture
+LanguagePrimitives
+IFormatProvider
+ConvertTo
+get_Message
+op_Equality
+GetFullPath
+GetExtension
+StringComparison
+Equals
+Exists
+System.Text.RegularExpressions
+Regex
+RegexOptions
+Match
+Group
+get_Success
+IndexOf
+get_Length
+TrimEnd
+PSInvalidCastException
+TraceMethod
+GetNames
+System.Management.Automation.Internal
+StringUtil
+ArgumentException
+StringToBase64Converter
+Base64ToString
+Concat
+Remove
+get_Count
+Base64ToArgsConverter
+TraceSourceAttribute
+.cctor
+GetTracer
+DllImportAttribute
+Kernel32.dll
+user32.dll
+ArchitectureSensitiveAttribute
+Marshal
+GetLastWin32Error
+TraceException
+IntPtr
+op_Explicit
+SafeHandle
+get_IsInvalid
+DangerousGetHandle
+UInt32
+SizeOf
+get_Width
+get_Height
+UInt16
+PSArgumentNullException
+NewArgumentNullException
+get_X
+get_Y
+Array
+GetLength
+GetLowerBound
+set_Left
+set_Top
+get_Left
+get_Right
+set_Right
+get_Top
+get_Bottom
+set_Bottom
+Enumerator
+GetEnumerator
+get_Current
+set_X
+MoveNext
+Address
+BufferCellType
+get_BufferCellType
+Int32
+PSArgumentException
+NewArgumentException
+get_Character
+set_Character
+set_BufferCellType
+GetUpperBound
+Empty
+TraceError
+op_Inequality
+System.ComponentModel
+Win32Exception
+FormatResourceString
+StructLayoutAttribute
+LayoutKind
+FlagsAttribute
+Int16
+Boolean
+kernel32.dll
+User32.dll
+GDI32.dll
+KERNEL32.dll
+PipelineReader`1
+NonBlockingRead
+IEnumerator`1
+IEnumerator
+IContainsErrorRecord
+ErrorRecord
+get_ErrorRecord
+Monitor
+Enter
+CommandCollection
+get_Commands
+Command
+get_Item
+PipelineResultTypes
+MergeMyResults
+get_Output
+add_DataReady
+get_Error
+InvokeAsync
+PipelineWriter
+get_Input
+PipelineStateInfo
+get_PipelineStateInfo
+PipelineState
+get_State
+get_Reason
+PipelineClosedException
+CreateNestedPipeline
+get_BaseObject
+IsTrue
+Sleep
+EventHandler`1
+add_StateChanged
+WaitHandle
+WaitOne
+EventWaitHandle
+AccessViolationException
+StackOverflowException
+WindowsErrorReporting
+FailFast
+get_CurrentThread
+set_Name
+CopyTo
+System.Management.Automation.Remoting.Server
+OutOfProcessMediator
+PSSQMAPI
+LogAllDataSuppressExceptions
+Environment
+ThreadStart
+RemoteRunspace
+Override
+RunspaceStateInfo
+get_RunspaceStateInfo
+RunspaceState
+get_IsRunspaceOverridden
+Revert
+AsPSObject
+NativeCultureResolver
+get_Culture
+get_UICulture
+NewGuid
+PSVersionInfo
+get_PSVersion
+TraceConstructor
+set_CurrentUICulture
+set_CurrentCulture
+set_ShouldSetThreadUILanguageToZero
+UnhandledExceptionEventHandler
+AppDomain
+get_CurrentDomain
+add_UnhandledException
+Alloc
+get_Target
+get_ExceptionObject
+TraceDispose
+SuppressFinalize
+InvalidRunspaceStateException
+SecuritySupport
+ExecutionPolicyScope
+SetExecutionPolicy
+get_InnerException
+get_HasValue
+GetValueOrDefault
+get_Value
+RunspaceFactory
+ApartmentState
+set_ApartmentState
+PSThreadOptions
+set_ThreadOptions
+Debugger
+get_Debugger
+add_DebuggerStop
+RunspaceConfigurationEntryCollection`1
+ScriptConfigurationEntry
+get_InitializationScripts
+RunspaceConfigurationEntry
+get_Definition
+get_S
+ShellId
+GetFullProfileFileName
+SessionStateProxy
+get_SessionStateProxy
+GetDollarProfile
+SetVariable
+CommandParameterCollection
+get_Parameters
+ExecutionContext
+get_ExecutionContext
+set_ScriptCommandProcessorShouldRethrowExit
+CommandProcessorBase
+PSNoteProperty
+PSMemberInfoCollection`1
+PSPropertyInfo
+get_Properties
+TargetInvocationException
+InvocationInfo
+get_InvocationInfo
+get_PositionMessage
+Delegate
+Combine
+GetEncoding
+FileStream
+FileAccess
+StreamReader
+Stream
+Synchronized
+StringReader
+IOException
+set_AutoFlush
+ReadOnlyCollection`1
+Breakpoint
+get_Breakpoints
+get_ScriptName
+get_Line
+GetFileName
+get_ScriptLineNumber
+ProcessCommand
+System.Management.Automation.Internal.Host
+InternalHost
+get_EngineHostInterface
+PSNotImplementedException
+set_ResumeAction
+ExitNestedPromptException
+UnicodeEncoding
+DateTime
+get_Now
+get_UserDomainName
+get_UserName
+get_MachineName
+OperatingSystem
+get_OSVersion
+get_VersionString
+InvalidOperationException
+ArgumentNullException
+PSInvalidOperationException
+NewInvalidOperationException
+get_ExecutedByDebugger
+get_ResumeAction
+get_Command
+IncompleteParseException
+RemoteException
+RuntimeException
+ErrorCategoryInfo
+get_CategoryInfo
+MemberInfo
+GetSuggestion
+LocalRunspace
+get_GetExecutionContext
+AppendDollarError
+TerminateException
+GetRemotePrompt
+SerializableAttribute
+System.Security.Principal
+WindowsIdentity
+GetCurrent
+WindowsPrincipal
+WindowsBuiltInRole
+IsInRole
+Escape
+Replace
+IsMatch
+PSArgumentOutOfRangeException
+NewArgumentOutOfRangeException
+get_NativeErrorCode
+set_Y
+CommandCompletionBase
+RemoveAt
+AppendChar
+Int64
+EndsWith
+GetNextCompletionMatch
+get_HelpMessage
+get_ParameterAssemblyFullName
+InternalHostUserInterface
+GetFieldType
+get_ParameterTypeName
+IsSecuritySensitiveType
+get_ParameterTypeFullName
+PromptingException
+IList
+get_FullName
+GetInterface
+get_IsArray
+GetElementType
+GetArrayRank
+get_IsFromRemoteHost
+set_Length
+TryConvertTo
+get_ModifiedByRemotingProtocol
+Clear
+StartsWith
+OverflowException
+FormatException
+TraceWarning
+Compare
+HostUIHelperMethods
+BuildHotkeysAndPlainLabels
+DetermineChoicePicked
+ContainsKey
+KeyCollection
+get_Keys
+CredUIPromptForCredential
+Process
+GetCurrentProcess
+get_MainWindowHandle
+PsUtils
+GetParentProcess
+Utils
+GetRegistryConfigurationPrefix
+Microsoft.Win32
+Registry
+RegistryKey
+LocalMachine
+OpenSubKey
+GetValue
+Convert
+ToBoolean
+SecurityException
+InvalidCastException
+NewBufferCellArray
+get_ParentActivityId
+get_ActivityId
+ProgressRecordType
+get_RecordType
+get_Activity
+set_Activity
+get_StatusDescription
+set_StatusDescription
+get_CurrentOperation
+set_CurrentOperation
+get_PercentComplete
+set_PercentComplete
+get_SecondsRemaining
+set_SecondsRemaining
+set_ParentActivityId
+ICollection
+InsertRange
+ToArray
+set_RecordType
+TruncateToBufferCellWidth
+TimeSpan
+XmlWriterSettings
+set_CheckCharacters
+set_OmitXmlDeclaration
+Create
+CmdletAttribute
+op_Implicit
+get_Host
+PSNotSupportedException
+get_ExternalHost
+GetVariableValue
+SpecialFolder
+GetFolderPath
+Cmdlet
+ShouldProcess
+UnauthorizedAccessException
+ThrowTerminatingError
+FileInfo
+FileSystemInfo
+FileAttributes
+get_Attributes
+set_Attributes
+WriteObject
+SessionState
+get_SessionState
+PathIntrinsics
+ProviderInfo
+GetResolvedProviderPathFromPSPath
+InternalCommand
+get_Context
+ProviderNames
+get_ProviderNames
+get_FileSystem
+NameEquals
+CmdletProviderContext
+PSDriveInfo
+GetUnresolvedProviderPathFromPSPath
+ThrowFirstErrorOrDoNothing
+ItemNotFoundException
+ParameterAttribute
+AliasAttribute
+ValidateNotNullOrEmptyAttribute
+NewNotSupportedException
+RunInstallerAttribute
+get_FeatureVersionString
+set_Item
+Assembly
+GetExecutingAssembly
+get_Location
+GetDirectoryName
+get_ImageRuntimeVersion
+RegisterWindowsErrorReporting
+RunspaceConfigForSingleShell
+CreateDefaultConfiguration
+PSConsoleLoadException
+WaitForPendingReports
+CommandLineParameterParserStrings.resources
+ConsoleControlStrings.resources
+ConsoleHostRawUserInterfaceStrings.resources
+HostMshSnapInResources.resources
+ConsoleHostStrings.resources
+ConsoleHostUserInterfaceSecurityResources.resources
+ConsoleHostUserInterfaceStrings.resources
+ManagedEntranceStrings.resources
+ProgressNodeStrings.resources
+TranscriptStrings.resources
+CommandLineParameterParserStrings
+DefaultHelp
+noexit
+importsystemmodules
+noprofile
+nologo
+noninteractive
+servermode
+command
+windowstyle
+MissingWindowStyleArgument
+InvalidWindowStyleArgument
+MissingFileArgument
+InvalidFileArgument
+InvalidFileArgumentExtension
+ArgumentFileDoesNotExist
+^.\w+\:
+outputformat
+MissingOutputFormatParameter
+inputformat
+MissingInputFormatParameter
+executionpolicy
+MissingExecutionPolicyParameter
+encodedcommand
+encodedarguments
+encodeda
+BadFormatParameterValue
+CommandAlreadySpecified
+MissingCommandParameter
+BadCommandValue
+TooManyParametersToCommand
+StdinNotRedirected
+ArgsAlreadySpecified
+MissingArgsValue
+BadArgsValue
+ConsoleHost
+ConsoleHost subclass of S.M.A.PSHost
+AddBreakHandler
+AddBreakHandlerExceptionTemplate
+RemoveBreakHandler
+RemoveBreakHandlerExceptionTemplate
+CONIN$
+RetreiveInputConsoleHandle
+GetInputModeExceptionTemplate
+CONOUT$
+RetreiveActiveScreenBufferConsoleHandle
+GetActiveScreenBufferHandleExceptionTemplate
+GetConsoleMode
+GetModeExceptionTemplate
+SetConsoleMode
+SetModeExceptionTemplate
+ReadConsole
+ReadConsoleExceptionTemplate
+ReadConsoleInput
+ReadConsoleInputExceptionTemplate
+PeekConsoleInput
+PeekConsoleInputExceptionTemplate
+GetNumberOfConsoleInputEvents
+GetNumberOfConsoleInputEventsExceptionTemplate
+FlushConsoleInputBuffer
+FlushConsoleInputBufferExceptionTemplate
+GetConsoleScreenBufferInfo
+GetConsoleScreenBufferInfoExceptionTemplate
+SetConsoleScreenBufferSize
+SetConsoleScreenBufferSizeExceptionTemplate
+contents
+contents[{0}, {1}]
+WriteConsoleOutput
+WriteConsoleOutputExceptionTemplate
+contents passed in has 0 rows and columns
+invalid contents region
+ReadConsoleOutput
+ReadConsoleOutputExceptionTemplate
+FillConsoleOutputCharacter
+FillConsoleOutputCharacterExceptionTemplate
+FillConsoleOutputAttribute
+FillConsoleOutputAttributeExceptionTemplate
+ScrollConsoleScreenBuffer
+ScrollConsoleScreenBufferExceptionTemplate
+SetConsoleWindowInfo
+SetConsoleWindowInfoExceptionTemplate
+GetLargestConsoleWindowSize
+GetLargestConsoleWindowSizeExceptionTemplate
+SetConsoleWindowTitle
+SetConsoleWindowTitleExceptionTemplate
+WriteConsole
+WriteConsoleExceptionTemplate
+SetConsoleTextAttribute
+SetConsoleTextAttributeExceptionTemplate
+Win32 Error 0x{0:X} occurred when getting the window handle to the console.
+Win32 Error 0x{0:X} occurred when getting the Device Context of the console window.
+Win32 Error 0x{0:X} occurred when getting the Text Metric of the console window's Device Context.
+Win32 Error 0x{0:X} occurred when getting the width of a char.
+failed to locate char {0}, return 1
+SetConsoleCursorPosition
+SetConsoleCursorPositionExceptionTemplate
+GetConsoleCursorInfo
+GetConsoleCursorInfoExceptionTemplate
+SetConsoleCursorInfo
+SetConsoleCursorInfoExceptionTemplate
+ConsoleControlStrings
+ConsoleControl
+Console control methods
+{0},{1}
+{0},{1},{2},{3}
+Size: {0}, Visible: {1}
+ConsoleHostAsyncPipelineFailure
+Out-Default
+Input
+Executor
+ConsoleHost pipeline execution helper
+ConsoleHost main thread
+ConsoleHost.HandleBreak
+configuration
+ConsoleHostStrings
+ExitOnCtrlBreakMessage
+UnhandledExceptionShutdownMessage
+Output
+Error
+starting parse of command line parameters
+Start up warnings made command "{0}" not executed
+InitialCommandNotExecuted
+processing of cmdline args failed, exiting
+$global:?
+running command 
+Calling RunspaceFactory.CreateRunspace
+Calling Runspace.Open
+ShellCannotBeStarted
+ImportSystemModules
+There are no built-in scripts to run
+Running script: '{0}'
+InitScriptFailed
+PROFILE
+-noprofile option specified: skipping profiles
+running -file '{0}'
+running initial command
+checking profile
+profile file not found
+Could not load profile.
+ConsoleHost.ReportException
+writeErrorStream
+EnteringDebugger
+HitBreakpoint
+DebuggerSourceCodeFormat
+SessionDoesNotSupportDebugger
+TranscriptPrologue
+HostNotTranscribing
+TranscriptEpilogue
+ConsoleHostRunspaceInit
+Initialization code for ConsoleHost's Runspace
+TooManyNestedPromptsError
+InputExitCurrentLoopOutOfSyncError
+line is null
+exiting block mode
+adding line to block
+CommandNotExecuted
+prompt
+DefaultPrompt
+ConsoleHostRawUserInterfaceStrings
+WindowTitleElevatedPrefix
+WindowTitleTemplate
+value
+InvalidConsoleColorError
+InvalidCursorSizeError
+value.X
+InvalidXWindowPositionError
+value.Y
+InvalidYWindowPositionError
+InvalidBufferSizeError
+value.Width
+WindowWidthTooSmallError
+value.Height
+WindowHeightTooSmallError
+WindowWidthLargerThanBufferError
+WindowHeightLargerThanBufferError
+WindowWidthTooLargeErrorTemplate
+WindowHeightTooLargeErrorTemplate
+WindowTooNarrowError
+WindowTooShortError
+options
+InvalidReadKeyOptionsError
+WindowTitleTooShortError
+WindowTitleTooLongErrorTemplate
+origin
+region
+InvalidRegionErrorTemplate
+region.Right
+region.Left
+region.Bottom
+region.Top
+region outside boundaries
+CoordinateOutOfBufferErrorTemplate
+ConsoleHostRawUserInterface
+Console host's subclass of S.M.A.Host.RawConsole
+ConsoleHostUserInterfaceStrings
+DebugFormatString
+VerboseFormatString
+WarningFormatString
+debug
+verbose
+warning
+SourceId
+Record
+progress
+ReadFailsOnNonInteractiveFlag
+descriptions
+PromptEmptyDescriptionsErrorTemplate
+PromptHelp
+NullErrorTemplate
+descriptions[{0}]
+descriptions[{0}].AssemblyFullName
+NullOrEmptyErrorTemplate
+PromptTypeLoadErrorTemplate
+BadTypeName
+RankZeroArrayErrorTemplate
+ZeroRankArray
+{0}]: 
+PromptFieldPromptInputSeparatorTemplate
+Prompt canceled
+PromptParseOverflowErrorTemplate
+PromptParseFormatErrorTemplate
+PromptNoHelpAvailableErrorTemplate
+$null
+PromptUnrecognizedCommandErrorTemplate
+choices
+EmptyChoicesErrorTemplate
+defaultChoice
+InvalidDefaultChoiceErrorTemplate
+choice
+PromptCanceledError
+PromptForChoiceCanceled
+InvalidDefaultChoiceForMultipleSelection
+ChoiceMessage
+[{0}] {1}  
+PromptForChoiceHelp
+{0}{1}
+DefaultChoicePrompt
+DefaultChoiceForMultipleChoices
+DefaultChoicesForMultipleChoices
+{0} - {1}
+ConsoleHostUserInterfaceSecurityResources
+PromptForCredential_User
+PromptForCredential_Password
+User doesn't have access to read CredUI registry key.
+ConsolePrompting
+Could not read CredUI registry key: 
+Could not parse CredUI registry key: 
+DetermineCredUIPolicy: policy == {0}
+ConsoleHostUserInterface
+Console host's subclass of S.M.A.Host.Console
+ConsoleShell
+Entry point in to ConsoleShell
+ProgressPane
+Console Host Progress
+Ignoring malformed record:
+ProgressNodeStrings
+InvisibleNodesMessageSingular
+InvisibleNodesMessagePlural
+PendingProgress
+ {0}{1} 
+ {0}[{1}{2}] 
+SecondsRemaining
+{0}% 
+ {0}{1}{2}{3} 
+ {0}{1} {2}{3}{4} 
+ProgressNode
+#< CLIXML
+TranscriptStrings
+HostDoesNotSupportTranscript
+TranscriptionInProgress
+global:TRANSCRIPT
+PowerShell_transcript.{0:yyyyMMddHHmmss}.txt
+TranscriptFileExistsNoClobber
+NoClobber
+TranscriptFileReadOnly
+FileReadOnly
+TranscriptionStarted
+CannotStartTranscription
+ReadWriteFileNotFileSystemProvider
+MultipleFilesNotSupported
+StartTranscriptCommand
+start-transcript cmdlet
+TranscriptionNotInProgress
+TranscriptionStopped
+ErrorStoppingTranscript
+StopTranscriptCommand
+stop-transcript cmdlet
+Microsoft.PowerShell.Host
+Microsoft
+HostMshSnapInResources,Vendor
+This PSSnapIn contains cmdlets used by the MSH host.
+HostMshSnapInResources,Description
+PowerShellEngine
+PowerShellVersion
+ApplicationBase
+ConsoleHostAssemblyName
+ConsoleHostModuleName
+RuntimeVersion
+ManagedEntranceStrings
+ShellBanner
+ShellHelp
+1.0.0.0
+Copyright (C) 2006 Microsoft Corporation. All rights reserved.
+CommandLineParameterParserStrings
+ConsoleControlStrings
+AddBreakHandlerExceptionTemplate
+RemoveBreakHandlerExceptionTemplate
+AttachToParentConsoleExceptionTemplate
+DetachFromConsoleExceptionTemplate
+GetInputModeExceptionTemplate
+GetActiveScreenBufferHandleExceptionTemplate
+GetModeExceptionTemplate
+SetModeExceptionTemplate
+ReadConsoleExceptionTemplate
+ReadConsoleInputExceptionTemplate
+PeekConsoleInputExceptionTemplate
+GetNumberOfConsoleInputEventsExceptionTemplate
+FlushConsoleInputBufferExceptionTemplate
+GetConsoleScreenBufferInfoExceptionTemplate
+SetConsoleScreenBufferSizeExceptionTemplate
+WriteConsoleOutputExceptionTemplate
+ReadConsoleOutputExceptionTemplate
+FillConsoleOutputCharacterExceptionTemplate
+FillConsoleOutputAttributeExceptionTemplate
+ScrollConsoleScreenBufferExceptionTemplate
+SetConsoleWindowInfoExceptionTemplate
+GetLargestConsoleWindowSizeExceptionTemplate
+SetConsoleWindowTitleExceptionTemplate
+WriteConsoleExceptionTemplate
+SetConsoleTextAttributeExceptionTemplate
+SetConsoleCursorPositionExceptionTemplate
+GetConsoleCursorInfoExceptionTemplate
+SetConsoleCursorInfoExceptionTemplate
+ConsoleHostStrings
+ConsoleHostRawUserInterfaceStrings
+InvalidConsoleColorError
+InvalidCursorSizeError
+InvalidXWindowPositionError
+InvalidYWindowPositionError
+InvalidBufferSizeError
+WindowWidthTooSmallError
+WindowHeightTooSmallError
+WindowWidthLargerThanBufferError
+WindowHeightLargerThanBufferError
+WindowWidthTooLargeErrorTemplate
+WindowHeightTooLargeErrorTemplate
+WindowTooNarrowError
+WindowTooShortError
+InvalidReadKeyOptionsError
+WindowTitleTooShortError
+WindowTitleTooLongErrorTemplate
+InvalidRegionErrorTemplate
+CoordinateOutOfBufferErrorTemplate
+ConsoleHostUserInterfaceStrings
+PromptEmptyDescriptionsErrorTemplate
+PromptParseOverflowErrorTemplate
+PromptParseFormatErrorTemplate
+PromptUnrecognizedCommandErrorTemplate
+PromptNoHelpAvailableErrorTemplate
+PromptFieldPromptInputSeparatorTemplate
+RankZeroArrayErrorTemplate
+PromptTypeLoadErrorTemplate
+NullOrEmptyErrorTemplate
+NullErrorTemplate
+PromptForChoiceHelp
+PromptCanceledError
+InvalidChoiceHotKeyError
+EmptyChoicesErrorTemplate
+InvalidDefaultChoiceErrorTemplate
+ProgressNodeStrings
+TranscriptStrings
+ManagedEntranceStrings
+ConsoleHost$ConsoleHost subclass of S.M.A.PSHost
+ConsoleControl
+Console control methods
+Executor%ConsoleHost pipeline execution helper
+ConsoleHostRunspaceInit.Initialization code for ConsoleHost's Runspace
+ConsoleHostRawUserInterface0Console host's subclass of S.M.A.Host.RawConsole
+ConsoleHostUserInterface-Console host's subclass of S.M.A.Host.Console
+ConsoleShell
+Entry point in to ConsoleShell
+ProgressPane
+Console Host Progress
+PendingProgress
+Console Host Progress
+ProgressNode
+Console Host Progress
+Start
+Transcript
+SupportsShouldProcess
+StartTranscriptCommand
+start-transcript cmdlet
+Position
+PSPath
+Transcript
+StopTranscriptCommand
+stop-transcript cmdlet
+*Microsoft (R) Windows (R) Operating System
+9Copyright (c) Microsoft Corporation. All rights reserved.
+Microsoft Corporation
+6.1.7600.16385
+Ad:\w7rtm.public.amd64fre\internal\strongnamekeys\fake\windows.snk
+ Microsoft.PowerShell.ConsoleHost
+)Microsoft Windows PowerShell Console Host
+WrapNonExceptionThrows
+System.Security.Permissions.SecurityPermissionAttribute, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Security.Permissions.SecurityPermissionFlag, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Flags
+RSDSP
+Microsoft.PowerShell.ConsoleHost.pdb
+_CorDllMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+000004b0
+Comments
+Microsoft Windows PowerShell Console Host
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft.PowerShell.ConsoleHost
+FileVersion
+6.1.7600.16385
+InternalName
+Microsoft.PowerShell.ConsoleHost.dll
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+Microsoft.PowerShell.ConsoleHost.dll
+ProductName
+Microsoft (R) Windows (R) Operating System
+ProductVersion
+6.1.7600.16385
+Assembly Version
+1.0.0.0
+wxwxx
+wwwwxw
+xxww|
+wwwwww
+7---E
+<--/////Ec
+;///A/AAAAAAABB`cm
+D/AAAAEBBBBBBHBBBBBBAAB`l
+@AAAABBBHHHHHHHH`HHHBHBBBBAEb
+BBBBHHHHHHIIIIIIIIIIIH`HHBBBAAA
+SBBHHHHHIIIIcIcIcdIcIIIIIHHHBBEE
+VBIHHIIcIc
+IcIIH`HBH
+nIHIIcdd
+dIcIIIHH
+oIIIcdd
+dIIIb
+W!!!+
+OZQN&+
+N))*,:,A
+N)\Y6+*B
+%$99j
+;''(..5Us
+:..////0055555LVk
+Z//055666666666555/4h
+Y05666MMMMMMMM776555/
+E667MPMPPPlPPPPMMM765
+G7MMllmmmmnmmmmmlPMM6
+*mKOnoonoonnmmmPPM
+*p,NoUnoooonmmP
+Iuloonmm
+`)lti6n>
+b)nu['n=
+#Uu[(o=
+!#%$(x
+"fcC/x=
+*'',,4.4HVuw
+,444668686644.H
+448IIIONNIII864r
+=8IOOzzzzzzzONI6n
+NDM||
+~||zzNNk
+!A/E&T
+a0b z[
+ (*,,,,,*)
+_6/4@BDHHHD@@3;
+k73##&
+urpomkke__`
+dddd]][ZYYVV
+\AAa!
+pMMuG007 
+gDDmW88G,
+qEEd:##B5  #
+]66]1
+PNNTeaa
+ FAA<LFFZLFFs
+L::3M99V|\\
+]BBi%
+]>>lD--B#
+e==zP00T3
+h;;g"
+522@NIIkh__
+3&&3U>>]yYY
+>,,>O88I
+]??p:&&A 
+`99n:""=
+&##3@::I@99VA88[B88aB77fC77fK==haMMsdPP
+T<<dN77V

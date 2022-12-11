@@ -1,0 +1,287 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\scsiport.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    WMILIB.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0018028 Import Address Table
+             1C0018620 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4F3 KeLowerIrql
+                         391 IoInitializeIrp
+                         44E IofCallDriver
+                          EE ExFreePoolWithTag
+                         473 KeAcquireSpinLockAtDpcLevel
+                         4E0 KeInsertQueueDpc
+                         53B KeReleaseSpinLockFromDpcLevel
+                         488 KeCancelTimer
+                         8F1 RtlInitUnicodeString
+                         585 KeWaitForSingleObject
+                         536 KeReleaseMutex
+                         6BE ObReferenceObjectByPointer
+                         4CD KeInitializeEvent
+                         5BC MmBuildMdlForNonPagedPool
+                         475 KeAcquireSpinLockRaiseToDpc
+                         356 IoFreeMdl
+                         5EA MmLockPagableDataSection
+                         61B MmUnlockPagableImageSection
+                         539 KeReleaseSpinLock
+                         397 IoInvalidateDeviceRelations
+                          A2 ExAcquireFastMutex
+                         121 ExQueueWorkItem
+                         138 ExReleaseFastMutex
+                         559 KeSetEvent
+                         3A9 IoOpenDeviceRegistryKey
+                         B69 ZwOpenKey
+                         B17 ZwClose
+                         C4C _vsnwprintf
+                         353 IoFreeIrp
+                         323 IoCreateDevice
+                         4D5 KeInitializeSpinLock
+                         2E6 InitializeSListHead
+                         187 ExpInterlockedPushEntrySList
+                         8E8 RtlInitAnsiString
+                         4C8 KeInitializeDeviceQueue
+                         374 IoGetDriverObjectExtension
+                         48D KeClearEvent
+                         4A2 KeEnterCriticalRegion
+                         4EF KeLeaveCriticalRegion
+                         84B RtlCopyString
+                         882 RtlEqualString
+                         BF7 __C_specific_handler
+                         5DB MmGetSystemRoutineAddress
+                         441 IoWMIRegistrationControl
+                         5EE MmMapIoSpace
+                         61E MmUnmapIoSpace
+                         487 KeBugCheckEx
+                         372 IoGetDmaAdapter
+                         5B0 MmAllocateContiguousNodeMemory
+                         5D6 MmGetPhysicalAddress
+                         363 IoGetConfigurationInformation
+                         3AF IoQueryDeviceDescription
+                         B45 ZwEnumerateValueKey
+                          C1 ExAllocatePoolWithTag
+                         C52 _wcsnicmp
+                         9D7 RtlUnicodeStringToAnsiString
+                         BA8 ZwQueryValueKey
+                         B20 ZwCreateDirectoryObject
+                         6BB ObReferenceObjectByHandle
+                         3DB IoReportDetectedDevice
+                         2FE IoAttachDeviceToDeviceStack
+                         4D1 KeInitializeMutex
+                         5B1 MmAllocateMappingAddress
+                         2F6 IoAllocateMdl
+                         4C9 KeInitializeDpc
+                         395 IoInitializeTimer
+                         4D7 KeInitializeTimer
+                         577 KeSynchronizeExecution
+                          70 DbgPrint
+                         31D IoConnectInterrupt
+                         100 ExInitializeNPagedLookasideList
+                         9DA RtlUnicodeStringToInteger
+                         2F2 IoAllocateDriverObjectExtension
+                         587 KfRaiseIrql
+                         BE1 ZwSetValueKey
+                         9BB RtlStringFromGUID
+                         8B3 RtlFreeUnicodeString
+                         416 IoStartPacket
+                         4DB KeInsertByKeyDeviceQueue
+                         414 IoStartNextPacket
+                         4B1 KeFlushIoBuffers
+                         5F1 MmMapLockedPagesSpecifyCache
+                         569 KeSetTimer
+                         61F MmUnmapLockedPages
+                         2F3 IoAllocateErrorLogEntry
+                         448 IoWriteErrorLogEntry
+                         53D KeRemoveByKeyDeviceQueueIfBusy
+                         620 MmUnmapReservedMapping
+                         304 IoBuildSynchronousFsdRequest
+                         301 IoBuildAsynchronousFsdRequest
+                         44F IofCompleteRequest
+                         6CD ObfReferenceObject
+                         6CB ObfDereferenceObject
+                         359 IoFreeWorkItem
+                         2F9 IoAllocateWorkItem
+                         3B9 IoQueueWorkItem
+                         439 IoWMIDeviceObjectToProviderId
+                         446 IoWMIWriteEvent
+                         5F2 MmMapLockedPagesWithReservedMapping
+                         B26 ZwCreateKey
+                         80F RtlAnsiStringToUnicodeString
+                         B39 ZwDeleteKey
+                         907 RtlIntegerToUnicodeString
+                         812 RtlAppendUnicodeStringToString
+                         833 RtlCompareMemory
+                         398 IoInvalidateDeviceState
+                         980 RtlQueryRegistryValues
+                         714 PoRegisterDeviceForIdleDetection
+                         53E KeRemoveDeviceQueue
+                         4DC KeInsertDeviceQueue
+                         352 IoFreeErrorLogEntry
+                         609 MmProtectMdlSystemAddress
+                         61C MmUnlockPages
+                         3F3 IoSetDeviceInterfaceState
+                         33F IoDetachDevice
+                         33C IoDeleteDevice
+                         417 IoStartTimer
+                         32F IoCreateSymbolicLink
+                         3C7 IoRegisterDeviceInterface
+                         C4A _vsnprintf
+                         54A KeResetEvent
+                         71F PoSetPowerState
+                         728 PoStartNextPowerIrp
+                         6DA PoCallDriver
+                         718 PoRequestPowerIrp
+                         33E IoDeleteSymbolicLink
+                         41A IoStopTimer
+                         343 IoDisconnectInterrupt
+                         5CC MmFreeContiguousMemorySpecifyCache
+                          F0 ExFreeToNPagedLookasideList
+                          D5 ExDeleteNPagedLookasideList
+                         5CD MmFreeMappingAddress
+                         A02 RtlxAnsiStringToUnicodeSize
+                          BA ExAllocateFromNPagedLookasideList
+                         186 ExpInterlockedPopEntrySList
+                         36E IoGetDeviceProperty
+                         5A6 Mm64BitPhysicalAddress
+                          71 DbgPrintEx
+                         2F4 IoAllocateIrp
+                         8B4 RtlGUIDFromString
+                         5E8 MmIsVerifierEnabled
+                         5A9 MmAddVerifierThunks
+                         51B KeQueryTimeIncrement
+                         605 MmProbeAndLockPages
+                         5EC MmLockPagableSectionByHandle
+                         C96 vDbgPrintExWithPrefix
+                         AEF WmiQueryTraceInformation
+                         818 RtlAreBitsSet
+                         9A5 RtlSetBits
+                         828 RtlClearAllBits
+                         84C RtlCopyUnicodeString
+                         8F4 RtlInitializeBitMap
+                          BD ExAllocatePool2
+                         39A IoIs32bitProcess
+                         385 IoGetRequestorProcess
+                         366 IoGetCurrentProcess
+                         570 KeStackAttachProcess
+                         580 KeUnstackDetachProcess
+                         2E8 IoAcquireCancelSpinLock
+                         3D1 IoReleaseCancelSpinLock
+                         307 IoCancelIrp
+                         A1F SeCaptureSubjectContext
+                         A43 SeLockSubjectContext
+                         A06 SeAccessCheck
+                         375 IoGetFileObjectGenericMapping
+                         A74 SeUnlockSubjectContext
+                         A5C SeReleaseSubjectContext
+                         AF1 WmiTraceMessageVa
+                         4B9 KeGetCurrentIrql
+
+    HAL.dll
+             1C0018000 Import Address Table
+             1C00185F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 KeStallExecutionProcessor
+                          48 HalTranslateBusAddress
+
+    WMILIB.SYS
+             1C0018018 Import Address Table
+             1C0018610 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 WmiFireEvent
+
+  Section contains the following exports for SCSIPORT.SYS
+
+    00000000 characteristics
+      723F41 time date stamp
+        0.00 version
+           1 ordinal base
+          50 number of functions
+          50 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002B90 DllInitialize
+          2    1 0000AA70 ScsiDebugPrint
+          3    2 0000AA90 ScsiPortCompleteRequest
+          4    3 0000AC70 ScsiPortConvertPhysicalAddressToUlong
+          5    4 0000AC80 ScsiPortConvertUlongToPhysicalAddress
+          6    5 0000AC90 ScsiPortFlushDma
+          7    6 00002E60 ScsiPortFreeDeviceBase
+          8    7 00002E80 ScsiPortGetBusData
+          9    8 00002FD0 ScsiPortGetDeviceBase
+         10    9 0000ACF0 ScsiPortGetLogicalUnit
+         11    A 0000AD90 ScsiPortGetPhysicalAddress
+         12    B 0000AE20 ScsiPortGetSrb
+         13    C 000032A0 ScsiPortGetUncachedExtension
+         14    D 0000AEA0 ScsiPortGetVirtualAddress
+         15    E 0001D080 ScsiPortInitialize
+         16    F 0000AEE0 ScsiPortIoMapTransfer
+         17   10 0000AF60 ScsiPortLogError
+         18   11 0000AFE0 ScsiPortMoveMemory
+         19   12 0000B030 ScsiPortNotification
+         20   13 0000B5F0 ScsiPortQuerySystemTime
+         21   14 0000B610 ScsiPortReadPortBufferUchar
+         22   15 0000B630 ScsiPortReadPortBufferUlong
+         23   16 0000B650 ScsiPortReadPortBufferUshort
+         24   17 0000B670 ScsiPortReadPortUchar
+         25   18 0000B680 ScsiPortReadPortUlong
+         26   19 0000B690 ScsiPortReadPortUshort
+         27   1A 0000B6B0 ScsiPortReadRegisterBufferUchar
+         28   1B 0000B6E0 ScsiPortReadRegisterBufferUlong
+         29   1C 0000B710 ScsiPortReadRegisterBufferUshort
+         30   1D 0000B740 ScsiPortReadRegisterUchar
+         31   1E 0000B750 ScsiPortReadRegisterUlong
+         32   1F 0000B760 ScsiPortReadRegisterUshort
+         33   20 00003590 ScsiPortSetBusDataByOffset
+         34   21 0000B770 ScsiPortStallExecution
+         35   22 0000B790 ScsiPortValidateRange
+         36   23 0000B7A0 ScsiPortWritePortBufferUchar
+         37   24 0000B7C0 ScsiPortWritePortBufferUlong
+         38   25 0000B7E0 ScsiPortWritePortBufferUshort
+         39   26 0000B800 ScsiPortWritePortUchar
+         40   27 0000B810 ScsiPortWritePortUlong
+         41   28 0000B820 ScsiPortWritePortUshort
+         42   29 0000B840 ScsiPortWriteRegisterBufferUchar
+         43   2A 0000B870 ScsiPortWriteRegisterBufferUlong
+         44   2B 0000B8A0 ScsiPortWriteRegisterBufferUshort
+         45   2C 0000B8D0 ScsiPortWriteRegisterUchar
+         46   2D 0000B8E0 ScsiPortWriteRegisterUlong
+         47   2E 0000B8F0 ScsiPortWriteRegisterUshort
+         48   2F 00010640 memcpy
+         49   30 00010640 memmove
+         50   31 0002E010 memset
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        2000 .idata
+        2000 .pdata
+        4000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       10000 .text
+        1000 GFIDS
+        1000 INIT
+       10000 PAGE
+        2000 PAGELOCK
+        2000 PAGEVRFY
+        1000 fothk

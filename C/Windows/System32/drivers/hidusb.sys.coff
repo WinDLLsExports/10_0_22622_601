@@ -1,0 +1,99 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\hidusb.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HIDCLASS.SYS
+    USBD.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B050 Import Address Table
+             1C000B250 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         394 IoInitializeRemoveLockEx
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                         3D3 IoReleaseRemoveLockEx
+                         3D1 IoReleaseCancelSpinLock
+                         2EB IoAcquireRemoveLockEx
+                         3F0 IoSetCompletionRoutineEx
+                         44E IofCallDriver
+                         585 KeWaitForSingleObject
+                          EC ExFreePool
+                         359 IoFreeWorkItem
+                         4CD KeInitializeEvent
+                         2F9 IoAllocateWorkItem
+                         3B9 IoQueueWorkItem
+                         728 PoStartNextPowerIrp
+                         6DA PoCallDriver
+                         54A KeResetEvent
+                          BD ExAllocatePool2
+                         559 KeSetEvent
+                         3D2 IoReleaseRemoveLockAndWaitEx
+                         302 IoBuildDeviceIoControlRequest
+                         398 IoInvalidateDeviceState
+                         5F1 MmMapLockedPagesSpecifyCache
+                         307 IoCancelIrp
+                         44F IofCompleteRequest
+                          94 EtwUnregister
+                          9A EtwWriteTransfer
+                         4D5 KeInitializeSpinLock
+                          8F EtwRegister
+                          92 EtwSetInformation
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         4B9 KeGetCurrentIrql
+                         8F1 RtlInitUnicodeString
+
+    HIDCLASS.SYS
+             1C000B000 Import Address Table
+             1C000B200 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 HidRegisterMinidriver
+
+    USBD.SYS
+             1C000B010 Import Address Table
+             1C000B210 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D USBD_ParseConfigurationDescriptorEx
+                           6 USBD_CreateConfigurationRequestEx
+
+    WppRecorder.sys
+             1C000B028 Import Address Table
+             1C000B228 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WppAutoLogStart
+                           4 WppAutoLogTrace
+                          10 imp_WppRecorderReplay
+                           3 WppAutoLogStop
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        1000 fothk

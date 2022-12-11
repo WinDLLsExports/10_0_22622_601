@@ -1,0 +1,253 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_wnetvsc.inf_31bf3856ad364e35_10.0.22621.1_none_219fdbc5a42ace89\netvsc.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+    WppRecorder.sys
+    vmbkmcl.sys
+    WDFLDR.SYS
+    NETIO.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C003D2A8 Import Address Table
+             1C003D930 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         100 ExInitializeNPagedLookasideList
+                         539 KeReleaseSpinLock
+                         475 KeAcquireSpinLockRaiseToDpc
+                          F0 ExFreeToNPagedLookasideList
+                         17A ExWaitForRundownProtectionReleaseCacheAware
+                         B17 ZwClose
+                         B26 ZwCreateKey
+                          94 EtwUnregister
+                         BA8 ZwQueryValueKey
+                         4BB KeGetCurrentProcessorNumberEx
+                         356 IoFreeMdl
+                         186 ExpInterlockedPopEntrySList
+                         5F1 MmMapLockedPagesSpecifyCache
+                         C4C _vsnwprintf
+                         4BF KeGetProcessorIndexFromNumber
+                          EE ExFreePoolWithTag
+                         4D5 KeInitializeSpinLock
+                         2F6 IoAllocateMdl
+                         187 ExpInterlockedPushEntrySList
+                         559 KeSetEvent
+                         146 ExReleaseRundownProtectionCacheAware
+                          AC ExAcquireRundownProtectionCacheAware
+                          B8 ExAllocateCacheAwareRundownProtection
+                         2E6 InitializeSListHead
+                         4CD KeInitializeEvent
+                         4B9 KeGetCurrentIrql
+                          71 DbgPrintEx
+                         84C RtlCopyUnicodeString
+                          BE ExAllocatePool3
+                         48D KeClearEvent
+                         585 KeWaitForSingleObject
+                         359 IoFreeWorkItem
+                         510 KeQueryMaximumProcessorCountEx
+                         2F9 IoAllocateWorkItem
+                         4D1 KeInitializeMutex
+                         536 KeReleaseMutex
+                         883 RtlEqualUnicodeString
+                         500 KeQueryActiveProcessorCountEx
+                         3BA IoQueueWorkItemEx
+                         617 MmSizeOfMdl
+                          B9 ExAllocateFromLookasideListEx
+                          EF ExFreeToLookasideListEx
+                          FF ExInitializeLookasideListEx
+                         51B KeQueryTimeIncrement
+                          D4 ExDeleteLookasideListEx
+                         129 ExReInitializeRundownProtectionCacheAware
+                          D5 ExDeleteNPagedLookasideList
+                          BA ExAllocateFromNPagedLookasideList
+                          B1 ExAcquireSpinLockExclusive
+                         149 ExReleaseSpinLockExclusive
+                         5EF MmMapIoSpaceEx
+                         5BC MmBuildMdlForNonPagedPool
+                          EB ExFreeCacheAwareRundownProtection
+                         583 KeWaitForMultipleObjects
+                         8AD RtlFreeAnsiString
+                         9D7 RtlUnicodeStringToAnsiString
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         8F1 RtlInitUnicodeString
+                         50C KeQueryInterruptTimePrecise
+                          EC ExFreePool
+                          95 EtwWrite
+                          BD ExAllocatePool2
+                          9A EtwWriteTransfer
+                          92 EtwSetInformation
+                          8F EtwRegister
+                         61E MmUnmapIoSpace
+
+    NDIS.SYS
+             1C003D000 Import Address Table
+             1C003D688 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E NdisAdvanceNetBufferDataStart
+                         1B0 NdisOpenConfigurationKeyByIndex
+                         1B1 NdisOpenConfigurationKeyByName
+                         17D NdisMRemoveMiniport
+                         1F4 NdisSetTimerObject
+                          2A NdisAllocateTimerObject
+                         1E7 NdisSetEvent
+                          1A NdisAllocateMemoryWithTagPriority
+                          34 NdisCancelTimerObject
+                         20A NdisWaitEvent
+                         109 NdisInitializeEvent
+                          A8 NdisFreeMemory
+                         143 NdisMDeregisterMiniportDriver
+                          DA NdisGetVersion
+                         179 NdisMRegisterMiniportDriver
+                         164 NdisMOidRequestComplete
+                         224 NdisWriteConfiguration
+                         1DC NdisResetEvent
+                         162 NdisMNetPnPEvent
+                         158 NdisMIndicateReceiveNetBufferLists
+                         165 NdisMPauseComplete
+                         183 NdisMSendNetBufferListsComplete
+                          B8 NdisFreeTimerObject
+                         168 NdisMQueryAdapterInstanceName
+                         121 NdisMAllocatePort
+                         14B NdisMFreePort
+                          BF NdisGetDataBuffer
+                          AD NdisFreeNetBufferListContext
+                          1E NdisAllocateNetBufferListContext
+                         1E3 NdisSendNetBufferLists
+                         1DF NdisReturnNetBufferLists
+                          19 NdisAllocateMemoryWithTag
+                          7D NdisDirectOidRequest
+                         1AB NdisOidRequest
+                         1AD NdisOpenAdapterEx
+                          43 NdisCloseAdapterEx
+                         1D2 NdisRegisterProtocolDriver
+                          DD NdisGroupMaxProcessorCount
+                          7B NdisDeregisterProtocolDriver
+                         1B3 NdisOpenNDKAdapter
+                          46 NdisCloseNDKAdapter
+                         146 NdisMDirectOidRequestComplete
+                         1E8 NdisSetOptionalHandlers
+                         18A NdisMSetMiniportAttributes
+                         195 NdisMTriggerPDDrainNotification
+                         15B NdisMIndicateStatusEx
+                          B2 NdisFreeRWLock
+                         1DD NdisRetreatNetBufferDataStart
+                          6D NdisConvertNdisStatusToNtStatus
+                          AE NdisFreeNetBufferListPool
+                         14E NdisMGetDeviceProperty
+                          6E NdisConvertNtStatusToNdisStatus
+                          1F NdisAllocateNetBufferListPool
+                          25 NdisAllocateRWLock
+                         18F NdisMSleep
+                           7 NdisAcquireRWLockRead
+                         1D5 NdisReleaseRWLock
+                         1AF NdisOpenConfigurationEx
+                         1C7 NdisReadConfiguration
+                          D2 NdisGetRssProcessorInformation
+                          44 NdisCloseConfiguration
+                          1C NdisAllocateNetBufferAndNetBufferList
+                          AC NdisFreeNetBufferList
+                           8 NdisAcquireRWLockWrite
+                         1C0 NdisQueryDiagnosticSetting
+
+    WppRecorder.sys
+             1C003D268 Import Address Table
+             1C003D8F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           C imp_WppRecorderLogDelete
+                           5 imp_WppRecorderConfigure
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           3 WppAutoLogStop
+                           B imp_WppRecorderLogCreate
+
+    vmbkmcl.sys
+             1C003D4C8 Import Address Table
+             1C003DB50 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          34 VmbChannelPollRingBuffer
+                          3D VmbChannelSetPollingMode
+                           3 VmbChannelAllocateBounceBuffer
+                          55 VmbPacketSetPointer
+                          4E VmbPacketInitialize
+                          47 VmbClientChannelInitSetTargetProcessorIndex
+                           C VmbChannelEnable
+                           5 VmbChannelCleanup
+                           B VmbChannelDisable
+                          25 VmbChannelInitSetPrimaryChannel
+                          40 VmbChannelSizeofPacket
+                          38 VmbChannelSetAllowableDpcCpuUsage
+                          44 VmbClientChannelInitSetRingBufferPageCount
+                          26 VmbChannelInitSetProcessPacketCallbacks
+                          29 VmbChannelInitSetStateChangeCallbacks
+                          24 VmbChannelInitSetMaximumPacketSize
+                          22 VmbChannelInitSetMaximumExternalData
+                          3C VmbChannelSetPointer
+                           2 VmbChannelAllocate
+                           A VmbChannelDeleteGpadl
+                          18 VmbChannelGetSystemAddressForGpadl
+                           6 VmbChannelCreateGpadl
+                          12 VmbChannelGetPacketDescriptor
+                          30 VmbChannelPacketGetClientContext
+                          14 VmbChannelGetPointer
+                          2C VmbChannelPacketComplete
+                          4F VmbPacketSend
+                          53 VmbPacketSetCompletionRoutine
+                          4D VmbPacketGetPointer
+                          35 VmbChannelPurge
+                          1E VmbChannelInitSetClientContextSize
+
+    WDFLDR.SYS
+             1C003D238 Import Address Table
+             1C003D8C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+                           8 WdfVersionUnbind
+                           6 WdfVersionBind
+                           3 WdfLdrQueryInterface
+
+    NETIO.SYS
+             1C003D210 Import Address Table
+             1C003D898 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         185 NmrWaitForClientDeregisterComplete
+                         17E NmrClientAttachProvider
+                         183 NmrRegisterClient
+                         180 NmrDeregisterClient
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        2000 .pdata
+        7000 .rdata
+        2000 .reloc
+        6000 .rsrc
+       32000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

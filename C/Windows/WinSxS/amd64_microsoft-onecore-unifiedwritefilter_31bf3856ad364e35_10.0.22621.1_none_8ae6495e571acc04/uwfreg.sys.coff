@@ -1,0 +1,143 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-onecore-unifiedwritefilter_31bf3856ad364e35_10.0.22621.1_none_8ae6495e571acc04\uwfreg.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    uwfrtl.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008030 Import Address Table
+             1C00083B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         585 KeWaitForSingleObject
+                         559 KeSetEvent
+                         A33 SeDeleteClientSecurity
+                         6A8 ObDereferenceObjectDeferDeleteWithTag
+                         580 KeUnstackDetachProcess
+                         6CC ObfDereferenceObjectWithTag
+                         6BF ObReferenceObjectByPointerWithTag
+                         7B5 PsProcessType
+                         570 KeStackAttachProcess
+                         A40 SeImpersonateClientEx
+                         7D1 PsRevertToSelf
+                         A2D SeCreateClientSecurity
+                          67 CmRegisterCallbackEx
+                         981 RtlQueryRegistryValuesEx
+                          6A CmUnRegisterCallback
+                         8FD RtlInitializeUnicodePrefix
+                          A2 ExAcquireFastMutex
+                         903 RtlInsertUnicodePrefix
+                         138 ExReleaseFastMutex
+                         8F1 RtlInitUnicodeString
+                         837 RtlCompareUnicodeStrings
+                         C4C _vsnwprintf
+                         84C RtlCopyUnicodeString
+                         952 RtlNextUnicodePrefix
+                         993 RtlRemoveUnicodePrefix
+                         B17 ZwClose
+                         4CD KeInitializeEvent
+                         6B9 ObQueryNameString
+                         8A6 RtlFindUnicodePrefix
+                         836 RtlCompareUnicodeString
+                         812 RtlAppendUnicodeStringToString
+                         6BC ObReferenceObjectByHandleWithTag
+                          69 CmSetCallbackObjectContext
+                         BEC ZwUnloadKey
+                         B43 ZwEnumerateKey
+                         BA8 ZwQueryValueKey
+                         B9B ZwQueryKey
+                         BA1 ZwQuerySecurityObject
+                         B39 ZwDeleteKey
+                         B3A ZwDeleteValueKey
+                         B6A ZwOpenKeyEx
+                         BDA ZwSetSecurityObject
+                         6B6 ObOpenObjectByPointer
+                         B27 ZwCreateKeyTransacted
+                         B26 ZwCreateKey
+                         B6C ZwOpenKeyTransactedEx
+                         B9D ZwQueryObject
+                         BE1 ZwSetValueKey
+                         BA5 ZwQuerySystemInformation
+                         A1F SeCaptureSubjectContext
+                         A4B SePrivilegeCheck
+                         A5C SeReleaseSubjectContext
+                         B78 ZwOpenThreadTokenEx
+                         B70 ZwOpenProcessTokenEx
+                         AF6 ZwAdjustPrivilegesToken
+                          EE ExFreePoolWithTag
+                          BD ExAllocatePool2
+                         51B KeQueryTimeIncrement
+                         5DE MmHighestUserAddress
+                         B57 ZwLoadKeyEx
+                          71 DbgPrintEx
+                         BF7 __C_specific_handler
+
+    uwfrtl.sys
+             1C0008228 Import Address Table
+             1C00085A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          4F UwflogNewEntry_UWFLOG_LEVEL_WARNING
+                          48 UwflogCompleteEntry_UWFLOG_LEVEL_WARNING
+                          1B ?UwfrtlInitialize@@YAJXZ
+                          15 ?UwfrtlGetGlobalConfigPtr@@YAJPEAPEAU_UWFRTL_UWF_CONFIG@@@Z
+                          4C UwflogNewEntry_UWFLOG_LEVEL_INFORMATION
+                          45 UwflogCompleteEntry_UWFLOG_LEVEL_INFORMATION
+                          26 ?UwfrtlRegisterStateNotification@@YAJPEAPEAXP6AXPEBUUWFRTL_STATE_NOTIFICATION@@PEAX@_E2@Z
+                          4D UwflogNewEntry_UWFLOG_LEVEL_LOW_RESOURCES
+                          46 UwflogCompleteEntry_UWFLOG_LEVEL_LOW_RESOURCES
+                          4E UwflogNewEntry_UWFLOG_LEVEL_TRACE
+                          20 ?UwfrtlIsReadOnlyMediaMode@@YA_NPEAW4_UWFVOL_ROM_MODE_DISPOSITION@@@Z
+                          1A ?UwfrtlInitUnicodeStringSafe@@YAJPEAG_KPEAU_UNICODE_STRING@@@Z
+                          24 ?UwfrtlQueryBcdHiveFileLocation@@YAJPEAPEBG@Z
+                          23 ?UwfrtlOpenKey@@YAJPEAPEAXKAEBU_UNICODE_STRING@@@Z
+                           F ?UwfrtlDelay@@YAJK@Z
+                          2E ?UwfrtlSystemCheckState@@YA_NW4UWFRTL_SYSTEM_STATE_ASPECT@@@Z
+                          19 ?UwfrtlHasPathPrefix@@YA_NAEBU_UNICODE_STRING@@0_N@Z
+                          12 ?UwfrtlFreeKeyInformation@@YAXPEAXW4UWFRTL_ALLOC_TAG@@@Z
+                          25 ?UwfrtlQueryKey@@YAJPEAXW4_KEY_INFORMATION_CLASS@@PEAPEAXW4UWFRTL_ALLOC_TAG@@PEAK@Z
+                          34 ?UwfrtlUnregisterStateNotification@@YAXPEAX@Z
+                          4B UwflogNewEntry_UWFLOG_LEVEL_ERROR
+                          42 UwflogCompleteEntry_UWFLOG_LEVEL_ASSERTION
+                          49 UwflogNewEntry_UWFLOG_LEVEL_ASSERTION
+                          43 UwflogCompleteEntry_UWFLOG_LEVEL_CRITICAL
+                          4A UwflogNewEntry_UWFLOG_LEVEL_CRITICAL
+                          44 UwflogCompleteEntry_UWFLOG_LEVEL_ERROR
+
+    WDFLDR.SYS
+             1C0008000 Import Address Table
+             1C0008380 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 WdfLdrQueryInterface
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+                           8 WdfVersionUnbind
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        6000 PAGE
+        1000 fothk

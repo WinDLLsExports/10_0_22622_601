@@ -1,0 +1,545 @@
+!This program cannot be run in DOS mode.
+WRich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+Winsta.dll
+WinStationFreeMemory
+WinStationCloseServer
+WinStationOpenServerW
+WinStationFreeGAPMemory
+WinStationGetAllProcesses
+WinStationNameFromLogonIdW
+WinStationEnumerateProcesses
+SeDebugPrivilege
+PARSER2
+SELECT __PATH, ProcessId, CSName, Caption, SessionId, ThreadCount, WorkingSetSize, KernelModeTime, UserModeTime  FROM Win32_Process
+WHERE
+ProcessId
+ %s %s %s %d
+SessionId
+Caption
+ %s %s %s '%s'
+WorkingSetSize
+ %s %s %s %lu
+__PATH
+CSName
+%s\%s
+GetOwner
+Domain
+KernelModeTime
+UserModeTime
+%d%s%02d%s%02d
+SELECT Name FROM Win32_Service WHERE ProcessId = %d and State="Running"
+ASSOCIATORS OF {%s} WHERE ResultClass = CIM_DataFile
+FileName
+Extension
+%s.%s
+%1 %2
+root\cimv2
+/[]:|<>+=;,?*
+`~!@#$^&*()+=[]{}|\<>,?/"':;
+Win32_OperatingSystem
+Version
+Win32_ComputerSystem
+SystemType
+AMD64
+IDispatch error #%d
+Unknown error 0x%0lX
+BUFFER
+localhost
+ \/[]:|<>+=;,?$#()!@^"`{}*%
+\\%s\%s
+\VarFileInfo\Translation
+\StringFileInfo\%04x%04x\InternalName
+%s %s
+PARSER2
+=| eq 
+!=| ne 
+>| gt 
+<| lt 
+>=| ge 
+<=| le 
+RSDSN
+tasklist.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.text$x
+.xdata$x
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+PQSVW
+CSj~Y
+j-Yf;
+tlj+Yf;
+tcj\W
+QSSSVP
+QSj0VP
+A;J r
+j0WPS
+uW9GLuB
+C9_Lu
+t/9w@u
+RTI#u
+uX93u:3
+QPWWh
+)Shph@
+tH9;uDWW
+x}WWWj
+FVWWj
+xeShX
+SSSSRQPW
+SSSSSSPQ
+PPPPP
+QWj0PV
+QWWPV
+w&t@=
+QQSVW
+QSVWj
+QQPQSQh
+>-PVu
+PPPPj
+QQQQj
+QSVW3
+PRPVQ
+WWWWVPW
+QSVW3
+uTQP3
+tgSSj
+t*SVh(
+tiQQj|Z
+QSVWj
+QQj:Z
+;D$(s
+L$$;L$(
+D$0tg
+t$ ;t$4
+D$<YY
+Y__^[
+Y__^[
+.?AVCHeap_Exception@@
+.?AV_com_error@@
+OpenProcessToken
+LookupPrivilegeValueW
+AdjustTokenPrivileges
+RegConnectRegistryW
+RegCloseKey
+LookupAccountSidW
+OpenSCManagerW
+EnumServicesStatusExW
+CloseServiceHandle
+RegQueryValueExW
+ADVAPI32.dll
+FreeLibrary
+SetLastError
+GetLocaleInfoW
+GetSystemDirectoryW
+LoadLibraryW
+GetProcAddress
+GetCurrentProcess
+CloseHandle
+GetNumberFormatW
+OpenProcess
+GetLastError
+HeapSetInformation
+GetCurrentThreadId
+WriteConsoleW
+GetStdHandle
+LocalAlloc
+FormatMessageW
+KERNEL32.dll
+__CxxFrameHandler3
+wcschr
+wcsrchr
+wcscpy_s
+_wcsdup
+_wcsicmp
+_wtoi64
+malloc
+_callnewh
+_XcptFilter
+__p__commode
+_amsg_exit
+__wgetmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+msvcrt.dll
+??1type_info@@UAE@XZ
+?terminate@@YAXXZ
+_controlfp
+_except_handler4_common
+CoUninitialize
+RtlTimeToElapsedTimeFields
+RtlLargeIntegerToChar
+RtlQueryPackageIdentity
+RtlNtStatusToDosError
+NtQueryInformationProcess
+EnumerateLoadedModulesW64
+CoInitializeEx
+CoInitializeSecurity
+CoCreateInstance
+GetUserNameExW
+CoTaskMemAlloc
+CoTaskMemFree
+LocalFree
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+TerminateProcess
+GetModuleHandleW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-com-l1-1-0.dll
+OLEAUT32.dll
+ntdll.dll
+imagehlp.dll
+SspiCli.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+EnumWindowStationsW
+GetProcessWindowStation
+OpenWindowStationW
+SetProcessWindowStation
+CloseWindowStation
+EnumDesktopsW
+GetThreadDesktop
+OpenDesktopW
+SetThreadDesktop
+CloseDesktop
+EnumWindows
+FindWindowExW
+GetWindowThreadProcessId
+GetWindowLongW
+GetWindow
+IsHungAppWindow
+GetWindowTextW
+wsprintfW
+USER32.dll
+WNetGetLastErrorW
+WNetAddConnection2W
+WNetCancelConnection2W
+MPR.dll
+GetAddrInfoW
+GetNameInfoW
+FreeAddrInfoW
+WS2_32.dll
+??0CHString@@QAE@XZ
+??1CHString@@QAE@XZ
+?GetBufferSetLength@CHString@@QAEPAGH@Z
+?GetData@CHString@@IBEPAUCHStringData@@XZ
+?Mid@CHString@@QBE?AV1@HH@Z
+?ReleaseBuffer@CHString@@QAEXH@Z
+??4CHString@@QAEABV0@PBG@Z
+?Find@CHString@@QBEHPBG@Z
+?Mid@CHString@@QBE?AV1@H@Z
+?Compare@CHString@@QBEHPBG@Z
+?Format@CHString@@QAAXPBGZZ
+?Empty@CHString@@QAEXXZ
+??YCHString@@QAEABV0@ABV0@@Z
+??YCHString@@QAEABV0@PBG@Z
+??4CHString@@QAEABV0@ABV0@@Z
+?Left@CHString@@QBE?AV1@H@Z
+??4CHString@@QAEABV0@PBD@Z
+?GetBuffer@CHString@@QAEPAGH@Z
+?FindOneOf@CHString@@QBEHPBG@Z
+?Find@CHString@@QBEHG@Z
+framedynos.dll
+NetServerGetInfo
+srvcli.dll
+NetApiBufferFree
+netutils.dll
+lstrlenW
+FileTimeToSystemTime
+SetThreadUILanguage
+VerSetConditionMask
+FindStringOrdinal
+WideCharToMultiByte
+GetFileType
+GetConsoleMode
+lstrlenA
+CompareStringW
+GetThreadLocale
+CompareStringA
+ExitProcess
+GetConsoleOutputCP
+MultiByteToWideChar
+SetConsoleMode
+ReadFile
+ReadConsoleW
+GetProcessHeap
+HeapFree
+HeapValidate
+HeapAlloc
+HeapReAlloc
+HeapSize
+GetComputerNameExW
+GetModuleFileNameW
+GetTimeFormatW
+__iob_func
+_vsnwprintf
+_memicmp
+_errno
+wcstod
+wcstol
+wcstoul
+_fileno
+_get_osfhandle
+fprintf
+fflush
+wcsstr
+wcstok
+RtlVerifyVersionInfo
+LoadStringW
+StrChrW
+GetFileVersionInfoSizeExW
+GetFileVersionInfoExW
+VerQueryValueW
+CharUpperW
+api-ms-win-core-shlwapi-obsolete-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+_CxxThrowException
+memcpy
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.CmdLine.TaskList"
+    type="win32"
+<description>Lists the current running tasks</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+<application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+        <disableWindowFiltering xmlns="http://schemas.microsoft.com/SMI/2011/WindowsSettings">true</disableWindowFiltering>
+    </windowsSettings>
+</application>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Lists the current running tasks
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+tasklist.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+tasklist.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0L0P0X0`0
+? ?-?:?G?T?a?q?
+1#1=1
+212A2Q2^2k2x2
+4E4a4{4
+5-5F5`5
+696@6K6W6b6n6y6
+7L7Q7c7m7{7
+7-8D8c8
+8"969d9~9
+9+:@:
+;(;Y;m;
+<%<3<<<K<
+=6=?=G=]=r=
+>-><>L>5?@?N?V?j?
+3d4r5
+5*606b6
+717C7S7a7v7
+92:J:v:
+<1<}<
+>'>F>V>r>
+?-?2?>?
+1+151G1c1l1~1
+2J2[2e2
+5)5S5q5
+606C6M6^6q6
+6#787`7l7z7
+8-8;8j8
+:1:J:z:
+;+<2<<<W<i<
+=?=O=t=~=
+=!>3><>W>^>g>t>
+090D0|0
+0B1J1j1t1
+1*2p2
+3/3P3{3
+4%464C4P4]4|4
+;:<^<
+=B=M=s=
+= >i>q>y>
+?L?y?
+0d1p1
+3 343>3
+5E5U5`5u5
+5-6V6i6
+657<7e7y7
+8&8-858<8G8N8
+90969H9O9
+<'<:<H<U<`<x<
+=&=2=;=G=P=g=p=y=
+>S>\>
+2.3:3J3
+4#4:4
+5!585R5^5l5{5
+5+646]6
+687A7M7X7n7|7
+8N8g8t8
+9 9)9F9s9
+;"<*<0<U<
+<"=K=
+>D>e>r>
+>3?g?
+;0g0y0
+1'1?1c1y1
+242R2s2
+3+3=3K3X3c3
+3$4D4N4s4
+525~5
+6'606@6M6V6f6s6|6
+7#7-7C7l7
+8'8Y8
+:M;p;
+3>4k4
+8+9q9y9
+:!:-:=:l:s:
+<%<:<L<[<|<
+=$=?=Q=W=c=i=u=
+>+?6?B?S?t?
+.0:0W0n0
+1!1-1M1Y1
+2N2|2
+3*3z3
+5G5a5k5y5
+5@6d6
+898E8J8n8{8
+:F:M:X:d:
+;2<F<Q<X<j<o<v<}<
+<[=g=q=
+>0?@?M?x?
+'0I0P0W0y0
+171>1M1u1
+2,282@2R2
+3$3.3:3
+325z5
+5 606C6
+787J7Z7
+8E8g8
+909i9
+9-:m:y:
+;*;S;u;
+;%<F<p<
+=)=3=?=J=Y=
+>;>P>W>
+?#?;?D?m?y?
+"0A0f0v0
+1=3L3Y3]3a3e3i3m3q3u3y3}3
+4$535
+717[7Y8l8
+9 9{9
+9;:`:
+=$>M>\>
+0\2t2
+5C5o5
+7#797
+9;:@:S:f:
+<4=b=
+0H0u0
+0<1C1J1Q1X1
+7/8^8
+8(9C9
+9L:Z:
+<&=<=b=
+0+070
+1 1&1.1<1V1x1
+2#2+21272D2J2T2s2y2
+3,373A3L3r3
+4(4.444:4@4F4M4T4[4b4i4p4w4
+565<5B5H5N5T5[5b5i5p5w5~5
+5)6A6G6V6c6
+9"9*9C9R9]9z9
+9%:7:C:
+;2;>;^;j;v;
+<(<4<@<L<X<d<p<
+='=R=f=
+>)>2>O>c>
+?3?G?P?
+010E0N0W0`0
+1E1h1
+2,2@2I2f2z2
+3)4Y4
+5 5)525;5X5l5
+6H6`6
+7$7,747<7D7L7T7`7h7
+8$8,888@8X8|8
+949<9D9P9X9|9
+:,:4:<:H:P:h:p:
+;0;T;\;d;p;x;
+< <(<\<d<l<x<
+=(=0=P=l=t=|=
+> >(>\>d>l>
+>0?8?@?L?T?t?|?
+0H0P0X0d0l0
+141D1`1h1p1|1
+1 2(202@2H2d2l2t2|2
+3$3,343@3H3`3
+4 484H4P4|4
+5$5<5L5h5p5x5
+686@6H6X6`6
+7(7D7L7T7\7d7p7
+84888T8X8`8h8p8

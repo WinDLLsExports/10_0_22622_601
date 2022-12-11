@@ -1,0 +1,1295 @@
+!This program cannot be run in DOS mode.
+Richt
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+logoncli.dll
+netutils.dll
+RolesForPackageComponent
+ComponentsInPackage
+Packages
+RolesInPackage
+UsersInRole
+InterfacesForComponent
+RolesForPackageComponentInterface
+LocalComputer
+ComputerList
+MethodsForInterface
+TransactionTimeout
+Authentication
+ShutdownAfter
+Changeable
+Package index is %i
+Package id is %s
+Component index is %i
+Component clsid is %s
+Role index is %i
+Role id is %s
+Role name is %s
+Interface index is %i
+Inteface id is %s
+Method index is %i
+Method name is %s
+User index is %i
+User name is %s
+DLL is %s
+TLB is %s
+Node is %s
+Key is %s
+Orig Val is %s
+New Val is %s
+Property Name is %s
+Property Value is %s
+Initalization section --->
+win9x
+No package registry node
+No components registry node
+No appids registry node
+No clsid registry node
+Calling:  pPkgCollection->Populate
+com\complus\src\comcat\mtstocom\mtstocom.cpp
+Calling:  pPkgCollection->Populate  (Again)
+Number of Packages =  %i
+**Error**  Failed with exception %08x during init phase
+Starting User Migration Phase
+MTSTOCOM_EVENT
+MigrateUserAndIdentity failed
+DeleteTransactionServerKey failed
+DeleteTransactionServerKey returned false -- post mode may have failed
+RegCreateKeyEx to allow deletions failed
+RegSetValueEx to unprotect mtstocom failed
+Module name was %s
+MoveFileEx to delete the mtstocom.exe failed
+Getting the mtstocom.exe module name failed
+Ending User Migration Phase
+**Error**  Failed with exception %08x during user migration phase
+Starting Post Phase
+CleanUpCOMRegistryEntries failed
+CopyComputerList failed
+CopyLocalComputerSettings failed
+GetComponentsAndUtilityForTempPackage failed
+PostPackageLoops failed
+RemoveTempPackage failed
+Resetting the transaction timeout failed
+Creating the post migration passed key
+pIRNTransServer->MoveToDescendantOrCreate (creating the postpassed key) failed
+AddWinLogonHook failed
+Ending Post Phase
+**Error**  Failed with exception %08x during post phase
+Total Users in Roles = %i
+Total Components in Packages = %i
+Total Interfaces on Components = %i
+Total Methods on Interfaces = %i
+Total Roles in Packages = %i
+Total Non-composed package migrations = %i
+Total import component calls = %i
+Total install dlls called = %i
+Total install tlbs called = %i
+Number of lines not printed = %i
+**Error**  Failed with exception %08x during cleanup phase
+Main is returning hr = %x
+pIRNPack->MoveToChildKeyByPosition (to package id) failed
+GetObjectFromCollection failed to get package from package collection
+RegReadWriteString (for identity of the package) returned false or failed
+GetSecurityAdmin failed
+GetMtsAppIdentity failed
+pCatObject->get_Value (for changeable on a package) failed
+**Error** Changeable did not come back as a BSTR
+Setting Property Failed
+SaveChanges (on packages after setting the identity and password) failed
+SaveChanges (on packages after setting changeable to NO) failed
+pPkgCollection->GetCollection for RoleCollection failed
+WalkRolesMigratingUsers failed
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 1)
+pIRNPack->MoveToDescendantOrReply (looking for package roles) failed:  assuming no roles
+pIRNPack->MoveToDescendantOrReply (looking for package roles) returned false:  did not find node
+pIRNPack->GetNumberOfChildren (package roles) failed
+pIRNPack->MoveToChildKeyByPosition (move to role id) failed
+RegReadWriteString returned false or failed
+MigrateRoleUsers failed
+Out of memory allocating rolename bstr
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 2)
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 3)
+DeleteAKey failed
+Won't cleanup because the DONTCLEANUP flag is there
+pIRNTransServer->MoveToDescendantOrReply (looking for postpased) failed
+pIRNTransServer->MoveToDescendantOrReply returned false:  post did not pass
+pIRNTransServer->MoveToParentKeyOfKey failed (SERIOUS ERROR 1)
+pIRNTransServer->MoveToDescendantOrReply (Key name) failed
+pIRNTransServer->MoveToDescendantOrReply (Key name) returned false:  must not exist
+pIRNTransServer->MoveToParentKeyOfKey failed (SERIOUS ERROR 2)
+pIRNTransServer->DeleteChildKeyAndDescendants (key name)failed
+pIRNPacks->GetAnotherRegNode (Packages) failed
+pIRNPack->MoveToChildKeyByPosition failed (for package) 
+pIRNAppids->MoveToDescendantOrReply (packageid in appids) failed
+pIRNAppids->MoveToDescendantOrReply did not find Package Id in Appids
+pIRNAppids->MoveToParentKeyOfKey failed (SERIOUS ERROR)
+pIRNAppids->DeleteChildKeyAndDescendants (packageid in appids) failed
+pIRNClsids->MoveToDescendantOrReply (package id in clsids) failed
+pIRNClsids->MoveToDescendantOrReply did not find Package Id in clsids
+pIRNClsids->MoveToParentKeyOfKey failed (SERIOUS ERROR)
+pIRNClsids->DeleteChildKeyAndDescendants (packageid in clsids) failed
+**Error**  Invalid APPID read, skipped component = %s
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 4)
+Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\CATSRVUT
+StartMTSTOCOM
+Startup
+Impersonate
+Asynchronous
+catsrvut.dll
+DllName
+**Error**  Failed with exception %08x during AddWinLogonHook
+GetRegNodeFromRegistry failed (Microsoft key) 
+pIRNComputerList->MoveToDescendantOrReply (computer list) failed
+pIRNComputerList->MoveToDescendantOrReply (computer list) returned false - could just be no computers listed
+pIRNComputerList->GetNumberOfChildren (computers) failed
+Computer List Count =  %i
+pCatalog->GetCollection for ComputerList failed
+pIRNComputerList->MoveToChildKeyByPosition (computer in computer list) failed
+pComputerListCollection->Add failed
+pIRNComputerList->MoveToParentKeyOfKey failed (SERIOUS ERROR)
+pComputerListCollection->SaveChanges failed
+GetRegNodeFromRegistry (Microsoft key) failed
+pIRNLocalComputer->MoveToDescendantOrReply (LocalComputer) failed
+pIRNLocalComputer->MoveToDescendantOrReply (LocalComputer) returned false - could just be no computers listed
+pIRNLocalComputer->GetNumberOfChildren failed
+pCatalog->GetCollection for LocalComputer failed
+pLocalComputerCollection->Populate failed
+pLocalComputerCollection->GetCount failed
+pIRNLocalComputer->MoveToChildKeyByPosition (0) failed
+pLocalComputerCollection->get_Item(0) failed
+RegReadDWORD failed - Transaction Timeout key
+RegReadDWORD returned false -- Transaction Timeout key didn't exist
+pLocalComputerCollection->SaveChanges failed
+Setting the transaction timeout property back failed
+pLocalComputerCollection->SaveChanges (fix transaction timeout) failed
+pIRNPacks->GetAnotherRegNode (package) failed
+pIRNComps->GetAnotherRegNode (components) failed
+pIRNPacks->GetAnotherRegNode (into pIRNPackRoles) failed
+Could not get the transaction object
+Could not get the package collection from the transaction object
+Could not get the transactional utilities
+pIRNPack->MoveToChildKeyByPosition (iPack) failed
+ValidatePackageToMigrate failed:  package does not get migrated
+ValidatePackageToMigrate returned false:  package does not get migrated
+pIRNPackRoles->MoveToChildKeyByPosition (iPack) failed -- Serious Error
+pIRNPackRoles->MoveToDescendantOrReply (PackRoles) failed
+pIRNPackRoles->MoveToDescendantOrReply (PackRoles) returned false: could be no roles exist
+InstallAppAndRolesAndComponents failed
+pIRNPackRoles->MoveToParentKeyOfKey (Package Key) failed -- Serious Error
+SetChangeableFlag failed
+pIRNPackRoles->MoveToParentKeyOfKey (Package Node) failed -- Serious Error
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 5)
+Failed the transaction so we will now try it non-transactional
+pUseCompCollection->Populate failed after failed commit
+pUseCompCollection->Populate failed (none transactional)
+We have run for longer than the time allowed, shutting down (last package migrated info --> )
+InstallNewPackage failed
+InstallNewPackage returned false:  some of the properties may not be correct
+MigratePackageRoles failed
+WorkOnAllComponents failed
+GetObjectFromCollection (clsid in temp collection) failed:  object was not found
+pTempCompCollection->SaveChanges (Temp Collection) failed
+GetObjectFromCollection (looking for temporary package) failed
+pPkgCollection->Remove (temp collection) failed
+pPkgCollection->SaveChanges (temp collection)failed
+pColl->get_Count failed
+pColl->get_Item failed
+ppTempCatObject->get_Key failed
+RegReadWriteString failed
+RegReadWriteString returned false:  origin = imported
+RegReadWriteString returned false:  no type library
+pTempCompUtil->InstallComponent failed
+pTempCompUtil->ImportComponent failed
+pIRNClsids->GetAnotherRegNode (clsids) failed
+pIRNPack->MoveToDescendantOrReply (components) failed
+pIRNPack->MoveToDescendantOrReply (components) returned false:  must be an empty package
+pIRNPack->MoveToChildKeyByPosition (iComp) failed
+**Error**  component could not be worked on, its key was not the right size
+RegReadWriteString returned false -- could be no enabled flag
+%s, component was not enabled so it was not migrated
+**ERROR**   components inproc server was greater than max_path
+Could not find components registry information under clsid key to write over the mtx settings in the CLSID part of the tree.
+RegReadWriteString returned false, could just of not had a LocalServer32 key
+pIRNClsid->DeleteChildKeyAndDescendants (local server 32 key) failed
+pIRNClsid->MoveToParentKeyOfKey failed (SERIOUS ERROR)
+InstallOrImportAComponent failed
+MoveAComponent failed
+SetRolesOnComponentAndItsInterfaces failed
+SetRolesOnComponentAndItsInterfaces returned false did not set any roles
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 6)
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 7)
+WasCompInstalled failed
+WasCompInstalled returned false:  it was imported
+InstallCompInTempApp failed
+ImportCompInTempApp failed
+pTempCompCollection->Populate failed
+GetObjectFromCollection failed:  component skipped
+GetObjectFromCollection returned false:  should never print this - impossible error
+pPkgCollection->Add failed
+RegReadDWORD failed
+RegReadDWORD returned false -- key didn't exist
+AdminSetDWORDProperty (Authentication) failed
+RegReadDWORD (shutdownafter) failed
+RegReadDWORD returned (shutdownafter) false -- key didn't exist
+AdminSetDWORDProperty (shutdownafter) failed
+pPkgCollection->SaveChanges failed
+GetObjectFromCollection (Package from PackageCollection) failed
+(Temporary Application) pPkgCollection->Add failed
+pPkgCollection->SaveChanges (temp package) failed
+pCatObject->get_Key failed
+pPkgCollection->GetCollection for components in package failed
+(*ppCompCollection)->GetUtilInterface failed
+QI failed
+**Error**     The package id was greater than the length of a guid
+pIRNPack->MoveToDescendantOrReply (components) returned false or failed: can still migrate the package
+pIRNPack->GetNumberOfChildren (components) failed
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 8)
+%s, package is not a library or a server package so it does not migrate
+pPkgCollection->GetCollection for components collection failed
+pCompCollection->GetCollection for role collection failed
+AssociateRole failed
+MigrateInterfaceRoles failed
+pIRNPack->MoveToDescendantOrReply failed
+pIRNPack->MoveToDescendantOrReply (packroles) returned false:  did not find node
+pIRNPack->GetNumberOfChildren (roles) failed
+pPkgCollection->GetCollection for role collection failed
+pIRNPack->MoveToChildKeyByPosition (Role) failed
+pRoleCollection->Add failed
+AdminSetProperty failed
+pRoleCollection->SaveChanges failed
+pRoleCollection->Populate failed
+Out of memory allocating role name space
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 9)
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 10)
+pIRNPack->MoveToDescendantOrReply (users) failed
+pIRNPack->MoveToDescendantOrReply (users) returned false:  did not find node
+pIRNPack->GetNumberOfChildren (users) failed
+pRoleCollection->GetCollection for users collection failed
+pUsersCollection->Populate failed
+pUsersCollection->get_Count failed
+Resetting the role name to be Readers
+Resetting the role name to be Administrators
+pIRNPack->MoveToChildKeyByPosition (user) failed
+pUsersCollection->Add failed
+pUsersCollection->SaveChanges failed
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 11)
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 12)
+pIRNPack->MoveToDescendantOrReply (interface) failed
+pIRNPack->MoveToDescendantOrReply (interface) returned false:  did not find node
+pIRNPack->GetNumberOfChildren (Interface) failed
+pCompCollection->GetCollection (interface) failed
+pInterfaceCollection->Populate failed
+pIRNPack->MoveToChildKeyByPosition (interface) failed
+**Error**  Field containing IID was longer than an IID should be
+GetObjectFromCollection failed to get the interface object from the collection
+SaveChanges failed
+pInterfaceCollection->GetCollection (Roles for Interface) failed
+pInterfaceCollection->GetCollection (Methods) failed
+MigrateMethodDescriptions failed
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 13)
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 14)
+pIRNPack->MoveToDescendantOrReply (method) failed
+pIRNPack->MoveToDescendantOrReply returned false:  did not find method node
+pIRNPack->GetNumberOfChildren (methods) failed
+pMethodCollection->Populate failed
+pMethodCollection->GetCount failed
+pIRNPack->MoveToChildKeyByPosition (method) failed
+RegReadWriteString returned false: property did not exist
+pMethodCollection->get_Item failed
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 15)
+pMethodCollection->SaveChanges failed
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 16)
+pIRNPack->MoveToDescendantOrReply (role membership) failed
+pIRNPack->MoveToDescendantOrReply returned false:  did not find role membership node
+pRoleColl->GetUtilInterface failed
+QI Failed
+pIRNPack->MoveToChildKeyByPosition (role) failed
+pRoleAssocUtil->AssociateRoleByName failed
+**Error** Failure allocating a bstr copy of the RoleName -- Out of Memory
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 17)
+pIRNPack->MoveToParentKeyOfKey failed (SERIOUS ERROR 18)
+pIRN->MoveToDescendantOrReply failed
+pIRN->MoveToDescendantOrReply returned false: property did not exist
+pIRN->GetContent failed
+pIRN->GetContent returned false
+pIRN->MoveToParentKeyOfValue failed (SERIOUS ERROR)
+pCatObject->put_Value failed
+GetWindowsDirectoryA failed
+\mtstocom.log
+FileName lenght is greater then MAX_PATH 
+\mtstocom.log
+***************************************************
+Setup started - [DATE:%02d,%02d,%d TIME: %02d:%02d %s]
+TestAndLog hr = %x
+Turning off logging, log file is getting too big
+Administrator
+Users
+Identity
+Administrators
+Sample Bank
+Activation
+Transaction Server\Computers
+SOFTWARE\Classes
+RemoteServerName
+Extender
+Typelib
+Changeable
+LocalServer32
+Latency
+Password
+{5D15C5A8-4C29-11d2-8DBB-00C04F8EC9E9}
+Appid
+Interactive User
+mtx.exe
+Interfaces
+Enabled
+Methods
+Packages
+RoleMembership
+Transaction Server\Packages
+Roles
+Origin
+DLLServer
+RemoteServerName
+Transaction
+SecurityEnabled
+AllowProtectedRenames
+My Computer
+System
+Description
+UserId
+Changeable
+Extenders
+NeverShutdown
+SOFTWARE\Microsoft
+Temporary Package for Installing Components
+Transaction Server\Components
+Activation
+{0C66DFD9-D523-11CF-A3EF-143AB8000000}
+Transaction Server\Local Computer
+RunForever
+Transaction
+Local Computer
+Deleteable
+RunAsMTSObject
+ResourcePoolingEnabled
+Authentication
+PostMigrationPassed
+Inproc
+Deleteable
+InprocServer32
+{02D4B3F1-FD88-11D1-960D-00805FC79235}
+IIS In-Process Applications
+TransactionTimeout
+SOFTWARE\Microsoft\Transaction Server
+Components
+IIS Utilities
+Install
+Description
+**Error** 
+ResourcePoolingEnabled
+SYSTEM\CurrentControlSet\Control\Session Manager
+NoCleanup
+Wrapped
+CreatedBy
+Readers
+CreatedBy
+Description
+SecurityEnabled
+Tic-Tac-Toe
+PackageID
+Computers
+Local
+CLSID
+Reader
+Components
+Interactive User
+SeBatchLogonRight
+CURRENT_USER
+%s\%s
+%s/%s
+comres.dll
+COM+ Failfast:  Unable to allocate memory for stack trace!
+*** The serious nature of this error has caused the process to terminate.
+*** Error Code = 0x%08x : %s
+*** Internals Information:
+File: %s, Line: %d
+not loaded
+\VarFileInfo\Translation
+%u.%u.%u.%u
+Comsvcs.dll file version info: %s %s %s
+comsvcs.dll
+%s\%s*.dmp
+%s\%s_%04d_%02d_%02d_%02d_%02d_%02d.dmp
+RunDll32 comsvcs.dll,MiniDump
+%s %d %s full
+com\complus\src\shared\util\svcerr.cpp
+This is a COM+ Failfast Break
+  Process.Thread=<%d.%d>
+  File: %s:%d
+  hr=0x%08x
+#####################################################################
+#####################################################################
+Software\Microsoft\COM3\Debug
+AutoAddTraceToContext
+DebugBreakOnFailFast
+DebugBreakOnInitComPlus
+DebugBreakOnLoadComsvcs
+TraceActivityModule
+TraceContextCreation
+TraceInfrastructureCalls
+TraceSTAPool
+TraceSecurity
+TraceSecurityPM
+EventDispatchTtime
+InitializeCriticalSectionAndSpinCount
+com\complus\src\shared\util\utsem.cpp
+user32.dll
+DialogBoxParamW
+SetDlgItemTextW
+EndDialog
+GetDesktopWindow
+GetWindowRect
+GetClientRect
+MapWindowPoints
+SetWindowPos
+GetProcessWindowStation
+SetProcessWindowStation
+OpenWindowStationW
+CloseWindowStation
+GetThreadDesktop
+SetThreadDesktop
+OpenDesktopW
+CloseDesktop
+winsta0
+default
+mtstocom.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+Wh<[@
+WhxZ@
+Shha@
+SSSSh@
+SSSSh
+SSSSh
+SSSShX
+SSSSh
+SSSSht
+SSSSh
+SSSSh
+SSSSh
+SSSSh$
+SSSSh@
+SSSSh
+SSSSh
+L$4WP
+PQj(Z
+u*Qh `@
+Sh($@
+L$8QW
+Shp$@
+SSSSh
+D$pPQ
+D$HPVS
+Yf9L$Ht
+PPhh%@
+D$@PW
+PVPPhh%@
+D$@PW
+PPPPhX&@
+YQPh|&@
+PPh|'@
+PPPPh$(@
+PPh@(@
+WWSWVQ
+WWSWVQ
+WWSWVQ
+WWSWVQ
+WWSWVQ
+WWSWVQ
+PPPPh
+SSSSh<+@
+Vhp+@
+QPQj(Z
+Ph@,@
+PhX-@
+VhL.@
+Sh0/@
+PWSh@/@
+PWShX/@
+SSSSh
+SSSShx1@
+Ph<\@
+SSSSh
+PPSShh%@
+Sh(2@
+SSSShh2@
+PPPPh
+PPPPh
+PPPPh
+PPPPh
+Ph<4@
+PPPPhx4@
+PPhh%@
+PPhh%@
+PPSShh%@
+SSSSh 5@
+SSSSh
+SSSSh
+SSSSh
+SSSShx4@
+SSSShP5@
+SSSSh
+PPPPh
+D$<Ph
+SSSSh
+D$ Ph
+SSSSh86@
+SSSSht6@
+SSSSh
+SSSSh
+|$X9]
+L$ SQ
+L$ h,
+PPPPh
+SSWShD9@
+WSh`9@
+D$ hp:@
+\$T;]
+PPPPh
+VVhh%@
+xOj\Xf;
+x.j\XP
+VVhh%@
+j\Yf;
+VVhh%@
+j\Yf;
+x-j\XP
+WWhh%@
+ShP<@
+SSSSh
+SSSSh
+VVVVh
+VVVVh
+VVVVh8=@
+Ij\Xf;
+j\Yf;
+x.j\XP
+j\Yf;
+j@jCh
+PPPPh<>@
+PQj(Z
+xRj\Xf;E
+x*j\XPW
+xRj\Xf;E
+x*j\XPW
+x.j\XPS
+j\XPS
+SShPA@
+SSSSh
+PPPPh
+t3jP3
+SSSShPC@
+SSSShpC@
+SShHD@
+SShh%@
+j@Vhh%@
+j@Vhh%@
+j@Vhh%@
+j@Vhh%@
+j@Vhh%@
+j@Vhh%@
+j@Vhh%@
+VVhLE@
+Vh|E@
+PPhh%@
+PPh|E@
+PPPPh
+PPPPh$F@
+PPPPhXF@
+Xh(Z@
+SShxF@
+SSSSh
+SSSSh
+Wh4a@
+Ph@G@
+SSSSh0I@
+SSSShHI@
+SSWSh|K@
+PPh@L@
+PPhpL@
+PPhpL@
+Pj%PPh
+PPh<O@
+YQPhdO@
+PQj(Z
+PPhh%@
+Ph<P@
+PPhXP@
+PPPPh0I@
+PPPPh
+t.jP3
+XPSh4Q@
+PPh,R@
+PPhTR@
+ShTS@
+Sh|S@
+PPPPhPT@
+Ph@_@
+PPPPhxT@
+PQj(Z
+j\Xf;E
+j\XPW
+tDjPj
+QQSVW
+Sh`V@
+PPPPh
+ SVW3
+ SVW3
+Phtb@
+Phtb@
+PhxW@
+j [j\
+Phtb@
+Wh$a@
+PPPRQ
+j\Yf;
+j\Xf+
+QPQQQ
+~ _^[]
+PPPPRPP
+9w(u7j
+9^(t(j
+PPPPR
+j\XPS
+j\Yf;
+j\Zf;
+G X9E
+QQQQPW
+SVW!J
+Ph,_@
+Ph,_@
+Ph,_@
+F Ph,_@
+QQSVW
+PVVVVVR
+xSC;]
+PVVVVV
+t"9A t
+<^\tqC;
+L$\_^3
+QSVWj
+VVVVQVVj
+QQQQPQQj
+SWhPd@
+PSSSQ
+L$0RP
+D$4Pj
+D$LPj
+D$8PWWj
+D$0jHZj
+D$PPSS
+D$@Pj
+D$dPS
+QWVQQ
+PRRRRRRQ
+PPPPP
+<SVW3
+PWWWWW
+Ph@^@
+PSSSSSSQ
+QSShxa@
+PSSSQ
+Ph,_@
+PPPPP
+Ph,_@
+Phxa@
+PQQQQQQQj
+PVVVVV
+\tKAf
+PQQQS
+PSSSSSSSj j
+VRQhxd@
+Phxd@
+uhj\V
+DSVWj
+j"Xj$f
+4SVWj
+j"Xj$f
+j'Phh<B
+j'Phx<B
+WPVPh
+PShxd@
+$SVW3
+u'j(Xf
+!yEj(
+ hPj@
+PPh<n@
+tSh,o@
+t?h@o@
+t+hTo@
+tLVWj
+p QWj
+Shto@
+Y__^[
+QRPhl
+Y__^[
+DsGetDcNameW
+NetApiBufferFree
+NetGetDCName
+mtstocom.exe
+?GetRegNodeDispenser@@YGJPAPAUIRegNodeDispenser@@@Z
+RegSetValueExW
+RegCreateKeyExW
+RegCloseKey
+ADVAPI32.dll
+WriteFile
+GetModuleFileNameW
+SetFilePointer
+CreateFileW
+OpenEventW
+GetLastError
+CreateFileA
+SetEvent
+GetVersionExA
+CloseHandle
+HeapSetInformation
+GetWindowsDirectoryA
+GetLocalTime
+MoveFileExW
+GetFileSize
+KERNEL32.dll
+__CxxFrameHandler3
+_vsnwprintf
+clock
+_wcsicmp
+wcstombs
+wcschr
+wcsstr
+_stricmp
+_strtime
+_XcptFilter
+__p__commode
+_amsg_exit
+__getmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+msvcrt.dll
+_except_handler4_common
+?terminate@@YAXXZ
+_controlfp
+_lock
+_unlock
+__dllonexit
+_onexit
+CoTaskMemAlloc
+CoUninitialize
+CoCreateInstance
+CoTaskMemFree
+IsCharAlphaW
+CharNextW
+IsCharAlphaNumericW
+CharPrevW
+CoTaskMemRealloc
+CLSIDFromString
+CoInitializeEx
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+GetModuleHandleW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+RegQueryValueExW
+RegEnumValueW
+RegDeleteValueW
+RegOpenKeyExW
+RegDeleteTreeW
+RegEnumKeyExW
+RegFlushKey
+RegQueryInfoKeyW
+FindFirstFileW
+FindNextFileW
+ExpandEnvironmentStringsW
+FindClose
+GetProcAddress
+FreeLibrary
+GetSystemWindowsDirectoryW
+LoadLibraryExW
+StringFromGUID2
+LocalAlloc
+LocalFree
+LocalReAlloc
+LogonUserExExW
+GetSecurityDescriptorLength
+InitializeAcl
+OpenProcessToken
+IsValidSecurityDescriptor
+AddAce
+DestroyPrivateObjectSecurity
+CreatePrivateObjectSecurityEx
+GetSecurityDescriptorDacl
+AddAccessAllowedAce
+GetLengthSid
+ConvertSidToStringSidW
+FreeSid
+IsWellKnownSid
+CopySid
+GetSidLengthRequired
+GetSidSubAuthority
+AllocateAndInitializeSid
+GetSidSubAuthorityCount
+ConvertStringSidToSidW
+CompareStringW
+CreateDirectoryW
+EnterCriticalSection
+VerQueryValueW
+LeaveCriticalSection
+WaitForSingleObject
+SetFileAttributesW
+FormatMessageW
+OutputDebugStringW
+LockResource
+DeleteFileW
+FindResourceExW
+LoadResource
+LoadStringW
+CoGetObjectContext
+DeleteCriticalSection
+CreateProcessW
+DebugBreak
+IsDebuggerPresent
+GetExitCodeProcess
+GetTokenInformation
+OpenThreadToken
+SetThreadToken
+GetCurrentThread
+InitializeCriticalSectionAndSpinCount
+OLEAUT32.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+SspiCli.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+LookupAccountNameLocalW
+LsaClose
+LsaOpenPolicy
+LsaRetrievePrivateData
+LsaStorePrivateData
+LsaFreeMemory
+LookupAccountSidLocalW
+LsaQueryInformationPolicy
+LsaAddAccountRights
+LsaEnumerateAccountRights
+LsaRemoveAccountRights
+api-ms-win-security-lsalookup-l1-1-0.dll
+api-ms-win-security-lsapolicy-l1-1-0.dll
+CharPrevA
+CharNextA
+USER32.dll
+ntdll.dll
+wcsrchr
+_wcsnicmp
+LocalSize
+GetComputerNameW
+RegConnectRegistryW
+BuildSecurityDescriptorW
+BuildTrusteeWithNameW
+BuildTrusteeWithSidW
+LsaLookupNames
+ReportEventW
+RegisterEventSourceW
+DeregisterEventSource
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+realloc
+malloc
+_waccess
+_local_unwind4
+memcmp
+memcpy
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.COM.MTSToCOM"
+    type="win32"
+<description>Migrates MTS settings to COM+</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+FileVersion
+2001.12.10941.16384 (WinBuild.160101.0800)
+InternalName
+MTSTOCOM.EXE
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+MTSTOCOM.EXE
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+dTeP`
+en-US
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1$1,141<1D1L1T1\1d1l1t1|1
+1$2(20282P2
+Q4W4\4q4w4|4
+51575<5Q5W5\5q5w5|5
+616T6^6t6~6)8"9.9C9e9
+:*:6:B:N:Z:f:r:~:
+;-;:;`;k;
+<G<L<V<_<}<
+=&=,=5=G=u=
+>C>M>V>x>}>
+?4???b?
+0M0j0
+1,1T1Y1
+2=2V2f2}2
+3<3p3
+344i4
+515W5n5
+6!6*6/6A6F6Q6V6a6f6q6v6
+7"7B7b7
+8'8@8K8
+:>:H:t:
+;=;B;L;Q;];w;|;
+<"<6<B<T<c<|<
+=3=?=_=d=
+>1>x>
+?+?F?`?k?}?
+0%0>0`0y0
+0(111B1Q1V1b1r1w1
+2!2&20252A2Q2V2b2
+3 303H3g3|3
+4"4(4F4U4l4
+5&5:5?5M5Z5o5t5
+6/6P6q6
+7'777D7Q7V7w7
+8^8i8
+9U9b9t9
+:*:<:V:[:y:
+;2;;;\;
+; <+<L<d<m<
+='=Q=
+>D>I>R>^>i>n>
+?3?U?a?
+0%0I0e0q0
+141U1
+2 2)252H2M2v2
+3#363I3d3
+4&4+474^4
+585O5`5e5o5t5
+60666>6Q6]6k6z6
+7'7N7t7
+8<8D8`8y8
+9)9C9]9
+:/:::[:
+; ;5;^;
+<9<P<a<
+=G=}=
+>?>D>n>
+?R?r?
+0%0-0C0Q0q0x0
+1"1.1C1R1z1
+2+2T2\2i2q2
+3"3>3Z3
+3)484v4
+555N5j5}5
+6$6=6C6K6^6i6z6
+7:7Q7[7`7l7
+8$8*828E8P8a8
+9*9A9K9P9\9j9y9
+: :,:::[:p:}:
+;+;O;
+<><|<
+</=W=g=
+>->7><>H>X>e>
+?&?I?Z?g?u?
+0 0-080B0G0S0b0o0
+1&171[1p1}1
+2K2q2
+3'363P3U3v3
+4,494O4Z4
+4'5d5
+6"6;6f6t6
+7$7:7G7V7q7
+8!8&828F8X8
+9%939[9n9{9
+:!:9:c:
+;B;U;b;o;
+<%<9<^<c<m<r<
+=#=)=E=K=S=i=t=
+>)>L>Q>[>`>l>
+?!?=?C?K?a?l?
+)000A0O0[0
+111G1
+2C2\2m2~2
+3*363;3\3
+4$484=4G4L4X4d4i4u4
+5#515@5_5t5
+6,6;6D6J6`6f6n6
+7"7.7J7O7[7
+8&8E8Z8r8
+9$909W9}9
+:3:K:_:d:n:s:
+;-;3;;;N;Z;h;w;
+<2<7<C<j<
+=-=Y=a=y=
+>'>6>?>E>[>a>i>|>
+?'?9?>?a?w?
+(0<0M0Z0_0i0n0z0
+1!1)1<1G1X1h1
+2!282S2
+333P3U3[3
+4!4C4m4x4
+5#5J5
+6+606<6f6
+777^7
+8/888>8W8]8e8{8
+93999E9b9
+:!:&:2:L:u:
+;.;H;k;{;
+<.<<<f<
+<$=H=i=
+>)>.>:>G>L>w>
+?,?:?V?[?e?j?v?
+0$070C0Q0`0
+1#1-121>1L1Q1]1
+2(2@2[2t2
+3)3>3X3i3
+4'4<4W4~4
+5J5d5
+6=6S6m6
+7#7U7d7
+7"8*8F8
+9.9=9e9k9
+: :::[:
+;$;8;=;m;
+<8<T<o<|<
+<Q=Z=
+=!>3><>B>[>a>i>
+?8?Z?
+0Q0u0
+0#1:1N1k1
+232K2k2
+3$353D3I3U3a3f3
+424F4`4
+5%585=5I5]5
+636F6\6a6
+7K7c7
+868R8`8m8
+8"9H9
+:8:L:e:
+;X;x;
+;%<[<m<v<|<
+=%=6=P=w=
+>D>J>\>
+?+?C?d?
+0Z0m0z0
+1I1\1i1
+3+3r3
+414b4m4w4
+555G5Z5m5~5
+676n6z6
+7R7j7z7
+8!8&868A8N8S8f8s8
+939y9
+:":+:5:;:H:P:Y:b:o:}:
+;C;O;2<?<[<g<
+=%=-=G=R=X=^=~=
+>A>R>e>v>
+?)?h?t?
+0S0q0
+1&2C2m2
+3^3y3
+;";X;
+>B?t?
+0;1Y1
+3a3w3
+3/4C4
+536_6
+6V7#8H8
+929e9s9y9
+:$:;:M:d:{:
+:d;z;
+<.<E<[<r<
+<0=I=
+?)???I?v?
+0*0M0_0m0
+3,373Q3g3
+3-4_4|4
+5-5Q5o5
+6C6p6
+7@7h7w7
+969[9
+9P:z:
+:J;x;F<a<
+=N>k>
+?)?E?W?u?
+1+2c2
+3&3S3
+4g4}4
+5 6J6
+7 848a8r8{8
+8D9K9W9
+:<:V:
+;R;y;
+<,<?<T<
+=8=W=j=
+>*>C>Z>u>??a?
+0,0R0
+1&141c1|1
+242K2
+343M3
+4F4c4n4v4|4
+585j5
+636c6
+7%7C7`7
+8&8b8|8
+:+:D:]:w:
+:M;o;
+;&<8<v<
+>&>2>F>M>o>}>
+?-?L?}?
+0Z0o0
+181R1n1
+3,3z3
+3&4P4Y4m4x4
+4S5c5x5
+7E7q7x7
+7G8~8
+;-;9;
+;-<X<
+=G=a=
+='>H>n>
+0#090T0_0o0
+3&3?3K3Q3V3d3
+3+414@4M4n4
+5 5,5`5j5
+5$6.6N6|6
+7%777H7`7g7
+9$9+9H9
+9 :::a:n:}:
+<9<B<_<h<
+=E=`=h=n=
+?B?J?
+K0R0X0`0j0
+1(1>1P1a1j1
+3O3U3h3u3
+3B4I4U4a4i4z4
+5.5E5U5Z5g5l5y5~5
+676j6
+7&7.767=7C7l7
+8$8,8<8D8T8\8l8t8
+9$9,989@9L9T9`9h9t9|9
+97:=:F:M:`:k:
+;(;0;B;M;Y;d;p;};
+<D<K<i<v<
+=-=>=D=W=c={=
+>$>*>1>:>@>H>N>[>c>i>
+?"?'?I?O?V?[?h?w?
+0W0w0
+121O1X1c1j1
+2-2=2C2N2T2`2p2y2
+3 30393R3
+5=5Q5W5
+686G6P6Y6n6
+6.7<7M7U7k7s7
+8:8G8[8h8|8
+919N9
+9E:h:
+;$;G;j;
+<5<b<
+=H=x=
+>#>1>7>;>A>c>q>w>{>
+?<?H?h?p?|?
+0$0,040@0`0l0
+1(10181@1L1l1t1|1
+2$2(2D2H2h2
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1L1

@@ -1,0 +1,1185 @@
+!This program cannot be run in DOS mode.
+JRich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+Unable to generate new account domain SID
+SclGenerateUniqueAccountDomainSid
+(%lx): RtlConvertSidToUnicodeString failed!
+SclExtractSidSubString
+RtlConvertSidToUnicodeString returned too short of a string.
+(%lx): Failed to open key [%ws]!
+SclRetrieveSid
+Call to SclAlloc failed!
+SclRetrieveMultiSz
+(%lx): Unable to enable privilege [%u]!
+SclAcquireRequiredPrivileges
+\REGISTRY\MACHINE\SYSTEM\SETUP\SETUPCL
+SETUP\SETUPCL
+Number of registry keys processed
+RegKeyProcessCount
+Number of registry keys renamed
+RegKeyRenameCount
+Number of registry values processed
+RegValueProcessCount
+Number of registry values renamed
+RegValueRenameCount
+Number of registry values updated
+RegDataUpdateCount
+Number of registry security descriptors updated
+SecObjectSDUpdateCount
+Number of registry security descriptors processed
+SecObjectSDProcessCount
+Number of $Secure security descriptors updated
+FsSecureSDUpdateCount
+Number of $Secure security descriptors failed
+FsSecureSDFailedUpdateCount
+Number of $Secure security descriptors processed
+FsSecureSDProcessCount
+Number of $MFT security descriptors updated
+FsMftSDUpdateCount
+Number of $MFT security descriptors failed
+FsMftSDFailedUpdateCount
+Number of $MFT security descriptors processed
+FsMftSDProcessCount
+Number of reparse points processed
+ReparsePointProcessCount
+Number of reparse points updated
+ReparsePointUpdateCount
+Time spent processing registry (in ms)
+RegProcessingTimeInMS
+HiveTime
+Time spent processing volumes (in ms)
+FsProcessingTimeInMS
+FileACLTime
+Total time spent processing (in ms)
+TotalProcessingTimeInMS
+RunTime
+ExecutionSuccessful
+NTSTATUS
+(%lx): Failed to record perf results
+SclStateRecordResults
+STAT: %ws = %I64u
+SclpStateRecordStatField
+SETUPEXECUTENOPNPSYNC
+SETUPEXECUTE
+SUPPORTEDONETIMEEXECUTE
+SETUP\SETUPCL\SESSION MANAGER
+\REGISTRY\MACHINE\SYSTEM\SETUP\SETUPCL\SESSION MANAGER
+OS does not support boot-time execution without Pnp synchronization.
+SclStateConfigureBootTimeExecution
+\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\SESSION MANAGER
+CONTROLSET001\CONTROL\SESSION MANAGER
+SELECT
+CURRENT
+CONTROLSET%03u\CONTROL\SESSION MANAGER
+setupcl.exe
+%ws value not found; nothing to delete.
+setupcl.exe
+was required
+was NOT needed
+to run
+NOT to run
+Successfully configured SetupCl %s at next boot; a registry change %s
+(%lx): Failed to update %ws value.
+OperationFlags
+SidAccountDomainOld
+SidAccountDomainNew
+WinDirOld
+WinDirNew
+OS Footprint
+PartitionName
+SclDosPathToNtPath error with %ws. Error: 0x%08X
+SclpCanonicalizePaths
+CanonicalizeObjectPath error with %ws. Error: 0x%08X
+SclpCanonicalizePaths failed. Error: 0x%08X
+SclGetPendedRequest
+The OS's pended SetupCl request is invalid!
+Manipulating a pended request in offline mode requires access to the offline SYSTEM hive.
+SclpStateOpenRequestKey
+\REGISTRY\MACHINE\SYSTEM\SETUP\SETUPCL\PendingRequest
+SETUP\SETUPCL\PendingRequest
+BlockOperations
+Manipulating SetupCl status in offline mode requires access to the offline SYSTEM hive.
+SclpStateOpenStatusKey
+DEFAULT
+SECURITY
+SOFTWARE
+SYSTEM
+SETUPCL
+System32\config
+(%lx): Error opening SetupCl hive file [%ws]
+SclStateStoreChanges
+(%lx): Error saving SetupCl key [%ws] to hive file [%ws]
+SetupCl hive file not found; no stored changes
+SclStateValidateAndRetrieveChanges
+(%lx): Failure while loading SetupCl hive
+ChangedKeys
+ChangeTag
+Hive [%ws] changed only after boot; will get the changed keys list.
+SclpStateValidateAndRetrieveChangedKeys
+Hive [%ws] changed before boot; will skip the changed keys list.
+Change tags mismatch for hive [%ws]; will skip the changed keys list.
+(%lx): Failure during enumeration of values.
+Retrieved
+%ws changes to be made to hive [%ws]
+present
+not present
+Saw request(P): operation flags = 0x%X, progress callback %s
+SclpExecuteRequestInternal
+Marking event [&SclEvent_ExecuteRequest_Start]
+online
+offline
+Running in [%s] mode.
+Acquiring needed privileges...
+(%lx): Failed to acquire needed privileges
+(%lx): Failed to initialize SetupCl context
+(%lx): Failed to retrieve OS's SetupCl status
+Target OS is in a failed state from a previous failed execution of SetupCl; cannot proceed...
+Marking event [&SclEvent_ResetDiskSignatures_Start]
+Marking event [&SclEvent_ResetDiskSignatures_Stop]
+(%lx): Failed to reset disk GUIDs.
+Marking event [&SclEvent_ExtendPartition_Start]
+Marking event [&SclEvent_ExtendPartition_Stop]
+(%lx): Failed to extend partition.
+Marking event [&SclEvent_ProcessRegistry_Start]
+Marking event [&SclEvent_ProcessRegistry_Stop]
+(%lx): Failed to process registry
+Re-Executing upgrade migration actions...
+Upgrade hive updates ares only supported in online mode; cannot proceed...
+Marking event [&SclEvent_ExecuteUpgHives_Start]
+SkipMigrateRootACL
+Error retrieving ACL migration information: [0x%08X]
+Migration of root ACL: %ws
+Marking event [&SclEvent_ExecuteUpgHives_Stop]
+(%lx): Failed to execute upgrade hive updates
+Marking event [&SclEvent_ProcessVolumes_Start]
+Marking event [&SclEvent_ProcessVolumes_Stop]
+(%lx): Failed to process OS volume
+Marking event [&SclEvent_RetargetLinks_Start]
+Marking event [&SclEvent_RetargetLinks_Stop]
+(%lx): Failed to retarget links
+Marking event [&SclEvent_ExecuteRequest_Stop]
+(%lx): Request execution failed
+\REGISTRY\MACHINE\SECURITY\POLICY\POLACDMS
+POLICY\POLACDMS
+Requests to replace the account domain SID that don't provide an explicit 'old' SID require access to the SECURITY hive.
+SclpResolveRequest
+PATHNAME
+\REGISTRY\MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION
+MICROSOFT\WINDOWS NT\CURRENTVERSION
+Requests to replace the OS drive path that don't provide an explicit 'old' path require access to the SOFTWARE hive.
+SYSTEMROOT
+Requests to replace the OS drive path that don't provide an explicit 'new' path require access to the SOFTWARE hive.
+Old and new paths are identical ([%ws]); skipping path replacement...
+SclpRemoveContextNoOps
+Old and new SID strings are identical ([%ws]); skipping SID replacement...
+Old and new paths were identical ([%ws]); using new path [%ws]...
+SclpForceContextOps
+Old and new SID strings are identical ([%ws]); using new SID string [%ws]...
+[WdsNativeLib] %ws
+SclpWdsNativeLibLogCallback
+%SYSTEMDRIVE%\
+%SYSTEMROOT%
+(%lx): Failed to expand [%ws]!
+SclExpandString
+SystemDrive
+windir
+SystemRoot
+(%lx): Failed to open subkey '%ws'
+SclRegDeleteKeyRecursive
+(%lx): Unable to recursively delete subkey '%ws'
+(%lx): Failed to open [%ws]
+SclRegSetValue_UStr
+<key>
+(%lx): Failed to set: %ws ! %.*ws
+Hive does not exist: [%ws]
+SclRegLoadUnloadHive
+Saw SHARING_VIOLATION while loading hive [%ws]; is it already loaded?
+(%lx): Failed to load hive: [%ws]
+(%lx): Failed to find loaded hive path for key: [%ws]
+(%lx): Failed to unload key: [%ws]
+(%lx): Failed to get exclusive lock on hive file: [%ws]
+Hive file [%ws] is in use; will attempt retries to ensure unload
+(%lx): Failed to delay execution
+(%lx): Failed to ensure hive file [%ws] is unloaded
+(%lx): Failed to enumerate src keys.
+SclRegCopyKeyRecursiveByHandle
+(%lx): Failed to create full path for source key.
+(%lx): Failed to create full path for destination key.
+(%lx): Failed to open source child key
+(%lx): Failed to create destination child key
+(%lx): Failed to migrate security info for child key
+Copying [%ws] -> [%ws]
+Copying [%ws]
+Copying to [%ws]
+(%lx): Recursive call failed.
+(%lx): Failed to enumerate source value keys.
+(%lx): Failed to create full path for source key/value.
+(%lx): Failed to create full path for destination key/value.
+(%lx): Failed to set destination value key.
+(%lx): Failed to open source key [%ws].
+SclRegCopyKeyRecursiveByName
+Source key [%ws] didn't already exist
+(%lx): Failed to query object security for size.
+(%lx): Failed to create destination key [%ws].
+Target key [%ws] already exists
+SclRegCopySecurityInfo
+(%lx): Failed to create destination child key.
+Reg value [%ws] does not exist
+SclRegGetValue
+(%lx): Failed to query reg value [%ws].
+Unable to allocate buffer
+(%lx): Failed to query key [%ws]
+Value [%ws] is not registry string value
+SclRegGetString
+Value [%ws] is not registry DWORD value
+SclRegGetDword
+\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\HIVELIST
+\REGISTRY\MACHINE
+Can't rename reg value [%ws] to [%ws]; the target already exists
+SclRegRenameValue
+(%lx): Failed to rename value [%ws] to [%ws]
+(%lx): Failed to open key: [%ws]
+SclRegProcessKey
+(%lx): Failed call to SclProcessObjectSecurity().
+SclRegProcessKeyByHandle
+(%lx): Failed to open child key: [%ws]
+(%lx): Failed to get canonical path for a changed reg key
+(%lx): Failed to process reg key or one of its descendants: [%ws]
+(%lx): Failed to process registry key!
+(%lx): Failure during enumeration of subkeys.
+SclRegProcessKeySubkeys
+SclCreateKey failed to open key under [%ws], returning STATUS_INSUFFICIENT_RESOURCES; skipping...
+SclCreateKey returned STATUS_INSUFFICIENT_RESOURCES; skipping...
+SclCreateKey failed to open child key [%.*ws], returning STATUS_ACCESS_DENIED; will try with lowered access rights
+(%lx): Failed to open child key: [%.*ws]
+SclRegProcessKeyValues
+(%lx): Failed to process value [%.*ws]
+(%lx): Value info buffer contains invalid offsets
+SclRegProcessValue
+(%lx): Failed to set value [%.*ws]
+Operating on user-specific profile hives...
+SclRegProcessUserProfileHives
+(%lx): Could not allocate memory.
+(%lx): Failed to open PROFILELIST key.
+PROFILEIMAGEPATH
+\NTUSER.DAT
+\AppData\Local\Microsoft\Windows\UsrClass.dat
+Required profile hive does not exist: [%ws].
+Optional profile hive does not exist, skipping: [%ws].
+Default
+Default user profile hive does not exist, skipping: [%ws].
+Processing profile hive: [%ws]
+SclRegProcessProfileHive
+Found hive [%ws] already loaded at: [%ws]
+(%lx): Failed to process user hive [%ws]
+Locating user profile hive: %ws
+SclpRegExpandProfileHivePath
+(%lx): Failed to expand environment string!
+Expanded profile hive path: NT path = [%ws]
+%ws\%ws
+(%lx): Failed to calculate full key for the new hive [%ws]
+SclpWipeHive
+(%lx): Error opening hive key [%ws]
+SclRegEnumerateKey failed [0x%08X]
+SclRegEnumerateValueKey failed [0x%08X]
+(%lx): Failed to delete value [%wZ]
+Flushed changes after wiping hive content for [%ws] Status:0x%x
+WINDOWS.OLD\WINDOWS\System32\config
+%ws%ws\%ws
+(%lx): Failed to calculate Windows.old's hive path for [%ws]
+SclpMigrateHive
+(%lx): Failed to calculate load key for the old hive [%ws]
+WINDOWS\Panther\Excluded.hiv
+%ws%ws
+(%lx): Failed to calculate excluded hive path
+(%lx): Error loading old hive [%ws] into [%ws]
+(%lx): Error opening old hive key [%ws]
+(%lx): Error opening current hive key [%ws]
+Excluded key not found: [%ws]
+Error opening excluded key [%ws]: [0x%08X]
+(%lx): Error opening excluded hive file [%ws]
+(%lx): Error saving excluded key [%ws] to hive file [%ws]
+(%lx): Error setting default security info to [%ws]
+(%lx): Error copying security info from [%ws] to [%ws]
+(%lx): Error copying hive content from [%ws] to [%ws]
+(%lx): Error re-opening excluded key [%ws]
+(%lx): Error re-opening excluded hive file [%ws]
+Successfully restored (by recursive copy) hive content for [%ws]
+Deleted SECURITY hive contents in target image Status:0x%x
+SclRegProcessUpgradeRegistryOnline
+Deleted SAM hive contents in target image Status:0x%x
+Migrating SAM registry content
+Migrated keys: %d, values: %d
+Migrated keys/values below the threshold limit, will return [0x%08X]
+Migrating SECURITY registry content
+(%lx): Failed to create the SECURITY root descriptor.
+(%lx): Failed NtOpenFile on [%ws]
+SclGetVolumeHandle
+SclDeleteFileObject
+(%lx): Unable to delete [%ws]
+(%lx): Couldn't determine firmware type
+SclResetDiskGuids
+Detected system firmware type = 0x%X
+Found [%lu] disks
+SclpGptInitGuids
+Inspecting disk %u
+SclpGptInitZeroedPartitionGuids
+Found and updated NULL GUID at partition %u
+\Device\Harddisk%u\Partition0
+(%lx): Unable to open handle to [%ws].
+SclGetDiskHandle
+(%lx): Unable to get disk layout.
+SclGetDiskLayout
+Successfully updated layout
+SclpSetDiskLayout
+Updating boot entries to use new GUIDs.
+SclpUefiRefreshDiskBootConfig
+Failed to initialize the boot options library.
+Failed to reset the friendly name for boot entry [%ws]
+Boot%04x
+Writing to NVRBoot file [%ws]
+SclpGetAndWriteBootEntry
+(%lx): Failed to get size for boot entry buffer.
+Failed to allocate boot entry buffer.
+(%lx): Failed to get boot entry.
+(%lx): Failed to create boot entry recovery file
+(%lx): Failed writing boot number to boot entry recovery file.
+(%lx): Failed writing boot entry size to boot entry recovery file.
+(%lx): Failed writing boot entry to boot entry recovery file.
+SclGrowPartition
+(%lx): Unable to get system device information.
+SclpGrowPartition
+Inspecting disk [%u]
+Partition [%ws] found in disk [%d].
+Corresponding volume is also found.
+Partition/Volume extension succeeded.
+Partition [%ws] not found.
+(%lx): Unable to get file system attributes.
+SclpGrowPartitionInternal
+FAT32
+(%lx): Unable to get file system size information.
+Grow partition [%ws] and its volume from from [%lld] to [%lld].
+Partition extension not needed.
+(%lx): Unable to grow partition.
+(%lx): Unable to extend volume.
+\Device\MountPointManager
+\\.\MountPointManager
+SclpGetMountPoints
+(%lx): Unable to query mount points.
+(%lx): Unable to get volume disk extents.
+SclpGetVolumeDiskExtents
+SclpGetVolumeHandle
+Processing links on volume [%ws]: old base = [%ws]; new base = [%ws]
+SclLinkProcessVolume
+(%lx): Failed to enumerate reparse points on volume [%ws]
+Ignoring unrecognized reparse tag [0x%x], [ID=0x%I64x]
+SclpLinkProcessReparsePoint
+(%lx): Failed to retrieve reparse point's path, path restrictions will not be honored [ID=0x%I64x]
+Not changing symbolic link %s due to path restrictions
+(%lx): Failed to validate if we should process symbolic link %s
+<path unavailable>
+(%lx): Failed to retarget reparse point [ID=0x%I64x]: [%ws]
+performed
+not performed
+Successfully processed reparse point [%ws]; update %s
+(%lx): Failed to process reparse point [ID=0x%I64x]: [%ws]
+Will ignore error and continue processing
+Marking event [&SclEvent_ProcessUserProfiles_Start]
+\REGISTRY\MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\PROFILELIST
+Marking event [&SclEvent_ProcessUserProfiles_Stop]
+Marking event [&SclEvent_ProcessSystemRegistry_Start]
+Marking event [&SclEvent_ProcessSystemRegistry_Stop]
+MICROSOFT\WINDOWS NT\CURRENTVERSION\PROFILELIST
+(%lx): Failed to process offline registry
+SclRegProcessOfflineRegistry
+\REGISTRY\USER\.DEFAULT
+\REGISTRY\MACHINE\SAM
+\REGISTRY\MACHINE\SAM\SAM
+\REGISTRY\MACHINE\SECURITY
+\REGISTRY\MACHINE\SOFTWARE
+\REGISTRY\MACHINE\SYSTEM
+Processing system hive [%ws]...
+ProcessOnlineRegistryHives
+(%lx): Failed to process key [%ws]
+Volume [%ws] is not an NTFS volume!
+SclFsProcessVolume
+The version of volume [%ws] is NTFS [%u.%u]
+The NTFS version of volume [%ws] is not supported!
+The version of the current (host) OS is [%u.%u]
+The current (host) OS is not supported for FS SID replacement!
+Processing volume [%ws]...
+(%lx): NtQueryVolumeInformationFile failed
+SclpVolumeIsNtfs
+File system type is: [%ws]
+(%lx): FSCTL_SD_GLOBAL_CHANGE failed
+SclpFsProcessVolumeByHandle
+FSCTL_SD_GLOBAL_CHANGE succeeded
+(%lx): Failed to query object security!
+SclProcessObjectSecurity
+(%lx): Failed to set security info.
+WINDOWS
+ntdll.dll
+NtAddBootEntry
+NtAddDriverEntry
+NtDeleteBootEntry
+NtDeleteDriverEntry
+NtEnumerateBootEntries
+NtEnumerateDriverEntries
+NtModifyBootEntry
+NtModifyDriverEntry
+NtSetBootEntryOrder
+NtSetBootOptions
+NtSetDriverEntryOrder
+NtTranslateFilePath
+NtQueryBootEntryOrder
+NtQueryBootOptions
+NtQueryDriverEntryOrder
+kernel32.dll
+InterlockedCompareExchange
+InterlockedExchange
+\Device\KsecDD
+0123456789ABCDEFGHIJKLMNOPQRSTUV
+FixReparsePointPath: Skipping the current symbolic link; it's relative.
+FixReparsePointPath: Reparse points with ReparseTag [0x%x] cannot be updated.
+globalroot
+volume{
+<not present>
+Updates required for link; Old SubstName = [%s], Old PrintName = [%s]
+FixReparsePointPath: Ignoring reparse point with tag [0x%X].
+$Extend\$Reparse:$R:$INDEX_ALLOCATION
+onecore\internal\Base\inc\rtlstringutil.h
+onecore\base\servicing\offlinehives\offlinehives.cpp
+GetLoadedHiveKeyNameInternal
+Not-null check failed: FullOfflineHiveFilePath
+Not-null check failed: KeyNameBuffer
+{bf1a281b-ad7b-4476-ac95-f47682990ce7}
+lusSanitizedFilePath.Length != 0
+::RtlStringCchCopyNW(KeyNameBuffer, KeyNameBufferSize, lusKeyName.Buffer, cchKeyName)
+Windows::StringUtil::Rtl::SubStringByCharCount
+BUCL::Rtl::Multiply<TraitsT::TSize>(Offset, TraitsT::TCharSize, cbOffset)
+BUCL::Rtl::Multiply<TraitsT::TSize>(Count, TraitsT::TCharSize, cbCount)
+Windows::StringUtil::Rtl::SubStringByByteCount
+BUCL::Rtl::Add<TraitsT::TSize>(Offset, Count, TotalSize)
+RtlString::FixedString<struct _LUNICODE_STRING,255>::Reallocate
+*** Assertion failed: %s
+***   Source File: %s, line %ld
+! !!!"!#!$!%!&!'!(!)!*!+!,!-!.!/!0!1!2!3!4!5!6!7!8!9!:!;!<!=!>!?!@!A!B!C!D!E!F!G!H!I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z![!\!]!^!_!p!q!r!s!t!u!v!w!x!y!z!{!|!}!~!
+!p!q!r!s!t!u!v!w!x!y!z!{!|!}!~!
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+onecore\base\lstring\lunicode_string.cpp
+RtlInitLUnicodeStringFromNullTerminatedString
+cch <= (((((SIZE_T)~((SIZE_T)0)) - (((SIZE_T)~((SIZE_T)0)) % sizeof(WCHAR))) / sizeof(WCHAR)) - 1)
+onecore\base\lstring\lblob.cpp
+Not-null check failed: Blob
+::RtlIsLBlobValid(Blob)
+RtlHashEncodedLBlob
+Not-null check failed: PseudoKeyOut
+RSDS?
+setupcl.pdb
+.rdata$brc
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.edata
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+PSSSS
+0SVW3
+$VWhp
+$VWhH
+$VWh0
+$VWh0
+$VWhX
+$VWh 
+PSSh?
+PSSh?
+f;<Ct
+t(j|_j\
+t(j|_j\
+y6VSh
+D$8VP
+D$(PSh`%
+j\j|Z
+j\j|Z
+PWWh?
+u,hH'
+VVj`j
+y/WVh8(
+xih<)
+rVhh*
+L$DSVW
+D$xVSP
+f;D$ u
+D$(YY
+T$,PPh?
+T$,PPh?
+T$$PPh?
+T$XPPh?
+T$`PPh?
+D$|SP
+D$0Vj
+9\$4t
+D$4SP
+t hP,
+tDh<-
+t)hp.
+tRh\0
+_^[Y]
+PWWh?
+t!98u
+jzZf;
+j:Zf;V
+j\Zf;V
+t!98u
+jzZf;
+w!j:Xf;
+j\Xf;
+u1Sh 4
+WSh(5
+^Whx5
+SVhT6
+u%Wh`7
+u Wh`8
+}.VhD9
+t+PVh@:
+TVhX:
+t.Phh:
+y.Vh|:
+t+PVh@:
+TVhX:
+t.Phh:
+D$$SVW
+D$ PWh?
+D$ Pj
+t$$Wj
+D$ Pj
+u(ShH<
+t4SVh
+y6SVh$=
+PSSh?
+$SVW3
+DSVW3
+y/Vh ?
+#D$<j
+D$$PVh
+#D$@j
+y[9\$
+D$ P3
+f;D$4u
+#D$<j
+L$$9L$
+L$$Qj
+yl9\$$
+t$8Pj
+x+SVh
+#|$@j
+#|$<j
+VWhD@
+,Shh*
+PShhB
+w5j:Xf;
+j\Xf;
+y<VhD@
+WPh$D
+ Wh4D
+x^VSh
+y#SWh
+yWVhDE
+PWhhF
+tWh@F
+y/SVh
+PVh8H
+SVhhH
+PVhtI
+QQj`j
+QQj`j
+PVhDJ
+QQQQQQQj
+PPPPPPh 
+y SVh
+PQQQV
+PQQQR
+x+hDN
+j\Yf;
+t!VhtO
+QQj j
+WPQQQ
+WPh\Q
+y5h`S
+SVWj j
+PQQQV
+j\[f9\0`
+j\[f9
+j?^f;
+j?Yf9L0
+j\[f9\0
+jVYf9L0
+jo[f9\0
+jlYf9L0
+ju[f9\0
+jmYf9L0
+je[f9\0
+j{Yf9L0
+j-[f9\0&
+SYf9L00
+f9\0:
+f9\0D
+j}[f9\0^
+j`Xf;
+j?Xf;
+j`Yf;
+jbYf;
+j\Yf9L0`
+j\Yf9
+j?Zf;
+j\[f;
+j?Zf9T0
+j\[f9\0
+jVYf9L0
+joZf9T0
+jlYf9L0
+ju[f9\0
+jmZf9T0
+jeYf9L0
+j{[f9\0
+u~j-[f9\0&
+uqj-Zf9T00
+ucj-Yf9L0:
+uTj-[f9\0D
+uGj}[f9\0^
+u:j`Xf;
+u2j?Xf;
+PSh(T
+y*SVh<L
+y%SVh
+j\Zf;
+yZ9\$
+u^Sh|U
+QPhxV
+j\Zf;P
+PVh<L
+PRRhd
+PRRRQ
+dSVWjH
+y+VhP\
+~(;~ r
+~8;~0r
+YY_^[
+tIf92tDj\R
+j\Zf;Ty
+j\^f;p
+^[w!QRW
+PQQQV
+PQQQW
+VRPhLe
+URPQQh
+SVWUj
+;t$,v-
+UQPXY]Y[
+setupcl.dll
+SclAcquireRequiredPrivileges
+SclClearPendedRequest
+SclExecutePendedRequests
+SclExecuteRequest
+SclFreeRequest
+SclGetPendedRequest
+SclLoadStringResource
+SclPendRequest
+SclPendedRequestExists
+SclPreCompilePendedRequests
+SclReleasePrivileges
+LdrDisableThreadCalloutsForDll
+NtTerminateProcess
+RtlUnhandledExceptionFilter
+NtQueryKey
+RtlGetControlSecurityDescriptor
+RtlAllocateHeap
+RtlConvertSidToUnicodeString
+RtlFreeUnicodeString
+RtlInitUnicodeString
+RtlAllocateAndInitializeSid
+NtSetSecurityObject
+RtlLengthSid
+NtClose
+RtlAdjustPrivilege
+RtlFreeSid
+RtlSetControlSecurityDescriptor
+RtlFreeHeap
+NtCreateKey
+NtQuerySecurityObject
+_vsnwprintf
+NtQuerySystemInformation
+NtOpenKey
+NtFlushKey
+NtDeleteValueKey
+NtQueryInformationFile
+_wcsnicmp
+NtSaveKeyEx
+EtwEventWrite
+NtCreateFile
+NtOpenFile
+RtlValidSid
+_wcsicmp
+RtlAnsiStringToUnicodeString
+NtQuerySystemTime
+RtlDosPathNameToNtPathName_U_WithStatus
+RtlInitAnsiString
+RtlGetVersion
+RtlSetThreadErrorMode
+RtlFindMessage
+RtlSetEnvironmentVariable
+RtlCreateEnvironment
+RtlDestroyEnvironment
+RtlCreateUnicodeString
+RtlExpandEnvironmentStrings_U
+NtDeleteKey
+NtEnumerateKey
+NtEnumerateValueKey
+NtLoadKey
+RtlReAllocateHeap
+NtDelayExecution
+NtUnloadKey
+NtSetValueKey
+NtQueryValueKey
+_vsnprintf
+RtlSetDaclSecurityDescriptor
+RtlGetAce
+RtlAddAccessAllowedAce
+RtlCreateAcl
+RtlCreateSecurityDescriptor
+NtRestoreKey
+wcsrchr
+NtWriteFile
+NtSetInformationFile
+NtQueryAttributesFile
+NtDeviceIoControlFile
+swprintf_s
+NtQuerySystemEnvironmentValueEx
+wcsncpy_s
+RtlEqualUnicodeString
+NtFsControlFile
+NtQueryVolumeInformationFile
+_wcsupr
+wcscpy_s
+LdrGetProcedureAddress
+LdrGetDllHandle
+ntdll.dll
+RtlUnwind
+NtQueryObject
+_vscwprintf
+towupper
+NtQueryDirectoryFile
+NtWaitForSingleObject
+RtlRaiseStatus
+DbgPrintEx
+_chkstk
+memcmp
+memcpy
+memmove
+memset
+WEVT_TEMPLATE
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+System Clone Library
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+SetupCl.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+SetupCl.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+CHANh
+Microsoft-Windows-SetupCl/Analytic
+EventData
+Description
+Statistic
+Description
+Statistic
+EventData
+SourceLine
+SourceFunction
+Message
+SourceLine
+SourceFunction
+Message
+EventData
+HiveName
+HiveName
+EventData
+EventData
+EventData
+Message
+Status
+Message
+Status
+PRVAH
+Microsoft-Windows-SetupCl
+OPCOx
+win:Info
+win:Start
+win:Stop
+win:Error
+win:Warning
+win:Informational
+TASKD
+tskSetupCl
+KEYWp
+keyPerformance
+keyDiagnostic
+keyTelemetry
+ms:ReservedKeyword44
+ms:Telemetry
+ms:Measures
+ms:CriticalData
+WEVT_TEMPLATE
+en-US
+0$0(0,000
+1,1l1p1x1
+>N>q>|>
+>$?0?5???\?a?k?
+1=1o1
+1*242N2b2
+2b3(4?4
+4E5N5Y5
+666;6@6J6b6g6
+7#7(7-777O7T7r7w7|7
+8<8A8_8d8i8s8
+9)9.9F9K9P9Z9x9}9
+:::?:D:N:
+;%;*;O;T;Y;c;
+<*</<J<O<T<^<u<z<
+=+=0=5=?=V=[=v={=
+> >7><>W>\>a>k>
+?8?=?B?L?c?h?
+0#0(020b0x0}0
+1$1)1.181g1z1
+353=3a3h3t3
+4-4A4c4j4
+4:5H5t5
+5*6E6J6h6J7
+9'9]9d9m9t9
+9^:|:
+<?<N<
+2:3T3^3q3
+4%4/4B4w4
+505i5s5
+5'6P6[6`6j6
+7,7F7P7c7
+8D9_9}9
+:%:/:::a:
+;$;D;M;X;
+<:=x=
+>>>g>
+?F?l?
+0/040>0n0
+131%2,2Z2
+3(4b4
+4"5J5O5[5t5y5
+959K9
+:&:?:
+;5;R;\;
+;=<g<
+=%=J=w=
+>!?C?d?
+3'4]4r4w4|4
+595N5S5X5
+8<8]8
+8X:w:
+<%<0<@<K<k<p<
+=%=i=w=
+>*>/>B>G>`>e>
+>$?)?<?
+0$0)0=0B0a0f0p0
+0F1O1Z1n1s1
+2*2/2B2G2Q2u2
+4V4\4`4Z5o5
+6"666J6
+777[7`7j7
+8i9n9
+;";';;;i;u;z;
+<B<s<x<
+<Q=d=
+0\0|0
+1)10151W1
+3'3C3Q3_3o3
+5"5,5G5m5r5
+6&6+656W607?7E7J7T7
+8/848>8]8b8l8
+9+9p9
+:.:H:
+:!;f;
+<D<t<y<
+= =%=9=q=v=
+>%>=>S>r>w>
+>7?b?g?{?
+1G1L1`1
+1-292c2h2r2
+3-323<3
+414B4v4
+6F6Q6V6`6
+6U7Z7d7
+8W8\8f8
+839E9}9
+<6=C=P=c=x=}=
+>R>~>
+?N?d?s?
+1@1h1
+1R2i2
+5X5a5f5x5
+5n6s6
+6#7@7E7Q7
+8,8P8f8
+:3:c:}:
+;2;A;F;R;k;p;|;
+=%=F=[=s=
+=/>F>K>Y>
+?4?9?K?p?u?
+2)3.3:3
+3Y4g4
+6B6l6
+6;7H7c7
+7?8b8g8q8
+9?9T9
+:$:):3:V:
+:G;L;V;t;
+<)<z<
+=K=Q=V=l=
+>.>n>
+0%0*040|0
+1H1o1t1
+3(3w3
+4!4&484U4k4p4z4
+445O5
+6(6-6A6l6}6
+8C8]8
+9@9W9\9{9
+:&:C:H:v:{:
+;*;w;
+;)<<<A<S<x<
+=1=k=
+>$>9>N>k>
+?,?1?E?_?d?n?
+0I0N0a0i0t0
+2c2{2
+3:3_3
+3,4F4P4
+4$5F5[5s5
+7 787Y7
+9%9d9
+9%:C:a:{:
+:#;R;
+<+=D=V=[=d=
+>_?n?
+0M1`1e1w1
+252|2
+3 3*3
+3%4?4
+4%565\5n5
+6#6.6V6a6f6p6
+637?7D7
+8'8E8Z8
+8-9c9u9z9
+;?;D;N;f;
+===I=N=
+>[>g>l>
+>/?K?U?
+0G0Y0~0
+5P6c6
+7$7B7z7
+:@:h:
+;@;j;o;y;
+;[<n<s<}<
+=^=e=p=w=|=
+>A>F>Z>_>m>r>
+010F0^0
+071<1a1f1
+1 282O2m2
+3-323
+5T5}5
+6S6j6
+6#7L7l7
+7"898q8v8
+9@9E9O9s9
+:':.:K:R:l:v:
+;-;2;`;
+<Z<m<r<|<
+<#=(=/=
+>">?>D>N>s>
+>"?'?1?D?K?
+0,0U0
+1&1?1D1R1n2
+3;3G3L3[3
+>C?P?
+5#5?5Y5j5
+6G6Q6Z6a6h6o6
+8q9{9$;:;K;m;
+;8<O<]<
+= =F=N=`=l=
+>!>&>3>8>E>J>W>\>i>n>{>
+?.?@?M?e?z?
+0$090G0`0u0
+7"8-8
+97:M:
+0I0h0
+9Q<g<
+<'=A=[=
+=$>.>i>
+050A0H0j0
+3l3w3~3
+6\7y7
+0!0*0/050?0I0Y0i0y0
+0G1S1_1k1
+3%323\3
+3E4_4h4
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+9Ocr4
+Ge]L*
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+229879+4675790
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+jFtg)]
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+v&+;r
+,3mWQXXn4yAFvSkRq7zOcmIYTbQAabztRepHqKhjwzh8=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+S"p?J
+"D=GZ<@
+jykRX
+blWWM
+20220506221205.248Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:FC41-4BD4-D2201%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192745Z
+230126192745Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:FC41-4BD4-D2201%0#
+Microsoft Time-Stamp Service0
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+9:Ly~h
+&;[QcoJw
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:FC41-4BD4-D2201%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220507052212Z
+20220508052212Z0w0=
+1/0-0
+1(0&0
+7l's;
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+"d|j*
+#$X_>
+t%3o}
+8Yr([k

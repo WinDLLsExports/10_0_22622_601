@@ -1,0 +1,1239 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+Finstrumentation
+counters
+assemblyChildren.LoadFrom(pDom, assemblyElement, s_tag_instrumentation)
+CountersInstaller::QueueComponent
+instrumentationChildren.LoadFrom(pDom, instrumentationElement, s_tag_counters)
+counterInfos.emplace_back()
+info.assemblyName.assign(assemblyName)
+pDom->GetXml(countersElement, &info.countersXml)
+install
+uninstall
+{0} ({1}): Queued counters.
+tlx::assign_mbcs(countersXml, info.countersXml, CP_UTF8)
+CountersInstaller::CommitChanges
+{0} (uninstall): ParseCountersElement() returns {1}.
+{0} (uninstall): CntrtextUnloadV2Provider() returns {1}.
+{0} (install): ParseCountersElement() returns {1}.
+{0} (install): CntrtextLoadV2Provider() returns {1}.
+PerfCounterInstaller
+Performance Counter Text Installer
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib
+PluginTraceLevel
+Message
+Error
+Warning
+Verbose
+PerfCounterInstaller {0}: {1}
+APPID
+api-ms-win-eventing-provider-l1-1-0.dll
+advapi32.dll
+EventSetInformation
+assemblyIdentity
+language
+destinationPath
+Error {0} loading attribute "{1}".
+Error {0} in {1}: {2}.
+tlx::append_mbcs(utf16, utf8, CP_UTF8)
+AppendUtf8
+loadperf.dll
+LpAcquireInstallationMutex
+LpReleaseInstallationMutex
+Error {0} in LpAcquireInstallationMutex.
+m_pServices->get_IsolationAllocator(&m_pMalloc)
+InstallerBase::InitializeInstaller
+assemblyChildren.LoadFrom(pDom, assemblyElement, s_tag_file)
+InstallerBase::AddFileInfos
+Error {0} in {1}: fileChildren.LoadFrom(pDom, fileElement, "{2}")
+info.physicalDestination.push_back(L'\\')
+{0} ({1}): Queued {2}("{3}").
+fileInfos.push_back(utl::move(info))
+pComponent->GetXmlDocument(0, __uuidof(IRtlMicrodom), reinterpret_cast<void**>(&pDom))
+InstallerBase::GetCommonComponentInfo
+pDom->GetDocument(&doc)
+pDom->GetDocumentElement(doc, &assemblyElement)
+assemblyChildren.LoadFrom(pDom, assemblyElement, s_tag_assemblyIdentity)
+Unexpected prefix in registry path. Expected "{0}...", got "{1}".
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib
+HKEY_LOCAL_MACHINE\SOFTWARE
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services
+$(runtime.windows)
+Error {0} from ReplaceMacros of: "{1}".
+expanded.assign(szExpanded)
+InstallerBase::ReplaceMacros
+Error {0} from VirtualPathToPhysical of: "{1}".
+physical.assign(szPhysical)
+InstallerBase::VirtualPathToPhysical
+HKEY_LOCAL_MACHINE\
+lodctrDat
+lodctr
+servicingMapEmplaceResult != nullptr
+ServicingList::Register
+{0} ({1}): file "{2}" is already queued by {3}.
+{0} (uninstall): CntrtextUnInstallPerfDll("{1}") returns {2}
++servicing
+{0} (uninstall{1}): CntrtextUninstallDat("{2}") returns {3}
+{0} (install{1}): CntrtextInstallDat("{2}") returns {3}
+{0} (install): CntrtextInstallPerfDll("{1}") returns {2}
+userMode
+PERF_PROVIDER_USER_MODE
+kernelMode
+PERF_PROVIDER_KERNEL_MODE
+driver
+PERF_PROVIDER_DRIVER
+default
+custom
+single
+PERF_COUNTERSET_SINGLE_INSTANCE
+multiple
+PERF_COUNTERSET_MULTI_INSTANCES
+globalAggregate
+PERF_COUNTERSET_SINGLE_AGGREGATE
+multipleAggregate
+PERF_COUNTERSET_MULTI_AGGREGATE
+instanceAggregate
+PERF_COUNTERSET_INSTANCE_AGGREGATE
+globalAggregateHistory
+PERF_COUNTERSET_SINGLE_AGGREGATE_HISTORY
+standard
+PERF_DETAIL_NOVICE
+advanced
+PERF_DETAIL_ADVANCED
+PERF_AGGREGATE_TOTAL
+PERF_AGGREGATE_AVG
+PERF_AGGREGATE_MAX
+PERF_AGGREGATE_MIN
+undefined
+PERF_AGGREGATE_UNDEFINED
+reference
+PERF_ATTRIB_BY_REFERENCE
+noDisplay
+PERF_ATTRIB_NO_DISPLAYABLE
+noDigitGrouping
+PERF_ATTRIB_NO_GROUP_SEPARATOR
+displayAsHex
+PERF_ATTRIB_DISPLAY_AS_HEX
+displayAsReal
+PERF_ATTRIB_DISPLAY_AS_REAL
+perf_counter_counter
+PERF_COUNTER_COUNTER
+perf_counter_timer
+PERF_COUNTER_TIMER
+perf_counter_queuelen_type
+PERF_COUNTER_QUEUELEN_TYPE
+perf_counter_large_queuelen_type
+PERF_COUNTER_LARGE_QUEUELEN_TYPE
+perf_counter_100ns_queuelen_type
+PERF_COUNTER_100NS_QUEUELEN_TYPE
+perf_counter_obj_time_queuelen_type
+PERF_COUNTER_OBJ_TIME_QUEUELEN_TYPE
+perf_counter_bulk_count
+PERF_COUNTER_BULK_COUNT
+perf_counter_text
+PERF_COUNTER_TEXT
+perf_counter_rawcount
+PERF_COUNTER_RAWCOUNT
+perf_counter_large_rawcount
+PERF_COUNTER_LARGE_RAWCOUNT
+perf_counter_rawcount_hex
+PERF_COUNTER_RAWCOUNT_HEX
+perf_counter_large_rawcount_hex
+PERF_COUNTER_LARGE_RAWCOUNT_HEX
+perf_sample_fraction
+PERF_SAMPLE_FRACTION
+perf_sample_counter
+PERF_SAMPLE_COUNTER
+perf_counter_timer_inv
+PERF_COUNTER_TIMER_INV
+perf_sample_base
+PERF_SAMPLE_BASE
+perf_average_timer
+PERF_AVERAGE_TIMER
+perf_average_base
+PERF_AVERAGE_BASE
+perf_average_bulk
+PERF_AVERAGE_BULK
+perf_obj_time_timer
+PERF_OBJ_TIME_TIMER
+perf_100nsec_timer
+PERF_100NSEC_TIMER
+perf_100nsec_timer_inv
+PERF_100NSEC_TIMER_INV
+perf_counter_multi_timer
+PERF_COUNTER_MULTI_TIMER
+perf_counter_multi_timer_inv
+PERF_COUNTER_MULTI_TIMER_INV
+perf_counter_multi_base
+PERF_COUNTER_MULTI_BASE
+perf_100nsec_multi_timer
+PERF_100NSEC_MULTI_TIMER
+perf_100nsec_multi_timer_inv
+PERF_100NSEC_MULTI_TIMER_INV
+perf_raw_fraction
+PERF_RAW_FRACTION
+perf_large_raw_fraction
+PERF_LARGE_RAW_FRACTION
+perf_raw_base
+PERF_RAW_BASE
+perf_large_raw_base
+PERF_LARGE_RAW_BASE
+perf_elapsed_time
+PERF_ELAPSED_TIME
+perf_counter_delta
+PERF_COUNTER_DELTA
+perf_counter_large_delta
+PERF_COUNTER_LARGE_DELTA
+perf_precision_system_timer
+PERF_PRECISION_SYSTEM_TIMER
+perf_precision_100ns_timer
+PERF_PRECISION_100NS_TIMER
+perf_precision_object_timer
+PERF_PRECISION_OBJECT_TIMER
+composite
+PERF_COUNTER_COMPOSITE
+$(string.
+ProviderType
+ApplicationIdentity
+NameResource
+ExplainResource
+InstanceType
+CounterCount
+resourceBase
+providerName
+defaultScale
+provider
+counters
+providerType
+providerGuid
+counter
+applicationIdentity
+description
+multiCounterID
+detailLevel
+Field
+perfTimeID
+nameID
+counterAttributes
+callback
+counterAttribute
+aggregate
+descriptionID
+Struct
+perfFreqID
+counterSet
+SecurityDescriptor
+Structs
+schemaVersion
+instances
+Symbol
+baseID
+onecore\base\diagnosis\pdi\cntrtext\lib\unlodctr.cpp
+Memory Allocation Failure ("%s",%d).
+FixLanguageNames("%ws","%ws",%d,%d,%d,%d,%d)
+Invalid index values (%d,%d)(%d,%d,%d) for language "%ws" when uninstall "%ws".
+AddCounter %ws
+RegQueryValue(HKEY_PERFORMANCE_DATA,"%ws",%d,%d) fails %d when uninstall "%ws".
+AddExplain %ws
+Last Counter
+Last Help
+_V2Providers
+First Counter
+RegQueryValue_FirstCounter(%d,"%ws",%d,%d)
+RegQueryValue_LastCounter(%d,"%ws",%d,%d)
+InvalidV2ProviderIndex(%d,"%ws",%d,%d,%d)
+PreserveV2Provider(%d,"%ws","%ws",%d,%d,%d,%d,%d,%d)
+UnloadPerfTextString(ERROR_INVALID_PARAMETER)
+neutral
+Cannot find service name under registry keys "%ws" that has "PerfIniFile" registry value matches "%ws", already uninstall?
+Error while enumerate "%ws" registry key, %d.
+While uninstall "%ws", Error while query registry values under key "%ws", status %d.
+Cannot query registry values in "%ws\%ws\Performance" key, status %d. Already uninstalled?
+Cannot query registry values in "%ws\%ws\Performance" key, Access denied %d.
+LastCounter and LastHelp value in "%ws" key are (%d,%d).
+FirstCounter, FirstHelp, LastCounter, and LastHelp value in "%ws\%ws\Performance" key are (%d,%d,%d,%d).
+Counter database is corrupted, run 'lodctr /R' to fix it.
+While uninstall "%ws", fail to preserve index values (%d,%d) for current PERFLIB V2 providers, status %d.
+UnloadPerfTextString("%ws",0x%08X)("%ws",%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d)
+Error while build string mapping table for language "%ws" from "%ws" when uninstall "%ws", status %d.
+First Help
+Object List
+Library Validation Code
+InstallType
+PerfIniFile
+RegSetValue_PerflibLastHelp(%d) fails %d when uninstall "%ws".
+RegSetValue_PerflibLastCounter(%d) fails %d when uninstall "%ws".
+UnloadPerfTextString(%d,%d,%d)("%ws")
+DeleteV2Provider(%d,"%ws",%d,%d,%d)
+RegOpenKey_V2Provider("%ws",%d) fails %d
+ConvertKeyNameToGuid(%d,"%ws",%d,%d,%d)
+Cannot find PERFLIB V2 provider "%ws".
+RegOpenKey_V2Providers("%ws",%d) fails %d, already uninstalled?
+RegOpenKey_Perflib("%ws",%d) fails %d
+ParseEntry_Fail(%d,0x%p,0x%p,"%ws")
+_NAME
+_HELP
+ParseEntry_Fail(%d,"%ws","%ws")
+ParseEntry_Fail(%d,%d,0x%p,0x%p,"%ws")
+ParseEntry(%d,%d,"%ws","%ws","%ws")
+ParseEntry_Fail(%d,%d,"%ws","%ws")
+ParseEntry_Number(%d,%d,"%ws","%ws")
+Unable to query INI file "%ws" size.
+onecore\base\diagnosis\pdi\cntrtext\lib\lodctr.cpp
+NotFound
+symbolfile
+No valid symbolfile property value in "%ws".
+%ws%ws
+Cannot open symbolfile "%ws" for "%ws", error %d.
+Cannot Find symbolfile "%ws\%ws" for "%ws", error %d.
+#define %s %d
+IncludeEntry-Fails(%d,%d,%d,"%ws")
+IncludeEntry(%d,"%ws")
+%ws%ws\0*
+Cannot find "%ws" directory.
+%ws%ws\%ws\%ws
+Unable to query INI file "%s" size (%lu), ignore.
+languages
+No valid languages section in "%s", ignore.
+LanguageEntry(0x%08X,0x%08X)(0x%08X,0x%08X,"%ws","%s","%s")
+RegOpenKey_Software("%ws") fails %d.
+Microsoft
+RegCreateKey_SoftwareMicrosoft("%ws") fails %d
+Windows NT
+RegCreateKey_SoftwareMicrosoftWindowsNt("%ws") fails %d
+CurrentVersion
+RegCreateKey_SoftwareMicrosoftWindowsNtCurrentVersion("%ws") fails %d
+Perflib
+RegCreateKey_SoftwareMicrosoftWindowsNtCurrentVersionPerflib("%ws") --> %u
+RegOpenKey_Perflib("%ws") fails %d.
+RegOpenKey_Perflib("%ws") returns NULL.
+RegQueryValue_PerflibLastCounter("%ws") fails %d.
+RegQueryValue_PerflibLastCounter("%ws") returns invalid type %d, should be REG_DWORD (%d).
+RegQueryValue_PerflibLastHelp("%ws") fails %d.
+RegQueryValue_PerflibLastHelp("%ws") returns invalid type %d, should be REG_DWORD (%d).
+Base Index
+RegQueryValue_PerflibBaseIndex("%ws") fails %d.
+RegQueryValue_PerflibBaseIndex("%ws") returns invalid type %d, should be REG_DWORD (%d).
+RegOpenKey("%ws") fails %d
+RegCreateKey_ServiceName("%ws","%ws") fails %d
+RegCreateKey_ServiceName("%ws","%ws") creates NULL key
+RegOpenKey_ServiceName("%ws","%ws") fails %d
+Performance
+RegCreateKey_ServicePerformance("%ws","%ws") fails %d
+RegCreateKey_ServicePerformance("%ws","%ws") creates NULL key
+RegOpenKey_ServicePerformance("%ws","%ws") fails %d
+RegSetValue_ServiceInstallType("%ws","%ws",%d) fails %d
+RegSetValue_ServicePerfIniFile("%ws","%ws","%ws") fails %d
+RegQueryValue_ServiceFirstCounter("%ws","%ws") fails (%d,%d)
+RegQueryValue_ServiceLastCounter("%ws","%ws") fails (%d,%d)
+RegQueryValue_ServiceFirstHelp("%ws","%ws") fails (%d,%d)
+RegQueryValue_ServiceLastHelp("%ws","%ws") fails (%d,%d)
+Invalid starting index %d when process string type %d in "%s".
+Cannot extract "%s" string in "%s".
+Cannot extract "%ws" string in "%s".
+Entry(%d,%d,"%ws","%s","%ws")
+TestLanguage(0x%08X,0x%08X,"%ws")
+%ws%ws\0000\%ws
+%ws%ws\%04ws\%ws
+%ws%ws\%04X\%ws
+NotFound
+No text section in "%s".
+CheckIniFile(%d,%d,"%s")
+objects
+BadZeroIndex(%c,"%ws")
+BadNameIndex(%d)
+BadHelpIndex(%d)
+BadIndex(%d,%d,%d,%c)
+Index(%d)("%ws")("%ws")
+BufferSizeChange(%d,%d,%d)
+CheckNameTable(%d,%d,%d,%c,%c,%c,%d)
+Old_Counter %ws
+Old_Explain %ws
+CheckNameTable(%d,"%ws",%d,%d,%d,%d)
+CheckHelpTable(%d,"%ws",%d,%d,%d,%d)
+RegQueryValue(HKEY_PERFORMANCE_DATA,"%ws",%d,%d) fails %d when install "%ws".
+PerfCounterInstall(%d,%d)
+Fail to query necessary information from "%ws", error %d.
+No valid drivername property value in "%ws".
+LastCounter and LastHelp are inconsistent (%d,%d).
+Defer "%ws" installation to neutral manifest, not resource.man for language "%ws" now.
+Counters for "%ws" (from "%ws") already installed.
+RegistryValues(0x%p,%d,%d,%d)(%d,%d)(0x%p,0x%p,"%ws""%ws")
+RegSetValueEx_LastCounter("%ws",%d) fails %d when install "%ws" counters from "%ws".
+RegSetValueEx_LastHelp("%ws",%d) fails %d when install "%ws" counters from "%ws".
+RegSetValueEx_FirstCounter("%ws",%d) fails %d when install "%ws" counters from "%ws".
+RegSetValueEx_FirstHelp("%ws",%d) fails %d when install "%ws" counters from "%ws".
+UpdateRegistry(%d,%d)(%d,%d,%d,%d,"%ws","%ws")
+PerfCounterInstall(%d,"%ws","%ws",%d)
+RegSetValueEx_ObjectList("%ws","%ws") fails %d when install "%ws" counters from "%ws".
+UpdateObjectList("%ws","%ws","%ws")
+PerfCounterInstall(%d,"%ws","%ws","%ws",%d,%d,%d,%d,%d,%d)
+Too many PERFLIB V2 providers defined (%d,%d,%d,%d)
+Too many PERFLIB V2 providers defined (%d,%I64u).
+RegQueryValueEx_Perflib("%ws",%d) fails %d
+Invalid "%ws" value type %d returned from RegQueryValueEx(%d), should be REG_DWORD (%d).
+RegQueryValueEx_Perflib(%d,"%ws",%d,%d,%d,%d)
+RegSetValue_Perflib("%ws",%d,%d) fails %d
+Incorrect LastCounter/LastHelp values (%d,%d,%d).
+RegCreateKey_Perflib("%ws",%d) fails %d
+{%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}
+Provider "%ws" already in registry repository with different schema, status %d.
+RegCreateKey_V2Provider("%ws",%d) fails %d
+RegSetValue_V2ProviderInstallType("%ws",%d) fails %d
+RegSetValue_V2Provider%ws("%ws",%d) fails %d
+ProviderName
+%ws value string of Provider "%ws" too long %I64u.
+RegSetValue_V2Provider%ws("%ws","%ws") fails %d
+InstallPerflibV2CountersProvider(%d,"%ws","%ws")
+Duplicate CounterSet "%ws" in provider "%ws".
+Invalid CounterSet "%ws" definition in Provider "%ws", status %d.
+RegCreateKey_V2CounterSet("%ws","%ws") fails %d
+CounterSet "%ws" registry key (in provider "%ws") already exists.
+RegSetValue_V2CounterSet%ws("%ws","%ws",%d) fails %d
+NeutralName
+RegSetValue_V2CounterSet%ws("%ws","%ws","%ws") fails %d
+CounterSet doesn't have a neutral name string
+CounterSet doesn't have a neutral name
+RegSetValue_V2CounterSet%ws("%ws","%ws",%d,%d) fails %d
+Too many counters in PERFLIB V2 CounterSet "%ws".
+PERFLIB V2 CounterSet "%ws" counter number mismatch, initial %d, current %d.
+RegSetValue_V2CounterSet%ws("%ws","%ws",%d,%d,%d) fails %d
+CounterSet "%ws" contains too many counters %I64u.
+Memory Allocation Failure ("%s",%d,%d).
+Counter("%ws",0x%08X,%d,%d,%d,%d,%d,%d,%d)
+CounterBlock
+InstallPerflibV2CounterSet(%d,"%ws","%ws",%d,%d,%d)
+CurrentLanguage
+%ws\prfc%ws.dat
+%ws\perfc%ws.dat
+%ws\prfc??%ws.dat
+Invalid LCID string "%ws", the length should be 3 (for primary language) or 4 (for sublanguage).
+onecore\base\diagnosis\pdi\cntrtext\lib\perflib.cpp
+%ws\system32\
+prfc%ws.dat
+prfh%ws.dat
+perfc%ws.dat
+perfh%ws.dat
+CntrtextGetNames(0x%08X,"%ws","%ws","%ws",%d)
+CntrtextGetNames addcounter empty, Name="%ws" Lang="%ws")
+perfTMP.dat
+%ws\system32\%ws
+WriteFile("%ws","%ws",%d,%d) fails %d
+FlushFileBuffers("%ws") fails %d
+FileRenameInfoEx("%ws", "%ws") fails %d
+FileRenameInfo("%ws", "%ws") fails %d
+CreateFile_Write("%ws","%ws") fails %d
+ReadFile("%ws","%ws",%d,%d,%d,%d) fails %d
+CreateFile_Read(%d,"%ws","%ws",%d)
+CreateFile_Read("%ws","%ws") fails %d
+DAT filepath should be "$(windir)\INF\Perflib\$(LCID)\perfx.dat", current input is ("%ws",%d)
+perf%wc009.dat
+prf%wc%04X.dat
+perf%wc%03X.dat
+CntrtextGetDatFileName(0x%08X,"%ws","%ws","%ws")
+$(runtime.windir) string length should not be 0.
+Memory Allocation Failure ("%s",%d,%I64d).
+\system32\
+DeleteFile(%d,"%ws")
+CopyFile(%d,"%ws","%ws")
+%wsPERFLIB\0*
+CntrtextUninstallDat(%c,"%ws","%ws","%ws","%ws","%ws",0x%08X,0x%08X)
+RegDeleteKey_Perflib(%d,"%ws")
+ExtCounterTestLevel
+RegDeleteValue_Perflib(%d,ExtCounterTestLevel)
+RegOpenKey_Perflib(%d,"%ws")
+PerfDatUninstall(%d,%c,"%ws","%ws",0x%08X,0x%08X)
+%ws%ws\0409\%ws
+%ws%ws\0009\%ws
+CntrtextLookupIniFile(0x%08X,"%ws","%hs","%ws")
+Incorrect DAT filename format, it should be perf?.dat (where ? can be c/d/h/i) but the input is "%ws".
+CntrtextInstallDat(0x%08X,"%ws","%ws","%ws","%ws","%ws",0x%08X)
+RegCreateKeyEx("%ws","%ws") fails %d when process "%ws".
+RegOpenKeyEx("%ws","%ws") fails %d when process "%ws".
+RegOpenKeyEx("%ws") fails %d when process "%ws".
+RegSetValue_ExtCounterTestLevel("%ws",%d) fails %d when process "%ws".
+RegQueryValue_ExtCounterTestLevel(%d,%d,"%ws",%d)
+Language "%ws" (%d) will be processed in neutral manifest, bail out processing "%ws".
+Invalid file size "%ws", GetFileSize() returns (%d,%d)
+ReadFile("%ws","%ws") fails %d, size (%d,%d)
+Memory Allocation Failure ("%s",%d,%d,%d,%d).
+RegQueryValue(HKEY_PERFORMANCE_DATA,"%ws",%d,%d,%d) fails %d.
+PerfDatInstall(%d,"%ws","%ws",0x%08X,0x%08X)
+\inf\
+%ws%ws\%ws
+Invalid destinationPath "%ws".
+Extract actual INI path "%ws" from "%ws".
+Cannot open actual INI file "%ws" referenced in "%ws", error code %d.
+%ws%ws\%s
+Invalid destinationPath "%s".
+Extract actual INI path "%s" from "%s".
+Cannot open actual INI file "%s" referenced in "%s", error code %d.
+drivername
+No valid drivername property value in "%s".
+onecore\base\diagnosis\pdi\cntrtext\lib\common.cpp
+drivername
+symbolfile
+No valid symbolfile property value in "%s".
+Memory Allocation Failure ("%s",%d,"%ws").
+Arabic (Saudi Arabia)
+Bulgarian (Bulgaria)
+Chinese(Taiwan) (Taiwan)
+Chinese(PRC) (People's Republic of China)
+Czech (Czech Republic)
+Danish (Denmark)
+German (Germany)
+Greek (Greece)
+English (United States)
+Spanish - International Sort (Spain)
+Finnish (Finland)
+French (France)
+Hebrew (Israel)
+Hungarian (Hungary)
+Italian (Italy)
+Japanese (Japan)
+Korean (Korea)
+Dutch (Netherlands)
+Norwegian (Bokml) (Norway)
+Polish (Poland)
+Portuguese (Brazil)
+Portuguese (Portugal)
+Romanian (Romania)
+Russian (Russia)
+Croatian (Croatia)
+Slovak (Slovakia)
+Swedish (Sweden)
+Thai (Thailand)
+Turkish (Turkey)
+Slovenian (Slovenia)
+Estonian (Estonia)
+Latvian (Latvia)
+Lithuanian (Lithuania)
+\Performance
+RegOpenKeyEx(HKEY_LOCAL_MACHINE,"%ws") fails %d while building string table for language "%ws".
+RegOpenKeyEx(HKEY_LOCAL_MACHINE,"%ws") returns NULL key when build string table for language "%ws".
+RegQueryValueEx_PerflibLastHelp("%ws") fails %d or invalid data type %d (should be REG_DWORD %d).
+RegQueryValueEx_PerflibLastCounter("%ws") fails %d or invalid data type %d (should be REG_DWORD %d).
+onecore\base\diagnosis\pdi\cntrtext\lib\dumpload.cpp
+RegQueryValueEx("%ws","%ws",%d) fails %d.
+RegQueryValueEx("%ws","%ws",%d,%d) fails %d.
+CntrtextBuildNameTable(%d,"%ws",%d,%d,%d,%d,%d)
+%s\Performance
+CntrtextUnloadV2Provider
+Perflib
+Status
+CntrtextFixLangNames-End
+Status
+CntrtextUnInstallPerfDll-SetLastCounter
+Software
+LastCounter
+Status
+CntrtextFixLangNames-Begin
+Command
+CntrtextUpdateEachLanguage-End
+Status
+CntrtextUpdateEachLanguage-Begin
+Command
+CntrtextLoadV2Provider-End
+Status
+CntrtextQueryPerflibValue-Create-Perflib
+Software
+Status
+CntrtextLoadV2Provider-Begin
+RegKey
+CntrtextInstallPerfDll-SetLastCounter
+Software
+LastCounter
+Status
+CntrtextLoadV2Provider-SetLastCounter
+Perflib
+LastCounter
+Status
+CntrtextQueryPerflibValue-Create-009
+Software
+Status
+CntrtextInstallDat-End
+Status
+CntrtextGetNames-Update-Flush
+Status
+CntrtextGetNames-Update-Rename
+Status
+CntrtextGetNames-Update-Begin
+CntrtextGetNames-AddEmpty
+CntrtextGetNames-Update-WriteFile
+Status
+CntrtextGetNames-Update-End
+Status
+CntrtextInstallDat-Begin
+Command
+CntrtextGetNames-Update-RenameEx
+Status
+CntrtextGetNames-Update-End-FailCreate
+Status
+Microsoft-Windows-Perflib
+RSDS!
+PerfCounterInstaller.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.text
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+ATL$__a
+ATL$__z
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+u$WSQ
+Vj2^Ph
+SSVh(
+QQRh(
+WWVh(
++D$8P
+D$ Ph
+D$@9D$8t
+L$ VW
+L$4hP"
+D$$+D$ 
+D$$+D$ 
+9D$ t
+D$89D$0t
+YY_^]
+PPVRPh
+9_^[]
+tsSh$
+t_Wh@
+\t3h| 
+QQSVW
+QQh|#
+D$xSVW
+L$`QP
+9D$4t
+D$|9D$tt
+D$L9D$Dt
+D$\9D$Tt
+j>[f9
+j-[f9Y
+j-[f9
+j>[f9
+Dj?[j
+_j?^f99u
+791t:
+s2j"Zf9
+j-Yf;
+;{uI;
+j-Yf9
+j-Yf9
+j-Yf9
+j-Yf9
+_^[Y]
+v.j)Xf;D{
+_^[Y]
+SVWj8^
+O$_^[
+A#tr=
+v h4=
+v h4=
+VVVVP
+VVVVP
+PVh4;
+VVVVP
+PVh\;
+PVhx;
+VVVVP
+SSSSSSS
+RQh`?
+VVVVP
+VVVVP
+PVh@@
+PWh,A
+PRSh@@
+PQSh\@
+r8VSh$B
+jW^rahdA
+j_Xf9
+VWVj9h
+j_Xf9
+0jthhH
+VWjFh
+toj=V
+t8j=V
+u0jn[95
+QQVPQ
+PPPhxK
+PPPhxL
+QQQQPVQ
+VWh M
+VWhXN
+PQh@@
+PQhpE
+PQh\@
++F$+~(
+FPVWShpS
+FPh0S
+9S(uP
+QRRWj
+PSh@@
+PSh\@
+RQh`U
+PRQh Z
+VVVhp@
+<PVQWh4;
+QWhL\
+CjW^9
+PQSSh-{
+WQh\c
+VPhHd
+PWShhd
+VPhHb
+rUSPh
+QQSPQV
+jCXjD^
+dt0f;
+t+jI^
+it#f;
+tMjCXf;
+jCXf;
+SPh@f
+FPSh`f
+jH^jCZjIY
+dt1f;
+jIXf;
+jCYf;
+jHYf;
+PShHi
+rIQPWh
+tgVVVVj
+PPPPj
+PPSVj
+SVhhj
+rxSVh
+WSVh@k
+r6WhPI
+:f;>u
+j\_f;
+SVWj X3
+~:j X
+VVVVP
+SVWh8s
+QWWSj
+^rfjoh
+PSWh4u
+VWhht
+QQQQPSQ
+PQQSVW
+Y__^[
+PerfCounterInstaller.dll
+DllCanUnloadNow
+DllCsiGetHandler
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+__CxxFrameHandler3
+_except_handler4_common
+_lock
+_unlock
+__dllonexit
+_onexit
+msvcrt.dll
+MultiByteToWideChar
+GetLastError
+RegOpenKeyExW
+RegQueryValueExW
+RegCloseKey
+DisableThreadLibraryCalls
+FreeLibrary
+GetProcAddress
+GetModuleHandleExW
+EventRegister
+EventUnregister
+DeleteCriticalSection
+RaiseException
+InitializeCriticalSection
+LoadLibraryExW
+CompareStringOrdinal
+WideCharToMultiByte
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+?RtlTraceFormat_PCSTR_AsLiteralString@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceVa@Rtl@WCP@Windows@@YIXKKPAU_RTL_TRACING_FACILITY@123@QBDKPAD@Z
+?RtlTraceFormat_PCULONG_AsWin32Error@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlFreeLUtf8String
+?RtlGetFacilityTracingFlags@Rtl@WCP@Windows@@YIKPAU_RTL_TRACING_FACILITY@123@@Z
+?RtlTraceFormat_PCLUTF8_STRING_AsLiteralString@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCWSTR_AsLiteralString@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCNTSTATUS@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCHRESULT@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+WCP.dll
+_wtof
+wcstoul
+_wcsnicmp
+_vsnwprintf
+swscanf_s
+fclose
+_ultow
+_vsnprintf
+wcschr
+_wfopen
+wcsstr
+fgetws
+strstr
+strchr
+ReadFile
+HeapFree
+SetLastError
+CreateFileW
+RegEnumKeyExW
+HeapReAlloc
+CloseHandle
+RegDeleteKeyW
+HeapAlloc
+GetFileSize
+GetProcessHeap
+RegQueryInfoKeyW
+RegEnumKeyW
+IsTextUnicode
+RegDeleteValueW
+RegSetValueExW
+HeapSize
+EventWriteTransfer
+SearchPathW
+FindFirstFileExW
+FindNextFileW
+GetUserDefaultUILanguage
+GetPrivateProfileSectionW
+FindClose
+GetPrivateProfileSectionA
+GetPrivateProfileStringW
+RegCreateKeyExW
+GetPrivateProfileStringA
+WriteFile
+SetFileInformationByHandle
+DeleteFileW
+CopyFileW
+GetSystemWindowsDirectoryW
+FlushFileBuffers
+GetStdHandle
+FormatMessageW
+LoadStringW
+WriteConsoleW
+GetModuleHandleW
+GetFileType
+CreateFileA
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-registry-l2-1-0.dll
+api-ms-win-base-util-l1-1-0.dll
+api-ms-win-core-privateprofile-l1-1-0.dll
+api-ms-win-core-privateprofile-l1-1-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-console-l1-1-0.dll
+floor
+memcmp
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Performance Counter Offline Installer
+FileVersion
+10.0.22621.440 (WinBuild.160101.0800)
+InternalName
+PerfCounterInstaller.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+PerfCounterInstaller.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.440
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0|0
+1(1,181<1H1L1X1\1h1l1x1|1
+2(2,282<2H2L2X2\2h2l2x2|2
+3(3,383<3H3L3X3\3h3l3x3|3
+4(4,484<4H4L4X4\4h4l4x4|4
+5 5$585<5P5T5h5l5
+6(6,6@6D6X6\6p6t6
+70747H7L7`7d7x7|7
+8 8(808H8
+0)0?0G0T0\0f0o0
+212i2
+2%3t3
+4V5e5u5
+5R6W6
+7+707:7?7F7K7
+9H:M:
+=$=I=
+=p>o?
+1>1d1k1r1y1
+2%2A2M2R2
+3:3?3M3l3
+33494M4n4t4
+6 6E6R6s6
+6$757`7
+96:m:
+;,;1;=;B;N;S;Z;_;
+<%<1<8<D<L<Z<|<
+>n?w?
+1"1)1.1:1w1|1
+2(2W2
+3%3K3Q3f3
+4<4W4\4f4l4q4x4}4
+525Y5|5
+6B6r6
+9$9)939X:]:
+;%;*;1;6;
+<0<l<
+=?>L>w>
+2G2c2
+4*5x5
+6t98;Z=
+1K2R2
+6?6F6
+7Y7o7
+788Q8y8~8
+9*:U:
+;.;=;|;
+<-<D<W<a<n<x<
+>G>W>
+?!?Y?s?
+0>0v0{0
+0-121D1z1
+2#2[2`2j2
+3b3z3B4g4
+4$5O5
+6@6G6o6v6
+6"7n7z7
+818W8o8
+:#;Y;a;
+<6<><t<|<
+='=/=<=h=
+=5>T>y>
+1O1[1
+102r2
+3_3o3w3
+4p4w4
+5,535a5
+6-7A7W7
+9$9_9
+;6;B;N;m;
+;,<Q<
+>)>4>R>b>
+0#0u0|0
+00191D1M1R1[1`1i1n1w1|1
+202A2W2j2r2
+3!343G3f3
+4%5<5W5
+6$6F6\6
+697M7d7y7
+7*8H8V8x8
+?&?.?S?y?
+0"040_0l0
+131D1^1y1
+3 3%3P3s3
+4'4m4
+5!515L5S5n5v5|5
+6H7}7
+738G8N8`8g8|8
+:":<:E:T:]:f:u:
+;5;>;G;P;];l;
+;%<.<Y<g<|<
+=5=C=U=j=r=
+020;0A0Y0{0
+1M1T1b1n1;2J2W2}2
+3:3X3b3
+4/464@4R4
+575A5c5m5
+616Q6]6
+6N7`7h7z7
+7$8+8<8N8S8}8
+959>9L93:L:i:p:
+;@;[;
+;N<j<q<
+=&=-=L=R=X=|=
+?!?(?b?i?
+0%0,0H0t0
+1#1N1
+2*2:2?2W2_2e2a3
+4&474[5b5n5u5
+8*8o8
+9M:`:{:
+;&<<<M<d<
+>'>1>p>w>
+>N?T?x?
+0)0P0W0
+1-1V1j1q1
+2%2>2E2M2_2d2/3;3J3n3x3
+4!41484
+4B5X5k5}5
+6O6N7W7]7x7
+8!808F8[8d8s8
+909y9
+:):I:[:k:
+;&;3;<;O;b;u;
+<&<-<a<
+<5=:=
+>/>B>w>
+?E?Q?b?
+0*0t0
+1/141m1{1
+3<3H3T3m3
+4&4+4>4J4V4l4q4
+5"5'5Q5i5}5
+5<6~6
+6(717F7j7q7
+7=8I8U8}8
+9)9;9G9S9p9u9
+:!:&:4:?:Y:w:
+;'<3<?<e<j<
+=%=F=l=q=
+1Q2k2
+5!5J5o5
+6#6A6L6Y6
+7 7?7I7O7m7x7
+858@8P8e8y8
+9A9Q9o9
+<5<D<P<
+=+=S=]=v=
+?2?9?f?
+>0E0V0|0
+0!1/181G1O1c1k1u1
+1&2-2?2F2L2
+3v3}3;4E4`4
+5@5s5
+6U7\7m7
+848E8V8^8o8
+8#9/959K9o9}9
+:F:Y:_:x:
+;4;H;S;Y;n;s;{;
+>h>w>
+1#1.181?1c1n1x1
+2*2h2o2
+3%4{4%5E5b5i5{5
+6%686O6s6z6
+8=8L8S8l8
+8D9q9
+;0;u;
+<)<0<I<o<
+=$=+=z=
+=G>N>b>
+>+?7?N?U?v?
+0'0.0>0
+081?1S1
+2.252Z2j2p2z2
+3M3U3f3
+3e4l4
+5/5?5D5]5d5w5|5
+6,636=6D6q6v6{6
+7<7D7^7f7{7
+8&8-8b8q8x8
+8N:W:
+;v;};
+<.<5<?<J<[<d<3=_=x=
+> >U>c>
+0O0[0
+0H1Y1r1~1
+2?3K3R3`3o3v3
+414=4R4
+4%515J5~5
+7&7.7A7
+7(8m8
+9H:U:\:i:p:
+;.;3;^;x;
+<0<G<a<t<y<
+<E=c=o=
+>h?r?
+020d0u0
+1+131W1`1
+1H2M2_2}2
+2Z3x3
+4\4e4p4w4
+5 5*5:5J5P5[5a5m5}5
+6#6-6=6F6Y6e6q6}6
+7:7X7q7
+8 8(8,84888H8l8x8
+0 0,0T0X0\0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,CoTX9Mkd5YSezJsBILgMAZrsMfO644Iiodpi7nuUcfY=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+20220720035733.183Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:EACE-E316-C91D1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211202190517Z
+230228190517Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:EACE-E316-C91D1%0#
+Microsoft Time-Stamp Service0
+X@qCs
+t<R;>
+2dLdO~
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+\\]\JQ=7
+mifb~
+!a+b:=-
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:EACE-E316-C91D1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220720055434Z
+20220721055434Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010

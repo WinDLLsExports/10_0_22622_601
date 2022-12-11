@@ -1,0 +1,101 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\dumpsdport.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000A028 Import Address Table
+             1C000A180 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         50C KeQueryInterruptTimePrecise
+                         559 KeSetEvent
+                         4F3 KeLowerIrql
+                         48D KeClearEvent
+                         587 KfRaiseIrql
+                         5F1 MmMapLockedPagesSpecifyCache
+                         44F IofCompleteRequest
+                         585 KeWaitForSingleObject
+                         46C KeAcquireInStackQueuedSpinLock
+                         577 KeSynchronizeExecution
+                         3BA IoQueueWorkItemEx
+                         6EF PoFxIdleComponent
+                         4DE KeInsertQueue
+                         374 IoGetDriverObjectExtension
+                         413 IoSizeofWorkItem
+                         421 IoTryQueueWorkItem
+                         6CD ObfReferenceObject
+                         561 KeSetPriorityThread
+                         487 KeBugCheckEx
+                         71C PoSetHiberRange
+                         4B9 KeGetCurrentIrql
+                         531 KeReleaseInStackQueuedSpinLock
+                         569 KeSetTimer
+
+    HAL.dll
+             1C000A000 Import Address Table
+             1C000A158 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+                          55 KeStallExecutionProcessor
+                           F HalDmaAllocateCrashDumpRegistersEx
+                          10 HalDmaFreeCrashDumpRegistersEx
+
+  Section contains the following exports for dumpsdport.sys
+
+    00000000 characteristics
+    480A45A0 time date stamp
+        0.00 version
+           1 ordinal base
+          18 number of functions
+          18 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004720 SdPortCompleteRequest
+          2    1 00004810 SdPortGetPciConfigSpace
+          3    2 00004820 SdPortInitialize
+          4    3 00004810 SdPortPoFxPowerControl
+          5    4 000048F0 SdPortReadRegisterBufferUchar
+          6    5 00004930 SdPortReadRegisterBufferUlong
+          7    6 00004970 SdPortReadRegisterBufferUshort
+          8    7 000049B0 SdPortReadRegisterUchar
+          9    8 000049D0 SdPortReadRegisterUlong
+         10    9 000049F0 SdPortReadRegisterUshort
+         11    A 00004810 SdPortSetPciConfigSpace
+         12    B 00004A10 SdPortWait
+         13    C 00004A30 SdPortWriteRegisterBufferUchar
+         14    D 00004A70 SdPortWriteRegisterBufferUlong
+         15    E 00004AB0 SdPortWriteRegisterBufferUshort
+         16    F 00004AF0 SdPortWriteRegisterUchar
+         17   10 00004B10 SdPortWriteRegisterUlong
+         18   11 00004B30 SdPortWriteRegisterUshort
+LINK : warning LNK4078: multiple 'INIT' sections found with different attributes (C2000040)
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 INIT
+        1000 fothk

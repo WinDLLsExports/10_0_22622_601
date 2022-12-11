@@ -1,0 +1,107 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\WppRecorder.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000A000 Import Address Table
+             1C000A1B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         475 KeAcquireSpinLockRaiseToDpc
+                         5E1 MmIsDriverVerifying
+                         8B3 RtlFreeUnicodeString
+                         8F1 RtlInitUnicodeString
+                         980 RtlQueryRegistryValues
+                         539 KeReleaseSpinLock
+                         559 KeSetEvent
+                          BD ExAllocatePool2
+                         9BB RtlStringFromGUID
+                         5DB MmGetSystemRoutineAddress
+                         C3B _stricmp
+                         51A KeQuerySystemTimePrecise
+                          EE ExFreePoolWithTag
+                         585 KeWaitForSingleObject
+                          70 DbgPrint
+                         B17 ZwClose
+                         BE1 ZwSetValueKey
+                         C8A strrchr
+                         B69 ZwOpenKey
+                         52B KeRegisterBugCheckReasonCallback
+                         49C KeDeregisterBugCheckReasonCallback
+                         AF0 WmiTraceMessage
+                         BF7 __C_specific_handler
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         975 RtlQueryFeatureConfiguration
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                         9E4 RtlUnregisterFeatureConfigurationChangeNotification
+                         441 IoWMIRegistrationControl
+                         4CD KeInitializeEvent
+                         51B KeQueryTimeIncrement
+                         BA5 ZwQuerySystemInformation
+                          C0 ExAllocatePoolWithQuotaTag
+                         794 PsGetVersion
+                         588 KiBugCheckData
+                         4B9 KeGetCurrentIrql
+                          92 EtwSetInformation
+                          79 DbgkWerCaptureLiveKernelDump
+                          9A EtwWriteTransfer
+                         8E8 RtlInitAnsiString
+                          94 EtwUnregister
+                          8F EtwRegister
+                         4D5 KeInitializeSpinLock
+
+  Section contains the following exports for WppRecorder.sys
+
+    00000000 characteristics
+    CD7DB6C6 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003EA0 DllInitialize
+          2    1 000041E0 DllUnload
+          3    2 00002390 WppAutoLogStart
+          4    3 000026C0 WppAutoLogStop
+          5    4 00001130 WppAutoLogTrace
+          6    5 00002910 imp_WppRecorderConfigure
+          7    6 00002A60 imp_WppRecorderDumpLiveDriverData
+          8    7 00002A90 imp_WppRecorderGetCounterHandle
+          9    8 00002AB0 imp_WppRecorderGetTriageInfo
+         10    9 00001E50 imp_WppRecorderIsDefaultLogAvailable
+         11    A 00002AF0 imp_WppRecorderLinkCounters
+         12    B 00002B50 imp_WppRecorderLogCreate
+         13    C 00002C60 imp_WppRecorderLogDelete
+         14    D 00002C90 imp_WppRecorderLogDumpLiveData
+         15    E 000013D0 imp_WppRecorderLogGetDefault
+         16    F 00002CC0 imp_WppRecorderLogSetIdentifier
+         17   10 00003B70 imp_WppRecorderReplay
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        1000 PAGE
+        1000 fothk

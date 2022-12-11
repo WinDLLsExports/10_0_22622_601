@@ -1,0 +1,62 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\cht4dx64.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    storport.sys
+    ntoskrnl.exe
+    HAL.DLL
+
+  Section contains the following imports:
+
+    storport.sys
+             140011058 Import Address Table
+             140023108 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          18 StorPortNotification
+                           D StorPortGetBusData
+                          2D StorPortSetBusDataByOffset
+                          13 StorPortGetUncachedExtension
+                          10 StorPortGetPhysicalAddress
+                          15 StorPortInitialize
+
+    ntoskrnl.exe
+             140011010 Import Address Table
+             1400230C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         B1D strcmp
+                         B0C memcpy_s
+                           3 DbgPrint
+                         19F isspace
+                          15 ExAllocatePoolWithTag
+                          BF KeQueryTimeIncrement
+                         193 _vsnprintf
+                          1E ExFreePoolWithTag
+
+    HAL.DLL
+             140011000 Import Address Table
+             1400230B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 KeStallExecutionProcessor
+
+  Summary
+
+        7000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text
+        1000 INIT
+        9000 PAGEFW

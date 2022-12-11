@@ -1,0 +1,1754 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ext-ms-win-shell32-shellfolders-l1-1-0.dll
+ext-ms-win-ntuser-synch-l1-1-0.dll
+ext-ms-win-rtcore-ntuser-window-ext-l1-1-0.dll
+ext-ms-win-devmgmt-policy-l1-1-0.dll
+ext-ms-win-devmgmt-policy-l1-1-0
+ext-ms-win-devmgmt-policy-l1-1-1
+ext-ms-win-devmgmt-policy-l1-1-2
+ext-ms-win-devmgmt-policy-l1-1-3
+ntdll.dll
+/HELP
+/SETIEPROXY
+/GETIEPROXY
+/VERSION
+/REPAIRSERVICE
+/ENABLEANALYTICCHANNEL
+The following UTIL commands are available:
+/UTIL /SETIEPROXY <account> <usage> [/CONN <connection name>]     
+  Sets the Internet proxy settings for the <account> system account.
+  Settings are applied to the default network connection, unless 
+  <connection name> is specified.
+   account choices:
+    LOCALSYSTEM
+    NETWORKSERVICE
+    LOCALSERVICE
+   usage choices:
+    NO_PROXY     - Specify direct connection (no proxy server).
+    AUTODETECT   - Turn on autodetection of proxy.
+    MANUAL_PROXY - Use an explicit proxy list and bypass list. 
+                   Must be followed by a proxy list and a proxy bypass list.
+                   NULL or "" may be used for an empty proxy bypass list.
+    AUTOSCRIPT   - Specify a script to be executed during proxy auto discovery.
+                   Must be followed by a script URL.
+   connection name indicates the network connection for which the new proxy 
+   settings should be applied. If not specified, the default connection will 
+   be used (usually the LAN connection). To get a list of possible connection
+   names, use /CONN /?.
+  Examples:
+    bitsadmin /util /setieproxy localsystem AUTODETECT
+    bitsadmin /util /setieproxy networkservice NO_PROXY
+    bitsadmin /util /setieproxy localsystem MANUAL_PROXY proxy1:80 "<local>"
+    bitsadmin /util /setieproxy localsystem MANUAL_PROXY pxy1,pxy2,pxy3 NULL
+    bitsadmin /util /setieproxy networkservice AUTOSCRIPT http://server/get.asp
+    bitsadmin /util /setieproxy networkservice NO_PROXY /CONN "XYZ Dialup"
+/UTIL /GETIEPROXY <account> [/CONN <connection name>]
+  Retrieves the Internet proxy settings for the <account> system
+  account. Settings refer to the default network connection, unless 
+  <connection name> is specified.
+   account choices:
+    LOCALSYSTEM
+    NETWORKSERVICE
+    LOCALSERVICE
+   connection name indicates the network connection for which the new proxy
+   settings should be applied. If not specified, the default connection 
+   will be used (usually the LAN connection). To get a list of possible 
+   connection names, use /CONN /?.
+/UTIL /VERSION [/VERBOSE]
+   Displays the version of BITS currently active on the system.
+   The switch /VERBOSE prints additional information useful for 
+   troubleshooting purposes.
+/UTIL /ENABLEANALYTICCHANNEL TRUE/FALSE
+   Enables/Disables the BITS Client Analytic channel
+Note that the /SETIEPROXY and /ENABLEANALYTICCHANNEL commands require
+administrator privileges.
+localsystem
+networkservice
+localservice
+Invalid argument: invalid name for system account.
+NO_PROXY
+AUTODETECT 
+MANUAL_PROXY 
+AUTOSCRIPT 
+/SETIEPROXY must be followed by a system account name and a proxy usage name
+Error converting arguments to unicode strings.
+/CONN
+Error converting argument to unicode strings.
+/HELP
+Invalid connection name value specified with /CONN - 
+Unable to set Internet proxy settings
+ set to NO_PROXY.
+Internet proxy settings for account 
+default
+(connection = 
+AUTODETECT
+ set to AUTODETECT.
+MANUAL_PROXY
+MANUAL_PROXY must be followed by a proxy list and a proxy bypass list
+AUTOSCRIPT
+AUTOSCRIPT must be followed by a script URL.
+Invalid argument: the script URL specified for AUTOSCRIPT cannot have an empty value.
+Proxy auto discovery script set to 
+Internet proxy usage must be one of NO_PROXY, AUTODETECT, MANUAL_PROXY, or AUTOSCRIPT
+ were set.
+Proxy usage set to       
+Proxy list set to        
+Proxy bypass list set to 
+/GETIEPROXY must be followed by a system account name
+Unable to get Internet proxy settings
+Current Internet proxy settings for account 
+Proxy usage:  
+Proxy list:   
+Proxy bypass: 
+Auto discovery script URL: 
+Invalid argument.
+/VERBOSE
+Error checking version.
+Version of BITS installed on the system:  
+File version for BITS binaries: 
+Pending file operations: None
+Checking BITS main COM interfaces... 
+ERROR - BITS configuration errors were found!! Error code 
+SUCCESS - no BITS configuration errors were found!!
+This command is no longer applicable on any supported version of the operating system.
+FALSE
+wevtapi.dll
+Unable to load wevtapi.dll
+EvtOpenChannelConfig
+Error Loading procedure EvtOpenChannelConfig
+EvtGetChannelConfigProperty
+Error Loading procedure EvtGetChannelConfigProperty
+EvtSetChannelConfigProperty
+Error Loading procedure EvtSetChannelConfigProperty
+EvtSaveChannelConfig
+Error Loading procedure EvtSaveChannelConfig
+Microsoft-Windows-Bits-Client/Analytic
+Unable to get Microsoft-Windows-Bits-Client/Analytic channel config property
+Error setting Microsoft-Windows-Bits-Client/Analytic channel config property
+Error saving Microsoft-Windows-Bits-Client/Analytic channel config property
+Microsoft-Windows-Bits-Client/Analytic Channel Enabled
+Microsoft-Windows-Bits-Client/Analytic Channel Disabled
+Microsoft-Windows-Bits-Client/Analytic Channel already Enabled
+Microsoft-Windows-Bits-Client/Analytic Channel already Disabled
+0x%8.8x
+Unable to connect to BITS
+Invalid command
+out of memory
+ has no closing quote
+warning: quoted string in line 
+: contains no remote file name 
+line 
+: contains no local file name 
+ contains no local file name 
+ to Unicode.
+error converting line 
+: extra characters after the local file name 
+, local name: 
+remote name: 
+ file(s) read from 
+error near line 
+%I64u:%I64u
+%I64u:%3c
+' is not a valid range.
+0123456789abcdef
+server
+proxy
+' is not a valid credential target.  It must be 'proxy' or 'server'.
+basic
+digest
+negotiate
+passport
+is not a valid credential scheme.
+It must be one of the following:
+    basic
+    digest
+    ntlm
+    negotiate
+    passport
+(C) Copyright Microsoft Corp.
+BITS administration utility.
+BITSADMIN version 3.0
+The following commands are available:
+/HELP           Prints this help 
+/?              Prints this help 
+/UTIL /?        Prints the list of utilities commands 
+/PEERCACHING /?   Prints the list of commands to manage Peercaching
+/CACHE /?       Prints the list of cache management commands 
+/PEERS /?       Prints the list of peer management commands
+/LIST    [/ALLUSERS] [/VERBOSE]     List the jobs
+/MONITOR [/ALLUSERS] [/REFRESH sec] Monitors the copy manager
+/RESET   [/ALLUSERS]                Deletes all jobs in the manager
+/TRANSFER <job name> [type] [/PRIORITY priority] [/ACLFLAGS flags] [/DYNAMIC] 
+          remote_url local_name
+    Transfers one of more files.
+    [type] may be /DOWNLOAD or /UPLOAD; default is download
+    Multiple URL/file pairs may be specified.
+    Unlike most commands, <job name> may only be a name and not a GUID.
+    /DYNAMIC configures the job with BITS_JOB_PROPERTY_DYNAMIC_CONTENT, which relaxes the server-side requirements.
+/CREATE [type] <job name>               Creates a job
+    [type] may be /DOWNLOAD, /UPLOAD, or /UPLOAD-REPLY; default is download
+    Unlike most commands, <job name> may only be a name and not a GUID.
+/INFO <job> [/VERBOSE]                   Displays information about the job
+/ADDFILE <job> <remote_url> <local_name> Adds a file to the job
+/ADDFILESET <job> <textfile>             Adds multiple files to the job
+   Each line of <textfile> lists a file's remote name and local name, separated
+   by spaces.  A line beginning with '#' is treated as a comment.
+   Once the file set is read into memory, the contents are added to the job.
+/ADDFILEWITHRANGES  <job> <remote_url> <local_name range_list>
+   Like /ADDFILE, but BITS will read only selected byte ranges of the URL.
+   range_list is a comma-delimited series of offset and length pairs.
+   For example,
+       0:100,2000:100,5000:eof
+   instructs BITS to read 100 bytes starting at offset zero, 100 bytes starting
+   at offset 2000, and the remainder of the URL starting at offset 5000.
+/REPLACEREMOTEPREFIX <job> <old_prefix> <new_prefix>
+    All files whose URL begins with <old_prefix> are changed to use <new_prefix>
+Note that BITS currently supports HTTP/HTTPS downloads and uploads.
+It also supports UNC paths and file:// paths as URLS
+/LISTFILES <job>                     Lists the files in the job
+/SUSPEND <job>                       Suspends the job
+/RESUME <job>                        Resumes the job
+/CANCEL <job>                        Cancels the job
+/COMPLETE <job>                      Completes the job
+/GETTYPE <job>                       Retrieves the job type
+/GETACLFLAGS <job>                   Retrieves the ACL propagation flags
+/SETACLFLAGS <job> <ACL_flags>       Sets the ACL propagation flags for the job
+  O - OWNER       G - GROUP 
+  D - DACL        S - SACL  
+  Examples:
+      bitsadmin /setaclflags MyJob OGDS
+      bitsadmin /setaclflags MyJob OGD
+/GETBYTESTOTAL <job>                 Retrieves the size of the job
+/GETBYTESTRANSFERRED <job>           Retrieves the number of bytes transferred
+/GETFILESTOTAL <job>                 Retrieves the number of files in the job
+/GETFILESTRANSFERRED <job>           Retrieves the number of files transferred
+/GETCREATIONTIME <job>               Retrieves the job creation time
+/GETMODIFICATIONTIME <job>           Retrieves the job modification time
+/GETCOMPLETIONTIME <job>             Retrieves the job completion time
+/GETSTATE <job>                      Retrieves the job state
+/GETERROR <job>                      Retrieves detailed error information
+/GETOWNER <job>                      Retrieves the job owner
+/GETDISPLAYNAME <job>                Retrieves the job display name
+/SETDISPLAYNAME <job> <display_name> Sets the job display name
+/GETDESCRIPTION <job>                Retrieves the job description
+/SETDESCRIPTION <job> <description>  Sets the job description
+/GETPRIORITY    <job>                Retrieves the job priority
+/SETPRIORITY    <job> <priority>     Sets the job priority
+   Priority usage choices:
+      FOREGROUND 
+      HIGH
+      NORMAL
+      LOW
+/GETNOTIFYFLAGS <job>                 Retrieves the notify flags
+/SETNOTIFYFLAGS <job> <notify_flags>  Sets the notify flags
+    For more help on this option, please refer to the MSDN help page for SetNotifyFlags/GETNOTIFYINTERFACE <job>             Determines if notify interface is registered
+/GETMINRETRYDELAY <job>               Retrieves the retry delay in seconds
+/SETMINRETRYDELAY <job> <retry_delay> Sets the retry delay in seconds
+/GETNOPROGRESSTIMEOUT <job>           Retrieves the no progress timeout in seconds
+/SETNOPROGRESSTIMEOUT <job> <timeout> Sets the no progress timeout in seconds
+/GETMAXDOWNLOADTIME <job>             Retrieves the download timeout in seconds
+/SETMAXDOWNLOADTIME <job> <timeout>   Sets the download timeout in seconds
+/GETERRORCOUNT <job>                  Retrieves an error count for the job
+/SETPROXYSETTINGS <job> <usage>      Sets the proxy usage
+   usage choices:
+    PRECONFIG   - Use the owner's default Internet settings.
+    AUTODETECT  - Force autodetection of proxy.
+    NO_PROXY    - Do not use a proxy server.
+    OVERRIDE    - Use an explicit proxy list and bypass list. 
+                  Must be followed by a proxy list and a proxy bypass list.
+                  NULL or "" may be used for an empty proxy bypass list.
+  Examples:
+      bitsadmin /setproxysettings MyJob PRECONFIG
+      bitsadmin /setproxysettings MyJob AUTODETECT
+      bitsadmin /setproxysettings MyJob NO_PROXY
+      bitsadmin /setproxysettings MyJob OVERRIDE proxy1:80 "<local>" 
+      bitsadmin /setproxysettings MyJob OVERRIDE proxy1,proxy2,proxy3 NULL 
+/GETPROXYUSAGE <job>                 Retrieves the proxy usage setting
+/GETPROXYLIST <job>                  Retrieves the proxy list
+/GETPROXYBYPASSLIST <job>            Retrieves the proxy bypass list
+/TAKEOWNERSHIP <job>                 Take ownership of the job
+/SETNOTIFYCMDLINE <job> <program_name> [program_parameters] 
+    Sets a program to execute for notification, and optionally parameters.
+    The program name and parameters can be NULL.
+    IMPORTANT: if parameters are non-NULL, then the program name should be the
+               first parameter.
+  Examples:
+    bitsadmin /SetNotifyCmdLine MyJob c:\winnt\system32\notepad.exe  NULL
+    bitsadmin /SetNotifyCmdLine MyJob c:\callback.exe "c:\callback.exe parm1 parm2" 
+    bitsadmin /SetNotifyCmdLine MyJob NULL NULL
+/GETNOTIFYCMDLINE <job>              Returns the job's notification command line
+/SETCREDENTIALS <job> <target> <scheme> <username> <password>
+  Adds credentials to a job.
+  <target> may be either SERVER or PROXY
+  <scheme> may be BASIC, DIGEST, NTLM, NEGOTIATE, or PASSPORT. 
+/REMOVECREDENTIALS <job> <target> <scheme> 
+  Removes credentials from a job.
+/GETCUSTOMHEADERS <job>                           Gets the Custom HTTP Headers
+/SETCUSTOMHEADERS <job> <header1> <header2> <...> Sets the Custom HTTP Headers
+/MAKECUSTOMHEADERSWRITEONLY <job>                 Make a job's Custom HTTP Headers write-only (cannot be undone).
+/GETHTTPMETHOD <job>                           Gets the HTTP verb to use.
+/SETHTTPMETHOD <job> <HTTPMethod>              Sets the HTTP verb to use.
+/GETCLIENTCERTIFICATE <job>                       Gets the job's Client Certificate Information
+/SETCLIENTCERTIFICATEBYID <job> <store_location> <store_name> <hexa-decimal_cert_id>
+  Sets a client authentication certificate to a job.
+  <store_location> may be 
+1(CURRENT_USER), 2(LOCAL_MACHINE), 3(CURRENT_SERVICE),
+4(SERVICES), 5(USERS), 6(CURRENT_USER_GROUP_POLICY),
+7(LOCAL_MACHINE_GROUP_POLICY) or 8(LOCAL_MACHINE_ENTERPRISE). 
+/SETCLIENTCERTIFICATEBYNAME <job> <store_location> <store_name> <subject_name>
+  Sets a client authentication certificate to a job.
+  <store_location> may be 
+1(CURRENT_USER), 2(LOCAL_MACHINE), 3(CURRENT_SERVICE),
+4(SERVICES), 5(USERS), 6(CURRENT_USER_GROUP_POLICY),
+7(LOCAL_MACHINE_GROUP_POLICY) or 8(LOCAL_MACHINE_ENTERPRISE). 
+/REMOVECLIENTCERTIFICATE <job>                Removes the Client Certificate Information from the job
+/SETSECURITYFLAGS <job> <value>   
+   Sets the HTTP security flags for URL redirection and checks performed on the server certificate during the transfer.
+   The value is an unsigned integer with the following interpretation for the bits in the binary representation.
+     Enable CRL Check                                 : Set the least significant bit
+     Ignore invalid common name in server certificate : Set the 2nd bit from right
+     Ignore invalid date in  server certificate       : Set the 3rd bit from right
+     Ignore invalid certificate authority in server
+       certificate                                    : Set the 4th bit from right
+     Ignore invalid usage of certificate              : Set the 5th bit from right
+     Redirection policy                               : Controlled by the 9th-11th bits from right
+         0,0,0  - Redirects will be automatically allowed.
+         0,0,1  - Remote name in the IBackgroundCopyFile interface will be updated if a redirect occurs.
+         0,1,0  - BITS will fail the job if a redirect occurs.
+     Allow redirection from HTTPS to HTTP             : Set the 12th bit from right
+/GETSECURITYFLAGS <job>   
+   Reports the HTTP security flags for URL redirection and checks performed on the server certificate during the transfer.
+/SETVALIDATIONSTATE  <job>  <file-index> <true|false>
+      <file-index> starts from 0          
+    Sets the content-validation state of the given file within the job.
+/GETVALIDATIONSTATE  <job>  <file-index>  
+      <file-index> starts from 0          
+    Reports the content-validation state of the given file within the job.
+/GETTEMPORARYNAME  <job>  <file-index>  
+      <file-index> starts from 0          
+    Reports the temporary filename of the given file within the job.
+The following options control peercaching of a particular job:
+/SETPEERCACHINGFLAGS  <job> <value>   
+    Sets the flags for the job's peercaching behavior.
+    The value is an unsigned integer with the following interpretation for the bits in the binary representation.
+        Allow the job's data to be downloaded from a peer : Set the least significant bit
+        Allow the job's data to be served to peers        : Set the 2nd bit from right
+/GETPEERCACHINGFLAGS  <job>               
+    Reports the flags for the job's peercaching behavior.
+The following options are valid for UPLOAD-REPLY jobs only:
+/GETREPLYFILENAME <job>        Gets the path of the file containing the server reply
+/SETREPLYFILENAME <job> <path> Sets the path of the file containing the server reply
+/GETREPLYPROGRESS <job>        Gets the size and progress of the server reply
+/GETREPLYDATA     <job>        Dumps the server's reply data in hex format
+/SETHELPERTOKEN <job>          Sets the current command prompt's primary token as a job's helper token
+/GETHELPERTOKENSID <job>       Reports the user account SID of a job's helper token, if one is set
+/SETHELPERTOKENFLAGS <job> <flags> 
+    Sets the helper token usage flags for a job. Possible values are:
+        1 - The helper token is used when accessing the local filesystem.
+        2 - The helper token is used when accessing the network.
+        3 - The helper token is used when accessing both the local filesystem and the network.
+/GETHELPERTOKENFLAGS <job> 
+    Reports a job's helper token usage flags.
+/GETPEERSTATS <job> <file-index> 
+    <file-index> starts from 0 
+    Reports statistics about the amount of data downloaded from peers and origin servers for a specific file within a job.
+The following options can be placed before the command:
+/RAWRETURN                     Return data more suitable for parsing
+/WRAP                          Wrap output around console (default)
+/NOWRAP                        Don't wrap output around console
+The /RAWRETURN option strips new line characters and formatting.
+It is recognized by the /CREATE and /GET* commands.
+Commands that take a <job> parameter will accept either a job name or a job ID
+GUID inside braces.  BITSADMIN reports an error if a name is ambiguous.
+/UTIL
+/LIST
+/MONITOR
+/RESET
+/TRANSFER
+/CREATE
+/INFO
+/ADDFILE
+/ADDFILESET
+/ADDFILEWITHRANGES
+/REPLACEREMOTEPREFIX
+/LISTFILES
+/SUSPEND
+/RESUME
+/CANCEL
+/COMPLETE
+/GETTYPE
+/GETACLFLAGS
+/SETACLFLAGS
+/GETBYTESTOTAL
+/GETBYTESTRANSFERRED
+/GETFILESTOTAL
+/GETFILESTRANSFERRED
+/GETCREATIONTIME
+/GETMODIFICATIONTIME
+/GETCOMPLETIONTIME
+/GETSTATE
+/GETERROR
+/GETOWNER
+/GETDISPLAYNAME
+/SETDISPLAYNAME
+/GETDESCRIPTION
+/SETDESCRIPTION
+/GETPRIORITY
+/SETPRIORITY
+/GETNOTIFYFLAGS
+/SETNOTIFYFLAGS
+/GETNOTIFYINTERFACE
+/GETMINRETRYDELAY
+/SETMINRETRYDELAY
+/GETNOPROGRESSTIMEOUT
+/SETNOPROGRESSTIMEOUT
+/GETMAXDOWNLOADTIME
+/SETMAXDOWNLOADTIME
+/GETERRORCOUNT
+/GETPROXYUSAGE
+/GETPROXYLIST
+/GETPROXYBYPASSLIST
+/SETPROXYSETTINGS
+/TAKEOWNERSHIP
+/GETREPLYFILENAME
+/SETREPLYFILENAME
+/GETREPLYPROGRESS
+/GETREPLYDATA
+/GETNOTIFYCMDLINE
+/SETNOTIFYCMDLINE
+/SETCREDENTIALS
+/REMOVECREDENTIALS
+/SETPEERCACHINGFLAGS
+/GETPEERCACHINGFLAGS
+/SETCUSTOMHEADERS
+/GETCUSTOMHEADERS
+/GETCLIENTCERTIFICATE
+/SETCLIENTCERTIFICATEBYID
+/SETCLIENTCERTIFICATEBYNAME
+/REMOVECLIENTCERTIFICATE
+/SETSECURITYFLAGS
+/GETSECURITYFLAGS
+/SETVALIDATIONSTATE
+/GETVALIDATIONSTATE
+/GETTEMPORARYNAME
+/SETHELPERTOKENFLAGS
+/GETHELPERTOKENFLAGS
+/SETHELPERTOKEN
+/GETHELPERTOKENSID
+/GETPEERSTATS
+/PEERCACHING
+/CACHE
+/PEERS
+/SETHTTPMETHOD
+/GETHTTPMETHOD
+/MAKECUSTOMHEADERSWRITEONLY
+/RAWRETURN
+/WRAP
+/NOWRAP
+Unable to initialize COM
+USAGE: BITSADMIN [/RAWRETURN] [/WRAP | /NOWRAP] command
+(unknown)
+false
+/GETLIMIT
+/SETLIMIT
+/GETEXPIRATIONTIME
+/SETEXPIRATIONTIME
+/DELETE
+/DELETEURL
+/CLEAR
+Cache management commands:
+/CACHE /LIST [/VERBOSE]              Lists all cache entries.
+/CACHE /INFO recordid [/VERBOSE]     Dumps a specific cache entry.
+/CACHE /DELETE recordid              Deletes a cache entry.
+/CACHE /DELETEURL url                Deletes all cache entries for the given URL.
+/CACHE /CLEAR                        Purges the local cache.
+/CACHE /GETLIMIT                     Retrieves the cache limit.
+/CACHE /SETLIMIT percent             Sets the cache size limit.
+/CACHE /SETLIMIT -1                  Sets the cache size limit to the default.
+/CACHE /GETEXPIRATIONTIME            Retrieves the cache expiration time.
+/CACHE /SETEXPIRATIONTIME  secs      Sets the cache expiration time.
+/CACHE /SETEXPIRATIONTIME  -1        Sets the cache expiration time to the default.
+Unable to get record ID
+Unable to get record remote name
+Unable to get access time
+Unable to get file modification time
+Unable to get file size
+Unable to get record remote Name
+Unable to get file ranges
+ORIGIN URL: 
+VALIDATED: 
+LAST ACCESS TIME: 
+FILE MODIFICATION TIME: 
+FILE SIZE: 
+RANGES: 
+Unable to get cache
+Unable to enum records
+Invalid number of arguments.
+Peercaching server is not enabled.
+ cache record(s).
+Listed 
+Peercaching client is not enabled.
+Invalid record id
+Unable to get peer-cache record
+Unable to delete record.
+Unable to delete record
+ was deleted.
+Record 
+Unable to delete records
+No matching records.
+Records were deleted successfully.
+Unable to purge cache
+The local cache was purged.
+Unable to get cache size
+ % of the system volume's size
+Cache limit not set as the max content size group policy is enabled.
+Unable to set cache limit
+% of the volume.
+Cache limit set to 
+Unable to get Maximum Content Age
+Unable to set cache expiration time
+ seconds.
+Cache expiration time set to 
+CSIDL_ADMINTOOLS
+CSIDL_ALTSTARTUP
+CSIDL_APPDATA
+CSIDL_BITBUCKET
+CSIDL_COMMON_ADMINTOOLS
+CSIDL_COMMON_ALTSTARTUP
+CSIDL_COMMON_APPDATA
+CSIDL_COMMON_DESKTOPDIRECTORY
+CSIDL_COMMON_DOCUMENTS
+CSIDL_COMMON_FAVORITES
+CSIDL_COMMON_PROGRAMS
+CSIDL_COMMON_STARTMENU
+CSIDL_COMMON_STARTUP
+CSIDL_COMMON_TEMPLATES
+CSIDL_CONTROLS
+CSIDL_COOKIES
+CSIDL_DESKTOP
+CSIDL_DESKTOPDIRECTORY
+CSIDL_DRIVES
+CSIDL_FAVORITES
+CSIDL_FONTS
+CSIDL_HISTORY
+CSIDL_INTERNET
+CSIDL_INTERNET_CACHE
+CSIDL_LOCAL_APPDATA
+CSIDL_MYPICTURES
+CSIDL_NETHOOD
+CSIDL_NETWORK
+CSIDL_PERSONAL
+CSIDL_PRINTERS
+CSIDL_PRINTHOOD
+CSIDL_PROFILE
+CSIDL_PROGRAM_FILES
+CSIDL_PROGRAM_FILES_COMMON
+CSIDL_PROGRAMS
+CSIDL_RECENT
+CSIDL_SENDTO
+CSIDL_STARTMENU
+CSIDL_STARTUP
+CSIDL_SYSTEM
+CSIDL_TEMPLATES
+CSIDL_WINDOWS
+System\CurrentControlSet\Control\Session Manager
+PendingFileRenameOperations
+WininetProxyRegistryMutex
+The current user currently has the following network connection names registered (other than the default connection): 
+There's a policy in effect that disables the storage of proxy settings per user.
+<none>
+localsystem
+networkservice
+localservice
+Software\Microsoft\windows\CurrentVersion\Internet Settings\Connections
+ProxySettingsPerUser
+DefaultConnectionSettings
+SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings
+SavedLegacySettings
+FOREGROUND
+NORMAL
+Invalid priority.
+unable to enumerate the job's files
+unable to get the file count
+The job has no files.
+unable to locate the file in the job
+The job has only 
+ files.
+ file.
+unable to locate the file in the job.
+Unable to lookup job
+Unable to find job named "
+ jobs named "
+Found 
+Use the job identifier instead of the job name.
+/UPLOAD
+/UPLOAD-REPLY
+/DOWNLOAD
+Unable to create group
+Created job 
+Unable to add file to job
+ to job.
+Added 
+Unable to add files to job.
+Unable to add files to job
+ files to the job.
+Unable to get the IBackgroundCopyJob3 interface. Version 2.0 is required
+unable to read the range list.  Use BITSADMIN /? for help with the format.
+ ranges of 
+Unable to replace the files.
+Success.
+No file matches the specified prefix.
+Unable to enum files in job
+Unable to get file progress
+Unable to get file URL
+Unable to get local file name
+ An exception occured while listing jobs
+Code:
+Unable to get file progress
+Unable to get file URL
+Unable to get local file name
+unable to get file ranges
+ An exception occured
+unable to get file ranges
+COMPLETED
+WORKING
+UNKNOWN
+Ranges:
+, length 
+offset 
+to eof
+ file(s).
+invalid file index
+Unable to get the IBackgroundCopyFile3 interface.  BITS version 3.0 is required.
+Unable to set the file's validation state
+Unable to get the file's validation state
+file's validation state is 
+Invalid number.
+Invalid file index: -
+Invalid file index
+Unable to get the file's temporary filename
+The temporary filename is '
+Unable to suspend job
+Job suspended.
+Unable to resume job
+Job resumed.
+Unable to cancel job
+Job canceled.
+Unable to complete job
+Job completed.
+Unable to get job type
+Unable to retrieve ACL flags
+Invalid ACL propagation flag.
+Unable to set ACL flags
+ACL Flags set to '
+Unable to get total bytes in job
+Unable to get bytes transferred in job
+Unable to get number of files in job
+Unable to get numeber of transferred files in job
+Unable to get job creation time
+Unable to get job modification time
+Unable to get job completion time
+Unable to get error
+Unable to get job state
+Unable to get job owner
+Unable to get job displayname
+Unable to set display name
+Display name set to 
+Unable to set description
+Description set to 
+Unable to get the IBackgroundCopyJobHttpOptions interface. Version 2.5 is required
+Unable to get Custom HTTP Request Headers
+(null)
+Unable to set Custom HTTP Request Headers
+Custom HTTP Request Headers set to:
+Unable to get the IBackgroundCopyJobHttpOptions3 interface. Version 10.3 is required
+Unable to make custom headers write-only
+Write Only Custom Headers Enabled
+Unable to get Client Certificate information from the job
+No Client Certificate is set on the job
+Certificate Store Location : CERT_STORE_LOCATION_CURRENT_USER
+Certificate Store Location : CERT_STORE_LOCATION_LOCAL_MACHINE
+Certificate Store Location : CERT_STORE_LOCATION_CURRENT_SERVICE
+Certificate Store Location : CERT_STORE_LOCATION_SERVICES
+Certificate Store Location : CERT_STORE_LOCATION_USERS
+Certificate Store Location : CERT_SYSTEM_STORE_CURRENT_USER_GROUP_POLICY
+Certificate Store Location : CERT_SYSTEM_STORE_LOCAL_MACHINE_GROUP_POLICY
+Unknown Certificate Store Location
+Certificate Store Name : 
+Certificate Hash : 
+Failed to convert Certificate Hash Blob to Hex string.
+Certificate Subject Name : 
+Unable to remove the Client Certificate from the job
+Removed the Client Certificate from the job
+Unable to set Client Certificate by ID
+Client Certificate set to 
+ to cert hash blob.
+Failed to convert 
+Unable to set Client Certificate by Name
+Redirects will be automatically allowed.
+Redirects will update the remote name in the IBackgroundCopyFile interface.
+BITS will fail the job if a redirect occurs.
+unknown
+HTTP security flags
+ Enable CRL Check                                           :
+ Ignore invalid common name in server certificate           :
+ Ignore invalid date in  server certificate                 :
+ Ignore invalid certificate authority in server certificate :
+ Ignore invalid usage of certificate                        :
+ URL redirection policy                                     :
+ Redirection from HTTPS to HTTP allowed                     :
+Unable to set the HTTP security flags
+Unable to get the HTTP security flags
+This command only works on upload jobs. 
+The job specified is a download.
+Unable to get the IBackgroundCopyJob2 interface. Version 1.5 is required
+Unable to get reply file name
+Unable to get reply file name
+/RAWRETURN should not be used with this command.
+The reply filename was not found.
+Unable to set reply file name
+reply file name set to 
+progress: 
+Unable to get reply progress
+Unable to get reply progress
+data length is 
+Unable to get reply data
+Unable to get reply data
+Unable to get callback command line
+the notification command line is '
+Unable to set the notification command line
+notification command line set to '
+Unable to add credentials
+Unable to remove credentials
+no matching credential was found.
+Priority set to 
+Unable to get notify flags
+Notification flags set to 
+Unable to get notify interface
+REGISTERED
+UNREGISTERED
+Unable to set new minimum retry delay
+Minimum retry delay set to 
+Unable to get minimum retry delay
+Unable to get no progress timeout
+Unable to set new no progress timeout
+No progress timeout set to 
+Unable to get the IBackgroundCopyJob4 interface. Version 3.0 is required
+Unable to get max download time
+Max download time is set to: 
+SOFTWARE\Policies\Microsoft\Windows\BITS
+MaxDownloadTime
+Unable to set new max download time
+Max download time set to 
+An error occured setting Max download time.
+Peercaching flags
+ Enable download from peers      :
+ Enable serving to peers         :
+Unable to get setting
+Unable to set
+UNTRUSTED
+MEDIUM
+SYSTEM
+PROTECTED_PROCESS
+unable to get thread token
+out of memory
+unable to get token information
+unable to check security of the current thread
+ DISPLAY: '
+GUID: 
+TYPE: 
+ STATE: 
+ OWNER: 
+PRIORITY: 
+ FILES: 
+ BYTES: 
+CREATION TIME: 
+ MODIFICATION TIME: 
+COMPLETION TIME: 
+ ACL FLAGS: 
+NOTIFY INTERFACE: 
+UNAVAILABLE
+ NOTIFICATION FLAGS: 
+RETRY DELAY: 
+ NO PROGRESS TIMEOUT: 
+ ERROR COUNT: 
+PROXY USAGE: 
+ PROXY LIST: 
+ PROXY BYPASS LIST: 
+DESCRIPTION: 
+JOB FILES: 
+NOTIFICATION COMMAND LINE: 
+REPLY FILE: 
+owner MIC integrity level: 
+owner elevated ?           
+This job is read-only to the current CMD window because the job's mandatory 
+ is higher than the window's level of 
+integrity level of 
+CUSTOM HEADERS: 
+CLIENT CERTIFICATE INFORMATION:
+Certificate Store Location : CERT_STORE_LOCATION_LOCAL_MACHINE_ENTERPRISE
+Unable to enum jobs
+/ALLUSERS
+ job(s).
+/MONITOR will only work with the console.
+/REFRESH
+/REFRESH is missing the refresh rate.
+ second refresh)
+MONITORING BACKGROUND COPY MANAGER(
+Unknown option '
+ canceled.
+Unable to cancel 
+ jobs canceled.
+ out of 
+/DYNAMIC
+/PRIORITY
+/ACLFLAGS
+Only one file is permitted for uploads.
+Unable to create job
+Unable to get the IBackgroundCopyJob5 interface. Version 5.0 is required
+Unable to enable dynamic-content downloading
+Unable to set job priority
+Unable to add file
+Unable to set notification flags
+Unable to set notification interface
+Unable to get proxy usage
+Unable to get proxy list
+Unable to get proxy bypass list
+/SetProxySettings must be followed by a job name or guid, then a proxy usage name
+PRECONFIG
+Unable to set proxy settings
+Proxy usage set to 
+OVERRIDE
+OVERRIDE must be followed by a proxy list and a proxy bypass list
+proxy usage must be one of OVERRIDE, NO_PROXY, or PRECONFIG
+Proxy list set to 
+Unable to take ownership
+Took ownership of 
+helper-token usage flags
+ local file access     :
+ network server access :
+Unable to get the IBitsTokenOptions interface. Version 4 is required
+Unable to set the token usage flags
+Unable to get the token usage flags
+usage: sethelpertoken <jobid> or sethelpertoken <jobid> <username@domain> <password>
+unable to get IClientSecurity interface
+unable to set impersonation level
+Unable to set the helper token
+token set to the current user
+unable to create user token, error 
+unable to impersonate user token, error 
+token set to 
+Unable to get the SID
+there is no helper token now.
+Unable to get the IBackgroundCopyFile4 interface.  BITS version 3.5 is required.
+Unable to get stats
+, bytes from origin: 
+    bytes from peers: 
+Unable to get the IBackgroundCopyJobHttpOptions2 interface.
+Unable to set the HTTP Method
+HTTP method set to: 
+Unable to get the HTTP Method that was set.
+HTTP method: 
+Unable to get job progress
+Unable to get job priority
+Unable to get display name
+DISPLAY: '
+ TYPE: 
+Transfer canceled.
+Unable to get job error
+Unable to get error code
+Unable to complete transfer.
+Transfer complete.
+TRANSFER RATE: 
+TIME REMAINING: 
+Unable to read console input
+Unable to read job state
+Unable to get guid to job
+Unable to get guid to job
+Unable to get error URL
+Unable to get error file name
+Unable to get error URL
+Unable to get error file name
+Unable to get error file
+ERROR FILE:    
+Unable to get error code
+ERROR CODE:    
+ERROR CONTEXT: 
+DOWNLOAD
+UPLOAD
+UPLOAD-REPLY
+QUEUED
+CONNECTING
+TRANSFERRING
+SUSPENDED
+ERROR
+TRANSIENT_ERROR
+TRANSFERRED
+ACKNOWLEDGED
+CANCELLED
+*MN<y
+#L\T%x
+Unable to open interface
+Unable to retrieve information
+/DISCOVER
+Peer list management commands:
+/PEERS /LIST                             Lists all peers.
+/PEERS /CLEAR                            Clears the peer list.
+/PEERS /DISCOVER                         Discovers peers again.
+Unable to open peer list
+ peer(s).
+      available:     
+      authenticated: 
+Unable to clear
+Unable to discover
+/SETCONFIGURATIONFLAGS
+/GETCONFIGURATIONFLAGS
+Peercaching management commands:
+/PEERCACHING /SETCONFIGURATIONFLAGS  <value>
+    Sets the flags for the computer's peercaching behavior.
+    The value is an unsigned integer with the following interpretation for the bits in the binary representation.
+        Enable peercaching client             : Set the least significant bit
+        Enable peercaching server             : Set the 2nd bit from right
+/PEERCACHING /GETCONFIGURATIONFLAGS  
+    Report the flags for the computer's peercaching behavior.
+EnablePeercaching
+Peercaching configuration flags:
+Unable to set flags
+The update was successful, but one or more flags are overridden by Group Policy.
+Unable to get current flags.
+ServicesActive
+Failed to find BITS service
+Failed to open the service controller to check for the BITS service
+Failed to get the status of the BITS service
+Failed to initialize COM. Error: %0X
+Attempting to instantiate BITS main interface, IBackgroundCopyManager...
+The BITS service will be started if not already running.
+Failed to instantiate BITS IBackgroundCopyManager interface. The command 
+/UTIL /REPAIRSERVICE might help diagnose or fix the issue
+SUCCESS - IBackgroundCopyManager is correctly registered and can be instantiated.
+SUCCESS - IBackgroundCopyJob is correctly registered.
+Failed to query for BITS IBackgroundCopyJob2 interface (only available on BITS 1.5 and later versions)
+SUCCESS - IBackgroundCopyJob2 is correctly registered.
+Failed to query for BITS IBackgroundCopyJob3 interface (only available on BITS 2.0 and later versions)
+SUCCESS - IBackgroundCopyJob3 is correctly registered.
+Failed to query for BITS IBackgroundCopyJob4 interface (only available on BITS 3.0 and later versions)
+SUCCESS - IBackgroundCopyJob4 is correctly registered.
+Failed to query for BITS IBackgroundCopyJob5 interface (only available on BITS 5.0 and later versions)
+SUCCESS - IBackgroundCopyJob5 is correctly registered.
+Failed to query for BITS IBackgroundCopyJobHttpOptions interface (only available on BITS 2.5 and later versions)
+SUCCESS - IBackgroundCopyJobHttpOptions is correctly registered.
+Failed to query for BITS IBackgroundCopyJobHttpOptions2 interface (only available on BITS 10.2 and later versions)
+SUCCESS - IBackgroundCopyJobHttpOptions2 is correctly registered.
+Failed to query for BITS IBackgroundCopyJobHttpOptions3 interface (only available on BITS 10.3 and later versions)
+SUCCESS - IBackgroundCopyJobHttpOptions3 is correctly registered.
+Unable to write to the output file
+%I64u
+Internal error converting guid to string.
+must be TRUE or FALSE.
+ bytes.
+Out of memory while allocating 
+Unable to get console input mode
+Unable to set console input mode
+Unable to get console handle
+Unable get setup console information
+Unable set console mode
+Unable to move to line
+Unable to get current row number
+%.2f GB/S
+%.2f MB/S
+%.2f KB/S
+%.2f B/S
+%I64u days
+%I64u Hours
+%I64u Minutes
+%I64u Seconds
+%CSIDL_SYSTEM%\qmgr.dll
+MaxJobsPerUser
+MaxJobsPerMachine
+MaxFilesPerJob
+MaxRangesPerFile
+MaxBandwidthValidFromSeconds
+MaxBandwidthValidToSeconds
+DisablePeerCachingServer
+DisablePeerCachingClient
+MaxBandwidthServed
+Not installed
+%CSIDL_SYSTEM%\qmgr.dll
+%CSIDL_SYSTEM%\qmgrprxy.dll
+%CSIDL_SYSTEM%\bitsprx2.dll
+%CSIDL_SYSTEM%\xpob2res.dll
+%CSIDL_SYSTEM%\bitsprx3.dll
+%CSIDL_SYSTEM%\bitsprx4.dll
+%CSIDL_SYSTEM%\bitsprx5.dll
+%CSIDL_SYSTEM%\bitsigd.dll
+%CSIDL_SYSTEM%\bitsperf.dll
+Unknown
+\qmgr.dll
+\qmgrprxy.dll
+\bitsprx2.dll
+\bitsprx3.dll
+\bitsprx4.dll
+\bitsprx5.dll
+\xpob2res.dll
+\bitsigd.dll
+\bitsperf.dll
+\qmgr.dll.mui
+langId
+version
+file path
+ %-40s 
+%-9s 
+%-40s 
+%d.%d.%d.%-4d 
+Is BITS secondary service DLL active: 
+BITS secondary service DLL path: 
+File version for 
+ ---> 
+Found pending RENAME operation:  
+Found pending DELETE operation:  
+Error: unexpected format for entry
+\VarFileInfo\Translation
+BandwidthThrottlingStartTime
+Group policy controls peer caching which is: Enabled.
+Group policy retrieval of files from peer cache: Enabled.
+Group policy retrieval of files from peer cache: Disabled.
+Group policy retrieval of files from peer cache: Undefined.
+Group policy serving of files as peer cache: Enabled.
+Group policy serving of files as peer cache: Disabled.
+Group policy serving of files as peer cache: Undefined.
+Group policy controls peer caching which is: Disabled.
+Group policy undefined for peer caching.
+Group policy limit bandwidth: Enabled.
+Group policy limit bandwidth: Disabled.
+Group policy limit bandwidth: Undefined.
+BandwidthThrottlingTransferRate
+ Kbps
+Group policy (via MDM) transfer Rate: 
+Group policy daytime limit: 
+Group policy daytime limit: Undefined.
+BandwidthThrottlingEndTime
+Group policy (via MDM) start time: 
+Group policy (via MDM) end time: 
+Group policy daytime start: 
+Group policy daytime start: Undefined.
+Group policy daytime end: 
+Group policy daytime end: Undefined.
+Group policy night time limit: 
+Group policy night time limit: Undefined.
+Group policy max jobs per user: 
+Group policy max jobs per user: Undefined.
+Group policy max jobs per machine: 
+Group policy max jobs per machine: Undefined.
+Group policy max files per job: 
+Group policy max files per job: Undefined.
+Group policy max ranges per file: 
+Group policy max ranges per file: Undefined.
+Group policy max bandwidth from seconds: 
+Group policy max bandwidth from seconds: Undefined.
+Group policy max bandwidth to seconds: 
+Group policy max bandwidth to seconds: Undefined.
+Group policy prevent from acting as server: Enabled.
+Group policy prevent from acting as server: Disabled.
+Group policy prevent from acting as server: Undefined.
+Group policy prevent peer caching client: Enabled.
+Group policy prevent peer caching client: Disabled.
+Group policy prevent peer caching client: Undefined.
+Max cache size: 
+Max content age: 
+Group policy max bandwidth served: 
+Group policy max bandwidth served: Undefined.
+Group policy max download time: 
+Group policy max download time: Undefined.
+CostedNetworkBehaviorForegroundPriority
+MDM policy foreground priority 1: Always Transfer
+MDM policy foreground priority 2: Transfer Unless Roaming
+MDM policy foreground priority 3: Transfer unless surcharge applies (when not roaming or over cap)
+MDM policy foreground priority 4: Transfer unless nearing limit (when not roaming or nearing cap)
+MDM policy foreground priority 5: Transfer only if unconstrained
+: Unknown.
+MDM policy foreground priority 
+MDM policy foreground priority: Undefined.
+CostedNetworkBehaviorBackgroundPriority
+MDM policy background priority 1: Always Transfer
+MDM policy background priority 2: Transfer Unless Roaming
+MDM policy background priority 3: Transfer unless surcharge applies (when not roaming or over cap)
+MDM policy background priority 4: Transfer unless nearing limit (when not roaming or nearing cap)
+MDM policy background priority 5: Transfer only if unconstrained
+MDM policy background priority 
+MDM policy background priority: Undefined.
+Is BITS's maximum network bandwidth utilization policy active? 
+ kilobits/sec.
+  Maximum network bandwidth utilization allowed is 
+:00. 
+Time is expressed in the system's local time zone.
+:00 to 
+  This limit is enforced during the time range: 
+ Kbps.
+ At all other times the network bandwidth utilization is limited to 
+  At all other times BITS is allowed to determine the optimal network 
+  bandwidth utilization for the system.
+Is BITS's job inactivity timeout policy active? 
+JobInactivityTimeout
+ days(s) (MDM)
+YES. Timeout value is 
+NO (Group Policy)
+ day(s) (Group Policy).
+EnableBITSMaxBandwidth
+MaxTransferRateOffSchedule
+Software\Policies\Microsoft\Windows\BITS
+MaxBandwidthValidTo
+ServiceDLL
+JobInactivityTimeout
+MaxTransferRateOnSchedule
+SOFTWARE\Microsoft\Windows\CurrentVersion\BITS
+UseSystemMaximum
+MaxBandwidthValidFrom
+333333
+?ffffff
+bitsadmin.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.data$brc
+.data$r$brc
+.data$rs$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+uFSSSQj
+uFSSSQj
+PSSQj
+VhHXA
+PPPPj
+PPSWj
+Yj%Zj
+j%Yf9
+PVVVht
+PWVVht
+PWVVh
+w<9wP~
+F;wP|
+C;XP|
+C;_4r
+C;_4r
+QQSV3
+~$9~8t
+PSSSSSS
+QQSV3
+PSSSSSSS
+QQSV3
+8/uYh|
+GYY;}
+tEh\D@
+nh\D@
+w jdYf;
+^dPPS
+$SVW3
+^A8^Bt
+FA;;t
+jSXf;E
+PQQQS
+PhHXA
+VhXXA
+j-Xf9A
+jXYf;
+j-Yf9
+YYj0Xf9
+jxYf;
+jXYf;
+j-Xf9
+u)f9V
+ tnj:Zf9V
+OtXf;E
+j:Yf9N
+j0Xf9
+jxZf;
+jXZf;
+tqVWj
+awgta
+8w1t+
+Ph<6A
+t!hx7A
+PhP8A
+Ih`WA
+t#hd>A
+x9h(?A
+t#h@@A
+t#h`AA
+t#hHCA
+/hXLA
+/h@PA
+#hxOA
+u;hhVA
+Ph`UA
+Yh4WA
+Y__^[
+Vh@oB
+5ineI
+5ntel
+Y__^[
+>@s5f
+?@s-f
+SHGetFolderPathW
+MsgWaitForMultipleObjectsEx
+KillTimer
+PostThreadMessageW
+TranslateMessage
+PeekMessageW
+SetTimer
+DispatchMessageW
+PolicyManager_IsPolicySetByMobileDeviceManager
+PolicyManager_GetPolicyInt
+.?AVAbortException@@
+.?AVJobErrorException@@
+.?AVtype_info@@
+<empty>
+__doserrno
+_finite
+_initterm
+_initterm_e
+_c_exit
+_register_thread_local_exe_atexit_callback
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+__CxxFrameHandler3
+__std_terminate
+wcschr
+wcsstr
+_o___p___argc
+_o___p___wargv
+_o___p__commode
+_o___stdio_common_vswprintf
+_o___stdio_common_vswscanf
+_o__cexit
+_o__configthreadlocale
+_o__configure_wide_argv
+_o__controlfp_s
+_o__crt_atexit
+_o__exit
+_o__get_initial_wide_environment
+_o__initialize_onexit_table
+_o__initialize_wide_environment
+_o__register_onexit_function
+_o__seh_filter_exe
+_o__set_app_type
+_o__set_fmode
+_o__set_new_mode
+_o__stricmp
+_o__wcsicmp
+_o__wfopen
+_o__wsetlocale
+_o_exit
+_o_feof
+_o_floor
+_o_free
+_o_getc
+_o_iswxdigit
+_o_malloc
+_o_terminate
+_o_ungetc
+_o_wcstok
+_o_wcstol
+_o_wcstoul
+__current_exception
+__current_exception_context
+memset
+_except_handler4_common
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+GetCurrentThreadId
+FormatMessageW
+GetLastError
+GetProcAddress
+GetModuleHandleW
+FreeLibrary
+SetConsoleCtrlHandler
+GetCurrentProcess
+GetThreadLocale
+DuplicateHandle
+MultiByteToWideChar
+GetCurrentThread
+CloseHandle
+HeapSetInformation
+WideCharToMultiByte
+CompareStringW
+SetLastError
+ExpandEnvironmentStringsW
+GetFileAttributesW
+CompareStringA
+WaitForSingleObject
+ReleaseMutex
+EnterCriticalSection
+GetStdHandle
+LeaveCriticalSection
+InitializeCriticalSectionEx
+ReadConsoleInputW
+DeleteCriticalSection
+SleepEx
+Sleep
+LoadLibraryExW
+GetConsoleScreenBufferInfo
+SetConsoleTextAttribute
+GetConsoleOutputCP
+WriteFile
+SetConsoleMode
+TerminateProcess
+SetThreadUILanguage
+InitializeCriticalSection
+GetSystemDirectoryW
+GetConsoleMode
+FillConsoleOutputCharacterW
+FileTimeToSystemTime
+FileTimeToLocalFileTime
+QueueUserAPC
+FillConsoleOutputAttribute
+WriteConsoleW
+GetTimeFormatW
+GetNumberOfConsoleInputEvents
+GetSystemTimeAsFileTime
+GetFileType
+SetConsoleCursorPosition
+GetDateFormatW
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+InitializeSListHead
+IsDebuggerPresent
+api-ms-win-downlevel-kernel32-l1-1-0.dll
+CoUninitialize
+CoCreateInstance
+CoInitializeEx
+CLSIDFromString
+CoTaskMemAlloc
+StringFromGUID2
+CoTaskMemFree
+api-ms-win-downlevel-ole32-l1-1-0.dll
+LogonUserExExW
+LookupAccountSidLocalW
+SspiCli.dll
+api-ms-win-security-lsalookup-l1-1-0.dll
+GetFileVersionInfoSizeExW
+RegQueryValueExW
+GetFileVersionInfoExW
+VerQueryValueW
+RegOpenKeyExW
+RegCreateKeyExW
+LocalFree
+RegCloseKey
+RegEnumValueA
+ConvertSidToStringSidW
+RegOpenKeyExA
+RegSetValueExA
+RegCreateKeyExA
+AllocateAndInitializeSid
+RegQueryValueExA
+RegQueryInfoKeyW
+GetTokenInformation
+OpenThreadToken
+GetLengthSid
+ImpersonateLoggedOnUser
+ImpersonateSelf
+CopySid
+GetSidSubAuthority
+GetSidSubAuthorityCount
+RevertToSelf
+QueryServiceStatusEx
+OpenServiceW
+OpenSCManagerW
+CloseServiceHandle
+LocalAlloc
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-service-management-l2-1-0.dll
+api-ms-win-service-management-l1-1-0.dll
+OpenMutexA
+api-ms-win-core-kernel32-legacy-l1-1-2.dll
+ApiSetQueryApiSetPresence
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+_CxxThrowException
+memcpy
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.BITS.BITSAdmin"
+    type="win32"
+<description>BITS administration utility</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+BITS administration utility
+FileVersion
+7.8.22621.1 (WinBuild.160101.0800)
+InternalName
+bitsadmin.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+bitsadmin.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+7.8.22621.1
+VarFileInfo
+Translation
+en-US
+<0@0H0P0h0
+1 1$10141@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4x4|4
+5 5$54585@5X5`5d5h5l5p5|5
+"?&?A?d?j?p?v?
+12191D1K1V1]1k1p1
+3J3O3k3
+4"484B4K4d4i4}4
+5'5@5M5Y5o5|5
+6"6U6_6d6
+717=7B7U7a7f7z7
+9%969v9{9
+:#:/:H:U:a:z:
+:#;B;M;
+<%<@<L<Q<f<s<y<
+<.=;=U=]=s=
+>;>C>N>V>u>
+?*?1?8?D?M?c?t?|?
+0"050I0U0k0r0{0
+0V1e1
+2G2Z2f2
+3;3I3N3c3t3
+4(4U4e4~4
+4C5L5Q5e5
+6-6d6
+737L7
+848x8}8
+9:9C9k9p9}9
+;q;z;
+<N<S<i<w<
+<E=c=
+>#>9>S>c>p>~>
+>2?7?C?l?
+0#0,03090@0E0N0W0`0i0
+1%141;1E1S1^1d1s1
+1O2j2
+2!3*3S3\3i3u3
+424;4U4^4
+5)5K5c5
+6G6q6v6
+6$7I7_7h7
+7D8M8j8t8y8
+9#9S9Z9k9t9
+: :):.:B:c:
+;$;:;^;c;v;
+<$<,<6<=<_<d<x<
+=$=C=j=
+>B>N>S>\>v>
+?*?D?M?\?f?
+020;0F0N0S0k0
+0,1;2K2
+2(343
+3!4+4H4^4
+6K6a6
+6'7L7p7
+7"868t8
+8$9[9m9
+:8:[:
+<G<Z<n<w<
+<R=]=d=
+=@>K>[>d>y>
+>U?b?x?
+7 7)747O7a7y7~7G8z8
+9,969;9N9S9`9e9
+9>:M:c:o:
+:,;?;
+<-<6<S<s<
+=I=S=m=
+>#>I>
+0n1~1
+2R2b2i2
+363F3M3g3|3
+4:4C4]4f4
+5"555K5n5
+7#7/7E7[7
+7&8+8?8b8g8{8
+8 9C9L9W9k9w9|9
+9*:3:=:B:X:n:
+;+;c;
+<#<N<S<f<
+=3=_=h=x=
+>D>M>`>e>q>
+?$?-?9?>?J?c?o?{?
+0,0H0T0o0{0
+152L2U2
+3=3F3P3U3r3z3
+4=4C4T4v4{4
+53585L5c5
+6C6k6t6~6
+6#7O7X7e7r7z7
+8 838F8Y8f8n8
+8[9d9o9w9|9
+:#:P:Y:f:v:~:
+;C;p;y;
+<%<-<c<
+< =)=3=C=K=
+=3>o>x>
+0G0P0Z0_0
+1%1S1
+272@2J2O2e2
+3(363>3
+3*434=4B4X4
+5 5%525:5s5
+6!6(6/666=6D6Q6
+7 7$737d7z7
+9*9S9
+:N:S:_:l:
+;5;X;_;f;m;
+<.<7<s<
+=/=8=H=M=Z=b=n={=
+>%>>>J>V>\>a>s>
+>-?I?R?\?a?w?
+0!000=0j0
+1C1y1
+2"2'2M2T2Y2
+3/3<3D3
+4 4%4;4Q4
+525;5E5J5V5
+6 6,6c6
+6/787B7G7\7
+7#8_8h8r8w8
+9+939s9
+:?:H:W:d:l:
+:3;o;x;
+<!<*<4<9<R<Z<
+=J=O=Y=s=
+>4>^>w>
+.0E0\0
+1E1`1
+2%242A2T2p2
+4B4\4v4
+535S5m5
+5!6F6
+667u7
+8'8.8u8
+8"9D9Q9`9l9
+:>:J:n:
+;0;<;\;k;w;
+<#<(<@<e<l<s<x<
+=-=9=^=m=y=
+>7>Y>f>u>
+?"?+?5?Z?t?}?
+080G0S0~0
+121T1t1
+1+2B2R2X2q2
+3"4'4;4`4e4y4
+5"5R5
+6%6*6?6H6M6b6
+7G7Q7g7
+8)828c8x8
+9A9H9b9y9
+:k:r:
+<,<1<E<c<h<|<
+=(=V=_=
+> >X>t>}>
+>=?U?c?l?
+P0Y0f0s0z0
+0 1)1:1?1M1U1
+2-252
+343=3G3L3a3
+4,454?4D4Z4~4
+5"5.5>5K5X5k5
+6'61666U6
+7W7n7w7
+8C8}8
+9D9M9R9_9v9
+:":8:A:K:P:g:
+;*;/;6;;;
+<@<I<R<|<
+=3=m=
+=$>>>G>Q>V>m>u>
+?:?G?^?e?
+050?0Q0u0
+0X1u1
+1#2H2O2T2
+3%3.3H3Q3k3t3
+4-4M4e4
+6$606J6Q6`6
+6"7+7?7D7
+8.8=8
+9*9?9b9s9
+;,;5;V;g;z;
+;#<*<h<o<
+=)=.=e=
+> >,>8>\>~>
+070H0
+1!1(1/161=1L1P1T1X1\1`1d1h1l1
+262Z2t2}2
+2!3&3;3c3
+4[4d4
+4'5>5U5\5a5t5
+6!6&6:6U6k6t6
+73787L7a7f7
+8;8T8]8q8v8
+979@9b9g9{9
+:<:F:q:{:
+:&;6;=;W;c;o;
+<(<?<H<^<j<
+=$=0=G=P=f=r=
+>%>?>Y>s>
+2>2^2
+3!3.3A3V3p3
+4'4<4_4d4x4
+595t5
+60676E6L6Z6_6s6
+6/7o7
+:):4:D:P:d:
+;';7;q;
+<1<M<`<w<
+='=F=]=u=
+>*>0>;>F>^>f>p>{>
+?%?,???G?N?X?h?
+00060@0P0\0m0t0z0
+1%1,1A1M1T1d1j1
+2!2(22282C2I2\2q2
+313<3H3T3q3~3
+4#4/4;4b4o4{4
+5E6I6M6Q6U6Y6]6a6e6i6m6q6u6y6}6
+9#:):>:D:\:o:
+;$<4<C<
+=a=f=k=p=
+='>J>k>t>
+?7?U?x?
+1-1<1N1U1
+2"2=2k2p2v2
+3%3*3A3H3O3V3]3j3o3
+41464<4I4N4T4]4v4
+5 5%585M5[5e5j5}5
+6*64696L6a6o6y6~6
+7 7'7.7;7S7Z7a7~7
+818>8C8T8p8
+9F9g9n9u9|9
+:':S:_:q:
+;.;7;C;J;V;j;o;u;~;
+<"<A<J<P<X<^<
+>(>b>B?]?f?q?x?
+0"0(020<0L0\0l0u0
+0'1[1
+2!262=2C2U2_2
+4/454
+5"6(6
+6!7>7
+90999B9P9Y9{9
+:":.:::F:R:^:j:v:
+<!<.<B<R<b<r<
+=.>j>
+0.1B1S1
+2>2~2
+2!3c3
+3'4i4
+5$5T5
+6*7Z7
+7,8\8
+96:v:
+:&;^;
+>"?Z?
+0-0P0s0
+2&2h2
+383T3\3d3p3x3
+484@4H4T4\4
+5$5,585X5`5l5
+60686D6d6p6
+787D7d7p7
+8$8D8L8T8\8h8
+9,949<9H9h9p9x9
+:$:,:4:<:D:P:p:x:
+;,;4;<;D;P;p;x;
+<$<,<4<@<`<h<p<|<
+=$=,=4=@=`=h=p=|=
+>$>,>8>X>h>p>|>
+?,?<?P?X?`?l?
+0$0,040<0D0L0T0`0
+141<1D1L1\1|1
+2$2D2L2T2\2h2
+3 3(30383D3d3l3x3
+484@4H4T4\4
+5 585L5T5\5h5
+6,686X6d6
+7$7(707L7\7d7h7x7
+0 040d0p0t0
+1$1014181<1T1`1d1h1
+2 2$2(2,2024282<2D2P2T2X2\2`2d2h2l2t2
+303P3p3
+0 0$0(000

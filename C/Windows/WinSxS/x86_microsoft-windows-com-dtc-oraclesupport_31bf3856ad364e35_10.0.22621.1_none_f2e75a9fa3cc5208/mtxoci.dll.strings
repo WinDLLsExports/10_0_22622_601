@@ -1,0 +1,975 @@
+!This program cannot be run in DOS mode.
+Rich4
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ADVAPI32.dll
+MTxOciInit
+com\complus\dtc\ociresdisp\apiconnmgm.cpp
+Unable to load the dispenser manager.
+opinit
+In, pplda=0x%p  ppHDA=0x%p uid=%S uidl=%d pswd=%S pswdl=%d conn=%S connl=%d mode=%d
+MTxolog
+ologTransacted
+In, tlda=0x%p hda=0x%p uid=%S uidl=%d pswd=%S pswdl=%d conn=%S connl=%d mode=%d
+ologTransactedInternal
+In, lda=0x%p
+ologof
+Enlist
+Call failed due to time out. CurrState = %d
+MSOCI Resource Dispenser
+CDispenserDriver::EnlistResource
+com\complus\dtc\ociresdisp\dispenserdriver.cpp
+Expecting pLink->m_fQueued to be FALSE
+Expecting pLink->m_pQueuedList to be NULL
+Expecting (*ppLink)->m_fQueued to be TRUE
+com\complus\dtc\inc\tracedstrsafe.h
+failed in TracedStringCchPrintfA
+failed in TracedStringCchPrintfA
+failed in TracedStringCchCopyA
+failed in TracedStringCchCopyA
+failed in TracedStringCchCopyNA
+failed in TracedStringCchCopyNA
+failed in TracedStringCchCatA
+failed in TracedStringCchCatA
+Error in getting UOW from XID
+Error in getting string form of GUID
+TRANSTATE_INIT
+TRANSTATE_DONE
+TRANSTATE_ACTIVE
+TRANSTATE_PREPARING
+TRANSTATE_PREPARED
+TRANSTATE_PREPARED_DISCONNECTED
+TRANSTATE_UNILATERALLY_ABORTING
+TRANSTATE_DOOMED
+TRANSTATE_OBLIVION
+UNKNOWN_TRAN_STATE = %d
+OFFSET_CONNECT
+OFFSET_DISCONNECT
+OFFSET_ENLIST
+OFFSET_PREPARE
+OFFSET_ABORT
+OFFSET_COMMIT
+OFFSET_TMDOWN
+OFFSET_UNBIND_ENLISTMENT
+OFFSET_ABANDON
+UNKNOWN_REQUEST = %d
+pConn = 0x%p
+CreateConnectionAPI
+com\complus\dtc\ociresdisp\ociconn.cpp
+<RmGuid Not Yet Initialized>
+Calling xa_open, pconn=0x%p Open String = %S RmId = %d RmGuid=%S
+COCIConnection::Connect
+xa_open returned
+xa_open call failed
+Calling non-transacted open, pconn=0x%p
+Creating connection with LDA %p
+olog call failed
+Calling non-transacted disconnect, pconn=0x%p
+COCIConnection::Disconnect
+Destroying connection with LDA %p
+Calling xa_end for pconn=0x%p UOW=%S GTRID=%S RmId = %d RMGUID=%S
+xa_end returned
+Calling xa_close for pconn=0x%p RmId = %d RMGUID=%S
+xa_close returned
+calling xa_start with pconn=0x%p UOW=%S GTRID = %S RmId = %d RMGUID=%S
+COCIConnection::Enlist
+xa_start returned
+xa_start call failed
+calling sqlld2 for pconn=0x%p UOW=%S GTRID = %S RmId = %d RMGUID=%S
+sqlld2 returned
+sqlld2 call failed
+calling xa_end for pconn=0x%p UOW=%S GTRID = %S RmId = %d RMGUID=%S
+xa_end call failed
+COCIConnection::PrepareRequest
+single phase xa_commit for pconn=0x%p GTRID = %S RmId = %d RMGUID=%S
+xa_commit returned
+calling xa_prepare for pconn=0x%p GTRID = %S RmId = %d RMGUID=%S
+xa_prepare returned
+calling PrepareRequestDone for pconn=0x%p GTRID = %S RmId = %d RMGUID=%S
+PrepareRequestDone returned
+calling xa_commit for pconn=0x%p UOW=%S GTRID = %S RmId = %d RMGUID=%S
+COCIConnection::CommitRequest
+calling CommitRequestDone for pconn=0x%p GTRID = %S RmId = %d RMGUID=%S
+CommitRequestDone returned
+CommitRequest failed. RMGuid=%S
+COCIConnection::AbortRequest
+xa_end failed
+calling xa_rollback for pconn=0x%p GTRID = %S RmId = %d RMGUID=%S
+xa_rollback returned
+xa_rollback failed. RMGuid=%S
+xa_rollback caused an exception.
+calling AbortRequestDone for pconn=0x%p GTRID = %S RmId = %d RMGUID=%S
+AbortRequestDone returned
+COCIConnection::UnilateralAbortRequest
+xa_rollback failed, RMGuid=%S
+OciSesTm
+QueueOciWork
+GetSystemDirectory failed!
+COCIConnection::Init
+%s\mtxoci.dll
+StringCbPrintfA failed!
+calling XARMcreate for pconn=0x%p Open String = %S XaLib = %S RmId = %d
+XARMCreate returned, RMGUID=%S
+TM failed to connect to the RM.  Connect string=%S
+%s/%s
+Oracle_XA+Acc=P/%s+SesTm=%d+DB=%s+SqlNet=%s+Threads=TRUE
+Oracle_XA+Acc=P/%s+SesTm=%d+SqlNet=%s+Threads=TRUE
+Oracle_XA+Acc=P/%s+SesTm=%d+DB=%s+Threads=TRUE
+Oracle_XA+Acc=P/%s+SesTm=%d+Threads=TRUE
++LogDir=
+In, pconn=0x%p RequestId=%S i_fAsynch=%d RMGUID=%S
+COCIConnection::NonQueuedMakeCallAsynch
+COCIConnection::MakeCallAsynch
+failed to allocate memory to queue Async Work Item.
+In, pconn=0x%p TransactionState = %S RequestId = %S RMGUID=%S
+COCIConnection::NonQueuedStateMachineDriver
+COCIConnection::StateMachineDriver
+UTLink is not the only element in the list
+UTLink is not the first element in the list
+UTLink is not the last element in the list
+Inconsistent UTLink -- Incorrect m_pNextLink
+Inconsistent UTLink -- Incorrect m_pPrevLink
+An%s 
+obndra
+obndrn
+obndrv
+obreak
+oclose
+odefin
+odefinps
+odessp
+odescr
+oerhms
+oermsg
+oexec
+oexfet
+ofetch
+oflng
+ologof
+oopen
+oparse
+onbset
+onbtst
+onbclr
+orlon
+ogetpi
+oname
+opinit
+osetpi
+osql3
+obindps
+sqlld2
+MTxOciCPTimeout
+OracleTraceFilePath
+opinit call failed
+DllMain
+com\complus\dtc\ociresdisp\ociwrapperdll.cpp
+xa80.dll
+SQLLib80.dll
+Unable to open/create key: %s. Return value from RegCreateKeyEx is: %d
+OracleXaLib
+OracleSqlLib
+OracleOciLib
+The value %s in key: %s is of type: %d. It should be a string type instead.
+Could not read value %s in key: %s. RegQueryValueEx returned: %d
+Could not copy %s value to key: %s. Return value from RegSetValueEx is: %d
+OracleXaLib.bkp
+OracleSqlLib.bkp
+OracleOciLib.bkp
+OracleTraceFilePath.bkp
+Looking up XA DLL '%S'
+LookUpOracleLibPath
+RegQueryValueExA failed to load the %S registry key
+Out of memory!
+Buffer length is not sufficient. Expected Size = %d, Actual Size = %d
+ExpandEnvironmentStringsA failed
+StringCchPrintfA failed!
+The registry value is not a string for %S
+Xa DLL Lookup completed, HR=%08x, Path='%S'
+SOFTWARE\Microsoft\MSDTC\MTxOCI
+RegQueryValueEx failed to get "SOFTWARE\Microsoft\MSDTC\MTxOCI" value! Please configure MTXOCI registry key and add OCI, SQL Lib and Xa Lib dlls name and path!
+LoadRealOCIDllAndHelpers
+OracleXaLibPath
+RegQueryValueEx failed to get OracleXaLibPath value! A valid path must be configured!
+OracleSqlLibPath
+RegQueryValueEx failed to get OracleSqlLibPath value! A valid path must be configured!
+OracleOciLibPath
+RegQueryValueEx failed to get OracleOciLibPath value! A valid path must be configured!
+xa73.dll
+SQLLib18.dll
+ociw32.dll
+%s\%s
+StringCbPrintfA failed while formatting XaLib dll path!
+StringCbPrintfA failed while formatting SqlLib dll path!
+StringCbPrintfA failed while formatting Oci dll path!
+LoadLibraryExA failed while loading OCI dll from %S
+LoadLibraryExA failed while loading SQLLib dll from %S
+LoadLibraryExA failed while loading XaLib dll from %S
+xaosw
+com\complus\dtc\ociresdisp\ociwrapperdll.cpp
+Failed To Open  MTXOCI XA key in CreateXaDllPathKey
+%%systemroot%%\system32\mtxoci.dll
+mtxoci.dll
+Failed To Set MTXOCI XA key in CreateXaDllPathKey
+Software\Microsoft\MSDTC\XADLL
+AnOracle RM
+Disconnected from XATM. RECOVERY = %d, RMGuid = %S
+CRMObject::Disconnect
+com\complus\dtc\ociresdisp\rmobj.cpp
+MSDTC
+xa_end
+xa_prepare
+xa_open
+xa_rollback
+xa_commit
+xa_start
+xa_close
+xa_recovery
+xa_complete
+xa_forget
+com\complus\src\inc\utsem.h
+CreateEvent returned a NULL handle.
+WaitForSingleObjectEx fails in CEventSem::Wait()
+SetEvent fails in CEventSem::Set()
+ResetEvent fails in CEventSem::Reset()
+Software\Microsoft\MSDTC
+Software\Microsoft\MSDTC
+%s\%s
+com\complus\dtc\shared\util\dtcini.cpp
+DtcDebugBreak
+MSDTC
+No more information about the error is available.
+A non-MS DTC XA Library threw an exception.
+A non-MS DTC XA Library threw an exception in function %hs
+MemoryDumpType
+MemoryDumpLocation
+The memory dump location specified in the registry is invalid
+WriteDumpThread
+QueryFullProcessImageNameW failed
+GetFullPathNameW failed
+%s_%02ld%02ld%04ld_%02ld%02ld%02ld
+StringCchPrintf failed. Unable to compose file name.
+%s\%s.dmp
+StringCchPrintf failed. Unable to compose dump location.
+DBGHELP.DLL
+LoadLibraryExW(DbgHelp.dll) failed.
+MiniDumpWriteDump
+GetProcAddress(MiniDumpWriteDump) failed
+Failed to create dump file.
+MiniDumpWriteDump failed
+GenerateErrorDumps
+\DtcInstall.log
+%02ld-%02ld-%04ld %02ld:%02ld : DTC Install error = %d, %s, %s (%d) 
+%02ld-%02ld-%04ld %02ld:%02ld : DTC Install error = %d, %s, %s (%d) 
+com\complus\dtc\shared\util\stringutil.cpp
+DuplicateString (com\complus\dtc\shared\util\stringutil.cpp@100): DuplicateString, ppwszDest != NULL
+DuplicateString, CoTaskMemAlloc(dwSourceLength * sizeof(WCHAR)) failed
+DuplicateString, StringCchCopyW failed
+InitializeCriticalSectionAndSpinCount
+com\complus\src\shared\util\utsem.cpp
+comres.dll
+COM+ Failfast:  Unable to allocate memory for stack trace!
+*** The serious nature of this error has caused the process to terminate.
+*** Error Code = 0x%08x : %s
+*** Internals Information:
+File: %s, Line: %d
+not loaded
+\VarFileInfo\Translation
+%u.%u.%u.%u
+Comsvcs.dll file version info: %s %s %s
+comsvcs.dll
+*** Error in %s(%d), %s: %s
+%s\%s*.dmp
+%s\%s_%04d_%02d_%02d_%02d_%02d_%02d.dmp
+RunDll32 comsvcs.dll,MiniDump
+%s %d %s full
+com\complus\src\shared\util\svcerr.cpp
+This is a COM+ Failfast Break
+  Process.Thread=<%d.%d>
+  File: %s:%d
+  hr=0x%08x
+#####################################################################
+#####################################################################
+Software\Microsoft\COM3\Debug
+AutoAddTraceToContext
+DebugBreakOnFailFast
+DebugBreakOnInitComPlus
+DebugBreakOnLoadComsvcs
+TraceActivityModule
+TraceContextCreation
+TraceInfrastructureCalls
+TraceSTAPool
+TraceSecurity
+TraceSecurityPM
+EventDispatchTtime
+user32.dll
+DialogBoxParamW
+SetDlgItemTextW
+EndDialog
+GetDesktopWindow
+GetWindowRect
+GetClientRect
+MapWindowPoints
+SetWindowPos
+GetProcessWindowStation
+SetProcessWindowStation
+OpenWindowStationW
+CloseWindowStation
+GetThreadDesktop
+SetThreadDesktop
+OpenDesktopW
+CloseDesktop
+winsta0
+default
+XOLEHLP.DLL
+DtcGetTransactionManager
+TRACE_MISC
+TRACE_CM
+TRACE_TRACE
+TRACE_SVC
+TRACE_GATEWAY
+TRACE_UI
+TRACE_CONTACT
+TRACE_UTIL
+TRACE_CLUSTER
+TRACE_RESOURCE
+TRACE_TIP
+TRACE_XA
+TRACE_LOG
+TRACE_MTXOCI
+TRACE_ETWTRACE
+TRACE_PROXY
+TRACE_KTMRM
+TRACE_VSSBACKUP
+TRACE_PERFMON
+TRACE_TM
+TRACE_LU
+TRACE_WMI
+TRACE_ALWAYS
+TRACE_ERROR
+TRACE_WARNING
+TRACE_INFO
+TRACE_VERBOSE
+TRACE_VERY_VERBOSE
+TRACE_INOUT
+TRACE_OBSCURE
+TRACE_EVERYTHING
+[[Unable to format message]]
+ 0x%08x [%12S] [%12lS] %s (%s@%03d): %s
+%02ld-%02ld-%04ld %02ld:%02ld:%02ld:%03ld : [%4x.%4x]
+bad allocation
+Software\Microsoft\MSDTC\Tracing
+Error from Initialize
+TraceOutputSettings::TraceOutputSettings
+com\complus\dtc\shared\trace\src\traceoutputsettings.cpp
+Failed receiving the RegistryChangeListenerFinished event
+TraceOutputSettings::~TraceOutputSettings
+Successfully received the RegistryChangeListenerFinished event
+UnregisterWait returned the 0x%x error code.
+Successfully unregistered for registry change notifications
+Unable to open MSDTC\Tracing settings key
+Sources
+Now tracing %S at level %d
+TraceOutputSettings::ReadConfiguration_Locked
+Unable to read level for source %S
+Unable to open sources key
+Output
+TraceFilePath
+Using new trace file path: %s
+Unable to duplicate trace path
+Ignoring empty-string trace directory
+Unable to read trace path
+MemoryBufferSize
+Memory buffer size is now %d
+Unable to read memory buffer size
+DebugOutEnabled
+Debug out enabled is now %d
+Unable to read debug out enabled
+ImageNameInTraceFileNameEnabled
+Including Image Name in Trace File Name is now %d
+Unable to read Including Image Name in Trace File Name
+Unable to open output key
+dllhost.exe
+/ProcessID
+%s-%s
+%s\MSDTC-%s-%d.log
+%s\MSDTC-%d.log
+MTxOCI.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+jdj0h`
+jdj0h 
+umVj&jM
+u@Vj j
+u=Vj$j
+u]VVj<
+Vj.Wj
+PVj<Wj
+VjcWj
+PVjrWj
+tnW9^<u
+jdj0V
+SVWjd^
+O0;K0t-
+9C0t-
+9C0t-
+~,9~<t
+jdj0V
+SVWjd
+SVWj#
+PQSVW
+PQSVW
+_@9_Dt
+_D9_Ht
+_H9_$t
+_P9_Tt
+PSh8$
+PShp%
+t(hT&
+PShP'
+PWhP'
+PWh@(
+PShx*
+PShH+
+PShP'
+PShP'
+G8uJh@
+PPFVP
+w Ph<1
+w Phx1
+w Ph<1
+w Phx1
+D$DPh
+t2j+V
+PShx3
+PShx3
+oci.SP
+PSVShP
+t0PWh
+t'VSWh
+t+VhD
+PWh0;
+Fj(Xf;
+QQSVW3
+PQSVW
+lSVWj
+WWhDL
+u%hLM
+WPVPh
+SVWh4T
+QQPQRQh
+VShXU
+$SVW3
+u'j(Xf
+!yEj(
+WPhxV
+PPhlZ
+t{h4[
+tghH[
+tSh\[
+t?hp[
+p QWj
+9~8t'
+v4kF 
+v0hX^
+M QRSP
+SVWhL
+PQSVW
+PQh d
+tShxd
+tFPh\e
+@PWSS
+Y__^[
+Y__^[
+jdj0h`
+jdj0h 
+RegisterEventSourceA
+ReportEventA
+DeregisterEventSource
+ReportEventW
+RegisterEventSourceW
+MTxOCI.dll
+MTxOciGetVersion
+DllRegisterServer
+DllUnregisterServer
+Enlist
+GetXaSwitch
+MTxOciInit
+MTxOciRegisterCursor
+MTxolog
+obindps
+obndra
+obndrn
+obndrv
+obreak
+oclose
+odefin
+odefinps
+odescr
+odessp
+oerhms
+oermsg
+oexec
+oexfet
+ofetch
+oflng
+ogetpi
+ologTransacted
+ologof
+oopen
+oparse
+opinit
+osetpi
+MS Oracle XA Switch Wrapper
+.?AVexception@@
+.?AVbad_alloc@std@@
+SOFTWARE\Microsoft\Transaction Server\Local Computer\My Computer
+SOFTWARE\Microsoft\MSDTC\MTxOCI
+This value has been migrated to HKLM\SOFTWARE\Microsoft\MSDTC\MTxOCI
+CoCreateInstance
+WaitForSingleObject
+EnterCriticalSection
+LeaveCriticalSection
+DeleteCriticalSection
+RpcStringFreeA
+UuidToStringA
+Sleep
+GetLastError
+SetEvent
+GetSystemDirectoryA
+CloseHandle
+ResetEvent
+CreateEventA
+UuidCreate
+CoTaskMemAlloc
+OutputDebugStringA
+LoadLibraryExA
+RegOpenKeyExA
+ExpandEnvironmentStringsA
+CoTaskMemFree
+RegSetValueExA
+RegCreateKeyExA
+RegQueryValueExA
+GetProcAddress
+RegCloseKey
+GetCurrentProcess
+TerminateProcess
+HeapFree
+GetCurrentThreadId
+ExitThread
+TerminateThread
+HeapAlloc
+GetProcessHeap
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+RPCRT4.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+__CxxFrameHandler3
+_purecall
+_vsnprintf
+strchr
+printf
+malloc
+_beginthreadex
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+_except_handler4_common
+RtlCaptureContext
+RtlReportException
+ntdll.dll
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+QueryPerformanceCounter
+GetCurrentProcessId
+GetSystemTimeAsFileTime
+GetTickCount
+RegQueryValueExW
+GetFullPathNameW
+RegOpenKeyExW
+CreateFileW
+RegSetValueExW
+OutputDebugStringW
+WaitForSingleObjectEx
+GetLocalTime
+FreeLibrary
+QueryFullProcessImageNameW
+LoadLibraryExW
+GetSystemWindowsDirectoryA
+MultiByteToWideChar
+InitializeCriticalSectionAndSpinCount
+CreateDirectoryW
+FindFirstFileW
+FindNextFileW
+ExpandEnvironmentStringsW
+StringFromGUID2
+GetModuleFileNameW
+VerQueryValueW
+FindClose
+SetFileAttributesW
+FormatMessageW
+LockResource
+DeleteFileW
+FindResourceExW
+LoadResource
+LoadStringW
+CoGetObjectContext
+LocalFree
+CreateProcessW
+GetModuleHandleW
+DebugBreak
+IsDebuggerPresent
+GetExitCodeProcess
+GetTokenInformation
+OpenProcessToken
+LocalAlloc
+TlsAlloc
+TlsFree
+GetCommandLineA
+TlsGetValue
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-psapi-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+QueueUserWorkItem
+UnregisterWaitEx
+KERNEL32.dll
+_vsnwprintf
+_wcsicmp
+_stricmp
+fopen
+fflush
+fclose
+fprintf
+fwprintf
+wcsrchr
+_waccess
+??1exception@@UAE@XZ
+??0exception@@QAE@ABQBDH@Z
+??0exception@@QAE@ABV0@@Z
+?what@exception@@UBEPBDXZ
+_wfopen
+??1type_info@@UAE@XZ
+_CxxThrowException
+_local_unwind4
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft Distributed Transaction Coordinator Database Support DLL for Oracle
+FileVersion
+2001.12.10941.16384 (WinBuild.160101.0800)
+InternalName
+MTxOCI.DLL
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+MTxOCI.DLL
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1|1
+2$2,242<2D2L2T2\2d2l2t2|2
+3 3(3@3x3
+>4>>>Q>s>}>
+?.?2?7?<?A?J?f?
+0$0.0E0J0e0j0
+1.1T1^1z1
+1A2c2
+333}3
+4@4W4s4
+5c5k5
+6%616S6
+8&8C8
+8(9_9s9
+:$:2:P:s:
+;M;a;
+=(=E=c=
+>M>d>
+0H0X0o0
+212P2s2
+333}3
+3-4V4u4
+5(5C5
+556<6A6W6`6r6x6
+8V8o8v8|8
+8A9I9U9
+:8;?;K;};
+<0<?<
+>!>f>
+>*?X?
+#0P0a1g1q1
+202f2r2
+383E3_3m3s3
+4-434;4L4`4x4
+5#565`5s5
+6!6A6T6
+7-7M7`7{7
+7I8Y8
+909N9m9|9
+:<:K:`:}:
+;F;W;l;
+<&<F<W<
+=E=u=
+0"0t0
+192n2
+4s4x4
+5(5S5X5d5
+6:6W6
+9&9+9<9C9J9Q9X9_9f9m9u9
+9):3:::D:l:
+<?<X<i<
+?V?p?
+@0F0Q0g0l0
+1"1-1R1^1o1
+323?3U3Z3m3u3
+4%444<4
+6-6<6B6M6f6r6
+8!8+858F8\8
+9(9.989M9S9]9
+:N:T:^:t:y:
+:1;7;A;w;
+=%=I=P=V=`=
+=8>`>m>
+?8?=?Y?f?r?
+"0)050d0j0t0
+1!1@1O1[1p1|1
+2-282D2]2r2x2
+4"4P4b4
+515k5
+708K8Q8[8
+9@9`9
+:%:H:
+;W;};
+<,<<<G<g<w<
+=L=X=w=
+=o>~>
+?l?r?|?
+$0>0Q0q0
+1[1u1
+202C2p2
+3%343G3x3
+6"7H7L7P7T7X7\7`7d7h7z7
+8D99;s;
+<)<4<?<J<U<`<k<v<
+=&=.=6=>=F=N=Y=c=
+> >G>
+?"?<?E?
+0:0l0|0
+1"1-1Z1f1u1
+2.24282>2B2M2V2`2k2}2
+3$3,3C3I3N3|3
+3:4J4W4b4
+4O5d5
+7*8X8c8
+91979`9f9
+:%:5:]:m:
+:<;M;Z;f;l;
+<"<,<;<M<d<n<}<
+=?=E=O=w=
+>I>V>~>
+?'?.?8?c?
+0/050?0c0w0}0
+1M1Y1e1
+1#2)2[2a2
+3(3@3F3\3b3h3t3
+364A4O4V4
+5*505K5`5n5t5
+7Q7b7l7s7z7
+8'8,8J8Z8c8
+9)969E9K9V9~9
+96:O:h:
+;!;E;U;b;h;r;
+;A<Y<i<
+=.=S=a=u=
+>!>5>L>s>
+?3?A?U?l?
+1 1O1a1
+2!2'2-232=2L2R2X2^2h2
+243I3l3
+4/4G4M4
+5 5B5i5s5x5}5
+576G6p6
+7'7d7y7
+898H8P8h8
+9:9a9p9
+;$<1<
+?(?:?B?I?|?
+020;0@0z0
+1&1=1Z1
+2)2e2o2y2
+3f3}3
+4%464<4F4i4v4
+51686e6
+777>7E7L7
+8.8E8W8g8
+869<9I9k9
+:<;H;N;S;a;
+;(<.<=<J<k<~<
+=)=]=g=
+=!>+>K>y>
+?"?4?E?]?d?
+0>1R1
+2(3M3j3w3
+5C5I5e5n5
+6'6F6q6
+8;8n8v8
+9w9~9
+:7:E:T:j:|:
+;!;7;F;U;_;
+<&<4<><L<R<Y<^<d<
+=)=.=;=@=M=R=_=d=q=v=
+?.?6?F?N?^?f?v?~?
+0*020>0F0R0Z0f0n0
+1(131
+2)242@2M2Z2
+393F3S3`3k3y3
+4'434K4]4d4r4y4
+5+5>5E5K5T5
+5?6L6a6g6r6
+7B7^7r7
+8#8+8
+<,<K<_<d<j<q<
+<9=J=k=v=
+>#>(>.>G>U>o>v>|>
+?#?3?D?K?S?_?e?k?r?x?
+0"060<0G0M0R0]0c0i0o0v0|0
+1B1H1_1{1
+2!242>2J2^2p2u2}2
+2`3{3
+4!4Z4f4
+555;5H5T5g5o5{5
+636;6C6
+7V7]7g7
+7@8z8
+8!979i9t9
+:,:3:=:J:f:r:z:
+<-<6<<<D<J<
+=.=>=C=n=
+>@>W>q>
+>U?s?
+282R2i2w2
+2/3e3
+4B4O4v4
+5#5)5/555<5C5J5Q5X5_5f5n5v5~5
+6%6+61676=6C6J6Q6X6_6f6m6t6z6
+7x7}7
+9%9B9
+:":::b:r:~:
+;T<`<l<
+=.=Q=t=
+>#>F>i>
+?;?^?
+0?0b0
+031V1
+262f2
+3'4W4
+4)5Y5
+747d7
+9,9O9r9
+;A;t;
+<@<p<
+<"=B=F=a=g=k=q=
+>#>1><>a>g>k>q>
+?"?(?A?G?K?Q?a?x?
+0(000d0t0
+1$10181l1|1
+2,282@2t2
+243H3X3h3t3|3
+4$4,4`4p4|4
+5 5,545h5x5
+6(646<6p6
+6(787D7L7
+708@8L8T8
+989H9T9t9
+:,:4:@:`:h:t:
+;$;D;L;T;`;
+< <(<4<<<p<
+=H=\=p=
+>@>P>\>d>
+?,?4?<?H?h?p?|?
+0D0T0`0
+10181D1d1l1x1
+2H2X2d2l2
+3P3`3l3t3
+4$4X4h4t4|4
+5$5,5`5p5|5
+6$606P6X6d6
+7(747L7P7\7x7
+8 8,8L8h8
+9$9(9H9h9
+(0,0004080<0@0D0H0L0P0X0`0h0p0x0
+1 1(10181@1H1P1X1`1h1p1x1
+2$202<2H2T2`2l2x2

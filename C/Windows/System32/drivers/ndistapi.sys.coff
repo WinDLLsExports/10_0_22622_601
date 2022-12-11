@@ -1,0 +1,100 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\ndistapi.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0007000 Import Address Table
+             1C00071E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         BF7 __C_specific_handler
+                         475 KeAcquireSpinLockRaiseToDpc
+                          F0 ExFreeToNPagedLookasideList
+                          D5 ExDeleteNPagedLookasideList
+                         6CB ObfDereferenceObject
+                         8F1 RtlInitUnicodeString
+                         4D5 KeInitializeSpinLock
+                         33C IoDeleteDevice
+                         539 KeReleaseSpinLock
+                         559 KeSetEvent
+                          BD ExAllocatePool2
+                         6CD ObfReferenceObject
+                         100 ExInitializeNPagedLookasideList
+                          BA ExAllocateFromNPagedLookasideList
+                         2E8 IoAcquireCancelSpinLock
+                          EE ExFreePoolWithTag
+                         4CD KeInitializeEvent
+                         44F IofCompleteRequest
+                         585 KeWaitForSingleObject
+                         3D1 IoReleaseCancelSpinLock
+                         833 RtlCompareMemory
+                         BE1 ZwSetValueKey
+                         5DB MmGetSystemRoutineAddress
+                         6B6 ObOpenObjectByPointer
+                         323 IoCreateDevice
+                         342 IoDeviceObjectType
+                         BDA ZwSetSecurityObject
+                         B17 ZwClose
+                         9A9 RtlSetDaclSecurityDescriptor
+                         3A3 IoIsWdmVersionAvailable
+                         93D RtlLengthSid
+                         7FD RtlAddAccessAllowedAce
+                         7FC RtlAbsoluteToSelfRelativeSD
+                         C9C wcschr
+                          C1 ExAllocatePoolWithTag
+                         C52 _wcsnicmp
+                         856 RtlCreateSecurityDescriptor
+                         A38 SeExports
+                         93C RtlLengthSecurityDescriptor
+                         C37 _snwprintf
+                         A1E SeCaptureSecurityDescriptor
+                         8D6 RtlGetSaclSecurityDescriptor
+                         8D3 RtlGetOwnerSecurityDescriptor
+                         8C9 RtlGetGroupSecurityDescriptor
+                         8C1 RtlGetDaclSecurityDescriptor
+                         8B3 RtlFreeUnicodeString
+                         B26 ZwCreateKey
+                         BA8 ZwQueryValueKey
+                         B69 ZwOpenKey
+
+  Section contains the following exports for NDISTAPI.SYS
+
+    00000000 characteristics
+    15D96EC2 time date stamp
+        0.00 version
+           1 ordinal base
+           4 number of functions
+           4 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001FE0 NdisTapiCompleteRequest
+          2    1 000021F0 NdisTapiDeregisterProvider
+          3    2 00002420 NdisTapiIndicateStatus
+          4    3 000025D0 NdisTapiRegisterProvider
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        1000 fothk

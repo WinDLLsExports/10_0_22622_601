@@ -1,0 +1,866 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\kernel.appcore.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntdll.dll
+    api-ms-win-core-libraryloader-l1-2-0.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-core-rtlsupport-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    KERNELBASE.dll
+    msvcrt.dll
+    api-ms-win-core-psm-key-l1-1-0.dll
+    api-ms-win-core-psm-key-l1-1-1.dll
+    api-ms-win-security-base-l1-1-0.dll
+    api-ms-win-core-apiquery-l1-1-0.dll
+    api-ms-win-core-heap-l2-1-0.dll
+    api-ms-win-core-registry-l1-1-0.dll
+    api-ms-win-core-string-l1-1-0.dll
+    api-ms-win-core-localization-l1-2-0.dll
+    api-ms-win-core-debug-l1-1-0.dll
+    api-ms-win-core-handle-l1-1-0.dll
+    api-ms-win-core-delayload-l1-1-1.dll
+    api-ms-win-core-delayload-l1-1-0.dll
+
+  Image has the following delay load dependencies:
+
+    ext-ms-win-hostactivitymanager-hostidstore-l1-1-0.dll
+    ext-ms-win-familysafety-childaccount-l1-1-0.dll
+    api-ms-win-privacy-coreprivacysettingsstore-l1-1-0.dll
+    RPCRT4.dll
+    api-ms-win-core-winrt-string-l1-1-0.dll
+    api-ms-win-security-sddl-l1-1-0.dll
+    api-ms-win-core-com-l1-1-0.dll
+
+  Section contains the following exports for AppCore.dll
+
+    00000000 characteristics
+    139856DA time date stamp
+        0.00 version
+           1 ordinal base
+         251 number of functions
+         251 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00004470 AcquireStateLock
+          3    1 00004480 AddDependencyToProcessPackageGraph
+          4    2 00004490 AddExtensionProgId
+          5    3 000044A0 AddPackageDependency
+          6    4 000044B0 AppContainerDeriveSidFromMoniker
+          7    5 000044C0 AppContainerFreeMemory
+          8    6 000044D0 AppContainerLookupDisplayNameMrtReference
+          9    7 000044E0 AppContainerLookupMoniker
+         10    8 000044F0 AppContainerRegisterSid
+         11    9 00004500 AppContainerUnregisterSid
+         12    A 00004510 AppPolicyGetClrCompat
+         13    B 00004520 AppPolicyGetCreateFileAccess
+         14    C 00004530 AppPolicyGetLifecycleManagement
+         15    D 00004540 AppPolicyGetMediaFoundationCodecLoading
+         16    E 00004550 AppPolicyGetProcessTerminationMethod
+         17    F 00004560 AppPolicyGetShowDeveloperDiagnostic
+         18   10 00004570 AppPolicyGetThreadInitializationType
+         19   11 00004580 AppPolicyGetWindowingModel
+         20   12 00004590 AppXFreeMemory
+         21   13 000045A0 AppXGetApplicationData
+         22   14 000045B0 AppXGetDevelopmentMode
+         23   15 000045C0 AppXGetOSMaxVersionTested
+         24   16 000045D0 AppXGetOSMinVersion
+         25   17 000045E0 AppXGetPackageCapabilities
+         26   18 000045F0 AppXGetPackageSid
+         27   19 00004600 AppXLookupDisplayName
+         28   1A 00004610 AppXLookupMoniker
+         29   1B 00004620 AppXUpdatePackageCapabilities
+         30   1C 00004630 ApplicationUserModelIdFromProductId
+         31   1D 00006D50 BuildProcThreadAttributeListFromBlob
+         32   1E 00004640 CheckIfStateChangeNotificationExists
+         33   1F 00004650 CheckIsMSIXPackage
+         34   20 00004660 ClosePackageInfo
+         35   21 00004670 CloseState
+         36   22 00004680 CloseStateAtom
+         37   23 00004690 CloseStateChangeNotification
+         38   24 000046A0 CloseStateContainer
+         39   25 000046B0 CloseStateLock
+         40   26 000046C0 CommitStateAtom
+         41   27 000046D0 CouldMultiUserAppsBehaviorBePossibleForPackage
+         42   28 00008F80 CreateNewAdvertisingId
+         43   29 000046E0 CreateStateAtom
+         44   2A 000046F0 CreateStateChangeNotification
+         45   2B 00004700 CreateStateContainer
+         46   2C 00004710 CreateStateLock
+         47   2D 00004720 CreateStateSubcontainer
+         48   2E 00004730 DeletePackageDependency
+         49   2F 00004740 DeleteStateAtomValue
+         50   30 00004750 DeleteStateContainer
+         51   31 00004760 DeleteStateContainerValue
+         52   32 00004770 DuplicateStateContainerHandle
+         53   33 00008F90 EnableAdvertisingId
+         54   34 00008FB0 EnableAdvertisingIdForUser
+         55   35 00004780 EnumerateExtensionNames
+         56   36 00004790 EnumerateStateAtomValues
+         57   37 000047A0 EnumerateStateContainerItems
+         58   38 000047B0 ExtensionProgIdExists
+         59   39 000047C0 FindPackagesByPackageFamily
+         60   3A 000047D0 FormatApplicationUserModelId
+         61   3B 000047E0 FormatApplicationUserModelIdA
+         62   3C 00006FB0 GenerateProcThreadAttributeBlob
+         63   3D 000047F0 GetAlternatePackageRoots
+         64   3E 00004800 GetAppDataFolder
+         65   3F 00004810 GetAppModelVersion
+         66   40 00004820 GetApplicationUserModelId
+         67   41 00004830 GetApplicationUserModelIdFromToken
+         68   42 00004840 GetCurrentApplicationUserModelId
+         69   43 00004850 GetCurrentPackageApplicationContext
+         70   44 00004860 GetCurrentPackageApplicationResourcesContext
+         71   45 00004870 GetCurrentPackageContext
+         72   46 00004880 GetCurrentPackageFamilyName
+         73   47 00004890 GetCurrentPackageFullName
+         74   48 000048A0 GetCurrentPackageGlobalizationContext
+         75   49 000048B0 GetCurrentPackageId
+         76   4A 000048C0 GetCurrentPackageInfo
+         77   4B 000048D0 GetCurrentPackageInfo2
+         78   4C 000048E0 GetCurrentPackageInfo3
+         79   4D 000048F0 GetCurrentPackagePath
+         80   4E 00004900 GetCurrentPackagePath2
+         81   4F 00004910 GetCurrentPackageResourcesContext
+         82   50 00004920 GetCurrentPackageSecurityContext
+         83   51 00004930 GetCurrentTargetPlatformContext
+         84   52 00004940 GetEffectivePackageStatusForUser
+         85   53 00004950 GetEffectivePackageStatusForUserSid
+         86   54 00004960 GetExtensionApplicationUserModelId
+         87   55 00004970 GetExtensionProgIds
+         88   56 00004980 GetExtensionProperty
+         89   57 00004990 GetExtensionProperty2
+         90   58 000049A0 GetHivePath
+         91   59 000049B0 GetIdForPackageDependencyContext
+         92   5A 000049C0 GetPackageApplicationContext
+         93   5B 000049D0 GetPackageApplicationIds
+         94   5C 000049E0 GetPackageApplicationProperty
+         95   5D 000049F0 GetPackageApplicationPropertyString
+         96   5E 00004A00 GetPackageApplicationResourcesContext
+         97   5F 00004A10 GetPackageContext
+         98   60 00004A20 GetPackageFamilyName
+         99   61 00004A30 GetPackageFamilyNameFromFilePath
+        100   62 00004A40 GetPackageFamilyNameFromProgId
+        101   63 00004A50 GetPackageFamilyNameFromToken
+        102   64 00004A60 GetPackageFullName
+        103   65 00004A70 GetPackageFullNameFromToken
+        104   66 00004A80 GetPackageGlobalizationContext
+        105   67 00004A90 GetPackageGlobalizationProperty
+        106   68 00004AA0 GetPackageGraphRevisionId
+        107   69 00004AB0 GetPackageId
+        108   6A 00004AC0 GetPackageInfo
+        109   6B 00004AD0 GetPackageInfo2
+        110   6C 00004AE0 GetPackageInfo3
+        111   6D 00004AF0 GetPackageOSMaxVersionTested
+        112   6E 00004B00 GetPackagePath
+        113   6F 00004B10 GetPackagePathByFullName
+        114   70 00004B20 GetPackagePathByFullName2
+        115   71 00004B30 GetPackagePathOnVolume
+        116   72 00004B40 GetPackageProperty
+        117   73 00004B50 GetPackagePropertyString
+        118   74 00004B60 GetPackageResourcesContext
+        119   75 00004B70 GetPackageResourcesProperty
+        120   76 00004B80 GetPackageSecurityContext
+        121   77 00004B90 GetPackageSecurityProperty
+        122   78 00004BA0 GetPackageStatus
+        123   79 00004BB0 GetPackageStatusForUser
+        124   7A 00004BC0 GetPackageStatusForUserSid
+        125   7B 00004BD0 GetPackageTargetPlatformProperty
+        126   7C 00004BE0 GetPackageVolumeSisPath
+        127   7D 00004BF0 GetPackagesByPackageFamily
+        128   7E 00004C00 GetProtocolAumid
+        129   7F 00004C10 GetProtocolProperty
+        130   80 00004C20 GetPublisherCacheFolder
+        131   81 00004C30 GetPublisherRootFolder
+        132   82 00004C40 GetResolvedPackageFullNameForPackageDependency
+        133   83 00004C50 GetRoamingLastObservedChangeTime
+        134   84 00004C60 GetSecureSystemAppDataFolder
+        135   85 00004C70 GetSerializedAtomBytes
+        136   86 00004C80 GetSharedLocalFolder
+        137   87 00004C90 GetStagedPackageOrigin
+        138   88 00004CA0 GetStagedPackagePathByFullName
+        139   89 00004CB0 GetStagedPackagePathByFullName2
+        140   8A 00004CC0 GetStateContainerDepth
+        141   8B 00004CD0 GetStateFolder
+        142   8C 00004CE0 GetStateRootFolder
+        143   8D 00004CF0 GetStateRootFolderBase
+        144   8E 00004D00 GetStateSettingsFolder
+        145   8F 00004D10 GetStateVersion
+        146   90 00004D20 GetSystemAppDataFolder
+        147   91 00004D30 GetSystemAppDataKey
+        148   92 00004D40 GetSystemMetadataPath
+        149   93 00004D50 GetSystemMetadataPathForPackage
+        150   94 00004D60 GetSystemMetadataPathForPackageFamily
+        151   95 00004D70 GetSystemStateRootFolder
+        152   96 00004D80 GetTargetPlatformContext
+        153   97 00004D90 IncrementPackageStatusVersion
+        154   98 00004DA0 InvalidateAppModelVersionCache
+        155   99 00004DB0 IsDeveloperModeEnabled
+        156   9A 00004DC0 IsDeveloperModePolicyApplied
+        157   9B 00004DD0 IsMrtResourceRedirectionEnabled
+        158   9C 00004DE0 IsOnDemandRegistrationSupportedForExtensionCategory
+        159   9D 00004DF0 IsSideloadingEnabled
+        160   9E 00004E00 IsSideloadingPolicyApplied
+        161   9F 00004E10 OpenPackageInfoByFullName
+        162   A0 00004E20 OpenPackageInfoByFullNameForMachine
+        163   A1 00004E30 OpenPackageInfoByFullNameForUser
+        164   A2 00004E40 OpenState
+        165   A3 00004E50 OpenStateAtom
+        166   A4 00004E60 OpenStateExplicit
+        167   A5 00004E70 OpenStateExplicitForUserSid
+        168   A6 00004E80 OpenStateExplicitForUserSidString
+        169   A7 00004E90 OverrideRoamingDataModificationTimesInRange
+        170   A8 00004EA0 PackageFamilyNameFromFullName
+        171   A9 00004EB0 PackageFamilyNameFromFullNameA
+        172   AA 00004EC0 PackageFamilyNameFromId
+        173   AB 00004ED0 PackageFamilyNameFromIdA
+        174   AC 00004EE0 PackageFamilyNameFromProductId
+        175   AD 00004EF0 PackageFullNameFromId
+        176   AE 00004F00 PackageFullNameFromIdA
+        177   AF 00004F10 PackageFullNameFromProductId
+        178   B0 00004F20 PackageIdFromFullName
+        179   B1 00004F30 PackageIdFromFullNameA
+        180   B2 00004F40 PackageIdFromProductId
+        181   B3 00004F50 PackageIsEffectiveSupportedUsersMultiple
+        182   B4 00004F60 PackageNameAndPublisherIdFromFamilyName
+        183   B5 00004F70 PackageNameAndPublisherIdFromFamilyNameA
+        184   B6 00004F80 PackagePublisherIdFromPublisher
+        185   B7 00004F90 PackageRelativeApplicationIdFromProductId
+        186   B8 00004FA0 PackageSidFromFamilyName
+          1   B9 00004460 PackageSidFromProductId
+        187   BA 00004FB0 ParseApplicationUserModelId
+        188   BB 00004FC0 ParseApplicationUserModelIdA
+        189   BC 00004FD0 ProductIdFromPackageFamilyName
+        190   BD 00006310 PsmActivateApplicationByToken
+        191   BE 00006490 PsmAdjustActivationToken
+        192   BF 000064E0 PsmAdjustActivationTokenEx
+        193   C0 00002B70 PsmAdjustActivationTokenEx2
+        194   C1 00006540 PsmAdjustActivationTokenPkgClaim
+        195   C2 00006680 PsmAdjustActivationTokenWithDynamicId
+        196   C3 00002B80 PsmCreateBrokerToken
+        197   C4 000066E0 PsmCreateMatchToken
+        198   C5 00003C00 PsmQueryBackgroundActivationType
+        199   C6 00003E20 PsmRegisterApplicationProcess
+        200   C7 00006980 PsmRegisterDesktopProcess
+        201   C8 00006990 PsmRegisterServiceProcess
+        202   C9 00004FE0 PublishStateChangeNotification
+        203   CA 00004FF0 PublisherFromPackageFullName
+        204   CB 00008FD0 QueryAdvertisingId
+        205   CC 00008FE0 QueryAdvertisingIdStatus
+        206   CD 00001010 QueryAdvertisingIdStatusForUser
+        207   CE 00005000 QueryStateAtomValueInfo
+        208   CF 00005010 QueryStateContainerCreatedNew
+        209   D0 00005020 QueryStateContainerItemInfo
+        210   D1 00005030 ReadStateAtomValue
+        211   D2 00005040 ReadStateContainerValue
+        212   D3 00005050 RefreshPackageInfo
+        213   D4 00005060 RegisterStateChangeNotification
+        214   D5 00005070 RegisterStateLock
+        215   D6 00005080 ReleaseStateLock
+        216   D7 00005090 RemoveExtensionProgIds
+        217   D8 000050A0 RemovePackageDependency
+        218   D9 000050B0 RemovePackageStatus
+        219   DA 000050C0 RemovePackageStatusForUser
+        220   DB 000050D0 ResetState
+        221   DC 000050E0 SaveAlternatePackageRootPath
+        222   DD 000050F0 SaveStateRootFolderPath
+        223   DE 00005100 SetExtensionProperty
+        224   DF 00005110 SetIsDeveloperModeEnabled
+        225   E0 00005120 SetIsSideloadingEnabled
+        226   E1 00005130 SetProtocolProperty
+        227   E2 00005140 SetRoamingLastObservedChangeTime
+        228   E3 00005150 SetStateVersion
+        229   E4 00005160 SharedLocalIsEnabled
+        230   E5 00005170 SubscribeStateChangeNotification
+        231   E6 00005180 TryCreatePackageDependency
+        232   E7 00005190 UnregisterStateChangeNotification
+        233   E8 000051A0 UnregisterStateLock
+        234   E9 000051B0 UnsubscribeStateChangeNotification
+        235   EA 000051C0 UpdatePackageStatus
+        236   EB 000051D0 UpdatePackageStatusForUser
+        237   EC 000051E0 UpdatePackageStatusForUserSid
+        238   ED 000051F0 VerifyApplicationUserModelId
+        239   EE 00005200 VerifyApplicationUserModelIdA
+        240   EF 00005210 VerifyPackageFamilyName
+        241   F0 00005220 VerifyPackageFamilyNameA
+        242   F1 00005230 VerifyPackageFullName
+        243   F2 00005240 VerifyPackageFullNameA
+        244   F3 00005250 VerifyPackageId
+        245   F4 00005260 VerifyPackageIdA
+        246   F5 00005270 VerifyPackagePublisher
+        247   F6 00005280 VerifyPackagePublisherA
+        248   F7 00005290 VerifyPackageRelativeApplicationId
+        249   F8 000052A0 VerifyPackageRelativeApplicationIdA
+        250   F9 000052B0 WriteStateAtomValue
+        251   FA 000052C0 WriteStateContainerValue
+
+  Section contains the following imports:
+
+    ntdll.dll
+             18000AF40 Import Address Table
+             1800107B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4A2 RtlInsertElementGenericTableAvl
+                         498 RtlInitializeGenericTableAvl
+                         504 RtlLookupElementGenericTableAvl
+                         4D3 RtlIsMultiSessionSku
+                         414 RtlFreeUnicodeString
+                         339 RtlConvertSidToUnicodeString
+                         5A5 RtlRunOnceBeginInitialize
+                         5A7 RtlRunOnceExecuteOnce
+                         58A RtlReleaseSRWLockShared
+                         2BF RtlAcquireSRWLockShared
+                         2BE RtlAcquireSRWLockExclusive
+                         589 RtlReleaseSRWLockExclusive
+                         577 RtlReAllocateHeap
+                         5F4 RtlStringFromGUIDEx
+                         1C0 NtOpenThreadToken
+                         48A RtlInitUnicodeStringEx
+                         25B NtSetInformationThread
+                         1FE NtQuerySecurityAttributesToken
+                         101 NtClose
+                         2BA RtlAcquirePrivilege
+                         54F RtlQueryPackageClaims
+                         1EB NtQueryInformationToken
+                         489 RtlInitUnicodeString
+                         25C NtSetInformationToken
+                         586 RtlReleasePrivilege
+                         159 NtDuplicateToken
+                         327 RtlCompareUnicodeString
+                         40D RtlFreeHeap
+                         2E4 RtlAllocateHeap
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+             18000ADA8 Import Address Table
+             180010618 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 DisableThreadLibraryCalls
+                           D FreeLibrary
+                          16 GetProcAddress
+                          19 LoadLibraryExW
+
+    api-ms-win-core-profile-l1-1-0.dll
+             18000AE20 Import Address Table
+             180010690 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             18000ADE0 Import Address Table
+             180010650 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 TerminateProcess
+                          30 InitializeProcThreadAttributeList
+                           D GetCurrentProcessId
+                          11 GetCurrentThreadId
+                          34 OpenProcessToken
+                           C GetCurrentProcess
+                          5B UpdateProcThreadAttribute
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             18000AED8 Import Address Table
+             180010748 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1A GetTickCount
+                          16 GetSystemTimeAsFileTime
+
+    api-ms-win-core-rtlsupport-l1-1-0.dll
+             18000AEA8 Import Address Table
+             180010718 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         305 RtlCaptureContext
+                         509 RtlLookupFunctionEntry
+                         64E RtlVirtualUnwind
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             18000AD58 Import Address Table
+             1800105C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           F SetUnhandledExceptionFilter
+                           5 GetLastError
+                          11 UnhandledExceptionFilter
+                           D SetLastError
+
+    KERNELBASE.dll
+             18000A5D0 Import Address Table
+             18000FE40 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         108 OverrideRoamingDataModificationTimesInRange
+                         18C WriteStateContainerValue
+                         18B WriteStateAtomValue
+                         183 VerifyPackageRelativeApplicationIdA
+                         182 VerifyPackageRelativeApplicationId
+                         181 VerifyPackagePublisherA
+                         180 VerifyPackagePublisher
+                         17F VerifyPackageIdA
+                         17E VerifyPackageId
+                         17D VerifyPackageFullNameA
+                         17C VerifyPackageFullName
+                         17B VerifyPackageFamilyNameA
+                         17A VerifyPackageFamilyName
+                         179 VerifyApplicationUserModelIdA
+                         178 VerifyApplicationUserModelId
+                         177 UpdatePackageStatusForUserSid
+                         176 UpdatePackageStatusForUser
+                         175 UpdatePackageStatus
+                         173 UnsubscribeStateChangeNotification
+                         170 UnregisterStateLock
+                         16F UnregisterStateChangeNotification
+                         16E TryCreatePackageDependency
+                         11A PackageSidFromProductId
+                           0 AcquireStateLock
+                           1 AddDependencyToProcessPackageGraph
+                           2 AddExtensionProgId
+                           3 AddPackageDependency
+                           4 AppContainerDeriveSidFromMoniker
+                           5 AppContainerFreeMemory
+                           6 AppContainerLookupDisplayNameMrtReference
+                           7 AppContainerLookupMoniker
+                           8 AppContainerRegisterSid
+                           9 AppContainerUnregisterSid
+                           A AppPolicyGetClrCompat
+                           B AppPolicyGetCreateFileAccess
+                           C AppPolicyGetLifecycleManagement
+                           D AppPolicyGetMediaFoundationCodecLoading
+                           E AppPolicyGetProcessTerminationMethod
+                           F AppPolicyGetShowDeveloperDiagnostic
+                          10 AppPolicyGetThreadInitializationType
+                          11 AppPolicyGetWindowingModel
+                          12 AppXFreeMemory
+                          13 AppXGetApplicationData
+                          14 AppXGetDevelopmentMode
+                          15 AppXGetOSMaxVersionTested
+                          16 AppXGetOSMinVersion
+                          17 AppXGetPackageCapabilities
+                          18 AppXGetPackageSid
+                          19 AppXLookupDisplayName
+                          1A AppXLookupMoniker
+                          1E AppXUpdatePackageCapabilities
+                          1F ApplicationUserModelIdFromProductId
+                          2F CheckIfStateChangeNotificationExists
+                          30 CheckIsMSIXPackage
+                          33 ClosePackageInfo
+                          34 CloseState
+                          35 CloseStateAtom
+                          36 CloseStateChangeNotification
+                          37 CloseStateContainer
+                          38 CloseStateLock
+                          39 CommitStateAtom
+                          3B CouldMultiUserAppsBehaviorBePossibleForPackage
+                          40 CreateStateAtom
+                          41 CreateStateChangeNotification
+                          42 CreateStateContainer
+                          43 CreateStateLock
+                          44 CreateStateSubcontainer
+                          47 DeletePackageDependency
+                          48 DeleteStateAtomValue
+                          49 DeleteStateContainer
+                          4A DeleteStateContainerValue
+                          4C DuplicateStateContainerHandle
+                          51 EnumerateExtensionNames
+                          52 EnumerateStateAtomValues
+                          53 EnumerateStateContainerItems
+                          54 ExtensionProgIdExists
+                          57 FindPackagesByPackageFamily
+                          58 FormatApplicationUserModelId
+                          59 FormatApplicationUserModelIdA
+                          5B GetAlternatePackageRoots
+                          5C GetAppDataFolder
+                          5D GetAppModelVersion
+                          5E GetApplicationUserModelId
+                          5F GetApplicationUserModelIdFromToken
+                          64 GetCurrentApplicationUserModelId
+                          65 GetCurrentPackageApplicationContext
+                          66 GetCurrentPackageApplicationResourcesContext
+                          67 GetCurrentPackageContext
+                          68 GetCurrentPackageFamilyName
+                          69 GetCurrentPackageFullName
+                          6A GetCurrentPackageGlobalizationContext
+                          6B GetCurrentPackageId
+                          6C GetCurrentPackageInfo
+                          6D GetCurrentPackageInfo2
+                          6E GetCurrentPackageInfo3
+                          6F GetCurrentPackagePath
+                          70 GetCurrentPackagePath2
+                          71 GetCurrentPackageResourcesContext
+                          72 GetCurrentPackageSecurityContext
+                          73 GetCurrentTargetPlatformContext
+                          75 GetEffectivePackageStatusForUser
+                          76 GetEffectivePackageStatusForUserSid
+                          7A GetExtensionApplicationUserModelId
+                          7B GetExtensionProgIds
+                          7C GetExtensionProperty
+                          7D GetExtensionProperty2
+                          7F GetHivePath
+                          80 GetIdForPackageDependencyContext
+                          87 GetPackageApplicationContext
+                          88 GetPackageApplicationIds
+                          89 GetPackageApplicationProperty
+                          8A GetPackageApplicationPropertyString
+                          8B GetPackageApplicationResourcesContext
+                          8C GetPackageContext
+                          8D GetPackageFamilyName
+                          8E GetPackageFamilyNameFromFilePath
+                          8F GetPackageFamilyNameFromProgId
+                          90 GetPackageFamilyNameFromToken
+                          91 GetPackageFullName
+                          92 GetPackageFullNameFromToken
+                          93 GetPackageGlobalizationContext
+                          94 GetPackageGlobalizationProperty
+                          95 GetPackageGraphRevisionId
+                          96 GetPackageId
+                          97 GetPackageInfo
+                          98 GetPackageInfo2
+                          99 GetPackageInfo3
+                          9A GetPackageOSMaxVersionTested
+                          9B GetPackagePath
+                          9C GetPackagePathByFullName
+                          9D GetPackagePathByFullName2
+                          9E GetPackagePathOnVolume
+                          9F GetPackageProperty
+                          A0 GetPackagePropertyString
+                          A1 GetPackageResourcesContext
+                          A2 GetPackageResourcesProperty
+                          A3 GetPackageSecurityContext
+                          A4 GetPackageSecurityProperty
+                          A5 GetPackageStatus
+                          A6 GetPackageStatusForUser
+                          A7 GetPackageStatusForUserSid
+                          A8 GetPackageTargetPlatformProperty
+                          A9 GetPackageVolumeSisPath
+                          AB GetPackagesByPackageFamily
+                          AD GetProtocolAumid
+                          AE GetProtocolProperty
+                          B1 GetPublisherCacheFolder
+                          B2 GetPublisherRootFolder
+                          B4 GetResolvedPackageFullNameForPackageDependency
+                          B5 GetRoamingLastObservedChangeTime
+                          B6 GetSecureSystemAppDataFolder
+                          B7 GetSerializedAtomBytes
+                          B8 GetSharedLocalFolder
+                          B9 GetStagedPackageOrigin
+                          BA GetStagedPackagePathByFullName
+                          BB GetStagedPackagePathByFullName2
+                          BC GetStateContainerDepth
+                          BD GetStateFolder
+                          BE GetStateRootFolder
+                          BF GetStateRootFolderBase
+                          C0 GetStateSettingsFolder
+                          C1 GetStateVersion
+                          C4 GetSystemAppDataFolder
+                          C5 GetSystemAppDataKey
+                          C8 GetSystemMetadataPath
+                          C9 GetSystemMetadataPathForPackage
+                          CA GetSystemMetadataPathForPackageFamily
+                          CB GetSystemStateRootFolder
+                          CC GetTargetPlatformContext
+                          D9 IncrementPackageStatusVersion
+                          E3 InvalidateAppModelVersionCache
+                          E4 IsDeveloperModeEnabled
+                          E5 IsDeveloperModePolicyApplied
+                          E6 IsMrtResourceRedirectionEnabled
+                          E7 IsOnDemandRegistrationSupportedForExtensionCategory
+                          E8 IsSideloadingEnabled
+                          E9 IsSideloadingPolicyApplied
+                          FF OpenPackageInfoByFullName
+                         100 OpenPackageInfoByFullNameForMachine
+                         101 OpenPackageInfoByFullNameForUser
+                         103 OpenState
+                         104 OpenStateAtom
+                         105 OpenStateExplicit
+                         106 OpenStateExplicitForUserSid
+                         107 OpenStateExplicitForUserSidString
+                         165 SubscribeStateChangeNotification
+                         109 PackageFamilyNameFromFullName
+                         10A PackageFamilyNameFromFullNameA
+                         10B PackageFamilyNameFromId
+                         10C PackageFamilyNameFromIdA
+                         10D PackageFamilyNameFromProductId
+                         10E PackageFullNameFromId
+                         10F PackageFullNameFromIdA
+                         110 PackageFullNameFromProductId
+                         111 PackageIdFromFullName
+                         112 PackageIdFromFullNameA
+                         113 PackageIdFromProductId
+                         114 PackageIsEffectiveSupportedUsersMultiple
+                         115 PackageNameAndPublisherIdFromFamilyName
+                         116 PackageNameAndPublisherIdFromFamilyNameA
+                         117 PackagePublisherIdFromPublisher
+                         118 PackageRelativeApplicationIdFromProductId
+                         119 PackageSidFromFamilyName
+                         11B ParseApplicationUserModelId
+                         11C ParseApplicationUserModelIdA
+                         11F ProductIdFromPackageFamilyName
+                         120 PublishStateChangeNotification
+                         121 PublisherFromPackageFullName
+                         124 QueryStateAtomValueInfo
+                         125 QueryStateContainerCreatedNew
+                         126 QueryStateContainerItemInfo
+                         129 ReadStateAtomValue
+                         12A ReadStateContainerValue
+                         12C RefreshPackageInfo
+                         13B RegisterStateChangeNotification
+                         13C RegisterStateLock
+                         13E ReleaseStateLock
+                         140 RemoveExtensionProgIds
+                         141 RemovePackageDependency
+                         142 RemovePackageStatus
+                         143 RemovePackageStatusForUser
+                         145 ResetState
+                         147 SaveAlternatePackageRootPath
+                         148 SaveStateRootFolderPath
+                         14B SetExtensionProperty
+                         14F SetIsDeveloperModeEnabled
+                         150 SetIsSideloadingEnabled
+                         152 SetProtocolProperty
+                         153 SetRoamingLastObservedChangeTime
+                         154 SetStateVersion
+                         155 SharedLocalIsEnabled
+
+    msvcrt.dll
+             18000AF10 Import Address Table
+             180010780 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         50E wcschr
+                         376 _vsnwprintf
+                          5E __C_specific_handler
+                         49F memcpy
+                         4A3 memset
+
+    api-ms-win-core-psm-key-l1-1-0.dll
+             18000AE30 Import Address Table
+             1800106A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 PsmCreateKey
+                           8 PsmGetKeyFromToken
+
+    api-ms-win-core-psm-key-l1-1-1.dll
+             18000AE48 Import Address Table
+             1800106B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 PsmCreateKeyWithDynamicId
+
+    api-ms-win-security-base-l1-1-0.dll
+             18000AEF0 Import Address Table
+             180010760 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          59 RevertToSelf
+                          42 GetTokenInformation
+                          23 CreateWellKnownSid
+
+    api-ms-win-core-apiquery-l1-1-0.dll
+             18000AD10 Import Address Table
+             180010580 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 ApiSetQueryApiSetPresence
+
+    api-ms-win-core-heap-l2-1-0.dll
+             18000AD90 Import Address Table
+             180010600 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           A LocalFree
+                           8 LocalAlloc
+
+    api-ms-win-core-registry-l1-1-0.dll
+             18000AE58 Import Address Table
+             1800106C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 RegGetValueW
+                           B RegDeleteValueW
+                          1E RegOpenKeyExW
+                          25 RegQueryValueExW
+                           0 RegCloseKey
+                           5 RegDeleteKeyExW
+                          2E RegSetValueExW
+                          2A RegSetKeySecurity
+                           3 RegCreateKeyExW
+
+    api-ms-win-core-string-l1-1-0.dll
+             18000AEC8 Import Address Table
+             180010738 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 CompareStringOrdinal
+
+    api-ms-win-core-localization-l1-2-0.dll
+             18000ADD0 Import Address Table
+             180010640 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 FormatMessageW
+
+    api-ms-win-core-debug-l1-1-0.dll
+             18000AD20 Import Address Table
+             180010590 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 OutputDebugStringW
+                           5 IsDebuggerPresent
+
+    api-ms-win-core-handle-l1-1-0.dll
+             18000AD80 Import Address Table
+             1800105F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CloseHandle
+
+    api-ms-win-core-delayload-l1-1-1.dll
+             18000AD48 Import Address Table
+             1800105B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 ResolveDelayLoadedAPI
+
+    api-ms-win-core-delayload-l1-1-0.dll
+             18000AD38 Import Address Table
+             1800105A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 DelayLoadFailureHook
+
+  Section contains the following delay load imports:
+
+    ext-ms-win-hostactivitymanager-hostidstore-l1-1-0.dll
+              00000001 Characteristics
+      00000001800135A0 Address of HMODULE
+      00000001800150C0 Import Address Table
+      000000018000D610 Import Name Table
+      000000018000D7F8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180005320     2 HamHostIdFindOrCreate
+                                    00000001800053AB     3 HamHostIdInitializeKey
+
+    ext-ms-win-familysafety-childaccount-l1-1-0.dll
+              00000001 Characteristics
+      00000001800135B0 Address of HMODULE
+      00000001800150B0 Import Address Table
+      000000018000D600 Import Name Table
+      000000018000D810 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180005414     0 IsChildAccount
+
+    api-ms-win-privacy-coreprivacysettingsstore-l1-1-0.dll
+              00000001 Characteristics
+      00000001800135B8 Address of HMODULE
+      0000000180015078 Import Address Table
+      000000018000D5C8 Import Name Table
+      000000018000D820 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000549F     5 CPSSGetDwordSetting
+                                    000000018000552A    11 CPSSPutDwordSetting
+
+    RPCRT4.dll
+              00000001 Characteristics
+      00000001800135C0 Address of HMODULE
+      0000000180015000 Import Address Table
+      000000018000D550 Import Name Table
+      000000018000D838 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180005625   21E UuidCreate
+                                    0000000180005613    A4 NdrClientCall3
+                                    0000000180005601   1A2 RpcExceptionFilter
+                                    0000000180005576    44 I_RpcMapWin32Status
+                                    000000018000565B   174 RpcBindingFree
+                                    0000000180005649   170 RpcBindingBind
+                                    0000000180005637   173 RpcBindingCreateW
+
+    api-ms-win-core-winrt-string-l1-1-0.dll
+              00000001 Characteristics
+      00000001800135C8 Address of HMODULE
+      0000000180015058 Import Address Table
+      000000018000D5A8 Import Name Table
+      000000018000D878 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180005865    10 WindowsGetStringRawBuffer
+                                    0000000180005853     C WindowsDeleteString
+                                    000000018000567C     A WindowsCreateString
+
+    api-ms-win-security-sddl-l1-1-0.dll
+              00000001 Characteristics
+      00000001800135D0 Address of HMODULE
+      0000000180015090 Import Address Table
+      000000018000D5E0 Import Name Table
+      000000018000D888 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180005707     2 ConvertStringSecurityDescriptorToSecurityDescriptorW
+                                    0000000180005841     3 ConvertStringSidToSidW
+                                    000000018000581D     1 ConvertSidToStringSidW
+
+    api-ms-win-core-com-l1-1-0.dll
+              00000001 Characteristics
+      00000001800135D8 Address of HMODULE
+      0000000180015040 Import Address Table
+      000000018000D590 Import Name Table
+      000000018000D898 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000582F    16 CoGetCallContext
+                                    0000000180005792     9 CoCreateInstance
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

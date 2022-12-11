@@ -1,0 +1,1645 @@
+!This program cannot be run in DOS mode.
+Richo
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ADVAPI32.dll
+USER32.dll
+WINMM.dll
+ole32.dll
+WINSTA.dll
+MSACM32.dll
+WTSAPI32.dll
+MMDevAPI.DLL
+PROPSYS.dll
+FNULL
+TSPlatformStaticInit failed!
+APPID
+Advapi32.dll
+EventActivityIdControl
+ppFormat
+Failed ValidateWaveFormatEx
+CAudioDataHandler::CreateInstance failed
+Failed CloneWaveFormat
+CRdpAudioVcFileSemantics::CreateInstance failed.
+CRdpAudioCommunicationHandler
+Failed creation of client communication handler
+Failed TSSNDD_Init
+Failed SetBufferSize
+ppInterface
+pActivationParams
+pActivationParams->blob.pBlobData
+Initialize failed
+QueryInterface failed
+CAudioInputHandler
+CAudioInputHandler::Initialize
+CloneWaveFormat
+CAudioInputHandler::CreateInstance
+CRdpInputEndpoint.Initialize
+CRdpInputEndpoint.QueryInterface
+pu64Frequency
+pu64Position
+CAudioCaptureChannelCallback
+CAudioMaster::InitializeWithHardCodedFormats(AUD_DECOMPRESS) failed!
+CAudioMaster::InitializeWithHardCodedFormats(AUD_DECOMPRESS, TRUE) failed!
+m_AudioMaster.Terminate Failed
+CreateServerSideVCManager failed
+AUDIO_INPUT
+OpenDynamicChannel
+ptrChannel
+Channel->Write( Version )
+CFormatHandler::ConvertFormatsToItems getting size
+Channel->Write( FormatsPacket )
+Channel->Write( OpenPacket )
+m_AudioMaster.DecodeAAC
+Failed to write reply format packet
+INPUTOpenConverter: could not GetACMDriver and Format
+OnNewFormat: failed to start the AACDecoder!!
+TryAACFormat Failed
+OnFormatsReceived failed
+OnNewFormat failed (done dynamically)
+Getting Drivers for Interrim failed
+AUD_COMPRESS
+AUD_DECOMPRESS
+m_spAACEncoder->Terminate Failed
+m_spAACDecoder->Terminate Failed
+pFormat
+m_spAACEncoder
+m_spAACDecoder
+CFormatHandler::InitializeHardCodedFormats
+m_spAACEncoder->Start failed
+m_spAACEncoder->SetType failed
+m_spAACEncoder->Encode failed
+m_spAACDecoder->Start failed
+m_spAACDecoder->SetType failed
+m_spAACDecoder->Decode failed
+SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp
+RdpsndMaxInputBandwidth
+RdpsndMinInputBandwidth
+RdpAudioInputAACAdapt
+RdpsndMaxBandwidth
+RdpsndMinBandwidth
+RdpAudioEnginePeriod
+RdpAudioTimestampDelta
+pSndFormatItem
+"new VCSNDFORMATLIST"
+CPCMDriverCache::AddFormat
+ppAACEncoder
+"CRdpAACEncoder"
+CRdpAACEncoder::CreateInstance spObj->Initialize failed
+CRdpAACEncoder
+CRdpAACEncoder::Initialize CoInitializeEx failed
+CTSMfWrapper::CreateInstance() failed
+spMFWrapper->Initialize() failed
+Cannot create transforms.  MF is not installed.
+CoCreateInstance(CLSID_AACMFTEncoder) failed
+CRdpAACEncoder::Initialize GetStreamCount failed
+CRdpAACEncoder::Initialize GetStreamIDs failed
+m_spMFWrapper
+m_spMFWrapper->TS_MFCreateMediaType(&spOutputType) failed
+spOutputType
+spOutputType->SetGUID(MF_MT_MAJOR_TYPE) failed
+spOutputType->SetGUID(MF_MT_SUBTYPE) failed
+spOutputType->SetUINT32(MF_MT_AUDIO_BITS_PER_SAMPLE) failed
+spOutputType->SetUINT32(MF_MT_AUDIO_SAMPLES_PER_SECOND) failed
+spOutputType->SetUINT32(MF_MT_AUDIO_NUM_CHANNELS) failed
+spOutputType->SetUINT32(MF_MT_AUDIO_AVG_BYTES_PER_SECOND) failed
+m_spMFTEncoderObj->SetOutputType(NULL) failed
+m_spMFTEncoderObj->SetOutputType(spOutputType) failed
+m_spMFWrapper->TS_MFCreateMediaType(&spInputType) failed
+spInputType
+spInputType->SetGUID(MF_MT_MAJOR_TYPE) failed
+spInputType->SetGUID(MF_MT_SUBTYPE) failed
+spInputType->SetUINT32(MF_MT_AUDIO_BITS_PER_SAMPLE) failed
+spInputType->SetUINT32(MF_MT_AUDIO_SAMPLES_PER_SECOND) failed
+spInputType->SetUINT32(MF_MT_AUDIO_NUM_CHANNELS) failed
+CRdpAACEncoder::SetInputType(NULL) failed
+CRdpAACEncoder::SetInputType(spInputType) failed
+m_spMFTEncoderObj->ProcessMessage MFT_MESSAGE_COMMAND_FLUSH failed
+CRdpAACEncoder::Start ProcessMessage failed
+ppbDest
+pdwDestSize
+CRdpAACEncoder::Encode spMFWrapper->TS_MFCreateSample failed
+spSampleIn
+CRdpAACEncoder::Encode failed (m_dwCurrentFormatSamplesPerSecond == 0)
+CRdpAACEncoder::Encode spSampleIn->SetSampleDuration failed
+CRdpAACEncoder::Encode spSampleIn->SetSampleTime failed
+CRdpAACEncoder::Encode m_spMFWrapper->TS_MFCreateMemoryBuffer failed
+spBufferIn
+CRdpAACEncoder::Encode spBufferIn->SetCurrentLength failed
+CRdpAACEncoder::Encode spSampleIn->AddBuffer failed
+CRdpAACEncoder::Encode spBufferIn->Lock failed
+pbTempBuffer
+CRdpAACEncoder::Encode spBufferIn->Unlock failed
+CRdpAACEncoder::Encode m_spMFTEncoderObj->GetOutputStreamInfo failed
+spBufferOut
+CRdpAACEncoder::Encode m_spMFWrapper->TS_MFCreateSample failed
+spSampleOut
+CRdpAACEncoder::Encode spSampleOut->AddBuffer failed
+CRdpAACEncoder::Encode spBufferOut->GetCurrentLength failed
+CRdpAACEncoder::Encode spBufferOut->GetCurrentLength returns 0
+CRdpAACEncoder::Encode spBufferOut->Lock failed
+CRdpAACEncoder::Encode pbTempBuffer returned from spBufferOut->Lock is null 
+CRdpAACEncoder::Encode spBufferOut->Unlock failed
+ppAACDecoder
+"CRdpAACDecoder"
+CRdpAACDecoder::CreateInstance spObj->Initialize failed
+CRdpAACDecoder
+CRdpAACDecoder::Initialize. cannot create transforms.  MF is not installed.
+CoCreateInstance(CLSID_CMSAACDecMFT) failed
+CRdpAACDecoder::Initialize GetStreamCount failed
+CRdpAACDecoder::Initialize GetStreamIDs failed
+m_spMFWrapper->TS_MFCreateMediaType failed
+Create2ByteASC failed
+spInputType->SetBlob failed
+m_spMFTDecoderObj->SetInputType(NULL) failed
+m_spMFTDecoderObj->SetInputType failed
+m_spMFTDecoderObj->SetOutputType(NULL) failed
+m_spMFTDecoderObj->SetOutputType(spOutputType) failed
+m_spMFTDecoderObj->ProcessMessage MFT_MESSAGE_COMMAND_FLUSH failed
+CRdpAACDecoder::Decode m_spMFWrapper->TS_MFCreateSample failed
+CRdpAACDecoder::Decode SetSampleDuration failed
+CRdpAACDecoder::Decode m_spMFWrapper->TS_MFCreateMemoryBuffer failed
+CRdpAACDecoder::Decode spBufferIn->SetCurrentLength failed
+CRdpAACDecoder::Decode spSampleIn->AddBuffer failed
+CRdpAACDecoder::Decode spBufferIn->Lock failed
+CRdpAACDecoder::Decode spBufferIn->Unlock failed
+CRdpAACDecoder::Decode m_spMFTDecoderObj->GetOutputStreamInfo failed
+CRdpAACDecoder::Decode spSampleOut->AddBuffer failed
+CRdpAACDecoder::Decode m_spMFTDecoderObj->ProcessOutput failed
+CRdpAACDecoder::Decode spBufferOut->GetCurrentLength failed
+CRdpAACDecoder::Decode spBufferOut->GetCurrentLength returns 0
+CRdpAACDecoder::Decode spBufferOut->Lock failed
+CRdpAACDecoder::Decode pbTempBuffer returned from spBufferOut->Lock is null 
+CRdpAACDecoder::Decode spBufferOut->Unlock failed
+=LS+0y
+'f[%auds
+7^d[L
+%p-%s
+Failed StringCchPrintf
+Failed to initialize timer globals
+Failed to terminate timer globals
+Failed to unregister the thread window class
+Failed to unregister the timer window class
+CAPCThread
+CAPCThread::Initialize failed
+TSPlatformStaticInit failed
+TSCreatePlatform failed
+ITSPlatform.Initialize failed
+ITSPlatform::CreateThread failed
+ITSThread::BindThread failed
+CServerVCChannel
+CServerVCChannel::Initialize failed
+BYTE[]
+ReadFileEx Failed
+pThis->IssueARead FAILED
+StringCbCopyA failed
+WCHAR[]
+CServerVCChannel::CreateDynamicChannel
+CServerVCChannel::CreateStaticChannel
+pAPCThread->PostAPC(static_IssueARead) failed
+WaitForSingleObject
+ERROR_HANDLES_CLOSED
+CServerVCChannelManager
+CServerVCChannelManager::Initialize failed
+CAPCThread::CreateInstance FAILED
+CTSMfWrapper::Initialize failed
+CTSMfWrapper
+\MF.dll
+MFCreateRemoteDesktopPlugin
+GetProcAddress( MFCreateRemoteDesktopPlugin ) failed.  Non-Fatal.
+MFGetService
+GetProcAddress( MFGetService ) failed.  Non-Fatal.
+MFCreateMediaSession
+GetProcAddress( MFCreateMediaSession ) failed.  Non-Fatal.
+MFCreatePMPMediaSession
+GetProcAddress( MFCreatePMPMediaSession ) failed.  Non-Fatal.
+MFCreateTopology
+GetProcAddress( MFCreateTopology ) failed.  Non-Fatal.
+MFCreateTopologyNode
+GetProcAddress( MFCreateTopologyNode ) failed.  Non-Fatal.
+MFCreateAudioRendererActivate
+GetProcAddress( MFCreateAudioRendererActivate ) failed.  Non-Fatal.
+MFCreateVideoRendererActivate
+GetProcAddress( MFCreateVideoRendererActivate ) failed.  Non-Fatal.
+MFCreatePresentationClock
+GetProcAddress( MFCreatePresentationClock ) failed.  Non-Fatal.
+MFCreateMPEG4MediaSink
+GetProcAddress( MFCreateMPEG4MediaSink ) failed.  Non-Fatal.
+MFCreateFMPEG4MediaSink
+GetProcAddress( MFCreateFMPEG4MediaSink ) failed.  Non-Fatal.
+MFCreateSampleGrabberSinkActivate
+GetProcAddress( MFCreateSampleGrabberSinkActivate ) failed.  Non-Fatal.
+\MFPlat.dll
+MFCreateAudioMediaType
+GetProcAddress( MFCreateAudioMediaType ) failed.  Non-Fatal.
+MFCreateMediaType
+GetProcAddress( MFCreateMediaType ) failed.  Non-Fatal.
+MFInitMediaTypeFromMFVideoFormat
+GetProcAddress( MFInitMediaTypeFromMFVideoFormat ) failed.  Non-Fatal.
+MFInitMediaTypeFromAMMediaType
+GetProcAddress( MFInitMediaTypeFromAMMediaType ) failed.  Non-Fatal.
+MFCreateAMMediaTypeFromMFMediaType
+GetProcAddress( MFCreateAMMediaTypeFromMFMediaType ) failed.  Non-Fatal.
+MFCreateStreamDescriptor
+GetProcAddress( MFCreateStreamDescriptor ) failed.  Non-Fatal.
+MFCreatePresentationDescriptor
+GetProcAddress( MFCreatePresentationDescriptor ) failed.  Non-Fatal.
+MFCreateMemoryBuffer
+GetProcAddress( MFCreateMemoryBuffer ) failed.  Non-Fatal.
+MFStartup
+GetProcAddress( MFStartup ) failed.  Non-Fatal.
+MFShutdown
+GetProcAddress( MFShutdown ) failed.  Non-Fatal.
+MFInitMediaTypeFromWaveFormatEx
+GetProcAddress( MFInitMediaTypeFromWaveFormatEx ) failed.  Non-Fatal.
+MFCreateSample
+GetProcAddress( MFCreateSample ) failed.  Non-Fatal.
+MFCreateAsyncResult
+GetProcAddress( MFCreateAsyncResult ) failed.  Non-Fatal.
+MFCreateMediaEvent
+GetProcAddress( MFCreateMediaEvent ) failed.  Non-Fatal.
+MFInvokeCallback
+GetProcAddress( MFInvokeCallback ) failed.  Non-Fatal.
+MFCreateEventQueue
+GetProcAddress( MFCreateEventQueue ) failed.  Non-Fatal.
+MFCreateSystemTimeSource
+GetProcAddress( MFCreateSystemTimeSource ) failed.  Non-Fatal.
+MFCreateFile
+GetProcAddress( MFCreateFile ) failed.  Non-Fatal.
+MFCreateDXGIDeviceManager
+GetProcAddress( MFCreateDXGIDeviceManager ) failed.  Non-Fatal.
+IRdpAudioVc::WriteSynchronous failed.
+FindFormatForQualityMode FAILED
+pAudioDataHandler
+AudioForceUseOneChannel
+SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations
+Can't read registry key to turn on lossy transport
+Dynamic
+Medium
+Unknown
+Failed to initialize CAudioDataHandler
+CAudioDataHandler
+"RdpAudioStreamManager"
+m_pStreamManager->Initialize failed
+vF3.5
+&CRdpAudioVcFileSemantics
+"CPerfLogger"
+QI Failed
+\Device\RdpDr
+4>pBuf
+m_pDataQueue->Get failed
+m_pDataQueue->Add failed
+SaveMetaDataInfo failed
+pdwDataSize
+pdwTimestamp
+pdwTimestampMs
+SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services
+AllowedAudioQualityMode
+Value not found in registry
+Value has invalid type
+Key not found in registry
+enabled
+disabled
+{6C26BA7D-F0B2-4225-B422-8168C5261E45}
+{A3ED9185-1E02-411C-B11B-05D92F25CEF4}
+CTSAudioEndpointEnumerator
+AllocCoMemString FAILED
+Failed to allocate CTSEndpointDevice
+Add FAILED
+GetDevicePath FAILED
+RegOpenKeyEx FAILED
+FAILED to allocate memory for copy of endpoint ID
+FAILED to allocate CTSEndpointDevice
+QI(IMMDevice FAILED
+ppDevice is NULL
+pwstrId is NULL
+GetEndpoint failed
+ppEndpoint was NULL
+Invalid dataFlow
+EnumAudioEndpoints FAILED
+GetCount FAILED
+pClient is NULL
+AddTail FAILED
+m_lstNotificationClients.Find FAILED
+ppDevices is NULL
+Invalid dwStateMask
+FAILED to allocate CSubEndpointCollection
+Failed to enumerate playback endpoints
+Failed to enumerate capture endpoints.
+QueryInterface(IMMDeviceCollection) FAILED
+ppEndpointEnumerator is NULL
+ProcessIdToSessionId FAILED
+Only services can enumerate endpoints for the non-current session.
+QueryInterface(IMMDeviceEnumerator FAILED
+FAILED to allocate posChk
+Item not found.
+pcDevice is NULL
+Invalid Device Number
+ItemC FAILED
+6?E`Q
+ppwstrOut is NULL
+pwstrSrc is NULL
+CoTaskMemAlloc FAILED
+CTSEndpointPropertyStore
+MMDeviceCreateRegistryPropertyStore FAILED
+pv was NULL
+CLSIDFromString FAILED
+StringFromCLSID FAILED
+sppInterface is NULL
+CoInitializeEx failed
+OpenPropertyStore FAILED
+GetValue FAILED
+Could not get IMMDeviceActivator CLSID
+CoCreateInstance(IMMDeviceActivator FAILED
+Activate FAILED
+\Properties
+Invalid access flag
+ppProperties is NULL
+GetCategoryPath FAILED
+StringCbCatExW FAILED
+StringCbCopyW FAILED
+GetID FAILED
+FAILED to allocate spPropertyStore
+spPropertyStore->Initialize FAILED
+QI(IPropertyStore FAILED
+pstrId is NULL
+FAILED to allocate pstrId
+pdwState is NULL
+pDataFlow is NULL
+StringCchPrintfW FAILED
+Audio
+Video
+Remote
+Render
+Capture
+SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices
+Invalid argument.
+%s\%s\%s%s\
+TerminalServices-DeviceRedirection-Licenses-TSAudioCaptureAllowed
+SLGetWindowsInformationDWORD FAILED
+Invalid pPropertyLicenceGuid
+fDisableAudioCapture
+System\CurrentControlSet\Control\Terminal Server\WinStations\
+StringCchCat FAILED
+ntdll.dll
+WinSta0
+Default
+Segoe UI Light
+Segoe UI SemiBold
+Segoe UI
+Segoe Pseudo
+Yu Gothic UI Light
+Yu Gothic UI Semibold
+Yu Gothic UI
+Malgun Gothic Semilight
+Malgun Gothic Bold
+Malgun Gothic
+Leelawadee UI Semilight
+Leelawadee UI Bold
+Leelawadee UI
+Microsoft YaHei UI Light
+Microsoft YaHei UI Bold
+Microsoft YaHei UI
+Microsoft JhengHei UI Light
+Microsoft JhengHei UI Bold
+Microsoft JhengHei UI
+bWti^
+ul%G1
+byjA`
+w9X!P/
+oLW\f
+f4Og|
+X\?E/5
+l6s+o
+sQPI[5T
+bgOne
+m]#0D
+Da6N^
+@W=7A=
+d|BNeU
+,B>DY
+Vving1
+gxI3!'
+ew0hp
+WAxK0i
+FWph?r
+'R{=f
+xv#?H
+7T})gW
+%UM;%
+hwp1p0
++dBVY
+Ly^X`
+hgtlCm
+^BNQ,^
+z?801i:It6
+$>b~t
+1o?-XfF
+$(SQO
+rY&'K
+VY$[X
+VG2/iI
+S~=5p
+NtQuerySystemInformation
+System\CurrentControlSet\Control\Hvsi
+IsHvsiContainer
+y7bzU}
+CTSMsg
+CTSPlatform
+Unable to get a TSMsg from pool!
+InitializeForReuse failed!
+CTSEventFilterAllowAllEvents
+CTSEventFilterBlockAllEvents
+CTSEventFilterAllowSyncEventsOnly
+CTSEventFilterAllowSpecifiedEvents
+CTSThread
+Failed to create thread signal event
+Initialize event filters list failed
+CTSSyncWaitResult::CreateInstancePool failed!
+CTSMsg::CreateInstancePool failed!
+CTSBufferResult::CreateInstancePool failed!
+Failed to create ITSThreadInternal
+Failed to create thread signal
+thread descriptor creation failed in bind path
+Unable to add the current thread to the descriptor
+Fail to add thread to thread descriptor
+Failed to init in thread context
+GetItem failed!
+GetItem failed
+RunQueueEvent failed
+Unable to create blocking filter
+Unable to create allow all filter
+Failed to Signal Event Queue
+Unable to create allowed event list filter
+Unable to push new event filter
+Failed to run thread events
+Fail to run queue events
+CreateInstance failed for CTSMsg!
+Failed to signal event queue
+Unable to QI for IID_ITSQueuedCallback
+Created Block All Filter failed
+CreateInstance failed for CTSBufferResult!
+Unable to get a SyncWaitResult from pool!
+Failed to add callback to thread!
+spThreadDescriptor init failed
+CTS_TLS_ThreadDescriptor
+Getting thread id failed
+CTSObjectPool
+?ffffff
+;a"CTSThreadInternal
+Failed to QI
+CTSSyncWaitResult
+Failed to initialize buffer result!
+GetPooledObject(CTSBufferResult) failed
+CTSBufferResult::CreateInstance failed!
+CTSBufferResult
+Failed to create default buffer result buffer!
+PAL_SYS_WIN32_TIMER_WNDCLASS
+Failed to get module specific class name
+PAL_SYS_WIN32_THREAD_WNDCLASS
+Failed to initialize timer list lock
+Failed to terminate timer list lock
+<>jlm
+?333333
+?ffffff
+rdpendp.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+ATL$__a
+ATL$__m
+ATL$__z
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+PQRj+
+PQh,%
+PQRj+
+0_^[]
+q(9>u
+90u:hP
+PQRj+
+PQRj+
+(_^[]
+^D9^@t
+W9^<t
+W9^4t
+^`9^4t
+W9^4t
+^h9^4t
+W9^8t
+D$ QQ
+t$0VWP
+PQRj+
+QVWQh
+SVWh\
+tAf;D$
+PjPhp,
+PQRj+
+G4VVj
+9whuG
+F+wp;
+F+wp;
+Fl+Ft;Fxr
+QQSVW
+PQRj+
+Pj)hX.
+_^[Y]
+@_^[]
+QQSVW
+VPh@9
+D$0VPQ
+D$ PW
+PPPSW
+PPPSV
+QQSVW3
+PQh4A
+QQSVW
+VQhH;
+SVWj,
+QSVW3
+QSVWhh
+W9s$t
+SVWj$
+F$9~ 
+PjXhlR
+PQhlR
+Pj`hlR
+tCsIH
+sHR9_
+t<;w<v7
+;w@s2
+YF;s4r
+C0YF;s4r
+Q0SVW3
+9{`u"9{du
+9{$uw9
+C0F;s4r
+QQSVW
+9wXuVVVVV
+9w\uRVVVV
+9whu<VVVV
+PVWh 
+PWhLQ
+SVWQh
+sX9s\t
+s\9sht
+G;~4r
+QVWQh
+xSVW3
+D$HVP
+t$\Ph
+D$ Pj
+D$4Ph
+D$ Pj
+D$4Ph
+~ 9~$t
+L$ PS
+9Y uF
+QQSVW
+PQhpU
+PQRj+
+PQSVW
+?Au7j
+L$(Qh
+QQSVW
+QQSVW
+CPSWV
+t/j Xf9
+QPSSWQP
+_f98t
+!\$ VW
+D$XPVW
+D$Xj#P
+^D9^`t
+_9^`t
+W9^\t
+W9sdt
+] VWQ
+39w@t
+9C0u@
+|$$PW
+QQSVW
+CD9D$
+ug9\$
+9{xu\
+~,9?t,S3
+~,9?t,S3
+39w@t
+QQSVW
+;^8w4
+39w@t
+WWWWWWPW
+Y__^[
+QRPh4
+QRPhT
+QRPht
+QRPh4
+Y__^[
+EventRegister
+EventUnregister
+TraceMessage
+GetTraceLoggerHandle
+GetTraceEnableLevel
+GetTraceEnableFlags
+RegisterTraceGuidsW
+UnregisterTraceGuids
+timeGetTime
+CoCreateInstance
+CoTaskMemAlloc
+CoInitializeEx
+CoUninitialize
+EventWriteTransfer
+GetSystemMetrics
+WinStationVirtualOpenEx
+WinStationQueryInformationW
+WinStationIsSessionRemoteable
+WinStationGetConnectionProperty
+WinStationFreePropertyValue
+WinStationNameFromLogonIdW
+acmDriverEnum
+acmFormatTagDetailsW
+acmDriverOpen
+acmStreamOpen
+acmStreamClose
+acmDriverClose
+acmStreamSize
+acmStreamPrepareHeader
+acmStreamConvert
+acmStreamUnprepareHeader
+acmFormatSuggest
+WTSVirtualChannelClose
+WTSVirtualChannelOpen
+WTSVirtualChannelQuery
+WTSFreeMemory
+CoTaskMemFree
+CLSIDFromString
+StringFromCLSID
+PropVariantClear
+PropVariantToGUID
+GetClassInfoExW
+RegisterClassExW
+UnregisterClassW
+CreateWindowExW
+DefWindowProcW
+PostThreadMessageW
+MsgWaitForMultipleObjectsEx
+PeekMessageW
+DispatchMessageW
+DestroyWindow
+PostMessageW
+RdpEndpoint.dll
+GetTSAudioEndpointEnumeratorForSession
+DllCanUnloadNow
+DllGetClassObject
+DllRegisterServer
+DllUnregisterServer
+ew|>&=4_
+_purecall
+malloc
+_callnewh
+_resetstkoflw
+calloc
+_XcptFilter
+_amsg_exit
+_initterm
+_except_handler4_common
+_lock
+_unlock
+__dllonexit
+_onexit
+msvcrt.dll
+realloc
+GetModuleHandleExW
+DisableThreadLibraryCalls
+GetCurrentProcessId
+FreeLibrary
+GetProcAddress
+GetModuleHandleExA
+DeleteCriticalSection
+RaiseException
+EnterCriticalSection
+LeaveCriticalSection
+InitializeCriticalSection
+QueryPerformanceCounter
+GetTickCount
+QueryPerformanceFrequency
+CreateEventW
+GetLastError
+WaitForMultipleObjects
+CloseHandle
+ResetEvent
+WaitForSingleObject
+SetEvent
+Sleep
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+KERNEL32.dll
+RegOpenKeyExW
+RegQueryValueExW
+RegCloseKey
+EventActivityIdControl
+TlsSetValue
+HeapFree
+GetModuleFileNameW
+GetProcessMitigationPolicy
+LocalAlloc
+FreeLibraryAndExitThread
+TlsAlloc
+GetSystemInfo
+CreateThread
+HeapAlloc
+SwitchToThread
+LocalFree
+GetProcessHeap
+CreateSemaphoreW
+TlsGetValue
+TlsFree
+OpenThread
+ReleaseSemaphore
+WaitForMultipleObjectsEx
+WaitForSingleObjectEx
+QueueUserAPC
+GetModuleHandleW
+ReadFileEx
+ProcessIdToSessionId
+CancelIo
+WriteFile
+GetOverlappedResult
+SetErrorMode
+GetSystemDirectoryW
+LoadLibraryW
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-io-l1-1-1.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+_vsnwprintf
+wcsnlen
+wcscat_s
+__CxxFrameHandler3
+wcsrchr
+?terminate@@YAXXZ
+PulseEvent
+DeviceIoControl
+ReadFile
+SetLastError
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+RtlMultiByteToUnicodeN
+RtlInitUnicodeString
+NtCreateFile
+NtClose
+ntdll.dll
+_ftol2
+_ftol2_sse
+memcmp
+memcpy
+memset
+WEVT_TEMPLATE
+CRIM 
+CHAN 
+Microsoft-Windows-TerminalServices-RdpSoundDriver/Playback
+Microsoft-Windows-TerminalServices-RdpSoundDriver/Capture
+TTBLt
+TEMP<
+EventData
+UINT16_FORMAT_TAG
+UINT16_NUM_CHANNELS
+UINT32_SAMPLES_PER_SECOND
+UINT32_AVERAGE_BYTES_PER_SECOND
+UINT16_BLOCK_ALIGN
+UINT16_BITS_PER_SAMPLE
+UINT16_STRUCTURE_SIZE
+SessionID
+UINT16_FORMAT_TAG
+UINT16_NUM_CHANNELS
+UINT32_SAMPLES_PER_SECOND
+UINT32_AVERAGE_BYTES_PER_SECOND
+UINT16_BLOCK_ALIGN
+UINT16_BITS_PER_SAMPLE
+UINT16_STRUCTURE_SIZE
+SessionID
+EventData
+UInt32_1
+UInt32_2
+SessionID
+UInt32_1
+UInt32_2
+SessionID
+YlT6.
+EventData
+StringParameter
+UInt32Parameter
+SessionID
+StringParameter
+UInt32Parameter
+SessionID
+EventData
+SessionID
+SessionID
+PRVAx
+Microsoft-Windows-TerminalServices-RdpSoundDriver
+LEVLd
+win:Error
+win:Informational
+RdpSndSettingsCheck
+RdpSndSettingsChange
+RdpSndStreamSetup
+EVNT@
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+RDP Audio Endpoint
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+RdpAudioEndpoint
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+rdpendp.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+WEVT_TEMPLATE
+en-US
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+;0;<;H;T;`;l;x;
+<D<H<P<X<p<
+2*232C2I2M2a2p2y2
+444e4s4
+5R5^5i5
+5;6C6P6V6\6b6l6r6v6|6
+7'7G7L7b7p7u7
+8 8-8h8n8
+8!9)9/9I9
+9,:X:~:
+<2<:<C<L<`<k< =a=o=
+>'>V>]>d>k>r>y>
+>G?N?U?\?c?j?q?{?
+091x1}1
+2/2y2
+2%3>3K3
+424M4R4
+5v5{5
+5+606I6N6n6s6
+;Z<i<n<
+=&=;=]=
+>">E>J>]>
+?,?1?S?z?
+02070h0
+1F1T1\1b1|1
+11262[2a2n2
+3+313p3u3
+4.434T4Y4r4w4
+5"5V5o5u5
+656:6f6k6
+7/747L7R7_7{7
+8)8E8l8
+9!9'949O9\9a9z9
+:$;L;
+<I<N<t<
+<'=D=I=s=
+>+>0>I>W>
+?1?6?V?
+0*0z0
+3,3\3
+4 4'4.454<4C4W4}4
+6c6i6}6
+:=:Q:
+; </<9<'=.=H=W=f=
+>">;>A>F>l>
+1B1]1c1h1}1
+1&2+2D2I2f2
+2,323L3Q3j3u3
+4)4.4I4N4i4
+4;5R5^5u5z5
+6.636Q6l6
+7:7l7y7
+8H8x8
+9D9I9]9
+:F:K:_:
+;=;B;];c;p;
+<)<5<;<
+=3=8=Q=V=
+>&>,>G>T>Y>r>x>
+>)?B?G?_?e?j?
+0.030K0Q0u0z0
+1&1-141;1y1~1
+2!2D2
+424[4a4h4o4v4}4
+5T5c5
+9C:Q:
+<#<.<9<
+=.=3=N=S=
+>1>7>D>~>
+>:?@?Y?_?d?
+0%0+000[0k0r0y0
+1A1G1L1h1
+23292F2b2x2
+3?3D3^3c3
+464<4I4e4{4
+6I6V6[6x6~6
+7"7:7@7E7
+7,858>8Q8
+8(9-9S9Y9~9
+:(:8:>:h:m:
+;4;9;M;_;y;
+="=N=U=|=
+>E>\>z>
+0 0%0N0S0l0q0
+1#1(101F1]1d1z1
+10252h2
+393>3|3
+4#4H4N4`4e4~4
+5+505N5S5m5r5
+80858L8X8]8v8{8
+9I9g9l9q9
+:3:]:y:
+;3;8;W;\;o;t;
+;J<e<j<}<
+=>=C=
+>)>@>E>i>
+?-?N?l?q?
+1Y1u1
+44494U4Z4
+5$5_5d5
+6$676o6t6
+7@7E7X7}7
+868;8N8t8y8
+8%9*9=9b9g9z9
+: :3:Y:^:q:
+;5;e;j;
+<.<e<j<
+=R=W=w=|=
+>H>c>i>n>
+>O?`?
+0/050B0W0
+1,121I1N1g1l1
+1&2A2G2u2
+2'3,3E3K3P3{3
+4$4*4X4s4y4
+5(5.535|5
+6,6e6p6{6
+7O7Z7e7j7
+8<8G8R8W8u8
+8%909;9@9^9k9
+:&:+:T:_:k:q:
+:%;Y;^;z;
+<$<M<\<a<
+=7=X=]=x=}=
+>)>5>P>U>
+>`?f?
+0"0'0;0
+1)1B1X1
+2H2M2h2m2
+4(444:4T4Y4
+4/5N5i5x5
+5$61666N6T6Y6
+72777X7
+;`<e<
+=3=?=E=k=}=
+>&>+>>>I>i>n>
+?0?5?H?S?s?x?
+060;0N0Y0y0~0
+1@1E1X1c1
+3"3?3D3i3n3
+3#40464Q4~4
+50565I5`5
+6 6:6K6U6Z6t6z6
+6F7S7Y7t7
+7S8c8i8
+9+989R9g9x9}9
+:7:D:e:t:y:
+;<;_;k;q;
+<9<]<m<s<
+=#=(=M=d=p=v=
+>*>g>u>
+?2?8?=?`?e?~?
+0-020
+161=1]1o1
+23292[2`2
+3<3B3Q3V3r3w3
+4%4*4G4L4n4z4
+5-53585l5x5
+6 6:6Y6a6
+7*707I7N7f7l7
+8-838K8Y8f8k8
+9*9/9T9Z9r9
+: :G:T:Y:~:
+; ;4;9;E;R;W;|;
+<D<J<`<n<{<
+=4=A=F=k=q=
+=&>+>I>N>o>
+?/?V?\?x?}?
+0'0,0E0
+1&1,191E1V1\1
+2*282>2c2i2
+3,323L3R3v3|3
+444:4`4n4t4
+4(565<5U5[5
+696O6U6~6
+787>7f7l7
+80868P8V8z8
+9'9-9U9Z9
+:':4:::W:\:p:
+;3;9;F;R;p;x;~;
+<&<,<j<o<
+=/=4=M=S=X={=
+=J>Q>[>`>}>
+?/?;?Y?o?
+0+000U0[0h0|0
+0#10151Z1`1
+2,222
+3%3*3I3Q3
+5"5U5[5h5
+6*6/6T6Z6o6t6
+7"7;7I7V7[7
+8:8@8`8i8v8{8
+9.9;9@9e9k9
+: :,:9:>:c:i:~:
+;+;1;I;W;d;i;
+<'<,<Q<W<z<
+=8===^=p=
+>/>|>
+?J?O?y?
+0!0F0h0m0
+0!1B1O1T1y1
+2;2H2M2r2
+3>3b3g3
+3$4)4M4k4x4}4
+5'54595^5{5
+5 6-626W6t6
+737a7p7u7
+9 9=9B9[9`9t9
+9%:X:d:j:v:
+;*;@;K;Q;^;c;m;
+<'</<;<n<
+=-=2=K=V=
+>:>_>v>{>
+?7?<?a?n?
+0Z0y0
+1 191>1f1y1
+2!2:2?2[2d2i2}2
+2"3K3v3
+454;4@4c4h4
+5*51565P5U5
+6!6;6H6s6
+7!7N7X7_7d7~7
+7#8)8S8X8}8
+9.949M9\9a9z9
+:$:):V:[:`:x:~:
+:j;q;w;
+=F=V=
+>A>G>L>
+?/?5?k?
+0!0:0?0]0d0x0
+0!151j1p1
+1:2J2Q2V2p2}2
+354:4`4f4
+5!5(52595>5Z5_5
+6;6A6f6s6
+9&9+9w9|9
+:*:/:T:Z:_:
+;6;;;{;
+<#<,<8<V<[<t<z<
+<#=*=0=L=S=~=
+>S?X?]?x?
+0+040O0
+1#1>1v1{1
+2h2o2z2
+3K3_3e3{3
+4-4D4X4]4w4
+5!595>5W5]5b5u5~5
+6+61666I6R6_6w6|6
+7&737K7P7i7o7t7
+8$8=8C8H8[8d8q8
+9/989E9]9b9{9
+:(:.:D:R:c:h:
+;";';A;N;m;v;
+<#<)<.<A<J<W<o<t<
+=+=C=H=a=g=l=
+>5>;>@>S>\>i>
+?'?0?@?X?]?v?|?
+02070P0V0[0n0w0
+1*10151H1Q1a1y1~1
+2"2+2;2S2X2q2w2|2
+3-323K3Q3V3p3)4X4
+555;5A5]5
+7T7b7
+:%:*:C:R:W:p:}:
+;D;P;`;l;
+;1<8<=<b<g<
+=F=U=\=y=
+>#>5>V>x>
+>(?v?|?
+03080K0R0l0q0
+181=1c1p1
+1=2L2Q2r2
+3"3;3@3
+4`4s4|4
+4 5%5r5w5
+6,6H6M6r6
+7;7@7`7e7y7~7
+8%8<8N8s8x8
+9=9J9_9|9
+:2:;:C:p:u:
+:6;A;X;u;z;
+<><J<O<j<o<
+="='=B=o=
+>+>G>L>_>
+?$?s?x?
+0'0,0L0Z0g0
+0"14191W1\1{1
+232M2R2k2p2
+3@3F3_3e3j3~3
+484>4c4h4
+5"5C5H5
+5p6u6
+757B7Z7u7
+7"8(8A8F8e8
+9@9f9l9
+91:F:l:|:
+;*;^;c;
+<L<Q<l<q<
+=Q=V={=
+>I>c>
+>F?a?f?
+,0G0L0r0
+0!1x1
+252:2w2
+2b3g3
+4=4M4
+5d6i6
+7%7*7]7
+8&8+8a8
+9#9y9
+:#:R:W:q:v:
+;";9;?;
+<$<+<0<U<r<
+=%=*=H=S=
+>#>G>L>h>m>
+>n?s?
+<0C0H0M0j0o0
+1u1z1
+272[2p2
+31363W3b3m3
+3'4M4o4t4
+5.5P5U5k5}5
+5 6:6`6e6~6
+7o7t7
+808K8P8
+:Q:]:
+;";';j;o;
+;&<+<D<I<
+=$=-=l=r=x=
+=Y>^>w>
+>1?6?O?\?
+0'0N0m0
+10151
+282>2E2
+3!3&3A3F3^3d3i3
+3@4P4V4|4
+53585W5]5q5
+6%6*6H6M6v6{6
+7<7M7
+838@8E8Y8g8l8
+979<9d9i9
+:5:::N:\:a:|:
+;);.;
+<#<(<<<J<O<
+=G=V=
+>'>,>U>Z>_>}>
+?"?A?F?Y?t?y?
+1)1/1e1j1
+2$2=2C2P2|2
+3'3,3{3
+4'424K4P4
+5!5N5
+6C6H6
+7*707
+8!818N8S8
+9Q9g9u9
+:&:M:]:
+;:;?;X;^;k;~;
+< <%<;<D<Q<k<~<
+=1=<=H=N=h=u=
+>)>H>M>g>
+2C2S2t2{2
+203@3T3^3e3|3
+3,484L4Q4v4|4
+5(5-5F5L5Y5i5
+656F6K6p6v6
+7^7e7
+888F8
+9C9H9a9g9t9
+:8:>:c:h:
+;/;4;M;R;
+<2<8<V<a<
+=#=)=Q=]=
+>">D>I>n>t>
+?-?3?m?r?
+0"0(050c0
+1G1L1q1w1
+2*2/2G2M2R2
+464b4g4
+5.5c5t5y5
+6+606I6O6b6w6
+9<9L9Q9j9p9
+9/:4:Q:W:d:|:
+: ;&;3;S;^;c;
+;&<[<i<o<
+=F=M=l=
+>3?:?@?r?
+13191i1n1
+2&232M2R2k2q2~2
+3<3M3R3w3}3
+4+4D4I4p4u4
+4.535X5^5
+61676`6m6u6}6
+7.747I7N7g7m7{7
+8%8>8D8Q8
+9]9b9h9m9r9
+9):/:H:N:S:b<
+=)=Q=i=s=x=
+=*>M>f>
+4`4i4z4
+5,515O5n5}5
+6&6J6i6x6
+6!7h7
+8X8j8y8
+9=9I9P9q9x9
+l0G2]5d5=6D6
+<I=P=
+=/>6>
+?l?s?
+0_1f1=3D3y3
+434:4M4T4g4n4y4
+5)505<5C5c5{5
+5t9{9
+:+:9:
+3s4z4
+4j5q5
+3@6G6
+0'0.090K0o0
+5#6,6=6C6J6
+;!;);4;D;Q;V;
+<T<]<n<t<{<
+=<=C=K=V=f=s=x=
+=">)>b>i>
+0&0]0q0
+6B7I7
+8a9{9
+:!:_:h:
+;C;R;^;
+="=F=k=z=
+=">=>L>
+?;?J?V?
+0*090k0
+2#232z2
+2k3t3}3
+3.4>4J4\4
+5 525
+6%6U6^6~6
+777I7s7
+898C8
+:];n;~;
+=&=/=7=?=L=e=
+0!0/070j0
+3/3@3O3r3
+344?4K4V4h4
+4A5S5z5
+636R6Z6v6
+;7;?;L;Z;c;k;s;
+;4><>N>]>k>s>
+?'?G?P?\?e?w?
+0d0k0
+1(151:1D1M1S1a1i1|1
+7#7*7:7
+888?8W8c8j8
+=E>L>
+4$5+5a5h5{5
+5S6Z6}6
+747;7L7S7q7w7
+9'9.999@9R9Y9k9r9
+9L<S<
+)0C0Q0
+6T6[6
+8(8/8G8N8_8f8
+=(=/=
+>+>0>O>[>e>j>o>
+?)?/?U?t?
+0M0p0
+1@1S1`1k1p1
+2 3*3:3D3I3U3Z3
+4@4J4O4\4a4y4
+6T6t6
+7I7h7o7
+8/8:8_8h8
+8 9.9P9U9t9y9
+:4:E:d:i:
+:(;C;H;~;
+;(<-<H<R<C=H=a=f=
+?!?.?8???
+1.1S1Z1`1
+3M3T3_3f3
+676=6J6
+969f9
+: :<:S:h:
+:<;G;N;U;
+<(<.<5<
+=`=f=r=x=
+>">)>f>v>{>
+?*?8?e?s?
+090A0F0a0f0y0
+1S2Z2
+3.343S3X3q3v3
+3#4)4N4S4k4q4
+4 5J5t5
+6C7H7`7e7
+8Q8V8p8u8
+9'9,9h9{9
+:2:7:T:Y:
+;;;@;Y;^;
+<%<*<F<K<
+= =>=E=X=c=|=
+>1>L>Q>
+>J?X?g?l?
+0F0K0p0
+0.131L1R1W1
+152:2S2Y2f2
+2+383=3g3
+4*4/4J4O4y4
+8D8I8b8h8m8
+9W9\9
+:;:A:
+<4<:<?<
+<I=N=g=m=r=
+==>c>h>
+?X?]?
+0B0Z0_0|0
+0O1Z1y1
+2(2-2R2m2r2
+2]3b3|3
+575=5B5|5
+7D7I7t7y7
+8+808
+8u9z9
+:;:@:}:
+<3<9<><
+0,0x0}0
+1!1&1C1[1
+1C2H2a2f2
+3B3G3`3e3
+4&4.4S4^4
+52575P5U5
+6)6.6s6
+707;7p7
+0;0d0
+181?1F1
+4-5]5
+7%7>7C7]7b7
+989=9
+;6;;;a;n;
+<"<;<@<
+<'=,=E=J=
+>2>7>f>k>
+>"?(?/?q?w?
+0`0L1
+2X2p2w2|2
+3+31363J3V3{3
+4#4(4B4G4]4
+4"5/5?5D5K5i5~5
+6#6<6t6
+7D7J7O7r7|7
+8A8J8o8t8
+9$9`9e9j9{9
+:':1:9:?:Y:^:
+;+;:;?;D;T;Y;r;x;};
+<2<8<=<u<~<
+=A=_=
+=<>U>Z>
+? ?%?G?P?U?n?s?
+03080
+1C1H1a1o1
+2.232^2x2
+303G3a3t3y3
+3E4c4o4
+5h6r6
+727b7g7~7
+7R8^8j8v8
+9-9A9G9
+:(:7:@:I:^:s:
+; ;';?;E;K;Q;W;];d;k;r;y;
+<-<6<I<U<a<m<x<
+='=;=H=\=l=|=
+>.>>>K>_>o>
+? ?0?@?P?]?q?
+0"020B0R0b0r0
+1)1F1
+3P3s3
+434c4
+5$5(5D5H5x5
+646@6`6
+7 7(7,7
+0 0$0(0,000<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+14181<1D1H1L1
+0 0(0004080<0@0D0H0L0P0T0X0`0h0l0p0t0x0|0
+K:,"J
+{Dp:?
+=nMdW,
+<Ex%Z
+[hm$<
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,3E5l2b8k3Zps8FfRKyEjAe3uVt/Dpl+Mqq5yudZnmS8=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+20220506221329.939Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:F7A6-E251-150A1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+220302185119Z
+230511185119Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:F7A6-E251-150A1%0#
+Microsoft Time-Stamp Service0
+_"SV4
+`UaO 
+[5xo1
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+VM>RV
+?yzb<
+MqcY z
+a8]3v
+0u&,X
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:F7A6-E251-150A1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220506180251Z
+20220507180251Z0t0:
+1,0*0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Uhr{M
+qy(P]

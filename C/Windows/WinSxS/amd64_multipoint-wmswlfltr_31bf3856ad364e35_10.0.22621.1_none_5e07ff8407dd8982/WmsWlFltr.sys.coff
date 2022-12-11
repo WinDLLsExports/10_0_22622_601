@@ -1,0 +1,158 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_multipoint-wmswlfltr_31bf3856ad364e35_10.0.22621.1_none_5e07ff8407dd8982\WmsWlFltr.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    fwpkclnt.sys
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B110 Import Address Table
+             1C000B508 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         6CD ObfReferenceObject
+                         559 KeSetEvent
+                         4CD KeInitializeEvent
+                         585 KeWaitForSingleObject
+                         7D5 PsSetCreateProcessNotifyRoutineEx
+                         356 IoFreeMdl
+                         2F6 IoAllocateMdl
+                         5BC MmBuildMdlForNonPagedPool
+                         10B ExInterlockedInsertHeadList
+                         44F IofCompleteRequest
+                         B6E ZwOpenProcess
+                         B70 ZwOpenProcessTokenEx
+                         B96 ZwQueryInformationToken
+                         9BF RtlSubAuthoritySid
+                         B17 ZwClose
+                         B69 ZwOpenKey
+                         BA8 ZwQueryValueKey
+                         9DA RtlUnicodeStringToInteger
+                          BD ExAllocatePool2
+                         6B6 ObOpenObjectByPointer
+                          EE ExFreePoolWithTag
+                         3B9 IoQueueWorkItem
+                         BDA ZwSetSecurityObject
+                         9A9 RtlSetDaclSecurityDescriptor
+                         3A3 IoIsWdmVersionAvailable
+                         93D RtlLengthSid
+                         7FD RtlAddAccessAllowedAce
+                         7FC RtlAbsoluteToSelfRelativeSD
+                         C9C wcschr
+                          C1 ExAllocatePoolWithTag
+                         C52 _wcsnicmp
+                         856 RtlCreateSecurityDescriptor
+                         A38 SeExports
+                         93C RtlLengthSecurityDescriptor
+                         C37 _snwprintf
+                         A1E SeCaptureSecurityDescriptor
+                         8D6 RtlGetSaclSecurityDescriptor
+                         8D3 RtlGetOwnerSecurityDescriptor
+                         8C9 RtlGetGroupSecurityDescriptor
+                         8C1 RtlGetDaclSecurityDescriptor
+                         8B3 RtlFreeUnicodeString
+                         B26 ZwCreateKey
+                         BE1 ZwSetValueKey
+                         10C ExInterlockedInsertTailList
+                         797 PsInitialSystemProcess
+                         76F PsGetProcessId
+                         359 IoFreeWorkItem
+                          D4 ExDeleteLookasideListEx
+                          FF ExInitializeLookasideListEx
+                         2F9 IoAllocateWorkItem
+                         10F ExInterlockedRemoveHeadList
+                          EF ExFreeToLookasideListEx
+                          B9 ExAllocateFromLookasideListEx
+                         4D5 KeInitializeSpinLock
+                         32F IoCreateSymbolicLink
+                         8DF RtlGetVersion
+                         33C IoDeleteDevice
+                         33E IoDeleteSymbolicLink
+                         5F1 MmMapLockedPagesSpecifyCache
+                         386 IoGetRequestorProcessId
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         8F1 RtlInitUnicodeString
+                         87D RtlEnumerateGenericTableLikeADirectory
+                         8C4 RtlGetElementGenericTableAvl
+                         531 KeReleaseInStackQueuedSpinLock
+                         8FF RtlInsertElementGenericTableAvl
+                         46C KeAcquireInStackQueuedSpinLock
+                          E5 ExEventObjectType
+                         6BB ObReferenceObjectByHandle
+                         342 IoDeviceObjectType
+                         8F9 RtlInitializeGenericTableAvl
+                         867 RtlDeleteElementGenericTableAvl
+                         944 RtlLookupElementGenericTableAvl
+                         323 IoCreateDevice
+                         6CB ObfDereferenceObject
+
+    fwpkclnt.sys
+             1C000B028 Import Address Table
+             1C000B420 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          70 FwpmSubLayerDeleteByKey0
+                          1D FwpmCalloutDeleteByKey0
+                          34 FwpmFilterDeleteByKey0
+                          2B FwpmEngineClose0
+                          76 FwpmTransactionAbort0
+                          78 FwpmTransactionCommit0
+                          6E FwpmSubLayerAdd0
+                          77 FwpmTransactionBegin0
+                          2E FwpmEngineOpen0
+                          31 FwpmFilterAdd0
+                          1A FwpmCalloutAdd0
+                          B3 FwpsDiscardClonedStreamData0
+                          AC FwpsCloneStreamData0
+                          A1 FwpsAllocateNetBufferAndNetBufferList0
+                          E5 FwpsStreamInjectAsync0
+                          BA FwpsFreeNetBufferList0
+                          B0 FwpsCopyStreamDataToBuffer0
+                          D0 FwpsPendOperation0
+                          C6 FwpsInjectionHandleDestroy0
+                          C5 FwpsInjectionHandleCreate0
+                          C4 FwpsInjectTransportSendAsync1
+                          AE FwpsCompleteOperation0
+                          B5 FwpsFlowAssociateContext0
+                          B8 FwpsFreeCloneNetBufferList0
+                          A0 FwpsAllocateCloneNetBufferList0
+                          A8 FwpsCalloutUnregisterById0
+                          A6 FwpsCalloutRegister3
+                          B6 FwpsFlowRemoveContext0
+
+    NDIS.SYS
+             1C000B000 Import Address Table
+             1C000B3F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1F NdisAllocateNetBufferListPool
+                          15 NdisAllocateGenericObject
+                          A5 NdisFreeGenericObject
+                          AE NdisFreeNetBufferListPool
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        1000 fothk

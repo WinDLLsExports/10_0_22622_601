@@ -1,0 +1,771 @@
+!This program cannot be run in DOS mode.
+tqRich,
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+bad allocation
+permission denied
+file exists
+no such device
+filename too long
+device or resource busy
+io error
+directory not empty
+invalid argument
+no space on device
+no such file or directory
+function not supported
+no lock available
+not enough memory
+resource unavailable try again
+cross device link
+operation canceled
+too many files open
+permission_denied
+address_in_use
+address_not_available
+address_family_not_supported
+connection_already_in_progress
+bad_file_descriptor
+connection_aborted
+connection_refused
+connection_reset
+destination_address_required
+bad_address
+host_unreachable
+operation_in_progress
+interrupted
+invalid_argument
+already_connected
+too_many_files_open
+message_size
+filename_too_long
+network_down
+network_reset
+network_unreachable
+no_buffer_space
+no_protocol_option
+not_connected
+not_a_socket
+operation_not_supported
+protocol_not_supported
+wrong_protocol_type
+timed_out
+operation_would_block
+address family not supported
+address in use
+address not available
+already connected
+argument list too long
+argument out of domain
+bad address
+bad file descriptor
+bad message
+broken pipe
+connection aborted
+connection already in progress
+connection refused
+connection reset
+destination address required
+executable format error
+file too large
+host unreachable
+identifier removed
+illegal byte sequence
+inappropriate io control operation
+invalid seek
+is a directory
+message size
+network down
+network reset
+network unreachable
+no buffer space
+no child process
+no link
+no message available
+no message
+no protocol option
+no stream resources
+no such device or address
+no such process
+not a directory
+not a socket
+not a stream
+not connected
+not supported
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+owner dead
+protocol error
+protocol not supported
+read only file system
+resource deadlock would occur
+result out of range
+state not recoverable
+stream timeout
+text file busy
+timed out
+too many files open in system
+too many links
+too many symbolic link levels
+value too large
+wrong protocol type
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+lstd::exception: %hs
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+ntdll.dll
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+Software\Policies\Microsoft\UEV\Agent
+Software\Policies\Microsoft\UEV\Agent\Configuration
+Software\Policies\Microsoft\AppV\Client
+Enabled
+RegisterInboxTemplates
+OverrideMSTemplates
+Local\SM0:%lu:%lu:%hs
+activatibleClassId
+AppMan-AppV-Subscription-Active
+AppMan-UEV-Subscription-Active
+SOFTWARE\Microsoft\Hvsi\Office
+OfficeWDAGEnabledOnHost
+generic
+unknown error
+iostream
+iostream stream error
+system
+Software\Microsoft\UEV\Agent
+Software\Microsoft\UEV\Agent\UevRebootRequired
+UevAgentDriver
+UevAgentService
+schedule
+Monitor Application Settings
+Synchronize Settings at Logoff
+Sync Controller Application
+Template Auto Update
+UE-V Register Inbox Templates
+PowerShell.exe
+-WindowStyle hidden -ExecutionPolicy Bypass -Command "& %ProgramData%\Microsoft\UEV\Scripts\RegisterInboxTemplates.ps1"
+admin\appman\shared\configuration\lib\uevconfiguration.cpp
+Get Uev Enabled failed, force to disabled state.
+Microsoft\UE-V
+S-1-5-18
+invalid string position
+string too long
+Software\Microsoft\AppV\Client
+Software\Microsoft\AppV\Client\AppVRebootRequired
+AppVClient
+admin\appman\shared\configuration\lib\appvconfiguration.cpp
+Get AppV Enabled failed, force to disabled state.
+<?xml version="1.0" encoding="UTF-16"?><Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"><RegistrationInfo><Source>UE-V installer</Source><Author>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-114)</Author><Description>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-111)</Description><URI>\Microsoft\UE-V\Monitor Application Settings</URI></RegistrationInfo><Triggers><LogonTrigger id="Logon trigger"><Enabled>true</Enabled><Delay>PT30S</Delay></LogonTrigger></Triggers><Principals><Principal id="Users"><GroupId>S-1-5-32-545</GroupId><DisplayName>Users Group</DisplayName><RunLevel>LeastPrivilege</RunLevel></Principal></Principals><Settings><MultipleInstancesPolicy>Parallel</MultipleInstancesPolicy><DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries><StopIfGoingOnBatteries>false</StopIfGoingOnBatteries><AllowHardTerminate>false</AllowHardTerminate><StartWhenAvailable>true</StartWhenAvailable><RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable><IdleSettings><Duration>PT10M</Duration><WaitTimeout>PT1H</WaitTimeout><StopOnIdleEnd>true</StopOnIdleEnd><RestartOnIdle>false</RestartOnIdle></IdleSettings><AllowStartOnDemand>true</AllowStartOnDemand><Enabled>true</Enabled><Hidden>true</Hidden><RunOnlyIfIdle>false</RunOnlyIfIdle><WakeToRun>false</WakeToRun><ExecutionTimeLimit>PT0S</ExecutionTimeLimit><Priority>7</Priority><RestartOnFailure><Interval>PT15M</Interval><Count>5</Count></RestartOnFailure></Settings><Actions Context="Users"><Exec id="Run UE-V Application Monitor"><Command>%windir%\system32\UevAppMonitor.exe</Command><WorkingDirectory>%windir%\system32\</WorkingDirectory></Exec></Actions></Task>
+<?xml version="1.0" encoding="UTF-16"?><Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"><RegistrationInfo><Source>UE-V installer</Source><Author>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-114)</Author><Description>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-113)</Description><URI>\Microsoft\UE-V\Synchronize Settings at Logoff</URI></RegistrationInfo><Triggers><LogonTrigger id="Logon trigger"><Enabled>true</Enabled></LogonTrigger></Triggers><Principals><Principal id="Users"><GroupId>S-1-5-32-545</GroupId><DisplayName>Users Group</DisplayName><RunLevel>LeastPrivilege</RunLevel></Principal></Principals><Settings><MultipleInstancesPolicy>Parallel</MultipleInstancesPolicy><DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries><StopIfGoingOnBatteries>false</StopIfGoingOnBatteries><AllowHardTerminate>false</AllowHardTerminate><StartWhenAvailable>true</StartWhenAvailable><RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable><IdleSettings><Duration>PT10M</Duration><WaitTimeout>PT1H</WaitTimeout><StopOnIdleEnd>true</StopOnIdleEnd><RestartOnIdle>false</RestartOnIdle></IdleSettings><AllowStartOnDemand>true</AllowStartOnDemand><Enabled>true</Enabled><Hidden>true</Hidden><RunOnlyIfIdle>false</RunOnlyIfIdle><WakeToRun>false</WakeToRun><ExecutionTimeLimit>PT0S</ExecutionTimeLimit><Priority>7</Priority><RestartOnFailure><Interval>PT15M</Interval><Count>5</Count></RestartOnFailure></Settings><Actions Context="Users"><Exec id="Run Sync Controller collection"><Command>%windir%\system32\Microsoft.Uev.SyncController.exe</Command><Arguments>-runAtLogoff</Arguments><WorkingDirectory>%windir%\system32</WorkingDirectory></Exec></Actions></Task>
+<?xml version="1.0" encoding="UTF-16"?><Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"><RegistrationInfo><Source>UE-V installer</Source><Author>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-114)</Author><Description>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-110)</Description><URI>\Microsoft\UE-V\Sync Controller Application</URI></RegistrationInfo><Triggers><LogonTrigger id="Logon trigger"><Repetition><Interval>PT30M</Interval><StopAtDurationEnd>false</StopAtDurationEnd></Repetition><ExecutionTimeLimit>PT4H</ExecutionTimeLimit><Enabled>true</Enabled><Delay>PT30S</Delay></LogonTrigger></Triggers><Principals><Principal id="Users"><GroupId>S-1-5-32-545</GroupId><DisplayName>Users Group</DisplayName><RunLevel>LeastPrivilege</RunLevel></Principal></Principals><Settings><MultipleInstancesPolicy>Parallel</MultipleInstancesPolicy><DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries><StopIfGoingOnBatteries>false</StopIfGoingOnBatteries><AllowHardTerminate>false</AllowHardTerminate><StartWhenAvailable>true</StartWhenAvailable><RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable><IdleSettings><Duration>PT10M</Duration><WaitTimeout>PT1H</WaitTimeout><StopOnIdleEnd>true</StopOnIdleEnd><RestartOnIdle>false</RestartOnIdle></IdleSettings><AllowStartOnDemand>true</AllowStartOnDemand><Enabled>true</Enabled><Hidden>true</Hidden><RunOnlyIfIdle>false</RunOnlyIfIdle><WakeToRun>false</WakeToRun><ExecutionTimeLimit>PT4H</ExecutionTimeLimit><Priority>7</Priority></Settings><Actions Context="Users"><Exec id="Check Settings Storage Location State"><Command>%windir%\system32\Microsoft.Uev.SyncController.exe</Command><Arguments>$(Arg0) $(Arg1) $(Arg2) $(Arg3) $(Arg4)</Arguments><WorkingDirectory>%windir%\system32</WorkingDirectory></Exec></Actions></Task>
+<?xml version="1.0" encoding="UTF-16"?><Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"><RegistrationInfo><Source>UE-V installer</Source><Author>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-114)</Author><Description>$(@%systemRoot%\system32\Microsoft.Uev.AppAgent.dll,-108)</Description><URI>\Microsoft\UE-V\Template Auto Update</URI></RegistrationInfo><Triggers><CalendarTrigger id="Daily trigger"><StartBoundary>2012-01-01T03:30:00</StartBoundary><Enabled>true</Enabled><RandomDelay>PT1H</RandomDelay><ScheduleByDay><DaysInterval>1</DaysInterval></ScheduleByDay></CalendarTrigger><BootTrigger id="Startup trigger"><Enabled>true</Enabled></BootTrigger><RegistrationTrigger id="Registration trigger"><Enabled>true</Enabled></RegistrationTrigger></Triggers><Principals><Principal id="Local System Account"><UserId>S-1-5-18</UserId><DisplayName>Local System Account</DisplayName><RunLevel>LeastPrivilege</RunLevel></Principal></Principals><Settings><MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy><DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries><StopIfGoingOnBatteries>true</StopIfGoingOnBatteries><AllowHardTerminate>true</AllowHardTerminate><StartWhenAvailable>true</StartWhenAvailable><RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable><IdleSettings><Duration>PT10M</Duration><WaitTimeout>PT1H</WaitTimeout><StopOnIdleEnd>true</StopOnIdleEnd><RestartOnIdle>false</RestartOnIdle></IdleSettings><AllowStartOnDemand>true</AllowStartOnDemand><Enabled>true</Enabled><Hidden>true</Hidden><RunOnlyIfIdle>false</RunOnlyIfIdle><WakeToRun>false</WakeToRun><ExecutionTimeLimit>PT1H</ExecutionTimeLimit><Priority>7</Priority><RestartOnFailure><Interval>PT2H</Interval><Count>5</Count></RestartOnFailure></Settings><Actions Context="Local System Account"><Exec id="Update Settings Location Templates"><Command>%windir%\system32\ApplySettingsTemplateCatalog.exe</Command><WorkingDirectory>%windir%\system32</WorkingDirectory></Exec></Actions></Task>
+admin\appman\shared\configuration\lib\service.cpp
+admin\appman\shared\configuration\lib\taskschedulerutil.cpp
+Mb=Lk
+WinSta0
+Default
+oLW\f
+f4Og|
+X\?E/5
+l6s+o
+sQPI[5T
+bgOne
+m]#0D
+Da6N^
+@W=7A=
+d|BNeU
+,B>DY
+Vving1
+gxI3!'
+ew0hp
+WAxK0i
+FWph?r
+'R{=f
+xv#?H
+7T})gW
+%UM;%
+hwp1p0
++dBVY
+Ly^X`
+hgtlCm
+^BNQ,^
+z?801i:It6
+$>b~t
+1o?-XfF
+$(SQO
+rY&'K
+VY$[X
+VG2/iI
+S~=5p
+bWti^
+ul%G1
+byjA`
+w9X!P/
+Segoe UI Light
+Segoe UI SemiBold
+Segoe UI
+Segoe Pseudo
+Yu Gothic UI Light
+Yu Gothic UI Semibold
+Yu Gothic UI
+Malgun Gothic Semilight
+Malgun Gothic Bold
+Malgun Gothic
+Leelawadee UI Semilight
+Leelawadee UI Bold
+Leelawadee UI
+Microsoft YaHei UI Light
+Microsoft YaHei UI Bold
+Microsoft YaHei UI
+Microsoft JhengHei UI Light
+Microsoft JhengHei UI Bold
+Microsoft JhengHei UI
+NtQuerySystemInformation
+EnableAppV
+HRESULT
+DisableUEVGroupPolicy
+HRESULT
+EnableAppVGroupPolicy
+HRESULT
+Error
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+EnableUEVGroupPolicy
+HRESULT
+DisableAppVGroupPolicy
+HRESULT
+DisableAppV
+HRESULT
+DisableUEV
+HRESULT
+EnableUEV
+HRESULT
+EnableUEVEnableTaskRetry
+HRESULT
+DisableUEVDisableTask
+HRESULT
+RegisterInboxTemplatesGroupPolicy
+HRESULT
+DisableUEVDisableTaskRetry
+HRESULT
+EnableUEVEnableTask
+HRESULT
+IsUevEnabled
+MESSAGE
+IsAppVEnabled
+MESSAGE
+@]AtM
+Microsoft.Windows.AppMan.UEV
+Microsoft.Windows.AppMan.Shared.Logging
+Microsoft.Windows.AppMan.AppV
+RSDS}
+AppManagementConfiguration.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.text
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+minATL$__a
+minATL$__f
+minATL$__m
+minATL$__z
+.edata
+.data$brc
+.data$r$brc
+.data$rs$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+E(SVW
+u$WSQ
+PQQSVW
+vTh,/
+v,ShH/
+Z\9;s
+QQh\0
+QQh\0
+SVWQQ3
+97s/j
+PQQSVW
+VWjbZ
+VWjkZ
+93uHWV
+PQQSVW
+PQQSVW
+&PWSV
+PQSVW
+j@Shh2
+j@Shh2
+j@Shh2
+j@Shh2
+j@Shh2
+j@Shh2
+j@Shh2
+j@Shh2
+t/j Xf9
+QPSSWQP
+j@Shh2
+j@Shh2
+j@Shh2
+j@Shh2
+D$@SVW
+L$L_^[3
+?Whd;
+WPQQV
+D$@SVW
+L$L_^[3
+PPPPPPPj
+PPPPPPPj
+PQQSVW
+Y__^[
+Y__^[
+AppManagementConfiguration.dll
+ProcessAppVPolicy
+ProcessUevPolicy
+DllCanUnloadNow
+DllGetActivationFactory
+DllGetClassObject
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+.?AVbad_alloc@std@@
+.?AVResultException@wil@@
+.?AVexception@@
+.?AV_com_error@@
+.?AV?$DefaultModule@$00@Details@WRL@Microsoft@@
+.?AUIClassFactory@@
+.?AVFactoryBase@Details@WRL@Microsoft@@
+.?AV?$RuntimeClass@U?$RuntimeClassFlags@$01@WRL@Microsoft@@UIAppManagementConfiguration@@@WRL@Microsoft@@
+.?AV?$Module@$00V?$DefaultModule@$00@Details@WRL@Microsoft@@@WRL@Microsoft@@
+.?AUIUnknown@@
+.?AVRuntimeClassBase@Details@WRL@Microsoft@@
+.?AVModuleBase@Details@WRL@Microsoft@@
+.?AU?$ImplementsHelper@U?$RuntimeClassFlags@$05@WRL@Microsoft@@$0A@UIClassFactory@@VNil@Details@23@V5623@V5623@V5623@@Details@WRL@Microsoft@@
+.?AUIAppManagementConfiguration@@
+.?AV?$SimpleClassFactory@VUevConfiguration@@$0A@@WRL@Microsoft@@
+.?AV?$RuntimeClass@U?$InterfaceListHelper@UIClassFactory@@VNil@Details@WRL@Microsoft@@V2345@V2345@V2345@@Details@WRL@Microsoft@@U?$RuntimeClassFlags@$05@34@$0A@$0A@$0A@@Details@WRL@Microsoft@@
+.?AV?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@UIAppManagementConfiguration@@@Details@WRL@Microsoft@@
+.?AV?$RuntimeClassBaseT@$01@Details@WRL@Microsoft@@
+.?AV?$RuntimeClassBaseT@$05@Details@WRL@Microsoft@@
+.?AU?$RuntimeClassFlags@$03@WRL@Microsoft@@
+.?AV?$ClassFactory@VNil@Details@WRL@Microsoft@@V1234@V1234@$0A@@WRL@Microsoft@@
+.?AU?$ImplementsHelper@U?$RuntimeClassFlags@$05@WRL@Microsoft@@$00$$V@Details@WRL@Microsoft@@
+.?AV?$RuntimeClassImpl@U?$RuntimeClassFlags@$05@WRL@Microsoft@@$0A@$0A@$0A@UIClassFactory@@VNil@Details@23@V5623@V5623@V5623@@Details@WRL@Microsoft@@
+.?AVUevConfiguration@@
+.?AVDontUseNewUseMake@Details@WRL@Microsoft@@
+.?AVAppVConfiguration@@
+.?AU?$ImplementsHelper@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$$V@Details@WRL@Microsoft@@
+.?AU?$ImplementsHelper@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$0A@UIAppManagementConfiguration@@@Details@WRL@Microsoft@@
+.?AV?$SimpleClassFactory@VAppVConfiguration@@$0A@@WRL@Microsoft@@
+.?AV?$_Ref_count_obj@VproductionSlapiProxy@SlapiWrapper@Shared@AppMan@@@std@@
+.?AVerror_category@std@@
+.?AV_System_error_category@std@@
+.?AVslapiProxy@SlapiWrapper@Shared@AppMan@@
+.?AV_Generic_error_category@std@@
+.?AV_Iostream_error_category@std@@
+.?AV_Ref_count_base@std@@
+.?AVproductionSlapiProxy@SlapiWrapper@Shared@AppMan@@
+ew|>&=4_
+__CxxFrameHandler3
+_vsnwprintf
+memcpy_s
+??3@YAXPAX@Z
+_purecall
+??1exception@@UAE@XZ
+??0exception@@QAE@XZ
+??0exception@@QAE@ABV0@@Z
+_vsnprintf_s
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+msvcrt.dll
+?terminate@@YAXXZ
+_lock
+_unlock
+__dllonexit
+_onexit
+??1type_info@@UAE@XZ
+_except_handler4_common
+GetModuleFileNameA
+InitOnceExecuteOnce
+CreateSemaphoreExW
+HeapFree
+SetLastError
+ReleaseSemaphore
+GetModuleHandleExW
+EncodePointer
+WaitForSingleObject
+GetCurrentThreadId
+ReleaseMutex
+FormatMessageW
+GetLastError
+ReleaseSRWLockExclusive
+OutputDebugStringW
+DisableThreadLibraryCalls
+AcquireSRWLockExclusive
+WaitForSingleObjectEx
+OpenSemaphoreW
+CloseHandle
+ReleaseSRWLockShared
+HeapAlloc
+DecodePointer
+GetProcAddress
+CreateMutexExW
+AcquireSRWLockShared
+GetCurrentProcessId
+GetProcessHeap
+GetModuleHandleW
+DebugBreak
+IsDebuggerPresent
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetTickCount
+KERNEL32.dll
+WindowsStringHasEmbeddedNull
+WindowsIsStringEmpty
+EventUnregister
+RegGetValueW
+RoOriginateErrorW
+EventSetInformation
+RoOriginateError
+EventRegister
+WindowsGetStringRawBuffer
+EventWriteTransfer
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-0.dll
+??_V@YAXPAX@Z
+_callnewh
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABQBDH@Z
+?what@exception@@UBEPBDXZ
+_CxxThrowException
+memcpy
+memmove
+GetModuleFileNameW
+GetProcessMitigationPolicy
+LocalAlloc
+LocalFree
+FreeLibrary
+CoUninitialize
+CoInitializeEx
+CoCreateInstance
+ole32.dll
+RegQueryValueExW
+RegOpenKeyExW
+RegSetValueExW
+RegCreateKeyExW
+CloseServiceHandle
+RegCloseKey
+OpenServiceW
+ChangeServiceConfigW
+StartServiceW
+ControlService
+OpenSCManagerW
+QueryServiceStatus
+api-ms-win-service-management-l1-1-0.dll
+api-ms-win-service-management-l2-1-0.dll
+api-ms-win-service-winsvc-l1-1-0.dll
+OLEAUT32.dll
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Application Management Configuration
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+Application Management Configuration
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+AppMangementConfiguration.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1L1T1\1d1l1t1|1
+2$2,242<2D2L2T2\2d2l2|2
+3$3,343<3D3L3T3\3d3l3t3|3
+4$4,444<4D4L4T4\4d4l4t4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+888P8X8p8
+9094989@9D9H9L9P9T9X9\9`9d9h9l9p9
+: :0:4:L:\:l:p:
+;$;4;8;@;X;\;`;d;h;l;p;t;x;|;
+< <4<8<H<X<h<l<|<
+=(=8=H=L=\=`=d=x=|=
+> >$>(>,>0>4>8><>P>T>l>|>
+?,?0?4?8?<?P?T?X?\?`?h?
+0 0$080H0L0d0h0
+1$14181<1T1d1h1x1|1
+2 282<2@2D2L2`2d2h2l2
+3(3,30383P3X3\3`3d3h3l3p3t3x3|3
+5p6|6
+:":&:,:0:6:::R:V:\:`:f:j:p:t:z:~:
+;!;a;q;
+<&<G<o<z<
+= =T=_=q=
+>)>9>N>a>
+@0i0p0
+1 1/1F1u1~1
+2!2X2
+2%3.333>3M3d3
+5V6h6
+717W7
+868N8f8
+9)929
+9':0:@:I:Y:b:y:
+>a>o>
+3*323a3g3
+384J4p4
+4 5F5P5
+5;6M6
+7(7g7s7{7
+8#898C8S8]8g8y8
+9%:>:J:
+; ;_;
+<3<j<
+=A=K=Z=
+242w2
+3'323K3V3u3~3
+3(454G4P4\4d4v4
+5<5E5N5T5Y5^5e5m5
+6*6/6J6R6Z6`6f6l6q6w6
+6:8?8H8k8t8y8
+:&:4:B:Z:c:h:s:
+:T;[;
+;^<h<z<
+===]=}=
+0N0_0n0u0
+1B2I2{2
+2H3Y3n3
+4X4i4~4
+6G7l7
+8)818D8L8h8
+9J9Y9b9n9^:n:
+;);S;f;
+<$<3<L<
+=;=f=x=
+>_>x>
+1 131;1Z1b1u1}1
+262b2q2y2
+3'3M3T3
+4!4-4o4{4
+595X5
+;%;+;2;Z;b;t;
+<%<?<F<
+= =:=A=
+>O>V>
+?,?1?=?
+3`4g4
+4!5(5@5G5_5f5w5~5
+6H6O6g6n6
+:.:5:H:O:b:i:t:{:
+;&;-;y;
+<'<6<E<[<
+0a1m1y1
+1G7N7
+7K8R8
+9 9I9P9h9o9
+;';.;A;H;S;Z;
+7A7S7w7~7
+7D;P;^;y;
+<7=[=b=
+(141B1]1
+3"3)3B3
+4!4&464
+5J5b5
+5O6p6
+737L7S7
+7V;b;
+;#<?<p<
+>a?s?
+0)0;0i0
+1L1f1x1
+2J2S2
+383@3d3
+4(4w4
+4>5X5j5
+6B6K6g6
+747<7S7[7r7z7
+7f8{8
+939;9U9e9u9}9
+:1:=:G:R:b:o:t:
+:L;a;o;
+>0>8>E>S>\>d>l>y>
+#1+1=1L1Z1b1
+2%2U2^2
+3;3M3w3
+4!4=4G4
+;6;?;k;
+<*<T<o<w<
+=U?]?o?~?
+*050E0W0
+0<1N1u1
+202O2W2s2}2
+5*5X5t5
+6_6f6
+7$7A7I7f7n7
+8+8N8U8'<3<A<\<
+<T=k=
+=6>L>[>e>p>
+?)?/?V?]?
+02494
+4/565
+< <3<:<M<T<_<f<
+=5=\=c=
+>)>/>Q?X?
+0#0*0D0K0^0e0x0
+3g6n6
+0Y1`1
+5"575x5
+7!7@7q7
+9.9H9h9
+:Y:e:
+:=;Q;
+<2<7<H<~<
+=M=V=h=~=
+>/>5>W>j>
+?:???Y?^?x?}?
+0,020T0g0
+171Q1k1
+272<2A2F2y2
+3i4r4y4
+;/<W<\<m<
+<"=0=U=k=
+>D>^>}>
+?F?R?z?
+030T0]0
+1 181L1Y1z1
+3M3n3
+5(5B5k5
+6(6n6
+6'7D7a7y7
+869S9u9
+:>:p:~:
+;-;;;^;o;
+<><d<
+<"=8=P=z=
+>+>D>
+?;?[?q?
+0$0D0
+0$1D1
+1J2v2
+3/3W3\3a3
+4'40464W4_4f4l4r4
+5%5-5@5L5T5
+6-6Q7i7
+7P8~8
+9 9'9.959<9C9J9Q9Y9a9i9u9~9
+:#:J:p:~:
+:5;B;N;b;r;
+</<M<a<g<*=H=W=`=i=~=
+=B>G>]>i>u>
+?'?3?v?
+0"1.1:1R1^1
+1$2J2V2
+2#3A3d3
+3 4C4f4
+6L6o6
+7:7r7
+;!;2;6;R;V;r;v;
+<$<4<@<H<
+= =@=H=T=t=
+><>T>t>
+?,?<?H?P?
+0$0,0d0p0
+141@1H1h1p1
+2<2L2T2\2d2l2t2
+343D3L3T3\3d3l3t3|3
+4(40444<4@4H4L4T4X4`4d4l4p4x4|4
+5 5(50585<5D5X5`5t5|5
+6$6,646<6D6L6`6h6l6t6|6
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0l0p0t0x0|0
+0D1H1L1T1|1
+202T2l2
+304`4
+4(5x5H6
+989X9
+;@;t;

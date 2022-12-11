@@ -1,0 +1,511 @@
+!This program cannot be run in DOS mode.
+Rich4X
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+bad allocation
+GeneralUtilities
+GeneralService
+Filter
+Database
+Action
+QuotaFilter
+QuotaDatabase
+QuotaService
+QuotaTemplates
+Writer
+FileScreenService
+FileScreenFilter
+FileScreenDatabase
+FileScreenTemplates
+FileGroups
+Dictionary
+Reports
+ReportScheduler
+Classification
+Pipeline
+FileManagementJobs
+Hosting
+Stream
+TextReader
+ContentCls
+ClientFCI
+MultiMachineManagement
+PowerShellCls
+GENUTIL
+GENSVC
+FILTER
+ACTION
+QFILTER
+QDATA
+QASVC
+QTSVC
+WRITER
+FSSVC
+FSFILTER
+FSDATA
+FSTSVC
+REPORTS
+RPTSCHD
+CLASS
+PIPELINE
+FMTASKS
+HOSTING
+STREAM
+TEXTREADER
+CONTENTCLS
+CLIENTFCI
+POWERSHELLCLS
+FALSE
+SRM_TRACING: WARNING: STL Exception caught while reading registry settings: '%hs'
+SRM_TRACING: INFO: Tracing mask: 0x%08lx. Pattern mask: 0x%08lx, local enabled: %s
+SRM_TRACING: WARNING: Module '%s' not found!
+SRM_TRACING: INFO: Processing spec: '%s' with enabled flag: %s
+SRM_TRACING: INFO: Enabling pattern '%s' in module '%s'
+SRM_TRACING: INFO: Disabling pattern '%s' in module '%s'
+SRM_TRACING: INFO: Enabling module '%s'
+SRM_TRACING: INFO: Disabling module '%s'
+SRM_TRACING: WARNING: Exception catched while processing specification '%s' - 0x%08lx
+SRM_TRACING: INFO: Parsed spec. Module name = '%s', function = '%s'
+TlsAlloc
+DLL_PROCESS_ATTACH
+TlsSetValue
+ASSERT(m_dwTlsContextIndex != NULL)
+DLL_THREAD_ATTACH
+TlsFree
+DLL_PROCESS_DETACH
+TlsSetValue(%d, %p) failed: %d
+NTDLL.DLL
+SrmTrace: ERROR: NTDLL.DLL not loaded yet!
+swprintf
+SrmTrace: ERROR: NTDLL!swprintf not found!
+SrmTrace(pid: %d): ERROR calling %s() [GetLastError() = 0x%08lx, operation = %s, m_dwTlsContextIndex = 0x%08lx]. Returning FALSE in DllMain...
+SrmTrace: ERROR: NTDLL!StringCchPrintfW failed!
+vector<T> too long
+invalid string position
+string too long
+map/set<T> too long
+TracingDefault
+SYSTEM\CurrentControlSet\Services\srmsvc\Tracing
+SYSTEM\CurrentControlSet\Services\srmsvc\Tracing\TraceModules
+RETURN
+Returning BOOL: %s
+INCTYPEH
+base\fs\fsrm\utilities\inc\srmtypes.h
+SrmDuplicateStr
+INCLSTRH
+base\fs\fsrm\utilities\inc\srmstr.h
+String too big
+SrmAllocString
+Integer overflow
+Memory allocation error
+CSrmAutoPWSZ::Allocate
+SRMREGSC
+base\fs\fsrm\utilities\registry\srmreg.cpp
+StringCchVPrintfW()
+CSrmRegistryKey::Open
+CSrmRegistryKey::GetValue
+RegQueryValueExW(0x%08lx(%s),%s,0,[%lx],0,[%lu])
+Unexpected type %lu for a DWORD value 0x%08lx(%s),%s
+Unexpected size %lu for a DWORD value 0x%08lx(%s),%s
+CSrmRegistryKey::Close
+%s: Error on closing key with name %s. lRes == 0x%08lx
+Unexpected error: noninitialized iterator
+Unexpected error: dwIndex out of scope %lu %lu
+RegQueryInfoKeyW(%p, ...)
+CSrmRegistryValueIterator::GetCurrentValueName
+CSrmRegistryValueIterator::GetCurrentValueType
+CSrmRegistryValueIterator::GetCurrentValueContent
+Unexpected error: attempting to read a value of the wrong type
+Unexpected error: current value type changed in the meantime %lu %lu
+RegEnumValue(%p,%lu,%p,%lu ...)
+Unexpected error: unexpected DWORD size [%ld, %ld]
+CSrmRegistryValueIterator::ReadCurrentValueDetails
+CSrmRegistryValueIterator::Attach
+arithmetic overflow detected on addition of size_t variables
+SafeAddSizeT
+COM Call %S failed [0x%08lx]
+Error loading SRM.DLL resource with ID = 0x%08lx [0x%08lx]
+SrmLoadString
+CSrmResource::LoadStringW
+HRESLOAD
+base\fs\fsrm\utilities\inc\resload.h
+Error loading SRM.DLL [0x%08lx]
+CSrmResource::GetResourceModule
+SrmReallocString
+CSrmAutoPWSZ::ReAllocate
+CSrmAutoPWSZ::Reallocate
+CSrmAutoPWSZ::Append
+StringCchCatW(m_pwsz, cchNewLength + 1, pwsz)
+SrmFormatString
+0x%08lx, %s
+0x%08lx
+ENTER
+Time spent: %02ld:%02ld:%02ld-%04ld; total: %#x; HRESULT: %#x
+Tracing started or updated. PID=%d, CommandLine=[%s], UserName=[%s]. SQN=[%d -> %d]
+TRACING_STARTED
+CSrmFunctionTracerBase::UpdateLocaITracingEnabledFlag
+TRCTRCC
+base\fs\fsrm\utilities\functracer\functiontracer.cpp
+STATIC
+%ws [%ws (line %d)]
+Unknown
+Name: %s\%s, SID:%s
+TRACE
+THROW
+Stack Trace
+Exception: %#x
+File system corruption detected. %s
+Out of memory detected. %s - %s
+Insufficient disk space detected. %s - %s
+Unexpected error: %s - %s [hr = 0x%08lx]
+Out of memory detected. %s
+Insufficient disk space detected. %s
+Error on ReportEventW 0x%08lx
+Error on RegisterEventSourceW 0x%08lx
+CSrmFunctionTracer::LogError
+- Code: %8ls%08lu- Call: %8ls%08lu- PID:  %08lu- TID:  %08lu- CMD:  %-*ls- User: %-*ls
+Current context: '%s'
+CONTEXT
+Error on DeregisterEventSource 0x%08lx
+%s - %s, 0x%08lx, %s
+%s, 0x%08lx, %s
+%s - %s, 0x%08lx
+%s, 0x%08lx
+Unexpected error: %s [hr = 0x%08lx]
+Adding context: '%s' = '%s' (%d)
+HRESULT exception caught: hr: 0x%x
+Unexpected COM exception caught: hr: 0x%x
+COM error caught: hr: 0x%x
+bad_alloc STL exception caught: hr: 0x%x
+Unexpected STL exception caught: %s
+SRMSVC
+srm.dll
+RSDSF
+srmtrace.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.edata
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+j Pj!Z
+97tX9w
+t.+>S
+PShT 
+PShT 
+QWWWWWWP
+jlh,+
+PVh@.
+f;FHs]
+Gf;~Hr
+VPhH1
+WPhT1
+RPh`1
+RPhT1
+~(j.Xf
+RPh`1
+u+VPh 2
+jd_Qj
+t*SPhx2
+ ;OXu
+t;SWj 
+PQQSVW
+Y__^[
+PQQSVW
+Y__^[
+j j`h
+SrmTrace.DLL
+SrmGetTracingContextPerThread
+SrmGetTracingModuleInfo
+SrmGetTracingSequenceNumber
+SrmIsTracingEnabled
+SrmIsTracingEnabledOnFunction
+SrmIsTracingEnabledOnModule
+SrmIsTracingEnabledPerThread
+SrmSetTracingContextPerThread
+SrmTraceInitialize
+SrmTraceMessage
+SrmTraceUninitialize
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+.?AVbad_alloc@std@@
+.?AVexception@@
+.?AV_com_error@@
+__CxxFrameHandler3
+_wcsicmp
+_purecall
+?what@exception@@UBEPBDXZ
+??1exception@@UAE@XZ
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABV0@@Z
+wcschr
+_wcsnicmp
+_callnewh
+malloc
+??0exception@@QAE@XZ
+_CxxThrowException
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+?terminate@@YAXXZ
+_lock
+_unlock
+__dllonexit
+_onexit
+??1type_info@@UAE@XZ
+_except_handler4_common
+TlsSetValue
+UnregisterTraceGuids
+RegisterTraceGuidsW
+CoTaskMemFree
+GetTraceEnableLevel
+GetTraceEnableFlags
+GetTraceLoggerHandle
+GetLastError
+OutputDebugStringW
+TlsAlloc
+GetProcAddress
+GetCurrentProcessId
+GetModuleHandleW
+TlsGetValue
+TlsFree
+GetSystemTime
+TraceEvent
+Sleep
+QueryPerformanceCounter
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+_vsnwprintf
+LocalFree
+CoTaskMemAlloc
+RegOpenKeyExW
+RegQueryValueExW
+RegCloseKey
+RegQueryInfoKeyW
+RegEnumValueW
+InitializeSRWLock
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+ReleaseSRWLockShared
+AcquireSRWLockShared
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+_snwscanf_s
+_vsnprintf
+iswdigit
+GetTokenInformation
+LookupAccountSidW
+GetCommandLineW
+OpenThreadToken
+ConvertSidToStringSidW
+OpenProcessToken
+FormatMessageW
+GetCurrentThread
+CloseHandle
+CoTaskMemRealloc
+LoadStringW
+FreeLibrary
+LoadLibraryExW
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+OLEAUT32.dll
+api-ms-win-core-handle-l1-1-0.dll
+ReportEventW
+RegisterEventSourceW
+DeregisterEventSource
+api-ms-win-eventlog-legacy-l1-1-0.dll
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft
+ File Server Resource Management Tracing Library
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+srmtrace.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+srmtrace.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0
+1(14181D1
+="='=5=>=C=Q=Z=_=m=v={=
+>%>*>/>=>I>N>\>j>x>
+?!?/?;?@?U?Z?_?m?y?~?
+0'03080F0R0W0e0q0v0
+161@1h1u1
+323<3h3v3
+3O4]4r4
+6e7j7o7
+9/9=9[9
+:$:^:k:
+;6;=;D;
+<-<n<
+=%=~=
+>'>.>9>=>C>L>P>V>c>i>o>u>{>
+? ?D?P?_?
+0X0o0|0
+1-2T2]2o2u2{2
+3'3/3B3}3
+374F4u4
+5A5Q5j5
+7<7l7v7
+:"?5?
+0+0<0O0
+8I8R8X8b8
+:.:H:M:R:
+;9;>;C;
+;E<z<
+=2=7=<=h=w=
+=0>9>g>p>
+?A?M?g?l?q?
+0;0P0U0Z0j0}0
+1 1.1U1t1
+333L3g3l3
+4)4G4L4Q4
+5H5^5c5h5
+5C6u6
+767I7x7
+7E8T8
+=(=4=:=?=O=U=Z=q=v={=
+>&>@>E>J>n>}>
+0L0Q0V0.102>2c2
+313M3
+4 575<5G5~5
+536h6u6
+6H7N7k7
+7;8n8t8|8
+:.;L;n;
+<;<m<
+0%0H0e0
+1%1?1F1v1
+1"2?2\2v2
+4 5h5|5E6`6
+6c7z7
+7&8C8Q8
+8N9~9
+:-:?:]:
+<H<S<n<
+>9?@?v?
+0'0d0
+1$171<1A1Q1g1l1q1
+2"2I2
+2*3]3
+3&4i4
+4 5'5P6o6|6
+8V8i8
+8A9X9b9
+:N:[:{:
+=->S>
+0C0g0l0q0
+171@1F1g1o1v1|1
+2$252=2P2\2d2
+3(3=3a4y4
+7&7.7R7[7
+8*868B8N8Z8f8r8
+9!9'9
+: :):>:S:b:j:y:
+;$;-;8;?;W;];c;i;o;u;|;
+<#<)<5<E<N<a<m<y<
+='>c>
+?*?G?[?x?
+1(121<1F1P1Z1d1n1x1
+2&3Y3
+4^4n4
+6P6s6
+677Z7
+:';J;z;
+>#>Q>
+>/?g?
+5:6r6
+7E7h7
+8 8@8L8l8x8
+9 9@9H9P9X9h9
+:$:,:4:<:D:L:T:\:d:l:t:|:
+;$;,;4;<;D;L;T;\;d;l;t;|;
+<8<D<L<l<t<|<
+=<=D=P=X=
+=(>0>8>@>H>T>t>
+?(?4?T?\?h?p?
+0 000@0L0l0x0
+1P1`1l1
+2 2(202<2\2d2l2t2|2
+30383H3X3l3t3|3
+4$4,444<4D4P4p4x4
+5<5H5h5t5
+6 6@6H6P6X6`6h6t6
+7 7,7L7X7x7
+808<8\8h8
+9$90989l9t9|9
+: :(:0:8:@:H:P:\:|:
+;$;0;8;P;`;|;
+<,<4<@<H<`<p<
+=,=4=<=D=L=T=\=d=l=t=
+>$>,>8>@>d>t>|>
+?$?,?8?X?`?h?t?
+0(040T0\0d0p0
+1(10181@1D1H1P1d1l1t1|1
+2 2<2@2`2
+3 343<3P3X3`3h3
+0$0D0d0

@@ -1,0 +1,135 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\uaspstor.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    storport.sys
+    USBD.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0012048 Import Address Table
+             1C00122F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          EE ExFreePoolWithTag
+                         B17 ZwClose
+                         833 RtlCompareMemory
+                         531 KeReleaseInStackQueuedSpinLock
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         975 RtlQueryFeatureConfiguration
+                         353 IoFreeIrp
+                         179 ExWaitForRundownProtectionRelease
+                         128 ExReInitializeRundownProtection
+                         4D5 KeInitializeSpinLock
+                         104 ExInitializeRundownProtection
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                         9E4 RtlUnregisterFeatureConfigurationChangeNotification
+                         74B PsGetCurrentProcess
+                         5DB MmGetSystemRoutineAddress
+                         359 IoFreeWorkItem
+                         441 IoWMIRegistrationControl
+                         4CD KeInitializeEvent
+                         585 KeWaitForSingleObject
+                         46C KeAcquireInStackQueuedSpinLock
+                         44E IofCallDriver
+                         6E4 PoDisableSleepStates
+                         5BC MmBuildMdlForNonPagedPool
+                         2F6 IoAllocateMdl
+                         559 KeSetEvent
+                          AB ExAcquireRundownProtection
+                         356 IoFreeMdl
+                         36E IoGetDeviceProperty
+                         C52 _wcsnicmp
+                         3B9 IoQueueWorkItem
+                         822 RtlCheckPortableOperatingSystem
+                         145 ExReleaseRundownProtection
+                         9AD RtlSetPortableOperatingSystem
+                         307 IoCancelIrp
+                         2F4 IoAllocateIrp
+                         3F0 IoSetCompletionRoutineEx
+                         C4C _vsnwprintf
+                         8DF RtlGetVersion
+                         980 RtlQueryRegistryValues
+                         4B9 KeGetCurrentIrql
+                         5E1 MmIsDriverVerifying
+                         BA8 ZwQueryValueKey
+                         3EC IoReuseIrp
+                          BD ExAllocatePool2
+                         3A9 IoOpenDeviceRegistryKey
+                         8F1 RtlInitUnicodeString
+                          71 DbgPrintEx
+                         2F9 IoAllocateWorkItem
+                         981 RtlQueryRegistryValuesEx
+                         3ED IoSetActivityIdIrp
+                          C1 ExAllocatePoolWithTag
+
+    storport.sys
+             1C00121E8 Import Address Table
+             1C0012490 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          19 StorPortNotification
+                          11 StorPortGetPhysicalAddress
+                           B StorPortExtendedFunction
+                          16 StorPortInitialize
+
+    USBD.SYS
+             1C0012000 Import Address Table
+             1C00122A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 USBD_CreateConfigurationRequestEx
+
+    WppRecorder.sys
+             1C0012010 Import Address Table
+             1C00122B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E imp_WppRecorderLogGetDefault
+                           4 WppAutoLogTrace
+                           2 WppAutoLogStart
+                           5 imp_WppRecorderConfigure
+                           3 WppAutoLogStop
+                          10 imp_WppRecorderReplay
+
+  Section contains the following exports for uaspstor.sys
+
+    00000000 characteristics
+    A77D42B5 time date stamp
+        0.00 version
+           1 ordinal base
+           2 number of functions
+           2 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003210 DumpPreInitialize
+          2    1 00003230 DumpUninitialize
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

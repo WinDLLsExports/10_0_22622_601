@@ -1,0 +1,365 @@
+!This program cannot be run in DOS mode.
+RichV
+.text
+h.rdata
+H.data
+.pdata
+H.idata
+HPAGE
+`fothk
+`INIT
+bGFIDS
+B.rsrc
+B.reloc
+D$(E3
+L$`H3
+D$(E3
+L$ E3
+L$pH3
+D$(E3
+L$pH3
+D$(E3
+D$(E3
+@USVWAVH
+A^_^[]
+UWAUAVAWH
+A_A^A]_]
+UWAUAVAWH
+A_A^A]_]
+WAVAWH
+ A_A^_
+x AVH
+x UATAUAVAWH
+D$(E3
+$u68KLu18KMu,8KNu'8KOtH
+A8<$u
+@8{Lu
+@8{Mu
+@8{Nu
+@8{Ot&@8
+A_A^A]A\]
+UWAVH
+ A^_]
+UWAVH
+UATAUAVAWH
+L$ E3
+D$hE3
+D$PE3
+D$(E3
+A_A^A]A\]
+UVWATAUAVAWH
+`A_A^A]A\_^]
+@USVWH
+D$0E3
+D$XE3
+L$hH3
+x UAVAWH
+D$(E3
+A_A^]
+@USVWATAVAWH
+A_A^A\_^[]
+UWAVH
+UAVAWH
+T$Xv H
+A_A^]
+WAVAWH
+ A_A^_
+UWAWH
+WAVAWH
+L9x(t
+L9x0t
+L9x8t
+L9x(t 
+L9x0t 
+L9x8t 
+ A_A^_
+WAVAWH
+ A_A^_
+L$HH3
+k VWATAVAWH
+0A_A^A\_^
+UWAWH
+L$`H3
+x ATAVAWH
+N0D;N4
+H3L2@H
+D@8kP
+fA9(A
+N0D;N4
+|$8A_A^A\
+VWAVH
+ A^_^
+I4A;I
+I4A;I
+@8qht @8
+$0< u
+$0< u1
+@SUVWATAUAVAWH
+8A_A^A]A\_^][
+k VWATAVAWH
+0A_A^A\_^
+@USVWAVH
+A^_^[]
+;PuWH
+x AVH
+@8h0t$H
+9(u"H
+-fffffff
+fffffff
+fffffff
+fffffff
+.fffffff
+fffffff
+fffffff
+fffff
+AQAPRQPH
+(D$ H
+0XYZAXAY
+ffffff
+fffff
+fffff
+NetAdapterCx
+RT_DEVICE
+RT_ADAPTER
+RT_TXQUEUE
+RT_RXQUEUE
+RtInitializeAdapterContext
+WdfSpinLockCreate(&attributes, &adapter->Lock)
+EvtAdapterCreateTxQueue
+NetTxQueueCreate( txQueueInit, &txAttributes, &txConfig, &txQueue)
+ms_packet_checksum
+ms_packet_gso
+ms_packet_ieee8021q
+ms_fragment_virtualaddress
+ms_fragment_logicaladdress
+RtTxQueueInitialize(txQueue, adapter)
+EvtAdapterCreateRxQueue
+NetRxQueueCreate(rxQueueInit, &rxAttributes, &rxConfig, &rxQueue)
+ms_packet_hash
+RtRxQueueInitialize(rxQueue, adapter)
+EvtAdapterReceiveScalingEnable
+RtReceiveScalingEnable(adapter, protocolType)
+RtAdapterReadAddress
+STATUS_NDIS_INVALID_ADDRESS
+RtAdapterStart
+NetAdapterStart(adapter->NetAdapter)
+*SpeedDuplex
+*ReceiveBuffers
+*TransmitBuffers
+*WakeOnMagicPacket
+*InterruptModeration
+*FlowControl
+InterruptModerationLevel
+RtAdapterReadConfiguration
+NetAdapterOpenConfiguration(adapter->NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &configuration)
+RT_INTERRUPT
+RtGetResources
+STATUS_NDIS_RESOURCE_CONFLICT
+(((adapter->CSRAddress = static_cast<RT_MAC*>( MmMapIoSpaceEx( memAddressTranslated, sizeof(RT_MAC), 0x04 | 0x200))) == NULL) ? STATUS_INSUFFICIENT_RESOURCES : STATUS_SUCCESS)
+RtRegisterScatterGatherDma
+WdfDmaEnablerCreate( adapter->WdfDevice, &dmaEnablerConfig, WDF_NO_OBJECT_ATTRIBUTES, &adapter->DmaEnabler)
+RtInitializeHardware
+RtAdapterReadConfiguration(adapter)
+RtGetResources(adapter, resourcesRaw, resourcesTranslated)
+RtInitializeChipType(adapter)
+RtAdapterReadAddress(adapter)
+RtRegisterScatterGatherDma(adapter)
+RtAdapterStart(adapter)
+EvtDevicePrepareHardware
+RtInitializeHardware(adapter, resourcesRaw, resourcesTranslated)
+EvtDeviceReleaseHardware
+TraceLoggingRegister(RealtekTraceProvider)
+DriverEntry
+WdfDriverCreate(driverObject, registryPath, WDF_NO_OBJECT_ATTRIBUTES, &driverConfig, NULL)
+EvtDriverDeviceAdd
+NetDeviceInitConfig(deviceInit)
+WdfDeviceCreate(&deviceInit, &deviceAttributes, &wdfDevice)
+WdfDeviceAssignS0IdleSettings(wdfDevice, &idleSettings)
+WdfDeviceAssignSxWakeSettings(wdfDevice, &wakeSettings)
+(((adapterInit) == NULL) ? STATUS_INSUFFICIENT_RESOURCES : STATUS_SUCCESS)
+NetAdapterCreate(adapterInit, &adapterAttributes, &netAdapter)
+RtInitializeAdapterContext(adapter, wdfDevice, netAdapter)
+RtInterruptCreate(wdfDevice, adapter, &adapter->Interrupt)
+EvtDriverUnload
+RtInterruptCreate
+WdfInterruptCreate(wdfDevice, &config, &attributes, &wdfInterrupt)
+EvtInterruptEnable
+EvtInterruptDisable
+RtAdapterQueryLinkState
+EvtDeviceD0Entry
+EvtDeviceD0Exit
+EvtDeviceArmWakeFromSx
+EvtDeviceDisarmWakeFromSx
+WdfCommonBufferCreate( rx->Adapter->DmaEnabler, rxdSize, WDF_NO_OBJECT_ATTRIBUTES, &rx->RxdArray)
+RtRxQueueInitialize
+EvtRxQueueDestroy
+EvtRxQueueSetNotificationEnabled
+EvtRxQueueAdvance
+EvtRxQueueCancel
+EvtTxQueueAdvance
+WdfMemoryCreate( &tcbAttributes, NonPagedPoolNx, 0, sizeof(RT_TCB) * pr->NumberOfElements, &memory, (void**)&tx->PacketContext )
+RtTxQueueInitialize
+WdfCommonBufferCreate( tx->Adapter->DmaEnabler, txSize, WDF_NO_OBJECT_ATTRIBUTES, &tx->TxdArray)
+EvtTxQueueSetNotificationEnabled
+EvtTxQueueCancel
+KmdfLibrary
+DriverEntry failed 0x%x for driver %wZ
+FxStubBindClasses: invalid driver image, the address of symbol __KMDF_CLASS_BIND_START 0x%p is greater than the address of symbol __KMDF_CLASS_BIND_END 0x%p, status 0x%x
+FxGetNextClassBindInfo failed
+FxStubBindClasses: ClientBindClass %p, WDF_CLASS_BIND_INFO 0x%p, class %S, returned status 0x%x
+FxStubBindClasses: VersionBindClass WDF_CLASS_BIND_INFO 0x%p, class %S, returned status 0x%x
+FxStubInitTypes: invalid driver image, the address of symbol __KMDF_TYPE_INIT_START 0x%p is greater than the address of symbol __KMDF_TYPE_INIT_END 0x%p, status 0x%x
+FxGetNextObjectContextTypeInfo failed
+ChipInfo
+macVer
+revId
+eepromSelect
+StatusFailure
+Function
+Status
+Expression
+FunctionExitResult
+Function
+Status
+FunctionEntry
+Function
+NetAdapter
+FunctionEntry
+Function
+PermanentAddressRead
+PermanentAddress
+ReadConfiguration
+NetAdapter
+Value
+InvalidFieldSize
+NetAdapter
+Value
+FieldSize
+InvalidNetworkAddress
+adapter->CurrentAddress.Address
+EepromId
+eepromId
+pciId
+ChipType
+adapter->ChipType
+StatusFailure
+Function
+Status
+Expression
+NetAdapter
+UnsupportedEEPROM
+FunctionEntry
+Function
+registryPath
+FunctionEntry
+Function
+wdfInterrupt
+FunctionExit
+Function
+FunctionEntry
+Function
+NetAdapter
+PreviousState
+FunctionEntry
+Function
+rxQueue
+notificationEnabled
+FunctionEntry
+Function
+RxQueue
+FunctionEntry
+Function
+txQueue
+notificationEnabled
+FunctionEntry
+Function
+TxQueue
+J6]I[
+Realtek.Trace.Provider
+RtEth.pdb
+.text
+.text$mn
+.text$mn$00
+.text$mn$21
+.rdata$brc
+.giats
+.rdata
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.xdata
+.data$brc
+.data
+.kmdfclassbind$a
+.kmdfclassbind$b
+.kmdfclassbind$c
+.kmdfclassbind$d
+.kmdftypeinit$a
+.kmdftypeinit$c
+.pdata
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+fogrp
+.gfids
+.rsrc$01
+.rsrc$02
+EtwWriteTransfer
+MmUnmapIoSpace
+MmMapIoSpaceEx
+EtwSetInformation
+EtwUnregister
+EtwRegister
+KeFlushQueuedDpcs
+ntoskrnl.exe
+KeStallExecutionProcessor
+HAL.dll
+DbgPrintEx
+RtlCopyUnicodeString
+WdfVersionUnbind
+WdfLdrQueryInterface
+WdfVersionBind
+WdfVersionUnbindClass
+WdfVersionBindClass
+WDFLDR.SYS
+t$ UWAVH
+KETRH
+VS_VERSION_INFO
+StringFileInfo
+000004B0
+CompanyName
+Realtek
+FileDescription
+Realtek PCIe GBE Family Controller Flight
+FileVersion
+1.0 (WinBuild.160101.0800)
+InternalName
+RtEth.sys
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+RtEth.sys
+ProductName
+Realtek PCIe GBE Family Adapters
+ProductVersion
+VarFileInfo
+Translation
+X+Y{Y
+Y2ZrZ
+[A\q\
+\4]q]
+Z<[V[x[F\c\~\
+^'_O_f_
+U'UQW
+]"^"_
+Q/RYR
+UKUgU
+YxZI[
+T$UXU
+R4S{S
+X"ZI[

@@ -1,0 +1,784 @@
+!This program cannot be run in DOS mode.
+"w)DZt(
+"w)DZs(
+"v)q"w)DZv(
+"w)DZr(
+"w)DZw(
+"w)DZ
+"w)DZ
+"w)DZu(
+"w)Rich
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+: T : T = T
+ T@5 T
+bad allocation
+[CDirMonitorEntry] Destructor
+CDirMonitorEntry::~CDirMonitorEntry
+inetsrv\iis\svcs\infocomm\atq\dirmon.cpp
+~CDirMonitorEntry: open handle %p : %p
+[CDirMonitorEntry] Request change notification
+CDirMonitorEntry::RequestNotification
+DirMon
+[CDirMonitor] Monitoring new CDirMonitorEntry
+CDirMonitor::Monitor
+[CDirMonitor] Notification call-back begining. Status %d
+CDirMonitor::DirMonitorCompletionFunction
+[CDirMonitor] Notification call-back ending
+[CDirMonitor] Inserting directory (DME %08x) %s
+CDirMonitor::InsertEntry
+[CDirMonitor] Removed DME(%08x), directory %s
+CDirMonitor::RemoveEntry
+CDirMonitor(%08x): Cleanup, entries remaining %d (Refs = %d)
+CDirMonitor::Cleanup
+Capacity Planning Trace registration failed with %x
+IISInitializeCapTrace
+inetsrv\iis\svcs\infocomm\atq\captrc.cpp
+Error %d in recvfrom
+BMON_WAKEUP_ENTRY::Callback
+inetsrv\iis\svcs\infocomm\atq\atqbmon.cxx
+Format of source address returned by recvfrom not recognized
+Warning: external source sent data to the BACKLOG monitor wakeup port
+Wakeup port search failed. Error %d
+ATQ_BMON_SET::Initialize
+Error %d in sendto
+ATQ_BMON_SET::Wakeup
+Invalid opcode in ATQ_BMON_ENTRY %p, %d
+ATQ_BMON_SET::SynchronizeSets
+ATQ_BMON_ENTRY(%p)::CheckSignature() failed. index = %d
+ATQ_BMON_SET::NotifyEntries
+AtqInitialize, %d, %x
+AtqInitialize
+inetsrv\iis\svcs\infocomm\atq\atqmain.cxx
+AtqInitialize( %08x). ATQ is already initialized.
+AtqInitialize[%08x]. Initializing....
+Create Shutdown event failed. Last Error = 0x%x
+Create IoComp port failed. Last Error = 0x%x
+fUseAcceptEx[%d] NT CompPort[1] Platform[%d]
+AtqInitialize( %08x) returns %d.
+AtqTerminate, %d
+AtqTerminate
+AtqTerminate() - there are other users. Not terminating now
+AtqTerminate() - Terminating ATQ ...
+ There are %d endpoints remaining to be closed. Somebody above stream did not close endpoints. BUG IN CODE ABOVE ATQ
+AtqTerminate() - ContextList(%08x) has Active Contexts. Failed Termination.
+AtqTerminate() - Successfully cleaned up.
+[AtqCloseSocket] Warning- setsockopt failed, error %d, socket = %x, Context= %08x, Listen = %lx
+AtqCloseSocket
+[AtqCloseSocket(%08x)] requested abortive close
+[AtqCloseSocket] Warning- closesocket  failed, Context = %08x, error %d, socket = %x
+[AtqCloseSocket] Warning - NULL Atq context
+[AtqCloseFileHandle] Warning- CloseHandle failed,  Context = %08x, error %d, handle = %x
+AtqCloseFileHandle
+AtqFreeContext( %08x (handle=%08x, nIOs = %d), fReuse=%d)
+AtqFreeContext
+AtqReadSocket(%08lx) called.
+AtqReadSocket
+ReadDirChanges entry point NULL
+AtqReadDirChanges
+MaxConcurrency
+MaxPoolThreads
+MinFileKbSec
+PoolThreadLimit
+ListenBacklog
+ThreadTimeout
+UseKernelApc
+EnableDebugThreads
+DisableBacklogMonitor
+ForceTimeout
+AtqSetSocketOption( %08x (handle=%08x, nIOs = %d), optName=%d, optValue=%d)
+AtqSetSocketOption
+Creating DEBUG thread.Reseting isatq!g_fCreateDebugThread
+FALSE
+ ATQ_CONTEXT (%08x)
+hAsyncIO            = %p   Signature        = %08lx
+Overlapped.Internal = %p   Overlapped.Offset= %08lx
+m_leTimeout.Flink   = %p   m_leTimeout.Blink= %p
+ClientContext       = %p   ContextList      = %p
+pfnCompletion       = %p ()
+pEndPoint           = %p   fAcceptExContext = %s
+lSyncTimeout        = %8d     fInTimeout       = %s
+TimeOut             = %08lx   NextTimeout      = %08lx
+BytesSent           = %d (0x%08lx)
+pvBuff              = %p
+fConnectionIndicated= %s      fBlocked         = %8lx
+State               = %8lx    Flags            = %8lx
+ATQ_CONTEXT::Print
+inetsrv\iis\svcs\infocomm\atq\atqsupp.cxx
+Warning -  Context=%08x closesocket failed, error %d, socket = %x
+ATQ_CONTEXT::HardCloseSocket
+ATQ_CONTEXT(%08x)::CleanupAndRelease() : Warning - Context=%08x,  closesocket failed, error %d, socket = %x
+ATQ_CONTEXT::CleanupAndRelease
+Found an ATQ context with bad Endpoint
+ Free Context(%08x, EP=%08x) to cache. Err=%d, sock=%08x
+AtqpProcessContext
+[AtqPoolThread] Warning-Socket state not listening
+A null context received
+[ATQ Pool Thread] NtQueryInformationThread() returned 0x%08x, flag = %d
+AtqPoolThread
+[ATQ Pool Thread] Exiting thread 0x%x
+AtqPoolThread() - setting shutdown event %08x. g_cThreads = %d
+AtqCheckThread: Cannot create ATQ threads
+I_AtqCheckThreadStatus
+[AtqAddAcceptExSocket] Reusing an old context (%08x) failed; error %d:%d, sAcceptSocket = %x,  pEndpoint = %lx, parm4 = %d, parm7 = %lx, parm8 = %lx
+I_AtqAddAcceptExSocket
+[AtqReuseContext] Warning: state = %08x, socket = %x (context %lx),  was Free called w/o close?
+AtqpReuseContext
+[AtqpReuseContext] for (%08x) failed with  Error = %d;  Now freeing the context ...
+[I_AtqPrepareAcceptExSockets] for Endpoint %08x and AtqContext (%08x) failed with  Error = %d;  Now freeing the context ...
+I_AtqPrepareAcceptExSockets
+PrepareAcceptExSockets( Endpoint[%08x], nSockets = %d)==> avail = %d; Total Refs = %d.
+kernel32.dll
+ReadDirectoryChangesW
+mswsock.dll
+Failed to create temp socket for determining WinSock provider.  Error = %d
+I_AtqInitializeNtEntryPoints
+Failed to get entry points AE %x TF %x GAE %x
+Error %d in LoadLibrary[mswsock.dll]
+Added %p (%s) to active bandwidth info list (list size = %d)
+BANDWIDTH_INFO::AddToActiveList
+inetsrv\iis\svcs\infocomm\atq\abw.hxx
+AtqCreateEndpoint entered
+AtqCreateEndpoint
+inetsrv\iis\svcs\infocomm\atq\atqendp.cxx
+Unable to allocate ATQ Endpoint
+AtqStartEndpoint called. UseAcceptEx[%d]
+AtqStartEndpoint
+Error %d in %08x::ActivateEndpoint()
+Error %d in %08x::StartListenThread()
+AtqStopEndpoint( %08x)
+AtqStopEndpoint
+Attempt to Stop Endpoint (%08x) more than once
+ATQ_ENDPOINT(%08x)::Closed %d pending Listen sockets
+AtqCloseEndpoint( %08x)
+AtqCloseEndpoint
+Attempt to Close Endpoint (%08x) when it is  not stopped yet!
+ Endpoint(%08x) has %d refs
+ ATQ_ENDPOINT(%08x)::Closed %d sockets
+-----------------------------------------------
+ AtqStopAndCloseEndpoint() should NOT be called
+         Call 1) AtqStopEndpoint()  and 
+              2) AtqCloseEndpoint() instead
+   For Now, this call will simulate 1 & 2
+-----------------------------------------------
+AtqStopAndCloseEndpoint( %08x)
+AtqStopAndCloseEndpoint
+I_CreateListenEndpoint called. 
+I_CreateListenSocket
+Error %d in socket( %d, %d, %d)
+ setsockopt( %d, REUSE_ADDR, FALSE) failed. Error = %d
+bind ( socket = %d, Address = %08x, len = %d)  returns error = %u
+ listen( %d, %d) returned %d.
+I_CloseListenSocket called.
+I_CloseListenSocket
+error %d in closesocket
+ListenThreadFunc() running.
+ListenThreadFunc
+Listening for new connection
+Got new connection. sock[%d]
+Error %d in accept
+ListenThread shutting down
+Unexpected error %d on accept
+ListenThread exiting.
+Endpoint(%08x) frees listen context %08x
+ATQ_ENDPOINT::CleanupEndpoint
+Unable to Create Debug Print Object 
+WSAStartup failed with %d
+DllMain
+inetsrv\iis\svcs\infocomm\atq\dllmain.cxx
+WSACleanup failed with %d
+\isatq
+System\CurrentControlSet\Services\InetInfo\Parameters\isatq
+Timeout: closesocket(%d) Context=%08x
+I_TimeOutContext
+inetsrv\iis\svcs\infocomm\atq\timeout.cxx
+TimeoutPendingAcceptExContext(%08x): closesocket(%d)
+I_TimeOutPendingAcceptExContext
+TimeoutPendingListens( CtxtList[%d], AtqTick=%d)
+ Contexts Scanned=%d, Skipped=%d, TimedOut=%d, Connected=%d, NotConnected=%d
+I_AtqProcessPendingListens
+[Timeout] Adding AcceptEx Contexts for EP=%08x; nAvail = %d;
+I_AtqCheckEndpoints
+TimeoutWorker: entered
+I_AtqTimeOutWorker
+TimeoutWorker: Processing list[%d] = %08x
+Detected a shutdown while entering timeout callback
+I_AtqTimeoutCompletion
+Timeout: BANDWIDTH_INFO::cSamplesForTimeout=%d
+Error %d scheduling timeout
+I_AtqStartTimeoutProcessing
+I_AtqStopTimeoutProcessing
+I_AtqStopTimeoutProcessing
+pBWInfo =  %p (%s), Bandwidth = %u, Threshold = %d
+BANDWIDTH_INFO::UpdateAllBandwidths
+inetsrv\iis\svcs\infocomm\atq\abw.cxx
+BandwidthInfos
+AbwTerminate() called.  Born List Size = %d
+BANDWIDTH_INFO::AbwTerminate
+Removed %p (%s) from born bandwidth info list (list size = %d)
+BANDWIDTH_INFO::RemoveFromBornList
+Removed %p (%s) from active bandwidth info list (list size = %d)
+BANDWIDTH_INFO::RemoveFromActiveList
+RSDSV
+isatq.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.edata
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+ TWjaS
+ TWjoS
+~4_^[
+@ TVS
+4 TVj
+$h@; Th
+; Th G Th
+@ TWj
+Gd_^]
+$h@; Th
+; Th G Th
+t!Vhl
+ TjJh
+ T_^[
+WAKEtL
+ T=@'
+D$8PW
+D$8PV
+t$$f9D$(v:
+L$D_^[3
+S TSS
+N$99t
+SSSWS
+WAKEP
+ TPh4
+S$j@Y
+BMONt1
+t(SWh
+ Tt&W
+t WhX
+ TVh-
+ Tu'j 
+PSSh@G TSS
+n TSS
+ TWh?
+ TWhM
+ TWhW
+ TWhi
+ TW96
+t.Vhx
+] T%] T
+\ T5] T
+^ T2_ T=_ TH_ T\_ T|_ T
+ TVWSPh
+ TVWSPh
+t$Whl
+ TSPWh
+ TVPWh(
+BDW;A
+ TSVW
+Vj@^u4
+ TWPVh8" Th|" Th
+ T_^[]
+ T_^[]
+ TWPVh
+ T_^[
+h0# T
+WhX# Th
+# ThD$ Th
+ Tj@XQ
+ Tj@XQ
+ TPhT$ ThD$ Th
+ TOuN
+$ ThD$ Th
+QSVW3
+v TPP
+$ Tha
+9;u"j
+& TtX
+% TSh,
+ TPVh0& TShO
+ TPSWh
+' Th(
+QWh(' Th
+' ThD
+t&RQVh$( Th
+t$VhT( Th
+XTQB_^
+ T_^]
+ T9~tt|9
+ Tt,P
+PVh|( Th
+( Th\
+ T[_^
+) Th ) TjNh4) T
+t h`) Th ) TjWh4) T
+ATQEA
+h4) T
+ TSPh
+ TSPh
+h4) T
+4) TW
+* TShv
+Wh<* TSh
+t!PWhl* TSh
+h4) T
+* TSh
+* TSh
+t%PVh
+h4) T
+t%PVh8+ Th
+h4) T
+Vh`+ T
+ Th$, T
+ ThP, T
+, The
+h4) T
+QQSVW
+ TSVWj
+, Ths
+h4) T
+NLf9H
+h4) T
+h4) T
+ TtyVj
+PWhX- Th
+h4) T
+ Tt+V
+h4) T
+- TSh+
+h4) T
+- TShH
+h4) T
+. TShv
+h4) T
+h@. TSh
+h4) T
+t Vh`. TSh
+h4) T
+. TSh
+h4) T
+. TSh
+h4) T
+. TSh
+h4) T
+. TSh
+h4) T
+h4) T
+XTQE^
+h4/ T
+D$ Pj
+t!Ph\/ Thx/ Tj_h
+/ Thx/ Th
+@;F@v
+t%VWh
+0 Th40 Th
+hH0 T
+9F$tA
+;~,u~
+9FHts
+ TWSV
+0 ThP1 Th
+hH0 T
+t%WVht0 Th
+hH0 T
+ TtdW
+Whl1 Th
+hH0 T
+1 Th;
+hH0 T
+t-Vj0Y
+1 ThH
+hH0 T
+2 ThP2 Th}
+hH0 T
+ Thh2 ThP2 Th
+hH0 T
+hH0 T
+hH0 T
+ T_^[]
+w\CV9_pv3
+w\9_pv
+ATQCu/
+G ;G(s
+ T9Gpt
+ TtfW
+3 Th@3 ThC
+hd3 T
+3 Thw
+hd3 T
+>ATQBu>
+9ATQBuO
+PVhX4 Th
+ Tt,P
+3 Th04 Th
+Y__^[
+ !"#$%&'()*+,-./01234567KV89:;<=>?@ABCDEFGHIJLMNOPQRSTUWXYZ[\]^
+ISATQ.dll
+??0?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE@PBDNKK_N@Z
+??0CDirMonitor@@QAE@XZ
+??0CDirMonitorEntry@@QAE@ABV0@@Z
+??0CDirMonitorEntry@@QAE@XZ
+??1?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE@XZ
+??1CDirMonitor@@QAE@XZ
+??1CDirMonitorEntry@@UAE@XZ
+??4CDirMonitorEntry@@QAEAAV0@ABV0@@Z
+??_7CDirMonitorEntry@@6B@
+?AddRef@CDirMonitor@@QAEJXZ
+?AddRef@CDirMonitorEntry@@UAEXXZ
+?AddRefRecord@CDirMonitor@@SGXPAVCDirMonitorEntry@@H@Z
+?Apply@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAEKP6G?AW4LK_ACTION@@PAVCDirMonitorEntry@@PAX@Z1W4LK_LOCKTYPE@@@Z
+?ApplyIf@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAEKP6G?AW4LK_PREDICATE@@PAVCDirMonitorEntry@@PAX@ZP6G?AW4LK_ACTION@@01@Z1W4LK_LOCKTYPE@@@Z
+?CalcKeyHash@CDirMonitor@@SGKPBD@Z
+?Cleanup@CDirMonitor@@QAEHXZ
+?Cleanup@CDirMonitorEntry@@IAEHXZ
+?DeleteIf@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAEKP6G?AW4LK_PREDICATE@@PAVCDirMonitorEntry@@PAX@Z1@Z
+?DeleteKey@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE?AW4LK_RETCODE@@QBD@Z
+?DeleteRecord@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE?AW4LK_RETCODE@@PBVCDirMonitorEntry@@@Z
+?DirMonitorCompletionFunction@CDirMonitor@@SGXPAXKKPAU_OVERLAPPED@@@Z
+?EqualKeys@CDirMonitor@@SG_NPBD0@Z
+?EqualRange@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE_NQBDAAViterator@1@1@Z
+?Erase@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE_NAAViterator@1@0@Z
+?Erase@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE_NAAViterator@1@@Z
+?ExtractKey@CDirMonitor@@SGPBDPBVCDirMonitorEntry@@@Z
+?Find@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE_NQBDAAViterator@1@@Z
+?FindEntry@CDirMonitor@@QAEPAVCDirMonitorEntry@@PBD@Z
+?FindKey@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QBE?AW4LK_RETCODE@@QBDPAPAVCDirMonitorEntry@@@Z
+?FindRecord@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QBE?AW4LK_RETCODE@@PBVCDirMonitorEntry@@@Z
+?GetBufferSize@CDirMonitorEntry@@IAEKXZ
+?IOAddRef@CDirMonitorEntry@@IAEXXZ
+?IORelease@CDirMonitorEntry@@IAEHXZ
+?Init@CDirMonitorEntry@@UAEHK@Z
+?Insert@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE_NPBVCDirMonitorEntry@@AAViterator@1@_N@Z
+?InsertEntry@CDirMonitor@@QAE?AW4LK_RETCODE@@PAVCDirMonitorEntry@@@Z
+?InsertRecord@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE?AW4LK_RETCODE@@PBVCDirMonitorEntry@@_N@Z
+?Lock@CDirMonitor@@QAEXXZ
+?Monitor@CDirMonitor@@QAEHPAVCDirMonitorEntry@@PBDHK@Z
+?Release@CDirMonitor@@QAEJXZ
+?Release@CDirMonitorEntry@@UAEHXZ
+?RemoveEntry@CDirMonitor@@QAE?AW4LK_RETCODE@@PAVCDirMonitorEntry@@@Z
+?RequestNotification@CDirMonitorEntry@@IAEHXZ
+?ResetDirectoryHandle@CDirMonitorEntry@@IAEHXZ
+?SerialComplLock@CDirMonitor@@AAEXXZ
+?SerialComplUnlock@CDirMonitor@@AAEXXZ
+?SetBufferSize@CDirMonitorEntry@@IAEHK@Z
+?Unlock@CDirMonitor@@QAEXXZ
+?_Action@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@CG?AW4LK_ACTION@@PBXPAX@Z
+?_AddRefRecord@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@CGXPBXH@Z
+?_CalcKeyHash@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@CGKK@Z
+?_EqualKeys@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@CG_NKK@Z
+?_ExtractKey@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@CG?BKPBX@Z
+?_Pred@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@CG?AW4LK_PREDICATE@@PBXPAX@Z
+?begin@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE?AViterator@1@XZ
+?end@?$CTypedHashTable@VCDirMonitor@@VCDirMonitorEntry@@PBDVCLKRHashTable@@@@QAE?AViterator@1@XZ
+_AtqAddAsyncHandle@24
+_AtqBandwidthGetInfo@12
+_AtqBandwidthSetInfo@12
+_AtqClearStatistics@0
+_AtqCloseEndpoint@4
+_AtqCloseFileHandle@4
+_AtqCloseSocket@8
+_AtqContextSetInfo@12
+_AtqCreateBandwidthInfo@0
+_AtqCreateEndpoint@8
+_AtqEndpointGetInfo@8
+_AtqEndpointSetInfo@12
+_AtqFreeBandwidthInfo@4
+_AtqFreeContext@8
+_AtqGetAcceptExAddrs@24
+_AtqGetCapTraceInfo@4
+_AtqGetCompletionPort@0
+_AtqGetInfo@4
+_AtqGetStatistics@4
+AtqInitialize
+_AtqPostCompletionStatus@8
+_AtqReadDirChanges@24
+_AtqReadFile@16
+_AtqReadSocket@16
+_AtqSetInfo@8
+_AtqSetSocketOption@12
+_AtqStartEndpoint@4
+_AtqStopAndCloseEndpoint@12
+_AtqStopEndpoint@4
+_AtqSyncWsaSend@16
+AtqTerminate
+_AtqTransmitFile@20
+_AtqTransmitFileEx@24
+_AtqWriteFile@16
+_AtqWriteSocket@16
+_GetIISCapTraceFlag@0
+_GetIISCapTraceLoggerHandle@0
+_IISInitializeCapTrace@4
+_SetIISCapTraceFlag@4
+.?AVexception@@
+.?AVbad_alloc@std@@
+System\CurrentControlSet\Services\InetInfo\Parameters
+_stricmp
+malloc
+realloc
+_purecall
+??0exception@@QAE@XZ
+??0exception@@QAE@ABV0@@Z
+??1exception@@UAE@XZ
+?what@exception@@UBEPBDXZ
+_callnewh
+_CxxThrowException
+__CxxFrameHandler3
+_XcptFilter
+_amsg_exit
+_initterm
+_except_handler4_common
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+??1type_info@@UAE@XZ
+RegisterTraceGuidsW
+GetTraceLoggerHandle
+UnregisterTraceGuids
+RegOpenKeyExA
+RegCloseKey
+RegQueryValueExA
+TraceEvent
+ADVAPI32.dll
+DeleteCriticalSection
+EnterCriticalSection
+LeaveCriticalSection
+CreateFileA
+CloseHandle
+SetLastError
+Sleep
+CreateEventA
+GetLastError
+SetEvent
+WaitForSingleObject
+CreateThread
+GetSystemInfo
+FreeLibrary
+GetModuleHandleExA
+ReadFile
+LocalAlloc
+WriteFile
+GlobalMemoryStatus
+CreateIoCompletionPort
+GetQueuedCompletionStatus
+PostQueuedCompletionStatus
+OutputDebugStringA
+LocalFree
+GetCurrentThread
+LoadLibraryA
+GetProcAddress
+DisableThreadLibraryCalls
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+KERNEL32.dll
+AdjustWindowRectEx
+USER32.dll
+WSARecv
+WSASend
+WSASocketW
+WSAIoctl
+WSASocketA
+WSAAccept
+WS2_32.dll
+NtQueryInformationThread
+ntdll.dll
+??1CLKRHashTable@@QAE@XZ
+PuDbgPrint
+IISInitializeCriticalSection
+?Size@CLKRHashTable@@QBEKXZ
+?EqualRange@CLKRHashTable@@QAE_NKAAVCLKRHashTable_Iterator@@0@Z
+?Find@CLKRHashTable@@QAE_NKAAVCLKRHashTable_Iterator@@@Z
+?Erase@CLKRHashTable@@QAE_NAAVCLKRHashTable_Iterator@@0@Z
+?Erase@CLKRHashTable@@QAE_NAAVCLKRHashTable_Iterator@@@Z
+?Insert@CLKRHashTable@@QAE_NPBXAAVCLKRHashTable_Iterator@@_N@Z
+?Begin@CLKRHashTable@@QAE?AVCLKRHashTable_Iterator@@XZ
+?DeleteIf@CLKRHashTable@@QAEKP6G?AW4LK_PREDICATE@@PBXPAX@Z1@Z
+?ApplyIf@CLKRHashTable@@QAEKP6G?AW4LK_PREDICATE@@PBXPAX@ZP6G?AW4LK_ACTION@@01@Z1W4LK_LOCKTYPE@@@Z
+?Apply@CLKRHashTable@@QAEKP6G?AW4LK_ACTION@@PBXPAX@Z1W4LK_LOCKTYPE@@@Z
+?FindRecord@CLKRHashTable@@QBE?AW4LK_RETCODE@@PBX@Z
+?FindKey@CLKRHashTable@@QBE?AW4LK_RETCODE@@KPAPBX@Z
+?DeleteRecord@CLKRHashTable@@QAE?AW4LK_RETCODE@@PBX@Z
+?DeleteKey@CLKRHashTable@@QAE?AW4LK_RETCODE@@K@Z
+?InsertRecord@CLKRHashTable@@QAE?AW4LK_RETCODE@@PBX_N@Z
+??0CLKRHashTable@@QAE@PBDP6G?BKPBX@ZP6GKK@ZP6G_NKK@ZP6GX1H@ZNKK_N@Z
+??0CLKRHashTable_Iterator@@QAE@ABV0@@Z
+??1CLKRHashTable_Iterator@@QAE@XZ
+?End@CLKRHashTable@@QAE?AVCLKRHashTable_Iterator@@XZ
+??0ALLOC_CACHE_HANDLER@@QAE@PBDPBUALLOC_CACHE_CONFIGURATION@@H@Z
+??1ALLOC_CACHE_HANDLER@@QAE@XZ
+?Alloc@ALLOC_CACHE_HANDLER@@QAEPAXXZ
+?Free@ALLOC_CACHE_HANDLER@@QAEHPAX@Z
+ScheduleWorkItem
+RemoveWorkItem
+PuCreateDebugPrintsObject
+PuLoadDebugFlagsFromRegStr
+IISGetPlatformType
+PuDeleteDebugPrintsObject
+ScheduleAdjustTime
+IisRTL.DLL
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+000004B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Asynchronous Thread Queue
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+isatq.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+isatq.dll
+ProductName
+Internet Information Services
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0
+;+<G<M<Y<c<o<y<
+=3=a=z=
+=U>d>}>
+?)?3?[?e?n?
+090I0^0
+1 1R1i1
+1R2v2
+3(3.343Y3n3v3
+4(4H4n4x4
+5G5L5U5
+686X6
+7D7M7T7Z7`7l7u7z7
+8!8'8I8
+; ;-;5;:;D;J;P;x;
+=%=7=A=Z=
+=F>Y>m>|>
+?@?P?`?
+0.0G0T0
+1!1W1
+3H3e3o3t3~3
+3B4M4y4
+5%50565<5E5R5Z5b5g5w5~5
+6"6(6.6<6B6N6U6_6l6r6w6
+7 757=7B7G7]7b7l7r7x7
+8(80878C8O8W8n8z8
+9"9(999A9M9Z9`9m9s9y9
+:.:7:?:I:c:q:y:
+;";/;4;A;G;M;S;[;c;m;s;
+<#<0<7<=<F<N<a<
+='=/=>=C=P=T=X=\=`=d=h=l=p=t=
+>>>h>
+0Z1e1s1|1
+2 2*20262H2O2Y2b2j2o2y2
+3#3)3/3>3F3K3U3[3a3l3
+3(4g4
+5&5,525X5
+5;6E6z6
+7%7Y7
+7%8{8
+889d9
+;5;X;w;
+<(<6<I<Q<`<j<s<x<}<
+="='=4=>=S=`=h=m=x=
+=5>U>Z>d>j>p>
+?$?;?A?H?R?
+0(070@0g0
+1$1V1
+162V2
+3'30383=3G3M3S3l3
+474k4
+5"5,52585_5g5l5v5|5
+5*60666M6S6c6
+7'7-7]7n7
+808B8L8b8h8m8w8}8
+8%9-939;9L9Y9a9l9}9
+:R:t:
+::;H;V;a;g;m;
+;!<V<g<
+=$=-=@=H=W=h=m=w=}=
+=L>Y>_>n>s>
+?"?(?.?>?D?O?T?^?d?j?r?}?
+0&0A0o0
+1+121L1p1
+3$3*303O3U3`3g3l3~3
+4!5*5\5i5
+6+686>6n6s6}6
+6'7-72787=7C7H7N7S7Y7^7d7i7
+9 9A9R9
+:!:':/:5:::A:m:z:
+;);@;J;R;a;f;p;v;|;
+<=<H<Z<e<k<q<
+=*=?=J=P=V=_=}=
+>!>,>2>8>>>j>u>{>
+> ?,?1?;?A?G?j?
+070=0Z0e0
+1!1&131=1F1K1R1X1^1n1x1
+2!2*20262;2
+3'3-333=3e3x3
+5$5r5
+6$60656?6E6K6c6z6
+7#7-73797R7\7k7
+8&8O8Y8e8j8t8z8
+9!9'9-9?9T9b9j9p9u9
+9P:|:
+:(;`;
+< <Q<h<v<
+<%=H=R=u=
+>s>}>
+>H?e?n?u?z?
+0-0D0K0Q0W0y0
+1#1(151:1?1D1I1N1S1Y1_1g1m1s1y1
+2(2/242?2F2L2X2d2
+4V4_4d4k4q4
+5,5I5V5
+626W6\6a6
+7'70767W7_7f7l7r7
+8%8-8@8L8T8
+9-9Q:i:
+:P;~;
+<&<<<D<h<q<
+=*=J=V=
+?3?B?J?Y?e?
+0#0)00070>0E0L0S0Z0b0j0r0~0
+1!1-1
+2:2X2
+3 3(3,34383@3D3L3P3X3\3d3h3p3t3|3

@@ -1,0 +1,415 @@
+!This program cannot be run in DOS mode.
+yRich!
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+SAMLIB.dll
+SmartAiQueue
+SmartAiQueue Installer
+Install
+Uninstall
+Inspect
+GroupTrusteeAI
+CSI GroupTrustee Advanced Installer
+onecore\base\wcp\plugins\grouptrusteeai\grouptrusteeai.cpp
+Windows::WCP::WCF::GroupTrusteeInstaller::QueueComponent
+Not-null check failed: componentManifest
+description
+QueueComponent called with Name: {name}, Type: {type}, Description: {description}
+Windows::WCP::WCF::GroupTrusteeInstaller::CommitChanges
+SamConnect( &serverName, &samHandle, 0x0001 | 0x0020, &serverObjectAttributes)
+SamOpenDomain( samHandle, 0x0200 | 0x0040 | 0x0010, accountDomainSid, &domainHandle)
+Invalid GroupTrustee Data.
+Windows::WCP::WCF::GroupTrusteeInstaller::AddTrustee
+SamCreateUserInDomain( domainHandle, &(newTrustee->TrusteeName), 0x0010 | 0x0020, &trusteeHandle, &trusteeRid)
+SamQueryInformationUser( trusteeHandle, UserControlInformation, reinterpret_cast<PVOID*>(static_cast<USER_CONTROL_INFORMATION **>(&controlInformation)))
+SamSetInformationUser( trusteeHandle, UserControlInformation, controlInformation)
+SamSetInformationUser( trusteeHandle, UserExtendedInformation, reinterpret_cast<PVOID>(&extendedInformation))
+SamOpenUser( domainHandle, 0x0010 | 0x0020, trusteeRid, &trusteeHandle)
+SamSetInformationUser( trusteeHandle, UserAdminCommentInformation, reinterpret_cast<PVOID>(&adminCommentInformation))
+RtlCreateServiceSid( &newTrustee->TrusteeName, trusteeSid, &trusteeSidSize)
+ConvertSidToStringSidW(trusteeSid, &trusteeStringSid)
+SamCreateAliasInDomain( domainHandle, &newTrustee->TrusteeName, 0x0010 | 0x0001 | 0x0002 | 0x0008, &trusteeHandle, &trusteeRid)
+SamOpenAlias( domainHandle, 0x0010 | 0x0001 | 0x0002 | 0x0008, trusteeRid, &trusteeHandle)
+SamQueryInformationAlias( trusteeHandle, AliasAdminCommentInformation, reinterpret_cast<PVOID*>(static_cast<ALIAS_ADM_COMMENT_INFORMATION **>(&adminCommentInformation)))
+SamSetInformationAlias( trusteeHandle, AliasAdminCommentInformation, reinterpret_cast<PVOID>(&newAdminCommentInformation))
+CreateWellKnownSid( wellKnownSid, accountDomainSid, memberSid, &memberSidSize)
+SamLookupNamesInDomain( domainHandle, 1, member, &memberRid, &memberUse)
+RtlCopySid( sizeof(memberSidBuffer), memberSid, accountDomainSid)
+RtlCopySid( sizeof(trusteeSidBuffer), trusteeSid, accountDomainSid)
+LsaAddAccountRights( lsaHandle, trusteeSid, &privilegeName, 1)
+Windows::WCP::WCF::GroupTrusteeInstaller::DeleteTrustee
+SamOpenUser( domainHandle, (0x00010000L), *existingRid, &trusteeHandle)
+SamDeleteUser(trusteeHandle)
+RtlCreateServiceSid( &trustee->TrusteeName, trusteeSid, &trusteeSidSize)
+SamOpenAlias( domainHandle, (0x00010000L), *existingRid, &trusteeHandle)
+SamDeleteAlias(trusteeHandle)
+onecore\private\Base\inc\wcp_canonical_smartai.h
+Windows::WCP::COM::SmartAdvancedInstallerHelper<struct GroupTrusteeHelpers::GroupTrusteeData,class BUCL::Rtl::CSwappableValueTableTraits<class BUCL::Rtl::CCaseInsensitiveLUnicodeStringTableTraits,struct Windows::WCP::DataChangeTuple<struct GroupTrusteeHelpers::GroupTrusteeData> > >::QueueOperationData
+Not-null check failed: Data
+Duplicate object {0} found during {1} operation.
+RSDS%
+grouptrusteeai.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+L$4_^[3
+L$$Ph
+L$0PQ
+D$(Pj
+D$\PjD
+D$4Vh`
+9|$,t
+D$\PhP
+D$4Vh`
+y@Vhp
+yIVhp
+S(+S$
+G(+G$
+G(+G$
+X4+X0
+G4+G0
+DtCSV
+;t04u
+t&hLt
+Y__^[
+SamConnect
+SamOpenDomain
+SamLookupNamesInDomain
+SamCreateUserInDomain
+SamQueryInformationUser
+SamSetInformationUser
+SamOpenUser
+SamCreateAliasInDomain
+SamOpenAlias
+SamQueryInformationAlias
+SamSetInformationAlias
+SamAddMemberToAlias
+SamRemoveMemberFromAlias
+SamDeleteUser
+SamDeleteAlias
+SamFreeMemory
+SamCloseHandle
+grouptrusteeai.DLL
+DllCanUnloadNow
+DllCsiGetHandler
+_itow_s
+_purecall
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+_except_handler4_common
+LocalFree
+LsaOpenPolicy
+LsaQueryInformationPolicy
+ConvertSidToStringSidW
+GetLastError
+CreateWellKnownSid
+LsaAddAccountRights
+LsaRemoveAccountRights
+LsaFreeMemory
+LsaClose
+DisableThreadLibraryCalls
+DeleteCriticalSection
+InitializeCriticalSection
+HeapDestroy
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-heap-obsolete-l1-1-0.dll
+api-ms-win-security-lsapolicy-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+RtlRaiseStatus
+RtlCopySid
+RtlInitUnicodeString
+RtlCreateServiceSid
+RtlEqualUnicodeString
+RtlSubAuthorityCountSid
+RtlSubAuthoritySid
+RtlCompareUnicodeString
+ntdll.dll
+DeleteTrusteeData
+?RtlGetFacilityTracingFlags@Rtl@WCP@Windows@@YIKPAU_RTL_TRACING_FACILITY@123@@Z
+GetGroupTrusteeDataCountFromManifest
+GetGroupTrusteeDataFromManifest
+?RtlTraceVa@Rtl@WCP@Windows@@YIXKKPAU_RTL_TRACING_FACILITY@123@QBDKPAD@Z
+?RtlTraceFormat_PCUNICODE_STRING@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCULONG_AsDecimalOnly@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlInitLUnicodeStringFromUnicodeString
+RtlReportErrorOrigination
+RtlInitLUnicodeStringFromNullTerminatedString
+AddTrusteeCapabilities
+MapToWellKnownSidType
+MapToPrivilegeName
+DeleteTrusteeCapabilities
+ConvertHResultToNtStatus
+ConvertNtStatusToHResult
+RtlFreeLUnicodeString
+?RtlTraceFormat_PCLUNICODE_STRING_AsLiteralString@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlHashLUnicodeString
+RtlDowncaseUCSCharacter
+RtlCompareLUnicodeStrings
+RtlReallocateLUnicodeString
+WCP.dll
+VirtualProtect
+LoadLibraryExA
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+RaiseException
+GetSystemInfo
+HeapAlloc
+GetProcAddress
+GetProcessHeap
+FreeLibrary
+VirtualQuery
+api-ms-win-core-memory-l1-1-0.dll
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+CSI GroupTrustee plug-in
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+grouptrusteeai.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+grouptrusteeai.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0D0H0P0X0p0
+1 1$1H1
+3'323=3
+4<5G5Z5n5
+6'6.6>6Q6d6
+8,8C8
+9"9,92999K9]9o9
+:2:L:
+;!;1;<;P;V;v;
+<-<Y<f<
+=*=;=O=e=t=
+>'>A>`>z>
+?H?Z?l?
+1;1L1[1v1
+2"2;2p2
+4(4<4B4t4
+5:5J5U5i5o5
+6"6=6T6
+7$7*7B7Z7r7
+9+919=9\9s9
+:!:>:W:
+;0;H;m;
+3$3*373]3
+4%4*41464K4R4d4o4v4"5L5Y5^5m5r5
+>0>F>
+?,?5?9???I?t?
+0E1t1
+30353P3U3p3v3
+4 4&4.444F4L4[4a4j4p4w4}4
+5"5F5
+6"6,6g6q6~6
+7"717R7|7
+8)8;8P8\8b8w8
+9c9o9u9
+9W:\:a:
+;';0;6;W;_;f;l;r;
+<%<-<@<L<T<
+=-=Q>i>
+>P?~?
+0$000
+2"2*292E2b2
+3 3'3.363>3F3R3[3`3f3p3z3
+4+4;4K4[4k4{4
+6$6(60646<6@6H6L6T6X6`6d6l6p6
+0 0@0D0
+0 0$0(0,0004080<0@0
+h&CK#SP
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,wWJP78dYe5bCvQH2aMdfktkl0h7OpQahiYUKQdKDw9I=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+/6k;;
+20220506221101.775Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:2AD4-4B92-FA011%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192739Z
+230126192739Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:2AD4-4B92-FA011%0#
+Microsoft Time-Stamp Service0
+6z$WD
+IsK6*
+L8zp0
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+vFfl|
+n{(aM0
+"c}FK
+^?H4"
+g;^z 
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:2AD4-4B92-FA011%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220507035814Z
+20220508035814Z0t0:
+1,0*0
+1(0&0
+Wc6H%`
+*BBdsa$
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+xBH_o.^Jt-

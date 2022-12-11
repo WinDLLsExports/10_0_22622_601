@@ -1,0 +1,83 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\tbs.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008000 Import Address Table
+             1C0008100 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          EE ExFreePoolWithTag
+                         8F1 RtlInitUnicodeString
+                         B69 ZwOpenKey
+                         BA8 ZwQueryValueKey
+                         B17 ZwClose
+                         66F NtQueryInformationFile
+                         8D4 RtlGetPersistedStateLocation
+                          9A EtwWriteTransfer
+                         B23 ZwCreateFile
+                         956 RtlNtStatusToDosError
+                         B22 ZwCreateEvent
+                         B3D ZwDeviceIoControlFile
+                         BF4 ZwWaitForSingleObject
+                         975 RtlQueryFeatureConfiguration
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                          92 EtwSetInformation
+                          8F EtwRegister
+                          94 EtwUnregister
+                          BD ExAllocatePool2
+
+  Section contains the following exports for tbs.sys
+
+    00000000 characteristics
+    5FD5DCE4 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 DllInitialize
+          2    1 00003AA0 DllUnload
+          3    2 00002800 Tbsi_Context_Create
+          4    3 00002930 Tbsi_Create_Windows_Key
+          5    4 000029E0 Tbsi_GetDeviceInfo
+          6    5 00002AA0 Tbsi_Get_OwnerAuth
+          7    6 000032F0 Tbsi_Get_TCG_Log
+          8    7 00003320 Tbsi_Is_Tpm_Present
+          9    8 00003380 Tbsi_Physical_Presence_Command
+         10    9 00003400 Tbsi_Revoke_Attestation
+         11    A 00003490 Tbsip_Cancel_Commands
+         12    B 000034E0 Tbsip_Context_Close
+         13    C 00003520 Tbsip_Submit_Command
+         14    D 00003560 Tbsip_Submit_Command_NonBlocking
+         15    E 000035A0 Tbsip_TestInterruptInformation
+         16    F 00003660 Tbsip_TestMorBit
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

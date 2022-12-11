@@ -1,0 +1,579 @@
+!This program cannot be run in DOS mode.
+Rich!
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+Policy Service Provider
+Certificate Service Provider
+SspiCli.dll
+RPCRT4.dll
+CRYPT32.dll
+OLEAUT32.dll
+api-ms-win-core-com-l1-1-0.dll
+netutils.dll
+api-ms-win-service-management-l1-1-0.dll
+USERENV.dll
+api-ms-win-service-winsvc-l1-1-0.dll
+ext-ms-win-adsi-activeds-l1-1-0.dll
+ADVAPI32.dll
+%ws %ws failed: 0x%x.
+NetpCertContinuePackagePartInstall: WARNING: Called in unexpected context (%d), ignoring.
+CoInitializeEx
+%ws:%ws
+CoCreateInstance(RequestCmc)
+InitializeFromTemplateName
+GetInnerRequest
+QueryInterface(Pkcs10)
+get_PrivateKey
+get_ExportPolicy
+put_ExportPolicy
+put_ContainerName
+Encode
+get_RawData
+NetpCertGetCAConfigList
+%ws SetCredential failed: 0x%x.
+%ws CoCreate(CertReq) failed: 0x%x.
+%ws Request->Submit('%ws') result: 0x%x.
+%ws (info) CA[]=%ws.
+%ws Submission failed: pending.
+%ws Submission failed: disposition=0x%x, hr=0x%x.
+%ws All Request->Submit() attempts failed.
+GetCert(Chain)
+%ws CertOpenStore failed: 0x%x.
+GetCert()
+CertCreateCertificateContext
+CertFindCertificateInStore
+QueryInterface(PrivateKeyInternal)
+_GetProviderHandle
+CertSetCertificateContextProperty
+%ws PFXExportCertStore(%d) failed: 0x%x.
+%ws Key Close failed: 0x%x.
+%ws Result: 0x%x.
+NetpPolContinuePackagePartInstall: WARNING: Called in unexpected context (%d), ignoring.
+NetpCertCreatePackagePart:
+NetpCertCreateCertFromTemplate:
+NetpRegQueryBinaryValue:
+%ws %ws value is missing, invalid, etc: 0x%x.
+NetpRegQueryDwordValue:
+NetpRegQuerySzValue:
+NetpImpersonateMachineWithPinnedLogonDC:
+%ws CryptUnprotectMemory failed: 0x%x.
+%ws LogonUser failed: 0x%x.
+%ws CryptProtectMemory failed: 0x%x.
+%ws ImpersonateLoggedOnUser failed: 0x%x.
+NetpRevertImpersonation:
+%ws RevertToSelf failed: 0x%x.
+NetpCallAuthenticationPackages:
+%ws LsaConnectUntrusted failed: 0x%x.
+%ws LsaCallAuthenticationPackage failed: 0x%x, 0x%x.
+NetpCaptureImpersonationToken:
+%ws OpenThreadToken failed: 0x%x.
+NetpRestoreImpersonationToken:
+%ws SetThreadToken failed: 0x%x.
+<other>
+enterprise
+groupPolicy
+ntauth
+%ws Added PFX: template=%ws, size=0x%x.
+%ws Added SST: loc=%ws, name=%ws, size=0x%x.
+NetpCertRequestPackagePartInstall:
+%ws Target image does not support certificate provisioning.
+Pfx%d
+PfxCount
+RegSetValueEx(1)
+Sst%d
+SstCount
+RegSetValueEx(2)
+%ws Successfully initiated part installation: Pfx count=%d, Sst count=%d.
+NetpCertGetSerializedStore:
+%ws CertSaveStore failed: 0x%x.
+%ws CertSaveStore(2) failed: 0x%x.
+NetpCertRequestStoreInstall:
+RegCreateKeyEx
+Location
+RegSetValueEx
+Template
+PrivateKeyExportPolicy
+PolicyServerUrl
+PolicyServerUrlFlags
+PolicyServerId
+NetpCertFinalizePfxInstallation:
+NetpRegQueryDwordValue
+CertOpenStore(MY)
+CertOpenStore(CA)
+RegOpenKeyExW
+%ws PFXIsPFXBlob failed: 0x%x
+PFXImportCertStore
+%ws CertEnumCertificatesInStore failed: 0x%x
+%ws CertGetCertificateContextProperty failed: 0x%x
+%ws CertAddCertificateContextToStore failed: 0x%x
+%ws %d certs enumerated, %d certs installed, template '%ws'.
+%ws result: 0x%x.
+NetpCertFinalizeSstInstallation:
+%ws [%d]: Failed to open subkey: 0x%x.
+%ws [%d]: Sst (%ws, %ws) open failed: 0x%x
+%ws [%d]: Store (%ws, %ws) open failed: 0x%x
+NetpCertGetCAConfigList:
+CoCreateInstance(PolSrvListMgr)
+Initialize(PolSrvListMgr)
+get_Count
+get_ItemByIndex
+get_AuthFlags
+get_Url
+get_Default
+%ws (info) PolicyServerUrl not CEP default, ignored: '%ws'.
+get_Flags
+ldap:
+CoCreateInstance(EnrPolAD)
+https://
+CoCreateInstance(EnrPolWebSvc)
+<unexpected URL>
+Initialize(PolSrv)
+LoadPolicy
+GetPolicyServerId
+NetpCertGetCAConfigListLdap:
+GetTemplates
+get_ItemByName
+GetCAsForTemplate
+%ws %d CAs found.
+get_CAPropDNSName
+get_CAPropCommonName
+LocalAlloc
+%ws\%ws
+NetpCertGetCAConfigListHttp:
+GetCAs
+%ws 0 CAs found.
+NetpCertFindTemplateOnCA
+QueryInterface
+_GetIsRenewalOnly
+_GetAuthentication
+_GetType
+_GetConfigString
+_GetCommonName
+%ws (info) CA is renewal only, ignore: '%ws'.
+%ws (info) CA doesn't support Kerberos, ignore: '%ws'.
+NetpCertAddCAConfigListEntry
+NetpCertFindTemplateOnCA:
+get_CAPropCertificateTypes
+SafeArrayGetLBound
+SafeArrayGetUBound
+SafeArrayAccessData
+SafeArrayGetElement
+NetpCertAddCAConfigListEntry:
+NetpCertTransferCerts:
+%ws %ws, %ws: %d certs enumerated, %d certs installed. Result: 0x%x.
+NetpPolCreatePackagePart: Success, %d elements from %d sources.
+NetpPolRequestPackagePartInstall
+%ws: Target image does not support policy provisioning.
+%ws: Max policy element list limit exceeded.
+%ws: '%ws' element list key creation failed: 0x%x.
+%ws: '%ws' element key creation failed: 0x%x.
+@@KeyPath
+%ws: Setting '%ws' key's path data failed: 0x%x.
+%ws: Setting '%ws' key's value data failed: 0x%x.
+RootKeyId
+%ws: Setting %ws value failed: 0x%x.
+NumElements
+Source
+%ws: %d elements sourced from '%ws'.
+NumElementLists
+%ws: Success, %d elements from %d sources.
+\\%ws\SysVol\%ws\Policies\%ws\Machine\Registry.pol
+NetpPolGetPolicyCnFromDisplayName:
+LDAP://CN=Policies,CN=System
+%ws ADsOpenObject(%ws) failed: 0x%x.
+lastError=0x%x, errorDescr=%ws.
+providerName=%ws.
+%ws SetSearchPreference failed: 0x%x.
+(&(objectClass=groupPolicyContainer)(displayName=%ws))
+%ws ExecuteSearch failed: 0x%x.
+%ws GetFirstRow failed: 0x%x.
+%ws Found cn=%ws for displayName=%ws.
+%ws GetColumn('%ws') failed: 0x%x.
+%ws No cn found for displayName=%ws.
+NetpPolCreatePolicyElementList:
+machine
+caller
+%ws CreateFile('%ws') as %ws failed: 0x%x.
+%ws Success (as %ws), %d elements sourced from '%ws'.
+NetpPolParsePolicyFile
+%ws: Failed to read file signature.
+%ws: Invalid file signature: 0x%x.
+%ws: Failed to read file version.
+%ws: Invalid file version: 0x%x.
+%ws: end of file, %d elements found.
+%ws: Failed to match '['.
+%ws: Failed to read key name.
+%ws: Key name max length exceeded.
+%ws: Failed to read 1st ';'.
+%ws: Failed to match 1st ';'.
+%ws: Failed to read value name.
+%ws: Value name max length exceeded.
+%ws: Failed to read 2nd ';'.
+%ws: Failed to match 2nd ';'.
+%ws: Failed to read value type.
+%ws: Failed to read 3rd ';'.
+%ws: Failed to match 3rd ';'.
+%ws: Failed to read value length.
+%ws: Failed to read 4th ';'.
+%ws: Failed to match 4th ';'.
+%ws: Failed to read value data.
+%ws: Failed to read ']'.
+%ws: Failed to match ']'.
+%ws: Max policy element limit exceeded.
+NetpPolFinalizeInstallation: Bad provisioning part information: 
+%ws%ws value is missing or invalid.
+%wsFailed to open '%ws' key: 0x%x.
+%wsFailed to query '%ws' key info: 0x%x.
+%wsMissing or invalid information under '%ws' key.
+%wsError enumerating values under '%ws' key.
+%ws'%ws' key's default value missing or invalid: 0x%x.
+%wsFailed to read '%ws' key's '%ws' value: 0x%x.
+%wsFailed to create/open '%ws' key: 0x%x.
+%ws: %ws key's %ws value init failed: 0x%x.
+(unknown)
+NetpPolFinalizeInstallation: %d elements sourced from '%ws'.
+NetpPolFinalizeInstallation: Success, %d elements from %d sources.
+**del.
+**soft.
+**delvals.
+**Comment:
+**SecureKey
+**DeleteKeys
+**DeleteValues
+NetpPolProcessSpecialValue
+NetpPolExtractKeyOrValueName:
+%ws Data exhausted before beginning of name.
+%ws Data exhausted before end of name.
+%ws Key or value name exceeds maximum.
+%ws Data exhausted after end of name.
+NetpPolInitiateGpNotification
+%ws: OpenSCManager failed: 0x%x.
+gpsvc
+%ws: OpenService failed: 0x%x.
+%ws: result: 0x%x.
+Offline Provisioning
+RSDSR
+netprovisionsp.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.text$lp00netprovisionsp.dll!30_clientonly
+.text$mn
+.text$zy
+.text$zz
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$zz$brc
+.data
+.bss$00
+.bss$pr00
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+D$hPf
+Y__^[
+QRPh,
+QRPhL
+QRPhl
+QRPh,
+t$ 9V
+D$49C
+D$(92uP
+D$4;C
+D$$;{
+;N$s~
+;V,sO
+VPh #
+WPhp!
+t2Wh 
+j\Xf9
+pPSSj
+tWWh 
+PSSSj
+t(Whh*
+WPhp+
+$Wh45
+t(Whh.
+t'Wh<3
+\Wh04
+6WhP3
+.Wh03
+t)WhD1
+SVWj 
+PVh|:
+PQh09
+@_^[]
+PVWh 
+|PRRRj
+8PRegt!
+j;Yf9
+j;^f90
+j;Yf9
+|[RRRj
+PSSSSSS
+ISSSS
+QQPQV
+2Wh|:
+WVPh0:
+LsaConnectUntrusted
+NdrMesTypeEncode2
+LsaDeregisterLogonProcess
+CryptUnprotectMemory
+CryptProtectMemory
+NdrMesTypeDecode2
+NdrMesTypeFree2
+NdrMesTypeAlignSize2
+LsaCallAuthenticationPackage
+LsaFreeReturnBuffer
+CertCreateCertificateContext
+PFXImportCertStore
+CoUninitialize
+CoCreateInstance
+CertFreeCertificateContext
+NetApiBufferAllocate
+CertAddCertificateContextToStore
+I_RpcExceptionFilter
+CertSaveStore
+MesDecodeBufferHandleCreate
+CertEnumCertificatesInStore
+CertCloseStore
+PFXIsPFXBlob
+MesHandleFree
+PFXExportCertStoreEx
+CertSetCertificateContextProperty
+CertFindCertificateInStore
+MesEncodeDynBufferHandleCreate
+CertOpenStore
+CoInitializeEx
+CertGetCertificateContextProperty
+NetApiBufferFree
+MesBufferHandleReset
+OpenServiceW
+GenerateGPNotification
+OpenSCManagerW
+CloseServiceHandle
+QueryServiceStatus
+ADsOpenObject
+FreeADsMem
+ADsGetLastError
+LogonUserW
+NetProvisionSp.dll
+NetpCertProviderInitialize
+NetpPolProviderInitialize
+wcscpy_s
+_vsnwprintf
+_wcsicmp
+_wcsnicmp
+wcsncpy_s
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+msvcrt.dll
+_except_handler4_common
+RegQueryValueExW
+OpenThreadToken
+SetThreadToken
+LocalAlloc
+ImpersonateLoggedOnUser
+GetLastError
+DisableThreadLibraryCalls
+GetCurrentThread
+CloseHandle
+LocalFree
+RevertToSelf
+RegOpenKeyExW
+RegSetValueExW
+RegCreateKeyExW
+RegCloseKey
+GetFileSizeEx
+RegEnumValueW
+GetModuleHandleExW
+RegDeleteValueW
+CreateFileW
+FreeLibraryAndExitThread
+RegDeleteTreeW
+UnmapViewOfFile
+Sleep
+CompareStringEx
+CreateThread
+FreeLibrary
+RegQueryInfoKeyW
+CreateFileMappingW
+MapViewOfFile
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+RtlInitUnicodeString
+ntdll.dll
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Provisioning Service Provider DLL
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+NETPROVISIONSP.DLL
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+NETPROVISIONSP.DLL
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+<3S3[3d3m3|3
+4!4(4/464=4_4
+485=5O5
+6#6N6h6}6
+6 777Q7d7i7o7
+758S8_8
+9X:b:}:
+:";R;W;t;};
+<#<(<.<8<B<R<b<h<s<y<
+<(=-=?=]=q=w=:>X>g>p>y>
+>5?J?W?k?x?
+0 000@0M0a0q0
+1#131C1S1c1s1
+2#232C2S2c2s2
+3#373G3W3d3
+334o4
+4/5N5V5
+6'767\8
+9&:9:M:a:u:
+;#;*;N;h;o;
+<#<*<8<@<Z<a<
+<6=P=
+> >+>J>i>q>
+?N?k?w?
+0A0U0b0
+1%1:1T1y1
+2@2U2j2t2
+3F4f4
+6<6|6?7X7a7h7p7
+8"8*808<8`8n8
+9+9F9T9k9y9
+:=:E:K:m:
+<%<><E<l<s<{<
+=,=P=`=l=s={=
+>+>C>L>Z>
+0$060N0g0|0
+1+151<1D1j1
+2M2c2h2m2v2
+3C3L3v3
+4#434C4O4Y4d4v4
+5&5F5W5k5|5
+616=6F6M6U6s6
+7%7;7T7[7c7~7
+808K8`8v8
+9 9B9
+:%:,:;:e:z:
+; ;&;0;J;W;d;l;t;
+<$<2<;<A<K<g<}<
+=(=.=7=A=S=]=c=m=w=
+>$>5>D>P>\>e>l>t>
+? ?:?H?l?z?
+0%0+070C0L0`0i0o0{0
+03191B1L1i1t1}1
+2%2_2m2
+2"3+3L3m3
+4G4\4s4
+5-555?5I5w5
+6 676E6\6j6|6
+7!7/7K7Y7g7r7
+878N8e8m8w8
+9+9:9M9W9]9k9s9
+:!:.:I:_:
+;;;b;k;z;
+<j<v<
+='=?=K=}=
+>'>A>g>
+'1/161S1u1
+2;2N2
+3*333:3K3v3
+4*4h4~4
+515^5g5
+566T6
+7&7=7s7z7
+9`9m9
+9?:]:k:
+:q;};
+<)<2<E<Y<b<t<
+=#=;=D=L=`=t={=
+>;>@>G>N>U>
+>(?4?I?N?`?
+0&0-050n0|0
+1Q1c1
+3/3S3\3d3
+4)5E5Z5q5y5
+6!6/666C6O6W6_6n6v6
+7*7>7L7S7Z7h7v7
+8Q8X8`8
+;";-;8;C;N;Y;d;o;z;
+;,<G<
+=,=W=
+>!?@?J?P?
+0 0*000F0P0V0k0
+1#1+1Q1z1
+2-2@2j2s2
+2 3*3>3N3^3n3v3
+4*43494A4G4h4
+5$5(50545P5\5t5x5
+0 0$0(0,0004080<0@0H0L0P0T0X0\0`0d0h0l0p0t0x0

@@ -1,0 +1,1493 @@
+!This program cannot be run in DOS mode.
+wH&tw<
+wH&bw4
+wRich>
+.text
+`.data
+.pdata
+@.rsrc
+@.reloc
+(StatusFailed)
+(StatusPending)
+(StatusInvalid)
+(StatusUnexpanded)
+(StatusDeleted)
+z3*KI
+NGENServicePolicy
+NGENServiceWaitPassiveWork
+NGENServiceWaitAggressiveWork
+NGENServiceWaitWorking
+NGENServicePassiveWorkWaitTimeout
+NGENServicePassiveHardDiskIdleTimeout
+NGENServicePassiveExceptInputTimeout
+NGENServiceIdleNoInputPeriod
+NGENServiceConservative
+NGENUseService
+NGENServiceBreakOnStart
+NGENServiceWorkerPriority
+NGENServiceSynchronization
+NGENServiceAbortIdleWorkUnderDebugger
+NGenServiceDebugLog
+NGENServiceIdleDebugInfo
+NGenServiceMaxLogSize
+NGENServiceRestrictWorkersPrivileges
+NGENServiceIdleBatteryThreshold
+NGENServiceTestHookDll
+PendingUpdate
+AccumulatedWaitIdleTime
+RootstoreDirty
+CONTROLLER_NO_WORK
+CONTROLLER_PASSIVE_COMPILING
+CONTROLLER_WAIT_FOR_PASSIVE_COMPILING
+CONTROLLER_AGGRESSIVE_COMPILING
+CONTROLLER_WAIT_FOR_AGGRESSIVE_COMPILING
+ngenservice_pri0_lock.dat
+ngenservice_pri1_lock.dat
+ngenservice_pri2_lock.dat
+ngenservice_pri3_lock.dat
+Service Manager returned CLR_OPTSVC_E_CONTROLLER_INTERRUPT.
+Service Manager returned 0x%08x. Transient failures: %u
+Assemblies to compile: %i
+Service Manager Callback:
+Began compiling: %s
+Failed to compile: %s . 
+Error code = 0x%08x 
+Successfully compiled: %s
+New Controller state is %s. Idle considerations = 0x%08x
+ResetDirtyRootStore(): Failed to clear root store dirty flag
+ResetDirtyRootStore(): Failed to hook up registry notifier
+ControllerNotifyNewWorkAvailable(): Failed to get NGENService state
+ControllerNotifyNewWorkAvailable(): Failed to clear accumulated idle time wait
+ControllerNotifyNewWorkAvailable(): Failed to mark root store as dirty
+SERVICE_INTERRUPT
+CLIENT_INTERRUPT
+USER_INTERRUPT
+DIRTY_ROOTSTORE_INTERRUPT
+SERVICEWORKER_INTERRUPT
+InterruptController(): Interrupt requested. Reason = %s
+RunController(): ResetInterrupt()
+WaitForInterruptProcessedEvent()
+: Interrupts were processed, continuing
+: Listener thread shutting down
+WaitForNextListenerCheck(): Waiting for %i ms
+: Interrupts dispatched. Listener will wait until they're processed
+: Exiting due to dirty root store event
+: Exiting due to SCM request event
+: Exiting due to controller state change
+Listener(): ShouldContinueIdleWork() returned false
+Local\
+InitController(): Service running with server policy
+InitController(): Service running with client policy
+InitController(): Failed to initialize idle logic
+InitController(): Failed to create interrupt event
+InitController(): Failed to create controller state change event
+InitController(): Failed to create resume listener event
+InitController(): Failed to create dirty root store event
+InitController(): Failed to create SCM event
+InitController(): Failed to create Listener shutdown
+InitController(): Failed to get NGENService state registry key
+InitController(): Failed to get NGENService idle state registry key
+InitController(): Failed to reset idle timeout
+InitController(): Failed to register root store notifier
+InitController(): Failed to create listener thread
+InitController(): Success
+InitController(): Failed
+ShutdownController(): Completed
+ControllerIsWorkAvailable(): Failed to retrieve service manager
+ControllerIsWorkAvailable(): ICorSvcManager::IsWorkAvailable() failed(). Returned HR=0x%08x
+WaitForNextStateMachineCheck(): Waiting for %i ms
+: Exiting due to interrupt event
+DoWork(): Failed to retrieve service manager
+DoWork(): There is a pending update...
+Deferred Update() failed(). Returned HR=0x%08x
+Service successfully completed pending update
+DoWork(): Attempting to acquire priority lock
+DoWork(): Waiting for other service to complete higher priority work
+DoWork(): We were interrupted while wait for other service to complete higher pri work
+DoWork(): Failed to acquire priority lock
+DoWork(): We were interrupted while acquiring priority lock
+Processing work for priority %i
+DoWork(): ICorSvcManager::Work() failed(). Returned HR=0x%08x
+ControlStateMachineWaitHelper():Can't proceed: Waiting for client to complete work...
+ControlStateMachineWaitHelper():Timeout for idle hard disk detection expired
+ControlStateMachineWaitHelper():Running in input backstop mode: will ignore anything other than input
+ControlStateMachineWaitHelper():Running in absolute backstop mode: declaring the machine as idle
+Service will shutdown due to a pending reboot
+ngenservicetestlock.dat
+ControllerRun(): About to execute state machine...
+Service work was interrupted due to the following reason(s): %s (Mask: 0x%02x)
+ControllerRun(): Handling service interrupt...
+ControllerRun(): Handling user interrupt...
+ControllerRun(): Handling client interrupt...
+ControllerRun(): Handling dirty rootstore interrupt...
+ControllerRun(): Handling higher priority service worker interrupt...
+ControllerRun(): Resuming Listener thread...
+EX_CATCH  line %d
+NGEN_USE_PRIVATE_STORE
+DefaultVersion
+Version
+mscorsvc.dll
+SOFTWARE\Microsoft\.NetFramework
+\NGENService
+\ListenedState
+\State
+\State\PendingReboot
+ngenserviceclientlock.dat
+Consistency error:  GetRegKeyThrowing called for non-existent key
+Consistency error:  GetRegForRoot not implemented for a root node
+Consistency error:  GetNodeName not implemented for a non-root node
+Status
+Roots
+ZapSet
+NGenService
+System snapshot: 
+Snapshot time: %u 
+Snapshot time: %uh %um %us
+No input in last %uh %um %us
+Last Input time: N/A
+Running on battery: %s (%i%% left)
+Running on battery: N/A
+Screen saver running: %s
+Screen saver running: N/A
+Other active Terminal Server sessions: %s
+Other active Terminal Server sessions: N/A
+Disk is Idle: %s
+Disk is Idle: N/A
+ES_DISPLAY_REQUIRED: %s
+ES_DISPLAY_REQUIRED: N/A
+IdleWorkAlways returns true: System is running screensaver.
+IdleWorkIsForbidden(): System is running low on batteries.
+IdleWorkIsForbidden(): Other active sessions we can't get state from.
+IdleWorkIsForbidden(): Could not obtain input information.
+IdleWorkIsForbidden(): System is running with ES_DISPLAY_REQUIRED set.
+IsIdle() Disks are not idle.
+IsIdle()  Not enough time has passed since last input (%i ms < %i ms).
+IdleCanBeginWork() returns false: Failed to get current input time.
+IdleCanBeginWork() returns true.
+ContinueIdleWork() returns false: Input has happened or LastInput not available.
+advapi32.dll
+ChangeServiceConfigW
+ChangeServiceConfig2W
+CloseServiceHandle
+DeleteService
+StartServiceCtrlDispatcherW
+OpenSCManagerW
+OpenServiceW
+CreateServiceW
+RegisterServiceCtrlHandlerExW
+QueryServiceStatus
+ControlService
+StartServiceW
+SetServiceStatus
+user32.dll
+GetLastInputInfo
+msidle.dll
+ReportEventW
+RegisterEventSourceW
+DeregisterEventSource
+Wtsapi32.dll
+WTSQuerySessionInformationW
+WTSFreeMemory
+WTSEnumerateSessionsW
+LookupPrivilegeValueW
+CreateRestrictedToken
+GetTokenInformation
+CreateProcessAsUserW
+QueryServiceConfig2W
+OpenProcessToken
+kernel32.dll
+VerifyVersionInfoW
+VerSetConditionMask
+powrprof.dll
+CallNtPowerInformation
+mscoree.dll
+GetCORRootDirectory
+CorIsLatestSvc
+NativeImage
+DisplayName
+Scenario
+Config
+RepositoryFlags
+RepositoryDir
+ImageList
+Priority
+KeepPriority
+Consistency error:  GetIndex called for non-existent element
+attributed
+calls
+fixups
+Error: The specified file or directory "
+" is invalid.
+The .NET Runtime Optimization Service continue is pending.
+The .NET Runtime Optimization Service pause is pending.
+The .NET Runtime Optimization Service is started and paused.
+The .NET Runtime Optimization Service is running.
+The .NET Runtime Optimization Service is starting.
+The .NET Runtime Optimization Service is stopping.
+The .NET Runtime Optimization Service is stopped.
+Unknown state
+Debug
+Profile
+Tuning
+NoDependencies
+scmstart
+scmpause
+scmstop
+scmcontinue
+scmstatus
+pause
+continue
+status
+Silent
+Verbose
+Force
+Postreboot
+Queue
+Queue:1
+Queue:2
+Queue:3
+NetfxPri1
+NoLogo
+ExeConfig:
+AppBase:
+MoveFromRepository:
+CopyFromRepository:
+CopyToRepository:
+Stats
+Error: Cannot specify both /ExeConfig and /AppBase
+Error: /ExeConfig specified without an executable
+Error: /AppBase specified without a valid directory
+Error: Cannot specify multiple repository options
+Error: Unrecognized option used for /Stats:<option>
+install
+uninstall
+update
+display
+executeQueuedItems
+queue
+Error: Unrecognized option %s
+Error: You must specify an assembly to install.
+Error: Cannot use /NetfxPri1 without /Queue:1.
+Error: You must specify an assembly to uninstall.
+Error: Cannot queue an uninstall action
+Error: The specified assembly is not installed.
+Error: /postreboot requires the use of /queue option.
+Error: Cannot specify an assembly name to update
+Error: Cannot queue an ExecuteQueuedItems action
+Error: queue action must be pause|continue|status
+Service name is: 
+NGenQueue
+\WIN64
+\Default
+Executing command from offline queue: %s
+Error parsing command line in offline Queue
+error parsing the command line passed to the offline queue
+Error:  NGen Queue command must be install, uninstall or update
+requested action is not supported by the offline queue
+Successfully executed command from the offline queue: %s
+Error:  unexpected registry value type found in the offline queue
+Failed to execute command from the offline queue: %s.  The error returned was %s.
+NGenRegistryAccessCount
+BreakOnNGenRegistryAccessCount
+Consistency error: registry key is of wrong type
+RenameKey:  failed to delete newName.
+ngenrootstorelock.dat
+SERVICE_PAUSED
+SERVICE_PAUSE_PENDING
+SERVICE_CONTINUE_PENDING
+SERVICE_RUNNING
+SERVICE_STOP_PENDING
+SERVICE_START_PENDING
+SERVICE_STOPPED
+UNDEFINED
+ExtraInstallSteps
+Provides support for optimizing managed assemblies using NGEN technology
+clr_optimization_
+.NET Runtime Optimization Service 
+ (64 bits)
+Service Manager returned a fatal error (0x%08x). Will stop service
+Service reached limit of transient errors. Will shut down. Last error returned from Service Manager: 0x%08x.
+SetServiceStatus() call failed. HR=0x%08x. Will terminate service.
+Service state is now %s
+Shutdown notification. Will stop the service.
+ngenservicelock.dat
+CorServiceConsoleCtrlHandler(): Failed to acquire service lock
+CorServiceConsoleCtrlHandler(): Failed to service to autostart
+CorServiceConsoleCtrlHandler(): Service was set to autostart
+Console shutdown notification. Will stop the service.
+\ngen_service
+InitService()
+InstallDetours
+Installed test hook library
+Failed to install test hooks
+Failed to load test hook library()
+SetConsoleCtrlHandler() failed
+SetProcessShutdownParameters() failed
+InitService() failed
+ShutdownService()
+SetServiceStartType(): Setting start type as %i
+-startpaused
+WaitForServiceShutdown(): Failed to retrieve service status
+WaitForServiceShutdown(): Waiting for service to shutdown...
+ServiceNewWork(): Failed to acquire service lock
+ServiceNewWork(): Failed to service to autostart
+ServiceNewWork(): Service was set to autostart
+DoneWork(): Failed to acquire service lock
+Completed all work. Shutting down.
+DoneWork(): Failed to set service as demand start
+DoneWork(): Service is demand start
+DoneWork(): Service is still automatic start
+Running as standalone executable!
+Registered service control handler
+ServiceMain(): Failed to acquire service lock
+ServiceMain(): Failed to set non latest service as demand start
+Tried to start a service that wasn't the latest version of CLR Optimization service. Will shutdown
+COMPLUS_DEFAULTVERSION
+-private
+DoneWork(): Failed to acquire service lock
+Installing assembly %s
+Uninstalling all assemblies...
+NGenStressDelete
+Delete-All worker
+The specified assembly is not directly installed.
+However, %s is specified as a dependency of the following assemblies:
+You may need to uninstall these assembly roots in order to delete the native image for %s
+Uninstalling assembly %s
+NGenDeferAllCompiles
+Defer compile
+NGEN Roots that depend on "%s":
+Native Images:
+Display Worker
+Uninstalling assembly %s because of an error during evaluation of dependencies.
+EnableMultiproc
+Dependency Analyzer
+Deleting native image for assembly %s
+Delete worker for %s
+Failed to find dependencies of image %s because this image or one of its dependencies is not a valid Win32 application.
+Failed to find dependencies of image %s because of the following error: %s
+Compile worker for %s
+Uninstalling assembly %s because of an error during compilation.
+Failed to generate native code for dependent image %s because of the following error: %s
+ScenarioDefault
+ScenarioAll
+ScenarioDebug
+ScenarioProfile
+ScenarioTuningDataCollection
+ScenarioNoDependencies
+ScenarioEmitFixups
+ScenarioProfileInfo
+**Unknown Scenario**
+        %s %s
+            DisplayName = %s
+            Native image = %s
+            Hard Dependencies:
+            Soft Dependencies:
+                %s
+, ConfigExe = %s
+, AppBase = %s
+ (Pri %i)
+NGenService\Roots
+NGEN Roots:
+NGenLocalWorker
+\mscorsvw.exe
+ -UseCLSID 
+ -Comment "
+Local\Event_
+ERROR:  GetCorSvcBindToUnregisteredWorker failed because the worker process died with errorcode %i
+NGenWorkerCount
+%02hu:%02hu:%02hu: 
+(%03x): 
+%02hu/%02hu/%02hu %02hu:%02hu:%02hu [%i]: 
+.NET Runtime Optimization Service
+.NET Runtime Optimization Service (%s) - %s
+CorSvcBindToWorker
+NGenCreateNGenWorker
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+DisableConfigCache
+COMPlus_
+Software\Microsoft\.NETFramework
+Out Of Memory
+S_FALSE
+E_UNEXPECTED
+E_NOTIMPL
+E_OUTOFMEMORY
+E_INVALIDARG
+E_NOINTERFACE
+E_POINTER
+E_HANDLE
+E_ABORT
+E_FAIL
+E_ACCESSDENIED
+CO_E_INIT_TLS
+CO_E_INIT_SHARED_ALLOCATOR
+CO_E_INIT_MEMORY_ALLOCATOR
+CO_E_INIT_CLASS_CACHE
+CO_E_INIT_RPC_CHANNEL
+CO_E_INIT_TLS_SET_CHANNEL_CONTROL
+CO_E_INIT_TLS_CHANNEL_CONTROL
+CO_E_INIT_UNACCEPTED_USER_ALLOCATOR
+CO_E_INIT_SCM_MUTEX_EXISTS
+CO_E_INIT_SCM_FILE_MAPPING_EXISTS
+CO_E_INIT_SCM_MAP_VIEW_OF_FILE
+CO_E_INIT_SCM_EXEC_FAILURE
+CO_E_INIT_ONLY_SINGLE_THREADED
+OLE_E_OLEVERB
+OLE_E_ADVF
+OLE_E_ENUM_NOMORE
+OLE_E_ADVISENOTSUPPORTED
+OLE_E_NOCONNECTION
+OLE_E_NOTRUNNING
+OLE_E_NOCACHE
+OLE_E_BLANK
+OLE_E_CLASSDIFF
+OLE_E_CANT_GETMONIKER
+OLE_E_CANT_BINDTOSOURCE
+OLE_E_STATIC
+OLE_E_PROMPTSAVECANCELLED
+OLE_E_INVALIDRECT
+OLE_E_WRONGCOMPOBJ
+OLE_E_INVALIDHWND
+OLE_E_NOT_INPLACEACTIVE
+OLE_E_CANTCONVERT
+OLE_E_NOSTORAGE
+DV_E_FORMATETC
+DV_E_DVTARGETDEVICE
+DV_E_STGMEDIUM
+DV_E_STATDATA
+DV_E_LINDEX
+DV_E_TYMED
+DV_E_CLIPFORMAT
+DV_E_DVASPECT
+DV_E_DVTARGETDEVICE_SIZE
+DV_E_NOIVIEWOBJECT
+DRAGDROP_E_NOTREGISTERED
+DRAGDROP_E_ALREADYREGISTERED
+DRAGDROP_E_INVALIDHWND
+CLASS_E_NOAGGREGATION
+CLASS_E_CLASSNOTAVAILABLE
+VIEW_E_DRAW
+REGDB_E_READREGDB
+REGDB_E_WRITEREGDB
+REGDB_E_KEYMISSING
+REGDB_E_INVALIDVALUE
+REGDB_E_CLASSNOTREG
+CACHE_E_NOCACHE_UPDATED
+OLEOBJ_E_NOVERBS
+INPLACE_E_NOTUNDOABLE
+INPLACE_E_NOTOOLSPACE
+CONVERT10_E_OLESTREAM_GET
+CONVERT10_E_OLESTREAM_PUT
+CONVERT10_E_OLESTREAM_FMT
+CONVERT10_E_OLESTREAM_BITMAP_TO_DIB
+CONVERT10_E_STG_FMT
+CONVERT10_E_STG_NO_STD_STREAM
+CONVERT10_E_STG_DIB_TO_BITMAP
+CLIPBRD_E_CANT_OPEN
+CLIPBRD_E_CANT_EMPTY
+CLIPBRD_E_CANT_SET
+CLIPBRD_E_BAD_DATA
+CLIPBRD_E_CANT_CLOSE
+MK_E_CONNECTMANUALLY
+MK_E_EXCEEDEDDEADLINE
+MK_E_NEEDGENERIC
+MK_E_UNAVAILABLE
+MK_E_SYNTAX
+MK_E_NOOBJECT
+MK_E_INVALIDEXTENSION
+MK_E_INTERMEDIATEINTERFACENOTSUPPORTED
+MK_E_NOTBINDABLE
+MK_E_NOTBOUND
+MK_E_CANTOPENFILE
+MK_E_MUSTBOTHERUSER
+MK_E_NOINVERSE
+MK_E_NOSTORAGE
+MK_E_NOPREFIX
+MK_E_ENUMERATION_FAILED
+CO_E_NOTINITIALIZED
+CO_E_ALREADYINITIALIZED
+CO_E_CANTDETERMINECLASS
+CO_E_CLASSSTRING
+CO_E_IIDSTRING
+CO_E_APPNOTFOUND
+CO_E_APPSINGLEUSE
+CO_E_ERRORINAPP
+CO_E_DLLNOTFOUND
+CO_E_ERRORINDLL
+CO_E_WRONGOSFORAPP
+CO_E_OBJNOTREG
+CO_E_OBJISREG
+CO_E_OBJNOTCONNECTED
+CO_E_APPDIDNTREG
+CO_E_RELEASED
+OLE_S_USEREG
+OLE_S_STATIC
+OLE_S_MAC_CLIPFORMAT
+DRAGDROP_S_DROP
+DRAGDROP_S_CANCEL
+DRAGDROP_S_USEDEFAULTCURSORS
+DATA_S_SAMEFORMATETC
+VIEW_S_ALREADY_FROZEN
+CACHE_S_FORMATETC_NOTSUPPORTED
+CACHE_S_SAMECACHE
+CACHE_S_SOMECACHES_NOTUPDATED
+OLEOBJ_S_INVALIDVERB
+OLEOBJ_S_CANNOT_DOVERB_NOW
+OLEOBJ_S_INVALIDHWND
+INPLACE_S_TRUNCATED
+CONVERT10_S_NO_PRESENTATION
+MK_S_REDUCED_TO_SELF
+MK_S_ME
+MK_S_HIM
+MK_S_US
+MK_S_MONIKERALREADYREGISTERED
+CO_E_CLASS_CREATE_FAILED
+CO_E_SCM_ERROR
+CO_E_SCM_RPC_FAILURE
+CO_E_BAD_PATH
+CO_E_SERVER_EXEC_FAILURE
+CO_E_OBJSRV_RPC_FAILURE
+MK_E_NO_NORMALIZED
+CO_E_SERVER_STOPPING
+MEM_E_INVALID_ROOT
+MEM_E_INVALID_LINK
+MEM_E_INVALID_SIZE
+DISP_E_UNKNOWNINTERFACE
+DISP_E_MEMBERNOTFOUND
+DISP_E_PARAMNOTFOUND
+DISP_E_TYPEMISMATCH
+DISP_E_UNKNOWNNAME
+DISP_E_NONAMEDARGS
+DISP_E_BADVARTYPE
+DISP_E_EXCEPTION
+DISP_E_OVERFLOW
+DISP_E_BADINDEX
+DISP_E_UNKNOWNLCID
+DISP_E_ARRAYISLOCKED
+DISP_E_BADPARAMCOUNT
+DISP_E_PARAMNOTOPTIONAL
+DISP_E_BADCALLEE
+DISP_E_NOTACOLLECTION
+TYPE_E_BUFFERTOOSMALL
+TYPE_E_INVDATAREAD
+TYPE_E_UNSUPFORMAT
+TYPE_E_REGISTRYACCESS
+TYPE_E_LIBNOTREGISTERED
+TYPE_E_UNDEFINEDTYPE
+TYPE_E_QUALIFIEDNAMEDISALLOWED
+TYPE_E_INVALIDSTATE
+TYPE_E_WRONGTYPEKIND
+TYPE_E_ELEMENTNOTFOUND
+TYPE_E_AMBIGUOUSNAME
+TYPE_E_NAMECONFLICT
+TYPE_E_UNKNOWNLCID
+TYPE_E_DLLFUNCTIONNOTFOUND
+TYPE_E_BADMODULEKIND
+TYPE_E_SIZETOOBIG
+TYPE_E_DUPLICATEID
+TYPE_E_INVALIDID
+TYPE_E_TYPEMISMATCH
+TYPE_E_OUTOFBOUNDS
+TYPE_E_IOERROR
+TYPE_E_CANTCREATETMPFILE
+TYPE_E_CANTLOADLIBRARY
+TYPE_E_INCONSISTENTPROPFUNCS
+TYPE_E_CIRCULARTYPE
+STG_E_INVALIDFUNCTION
+STG_E_FILENOTFOUND
+STG_E_PATHNOTFOUND
+STG_E_TOOMANYOPENFILES
+STG_E_ACCESSDENIED
+STG_E_INVALIDHANDLE
+STG_E_INSUFFICIENTMEMORY
+STG_E_INVALIDPOINTER
+STG_E_NOMOREFILES
+STG_E_DISKISWRITEPROTECTED
+STG_E_SEEKERROR
+STG_E_WRITEFAULT
+STG_E_READFAULT
+STG_E_SHAREVIOLATION
+STG_E_LOCKVIOLATION
+STG_E_FILEALREADYEXISTS
+STG_E_INVALIDPARAMETER
+STG_E_MEDIUMFULL
+STG_E_ABNORMALAPIEXIT
+STG_E_INVALIDHEADER
+STG_E_INVALIDNAME
+STG_E_UNKNOWN
+STG_E_UNIMPLEMENTEDFUNCTION
+STG_E_INVALIDFLAG
+STG_E_INUSE
+STG_E_NOTCURRENT
+STG_E_REVERTED
+STG_E_CANTSAVE
+STG_E_OLDFORMAT
+STG_E_OLDDLL
+STG_E_SHAREREQUIRED
+STG_E_NOTFILEBASEDSTORAGE
+STG_S_CONVERTED
+RPC_E_CALL_REJECTED
+RPC_E_CALL_CANCELED
+RPC_E_CANTPOST_INSENDCALL
+RPC_E_CANTCALLOUT_INASYNCCALL
+RPC_E_CANTCALLOUT_INEXTERNALCALL
+RPC_E_CONNECTION_TERMINATED
+RPC_E_SERVER_DIED
+RPC_E_CLIENT_DIED
+RPC_E_INVALID_DATAPACKET
+RPC_E_CANTTRANSMIT_CALL
+RPC_E_CLIENT_CANTMARSHAL_DATA
+RPC_E_CLIENT_CANTUNMARSHAL_DATA
+RPC_E_SERVER_CANTMARSHAL_DATA
+RPC_E_SERVER_CANTUNMARSHAL_DATA
+RPC_E_INVALID_DATA
+RPC_E_INVALID_PARAMETER
+RPC_E_CANTCALLOUT_AGAIN
+RPC_E_SERVER_DIED_DNE
+RPC_E_SYS_CALL_FAILED
+RPC_E_OUT_OF_RESOURCES
+RPC_E_ATTEMPTED_MULTITHREAD
+RPC_E_NOT_REGISTERED
+RPC_E_FAULT
+RPC_E_SERVERFAULT
+RPC_E_CHANGED_MODE
+RPC_E_INVALIDMETHOD
+RPC_E_DISCONNECTED
+RPC_E_RETRY
+RPC_E_SERVERCALL_RETRYLATER
+RPC_E_SERVERCALL_REJECTED
+RPC_E_INVALID_CALLDATA
+RPC_E_CANTCALLOUT_ININPUTSYNCCALL
+RPC_E_WRONG_THREAD
+RPC_E_THREAD_NOT_INIT
+RPC_E_UNEXPECTED
+CTL_E_ILLEGALFUNCTIONCALL
+CTL_E_OVERFLOW
+CTL_E_OUTOFMEMORY
+CTL_E_DIVISIONBYZERO
+CTL_E_OUTOFSTRINGSPACE
+CTL_E_OUTOFSTACKSPACE
+CTL_E_BADFILENAMEORNUMBER
+CTL_E_FILENOTFOUND
+CTL_E_BADFILEMODE
+CTL_E_FILEALREADYOPEN
+CTL_E_DEVICEIOERROR
+CTL_E_FILEALREADYEXISTS
+CTL_E_BADRECORDLENGTH
+CTL_E_DISKFULL
+CTL_E_BADRECORDNUMBER
+CTL_E_BADFILENAME
+CTL_E_TOOMANYFILES
+CTL_E_DEVICEUNAVAILABLE
+CTL_E_PERMISSIONDENIED
+CTL_E_DISKNOTREADY
+CTL_E_PATHFILEACCESSERROR
+CTL_E_PATHNOTFOUND
+CTL_E_INVALIDPATTERNSTRING
+CTL_E_INVALIDUSEOFNULL
+CTL_E_INVALIDFILEFORMAT
+CTL_E_INVALIDPROPERTYVALUE
+CTL_E_INVALIDPROPERTYARRAYINDEX
+CTL_E_SETNOTSUPPORTEDATRUNTIME
+CTL_E_SETNOTSUPPORTED
+CTL_E_NEEDPROPERTYARRAYINDEX
+CTL_E_SETNOTPERMITTED
+CTL_E_GETNOTSUPPORTEDATRUNTIME
+CTL_E_GETNOTSUPPORTED
+CTL_E_PROPERTYNOTFOUND
+CTL_E_INVALIDCLIPBOARDFORMAT
+CTL_E_INVALIDPICTURE
+CTL_E_PRINTERERROR
+CTL_E_CANTSAVEFILETOTEMP
+CTL_E_SEARCHTEXTNOTFOUND
+CTL_E_REPLACEMENTSTOOLONG
+Unknown exception
+ThrowHR: HR = %x
+EX_THROW Type = 0x%x HR = 0x%x,  line %d
+0x%.8X
+ (%S)
+mscorwks.dll
+GetCLRFunction
+CLRLoadLibraryEx
+SOFTWARE
+SOFTWARE
+BreakOnRetailAssert
+CLR: Assert failure(PID %d [0x%08x], Thread: %d [0x%x]): %hs
+    File: %hs, Line: %d Image:
+ASSERT:%s, line:%d
+NGenClean
+!"Error during NGen:  expected no exceptions to be thrown"
+f:\dd\ndp\clr\src\utilcode\debug.cpp
+.lock
+.old.log
+mscorrc.dll
+v2.0.50727
+mscorsvc.pdb
+L$4E3
+L$4E3
+(D$`f
+SUVWH
+8_^][
+L$4E3
+w$fff
+l$ A+l$
+D++;{
+D++;s
+D+t$0A;
+f9l$P
+Ic<$D
+2D9aP
+L$HtR
+L$HtI
+L$`E3
+l$8E3
+Ic<$D
+D+t$0E
+D;l$$
+(D$ f
+l$@;l$X
+Hcl$ H
+D;d$$
+Hcl$ H
+D;d$$
+T$H;L$D
+Hcl$ H
+D;d$$
+Lct$ H
+,1Ic4$D
+,6;l$$
+LcT$@D
+D;|$D
+T$ E3
+D;o4vwC
+D+o(D
+L$ A;
+D+t$8E
+,>;l$,
+t$XE3
+l$0ff
+l$8D+o
+D$@fD
+D$@Mc/
+.;\$$
+D$ tV
+L$ Hc
+L$ E3
+(D$ f
+l$8D+o
+\$ E3
+l$@D+l$0E
+7;\$$
+S6fff
+L$4E3
+|$0;{
+L$4E3
+|$0;{
+Ic<$D
+\$xE3
+E9t$(
+|$ I+
+D$@fD
+|$ E3
+t$ E3
+|$PE3
+|$4@8=Y9
+|$X9Ch
+SUWAVH
+8A^_][
+l$(E3
+H#L$(H
+t$ E3
+D$PE3
+\$0E3
+9I+8H
+L$4E3
+L$4E3
+(D$@f
+D$@fD
+SUWAUH
+8A]_][
+T$ Hc
+T$8E3
+(D$ f
+9\$0u
+L$HH3
+WATAUH
+ A]A\_
+LcA<E3
+\$8L3
+D$XE3
+VWATH
+@A\_^
+SVWATH
+\$`fff
+8A\_^[
+|$ ATH
+|$ ATH
+EL$83
+|$ E3
+D$ E3
+D$ E3
+L9d$8@
+L$4E3
+|$ E3
+4$A;t$
+\$ E3
+D$ E3
+;\$$v
+;l$$v
+T$ E3
+L$0E3
+L$9E3
+L$0D+
+@SUVWH
+tTf=/
+(_^][
+@SVWH
+DL$@f
+L$(E3
+D$0E3
+@SVWH
+A9@0t
+A;P8w
+@SUVWH
+(_^][
+H9Q(H
+@SVWH
+ MOOt
+ LEDt
+  RHt
+H9Y(t
+@SUVWATAUH
+(A]A\_^][
+L$@E3
+@SVWH
+@SVWH
+:/ufH
+@SVWH
+@SUVWATAUAVAWH
+D$XL;
+A_A^A]A\_^][
+@SUVWH
+(_^][
+H9\$8w0
+@SVWH
+@SVWH
+D$`E3
+@SVWH
+ _^[I
+@SVWH
+ _^[I
+@SVWH
+@SVWH
+@SVWH
+@SVWH
+D$(E3
+@SVWH
+@SVWH
+@SVWH
+@SVWH
+H;_(u
+D$PH;
+C(H9C@un
+K@H;K0u
+@SUVWH
+(_^][
+@SVWATH
+(A\_^[
+@SUVWATAUH
+tBLcC
+(A]A\_^][
+L$ SUVWATH
+@A\_^][
+@SVWH
+@SVWH
+@SUVWATAUAVH
+@A^A]A\_^][
+@SVWH
+@SVWH
+@SUVWH
+H_^][
+@SATAUH
+tBD9k
+@A]A\[
+L$ SWH
+SUVWH
+8_^][
+@SVWH
+  RHL
+D$   RHL
+@SUVWH
+H_^][
+@SUVWH
+8_^][
+@SVWH
+@SVWH
+@SUVWAUH
+0A]_^][
+@SVWH
+@SVWH
+@SVWH
+@SVWH
+@SUVWH
+(_^][
+@SVWH
+@SUVWH
+8_^][
+@SVWH
+L$!E3
+@SUVWH
+X_^][
+@SUVWAUAVH
+D$ E3
+9;vYE3
+D$ E3
+A^A]_^][
+@SUVWH
+(_^][
+@SVWH
+@SVWH
+@SVWH
+@SUVWATH
+A\_^][
+@SVWH
+@SVWH
+\$HD;
+\$ E3
+\$PL;
+SUVWH
+8_^][
+@SVWH
+SVWATAVAWH
+T$Hf3
+|$ E3
+hA_A^A\_^[
+@SUVWH
+  RHL
+D$   RHL
+@SVWH
+@SVWH
+@SVWH
+@SVWH
+@SUVWH
+@SUVWH
+@SUVWH
+@SVWH
+L$ E3
+@SUVWATH
+@A\_^][
+@SUVWH
+(_^][
+SUVWH
+8_^][
+@SUVWATAUH
+A]A\_^][
+@SUVWATAUH
+9|$Ht?L
+A]A\_^][
+@SUVWATAUAVAWH
+L$`D9whu
+D9w`t%L
+t+D9w`u%L
+D9w`t
+D9w`t+D9wdu%L
+D9w`t
+t1D9w`t
+D9w`t
+A_A^A]A\_^][
+|$ E3
+SUVWH
+8_^][
+@SUVWH
+(D$@f
+@SUVWH
+H_^][
+@SVWATAUH
+A]A\_^[
+SUVWATH
+0A\_^][
+@SUVWH
+@SUVWH
+(_^][
+SUVWH
+SUVWH
+@SVWH
+SUVWH
+8_^][
+@SVWH
+@SUVWH
+(_^][
+@SUVWATAUAVH
+ A^A]A\_^][
+@SUVWATAUAVH
+ A^A]A\_^][
+@SUVWH
+@SUWH
+l$ E3
+|$ E3
+@SVWH
+SUVWH
+8_^][
+@SVWH
+SUVWH
+8_^][
+@SUVWH
+@SVWH
+@SVWH
+@SVWH
+@SVWH
+@SUVWATH
+|$XfA
+A\_^][
+@SVWATAU
+9>unH
+e9>uFH
+H9~8t"L
+H9~8t"L
+H9~8t"L
+A]A\_^[
+SUVWATH
+0A\_^][
+SUVWATH
+0A\_^][
+@SUVWATH
+ A\_^][
+SUVWATAVH
+8A^A\_^][
+L$ SVWH
+@SUVWH
+@SUVWATAUAWH
+9-tkf
+A_A]A\_^][
+9D$(s
+@SVWH
+@SVWH
+@SUVWH
+@SUVWATAUAVAWH
+t A;D$
+8A_A^A]A\_^][
+@SUVWATH
+@A\_^][
+@SUWATH
+A\_][
+@SUWH
+@SUVWATH
+A\_^][
+@SUVWATH
+A\_^][
+@SVWH
+9\$hv
+D$8H;
+@SUVWATAUAVH
+A^A]A\_^][
+@SVWATH
+A\_^[
+@SUVWH
+X_^][
+@SVWH
+@SUVWH
+@SUVWH
+@SVWH
+@SUWH
+@SUVWATH
+A\_^][
+@SUVWAUH
+A]_^][
+@SVWH
+@SUVWH
+D$xH;
+H_^][
+@SUVWATAUAVAWH
+A_A^A]A\_^][
+@SVWATAUAVAWH
+D9d$p
+PhD9d$4
+D$PH;
+D$H@:
+L;|$P
+l$4Ic
+A_A^A]A\_^[
+SUVWATH
+H9u8H
+H9u8H
+0A\_^][
+@SUVWH
+@SUVWH
+8_^][
+@SUVWH
+@SVWH
+@SUVWATAUH
+8A]A\_^][
+@SUVWATAUAVAWH
+A_A^A]A\_^][
+@SUVWATAUAVAWH
+A_A^A]A\_^][
+SUVWH
+(_^][
+SVWATAUAVAWH
+A_A^A]A\_^[
+SUVWH
+8_^][
+SUVWATAUAVAWH
+K0v|E3
+M vPE3
+H;L$xt!H
+(A_A^A]A\_^][
+@SUVWATAUAVAWH
+HA_A^A]A\_^][
+SUVWH
+8_^][
+@SUVWATAUAVAWH
+E9n(u
+(A_A^A]A\_^][
+@SVWATAUAVAWH
+A_A^A]A\_^[
+SUVWATH
+@A\_^][
+@SUVWATAUAVAWH
+D$HE3
+A_A^A]A\_^][
+@SVWATAUAVAWH
+t$HtmH
+D$`H;
+9\$Pt
+|$PD;
+A_A^A]A\_^[
+SUVWATH
+@A\_^][
+SUVWH
+8_^][
+SUVWH
+8_^][
+@SUVWATH
+A\_^][
+SUVWH
+8_^][
+@SVWATAUH
+A]A\_^[
+SUVWATH
+0A\_^][
+SUVWH
+8_^][
+GetRealProcAddress
+mscoree.dll
+GetRequestedRuntimeInfo
+memmove
+wcstol
+_wcsicmp
+_wtoi
+_purecall
+swprintf_s
+wcsncpy_s
+strncmp
+wcsncmp
+strcpy_s
+towupper
+wcscpy_s
+wcscat_s
+wcstoul
+_vsnprintf_s
+_errno
+_vsnwprintf_s
+_vsnprintf
+_putws
+_flushall
+malloc
+_encode_pointer
+_malloc_crt
+_initterm
+_initterm_e
+_encoded_null
+_decode_pointer
+_amsg_exit
+__C_specific_handler
+__CppXcptFilter
+_unlock
+__dllonexit
+_lock
+_onexit
+MSVCR80.dll
+__clean_type_info_names_internal
+__crt_debugger_hook
+?terminate@@YAXXZ
+?_type_info_dtor_internal_method@type_info@@QEAAXXZ
+EnterCriticalSection
+LeaveCriticalSection
+SetEvent
+GetTickCount
+InitializeCriticalSection
+DeleteCriticalSection
+ResetEvent
+WaitForSingleObject
+WaitForMultipleObjects
+IsDebuggerPresent
+CreateEventW
+GetLastError
+CreateThread
+CloseHandle
+GetModuleFileNameW
+GetModuleHandleW
+GetSystemPowerStatus
+GetProcAddress
+GetFullPathNameW
+GetFileAttributesW
+DebugBreak
+TerminateProcess
+GetCurrentProcess
+GetVersionExW
+SetConsoleCtrlHandler
+SetProcessShutdownParameters
+GetEnvironmentVariableW
+SetEnvironmentVariableW
+TlsAlloc
+TlsSetValue
+TlsFree
+OpenEventW
+TlsGetValue
+GetCurrentProcessId
+GetExitCodeProcess
+GetLocalTime
+GetCurrentThreadId
+OutputDebugStringW
+OpenProcess
+FindClose
+MultiByteToWideChar
+CreateFileW
+WideCharToMultiByte
+LoadLibraryExW
+GetProcessAffinityMask
+RaiseException
+FindFirstFileW
+DeleteFileW
+FreeLibrary
+lstrlenW
+LocalFree
+GetACP
+GetCPInfo
+LCMapStringW
+IsDBCSLeadByte
+FormatMessageW
+SetLastError
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetModuleHandleA
+GetVersionExA
+CreateProcessW
+CreateProcessA
+WriteFile
+GetFileAttributesExW
+MoveFileExW
+SetFilePointer
+CreateSemaphoreW
+ReleaseSemaphore
+HeapAlloc
+GetProcessHeap
+HeapFree
+WaitForSingleObjectEx
+CreateMutexW
+ReleaseMutex
+SleepEx
+VirtualAlloc
+VirtualFree
+VirtualQuery
+VirtualProtect
+HeapCreate
+HeapDestroy
+HeapValidate
+GetModuleFileNameA
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+RtlVirtualUnwind
+RtlLookupFunctionEntry
+RtlCaptureContext
+KERNEL32.dll
+SystemParametersInfoW
+LoadStringW
+USER32.dll
+CoCreateGuid
+CoDisconnectObject
+CoInitializeEx
+CoUninitialize
+CoCreateInstance
+CoAddRefServerProcess
+CoReleaseServerProcess
+ole32.dll
+OLEAUT32.dll
+RegOpenKeyExW
+RegCreateKeyExW
+RegNotifyChangeKeyValue
+RegCloseKey
+RegDeleteKeyW
+RegQueryValueExW
+RegSetValueExW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+RegOpenKeyExA
+ADVAPI32.dll
+__CxxFrameHandler3
+memset
+memcmp
+memcpy
+_CxxThrowException
+mscorsvc.dll
+CorGetSvc
+DllMain
+.?AVtype_info@@
+v1.0.3705
+retail
+COMPLUS
+retail
+COMPLUS
+SeCreateGlobalPrivilege
+SeChangeNotifyPrivilege
+SeIncreaseBasePriorityPrivilege
+SeIncreaseQuotaPrivilege
+.PEAVException@@
+.PEAVHRException@@
+.PEAX
+.PEAVHRMsgException@@
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+.NET Runtime Optimization Service
+FileVersion
+2.0.50727.9157 (WinRelRS6.050727-9100)
+InternalName
+mscorsvc.dll
+LegalCopyright
+ Microsoft Corporation.  All rights reserved.
+OriginalFilename
+mscorsvc.dll
+ProductName
+Microsoft
+ .NET Framework
+ProductVersion
+2.0.50727.9157
+Comments
+Flavor=Retail
+VarFileInfo
+Translation
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><assemblyIdentity version="1.0.0.0" processorArchitecture="X86" name="mscorsvc" type="win32" publicKeyToken="000000000000000"></assemblyIdentity><dependency><dependentAssembly><assemblyIdentity type="win32" name="Microsoft.VC80.CRT" version="8.0.50608.0" processorArchitecture="amd64" publicKeyToken="1fc8b3b9a1e18e3b"></assemblyIdentity></dependentAssembly></dependency></assembly>PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+201215213145Z
+211202213145Z0t1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Corporation0
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+230012+4630090
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+DLYwh
+bf&!D
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20110
+110708205909Z
+260708210909Z0~1
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 20110
+S0Q0O
+Ihttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0^
+R0P0N
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+Legal_policy_statement
+e_.,>
+D=xz#
+*?*kXIc
+QEX82q'
+WqVNHE
+Washington1
+Redmond1
+Microsoft Corporation1(0&
+Microsoft Code Signing PCA 2011
+Microsof
+http://www.microsoft.com0
+20210504061833.15Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:0842-4BE6-C29A1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+201015172821Z
+220112172821Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:0842-4BE6-C29A1%0#
+Microsoft Time-Stamp Service0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+VkQ@w
+!XlX@
+LI|kQ
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+100701213655Z
+250701214655Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+|hK,_
+$`2X`F
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+Legal_Policy_Statement
+oK0D$"<
+z.9Wv
+r~akow
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:0842-4BE6-C29A1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20210504111501Z
+20210505111501Z0w0=
+1/0-0
+1(0&0
+j3bI)
+yi#pc 
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+P?}7dn
+x|>P<

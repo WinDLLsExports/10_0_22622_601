@@ -1,0 +1,522 @@
+!This program cannot be run in DOS mode.
+%Rich
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+RASPLAP
+CRasProvider::SetUsageScenario: Scenario: 0x%08x, flags: 0x%08x
+CRasProvider::SetUsageScenario: Skipping RasPLAP as this machine is not joined to a domain
+CRasProvider::UnAdvise
+CRasProvider::_Cleanup
+CRasProvider::~CRasProvider
+CRasProvider::CRasProvider
+ole32.dll
+CRYPT32.dll
+RASAPI32.dll
+netutils.dll
+wkscli.dll
+SspiCli.dll
+WinSCard.dll
+rtutils.dll
+eappcfg.dll
+EnumerateRasEntries
+EnumerateRasEntries: Pbk path: %S
+EnumerateRasEntries: ReadPhonebookFile returned %d entries
+EnumerateRasEntries: Excluding entry [%S] as it is not of supported authentication type[%d].
+EnumerateRasEntries: Excluding entry [%S] as it is configured to use machine certs.
+Ignore
+EnumerateRasEntries: Entry [%S]: %s
+EnumerateRasEntries: Done
+CRasProvider::SetUsageScenario: Skipping RasPLAP as this session is Terimal session (TS)
+CRasProvider::Advise
+CRasProvider::GetCredentialCount
+CRasProvider::GetCredentialCount: GetRasConnectiods failed to get RasConnectiods
+CRasProvider::GetCredentialCount: Num of RasConnectiods: %d
+CRasProvider::GetCredentialAt: Index: %d
+CRasCredential::CRasCredential: [%S]
+CRasCredential::~CRasCredential: [%S]
+CRasCredential::SetSelected: [%S]
+CRasCredential::SetSelected : Error m_pcpce handle is NULL
+CRasCredential::SetSelected: Done [%S]
+CRasCredential::GetFieldState: [%S]
+CRasCredential::GetSerialization called for [%S]
+CRasCredential::GetSerialization Failed to do winlogon. Hence disconnect RAS connection.
+CRasCredential::ReportResult called for [%S]: Status:0x%08X,SubStatus:0x%08X
+CRasCredential::ReportResult failed to update SC remove policy registry key : hr = %x
+CRasCredential::ReportResult failed to get scard readername.
+CRasCredential::ReportResult: Winlogon failed, hence disconnecting the RAS connection
+CRasCredential::Connect called for [%S]
+CRasCredential::Connect:ConnectingStatus: IDS_RAS_OTHER_CONNECT_INPROGRESS
+CRasCredential::Connect:Skip Raslogon as it is already connected
+CRasCredential::Connect:_IsAuthDataValidForConnection() Failed
+CRasCredential::Connect:ConnectingStatus: RAS_PLAP_CONNECTING
+CRasCredential::Connect: Auth type expected to be either username/password or smartcard. Returning E_INVALIDARG.
+ICredentialProviderCredentialEvents::OnCreatingWindow:Failed: hr = %#x
+CRasCredential::Connect:Failed to CreateThread: hr = %#x
+CRasCredential::Connect: Timeout happened. Hence exiting
+CRasCredential::Connect: ConnectingStatus: %d
+Using RAS credentials [username/password] to do local logon.
+Using username/password for RAS connection and using smartcard PIN for local logon.
+Using RAS credentials [smartcard] to do local logon.
+Using smartcard PIN for RAS connection and using username/password for local logon.
+CRasCredential::Logon called SC
+CRasCredential::GetSoftCertInfo failed: hr = %x
+CRasCredential::Logon called for [%S]: Username:[%S], Domain:[%S]
+CRasCredential::_UpdateConnectStatus for [%S] as Connected
+CRasCredential::_UpdateConnectStatus for [%S] as Disconnected
+Failed to allocate memory with error: %d.
+Failed to get the EAP user data for the connection with error: %d.
+Failed to get the EAP certificate hash.
+EnumerateRasConnections
+EnumerateRasConnections: LocalAlloc failed with error: %d
+EnumerateRasConnections: RasEnumConnections failed with error: %d
+MarkRasConnectionStatus
+MarkRasConnectionStatus: EnumerateRasConnections failed with error: %d
+GetRasConnectiods
+GetRasConnectiods: EnumerateRasEntries failed or returned 0 entries
+rasdlg.dll
+RasDialDlgW
+InitializeStructsForRasDialDlgCall, GetUserPreferences returned %d
+InitializeStructsForRasDialDlgCall, got user prefs
+RasHangUp failed for Entry:%S, SubEntry:%d and returned %d
+Failed to allocate memory to read configuration blob: %d.
+RasGetEapUserData failed with error: %d.
+GetEapCredentialsInputType failed with error: %d.
+Negotiate
+CryptGetProvParam failed and returned 0x%x
+LocalAlloc failed and returned %d
+MultiByteToWideChar(%s) failed: %d
+CryptAcquireContext failed and returned 0x%x
+CryptGetUserKey failed and returned 0x%x
+CryptGetKeyParam(KP_CERTIFICATE) failed and returned 0x%x
+CryptGetKeyParam(KP_CERTIFICATE) failed and returned: 0x%x
+CertCreateCertificateContext failed and returned 0x%x
+CertGetCertificateContextProperty failed and returned 0x%x
+Hash compare failed
+Failed SCardEstablishContext: Error: %x
+Failed SCardListReaders: Error: %x
+Reader: %S
+Failed SCardGetStatusChange: Error: %x
+No Smart card present in Reader: %S
+Failed SCardListCards: Error: %x
+Card : %S
+Failed SCardGetCardTypeProviderName: Error: %x
+Provider Name: %S
+Invalid arg(s)
+Failed LocalAlloc, *pLI
+Failed StringCchCopyW
+Software\Microsoft\Windows NT\CurrentVersion\Winlogon
+ScRemoveOption
+Software\Microsoft\Windows NT\CurrentVersion\Removal Policy
+ ?R1U
+LToT: StringCchPrintfEx failed. hr= 0x%x
+%s (%s)
+PszFromDeviceAndPort: StringCchPrintfEx failed. hr= 0x%x
+PszLoadStringPcch: LockResource failed.
+PszLoadStringPcch: LoadResource failed.
+PszLoadStringPcch: FindResource failed.
+StrDup Malloc failed
+StrDup: StringCchCopyEx failed with error 0x%x
+StringCchCopy failed due to error 0x%x
+GetUserPreferences(m=%d)
+Software\Microsoft\RAS Phonebook
+.DEFAULT\Software\Microsoft\RAS Logon Phonebook
+Software\Microsoft\Router Phonebook
+RegOpenKeyEx=%d
+GetUserPreferences=%d
+DwSetUserPreferences(m=%d)
+DwSetUserPreferences=%d
+OperatorDial
+Callback
+DeviceType
+Number
+Location
+Prefix
+Suffix
+.DEFAULT\Software\Microsoft\RAS Phonebook
+MoveLogonPreferences=%d
+ReadUserPreferences
+PhonebookMode
+PreviewPhoneNumber
+UseLocation
+ShowLights
+ShowConnectStatus
+NewEntryWizard
+CloseOnDial
+AllowLogonPhonebookEdits
+AllowLogonLocationEdits
+SkipConnectComplete
+RedialAttempts
+RedialSeconds
+IdleHangUpSeconds
+RedialOnLinkFailure
+PopupOnTopWhenRedialing
+ExpandAutoDialQuery
+CallbackMode
+UseAreaAndCountry
+WindowX
+WindowY
+Phonebooks
+AreaCodes
+Prefixes
+Suffixes
+LastCallbackByCaller
+PersonalPhonebookPath
+PersonalPhonebookFile
+AlternatePhonebookPath
+DefaultEntry
+UsePersonalPhonebook
+ReadUserPreferences=%d
+WriteUserPreferences
+WriteUserPreferences=%d
+rasplap.pdb
+.rdata$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zz
+.rdata$zzzdbg
+.text$di
+.text$lp01rasplap.dll!20_pri7
+.text$lp03rasplap.dll!35_hybridboot
+.text$mn
+.text$x
+.text$zy
+.text$zz
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$dk00$brc
+.data
+.data$00
+.data$dk01
+.data$pr00
+.data$zz
+.bss$00
+.bss$dk00
+.bss$pr03
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+Y__^[
+QRPh$
+QRPhD
+QRPhd
+Y__^[
+uf9D$
+w1Sj@3
+QSVWj
+QQSVW3
+tGVhx"
+jWX_^[
+L$HQh
+D$,Ph
+L$$PW
+PSRSS
+jW[_^
+QQSVW3
+jWX_^[
+9t$Pto
+QQSVW3
+PVhL%
+PSSh\(
+WWhl(
+u7jW[
+D$,9D$8
+D$,;D$8
+9|$8v(3
+;|$8r
+u7jW[
+Pj0hh
+Pj%hh
+Pjmhh
+tFWSh
+t3h<)
+t"hd)
+f98t]
+f98t`
+t.Qh8+
+QQQQP
+u)SSSS
+VWj!Y
+Cl9sD
+9sdt~9shty
+QQSVW
+PropVariantClear
+CoTaskMemAlloc
+CoCreateInstance
+CoTaskMemFree
+CertCreateCertificateContext
+CertFreeCertificateContext
+CertGetCertificateContextProperty
+ClosePhonebookFile
+DwGetCustomAuthData
+RasHangUpW
+GetPublicPhonebookPath
+RasGetCustomAuthDataW
+RasEnumConnectionsW
+ReadPhonebookFile
+RasGetEapUserDataW
+NetApiBufferFree
+NetGetJoinInformation
+LsaConnectUntrusted
+LsaDeregisterLogonProcess
+LsaLookupAuthenticationPackage
+SCardAccessStartedEvent
+SCardListReadersW
+SCardGetCardTypeProviderNameW
+SCardGetStatusChangeW
+SCardListCardsW
+SCardReleaseContext
+SCardReleaseStartedEvent
+SCardEstablishContext
+SCardFreeMemory
+TracePrintfExA
+EapHostPeerQueryCredentialInputFields
+EapHostPeerFreeMemory
+EapHostPeerGetMethods
+EapHostPeerFreeErrorMemory
+TraceRegisterExA
+TraceDeregisterExA
+rasplap.dll
+DllCanUnloadNow
+DllGetClassObject
+__CxxFrameHandler3
+wcsnlen
+wcschr
+_wcsicmp
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+?terminate@@YAXXZ
+_except_handler4_common
+RtlInitString
+RtlNtStatusToDosError
+ntdll.dll
+CredProtectW
+CredIsProtectedW
+CryptReleaseContext
+CryptGetProvParam
+CryptAcquireContextW
+CryptGetKeyParam
+CryptGetUserKey
+CryptDestroyKey
+ADVAPI32.dll
+LoadBitmapW
+GetSystemMetrics
+USER32.dll
+InitializeCriticalSectionAndSpinCount
+DeleteCriticalSection
+CompareStringW
+EnterCriticalSection
+LeaveCriticalSection
+LocalAlloc
+Sleep
+GetLastError
+CloseHandle
+CreateThread
+LocalFree
+GetComputerNameW
+GetProcAddress
+FreeLibrary
+LoadLibraryExW
+WaitForSingleObject
+MultiByteToWideChar
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+KERNEL32.dll
+RegOpenKeyExA
+RegSetValueExA
+RegCreateKeyExA
+RegQueryValueExA
+RegCloseKey
+lstrlenW
+GlobalFree
+RegQueryValueExW
+RegOpenKeyExW
+LockResource
+GlobalAlloc
+LoadResource
+FindResourceW
+RegDeleteValueW
+RegEnumKeyExW
+RegCreateKeyExW
+RegDeleteKeyExW
+RegSetValueExW
+_vsnprintf
+_vsnwprintf
+_wtol
+NtQueryInformationToken
+TraceMessage
+OpenProcessToken
+CharNextW
+CharPrevW
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+memcmp
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+RAS PLAP Credential Provider
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+RASCREDPROV
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+RasCredProv
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0 0$0(0,0004080<0@0D0H0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1p1|1
+6)646?6J6U6
+7*7u7
+7#8,888p8u8
+:I:u:
+:=;Q;[;d;
+<3<D<V<
+=2=7=A=J=O=\=e=
+='>,>1>a>q>v>
+?*?2?9???E?s?
+0!292
+2 3N3h3
+3H4M4_4}4
+4Z5x5
+6r6w6
+7&7.7:7C7H7N7X7b7r7
+8+8;8H8\8l8|8
+9.9;9O9\9p9
+:!:1:>:R:_:s:
+</=U=a=m=
+>I>[>n>
+?'?0?:?N?T?b?k?u?
+0)0=0F0e0l0s0y0
+0'111:1L1^1c1i1q1{1
+2(212
+3%323:3G3[3f3o3w3~3
+5M5[5d5q5
+5=6C6V6
+8U8_8h8
+8O9`9i9z9
+9":,:5:
+;+<A<W<
+>(>1>C>T>e>v>
+>/?E?P?_?
+1)1I1`1r1
+2)2B2X2o2
+3!3*3
+4!4*4R4e4y4
+5%5m5
+5G6U6k6
+7:7Z7u7
+:$:6:I:\:
+:$;\;:<G<P<[<
+=.=9=D=O=_=h=
+3,3Y3h3s3}3
+444j4t4}4
+515=5
+6!6*6C6M6T6]6e6k6
+8-878@8Q8
+9$9-9O9^9g9
+:/:;:B:Q:Z:m:x:
+;A;K;T;
+0R0^0k0q0y0
+1"1(10161U1a1n1t1|1
+2B2L2U2
+4/4<4E4L4T4Z4j4
+5)5O5
+6C6N6]6
+808;8D8s8~8
+9H9\9k9
+9_:t:~:
+;e;s;4<C<L<
+=7=E=V=
+?-?=?B?
+0<0B0
+1=1B1
+1#2d2u2z2
+3&3R3c3
+4 5%5L5
+6&6G6X6y6
+7-7>7_7p7
+9-9N9_9
+90:A:]:n:
+;";3;Q;b;
+<A<L<Q<
+<!=&=H=
+=)><>^>
+>>?D?
+"0(0i0
+1-1;1\1j1
+2$2?2M2
+3&3h3
+4?4J4S4u4
+5,575E5P5r5y5~5
+6/6:6C6M6
+8&949=9
+9::I:X:_:~:
+;$;G;W;`;
+<'<X<b<s<
+>;>R>Y>
+?(?<?e?
+0^0i0r0~0
+1 101@1P1`1p1
+2 2A2\2
+343J3e3
+4#4*4O4x4
+5!5=5D5\5m5
+6"6:6R6
+7F7T7n7w7
+858<8Z8a8
+989?9]9d9
+:;:B:`:g:
+;2;L;f;
+>.>B>P>
+(00040<0@0H0L0T0X0`0d0l0p0x0|0
+0 0$0(0,04080<0D0H0L0P0T0X0\0`0d0l0p0t0x0

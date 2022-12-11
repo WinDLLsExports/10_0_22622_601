@@ -1,0 +1,245 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\BthA2dp.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.DLL
+    ks.sys
+    btampm.sys
+    WppRecorder.sys
+    WDFLDR.SYS
+    ksecdd.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0064248 Import Address Table
+             1C0064860 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         80D RtlAnsiCharToUnicodeChar
+                          8F EtwRegister
+                          94 EtwUnregister
+                         9E4 RtlUnregisterFeatureConfigurationChangeNotification
+                         976 RtlQueryFeatureConfigurationChangeStamp
+                          92 EtwSetInformation
+                         975 RtlQueryFeatureConfiguration
+                         98F RtlRegisterFeatureConfigurationChangeNotification
+                         50C KeQueryInterruptTimePrecise
+                          8B EtwActivityIdControl
+                          C7 ExCancelTimer
+                          C3 ExAllocateTimer
+                         156 ExSetTimer
+                         36A IoGetDeviceInterfacePropertyData
+                         36F IoGetDevicePropertyData
+                         51A KeQuerySystemTimePrecise
+                         3F4 IoSetDevicePropertyData
+                         51E KeQueryUnbiasedInterruptTime
+                         3F2 IoSetDeviceInterfacePropertyData
+                         3BA IoQueueWorkItemEx
+                          BD ExAllocatePool2
+                          9A EtwWriteTransfer
+                         102 ExInitializePushLock
+                          A7 KeAcquireSpinLockRaiseToDpc
+                          A2 IofCallDriver
+                          4C IoBuildDeviceIoControlRequest
+                          1D ExFreePool
+                          59 IoCsqInsertIrp
+                          5B IoCsqRemoveNextIrp
+                          58 IoCsqInitialize
+                         177 ZwOpenKey
+                         16C ZwClose
+                          9B IoWMIRegistrationControl
+                         17E ZwQueryValueKey
+                          E5 MmGetSystemRoutineAddress
+                          71 DbgPrintEx
+                         126 RtlAppendUnicodeToString
+                          BC KeLeaveCriticalRegion
+                          36 ExReleaseFastMutexUnsafe
+                         133 RtlCopyUnicodeString
+                          AE KeEnterCriticalRegion
+                           D ExAcquireFastMutexUnsafe
+                          87 IoSetDeviceInterfaceState
+                          7B IoRegisterDeviceInterface
+                         189 _purecall
+                         148 RtlInitUnicodeString
+                          A3 IofCompleteRequest
+                          AA KeCancelTimer
+                          AB KeClearEvent
+                          B7 KeInitializeTimer
+                          72 IoInitializeRemoveLockEx
+                          B2 KeInitializeDpc
+                          69 IoGetDeviceInterfaces
+                          6A IoGetDeviceObjectPointer
+                         102 ObfDereferenceObject
+                          63 IoFreeIrp
+                          86 IoSetCompletionRoutineEx
+                          46 IoAllocateIrp
+                          7F IoReleaseRemoveLockAndWaitEx
+                          4F IoCancelIrp
+                          7E IoReleaseCancelSpinLock
+                          C0 KeQueryTimeIncrement
+                         17A ZwPowerInformation
+                         142 RtlFreeAnsiString
+                         15F RtlUnicodeStringToAnsiString
+                         146 RtlInitAnsiString
+                         130 RtlCompareUnicodeString
+                          B5 KeInitializeSemaphore
+                         122 PsCreateSystemThread
+                          FE ObReferenceObjectByHandle
+                          C7 KeReleaseSemaphore
+                          D8 KeWaitForMultipleObjects
+                         123 PsTerminateSystemThread
+                         185 __chkstk
+                          7A IoQueueWorkItem
+                         58D KseQueryDeviceFlags
+                         5E2 MmIsDriverVerifyingByAddress
+                         99A RtlRunOnceExecuteOnce
+                         3B2 IoQueryFullDriverPath
+                          79 DbgkWerCaptureLiveKernelDump
+                         335 IoCsqInitializeEx
+                         337 IoCsqInsertIrpEx
+                          80 IoReleaseRemoveLockEx
+                          42 IoAcquireRemoveLockEx
+                          D5 KeSetTimer
+                          D0 KeResetEvent
+                          D9 KeWaitForSingleObject
+                          B3 KeInitializeEvent
+                          1E ExFreePoolWithTag
+                          65 IoFreeWorkItem
+                          D1 KeSetEvent
+                          C8 KeReleaseSpinLock
+                          B6 KeInitializeSpinLock
+                          AF KeGetCurrentIrql
+                          48 IoAllocateWorkItem
+
+    HAL.DLL
+             1C0064000 Import Address Table
+             1C0064618 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 KeQueryPerformanceCounter
+
+    ks.sys
+             1C00640C0 Import Address Table
+             1C00646D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          71 KsGetNextSibling
+                          52 KsFilterFactorySetDeviceClassesState
+                          6F KsGetFirstChild
+                          6D KsGetDeviceForDeviceObject
+                          B8 KsReleaseDevice
+                          98 KsPinGetParentFilter
+                          8C KsPinAttemptProcessing
+                          5E KsFreeObjectBag
+                          72 KsGetNodeIdFromIrp
+                          51 KsFilterFactoryGetSymbolicLink
+                          53 KsFilterFactoryUpdateCacheData
+                          73 KsGetObjectFromFileObject
+                          77 KsGetParent
+                          2E KsCreateFilterFactory
+                          63 KsGenerateEvent
+                          32 KsDefaultAddEventHandler
+                          15 KsAddEvent
+                          7D KsInitializeDriver
+                          24 KsCompletePendingRequest
+                          42 KsDispatchIrp
+                          A0 KsPinReleaseProcessingMutex
+                          CB KsStreamPointerAdvance
+                          89 KsPinAcquireProcessingMutex
+                          D3 KsStreamPointerGetNextClone
+                          CF KsStreamPointerClone
+                          1E KsAllocateObjectBag
+                          D7 KsStreamPointerUnlock
+                          B7 KsReleaseControl
+                          95 KsPinGetFirstCloneStreamPointer
+                          96 KsPinGetLeadingEdgeStreamPointer
+                          D6 KsStreamPointerSetStatusCode
+                          78 KsGetPinFromIrp
+                          CC KsStreamPointerAdvanceOffsets
+                          6E KsGetFilterFromIrp
+                          6C KsGetDevice
+                          10 KsAcquireControl
+                          D0 KsStreamPointerDelete
+                          65 KsGenerateEvents
+                          EE _KsEdit
+                          11 KsAcquireDevice
+
+    btampm.sys
+             1C0064068 Import Address Table
+             1C0064680 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 BtaMpmBuildIndirectStringFromMessageWithSingleUTF8Arg
+                           1 BtaMpmConnectionRequest
+                           8 BtaMpmUnregisterPnp
+                           2 BtaMpmGetRemoteDeviceProfileVersionAndAttribute
+                           9 BtaMpmUpdateConnectionStatus
+                           5 BtaMpmRegisterPnp
+                           B BtaMpmUpdateSuspendStatus
+                           7 BtaMpmUnregister
+                           A BtaMpmUpdatePlayStatus
+                           4 BtaMpmRegister
+
+    WppRecorder.sys
+             1C0064040 Import Address Table
+             1C0064658 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WppAutoLogTrace
+                          10 imp_WppRecorderReplay
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+
+    WDFLDR.SYS
+             1C0064010 Import Address Table
+             1C0064628 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 WdfVersionUnbind
+                           3 WdfLdrQueryInterface
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+
+    ksecdd.sys
+             1C0064208 Import Address Table
+             1C0064820 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1A BCryptGetProperty
+                          1F BCryptOpenAlgorithmProvider
+                          14 BCryptFinishHash
+                           4 BCryptCloseAlgorithmProvider
+                           A BCryptDestroyHash
+                          1B BCryptHashData
+                           5 BCryptCreateHash
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        5000 .pdata
+        F000 .rdata
+        3000 .reloc
+        3000 .rsrc
+       4E000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+       12000 PAGE
+        1000 fothk

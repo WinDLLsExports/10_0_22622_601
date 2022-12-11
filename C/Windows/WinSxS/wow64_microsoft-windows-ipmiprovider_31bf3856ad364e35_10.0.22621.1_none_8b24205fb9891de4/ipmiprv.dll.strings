@@ -1,0 +1,1635 @@
+!This program cannot be run in DOS mode.
+Rich=
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+root\Hardware
+Account
+CAccount::EnumerateInstances
+Driver not accessible, driver could be uninstalled or disabled, or file ipmidrv.sys is missing. The reason of driver being disabled can be BMC system interface can't be correctly detected by ACPI or BMC is not functioning properly.
+CAccount::EnumerateInstances - GetSystemName
+SystemName
+CAccount::EnumerateInstances - SystemName 
+CAccount::GetObject
+CreationClassName
+SystemCreationClassName
+CAccount::GetObject - GetDeviceID
+IPMI Controller %u
+CAccount::GetObject - StringCbPrintfW
+ComputerSystem
+IPMI User %hu
+CAccount::GetObject - swscanf
+CAccount::GetObject - GetUserName
+CAccount::LoadPropertyValues
+CAccount::LoadPropertyValues - SystemCreationClassName 
+CAccount::LoadPropertyValues - CreationClassName
+IPMI User %u
+CAccount::LoadPropertyValues - StringCbPrintfW
+CAccount::LoadPropertyValues - Name
+UserID
+CAccount::LoadPropertyValues - UserID
+AdminDomain
+Management Access Point (MAP) Addressing Root
+CAdminDomain::EnumerateInstances
+Management Access Point (MAP) Addressing Root
+LoadProperty
+CAdminDomain::GetObject
+CAdminDomain::LoadProperty
+MAP Addressing Root
+Caption
+DMTF WBEM/CIM SMA Management Access Point (MAP) Addressing Root
+Description
+ElementName
+NameFormat
+Roles
+ProvUtil:SetVariantArray
+AuthorizedPrivilege
+CAuthorizedPrivilege::EnumerateInstances
+CAuthorizedPrivilege::GetObject
+InstanceID
+IPMI Privilege
+CAuthorizedPrivilege::LoadPropertyValues
+CAuthorizedPrivilege::LoadPropertyValues - InstanceID
+PrivilegeGranted
+CAuthorizedPrivilege::LoadPropertyValues - PrivilegeGranted
+CAuthorizedPrivilege::SetVariantArray
+Activities
+CAuthorizedPrivilege::LoadPropertyValues - Activities
+CAuthorizedPrivilege::VariantClear
+IPMI Execute Privilege
+CAuthorizedPrivilege::LoadPropertyValues - ElementName
+Hardware Management Controller
+Manufacturer ID-Product ID
+CComputerSystem::EnumerateInstances
+CComputerSystem::GetObject
+IPMI Controller %d
+Other
+CComputerSystemLoadPropertySet NameFormat
+BMC %d
+CComputerSystemLoadPropertyString Device ID
+CComputerSystemLoadPropertySet Caption
+BMC %d - IPMI v%S - fw v%S%S
+CComputerSystemLoadPropertyString Description
+CComputerSystemLoadPropertySet Description
+CComputerSystemLoadPropertyString Name
+CComputerSystemLoadPropertySet ElementName
+CComputerSystemLoadPropertySet Name
+%ld-%d
+CComputerSystemLoadPropertyString identifyingInfo
+OtherIdentifyingInfo
+LoadProperty:OtherIdentifyingInfo
+CComputerSystem
+LoadProperty:Roles
+IdentifyingDescriptions
+LoadProperty:IdentifyingDescriptions
+Dedicated
+LoadProperty:Dedicated
+CComputerSystemLoadProperty
+CComputerSystem::getDeviceInfo
+ConcreteCollection
+CConcreteCollection::EnumerateInstances
+CConcreteCollection::GetObject
+Privileges
+CConcreteCollection::LoadPropertyValues
+CConcreteCollection::LoadPropertyValues - InstanceID
+CConcreteCollection::LoadPropertyValues - ElementName
+PrivilegeGroup
+Reserved
+Call-Back
+Operator
+Administrator
+No-Access
+CPrivilegeGroup::EnumerateInstances
+CPrivilegeGroup::GetObject
+CPrivilegeGroup::LoadPropertyValues
+PrivilegeGroup
+CPrivilegeGroup::LoadPropertyValues - CreationClassName
+%s - Channel %u
+CPrivilegeGroup::LoadPropertyValues - StringCbPrintfW
+CPrivilegeGroup::LoadPropertyValues - Name
+IPMICommand::IPMICommand
+IPMICommand::IPMICommand_1P
+IPMICommand::~IPMICommand
+IPMICommand::IPMISendRequest
+IPMICommand::IsValidIPMISession
+IPMICommand::operator=
+Unspecified
+Other
+Unknown
+Processor
+Disk or disk bay
+Peripheral bay
+System management module
+System board
+Memory module
+Processor module
+Power supply
+Add-in card
+Front panel board
+Back panel board
+Power system board
+Drive backplane
+System internal expansion board
+Other system board
+Processor board
+Power unit/power domain
+Power module
+Power management/Power distribution board
+Chassis back panel board
+System chassis
+Sub-chassis
+Other chassis board
+Disk Drive Bay
+Peripheral Bay
+Device Bay
+Fan/cooling device
+Cooling unit
+Cable/interconnect
+Memory device
+System Management Software
+Operating System
+System bus
+Group
+Remote (Out of Band) Management Communication Device
+External Environment
+Battery
+Processing blade
+Connectivity switch
+Processor/memory module
+I/O module
+Processor/IO module
+Management Controller Firmware
+IPMI Channel
+Chassis-specific entity
+Board-set specific Entity
+OEM System Integrator defined entity
+reserved
+Temperature
+Voltage
+Current
+Physical Security
+Platform Security Violation Attempt
+Power Supply
+Power Unit
+Cooling Device
+Other Units-based Sensor
+Memory
+Drive Slot
+POST Memory Resize
+System Firmware Progress
+Event Logging Disabled
+Watchdog 1
+System Event
+Critical Interrupt
+Button/Switch
+Module/Board
+Microcontroller/Coprocessor
+Add-in Card
+Chassis
+Chip Set
+Other FRU
+Cable/Interconnect
+Teminator
+System Boot / Restart Initiated
+Boot Error
+OS Boot
+OS Stop / Shutdown
+Slot/Connector
+System ACPI Power state
+Watchdog 2
+Platform Alert
+Entity Presence
+Monitor ASIC / IC
+Management Subsystem Health
+Session Audit
+Version Change
+FRU State
+OEM RESERVED
+at or below lower non-critical threshold
+at or below lower critical threshold
+at or below lower non-recoverable threshold
+at or above upper non-critical threshold
+at or above upper critical threshold
+at or above upper non-recoverable threshold
+Lower Non-critical - going low
+Lower Non-critical - going high
+Lower Critical - going low
+Lower Critical - going high
+Lower Non-recoverable - going low
+Lower Non-recoverable - going high
+Upper Non-critical - going low
+Upper Non-critical - going high
+Upper Critical - going low
+Upper Critical - going high
+Upper Non-recoverable - going low
+Upper Non-recoverable - going high
+Transition to Idle
+Transition to Active
+Transition to Busy
+unspecified state 3
+unspecified state 4
+unspecified state 5
+unspecified state 6
+unspecified state 7
+unspecified state 8
+unspecified state 9
+unspecified state 10
+unspecified state 11
+unspecified state 12
+unspecified state 13
+unspecified state 14
+unspecified state 15
+State Deasserted
+State Asserted
+unspecified state 2
+Predictive Failure Deasserted
+Predictive Failure Asserted
+Limit Not Exceeded
+Limit Exceeded
+Performance Met
+Performance Lags
+Transition to OK
+Transition to Non-Critical from OK
+Transition to Critical from less severe
+Transition to Non-recoverable from less severe
+Transition to Non-Critical from more severe
+Transition to Critical from Non-recoverable
+Transition to Non-recoverable
+Monitor
+Informational
+Device Removed/Device Absent
+Device Inserted/Device Present
+Device Disabled
+Device Enabled
+Transition to Running
+Transition to In Test
+Transition to Power Off
+Transition to On Line
+Transition to Off Line
+Transition to Off Duty
+Transition to Degraded
+Transition to Power Save
+Install Error
+Fully Redundant
+Redundancy Lost
+Redundancy Degraded
+Non-redundant:Sufficient Resources from Redundant Redundancy has been lost but unit is functioning with minimum resources needed for normal operation
+Non-redundant:Sufficient Resources from Insufficient Resources Unit has regained minimum resources needed for normal operation
+Non-redundant:Insufficient Resources Unit is non-redundant and has insufficient resources to maintain normal operation
+Redundancy Degraded from Fully Redundant Unit has lost some redundant resource(s) but is still in a redundant state
+Redundancy Degraded from Non-redundant Unit has regained some resource(s) and is redundant but not fully redundant
+D0 Power State
+D1 Power State
+D2 Power State
+D3 Power State
+General Chassis Intrusion
+Drive Bay Intrusion
+I/O Card area Intrusion
+Processor area Intrusion
+LAN Leash Lost(System has been unplugged from LAN)
+Unauthorized dock
+FAN area Intrusion
+Secure Mode Violation attempt
+Pre-boot Password Violation-user password
+Pre-boot Password Violation-setup password
+Pre-boot Password Violation-network boot password
+Other Pre-boot Password Violation
+Out-of-band Access Password Violation
+Thermal Trip
+FRB1/BIST failure
+FRB2/Hang in POST failure
+FRB3/Processor Startup/Initialization failure
+Configuration Error
+SM BIOS 'Uncorrectable CPU-complex Error'
+Processor Presence detected
+Processor disabled
+Terminator Presence Detected
+Processor Automatically Throttled
+Presence detected
+Power Supply Failure detected
+Predictive Failure
+Power Supply input lost (AC/DC)
+Power Supply input lost or out-of-range
+Power Supply input out-of-range, but present
+Configuration error
+Power Off/Down
+Power Cycle
+240VA Power Down
+Interlock Power Down
+AC lost
+Soft Power Control Failure
+Power Unit Failure detected
+Correctable ECC/other correctable memory error
+Uncorrectable ECC/other uncorrectable memory error
+Parity
+Memory Scrub Failed
+Memory Device Disabled
+Correctable ECC/other correctable memory error logging limit reached
+Spare
+System Firmware POST error
+System Firmware Hang
+Correctable Memory Error Logging Disabled
+Event 'Type' Logging Disabled
+Log Area Reset/Cleared
+All Event Logging Disabled
+SEL Full
+SEL Almost Full
+BIOS Watchdog Reset
+OS Watchdog Reset
+OS Watchdog Shut Down
+OS Watchdog Power Down
+OS Watchdog Power Cycle
+OS Watchdog NMI/Diagnostic Interrupt
+OS Watchdog Expired,status only
+OS Watchdog pre-timeout Interrupt,non-NMI
+System Reconfigured
+OEM System Boot Event
+Undetermined system hardware failure
+Entry added to Auxiliary Log
+PEF Action
+Timestamp Clock Synch
+Front Panel NMI/Diagnostic Interrupt
+Bus Timeout
+I/O channel check NMI
+Software NMI
+PCI PERR
+PCI SERR
+EISA Fail Safe Timeout
+Bus Correctable Error
+Bus Uncorrectable Error
+Fatal NMI
+Bus Fatal Error
+Power Button pressed
+Sleep Button pressed
+Reset Button pressed
+FRU latch open
+FRU service request button
+unspecified state 1
+Initiated by power up
+Initiated by hard reset
+Initiated by warm reset
+User requested PXE boot
+Automatic boot to diagnostic
+OS / run-time software initiated hard reset
+OS / run-time software initiated warm reset
+System Restart
+No bootable media
+Non-bootable diskette left in driver
+PXE Server not found
+Invalid boot sector
+Timeout waiting for user selection of boot source
+A:boot completed
+C:boot completed
+PXE boot completed
+Diagnostic boot completed
+CD_ROM boot completed
+ROM boot completed
+boot completed - boot device not specified
+Critical stop during OS load / initialization
+Run-time Critical Stop
+OS Graceful Stop
+OS Graceful Shutdown
+Soft Shutdown initiated by PEFAgent Not Responding
+Fault Status assert
+Identify Status asserted
+Slot/Connector Device installed/attached
+Slot/Connector Ready for Device Installation
+Slot/Connector Ready for Device Removal
+Slot Power is Off
+Slot/Connector Device Removal Request
+Interlock asserted
+Slot is Disabled
+Slot holds spare device
+S0/G0 working
+S1 sleeping with system h/w and processor context maintained
+S2 sleeping,processor context lost
+S3 sleeping,processor and h/w context lost, memory maintained
+S4 non-volatile sleep/suspend to disk
+S5/G2 soft-off
+S4/S5 soft-off
+G3/Mechanical Off
+Sleeping in an S1,S2 or S3 states
+G1 sleeping
+S5 entered by override
+Legacy ON state
+Legacy OFF state
+UNKNOWN
+Timer expired
+Hard Reset
+Power Down
+Timer interrupt
+Platform generated page
+Platform generated LAN alert
+Platform Event Trap generated
+Platform generated SNMP trap
+Entity Present
+Entity Absent
+Entity Disabled
+LAN Heartbeat lost
+LAN Heartbeat
+Sensor access degraded or unavailable
+controller access degraded or unavailable
+management controller off-line
+management controller unavailable
+Sensor failure
+FRU failure
+battery low
+battery failed
+battery presence detected
+Session Actived
+Session Deactived
+Hardware change detected with associated Entity
+Firmware or software change detected with associated Entity
+Hardware incompatibility detected with associated Entity
+Firmware or software incompatibility detected with associated Entity
+Entity is of an invalid or unsupported hardware version
+Entity contains an invalid or unsupported firmware or software version
+Hardware Change detected with associated Entity was successful
+Software or F/W Change detected with associated Entity was successful
+FRU Not Installed
+FRU Inactive
+FRU Activation Requested
+FRU Activation In Progress
+FRU Active
+FRU Deactivation Requested
+FRU Deactivation In Progress
+FRU Communication Lost
+Vendor mismatch
+Revision mismatch
+Processor missing
+No system memory is physically installed in the system
+No usable system memory, all installed memory has experienced an unrecoverable failure.
+Unrecoverable hard-disk/ATAPI/IDE device failure.
+Unrecoverable system-board failure.
+Unrecoverable diskette subsystem failure.
+Unrecoverable hard-disk controller failure.
+Unrecoverable PS/2 or USB keyboard failure.
+Removable boot media not found
+Unrecoverable video controller failure
+No video device detected.
+Firmware ROM corruption detected
+CPU voltage mismatch
+CPU speed matching failure
+Unspecified.
+Memory initialization.
+Hard-disk initialization
+Secondary processor(s) initialization
+User authentication
+User-initiated system setup
+USB resource configuration
+PCI resource configuration
+Option ROM initialization
+Video initialization
+Cache initialization
+SM Bus initialization
+Keyboard controller initialization
+Embedded controller/management controller initialization
+Docking station attachment
+Enabling docking station
+Docking station ejection
+Disabling docking station
+Calling operating system wake-up vector
+Starting operating system boot process,
+Baseboard or motherboard initialization
+Floppy initialization
+Keyboard test
+Pointing device test
+Primary processor initialization
+entry added
+entry added because event did not be map to standard IPMI event
+entry added along with one or more corresponding SEL entries
+log cleared
+log disabled
+log enabled
+MCA Log
+OEM 1
+OEM 2
+Alert
+power off
+reset
+power cycle
+OEM action
+Diagnostic Interrupt (NMI)
+event is first of pair
+event is second of pair
+SEL Timestamp Clock updated
+SDR Timestamp updated
+S0 / G0 
+working
+sleeping with system h/w & processor context maintained
+sleeping, processor context lost
+sleeping, processor & h/w context lost, memory retained.
+non-volatile sleep / suspend-to disk
+S5 / G2 
+soft-off
+S4 / S5 soft-off, particular S4 / S5 state cannot be determined
+G3 / Mechanical Off
+Sleeping in an S1, S2, or S3 states
+S0 / G0 "working"
+S5 / G2 "soft-off"
+Legacy OFF stateUnknown
+Drive Array
+External Peripheral Connector
+Docking
+other standard internal expansion slot
+slot associated with entity specified by Entity ID for sensor
+Advanced TCA
+DIMM/memory device
+PCI Express
+SATA / SAS
+Interrupt
+unspecified state 0
+BIOS FRB2
+BIOS/POST
+OS Load
+SMS/OS
+Session deactivatation cause unspecified
+Session deactivated by Close Session command
+Session deactivated by timeout
+Session deactivated by configuration change
+unspecified
+management controller device ID
+management controller firmware revision
+management controller device revision
+management controller manufacturer ID
+management controller IPMI version
+management controller auxiliary firmware ID
+management controller firmware boot block
+other management controller firmware
+system firmware (EFI / BIOS) change
+SMBIOS change
+operating system change
+operating system loader change
+service or diagnostic partition change
+management software agent change
+management software application change
+management software middleware change
+programmable hardware change
+board module change
+board component change
+board replaced with equivalent version
+board replaced with newer version
+board replaced with older version
+board hardware configuration change
+Normal State Change
+Change Commanded by software external to FRU
+State Change due to operator changing a Handle latch
+State Change due to operator pressing the hot swap push button
+State Change due to FRU programmatic action
+Communication Lost
+Communication Lost due to local failure
+State Change due to unexpected extraction
+State Change due to operator intervention/update
+Unable to compute IPMB address
+Unexpected Deactivation
+State Change, Cause Unknown
+IPMIConst::GetSensorTypeDesc
+IPMIConst::GetEntityDesc
+IPMIConst::GetEventReadingTypeDesc
+IPMIConst::GetSensorTypeSpecifiedEventDesc
+IPMIDevice::GetDeviceID
+%d.%1d%1d
+%d.%1d
+.%d.%d.%d.%d
+IPMIDevice::GetSystemName
+IPMI Controller %d
+IPMIEntity::IPMIEntity_1P
+IPMIEntity::~IPMIEntity
+IPMIEntity::addInstance
+IPMIEntity::addAssociatedSensorsInstance
+IPMIEntity::checkSensorStatus
+IPMIEntity::checkPresentSensorForEntityStatus
+IPMIEntity::GothroughChildrenEntity
+IPMIEntity::GetDisplayedSensor
+IPMIEntity::getAllShowedSensorInstance
+AutoArray operator[]_UINT16
+AutoArray operator=T*
+IPMISDRDevice::IPMISDRDevice
+IPMISDRDevice::IPMISDRDevice_1P
+IPMISDRDevice::~IPMISDRDevice
+IPMISDRDevice::GetSDRRepositoryInfo
+IPMISDRDevice::ReserveSDRRepository
+IPMISDRDevice::GetSDREntry
+IPMISDRDevice::ParseSDREntry
+UnknownSensorType
+0123456789 -.:,_
+IPMISDRDevice::DecodeIPMIByteFormat
+UnknownLanguageCode
+IPMISDRDeviceGetShareSDRString
+%s %c%c
+IPMISDRDeviceGetShareSDRStringStringCbPrintfW
+IPMISDRDeviceGetShareSDRStringStringCbPrintfW1
+%s %d
+IPMISDRDeviceGetShareSDRStringStringCbPrintfW2
+IPMISDRDevice::GetSignedData
+IPMISDRRepository::IPMISDRRepository
+IPMISDRRepository::IPMISDRRepository_1P
+IPMISDRRepository::~IPMISDRRepository
+IPMISDRRepository::GetSDRRepository
+IPMISDRRepository::GetAndSaveSDRRepository
+IPMISDRRepository::StoreToSDRRepository
+IPMISDRRepository::GetSDRByDeviceID_4P
+IPMISDRRepository::GetSDRByDeviceID_7P
+IPMISDRRepository::SearchForSDRFile
+%windir%\system32\ipmi
+IPMISDR.dat
+IPMISDRRepository::SearchForSDRFile.getkey==false
+iFilePosition
+checksum
+bReadFile
+sizeof(SDR_REPOSITORYINFO)
+IPMISDRRepository::SearchForSDRFile.We found the cach file
+IPMISDRRepository::SearchForSDRFile.A new cach file created failed
+IPMISDRRepository::SearchForSDRFile.A new cach file created successful
+IPMISDRRepository::GetSDRRepositoryFromFile
+A broken cach file
+IPMISDRRepository::SaveToCachFile
+IPMISDRRepository::SaveToCachFile.No data written caused by invalid sdrData or sdrLen
+Cach file not opened or writing failed
+IPMISDRRepository::CloseCachFile
+Truncate cach file
+Cach file saved
+IPMISDRRepository::GetCheckSum
+IPMISDRRepository::GetSDRInformation
+GetSDRRepository Failed
+IPMISDRRepository::BuildEntityTable
+When search for SDR 1/2 sensor, entity table is too small
+When search for SDR 8/9 sensor, entity table is too small
+We got entity sensor
+We can not find header sensor for the entity
+IPMISDRRepository::IsAPresenceSenor
+~AutoArray
+AutoArray_1P
+AutoArray operator[]_INT
+ /* I
+IPMISELDevice::ReserveSEL
+IPMISELDevice::GetSELInfo
+%d.%d
+IPMISELDevice::GetSELEntry
+IPMISELDevice::ClearSEL
+IPMISELHLP::GetBitsInfo
+IPMISELHLP::IPMIGetSensorExtensionDesc
+ network controller %u
+ DIMM/SIMM/RIMM: %d
+assert
+deassert
+ %s: %s
+ Log Entry Action: %s, Log Type: %s
+ %s %s
+ Requested power state: %s, Power state at time of request: %s
+ %s, Slot/Connector Number: %d
+ Interrupt type: %s, Timer use at expiration: %s
+ User ID: %u
+ Channel Number: %u
+ Previous state: %s, Cause of state change: %s
+IPMISELHLP::IPMIGetThresholdSensorDesc
+ Value: %u
+ OEM code: %u
+ Threshold: %u
+IPMISELHLP::IPMIGetPrevStateAndSeverity
+ Severity: %s
+ Previous event state:%s
+IPMISELHLP::IPMIGetDiscreteSensorDesc
+Unknown Discrete Sensor Event
+OEM code: %u
+IPMISELHLP::IPMIGetOEMSensorDesc
+OEM Discrete
+IPMISELHLP::IPMIGetEventDesc
+Unknown Event
+Deassert
+Assert
+%s: %s
+IPMISensorCalcalgorithm.liner
+IPMISensorCalcalgorithm.ln
+IPMISensorCalcalgorithm.log10x
+IPMISensorCalcalgorithm.log2
+IPMISensorCalcalgorithm.e
+IPMISensorCalcalgorithm.exp10
+IPMISensorCalcalgorithm.exp2
+IPMISensorCalcalgorithm.x1
+IPMISensorCalcalgorithm.sqrx
+IPMISensorCalcalgorithm.cubex
+IPMISensorCalcalgorithm.sqrtx
+IPMISensorCalcalgorithm.cube_1x
+IPMISensorCalcalgorithm.CalculateValue
+IPMISensorCalcalgorithm.CalculateSensorValue
+MathException::MathException
+MathException::~MathException
+IPMISensorInvCalcalgorithm.inverse_linear
+IPMISensorInvCalcalgorithm.inverse_ln
+IPMISensorInvCalcalgorithm.inverse_log10x
+IPMISensorInvCalcalgorithm.inverse_log2
+IPMISensorInvCalcalgorithm.inverse_e
+IPMISensorInvCalcalgorithm.inverse_exp10
+IPMISensorInvCalcalgorithm.inverse_exp2
+IPMISensorInvCalcalgorithm.inverse_x1
+IPMISensorInvCalcalgorithm.inverse_sqrx
+IPMISensorInvCalcalgorithm.inverse_cubex
+IPMISensorInvCalcalgorithm.inverse_sqrtx
+IPMISensorInvCalcalgorithm.inverse_cube_1x
+IPMISensorInvCalcalgorithm.CalculateInverseValue
+IPMISensorInvCalcalgorithm.CalculateValue
+IPMISensorDevice::IPMISensorDevice
+IPMISensorDevice::IPMISensorDevice_1P
+IPMISensorDevice::~IPMISensorDevice
+IPMISensorDevice::GetRawSensorReading
+IPMISensorDevice::SetSensorThreshold
+IPMISensorDevice::GetSensorThreshold
+IPMISensorDevice::GetSensorReadingStatus
+AIPMISensorDevice::GetSensorReadingStatussensor updated judgement
+IPMISensorDevice::GetSensorReadingStatussensor scaning judgement
+IPMISensorDevice::GetSensorReadingStatuseventReadingType=0x01
+IPMISensorDevice::GetSensorReadingStatuseventReadingType=0x01, 2
+IPMISensorDevice::GetSensorReadingStatuseventReadingType=0x01, 3
+Deasserted
+OEM State,Value=%02x%02xh
+IPMISensorDevice::GetSensorReadingStatuseventReadingType unknown
+IPMISensorDevice::GetSensorReading
+IPMISession Construction
+~IPMISession
+IPMISession::AddRef
+AddRef
+IPMISession
+IPMISession::Release
+Release
+IPMISession::GetReferenceCount
+GetReferenceCount
+IPMISessionWMI::IPMISessionWMI
+\\.\root\wmi
+GetObject
+IPMISessionWMI::~IPMISessionWMI
+GetReferenceOunt
+ReleaseAll
+m_pClass Count
+m_pIWbemContext Count
+m_pIWbemServices Count
+CoUninitialize
+IPMISessionWMI::IPMISendRequest_10P
+IPMISessionWMI::IPMISendRequest_9P
+IPMISessionWMI::IsValidIPMISession
+IPMISessionWMI::ExecMethod SMS_Attention
+SMS_Attention
+SysAllocString(MethodName)
+CreateInstanceEnum
+CreateInstanceEnum.pEnumInstObj
+Next.pInstance
+__RELPATH
+SysAllocString(__RELPATH)
+Get ObjPath
+GetMethod
+ExecMethod
+GetOutputParam
+AttentionSet
+Get AttentionSet
+StatusRegisterValue
+Get StatusRegisterValue
+IPMISessionWMI::ExecMethod RequestResponse
+RequestResponse
+BMCAddress
+SysAllocString(BMCAddress)
+Get BMCAddress
+GetInParam
+NetworkFunction
+Put NetworkFuncion
+Put Lun
+ResponderAddress
+Put ResponderAddress
+Command
+Put Command
+RequestDataSize
+Put RequestDataSize
+SafeArrayCreate
+RequestData
+Put RequestData
+SafeArrayPutElement
+CompletionCode
+Get CompletionCode
+ResponseDataSize
+Get ResponseDataSize
+ResponseData
+ResponseData SafeArrayGetLBound
+ResponseData SafeArrayGetUBound
+ResponseData SafeArrayGetElement
+Get ResponseData
+IPMISessionWMI::InitIPMISessionWMI
+Microsoft_IPMI
+IPMISessionWMIPrv::IPMISessionWMIPrv
+IPMISessionWMIPrv::~IPMISessionWMIPrv
+IPMISessionWMIPrv::InitIPMISessionWMIPrv
+m_pIWbemServices from GetNamespaceConnection is NULL
+ClassPath is NULL
+m_pClass is NULL
+IPMIUserDevice::GetChannelAccess
+IPMIUserDevice::GetUserName
+LogRecord
+CLogRecord::EnumerateInstances
+CLogRecord::LoadPropertyValues - Format
+RecordID
+CLogRecord::EnumerateInstances - SetCHString
+CLogRecord::GetObject
+CLogRecord::LoadPropertyValues
+IPMI SEL Record
+LogRecord
+LogCreationClassName
+IPMI SEL
+LogName
+CLogRecord::LoadEventPropertyValues
+%s(%u.%u.%u)
+CLogRecord::LoadEventPropertyValues - Format
+ for 
+MessageTimestamp
+*string CIM_Sensor.DeviceID*uint8[2] IPMI_RecordID*uint8 IPMI_RecordType*uint8[4] IPMI_Timestamp*uint8[2] IPMI_GeneratorID*uint8 IPMI_EvMRev*uint8 IPMI_SensorType*uint8 IPMI_SensorNumber*boolean IPMI_AssertionEvent*uint8 IPMI_EventType*uint8 IPMI_EventData1*uint8 IPMI_EventData2*uint8 IPMI_EventData3*
+RecordFormat
+false
+*%02X %02X*%02X*%02X %02X %02X %02X*%02X %02X*%02X*%02X*%02X*%s*%02X*%02X*%02X*%02X*
+RecordData
+CLogRecord::LoadOEM1PropertyValues
+BugCheck
+Shutdown
+OEM SEL
+BugCheck BugCheckCode: %08x
+BugCheck BugCheckParameter %u: %0lx
+Windows Shutdown Reason : %X
+Windows Shutdown Comment %u: %s
+*uint8[2] IPMI_RecordID*uint8 IPMI_RecordType*uint8[4] IPMI_Timestamp*uint8[3] IPMI_ManufacturerID*uint8[6] IPMI_OEMDefinedData*
+*%02X %02X*%02X*%02X %02X %02X %02X*%02X %02X %02X*%02X %02X %02X %02X %02X %02X*
+CLogRecord::LoadOEM1PropertyValues - Format
+CLogRecord::LoadOEM2PropertyValues
+99990101000000.000000+000
+*uint8[2] IPMI_RecordID*uint8 IPMI_RecordType*uint8[13] IPMI_OEMDefinedData*
+*%02X %02X*%02X*%02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X*
+CLogRecord::LoadOEM2PropertyValues - Format
+CLogRecord::LoadInvalidSEL
+Invalid SEL
+*uint8[2] IPMI_RecordID*uint8 IPMI_RecordType*uint8[13] IPMI_RecordData*
+CLogRecord::LoadInvalidSEL - Format
+InstallEventSource
+SYSTEM\CurrentControlSet\Services\Eventlog\Application\
+ipmiprv
+Unable to create registry key
+MainDLL:InstallEventSource
+%SystemRoot%\System32\ipmiMsg.DLL
+EventMessageFile
+Unable to create/set registry value (message DLL name)
+TypesSupported
+Unable to create/set registry value (message types)
+Unable to delete registry key
+MainDLL:UninstallEventSource
+DllMain - DLL_PROCESS_DETACH
+{fd209e2e-813b-41c0-8646-4c3e9c917511}
+DllMain - DLL_PROCESS_ATTACH
+DllMain - DLL_PROCESS_ATTACH, Failed with g_IPMISDRCriticalSection
+ipmiprv
+DllMain - DLL_PROCESS_ATTACH, Failed with FrameworkLoginDLL
+DllGetClassObject
+DllCanUnloadNow
+CLSID\
+NotInsertable
+ThreadingModel
+InprocServer32
+%s\%s
+Microsoft WMI IPMI Provider
+RecordLog
+CRecordLog::EnumerateInstances
+CRecordLog::EnumerateInstances - GetDeviceID
+CRecordLog::EnumerateInstances - GetSELInfo
+CRecordLog::GetObject
+CRecordLog::GetObject - GetDeviceID
+IPMI:IPMI Controller %u SEL Log
+CRecordLog::GetObject - Format
+CRecordLog::GetObject - GetSELInfo
+CRecordLog::ExecMethod
+ClearLog
+ReturnValue
+CRecordLog::LoadPropertyValues
+CRecordLog::LoadPropertyValues - Caption
+CRecordLog::LoadPropertyValues - Description
+CRecordLog::LoadPropertyValues - ElementName
+CRecordLog::LoadPropertyValues - Name
+MaxNumberOfRecords
+CRecordLog::LoadPropertyValues - MaxNumberOfRecords
+CurrentNumberOfRecords
+CRecordLog::LoadPropertyValues - CurrentNumberOfRecords
+EnabledState
+CRecordLog::LoadPropertyValues - EnabledState
+CRecordLog::LoadPropertyValues - InstanceID
+CRecordLog::LoadPropertyValues - Format
+TimeOfLastStateChange
+CMessageLog::LoadPropertyValues 19
+CRecordLog::SELClearLog
+RegisteredProfile
+CRegisteredProfile::EnumerateInstances
+RegisteredProfile::GetObject
+IPMI : Mapping
+CRegisteredProfile::LoadPropertyValues
+CRegisteredProfile::LoadPropertyValues - InstanceID
+RegisteredOrganization
+CRegisteredProfile::LoadPropertyValues - RegisteredOrganization
+IPMI Forum
+OtherRegisteredOrganization
+CRegisteredProfile::LoadPropertyValues - OtherRegisteredOrganization
+IPMI CIM Mapping Guideline
+RegisteredName
+CRegisteredProfile::LoadPropertyValues - RegisteredName
+Version 0.57
+RegisteredVersion
+CRegisteredProfile::LoadPropertyValues - RegisteredVersion
+RegisteredProfile::LoadPropertyValues
+NumericSensor
+CNumericSensor::EnumerateInstances
+InstanceCommit
+CNumericSensorGetObject
+DeviceID
+CNumericSensorGetObjectGetSystemName
+CNumericSensorGetObjectCompare SystemName
+%d.%d.%d
+CNumericSensorGetObjectswscanf error
+CNumericSensorGetObjectinput sensor parameter error
+GetObject.LoadProperty
+CNumericSensor
+GetObject.GetSensorReading
+CNumericSensorPutInstance
+LowerThresholdNonCritical
+UpperThresholdNonCritical
+CNumericSensorPutInstanceGetSystemName
+CNumericSensorPutInstanceCompare SystemName
+CNumericSensorPutInstanceswscanf error
+CNumericSensorPutInstanceinput sensor parameter error
+Sensor Thresholds are not settable
+CNumericSensorPutInstancesetSensorthreshold
+CNumericSensorPutInstancecompare the input value
+Set Sensor thresholds command succeeded, but threshold value is not changed
+Set Sensor thresholds command is successful, but thresholds data are not changed
+Get Sensor thresholds command is failed
+Sensor Thresholds are not writable
+CNumericSensorLoadProperty
+SensorType
+CNumericSensorLoadPropertySet Sensor Type
+OtherSensorTypeDescription
+CNumericSensorLoadPropertySet OtherSensorTypeDescription
+CNumericSensorLoadPropertyString DeviceID
+CNumericSensorLoadPropertySet DeviceID
+Resolution
+Hysteresis
+IsLinear
+RateUnits
+CNumericSensorLoadPropertySet four properties
+%S(%d.%d.%d)
+CNumericSensorLoadPropertyString Caption
+CNumericSensorLoadPropertySet Caption
+%s(%d.%d.%d)
+CNumericSensorLoadPropertyString Name
+CNumericSensorLoadPropertySet Name
+%s:%S for %S %d
+CNumericSensorLoadPropertyString entity
+CurrentState
+CNumericSensorLoadPropertySet Description
+BaseUnits
+UnitModifier
+CNumericSensorLoadPropertySet BaseUnits
+NominalReading
+CNumericSensorLoadPropertySet NominalReading
+NormalMax
+CNumericSensorLoadPropertySet NormalMax
+NormalMin
+CNumericSensorLoadPropertySet NormalMin
+LowerThresholdCritical
+CNumericSensorLoadPropertySet LowerThresholdCritical
+LowerThresholdFatal
+CNumericSensorLoadPropertySet LowerThresholdFatal
+UpperThresholdCritical
+CNumericSensorLoadPropertyUpperThresholdCritical
+UpperThresholdFatal
+CNumericSensorLoadPropertySet UpperThresholdFatal
+CNumericSensorLoadPropertyGetSensorThreshold
+CNumericSensorLoadPropertySet LowerThresholdNonCritical
+CNumericSensorLoadPropertySet UpperThresholdNonCritical
+Accuracy
+CNumericSensorLoadPropertySet Accuracy
+CurrentReading
+CNumericSensorLoadPropertySet CurrentReading
+MaxReadable
+CNumericSensorLoadPropertySet MaxReadable
+MinReadable
+CNumericSensorLoadPropertySet MinReadable
+CNumericSensorLoadPropertyBaseUnit error
+PossibleStates
+AutoArray
+ProvUtil::SetVariantArray
+ProvUtil::SetVariantArray - SafeArrayCreate
+ProvUtil::SetVariantArray - SafeArrayPutElement
+ProvUtil::GetWbemFileTime
+ProvUtil::HardwareBytesToUINT
+ProvUtil::Bytes2toUINT16
+ProvUtil::BytestoUINT32
+ProvUtil::UINT16toBytes2
+ProvUtil::UINT32toBytes4
+ProvUtil::GetBytesArray
+ProvUtil::GenEveryMsgbyBits
+State %d Asserted
+ProvUtil::GetMsgbyBits
+\\.\root\Hardware
+__ExtendedStatus
+StatusCode
+ProvUtil::WriteLogEvent
+Could not register the event source
+Could not report the event
+Could not deregister the event source
+Sensor
+CSensor::EnumerateInstances
+CSensorGetObject
+CSensorGetObjectGetSystemName
+CSensorGetObjectCompare SystemName
+CSensorGetObjectswscanf error
+CSensorGetObjectinput sensor parameter error
+CSensor
+CSensorLoadProperty
+CSensorLoadPropertyString DevStr
+CSensorLoadPropertySet SensorType
+CSensorLoadPropertySet OtherSensorTypeDescription
+CSensorLoadPropertySet DeviceID
+%S(%s)
+CSensorLoadPropertyString Caption
+CSensorLoadPropertySet Caption
+%s(%s)
+CSensorLoadPropertyString Name
+CSensorLoadPropertySet Name
+CSensorLoadPropertyString entity
+CSensorLoadPropertySet Description
+CSensorLoadPropertySet CurrentState
+LoadProperty.SetPossibleStates
+SystemSpecificCollection
+CSystemSpecificCollection::EnumerateInstances
+SetInstanceIDStr
+CSystemSpecificCollection::GetObject
+CSystemSpecificCollection::LoadProperty
+Sensors
+Sensor Collection
+CSystemSpecificCollection::SetInstanceIDStr
+%d:%d
+UUUUUU
+IpmiPrv.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.edata
+.data$brc
+.data$r$brc
+.data$rs$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+u0h8E
+CPh@F
+t^h8E
+D$ Pj
+D$HSV
+L$T_^[3
+QQSVW
+j@XPf
+C0Xf9D$
+D$PSV
+PQQVW
+QQSVWjPXP
+PQQVW
+D$ SV
+G" tP
+GCPVS
+GDPVS
+GEPVS
+GFPVS
+GGPVS
+GHPVS
+GIPVS
+_^[Y]
+80t<A
+j@XPf
+j@_Wf
+j@XPf
+D$,PVjCj
+PVjGj
+t)Ph4
+SVWj@XP
+SVWj@XP
+D$ Pj
+SVWj@XP
+D$#Pj
+ t7hT
+D$$WP
+PQSVW
+D$@PRWQ
+D$0PShx
+uQf9\$0
+D$0PSh
+j@XPf
+Xf9D$
+j@XPf
+tJQQQQ
+9X tCh
+9K t:h
+D$4Ph
+WPWh?
+D$(SV
+QSSSSSSP
+QVVVVVSVj
+CPh@F
+SRVQhh
+ _^[]
+PWVSRj
+PWVSRj
+tJSWj
+Y__^[
+Y__^[
+IPMIPrv.DLL
+DllCanUnloadNow
+DllGetClassObject
+DllRegisterServer
+DllUnregisterServer
+.?AVMathException@@
+.?AVCHeap_Exception@@
+.?AV_com_error@@
+.?AVCThreadBase@@
+.?AVProvider@@
+.?AVCAccount@@
+.?AVCAdminDomain@@
+.?AVCAuthorizedPrivilege@@
+.?AVCComputerSystem@@
+.?AVCConcreteCollection@@
+.?AVCPrivilegeGroup@@
+.?AVIPMICommand@@
+.?AVIPMIDevice@@
+.?AVIPMIEntity@@
+.?AVIPMISDRDevice@@
+.?AVIPMISDRRepository@@
+.?AVIPMISELDevice@@
+.?AVIPMISensorDevice@@
+.?AVIPMISession@@
+.?AVIPMISessionWMI@@
+.?AVIPMISessionWMIPrv@@
+.?AVIPMIUserDevice@@
+.?AVCLogRecord@@
+.?AVCRecordLog@@
+.?AVCRegisteredProfile@@
+.?AVCNumericSensor@@
+.?AVCSensor@@
+.?AVCSystemSpecificCollection@@
+__CxxFrameHandler3
+_vsnwprintf
+swscanf_s
+_vsnprintf
+_purecall
+_wtoi
+_wcsicmp
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+??1type_info@@UAE@XZ
+_except_handler4_common
+ReadFile
+EnterCriticalSection
+WriteFile
+ExpandEnvironmentStringsW
+LeaveCriticalSection
+SetFilePointer
+SetEndOfFile
+CreateFileW
+CloseHandle
+GetModuleFileNameW
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSection
+DisableThreadLibraryCalls
+DeleteCriticalSection
+Sleep
+GetTimeZoneInformation
+LocalFileTimeToFileTime
+LocalFree
+lstrlenA
+MultiByteToWideChar
+GetLastError
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+KERNEL32.dll
+UnregisterTraceGuids
+RegisterTraceGuidsW
+GetTraceEnableLevel
+RegSetValueExA
+RegSetValueExW
+GetTraceEnableFlags
+GetTraceLoggerHandle
+RegCreateKeyExW
+RegCreateKeyExA
+RegDeleteKeyW
+RegDeleteKeyA
+RegCloseKey
+RegisterEventSourceA
+ReportEventW
+DeregisterEventSource
+TraceMessage
+ADVAPI32.dll
+OLEAUT32.dll
+?ValidatePutInstanceFlags@Provider@@MAEJJ@Z
+?ValidateDeletionFlags@Provider@@MAEJJ@Z
+?ValidateQueryFlags@Provider@@MAEJJ@Z
+?ValidateMethodFlags@Provider@@MAEJJ@Z
+?ValidateGetObjFlags@Provider@@MAEJJ@Z
+?ValidateEnumerationFlags@Provider@@MAEJJ@Z
+?CreateNewInstance@Provider@@IAEPAVCInstance@@PAVMethodContext@@@Z
+?Flush@Provider@@MAEXXZ
+?GetObject@Provider@@MAEJPAVCInstance@@JAAVCFrameworkQuery@@@Z
+??1Provider@@UAE@XZ
+??0Provider@@QAE@PBG0@Z
+??1CHString@@QAE@XZ
+??0CHString@@QAE@XZ
+??0CHString@@QAE@PBG@Z
+?OnFinalRelease@CThreadBase@@MAEXXZ
+?GetMethodContext@CInstance@@QBEPAVMethodContext@@XZ
+?Commit@CInstance@@QAEJXZ
+?IsNull@CInstance@@QBE_NPBG@Z
+?GetCHString@CInstance@@QBE_NPBGAAVCHString@@@Z
+?SetCHString@CInstance@@QAE_NPBG0@Z
+?SetCHString@CInstance@@QAE_NPBGABVCHString@@@Z
+?SetCHString@CInstance@@QAE_NPBGPBD@Z
+?Release@CInstance@@QAEJXZ
+?CompareNoCase@CHString@@QBEHPBG@Z
+?SetVariant@CInstance@@QAE_NPBGABUtagVARIANT@@@Z
+?Setbool@CInstance@@QAE_NPBG_N@Z
+?GetNamespaceConnection@CWbemProviderGlue@@SGPAUIWbemServices@@PBG@Z
+?Format@CHString@@QAAXPBGZZ
+??4CHString@@QAEABV0@ABV0@@Z
+??4CHString@@QAEABV0@PBD@Z
+??0CHString@@QAE@PBD@Z
+??H@YG?AVCHString@@ABV0@0@Z
+?SetDateTime@CInstance@@QAE_NPBGABVWBEMTime@@@Z
+??0WBEMTime@@QAE@ABU_FILETIME@@@Z
+??0WBEMTime@@QAE@QAG@Z
+?IsEmpty@CHString@@QBEHXZ
+?FrameworkLogoffDLL@CWbemProviderGlue@@SGHPBG@Z
+?FrameworkLoginDLL@CWbemProviderGlue@@SGHPBG@Z
+?Destroy@CWbemGlueFactory@@QAEXXZ
+?Create@CWbemGlueFactory@@SGPAV1@XZ
+?SetDWORD@CInstance@@QAE_NPBGK@Z
+?SetWORD@CInstance@@QAE_NPBGG@Z
+?ReleaseBuffer@CHString@@QAEXH@Z
+?GetBuffer@CHString@@QAEPAGH@Z
+?GetDWORD@CInstance@@QBE_NPBGAAK@Z
+?GetLocalOffsetForDate@WBEMTime@@SGJPBU_FILETIME@@@Z
+?SetStatusObject@MethodContext@@QAE_NPAUIWbemClassObject@@@Z
+framedynos.dll
+CoUninitialize
+CoCreateInstance
+StringFromGUID2
+CLSIDFromString
+api-ms-win-core-com-l1-1-0.dll
+_CIexp
+_CIlog
+_CIlog10
+_CIpow
+_CIsqrt
+_CxxThrowException
+_ftol2_sse
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+WMI IPMI PROVIDER
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+IPMIPRV.dll
+LegalCopyright
+ OSA Technologies, Inc., an Avocent Company, All Rights Reserved. 
+ Microsoft Corporation.  All rights reserved.
+OriginalFilename
+IPMIPRV.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6
+:,:0:4:8:<:H:T:X:\:`:d:h:|:
+> >$>(>,>0>4>8><>@>D>H>
+T2X2`2h2
+3$34383<3@3H3`3p3t3x3
+4 404@4D4\4`4d4h4|4
+5 5$5<5L5P5T5h5l5
+6 6$6<6@6D6X6\6`6x6
+7$7(7,7@7P7T7X7p7
+8(8,8<8@8X8h8l8p8t8x8
+9$9(9,909D9H9L9P9T9h9l9|9
+: :$:8:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:
+737=7B7G7M7W7[7d7
+8#8-82878=8G8K8T8q8{8
+9'9+949S9]9b9g9m9w9{9
+:$:C:M:R:W:]:g:k:t:
+:/;<;Q;[;
+<%<:<@<I<
+<&=;=M=i=y=
+>2><>M>
+?M?f?r?
+0g0|0
+1#1+141L1Q1Y1b1x1
+2!292
+3"313:3C3L3^3g3
+3#464C4L4]4f4s4
+5,5;5D5T5_5l5u5
+6(6@6X6h6m6
+7,7A7K7s7
+8!8)878@8I8m8
+9(969<9J9W9b9i9n9v9
+:C:R:r:
+;-;<;E;X;^;k;s;
+<3<L<
+=]=i=t=z=
+>">0>]>|>
+?!?0?6?H?V?t?
+0+0`0f0|0
+1,121H1N1S1i1
+2A2I2
+313R3m3
+4,4;4@4F4O4g4l4r4{4
+4#5/5D5T5x5
+6D6t6
+7$72787A7t7|7
+8!848:8
+9%:;:C:b:x:
+<6<C<X<
+=B>\>
+>L?u?
+0"0a0
+2\2r2
+3E3k3
+979S9z9
+4t4z4h5
+6E6W6
+8j9}9
+:&:/:n:}:
+<5<u<
+?D?W?k?
+0B0[0
+101C1V1i1
+3.3O3b3
+4)4B4U4h4{4
+5&595@5S5g5|5
+546q6
+888f8
+9T9}9
+:/:d:}:
+;);2;=;j;
+<,=2=E=c=
+>%?,?6?=?m?
+1H1Q1V1j1
+1>2\2h2r2
+3;3Y3_3k3
+494B4K4R4[4b4h4v4
+415=5E5Q5i5s5
+5R6W6d6
+7 7b7g7
+8&8B8G8X8x8
+9a9k9~9
+:):;:Q:[:n:s:
+>1>F>Y>_>
+3.4O4Y4c4z4
+4;5B5G5Z5{5
+6)6.6N6s6
+7M7m7
+:!:E:g:
+;8;F;
+;-<Q<
+<-=}=
+=->N>
+0]0~0
+3[3h3
+4]4v4
+5+5{5
+5;6K6
+7)888O8X8
+;A;S;z;
+<%<D<R<g<
+=7=C=G=K={=N>
+?.?3?f?
+0O0_0v0
+1<1D1Z1g1
+3$3*353B3e3r3
+4(464?4n4{4
+5"585A5Y5`5f5v5
+6/6@6P6}6
+7,7Q7g7m7y7
+868C8L8t8
+9$9-9:9X9a9n9
+:6:N:W:d:
+:*;3;
+<&<2<<<H<O<[<a<p<z<
+= =2=<=
+>!>.>K>c>k>
+?5?>?
+0O0\0q0
+0G1q1
+2/3<3Q3[3
+5!5+5H5W5
+666_6o6
+737C7
+8I8j8
+859U9
+<+<=<M<]<
+='=3=<=H=g=
+>+>4>@>_>x>
+?+?;?K?c?
+090@0
+1)1;1K1[1k1
+272K2_2f2o2x2
+3&323;3Y3c3
+4.474A4J4Z4u4
+5(5H5R5f5o5|5
+6$6-6=6E6Z6e6n6{6
+6 7*7<7F7S7_7g7|7
+8'878?8P8[8
+9l9v9
+:b;n;y;
+<3<O<`<
+=!=*=C=M=V=[=j=
+=!>+>7>=>B>H>a>f>l>t>|>
+?C?M?W?]?c?l?x?
+0"0(0/0V0b0i0o0x0
+1'2X2a2
+203[3p3
+4W4b4
+5o5|5
+5.686V6`6w6
+7&7>7
+9f9n9|9
+:$:4:B:J:Z:h:p:
+; ;.;8;D;L;U;n;
+<.<8<d<j<r<
+<+=9=W=
+=/>C>
+?2?M?s?}?
+0 0&0/0I0Q0Z0a0f0n0w0~0
+111;1f1
+3'3B3]3h3
+616C6Q6d6~6
+62777D7I7_7g7}7
+8"808<8
+9 93999F9N9[9c9w9
+:#:5:>:N:_:f:v:
+<3=m=
+=6>C>]>
+>q?y?
+020Q0i0{0
+1)1B1Z1j1p1
+2 202>2q2
+3 353;3n3|3
+4&4/4:4R4n4v4
+5<5D5O5W5`5x5
+6&6/6D6R6n6v6
+6L7W7v7~7
+8&81898B8Q8_8{8
+9:9B9M9U9^9m9{9
+:/:4:;:B:I:
+;G;S;f;N<c<}<
+=2=n=
+080{0
+3E4c4s4{4
+4+5P5z5
+506;6V6g6~6
+7+8<8
+9%959@9Q9a9l9
+:+:1:=:P:^:v:
+<$<9<K<]<k<~<
+=M=R=_=d=z=
+>W>a>x>7?
+0%0L0R0[0
+121A1G1Y1b1
+2$2W2u2
+3:3I3O3a3j3
+3!4'4=4G4L4V4f4
+5%535
+5&6?6O6X6h6r6
+7-7=7T7b7n7w7
+8$8<8j8
+9d9m9{9
+9):S:a:o:
+;$;K;P;w;|;
+<$=1=J=V=]=s=|=
+>.>>>C>n>
+?@?W?q?
+383R3i3w3
+3:4a4j4u4|4
+5%5/5?5O5U5`5f5r5
+5H6M6_6}6
+6Z7x7
+8r8w8
+9"929B9R9^9j9v9
+:9:u:
+:S;_;k;w;};
+;%<G<S<_<k<
+=7=G=M=j=
+>,>F>`>z>
+?,?<?B?_?
+0 0,080D0f0
+1/1w1
+243g3
+3'4J4m4
+575G5M5j5
+6#6/6;6R6^6j6v6
+7*767B7N7Z7
+8.8B8K8\8e8
+:!:*:3:<:Y:i:o:
+;9;S;
+<><R<[<
+=;=^=
+=$>d>
+?B?l?
+0'0Q0a0g0
+0)1M1g1
+2!212A2Q2a2q2
+343@3`3h3p3x3
+4 4P4p4|4
+5$505P5\5|5
+6,646<6H6h6p6x6
+7 7@7H7P7X7d7
+8 8(848T8`8
+989@9H9T9t9
+:$:0:P:\:|:
+;4;<;D;L;T;x;
+<$<,<4<<<D<\<d<l<t<|<
+=$=,=4=<=D=L=T=\=h=p=
+> >D>L>T>`>h>
+?$?,?8?X?d?
+0$080@0H0T0t0|0
+1 1,1L1X1|1
+2,242<2D2L2T2\2h2
+3$303P3X3d3
+3$404P4\4|4
+545@5`5h5t5
+60686<6D6H6P6T6\6`6h6l6t6x6
+70787
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:0:4:P:p:
+;8;\;|;
+<(<H<d<
+< =@=X=

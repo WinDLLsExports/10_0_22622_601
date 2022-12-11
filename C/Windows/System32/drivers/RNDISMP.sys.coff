@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\RNDISMP.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000A118 Import Address Table
+             1C000A330 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          BA ExAllocateFromNPagedLookasideList
+                         44F IofCompleteRequest
+                         9D7 RtlUnicodeStringToAnsiString
+                         8F1 RtlInitUnicodeString
+                         36E IoGetDeviceProperty
+                         51B KeQueryTimeIncrement
+                         5BC MmBuildMdlForNonPagedPool
+                         2F6 IoAllocateMdl
+                          F0 ExFreeToNPagedLookasideList
+                         475 KeAcquireSpinLockRaiseToDpc
+                         5F1 MmMapLockedPagesSpecifyCache
+                         356 IoFreeMdl
+                          D5 ExDeleteNPagedLookasideList
+                         100 ExInitializeNPagedLookasideList
+                         883 RtlEqualUnicodeString
+                         4D5 KeInitializeSpinLock
+                         539 KeReleaseSpinLock
+
+    NDIS.SYS
+             1C000A000 Import Address Table
+             1C000A218 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         125 NdisMCancelTimer
+                          A8 NdisFreeMemory
+                          19 NdisAllocateMemoryWithTag
+                         15A NdisMIndicateStatusComplete
+                         159 NdisMIndicateStatus
+                          10 NdisAllocateBuffer
+                          22 NdisAllocatePacket
+                          B0 NdisFreePacket
+                          B1 NdisFreePacketPool
+                          A1 NdisFreeBufferPool
+                          11 NdisAllocateBufferPool
+                          24 NdisAllocatePacketPoolEx
+                          DA NdisGetVersion
+                         137 NdisMCoRequestComplete
+                          44 NdisCloseConfiguration
+                         1C7 NdisReadConfiguration
+                         1B0 NdisOpenConfigurationKeyByIndex
+                         1B1 NdisOpenConfigurationKeyByName
+                         10D NdisInitializeWrapper
+                         178 NdisMRegisterMiniport
+                         1FA NdisTerminateWrapper
+                         17B NdisMRegisterUnloadHandler
+                         109 NdisInitializeEvent
+                         20A NdisWaitEvent
+                         1B7 NdisPacketPoolUsage
+                         18F NdisMSleep
+                         17D NdisMRemoveMiniport
+                         15D NdisMInitializeTimer
+                         14E NdisMGetDeviceProperty
+                         186 NdisMSetAttributesEx
+                         172 NdisMRegisterAdapterShutdownHandler
+                         1F2 NdisSetTimer
+                         1E7 NdisSetEvent
+                         1AE NdisOpenConfiguration
+
+  Section contains the following exports for RNDISMP.SYS
+
+    00000000 characteristics
+    7EFAD4C4 time date stamp
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000012B0 DllInitialize
+          2    1 000012B0 DllUnload
+          3    2 000039F0 RndisMIndicateReceive
+          4    3 00001700 RndisMInitializeWrapper
+          5    4 00001A70 RndisMSendComplete
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 fothk

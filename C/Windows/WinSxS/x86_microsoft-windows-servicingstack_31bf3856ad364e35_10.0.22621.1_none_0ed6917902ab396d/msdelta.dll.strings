@@ -1,0 +1,1581 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+Module
+TypeRef
+TypeDef
+FieldPtr
+Field
+MethodPtr
+Method
+ParamPtr
+Param
+InterfaceImpl
+MemberRef
+Constant
+CustomAttribute
+FieldMarshal
+DeclSecurity
+ClassLayout
+FieldLayout
+StandAloneSig
+EventMap
+EventPtr
+Event
+PropertyMap
+PropertyPtr
+Property
+MethodSemantics
+MethodImpl
+ModuleRef
+TypeSpec
+ImplMap
+FieldRVA
+ENCLog
+ENCMap
+Assembly
+AssemblyProcessor
+AssemblyOS
+AssemblyRef
+AssemblyRefProcessor
+AssemblyRefOS
+ExportedType
+ManifestResource
+NestedClass
+GenericParam
+MethodSpec
+GenericParamConstraint
+Table0x2D
+Table0x2E
+Table0x2F
+Table0x30
+Table0x31
+Table0x32
+Table0x33
+Table0x34
+Table0x35
+Table0x36
+Table0x37
+Table0x38
+Table0x39
+Table0x3A
+Table0x3B
+Table0x3C
+Table0x3D
+Table0x3E
+Table0x3F
+ApplyPreProcessSource_I386
+code( CopyInt ): input[ 0 ];flagsInt( CopyInt ): input[ 1 ];source( PassBuffer ): input[ 2 ];bitReader( PassBitReader ): input[ 3 ];targetBuffer( PassBuffer ): input[ 4 ];reverseRequested( CopyInt ): input[ 5 ];sourceSize( BufferSize ): source[ 0 ];targetSize( BufferSize ): targetBuffer[ 0 ];preProcessBuffer( BitReadBuffer ): bitReader[ 0 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];applyPreProcessSourceName( Concat ): "ApplyPreProcessSource_", codeMnemonic[ 0 ];applyPreProcessSource( ApplyPreProcessSource_RAW / applyPreProcessSourceName[ 0 ] ): code[ 0 ], flagsInt[ 0 ], source[ 0 ], preProcessBuffer[ 1 ], targetSize[ 0 ];debugWritePreProcessSource( DebugWriteFile ): "preProcessSource.apply.image", applyPreProcessSource[ 0 ];compressionRiftTable5( PassRiftTable ): applyPreProcessSource[ 1 ];debugWriteCompression5( DebugWriteFileRiftTable ): "compression5.apply.rift", compressionRiftTable5[ 0 ];compressionRiftTable6( CreateEmptyRiftTable ):;compressionRiftTable7( AddRiftEntry ): compressionRiftTable6[ 0 ], sourceSize[ 0 ], 0;debugWriteCompression7( DebugWriteFileRiftTable ): "compression7.apply.rift", compressionRiftTable7[ 0 ];compressionRiftTable8( MultiplyRiftTables ): compressionRiftTable7[ 0 ], compressionRiftTable5[ 0 ];debugWriteCompression8( DebugWriteFileRiftTable ): "compression8.apply.rift", compressionRiftTable8[ 0 ]; compressionRiftTable9( ReduceRiftTable ): compressionRiftTable8[ 0 ];debugWriteCompression9( DebugWriteFileRiftTable ): "compression9.apply.rift", compressionRiftTable9[ 0 ];patchBuffer( BitReadBuffer ): preProcessBuffer[ 0 ];target1( ApplyPseudoLzxPatchTargetBufferProvided ): applyPreProcessSource[ 0 ], patchBuffer[ 1 ], targetBuffer[ 0 ], compressionRiftTable9[ 0 ], reverseRequested[ 0 ];debugWritePreProcessTarget( DebugWriteFile ): "preProcessTarget.create.image", target1[ 0 ];target( ApplyPostProcessTarget ): flagsInt[ 0 ], target1[ 0 ];output: patchBuffer[ 0 ], target[ 0 ], target1[ 1 ];
+flagsInt( InputSharedInt ): input[ 0 ];output( RiftTransform ): input[ 1 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];
+UnbindPortableExecutable
+AddRiftEntry
+CreateEmptyCli4Metadata
+PassBitWriter
+DebugWriteFileCompositeFormat
+BitWritePortableExecutableInfoCli4
+source( PassBuffer ): input[ 0 ];patch( PassBuffer ): input[ 1 ];split( SplitPatchHeader ): patch[ 0 ];targetSize( CopyInt ): split[ 4 ];targetBuffer( CreateBuffer ): split[ 4 ];reverse( ApplyReversalData ): source[ 0 ], split[ 0 ], targetSize[ 0 ];hash( CalculateHash ): split[ 6 ], reverse[ 0 ];checkHashIdentity( CheckBuffersIdentity ): hash[ 0 ], split[ 7 ], 0x040302;output: reverse[ 0 ];
+Concat
+BitReadPortableExecutableInfoCli4
+GetCheckSum
+CreateEmptyCliMetadata
+BitWriteBuffer
+PostProcessI386E8
+ApplyPreProcessSource_AMD64
+CopyCliMap
+CreateEmptyPortableExecutableInfo
+PassRiftTable
+GetPortableExecutableInfoCli4
+InputSharedIniReader
+BitWriteRiftTable
+BitReaderClose
+InputExclusiveInt
+InputSharedBitReader
+InputSharedRiftTable
+RiftTransform_CLI4_AMD64
+wrap( AsciiToUnicode ):;
+code( CopyInt ): input[ 0 ];targetCode( CopyInt ): input[ 1 ];flagsInt( CopyInt ): input[ 2 ];flags( GetBits ): flagsInt[ 0 ];source( PassBuffer ): input[ 3 ];target( CopyBuffer ): input[ 4 ];sourceIni( PassIniReader ): input[ 5 ];targetIni( PassIniReader ): input[ 6 ];patchIni( PassIniReader ): input[ 7 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];sourceSize( BufferSize ): source[ 0 ];sourcePe0( PortableExecutableFromBuffer ): source[ 0 ], 1;checkSourcePe0( CheckIntsIdentity ): sourcePe0[ 1 ], 1, 0x041F02;sourcePe( PassPe / flags[ 13 ] ? "UnbindPortableExecutable" : "PassPe" ): sourcePe0[ 0 ];sourceOffsetToRva( ExtractImageOffsetToRva ): sourcePe[ 0 ];debugWriteSourceOffsetToRva( DebugWriteFileRiftTable ): "sourceOffsetToRva.create.rift", sourceOffsetToRva[ 0 ];sourceCliMetadata( ExtractCliMetadata ): sourcePe[ 0 ];sourceImageBase( GetImageBase ): sourcePe[ 0 ];iniRiftTable( RiftTableFromIniSection ): patchIni[ 0 ], "OldRvaToNewRvaMap", 1;debugWriteIniRiftTable( DebugWriteFileRiftTable ): "ini.create.rift", iniRiftTable[ 0 ];compareCodes( CompareInts ): code[ 0 ], targetCode[ 0 ];targetPeContainer( TargetRealPeContainer / compareCodes[ 0 ] ? "TargetStubPeContainer" : "TargetRealPeContainer" ): code[ 0 ], flagsInt[ 0 ], source[ 0 ], target[ 0 ], sourceIni[ 0 ], targetIni[ 0 ], patchIni[ 0 ];targetInfo( PassPortableExecutableInfo ): targetPeContainer[ 0 ];targetInfoSplit( SplitPortableExecutableInfo ): targetInfo[ 0 ];targetImageBase( PassInt ): targetInfoSplit[ 0 ];targetGlobalPointer( PassInt ): targetInfoSplit[ 1 ];targetTimeStamp( PassInt ): targetInfoSplit[ 2 ];targetRvaToOffset( PassRiftTable ): targetInfoSplit[ 3 ];debugWriteTargetRvaToOffsetRiftTable( DebugWriteFileRiftTable ): "targetRvaToOffset.create.rift", targetRvaToOffset[ 0 ];targetCliMetadata( PassCliMetadata ): targetInfoSplit[ 4 ];pesRiftTable( PassRiftTable ): targetPeContainer[ 1 ];debugWritePesRiftTable( DebugWriteFileRiftTable ): "pes.create.rift", pesRiftTable[ 0 ];basicBlockRiftTable( PassRiftTable ): targetPeContainer[ 2 ];debugWriteBasicBlockRiftTable( DebugWriteFileRiftTable ): "basicBlock.create.rift", basicBlockRiftTable[ 0 ];psymsRiftTable( PassRiftTable ): targetPeContainer[ 3 ];debugWritePsymsRiftTable( DebugWriteFileRiftTable ): "psyms.create.rift", psymsRiftTable[ 0 ];cliMap( PassCliMap ): targetPeContainer[ 4 ];cliMapRiftTable( PassRiftTable ): targetPeContainer[ 5 ];debugWriteCliMapRiftTable( DebugWriteFileRiftTable ): "cliMap.create.rift", cliMapRiftTable[ 0 ];riftTable0( SumRiftTables ): pesRiftTable[ 0 ], cliMapRiftTable[ 0 ], 0;riftTable1( SumRiftTables ): riftTable0[ 0 ], basicBlockRiftTable[ 0 ], 0;riftTable2( SumRiftTables ): riftTable1[ 0 ], psymsRiftTable[ 0 ], 0;unreducedRiftTable( SumRiftTables ): iniRiftTable[ 0 ], riftTable2[ 0 ], 0;debugWriteUnreducedRiftTable( DebugWriteFileRiftTable ): "unreduced.create.rift", unreducedRiftTable[ 0 ];reducedRiftTable( ReduceRiftTable ): unreducedRiftTable[ 0 ];debugWriteReducedRiftTable( DebugWriteFileRiftTable ): "reduced.create.rift", reducedRiftTable[ 0 ];targetSize( BufferSize ): target[ 0 ];preWriter( BitWriterOpen ):;writeTargetInfo( BitWritePortableExecutableInfo ): preWriter[ 0 ], targetInfo[ 0 ];hintBuffer0( CreateHintBuffer ): sourcePe[ 0 ];usageBuffer0( CreateRiftUsageBuffer ): reducedRiftTable[ 0 ];emptyRelative( CreateEmptyRiftTable ):;riftTransformName( Concat ): "RiftTransform_", codeMnemonic[ 0 ];sourceRiftTransformed( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], sourcePe[ 0 ], hintBuffer0[ 0 ], reducedRiftTable[ 0 ], usageBuffer0[ 0 ], cliMap[ 0 ], targetInfo[ 0 ], 1, emptyRelative[ 0 ];hintBuffer( PassBuffer ): sourceRiftTransformed[ 1 ];usageBuffer( RiftTableMap ): reducedRiftTable[ 0 ], 0, sourceRiftTransformed[ 2 ];debugWriteHintBuffer( DebugWriteFile ): "hint.map", hintBuffer[ 0 ];debugWriteUsageBuffer( DebugWriteFile ): "usage.map", usageBuffer[ 1 ];usedRiftTable( RemoveUnusedRiftEntries ): reducedRiftTable[ 0 ], usageBuffer[ 1 ];debugWriteUsedRiftTable( DebugWriteFileRiftTable ): "used.create.rift", usedRiftTable[ 0 ];setImageBase( SetImageBase ): sourceRiftTransformed[ 0 ], targetImageBase[ 0 ];setGlobalPointer( SetGlobalPointer ): setImageBase[ 0 ], targetGlobalPointer[ 0 ];setTimeStamp( SetTimeStamp ): setGlobalPointer[ 0 ], targetTimeStamp[ 0 ];setCheckSum( SetCheckSum ): setTimeStamp[ 0 ], 0; writeRiftTable( BitWriteRiftTable ): writeTargetInfo[ 0 ], usedRiftTable[ 0 ];writeCliMap( BitWriteCliMap ): writeRiftTable[ 0 ], cliMap[ 0 ];preBuffer( BitWriterClose ): writeCliMap[ 0 ];transformedSource( PortableExecutableToBuffer ): setCheckSum[ 0 ];compressionRiftTable0( MultiplyRiftTables ): sourceOffsetToRva[ 0 ], usedRiftTable[ 0 ];debugWriteCompression0( DebugWriteFileRiftTable ): "compression0.create.rift", compressionRiftTable0[ 0 ];compressionRiftTable1( MultiplyRiftTables ): compressionRiftTable0[ 0 ], targetRvaToOffset[ 0 ];debugWriteCompression1( DebugWriteFileRiftTable ): "compression1.create.rift", compressionRiftTable1[ 0 ];compressionRiftTable2( ReverseRiftTable ): compressionRiftTable1[ 0 ], 0; debugWriteCompression2( DebugWriteFileRiftTable ): "compression2.create.rift", compressionRiftTable2[ 0 ];cliMapCompressionRiftTable( CompressionRiftTableFromCliMap ): sourceCliMetadata[ 0 ], targetCliMetadata[ 0 ], cliMap[ 0 ], transformedSource[ 0 ];debugWriteCliMapCompressionRiftTable( DebugWriteFileRiftTable ): "cliMapCompression.create.rift", cliMapCompressionRiftTable[ 0 ];compressionRiftTable3( SumRiftTables ): compressionRiftTable2[ 0 ], cliMapCompressionRiftTable[ 0 ], 1;debugWriteCompression3( DebugWriteFileRiftTable ): "compression3.create.rift", compressionRiftTable3[ 0 ];output: transformedSource[ 0 ], preBuffer[ 0 ], compressionRiftTable3[ 0 ];
+CreateEmptyRiftTable
+GetGlobalPointer
+TToAscii
+RiftTransform_CLI4_ARM
+SetTimeStamp
+OutputRiftTable
+ApplyPatchTargetBufferProvided
+wrap( CreatePreProcessSourcePeCli4 ):;
+CreateBuffer
+CompressionRiftTableFromCli4Map
+ResetCompositeFormatStatistics
+CreatePreProcessSource_RAW
+CopyRiftTable
+ClearRelocations
+MarkNonExe
+DestroyEmptyBufferList
+BitReadRiftTable
+ExtractCli4Metadata
+BitWritePortableExecutableInfo
+InputSharedCliMetadata
+code( CopyInt ): input[ 0 ];flagsInt( CopyInt ): input[ 1 ];sourcePe( PortableExecutableFromBuffer ): input[ 2 ], 1;targetPe( PortableExecutableFromBuffer ): input[ 3 ], 1;patchIni( InputSharedIniReader ): input[ 6 ];targetInfo( GetPortableExecutableInfo ): targetPe[ 0 ];cliMap( CliMapFromPes ): sourcePe[ 0 ], targetPe[ 0 ];pesRiftTable( RiftTableFromPes ): flagsInt[ 0 ], sourcePe[ 0 ], targetPe[ 0 ], cliMap[ 0 ];psymsRiftTable( RiftTableFromPsyms ): code[ 0 ], flagsInt[ 0 ], sourcePe[ 0 ], targetPe[ 0 ], input[ 4 ], input[ 5 ];sourceRvaToImageOffset( ExtractRvaToImageOffset ): sourcePe[ 0 ];targetRvaToImageOffset( ExtractRvaToImageOffset ): targetPe[ 0 ];debugWriteSourceRvaToOffsetRiftTable( DebugWriteFileRiftTable ): "sourceRvaToOffset.create.rift", sourceRvaToImageOffset[ 0 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];riftTransformName( Concat ): "RiftTransform_", codeMnemonic[ 0 ];sourceHintBuffer( CreateHintBuffer ): sourcePe[ 0 ];targetHintBuffer( CreateHintBuffer ): targetPe[ 0 ];emptyCliMap( CreateEmptyCliMap ):;emptyRiftTable( CreateEmptyRiftTable ):;emptyPeInfo( CreateEmptyPortableExecutableInfo ):;sourceRelative( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], sourcePe[ 0 ], sourceHintBuffer[ 0 ], emptyRiftTable[ 0 ], "", emptyCliMap[ 0 ], emptyPeInfo[ 0 ], 0, emptyRiftTable[ 0 ];targetRelative( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], targetPe[ 0 ], targetHintBuffer[ 0 ], emptyRiftTable[ 0 ], "", emptyCliMap[ 0 ], emptyPeInfo[ 0 ], 0, emptyRiftTable[ 0 ];sourceZero( PortableExecutableToBuffer ): sourceRelative[ 0 ];targetZero( PortableExecutableToBuffer ): targetRelative[ 0 ];debugWriteSourceZero( DebugWriteFile ): "sourceZero.create.image", sourceZero[ 0 ];debugWriteTargetZero( DebugWriteFile ): "targetZero.create.image", targetZero[ 0 ];debugWriteSourceRelative( DebugWriteFileRiftTable ): "sourceRelative.create.rift", sourceRelative[ 3 ];debugWriteTargetRelative( DebugWriteFileRiftTable ): "targetRelative.create.rift", targetRelative[ 3 ];basicBlockRiftTable( CreateBasicBlockRiftTable ): sourceZero[ 0 ], targetZero[ 0 ], sourceRelative[ 3 ], targetRelative[ 3 ], sourceRvaToImageOffset[ 0 ], targetRvaToImageOffset[ 0 ];output: targetInfo[ 0 ], pesRiftTable[ 0 ], basicBlockRiftTable[ 0 ], psymsRiftTable[ 0 ], cliMap[ 0 ], cliMap[ 1 ];
+PreProcessI386E8
+code( InputSharedInt ): input[ 0 ];flags( GetBits ): input[ 1 ];options( InputSharedIniReader ): input[ 2 ];pe( PortableExecutableFromBuffer ): input[ 3 ], 1;clearBinding( UnbindPortableExecutable ): pe[ 0 ];clearRelocations( PassPe / flags[ 5 ] ? "PassPe" : "ClearRelocations" ): clearBinding[ 0 ];clearImageBase( SetImageBase ): clearRelocations[ 0 ], 0;clearTimeStamp( SetTimeStamp ): clearImageBase[ 0 ], 0; clearCheckSum( SetCheckSum ): clearTimeStamp[ 0 ], 0;output( PortableExecutableToBuffer ): clearCheckSum[ 0 ];
+CopyBuffer
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExe" : "RiftTransform" ): input[ 1 ] , input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];debugWriteTransformed0( DebugWriteFilePe ): "riftTransformed0.image", riftTransformed0[ 0 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];debugWriteTransformed1( DebugWriteFilePe ): "riftTransformed1.image", riftTransformed1[ 0 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];debugWriteTransformed2( DebugWriteFilePe ): "riftTransformed2.image", riftTransformed2[ 0 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];debugWriteTransformed3( DebugWriteFilePe ): "riftTransformed3.image", riftTransformed3[ 0 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocationsI386" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];debugWriteTransformed4( DebugWriteFilePe ): "riftTransformed4.image", riftTransformed4[ 0 ];riftTransformed6( RiftTransform / flags[ 14 ] ? "RiftTransformCliDisasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];debugWriteTransformed6( DebugWriteFilePe ): "riftTransformed6.image", riftTransformed6[ 0 ];riftTransformed7( RiftTransform / flags[ 15 ] ? "RiftTransformCliMetadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];debugWriteTransformed7( DebugWriteFilePe ): "riftTransformed7.image", riftTransformed7[ 0 ];smashed( PassPe / flags[ 6 ] ?  "SmashLockPrefixesI386" : "PassPe" ): riftTransformed7[ 0 ];debugWriteSmashed( DebugWriteFilePe ): "smashed.image", smashed[ 0 ];riftTransformed8( RiftTransform / flags[ 7 ] ? "RiftTransformRelativeJmpsI386" : "RiftTransform" ): smashed[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];debugWriteTransformed8( DebugWriteFilePe ): "riftTransformed8.image", riftTransformed8[ 0 ];riftTransformed9( RiftTransform / flags[ 8 ] ? "RiftTransformRelativeCallsI386" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];debugWriteTransformed9( DebugWriteFilePe ): "riftTransformed9.image", riftTransformed9[ 0 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+CopyBufferList
+sourceSize( BufferSize ): input[ 0 ];targetSize( BufferSize ): input[ 1 ];fullBuffer( Concat ): input[ 0 ], input[ 1 ];baseRiftTable( CreateCompressionRiftTable ): fullBuffer[ 0 ], sourceSize[ 0 ], targetSize[ 0 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ];riftTable( SumRiftTables ): baseRiftTable[ 0 ], input[ 6 ], 0;defaultFormat( CreateDefaultCompositeFormat ):;defaultBitWriter( BitWriterOpen ):;writeBaseRiftTableDefault( BitWriteRiftTable ): defaultBitWriter[ 0 ], baseRiftTable[ 0 ];writeDefaultFormat( BitWriteCompositeFormat ): writeBaseRiftTableDefault[ 0 ], defaultFormat[ 0 ];defaultFormatWithStatistics( ResetCompositeFormatStatistics ): defaultFormat[ 0 ], 1;defaultCompress( PseudoLzxCompress ): defaultFormatWithStatistics[ 0 ], fullBuffer[ 0 ], riftTable[ 0 ], sourceSize[ 0 ], targetSize[ 0 ], writeDefaultFormat[ 0 ];defaultBuffer( BitWriterClose ): defaultCompress[ 2 ];optimalFormat( CreateOptimalCompositeFormat ): defaultCompress[ 0 ];optimalBitWriter( BitWriterOpen ):;writeBaseRiftTableOptimal( BitWriteRiftTable ): optimalBitWriter[ 0 ], baseRiftTable[ 0 ];writeOptimalFormat( BitWriteCompositeFormat ): writeBaseRiftTableOptimal[ 0 ], optimalFormat[ 1 ];defaultBitReader( BitReaderOpen ): defaultBuffer[ 0 ];copyBaseRiftTable( BitReadRiftTable ): defaultBitReader[ 0 ];copyDefaultFormat( BitReadCompositeFormat ): copyBaseRiftTable[ 0 ];optimalTranslate( TranslateCompression ): copyDefaultFormat[ 0 ], writeOptimalFormat[ 0 ], copyDefaultFormat[ 1 ], optimalFormat[ 1 ], sourceSize[ 0 ], defaultCompress[ 1 ];closeDefaultBitReader( BitReaderClose ): optimalTranslate[ 0 ], 1;optimalBuffer( BitWriterClose ): optimalTranslate[ 1 ];output( MinBuffer ): defaultBuffer[ 0 ], optimalBuffer[ 0 ];
+TargetStubPeContainer
+RiftTransformPdataIa64
+DebugWriteFileRiftTable
+MultiplyRiftTables
+GetImageBase
+CompareInts
+CreateHintBuffer
+NormalizeCodeSource_CLI4_I386
+OutputBufferList
+flags( GetBits ): input[ 0 ];output( PassBuffer / flags[ 0 ] ? "PostProcessI386E8" : "PassBuffer" ): input[ 1 ];
+RiftTransform_AMD64
+CreateRiftUsageBuffer
+RiftTransformCliDisasm
+OutputPortableExecutableInfo
+OutputBuffer
+CopyCompositeFormat
+code( InputSharedInt ): input[ 0 ];flags( InputSharedInt ): input[ 1 ];sourceBuffer( InputExclusiveBuffer ): input[ 2 ];targetBuffer( InputExclusiveBuffer ): input[ 3 ];sourceIni( InputSharedIniReader ): input[ 4 ];targetIni( InputSharedIniReader ): input[ 5 ];patchIni( InputSharedIniReader ): input[ 6 ];targetInfo( CreateEmptyPortableExecutableInfoCli4 ):;cliMap( CreateEmptyCli4Map ):;cliMapRiftTable( CreateEmptyRiftTable ):;pesRiftTable( CreateEmptyRiftTable ):;basicBlockRiftTable( CreateEmptyRiftTable ):;psymsRiftTable( CreateEmptyRiftTable ):;output: targetInfo[ 0 ], pesRiftTable[ 0 ], basicBlockRiftTable[ 0 ], psymsRiftTable[ 0 ], cliMap[ 0 ], cliMapRiftTable[ 0 ];
+CreateEmptyPortableExecutableInfoCli4
+RiftTableFromExports
+GetTimeStamp
+InputExclusiveBuffer
+PseudoLzxCompress
+RiftTableMap
+PassInt
+ReverseRiftTable
+RiftTransform_CLI4_I386
+BitReaderOpen
+SetGlobalPointer
+SumRiftTables
+NormalizeCodeSource_RAW
+CreatePayload
+RiftTransform_IA64
+InputSharedBuffer
+MinBuffer
+RiftTransformPdataAmd64
+AsciiToUnicode
+DebugWriteFilePe
+wrap( ApplyPreProcessSourcePe ):;
+CopyCliMetadata
+ApplyPayload
+InputSharedPe
+SplitPatchHeader
+ApplyPreProcessSource_CLI4_I386
+GetPortableExecutableInfo
+InputExclusiveCompositeFormat
+RiftTableFromPdatas
+fileName( InputSharedBuffer ): input[ 0 ];compositeFormat( InputSharedCompositeFormat ): input[ 1 ];
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExe" : "RiftTransform" ): input[ 1 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocations" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];riftTransformed6( RiftTransform / flags[ 14 ] ? "RiftTransformCliDisasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];riftTransformed7( RiftTransform / flags[ 15 ] ? "RiftTransformCliMetadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];riftTransformed8( RiftTransform / flags[ 9 ] ? "RiftTransformDisasmAmd64" : "RiftTransform" ): riftTransformed7[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];riftTransformed9( RiftTransform / flags[ 10 ] ? "RiftTransformPdataAmd64" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+Decompress
+CreateEmptyBufferList
+IntToFixedBuffer
+NormalizeCodeSource_I386
+PassPe
+TranslateCompression
+code( InputSharedInt ): input[ 0 ];flags( InputSharedInt ): input[ 1 ];sourceBuffer( InputExclusiveBuffer ): input[ 2 ];targetBuffer( InputExclusiveBuffer ): input[ 3 ];sourceIni( InputSharedIniReader ): input[ 4 ];targetIni( InputSharedIniReader ): input[ 5 ];patchIni( InputSharedIniReader ): input[ 6 ];targetInfo( CreateEmptyPortableExecutableInfo ):;cliMap( CreateEmptyCliMap ):;cliMapRiftTable( CreateEmptyRiftTable ):;pesRiftTable( CreateEmptyRiftTable ):;basicBlockRiftTable( CreateEmptyRiftTable ):;psymsRiftTable( CreateEmptyRiftTable ):;output: targetInfo[ 0 ], pesRiftTable[ 0 ], basicBlockRiftTable[ 0 ], psymsRiftTable[ 0 ], cliMap[ 0 ], cliMapRiftTable[ 0 ];
+ApplyPatchGetReverse
+emptyRiftTable( CreateEmptyRiftTable ):;riftTable0( RiftTableFromHeaders ): input[ 0 ], emptyRiftTable[ 0 ], input[ 1 ], input[ 2 ], input[ 3 ];debugWriteRiftTable0( DebugWriteFileRiftTable ): "pes0.create.rift", riftTable0[ 0 ];riftTable1( RiftTableFromImports ): input[ 0 ], riftTable0[ 0 ], input[ 1 ], input[ 2 ], input[ 3 ];debugWriteRiftTable1( DebugWriteFileRiftTable ): "pes1.create.rift", riftTable1[ 0 ];riftTable2( RiftTableFromExports ): input[ 0 ], riftTable1[ 0 ], input[ 1 ], input[ 2 ], input[ 3 ];debugWriteRiftTable2( DebugWriteFileRiftTable ): "pes2.create.rift", riftTable2[ 0 ];riftTable3( RiftTableFromResources ): input[ 0 ], riftTable2[ 0 ], input[ 1 ], input[ 2 ], input[ 3 ];debugWriteRiftTable3( DebugWriteFileRiftTable ): "pes3.create.rift", riftTable3[ 0 ];riftTable4( RiftTableFromPdatas ): input[ 0 ], riftTable3[ 0 ], input[ 1 ], input[ 2 ], input[ 3 ];debugWriteRiftTable4( DebugWriteFileRiftTable ): "pes4.create.rift", riftTable4[ 0 ];output: riftTable4[ 0 ];
+PassCompositeFormat
+RiftTransformDisasmARM64
+PassPortableExecutableInfo
+CaptureReversalData
+CreatePreProcessSource_CLI4_I386
+InputExclusiveRiftTable
+PassIniReader
+CreateCompressionRiftTable
+OutputBitWriter
+BitReadCliMetadata
+CreatePreProcessSource_AMD64
+UnicodeToT
+CreatePreProcessSourcePeCli4
+CalculateHash
+RiftTransformPdataARM64
+NormalizeCodeSource_CLI4_ARM
+RiftTransform
+RiftTransformDisasmIa64
+RiftTransformResources
+CreatePreProcessSourcePe
+TargetRealPeContainerCli4
+RiftTransform_CLI4_ARM64
+Unconcat
+CliMapFromPes
+CreatePreProcessTarget
+InputExclusiveCliMap
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExeCli4" : "RiftTransform" ): input[ 1 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocations" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];riftTransformed6( RiftTransform / flags[ 21 ] ? "RiftTransformCli4Disasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];riftTransformed7( RiftTransform / flags[ 22 ] ? "RiftTransformCli4Metadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];riftTransformed8( RiftTransform / flags[ 19 ] ? "RiftTransformDisasmARM" : "RiftTransform" ): riftTransformed7[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];riftTransformed9( RiftTransform / flags[ 20 ] ? "RiftTransformPdataARM" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+fileName( InputSharedBuffer ): input[ 0 ];riftTable( InputSharedRiftTable ): input[ 1 ];
+GetBits
+MarkNonExeCli4
+BufferListPushFront
+NormalizeSource
+PortableExecutableInfoFromBuffer
+RiftTableFromHeaders
+ExtractImageOffsetToRva
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExe" : "RiftTransform" ): input[ 1 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocations" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];riftTransformed6( RiftTransform / flags[ 14 ] ? "RiftTransformCliDisasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];riftTransformed7( RiftTransform / flags[ 15 ] ? "RiftTransformCliMetadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];riftTransformed8( RiftTransform / flags[ 11 ] ? "RiftTransformDisasmIa64" : "RiftTransform" ): riftTransformed7[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];riftTransformed9( RiftTransform / flags[ 12 ] ? "RiftTransformPdataIa64" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+InputExclusiveBitReader
+wrap( NormalizeCodeSource_I386 ):;
+InputSharedBufferList
+TToUnicode
+CreatePreProcessSource_CLI4_ARM64
+OutputPe
+SplitPortableExecutableInfo
+CopyPe
+IntFromFixedBuffer
+OutputBitReader
+BitWriteInt
+PassCliMetadata
+BitReadPortableExecutableInfo
+RiftTransformCli4Metadata
+wrap( UnicodeToAscii ):;
+RiftTransform_I386
+source( PassBuffer ): input[ 0 ];bitReader( BitReaderOpen ): input[ 1 ];target0( PassBuffer ): input[ 2 ];reverseRequested( CopyInt ): input[ 4 ];sourceSize( BufferSize ): source[ 0 ];targetSize( BufferSize ): target0[ 0 ];baseRiftTable( BitReadRiftTable ): bitReader[ 0 ];riftTable( SumRiftTables ): baseRiftTable[ 1 ], input[ 3 ], 0;format( BitReadCompositeFormat ): baseRiftTable[ 0 ];debugWriteCompositeFormat( DebugWriteFileCompositeFormat ): "compositeFormat.apply.txt", format[ 1 ];bufferList0( CreateEmptyBufferList ):;bufferList1( BufferListPushBack ): bufferList0[ 0 ], source[ 0 ];bufferList2( BufferListPushBack ): bufferList1[ 0 ], target0[ 0 ];decompress( Decompress ): format[ 0 ], format[ 1 ], bufferList2[ 0 ], riftTable[ 0 ], sourceSize[ 0 ], targetSize[ 0 ], -1, reverseRequested[ 0 ];target1( BufferListPopBack ): decompress[ 1 ];closeBitReader( BitReaderClose ): decompress[ 0 ], 1;output: target1[ 1 ], decompress[ 2 ];
+CreatePatch
+CreateReversePatch
+version( CopyInt ): input[ 0 ];code( CopyInt ): input[ 1 ];targetCode( CopyInt ): input[ 2 ];flagsInt( CopyInt ): input[ 3 ];source( PassBuffer ): input[ 4 ];target( PassBuffer ): input[ 5 ];sourceIni( PassIniReader ): input[ 6 ];targetIni( PassIniReader ): input[ 7 ];patchIni( PassIniReader ): input[ 8 ];fileTime( CopyInt ): input[ 9 ];hashAlgId( CopyInt ): input[ 10 ];asciiPatchSignature( TToAscii ): "PA30";fileTimeBuffer( IntToFixedBuffer ): fileTime[ 0 ];hash( CalculateHash ): hashAlgId[ 0 ], target[ 0 ];header( Concat ): asciiPatchSignature[ 0 ], fileTimeBuffer[ 0 ];bitWriter( BitWriterOpen ):;writeVersion( BitWriteInt ): bitWriter[ 0 ], version[ 0 ];writeCode( BitWriteInt ): writeVersion[ 0 ], code[ 0 ];targetSize( BufferSize ): target[ 0 ];writeFlagsInt( BitWriteInt ): writeCode[ 0 ], flagsInt[ 0 ];writeTargetSize( BitWriteInt ): writeFlagsInt[ 0 ], targetSize[ 0 ]; writeHashAlgId( BitWriteInt ): writeTargetSize[ 0 ], hashAlgId[ 0 ];writeHash( BitWriteBuffer ): writeHashAlgId[ 0 ], hash[ 0 ];create( CreatePayload ): code[ 0 ], targetCode[ 0 ], flagsInt[ 0 ], writeHash[ 0 ], source[ 0 ], target[ 0 ], sourceIni[ 0 ], targetIni[ 0 ], patchIni[ 0 ];created( BitWriterClose ): create[ 0 ];patch( Concat ): header[ 0 ], created[ 0 ];apply( ApplyPatch ): source[ 0 ], patch[ 0 ];testApply( CheckBuffersIdentity ): target[ 0 ], apply[ 0 ], 0x041B01;output: patch[ 0 ];
+BufferListPopBack
+BufferListPopFront
+code( InputSharedInt ): input[ 0 ];flagsInt( InputSharedInt ): input[ 1 ];source( PassBuffer ): input[ 2 ];preProcessBuffer( InputSharedBuffer ): input[ 3 ];targetSize( InputSharedInt ): input[ 4 ];riftTable( CreateEmptyRiftTable ):;compressionRiftTable( CreateEmptyRiftTable ):;output: source[ 0 ], compressionRiftTable[ 0 ];
+InputExclusiveCliMetadata
+source( PassBuffer ): input[ 0 ];sourceCopy( CopyBuffer ): input[ 0 ];patch( PassBuffer ): input[ 1 ];sourceFileTime( CopyInt ): input[ 2 ];hashAlgId( CopyInt ): input[ 3 ];code( CopyInt ): input[ 4 ];split( SplitPatchHeader ): patch[ 0 ];targetBuffer( CreateBuffer ): split[ 4 ];apply( ApplyPayload ): split[ 2 ], split[ 3 ], source[ 0 ], split[ 0 ], targetBuffer[ 0 ], 1;bitReaderClose( BitReaderClose ): apply[ 0 ], 1;hash( CalculateHash ): split[ 6 ], apply[ 1 ];checkHashIdentity( CheckBuffersIdentity ): hash[ 0 ], split[ 7 ], 0x040302;reversePatch( CreateReversePatch ): sourceCopy[ 0 ], apply[ 1 ], apply[ 2 ], sourceFileTime[ 0 ], hashAlgId[ 0 ], code[ 0 ], split[ 2 ], split[ 3 ];output: apply[ 1 ], reversePatch [ 0 ];
+InputExclusiveBufferList
+InputExclusivePe
+ApplyPreProcessSource_CLI4_ARM64
+CalculateNormalizedSourceHash
+RiftTransformRelocationsI386
+ApplyPreProcessSource_CLI4_AMD64
+RiftTransformDisasmARM
+InputSharedCliMap
+NormalizeCodeSource_CLI4_AMD64
+wrap( CopyBuffer ):;
+RiftTransformTemplate
+code( InputSharedInt ): input[ 0 ];flags( GetBits ): input[ 1 ];options( InputSharedIniReader ): input[ 2 ];output( PassBuffer ): input[ 3 ];
+ReduceRiftTable
+RemoveUnusedRiftEntries
+CopyInt
+InputSharedBitWriter
+ApplyPreProcessSource_RAW
+InputSharedPortableExecutableInfo
+BitWriterClose
+BitReadCompositeFormat
+OutputCompositeFormat
+CreateCodeFlagsPatch
+PseudoLzxCompressStatisticsOnly
+RiftTransformExports
+pe( PassPe ): input[ 0 ];hintMap( PassBuffer ): input[ 1 ];riftTable( InputSharedRiftTable ): input[ 2 ];riftUsage( PassBuffer ): input[ 3 ];cliMap( InputSharedCliMap ): input[ 4 ];targetInfo( InputSharedPortableExecutableInfo ): input[ 5 ];transformFlag( InputSharedInt ): input[ 6 ];relative( PassRiftTable ): input[ 7 ];output: pe[ 0 ], hintMap[ 0 ], riftUsage[ 0 ], relative[ 0 ];
+PortableExecutableFromBuffer
+RiftTransformPdataARM
+RiftTransformRelocations
+CreatePseudoLzxPatch
+fileName( InputSharedBuffer ): input[ 0 ];buffer( InputSharedBuffer ): input[ 1 ];
+Cli4MapFromPes
+fileTypeSet( CopyInt ): input[ 0 ];flags( CopyInt ): input[ 1 ];options( IniReaderFromBuffer ): input[ 2 ];source( PassBuffer ): input[ 3 ];code( DetermineFileType ): fileTypeSet[ 0 ], source[ 0 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];normalizeCodeSourceName( Concat ): "NormalizeCodeSource_", codeMnemonic[ 0 ];normalizeCodeSource( NormalizeCodeSource_RAW / normalizeCodeSourceName[ 0 ] ): code[ 0 ], flags[ 0 ], options[ 0 ], source[ 0 ];output: normalizeCodeSource[ 0 ];
+CreatePreProcessSource_CLI4_AMD64
+wrap( ApplyPreProcessSourcePeCli4 ):;
+DetermineFileType
+code( CopyInt ): input[ 0 ];flagsInt( CopyInt ): input[ 1 ];sourcePe( PortableExecutableFromBuffer ): input[ 2 ], 1;targetPe( PortableExecutableFromBuffer ): input[ 3 ], 1;patchIni( InputSharedIniReader ): input[ 6 ];targetInfo( GetPortableExecutableInfoCli4 ): targetPe[ 0 ];cliMap( Cli4MapFromPes ): sourcePe[ 0 ], targetPe[ 0 ];pesRiftTable( RiftTableFromPes ): flagsInt[ 0 ], sourcePe[ 0 ], targetPe[ 0 ], cliMap[ 0 ];psymsRiftTable( RiftTableFromPsyms ): code[ 0 ], flagsInt[ 0 ], sourcePe[ 0 ], targetPe[ 0 ], input[ 4 ], input[ 5 ];sourceRvaToImageOffset( ExtractRvaToImageOffset ): sourcePe[ 0 ];targetRvaToImageOffset( ExtractRvaToImageOffset ): targetPe[ 0 ];debugWriteSourceRvaToOffsetRiftTable( DebugWriteFileRiftTable ): "sourceRvaToOffset.create.rift", sourceRvaToImageOffset[ 0 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];riftTransformName( Concat ): "RiftTransform_", codeMnemonic[ 0 ];sourceHintBuffer( CreateHintBuffer ): sourcePe[ 0 ];targetHintBuffer( CreateHintBuffer ): targetPe[ 0 ];emptyCliMap( CreateEmptyCli4Map ):;emptyRiftTable( CreateEmptyRiftTable ):;emptyPeInfo( CreateEmptyPortableExecutableInfoCli4 ):;sourceRelative( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], sourcePe[ 0 ], sourceHintBuffer[ 0 ], emptyRiftTable[ 0 ], "", emptyCliMap[ 0 ], emptyPeInfo[ 0 ], 0, emptyRiftTable[ 0 ];targetRelative( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], targetPe[ 0 ], targetHintBuffer[ 0 ], emptyRiftTable[ 0 ], "", emptyCliMap[ 0 ], emptyPeInfo[ 0 ], 0, emptyRiftTable[ 0 ];sourceZero( PortableExecutableToBuffer ): sourceRelative[ 0 ];targetZero( PortableExecutableToBuffer ): targetRelative[ 0 ];debugWriteSourceZero( DebugWriteFile ): "sourceZero.create.image", sourceZero[ 0 ];debugWriteTargetZero( DebugWriteFile ): "targetZero.create.image", targetZero[ 0 ];debugWriteSourceRelative( DebugWriteFileRiftTable ): "sourceRelative.create.rift", sourceRelative[ 3 ];debugWriteTargetRelative( DebugWriteFileRiftTable ): "targetRelative.create.rift", targetRelative[ 3 ];basicBlockRiftTable( CreateBasicBlockRiftTable ): sourceZero[ 0 ], targetZero[ 0 ], sourceRelative[ 3 ], targetRelative[ 3 ], sourceRvaToImageOffset[ 0 ], targetRvaToImageOffset[ 0 ];output: targetInfo[ 0 ], pesRiftTable[ 0 ], basicBlockRiftTable[ 0 ], psymsRiftTable[ 0 ], cliMap[ 0 ], cliMap[ 1 ];
+code( CopyInt ): input[ 0 ];flagsInt( CopyInt ): input[ 1 ];flags( GetBits ): flagsInt[ 0 ];source( PassBuffer ): input[ 2 ];bitReader( BitReaderOpen ): input[ 3 ];targetSize( CopyInt ): input[ 4 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];sourceSize( BufferSize ): source[ 0 ];sourcePe0( PortableExecutableFromBuffer ): source[ 0 ], 1;checkSourcePe0( CheckIntsIdentity ): sourcePe0[ 1 ], 1, 0x040301;sourcePe( PassPe / flags[ 13 ] ? "UnbindPortableExecutable" : "PassPe" ): sourcePe0[ 0 ];sourceOffsetToRva( ExtractImageOffsetToRva ): sourcePe[ 0 ];debugWriteSourceOffsetToRva( DebugWriteFileRiftTable ): "sourceOffsetToRva.apply.rift", sourceOffsetToRva[ 0 ];sourceCliMetadata( ExtractCliMetadata ): sourcePe[ 0 ];sourceImageBase( GetImageBase ): sourcePe[ 0 ];targetInfo( BitReadPortableExecutableInfo ): bitReader[ 0 ];targetInfoSplit( SplitPortableExecutableInfo ): targetInfo[ 1 ];targetImageBase( PassInt ): targetInfoSplit[ 0 ];targetGlobalPointer( PassInt ): targetInfoSplit[ 1 ];targetTimeStamp( PassInt ): targetInfoSplit[ 2 ];targetRvaToOffset( PassRiftTable ): targetInfoSplit[ 3 ];debugWriteTargetRvaToOffsetRiftTable( DebugWriteFileRiftTable ): "targetRvaToOffset.apply.rift", targetRvaToOffset[ 0 ];targetCliMetadata( PassCliMetadata ): targetInfoSplit[ 4 ];usedRiftTable( BitReadRiftTable ): targetInfo[ 0 ];debugWriteUsedRiftTable( DebugWriteFileRiftTable ): "used.apply.rift", usedRiftTable[ 1 ]; cliMap( BitReadCliMap ): usedRiftTable[ 0 ];bitReaderClose( BitReaderClose ): cliMap[ 0 ], 1;hintBuffer( CreateHintBuffer ): sourcePe[ 0 ];emptyRelative( CreateEmptyRiftTable ):;riftTransformName( Concat ): "RiftTransform_", codeMnemonic[ 0 ];sourceRiftTransformed( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], sourcePe[ 0 ], hintBuffer[ 0 ], usedRiftTable[ 1 ], "", cliMap[ 1 ], targetInfo[ 1 ], 1, emptyRelative[ 0 ];setImageBase( SetImageBase ): sourceRiftTransformed[ 0 ], targetImageBase[ 0 ];setGlobalPointer( SetGlobalPointer ): setImageBase[ 0 ], targetGlobalPointer[ 0 ];setTimeStamp( SetTimeStamp ): setGlobalPointer[ 0 ], targetTimeStamp[ 0 ];setCheckSum( SetCheckSum ): setTimeStamp[ 0 ], 0; transformed( PortableExecutableToBuffer ): setCheckSum[ 0 ];compressionRiftTable0( MultiplyRiftTables ): sourceOffsetToRva[ 0 ], usedRiftTable[ 1 ];debugWriteCompression0( DebugWriteFileRiftTable ): "compression0.apply.rift", compressionRiftTable0[ 0 ];compressionRiftTable1( MultiplyRiftTables ): compressionRiftTable0[ 0 ], targetRvaToOffset[ 0 ];debugWriteCompression1( DebugWriteFileRiftTable ): "compression1.apply.rift", compressionRiftTable1[ 0 ];compressionRiftTable2( ReverseRiftTable ): compressionRiftTable1[ 0 ], 0;debugWriteCompression2( DebugWriteFileRiftTable ): "compression2.apply.rift", compressionRiftTable2[ 0 ];cliMapCompressionRiftTable( CompressionRiftTableFromCliMap ): sourceCliMetadata[ 0 ], targetCliMetadata[ 0 ], cliMap[ 1 ], transformed[ 0 ];debugWriteCliMapCompressionRiftTable( DebugWriteFileRiftTable ): "cliMapCompression.apply.rift", cliMapCompressionRiftTable[ 0 ];compressionRiftTable3( SumRiftTables ): compressionRiftTable2[ 0 ], cliMapCompressionRiftTable[ 0 ], 1;debugWriteCompression3( DebugWriteFileRiftTable ): "compression3.apply.rift", compressionRiftTable3[ 0 ];output: transformed[ 0 ], compressionRiftTable3[ 0 ];
+RiftTransformCliMetadata
+ExtendBuffer
+CreateBasicBlockRiftTable
+code( CopyInt ): input[ 0 ];flagsInt( CopyInt ): input[ 1 ];flags( GetBits ): flagsInt[ 0 ];source( PassBuffer ): input[ 2 ];bitReader( BitReaderOpen ): input[ 3 ];targetSize( CopyInt ): input[ 4 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];sourceSize( BufferSize ): source[ 0 ];sourcePe0( PortableExecutableFromBuffer ): source[ 0 ], 1;checkSourcePe0( CheckIntsIdentity ): sourcePe0[ 1 ], 1, 0x040301;sourcePe( PassPe / flags[ 13 ] ? "UnbindPortableExecutable" : "PassPe" ): sourcePe0[ 0 ];sourceOffsetToRva( ExtractImageOffsetToRva ): sourcePe[ 0 ];debugWriteSourceOffsetToRva( DebugWriteFileRiftTable ): "sourceOffsetToRva.apply.rift", sourceOffsetToRva[ 0 ];sourceCliMetadata( ExtractCli4Metadata ): sourcePe[ 0 ];sourceImageBase( GetImageBase ): sourcePe[ 0 ];targetInfo( BitReadPortableExecutableInfoCli4 ): bitReader[ 0 ];targetInfoSplit( SplitPortableExecutableInfo ): targetInfo[ 1 ];targetImageBase( PassInt ): targetInfoSplit[ 0 ];targetGlobalPointer( PassInt ): targetInfoSplit[ 1 ];targetTimeStamp( PassInt ): targetInfoSplit[ 2 ];targetRvaToOffset( PassRiftTable ): targetInfoSplit[ 3 ];debugWriteTargetRvaToOffsetRiftTable( DebugWriteFileRiftTable ): "targetRvaToOffset.apply.rift", targetRvaToOffset[ 0 ];targetCliMetadata( PassCliMetadata ): targetInfoSplit[ 5 ];usedRiftTable( BitReadRiftTable ): targetInfo[ 0 ];debugWriteUsedRiftTable( DebugWriteFileRiftTable ): "used.apply.rift", usedRiftTable[ 1 ]; cliMap( BitReadCliMap ): usedRiftTable[ 0 ];bitReaderClose( BitReaderClose ): cliMap[ 0 ], 1;hintBuffer( CreateHintBuffer ): sourcePe[ 0 ];emptyRelative( CreateEmptyRiftTable ):;riftTransformName( Concat ): "RiftTransform_", codeMnemonic[ 0 ];sourceRiftTransformed( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], sourcePe[ 0 ], hintBuffer[ 0 ], usedRiftTable[ 1 ], "", cliMap[ 1 ], targetInfo[ 1 ], 1, emptyRelative[ 0 ];setImageBase( SetImageBase ): sourceRiftTransformed[ 0 ], targetImageBase[ 0 ];setGlobalPointer( SetGlobalPointer ): setImageBase[ 0 ], targetGlobalPointer[ 0 ];setTimeStamp( SetTimeStamp ): setGlobalPointer[ 0 ], targetTimeStamp[ 0 ];setCheckSum( SetCheckSum ): setTimeStamp[ 0 ], 0; transformed( PortableExecutableToBuffer ): setCheckSum[ 0 ];compressionRiftTable0( MultiplyRiftTables ): sourceOffsetToRva[ 0 ], usedRiftTable[ 1 ];debugWriteCompression0( DebugWriteFileRiftTable ): "compression0.apply.rift", compressionRiftTable0[ 0 ];compressionRiftTable1( MultiplyRiftTables ): compressionRiftTable0[ 0 ], targetRvaToOffset[ 0 ];debugWriteCompression1( DebugWriteFileRiftTable ): "compression1.apply.rift", compressionRiftTable1[ 0 ];compressionRiftTable2( ReverseRiftTable ): compressionRiftTable1[ 0 ], 0;debugWriteCompression2( DebugWriteFileRiftTable ): "compression2.apply.rift", compressionRiftTable2[ 0 ];cliMapCompressionRiftTable( CompressionRiftTableFromCli4Map ): sourceCliMetadata[ 0 ], targetCliMetadata[ 0 ], cliMap[ 1 ], transformed[ 0 ];debugWriteCliMapCompressionRiftTable( DebugWriteFileRiftTable ): "cliMapCompression.apply.rift", cliMapCompressionRiftTable[ 0 ];compressionRiftTable3( SumRiftTables ): compressionRiftTable2[ 0 ], cliMapCompressionRiftTable[ 0 ], 1;debugWriteCompression3( DebugWriteFileRiftTable ): "compression3.apply.rift", compressionRiftTable3[ 0 ];output: transformed[ 0 ], compressionRiftTable3[ 0 ];
+BitWriteCliMap
+OutputInt
+ApplyPostProcessTarget
+CreatePreProcessSource_CLI4_ARM
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExeCli4" : "RiftTransform" ): input[ 1 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocations" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];riftTransformed6( RiftTransform / flags[ 21 ] ? "RiftTransformCli4Disasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];riftTransformed7( RiftTransform / flags[ 22 ] ? "RiftTransformCli4Metadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];riftTransformed8( RiftTransform / flags[ 9 ] ? "RiftTransformDisasmAmd64" : "RiftTransform" ): riftTransformed7[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];riftTransformed9( RiftTransform / flags[ 10 ] ? "RiftTransformPdataAmd64" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+BitWriteCompositeFormat
+TargetRealPeContainer
+NormalizeCodeSource_IA64
+RiftTransformCli4Disasm
+code( CopyInt ): input[ 0 ];targetCode( CopyInt ): input[ 1 ];flagsInt( CopyInt ): input[ 2 ];bitWriter( PassBitWriter ): input[ 3 ];source( PassBuffer ): input[ 4 ];target( PassBuffer ): input[ 5 ];sourceSize( BufferSize ): source[ 0 ];targetSize( BufferSize ): target[ 0 ];sourceIni( PassIniReader ): input[ 6 ];targetIni( PassIniReader ): input[ 7 ];patchIni( PassIniReader ): input[ 8 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];createPreProcessSourceName( Concat ): "CreatePreProcessSource_", codeMnemonic[ 0 ];createPreProcessSource( CreatePreProcessSource_RAW / createPreProcessSourceName[ 0 ] ): code[ 0 ], targetCode[ 0 ], flagsInt[ 0 ], source[ 0 ], target[ 0 ], sourceIni[ 0 ], targetIni[ 0 ], patchIni[ 0 ];debugWritePreProcessSource( DebugWriteFile ): "preProcessSource.create.image", createPreProcessSource[ 0 ];createPreProcessTarget( CreatePreProcessTarget ): flagsInt[ 0 ], target[ 0 ];debugWritePreProcessTarget( DebugWriteFile ): "preProcessTarget.create.image", createPreProcessTarget[ 0 ];applyPreProcessSourceName( Concat ): "ApplyPreProcessSource_", codeMnemonic[ 0 ];applyPreProcessSource( ApplyPreProcessSource_RAW / applyPreProcessSourceName[ 0 ] ): code[ 0 ], flagsInt[ 0 ], source[ 0 ], createPreProcessSource[ 1 ], targetSize[ 0 ];checkPreProcessSourceIdentity( CheckBuffersIdentity ): createPreProcessSource[ 0 ], applyPreProcessSource[ 0 ], 0x041F04;checkCompressionRiftTableIdentity( CheckRiftTablesIdentity ): createPreProcessSource[ 2 ], applyPreProcessSource[ 1 ], 0x041F03;applyPostProcessTarget( ApplyPostProcessTarget ): flagsInt[ 0 ], createPreProcessTarget[ 0 ];checkPostProcessTargetIdentity( CheckBuffersIdentity ): target[ 0 ], applyPostProcessTarget[ 0 ], 0x041F01;writePreProcessBuffer( BitWriteBuffer ): bitWriter[ 0 ], createPreProcessSource[ 1 ];compressionRiftTable5( PassRiftTable ): createPreProcessSource[ 2 ];debugWriteCompression5( DebugWriteFileRiftTable ): "compression5.create.rift", compressionRiftTable5[ 0 ];compressionRiftTable6( CreateEmptyRiftTable ):;compressionRiftTable7( AddRiftEntry ): compressionRiftTable6[ 0 ], sourceSize[ 0 ], 0;debugWriteCompression7( DebugWriteFileRiftTable ): "compression7.create.rift", compressionRiftTable7[ 0 ];compressionRiftTable8( MultiplyRiftTables ): compressionRiftTable7[ 0 ], compressionRiftTable5[ 0 ];debugWriteCompression8( DebugWriteFileRiftTable ): "compression8.create.rift", compressionRiftTable8[ 0 ];compressionRiftTable9( ReduceRiftTable ): compressionRiftTable8[ 0 ];debugWriteCompression9( DebugWriteFileRiftTable ): "compression9.create.rift", compressionRiftTable9[ 0 ];create( CreatePseudoLzxPatch ): createPreProcessSource[ 0 ], createPreProcessTarget[ 0 ], flagsInt[ 0 ], sourceIni[ 0 ], targetIni[ 0 ], patchIni[ 0 ], compressionRiftTable9[ 0 ];writePatch( BitWriteBuffer ): writePreProcessBuffer[ 0 ], create[ 0 ];output: writePatch[ 0 ];
+CreatePreProcessSource_I386
+AsciiToT
+NormalizeCodeSource_AMD64
+CheckBuffersIdentity
+BitWriterOpen
+BitReadCliMap
+GetFileTypeMnemonic
+RiftTransformRelativeCallsI386
+code( InputSharedInt ): input[ 0 ];targetCode( InputSharedInt ): input[ 1 ];flagsInt( InputSharedInt): input[ 2 ];source( PassBuffer ): input[ 3 ];target( InputSharedBuffer ): input[ 4 ];sourceIni( PassIniReader ): input[ 5 ];targetIni( PassIniReader ): input[ 6 ];patchIni( PassIniReader ): input[ 7 ];compressionRiftTable( CreateEmptyRiftTable ):;output: source[ 0 ], "", compressionRiftTable[ 0 ];
+BitWriteCliMetadata
+InputExclusiveBitWriter
+fileName( InputSharedBuffer ): input[ 0 ];pe( InputSharedPe ): input[ 1 ]; 
+SmashLockPrefixesI386
+code( CopyInt ): input[ 0 ];targetCode( CopyInt ): input[ 1 ];flagsInt( CopyInt ): input[ 2 ];flags( GetBits ): flagsInt[ 0 ];source( PassBuffer ): input[ 3 ];target( CopyBuffer ): input[ 4 ];sourceIni( PassIniReader ): input[ 5 ];targetIni( PassIniReader ): input[ 6 ];patchIni( PassIniReader ): input[ 7 ];codeMnemonic( GetFileTypeMnemonic ): code[ 0 ];sourceSize( BufferSize ): source[ 0 ];sourcePe0( PortableExecutableFromBuffer ): source[ 0 ], 1;checkSourcePe0( CheckIntsIdentity ): sourcePe0[ 1 ], 1, 0x041F02;sourcePe( PassPe / flags[ 13 ] ? "UnbindPortableExecutable" : "PassPe" ): sourcePe0[ 0 ];sourceOffsetToRva( ExtractImageOffsetToRva ): sourcePe[ 0 ];debugWriteSourceOffsetToRva( DebugWriteFileRiftTable ): "sourceOffsetToRva.create.rift", sourceOffsetToRva[ 0 ];sourceCliMetadata( ExtractCli4Metadata ): sourcePe[ 0 ];sourceImageBase( GetImageBase ): sourcePe[ 0 ];iniRiftTable( RiftTableFromIniSection ): patchIni[ 0 ], "OldRvaToNewRvaMap", 1;debugWriteIniRiftTable( DebugWriteFileRiftTable ): "ini.create.rift", iniRiftTable[ 0 ];compareCodes( CompareInts ): code[ 0 ], targetCode[ 0 ];targetPeContainer( TargetRealPeContainerCli4 / compareCodes[ 0 ] ? "TargetStubPeContainerCli4" : "TargetRealPeContainerCli4" ): code[ 0 ], flagsInt[ 0 ], source[ 0 ], target[ 0 ], sourceIni[ 0 ], targetIni[ 0 ], patchIni[ 0 ];targetInfo( PassPortableExecutableInfo ): targetPeContainer[ 0 ];targetInfoSplit( SplitPortableExecutableInfo ): targetInfo[ 0 ];targetImageBase( PassInt ): targetInfoSplit[ 0 ];targetGlobalPointer( PassInt ): targetInfoSplit[ 1 ];targetTimeStamp( PassInt ): targetInfoSplit[ 2 ];targetRvaToOffset( PassRiftTable ): targetInfoSplit[ 3 ];debugWriteTargetRvaToOffsetRiftTable( DebugWriteFileRiftTable ): "targetRvaToOffset.create.rift", targetRvaToOffset[ 0 ];targetCliMetadata( PassCliMetadata ): targetInfoSplit[ 5 ];pesRiftTable( PassRiftTable ): targetPeContainer[ 1 ];debugWritePesRiftTable( DebugWriteFileRiftTable ): "pes.create.rift", pesRiftTable[ 0 ];basicBlockRiftTable( PassRiftTable ): targetPeContainer[ 2 ];debugWriteBasicBlockRiftTable( DebugWriteFileRiftTable ): "basicBlock.create.rift", basicBlockRiftTable[ 0 ];psymsRiftTable( PassRiftTable ): targetPeContainer[ 3 ];debugWritePsymsRiftTable( DebugWriteFileRiftTable ): "psyms.create.rift", psymsRiftTable[ 0 ];cliMap( PassCliMap ): targetPeContainer[ 4 ];cliMapRiftTable( PassRiftTable ): targetPeContainer[ 5 ];debugWriteCliMapRiftTable( DebugWriteFileRiftTable ): "cliMap.create.rift", cliMapRiftTable[ 0 ];riftTable0( SumRiftTables ): pesRiftTable[ 0 ], cliMapRiftTable[ 0 ], 0;riftTable1( SumRiftTables ): riftTable0[ 0 ], basicBlockRiftTable[ 0 ], 0;riftTable2( SumRiftTables ): riftTable1[ 0 ], psymsRiftTable[ 0 ], 0;unreducedRiftTable( SumRiftTables ): iniRiftTable[ 0 ], riftTable2[ 0 ], 0;debugWriteUnreducedRiftTable( DebugWriteFileRiftTable ): "unreduced.create.rift", unreducedRiftTable[ 0 ];reducedRiftTable( ReduceRiftTable ): unreducedRiftTable[ 0 ];debugWriteReducedRiftTable( DebugWriteFileRiftTable ): "reduced.create.rift", reducedRiftTable[ 0 ];targetSize( BufferSize ): target[ 0 ];preWriter( BitWriterOpen ):;writeTargetInfo( BitWritePortableExecutableInfoCli4 ): preWriter[ 0 ], targetInfo[ 0 ];hintBuffer0( CreateHintBuffer ): sourcePe[ 0 ];usageBuffer0( CreateRiftUsageBuffer ): reducedRiftTable[ 0 ];emptyRelative( CreateEmptyRiftTable ):;riftTransformName( Concat ): "RiftTransform_", codeMnemonic[ 0 ];sourceRiftTransformed( RiftTransformTemplate / riftTransformName[ 0 ] ): flagsInt[ 0 ], sourcePe[ 0 ], hintBuffer0[ 0 ], reducedRiftTable[ 0 ], usageBuffer0[ 0 ], cliMap[ 0 ], targetInfo[ 0 ], 1, emptyRelative[ 0 ];hintBuffer( PassBuffer ): sourceRiftTransformed[ 1 ];usageBuffer( RiftTableMap ): reducedRiftTable[ 0 ], 0, sourceRiftTransformed[ 2 ];debugWriteHintBuffer( DebugWriteFile ): "hint.map", hintBuffer[ 0 ];debugWriteUsageBuffer( DebugWriteFile ): "usage.map", usageBuffer[ 1 ];usedRiftTable( RemoveUnusedRiftEntries ): reducedRiftTable[ 0 ], usageBuffer[ 1 ];debugWriteUsedRiftTable( DebugWriteFileRiftTable ): "used.create.rift", usedRiftTable[ 0 ];setImageBase( SetImageBase ): sourceRiftTransformed[ 0 ], targetImageBase[ 0 ];setGlobalPointer( SetGlobalPointer ): setImageBase[ 0 ], targetGlobalPointer[ 0 ];setTimeStamp( SetTimeStamp ): setGlobalPointer[ 0 ], targetTimeStamp[ 0 ];setCheckSum( SetCheckSum ): setTimeStamp[ 0 ], 0; writeRiftTable( BitWriteRiftTable ): writeTargetInfo[ 0 ], usedRiftTable[ 0 ];writeCliMap( BitWriteCliMap ): writeRiftTable[ 0 ], cliMap[ 0 ];preBuffer( BitWriterClose ): writeCliMap[ 0 ];transformedSource( PortableExecutableToBuffer ): setCheckSum[ 0 ];compressionRiftTable0( MultiplyRiftTables ): sourceOffsetToRva[ 0 ], usedRiftTable[ 0 ];debugWriteCompression0( DebugWriteFileRiftTable ): "compression0.create.rift", compressionRiftTable0[ 0 ];compressionRiftTable1( MultiplyRiftTables ): compressionRiftTable0[ 0 ], targetRvaToOffset[ 0 ];debugWriteCompression1( DebugWriteFileRiftTable ): "compression1.create.rift", compressionRiftTable1[ 0 ];compressionRiftTable2( ReverseRiftTable ): compressionRiftTable1[ 0 ], 0; debugWriteCompression2( DebugWriteFileRiftTable ): "compression2.create.rift", compressionRiftTable2[ 0 ];cliMapCompressionRiftTable( CompressionRiftTableFromCli4Map ): sourceCliMetadata[ 0 ], targetCliMetadata[ 0 ], cliMap[ 0 ], transformedSource[ 0 ];debugWriteCliMapCompressionRiftTable( DebugWriteFileRiftTable ): "cliMapCompression.create.rift", cliMapCompressionRiftTable[ 0 ];compressionRiftTable3( SumRiftTables ): compressionRiftTable2[ 0 ], cliMapCompressionRiftTable[ 0 ], 1;debugWriteCompression3( DebugWriteFileRiftTable ): "compression3.create.rift", compressionRiftTable3[ 0 ];output: transformedSource[ 0 ], preBuffer[ 0 ], compressionRiftTable3[ 0 ];
+ExtractRvaToImageOffset
+IniReaderFromBuffer
+PortableExecutableToBuffer
+ApplyPatch
+flags( GetBits ): input[ 0 ];output( PassBuffer / flags[ 0 ] ? "PreProcessI386E8" : "PassBuffer" ): input[ 1 ];
+CopyIniReader
+RiftTableFromResources
+InputExclusiveIniReader
+wrap( NormalizeCodeSource_AMD64 ):;
+NormalizeCodeSource_CLI4_ARM64
+code( InputSharedInt ): input[ 0 ];flags( GetBits ): input[ 1 ];options( InputSharedIniReader ): input[ 2 ];pe( PortableExecutableFromBuffer ): input[ 3 ], 1;clearBinding( UnbindPortableExecutable ): pe[ 0 ];clearLocks( SmashLockPrefixesI386 ): clearBinding[ 0 ];clearRelocations( PassPe / flags[ 5 ] ? "PassPe" : "ClearRelocations" ): clearLocks[ 0 ];clearImageBase( SetImageBase ): clearRelocations[ 0 ], 0;clearTimeStamp( SetTimeStamp ): clearImageBase[ 0 ], 0; clearCheckSum( SetCheckSum ): clearTimeStamp[ 0 ], 0;output( PortableExecutableToBuffer ): clearCheckSum[ 0 ];
+CreateEmptyCli4Map
+RiftTableFromPes
+BufferListPushBack
+CreateDefaultCompositeFormat
+ApplyPreProcessSourcePeCli4
+OutputIniReader
+InputSharedCompositeFormat
+source( PassBuffer ): input[ 0 ];patch( PassBuffer ): input[ 1 ];split( SplitPatchHeader ): patch[ 0 ];targetBuffer( CreateBuffer ): split[ 4 ];apply( ApplyPayload ): split[ 2 ], split[ 3 ], source[ 0 ], split[ 0 ], targetBuffer[ 0 ], 0;bitReaderClose( BitReaderClose ): apply[ 0 ], 1;hash( CalculateHash ): split[ 6 ], apply[ 1 ];checkHashIdentity( CheckBuffersIdentity ): hash[ 0 ], split[ 7 ], 0x040302;output: apply[ 1 ];
+ApplyPreProcessSource_IA64
+BitReadInt
+InputSharedInt
+DebugWriteFile
+PassBufferList
+ApplyReversePatch
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExeCli4" : "RiftTransform" ): input[ 1 ] , input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];debugWriteTransformed0( DebugWriteFilePe ): "riftTransformed0.image", riftTransformed0[ 0 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];debugWriteTransformed1( DebugWriteFilePe ): "riftTransformed1.image", riftTransformed1[ 0 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];debugWriteTransformed2( DebugWriteFilePe ): "riftTransformed2.image", riftTransformed2[ 0 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];debugWriteTransformed3( DebugWriteFilePe ): "riftTransformed3.image", riftTransformed3[ 0 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocationsI386" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];debugWriteTransformed4( DebugWriteFilePe ): "riftTransformed4.image", riftTransformed4[ 0 ];riftTransformed6( RiftTransform / flags[ 21 ] ? "RiftTransformCli4Disasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];debugWriteTransformed6( DebugWriteFilePe ): "riftTransformed6.image", riftTransformed6[ 0 ];riftTransformed7( RiftTransform / flags[ 22 ] ? "RiftTransformCli4Metadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];debugWriteTransformed7( DebugWriteFilePe ): "riftTransformed7.image", riftTransformed7[ 0 ];smashed( PassPe / flags[ 6 ] ?  "SmashLockPrefixesI386" : "PassPe" ): riftTransformed7[ 0 ];debugWriteSmashed( DebugWriteFilePe ): "smashed.image", smashed[ 0 ];riftTransformed8( RiftTransform / flags[ 7 ] ? "RiftTransformRelativeJmpsI386" : "RiftTransform" ): smashed[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];debugWriteTransformed8( DebugWriteFilePe ): "riftTransformed8.image", riftTransformed8[ 0 ];riftTransformed9( RiftTransform / flags[ 8 ] ? "RiftTransformRelativeCallsI386" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];debugWriteTransformed9( DebugWriteFilePe ): "riftTransformed9.image", riftTransformed9[ 0 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+ApplyPseudoLzxPatchTargetBufferProvided
+CreatePreProcessSource_IA64
+CopyPortableExecutableInfo
+CompressionRiftTableFromCliMap
+CheckIntsIdentity
+BitReadBuffer
+ExtractCliMetadata
+full( CopyBuffer ): input[ 0 ];asciiPatchSignature( TToAscii ): "PA30";asciiPatchSignatureSize( BufferSize ): asciiPatchSignature[ 0 ];signature( Unconcat ): full[ 0 ], asciiPatchSignatureSize[ 0 ];checkSignature( CheckBuffersIdentity ): signature[ 0 ], asciiPatchSignature[ 0 ], 0x044601;intFixedBuffer( IntToFixedBuffer ): 0;intFixedBufferSize( BufferSize ): intFixedBuffer[ 0 ];fileTimeBuffer( Unconcat ): signature[ 1 ], intFixedBufferSize[ 0 ];fileTime( IntFromFixedBuffer ): fileTimeBuffer[ 0 ];bitReader( BitReaderOpen ): fileTimeBuffer[ 1 ];version( BitReadInt ): bitReader[ 0 ];code( BitReadInt ): version[ 0 ];flagsInt( BitReadInt ): code[ 0 ];targetSize( BitReadInt ): flagsInt[ 0 ];hashAlgId( BitReadInt ): targetSize[ 0 ];hash( BitReadBuffer ): hashAlgId[ 0 ];output: hash[ 0 ], version[ 1 ], code[ 1 ], flagsInt[ 1 ], targetSize[ 1 ], fileTime[ 0 ], hashAlgId[ 1 ], hash[ 1 ];
+ApplyReversalData
+wrap( CreatePreProcessSourcePe ):;
+PassBuffer
+RiftTableFromImports
+CreateEmptyCliMap
+flags( GetBits ): input[ 0 ];riftTransformed0( RiftTransform / flags[ 1 ] ? "MarkNonExeCli4" : "RiftTransform" ): input[ 1 ], input[ 2 ], input[ 3 ], input[ 4 ], input[ 5 ], input[ 6 ], input[ 7 ], input[ 8 ];riftTransformed1( RiftTransform / flags[ 2 ] ? "RiftTransformImports" : "RiftTransform" ): riftTransformed0[ 0 ], riftTransformed0[ 1 ], input[ 3 ], riftTransformed0[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed0[ 3 ];riftTransformed2( RiftTransform / flags[ 3 ] ? "RiftTransformExports" : "RiftTransform" ): riftTransformed1[ 0 ], riftTransformed1[ 1 ], input[ 3 ], riftTransformed1[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed1[ 3 ];riftTransformed3( RiftTransform / flags[ 4 ] ? "RiftTransformResources" : "RiftTransform" ): riftTransformed2[ 0 ], riftTransformed2[ 1 ], input[ 3 ], riftTransformed2[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed2[ 3 ];riftTransformed4( RiftTransform / flags[ 5 ] ? "RiftTransformRelocations" : "RiftTransform" ): riftTransformed3[ 0 ], riftTransformed3[ 1 ], input[ 3 ], riftTransformed3[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed3[ 3 ];riftTransformed6( RiftTransform / flags[ 21 ] ? "RiftTransformCli4Disasm" : "RiftTransform" ): riftTransformed4[ 0 ], riftTransformed4[ 1 ], input[ 3 ], riftTransformed4[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed4[ 3 ];riftTransformed7( RiftTransform / flags[ 22 ] ? "RiftTransformCli4Metadata" : "RiftTransform" ) : riftTransformed6[ 0 ], riftTransformed6[ 1 ], input[ 3 ], riftTransformed6[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed6[ 3 ];riftTransformed8( RiftTransform / flags[ 23 ] ? "RiftTransformDisasmARM64" : "RiftTransform" ): riftTransformed7[ 0 ], riftTransformed7[ 1 ], input[ 3 ], riftTransformed7[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed7[ 3 ];riftTransformed9( RiftTransform / flags[ 24 ] ? "RiftTransformPdataARM64" : "RiftTransform" ): riftTransformed8[ 0 ], riftTransformed8[ 1 ], input[ 3 ], riftTransformed8[ 2 ], input[ 5 ], input[ 6 ], input[ 7 ], riftTransformed8[ 3 ];output: riftTransformed9[ 0 ], riftTransformed9[ 1 ], riftTransformed9[ 2 ], riftTransformed9[ 3 ];
+version( CopyInt ): input[ 0 ];hashAlgId( CopyInt ): input[ 1 ];source( PassBuffer ): input[ 2 ];flags( CopyInt ): 0;options( PassBuffer ): "";normalized( NormalizeSource ): version[ 0 ], flags[ 0 ], options[ 0 ], source[ 0 ];hash( CalculateHash ): hashAlgId[ 0 ], normalized[ 0 ];output: hash[ 0 ];
+CheckRiftTablesIdentity
+RiftTransformRelativeJmpsI386
+source( PassBuffer ): input[ 0 ];patch( PassBuffer ): input[ 1 ];targetBuffer( PassBuffer ): input[ 2 ];split( SplitPatchHeader ): patch[ 0 ];targetBufferSize( BufferSize ): targetBuffer[ 0 ];checkTargetSize( CheckIntsIdentity ): split[ 4 ], targetBufferSize[ 0 ], 0x040303;apply( ApplyPayload ): split[ 2 ], split[ 3 ], source[ 0 ], split[ 0 ], targetBuffer[ 0 ], 0;bitReaderClose( BitReaderClose ): apply[ 0 ], 1;hash( CalculateHash ): split[ 6 ], apply[ 1 ];checkHashIdentity( CheckBuffersIdentity ): hash[ 0 ], split[ 7 ], 0x040302;output: apply[ 1 ];
+TargetStubPeContainerCli4
+ApplyPreProcessSourcePe
+ApplyPreProcessSource_CLI4_ARM
+SetCheckSum
+RiftTransformDisasmAmd64
+RiftTransformImports
+asciiPatchSignature( TToAscii ): "PA30";source( PassBuffer ): input[ 0 ];patchedSource( PassBuffer ): input[ 1 ];lzxReversal( PassBuffer ): input[ 2 ];fileTime( CopyInt ): input[ 3 ];hashAlgId( CopyInt ): input[ 4 ];version( CopyInt ): input[ 5 ];code( CopyInt ): input[ 6 ];flagsInt( CopyInt ): input[ 7 ];fileTimeBuffer( IntToFixedBuffer ): fileTime[ 0 ];sourceHash( CalculateHash ): hashAlgId[ 0 ], source[ 0 ];sourceSize( BufferSize ): source[ 0 ];header( Concat ): asciiPatchSignature[ 0 ], fileTimeBuffer[ 0 ];bitWriter( BitWriterOpen ):;writeVersion( BitWriteInt ): bitWriter[ 0 ], version[ 0 ];writeCode( BitWriteInt ): writeVersion[ 0 ], code[ 0 ];writeFlagsInt( BitWriteInt ): writeCode[ 0 ], flagsInt[ 0 ];writeSourceSize( BitWriteInt ): writeFlagsInt[ 0 ], sourceSize[ 0 ]; writeHashAlgId( BitWriteInt ): writeSourceSize[ 0 ], hashAlgId[ 0 ];writeHash( BitWriteBuffer ): writeHashAlgId[ 0 ], sourceHash[ 0 ];reversalBuffer( CaptureReversalData ): source[ 0 ], patchedSource[ 0 ], lzxReversal[ 0 ];writeReversal( BitWriteBuffer ): writeHash[ 0 ], reversalBuffer[ 0 ];created( BitWriterClose ): writeReversal[ 0 ];patch( Concat ): header[ 0 ], created[ 0 ];output: patch[ 0 ];
+PassBitReader
+RiftTableFromIniSection
+SetImageBase
+RiftTableFromPsyms
+RiftTransformHeaders
+PassCliMap
+InputExclusivePortableExecutableInfo
+UnicodeToAscii
+CreateOptimalCompositeFormat
+CalculatePeCheckSum
+BufferSize
+CopyBitReader
+#GUID
+#Blob
+#Strings
+mspatcha.dll
+TestApplyPatchToFileByBuffers
+ApplyPatchToFileByBuffers
+CompositeFormat
+Segments
+AccumulateStatistics
+SkipUnused
+Blocks
+OptimalSegments
+PortableExecutableInfo
+ImageBase
+GlobalPointer
+TimeStamp
+RvaToImageOffset
+CliMetadata
+RiftTable
+HEX( 
+0123456789abcdefStartOffset
+BaseRva
+StreamsNumber
+StreamHeadersOffset
+StringsStreamOffset
+StringsStreamSize
+UsStreamOffset
+UsStreamSize
+BlobStreamOffset
+BlobStreamSize
+GuidStreamOffset
+GuidStreamSize
+TablesStreamOffset
+TablesStreamSize
+LongStringsStream
+LongGuidStream
+LongBlobStream
+TypeDefOrRef
+HasConstant
+HasCustomAttribute
+HasFieldMarshal
+HasDeclSecurity
+MemberRefParent
+HasSemantic
+MethodDefOrRef
+MemberForwarded
+Implementation
+CustomAttributeType
+ResolutionScope
+TypeOrMethodDef
+Module
+TypeRef
+TypeDef
+FieldPtr
+Field
+MethodPtr
+Method
+ParamPtr
+Param
+InterfaceImpl
+MemberRef
+Constant
+CustomAttribute
+FieldMarshal
+DeclSecurity
+ClassLayout
+FieldLayout
+StandAloneSig
+EventMap
+EventPtr
+Event
+PropertyMap
+PropertyPtr
+Property
+MethodSemantics
+MethodImpl
+ModuleRef
+TypeSpec
+ImplMap
+FieldRVA
+ENCLog
+ENCMap
+Assembly
+AssemblyProcessor
+AssemblyOS
+AssemblyRef
+AssemblyRefProcessor
+AssemblyRefOS
+ExportedType
+ManifestResource
+NestedClass
+GenericParam
+MethodSpec
+GenericParamConstraint
+Table0x2D
+Table0x2E
+Table0x2F
+Table0x30
+Table0x31
+Table0x32
+Table0x33
+Table0x34
+Table0x35
+Table0x36
+Table0x37
+Table0x38
+Table0x39
+Table0x3A
+Table0x3B
+Table0x3C
+Table0x3D
+Table0x3E
+Table0x3F
+Unknown exception
+bad array new length
+vector too long
+Symbols
+input
+output
+AMD64
+CLI4_I386
+CLI4_AMD64
+CLI4_ARM
+CLI4_ARM64
+Qkkbal
+wn>Jj
+msdelta.pdb
+.rdata$brc
+.rdata$r$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text$lp00SPGO
+.text$mn
+.text$x
+.xdata$x
+.edata
+.data$r$brc
+.data$rs$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+WWPSR
+9w`uG
+C9^(w
+9G(v*P
+t$8;F
+QSVWj
+;H<t>h
+<a|b<z
+<"tP<\u
+L$,+K
++D$ PQ
+V;P(w#
+wm_^[
+QSVWj
+QSVWj
+9C$v5
+QSVWj
+f9s v
+f9A v
+A0_^[
+PQSVW
+C8f9x 
+D$<9X$
+L$(f;
+D$<;P
+;D$,t
+|V;;rR3
+C8f9x 
+|$$f9x 
+\$8;\$0
+T$49Z$
+T$4f;
+L$@;y
+;\$\t
+QQSVW
+G8f9H vTV
+;_4s(
+G8Ff9p w
+GDC9Xpw
+f9A w(
+FL+F0
+FL+F0
+FL+F0
+NL+N0
+NL+N0
+CL+C0
+JL+J0
+f9F vZ
+|W;;rS3
+t$$9~$
+t$$f;
+L$$f;
+D$4;D$`
+T$092
+A<SVW
+Wj!hL^
+Wj%h(
+Wj'h<<
+Wj hx
+Wj!h8
+T$ F9
+QSVW3
+ub9Q u]9Q$uX9Q(uS9Q,uN9Q0uI9Q4uD9Q8u?9Q<u:9Q@u59QDu08QHu+8QIu&8QJu!9QPu
+9Hpv3j
+QQVWj
+QSVWj
+$SVWj
+<7BSJBt
+D$$9D$(
+49h@S
+uS9C 
+u3Ph<S
+uWPh4S
+uD9C8
+u&PhLS
+9C@ud
+^9sDs
+t1SVH
+!T$,3
+\$(9X
+D$ +D$(
+\$<[;
+;D$8t;
+D$4;8th3
+\$<[;
+D$8;D$0uB;
+uA95$
+t,97u(
+VVhTS
+Y__^[
+5ineI
+5ntel
+9E(t'
+9E$v'
+9E0v#
+9ETv#
+9E<v&
+9EHv&
+9E$t'
+L$$^3
+PQQSVW
+H$+H 
+H$+H 
+;G t(
+t@<@u<
+D$$PR
+9F$v=
+9C$v0
+D$,;D$0u,
+T$ 9F
+D$8Q@
+D$,;D$0u
+D$,;D$0u
+T$49P$
+u{;|$
+L$ Bj
+;D$0tbQQ
+D$<Q@
+9V$v<
+9C$v1
+W,_^[
+L$<^3
+L$<^3
+z, s(
+z, rJ3
+r(+Z(
+u(F;u
++J(F+
+G(_^]
+F(_^]
+L$<^3
+D$(;D$,
+\$$9^
+D$ PQ
+[QQj Z
+u)9Q4u$9QPu
+PQSVW
+9{ t'
+_^[Y]
+, <^w6
+QSVWj=
+DSVWj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$8;D$<
+D$ PQ
+D$8;D$<
+D$ PQ
+QQj Z
+D$8;D$<u
+D$ PQ
+wPj@XP
+t+j Z
++O,+O(
+PQSVW
+9{4t'
+9<0vz
+D$ 8e
+T$49QX
+D$ OH
+L$$f;
+$SVW3
+9XxtZ
+t$(9^
+D$ 9\$
+t$ 9\$
+f9X v@
+.idau
+=ta  t
+QVWj0
+QSVW3
+,SVW3
+;9rP3
+4SVW3
+tT9D$8vN
+tYSVj)
+9D7DsW
+D7\_^[]
+09L3Lux
+L3Du+;
+tBBA;
+D$@PQ
+;|$<r
+D$@PWh
+T$8Wh
+D$@+L$<
+D$4t/
+D$@)D$,
+T$<RQ
+D$@;D$
+;|$8r
+D$<PW
+t$$9>
+89D$<tZ
+D$,PQ
+=;L$(r
+D$,PQ
+L$,QWR
+L$,9L$
+92v>91s
+9t8Dw
+9^8t"
+QQSVW3
+QSVWj
+QSVWj
+QQSVW
+T$<RQ
+D$(u2
++D$4RP
++D$@RP
+D$Hu[
+L$$tG
+D$PPQ
+G9|$,
+QSVWj
+QSVWj
+QSVWj
+QSVWj
+QSVWj
+QVWj8
+QQSVW
+G8f9H vTV
+;_4s(
+G8Ff9p w
+GHC9Xpw
+QVWj0
+9<0vz
+QSVWj
+D$pSV
+D$ ;D$`
+L$|_^[3
+QSVWj
+\$ FYY
+X[_^]
+9G4s'
+9O4s*
+f9p v
+4SVW3
+D$4WP
+QSVW3
+f9Y v|
+QSVWj
+jXYj@3
+,SVW3
+4SVW3
+tT9D$8vN
+tYSVj)
+W93t3
+<t -d
+4;H+7
+9^,t3W3
+^(_^[
+f9s v
+    f9w v$V
+.relu
+oc  t
+f9G vKk
+9F`tV
+DSVWj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$ Qj
+D$8;D$<
+D$ PQ
+D$8;D$<
+D$ PQ
+D$8;D$<
+D$ PQ
+QQj Z
+D$8;D$<u
+D$ PQ
+t+j Z
+ulf9s
+=PRSMt(
+hPRSMj 
+QQSVW
+_^[Y]
+QQSVW
+;_^[]
+_^[Y]
+9_,t/
+F9w(w
+Y__^[
+msdelta.dll
+ApplyDeltaA
+ApplyDeltaB
+ApplyDeltaGetReverseB
+ApplyDeltaProvidedB
+ApplyDeltaW
+CreateDeltaA
+CreateDeltaB
+CreateDeltaW
+DeltaFree
+DeltaNormalizeProvidedB
+GetDeltaInfoA
+GetDeltaInfoB
+GetDeltaInfoW
+GetDeltaSignatureA
+GetDeltaSignatureB
+GetDeltaSignatureW
+.?AVException@cdp@@
+.?AVbad_alloc@std@@
+.?AVexception@std@@
+.?AVbad_array_new_length@std@@
+.P6GHPAUCOMPRESSOR_HANDLE__@@@Z
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVtype_info@@
+_initterm
+_initterm_e
+api-ms-win-crt-runtime-l1-1-0.dll
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___std_type_info_destroy_list
+_o__cexit
+_o__configure_narrow_argv
+_o__errno
+_o__execute_onexit_table
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__invalid_parameter_noinfo
+_o__invalid_parameter_noinfo_noreturn
+_o__purecall
+_o__seh_filter_dll
+_o_free
+_o_malloc
+_o_qsort
+_o_terminate
+__CxxFrameHandler3
+__std_type_info_compare
+__current_exception
+__current_exception_context
+memset
+_except_handler4_common
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+DisableThreadLibraryCalls
+SetLastError
+EnterCriticalSection
+LoadLibraryExA
+SetFileTime
+LeaveCriticalSection
+InitializeCriticalSection
+CreateFileW
+GetLastError
+CreateFileA
+CloseHandle
+GetProcAddress
+DeleteCriticalSection
+SystemTimeToFileTime
+FreeLibrary
+GetSystemTime
+GetFileTime
+GetProcessHeap
+ReadFile
+WriteFile
+SetFilePointer
+SetEndOfFile
+GetFileSize
+CryptReleaseContext
+CryptGetHashParam
+CryptDestroyHash
+CryptHashData
+CryptCreateHash
+CryptAcquireContextA
+HeapFree
+HeapReAlloc
+HeapAlloc
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+IsProcessorFeaturePresent
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-security-cryptoapi-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+Cabinet.dll
+ControlTraceW
+UnregisterTraceGuids
+RegisterTraceGuidsW
+GetTraceEnableLevel
+GetTraceEnableFlags
+GetTraceLoggerHandle
+TraceEvent
+api-ms-win-eventing-controller-l1-1-0.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+_CxxThrowException
+memcmp
+memcpy
+memmove
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft Patch Engine
+FileVersion
+5.00 (WinBuild.160101.0800)
+InternalName
+msdelta.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+msdelta.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5(5@5x5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+;0;4;L;\;`;d;h;l;t;x;
+< <0<4<D<H<`<p<t<
+1%1.1W1
+2<2a2
+4e4y4
+8<8_8
+;=;`;
+011H1
+2B2u2
+2#3y7T8[8
+N5,7Z7
+334p4
+4;5y5
+=6=h=
+>:?v?
+1)2[2r2
+2P3f3
+6c687P7
+9(9K9
+:O;r;
+637q7
+7#8q8
+879u9
+?1?c?
+;2<x<
+=.>E>r>
+6D7a7
+9O:i:
+:8;C;y;
+;X<c<
+=]>y?
+061Q1
+1$2f2
+383J3
+7%7[7u7
+1"1X1
+9.:t:
+=!=W=
+5<6@6D6H6
+98:J:1;b<
+8O8o8
+929Z9t9
+=*>d>
+?H?U?s?
+6A7c7
+5A6a6
+;P<s<
+1*202@2
+3)323L3U3{3
+4?4N4{4
+5*8i9
+;"</<B<O<{<
+565<5R5X5p5
+<#<D<O<
+>D>R>
+&040p0~0
+879x9
+:%;h;
+;1<t<
+=*>z>
+9":|:
+0$1e1
+7$8g8
+223s3
+8H8T8
+8 9,9h9t9
+:C:R:
+:$;3;o;~;
+<P<_<
+<1=@=|=
+>!>]>l>
+?>?M?
+0+0g0s0
+1?1K1
+2#2_2n2
+2:3F3
+4Z4f4
+455D5
+6%6a6p6
+7B7Q7
+7#8/8k8z8
+9I9X9
+9&:5:
+?G?`?d?h?l?p?t?x?|?
+343_3
+9*9P9
+;/;O;q;
+<N<b<o<y<
+3#4|4k5
+6A6T9h9
+<<<t<
+>%?3?E?x?
+0I0u0
+0$1c1
+232m2
+6)6p6/7J7[7
+9A9d9q9
+;);N;\;
+<5<R<]<
+<9=[=f=m=y=
+1"1D1
+:T;g;{;
+<9<_<
+=C=i=
+>'>M>s>
+?1?W?}?
+0;0a0
+1E1k1
+2)2O2u2
+333Y3
+4=4c4
+4!5G5m5
+6+6Q6w6
+757[7
+8?8d8n8u8
+9@9J9U9]9f9l9r9x9
+:<:]:
+;L;f;
+;D<b<
+<!=5=I=]=q=
+>%>9>M>a>u>
+?1?W?~?
+1(1-1F1K1X1
+4.4a4
+6'646P6
+8/8n8
+949I9P9V9h9r9
+9!:<:
+;(;2;Q;b;g;z;
+;M<R<p<y<
+='=0=5=;=E=O=_=o=
+=\>e>m>
+?$?2?;?]?d?
+0$020>0J0V0b0r0~0
+0M1X1y1
+9=;s;
+;+<i<
+<7=c=
+='>S>
+0n1}1
+2A2l2
+3R3p3
+7'7L7u7
+7C8R8{8
+8%9D9q9}9
+:*;M;r;
+<7<D<j<s<~<
+=>=G=R=
+>M>x>
+1(1.13191g1r1
+2"2'2/2<2A2I2V2[2c2p2
+4:4k4
+5A5V5|5
+7Z7a7m7{7
+8#818?8M8[8i8w8
+9+9E9o9
+:.;^;
+<3=]=
+>S>}>
+?=?s?
+0C0m0
+1-1c1
+1#2L2
+3C3m3
+4-4c4
+4#5M5
+6C6m6
+7-7c7
+7#8M8
+9C9m9
+:-:c:
+:#;M;
+<C<l<
+===s=
+=3>]>
+?S?}?
+0=0s0
+031]1
+2S2}2
+3=3s3
+334]4
+5S5}5
+536S6}6
+7=7s7
+738]8
+9=9s9
+93:]:
+;S;x;
+<8<s<
+<3=]=
+>S>z>
+?:?s?
+1S1z1
+2:2s2
+233Z3
+4S4z4
+5=5s5
+536]6
+7S7}7
+8=8s8
+8K94:^:
+;/;P;_;e<
+<!=9=T=s=
+>"?s?
+0N0~0
+;"<H<e<
+1c1g2
+4C627
+9F9z92:S:
+;B;[;b<
+>:>y>
++090s0
+1g1?2k2
+5C6m6
+7A7o7
+8}8a9
+000s0
+132e2
+3'4G4
+6#7O7
+:i:|:
+646S7
+<&<C<`<n<
+?5?F?
+0'1<1V1r1
+464P4g4
+0 2]2
+3/4R4k4
+415w5
+7#9<9U9o9
+:7<Q<k<
+=L>o>
+1R1h1{1
+353N3g3
+5\5j5
+8,8q8
+9J9r9
+9N:3;7<Z<
+</=Q?
+0#1c1
+2L2h2
+5 6k6
+:M:u:
+;I;t;
+; <K<v<
+<"=C=
+=D?y?
+0!191f1
+202J2d2
+3 3;3V3v3
+8=8K8+9Q:
+;<<z<
+:P;l;
+3%5O5[5g5
+;*<;<
+829c9
+9':V:|:
+:0;s;i<u<|<
+3%4M4
+:Q<P=
+34<j=
+2&2*3,5
+8"8?8\8y8
+:w<M>
+>#?C?
+1c3}3
+;S<">
+G0y7,8
+:O;\?
+6N8d8j8p8
+:0;O;
+=,>l>
+4;4e4
+<2<L<l<
+;7;X;b;k;t;~;
+<!<.<<<_<v<
+484c4
+5:5e5
+6<6g6
+7$7X7r7
+8+8F8`8{8
+9&9H9
+3<4b4~4
+4J5o5
+7*8X9
+9q:C;m<
+=(>v>
+2.3P3
+4,4h4
+7/868
+M5Z:^:b:f:j:n:r:v:z:~:
+=L>P>T>X>
+6$7l7
+8B8`8
+829E9Q9]9d9j9u9
+:$:,:7:J:
+:);e;
+>'?g?
+0:0r0
+1:1]1
+343W3
+3,4\4
+5.5f5
+6H7t7
+535V5y5
+7H7k7
+:/:R:u:
+:-;m;
+<=<`<
+=9=\=
+>)>L>o>
+000p0
+0+1s1
+1B2z2
+303S3
+4$4G4j4
+4 5X5{5
+5#6S6
+617i7
+9$:G:j:
+=1=a=
+=*>Z>
+?E?}?
+0(00080@0H0T0t0|0
+1<1D1L1X1x1
+2T2h2p2x2
+3 3(3\3d3l3x3
+4$4,444<4D4L4T4\4d4p4x4
+5 5(5\5d5l5x5
+686@6H6X6`6
+7,787@7t7|7
+748H8P8X8`8h8t8|8
+9L9`9h9p9x9
+:(:H:T:\:
+;P;d;l;t;|;
+<$<,<8<X<`<l<t<
+=$=X=`=h=t=
+> >,>L>T>\>h>p>
+?$?,?4?<?D?L?T?\?d?l?t?|?
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1L1T1\1d1l1t1|1
+2$2,242<2D2L2T2\2d2l2t2|2
+3$3,343<3D3L3T3\3d3l3t3|3
+4$4,444<4D4L4T4\4d4l4t4|4
+5$5,545<5D5L5T5\5d5l5t5|5
+6$6,646<6D6L6T6\6d6l6t6|6
+7<7D7L7X7`7
+8D8L8T8`8h8
+909<9D9x9
+: :@:H:P:l:t:|:
+;$;,;8;@;t;|;
+<P<X<`<l<t<
+= =@=\=`=
+>0>8>L>T>\>d>l>
+?$?,?8?@?d?t?|?
+0$0,040@0H0h0p0x0
+1D1L1T1`1h1
+2(202P2X2`2|2
+3L3T3\3h3p3
+4 4T4\4d4p4
+5@5H5P5\5d5
+546H6P6X6`6h6t6|6
+7 7(7L7T7\7h7p7
+8$808P8X8d8
+8$9,949@9H9|9
+9,:4:<:H:P:
+;4;<;D;P;X;
+<<<D<L<X<`<
+=(=4=<=p=x=
+= >(>0><>D>x>
+>(?0?8?D?L?
+0$0,080X0`0l0
+1<1D1L1X1`1
+2(202H2l2t2|2
+2$3,343@3`3l3
+444<4D4P4X4
+5<5D5L5X5`5
+606T6\6d6p6x6
+7(7H7T7t7|7
+8$8X8`8h8t8|8
+9$9D9L9X9x9
+: :(:0:<:\:d:p:x:
+;$;0;P;\;|;
+<,<4<@<H<|<
+=L=T=\=h=p=
+> >T>\>d>p>x>
+?$?0?8?l?t?|?
+0$080@0H0P0X0`0h0t0
+1L1`1h1p1x1
+2(20282D2L2
+3 3@3L3l3x3
+444@4`4h4p4|4
+4(50585
+080T0|0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,QAkX5Obrlz4uL4i9nB5H9t81sNLo/2AoOihko8s28Cc=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+3zWvb
+*}#7c
+blWW?h
+20220506220650.398Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:FC41-4BD4-D2201%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211028192745Z
+230126192745Z0
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:FC41-4BD4-D2201%0#
+Microsoft Time-Stamp Service0
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+9:Ly~h
+&;[QcoJw
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1-0+
+$Microsoft Ireland Operations Limited1&0$
+Thales TSS ESN:FC41-4BD4-D2201%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220507052212Z
+20220508052212Z0w0=
+1/0-0
+1(0&0
+7l's;
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+)V#K4v
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Abv}f

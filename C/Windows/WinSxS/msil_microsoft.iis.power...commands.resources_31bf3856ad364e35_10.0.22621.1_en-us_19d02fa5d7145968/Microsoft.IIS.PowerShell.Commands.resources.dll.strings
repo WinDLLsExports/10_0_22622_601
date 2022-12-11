@@ -1,0 +1,192 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+NnquOf`
+}2m@u
+ActiveTransactionAborted
+AppPoolDoesNotExist%
+AttributeDoesNotExistM
+BackupKeysNotFoundn
+CentralCertificateCleared
+CentralCertificateDisabled
+CentralCertificateEnabled
+CertificateThumbprintIgnored
+ClrVersionIgnoredCommitPathSet
+ClrVersionIgnoredSectionDefinedInAppHostConfig
+ClrVersionIgnoredUnableToGetWebConfigurationMap
+CommitDelayNotSet
+ConfigCollectionCleared
+ConfigCollectionDoesNotExist
+ConfigCollectionElementCreated
+ConfigCollectionElementDeleted
+ConfigCollectionElementDoesNotExist
+ConfigElementDeleted
+ConfigObjectTypeMisMatch
+ConfigPropertyDoesNotExist
+ConfigValueDeleted
+ConfigValueSet
+DeniedAccessToCertStoreLocation
+EnumValueDoesNotExist
+FailedToCreateCollectionElement
+FlagValueDoesNotExist
+IncorrectPassword
+InvalidCertificateThumbprint
+InvalidCredential
+LocationDoesNotExist
+MissingCertificateThumbprint
+MissingMandatoryConfiguration
+MissingPrivateKeyPassword
+MissingUsernameOrPassword
+NoActiveTransaction
+ParameterNotValidTimespan
+PhysPathShouldExist
+PhysPathShouldNotBeEmpty
+SectionDoesNotExist
+ServerManagerReset
+SharedConfigAccessFailed
+SharedConfigAlreadyDisabled
+SharedConfigAlreadyEnabled
+SharedConfigCannotMapUser
+SharedConfigConfigFilesAlreadyExist
+SharedConfigConfigFilesDontExist
+SharedConfigExportFailed
+SharedConfigExportWhenSharedConfigEnabled
+SharedConfigInvalidPassword
+SharedConfigKeyAlreadyExists
+SharedConfigKeyDoesntExist
+SharedConfigKeyEncryptionPasswordNotNull
+SharedConfigKeyEncryptionPasswordNull
+SharedConfigPasswordNotComplex
+SharedConfigRSAKeysEncountered
+SiteBindingCentralCertificateDisabled
+SiteBindingCertificateReassignmentWarning
+SiteBindingCertificateUsedByOtherSitesWarning
+SiteBindingCreated
+SiteBindingDeleted
+SiteBindingDuplicateBindingWarning
+SiteBindingExists
+SiteBindingHostheaderShouldNotBeEmpty
+SiteBindingInvalidHostnameError
+SiteBindingNotFound
+SiteBindingRemoveError
+SiteBindingSSLFlagInvalidCombination
+SiteBindingSslFlagIgnored
+SiteCreated
+SiteDeleted
+SiteExists
+SiteNotFound
+SiteStarted
+SiteStopped
+ValueTypeMustBeHashtable
+ValueTypeMustBeString
+WebSectionDoesNotExist
+#Active transaction will be aborted.
+&Application pool '{0}' does not exist.
+Attribute '{0}' does not exist.
+Unable to locate and restore previous encryption keys. IIS will not be able to decrypt encrypted configuration in your local config files. To continue, rerun the Cmdlet with -DontRestoreBackedUpKeys switch.
+rCentral Certificate Provider properties successfully cleared. If the feature was enabled, it will now be disabled.
+Central Certificate Provider is disabled. To set feature properties, it should be enables first. Try 'Enable-IISCentralCertProvider'
+Central Certificate Provider is enabled. To clear feature properties, either disable it first by using "Disable-IISCentralCertProvider" or use -Force switch, which will disable it before clearing the feature properties.
+1The parameter 'CertificateThumbprint' is ignored.
+The parameter 'Clr' is ignored because a CommitPath is set. Runtime version of the corresponding application pool is used instead.
+UThe parameter 'Clr' is ignored for section(s) defined in applicationHost.config file.
+Unable to get the web configuration map for the 'Clr' version specified. Either an incorrect version is used or the specified version of .NET Framework is not installed. 
+WCommit delay is not set for the current session. The object returned will be read only.
+;Successfully added the clear tag for the config collection.
+!Config collection does not exist.
+/Config collection element successfully created.
+&{0} config collection item(s) deleted.
+)Config collection element does not exist.
+1Configuration element '{0}' successfully deleted.
+VParameter 'ConfigObject' must be of type ConfigurationSection or ConfigurationElement.
+Parameter '{0}' does not exist.
+6Config value successfully deleted for attribute '{0}'.
+2Config value successfully set for attribute '{0}'.
+Access to {0} was denied.
+?Parameter '{0}' is not a valid enumeration for attribute '{1}'.
+(Failed to create new collection element.
+8Parameter '{0}' is not a valid flag for attribute '{1}'.
+%The specified passwords do not match.
+!CertificateThumbprint is invalid.
+Credential is invalid.
+%Config location '{0}' does not exist.
+5The parameter CertificateThumbprint was not provided.
+CertStoreLocation, UserName and Password must be configured to enable Central Certificate Provider. Try 'Get-CentralCertProvider' to find out missing configuration.
+XPrivate Key Password must be configured to change Central Certificate Provider settings.
+(Either UserName or Password was missing.
+No active transaction.
+(Parameter '{0}' is not a valid TimeSpan.
+1Parameter '{0}' should point to an existing path.
+$Parameter '{0}' should not be empty.
+$Config section '{0}' does not exist.
+Server manager is now reset.
+Cannot access the location '{0}'. Either the location does not exist or the credentials supplied are not authorized to access the location.
+)Shared Configuration is already disabled.
+uShared Configuration is already enabled. If you would like to overwrite the existing settings, use the -Force switch.
+nCannot use specified domain credentials as the local computer is not joined to the domain of the user account.
+kConfiguration files already exist in the specified path '{0}'. To overwrite these files, use -Force switch.
+1Configuration Files don't exist in location '{0}'
+%Export of configuration files failed.
+Shared Configuration is currently enabled. Configuration files that are shared will be attempted to be exported, using shared configuration credentials.
+Invalid password
+Configuration Key already exists in location '{0}'. Either choose another location, disable importing the key by supplying -DontExportKey option to the Cmdlet or overwrite the key by supplying -Force switch.
+Configuration Key doesn't exist in location '{0}'. Either choose another location or disable importing the key by supplying -DontCopyRemoteKeys option to the Cmdlet.
+KeyEncryptionPassword is specified when DontCopyRemoteKeys switch is present. Remove the KeyEncryptionPassword parameter if you don't wish to copy the remote keys. Otherwise remove the DontCopyRemoteKeys switch if you wish to copy the remote keys.
+The parameter KeyEncryptionPassword was not provided. Either provide a password or disable importing/exporting the key by supplying -DontCopyRemoteKeys/-DontExportKeys option to the Cmdlet.
+The specified password is not a strong password. Specify a strong password that contains a combination of numbers, symbols, upper and lowercase letters and is at least 8 characters long.
+RSA Keys ignored while trying to import configuration. If the imported configuration files has any elements encrypted by these legacy keys, IIS will be unable to decrypt those values.
+jCentral Certificate Provider is disabled. It should be enabled first. Try 'Enable-IISCentralCertProvider'.
+At least one other site is using the same HTTPS binding and the binding is configured with a different certificate. Use the -Force switch to reuse this HTTPS binding and reassign the other site(s) to use the new certificate.
+At least one other site is using the same HTTPS binding and the binding is configured with the same certificate.  Use the -Force switch to remove this HTTPS binding.
+,Web site binding '{0}' successfully created.
+,Web site binding '{0}' successfully deleted.
+The binding '{0}' is assigned to another site. If you assign the same binding to this site, you will only be able to start one of the sites. Use the -Force switch if you want to add this duplicate binding.
+&Web site binding '{0}' already exists.
+(Hostheader in '{0}' should not be empty.
+The specified host name is incorrect. The host name must use a valid host name format and cannot contain the following characters: {0}. Example: www.contoso.com.
+&Web site binding '{0}' does not exist.
+wAt least one other site is using the same HTTPS binding. Use the -RemoveConfigOnly switch to remove this HTTPS binding.
+2The specified combination of SSL flags is invalid.
+#The parameter 'SslFlag' is ignored.
+$Web site '{0}' successfully created.
+$Web site '{0}' successfully deleted.
+Web site '{0}' already exists.
+Web site '{0}' does not exist.
+$Web site '{0}' successfully started.
+$Web site '{0}' successfully stopped.
++Parameter -Value must be of type Hashtable.
+(Parameter -Value must be of type String.
+6Config section '{0}' does not exist at location '{1}'.
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+Microsoft.IIS.Powershell.Commands.resources
+Microsoft.IIS.Powershell.Commands.Resources.en.resources
+Microsoft.IIS.Powershell.Commands.resources.dll
+_CorDllMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+040904b0
+CompanyName
+Microsoft Corporation
+FileDescription
+FileVersion
+10.0.22621.1
+InternalName
+Microsoft.IIS.Powershell.Commands.resources.dll
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+Microsoft.IIS.Powershell.Commands.resources.dll
+ProductName
+Microsoft (R) Windows (R) Operating System
+ProductVersion
+10.0.22621.1

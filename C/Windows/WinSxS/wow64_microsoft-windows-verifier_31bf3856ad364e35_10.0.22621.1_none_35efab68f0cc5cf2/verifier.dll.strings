@@ -1,0 +1,2552 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+Thread
+FaultInjectionIncludeDlls
+FaultInjectionExcludeDlls
+FaultInjectionTimeOut
+FaultInjectionProbability
+AVRF: fault injecting call made from %p 
+AVRF:FINJ: invalid fault injection class %X 
+Not used.
+Current thread using the heap
+Last thread that used the heap
+Heap handle
+multithreaded access in HEAP_NO_SERIALIZE heap
+heap handle with incorrect signature
+\KernelObjects\HighCommitCondition
+Page heap: pid 0x%X: page heap enabled with flags 0x%X.
+Process heap handle
+attempt to destroy process heap
+Size requested
+extreme size request
+Address
+HeapRoot
+Page heap: freeing a null pointer
+Page heap count
+Actual count
+process heap list count is wrong
+Corruption Address
+Block size
+Heap block
+corrupted header
+block already freed
+corruption address
+corrupted infix pattern for freed block
+Heap owning the block
+Heap used in the call
+corrupted heap pointer or using wrong heap
+corrupted suffix pattern
+corrupted prefix pattern
+Corrupted stamp
+corrupted start stamp
+corrupted end stamp
+Exception code
+exception raised while verifying block
+corrupted heap block
+heap signature
+heap block
+virtual storage list entry
+list head
+list count
+AVRF: Reached the end of heap list without finding heap index %x. Total number of heaps %x
+heap list entry
+AVRF: EntryContents.Blink = %p, expected %p
+VerifierRegisterLayer
+AVRF: Spy [%s, %u]: %X
+VerifierRegisterBasicsLayers
+VerifierUnregisterLayer
+VerifierUnregisterBasicsLayers
+This verifier stop is continuable. 
+After debugging it use `go' to continue.
+This verifier stop is not continuable. Process will be terminated 
+when you use the `go' debugger command.
+===========================================================
+VERIFIER STOP %p: pid 0x%X: %s 
+%p : %s
+%p : %s
+%p : %s
+%p : %s
+===========================================================
+===========================================================
+AVRF: Noncontinuable verifier stop %Ix encountered. Terminating process ... 
+AVRF: Terminate process after verifier stop failed with %X 
+AVRF: Invalid LayerDescriptor or BreakDecriptor passed for Stop code 0x%X
+AVRF: Invalid Stop code 0x%X passed to VerifierStopMessageEx
+AVRF: Failed to initialize logging and stop support
+AVRF:bogus string length, overflow
+AVRF:Failed to save message into stop list
+StopProcessing
+stop code
+advapi32.dll
+RegCreateKeyExW
+RegCloseKey
+RegQueryValueExW
+RegSetValueExW
+RegDeleteValueW
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\
+GlobalFlag
+AVRF: settings: result %u 
+0x%08X
+VerifierFlags
+{9760941A-8DA5-4dbe-843B-0EBD376CAB02}
+Handles
+Basics
+{159D60EC-F459-456b-A27B-1076AD59F8F4}
+Locks
+{EDDA96DB-D216-467d-BE3C-8603745EDA43}
+{8A70B8A4-4FA6-41c3-85EE-595FCB3E1051}
+Memory
+{F86B022F-E589-4e8f-B0DD-6B7AF9D71A59}
+Exceptions
+{970bd287-2e5a-4a06-9084-9e394d4c2697}
+DirtyStacks
+Miscellaneous
+{02A5B40C-2F22-4409-BB37-7EF0D3F34A88}
+DangerousAPIs
+{de35a0c0-d3b8-11d9-8cd5-0800200c9a66}
+TimeRollOver
+{F15FC24E-53A0-444D-8D28-F7697EDD9C83}
+Threadpool
+{5FE32372-CE71-43f9-B75D-6AD4B1B08D6A}
+InputOutput
+{81EEC8DA-0E61-4942-8037-9A6C4A86510D}
+{6335D1CF-7955-414e-8C6A-1A40AC9357AC}
+SRWLock
+ntdll.dll
+LdrGetProcedureAddressForCaller
+AVRF: AVrfpLdrGetProcedureAddress (%p, %s) -> new address %p
+PageHeapSizeRangeStart
+PageHeapSizeRangeEnd
+PageHeapRandomProbability
+PageHeapDllRangeStart
+PageHeapDllRangeEnd
+PageHeapTargetDlls
+PageHeapVirtualMemoryPercent
+PageHeapCommitMemoryPercent
+ThreadTrackerSize
+HeapTrackerSize
+VspaceTrackerSize
+DllLoadUnloadTrackerSize
+CritsectDeleteTrackerSize
+OutbuffTrackerSize
+ThreadpoolTrackerSize
+ForcePendingIOTrackerSize
+EventTrackerSize
+DelayFreeSizeMB
+AVRF: Ignoring payload restriction mitigation options since App Verifier or Pageheap are enabled. 
+AVRF: failed to initialize call trackers (%X). 
+AVRF: failed to initialize FreeMemoryCallBacks (%X). 
+AVRF: VerifierRegisterBasicsLayers failed.
+AVRF: VerifierLoadEssentialStrings failed, status %#x
+AVRF: NtQuerySystemInformation (SystemBasicInformation) failed, status %#x
+OANOCACHE
+AVRF: failed to define OANOCACHE variable (%X). 
+AVRF: Failed to initialize verifier.dll provider for %ws with flags 0x%X.
+AVRF: verifier.dll provider initialized for %ws with flags 0x%X
+AVRF: Exception during verifier.dll init for %ws with flags 0x%X.
+PayloadRestrictions.dll
+MitLibInitialize
+MitLibUninitialize
+ntdll.dll
+NtSuspendProcess
+NtResumeProcess
+AVRF: failed to create verifier heap. 
+AVRF: failed to initialize verifier stop logic (%X). 
+RtlReportException
+AVRF: Exception %x from address %p
+Dirtying stack range %p - %p for thread %p 
+AVRF: failed to allocated a verifier TLS slot.
+Context record. Use .cxr to display it.
+Exception record. Use .exr to display it.
+Code performing invalid access
+Invalid address being accessed
+first chance access violation for current stack trace
+AVRF: failed to add free memory callback @ %p 
+AVRF: attempt to delete invalid free memory callback @ %p 
+Stack low limit address
+DLL name address. Use du to dump it.
+DLL memory range size
+DLL memory base address
+Unloading DLL inside current thread's stack address range
+AVRF: Couldn't read %s @ %p
+AVRF: Read just %Ix out of %Ix bytes of %s @ %p
+RtlInitializeSRWLock
+RtlReleaseSRWLockExclusive
+RtlReleaseSRWLockShared
+RtlAcquireSRWLockExclusive
+RtlAcquireSRWLockShared
+RtlCreateMemoryBlockLookaside
+RtlExtendMemoryBlockLookaside
+RtlAllocateMemoryBlockLookaside
+RtlFreeMemoryBlockLookaside
+NtAllocateVirtualMemory
+NtFreeVirtualMemory
+NtMapViewOfSection
+NtUnmapViewOfSection
+NtUnmapViewOfSectionEx
+NtCreateSection
+NtOpenSection
+NtCreateFile
+NtOpenFile
+NtCreateKey
+NtOpenKey
+RtlTryEnterCriticalSection
+RtlEnterCriticalSection
+RtlLeaveCriticalSection
+RtlInitializeCriticalSection
+RtlInitializeCriticalSectionAndSpinCount
+RtlDeleteCriticalSection
+RtlInitializeResource
+RtlDeleteResource
+RtlAcquireResourceShared
+RtlAcquireResourceExclusive
+RtlReleaseResource
+RtlConvertSharedToExclusive
+RtlConvertExclusiveToShared
+NtCreateEvent
+NtOpenEvent
+NtClose
+RtlAllocateHeap
+RtlReAllocateHeap
+RtlFreeHeap
+NtReadFile
+NtReadFileScatter
+NtWriteFile
+NtWriteFileGather
+NtWaitForSingleObject
+NtWaitForMultipleObjects
+RtlSetThreadPoolStartFunc
+NtSetEvent
+NtClearEvent
+NtPulseEvent
+NtQueryEvent
+NtResetEvent
+NtSetEventBoostPriority
+NtAlertResumeThread
+NtAlertThread
+NtGetContextThread
+NtImpersonateThread
+NtQueryInformationThread
+NtQueueApcThread
+NtResumeThread
+NtSetContextThread
+NtSetInformationThread
+NtSuspendThread
+NtTerminateThread
+NtGetNextThread
+NtQueryInformationProcess
+NtSetInformationProcess
+NtTerminateProcess
+NtGetNextProcess
+NtAllocateUserPhysicalPages
+NtExtendSection
+NtReadVirtualMemory
+NtWriteVirtualMemory
+NtFlushVirtualMemory
+NtLockVirtualMemory
+NtUnlockVirtualMemory
+NtProtectVirtualMemory
+NtQuerySection
+NtFreeUserPhysicalPages
+NtGetWriteWatch
+NtResetWriteWatch
+NtFlushInstructionCache
+NtDeleteKey
+NtDeleteValueKey
+NtEnumerateKey
+NtEnumerateValueKey
+NtFlushKey
+NtNotifyChangeKey
+NtNotifyChangeMultipleKeys
+NtQueryKey
+NtQueryValueKey
+NtQueryMultipleValueKey
+NtReplaceKey
+NtRenameKey
+NtCompactKeys
+NtCompressKey
+NtRestoreKey
+NtSaveKey
+NtSaveKeyEx
+NtSaveMergedKeys
+NtSetValueKey
+NtUnloadKeyEx
+NtSetInformationKey
+NtLockRegistryKey
+_vsnprintf
+_vsnwprintf
+_snprintf
+_snwprintf
+LdrLoadDll
+LdrUnloadDll
+RtlInitializeCriticalSectionEx
+TpAllocWork
+TpAllocTimer
+TpAllocWait
+TpAllocIoCompletion
+TpReleaseIoCompletion
+TpAllocAlpcCompletion
+TpSimpleTryPost
+TpCallbackLeaveCriticalSectionOnCompletion
+TpCallbackDetectedUnrecoverableError
+RtlQueueWorkItem
+RtlCreateHeap
+RtlRegisterWait
+RtlDeregisterWaitEx
+RtlDeregisterWait
+RtlCreateTimerQueue
+RtlDeleteTimerQueueEx
+RtlDeleteTimerQueue
+RtlCreateTimer
+RtlDeleteTimer
+RtlUpdateTimer
+RtlCancelTimer
+RtlSetTimer
+NtDeviceIoControlFile
+NtFsControlFile
+NtRemoveIoCompletion
+NtRemoveIoCompletionEx
+RtlExitUserThread
+RtlSetIoCompletionCallback
+NtSetInformationFile
+NtCancelIoFile
+NtCancelIoFileEx
+RtlDeleteSecurityObject
+RtlDestroyHeap
+NtNotifyChangeDirectoryFile
+NtDuplicateObject
+RtlTryAcquireSRWLockExclusive
+RtlAcquireReleaseSRWLockExclusive
+RtlTryAcquireSRWLockShared
+RtlSleepConditionVariableSRW
+RtlConvertSRWLockExclusiveToShared
+RtlFreeUnicodeString
+RtlFreeSid
+RtlExitUserProcess
+RtlSetSecurityObject
+RtlSetSecurityObjectEx
+RtlDisownModuleHeapAllocation
+NtAllocateVirtualMemoryEx
+LdrGetProcedureAddress
+HeapCreate
+HeapDestroy
+CloseHandle
+ExitThread
+TerminateThread
+SuspendThread
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+CreateThread
+WaitForSingleObject
+WaitForMultipleObjects
+WaitForSingleObjectEx
+WaitForMultipleObjectsEx
+GlobalAlloc
+GlobalReAlloc
+LocalAlloc
+LocalReAlloc
+CreateFileA
+CreateFileW
+FreeLibraryAndExitThread
+GetTickCount
+IsBadReadPtr
+IsBadHugeReadPtr
+IsBadWritePtr
+IsBadHugeWritePtr
+IsBadCodePtr
+IsBadStringPtrA
+IsBadStringPtrW
+VirtualFree
+VirtualFreeEx
+CreateEventA
+CreateEventW
+OpenEventA
+OpenEventW
+MultiByteToWideChar
+WideCharToMultiByte
+UnmapViewOfFile
+UnmapViewOfFileEx
+SetThreadAffinityMask
+SetThreadPriority
+GlobalFree
+LocalFree
+VirtualAlloc
+HeapAlloc
+HeapReAlloc
+HeapFree
+SetProcessWorkingSetSizeEx
+SetProcessWorkingSetSize
+RegCreateKeyA
+RegCreateKeyW
+RegCreateKeyExA
+RegOpenKeyA
+RegOpenKeyW
+RegOpenKeyExA
+RegOpenKeyExW
+RegNotifyChangeKeyValue
+RegSetValueA
+RegSetValueW
+RegSetValueExA
+malloc
+calloc
+realloc
+??2@YAPAXI@Z
+??3@YAXPAX@Z
+??_U@YAPAXI@Z
+??_V@YAXPAX@Z
+_strdup
+_wcsdup
+_mbsdup
+_aligned_malloc
+_aligned_realloc
+_aligned_recalloc
+_aligned_free
+_aligned_offset_malloc
+_aligned_offset_realloc
+_aligned_offset_recalloc
+_fullpath
+_wfullpath
+_getcwd
+_wgetcwd
+_getdcwd
+_wgetdcwd
+_o_malloc
+_o_calloc
+_o_realloc
+_o_free
+_o__aligned_malloc
+_o__aligned_realloc
+_o__aligned_recalloc
+_o__aligned_free
+_o__aligned_offset_malloc
+_o__aligned_offset_realloc
+_o__aligned_offset_recalloc
+_o__strdup
+_o__wcsdup
+_o__fullpath
+_o__wfullpath
+_o__getcwd
+_o__wgetcwd
+_o__getdcwd
+_o__wgetdcwd
+CoInitialize
+CoInitializeEx
+CoUninitialize
+RoInitialize
+RoUninitialize
+CoTaskMemAlloc
+CoTaskMemRealloc
+CoTaskMemFree
+PostThreadMessageW
+PostThreadMessageA
+PostMessageW
+PostMessageA
+PostQuitMessage
+RegisterPowerSettingNotification
+UnregisterPowerSettingNotification
+SetClipboardData
+SysAllocString
+SysReAllocString
+SysAllocStringLen
+SysReAllocStringLen
+SysAllocStringByteLen
+SysFreeString
+VariantClear
+SetupDiCreateDevRegKeyA
+SetupDiCreateDevRegKeyW
+SetupDiOpenDevRegKey
+kernel32.dll
+msvcrt.dll
+ucrtbase.dll
+ole32.dll
+user32.dll
+setupapi.dll
+oleaut32.dll
+kernelbase.dll
+combase.dll
+AVRF: internal error: we do not have a replacement for %s !!! 
+Critical section debug info address
+Lock count
+Critical section address
+critical section over-released or corrupted
+Number of critical sections owned by current thread.
+%p (CS = %p, DebugInfo = %p), left %p, right %p, parent %p
+================================================
+Critical section tree root = %p
+================================================
+AVrfpInsertCritSectInSplayTree( %p )
+AVrfpFindCritSectInSplayTree( %p )
+AVrfpDeleteCritSectFromSplayTree( %p )
+AVrfpInitializeCriticalSectionCommon (%p, %x, %x))
+AVRF: InitializeCriticalSection (%p) - no tree node.
+AVRF: InitializeCriticalSection (%p) - out of memory - DebugInfo is not valid.
+AVrfpRtlDeleteCriticalSection (%p)
+AVrfpRtlInitializeResource (%p), CS = %p
+AVrfpRtlDeleteResource (%p), CS = %p
+Number of critical sections owned by curent thread.
+current thread doesn't own locks
+AVRF: AVrfpCheckStaticInitializedCriticalSection (%p) - no tree node.
+AVRF: checking CS @ %p (debug info @ %p)
+vfbasics.dll
+AVRF: %ws: null entry point.
+AVRF: %ws @ %p: entry point @ %p .
+mfplat.dll
+nsi.dll
+threadpoolwinrt.dll
+rtworkq.dll
+AVRF: low memory: will not verify entry point for %ws .
+AVRF: hooked dll entry point for dll %ws 
+AVRF: dll entry @ %p (%ws, %x) 
+AVRF: failed to get dll base of user32.dll.
+AVRF: TLS slot %x allocated by code at %p.
+AVRF: AVrfpLdrLoadDll (%p, %ws)
+AVRF: AVrfpLdrUnLoadDll (%p)
+winlogon.exe
+sppsvc.exe
+OESpamFilter.dll
+MSWSOCK.DLL
+gdiplus.dll
+TTTraceWriter.dll
+TTDWriter.dll
+licwmi.dll
+dpcdll.dll
+licdll.dll
+Sbscrdll.dll
+USER32.DLL
+DNSAPI.DLL
+mswsock.dll
+SPOOLSS.DLL
+localspl.dll
+NETAPI32.DLL
+netlogon.dll
+asfsipc.dll
+framedyn.dll
+iac25_32.ax
+rpcss.dll
+ODBC32.dll
+catsrv.dll
+GDI32.DLL
+iuengine.dll
+UxTheme.dll
+WINHTTP.DLL
+adsldp.dll
+adsldpc.dll
+detours.dll
+deviceaccess.dll
+dhcpcore.dll
+dhcpcore6.dll
+diagperf.dll
+esent.dll
+firewall.cpl
+firewallapi.dll
+fxsst.dll
+ieframe.dll
+iessetup.dll
+jscript.dll
+logger.ocx
+mpssvc.dll
+mscories.dll
+msfeeds.dll
+Perftrack.dll
+pwrshsip.dll
+radardt.dll
+rometadata.dll
+ShimEng.dll
+taskschd.dll
+trkwks.dll
+UNTFS.dll
+Urlmon.dll
+VSSAPI.DLL
+wab32.dll
+wbemcons.dll
+webclnt.dll
+wercplsupport.dll
+winspool.drv
+wintypes.dll
+WLDAP32.dll
+wmp.dll
+****************************************************************************
+**                                                                        **
+** Potential deadlock detected!                                           **
+** Type !avrf -dlck in the debugger for more information.                 **
+Deadlock detection: Must release resources in reverse-order
+Resource %p acquired before resource %p -- 
+Current thread (%p) is trying to release it first
+AVRF: Overflow for BytesAllocated (%p) + Size(%p) 
+AVRF: deadlock: stop: %p %p %p %p
+Application verifier deadlock/resource issue
+EnumThreadWindows
+RealGetWindowClassW
+PeekMessageW
+IsGUIThread
+wudfhost.exe
+UNKNOWN
+(null)
+\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\
+\REGISTRY\USER\
+\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\
+VerifierAppLaunchCount
+PageHeapFlags
+AVRF: %ws Failed to close event 0x%p with Status 0x%X
+AVRF: %ws Failed to close handle 0x%p with Status 0x%X
+AVRF: %ws Failed to close event 0x%p with Status 0x%X in event completion callback
+AVRF: %ws Failed to clear event 0x%p with Status 0x%X
+AVRF: %ws Failed to create event with Status 0x%X
+AVRF: %ws Failed to register wait callback with Status 0x%X
+AVRF: conditional breakpoint %X hit.
+Event
+Thread
+Process
+Section
+EventOrProcess
+AVrfpFreeVirtualMemNotify: NtQueryVirtualMemory( %p ) failed %x
+Buffer size
+Buffer start address
+Unexpected exception raised while initializing output buffer.
+AVRF: (%x, %x) AVrfpInitOutputBuffer filling Buffer 0x%p, size 0x%x
+Shutdown
+ProcessName
+VerifierFlags
+Startup
+ProcessName
+VerifierFlags
+Microsoft-Windows-Verifier
+verifier.pdb
+.rdata$brc
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.text
+.text$mn
+.xdata$x
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+Al;Bpu
+H QhP
+@t,hR
+@t,hR
+D$`WP
+SPWj 
+VVVVVh
+y'Phd1
+q$VWh
+xCVWj=
+tDj<j
+VVVVVh
+VVVPWh
+t+h42
+ SVW3
+SSSSV
+xHh,5
+x"hL5
+VWj*Y
+D>*@j
+f9L>*u.Q
+PPPPVh
+;P$u 
+QQSVW
+QSVW3
+PSPSPSh
+PPPWSh
+F,PSW
+QSVWjdZ
+QWjeZ
+t>hx6
+tshx*
+QQSVWj
+tASVW
+S@VWf9
+v;j#3
+uLhHW
+O$;F<v
+F0;F@r
+N0;N4v
+w Vj j
+B$3C$
+s(Vj j
+QSVW3
+u5h :
+$VWP3
+VPRQhdY
+WVWPWRWQh
+y,^_[
+B$3G$
+jXj h
+WWWWShP
+L$d_^[3
+j([j(Y
+F Pj j
+@u"QQ
+j0hx{
+QSVWjmZ
+QSVWjgZ
+QSVWjhZ
+QSVWjiZ
+VWjj3
+QSVWjlZ
+QSVWjpZ
+QSVWjrZ
+SVWjuZ
+tVj0Y
+SVWjxZ
+SVjyZ
+VWj(Z
+VWj)Z
+ SVW3
+69G$u
+?9F$u
+QQSVW3
+F !~ 
+F9sHu
+{L9sXu
+tPh`1
+69{4u
+tQWh`1
+tFVh`1
+tfh`1
+tOh`1
+9~ds#j
+uX;~Dw'
+;~Tw'
+WQQQQ
+QSVWj
+QQSVW
+u1j Y
+jlh8|
+PPPPPh
+QSVWj
+WWWWWh
+PVh (
+C$h (
+PPPPPh
+SVWj%Z
+SVWj'Z
+SVWj)Z
+ SVWj
+VVVWj
+QVWjEZ
+QVWjQZ
+QVWjRZ
+QVWjSZ
+QSVjVZ
+QQVWj
+QQVWj
+PPPPWh
+RRRPSh
+RRRRRh
+VVVVWh
+t^VVVPSh
+PPPPPh
+VVVSWh
+VVVVWh
+tiVVVPSh
+PPPPWh
+VVWRQh
+VVVRSh
+PPPPQh
+VWj$Z
+SVjaZ
+VVVRQh
+VVVVQhR
+URPQQh
+SVWUj
+;t$,v-
+UQPXY]Y[
+Y__^[
+VERIFIER.dll
+AVrfAPILookupCallback
+VerifierAddFreeMemoryCallback
+VerifierCheckPageHeapAllocation
+VerifierCreateRpcPageHeap
+VerifierDeleteFreeMemoryCallback
+VerifierDestroyRpcPageHeap
+VerifierDisableFaultInjectionExclusionRange
+VerifierDisableFaultInjectionTargetRange
+VerifierEnableFaultInjectionExclusionRange
+VerifierEnableFaultInjectionTargetRange
+VerifierEnumerateResource
+VerifierForceNormalHeap
+VerifierGetInfoForException
+VerifierGetMemoryForDump
+VerifierGetPropertyValueByName
+VerifierGetProviderHelper
+VerifierIsAddressInAnyPageHeap
+VerifierIsCurrentThreadHoldingLocks
+VerifierIsDllEntryActive
+VerifierIsPerUserSettingsEnabled
+VerifierQueryRuntimeFlags
+VerifierRedirectStopFunctions
+VerifierSetFaultInjectionProbability
+VerifierSetFlags
+VerifierSetRuntimeFlags
+VerifierStopMessage
+Expected least significant bit
+Expected minimum lock count
+RtlDllShutdownInProgress
+RtlCompareUnicodeString
+NtQuerySystemTime
+RtlAllocateHeap
+RtlRandom
+NtQueryPerformanceCounter
+RtlInitUnicodeString
+RtlCaptureStackBackTrace
+RtlEnterCriticalSection
+RtlInitializeCriticalSection
+RtlLeaveCriticalSection
+DbgPrint
+RtlDeleteCriticalSection
+NtFreeVirtualMemory
+RtlGetUserInfoHeap
+RtlDestroyHeap
+RtlValidateHeap
+RtlInitializeGenericTableAvl
+RtlInitializeSRWLock
+DbgPrintEx
+NtQueryVirtualMemory
+RtlDeleteElementGenericTableAvl
+NtQuerySystemInformation
+NtOpenEvent
+RtlUpcaseUnicodeChar
+NtQueryInformationProcess
+RtlReleaseSRWLockExclusive
+RtlLookupElementGenericTableAvl
+RtlAcquireSRWLockExclusive
+NtAllocateVirtualMemory
+RtlInsertElementGenericTableAvl
+RtlAcquireSRWLockShared
+RtlReleaseSRWLockShared
+NtReadVirtualMemory
+RtlEnumerateGenericTableAvl
+RtlInitializeCriticalSectionEx
+RtlSizeHeap
+RtlSetUserFlagsHeap
+NtQueryEvent
+NtProtectVirtualMemory
+RtlSetUserValueHeap
+RtlFreeHeap
+RtlFlushSecureMemoryCache
+RtlSetHeapInformation
+RtlCreateHeap
+RtlUnlockHeap
+RtlLockHeap
+RtlRaiseException
+LdrLockLoaderLock
+LdrUnlockLoaderLock
+RtlCaptureContext
+RtlReportException
+NtTerminateProcess
+LdrGetProcedureAddress
+LdrUnloadDll
+LdrLoadDll
+RtlDecodePointer
+RtlInitAnsiString
+RtlEncodePointer
+RtlFreeAnsiString
+LdrFindResource_U
+RtlUnicodeStringToAnsiString
+LdrAccessResource
+LdrQueryImageFileKeyOption
+LdrQueryImageFileExecutionOptions
+RtlImageNtHeader
+EtwEventWriteTransfer
+RtlSetEnvironmentVariable
+EtwEventUnregister
+EtwEventRegister
+NtWriteVirtualMemory
+RtlUnhandledExceptionFilter
+ntdll.dll
+_vsnwprintf
+_wcsicmp
+_vsnprintf
+sscanf_s
+wcstoul
+wcsstr
+_stricmp
+RtlQueryHeapInformation
+NtOpenThread
+NtSuspendThread
+NtClose
+LdrQueryProcessModuleInformation
+RtlNtStatusToDosError
+NtResumeThread
+RtlAddVectoredExceptionHandler
+RtlEqualUnicodeString
+LdrGetDllHandle
+RtlDeleteResource
+RtlAcquireResourceShared
+NtDelayExecution
+RtlAcquirePebLock
+RtlReleaseResource
+RtlInitializeResource
+RtlAcquireResourceExclusive
+RtlRemoveVectoredExceptionHandler
+NtQueryInformationThread
+RtlFindClearBitsAndSet
+NtQueryObject
+RtlReleasePebLock
+RtlInterlockedPushEntrySList
+RtlSplay
+RtlDelete
+RtlInitializeSListHead
+RtlpWaitForCriticalSection
+RtlInitializeCriticalSectionAndSpinCount
+RtlTryEnterCriticalSection
+RtlConvertExclusiveToShared
+RtlRaiseStatus
+RtlConvertSharedToExclusive
+RtlInterlockedPopEntrySList
+LdrFindEntryForAddress
+iswspace
+RtlEnumerateGenericTableWithoutSplayingAvl
+_wcsnicmp
+RtlQueryDepthSList
+NtCreateEvent
+RtlDeregisterWait
+NtSetEvent
+RtlRegisterWait
+NtOpenProcessTokenEx
+RtlAppendUnicodeStringToString
+RtlAppendUnicodeToString
+NtOpenKey
+RtlConvertSidToUnicodeString
+NtQueryInformationToken
+NtDeleteValueKey
+NtSetValueKey
+NtQueryValueKey
+NtGetContextThread
+RtlDeregisterWaitEx
+RtlWalkFrameChain
+NtClearEvent
+RtlFreeUnicodeString
+RtlSetThreadPoolStartFunc
+RtlCheckForOrphanedCriticalSections
+NtWaitForMultipleObjects
+NtCreateKey
+NtWaitForSingleObject
+NtCreateSection
+NtUnmapViewOfSection
+NtOpenSection
+NtMapViewOfSection
+RtlUnwind
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Standard application verifier provider dll
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+verifier.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+verifier.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+<AVRF: Terminate process after verifier stop failed with %X 
+kThis verifier stop is not continuable. Process will be terminated 
+when you use the `go' debugger command.
+LThis verifier stop is continuable.
+After debugging it use `go' to continue.
+9AVRF: Formatting message failed in VerifierStopMessageEx
+LAVRF: Noncontinuable verifier stop %p encountered. Terminating process ... 
+=======================================
+VERIFIER STOP %p: pid 0x%X: %S 
+%p : %S
+%p : %S
+%p : %S
+%p : %S
+=======================================
+=======================================
+=======================================
+VERIFIER STOP %p: pid 0x%X: %s 
+%p : %s
+%p : %s
+%p : %s
+%p : %s
+=======================================
+=======================================
+SizeStart
+SizeEnd
+RandRate
+Backward
+Unalign
+Traces
+Protect
+NoSync
+NoLock
+Faults
+FaultRate
+TimeOut
+AddrStart
+AddrEnd
+Random
+4TRUE for full page heap. FALSE for normal page heap.iPage heap allocations for target dlls only. Name of the binaries with extension (.dll or something else).%Page heap allocations for size range.
+Beginning of the size range.
+Ending of the size range.uDecimal integer in range [0..100] representing probability to make page heap allocation vs. a normal heap allocation.
+Catch backwards overruns.
+No alignment for allocations.
+Collect stack tracescProtect heap internal structures. Can be used to detect random corruptions but execution is slower.LCheck for unsynchronized access. Do not use this flag for an MPheap process."Disable critical section verifier.
+Fault injection.Probability (1..10000) for heap calls failuresQTime during process initialization (in milliseconds) when faults are not allowed.'Page heap allocations for address range
+Beginning of the address range
+Ending of the address range'Page heap allocations with probability.
+DFailed within the address range where the specified dlls are loaded.
+Doesn't fail within those dlls.
+Grace period as Milliseconds.
+Wait API.
+Heap allocation.
+Virtual memory allocation.
+Registry API.
+File API.
+Event Manipulation.
+Map View.
+Ole API."Disable automatic stack expansion.
+Traces6Maximum number of traces in the handle history buffer.
+Delay"Delay until rollover in (seconds).
+AsyncCheck9Check asynchronous calls that require a persistent thread
+DllMainCheck<Check LoadLibrary/FreeLibrary calling when DllMain is active
+ExecWritePage4Checking the usage of executable and writable memory
+FillReadBuffereFills I/O buffer with a pattern before initiating the I/O, to catch bugs around uninitialized buffers
+ForcePendingIOVProbability in parts per million for forcing STATUS_PENDING in place of STATUS_SUCCESS
+ExcludeDllsVExcludes these dlls (comma separated) from leak detection. Max size is 2047 characters
+ExcludeUCRT1Exclude allocations via UCRT from leak detection.
+Checks for errors in lock usage. This might cause access violations when errors are located. A debugger is required to see the test results.
+Checks that applications and components use RPC correctly. Common mistakes and problems while using RPC are flagged. A debugger is required to see the test results.
+Checks that applications and components use COM correctly. Common mistakes and problems while using COM are flagged. A debugger is required to see the test results.
+Checks that applications and components use TLS (Thread Local Storage) APIs correctly. Common mistakes and problems while using TLS APIs are flagged. A debugger is required to see the test results.#Helps catch uninitialized variablesaDetects first chance access violation exceptions. A debugger is required to see the test results.
+Checks for handle errors. This might cause access violations when errors are located. A debugger is required to see the test results.GChecks the heap errors. A debugger is required to see the test results.
+Checks for adequate stack size by stopping stack growth. This causes a stack overflow error if the original stack size is too small. You can prevent this from happening by increasing the stack commit size.TChecks usage of virtual memory APIs. A debugger is required to see the test results.$Checks usage of dangerous API usage.
+Forces the GetTickCount API to roll over faster than they normally would. This allows applications to test their handling of timer rollover more easily.GChecks for dirty threadpool thread and other threadpool related issues.
+Low Resource Simulation also known as Fault Injection, tries to simulate an environment under low resources, such as out of memory.'Checks issues related to I/O transfers.VChecks that when a dll is unloaded there are no outstanding resources allocated by it.
+Checks for errors in SRW locks usage. Invalid SRW lock usage can result in application crashes or hangs. A debugger is required to see the test results.
+"Dangerous call to TerminateThread.,Thread ID for the caller of Terminatethread.
+Not used.
+Not used.
+Not used.
+This stop is generated if a thread (thread ID is parameter1) is terminated explicitly using
+TerminateThread.This function is very dangerous because it introduces data corruption and
+deadlocks (as per MSDN).
+2Potential stack overflow in low memory conditions.
+Not used.
+Not used.
+Not used.
+Not used.
+This stop is generated if the initial stack commit size of a thread is such that a stack
+overflow can be raised in low memory conditions if stack cannot be extended.
+8ExitProcess called while multiple threads still running.
+Number of threads running.
+Not used.
+Not used.
+Not used.
+This stop is generated if a thread calls ExitProcess while there are several threads running.
+In such a case, internally TerminateThread will be called for each thread and this can create
+deadlocks or data corruptions.
+%LoadLibrary is called during DllMain.
+Dll Name (use du to dump).
+Dll base address.
+Not used.
+Not used.
+xThis stop is generated if the code inside DllMain calls LoadLibrary or FreeLibary. It's the
+behavior forbidden by MSDN.
+%FreeLibrary is called during DllMain.
+Dll Name (use du to dump).
+Dll base address.
+Not used.
+Not used.
+xThis stop is generated if the code inside DllMain calls LoadLibrary or FreeLibary. It's
+the behavior forbidden by MSDN.
+KSetProcessWorkingSetSize is called with MinimumWorkingSetSize = 0xFFFFFFFF.
+Not used.
+Not used.
+Not used.
+Not used.
+/Please use MinimumWorkingSetSize = (SIZE_T) -1.
+KSetProcessWorkingSetSize is called with MaximumWorkingSetSize = 0xFFFFFFFF.
+Not used.
+Not used.
+Not used.
+Not used.
+/Please use MaximumWorkingSetSize = (SIZE_T) -1.
+MSetProcessWorkingSetSizeEx is called with MinimumWorkingSetSize = 0xFFFFFFFF.
+Not used.
+Not used.
+Not used.
+Not used.
+/Please use MinimumWorkingSetSize = (SIZE_T) -1.
+MSetProcessWorkingSetSizeEx is called with MaximumWorkingSetSize = 0xFFFFFFFF.
+Not used.
+Not used.
+Not used.
+Not used.
+/Please use MaximumWorkingSetSize = (SIZE_T) -1.
+/Thread that is exiting owns a critical section.HThread ID of the thread that is exiting while owning a critical section.GCritical section address. Run !cs -s <address> to get more information.+Critical section debug information address.WCritical section initialization stack trace. Run dps <address> to dump the stack trace.
+This stop is generated if a thread (thread ID is parameter1) is terminated,
+suspended or is in a state (worker thread finished a work item) in which it
+cannot hold a critical section. The current thread is the culprit.
+To debug this stop use the following debugger commands:
+$ kb - to get the current stack trace. If the current thread is the owner of
+the critical section it is probably calling ExitThread.
+The current thread should have released the critical section before exiting.
+If the current thread is calling TerminateThread or SuspendThread then it
+should not do this for a thread holding a critical section.
+$ !cs -s parameter2 - dump information about this critical section.
+$ ln parameter2 - to show symbols near the address of the critical section.
+This should help identify the leaked critical section.
+$ dps parameter4 - to dump the stack trace for this critical section initialization.
+4Unloading DLL containing an active critical section.GCritical section address. Run !cs -s <address> to get more information.WCritical section initialization stack trace. Run dps <address> to dump the stack trace.
+DLL name address.
+DLL base address.
+This stop is generated if a DLL has a global variable containing a critical section
+and the DLL is unloaded but the critical section has not been deleted. To debug
+this stop use the following debugger commands:
+$ du parameter3 - to dump the name of the culprit DLL.
+$ .reload dllname or .reload dllname = parameter4 - to reload the symbols for that DLL.
+$ !cs -s parameter1 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the leaked critical section.
+$ dps parameter2 - to dump the stack trace for this critical section initialization.
+9Freeing heap block containing an active critical section.GCritical section address. Run !cs -s <address> to get more information.WCritical section initialization stack trace. Run dps <address> to dump the stack trace.
+Heap block address.
+Heap block size.
+This stop is generated if a heap allocation contains a critical section,
+the allocation is freed and the critical section has not been deleted.
+To debug this stop use the following debugger commands:
+$ !cs -s parameter1 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the leaked critical section.
+$ dps parameter2 - to dump the stack trace for this critical section initialization.
+$ parameter3 and parameter4 might help understand where this heap block was
+allocated (the size of the allocation is probably significant).
+1Double initialized or corrupted critical section.GCritical section address. Run !cs -s <address> to get more information.DAddress of the debug information structure found in the active list.LFirst initialization stack trace. Run dps <address> to dump the stack trace.MSecond initialization stack trace. Run dps <address> to dump the stack trace.
+Usually this stop is generated if a critical section has been initialized more
+than one time. In this case parameter3 and parameter4 are the stack trace
+addresses for two of these initializations. Some other times it is possible
+to get this stop if the critical section or its debug information structure
+has been corrupted. In this second case it is possible that parameter3 and
+parameter4 are invalid and useless. To debug this stop:
+$ !cs -s -d parameter2 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This might help identify the critical section if this is a global variable.
+$ dps parameter3 and dps parameter4 - to identify the two code paths for
+initializing this critical section.
+2Free memory containing an active critical section.GCritical section address. Run !cs -s <address> to get more information.+Critical section debug information address.WCritical section initialization stack trace. Run dps <address> to dump the stack trace.
+Not used.
+This stop is generated if the memory containing a critical section was freed
+but the critical section has not been deleted using DeleteCriticalSection.
+To debug this stop use the following debugger commands:
+$ !cs -s -d parameter2 - dump information about this critical section.
+$ dps parameter3 - to identify the code path for initializing this critical section.
+In most cases the lock verifier detects immediately leaked critical sections
+contained in a heap allocation, a DLL range, a virtual memory allocation
+or a MapViewOfFile mapped memory range and issues different stops in these cases.
+So there are very few cases left for this verifier stop. The lock must be
+in a memory range freed by kernel-mode code or freed cross-process by APIs
+like VirtualFreeEx. Most typically this stop will  be encountered if a previous stop
+(e.g. LOCK_IN_FREED_HEAP or LOCK_IN_UNLOADED_DLL) was continued by
+hitting `g' in the debugger console.
+Corrupted critical section.GCritical section address. Run !cs -s <address> to get more information.;Invalid debug information address of this critical section.:Address of the debug information found in the active list.FInitialization stack trace. Run dps <address> to dump the stack trace.
+This stop is generated if the DebugInfo field of the critical section is
+pointing freed memory. Usually another valid DebugInfo structure is
+found in the active critical section list. Without corruption the two
+pointers should be identical. To debug this stop use the following debugger commands:
+$ !cs -s -d parameter3 - dump information about this critical section
+based on the current contents of the debug info structure
+found in the active list (this structure is rarely corrupted so usually
+this information is trustworthy).
+$ !cs -s parameter1 - dump information about this critical section based
+on the current contents of the critical section structure (the structure
+is corrupted already so sometimes this information is NOT trustworthy).
+$ dps parameter4 - to identify the code path for initializing this critical section.
+Dump the critical section at address parameter1 and look for the corruption
+pattern. With good symbols for ntdll.dl you can use the following commands:
+$ dt ntdll!_RTL_CRITICAL_SECTION LOCK_ADDRESS
+$ dt ntdll!_RTL_CRITICAL_SECTION_DEBUG DEBUG_ADDRESS
+&Invalid critical section owner thread.GCritical section address. Run !cs -s <address> to get more information.
+Owning thread.
+Expected owning thread.$Critical section debug info address.
+This stop is generated if the owner thread ID is invalid in the current
+context. For example, the critical section is being released by a thread 
+other than the one that acquired it. To debug this stop:
+$ !cs -s parameter1 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the critical section.
+)Invalid critical section recursion count.GCritical section address. Run !cs -s <address> to get more information.
+Recursion count.
+Expected recursion count.$Critical section debug info address.
+This stop is generated if the recursion count field of the critical section
+structure is invalid in the current context. To debug this stop:
+$ !cs -s parameter1 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the critical section.
+2Deleting critical section with invalid lock count.GCritical section address. Run !cs -s <address> to get more information.
+Lock count.
+Expected lock count.
+Owning thread.
+This stop is generated if a critical section is owned by a thread if it is deleted
+or if the critical section is uninitialized. To debug this stop:
+$ !cs -s parameter1 - dump information about this critical section.
+If the owning thread is 0 the critical section has not been initialized.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the critical section.
+,Critical section over-released or corrupted.GCritical section address. Run !cs -s <address> to get more information.
+Lock count.
+Expected lock count.$Critical section debug info address.
+This stop is generated if a critical section is released more times than the
+current thread acquired it. To debug this stop:
+$ !cs -s parameter1 - dump information about this critical section.
+$ !cs -s -d parameter4 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the critical section.
+!Critical section not initialized.GCritical section address. Run !cs -s <address> to get more information.$Critical section debug info address.
+Not used.
+Not used.
+This stop is generated if a critical section is used without being
+initialized or after it has been deleted. To debug this stop:
+$ ln parameter1 - to show symbols near the address of the critical section.
+This should help identify the critical section.
+(Critical section is already initialized.GCritical section address. Run !cs -s <address> to get more information.$Critical section debug info address.AFirst initialization stack trace. Use dps to dump it if non-NULL.
+Not used.
+This stop is generated if a critical section is reinitialized by the
+current thread. To debug this stop:
+$ !cs -s parameter1 or !cs -s -d parameter2 - dump information about this critical section.
+$ ln parameter1 - to show symbols near the address of the critical section.
+This might help identify the critical section if this is a global variable.
+$ dps parameter3 - to identify the code path for the first initialization of this
+critical section.
+$ kb - to display the current stack trace, that is reinitializing this critical section.
+=Freeing virtual memory containing an active critical section.GCritical section address. Run !cs -s <address> to get more information.LCritical section initialization stack trace. Use dps to dump it if non-NULL.
+Memory block address.
+Memory block size.
+This stop is generated if the current thread is calling VirtualFree on a
+memory block that contains an active critical section. The application should call
+DeleteCriticalSection on this critical section before if frees this memory.
+$ kb - to display the current stack trace, that is calling VirtualFree.
+The probable culprit is the DLL that calls VirtualFree.
+$ !cs -s parameter1 - dump information about this critical section.
+$ dps parameter2 - to identify the code path for the initialization
+of this critical section.
+>Unmapping memory region containing an active critical section.GCritical section address. Run !cs -s <address> to get more information.LCritical section initialization stack trace. Use dps to dump it if non-NULL.
+Memory block address.
+Memory block size.
+This stop is generated if the current thread is calling UnmapViewOfFile
+on a memory block that contains an active critical section. The application
+should call DeleteCriticalSection on this critical section before if unmaps this memory.
+$ kb - to display the current stack trace, that is calling UnmapViewOfFile .
+The probable culprit is the DLL that calls UnmapViewOfFile.
+$ !cs -s parameter1 - dump information about this critical section.
+$ dps parameter2 - to identify the code path for the initialization of
+this critical section.
+2Current thread does not own any critical sections.GCritical section address. Run !cs -s <address> to get more information.4Number of critical sections owned by current thread.
+Not used
+Not used
+This stop is generated if the current thread is calling LeaveCriticalSection but,
+according to the internal verifier bookkeeping, it doesn't own any critical section.
+If parameter2 is zero, probably this is a bug in the current thread.
+It either tries to leave a critical section that it didn't enter, or maybe
+it is calling LeaveCriticalSection more times than it called EnterCriticalSection
+for the same critical section.
+If parameter2 is not zero (it is a negative integer number) the internal
+verifier data structures are probably corrupted.
+6Using critical section that is private to another DLL.GCritical section address. Run !cs -s <address> to get more information.
+Not used.
+Not used
+Not used
+This stop is generated if the current thread tries to use a private lock that lives
+inside another DLL. For example a.dll tries to enter a critical section
+defined inside ntdll.dll. Private locks cannot be used across DLLs.
+ The SRW Lock is not initialized.
+SRW Lock
+Not used
+Not used
+Not used
+This stop is generated if a thread is trying to use the SRW lock
+(Param1) that is not initialized.
+$ kb - to get the current stack trace. This is where the SRW lock is being used.
+The SRW lock should be initialized using InitializeSRWLock before it can be used.
+$The SRW Lock is already initialized.
+SRW Lock
+5ThreadId of the thread that initialized the SRW lock.gAddress of the initialization stack trace. Use dps <address> to see where the SRW lock was initialized.
+Not used
+This stop is generated if the SRW lock (Param1) is being re-initialized.
+If the SRW lock is being actively used by other threads, re-initializing the
+lock will result in unpredictable behavior by the application (may stop responding
+or crash). The initialization stack trace may show an acquire if the SRW lock
+was statically initialized.
+$ kb - to get the current stack trace. This is where the SRW lock is being
+re-initialized. 
+$ dps Param3 - to get the SRW lock initialization stack trace. This stack trace 
+may show an acquire if the lock was statically initialized.
++Mismatched Acquire-Release on the SRW lock.
+SRW Lock2ThreadId of the thread that acquired the SRW lock.]Address of the acquire stack trace. Use dps <address> to see where the SRW lock was acquired.
+Not used
+This stop is generated if the SRW lock (Param1) is being released with
+a wrong release API.
+If the SRW lock was acquired for shared access and is being released using the
+exclusive release API or the SRW lock was acquired for exclusive access and is
+being release using the shared release API.
+This can result in unpredictable behavior by the application such as crashing or
+not responding to input.
+$ kb - to get the current stack trace. This is where the SRW lock is being
+released using the wrong API. 
+$ dps Param3 - to get the SRW lock acquire stack trace.
+>The SRW lock is being acquired recursively by the same thread.
+SRW LockcAddress of the first acquire stack trace. Use dps <address> to see where the SRW lock was acquired.
+Not used
+Not used
+This stop is generated if the SRW lock (Param1) is being acquired
+recursively by the same thread.
+This will result in a deadlock and the thread would block indefinitely.
+Recursive acquisition of an SRW lock in exclusive mode will cause a deadlock.
+Recursive acquisition of an SRW lock in shared mode will cause a deadlock when
+there is a thread waiting for exclusive access. Consider the example below:
+- Thread A acquires the SRW lock in shared mode
+- Thread B tries to acquire the SRW lock in exclusive mode and waits
+- Thread A tries to acquire the SRW lock in shared mode recursively. This will
+  be successful as long as there is no exclusive waiter (in this case B). Since
+  SRW locks do not have writer starvation, thread A waits behind thread B.
+  Now, Thread B is waiting for Thread A which is inturn waiting for Thread B
+  causing a circular wait and hence a deadlock.
+$ kb - to get the current stack trace. This is where the SRW lock is being
+acquired recursively. 
+$ dps Param2 - to get the stack trace for the first acquire.
+@The thread that is exiting or being terminated owns an SRW lock.
+SRW Lock;ThreadId of the thread that is exiting or being terminated.]Address of the acquire stack trace. Use dps <address> to see where the SRW lock was acquired.
+Not used
+This stop is generated if the thread (Param2) that owns the SRW lock (Param1)
+is exiting or being terminated.
+This will result in an orphaned SRW lock and the threads trying to acquire this
+lock would block indefinitely.
+$ kb - to get the current stack trace. This is where the thread is exiting or 
+is being terminated.
+$ dps Param3 - to get the SRW lock acquire stack trace.
+<The SRW lock being released was not acquired by this thread.
+SRW Lock
+Current ThreadId.2ThreadId of the thread that acquired the SRW lock.]Address of the acquire stack trace. Use dps <address> to see where the SRW lock was acquired.
+This stop is generated if the SRW lock (Param1) is being released by the
+thread (Param2) that didn't acquire the lock.
+This represents bad programming practice that is hard to get right and can lead 
+to unpredictable behavior by the application.
+$ kb - to get the current stack trace. This is where the thread is releasing the 
+SRW lock that it didn't acquire.
+$ dps Param4 - to get the SRW lock acquire stack trace.
+3The memory being freed contains an active SRW lock.
+SRW Lock"Address of the memory being freed.2ThreadId of the thread that acquired the SRW lock.]Address of the acquire stack trace. Use dps <address> to see where the SRW lock was acquired.
+This stop is generated if the memory address (Param1) being freed contains 
+an active SRW lock that is still in use.
+This can result in unpredictable behavior by the application such as crashing or
+not responding to input.
+$ kb - to get the current stack trace. This is where the memory is being freed
+that contains an active SRW lock.
+$ dps Param4 - to get the SRW lock acquire stack trace.
+3The DLL being unloaded contains an active SRW lock.
+SRW LockPAddress of the name of the DLL being unloaded. Use du <address> to see the name.2ThreadId of the thread that acquired the SRW lock.]Address of the acquire stack trace. Use dps <address> to see where the SRW lock was acquired.
+This stop is generated if the DLL being unloaded (Param2) contains 
+an active SRW lock (Param1) that is still in use.
+This can result in unpredictable behavior by the application such as crashing or
+not responding to input.
+$ kb - to get the current stack trace. This is where the DLL is being unloaded
+that contains an active SRW lock.
+$ du Param2 - to find the name of the DLL that is being unloaded.
+$ dps Param4 - to get the SRW lock acquire stack trace.
+1Invalid handle exception for current stack trace.
+Exception code.)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+Not used.
+This stop is generated if the function on the top of the stack passed an
+invalid handle to system routines. Usually a simple kb command will reveal
+what is the value of the handle passed (must be one of the parameters -
+usually the first one). If the value is null then this is clearly wrong.
+If the value looks ok you need to use !htrace debugger extension to get a
+history of operations pertaining to this handle value. In most cases it
+must be that the handle value is used after being closed.
+/Invalid TLS index used for current stack trace.
+Invalid TLS index.!Expected lower part of the index.
+Not used.
+Not used.
+This stop is generated if the function on the top of the stack passed an invalid TLS
+index to TLS system routines. Usually a simple kb command will reveal what is wrong.
+The typical bug here is to assume a certain value for a TLS index instead of
+calling TlsAlloc. This can happen either by thinking that you always get
+value N therefore there is no need to call TlsAlloc or more frequently
+due to an uninitialized variable.
+3Invalid parameters for WaitForMultipleObjects call.!Address of object handles vector.
+Number of handles.
+Not used.
+Not used.
+This stop is generated if the function on the top of the stack called
+WaitForMultipleObjects with NULL as the address of the array of handles
+to wait for or with zero as the number of handles. A simple kb command
+will reveal the function calling this API incorrectly.
+=NULL handle passed as parameter. A valid handle must be used.
+Not used.
+Not used.
+Not used.
+Not used.
+hThis stop is generated if the function on the top of the stack passed a
+NULL handle to system routines.
+&Waiting on a thread handle in DllMain.
+Thread handle.
+Not used.
+Not used.
+Not used.
+This stop is generated if the current thread is currently running code inside
+the DllMain function of one of the DLLs loaded in the current process and
+it calls WaitForSingleObject or WaitForMultipleObjects to wait on a thread handle
+in the same process. This would most likely lead to a deadlock because the thread
+handle will not get signaled unless that second thread is exiting. When the second
+thread will call ExitThread it will try to acquire the DLL loader lock then call
+DllMain (DLL_THREAD_DETACH) for all DLLs in the current process. But the loader lock
+is owned by the first thread (the one that is waiting on the thread handle) so the
+two threads will deadlock.
+!Incorrect object type for handle.
+Handle value.&Object type name. Use du to display it/Expected object type name. Use du to display it
+Not used.
+This stop is generated if the current thread is calling an API with a handle to
+an object with an incorrect object type. E.g. calling SetEvent with a semaphore
+handle as parameter will generate this stop. To debug this stop:
+$ kb - to display the current stack trace. The culprit is probably the DLL
+that is calling into verifier.dll;
+$ du parameter2 - to display the actual type of the handle. The handle value
+is parameter1. In the example above, this will display: Semaphore.
+$ du parameter3 - to display the object type expected by the API. In the example above,
+this name will be: Event.
+$ !htrace parameter1 might be helpful because it will display the stack
+trace for the recent open/close operations on this handle.
+:Unloading DLL that allocated TLS index that was not freed.
+TLS index2Address of the code that allocated this TLS index.$DLL name address. Use du to dump it.
+DLL base address.
+This stop is generated if a DLL that allocated a TLS index is being unloaded
+before freeing that TLS index. To debug this stop:
+$ du parameter3 - display the name of the culprit DLL;
+$ .reload xxx.dll=parameter4 - reload symbols for the culprit DLL (if needed).
+xxx.dll is the name of the DLL displayed in the above step;
+$ u parameter2 - disassemble the code that allocated the TLS. This should
+point to the function that allocated the TLS but forgot to free it
+before the DLL was unloaded.
+!Corrupted verifier TLS structure.
+TEB address.
+Expected TEB address.
+Thread ID.
+Expected thread ID.
+This stop is generated if the internal verifier structures used to
+store the state of TLS slots for thread are corrupted. Very likely this is
+due to some random corruption in the process.
+Using an invalid TLS index.
+TLS index
+Not Used.
+Not Used.
+Not Used.
+This stop is generated if an invalid TLS index is used. In most cases, it's because
+code is still using this index when TlsFree is called.
+Here is an example for the threadpool thread.
+T1: Dll loads and TlsAlloc
+T1: Queue callback
+T1: Skipped waited/cancelled callback
+T1: TlsFree
+T2: Callback runs and calls TlsSetValue
+T1: Dll unloads
+@Freeing virtual memory block with invalid size or start address.
+Allocation base address.
+Memory region size.
+Not used.
+Not used.
+This stop is generated if the app verifier detects a VirtualFree or a DLL unload
+with an invalid start address or size of the memory allocation.
+In the case of DLL unload this probably means a memory corruption inside the loaded DLL list.
+To debug this stop look at the current stack trace and the memory address and size
+that is about to be freed and try to determine why they are invalid.
+Incorrect virtual alloc call.#Pointer to allocation base address.
+Pointer to memory region size.
+Not used
+Not used
+This stop is generated if the app verifier detects a VirtualAlloc call with an invalid
+start address or size of the memory allocation. To debug this stop look at the current
+stack trace (kb) and the memory address and size that is about to be allocated and try
+to determine why they are invalid.
+Incorrect map view call. Pointer to mapping base address.
+Pointer to view size.
+Not used.
+Not used.
+This stop is generated if the app verifier detects a MapViewOfFile call
+with an invalid base address or size of the mapping. To debug this stop
+look at the current stack trace (kb) and the memory address and size that
+is about to be mapped and try to determine why they are invalid.
+Probing invalid address.
+Start address.
+Memory block size.
+Invalid address.
+Not used.
+This stop is generated if the app verifier detects an IsBadXXXPtr call with an
+invalid address (e.g. a kernel-mode address, instead of a normal user-mode address)
+for the memory buffer to be probed. To debug this stop look at the current stack
+trace (kb) and try to determine why the caller of the IsBadXXXPtr function ended
+up with an invalid address. Many times, the address is plain bogus, e.g.
+an uninitialized pointer.
+MSDN library lists a few reasons why applications should not use the IsBadXXXPtr APIs:
+In a preemptive multitasking environment, it is possible for some other thread to change
+the process's access to the memory being tested.
+Dereferencing potentially invalid pointers can disable stack expansion in other threads.
+A thread exhausting its stack, when stack expansion has been disabled, results in
+the immediate termination of the parent process, with no pop-up error window or
+diagnostic information.
+Threads in a process are expected to cooperate in such a way that one will not free
+memory that the other needs. Use of this function does not negate the need to do this.
+If this is not done, the application may fail in an unpredictable manner.
+Because of all these reasons, we recommend to never use these APIs.
+Probing free memory.
+Start address.
+Memory block size.
+Address of free memory page.
+Not used.
+This stop is generated if the app verifier detects an IsBadXXXPtr call for a
+memory allocation that is free. This is very bad because it is possible that,
+in some other cases, this memory was already reused for some other allocation.
+Since the current code path (kb) doesn't own that memory, it could end up
+corrupting someone else's memory, with disastrous effects.
+To debug this stop look at the current stack trace (kb) and try to determine
+why the caller of the IsBadXXXPtr function ended up probing free memory.
+The address could be plain bogus (e.g. uninitialized pointer) or maybe
+already freed memory. If the memory was already freed by one of the
+VirtualFree or UnmapViewOfFile APIs, `!avrf -vs -a parameter3' will search
+for a log of stack traces of the code paths that allocated/freed that address
+and display these stack traces if they are available. This might show the stack
+trace that freed up this memory. More often, the memory is an already freed
+heap allocation. To check for that possibility, `!avrf -hp -a parameter3' will
+search for a log of stack traces of the code paths that allocated/freed that
+address from/to the heap and display these stack traces if they are available.
+MSDN library lists a few reasons why applications should not use the IsBadXXXPtr APIs:
+In a preemptive multitasking environment, it is possible for some other thread
+to change the process's access to the memory being tested.
+Dereferencing potentially invalid pointers can disable stack expansion in
+other threads. A thread exhausting its stack, when stack expansion has been
+disabled, results in the immediate termination of the parent process,
+with no pop-up error window or diagnostic information.
+Threads in a process are expected to cooperate in such a way that one
+will not free memory that the other needs. Use of this function does
+not negate the need to do this. If this is not done, the application
+may fail in an unpredictable manner.
+Because of all these reasons, we recommend to never use these APIs.
+Probing a guard page.
+Start address.
+Memory block size.
+Address of guard page.
+Not used.
+This stop is generated if the app verifier detects an IsBadXXXPtr call for a
+memory allocation that contains at least one GUARD_PAGE. This is very bad
+because it is very possible that this GUARD_PAGE is the end of the current
+stack of a thread. As documented in the MSDN library: Dereferencing potentially
+invalid pointers can disable stack expansion in other threads. A thread exhausting
+its stack, when stack expansion has been disabled, results in the immediate
+termination of the parent process, with no pop-up error window or diagnostic
+information. To debug this stop look at the current stack trace (kb) and try
+to determine why the caller of the IsBadXXXPtr function ended up probing a GUARD_PAGE.
+MSDN library lists a few reasons why applications should not use the IsBadXXXPtr APIs:
+In a preemptive multitasking environment, it is possible for some other thread
+to change the process's access to the memory being tested.
+Dereferencing potentially invalid pointers can disable stack expansion in
+other threads. A thread exhausting its stack, when stack expansion has been
+disabled, results in the immediate termination of the parent process,
+with no pop-up error window or diagnostic information.
+Threads in a process are expected to cooperate in such a way that one
+will not free memory that the other needs. Use of this function does
+not negate the need to do this. If this is not done, the application
+may fail in an unpredictable manner.
+Because of all these reasons, we recommend to never use these APIs.
+Probing NULL address.
+Not used.
+Not used.
+Not used.
+Not used.
+This stop is generated if the app verifier detects an IsBadXXXPtr call with a
+NULL address. To debug this stop look at the current stack trace (kb) and
+try to determine why the caller of the IsBadXXXPtr function ended up with
+the NULL address. This is typically the sign of someone not checking the
+return value of one of the memory allocation functions. For example the code
+below is incorrect:
+int main (void)
+PVOID p;
+p = malloc (1024);
+Use (p);
+return 0;
+void Use (PVOID p)
+if (IsBadReadPtr (p)) {
+return;
+// p is safe to be used here.
+This code should be re-written as this:
+int main (void)
+PVOID p;
+p = malloc (1024);
+if (NULL == p)) {
+return -1;
+Use (p);
+return 0;
+void Use (PVOID p)
+// p is safe to be used here.
+MSDN library lists a few reasons why applications should not use the IsBadXXXPtr APIs:
+In a preemptive multitasking environment, it is possible for some other thread
+to change the process's access to the memory being tested.
+Dereferencing potentially invalid pointers can disable stack expansion in
+other threads. A thread exhausting its stack, when stack expansion has been
+disabled, results in the immediate termination of the parent process,
+with no pop-up error window or diagnostic information.
+Threads in a process are expected to cooperate in such a way that one
+will not free memory that the other needs. Use of this function does
+not negate the need to do this. If this is not done, the application
+may fail in an unpredictable manner.
+Because of all these reasons, we recommend to never use these APIs.
+8Probing memory block with invalid start address or size.
+Start address.
+Memory block size.
+Not used.
+Not used.
+This stop is generated if the app verifier detects an IsBadXXXPtr call with an
+invalid start address (e.g. a kernel-mode address, instead of a normal user-mode
+address) or invalid size for the memory buffer to be probed. To debug this stop
+look at the current stack trace (kb) and try to determine why the caller of
+the IsBadXXXPtr function ended up with an invalid address or size.
+Many times, the address or size are plain bogus, e.g. an uninitialized variables.
+MSDN library lists a few reasons why applications should not use the IsBadXXXPtr APIs:
+In a preemptive multitasking environment, it is possible for some other thread
+to change the process's access to the memory being tested.
+Dereferencing potentially invalid pointers can disable stack expansion in
+other threads. A thread exhausting its stack, when stack expansion has been
+disabled, results in the immediate termination of the parent process,
+with no pop-up error window or diagnostic information.
+Threads in a process are expected to cooperate in such a way that one
+will not free memory that the other needs. Use of this function does
+not negate the need to do this. If this is not done, the application
+may fail in an unpredictable manner.
+Because of all these reasons, we recommend to never use these APIs.
+1Unloading DLL with invalid size or start address.
+DLL memory base address.
+DLL memory range size.$DLL name address. Use du to dump it.
+Not used.
+This stop is generated if the app verifier detects a DLL unload with an invalid
+start address or size of the DLL memory range. This probably means a memory
+corruption inside the internal ntdll.dll loaded DLL list.
+AFreeing memory block inside current thread's stack address range.
+Allocation base address.
+Memory region size.
+Stack low limit address.
+Stack high limit address.
+This stop is generated if the app verifier detects a VirtualFree for a block of
+memory that is actually part of the current thread's stack (!).
+To debug this stop look at the current stack trace (kb) and try to understand
+why the function that called VirtualFree thought that the memory block was
+dynamically allocated or mapped but that was actually memory allocated from the stack.
+7Incorrect FreeType parameter for VirtualFree operation.(Incorrect value used by the application.
+Expected correct value 1.
+Expected correct value 2.
+Not used.
+This stop is generated if the app verifier detects a VirtualFree with an
+incorrect value for the FreeType parameter. The only two acceptable values for
+this parameter are MEM_DECOMMIT and MEM_RELEASE. If VirtualFree is called
+with any other value except these two, VirtualFree will fail to free the memory.
+To debug this stop look at the current stack trace (kb): the caller of VirtualFree
+is probably the culprit.
+9Trying to free virtual memory block that is already free.
+Memory block address.
+Not used.
+Not used.
+Not used.
+This stop is generated if the app verifier detects a VirtualFree for an address
+that is already free. To debug this stop look at the current stack trace (kb)
+and try to determine why the memory is already free but the application is
+trying to free it again. `!avrf -vs -a parameter1' will search for a log of
+stack traces of the code paths that allocated/freed that address and display
+these stack traces if they are available. This might show the stack trace that
+freed up this memory.
+AIncorrect Size parameter for VirtualFree (MEM_RELEASE) operation.'Incorrect size used by the application.
+Expected correct size (0).
+Not used.
+Not used.
+This stop is generated if the app verifier detects a VirtualFree (MEM_RELEASE)
+with a non-zero value for the dwSize parameter. When using MEM_RELEASE ,
+the only acceptable value for this parameter is 0. If VirtualFree is called
+with any other value except 0, VirtualFree will fail to free the memory.
+To debug this stop look at the current stack trace (kb): the caller of
+VirtualFree is probably the culprit.
+7Unexpected exception raised in DLL entry point routine.
+DLL name (use du to dump it).)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+Verifier dll descriptor
+This stop is generated if a DLL's entry point (DllMain) function is raising
+an exception. One example why this is bad is: if DllMain(DLL_PROCESS_ATTACH) is
+raising an exception, the Windows DLL loader will:
+- Catch and hide the exception;
+- Unload the DLL without calling its DllMain(DLL_PROCESS_DETACH).
+So in many cases the DLL allocated some resources already, then it raised the
+exception, and it will not have a chance to release these resources on
+DllMain (DLL_PROCESS_DETACH).
+To debug this stop:
+$ du parameter1 - to display the DLL name;
+$ .exr parameter2 - to display the exception information;
+$ .cxr parameter3 followed by kb - to display the exception context information
+and the stack trace for the time when the exception was raised;
+$ parameter4 is the address of an internal verifier structure and doesn't
+have any significance for most of the verifier users.
+/Unexpected exception raised in thread function.
+Exception code.)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+Not used.
+This stop is generated if a thread function is raising an exception. This
+is bad because the whole process will be killed.
+To debug this stop:
+$ parameter1 might be significant for the type of exception. E.g. an
+exception code C0000005 means Access Violation;
+$ .exr parameter2 - to display the exception information;
+$ .cxr parameter3 followed by kb - to display the exception context information;
+1Unexpected exception raised while probing memory.
+Exception code.
+)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+Not used
+This stop is generated if we get an exception during an IsBadXXXPtr call. This means
+that the memory buffer we are probing doesn't actually have the protection
+assumed by the caller, or that the memory was freed already, etc. See the
+discussion above about other stop code (PROBE_INVALID_ADDRESS,
+PROBE_FREE_MEM, PROBE_GUARD_PAGE, PROBE_NULL, PROBE_INVALID_START_OR_SIZE) for
+more examples of why using the IsBadXXXPtr APIs is not recommended.
+To debug this stop:
+$ parameter1 will typically be C0000005 and that means Access Violation;
+$ .exr parameter2 - to display the exception information;
+$ .cxr parameter3 followed by kb - to display the exception context information
+and stack trace at the time when the exception was raised;
+Trying to reset NULL address.
+Not used.
+Not used.
+Not used.
+Not used.
+This stop is generated if the app verifier detects a VirtualFree (MEM_RESET) call
+with a NULL first parameter.  MEM_RESET should be used only for already
+allocated memory, so NULL is not a valid first parameter in this case.
+FFreeing heap memory block inside current thread's stack address range.
+Allocation base address.
+Memory region size.
+Stack low limit address.
+Stack high limit address.
+This stop is generated if the app verifier detects a HeapFree, for a block of
+memory that is actually part of the current thread's stack (!).
+To debug this stop look at the current stack trace (kb) and try to understand
+why the function that called HeapFree thought that the memory block was dynamically
+allocated or mapped but that was actually memory allocated from the stack.
+DUnmapping memory region inside current thread's stack address range.
+Allocation base address.
+Memory region size.
+Stack low limit address.
+Stack high limit address.
+This stop is generated if the app verifier detects an UnmapViewOfFile, for a block of
+memory that is actually part of the current thread's stack (!).
+To debug this stop look at the current stack trace (kb) and try to understand
+why the function that called UnmapViewOfFile thought that the memory block was dynamically
+allocated or mapped but that was actually memory allocated from the stack.
+Incorrect RTL_RESOURCE address.
+Address.
+Not used.
+Not used.
+Not used.
+This stop is generated if the application is trying to use NULL or some other
+incorrect address (e.g. a kernel-mode address) as the address of a valid
+object. RtlInitializeResource (NULL) is an incorrect API call that will trigger
+this kind of verifier stop.
+param1 is the incorrect address used and the culprit is on the stack
+trace (display it with kb).
+!Invalid critical section address.
+Address.
+Not used.
+Not used.
+Not used.
+This stop is generated if the application is trying to use NULL or some other
+incorrect address (e.g. a kernel-mode address) as the address of a valid
+object. EnterCriticalSection(NULL) is an incorrect API call that will trigger
+this kind of verifier stop.
+param1 is the incorrect address used and the culprit is on the stack
+trace (display it with kb).
+1Attempt to execute code in non-executable memory.
+Address being accessed.
+Code performing invalid access.)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+This stop is generated if the application is trying to run code from
+an address that is non-executable or free.
+To debug this stop:
+$ u parameter2 - to unassemble the culprit code
+$ .exr parameter3 - to display the exception information;
+$ .cxr parameter4 followed by kb - to display the exception context information
+and the stack trace for the time when the exception was raised.
+=Unexpected exception raised while initializing output buffer.
+Buffer start address.
+Buffer size.)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+This stop is generated if we get an exception while initializing a buffer specified
+as output parameter for a Win32 or CRT API. This typically means that the specified
+output buffer size is incorrect.
+To debug this stop:
+$ .exr parameter3 - to display the exception information;
+$ .cxr parameter4 followed by kb - to display the exception context information
+and stack trace at the time when the exception was raised.
+9Unexpected exception when trying to find heap block size.&Address of the heap block being freed.
+Heap handle.)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+This stop is generated if we get an exception while calling HeapSize for a heap block
+that is being freed. This typically means that the specified heap block address is
+incorrect or the heap is corrupted.
+To debug this stop:
+$ .exr parameter3 - to display the exception record;
+$ .cxr parameter4 followed by kb - to display the exception context information
+and stack trace at the time when the exception was raised.
+0Freeing memory block with invalid start address.$Address of memory block being freed.&Expected correct memory block address.
+Not used.
+Not used.
+This stop is generated if the program calls VirtualFree (MEM_RELEASE)
+with an lpAddress parameter that is not the base address returned by
+the VirtualAlloc or VirtualAllocEx function when the region of pages
+was reserved;
+To debug this stop:
+$ kb - to display the current stack trace, that is calling VirtualFree.
+The probable culprit is the DLL that calls VirtualFree.
+2Unmapping memory block with invalid start address.'Address of memory block being unmapped.&Expected correct memory block address.
+Not used.
+Not used.
+This stop is generated if the program calls UnmapViewOfFile with
+an lpBaseAddress parameter that is not identical to the value returned
+by a previous call to the MapViewOfFile or MapViewOfFileEx function.
+To debug this stop:
+$ kb - to display the current stack trace, that is calling UnmapViewOfFile.
+The probable culprit is the DLL that calls UnmapViewOfFile.
+<unexpected exception raised in threadpool callback function.
+Exception code(Exception record. Use .exr to display it&Context record. Use .cxr to display it
+Not used
+This stop is generated if a callback function in the threadpool thread is raising an exception.
+To debug this stop:
+$ parameter1 might be significant for the type of exception. E.g. an
+exception code C0000005 means Access Violation.
+$ .exr parameter2 - to display the exception information.
+$ .cxr parameter3 followed by kb - to display the exception context information.
+code in non-executable memory
+Address being accessed
+Code performing invalid access)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+This stop is generated if the application is trying to run code from
+an address that is non-executable or free.
+To debug this stop:
+$ u parameter2 - to unassemble the culprit code
+$ .exr parameter3 - to display the exception information
+$ .cxr parameter4 followed by kb - to display the exception context information
+and the stack trace for the time when the exception was raised.
+Creating executable heap.
+Not used.
+Not used.
+Not used.
+Not used.
+gThis stop is generated if the application is creating an executable heap.
+This can be a security risk.
+Allocating executable memory.$Page protection specified by caller.
+Not used.
+Not used.
+Not used.
+hThis stop is generated if the application is allocating executable memory.
+This can be a security risk.
+@Attempt to execute code in non-executable memory (first chance).
+Address being accessed.
+Code performing invalid access.)Exception record. Use .exr to display it.'Context record. Use .cxr to display it.
+This stop is generated if the application is trying to run code from
+an address that is non-executable or free.
+To debug this stop:
+$ u parameter2 - to unassemble the culprit code
+$ .exr parameter3 - to display the exception information;
+$ .cxr parameter4 followed by kb - to display the exception context information
+and the stack trace for the time when the exception was raised.
+8The priority of this threadpool thread has been changed.6Callback function where the priority has been changed.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Current Priority.^threadpool thread (%x) having executed Callback (%p) has an altered thread priority (%i -> %i)ZThis stop is generated if the thread priority is changed when it's returned to threadpool.
+8The affinity of this threadpool thread has been changed.6Callback function where the affinity has been changed.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Current affinity.cthreadpool thread (%x) having executed Callback (%p) has an altered thread affinity mask (%p -> %p)ZThis stop is generated if the thread affinity is changed when it's returned to threadpool.
+2Unprocessed msg in the msg pool of current thread.*Callback function that posted the message.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+`Threadpool thread id. Please use !avrf -tp <threadid> to see the messages posted to this thread.\threadpool thread (%x) having executed Callback (%p) has outstanding window message (%x: %x)
+This stop is generated if any message left as unprocessed when this threadpool thread
+is returned to the pool. It's dangerous since it will be processed in a totally different
+context. Please use Please use !avrf -tp <Param4> to see the messages posted to this thread.
+/Unclosed window belonged to the current thread.
+Callback function.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Threadpool thread id.ithreadpool thread (%x) having executed Callback (%p) has valid hwnd (%x: %s) which could receive messageshThis stop is generated if any window is kept alive when this threadpool thread
+is returned to the pool.
++ExitThread() called on a threadpool thread.
+Callback function.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Not Used.
+This stop is generated if ExitThread is called on a threadpool thread. It's forbidden since 
+it will make system unstable. It can cause resource leaks, an AV or the app may stop responding
+to input.
+KThread is in impersonation state when it's returned to a threadpool thread.4Callback function where the thread was impersonated.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Not Used.
+This stop is generated if call back function change the thread token to impersonate another
+user and forgot to reset it before returning it back to the threadpool.
+JA function which requires persistent thread is called within the callback.
+Callback function.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Not Used.
+Some Microsoft Windows APIs need to be called inside a dedicated or persistent thread.
+In the threadpool you should generally avoid using thread local storage and queuing
+asynchronous calls that require a persistent thread, such as the RegNotifyChangeKeyValue
+function. However, such functions can be queued to a persistent worker thread using
+QueueUserWorkItem with the WT_EXECUTEINPERSISTENTTHREAD option. A kb in debugger will
+reveal the caller.
+%Thread is in dirty transaction state.<Callback function where the transaction context was changed.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Transaction Handle.
+eThis stop is generated if call back function forgot to close or reset the current transaction handle.
+?This threadpool state has unbalanced CoInit and CoUnInit calls.<Callback function that left the thread in a dirty com state.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Balanced Call counts.
+RThis stop is generated if call back function calls CoInit and CoUnInit unbalanced.
+The parameters for the timer object are inconsistent. Period should be 0 when WT_EXECUTEONLYONCE is specified when creating the timer
+Period specified.
+Flags specified.
+Not Used.
+Not Used.
+This stop is generated if the period to signal the timer is not zero when the timer is set to signal only once with the WT_EXECUTEONLYONCE flag
+KThe loader lock has been held by the threadpool thread within the callback.
+Callback function.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Not Used.
+This stop is generated if the loader lock is held within the callback and is not released when the thread is returned to the threadpool.
+KThe preferred language is set by the threadpool thread within the callback.
+Callback function.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Not Used.
+This stop is generated if the preferred language is set within the callback and is not cleared when the thread is returned to the threadpool.
+LThe background priority is set by the threadpool thread within the callback.
+Callback function.
+Context.=Threadpool Object allocation stack trace, use dps to dump it.
+Not Used.
+This stop is generated if the background priority is set within the callback and is not disabled when the thread is returned to the threadpool.
+0TerminateThread() called on a threadpool thread.
+Not Used.
+Not Used.
+Not Used.
+Not Used.
+This stop is generated if TerminateThread is called on a threadpool thread. It's forbidden since 
+it will make system unstable. It can cause resource leaks, an AV or the app may stop responding
+to input.
+BThe stack was unwinded when asynchronous I/O operation is pending.*Address of stack variable used in the I/O.
+Current stack pointer.$Original thread that issued the I/O.
+$Stack Trace when the I/O was issued.
+This stop is generated if the application issued an I/O operation
+that uses a stack variable and has not waited for the I/O to complete,
+thus leading to stack corruption.
+To debug this stop:
+$ dps parameter4 to display the stack trace when the I/O was issued.
+Parameter1 indicates the stack based address and parameter3 the thread
+that issued the I/O.
+CThe stack was corrupted when asynchronous I/O operation is pending..Address of the stack variable used in the I/O.
+Current stack pointer.$Original thread that issued the I/O.$Stack Trace when the I/O was issued.
+This stop is generated if the application issued an I/O operation
+that uses a stack variable and has not waited for the I/O to complete,
+thus leading to stack corruption.
+To debug this stop:
+$ dps parameter4 to display the stack trace when the I/O was issued.
+Parameter1 indicates the stack based address and parameter3 the thread
+that issued the I/O.
+1Using a freed address in a pending I/O operation.
+Address used in the I/O.
+Address being freed.$Original thread that issued the I/O.$Stack Trace when the I/O was issued.
+This stop is generated if the application issued an I/O operation
+and freed the memory used in the I/O before the I/O completed
+thus leading to memory corruption etc.
+To debug this stop:
+$ dps parameter4 to display the stack trace when the I/O was issued.
+Parameter1 indicates the address used in the I/O. Parameter2 indicates the address
+being freed and parameter3 the thread that issued the I/O.
+YAn I/O status block (OVERLAPPED) is reused while associated I/O request is still pending.-Address of the I/O status block (OVERLAPPED).$Original thread that issued the I/O.$Stack Trace when the I/O was issued.
+Not Used.
+This stop is generated if the application reused an I/O status block (OVERLAPPED) while an I/O request
+using that I/O status block (OVERLAPPED) is still pending.
+To debug this stop:
+$ dps parameter3 to display the stack trace when the original I/O was issued.
+Parameter1 indicates the address used in the I/O and parameter2 the thread that issued the I/O.
+KUsing an unsupported flag, FILE_ATTRIBUTE_NOT_CONTENT_INDEXED on CreateFile
+Return Address.
+Not used.
+Not used.
+Not used.9CreateFile while writing %hs%ws with flags %08x %08x %08x
+Old version of the MSDN erroneously documented CreateFile as supporting FILE_ATTRIBUTE_NOT_CONTENT_INDEXED.
+If this flag is intended it should be set using other API functions such as SetFileAttributes.
+$ ln Parameter1 to find the caller of CreateFile.
+A heap allocation was leaked.oAddress of the leaked allocation. Run !heap -p -a <address> to get additional information about the allocation.VAddress to the allocation stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+jThis stop is generated if the owner dll of the allocation was dynamically unloaded while owning resources.
+A HANDLE was leaked.}Value of the leaked handle. Run !htrace <handle> to get additional information about the handle if handle tracing is enabled.VAddress to the allocation stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+This stop is generated if the owner dll of the handle was dynamically unloaded while owning
+resources.
+To debug this stop:
+Run !htrace parameter1 to get additional information about the handle.
+An HKEY was leaked.
+Value of the leaked HKEY.VAddress to the allocation stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+mThis stop is generated if the owner dll of the registry key was dynamically
+unloaded while owning resources.
+!A virtual reservation was leaked.
+Leaked reservation address.VAddress to the allocation stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+tThis stop is generated if the owner dll of the virtual reservation was dynamically
+unloaded while owning resources.
+A BSTR was leaked.iAddress of the leaked BSTR. Run !heap -p -a <address> to get additional information about the allocation.VAddress to the allocation stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+jThis stop is generated if the owner dll of the SysString was dynamically
+unloaded while owning resources.
+*A power notification was not unregistered./Address of the power notification registration.XAddress to the registration stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+xThis stop is generated if the dll registered for power notification and was dynamically
+unloaded without unregistering.
+A COM allocation was leaked.sAddress of the leaked COM allocation. Run !heap -p -a <address> to get additional information about the allocation.VAddress to the allocation stack trace. Run dps <address> to view the allocation stack.EAddress of the owner dll name. Run du <address> to read the dll name.
+Base of the owner dll. Run .reload <dll_name> = <address> to reload the owner dll. Use 'lm' to get more information about the loaded and unloaded modules.
+oThis stop is generated if the owner dll of the COM allocation was dynamically
+unloaded while owning resources.
+0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1\1`1h1p1
+6E7O7
+8.9b:
+0!0'030A0Q0e0y0
+1=1S1\1b1v1
+2-242>2J2X2_2h2t2
+3@3F3_3k3x3
+4+4w4
+5(5c5i5t5z5
+6 6H6T6d6q6{6
+7'797K7_7e7
+8%8h8n8
+8j<t<
+=B=S=Y=i=x=
+>G>a>
+?"?3?>?L?R?
+L0S0a0p0y0
+1)1I1Z1
+2!2(212[2b2i2p2y2<3l3w3
+3#494@4
+5)5T5`5q5
+5^6x6
+7x;};
+6=7I7~7
+121i1|1
+3Q3~3
+374|4Y6
+6Q7s7
+8$909C9H9M9Z9i9o9~9
+9I:]:
+:I;U;|;
+4K5l5
+8 8/878=8
+?"?)?2?;?D?\?h?q?z?
+0%0.070M0V0_0h0q0
+181=1O1
+385=5O5U8a8!9H;T;
+;#</<
+?$?L?\?
+0O1U1`1
+2H2R284=4O4
+5W5\5f5
+5 6%6/6W6w6|6
+71767@7O7o7t7~7
+8'868V8[8e8t8
+9(9H9M9W9
+:7:<:F:U:u:z:
+;/;4;>;M;m;r;|;
+<'<,<6<E<e<j<t<
+5+51595?5I5N5T5Z5`5f5k5p5v5|5
+6U6_6k6u6
+7'7-7<7F7O7`7r7|7
+8?8I8
+9"9/959=9C9H9R9m9y9
+:&;k;
+=U=[=`=j=
+0 0[0m0
+1%1.161?1K1V1_1y1
+1$242E2V2`2
+313=3C3H3Y3
+3!4'424]4c4t4z4
+4!5/5;5F5
+9&9:9U9Z9_9i9}9
+:<:F:
+:9;@;V;y;
+;M<W<
+=!=i=p=x=
+=9>@>H>[>
+!080>0W0i0s0
+1[1u1
+1%42484H4Z4k4~4
+4.5c5o5
+9"9-939B9[9u9
+:0:;:F:L:[:t:
+;);C;N;Y;_;n;
+<#<)</<9<B<M<W<_<e<k<u<~<
+4?5R5
+586C6M6W6a6|6
+7+717G7M7s7z7
+8#828?8F8P8_8l8s8}8
+9"9)939<9C9M9\9f9
+:X:h:
+:?;Q;m;
+<_<i<
+= =F=Y=c=l={=
+>">/>4>A>W>r>|>
+>/?R?a?
+0"0L0V0_0f0l0v0
+1N1g1r1
+1?2Y2q2{2
+2L3Y3_3n3|3
+4"494E4[4g4{4
+5P5W5b5
+7^:d:
+>%>O>a>j>q>w>
+>2?;?_?
+1.181E1I1P1U1d1h1p1
+404@4
+4-5Q5i5s5~5
+6%6:6R6
+: :*:3:9:?:G:i:t:~:
+;);/;6;E;S;e;t;
+=$=.=S=Y=f=
+>+>6>I>c>y>
+?[?f?t?
+181h1u1}1
+202K2c2k2q2y2
+363@3i3t3z3
+4#4>4f4l4
+425B5J5P5V5
+576=6O6U6
+7C7x7
+8(80888@8Y8h8x8
+9&989F9N9U9g9u9
+:#:,:6:;:I:_:x:
+; ;J;z;
+; </<@<H<V<_<j<}<
+="=)=;=G=U=a=o={=
+>G>`>
+?/?A?y?
+1&1/151G1O1U1[1
+2!2(2U2_2{2
+3&373@3O3b3h3
+4$4/484E4k4p4
+5G5m5
+7.8]8
+97:f:
+;5;B;
+<'<3<9<O<
+=#=/=9=L=Y=_=k=u=}=
+=">*>0>8>A>H>N>Z>x>
+?!?.?8?P?]?d?}?
+0'0;0B0J0s0
+1)1/1c1
+1#2;2V2n2z2
+3>3[3{3
+4!4/4g4
+4I5[5
+7<8f8s8
+9,979I9S9[9e9j9t9y9
+:$:,:>:J:R:a:m:u:
+;#;);/;;;E;M;a;l;};
+<.<J<`<i<
+=+=7=U=h=}=
+=%>,>c>q>x>
+?2?9?F?W?g?z?
+0J0c0
+1(1D1U1[1l1
+3[3f3w3
+4$494F4X4l4~4
+5)505B5I5[5b5u5
+6(6?6V6m6
+7%7<7D7V7]7p7{7
+9>9`9
+9;:H:N:Z:i:o:
+;(;1;9;B;H;
+<'<.<J<
+>*>3>8>@>t>
+01161?1M1S1~1
+2%2.2W2n2~2
+3(3.3>3E3K3s3
+5>5C5L5W5]5c5l5
+6.646;6A6j6u6
+6!7)777?7`7
+888L8[8j8s8}8
+:@:t:
+:a;v;0<I<
+142=2X2
+4,4@4I4N4`4
+5?5r5
+6 6&616;6G6T6l6}6
+95:=:E:N:T:q:
+;%;1;C;M;U;y;
+<*<@<H<q<x<~<
+=9=F=N=[=f=l=
+>$>+>1>B>M>W>]>h>w>}>
+?!?,?2?G?Z?b?u?
+0A0J0b0
+1@1O1i1
+2<2V2c2l2x2
+3%30373=3U3`3j3p3
+4'4\4g4
+5<5G5q5
+6<6C6I6T6Z6k6w6
+7h7x7
+8$8*858?8E8U8[8a8i8o8u8
+9#9)939<9F9K9V9\9f9o9y9~9
+;);G;];g;w;
+< </<5<^<~<
+= =D=Q=
+=#>4>X>t>~>
+>8?I?`?
+1N1Z1e1k1y1
+2'2?2V2l2
+3<4u4
+:6:R:j:
+:-;F;c;{;
+<.<F<_<
+=#=>=z=
+==>V>s>
+>/?E?
+1/1J1j1
+2*3Z3e3
+3(4d4
+5H5`5
+6:6M6
+7%7j7
+848K8]8
+9J9f9
+9*:=:T:w:
+:?;R;^;s;};
+<+<|<
+=I=T=`=w=
+?!?'?-?3?C?e?t?
+0(0C0[0a0g0m0
+1"1>1G1
+1<2B2`2k2w2|2
+3#3(3
+3@4h4w4|4
+5N6x6
+7,7?7
+7$8I8R8W8\8
+979C9I9V9\9a9f9}9
+:,:<:B:H:N:_:t:z:
+;";A;I;O;a;j;p;|;
+<%<*<]<c<{<
+=S=y=&>P>Y>b>k>t>}>
+>$?4?<?B?T?e?l?r?
+0*0:0M0W0]0
+0#1s1
+2Y2l2
+3(383K3U3[3
+3"4\4
+5<5M5X5
+7E7W7
+8)878@8
+:";,;V;^;c;h;
+;E<j<r<
+=!=&=+=N=]=c=
+>!>)>n>
+?#?1???H?N?T?x?
+030K0X0
+1#1F1U1]1o1u1
+2:2E2
+434H4P4b4h4q4w4
+536T6t6
+637I7
+9=9f9
+;3<D<S<[<m<s<}<
+=#=+===C=M=S=
+>3?D?f?
+0c0p0
+1c1t1
+5$5Z5
+5#646V6
+6S7d7
+8?8s8
+:c:t:
+;#<4<Z<
+<S=d=
+>#?4?S?
+1S1d1
+233@3o3
+334D4
+5#646S6
+6S7d7
+9$9J9
+9S:c:r:z:
+:#;<;N;V;j;p;z;
+<$<3<;<O<U<_<e<
+=*=0=:=@=r=
+>%>F>
+>,?c?t?
+0$0=0L0
+0#141T1m1|1
+1S2d2
+5;5w5
+6(6>6Z6h6
+7#828a8
+9 9)9
+; ;-;8;A;O;^;l;
+<?<x<
+=*=>=D=N=T=
+>5>z>
+>*?:?N?T?^?d?
+010?0|0
+1L1m1
+1,2M2i2
+3:3X3z3
+444Z4
+5*5Q5z5
+6(6.6@6]6c6
+6$7J7h7
+8A8j8
+9:9d9
+:*:Q:z:
+;';L;
+<J<j<
+=*=K=j=
+>(>J>
+?,?c?
+1+1L1
+2:2f2
+3:3g3
+4*4H4\4
+495E5k5
+6%6.6>6D6N6T6j6z6
+7+747D7J7T7Z7v7
+7<8L8U8e8k8u8{8
+9N9^9g9w9}9
+9/:l:
+;9;L;V;\;x;
+<H<Z<m<w<}<
+=*>:>M>W>]>
+>"?j?z?
+0'0-0N0
+1*1=1G1M1l1
+2'2-2O2j2z2
+333Z3v3
+4&5S5c5
+6<7O7o7
+8>8N8W8m8
+9/9C9I9R9X9
+:%:.:
+;L;m;
+<5<N<p<x<
+<)=B=S=
+?J?b?
+1'1G1a1w1
+272Q2d2
+3/3S3]3
+4=4Z4v4
+6;6N6
+7G7Z7
+8:8k8
+8"9*9F9W9
+:%:=:N:
+;[;x;
+;.<H<]<n<
+=$=1=A=l=w=
+>;>F>R>a>g>s>{>
+?E?m?
+0 0'0.050<0C0K0S0[0a0j0o0u0
+1!1+151H1M1e1n1y1
+2"2.2:2R2^2
+4"424B4R4u4
+636=6J6l6
+6U7o7x7
+8/9;9G9d9h9
+:(:H:d:h:
+;(;0;4;P;l;p;
+<0<P<l<p<|<
+= =@=`=
+> >@>`>
+? ?@?`?
+0 0@0`0
+1 1@1`1
+2 2@2`2
+3 3@3`3
+4 4@4`4
+505P5l5p5
+606L6P6l6p6
+0 0$0(0,080<0D0L0h0
+1h1l1p1
+182<2@2H2L2P2
+3 3p3t3x3
+3@4D4H4P4T4X4
+5 5(5
+6D6P6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7h7
+8$8(84888D8H8T8X8d8h8t8x8
+9 9(9,94989@9D9L9P9X9\9d9h9p9t9|9
+:$:(:0:4:<:@:H:L:T:X:`:d:l:p:x:|:
+; ;$;,;0;8;<;D;H;P;T;\;`;h;l;t;x;
+< <(<,<4<8<@<D<L<P<X<\<d<h<p<t<|<
+=$=(=0=4=<=@=H=L=T=X=`=d=l=p=x=|=
+> >$>,>0>8><>D>H>P>T>\>`>h>l>t>x>
+? ?(?,?4?8?@?D?L?P?X?\?d?h?p?t?|?
+0 0(0,04080@0D0L0P0X0\0d0h0p0t0|0
+1 1(1,14181@1D1L1P1X1\1d1h1p1t1|1
+2$2(20242<2@2H2L2T2X2`2d2l2p2x2|2
+3 3$3,30383<3D3H3P3T3\3`3h3l3t3x3
+4 4(4,44484@4D4L4P4X4\4d4h4p4t4|4
+6$6(60646<6@6H6L6T6X6`6d6l6
+7$7(707@7H7L7T7X7`7p7x7|7
+bT!H]A
+H%QDy
+:WN|M
+Z";1U
+enZhc
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+2y80T
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4675800
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+Et,@8
+Zof1G
+WaNja
+T^r|B
+uOi@Y
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,xHGDYZV+PZJEyTKs4tu/Fc91onOH2gRIz797N8hdWAU=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+IhuJt
+l5_Q4\
+rsGDM
+bia-~
+:2oyV'r
+20220506220622.706Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:60BC-E383-26351%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+220302185121Z
+230511185121Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:60BC-E383-26351%0#
+Microsoft Time-Stamp Service0
+frPy=?=
+``PJn
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+|jyd&1
+ MR^o
+"XkU-
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:60BC-E383-26351%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220506181423Z
+20220507181423Z0w0=
+1/0-0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+]+O%nJ

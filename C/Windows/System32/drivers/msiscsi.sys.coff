@@ -1,0 +1,166 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\msiscsi.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    storport.sys
+    TDI.SYS
+    NETIO.SYS
+    cng.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C003B050 Import Address Table
+             1C003B438 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         417 IoStartTimer
+                         5EA MmLockPagableDataSection
+                         475 KeAcquireSpinLockRaiseToDpc
+                         2EB IoAcquireRemoveLockEx
+                         539 KeReleaseSpinLock
+                         3D3 IoReleaseRemoveLockEx
+                         61B MmUnlockPagableImageSection
+                         41A IoStopTimer
+                         3D2 IoReleaseRemoveLockAndWaitEx
+                         3B9 IoQueueWorkItem
+                         559 KeSetEvent
+                         499 KeDelayExecutionThread
+                         3EC IoReuseIrp
+                         73E PsCreateSystemThread
+                         C7B srand
+                         C76 rand
+                         6CB ObfDereferenceObject
+                         2E6 InitializeSListHead
+                         100 ExInitializeNPagedLookasideList
+                         2F9 IoAllocateWorkItem
+                         585 KeWaitForSingleObject
+                         B43 ZwEnumerateKey
+                         B69 ZwOpenKey
+                         981 RtlQueryRegistryValuesEx
+                         B17 ZwClose
+                         CA4 wcsncmp
+                         C9C wcschr
+                         B45 ZwEnumerateValueKey
+                         B3A ZwDeleteValueKey
+                         B39 ZwDeleteKey
+                         B26 ZwCreateKey
+                         9FF RtlWriteRegistryValue
+                          D5 ExDeleteNPagedLookasideList
+                         833 RtlCompareMemory
+                         307 IoCancelIrp
+                         556 KeSetBasePriorityThread
+                         7EE PsTerminateSystemThread
+                         394 IoInitializeRemoveLockEx
+                          BD ExAllocatePool2
+                         187 ExpInterlockedPushEntrySList
+                         395 IoInitializeTimer
+                         2F4 IoAllocateIrp
+                         353 IoFreeIrp
+                         356 IoFreeMdl
+                         359 IoFreeWorkItem
+                         3A9 IoOpenDeviceRegistryKey
+                         BA8 ZwQueryValueKey
+                         36D IoGetDeviceObjectPointer
+                         302 IoBuildDeviceIoControlRequest
+                         44E IofCallDriver
+                         C52 _wcsnicmp
+                         C4C _vsnwprintf
+                         2F6 IoAllocateMdl
+                          F0 ExFreeToNPagedLookasideList
+                          A2 ExAcquireFastMutex
+                         138 ExReleaseFastMutex
+                         C2A _itoa_s
+                         2F3 IoAllocateErrorLogEntry
+                         448 IoWriteErrorLogEntry
+                         C4A _vsnprintf
+                         51B KeQueryTimeIncrement
+                         303 IoBuildPartialMdl
+                         5F1 MmMapLockedPagesSpecifyCache
+                          BA ExAllocateFromNPagedLookasideList
+                         5BC MmBuildMdlForNonPagedPool
+                         61F MmUnmapLockedPages
+                         6CD ObfReferenceObject
+                         384 IoGetRelatedDeviceObject
+                         304 IoBuildSynchronousFsdRequest
+                         36B IoGetDeviceInterfaces
+                         36E IoGetDeviceProperty
+                         BA5 ZwQuerySystemInformation
+                         5EF MmMapIoSpaceEx
+                         C5C atoi
+                         9D7 RtlUnicodeStringToAnsiString
+                         80F RtlAnsiStringToUnicodeString
+                         74B PsGetCurrentProcess
+                         4D5 KeInitializeSpinLock
+                          EE ExFreePoolWithTag
+                         3C5 IoRegisterBootDriverReinitialization
+                         3E1 IoReportRootDevice
+                         4CD KeInitializeEvent
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         186 ExpInterlockedPopEntrySList
+                         8F1 RtlInitUnicodeString
+                         C80 strcmp
+
+    storport.sys
+             1C003B310 Import Address Table
+             1C003B6F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          19 StorPortNotification
+                           B StorPortExtendedFunction
+                          16 StorPortInitialize
+                          2D StorPortResumeDevice
+                          1B StorPortPauseDevice
+
+    TDI.SYS
+             1C003B028 Import Address Table
+             1C003B410 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          26 TdiDeregisterPnPHandlers
+                          36 TdiRegisterPnPHandlers
+
+    NETIO.SYS
+             1C003B000 Import Address Table
+             1C003B3E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         229 WskCaptureProviderNPI
+                         22A WskDeregister
+                         22D WskReleaseProviderNPI
+                         22C WskRegister
+
+    cng.sys
+             1C003B040 Import Address Table
+             1C003B428 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 SystemPrng
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        2000 .pdata
+        6000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       31000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        C000 PAGELK
+        1000 fothk

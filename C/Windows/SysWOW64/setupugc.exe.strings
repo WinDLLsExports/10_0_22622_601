@@ -1,0 +1,1024 @@
+!This program cannot be run in DOS mode.
+.Rich
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ext-ms-win-gdi-dc-l1-2-0.dll
+ext-ms-win-gdi-font-l1-1-0.dll
+ext-ms-win-gdi-font-l1-1-2.dll
+ext-ms-win-ntuser-dc-access-ext-l1-1-0.dll
+ext-ms-win-ntuser-dialogbox-l1-1-0.dll
+ext-ms-win-ntuser-draw-l1-1-0.dll
+ext-ms-win-ntuser-gui-l1-1-0.dll
+ext-ms-win-ntuser-message-l1-1-0.dll
+ext-ms-win-ntuser-window-l1-1-0.dll
+ext-ms-win-rtcore-gdi-object-l1-1-0.dll
+ext-ms-win-rtcore-ntuser-sysparams-l1-1-0.dll
+S"@kon|
+Processing AuditComputerName setting (if present)...
+AuditComputerName: Specified computer name is invalid
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings\Setup-Unattend-Settings\AuditComputerName
+MustReboot
+ExtractsettingFromRegistry: (AuditComputerName) Found Name but was empty
+False
+ExtractSettingFromRegistry: (AuditComputerName) Name = [%s], MustReboot = [%s]
+ExtractSettingFromRegistry: (AuditComputerName) Found MustReboot setting but no AuditComputerName setting.  Ignoring...
+GenerateComputerName: Generated computer name [%s]
+ValidateComputerName: The computer name specified [%s] is eithertoo long, begins with '.', or contains consecutive '.' characters)
+ValidateComputerName: The computer name specified [%s] contains invalid characters
+ValidateComputerName: The computer name specified [%s] contains only numeric characters
+ValidateComputerName: The computer name specified [%s] contains an underscore ('_'), or Unicode or extended characters; using anyway...
+ValidateComputerName: The computer name specified [%s] is invalid
+ValidateComputerName: Computer name [%s] is too long
+SetAuditComputerName: Setting computer name to [%s]...
+SetAuditComputerName: Successfully set computer name.
+SetAuditComputerName: Failed to set DNS host name; hr = 0x%x
+SetAuditComputerName: Failed to set NetBIOS computer name; hr = 0x%x
+Processing ExtendOSPartition setting (if present)...
+ExtendOSPartition: User requested that OS partition be extended to fill available space.
+ExtendOSPartition: User requested that OS partition be extended by %I64u bytes
+ExtendOSPartition: OS partition is at disk [%d] byte offset [0x%I64x]
+ExtendOSPartition: Failed to extend partition; hr = 0x%x
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings\Setup-Unattend-Settings\ExtendOSPartition
+Extend
+ExtractSettingFromRegistry: (ExtendOSPartition) Both Size and Extend (which equals true) were present in unattend file
+ExtractSettingFromRegistry: (ExtendOSPartition) User requested extension by %I64u MB
+ExtractSettingFromRegistry: (ExtendOSPartition) Found invalid Size (0 bytes)
+ExtractSettingFromRegistry: (ExtendOSPartition) User requested extension to fill remainder of available disk space
+ExtractSettingFromRegistry: (ExtendOSPartition) User explicitly requested that the OS partition not be extended
+PerformExtendOperation: Successfully extended OS partition
+PerformExtendOperation: Failed to extend OS partition, continuing anyway... (hr = 0x%x)
+PerformExtendOperation: Unable to initialize COM; hr = 0x%x
+Processing any RunSynchronous setting...
+Processing any RunAsynchronous setting...
+already
+not yet
+Running commands is %s in progress
+CommandExecQueue
+%windir%\panther\commandexec\CommandExec
+Couldn't expand [%s]; hr = 0x%x
+SetupUGC
+Couldn't initialize the Panther engine; hr = 0x%x
+Couldn't open blackboard at [%s]; hr = 0x%x
+Couldn't find blackboard at [%s]; hr = 0x%x
+%windir%\panther\commandexec
+Couldn't create new BB at [%s]; hr = 0x%x
+Couldn't load commands from unattend settings registry key
+RunAsynchronous
+RunSynchronous
+Found %s command: [%s]
+Failed to parse next command from registry; hr = 0x%x
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings\Setup-Unattend-Settings
+Never
+continue execution without examining exit code
+Always
+reboot immediately but not examine exit code after execution
+OnRequest
+observe the exit code's implied request after execution
+Description
+Credentials
+Found run command in registry: description = [%s]
+is specified
+is not specified
+Found run command in registry: credentials = { domain %s, username %s, password info not logged }
+WillReboot
+Found invalid RebootType of [%s]; treating as Never...
+Found run command in registry: will %s
+Found run command in registry: path = [%s]
+Found run command in registry: saw domain but no username, skipping credentials for this item...
+Found run command in registry: path not specified; cannot proceed.
+Command is associated with explicit credentials; starting up system services...
+Successfully started system services; proceeding to execute command...
+Unable to start system services!
+asynchronously
+synchronously
+Finished executing [%s] %s
+Process returned with exit code 0x%x
+Must reboot now.
+Hit an error (hr = 0x%x) while running [%s]
+CommandExecInProgress
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings\Setup-Unattend-Settings-Status
+Found order subkey with value of 0 (name = [%s]); skipping...
+Found order subkey with invalid name (name = [%s]); skipping...
+Domain
+Username
+Password
+advapi32.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+EventWrite
+EventRegister
+EventUnregister
+SetupUGC launched with command line [%s]
+SetupUGC returning with exit code [%d]
+SetupUGC has an empty command-line; cannot determine which unattend pass this is
+SetupUGC running to process unattend settings for pass [%s]
+A processor needs an immediate reboot; requesting a reboot-and-recall for SetupUGC
+A processor needs a reboot-and-recall; requesting a reboot-and-recall for SetupUGC
+SetupUGC has no settings processors registered for this pass ( %s = 0x%x )
+SetupUGC couldn't retrieve the current unattend pass from its command line; hr = 0x%x
+InProgressCookie
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings
+Setup-Unattend-Settings-Status
+ExtendOSPartition
+AuditComputerName
+Unknown Processor
+STATIC
+\Device\KsecDD
+0123456789ABCDEFGHIJKLMNOPQRSTUV
+%s%s%s
+\\.\?:
+\\.\PHYSICALDRIVE%d
+\Device
+kernel32.dll
+api-ms-win-core-file-l1-2-2.dll
+FindFirstFileNameW
+FindNextFileNameW
+DeleteFileEx: Unable to verify path redirection on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to allocate hardlink path buffer
+DeleteFileEx: Will not restore attributes on hardlinks of [%s]
+DeleteFileEx: Unable to remove [%s]; GLE = 0x%x
+DeleteFileEx: Trying to set back attributes on hardlink given: %s
+DeleteFileEx: Unable to restore attributes on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to open [%s]; GLE = 0x%x
+DeleteFileEx: Unable to clear out attributes on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to get information on [%s]; GLE = 0x%x
+DeleteFileEx: Spoofing detected deleting [%s] -> [%s]
+DeleteFileEx: Unable to delete [%s]; GLE = 0x%x
+DeleteFileEx: Unable to prepare Unicode path for [%s]; GLE = 0x%x
+DeleteFileEx: Unable to form long path name for [%s]; GLE = 0x%x
+WdsRemoveDirectory: Unable to clear attributes on [%s]; GLE = 0x%x
+WdsRemoveDirectory: Unable to remove directory [%s]; GLE = 0x%x
+WdsRemoveDirectory: Unable to prepare path [%s]; GLE = 0x%x
+EnumeratePathEx: Unable to get reparse tag for persistent reparse point; GLE = 0x%x
+EnumeratePathEx: Unable to enumerate [%s]; GLE = 0x%x
+EnumeratePathEx: Callback requested enumeration interruption or hit internal enumeration failure on [%s]; GLE = 0x%x
+EnumeratePathEx: Unable to construct path under [%s]; GLE = 0x%x
+EnumeratePathEx: FindFirstFile failed for [%s]; GLE = 0x%x
+EnumeratePathEx: Failed search path is >= MAX_PATH!
+DeletePathDirectoryCallback: Spoofing detected deleting [%s] -> [%s]
+<unavailable>
+DeletePathEngine: Hit %u failure%s during recursive deletion of [%s]; 1st error = 0x%x, cd = [%s]
+DeletePath: Cannot delete <null>.
+DeletePath: [%s] doesn't exist as a directory; nothing to delete.
+DeletePath: Failed to get desired paths for [%s] (GLE = 0x%x)
+DeletePath:   Full path [%s]
+DeletePath:   Long path [%s]
+DeletePath:   Final path [%s]
+DeletePath: Attempting to obliterate [%s] (final path [%s]).
+DeletePath: Failed to obliterate [%s] (GLE = 0x%x); retrying...
+DeletePath: Failed to obliterate [%s] after %u tries; GLE = 0x%x
+\\?\GLOBALROOT
+\\?\Volume{
+\\?\UNC
+\Device\HarddiskVolume
+\Device\Harddisk
+Partition
+CreatePath: Unable to create [%s]; GLE = 0x%x
+\\?\UNC\
+WdsSetupLogInit
+WdsGenericSetupLogInit
+WdsSetupLogDestroy
+WdsSetupLogMessageA
+WdsSetupLogMessageW
+ConstructPartialMsgVA
+ConstructPartialMsgVW
+CurrentIP
+%windir%\Panther\UnattendGC
+wdscore.dll
+<unknown>
+[%S] %S
+UnattendLogWV
+onecore\base\ntsetup\lib\unattendlog\src\unattendlog.cpp
+Must Reboot After
+Execution Options
+Command
+ProcessedCommand
+Nodes
+Ordering
+List Head
+List Tail
+CredPassword
+CredUser
+CredDomain
+Global\OOBE_MACHINE_NAME_DONE
+Global\SC_AutoStartComplete
+OrchestrateStartSystemServices: Timed out waiting for autostart services to start; timeout = %d ms.
+OrchestrateStartSystemServices: Unknown error occurred while waiting for services to start; hr = 0x%x
+OrchestrateStartSystemServices: Timed out while waiting for SCM to create autostart-done event; timeout = %d ms.
+OrchestrateStartSystemServices: Unable to create/open event that signals autostart services have started; hr = 0x%x
+OrchestrateStartSystemServices: Unable to set event to trigger start of autostart services; hr = 0x%x
+OrchestrateStartSystemServices: Unable to create/open event to trigger start of autostart services; hr = 0x%x
+windowsPE
+offlineServicing
+generalize
+specialize
+auditSystem
+auditUser
+oobeSystem
+FALSE
+ApplyDiskOperationUsingService: Failed to initialize COM; hr = 0x%x
+ApplyDiskOperationUsingService: Wiping disk [%d].
+ApplyDiskOperationUsingService: Making sure disk [%d] is writable.
+ApplyDiskOperationUsingService: Disk [%d] is read only.
+ApplyDiskOperationUsingService: Made disk [%d] writable.
+ApplyDiskOperationUsingService: Failed to make disk [%d] writable. Error code is [0x%X]
+ApplyDiskOperationUsingService: Disk [%d] is writable.
+ApplyDiskOperationUsingService: Failed to determine if disk [%d] is writable. Error code is [0x%X]
+ApplyDiskOperationUsingService: Trying to bring disk [%d] online.
+ApplyDiskOperationUsingService: Successfully brought disk [%d] online.
+ApplyDiskOperationUsingService: Failed to bring disk [%d] online. Error code is [0x%X]
+ApplyDiskOperationUsingService: Offlining disk [%d].
+ApplyDiskOperationUsingService: Set disk attribute on disk [%d]. Attributes are [%d]
+ApplyDiskOperationUsingService: Clear disk attribute on disk [%d]. Attributes are [%d]
+ApplyDiskOperationUsingService: Creating partition at disk [%d] offset [0x%I64x] of DC type [0x%x]; ResolveTypeAtRuntime = %s, ExtendToFill = %s, Size = 0x%I64x.
+ApplyDiskOperationUsingService: Extending partition on disk [%d] at offset [0x%I64x].
+ApplyDiskOperationUsingService: Deleting partition on disk [%d] at offset [0x%I64x].
+ApplyDiskOperationUsingService: Setting partition type id on disk [%d] at offset [0x%I64x]. Force flag is [%d]
+ApplyDiskOperationUsingService: Setting partition active on disk [%d] at offset [0x%I64x].
+ApplyDiskOperationUsingService: Formatting partition on disk [%d] at offset [0x%I64x]; DC FS type = 0x%x.
+ApplyDiskOperationUsingService: Assigning drive letter%s%c%sto partition on disk [%d] at offset [0x%I64x].
+ApplyDiskOperationUsingService: Saw request to offline-assign drive letter [%c:] to partition on disk [%d] at offset [0x%I64x]; deferring...
+(null)
+ApplyDiskOperationUsingService: Setting volume label of [%s] for partition on disk [%d] at offset [0x%I64x]
+ApplyDiskOperationUsingService: Set volume attribute on disk [%d] offset [0x%I64x]. Attributes are [%u].
+ApplyDiskOperationUsingService: Clear volume attribute on disk [%d] offset [0x%I64x]. Attributes are [%u].
+ApplyDiskOperationUsingService: Saw unsupported disk operation of type [0x%x]
+ApplyDiskOperationUsingService: Failed to correctly apply disk operation of type [0x%x]; hr = 0x%x
+ConvertDiskStyle: Disk [%d] is an %s disk; converting to %s...
+ConvertDiskStyle: Conversion failed since disk [%d] is not empty.
+ConvertDiskStyle: Successfully converted disk [%d] to %s.
+ConvertDiskStyle: Failed to convert disk [%d] to %s; hr = 0x%x
+CreatePartition: Need to decide the type of the partition to create
+CreatePartition: Failed to decide the type of the partition to create, hr = 0x%x
+CreatePartition: Asked to create partition of unknown DC type 0x%x
+CreatePartition: Automatically converted disk [%d] to %s. The offset for the partition to create is updated to 0 (means no preference).
+CreatePartition: Failed to convert disk [%d] to %s; hr = 0x%x
+CreatePartition: Failed to get property and partition count for disk %d, hr = 0x%x
+CreatePartition: Disk %d doesn't support creation of partitions of the specified type
+AssignDriveLetter: Drive letter assigned; clearing no-drive-letter attribute.
+SetPartitionType: The request to set type id and partition specified are both MBR format.
+SetPartitionType: The request to set type id and partition specified are both GPT format.
+SetPartitionType: Either the partition style for the request [%s] is either unknown, or does not match the style of the specified partition [%s].
+SetPartitionType: ChangePartitionType failed, hr = 0x%x.
+SetPartitionType: This is a recovery partition; setting specific attributes.
+FormatPartition: Partition type ID (0x%X) needs to be carefully preserved across format.
+FormatPartition: Re-setting original OEM partition type (lost during format)...
+CreatePartition: Requesting creation of partition with { offset = [0x%I64x], size [0x%I64x] }
+CreatePartition: Successfully created partition on disk %d at {offset = [%I64u], size = [%I64u]}
+CreatePartition: Got invalid offset of 0
+CreatePartition: Failure while waiting for partition creation; hr = 0x%x, hrWait = 0x%x
+CreatePartition: Requested partition looks invalid (offset = [%I64u], size = [%I64u])
+<DiskConfiguration>
+ResolvePartitionTypeToCreate: %s: disk %d already has %d allocated partitions
+ResolvePartitionTypeToCreate: %s: Couldn't figure out the number of partitions on disk %d, assume there're at least one partition.
+CreatePartition
+ResolvePartitionTypeToCreate: %s: disk %d is a GPT disk and has more than zero existing partitions; assuming %s setting wants to create GPT basic data partition
+ResolvePartitionTypeToCreate: %s: disk %d has zero existing partitions on an EFI computer; assuming %s setting wants to create GPT basic data partition
+ResolvePartitionTypeToCreate: %s: disk %d is a RAW disk on an EFI computer; assuming %s setting wants to create GPT basic data partition
+ResolvePartitionTypeToCreate: %s: disk %d is of an unknown type and is on an EFI computer; assuming %s setting wants to create GPT basic data partition
+InitVDSService:Creating VDS loader...
+InitVDSService:Loading VDS service... 
+InitVDSService:Successfully launched service.
+InitVDSService: Failed to load VDS service; hr = 0x%x.
+\\?\PhysicalDrive%d
+GetDisk: Querying VDS providers...
+GetDisk: Finished querying VDS providers.
+GetDisk: Querying unallocated disks...
+GetDisk: Finished querying unallocated disks
+ConvertUnallocatedDisk: Successfully added unallocated disk to a new basic pack
+FindFreeExtent: Trying to find extent matching these criteria (byte offset of 0 implies no offset preference): [WithinContainer = %s] [Size >= 0x%I64x bytes] [Byte offset = 0x%I64x]
+FindFreeExtent: Found suitable extent: [WithinContainer = %s], [Byte size of found extent = 0x%I64x], [Byte offset of found extent = 0x%I64x], [Return size of found extent = 0x%I64x], [Return offset of found extent = 0x%I64x].
+FindFreeExtent: Found no free extents matching criteria on specified disk
+WOOHOO
+setupugc.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+1f;2u f
+SVWh`
+w$j:Xf;
+j\Xf;
+SVWjH3
+WhP(@
+4SVW3
+L$,!|$$
+Vhh*@
+PPPPPPh
+9\$ u
+QhH0@
+Qh 9@
+QPh01@
+t`h(3@
+u9hx4@
+!L$ Q
+tYh8V@
+|$(Qh
+9D$HuZ;
+9D$Hu;
+Vh8U@
+9L$Ht
+D$TPh(6@
+t$Lh`6@
+D$PPVh
+WhX7@
+t)WWWWh(7@
+u@h(7@
+VVVVVVV
+?h 8@
+tZhx9@
+uvhX9@
+tZhx9@
+VhX:@
+WhP;@
+t9h\>@
+WhX7@
+t)WWWWh\>@
+VQh\>@
+PVWVVVh
+u#VWWj
+91}mV
+Ph`@@
+Ph`@@
+PPj1h
+RQj0P
+RPPPS
+WWj1Q
+Vht@@
+j ^f;p
+^[w"QRW
+WhX7@
+GPQQh
+QPSWQQV
+PWWWWh(
+SVWjz
+VPSWVVhP
+VPWSVVh
+uMVh4A@
+D$pPW
+D$LPj
+T$8Pj
+\$ SW
+T$ YY3
+tdSVh0C@
+Ih@B@
+D$pj(
+D$LPj
+SVhhF@
+SVhPG@
+PWh`H@
+tKWS3
+t[VW3
+j\Zf;Ty
+t,WVS
+QSVW3
+jWX_^]
+~(9~0t
+VhXI@
+t@j\P
+WShpK@
+VWhPP@
+sAPVh
+PQWhPQ@
+9t$ u
+9t$$u
+PWh O@
+G.j\P
+j:Xf;F
+j:Xf;F
+j\[SV
+tQVVVW
+tuWWS
+GWVVP
+tPSVh
+ja^jz_j:Z
+jzZf;
+j:Xf9F
+tkh\S@
+tQhpS@
+QQSWh
+uvhX9@
+tZhx9@
+D$(Ph
+Qh8V@
+Qh$V@
+VhHY@
+Vh0Z@
+VhpU@
+lSVW3
+SSSPS
+uvhX9@
+tZhx9@
+3h(]@
+}9t$,u
+3hpa@
+3h `@
+3h c@
+D$ ;A
+;D$(s
+|$093
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+|$093
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+3hxf@
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+C*PQR
+3h(g@
+|$093
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+|$093
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+t$0VWQh
+|$093
+t$$9p
+L$$;H
+t$ VP
+;D$(s
+t$ VP
+|$093
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+|$093
+t$$9q
+D$$;A
+t$ VP
+;D$(s
+t$ VP
+3h`m@
+7Ph8n@
+WjpVP
+ShPr@
+2WPQh
+s&WVP
+ArCf;
+tahhv@
+j PjZ
+tWSWVh
+t6f92t1
+t*f90t%
+f92t.j
+f90t j
+XPQSh
+Y__^[
+QRPh<
+QRPh\
+QRPh|
+Y__^[
+GetObjectW
+CreateFontIndirectW
+GetTextExtentPoint32W
+ReleaseDC
+GetDlgItem
+SendDlgItemMessageW
+SetDlgItemTextW
+EndDialog
+CreateDialogParamW
+GetWindowDC
+LoadImageW
+MapWindowPoints
+TranslateMessage
+DispatchMessageW
+SendMessageW
+PostMessageW
+GetMessageW
+IsWindow
+ShowWindow
+SetWindowTextW
+CreateWindowExW
+SetWindowPos
+GetWindowRect
+DeleteObject
+SystemParametersInfoW
+_vsnwprintf
+iswspace
+_wtoi
+iswdigit
+qsort
+__CxxFrameHandler3
+_XcptFilter
+__p__commode
+_amsg_exit
+__wgetmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+_wcmdln
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+_controlfp
+_except_handler4_common
+HeapFree
+SetComputerNameExW
+GetLastError
+DnsValidateName_W
+GetProcessHeap
+CoUninitialize
+GetWindowsDirectoryW
+CoInitializeEx
+CompareStringW
+RegCloseKey
+RegOpenKeyExW
+RegEnumKeyExW
+HeapAlloc
+RegQueryInfoKeyW
+UnregisterTraceGuids
+RegisterTraceGuidsW
+GetTraceEnableLevel
+GetVersionExW
+GetTraceEnableFlags
+GetTraceLoggerHandle
+RegCreateKeyExW
+GetProcAddress
+GetModuleHandleW
+TraceEvent
+SetLastError
+WaitForSingleObject
+CreateEventW
+SetEvent
+CloseHandle
+CreateThread
+Sleep
+GetStartupInfoW
+SetUnhandledExceptionFilter
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+DNSAPI.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+WdsInitialize
+WdsValidBlackboard
+WdsDestroyBlackboard
+WdsCreateBlackboard
+WdsTerminate
+WDSCORE.dll
+I_RpcMapWin32Status
+UuidToStringW
+RpcStringFreeW
+UuidCreate
+RPCRT4.dll
+_wcsicmp
+_vsnprintf
+_vscwprintf
+wcschr
+_wcsnicmp
+wcsrchr
+wcsncmp
+wcsspn
+wcscspn
+iswalpha
+RegQueryValueExW
+ExpandEnvironmentStringsW
+RegDeleteValueW
+RegSetValueExW
+RegDeleteTreeW
+RegDeleteKeyExW
+DeviceIoControl
+CreateFileW
+GetFileInformationByHandleEx
+FindFirstFileW
+FindNextFileW
+FindClose
+GetFileAttributesW
+SetFileAttributesW
+GetFileInformationByHandle
+SetFileInformationByHandle
+DeleteFileW
+WNetAddConnection2W
+WNetCancelConnection2W
+OpenEventW
+LoadStringW
+FreeLibrary
+LoadLibraryExW
+CreateDirectoryW
+GetFullPathNameW
+GetLongPathNameW
+GetFinalPathNameByHandleW
+GetModuleFileNameW
+GetCurrentDirectoryW
+OpenProcessToken
+AdjustTokenPrivileges
+EnterCriticalSection
+LeaveCriticalSection
+InitializeCriticalSection
+DeleteCriticalSection
+CreateProcessW
+GetExitCodeProcess
+CoTaskMemFree
+CoCreateInstance
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-file-l2-1-0.dll
+MPR.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+SetVolumeLabelW
+RtlInitUnicodeString
+NtDeviceIoControlFile
+NtClose
+NtOpenFile
+RtlAllocateHeap
+RtlFreeHeap
+NtQuerySystemInformation
+RtlNtStatusToDosError
+NtSetInformationFile
+RtlGetThreadErrorMode
+RtlSetThreadErrorMode
+ntdll.dll
+WdsInitializeDataUInt32
+WdsInitializeDataStringW
+WdsEnumFirstBlackboardItem
+WdsGetBlackboardValue
+WdsAbortBlackboardItemEnum
+WdsFreeData
+WdsSetBlackboardValue
+WdsDeleteBlackboardValue
+memcmp
+memmove
+memset
+WEVT_TEMPLATE
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="5.1.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.Setup.SetupUnattendGC"
+    type="win32"
+<description>Setup Unattend Generic Command Processor</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel
+                level="asInvoker"
+                uiAccess="false"
+            />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+wwwwwx
+wwwwx
+wwwwwwwx
+wwwwww
+"""" 
+"""""
+"" """ 
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Setup Unattend Generic Command Processor
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+SetupUGC.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+SETUPUGC.EXE
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+CRIM(
+Microsoft-Windows-SetupUGC/Analytic
+Setup
+EventData
+CommandLine
+CommandLine
+EventData
+ErrorCode
+ErrorCode
+EventData
+EventData
+Processor
+Processor
+PRVAL
+Microsoft-Windows-SetupUGC
+OPCOT
+win:Start
+win:Stop
+LEVL@
+win:Informational
+tskRunSetupUGC
+tskRunProcessorsForPass
+tskRunProcessor
+keyPerformance
+ms:ReservedKeyword44
+ms:Telemetry
+ms:Measures
+ms:CriticalData
+EVNT`
+WEVT_TEMPLATE
+en-US
+0$0,040<0@0D0H0L0P0T0X0\0`0d0
+1 1,1014181<1H1L1
+2&2F2l2
+3A3H3d3m3
+474<4J4V4a4{4
+5*5F5Q5
+6&6i6
+7Q7c7q7{7
+7/8O8T8f8k8
+9+9C9X9i9
+:S;j;q;w;
+<*<4<><O<W<_<i<
+?#?9?U?
+0*0;0U0
+1*111F1M1
+152<2N2T2
+3#3d3t3
+5,515@5E5Z5_5
+6<6Q6l6
+6%7,787?7V7]7w7~7
+7!8.8;8E8U8\8w8~8
+:G:|:
+;%;/;6;@;
+<"<0<5<:<
+=/=8===B=\=f=~=
+?'?`?s?
+0#0;0l0|0
+2-262N2|2
+4*4U4_4
+4/5Z5a5~5
+596G6q6|6
+9-969K9S9Z9}9
+9k:{:
+=$=7=c=i=|=
+>E>Z>
+?(?E?Y?
+010n0
+1(1/141=1D1I1R1Y1^1h1l1r1y1
+2'2,262;2P2a2f2k2x2~2
+3D3Z3
+3"4'494O4
+5C5b5
+6/6g6u6
+797D7Z7c7p7
+8$8+81878>8
+95:s:
+;!;1;J;_;q;x;
+<)<F<
+= =7=C=_=h=w=
+>+>Z>l>x>
+?F?y?
+"0)0R0Y0r0
+1I1p1{132
+7-7E7L7|7
+8K8m8t8
+8 929V9u9|9
+:+:;:F:\:e:
+;:;\;j;x;
+<Z=a=n=
+>1>i>r>
+?%?-?;?{?
+0'02090g0n0
+10181B1H1S1Y1d1k1r1w1}1
+1)2g2n2x2
+3T3[3
+4 4)4J4Y4{4
+5<5_5i5p5z5
+616;6D6M6W6h6o6{6
+6/797B7L7m7u7|7
+798M8k8r8y8
+9n9u9
+=!=5=<=
+>&>.>=>M>e>~>
+?<?D?r?y?
+00070C0N0U0]0m0
+2@2 3
+4)404P4W4
+5+5A5H5V5]5d5q5z5
+6L6k6y6
+6<7`7l7
+7/8L8
+8%999\9w9
+9 :*:
+;3;=;O;V;^;e;q;x;
+<,<2<M<T<a<h<y<
+=W=n=
+=">U>o>
+?7?X?k?
+0y0U1\1v1}1
+1(2H2g2q2|2
+3$3-3>3
+5 5(515>5Z5l5s5
+6(6_6
+6,797`7m7w7
+8#8:8
+939f9
+:=:D:T:[:h:o:|:
+:#;-;R;
+<%<*<7<=<C<H<Q<W<]<b<k<q<w<|<
+=5=;=@=S=f=p=u=|=
+>#>*>^>
+>D?K?`?
+0'010B0I0V0}0
+1%1,111:1A1F1P1T1Z1a1h1n1w1}1
+1/2E2[2
+3K3}3
+4L4`4
+5!5&5_5q5
+6%626]6
+7i7s7
+7#8P8e8j8
+9D:K:X:_:
+<C<[<
+=&=8=N=`=|=
+>&>4>F>h>y>
+?5?M?U?m?
+0&0,02080C0]0f0s0
+0%1;1E1t1
+2C2M2`2s2
+3P3\3
+4,4I4O4^4d4o4v4{4
+5'5A5
+6@6J6p6z6
+7(7P7{7
+9+929s9
+<V<b<
+==>J>Y>o>
+?B?Z?
+161B1b1i1
+172A2
+4^4j4
+6(6>6e6q6
+7)7c7m7 8*8
+9)909x9
+9":9:C:
+:d;q;
+;.<:<a<y<
+<H=R=
+=%>1>Q>X>
+>#?-?7?
+b0o0~0
+041@1d1|1
+1a2k2
+3@3L3l3s3
+4@4J4
+6?6H6e6n6
+7&7D7e7
+9>:P:a:r:
+:5;N;r;
+<"<+<S<f<
+>;>E>l>
+>%?8?D?N?c?p?z?
+000b0
+2%3>3\3}3
+4&404G4Z4m4
+445@5L5i5
+6$6.6T6]6
+6.7M7k7
+:%:M:W:
+;';];
+<%</<b<v<
+>h?q?
+0'101e1
+2 2;2j2
+818R8j8}8
+8a:h:
+>D>M>
+0!0^0
+1:2n2
+474A4p4z4
+415D5K5R5Y5c5x5
+6!6A6s617
+:C:O:n:
+:P;k;
+;)<3<K<
+=$=+=z=
+>$>+>8>?>K>Q>V>i>
+:0e0n0
+1;1D1g1
+232T2v2
+323=3[3h3
+4R5e5~5
+7'7K7z7
+909o9
+:(:;:N:g:
+;9;Z;y;
+;M<u<
+=.=@=R=p=
+=$>R>Y>w>~>
+>6?N?
+"0X0g0w0
+0$1<1Q1
+2+23292Q2V2\2a2f2k2p2v2~2
+3&3,33383E3T3\3d3x3
+3%4+454;4D4I4
+4"585E5S5d5l5
+6Y6q6w6
+9.9C9R9Z9s9
+:$:-:8:?:W:]:c:i:o:u:|:
+;#;);5;E;N;a;m;y;
+<+<?<O<_<o<
+="=2=?=S=c=s=
+?3?B?N?q?w?
+04080X0t0x0
+0 0$0(00040<0@0H0P0\0h0t0
+0$1(1,1014181
+0 0$0(0,00080@0D0L0P0T0X0\0d0h0l0p0t0x0

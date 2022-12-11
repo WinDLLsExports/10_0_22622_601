@@ -1,0 +1,2186 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+UserDataLanguageUtil.dll
+VCardParser.dll
+XmlLite.dll
+MCCSEngineShared.dll
+InprocLogger.dll
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+ntdll.dll
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+onecoreuap\internal\base\inc\mailcontactscalendarsync\SyncRes.h
+propfind
+urn:ietf:params:xml:ns:carddav
+addressbook-multiget
+urn:ietf:params:xml:ns:caldav
+calendar-multiget
+calendar-query
+onecoreuap\base\MailContactsCalendarSync\Engines\Dav\Inc\WebDavProvider.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavengineconfig.cpp
+accessor.CoCreateInstance(__uuidof(PopImapAccountAccessor))
+http://
+https://
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\WebDavCollection.h
+Start
+Failed to read CardDav server name
+Failed to read CaldDav server name
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavsyncengine.cpp
+FALSE
+nullptr == m_session
+downloadUriSet.size() <= c_MaxItemsDownloadBatch
+WebDavSyncEngine::_SynchronizeCollection(incoming)
+WebDavSyncEngine::_SynchronizeCollection(sweep)
+!IsCatastrophicError(syncResult)
+zC5onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavcollectionbase.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavcollectionproperties.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\carddavitemtraits.cpp
+text/vcard
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavitemtraits.cpp
+text/calendar
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\yahoocaldavitemtraits.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdaviteminforeader.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavitemdata.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavupdatechangerequest.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavitemdownloadresultreaderbase.cpp
+PROPFIND
+writer->WriteEndElement()
+REPORT
+pWriter->WriteEndElement()
+DELETE
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavrequest.cpp
+%s (gzip)
+tlx::append_sprintf(davUserAgent, L"%s (gzip)", useragent.get())
+User-Agent
+(m_depth == 0) || (m_depth == 1)
+Depth
+Content-Type
+If-None-Match
+If-Match
+Authorization
+ULongAdd((DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\protocol\\webdavrequest.cpp", 376  ); } } while(0,0); return out; }(wcslen(pUsername)), (DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\protocol\\webdavrequest.cpp", 376  ); } } while(0,0); return out; }(wcslen(pPassword)), &length)
+ULongAdd(length, 2, &length)
+StringCchCopyW(pUnicodeCreds, unicodeCredsLength, pUsername)
+StringCchCatW(pUnicodeCreds, unicodeCredsLength, L":")
+StringCchCatW(pUnicodeCreds, unicodeCredsLength, pPassword)
+length > 0
+length == utf8CredsLength
+utf8CredsLength > 0
+ULongMult(length, 4, &length)
+ULongAdd(length, 1, &length)
+CryptBinaryToStringA( (BYTE *)pUtf8Creds, utf8CredsLength - 1, 0x00000001 | 0x40000000, pBase64Creds, &length)
+pBase64Creds[base64CredsLength - 1] == '\0'
+length == finalCredsLength
+ULongAdd(finalCredsLength, (DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\protocol\\webdavrequest.cpp", 433  ); } } while(0,0); return out; }(wcslen(L"Basic ")), &length)
+Basic 
+StringCchCopyW(m_pAuthHeader, m_authHeaderLength, L"Basic ")
+StringCchCatW(m_pAuthHeader, m_authHeaderLength, pFinalCreds)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavcredentialmanager.cpp
+((((&server)->vt) == VT_BSTR) && (((&server)->bstrVal) != nullptr))
+((&useSsl)->vt) == VT_I4
+(((&authType)->vt) == VT_I4)
+((((&autoUsername)->vt) == VT_BSTR) && (((&autoUsername)->bstrVal) != nullptr))
+Authentication_Basic == m_authType
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavcommand.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavmultigetreportcommand.cpp
+pWriter->WriteStartElement( nullptr, WebDavNamespace::c_pProp, WebDavNamespace::c_pUri)
+pWriter->WriteElementString( nullptr, it->pProperty, it->pNamespace, nullptr)
+pWriter->WriteElementString( nullptr, WebDavNamespace::c_pHref, WebDavNamespace::c_pUri, it->c_str())
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavresponse.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavhttplogger.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\xmlallowlist.cpp
+writer->WriteNodeShallow(reader, 1)
+currentName.assign(pName)
+currentNamespace.assign(pNamespace)
+writer->WriteStartElement(pPrefix, pName, pNamespace)
+reader->GetValue(&pValue, 0)
+writer->WriteString(value.c_str())
+onecoreuap\base\mailcontactscalendarsync\engines\dav\utils\webdavcalendaringutils.cpp
+/.well-known/caldav/
+/principals/
+/caldav/v2/
+/calendar/dav/
+/.well-known/carddav/
+Warning
+FallbackError
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+FallbackError
+PartA_PrivTags
+wilResult
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+Error
+FailureTrigger
+errorCode
+expression
+Assert
+CardDavEngineInitEvent
+syncSchedule
+__TlgCV__
+CalDavEngineInitEvent
+syncSchedule
+__TlgCV__
+ActivityStoppedAutomatically
+ActivityError
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+failureId
+failureCount
+function
+ActivityError
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+LogPerItemError
+partnerGuid
+itemType
+syncDirection
+syncCommandType
+syncItemResult
+SyncFolderError
+partnerGuid
+folderID
+folderType
+lastSuccessfulSyncTime
+syncFolderResult
+PurgeEvent
+__TlgCV__
+partnerGuid
+reason
+SyncCancelEvent
+__TlgCV__
+partnerGuid
+dataType
+WebDavEngineActivity
+PartA_PrivTags
+wilActivity
+hresult
+threadId
+__TlgCV__
+phase
+partnerGUID
+dataType
+emailDomain
+syncType
+syncHResult
+downloadCount
+deletedCount
+updatedCount
+uploadCount
+cardDavServerName
+calDavServerName
+syncFolderCount
+folderErrorCount
+itemErrorCount
+WebDavEngineActivity
+PartA_PrivTags
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+__TlgCV__
+phase
+partnerGUID
+dataType
+emailDomain
+syncType
+syncHResult
+downloadCount
+deletedCount
+updatedCount
+uploadCount
+cardDavServerName
+calDavServerName
+syncFolderCount
+folderErrorCount
+itemErrorCount
+WebDavEngineActivity
+PartA_PrivTags
+wilActivity
+hresult
+threadId
+__TlgCV__
+phase
+partnerGUID
+dataType
+syncType
+syncHResult
+downloadCount
+deletedCount
+updatedCount
+uploadCount
+syncFolderCount
+folderErrorCount
+itemErrorCount
+WebDavEngineActivity
+PartA_PrivTags
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+__TlgCV__
+phase
+partnerGUID
+dataType
+syncType
+syncHResult
+downloadCount
+deletedCount
+updatedCount
+uploadCount
+syncFolderCount
+folderErrorCount
+itemErrorCount
+AccountFailedToLoadEvent
+WebDavEngineActivity
+PartA_PrivTags
+wilActivity
+threadId
+__TlgCV__
+phase
+partnerGUID
+dataType
+WebDavEngineActivity
+PartA_PrivTags
+wilActivity
+hresult
+threadId
+WebDavEngineActivity
+PartA_PrivTags
+PartA_PrivTags
+wilActivity
+hresult
+fileName
+lineNumber
+module
+failureType
+message
+threadId
+callContext
+originatingContextId
+originatingContextName
+originatingContextMessage
+currentContextId
+currentContextName
+currentContextMessage
+Microsoft.Windows.OneSync.DiagWarning
+Microsoft.Windows.OneSync.DiagError
+Microsoft.Windows.Unistack.FailureTrigger
+Microsoft.Windows.OneSync.DiagCritical
+Microsoft.Windows.OneSync.WebDavEngineProvider
+RaiseFailFastException
+RtlDllShutdownInProgress
+Local\SM0:%lu:%lu:%hs
+SyncRes.dll
+APPID
+onecoreuap\base\MailContactsCalendarSync\
+MCCS\
+onecoreuap\base\appmodel\UserDataAccess\
+collection
+content-type
+current-user-principal
+current-user-privilege-set
+displayname
+getcontenttype
+getetag
+multistatus
+privilege
+unbind
+write-content
+propstat
+resourcetype
+response
+status
+version
+addressbook
+addressbook-home-set
+address-data
+address-data-type
+supported-address-data
+calendar
+calendar-data
+calendar-home-set
+comp-filter
+filter
+start
+supported-calendar-component-set
+supported-calendar-data
+time-range
+VCALENDAR
+VEVENT
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavengineconfig.cpp
+CalDav
+syncServices.CoCreateInstance(__uuidof(POSyncServices))
+(((HRESULT)(hr)) >= 0)
+SUCCEEDED(hr)
+onecoreuap\base\MailContactsCalendarSync\Porting\Inc\AutoVariant.h
+LastCalendarSyncAttempt
+LastCalendarSyncSuccess
+LastCalendarSyncResult
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\carddavengineconfig.cpp
+CardDav
+LastContactSyncAttempt
+LastContactSyncSuccess
+LastContactSyncResult
+onecoreuap\base\MailContactsCalendarSync\PublishedInternal\Idl\objfre\i386\AccountAccessorTypes.h
+(accessorType == __uuidof(PopImapAccountAccessor)) || (accessorType == __uuidof(ExternalAccountAccessor)) || (accessorType == __uuidof(ActiveSyncAccountAccessor))
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\carddavsyncengine.cpp
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+F:#cR
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavsyncengine.cpp
+g_hInstSyncRes
+userPrincipalUri.assign(pUserPrincipalUri)
+m_serverUri.assign(serverUri)
+serverUri.insert(0, (useSsl ? g_pHttpsScheme : g_pHttpScheme))
+WinHttpCrackUrl(serverUri.c_str(), (DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\engine\\webdavengineconfig.cpp", 273 ); } } while(0,0); return out; }(serverUri.length()), 0, &urlComponents)
+rootUri.assign(urlComponents.lpszUrlPath)
+122L == GetLastError()
+baseUri.reserve(++uriLength)
+WinHttpCreateUrl(&urlComponents, 0, baseUri.data(), &uriLength)
+stringValue.assign(((&propValue)->bstrVal))
+VariantSetBSTR(pProperty, propValue)
+Gmail
+iCloud
+Yahoo
+FormatMessageW( 0x00000100 | 0x00000400 | 0x00002000, pResourceString, 0, 0, reinterpret_cast<WCHAR*>(pointer_to(formattedString)), c_minStringSizeAllocated, reinterpret_cast<va_list*>(ppParameters))
+pErrorString->assign(formattedString)
+pszValue
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavsyncfilter.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\WebDavProtocolUtils.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavprotocolutils.cpp
+(WebDavServerType::Generic == serverType) || (WebDavServerType::ICloud == serverType) || (WebDavServerType::Yahoo == serverType)
+WebDavServiceType::CalDav == serviceType
+(WebDavServerType::Generic == serverType) || (WebDavServerType::ICloud == serverType)
+uris.push_back(*it)
+IsSuccessfulWebDavStatus(pResponse->GetStatus())
+HresultFromWebDavStatus(status)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\WebDavStore.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\WebDavItem.h
+!itemUID.empty()
+IsResponseSessionInProgress()
+nullptr != GetItem()
+WebDavEngineActivity
+Invalid
+Calendar
+Contacts
+nullptr == m_config
+nullptr != m_session
+!userPrincipalUri.empty()
+L'/' == *pRootUri
+!requests.empty() || lastBatch
+WebDavSyncEngine::_SynchronizeCollection(outgoing)
+requests.push_back(request)
+pResponses->push_back(response)
+collectionTags.end() != it
+shouldFetch
+onecore\internal\sdk\inc\wil\opensource/wil/result.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\googlecarddavprotocol.cpp
+onecoreuap\base\MailContactsCalendarSync\Engines\Dav\Inc\WebDavProperty.h
+http://calendarserver.org/ns/
+getctag
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\carddavprotocol.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\WebDavCollectionInfoReader.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\yahoocaldavprotocol.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavprotocol.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavstorebase.cpp
+nullptr == m_updateScope
+nullptr != m_updateScope
+permanentId.reserve(29)
+pCollectionUri->assign(remoteId)
+pCollectionTag->assign(remoteKnowledge)
+!m_store->IsResponseSessionInProgress()
+nullptr == m_requestScope
+nullptr == m_responseScope
+m_store->IsResponseSessionInProgress()
+nullptr != m_responseScope
+(nullptr != m_requestScope) || (nullptr != m_responseScope)
+nullptr != m_requestScope
+(((HRESULT)(GetSyncCheckPoint(m_metadata, &checkPoint))) >= 0) && (0 == checkPoint)
+SUCCEEDED(GetSyncCheckPoint(m_metadata, &checkPoint)) && (0 == checkPoint)
+0 == checkPoint
+m_description.assign( GetValueOrDefault(descriptionValue, pDefaultDescription))
+PO_FOLDERTYPE_APPOINTMENT == (PO_FOLDERTYPE_APPOINTMENT & folderType)
+m_description.assign(L"")
+m_description.assign(propVals[0].val.lpwstr)
+0 != StringFromGUID2(random, uniqueName, GUID_STRING_CCH_W)
+tagPropVal
+itemUid.assign(uid)
+itemUid.append(L".vcf")
+pUri->append(tagPropVal[0].val.lpwstr)
+AddressDataVersionNone != dataFormat
+c_InValidVCardVersion != version
+itemUid.append(L".ics")
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavitembase.cpp
+0 != pItem || 0 != pMetadata
+NULL != pItem || NULL != pMetadata
+itemUri.assign(remoteId)
+!HasServerAssociation()
+nullptr == metadata
+entityTag.assign(tagPropVal->val.lpwstr)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\googlecarditemtraits.cpp
+(pIdEnd != pIdStart) && (L'\0' == *pIdEnd)
+0 == _ui64tow_s(contactId, pContactId, bufferSize, 10)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\appleicloudcarditemtraits.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavchangerequest.cpp
+WebDavChangeType::Deletion == changeType
+(WebDavChangeType::Addition == changeType) || (WebDavChangeType::Modification == changeType)
+IsFlagSet(pCollection->GetProperties()->GetPrivileges(), WebDavPrivilege::CreateItems)
+item->IsTombstone()
+IsFlagSet(pCollection->GetProperties()->GetPrivileges(), WebDavPrivilege::DeleteItems)
+WebDavChangeType::Modification == changeType
+IsFlagSet(pCollection->GetProperties()->GetPrivileges(), WebDavPrivilege::UpdateItems)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavprotocol.cpp
+pCollectionTag->assign( GetValueOrDefault(collectionTagValue))
+itemUri.assign(pCollectionUri)
+itemUri.append(pItemUID)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdaviteminfo.cpp
+m_itemUri.assign(pItemUri)
+m_entityTag.assign(pEntityTag)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\carddavitemdownloadresultreader.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavcollectioninforeaderbase.cpp
+homeUri.assign(pUriPath)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\carddavcollectionproperties.cpp
+Contacts
+ronecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavitemdownloadresultreader.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\caldavcollectionproperties.cpp
+Calendar
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\enumwebdavcollections.cpp
+H/b6`c
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\enumwebdavitemattachmentfetchpending.cpp
+[PhotoRetryAllowance] > 0
+Pm_contentType.assign(pContentType)
+bytesWritten == (ULONG)contentSize
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavattachmentdata.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavcreatechangerequest.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavdeletechangerequest.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavcollectioninfo.cpp
+m_collectionUri.assign(pCollectionUri)
+m_collectionTag.assign(pCollectionTag)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavcreatechangeresponse.cpp
+!willRetry
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavdeletechangeresponse.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavupdatechangeresponse.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavitemdownloadresult.cpp
+IsValidWebDavStatus(status)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\engine\webdavchangeresponse.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavsession.cpp
+*pAbsPath == L'/'
+uri.assign(m_baseUri)
+uri.append(pAbsPath + 1)
+m_requestList.push_back(pRequest)
+m_baseUri.assign(pBaseUri)
+((&name)->vt) == VT_BSTR
+V_VT(&name) == VT_BSTR
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavpropfindcommand.cpp
+CreateStreamOnHGlobal(0, 1, &stream)
+text/xml
+CreateXmlWriter(__uuidof(IXmlWriter), (LPVOID*)&writer, 0)
+writer->SetOutput(pStream)
+writer->WriteStartDocument(XmlStandalone_Omit)
+writer->WriteStartElement(0, RootElement(), RootNamespace())
+xmlns
+writer->WriteAttributeString( L"xmlns", it->pPrefix, 0, it->pNamespace)
+writer->WriteEndDocument()
+writer->Flush()
+m_namespaces.push_back(info)
+m_props.push_back(*it)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\carddavmultigetreportcommand.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\caldavmultigetreportcommand.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\caldavcalendarqueryreportcommand.cpp
+ULongLongMult(seconds, 10000000L, &offset)
+ULongLongSub(original.QuadPart, offset, &(result.QuadPart))
+ULongLongAdd(original.QuadPart, offset, &(result.QuadPart))
+SystemTimeToFileTime(pTime, &time)
+FileTimeToISO8601String(&time, 0x01, ppString)
+pWriter->WriteStartElement(0, CalDavNamespace::c_pFilter, pNamespace)
+pWriter->WriteStartElement(0, CalDavNamespace::c_pCompFilter, pNamespace)
+pWriter->WriteAttributeString( 0, CalDavNamespace::c_pName, 0, CalDavNamespace::c_pVCalendar)
+pWriter->WriteAttributeString( 0, CalDavNamespace::c_pName, 0, CalDavNamespace::c_pVEvent)
+pWriter->WriteStartElement(0, CalDavNamespace::c_pTimeRange, pNamespace)
+pWriter->WriteAttributeString( 0, CalDavNamespace::c_pStart, 0, startString)
+pWriter->WriteAttributeString( 0, CalDavNamespace::c_pEnd, 0, endString)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavuri.cpp
+WinHttpCrackUrl(pUri, 0, 0, &urlComponents)
+absolutePath.assign(pUriPath)
+L'/' == *pBasePath
+absolutePath.assign(pBasePath)
+absolutePath.append(L"/")
+absolutePath.append(pUriPath)
+pBasePath->assign(pUriPath, pLastPathSegment - pUriPath)
+pHashString->assign(buffer)
+http://
+https://
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavstring.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavdeletecommand.cpp
+m_etag.assign(pETag)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavgetcommand.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavputcommand.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavresourcetype.cpp
+m_body->Seek(offset, STREAM_SEEK_SET, 0)
+m_contentType.assign(contentType)
+m_eTag.assign(eTag)
+pStream->Seek(offset, STREAM_SEEK_SET, 0)
+pStream->Stat(&statStg, STATFLAG_NONAME)
+statStg.cbSize.HighPart == 0
+Bearer 
+unicodeCreds.append(L"Bearer ")
+unicodeCreds.append(pAccessToken)
+ULongMult((DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\protocol\\webdavrequest.cpp", 462  ); } } while(0,0); return out; }(unicodeCreds.length()), sizeof(WCHAR), &finalCredsLength)
+ULongAdd(finalCredsLength, sizeof(WCHAR), &finalCredsLength)
+StringCchCopyW(finalCreds, finalCredsLength, unicodeCreds.c_str())
+m_verb.assign(pVerb)
+m_uri.assign(pUri)
+WinHttpCrackUrl(m_uri.c_str(), (DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\protocol\\webdavrequest.cpp", 522 ); } } while(0,0); return out; }(m_uri.length()), 0, &urlComponents)
+!m_isCancelled
+!m_oauthTokenRefreshAttempted
+StringCchLengthW(pString, 2147483647, &stringLength)
+StringCchCopyW(dupString, stringLength, pString)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavmultistatusresponse.cpp
+pStart && *pStart
+code.assign(pStart, (pEnd - pStart))
+pResponseList->push_back(response)
+HresultFromWebDavStatus(pResponse->GetStatusCode())
+pstrOut->assign(pwszValue)
+onecoreuap\private\base\inc\CommsXmlParser.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavpropertyschema.cpp
+pWriter->WriteStartElement( 0, WebDavNamespace::c_pProp, WebDavNamespace::c_pUri)
+pWriter->WriteElementString( 0, it->pProperty, it->pNamespace, 0)
+pProperties->push_back(prop)
+pWriter->WriteStartElement( nullptr, pProperty, pNamespace)
+pWriter->WriteAttributeString( nullptr, WebDavNamespace::c_pContentType, nullptr, DataPropContentType())
+pWriter->WriteAttributeString( nullptr, WebDavNamespace::c_pVersion, nullptr, m_pVersion)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavdeleteresponse.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavgetresponse.cpp
+m_fetchedDataStream
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavputresponse.cpp
+(((HRESULT)(hr)) >= 0) || hr == HRESULT_FROM_WIN32((12000 + 150))
+pLocation->assign(value.c_str())
+WinHttpCrackUrl(m_uri.c_str(), (DWORD)[](size_t num) { DWORD out = 0xffffffffUL; do { HRESULT _hrTemp = Typecheck::CheckChrType(UIntPtrToULong(num, &out)); if ((0,((((HRESULT)(_hrTemp)) < 0)))) { Log_HREvent(_hrTemp, 0, "onecoreuap\\base\\mailcontactscalendarsync\\engines\\dav\\protocol\\webdavresponse.cpp", 85 ); } } while(0,0); return out; }(m_uri.length()), 0, &urlComponents)
+error == 122L
+pLocation->reserve(urlLength)
+WinHttpCreateUrl( &urlComponents, 0, const_cast<LPWSTR>(pLocation->c_str()), &urlLength)
+pETag->assign(value.c_str())
+pPath->assign(pUriPath)
+m_uri.assign(uri)
+size = %d bytes
+text/html
+application/xml
+Cache-Control
+Connection
+Content-Length
+Expires
+Location
+Pragma
+Server
+Transfer-Encoding
+X-Content-Type-Options
+X-Frame-Options
+X-XSS-Protection
+onecoreuap\base\MailContactsCalendarSync\Porting\Inc\PlatformHelperTemp.h
+pBuffer->reserve((size_t)bufferSizeRequired)
+(0 <= FormatString( pBuffer->_GetBuffer(), pBuffer->capacity(), pFormatString, args))
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavresourceresponse.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavsinglevaluestringlistserializer.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavresourcetypeserializer.cpp
+propName.assign(((_parser.GetCurrentNode())->GetName()))
+propNamespace.assign(((_parser.GetCurrentNode())->GetNamespace()))
+0 == _wcsicmp(propName.c_str(), WebDavNamespace::c_pResourceType)
+onecoreuap\base\MailContactsCalendarSync\Engines\Dav\Inc\WebDavPrivilegeSet.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavprivilegesetserializer.cpp
+propName.assign(pParser->GetCurrentNode()->GetName())
+propNamespace.assign(pParser->GetCurrentNode()->GetNamespace())
+onecoreuap\base\MailContactsCalendarSync\Engines\Dav\Inc\WebDavSupportedAddressData.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavsupportedaddressdataserializer.cpp
+!useDefaultValue || (list.size() == 0)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavsupportedcalendarcomponentsetserializer.cpp
+onecoreuap\base\MailContactsCalendarSync\Engines\Dav\Inc\WebDavSupportedCalendarData.h
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavsupportedcalendardataserializer.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavstringserializer.cpp
+onecoreuap\private\base\inc\HashKeyHelper.h
+pStr != 0
+pStr != NULL
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavallowedlist.cpp
+_CreateInstance(&list)
+(m_allowedElements.insert( utl::unordered_map<XmlAllowedListElement, XmlAllowedListAction>::value_type( elements[i].element, elements[i].action)).first != m_allowedElements.npos())
+(m_allowedAttributes.insert( utl::unordered_map<XmlAllowedListAttribute, XmlAllowedListAction>::value_type( attributes[i].attribute, attributes[i].action)).first != m_allowedAttributes.npos())
+CComObjectCached<WebDavAllowedList>::CreateInstance(&pInstance)
+gwriter->SetOutput(stream)
+reader->SetInput(pSource)
+pReader->GetPrefix(ppPrefix, 0)
+pReader->GetLocalName(ppName, 0)
+pReader->GetNamespaceUri(ppNamespace, 0)
+size = %lu bytes
+pString->assign(pValue)
+pReader->GetValue(&pValue, 0)
+pWriter->WriteAttributeString( pPrefix, attribute.pName, pNamespace, value.c_str())
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavproperty.cpp
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavstringlistserializer.cpp
+list.push_back(data)
+onecoreuap\base\mailcontactscalendarsync\engines\dav\protocol\webdavsupporteddataserializer.cpp
+versionList.push_back(version)
+isReceivedRecurringMeeting
+onecoreuap\base\mailcontactscalendarsync\engines\dav\utils\webdavutils.cpp
+Qkkbal
+wn>Jj
+onecoreuap\base\appmodel\userdataaccess\utils\xmlparser\lib\xmlparser.cpp
+onecoreuap\base\appmodel\userdataaccess\utils\xmlparser\lib\xmlhelper.cpp
+onecoreuap\base\appmodel\userdataaccess\utils\xmlparser\lib\XmlLiteMallocImpl.h
+%lx,%lx,%lx
+InProcLogger.DLL
+FlushInProcTraceSession
+ShouldReportAssertionFailure
+Software\Microsoft\ActiveSync
+RSDSu
+DavSyncProvider.pdb
+.rdata$brc
+.rdata$T$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.giats
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zz
+.rdata$zzzdbg
+.text$di
+.text$lp01DavSyncProvider.dll!20_pri7
+.text$mn
+.text$mn$00
+.text$np
+.text$x
+.text$yd
+.text$zz
+.tls$
+.tls$ZZZ
+.xdata$x
+ATL$__a
+ATL$__m
+ATL$__z
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$dk00$brc
+.data$zz$brc
+.data
+.data$00
+.data$dk00
+.data$zz
+.bss$00
+.bss$dk00
+.bss$pr00
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+j,h p
+Y__^[
+QRPhdq
+PQQSVW
+t$hVQ
+t$hVQ
+QjCQ3
+Qj=Q3
+Qj$Q3
+Qj!Q3
+QQSVW
+v0h07
+v hX7
+v hp7
+QQSVW3
+97s/j
+VWQQ3
+90u:h
+q(9>u
+WSh@0
+u$WSQ
+D$ PQQ
+D$ PQQ
+FT9FLt
+FD9F<t
+F49F,t
+VPhx$
+D$ PQQ
+VPhP%
+PQRRSW
+tZj!Z
+tZj"Z
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ 9D$
+u6jX[S
+y6jf[S
+QVVPh
+SVWPhL:
+D$(PWS
+D$$Xf;D$(uG
+D$ 9D$
+w]hA6
+|$ PQ
+D$XPj
+D$09D$(t
+D$@9D$8t
+D$P9D$Ht
+D$`9D$Xt
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+Qjvh w
+Qjvh w
+Qjvh w
+Qjvh w
+yOQjvh w
+y#Qjx
+Qj|hXu
+D$ 9F
+D$ 9D$
+t9j,^
+t8j1[S
+t4j=^V
+QQSVW
+D$ PQQ
+D$ PQQ
+D$ PQQ
+ELSV3
+YY_^]
+YY_^]
+L$,^3
+St4j^[S
+t1j_[S
+D$,PQQ
+Z\9;s
+T$8RP
+Qj"hp:
+Qj&hp:
+\$`PS
+D$dPQ
+QjQhp:
+QjVhp:
+D$ X<
+D$XPj
+D$,PQQ
+t8SWju[S
+tLhA6
+C(VWP
+x+G;}
+t5j6[S
+C(VWP
+t&hA6
+y<QhM
+yGQh8
+f;D$$uGf
+f;D$&u;f
+f;D$*u/3
+L$4_^3
+yIQhP
+y&QjWh
+,SVW3
+D$ 9D$
+D$09D$(t
+y&Qhb
+y Qjch {
+Qjzh {
+y Qjch {
+Qjzh {
+SWSSj
+t9jS[S
+D$0Pj
+D$ 9D$
+D$ 9D$
+QPQQj
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+9^ t8
+9^ t8
+y6Qhc
+D$8SVW
+D$,PW
+D$$9D$
+y*Qh<
+y'Qj%3
+D$(u:
+D$ Pj
+L$8QP
+D$DPQ
+D$DPQ
+u%jy_
+|$ PQ
+\$(9\$$t
+YY9\$
+D$(PWj
+D$ 9D$
+9_ t8
+VW9X u:
+9_ t=
+D$ PW
+D$@Pj
+D$4PQ
+D$(9D$ t
+QQSVW
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+yIQhP
+D$ WP
+QShX>
+L$4_^[3
+u-jS_
+D$ PQQ
+D$ PQQ
+u4jm^V
+u)j}_
+u2js_
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+y0Qh%
+D$ 9D$
+y=QjT3
+f;1u;j
+t!jF^
+t1jj^V
+u6jk^V
+u9ju^V
+u6jv^V
+t&hA6
+D$ PQQ
+yIQhP
+D$ 9D$
+SVWPQ
+u-jv_
+YY_^[
+u/j#_
+u*j$_
+QQSV3
+D$(P;
+D$09D$(t
+D$09D$(tKhA6
+y)QjC3
+Qj/h(z
+Qj/h(z
+yFQhP
+yFQhP
+YY_^[
+t0Qh@
+QQSVW
+Qj/h(z
+yFQhP
+YY_^[
+t0Ph@
+y3QjH
+QQj:3
+YY_^[
+QjYQ3
+y!QjX3
+D$ PR
+D$(9D$ t
+Qj?Q3
+Qj@Q3
+D$ PQ
+D$(9D$ t
+C !K,
+u4j&_
+u!j'_
+D$ PQQ
+D$ PQQ
+C09C(t
+D$ PQ
+D$(9D$ 
+D$(9D$ t
+u+j._
+u!j/_
+QjVQ3
+y-Qj]3
+C09C(t
+W(;W,tN
+D$ 9D$
+D$ 9D$
+u/j)^
+D$ PQQ
+YY_^[
+y"Qjn
+QjrQ3
+F<9F4t
+SVWjh
+>/t2jC^
+G8+G4
+u%jF_
+u!jG_
+y#Qh"
+QjgQ3
+u;j{^
+G9~Dt
+D$0Dm
+D$89yDu4
+D$ PQQ
+D$ PQQ
+D$ PQQ
+s ;s$tP
+y$jh^
+SVWPj
+y"QjL3
+xrSVW
+xrSVW
+xxSVW
+VWQQj
+y#j"_
+u;QPSP
+D$ SVW
+D$ PQQ
+D$ j/Xf;
+j/^f;0t$jt_
+u!ju_
+t3hxP
+u!jy_
+u2j|_
+D$ 9D$
+YY_^[
+D$ PQQ
+y Qj:3
+u-Wj-^
+D$ PQQ
+D$ PQQ
+y QjD3
+u+j1_
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+Fd9F\t
+FL9FDt
+F<9F4t
+D$ 9D$
+D$ 9D$
+t'hA6
+D$XSVW
+L$d_^[3
+t0Qj-Q
+{(QQj/
+t1j`^V
+K\;K`t(
+O$;Ctu#h
+y'Qjp
+{(QhDC
+t$,Vh
+t$4PQ
+t$,Vh
+t$4PQ
+t$8PQ
+|$8PQ
+D$$Qh
+t$4PQ
+t$8PQ
+|$8PQ
+D$$+D$ j
+y!QhB
+PPPPQ
+S\;S`t 
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+SVWjT
+9GHt!j,_
+C9G<u<9_4u%9GPt
+^<9^@t
+^@_^3
+L$(Qj
+Xf9D$(
+L$HQj
+Xf9D$Ht2
+L$8Qhb
+Xf9D$8t2
+Xf9D$
+@9G4uN
+LWPPPj
+Q$P9y4u
+D$ PQQ
+QQSV3
+YY_^[
+D$ 9D$
+L$(VW
+y"Qj4Q
+D$09D$(t
+u@js_
+y-Qj\3
+u'j(^
+u'j(^
+u'j(^
+u'j(^
+u'j(^
+u'j(^
+u'j(^
+u'j(^
+D$ PQQ
+D$ PQQ
+D$ PQQ
+yEQj{3
+QQSVW
+D$ PQQ
+D$ PQQ
+D$ PQQ
+D$ PQQ
+QQSVW
+yEj!^
+s,;s0tI
+y)jB_
+YY_^[
+YY_^[
+Qj!Q3
+97u<Q
+D$ 9D$
+YY_^[
+t(j!_
+D$ 9D$
+D$09D$(t
+u-jt_
+D$ Pj!
+u$jD_
+j<^V3
+D$0WP
+u!jb_
+D$4WP
+D$$9D$
+D$ 9D$
+D$(9D$ t
+D$ PQQ
+D$ PQQ
+QQSVW
+u/jM^
+y:QhW
+y"QhM
+t*hA6
+YY_^[
+w ;w$t;
+D$ 9D$
+u0j#_
+u$j&_
+D$89D$0t
+D$(9D$ t
+y&Qj43
+D$ 9D$
+D$09D$(t
+D$ PQQ
+;3tKh
+y Qj/h
+D$ PQQ
+y Qj-h
+Qj+h0
+u0j _
+u0j#_
+D$ 9D$
+D$09D$(t
+D$@9D$8t
+D$ PQQ
+y)j/_
+t=hA6
+y$jp^
+y)jz^
+C !K,
+D$(PS
+D$ ;D$$t
+L$(QP
+D$09D$(t
+yvQj#3
+D$09D$(t
+D$@9D$8t
+D$P9D$Ht
+D$@Pj
+D$@;D$D
+D$0Pj
+D$0;D$4tY
+D$(;D$,t
+L$0QP
+t$ PQ
+D$89D$0t hA6
+D$H9D$@t
+D$X9D$Pt
+D$h9D$`t
+D$ PQQ
+D$ PQQ
+u1jL^V
+QQSVW
+Xf;D$
+1f;0u
+RQPh@
+D$$EFF
+L$l_^[3
+ConvertWideStreamToMultiByte
+CreateVCardGen
+CreateCardParser
+CreateICalGen
+CreateXmlWriter
+CreateXmlReader
+WriteInputStreamToNetworkStream
+DownloadToVirtualStream
+EnableInProcTracingForProvider
+DavSyncProvider.dll
+DllCanUnloadNow
+DllGetClassObject
+ForceCalDavCollectionsListRefreshDuringNextSync
+HandleWebDavMeetingResponseForAppointment
+HandleWebDavMeetingResponseForMeetingNotification
+UpdateCalDavTrackingSchema
+UpdateGMailContactSyncPartner
+_vsnwprintf
+memcpy_s
+_strnicmp
+_purecall
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+_except_handler4_common
+_errno
+GetModuleFileNameA
+CreateSemaphoreExW
+HeapFree
+SetLastError
+ReleaseSemaphore
+GetModuleHandleExW
+WaitForSingleObject
+GetCurrentThreadId
+ReleaseMutex
+FormatMessageW
+GetLastError
+OutputDebugStringW
+WaitForSingleObjectEx
+OpenSemaphoreW
+CloseHandle
+HeapAlloc
+GetProcAddress
+CreateMutexExW
+GetCurrentProcessId
+GetProcessHeap
+GetModuleHandleW
+DebugBreak
+IsDebuggerPresent
+EventSetInformation
+LoadLibraryExW
+EventWriteTransfer
+EventUnregister
+InitOnceBeginInitialize
+InitOnceComplete
+EventRegister
+FreeLibrary
+DeleteCriticalSection
+RaiseException
+EnterCriticalSection
+LeaveCriticalSection
+InitializeCriticalSection
+CoCreateInstance
+MultiByteToWideChar
+WideCharToMultiByte
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetTickCount
+UuidCreate
+LoadStringW
+WinHttpCrackUrl
+WinHttpCreateUrl
+LocalFree
+FileTimeToLocalFileTime
+FileTimeToSystemTime
+GetLocalTime
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+EventActivityIdControl
+StringFromGUID2
+CoCreateGuid
+CreateStreamOnHGlobal
+SystemTimeToFileTime
+GetSystemTime
+CryptBinaryToStringA
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+OLEAUT32.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+RPCRT4.dll
+WINHTTP.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+CRYPT32.dll
+lstrcmpW
+api-ms-win-core-string-obsolete-l1-1-0.dll
+AggregateSessionSyncStats
+GetSessionSyncStats
+GetCurrentSyncStats
+AggregateAccountSyncStats
+InitializeSyncStatus
+SyncSqmUpdateStats
+InvalidateOAuthAccessTokenForPartnership
+GetOAuthHelperForAccount
+GetOAuthAccessTokenForPartnership
+ReadPasswordForPartnership
+SYNCUTIL.dll
+UsOidToContactUdmId
+UsOidToCalendarUdmId
+EcGlobalObjIdToUid
+CopyStream
+FileTimeToISO8601String
+UserDataTypeHelperUtil.dll
+ReportSyncProgress
+NetworkHelper.dll
+sprintf_s
+strrchr
+_set_errno
+strtol
+strchr
+wcschr
+strncpy_s
+iswcntrl
+_wcstoui64
+_ui64tow_s
+_wcsicmp
+_wcsnicmp
+_ultow_s
+_vscwprintf
+_vsnwprintf_s
+_wtoi
+wcstod
+wcstol
+_wcstoi64
+wcstoul
+_vscwprintf_p_l
+_vswprintf_p_l
+wcsstr
+tolower
+__CxxFrameHandler3
+RtlCaptureContext
+RtlReportException
+ntdll.dll
+HeapCreate
+HeapDestroy
+HeapCompact
+HeapValidate
+HeapSize
+HeapReAlloc
+InitializeCriticalSectionEx
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+WakeAllConditionVariable
+SleepConditionVariableSRW
+RegGetValueW
+LoadLibraryW
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+FormatPoomIdToString
+memcmp
+memcpy
+memmove
+memset
+WEVT_TEMPLATE
+MAPSX
+VMAP,
+ChangeType
+EventData
+P1_HResult
+P2_String
+P3_UInt32
+P1_HResult
+P2_String
+P3_UInt32
+EventData
+Prop_String
+Prop_String
+EventData
+Prop_Dword
+Prop_Dword
+EventData
+Prop_Id
+Prop_Id
+TEMP,
+EventData
+Prop_Id
+Prop_Dword
+Prop_Id
+Prop_Dword
+TEMP(
+EventData
+Prop_Id
+Prop_Bool
+Prop_Id
+Prop_Bool
+TEMP0
+v1Q Df
+EventData
+Prop_Id
+Prop_String
+Prop_Id
+Prop_String
+EventData
+Prop_Id
+Prop_String
+Prop_Dword
+Prop_Bool
+Prop_Id
+Prop_String
+Prop_Dword
+Prop_Bool
+EventData
+Prop_Id
+Prop_String
+Prop_Dword
+Prop_Id
+Prop_String
+Prop_Dword
+EventData
+Prop_Id
+Prop_String
+Prop_HResult
+Prop_Id
+Prop_String
+Prop_HResult
+TEMP$
+EventData
+Prop_Id
+Prop_String1
+Prop_String2
+Prop_Bool
+Prop_Id
+Prop_String1
+Prop_String2
+Prop_Bool
+TEMP(
+I_8+c
+EventData
+Prop_Id
+Prop_String1
+Prop_String2
+Prop_Dword
+Prop_Id
+Prop_String1
+Prop_String2
+Prop_Dword
+TEMP(
+EventData
+Prop_Id
+Prop_Type
+Prop_Id
+Prop_Type
+EventData
+Prop_Id
+Prop_Type
+Prop_Dword
+Prop_Id
+Prop_Type
+Prop_Dword
+EventData
+Prop_Id1
+Prop_Id2
+Prop_String
+Prop_Id1
+Prop_Id2
+Prop_String
+TEMP@
+EventData
+Prop_Guid
+Prop_HexInt32
+Prop_Guid
+Prop_HexInt32
+PRVAd
+Microsoft-Windows-MCCS-DavSyncProvider
+OPCOT
+win:Start
+win:Stop
+win:Error
+win:Warning
+win:Informational
+TASKp
+SPERF_TAG_DAV_ATTACHMENT_FETCHING
+Error
+Performance
+CommsService
+Warning
+StateTransition
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+DAV sync engine for contacts, calendar
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+DavSyncProvider
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+DavSyncProvider.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+WEVT_TEMPLATE
+en-US
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4
+5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4
+44585d5
+646@6X6p6
+747L7d7p7
+8$8<8H8`8l8
+9$909<9H9T9`9x9|9
+: :$:(:,:0:4:8:<:@:D:P:
+111V1v1
+2@2e2
+333X3{3
+4$4k4
+5@5e5
+636X6{6
+7*7M7p7
+8B8e8
+979`9}9
+:,:O:r:
+:!;D;g;
+<9<\<
+=(=V=q=
+>1>Q>u>{>
+3!313A3Q3
+5#525:5>5D5H5N5R5b5k5t5
+6#6)6-63676m6
+7>7N7S7~7
+8"8P8g8
+<.<R<o<x<
+=#=)=3===M=]=c=n=t=
+>H?M?_?}?
+1U1a1m1y1
+2$282H2U2
+3"3'3-3B3I3q3y3
+5!6S6
+:.;:;B;R;Z;o;w;
+<(<:<W<c<l<x<
+>8>A>M>U>g>
+>0?g?
+6%6K6\6
+717V7j7{7
+2N3t4
+5'5G5&6A6Q6a6q6
+7"7&7B7F7a7r7v7
+93999g9T:_:z:
+<*<k<
+=+=\=m=z=
+>@>`>v>
+?:?T?e?
+3K3c3m3
+3k4t4
+4;5B5j5
+6'6-62676>6F6V6
+:W;];b;i;
+;&<8<s<|<
+<?=I=
+3*3H3
+4Z4_4m4
+5&5<5B5V5_5h5n5
+6X6e6
+7Q7Y7_7y7
+8.898>8p8u8
+:H;U;w;};
+<(<.<2<;<?<x<
+?!?d?
+0h1t1
+1:2Q2Y2
+4-4M4
+4Y5i5
+5S6i6
+7q7x7}7
+9%929:9B9
+9#:m:z:
+<6<@<T<Z<^<g<k<
+=1=9=y=
+>C>]>
+?(?U?a?
+060r0
+11282=2j3}3
+5E5Q5
+606R6d6]7t7
+:/:S:
+;L<Y<
+=2>I>
+>M?o?~?
+0M0a0
+434}4
+5*5A5K5X5
+7 717w7}7
+7)8@8T8
+999?9F9S9r9x9
+<6<P<
+<R=i=p=w=
+>'>.>5>o>
+>0?G?O?W?
+0W0n0u0|0
+1,131:1t1
+1?2V2]2d2
+4'52575_5r5z5
+5H6j6
+7;7\7c7o7
+:):@:t:
+=5=L=W=
+=R>i>
+?3?f?z?
+071A1K1
+4"4<4
+555>5}5
+;+;0;
+<G=i=
+>3?U?r?
+1A1^1
+3-3J3
+3R4j4
+656R6
+6O7g7
+8%828F8x8
+9M9d9k9r9
+:2:::B:
+;[;r;y;
+=&=J=P=]=
+>&>,>9>]>c>p>
+?#?G?M?T?a?
+0*000=0a0g0t0
+1P1V1j1
+2<2B2V2w2}2
+3/353I3j3p3w3
+4)4/4C4d4j4~4
+5/5P5V5j5
+:):@:
+:A;i;
+;X<&=s=
+=5>u>
+4+4z4
+6R6y6
+7A7e7z7
+7A8e8z8
+8A9e9z9
+:O:t:
+;';L;c;
+=?=f=
+?5?L?~?
+010H0w0
+111H1t1
+2 2O2p2
+3K3p3
+3#4H4_4
+6;6b6
+:=:Y:n:s:
+<9<t<
+?S?i?
+0D0_0
+0(161U1g1
+3L4T4a4i4q4
+5`6t6
+6P7d7
+8*8D8N8[8
+919;9H9n9
+:=;p;
+;0<t<
+142K2R2Y2
+3#3`3w3
+354L4S4Z4
+5R5i5p5w5
+7L7V7
+;V;z;
+;$<J<i<
+?8?Q?
+000R0
+131v1
+6*6H6
+9 9}9
+:;:_:i:
+::;I;X;
+<$<I<l<x<
+>9?B?
+81G1V1
+1&242i2
+3#3E3
+5f5i7x7
+8(9=9T9
+: ;_;
+;9<D<X<a<{<
+=1=<=E=
+=1>o>
+0M0e0
+1<1D1R1j1
+3,3S3}3
+4)4J4g4
+5D5`5w5
+676N6e6
+7!7<7V7h7
+8.9E9l9
+9I:^:
+;#;9;F;^;
+;%<?<
+=>=\=
+=)>C>a>
+0P1b1v1
+1.2@2W2
+3/3J3^3t3
+3T4h4
+5)6<6r6
+7<7`7u7
+758L8{8
+929y9
+9%:c:
+;2<F<a<
+>?>F>o>
+1 1^1u1
+2 373N3
+6-6J6^6
+6W7p7
+868S8{8
+9@9\9~9
+;3;{;
+=8=\={=
+?D?V?
+040O0
+0g1q1
+2R2g2
+3\3u3
+6=6q6
+728K8
+:":&:2:}:
+;C<`<}<
+> >w>
+0'1@1b1q1
+2 2,272;2A2E2Q2u2
+203c3
+4*45494?4C4O4b4j4x4
+5M5X5
+6.6K6
+7'757A7L7P7V7Z7f7y7
+9':@:b:q:
+:/;k;s;
+=%=:=P=u=
+'0f0r0
+0-1E1u1
+2'343S3_3
+3N4v4
+4H5|5
+6"6L6
+7<8S8Z8a8
+9!9)919s9
+9B:[:c:
+;0;8;@;
+>1>Q>f>
+?$?H?a?
+0-0E0f0
+0<1M1
+242P2b2
+3H3k3
+4D4W4i4|4
+5'5E5\5
+6I6]6
+7Q7h7
+:a:f:
+:>;U;
+<6<N<v<
+=!>T>
+?B?Y?
+0#0o0
+2A2[2
+2J3w3
+4+4=4c4
+5*5f5{5
+6b6i6
+7"7>7S7
+9&9J9h9
+;&;V;x;
+<@<S<
+=#=w=
+>8>f>
+>;?m?
+0%0J0^0
+1%2D2
+2L3x3
+4I4e4
+5B5z5
+6D6[6
+7N7U7t7
+8I8`8g8n8
+9.969>9
+:?:b:t:
+;&;=;^;
+;#<:<q<
+===D=V=l=
+=1>H>
+0:1U1
+2"2)2c2z2
+213H3P3X3
+506K6
+7$7W7
+8'8m8
+9)9<9D9Q9Y9a9
+:B;];e;q;
+;:<s<
+=6=[=|=
+1m1x1
+1K2q2
+2-3P3U3
+4)414>4F4N4
+5&6X6s6
+9L9c9k9s9
+9$:;:C:K:
+>>>v>
+?"?I?\?z?
+0)0<0D0Q0Y0a0
+0p1w1
+1%2,2?2l2s2
+4b4y4
+4$575?5L5T5\5~5
+8#8*8e8~8
+8E9R9]9b9
+;G;N;a;s;
+<(<5<B<Z<l<
+=)=;=Y=m=t=
+?1?T?r?
+0*070K0}0
+0 1d1o1
+292K2
+3A3Y3t3
+4=4W4p4
+5)5w5
+6,6]6
+7P8{8
+;S;Y;f;
+>Z>r>
+1*1A1K1X1z1
+3&3.3
+7T8c8
+9'9l9
+9W:l:
+:';-;:;Y;_;s;
+;P<d<
+=*=A=K=X=
+> ?8?U?
+001D1
+1D2Y2
+5O6k6
+6=7H7X7
+= =?=E=Y=
+1=1R1_1~1
+1)2O2U2q2
+3f3y3
+6'646S6Y6m6
+7;8}8
+8M9R9
+:):6:U:[:o:
+;#;(;V;
+;/<8<E<d<j<~<
+=,=4=A=I=Q=
+>B?{?
+1s1y1
+1Y2l2t2
+5%5D5J5^5
+5:6M6U6b6j6r6#7
+8A8W8m8
+8+9:9E9J9
+:];"<q<
+=!='=;=e=
+>,>4>A>I>Q>
+>J?|?
+90P0X0
+1#101O1U1i1u1I2a2
+2+3A3R3l3
+3e4s4
+7*707D7
+8%8J8`8r8
+9%9-959
+:#:B:H:\:m:';>;q;
+>.?8?E?d?j?~?
+0J1Q1
+2*2k2
+3Y3s3
+5O5f5m5t5
+6:6@6M6
+868Q8l8
+:@;N;];b;
+; <4<p<
+<H=M=w=
+?<?_?m?
+070`091a1~1
+20282@2
+3C3Z3b3j3
+4/464=4w4
+455L5S5Z5
+5-6m6
+9$9`9
+:=;G;
+<+<v<
+=:=W=
+>$>C>b>
+&030B0M0X0_0g0r0y0
+2[2m2z2
+3f394H4S4X4
+5V6)787C7H7
+7#8q8
+8/9F9M9T9
+:L:c:j:q:
+;!;(;/;i;
+;+<1<><]<c<w<
+?>?H?
+20262C2s2x2
+3 343A3v3
+4"4g4x4
+5&5`5w5~5
+656<6C6
+:V;i;q;~;
+;3<I<V<u<{<
+=@>T>
+>C?`?}?
+#0=0J0i0o0
+4%4D4J4^4j4
+4=5L5W5\5
+6#7:7B7J7
+7"8/8N8T8h8
+:):1:9:
+;E;d;
+>@>s>
+>/?9?F?e?k?
+0 141p1
+3b3y3
+3-4D4L4T4
+5U5n5u5
+6)60676q6
+6/7F7M7T7
+8L8c8j8q8
+9!9(9/9i9
+9':>:E:L:
+;B<e<
+><?e?
+(050@0E0m0
+0:1V1
+4N4[4
+515l5s5
+6"6(6N6[6
+9'9x:
+:e;s;
+;W<^<
+=[=e=
+=0>B>h>m>
+5%5_5v5}5
+5-6D6L6T6
+7 7'7a7x7
+7"898A8I8
+939h9n9
+9&:H:Y:
+==>J>a>k>x>
+#010;0
+5#5*515n5
+566M6T6[6
+8;8}8
+9C9I9]9j9~9
+9.:a:u:
+:N;~;
+;1<S<
+?3?N?a?k?q?
+1*1A1K1X1
+4&4v4
+6'6:6P6c6m6s6
+7&898C8I8d8w8
+969I9S9Y9p9
+:?:U:f:
+:;;R;];w;
+>*>/>
+>E?^?c?
+1/141
+1J2c2h2
+3Q3h3o3v3
+464>4F4
+5(5;5O5b5
+6<6O6e6
+7#767L7i7|7
+8)8=8P8}8
+9$979d9w9
+:$:::[:n:
+<$<e<
+=B=U=]=j=r=z=
+>O?f?
+40K0R0Y0
+1!1)1k1
+162M2T2[2
+3/4Y4
+616:6N6X6
+7U7r7
+7-878
+809D9
+:!:+:8:l:
+<m<w<
+<5=D=T=Y=z=
+>$>`>
+?L?y?
+0)1R1_1~1
+1*232L2
+3`3t3
+3,4Y4
+546K6R6Y6
+7Q7h7o7v7
+8&8-848q8
+?/?B?J?W?_?g?
+0,1C1K1S1
+4A4Y4
+5%575@5L5i5
+5'6/6j6q6
+777A7O7]7d7r7y7
+8#8o8
+919:9F9U9~9
+:#:5:R:d:v:
+;%;.;:;K;
+;%<2<Q<W<k<x<
+>(>->
+1&1-1g1~1
+3F3P3z3
+4'41474J4]4g4m4
+5#585
+6*6V6i6q6~6
+7!7(7b7y7
+9L9_9
+:.:A:K:Q:d:w:
+;!;<;O;Y;_;r;
+<2<E<o<
+?2?8?L?X?
+0/040
+1]1j1
+2&2.2>2F2z2
+3)313T3g3o3|3
+5%5+5?5K5
+5P6d6
+6B7I7a7i7
+8#8/8I8Q8p8
+:8;R;l;
+<Q<h<o<v<
+=&=-=4=q=
+21292D2T2_2p2
+2!3.3;3K3
+5)595>5]5l5w5|5
+506c6
+6?7[7r7y7
+80878>8x8
+869M9T9[9
+:S:j:q:x:
+;+<]<
+</=K=
+>#>(>
+>*?9?I?N?m?
+0$0.0>0W0~0
+2.232n2v2
+2D3^3
+6<7M7Y7^7
+7%8<8C8J8
+:1:N:a:s:
+;Y<s<
+= >7>>>E>
+0,0?0N0k0~0
+0#151B1u1
+2^3x3
+4 4(4m4
+5.565C5K5S5
+7;7]7{7
+8&9g9
+9Q:Y:b:
+:U;~;
+<.<5<<<
+=!=P=
+=B>U>h>{>
+?4?;?I?P?
+1$2a2
+3J4a4
+595M5
+5+6G6s6
+617E7c7~7
+82888L8o8z8
+9R9]9q9
+:#:B:d:
+:";,;D;r;
+;`<t<
+<%=<=
+>a>g>s>z>
+>B?z?
+80@0D0L0P0X0\0d0h0p0t0|0
+1 1L1P1X1\1
+,0004080@0D0H0L0P0`0d0h0l0x0|0
+1D1l1
+0 0$0,000

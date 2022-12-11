@@ -1,0 +1,637 @@
+!This program cannot be run in DOS mode.
+BRich
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+ext-ms-win-tsf-inputsetting-l1-1-0.dll
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+lntdll.dll
+RtlNtStatusToDosErrorNoTeb
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+RtlRegisterFeatureConfigurationChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlNotifyFeatureUsage
+NtQueryWnfStateData
+NtUpdateWnfStateData
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+onecore\internal\sdk\inc\wil\Staging.h
+WilStaging_02
+windowsPE
+generalize
+specialize
+auditSystem
+auditUser
+oobeSystem
+oobeUser
+Software\Microsoft\Windows NT\CurrentVersion\UnattendSettings\International
+Unattended setting "%s" could not be found. error:(%u). Ignoring.
+Found unattend setting "%s" with value: "%s".
+System\CurrentControlSet\Control\MUI\Settings
+IntlOOBEUnattend
+IntlSetInputLocales
+intl.cpl
+Failed to load IntlSetInputLocales from intl.cpl.
+IntlUpdateSystemLocale
+Failed to load IntlUpdateSystemLocale from intl.cpl.
+The selected locale "%s" is an unexpected Unicode-only locale. The system locale will be set to UTF-8.
+IntlCopyDefaultUserLocale
+Failed to load IntlCopyDefaultUserLocale from intl.cpl.
+Succeed in setting current user locale to "%s".
+Failed to set location to %d. Error code is 0x%x.
+Succeed in setting location to %d.
+Failed in setting current user locale to %s. Error code is 0x%x
+Failed in copying locale settings to default user account/system acconts.  Error code: 0x%x
+Succeed in copying settings for current user locale "%s" to default user/system/new user accounts.
+No unattended setting for SystemLocale.  Use UserLocale value: "%s" to set system locale
+No unattended setting for InputLocale.  Try install default keyboard for UserLocale value: "%s"
+Install keyboard layouts: "%s" for "%s".
+Out of memory
+Setting UILanguage setting.
+UILanguage setting is not present.
+Unattend file cannot contain UILanguage setting for OS upgrades.
+Failed to set UILanguage value to %s. Error %d
+Setting UILanguage setting to %s succeded.
+System\CurrentControlSet\Control\MUI\UILanguages
+%s\%s
+DefaultFallback
+Trying to read the DefaultFallback or first available valid one from the registry for %s
+The Default fallback language value is not installed for %s (LIP)
+Failed querying language and fallback information about UILanguageSetting %s.
+Internal error while getting language information about UILanguageSetting %s.
+Failed querying default fallback or the first available fallback for UILanguage %s.
+Fallback (default or first available) is found: %s, for language %s
+Finished trying to locate default or first available fallback for %s
+Trying to build default fallback list for %s
+Finished trying to build default fallback list for %s
+Failed converting comma separated fallback string into a multi string.
+Validating passed in values for UILanguage and it fallbacks.
+No fallback information was passed in, will try to locate from system.
+Passed in 1st Fallback for UILanguage setting is INVALID. UILanguage :%s, falback: %s. Will try to get default or first available fallback
+UILanguage %s is LIP
+The specified fallback setting is not a valid installed language which is requirement for cases when UILanguage is a LIP. UILanguage: %s, fallback : %s
+Failed validating and constructing a fallback list.
+Succeeded validating and constructing a fallback list.
+Finished validating passed in values for UILanguage and it fallbacks.
+No value is present for UILanguage while value %s for UILanguageFallback was specified.
+UILanguage is not installed in the system: %s. error: %d
+A Fallback language %s is specified for UILanguage %s,which is incorrect since UILanguage is fully localised language.
+UILanguageFallback setting was incorrect and MuiUnattend failed to find applicable one: UILanguage %s, UILanguageFallback %s. error:%d
+Error %d setting %s as system UI language fallback.
+%s is set as system UI language fallback.
+UILanguage %s is a LIP.
+Error %d building System UI language fallback for %s
+%s\System32
+%systemdrive%
+Users
+Input locale is set for user:%s, value:%s.
+Failed setting input locale for user:%s, value:%s.
+User locale is set for user:%s, value:%s.
+Failed setting user locale for user:%s, value:%s.
+Install keyboard layouts: "%s" for "%s" into user "%s".
+Applying user settings to all user (non-system) accounts.
+Failed getting windows directory.
+Internal error in MuiUnattend.exe GC. Failed to initialize NLSLibrary.
+Failed getting name of the current user.
+Failed getting users root.
+Failed collecting all user names.
+%s\%s\ntuser.dat
+Failed to load hive for user:%s, setting user locale and input locale values will be skipped for this user.
+Applying settings to user (non-system) accounts succeeded.
+Applying settings to user (non-system) accounts failed.
+Starting MuiUnattend.exe GC
+Invalid number:%d of parameters passed in. Must be one parameters, indiciating the value to be set.
+parameters: <specialize | oobeSystem>
+muiunattend is called with pass: %s
+unrecognised OOBE pass name was passed in: %s.
+UILanguage
+UILanguageFallback
+Systemlocale
+UserLocale
+InputLocale
+Failed appending user locale to the input locale string.
+Failed fixing/expanding input locale string
+Setting system locale using unattended setting SystemLocale:"%s".
+Failed to set system locale to "%s".
+Set system locale to "%s" successfully.
+Setting input locale using unattended setting InputLocale:"%s" and apply the same setting to default user accont/system accounts/new user account.
+Failed to set InputLocale or apply to default user accont/system accounts/new user account.
+Set input locale to "%s" and apply the same setting to default user accont/system accounts/new user account successfully.
+Setting user locale to using unattended setting UserLocale:"%s", and try apply the same settings to default user accont/system accounts/new user account.
+Failed to set user locale to "%s", or fail to apply the same settings to default user accont/system accounts/new user account. Error code is 0x%x.
+Set user locale to "%s" successfully and apply the same settings to default user acconts/system account/new user account.
+Writing OOBE handshake information failed, error code: %d
+Setting OOBE handshake information succeeded.
+Exiting MuiUnattend.exe GC
+Local\SM0:%lu:%lu:%hs
+Default
+%s\%sControl Panel\International
+SeRestorePrivilege
+Locale
+LocaleName
+s1159
+s2359
+sCurrency
+sDate
+sDecimal
+sGrouping
+sLanguage
+sList
+sLongDate
+sMonDecimalSep
+sMonGrouping
+sMonThousandSep
+sNativeDigits
+sNegativeSign
+sPositiveSign
+sShortDate
+sThousand
+sTime
+sTimeFormat
+sShortTime
+sYearMonth
+iCalendarType
+iCountry
+iCurrDigits
+iCurrency
+iDate
+iDigits
+NumShape
+iFirstDayOfWeek
+iFirstWeekOfYear
+iLZero
+iMeasure
+iNegCurr
+iNegNumber
+iPaperSize
+iTime
+iTimePrefix
+iTLZero
+sCountry
+%s\%sControl Panel\International\Geo
+Nation
+%s\Control Panel\International
+User Profile
+%s\locale.nls
+%s\system32\locale.nls
+ntuser.dat
+%s\%s\%s
+SeBackupPrivilege
+Upgrade
+SYSTEM\Setup
+WdsSetupLogInit
+WdsGenericSetupLogInit
+WdsSetupLogDestroy
+WdsSetupLogMessageA
+WdsSetupLogMessageW
+ConstructPartialMsgVA
+ConstructPartialMsgVW
+CurrentIP
+%windir%\Panther\UnattendGC
+wdscore.dll
+<unknown>
+[%S] %S
+UnattendLogWV
+onecore\base\ntsetup\lib\unattendlog\src\unattendlog.cpp
+\\?\GLOBALROOT
+\\?\Volume{
+\\?\UNC
+\Device\HarddiskVolume
+\Device\Harddisk
+Partition
+CreatePath: Unable to create [%s]; GLE = 0x%x
+\\?\UNC\
+MUIUnattend.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$yd
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+97vTS
+90t-S
+QQSVW
+D$(PQ
+T$0QQV
+L$4^3
+FxVhp
+XL93uIW
+QQSWh
+SSj^W
+YYjW^
+Sh@!@
+PVVSj
+t@j2^ShP$@
+PPPWj
+PPPWj
+Shp&@
+jWX_[
+'jW_V3
+VVVSj
+VVVPj
+Ph`,@
+PQQSj
+Shx.@
+tWShD0@
+SVhx0@
+XWSQP
+u2jW^
+D$4Ph<5@
+6h`5@
+t+Shx:@
+93uHWV
+93uHWV
+&PWSV
+M QRSP
+s(j j
+tsSj;V
+jWX_^[
+jWX_[
+QQSVWjU
+jbSVVW
+xwWhDH@
+x VVj
+x"WWj
+jd_f99u
+t3f;E
+t-f;E
+t2f;E
+t,j'[f;
+j'Xf9
+j'^f;
+^f90u
+t9f;E
+t3f;E
+t-f;E
+t8f;E
+t2f;E
+t,j'[f;
+j'Xf9
+j'^f;
+^f90u
+tJj'_
+Ht5f;
+tMj'_
+Ht/f;
+tVj'_
+st2f;
+9f;:u
+tkhxI@
+WVh,J@
+QQSWh4J@
+tKWS3
+G.j\P
+j:Xf;F
+j:Xf;F
+j\[SV
+tQVVVW
+t,WVS
+j\Zf;Ty
+Y__^[
+InstallLayoutOrTip
+SetDefaultLayoutOrTip
+QueryLayoutOrTipString
+InstallLayoutOrTipUserReg
+wprintf
+_vsnwprintf
+memcpy_s
+_wcsicmp
+??3@YAXPAX@Z
+_purecall
+wcschr
+memmove_s
+_XcptFilter
+__p__commode
+_amsg_exit
+__wgetmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+_except_handler4_common
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+_controlfp
+GetModuleFileNameA
+RegQueryValueExW
+CreateSemaphoreExW
+HeapFree
+SetLastError
+EnterCriticalSection
+ReleaseSemaphore
+GetModuleHandleExW
+ExpandEnvironmentStringsW
+GetLocaleInfoEx
+GetUserDefaultLocaleName
+CompareStringOrdinal
+RegOpenKeyExW
+LeaveCriticalSection
+InitializeCriticalSectionEx
+WaitForThreadpoolTimerCallbacks
+WaitForSingleObject
+GetCurrentThreadId
+RegSetValueExW
+ReleaseMutex
+GetUserNameExW
+GetSystemDefaultLocaleName
+FormatMessageW
+GetLastError
+SetUserGeoID
+ReleaseSRWLockExclusive
+OutputDebugStringW
+RegCreateKeyExW
+CloseThreadpoolTimer
+AcquireSRWLockExclusive
+WaitForSingleObjectEx
+OpenSemaphoreW
+CloseHandle
+SetThreadpoolTimer
+ReleaseSRWLockShared
+CreateThreadpoolTimer
+LoadLibraryW
+HeapSetInformation
+HeapAlloc
+GetWindowsDirectoryW
+GetProcAddress
+CreateMutexExW
+AcquireSRWLockShared
+DeleteCriticalSection
+GetCurrentProcessId
+GetProcessHeap
+GetModuleHandleW
+FreeLibrary
+RegCloseKey
+LocaleNameToLCID
+DebugBreak
+IsDebuggerPresent
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+SspiCli.dll
+api-ms-win-core-localization-l1-2-2.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+NlsUpdateLocale
+api-ms-win-core-localization-private-l1-1-0.dll
+RtlGetUILanguageInfo
+RtlNtStatusToDosError
+RtlpSetPreferredUILanguages
+ntdll.dll
+_wcsnicmp
+wcsncmp
+_vsnprintf
+wcsrchr
+RegDeleteValueW
+OpenProcessToken
+CreateFileW
+UnmapViewOfFile
+RegEnumKeyExW
+CreateFileMappingW
+MapViewOfFile
+AdjustTokenPrivileges
+LookupPrivilegeValueW
+LoadLibraryExW
+FindFirstFileW
+FindNextFileW
+FindClose
+GetFileAttributesExW
+RegLoadKeyW
+RegUnLoadKeyW
+GetFileAttributesW
+PrivilegeCheck
+GetModuleFileNameW
+InitializeCriticalSection
+CreateDirectoryW
+GetFullPathNameW
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+RegDeleteKeyW
+api-ms-win-core-registry-l2-1-0.dll
+RtlAllocateHeap
+RtlFreeHeap
+memcmp
+memcpy
+memmove
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity
+    version="1.0.0.0"
+    processorArchitecture="x86"
+    name="Microsoft.Windows.MUI.MuiUnattend"
+    type="win32"
+    />
+  <description>MUI setup GC(generic command) for setting international settings during OS install</description>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel
+            level="asInvoker"
+            uiAccess="false"
+                />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+MUI unattend action
+FileVersion
+10.0.22621.436 (WinBuild.160101.0800)
+InternalName
+MuiUnattend.exe
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+MuiUnattend.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.436
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0
+1 1$1(1,101<1@1
+1!1B1F1L1P1V1Z1v1
+6C6s6
+6"7:7R7m7
+8#8,8<8E8U8^8y8
+:@:M:W<
+>`>l>t>
+?2?<?L?V?`?r?
+252>2J2R2b2x2
+3C3L3R3W3\3c3k3
+4 4.4:4B4d4
+7!7x7
+;P<y<
+=2>]>
+0%1J1
+1D3K3
+<%</<><[<a<j<s<}<
+>.>E>`>g>
+2^3r3
+4#4+4A4I4
+5.5H5n5
+6#6+616
+61777e7
+8'9O9Z9~9
+:3:G:Q:a:r:
+;%;6;G;\;u;
+<%<3<H<^<
+=<=S=m=
+=6>=>
+><?A?z?
+0/0C0N0V0s0z0
+1"1)191C1`1g1s1
+2+373C3O3d3n3t3
+3w4~4
+6G6b6i6|6
+6]7{7
+748;8H8_8
+8_9f9
+:C:W:_:m:v:
+; ;D;W;^;r;
+;"<Q<n<
+=$=m=
+=d>i>
+?'?.?C?
+070J0S0v0
+1E1\1
+2-2<2K2_2i2s2}2
+2a3h3
+3$434U4l4r4
+6*606^6
+8)8/858;8A8G8~:
+>#>+><>D>\>}>
+?4?A?J?V?
+1.171\1
+2^2n2
+3$3<3O3X3d3q3
+7>8J8k8u8
+9+9[9b9
+9C:h:
+=+=w=
+>7>=>
+?0?N?l?
+0 0>0\0z0
+1.1L1j1
+2#2B2a2
+3:3Y3x3
+404G4]4
+4?5O5W5r5
+6(6B6l6
+8,82888H8S8
+8)9A9r9
+94:@:g;
+576o6
+6"7W7d7
+8#858@8S8[8l8
+9?9F9\9
+9 :.:Q:Z:n:
+;);/;5;:;G;M;S;X;a;g;m;r;{;
+<$<+<E<K<P<c<v<
+="=)=.=3=:=n=
+=`>g>|>
+? ?3?8?C?M?^?e?r?
+1/1X1b1
+3Q3d3~3
+464R4
+727D7K7]7g7p7
+9?9Q9X9g9{9
+<=<F<L<T<Z<x<
+=6=X=c=u=}=
+>$>*>4>S>Y>c>i>r>w>
+?!?,?b?g?
+0#0+030;0G0P0U0[0e0o0
+1(101T1]1
+2!2'262C2
+2x3}3
+5#525=5Z5
+787X7t7x7

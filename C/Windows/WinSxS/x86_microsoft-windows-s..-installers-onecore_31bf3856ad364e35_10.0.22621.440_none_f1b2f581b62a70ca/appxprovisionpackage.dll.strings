@@ -1,0 +1,595 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+\Registry\Machine\Software\Microsoft\Windows\CurrentVersion\Appx\PackageVolumes\1
+\Registry\Machine\Software\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
+Applications
+Staged
+SISPath
+AppxProvisionPackage
+AppxProvisionPackage Installer
+onecore\base\wcp\plugins\appxprovisionpackageai\appxprovisionpackageai.cpp
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::Install
+Not-null check failed: Services
+Not-null check failed: Component
+Not-null check failed: Success
+mainPackageVersionForSupersedence
+provisionSourceIsBundle
+licenseFile
+packageType
+fullName
+AppxProvisionPackage Installer called with: fullName: {fullName}
+packageType: {packageType}
+licenseFile: {licenseFile}
+provisionSourceIsBundle: {provisionSourceIsBundle}
+mainPackageVersionForSupersedence: {mainPackageVersionForSupersedence}
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::ProvisionLicense
+No oemlicense.dll on the image. Unable to provision license: {path}.
+HrAddAppxLicense
+this->HrAddAppxLicense
+Provisioned license file: {path}.
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::WriteAppxProvisioningXml
+{path} does not exist. Looking in system32
+{path} does not exist. Creating new appxProvisioning.xml.
+GetTempFileNameW(tempPath, L"App", 0, this->tempFileName)
+MoveFileExW( this->tempFileName, appxProvisioningFilePath, 0x00000001 | 0x00000002)
+Wrote {fullName} to appxprovisioning.xml to physical path: {path}.
+Framework
+Bundle
+Resource
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::WriteApplicationsKey
+applicationsRtlKey->EnumerateKeys(0, &applicationsIterator)
+applicationsIterator->Next(Windows::MakeVector(KeyInfos), &cFetched)
+keyName
+Applications Key {keyName} is longer than a package full name! Ignoring key.
+Applications Key in the same family: {keyName} will be replaced.
+packageRtlKey->DeleteRecursively(0, nullptr)
+%s\%s\%s
+Created Key in AppxAllUserstore Applications: {keyName} with path: {path}.
+Created Key in AppxAllUserstore Staged: {keyName} with path: {path}.
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::StagePackage
+ConvertStringSecurityDescriptorToSecurityDescriptorW(sddl, 1, &pSecurityDescriptor, nullptr)
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::TransferFile
+GetSecurityDescriptorDacl(pSecurityDescriptor, &bDaclPresent, &ppDacl, &bDaclDefaulted)
+disposition
+fileName
+Transferred file {fileName} success with disposition {disposition}.
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::OpenWindowsAppsDirectory
+Searching for existing packages of this form: {path} in the single instance store.
+existingFullName
+Enumerated package {existingFullName} in single instance store
+directory
+Ignoring {directory} in single instance store. It is longer than a package full name's max length
+Package already exists in single instance store, so we won't provision it
+Ignoring {existingFullName} in single instance store; failed to convert to package ID: {hr}
+resource
+version
+Version of existing package is {version} resource: {resource}
+Existing package {existingFullName} is newer than this package to be provisioned {version}, so we won't provision the package
+Windows::WCP::AppxProvisionPackage::AppxProvisionPackageInstaller::Uninstall
+O:SYG:SYD:AI(A;ID;0x1200a9;;;S-1-15-2-1)(A;ID;0x1200a9;;;BU)(A;ID;FA;;;SY)(A;ID;0x1200a9;;;BA)(A;ID;0x1200a9;;;LS)(A;ID;0x1200a9;;;NS)
+O:SYG:SYD:AI(A;OICI;0x1200a9;;;BU)(A;OICI;0x1200a9;;;S-1-15-2-1)(A;ID;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CIIOID;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;ID;FA;;;SY)(A;OICIIOID;GA;;;SY)(A;OICIID;0x1200a9;;;BA)(A;OICIID;0x1200a9;;;LS)(A;OICIID;0x1200a9;;;NS)
+O:SYG:SYD:AI(A;OICIID;0x1200a9;;;%s)(A;OICIID;0x1200a9;;;%s)(A;OICIID;0x1200a9;;;BU)(A;ID;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CIIOID;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;ID;FA;;;SY)(A;OICIIOID;GA;;;SY)(A;OICIID;0x1200a9;;;BA)(A;OICIID;0x1200a9;;;LS)(A;OICIID;0x1200a9;;;NS)
+O:BAG:SYD:AI(A;OICI;0x1200a9;;;BU)(A;OICI;0x1200a9;;;%s)(A;OICI;0x1200a9;;;%s)(A;ID;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CIIOID;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;ID;FA;;;SY)(A;OICIIOID;GA;;;SY)(A;OICIID;0x1200a9;;;BA)(A;OICIID;0x1200a9;;;LS)(A;OICIID;0x1200a9;;;NS)
+$(runtime.windows)\ServiceProfiles\LocalService\AppData\Local\Microsoft\ClipSVC\Import
+$(runtime.windows)\system32\oemlicense.dll
+$(assembly.path)
+$(runtime.system32)\AppxProvisioning.xml
+$(runtime.programData)\Microsoft\Windows\AppxProvisioning.xml
+$(runtime.windows)
+%SYSTEMDRIVE%\Program Files\WindowsApps
+AppxManifest.xml
+AppxMetadata\AppxBundleManifest.xml
+onecore\base\appmodel\common\widestring.cpp
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+onecore\base\appmodel\common\stringbuilder.cpp
+%|fUN<
+m:AppxProvisionList
+m:EndOfLife/m:Package
+m:Provisioned/m:Package
+onecore\base\appmodel\appxprovisionpackage\src\appxprovisionreader.cpp
+http://schemas.microsoft.com/appx/2013/appxprovisionpackage
+m:EndOfLife
+m:Provisioned
+m:Package
+@FullName
+@FamilyName
+AppxProvisionList
+EndOfLife
+Provisioned
+Package
+FullName
+FamilyName
+ProvisionSourceIsBundle
+PackageType
+IsLOBApp
+bundle
+framework
+resource
+onecore\base\appmodel\appxprovisionpackage\src\appxprovisionwriter.cpp
+version="1.0" encoding="utf-8"
+@ProvisionSourceIsBundle
+@PackageType
+@IsLOBApp
+onecore\base\appmodel\appxprovisionpackage\src\appxprovisionpackage.cpp
+xmlns:m="http://schemas.microsoft.com/appx/2013/appxprovisionpackage"
+m:AppxProvisionList/m:Provisioned/m:Package/@FullName
+m:AppxProvisionList/m:EndOfLife/m:Package/@FamilyName
+<?xml version="1.0" encoding="utf-8"?><xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/appx/2013/appxprovisionpackage" xmlns="http://schemas.microsoft.com/appx/2013/appxprovisionpackage" xmlns:m="http://schemas.microsoft.com/appx/2013/appxprovisionpackage" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="AppxProvisionList">  <xs:complexType>    <xs:all>      <xs:element name="EndOfLife" type="CT_EndOfLife" minOccurs="0"/>      <xs:element name="Provisioned" type="CT_Provisioned" minOccurs="0"/>    </xs:all>  </xs:complexType>  <xs:unique name="Package_FamilyName">    <xs:selector xpath="m:EndOfLife/m:Package"/>    <xs:field xpath="@FamilyName"/>  </xs:unique>  <xs:unique name="Package_FullName">    <xs:selector xpath="m:Provisioned/m:Package"/>    <xs:field xpath="@FullName"/>  </xs:unique></xs:element><xs:complexType name="CT_EndOfLife">  <xs:sequence>    <xs:element name="Package" maxOccurs="unbounded">      <xs:complexType>        <xs:attribute name="FamilyName" type="ST_FamilyName" use="required"/>      </xs:complexType>    </xs:element>  </xs:sequence></xs:complexType><xs:complexType name="CT_Provisioned">  <xs:sequence>    <xs:element name="Package" maxOccurs="unbounded">      <xs:complexType>        <xs:attribute name="FullName" type="ST_FullName" use="required"/>        <xs:attribute name="PackageType" type="ST_PackageType"/>        <xs:attribute name="ProvisionSourceIsBundle" type="xs:boolean"/>        <xs:attribute name="IsLOBApp" type="xs:boolean"/>      </xs:complexType>    </xs:element>  </xs:sequence></xs:complexType><xs:simpleType name="ST_FamilyName">  <xs:restriction base="xs:string">    <xs:minLength value="17"/>    <xs:maxLength value="64"/>  </xs:restriction></xs:simpleType><xs:simpleType name="ST_FullName">  <xs:restriction base="xs:string">    <xs:minLength value="30"/>    <xs:maxLength value="127"/>  </xs:restriction></xs:simpleType><xs:simpleType name="ST_PackageType">  <xs:restriction base="xs:string">    <xs:enumeration value="resource"/>    <xs:enumeration value="framework"/>    <xs:enumeration value="bundle"/>  </xs:restriction></xs:simpleType></xs:schema>
+onecore\base\appmodel\appxprovisionpackage\src\commonhelpers.cpp
+NewParser
+SelectionNamespaces
+false
+onecore\base\appmodel\appxprovisionpackage\src\appxprovisionpackageenumerator.cpp
+)onecore\base\appmodel\package\packagesid.cpp
+arm64
+x86a64
+neutral
+unknown
+com1.
+com2.
+com3.
+com4.
+com5.
+com6.
+com7.
+com8.
+com9.
+lpt1.
+lpt2.
+lpt3.
+lpt4.
+lpt5.
+lpt6.
+lpt7.
+lpt8.
+lpt9.
+.xn--
+onecore\base\appmodel\runtime\src\monikerinternal.cpp
+1234567890abcdefghjkmnpqrstvwxyzABCDEFGHJKMNPQRSTVWXYZ
+onecore\base\appmodel\common\autocotaskmemstring.cpp
+onecore\base\appmodel\common\sidhelper.cpp
+onecore\base\appmodel\common\cryptoprovider.cpp
+SHA256
+ObjectLength
+HashDigestLength
+0123456789abcdefghjkmnpqrstvwxyz
+BCryptOpenAlgorithmProvider
+BCryptCloseAlgorithmProvider
+BCryptGetProperty
+BCryptCreateHash
+BCryptHashData
+BCryptFinishHash
+BCryptDestroyHash
+Bcrypt.dll
+onecore\base\appmodel\common\bytebuffer.cpp
+appxprovisionpackage.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.xdata$x
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.rsrc$01
+.rsrc$02
+D$HPQ
+D$LPj/
+D$4h`
+t$<Ph
+t$@Ph
+t$PPh
+L$TQj
+QQSVW
+_^[Y]
+v0h,1
+v hT1
+v hl1
+yAVhX2
+:f;>u
+:f;>u
+:f;>u
+2f;1u
+9f;:u
+ueRhtJ
+jWX^]
+HPj@X+
+j_Yf;
+j_Xf;
+j_Xf;
+j_Xf;
+jWX_^[
+j_Zf;
+jWX_^[
+j.Xf;
+PVj_Y
+0f97t#
+_^[Y]
+PSjOZ
+RRRPQ
+QQSVW
+VVh O
+Y__^[
+appxprovisionpackage.DLL
+DllCanUnloadNow
+DllCsiGetHandler
+_purecall
+_wcsicmp
+_vsnwprintf
+_vsnwprintf_s
+_XcptFilter
+_amsg_exit
+malloc
+_initterm
+msvcrt.dll
+_except_handler4_common
+DeleteFileW
+FreeLibrary
+LoadLibraryExW
+GetProcAddress
+GetLastError
+GetFileAttributesW
+GetTempFileNameW
+MoveFileExW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+GetSecurityDescriptorDacl
+DisableThreadLibraryCalls
+DeleteCriticalSection
+InitializeCriticalSection
+HeapDestroy
+CompareStringOrdinal
+OutputDebugStringW
+GetCurrentThreadId
+FormatMessageW
+IsDebuggerPresent
+TerminateProcess
+GetCurrentProcess
+Sleep
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+QueryPerformanceCounter
+GetCurrentProcessId
+GetSystemTimeAsFileTime
+GetTickCount
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+OLEAUT32.dll
+RtlRaiseStatus
+RtlAllocateHeap
+RtlReAllocateHeap
+RtlFreeHeap
+ntdll.dll
+?RtlTraceVa@Rtl@WCP@Windows@@YIXKKPAU_RTL_TRACING_FACILITY@123@QBDKPAD@Z
+?RtlTraceFormat_PCFOUR_PART_VERSION@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCbool@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_PCWSTR@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+GetTemporaryPath
+?RtlTraceFormat_PCLUNICODE_STRING@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlInitLUnicodeStringFromNullTerminatedString
+RtlConvertWin32FilePathToNtFilePath
+RtlCombineNtPathSegments
+RtlSplitNtPath
+?SilCreateDirectories@Rtl@Windows@@YGJPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@@Z
+?RtlTraceFormat_PCULONG@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlSplitLUnicodeString
+RtlAppendLUnicodeStringToLUnicodeString
+?RtlTraceFormat_PCHRESULT@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+RtlReallocateLUnicodeString
+ConvertNtStatusToHResult
+RtlFreeLUnicodeString
+RtlFreeLBlob
+RtlReportErrorOrigination
+?RtlGetFacilityTracingFlags@Rtl@WCP@Windows@@YIKPAU_RTL_TRACING_FACILITY@123@@Z
+WCP.dll
+_wcsnicmp
+memcpy_s
+CoTaskMemFree
+CoCreateInstance
+CoTaskMemAlloc
+api-ms-win-core-com-l1-1-0.dll
+RtlFreeUnicodeString
+RtlInitUnicodeString
+RtlAllocateAndInitializeSid
+RtlDowncaseUnicodeString
+RtlFreeSid
+RtlConvertSidToUnicodeString
+memcpy
+memmove
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+CSI AppX Provision Package Plugin
+FileVersion
+10.0.22621.440 (WinBuild.160101.0800)
+InternalName
+appxprovisionpackage.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+appxprovisionpackage.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.440
+VarFileInfo
+Translation
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1|1
+2$2,242<2D2L2T2\2d2l2t2|2
+3$3,343<3D3L3T3X3\3`3d3h3l3p3
+404D4
+3,3]3j3p3|3
+4*4U4w4
+5K5z5
+6/7h7
+8+868D8T8c8
+8'9,93989
+:s;x;
+<'<R<]<
+>&>4>L>\>p>
+0\0j0y0
+1&101D1J1X1_1
+4)434G4M4[4b4t4
+5A5G5L5s5
+6 6%6
+6!707Q7
+7.8=8}8
+9!9o9
+:?:Z:e:
+;4;?;c;n;
+<5=?=Y=j=~=
+>E>T>
+071m1
+3#3[3j3
+4)535D5W5g5{5
+6=6L6
+6)777F7i7r7
+8A8P8
+999W9m9|9
+:1:S:m:
+>)>.>
+>(?G?j?
+2#2)232d2
+2,3s3
+374?4Q4
+4-5t5
+676=6N6e6o6w6
+7"7(71777>7D7J7P7V7i7s7
+8@8F8r8
+;,;c;{;
+< <-<D<N<_<i<x<
+?&?-?B?h?
+0G0_0w0
+2%2:2B2O2W2j2}2
+3&323S3e3
+7Y8~8
+9R9g9q9
+9H;R;d;
+>$?z?
+80B0T0
+2'222\2
+3C3T3u3
+4-4H4]4
+4.575H5z5
+707S7X7}7
+888F8p8
+8E9R9^9s9
+:3:O:
+<P<f<
+=O=X=m=s=
+> >'>[>
+?@?G?]?
+0c0z0
+0(121D1i1
+3%3.3N3T3]3
+3N4q4
+5-5D5a5x5
+6*6>6G6V6n6
+6N7e7
+8i8t8
+9*909a9z9
+:(:J:n:
+;3;=;
+;R<~<
+=;=S=s=~=
+=C>[>
+>C?|?
+!070`0g0}0
+191O1l1
+2'2:2[2b2
+6*6U6
+7&7J7X7h7
+7]8n8X9b9t9
+9+:8:K:V:
+;Q;k;
+;?<b<
+=`=g=
+>8>?>v>
+:Q:^:
+<$<,<q<
+="=\=q=
+=S>e>
+>%?7?S?
+1B1w1|1
+2*2G2P2V2w2
+3#3(343E3M3`3l3t3
+3!484M4q5
+7(7.747:7@7F7M7T7[7b7i7p7w7
+868<8B8H8N8T8[8b8i8p8w8~8
+;";*;9;E;b;
+;#</<;<T<X<`<d<l<p<
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+210902182341Z
+220901182341Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+9Ocr4
+Ge]L*
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+229879+4675790
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+jFtg)]
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+ q;<n
+,7tmBqqF5R+pZ50mLoE6RTDn3ftIdh1LZl/YEjzLIVU4=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+~hB.w
+h[j?m9
+20220720035715.683Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:7880-E390-80141%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+220302185123Z
+230511185123Z0
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:7880-E390-80141%0#
+Microsoft Time-Stamp Service0
+qvv@!
+7@+]y
+(.Y>Y
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+zLkE0
+1^h~#{
+oxEQq6
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Operations Puerto Rico1&0$
+Thales TSS ESN:7880-E390-80141%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220720064036Z
+20220721064036Z0w0=
+1/0-0
+1(0&0
+wZ'^3
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+&]@m(6

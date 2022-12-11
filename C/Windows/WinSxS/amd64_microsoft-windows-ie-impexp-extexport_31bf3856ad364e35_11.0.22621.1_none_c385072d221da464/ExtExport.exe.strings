@@ -1,0 +1,486 @@
+!This program cannot be run in DOS mode.
+#Richm
+.text
+`.rdata
+@.data
+.pdata
+@.rsrc
+@.reloc
+q0R^G'
+D$ I;
+p0R^G'
+q0R^G'
+u*9Q<|%
+HcA<H
+f9H\u
+LcA<E3
+HcQ<H
+\$ UH
+ H3E H3E
+D$HE3
+t&H9H
+l$ VWAWH
+tGL9I
+H99t/H9
+t&H9y
+L$ SVWAVH
+(A^_^[
+UWAVH
+f9,Hu
+x AVH
+fD9t]
+VWAVH
+f9,_u
+f9,_u
+H!|$0
+H SVW
+f9<Au
+H SVW
+f9<Au
+\$ fI
+*D$XH
+l$ VWAUAVAWH
+fD9<Hu
+fF9<@u
+L$8H3
+A_A^A]_^
+x AVH
+t"fA9.t
+H USVWATAVAWH
+fF9<@u
+fF9<Gu
+A_A^A\_^[]
+UWATAVAWH
+fD90t
+A_A^A\_]
+fB9<Au
+fB9<Au
+fA9<Ju
+f9<Ku
+fA9<Cu
+UVWATAUAVAWH
+A_A^A]A\_^]
+VWAVH
+fE;tA
+y H;S
+ A^_^
+p UWAVH
+|$ UATAUAVAWH
+A_A^A]A\]
+L$`H3
+L$xE3
+UWAVH
+l$ VWAVH
+D$0E3
+D$(E3
+UVWATAUAVAWH
+fE94Gu
+D$0L+
+A_A^A]A\_^]
+UWAVH
+D$ E3
+K SVWH
+l$(E3
+t$ UWATAVAWH
+D9d$(|
+D$,D8%
+t(D8%~
+UVWAVAWH
+D9|$(
+t(D8=
+A_A^_^]
+x AVH
+t$ UWAVH
+x AVH
+\$ UVWAVAWH
+t,D8=
+L9{Hu
+A_A^_^]
+D$xE3
+D$HE3
+T$8H!|$8
+D$@E3
+\$ VWAVH
+D$0H;
+UVWATAUAVAWH
+ty@8=
+t"@8=ht
+fA9>u
+@A_A^A]A\_^]
+L$ SWH
+L$XH+
+UVWATAUAVAWH
+D$@H+
+L$@fD
+A_A^A]A\_^]
+UVWATAUAVAWH
+.u&fA9F
+ tRH;
+?.u+H
+fD9$Cu
+fF9$hu
+s#D9e
+fD9#u
+A_A^A]A\_^]
+p WAVAWH
+fA9<Fu
+f9<Cu
+ A_A^_
+t$ WH
+UVWATAUAVAWH
+~HL9V@t
+H9/sRH
+D$`E3
+tBfE9
+ A_A^A]A\_^]
+x AVH
+uPH9i
+D$@L+
+)L$0A
+L$PH3
+x UAVAWH
+T$0H+
+L$0fD
+HcD$$HcL$ H
+A_A^]
+@SVWH
+f94Au
+UVWATAUAVAWH
+fD9!u
+D$0H;
+A_A^A]A\_^]
+f9sbu
+f9,Yu
+%s\%s
+sqlite3_open
+sqlite3_open_v2
+sqlite3_open16
+sqlite3_exec
+sqlite3_free
+sqlite3_close
+sqlite3_prepare_v2
+sqlite3_prepare16_v2
+sqlite3_column_count
+sqlite3_column_int
+sqlite3_column_int64
+sqlite3_column_text
+sqlite3_column_text16
+sqlite3_step
+sqlite3_reset
+sqlite3_finalize
+mozcrt19.dll
+sqlite3.dll
+mozsqlite3.dll
+select b.id, b.title, b.dateAdded, b.lastModified, b.type, b.fk, b.position from moz_bookmarks as b where b.parent=%d order by b.position
+select b.id, b.title, b.dateAdded, b.lastModified from moz_bookmarks as b where b.type=2 and b.parent=%d
+select b.id, b.title, p.url, b.dateAdded, b.lastModified, i.url from moz_bookmarks as b, moz_places as p left outer join moz_favicons as i on p.favicon_id=i.id where b.fk=p.id and b.parent=%d
+select b.id, b.title, p.url, b.dateAdded, b.lastModified from moz_bookmarks as b left outer join moz_places as p on b.fk=p.id where b.id=%d;
+select count(*), p.url from moz_places as p where p.id=%d
+select count(*), b.title,ai.content,a.name from moz_bookmarks as b inner join moz_items_annos as ai inner join moz_anno_attributes as a on b.id=ai.item_id and a.id=ai.anno_attribute_id where a.name='livemark/feedURI' and b.id=%d
+Smart Bookmarks
+<DT><H3 FOLDED ADD_DATE="%.0f">%s</H3>
+<DL><p>
+</DL><p>
+<DT><A HREF="%s" ADD_DATE="%.0f" FEEDURL="%s">%s</A>
+<DT><A HREF="%s" ADD_DATE="%.0f" LAST_MODIFIED="%.0f" ICON_URI="%s">%s</A>
+ieframe.dll
+<DT><H3 FOLDED>%s</H3>
+<TITLE>Bookmarks</TITLE>
+<H1>Bookmarks</H1>
+<!DOCTYPE NETSCAPE-Bookmark-file-
+<!-- This is an automatically generated file.
+It will be read and overwritten.
+Do Not Edit! -->
+</DL><p>
+children
+GetFolderChildren
+FIREFOX
+folder
+SetBookmarkUrl
+GetBookmarkUrl
+GetSortedBookmarksFromParentId
+roots
+bookmark_bar
+Bookmarks bar
+other
+Bookmarks Menu
+Unsorted Bookmarks
+version
+GetSerializedJSONInCoTaskMemory
+CreateTempBookmarkFile
+\u003C
+select b.id, b.title, b.create_time, b.last_modify_time, b.is_folder, b.pos, b.url from tb_fav as b where b.parent_id=%d order by b.pos
+ConvertUserInputId
+ExportFavoritesJson
+ExportFavoritesHTML
+InitDatabase
+360SE
+%windir%\System32\ieframe.dll
+Links
+Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache
+@%windir%\System32\ieframe.dll,-12385
+Local Settings\Software\Microsoft\Windows\Shell\MuiCache
+Software\Microsoft\Windows\ShellNoRoam\MuiCache
+@%windir%\System32\ieframe.dll.mui,-12385
+[IECleanup LIB] CleanupMuiCache()
+[IECleanup LIB] CleanupMuiCache() - Successfully deleted '%s'
+[IECleanup LIB] CleanupMuiCache() - Unable to delete '%s', Result=%d
+IEXPLORE.EXE
+MSFEEDSSYNC.EXE
+SYSPREP.EXE
+EXPLORER.EXE
+LOADER42.EXE
+WWAHOST.EXE
+IEUTLAUNCH.EXE
+TE.EXE
+Te.ProcessHost.exe
+FAKEVIRTUALSURFACETESTAPP.EXE
+MSOOBE.EXE
+NETPLWIZ.EXE
+USERACCOUNTBROKER.EXE
+MSHTMPAD.EXE
+FirstLogonAnim.exe
+RESTOREOPTIN.EXE
+DCIScanner
+microsoftedge.exe
+microsoftedgecp.exe
+microsoftedgebchost.exe
+microsoftedgedevtools.exe
+microsoftedgesh.exe
+pickerhost.exe
+browser_broker.exe
+jshost.exe
+authhost.exe
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+WilError_03
+ntdll.dll
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+RtlAreLongPathsEnabled
+\UNC\
+\\?\UNC\
+::$DATA
+{00000000-0000-0000-0000-000000000000}
+\\?\Volume
+Local\SM0:%lu:%lu:%hs
+#9Vu7
+@ExtExportFailedPII
+userInputID
+reason
+browserType
+hrValue
+databaseLocation
+dllLocation
+tempBookmarkLocation
+ExtExportFailed
+userInputID
+reason
+browserType
+hrValue
+param
+ExtExportEnd
+userInputID
+hrValue
+ExtExportBegin
+userInputID
+Microsoft.Windows.App.Browser
+extexport.pdb
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.rdata$brc
+.idata$5
+.00cfg
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.gehcont
+.gfids
+.giats
+.rdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.xdata
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.data$brc
+.data
+.pdata
+.rsrc$01
+.rsrc$02
+EventWriteTransfer
+EventUnregister
+EventSetInformation
+EventRegister
+ADVAPI32.dll
+GetLastError
+GetProcAddress
+FreeLibrary
+LoadLibraryExW
+WriteFile
+CreateFileW
+CloseHandle
+lstrcmpW
+KERNEL32.dll
+_vsnwprintf
+_itow_s
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+__getmainargs
+__set_app_type
+_exit
+_cexit
+__setusermatherr
+_initterm
+__C_specific_handler
+_fmode
+_commode
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+?terminate@@YAXXZ
+CoTaskMemFree
+CoTaskMemRealloc
+IIDFromString
+ole32.dll
+StrCmpNIW
+SHLWAPI.dll
+RegOpenKeyExW
+RegDeleteValueW
+RegCloseKey
+Sleep
+SetUnhandledExceptionFilter
+GetModuleHandleW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+UnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+DeleteFileW
+MoveFileW
+CreateDirectoryW
+GetModuleFileNameW
+DecodePointer
+GetModuleFileNameA
+CreateSemaphoreExW
+HeapFree
+SetLastError
+ReleaseSemaphore
+GetModuleHandleExW
+WaitForSingleObject
+LocalAlloc
+ReleaseMutex
+FormatMessageW
+OutputDebugStringW
+WaitForSingleObjectEx
+OpenSemaphoreW
+HeapAlloc
+CreateMutexExW
+LocalFree
+GetProcessHeap
+DebugBreak
+IsDebuggerPresent
+LoadStringW
+USER32.dll
+_wcsicmp
+memcpy_s
+wcspbrk
+iswalpha
+wcschr
+wcsncmp
+StrCmpNW
+StrStrW
+PathFileExistsW
+PathFindFileNameW
+StrStrIW
+SHSetLocalizedName
+SHGetFolderPathAndSubDirW
+SHELL32.dll
+ExpandEnvironmentStringsW
+iertutil.dll
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity version="5.1.0.0"
+       processorArchitecture="amd64"
+       name="extexport"
+       type="win32"/>
+    <description>External Import Export for Internet Explorer</description>
+    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+        <security>
+            <requestedPrivileges>
+                <requestedExecutionLevel level="asInvoker" />
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+    <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+        <application>
+            <!--The ID below indicates application support for Windows 8 -->
+            <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>
+        </application>
+    </compatibility>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Internet Explorer ImpExp FF exporter
+FileVersion
+11.00.22621.1 (WinBuild.160101.0800)
+InternalName
+extexport
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+extexport.exe
+ProductName
+Internet Explorer
+ProductVersion
+11.00.22621.1
+OleSelfRegister
+VarFileInfo
+Translation

@@ -1,0 +1,528 @@
+!This program cannot be run in DOS mode.
+uRich'y
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+JoinUtil.dll
+netutils.dll
+RPCRT4.dll
+CRYPT32.dll
+DNSAPI.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+profapi.dll
+NetpMachineValidToJoinPhase3: '%ws'
+NetpMachineValidToJoinPhase3: the specified machine is a domain controller.
+NetpMachineValidToJoinPhase3: status: 0x%lx
+System\CurrentControlSet
+NetpProvCheckOfflineLsaPolicyUpdate: ODJ data present but load failed: 0x%1x
+NetpProvCheckOfflineLsaPolicyUpdate
+NetpProvCheckOfflineLsaPolicyUpdate: Boot time blob processing but detected online caller blob
+Services\Tcpip\Parameters
+NetpProvCheckOfflineLsaPolicyUpdate: Unable to match expected hostnames, Tcpip parameters are missing or can't be accessed.
+NV Hostname
+NetpProvCheckOfflineLsaPolicyUpdate: Unable to match expected hostnames, Tcpip parameter 'NV Hostname' is missing or can't be accessed.
+NetpProvCheckOfflineLsaPolicyUpdate: Unable to match expected hostnames.  Configured hostname is '%ws', expected hostname is '%ws'.
+NetpProvCheckOfflineLsaPolicyUpdate: An error occured while completing the offline join action, the action can be tried again.  The error code was: 0x%lx.
+NetpProvCheckOfflineLsaPolicyUpdate: status: 0x%lx
+K\HI$
+NetCreateProvisioningPackage:
+(translating caller params from v1 to v2):
+dwVersion: 0x%x
+lpDomain: %ws
+lpHostName: %ws
+lpNetbiosName: %ws
+lpMachineAccountOU: %ws
+lpDcName: %ws
+dwProvisionOptions: 0x%x
+cMachinePolicyPaths: 0x%x
+aMachinePolicyPaths[%d]: %ws
+cCertTemplateNames: 0x%x
+aCertTemplateNames[%d]: %ws
+NetCreateProvisioningPackage: requesting binary blob
+NetCreateProvisioningPackage: requesting text-encoded blob
+NetCreateProvisioningPackage: lpHostName is not a DNS RFC compatible name, some DNS servers may not support this
+"/\[]:|<>+=;,?
+NetCreateProvisioningPackage: status: 0x%x.
+NetpCreateProvisioningPackage: unsupported NETSETUP_PROVISIONING_PARAMS.dwVersion value.
+NetpAddProvisioningPackagePart: status:0x%x.
+NetpSerializeProvisioningPackage: status:0x%x.
+NetpRequestProvisioningPackageInstall
+cbPackageBinData: %d
+JoinOptions: 0x%x
+ProvisionOptions: 0x%x
+lpWindowsPath: %ws
+%ws: Found ODJ blob format: %d.
+%ws: No supported ODJ blob versions found: %d.
+%ws: max part count exceeded (%d).
+%ws: status: 0x%x.
+NetpSetPrivileges
+%ws: Failed to open thread token: 0x%x.
+%ws: Setting backup/restore privileges.
+%ws: Failed to verify/set privileges: 0x%x.
+NetpApplyComputerNameSetToRegistry
+SYSTEM\Setup\DJOIN
+%ws: RegCreateKeyEx(%ws) failed: 0x%x.
+UJoinComputerNameSet
+%ws: RegSetValueEx(%ws) failed: 0x%x.
+NetpApplyComputerNameSetToRegistryDirect
+ODJComputerNameSet
+NetpOpenRegistry
+ControlSet000
+\system32\config\SYSTEM
+%ws: UUID creation failed: 0x%x.
+%ws: RegLoadKeyW failed to load the hive %ws: 0x%x.
+%ws: Hive loaded, navigating to the CCS key.
+%ws: RegOpenKeyExW failed to load %ws: 0x%x.
+Select
+Current
+%ws: Too many CCS options: %d. Giving up!
+%ws: Failed to open the registry key %ws: 0x%x.
+%ws: Failed to open the online registry CCS key: 0x%x.
+%ws: The image at %ws is a DC: 0x%x.
+Setup\DJOIN
+%ws: NetpApplyComputerNameSetToRegistryDirect failed: 0x%x.
+%ws: NetpApplyComputerNameSetToRegistry failed: 0x%x.
+NetpApplyPartsToRegistryDirect
+%ws: NetpApplyComputerNameSetToRegistryDirect succeeded.
+NetpAddPartCollectionToRegistry
+%ws Provisioning not supported on platforms <= Vista/2K8.
+%ws __NOTE__: Target is a sysprep'd Win7/2K8R2 image. The specialize pass will overwrite the provisioned computer name with a random name.
+%ws __NOTE__: To ensure successful join provisioning, the correct computer name must be restored, e.g. via the ComputerName setting in unattend.xml.
+Control\LSA\OfflineProvisioning
+%ws: delete OP state key status: 0x%x.
+%ws: OP state key creation failed: 0x%x.
+%ws: %ws key creation failed: 0x%x.
+%ws: %ws key's %ws subkey creation failed: 0x%x.
+%ws: %ws, RequestPackagePartInstall failed: 0x%x.
+%ws: delete OP %ws key status: 0x%x.
+Flags
+%ws: %ws key's %ws value creation failed: 0x%x.
+NumParts
+%ws: Successfully initiated provisioning package installation: %d/%d part(s) installed.
+%ws: %ws value creation failed: 0x%x.
+NetpProvGetTargetProductVersion
+%ws\system32\netjoin.dll
+%ws\system32\netapi32.dll
+%ws: GetFileVersionInfoSizeExW status: 0x%x.
+%ws: GetFileVersionInfoExW status: 0x%x.
+%ws: VerQueryValue status: 0x%x.
+%ws: Target product version: %d.%d.%d.%d
+system
+controlset001
+SeBackupPrivilege
+SeRestorePrivilege
+NetpProvContinueProvisioningPackageInstall
+SYSTEM\CurrentControlSet\Control\LSA\OfflineProvisioning
+Context: %d
+%ws: Provisioning package installation completed successfully.
+%ws: Provisioning package installation completed with error(s).
+NetpCreatePartListFromRegistry: Bad provisioning information: 
+%ws%ws value is missing or invalid.
+%wsFailed to open %ws key: 0x%x.
+Status
+%ws%ws key's %ws value is invalid.
+%ws%ws key's %ws value is missing or invalid.
+%wsFailed to open %ws key's %ws subkey: 0x%x.
+%ws%ws part is essential, provider not found.
+%wsFailed to set %ws value for non-essential %ws part: 0x%x.
+NetpCreatePartListFromRegistry: status: 0x%x.
+NetpFreePartList: Failed to set part %ws value: 0x%x.
+NetpStartImageStateMonitorThread
+Software\Microsoft\Windows\CurrentVersion\Setup\State
+%ws: Failed to open the WSS key: 0x%x.
+%ws: CreateThread() failed: 0x%x.
+NetpImageStateMonitorThread
+%ws: enter.
+%ws: WaitForSingleObject failed: 0x%x.
+%ws: RegNotifyChangeKeyValue failed: 0x%x.
+ImageState
+%ws: RegQueryValueEx failed: 0x%x.
+IMAGE_STATE_COMPLETE
+%ws: exit.
+NetpCaptureProvisioningPackagePart: status:0x%x.
+NetCaptureProvisioningPackage:
+NetCaptureProvisioningPackage: requesting binary blob
+NetCaptureProvisioningPackage: requesting text-encoded blob
+NetCaptureProvisioningPackage: status: 0x%x.
+IMAGE_STATE_UNDEPLOYABLE
+IMAGE_STATE_GENERALIZE_RESEAL_TO_OOBE
+IMAGE_STATE_GENERALIZE_RESEAL_TO_AUDIT
+IMAGE_STATE_SPECIALIZE_RESEAL_TO_OOBE
+IMAGE_STATE_SPECIALIZE_RESEAL_TO_AUDIT
+Initialize
+System\CurrentControlSet\Control\NetProvision\Providers\Universal
+System\CurrentControlSet\Control\NetProvision\Providers\Phased\%i
+NetpProvBeginSession: status: 0x%x.
+NetpProvInitializeServiceProvider:
+%ws: LoadLibrary (%ws) failed: 0x%x.
+%ws GetProcAddress (%ws, %s) failed: 0x%x.
+%ws %ws!ProviderInitialize failed: 0x%x.
+%ws '%ws' reported duplicate part type, unloading.
+NetpProvGetWindowsImageState
+%ws: Failed to open the online registry WSS key: 0x%x.
+\system32\config\SOFTWARE
+Microsoft\Windows\CurrentVersion\Setup\State
+%ws: Failed to read/parse Image State: 0x%x.
+%ws: %ws.
+Services\NTDS\Parameters
+DSA Database file
+Services\NTDS\Parameters\DSA Database file
+loaded
+failed to load
+this is a
+this is not a
+NetpIsTargetImageADC: Determined %ws DC image as RegQueryValueExW %ws %ws: 0x%1x
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+\debug
+%s\%s.BAK
+%s\%s.LOG
+%02u/%02u/%04u %02u:%02u:%02u:%03u 
+[%08lx] 
+NetpDebugDumpRoutine: WideCharToMultiByte failed
+NetSetup
+NOTE: The old version of this file has been saved to 'NetSetup.bak' in the same directory.
+-----------------------------------------------------------------
+(NULL)
+%ws%ws
+RSDSg
+netprovfw.pdb
+.rdata$brc
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIZ
+.gfids
+.giats
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$mn
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+\$ SP
+D$,PWh
+9\$$t
+D$,PWh
+t$8Vh
+t}jW^Vh(!
+9G,v$
+F;w,r
+VPhx$
+T$$PVj(
+D$0VPhp%
+D$0Ph
+D$4Ph &
+D$4Ph %
+WWWSh
+j2^9]
+u=f9u
+QPQh?
+QQQWS
+@Ph|1
+QPQVQQQ
+QPQVQQQh
+VPh@5
+QQSVW3
+SWWWh
+PWSWWWh
+D$xSVWj
+D$(Phl#
+L$(QP
+YYhh7
+D$,Ph
+D$,Ph %
+PShp<
+WSSSSSS
+QSSSP
+>Heapu
+WWWWPVS
+SPhPE
+PSh0?
+PShXH
+PQh8I
+B`+Bd;
+VPSSSS
+jWX_^[
+QRPht
+QRPh4
+Y__^[
+NetpClearFullJoinState
+NetpSaveFullJoinStateInternal
+NetpLoadFullJoinState
+NetpFreeJoinStateContents
+NetpMarkLastFullJoinAttempt
+NetpDoDomainJoinLicensingCheck
+NetApiBufferFree
+NdrMesTypeEncode2
+NdrMesTypeDecode2
+NdrMesTypeFree2
+NdrMesTypeAlignSize2
+NetApiBufferAllocate
+CryptUnprotectMemory
+I_RpcExceptionFilter
+MesHandleFree
+DnsValidateName_W
+MesEncodeDynBufferHandleCreate
+MesBufferHandleReset
+UuidToStringW
+RpcStringFreeW
+MesDecodeBufferHandleCreate
+UuidCreate
+UuidFromStringW
+LookupPrivilegeNameW
+LookupPrivilegeValueW
+netprovfw.dll
+NetCaptureProvisioningPackage
+NetCreateProvisioningPackage
+NetRequestProvisioningPackageInstall
+NetpAnalyzeProvisioningPackage
+NetpCreateProvisioningPackage
+NetpProvCheckOfflineLsaPolicyUpdate
+NetpProvContinueProvisioningPackageInstall
+NetpProvDomainJoinLicensingCheck
+JOINUTIL.NetpDoDomainJoinLicensingCheck
+NetpProvFreeLdapLsaDomainInfo
+NetpRequestProvisioningPackageInstall
+NetpRequestProvisioningPackageInstallForIMC
+NetpRequestProvisioningPackageInstallForOfflineServicing
+<unknown>
+_wcsicmp
+wcscspn
+_vsnwprintf_s
+_ltow_s
+api-ms-win-core-crt-l1-1-0.dll
+_initterm_e
+_initterm
+api-ms-win-core-crt-l2-1-0.dll
+DisableThreadLibraryCalls
+RegQueryValueExW
+RegOpenKeyExW
+LocalAlloc
+GetLastError
+LocalFree
+RegCloseKey
+EnterCriticalSection
+LeaveCriticalSection
+RtlCompareMemory
+GetFileVersionInfoSizeExW
+OpenThreadToken
+GetFileVersionInfoExW
+RegDeleteValueW
+VerQueryValueW
+RegLoadKeyW
+RegUnLoadKeyW
+RegSetValueExW
+RegDeleteTreeW
+ImpersonateSelf
+RegCreateKeyExW
+GetCurrentThread
+CloseHandle
+RevertToSelf
+GetModuleHandleExW
+WaitForSingleObject
+FreeLibraryAndExitThread
+CreateEventW
+CreateThread
+FreeLibrary
+RegNotifyChangeKeyValue
+GetTokenInformation
+RegGetValueW
+InitializeCriticalSection
+RegEnumKeyExW
+GetProcAddress
+DeleteCriticalSection
+RegGetValueA
+RegQueryInfoKeyW
+AdjustTokenPrivileges
+LoadLibraryExW
+HeapFree
+GetProcessHeap
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+EncodePointer
+DecodePointer
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-rtlsupport-l1-2-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-util-l1-1-0.dll
+RtlInitUnicodeString
+RtlGetNtProductType
+RtlLengthSid
+RtlNtStatusToDosError
+RtlAllocateHeap
+RtlImageNtHeader
+RtlFreeHeap
+ntdll.dll
+_except_handler4_common
+VirtualProtect
+VirtualAlloc
+GetSystemInfo
+SetThreadStackGuarantee
+VirtualQuery
+CreateDirectoryW
+ReadFile
+WriteFile
+SetFilePointer
+CreateFileW
+GetFileAttributesW
+GetLocalTime
+GetWindowsDirectoryW
+MoveFileExW
+GetFileSize
+WideCharToMultiByte
+FlushFileBuffers
+CheckTokenMembership
+ResolveDelayLoadedAPI
+DelayLoadFailureHook
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-delayload-l1-1-0.dll
+RtlAllocateAndInitializeSid
+NtClose
+RtlFreeSid
+NtOpenThreadToken
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Provisioning Service Framework DLL
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+NETPROVFW.DLL
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+NETPROVFW.DLL
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+181C1N1Y1o1
+2 232Q2j2
+3)3<3L3v3
+4B4]4f4
+5 5+565<5
+6j6}6
+7&7<7[7b7
+8;8B8^8
+9U9~9
+94:E:f:r:
+;E;[;b;
+<"<+<M<W<
+=X=`=i=p=
+>4?d?
+0$0)0.070Y0
+0,151>1_1
+2.2i2
+4"4D4
+5B6a6
+7T8p8
+919M9
+:::Y:
+:0;@;O;r;
+<1<B<q<
+=.=O=V=n=
+>+>A>[>s>
+?H?~?
+0C0\0~0
+1;1Q1
+2%2-272W2j2
+3(313B3I3S3Z3
+4!4C4M4`4m4z4
+5&535O5^5m5{5
+6&696f6
+7-7M7_7d7i7r7
+8(8M8i8
+9.9:9Y9c9o9
+;%;R;|;
+>$?0?X?d?
+0&040@0[0g0
+031C1U1f1m1u1
+3(393W3b3p3
+4<4R4`4r4
+5/5?5H5O5X5m5
+5*6@6G6m6
+91999
+:E:R:
+; ;E;Z;n;t;~;
+;8<E<[<g<
+=;=L=V=]=j=p=
+>&>B>N>[>o>|>
+?[?g?
+0!0'0;0U0v0
+181X1g1
+222?2Z2c2o2~2
+383o3
+354[4r4
+5 5)5/565M5
+6)60686>6C6J6^6
+7#7,71777o8
+8=9v9
+92:G:y:
+:%;U;j;
+;'<e=
+0$000M0Y0
+141\1
+132C2
+20363>3
+4*494
+5(535@5O5X5_5e5o5z5
+97:T:]:c:k:q:
+;%;,;3;:;A;H;O;V;^;f;n;z;
+<!<'<-<3<:<A<H<O<V<]<d<j<v<
+=4=I=X=`=n={=
+>#>3>C>a>q>~>
+?#?3?C?P?d?u?
+1 1(1,1D1H1P1T1l1p1x1|1
+2$2(20242L2P2l2p2
+0 0(0
+0 0$0,0004080<0@0D0H0L0P0T0X0\0d0h0p0t0|0

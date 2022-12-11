@@ -1,0 +1,619 @@
+!This program cannot be run in DOS mode.
+.text
+`.rdata
+@.data
+.pdata
+@.rsrc
+@.reloc
+q0R^G'
+ATAVAWH
+p0R^G'
+ A_A^A\
+q:_0#
+VWAVH
+\$ E3
+LcA<E3
+HcQ<H
+\$ UH
+ H3E H3E
+D$HE3
+qB_XK
+L$pE3
+H UAVAWH
+A_A^]
+L$ UH
+|$ UATAUAVAWH
+|$ E3
+D8oXt
+@8wht
+pP[|8>
+\$HE3
+t$@D8
+t2D8oxt,I
+A_A^A]A\]
+q(WZ<
+UAVAWH
+D$XE3
+A_A^]
+x AVH
+VWATAVAWH
+pP[|8>
+A_A^A\_^
+@USVWATAUAVAWH
+A_A^A]A\_^[]
+@USVWATAUAVAWH
+A_A^A]A\_^[]
+{ UAVAWH
+pB_XK
+A_A^]
+WATAUAVAWH
+A_A^A]A\_
+x ATAVAWH
+A_A^A\
+x ATAVAWH
+@A_A^A\
+@USVWAUAVAWH
+A9u(A
+Fu(E3
+\$4D;]
+A_A^A]_^[]
+@USVWATAUAVAWH
+A_A^A]A\_^[]
+x ATAVAWH
+0A_A^A\
+UVWATAUAVAWH
+;/sLH
+9;v6I
+PA_A^A]A\_^]
+x AVH
+WATAUAVAWH
+A_A^A]A\_
+UVWATAUAVAWH
+T$@8SH
+D$@!|$HH
+L$HA;
+|$XE3
+A_A^A]A\_^]
+USVWATAUAVAWH
+D8qpt
+D8sDt
+A_A^A]A\_^[]
+USVWATAUAVAWH
+@8ypt
+@8yXt
+@8yDt
+A_A^A]A\_^[]
+\$ UVWATAUAVAWH
+T$pD8apt
+t$dD8
+DQ@D8
+D;d$ds
+A_A^A]A\_^]
+UWATAVAWH
+9p(vaH
+A_A^A\_]
+UVWATAUAVAWH
+ A_A^A]A\_^]
+UVWATAUAVAWH
+ A_A^A]A\_^]
+UVWATAUAVAWH
+ A_A^A]A\_^]
+WATAUAVAWH
+l$PM+
+ A_A^A]A\_
+C H9C
+pJ^~x
+!\$ L
+E8!\$ 
+p+YT"
+p0R^G'
+L$0E3
+E(=csm
+E8=csm
+EH=csm
+EX=csm
+Eh=csm
+Ex=csm
+Binary Codec Error
+The binary instance deserializer cannot find rtti to decode the given buffer
+The binary class deserializer cannot find rtti of the parent class to decode the given buffer
+Primary classification of the error. The following values are defined: 
+2 - Communications Error. Errors of this type are principally associated with the procedures and/or processes required to convey information from one point to another. 
+3 - Quality of Service Error. Errors of this type are principally associated with failures that result in reduced functionality or performance. 
+4 - Software Error. Error of this type are principally associated with a software or processing fault. 
+5 - Hardware Error. Errors of this type are principally associated with an equipment or hardware failure. 
+6 - Environmental Error. Errors of this type are principally associated with a failure condition relating to the facility, or other environmental considerations. 
+7 - Security Error. Errors of this type are associated with security violations, detection of viruses, and similar issues. 
+8 - Oversubscription Error. Errors of this type are principally associated with the failure to allocate sufficient resources to complete the operation. 
+9 - Unavailable Resource Error. Errors of this type are principally associated with the failure to access a required resource. 
+10 -Unsupported Operation Error. Errors of this type are principally associated with requests that are not supported.
+Description
+ValueMap
+Unknown
+Other
+Communications Error
+Quality of Service Error
+Software Error
+Hardware Error
+Environmental Error
+Security Error
+Oversubscription Error
+Unavailable Resource Error
+Unsupported Operation Error
+DMTF Reserved
+Values
+CIM_Error.OtherErrorType
+ModelCorrespondence
+ErrorType
+CIM_Error
+A free-form string describing the ErrorType when 1, "Other", is specified as the ErrorType.
+CIM_Error.ErrorType
+OtherErrorType
+A string that uniquely identifies the entity that owns the definition of the format of the Message described in this instance. OwningEntity MUST include a copyrighted, trademarked or otherwise unique name that is owned by the business entity or standards body defining the format.
+OwningEntity
+Required
+An opaque string that uniquely identifies, within the scope of the OwningEntity, the format of the Message.
+CIM_Error.Message
+CIM_Error.MessageArguments
+MessageID
+The formatted message. This message is constructed by combining some or all of the dynamic elements specified in the MessageArguments property with the static elements uniquely identified by the MessageID in a message registry or other catalog associated with the OwningEntity.
+CIM_Error.MessageID
+Message
+An array containing the dynamic content of the message.
+MessageArguments
+An enumerated value that describes the severity of the Indication from the notifier's point of view: 
+0 - the Perceived Severity of the indication is unknown or indeterminate. 
+1 - Other, by CIM convention, is used to indicate that the Severity's value can be found in the OtherSeverity property. 
+2 - Information should be used when providing an informative response. 
+3 - Degraded/Warning should be used when its appropriate to let the user decide if action is needed. 
+4 - Minor should be used to indicate action is needed, but the situation is not serious at this time. 
+5 - Major should be used to indicate action is needed NOW. 
+6 - Critical should be used to indicate action is needed NOW and the scope is broad (perhaps an imminent outage to a critical resource will result). 
+7 - Fatal/NonRecoverable should be used to indicate an error occurred, but it's too late to take remedial action. 
+2 and 0 - Information and Unknown (respectively) follow common usage. Literally, the Error is purely informational or its severity is simply unknown.
+Information
+Degraded/Warning
+Minor
+Major
+Critical
+Fatal/NonRecoverable
+PerceivedSeverity
+An enumerated value that describes the probable cause of the error.
+Adapter/Card Error
+Application Subsystem Failure
+Bandwidth Reduced
+Connection Establishment Error
+Communications Protocol Error
+Communications Subsystem Failure
+Configuration/Customization Error
+Congestion
+Corrupt Data
+CPU Cycles Limit Exceeded
+Dataset/Modem Error
+Degraded Signal
+DTE-DCE Interface Error
+Enclosure Door Open
+Equipment Malfunction
+Excessive Vibration
+File Format Error
+Fire Detected
+Flood Detected
+Framing Error
+HVAC Problem
+Humidity Unacceptable
+I/O Device Error
+Input Device Error
+LAN Error
+Non-Toxic Leak Detected
+Local Node Transmission Error
+Loss of Frame
+Loss of Signal
+Material Supply Exhausted
+Multiplexer Problem
+Out of Memory
+Output Device Error
+Performance Degraded
+Power Problem
+Pressure Unacceptable
+Processor Problem (Internal Machine Error)
+Pump Failure
+Queue Size Exceeded
+Receive Failure
+Receiver Failure
+Remote Node Transmission Error
+Resource at or Nearing Capacity
+Response Time Excessive
+Retransmission Rate Excessive
+Software Program Abnormally Terminated
+Software Program Error (Incorrect Results)
+Storage Capacity Problem
+Temperature Unacceptable
+Threshold Crossed
+Timing Problem
+Toxic Leak Detected
+Transmit Failure
+Transmitter Failure
+Underlying Resource Unavailable
+Version Mismatch
+Previous Alert Cleared
+Login Attempts Failed
+Software Virus Detected
+Hardware Security Breached
+Denial of Service Detected
+Security Credential Mismatch
+Unauthorized Access
+Alarm Received
+Loss of Pointer
+Payload Mismatch
+Transmission Error
+Excessive Error Rate
+Trace Problem
+Element Unavailable
+Element Missing
+Loss of Multi Frame
+Broadcast Channel Failure
+Invalid Message Received
+Routing Failure
+Backplane Failure
+Identifier Duplication
+Protection Path Failure
+Sync Loss or Mismatch
+Terminal Problem
+Real Time Clock Failure
+Antenna Failure
+Battery Charging Failure
+Disk Failure
+Frequency Hopping Failure
+Loss of Redundancy
+Power Supply Failure
+Signal Quality Problem
+Battery Discharging
+Battery Failure
+Commercial Power Problem
+Fan Failure
+Engine Failure
+Sensor Failure
+Fuse Failure
+Generator Failure
+Low Battery
+Low Fuel
+Low Water
+Explosive Gas
+High Winds
+Ice Buildup
+Smoke
+Memory Mismatch
+Out of CPU Cycles
+Software Environment Problem
+Software Download Failure
+Element Reinitialized
+Timeout
+Logging Problems
+Leak Detected
+Protection Mechanism Failure
+Protecting Resource Failure
+Database Inconsistency
+Authentication Failure
+Breach of Confidentiality
+Cable Tamper
+Delayed Information
+Duplicate Information
+Information Missing
+Information Modification
+Information Out of Sequence
+Key Expired
+Non-Repudiation Failure
+Out of Hours Activity
+Out of Service
+Procedural Error
+Unexpected Information
+CIM_Error.ProbableCauseDescription
+ProbableCause
+A free-form string describing the probable cause of the error.
+CIM_Error.ProbableCause
+ProbableCauseDescription
+A free-form string describing recommended actions to take to resolve the error.
+RecommendedActions
+The identifying information of the entity (i.e., the instance) generating the error. If this entity is modeled in the CIM Schema, this property contains the path of the instance encoded as a string parameter. If not modeled, the property contains some identifying string that names the entity that generated the error. The path or identifying string is formatted per the ErrorSourceFormat property.
+CIM_Error.ErrorSourceFormat
+ErrorSource
+The format of the ErrorSource property is interpretable based on the value of this property. Values are defined as: 
+0 - Unknown. The format is unknown or not meaningfully interpretable by a CIM client application. 
+1 - Other. The format is defined by the value of the OtherErrorSourceFormat property.2 - CIMObjectPath. A CIM Object Path as defined in the CIM Infrastructure specification. Note: CIM 2.5 and earlier used the term object names.
+CIMObjectPath
+CIM_Error.ErrorSource
+CIM_Error.OtherErrorSourceFormat
+ErrorSourceFormat
+A string defining "Other" values for ErrorSourceFormat. This value MUST be set to a non NULL value when ErrorSourceFormat is set to a value of 1 ("Other"). For all other values of ErrorSourceFormat, the value of this string must be set to NULL.
+OtherErrorSourceFormat
+The CIM status code that characterizes this instance. 
+This property defines the status codes that MAY be returned by a conforming CIM Server or Listener. Note that not all status codes are valid for each operation. The specification for each operation SHOULD define the status codes that may be returned by that operation. 
+The following values for CIM status code are defined: 
+1 - CIM_ERR_FAILED. A general error occurred that is not covered by a more specific error code. 
+2 - CIM_ERR_ACCESS_DENIED. Access to a CIM resource was not available to the client. 
+3 - CIM_ERR_INVALID_NAMESPACE. The target namespace does not exist. 
+4 - CIM_ERR_INVALID_PARAMETER. One or more parameter values passed to the method were invalid. 
+5 - CIM_ERR_INVALID_CLASS. The specified Class does not exist. 
+6 - CIM_ERR_NOT_FOUND. The requested object could not be found. 
+7 - CIM_ERR_NOT_SUPPORTED. The requested operation is not supported. 
+8 - CIM_ERR_CLASS_HAS_CHILDREN. Operation cannot be carried out on this class since it has instances. 
+9 - CIM_ERR_CLASS_HAS_INSTANCES. Operation cannot be carried out on this class since it has instances. 
+10 - CIM_ERR_INVALID_SUPERCLASS. Operation cannot be carried out since the specified superclass does not exist. 
+11 - CIM_ERR_ALREADY_EXISTS. Operation cannot be carried out because an object already exists. 
+12 - CIM_ERR_NO_SUCH_PROPERTY. The specified Property does not exist. 
+13 - CIM_ERR_TYPE_MISMATCH. The value supplied is incompatible with the type. 
+14 - CIM_ERR_QUERY_LANGUAGE_NOT_SUPPORTED. The query language is not recognized or supported. 
+15 - CIM_ERR_INVALID_QUERY. The query is not valid for the specified query language. 
+16 - CIM_ERR_METHOD_NOT_AVAILABLE. The extrinsic Method could not be executed. 
+17 - CIM_ERR_METHOD_NOT_FOUND. The specified extrinsic Method does not exist. 
+18 - CIM_ERR_UNEXPECTED_RESPONSE. The returned response to the asynchronous operation was not expected. 
+19 - CIM_ERR_INVALID_RESPONSE_DESTINATION. The specified destination for the asynchronous response is not valid. 
+20 - CIM_ERR_NAMESPACE_NOT_EMPTY. The specified Namespace is not empty.
+21 - CIM_ERR_INVALID_ENUMERATION_CONTEXT. The enumeration context supplied is not valid.
+22 - CIM_ERR_INVALID_OPERATION_TIMEOUT. The specified Namespace is not empty.
+23 - CIM_ERR_PULL_HAS_BEEN_ABANDONED. The specified Namespace is not empty.
+24 - CIM_ERR_PULL_CANNOT_BE_ABANDONED. The attempt to abandon a pull operation has failed.
+25 - CIM_ERR_FILTERED_ENUMERATION_NOT_SUPPORTED. Filtered Enumeratrions are not supported.
+26 - CIM_ERR_CONTINUATION_ON_ERROR_NOT_SUPPORTED. Continue on error is not supported.
+27 - CIM_ERR_SERVER_LIMITS_EXCEEDED. The WBEM Server limits have been exceeded (e.g. memory, connections, ...).
+28 - CIM_ERR_SERVER_IS_SHUTTING_DOWN. The WBEM Server is shutting down.
+29 - CIM_ERR_QUERY_FEATURE_NOT_SUPPORTED. The specified Query Feature is not supported.
+CIM_ERR_FAILED
+CIM_ERR_ACCESS_DENIED
+CIM_ERR_INVALID_NAMESPACE
+CIM_ERR_INVALID_PARAMETER
+CIM_ERR_INVALID_CLASS
+CIM_ERR_NOT_FOUND
+CIM_ERR_NOT_SUPPORTED
+CIM_ERR_CLASS_HAS_CHILDREN
+CIM_ERR_CLASS_HAS_INSTANCES
+CIM_ERR_INVALID_SUPERCLASS
+CIM_ERR_ALREADY_EXISTS
+CIM_ERR_NO_SUCH_PROPERTY
+CIM_ERR_TYPE_MISMATCH
+CIM_ERR_QUERY_LANGUAGE_NOT_SUPPORTED
+CIM_ERR_INVALID_QUERY
+CIM_ERR_METHOD_NOT_AVAILABLE
+CIM_ERR_METHOD_NOT_FOUND
+CIM_ERR_UNEXPECTED_RESPONSE
+CIM_ERR_INVALID_RESPONSE_DESTINATION
+CIM_ERR_NAMESPACE_NOT_EMPTY
+CIM_ERR_INVALID_ENUMERATION_CONTEXT
+CIM_ERR_INVALID_OPERATION_TIMEOUT
+CIM_ERR_PULL_HAS_BEEN_ABANDONED
+CIM_ERR_PULL_CANNOT_BE_ABANDONED
+CIM_ERR_FILTERED_ENUMERATION_NOT_SUPPORTED
+CIM_ERR_CONTINUATION_ON_ERROR_NOT_SUPPORTED
+CIM_ERR_SERVER_LIMITS_EXCEEDED
+CIM_ERR_SERVER_IS_SHUTTING_DOWN
+CIM_ERR_QUERY_FEATURE_NOT_SUPPORTED
+CIM_Error.CIMStatusCodeDescription
+CIMStatusCode
+A free-form string containing a human-readable description of CIMStatusCode. This description MAY extend, but MUST be consistent with, the definition of CIMStatusCode.
+CIM_Error.CIMStatusCode
+CIMStatusCodeDescription
+Indication
+2.22.1
+Version
+Exception
+CIM::Interop
+UMLPackagePath
+CIM_Error is a specialized class that contains information about the severity, cause, recommended actions and other data related to the failure of a CIM Operation. Instances of this type MAY be included as part of the response to a CIM Operation.
+Application-specific error code
+error_Code
+OMI_Error
+The name of the error type, for example : 'HRESULT' or 'MI_RESULT' or 'Win32'
+error_Type
+An enumeration corresponding to the category enum in MI.h
+MI_ERRORCATEGORY_NOT_SPECIFIED
+MI_ERRORCATEGORY_OPEN_ERROR
+MI_ERRORCATEGORY_CLOSE_EERROR
+MI_ERRORCATEGORY_DEVICE_ERROR
+MI_ERRORCATEGORY_DEADLOCK_DETECTED
+MI_ERRORCATEGORY_INVALID_ARGUMENT
+MI_ERRORCATEGORY_INVALID_DATA
+MI_ERRORCATEGORY_INVALID_OPERATION
+MI_ERRORCATEGORY_INVALID_RESULT
+MI_ERRORCATEGORY_INVALID_TYPE
+MI_ERRORCATEGORY_METADATA_ERROR
+MI_ERRORCATEGORY_NOT_IMPLEMENTED
+MI_ERRORCATEGORY_NOT_INSTALLED
+MI_ERRORCATEGORY_OBJECT_NOT_FOUND
+MI_ERRORCATEGORY_OPERATION_STOPPED
+MI_ERRORCATEGORY_OPERATION_TIMEOUT
+MI_ERRORCATEGORY_SYNTAX_ERROR
+MI_ERRORCATEGORY_PARSER_ERROR
+MI_ERRORCATEGORY_ACCESS_DENIED
+MI_ERRORCATEGORY_RESOURCE_BUSY
+MI_ERRORCATEGORY_RESOURCE_EXISTS
+MI_ERRORCATEGORY_RESOURCE_UNAVAILABLE
+MI_ERRORCATEGORY_READ_ERROR
+MI_ERRORCATEGORY_WRITE_ERROR
+MI_ERRORCATEGORY_FROM_STDERR
+MI_ERRORCATEGORY_SECURITY_ERROR
+MI_ERRORCATEGORY_PROTOCOL_ERROR
+MI_ERRORCATEGORY_CONNECTION_ERROR
+MI_ERRORCATEGORY_AUTHENTICATION_ERROR
+MI_ERRORCATEGORY_LIMITS_EXCEEDED
+MI_ERRORCATEGORY_QUOTA_EXCEEDED
+MI_ERRORCATEGORY_NOT_ENABLED
+error_Category
+OMI_Error is a class used to report errors in the OMI infrastructure and components built on that infrastructure.
+OMI_BackTrace
+OMI_DebugError
+EmbeddedObject
+inner_Error
+Instances of OMI_DebugError contain information about interpretercontinuation stack that can be used to pinpoint the line of codethat failed, and the context it failed in.
+EmbeddedInstance
+_name
+ClassRef_V1
+_namespace
+_server
+_classId
+Qualifier_V1
+_type
+_flavor
+_value
+_flags
+Parameter_V1
+_code
+_qualifiers
+_className
+_origin
+Property_V1
+_propagator
+Method_V1
+_returnType
+_parameters
+Class_V1
+_superClass
+_superClassId
+_properties
+_methods
+_defaults
+_propertyOffsets
+_reserved1
+_reserved2
+NitsInjectorIn_
+NitsInjectorOut_
+NitsInjectorLock_
+NitsStartInjector
+NitsStopInjector
+SOFTWARE\Microsoft\Windows\CurrentVersion\WSMAN
+NitsInjector
+mibincodec.pdb
+.text$mn
+.text$mn$00
+.text$x
+.rdata$brc
+.idata$5
+.00cfg
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.gehcont
+.gfids
+.giats
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.xdata
+.edata
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.data$brc
+.data
+.pdata
+.rsrc$01
+.rsrc$02
+mibincodec.dll
+MI_Application_NewDeserializer_Binary
+MI_Application_NewSerializer_Binary
+NITS_PRESENCE_STUB
+NITS_STUB
+_wcsicmp
+malloc
+_XcptFilter
+_amsg_exit
+_initterm
+__C_specific_handler
+msvcrt.dll
+_lock
+_unlock
+__dllonexit
+_onexit
+Class_New
+Instance_InitDynamic
+Instance_New
+RCClass_AddMethod
+RCClass_AddElement
+RCClass_AddElementArrayItem
+RCClass_AddMethodParameterQualifierArrayItem
+RCClass_AddMethodQualifierArray
+RCClass_AddClassQualifierArrayItem
+RCClass_AddMethodQualifierArrayItem
+RCClass_AddMethodParameterQualifier
+RCClass_AddElementQualifierArray
+RCClass_AddMethodQualifier
+RCClass_AddClassQualifier
+RCClass_AddMethodParameter
+RCClass_AddElementQualifierArrayItem
+RCClass_New
+RCClass_AddElementArray
+RCClass_AddMethodParameterQualifierArray
+RCClass_AddElementQualifier
+RCClass_AddClassQualifierArray
+miutils.dll
+DisableThreadLibraryCalls
+MultiByteToWideChar
+GetLastError
+WideCharToMultiByte
+LoadStringW
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-rtlsupport-l1-1-0.dll
+wcscat_s
+RegQueryValueExW
+RegOpenKeyExW
+WaitForSingleObject
+GetProcAddress
+FreeLibrary
+RegCloseKey
+ReleaseSemaphore
+OpenSemaphoreW
+CloseHandle
+SetLastError
+LoadLibraryExW
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+MI_Application_InitializeV1
+mi.dll
+memcpy
+memset
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Management Infrastructure binary codec component
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+mibincodec.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+mibincodec.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US

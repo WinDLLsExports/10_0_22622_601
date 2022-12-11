@@ -1,0 +1,81 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\mspclock.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    ks.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00050E8 Import Address Table
+             1C00052A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          15 ExAllocatePoolWithTag
+                          BC KeLeaveCriticalRegion
+                          36 ExReleaseFastMutexUnsafe
+                          A3 IofCompleteRequest
+                          B3 KeInitializeEvent
+                          52 IoCreateDevice
+                           D ExAcquireFastMutexUnsafe
+                          1D ExFreePool
+                          4A IoAttachDeviceToDeviceStack
+                          5C IoDeleteDevice
+                          AE KeEnterCriticalRegion
+
+    ks.sys
+             1C0005000 Import Address Table
+             1C00051B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          C4 KsSetDevicePnpAndBaseObject
+                          34 KsDefaultDispatchPnp
+                          C6 KsSetMajorFunctionHandler
+                          87 KsNullDriverUnload
+                          36 KsDefaultForwardIrp
+                          35 KsDefaultDispatchPower
+                          E6 KsiPropertyDefaultClockGetCorrelatedPhysicalTime
+                          5C KsFreeDeviceHeader
+                          61 KsFreeObjectHeader
+                          5B KsFreeDefaultClock
+                          20 KsAllocateObjectHeader
+                          1A KsAllocateDefaultClock
+                          C2 KsSetDefaultClockState
+                          47 KsEnableEvent
+                          38 KsDereferenceSoftwareBusObject
+                          1C KsAllocateDeviceHeader
+                          E8 KsiPropertyDefaultClockGetFunctionTable
+                          E7 KsiPropertyDefaultClockGetCorrelatedTime
+                          E5 KsiDefaultClockAddMarkEvent
+                          EC KsiPropertyDefaultClockGetTime
+                          A6 KsPropertyHandler
+                          B1 KsReferenceSoftwareBusObject
+                          3D KsDisableEvent
+                          5D KsFreeEventList
+                          C3 KsSetDefaultClockTime
+                          EA KsiPropertyDefaultClockGetResolution
+                          E9 KsiPropertyDefaultClockGetPhysicalTime
+                          EB KsiPropertyDefaultClockGetState
+
+  Summary
+
+        1000 .data
+        1000 .guids
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

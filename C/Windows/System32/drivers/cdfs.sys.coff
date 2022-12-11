@@ -1,0 +1,181 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\cdfs.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008000 Import Address Table
+             1C00084F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         BF7 __C_specific_handler
+                          A2 ExAcquireFastMutex
+                         126 ExRaiseStatus
+                         218 FsRtlNormalizeNtstatus
+                         138 ExReleaseFastMutex
+                         144 ExReleaseResourceLite
+                          59 CcUnpinData
+                          EE ExFreePoolWithTag
+                          C1 ExAllocatePoolWithTag
+                         32E IoCreateStreamFileObjectLite
+                          33 CcInitializeCacheMap
+                          4E CcSetFileSizes
+                         9C6 RtlTimeFieldsToTime
+                          43 CcPurgeCacheSection
+                         6CB ObfDereferenceObject
+                          57 CcUninitializeCacheMap
+                          3C CcMdlReadComplete
+                         5C8 MmFlushImageSection
+                         4A2 KeEnterCriticalRegion
+                         39F IoIsOperationSynchronous
+                         4EF KeLeaveCriticalRegion
+                         1FC FsRtlIsNtstatusExpected
+                         487 KeBugCheckEx
+                         483 KeAreAllApcsDisabled
+                         370 IoGetDeviceToVerify
+                         3F5 IoSetDeviceToVerify
+                         3BC IoRaiseHardError
+                         44F IofCompleteRequest
+                         38E IoGetTopLevelIrp
+                         447 IoWithinStackLimits
+                         410 IoSetTopLevelIrp
+                         1BF FsRtlFastCheckLockForRead
+                         366 IoGetCurrentProcess
+                         8F1 RtlInitUnicodeString
+                         323 IoCreateDevice
+                         241 FsRtlRegisterFileSystemFilterCallbacks
+                         33C IoDeleteDevice
+                         3C9 IoRegisterFileSystem
+                         6CD ObfReferenceObject
+                          D7 ExDeleteResourceLite
+                         1AC FsRtlCopyRead
+                         212 FsRtlMdlReadDev
+                         211 FsRtlMdlReadCompleteDev
+                         238 FsRtlPrepareMdlWriteDev
+                         215 FsRtlMdlWriteCompleteDev
+                         103 ExInitializeResourceLite
+                         4CD KeInitializeEvent
+                         2F9 IoAllocateWorkItem
+                         60B MmQuerySystemSize
+                          A9 ExAcquireResourceExclusiveLite
+                         21A FsRtlNotifyCleanup
+                         1A8 FsRtlCheckOplock
+                         1C1 FsRtlFastUnlockAll
+                         385 IoGetRequestorProcess
+                         232 FsRtlOplockIsFastIoPossible
+                         2EC IoAcquireVpbSpinLock
+                         3D4 IoReleaseVpbSpinLock
+                         3D8 IoRemoveShareAccess
+                         226 FsRtlNotifyVolumeEvent
+                         3B9 IoQueueWorkItem
+                         1BE FsRtlDoesNameContainWildCards
+                         1AF FsRtlCurrentBatchOplock
+                         313 IoCheckShareAccess
+                         40B IoSetShareAccess
+                         42E IoUpdateShareAccess
+                         44E IofCallDriver
+                         5F1 MmMapLockedPagesSpecifyCache
+                         4B1 KeFlushIoBuffers
+                         304 IoBuildSynchronousFsdRequest
+                         585 KeWaitForSingleObject
+                         2F6 IoAllocateMdl
+                         605 MmProbeAndLockPages
+                         356 IoFreeMdl
+                         302 IoBuildDeviceIoControlRequest
+                         5BC MmBuildMdlForNonPagedPool
+                         353 IoFreeIrp
+                         559 KeSetEvent
+                          AA ExAcquireResourceSharedLite
+                         3EC IoReuseIrp
+                         48D KeClearEvent
+                         61C MmUnlockPages
+                          CB ExConvertExclusiveToSharedLite
+                         3A5 IoMakeAssociatedIrp
+                         303 IoBuildPartialMdl
+                         154 ExSetResourceOwnerPointer
+                         143 ExReleaseResourceForThreadLite
+                         221 FsRtlNotifyFullChangeDirectory
+                         9E9 RtlUpcaseUnicodeString
+                          3A CcMapData
+                         965 RtlOemToUnicodeN
+                          5D CcWaitForCurrentLazyWriterActivity
+                         4D5 KeInitializeSpinLock
+                         26A FsRtlVolumeDeviceToCorrelationId
+                         2F4 IoAllocateIrp
+                         391 IoInitializeIrp
+                         38C IoGetStackLimits
+                         962 RtlOemStringToCountedUnicodeString
+                         19E FsRtlAreThereCurrentOrInProgressFileLocks
+                         22F FsRtlOplockFsctrl
+                         1BA FsRtlDismountComplete
+                         A68 SeSinglePrivilegeCheck
+                         39A IoIs32bitProcess
+                         6BB ObReferenceObjectByHandle
+                         34C IoFileObjectType
+                         475 KeAcquireSpinLockRaiseToDpc
+                         539 KeReleaseSpinLock
+                         23C FsRtlProcessFileLock
+                         23B FsRtlPrivateLock
+                         1C3 FsRtlFastUnlockSingle
+                         1C2 FsRtlFastUnlockAllByKey
+                         202 FsRtlLegalAnsiCharacterArray
+                         9D8 RtlUnicodeStringToCountedOemString
+                         1F6 FsRtlIsFatDbcsLegal
+                         8B5 RtlGenerate8dot3Name
+                         9DC RtlUnicodeStringToOemString
+                         62A NlsMbOemCodePageTag
+                         62C NlsOemLeadByteInfo
+                         8B0 RtlFreeOemString
+                         1F9 FsRtlIsNameInExpression
+                         833 RtlCompareMemory
+                         863 RtlDelete
+                         9BA RtlSplay
+                         1A6 FsRtlCheckLockForReadAccess
+                          54 CcSetReadAheadGranularity
+                          1E CcCopyRead
+                          3B CcMdlRead
+                          AF ExAcquireSharedStarveExclusive
+                         223 FsRtlNotifyInitializeSync
+                         225 FsRtlNotifyUninitializeSync
+                         8F8 RtlInitializeGenericTable
+                         1EA FsRtlInitializeOplock
+                         8FE RtlInsertElementGenericTable
+                         197 FsRtlAllocateFileLock
+                         866 RtlDeleteElementGenericTable
+                         943 RtlLookupElementGenericTable
+                         87E RtlEnumerateGenericTableWithoutSplaying
+                         25D FsRtlTeardownPerStreamContexts
+                         1CA FsRtlFreeFileLock
+                         266 FsRtlUninitializeOplock
+                         431 IoVerifyVolume
+                         3FC IoSetHardErrorOrVerifyDevice
+                         1D5 FsRtlGetSectorSizeInformation
+                         121 ExQueueWorkItem
+                         425 IoUnregisterFileSystem
+                          92 EtwSetInformation
+                          8F EtwRegister
+                          9A EtwWriteTransfer
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+       11000 PAGE
+        1000 fothk

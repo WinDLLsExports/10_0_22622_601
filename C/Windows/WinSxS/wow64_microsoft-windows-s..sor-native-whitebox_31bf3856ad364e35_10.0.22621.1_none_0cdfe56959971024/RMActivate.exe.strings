@@ -1,0 +1,1979 @@
+!This program cannot be run in DOS mode.
+fRich
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+msdrm.dll
+api-ms-win-shell-shellfolders-l1-1-0.dll
+<XrML version="1.2" xmlns="">
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2008-05-02T21:33</ISSUEDTIME><DESCRIPTOR><OBJECT type="Server-Licensor-Certificate"><ID type="MS-GUID">{11b80c95-7e29-4a09-ba92-75cae2706135}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Desktop-Security-Processor-Certificate-Authority"><ID type="MS-GUID">{B7ADE71B-F740-4e52-A22D-CFA7DDAC1D49}</ID><NAME>Microsoft DRM Production Machine Activation Desktop Security Processor CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">U85V7TS3wT8i1e0pJugABoL9Lkleh8LGlCJvu0Jquik7maAusaiUd6mRAfpJPIsnQlcnj5Fl36pbx5mvDssEE5i90sR8b9lXdwsPm5qeHIWtrpY1McqRxNl8cPVwWogeIXCRK1N8/aYZTy4JoxLERP70bkwEfaswZhAIMHfPTNaDtfXqLg2zIRrxhPZIc1qDMpv3chrIvyZu65soDDmZiIZT6gJsrXqihAMsw0rCjnBjIz/uSNEfYI+yXLqGYypO2f+Erm8QpcVZsBdo7FpJz6vWt0uiZAhzOVsudlcQsB/3YoG0C8YM4sxlO9LogcQ+axo+opqvowNISAArpweB6g==</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="MS-DRM-Desktop-Security-Processor"><ID type="MS-GUID">{434CFC25-B93E-4298-9C3B-A3BE49B737DB}</ID><NAME>Microsoft DRM Production Desktop Security Processor Activation Certificate</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">Uys2Vu0QS003A0RR9m8gV42Xhkj5As/NnykGakJqIyBn32IJearxBIM0EoI+B0MIk/MCbK+8qEZym1j7nJhltp7ndkGn1sXPx0ZhySTQi4/EH04MAn2WkURxiz9hv4rnp9j6mG3NFMJGved2IM1XPIqB2pJ4h03GV9cbhJMOIZ7UB0lCVHW3ur8b1z4lTthgAD/tMd8hqkRQdUqFbHa+Kv6/1TuutWLeKa1QxAHEOcyPDfIa67B9QAtajOryllI+HTWPTygqhCoyrDSOO+1/N4K4r1U0eaOdpMNdSMP3CmUY4+KOF8RtdxgoDnMlrEELZlbXNqchk9M6w5+vRA6u6g==</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="Server-Licensor-Certificate"><ID type="MS-GUID">{11b80c95-7e29-4a09-ba92-75cae2706135}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-11-22T22:50</FROM><UNTIL>2258-03-03T21:33</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA256</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="256">CefQjfx61VBt2y7XzqN3xRT8N5RfYJB/ckCL1zfd+JQ=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="2048">G88ZS+J5iV9P6FPwOGYX6U5t+fbXTZSQeXlpa086av/aZIUZR6lAOVXQeYseou8E+Iq2YqDEBzmS9xW7EAoXA4pfMjEjGaqDU2aduhild07PsVg0ZujIeijBaKYK4nZVn3XQDSCv8b/CQ3zse/s5slaetmbaIxaQWSCeMAGDAmBz0EIldp2JaGEC68H0phIs0cP7sXNUw6vngXn4+s4ILcvCcNRObydYQYPlVB6guDd0QXi0knqJamhhqLy6A0S2ZWgBRYNbxa2XKUf56RMjCop+fjqqFthHxGYAQJBhpoT885z0RC/nT9/+lERNmfkfwO5CV+2f3LZ83041xbUGiQ==</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2008-05-02T21:33</ISSUEDTIME><DESCRIPTOR><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{af7921c1-3c3b-49fb-b624-53d290011401}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production Machine Activation Server CA</ID><NAME>Microsoft DRM Production Machine Activation Server CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">ITyVXQfkf/XlBWARJ75AX26t/zl+1e9kt5/SPEcfs8Rd9UpHwxtBBfubR5j9u9oRCmot/FWbL8WCRTjovgAHCDbr5MibaOOFJr09/EULTUrrUX+vF1zAeLngLTyE0Guq9ZXjWknL5gDyjU8d6HGmPe6FuscrzenDB353TXPIaXTzUgmOLpHW58DGrAkaivoiN/nrei1V/8Qkjc2um98Vzd00q/XJNkZqsC6FzxrEM9Eeo4pc3wLTRe8DzTFBm70cxxyawh+m1YlRmI9Y8qZyhvOU7we4Bsr52TVmV/t2i71CLKqgHIkcp9eHoJBneTpC57udvClW1ehC5eGUopecnQ==</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="DRM-Desktop-Security-Processor-Certificate-Authority"><ID type="MS-GUID">{B7ADE71B-F740-4e52-A22D-CFA7DDAC1D49}</ID><NAME>Microsoft DRM Production Machine Activation Desktop Security Processor CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">U85V7TS3wT8i1e0pJugABoL9Lkleh8LGlCJvu0Jquik7maAusaiUd6mRAfpJPIsnQlcnj5Fl36pbx5mvDssEE5i90sR8b9lXdwsPm5qeHIWtrpY1McqRxNl8cPVwWogeIXCRK1N8/aYZTy4JoxLERP70bkwEfaswZhAIMHfPTNaDtfXqLg2zIRrxhPZIc1qDMpv3chrIvyZu65soDDmZiIZT6gJsrXqihAMsw0rCjnBjIz/uSNEfYI+yXLqGYypO2f+Erm8QpcVZsBdo7FpJz6vWt0uiZAhzOVsudlcQsB/3YoG0C8YM4sxlO9LogcQ+axo+opqvowNISAArpweB6g==</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{af7921c1-3c3b-49fb-b624-53d290011401}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-12-05T01:07</FROM><UNTIL>2020-04-29T21:33</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA256</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="256">wx2XaG9cRveLDzFqoXqNPQ9HnneCWS2TXEr1x8Loi9M=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="2048">GPxHOu5IcuwPM8JGIq4a66za93piFeqW8odQCRl+BGj/wA1DisBX4Veyp/zvpAPHuLiAZP3MZoVu05RwKYx/98yJgh37GYMNxF4OJAbHnQkwV7O2QfuKfrox9+DFYjJ2A555JGMDy95H0nJfxNEzojZn9upUJE+PF7R5uBj3ZKmLk5IOnDlwnD+1/6sbJNPqcCAONC2IaoKrmId9DCp58R/KCYB8oTgikrjf6kShs29PyKeaPecCMRcvylzC4oHI+xCXQ3fzBTLU5fup4n10+DuVAQR9uy87+qmVXAlPUeuNJYiCQLbKMeH48PBDcQyshiMT+hCjFhaQC0ub0YRIHg==</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2008-04-23T19:12</ISSUEDTIME><DESCRIPTOR><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{1842c049-fe5a-430f-8199-5b0c6e4ee800}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production CA</ID><NAME>Microsoft DRM Production CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">NQrYSAc43V7NRTW8VT5E2XhMcwmmON7TkQ7ETUIWGqlPTvFSw798gFgIXBcFMtCdIyf3VMO5YGOKJD1wnc2ydlozf16VHF5UrFgtkT/9uK7uRshjyH516H/cCKJyIyPaYEkW+pI7x8+cfgVcUXZ/oCrFHdueXLS4ce/nals45qx5qqcdM7Y08o5a1kX/yoiPLbo9mKS/NlzEfcRvRNiAC6WqlIv8MgNxpAmU7FRUHTPck/gO9X0afh7VkwRq33TjrCS+UidoxwOI2E0DKMmtgUMA2u04O/fgR0LeUruTYYj+Qz2II82qcz7+fetEdUsvKKa1ZBK8Fnmw1BFPeoyX9g==</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production Machine Activation Server CA</ID><NAME>Microsoft DRM Production Machine Activation Server CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">ITyVXQfkf/XlBWARJ75AX26t/zl+1e9kt5/SPEcfs8Rd9UpHwxtBBfubR5j9u9oRCmot/FWbL8WCRTjovgAHCDbr5MibaOOFJr09/EULTUrrUX+vF1zAeLngLTyE0Guq9ZXjWknL5gDyjU8d6HGmPe6FuscrzenDB353TXPIaXTzUgmOLpHW58DGrAkaivoiN/nrei1V/8Qkjc2um98Vzd00q/XJNkZqsC6FzxrEM9Eeo4pc3wLTRe8DzTFBm70cxxyawh+m1YlRmI9Y8qZyhvOU7we4Bsr52TVmV/t2i71CLKqgHIkcp9eHoJBneTpC57udvClW1ehC5eGUopecnQ==</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{1842c049-fe5a-430f-8199-5b0c6e4ee800}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-12-05T01:07</FROM><UNTIL>2020-04-20T19:12</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA256</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="256">9KsaPbO4Y4KSGaxWHfd2gIhjLi+Jgl0InNzMc5c7wK0=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="2048">UnYvfJ5RzKYdVo7sShVL9DvbpVugRbMX3HlsIng2aToQQEavYr2LAgBB5okUjxm1PoOW8WBjCM+E2gGOSudadCSSxvYvDavIDb7bIkdGXT4XkVZH2kas3/loAprvV1XaUUD96rNdw8eHhWKYDBGRFX4mh6Fk11ubNeRxNYFmrd0fv0cTynHWQJzCNKcJZkkX2Th6ewSxpbMwHIHaxZWQOLAr/xknnQdzEhi29/7gVbXARkzuJ++PupvlYpj/jZ1kc9t1QgEF2ZRG2ZqxxCzsP2mgQNCqd2zwoK3IjyEDfrb/FMqhW58DOtMnrhFIeORB/304vXEXESK3Elp2KO1p/Q==</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2008-04-23T19:12</ISSUEDTIME><DESCRIPTOR><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{1028a0ac-c4ae-4b32-9eca-d2fd997cce2c}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production Root</ID><NAME>Microsoft DRM Production Root</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">XylCwSoow3MdnsVPkTtwIY5rk647bS64Nf7M2HS8klRk5ahhcMx9VOlntzqX3SYyqxoXQFDR/kTWVTpbXVMsSYLxqr+WD1jTdHsv//79QwHtrKhLMR7jcLcMnXfAE39KaUAZg3dFSEt+JYbZboSjPeJo6D1aZmcZvladrIq+KpBqbgIEqabqPAgG8/IbhtNblaDkTo7ev+AuIWec9EjHJCYk0TSzJf423iHZYJXDMz081OBrKY+jMtqk8aMpiqvcX6mv7mT7IwYw9aEklx+3pmLqBY87VWzlxFK88jl5CLHbJqxL5iwC3VpfVz0Ualng1KtDqZmcZdjwPcQc3RMxlg==</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production CA</ID><NAME>Microsoft DRM Production CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">NQrYSAc43V7NRTW8VT5E2XhMcwmmON7TkQ7ETUIWGqlPTvFSw798gFgIXBcFMtCdIyf3VMO5YGOKJD1wnc2ydlozf16VHF5UrFgtkT/9uK7uRshjyH516H/cCKJyIyPaYEkW+pI7x8+cfgVcUXZ/oCrFHdueXLS4ce/nals45qx5qqcdM7Y08o5a1kX/yoiPLbo9mKS/NlzEfcRvRNiAC6WqlIv8MgNxpAmU7FRUHTPck/gO9X0afh7VkwRq33TjrCS+UidoxwOI2E0DKMmtgUMA2u04O/fgR0LeUruTYYj+Qz2II82qcz7+fetEdUsvKKa1ZBK8Fnmw1BFPeoyX9g==</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{1028a0ac-c4ae-4b32-9eca-d2fd997cce2c}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-12-05T01:07</FROM><UNTIL>2020-04-20T19:12</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA256</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="256">qd7gCOY5ev2bli37IIX1LD0/aIeNkiMLkcKwOF/5zS0=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="2048">J8dU7N/ozOkRYIn4Lgb4FWp+E8FZ4LjrgjqvJkXBLrJC+P0LB00eEQFFJid6hDW9R+FP3/8nJAqVnjGHv86avhFQY43BI6iKyt7HOwERKxw9nQguj73JtGLDMEWHs3iVHp465bW8lrG/FHjySQ9vm0ydXfm76ljfUil3/YYoJmQfMB8bVBp3Aqxfiu6quH26+UeqOyUyOuNcmq9AfaKBYHJx7hGoGe8bdPY3yvYGQk+BO9j/s12dVRTIOvvh2mFIVooI5Ouct1FQRYpRSW8LqCDZ6hA6XcV3pzmgrsfAjmQ77DVGXTZ4YDBBD53Mi3EOfrgXBTtJHa+6YNxjUlfwbQ==</VALUE></SIGNATURE></XrML>
+<SIGNATURE><DIGEST><ALGORITHM>SHA256</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="%u">%s</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="%u">%s</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2006-06-14T00:24</ISSUEDTIME><DESCRIPTOR><OBJECT type="Server-Licensor-Certificate"><ID type="MS-GUID">{a9d59272-d0bd-4b4f-968a-ff87f2d20cf6}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Desktop-Security-Processor-Certificate-Authority"><ID type="MS-GUID">{151068bb-aa0a-4b71-a23e-0f8d82dbe056}</ID><NAME>Microsoft DRM Production Machine Activation Desktop Security Processor CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="1024">c+VBnj/vZa5yd09+fN9IhFcF5nKphPpRlDj4/YDFbefsfzGb1sR1VA2R/8/Rp2cSTF5NCvLuhr36br47HmExTRWb6vcnLK765Z/m43vVYMUj4z/6WIZD8EssjFruRvVGIyaqpUQp2yJgGFI5RKBrcOwLn44DzaUv2H2Pc9lLKdM=</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="MS-DRM-Desktop-Security-Processor"><ID type="MS-GUID">{5b44ed92-3894-43eb-8395-2a13ae8df223}</ID><NAME>Microsoft DRM Production Desktop Security Processor Activation Certificate</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="1024">nxosrr4IYnkcpFhYkLB+mCtnjfyJ1nT/NmgAKzkT6IMk3vHx3JobMB5c6Q8VUQzsa+YSbIFjrVkLCQ8tvtAKO7wIQGi74By1T3Z8llsZT5jJL6YZb7+ssNMNqv5SiCujbd5Y+MuasklaNdw3V938oVYh47aiJZ09qvkhieoHj6I=</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="Server-Licensor-Certificate"><ID type="MS-GUID">{a9d59272-d0bd-4b4f-968a-ff87f2d20cf6}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-11-22T22:50</FROM><UNTIL>2254-10-17T00:24</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA1</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="160">JPcvG7GHcEBcjyldUJKGmSLeWmQ=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="1024">h/bdPEFvieDU7oE1IX2vZFG4Mp7usXXF0dHXs5mdoh8/UvvNccH5Kov12EVfAKBcqK7GtD4RvCDQTCZu7Mj1fkjohGbqBeSip6ZY6qXVXqcpWGh+ogwEzDKctYH77oEWg5+Fqc3Zg65rsUQcTA9w5bacESo+rTZXZ9cWmHaPWRQ=</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2006-06-14T00:22</ISSUEDTIME><DESCRIPTOR><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{00f589fa-b8d6-4f1b-89e8-f6a733866641}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production Machine Activation Server CA</ID><NAME>Microsoft DRM Production Machine Activation Server CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="1024">sYQ5Ql1SLkLskzvgM8pJMDXMp7DdI3kYsPN7q0MHozLRzG2xXhM58XqIs/NcD0uGsNRtZ9oJrHFNuRDXPOymXaJyiZAiYIHtyhRub5fKbfs8K5VYd9mEEL6D3GWY60SGTqSXqm0gDdu1iiFuqJJbC/LujsK4OVK7ND6NveXoq/E=</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="DRM-Desktop-Security-Processor-Certificate-Authority"><ID type="MS-GUID">{151068bb-aa0a-4b71-a23e-0f8d82dbe056}</ID><NAME>Microsoft DRM Production Machine Activation Desktop Security Processor CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="1024">c+VBnj/vZa5yd09+fN9IhFcF5nKphPpRlDj4/YDFbefsfzGb1sR1VA2R/8/Rp2cSTF5NCvLuhr36br47HmExTRWb6vcnLK765Z/m43vVYMUj4z/6WIZD8EssjFruRvVGIyaqpUQp2yJgGFI5RKBrcOwLn44DzaUv2H2Pc9lLKdM=</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{00f589fa-b8d6-4f1b-89e8-f6a733866641}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-12-05T01:07</FROM><UNTIL>2013-11-29T00:22</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA1</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="160">l5e/GvgFFgGAFz2rhX+EsDkFeb8=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="1024">KUQxNdz3rA65+Okta3yvEAVCVoXAX2CMwcX75IOp4wNy7d8P26TsoTTlGGbIlyiA0YPdGLcUbNbNRCWBkz1G/6BPyitnC05SktmYPVQTbRsafaggKjP4QeZZrWkd94GtYauTedyT21TQM97Yk5sESWh0A957cm6kSGKxa/UbYoo=</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2006-06-08T19:55</ISSUEDTIME><DESCRIPTOR><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{8f63c977-d0fa-4a20-91da-cdb2d57e6d5b}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production CA</ID><NAME>Microsoft DRM Production CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">NQrYSAc43V7NRTW8VT5E2XhMcwmmON7TkQ7ETUIWGqlPTvFSw798gFgIXBcFMtCdIyf3VMO5YGOKJD1wnc2ydlozf16VHF5UrFgtkT/9uK7uRshjyH516H/cCKJyIyPaYEkW+pI7x8+cfgVcUXZ/oCrFHdueXLS4ce/nals45qx5qqcdM7Y08o5a1kX/yoiPLbo9mKS/NlzEfcRvRNiAC6WqlIv8MgNxpAmU7FRUHTPck/gO9X0afh7VkwRq33TjrCS+UidoxwOI2E0DKMmtgUMA2u04O/fgR0LeUruTYYj+Qz2II82qcz7+fetEdUsvKKa1ZBK8Fnmw1BFPeoyX9g==</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production Machine Activation Server CA</ID><NAME>Microsoft DRM Production Machine Activation Server CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="1024">sYQ5Ql1SLkLskzvgM8pJMDXMp7DdI3kYsPN7q0MHozLRzG2xXhM58XqIs/NcD0uGsNRtZ9oJrHFNuRDXPOymXaJyiZAiYIHtyhRub5fKbfs8K5VYd9mEEL6D3GWY60SGTqSXqm0gDdu1iiFuqJJbC/LujsK4OVK7ND6NveXoq/E=</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{8f63c977-d0fa-4a20-91da-cdb2d57e6d5b}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-12-05T01:07</FROM><UNTIL>2013-12-01T19:55</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA1</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="160">wBp4Th3EjS9ZFIrkAPyxsAwHCSI=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="2048">30PsBqjqUgMC5pGlRronOa9CcvJjkvkyVoCd/lczbqQdFbhyw19HqLg8PAC9yWJ8ZCjfk7+E2SIgo2wUobSHCO+lAJ+qyTB5JhLz0bTnKc7NF9nHElODzg5gIUPszzWDkIdsyA98KJybdaQUYR0pzWJjSC82saaWJmx0hHKQA9aNnk9PtFIHYzlb9ZKlIBXVdaQFjhZ78lyuK2CIAUqR+MPwRyxHoiakBHfDjAE/D+d9etoHNLDG9A0ffD7wFTDm8vbse0HlRH2BXfvSG8cNnmgVnMHTtd5gG0iqFEeozCIHFoHa4HvUc4QSSR077BsWsQx8S8ma5KCFZ7okUWBwyw==</VALUE></SIGNATURE></XrML>
+<XrML xmlns="" version="1.2"><BODY type="LICENSE" version="3.0"><ISSUEDTIME>2005-06-16T23:59</ISSUEDTIME><DESCRIPTOR><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{4669b6ba-bd57-4f8d-a4ed-0aa900d4bd38}</ID></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production Root</ID><NAME>Microsoft DRM Production Root</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">XylCwSoow3MdnsVPkTtwIY5rk647bS64Nf7M2HS8klRk5ahhcMx9VOlntzqX3SYyqxoXQFDR/kTWVTpbXVMsSYLxqr+WD1jTdHsv//79QwHtrKhLMR7jcLcMnXfAE39KaUAZg3dFSEt+JYbZboSjPeJo6D1aZmcZvladrIq+KpBqbgIEqabqPAgG8/IbhtNblaDkTo7ev+AuIWec9EjHJCYk0TSzJf423iHZYJXDMz081OBrKY+jMtqk8aMpiqvcX6mv7mT7IwYw9aEklx+3pmLqBY87VWzlxFK88jl5CLHbJqxL5iwC3VpfVz0Ualng1KtDqZmcZdjwPcQc3RMxlg==</VALUE></PARAMETER></PUBLICKEY></ISSUER><ISSUEDPRINCIPALS><PRINCIPAL internal-id="1"><OBJECT type="DRM-Certificate-Authority"><ID type="ascii-tag">Microsoft DRM Production CA</ID><NAME>Microsoft DRM Production CA</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">65537</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="2048">NQrYSAc43V7NRTW8VT5E2XhMcwmmON7TkQ7ETUIWGqlPTvFSw798gFgIXBcFMtCdIyf3VMO5YGOKJD1wnc2ydlozf16VHF5UrFgtkT/9uK7uRshjyH516H/cCKJyIyPaYEkW+pI7x8+cfgVcUXZ/oCrFHdueXLS4ce/nals45qx5qqcdM7Y08o5a1kX/yoiPLbo9mKS/NlzEfcRvRNiAC6WqlIv8MgNxpAmU7FRUHTPck/gO9X0afh7VkwRq33TjrCS+UidoxwOI2E0DKMmtgUMA2u04O/fgR0LeUruTYYj+Qz2II82qcz7+fetEdUsvKKa1ZBK8Fnmw1BFPeoyX9g==</VALUE></PARAMETER></PUBLICKEY></PRINCIPAL></ISSUEDPRINCIPALS><WORK><OBJECT type="DRM-CA-Certificate"><ID type="MS-GUID">{4669b6ba-bd57-4f8d-a4ed-0aa900d4bd38}</ID></OBJECT><RIGHTSGROUP name="Main-Rights"><RIGHTSLIST><RIGHT name="ISSUE"><CONDITIONLIST><TIME><RANGETIME><FROM>2002-12-05T01:07</FROM><UNTIL>2014-01-20T23:59</UNTIL></RANGETIME></TIME><ACCESS><PRINCIPAL internal-id="1" /></ACCESS></CONDITIONLIST></RIGHT></RIGHTSLIST></RIGHTSGROUP></WORK></BODY><SIGNATURE><DIGEST><ALGORITHM>SHA1</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="160">sH+lchPGEP9IKIajmnw5QGUqOl4=</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="2048">B/J7RosLJcgjLeBz/Sm1OS6an4jY+SW5MzW17DJakfBBCdM0E+UyAkI2e2ua/bxhAmcsOpN2joQPC+o0Zlvn38/MqS9LHH6iZuBTCdX8zD01UiOj4xhsIjTkJVoXlPVQCi4lOaCCpaXGo2SzP6TszsTf0lWpNDQllEckue4/VsCvaSY0WMnIxJJLMM5v7X6i/Qgzebvy72ffYHKB9y/koIYwUlVlsiNrlzou5dypLMpCXGOqP+wUotxjOvXnd/0GAtqlAmI2hgwrDBYmJNtibwGFmsIuvIwfZx0uujjuymyQdX86zbm7BtgN1JNB5rbgdqGIzLV9Pzl7A2OuY3O3AQ==</VALUE></SIGNATURE></XrML>
+5b44ed92-3894-43eb-8395-2a13ae8df223
+<SIGNATURE><DIGEST><ALGORITHM>SHA1</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="%u">%s</VALUE></DIGEST><ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM><VALUE encoding="base64" size="%u">%s</VALUE></SIGNATURE></XrML>
+<BODY type="LICENSE" version="3.0"><ISSUEDTIME>%4u-%02u-%02uT%02u:%02u</ISSUEDTIME><DESCRIPTOR><OBJECT type="Machine-Certificate"><ID type="MS-GUID">{92992236-A920-4152-ABAC-1C83467C5A57}</ID><NAME>Microsoft Machine-Certificate</NAME></OBJECT></DESCRIPTOR><ISSUER><OBJECT type="MS-DRM-Desktop-Security-Processor"><ID type="MS-GUID">{%s}</ID><NAME>Microsoft DRM Production Desktop Security Processor Activation Certificate</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">%u</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="%u">%s</VALUE></PARAMETER></PUBLICKEY></ISSUER><DISTRIBUTIONPOINT><OBJECT type="Activation"><ID type="MS-GUID">{99F48562-703E-4E7D-9175-DD69C66921B7}</ID><NAME>Microsoft Activation</NAME><ADDRESS type="URL">file:///rmactivate.exe</ADDRESS></OBJECT></DISTRIBUTIONPOINT><ISSUEDPRINCIPALS><PRINCIPAL><OBJECT type="Machine-Unique-Identifier"><ID type="MS-GUID">{%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}</ID><NAME>Machine</NAME></OBJECT><PUBLICKEY><ALGORITHM>RSA</ALGORITHM><PARAMETER name="public-exponent"><VALUE encoding="integer32">%u</VALUE></PARAMETER><PARAMETER name="modulus"><VALUE encoding="base64" size="%u">%s</VALUE></PARAMETER></PUBLICKEY><DIGEST><ALGORITHM>SHA1</ALGORITHM><PARAMETER name="codingtype"><VALUE encoding="string">surface-coding</VALUE></PARAMETER><VALUE encoding="base64" size="160">%s</VALUE></DIGEST><SECURITYLEVEL name="Platform" value="%u.%u.%u.%u" /><SECURITYLEVEL name="Manufacturer" value="Microsoft Corporation mcoregen DLL %u.%u.%u.%u (RMS Client %s Desktop Security Processor)" /><SECURITYLEVEL name="Repository" value="Microsoft Corporation Windows RMS Client %s secure repository %u.%u.%u.%u" /></PRINCIPAL></ISSUEDPRINCIPALS></BODY>
+434CFC25-B93E-4298-9C3B-A3BE49B737DB
+api-ms-win-core-processthreads-l1-1-3.dll
+GetProcessMitigationPolicy
+SetThreadInformation
+GetThreadInformation
+api-ms-win-core-localregistry-l1-1-0.dll
+RegGetValueA
+AcgApi
+Software\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
+api-ms-win-core-com-l1-1-1.dll
+CoCreateInstanceFromApp
+api-ms-win-core-winrt-l1-1-0.dll
+RoGetActivationFactory
+api-ms-win-core-winrt-string-l1-1-0.dll
+WindowsCreateString
+WindowsDeleteString
+Windows.Internal.SecurityMitigationsBroker
+/msipp
+Software\Microsoft\uDRM
+Software\Classes\Local Settings\Software\Microsoft\uDRM
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=
+\\.\PhysicalDrive0
+hG2d2 DJL+ACL=!REVEROF VUL 1CS4vulreve
+x9pv45dxghk
+keyfile3.drm
+MSIPP-MK
+MSIPP-SK
+vector<T> too long
+invalid vector<T> subscript
+\wintrust.dll
+CryptCATAdminCalcHashFromFileHandle
+CryptCATAdminAcquireContext
+CryptCATAdminEnumCatalogFromHash
+CryptCATAdminReleaseCatalogContext
+CryptCATCatalogInfoFromContext
+CryptCATAdminReleaseContext
+VC^G7
+j`Dae
++F&XX
+@.#+6A
+A4&FG,Nx%
+sR:.RrU
+/A@Z-t)]>F3~
+/-%tyc
+Q:YH(
+,O[Cj
+Y$#<9
+8?/}Q
+`bS[fT
+ 8'2c
+9d+GbW
+,G5;z
+y8w#p
+/`v@3
+ldeRW)
+%9'7[
+trr12
+5BrT$
+c;g70
+^/])$
+fv"W3!
+JQdW"
+,brpo
+#m('J
+2"0"G
+I!kKJ
+0_TZp
+8?m]X
+q8X.o
+AB;A-#F
+'k1B]
+e#2g/#
+"45R|8
+=aJ>Wi
+%DgdR
+i%.ez
+=7R|)
+9HA[}
+# _N,
+e5&CN
+\>&2>/p`
+c9PDuM
+M+mc9[.
+L9E&m
+#<os0
+#cRn 
+v`a[GP
+43U sH
+937eG
+;"@")
+#U cH
+x%;"A2)
+43U!c@
+8#?eG
+;*@2)
+x$+"A"!
+3U!c@
+p$;*@2)
+p$+"A2)
+PVB~d
+gw4(g
+gw<)g
+XVR~d
+l"|X9
+XVRvd
+l"|X9
+XVB~e
+l"|P8
+gw4(w
+d"|X9
+jBj# g
+K3>[e+1
+|_dyO
+{]o-&
+.8; ![
+Db&vx
+LUH-5J
+jwyK2
+*.#cu
+zMfrU
+kHy<\(
+[lk&k
+p]GM9
+!O``<-NWSBw
+X_yc6
+d%sz~*
+]Vcqd
+m 4pz
+{!URW
+Ar*$U
+6}~:5
+tyzb-
+WQ"X/1F*g%
+ajJP6
+-atToZ6
+-s{j3
+AmG=R>5
+mku5;;
+e)Ug>
+1N<#S
+NI\Y_7
+aE i>z
+0_;Ap
+'U'Yi{
+_-q1@e
+xoC0i
+=9F8D
+x>+6'
+7"xNN
+^Ywdo
+a"S)-
+/T5@>$
+H0u9X
+Wc#z~B`E8
+[q@4q
+^c3!r
+jb*1?
+$di`I
+0PyNy
+P$>{0$n
+'93e6
+pj[IY
+\E_^$
+N`i40
+/_X2Y
+@%vhV
+["PK>b
+_RTe\Jg
+Pz[K9?
+"wJ&`
+F/AE+
+RadFYp
+QLYRq
+4(3+W
+SE.H2
+=Oo.I
+WA#~;EGp}
+3~~v%
+1GbO\'W(,
+UW"IR6
+-b6@s@t
+Z9F$QN
+MN!gEY
+rtA(=
+C3o^Qy
+cl@chWP
+z7"2m
+4o[AR4
+D[y%J
+."XpX
+.#7tg
++;q*]
+[5]h?H
+fz%w* 1
+{|`"^V
+/;(8k2
+vZ"S 
+w}6u6
+.0U8[
+*_Td~
+&IZh@E
+C b~Z1
+?gyK6
+AsF~#
+jbM)Q
+strV~
+i0Ec\^
+5'$[f
+Ks^;>4
+8E+a\
+%=4@!
+s{l0myr
+PC3o^
+b/u,t
+^'gI~
+^$CS\
+9!J_$
+Tc$1F
+H/wlp
+cyz]#
+JOB3uhlZ
+Z E`*
+}j=!:T
+diUAx
+^wi`c?\
+W&QB4
+v).,I
+EK<8|V
+\z[@6
+TAZ@`
+zt|Fz7
+IIe:4
+RSDS,
+rmactivate.pdb
+.rdata$brc
+.rdata$T$brc
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.rdata
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.tls$
+.tls$ZZZ
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.data$brc
+.data$r$brc
+.data
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+s@SVW
+tgVh<
+QSVW3
+QQSVW
+tYW9u
+:QVPR
+3D$,+
+T$ 1D$ 
+D$L1D$$
++|$ 3
+T$ 3|$
++T$ +T$
+D$\PS
+3D$,+
+T$ 1D$ 
+D$L1D$$
++|$ 3
+T$ 3|$
++T$ +T$
+D$\PS
+T$ 1D$ 
+D$<1D$$
+3|$ 3
++t$8+t$
++t$,3t$
+D$LPS
+T$ 1D$ 
+D$<1D$$
+3|$ 3
++t$8+t$
++t$,3t$
+D$LPS
+nA:P~Hg
+@$"#x
+VVVRQ
+VWj0_W
+H`X({
+iuB^b
+QQSVW
+QQSVW
+umPSQR3
+FLvT2
+:RSA1t
+?PVVV
+|$8+t$
+D$ PP
+DtCSV
+;t04u
+3L$ 3
+}i9\$
+D$,3D$$3T$$3
+T$ 3T$,3T$
+3L$(3L$
+D$<3T$
+L$ ;\$
+D$<4I
+3D$(3D$,3D$ 
+3T$,3T$
+2\$(2\$
+L$ 58<&
+)3\$ 3
+3D$ 3
+3T$(3T$
+L$L3|$
+D$H3|$
+3\$,3\$
+5t{v7
+2b_03
+3T$$3T$ 3T$
+D$D3L$@
+3T$ 3
+3\$ 3\$
+t$(5!
+!3|$ 3|$
+3t$ 3
+3\$ 3\$
+!:(_^
+3L$ 3
+t$$3t$ 
+D$D3L$
++3D$ 
+%m\hT
+_^5YR+
+f3UWh\
+_^-l+
+D$P3D$
+D$X3L$ 3
+L$03\$
+\$ 3D$0
+WX~Q3
+3T$03T$
+T$L_^
+T$051 
+L$D3t$
+3t$ 3t$0
+D$$1D$
+3t$(3
+3D$83D$(
++|$,t
+\$,3D$
+D$ 3D$
+D$8_^
+|$DhD
+3L$$3
+D$H3L$D_^
+L$@3|$
+3|$ 3
+L$43D$,3D$
+k3|$(
+L$(hx
+L$83D$
+3\$ 3
+3D$ 3
+-Eik3E
+T$ 3|$
+3L$ 3
+#L$<3
+D$L3L$
+L$03\$
+D$$3D$
+L$ 3D$
+t$(5|NO
+3D$ 3D$D
+\9k_^[
+D$ 3L$
+3D$,3D$
+D$03\$,
+|N3\$(3
+3L$03L$43L$
+L$P3D$$
+D$$5Om
+D$H3\$
+3\$ _
+T$$3L$
+3D$,+
+3T$,3
+T$ 3D$
+Jx)3U
+D$$3|$ 
+3t$,3t$
+L?Ch`
+3L$$3
+3\$$3\$
+3\$ 3\$
+L$ 3L$
+3t$ 3|$
+3T$ 3
+3T$ 3
+\$<3T$(
+3D$(3D$
+3T$$5&
+3\$ 3\$
+3t$(3t$ 5
+3L$ 3L$
+3D$$3
+L$H3\$
+|$,3\$
+L$ 3T$
+L$$3D$
+3L$ 3
+D$D5UL
+L$<3|$
+D$,^[
+D$03L$(
+L$ 3D$(3
+3D$03D$
+|$45_
+T$ 3T$$3T$
+T$(_^
+L$ ;|$
+3T$ +
+3L$ 3L$
+l3t$ 
+3T$ 3
+3t$$3
+|$,5r
+3T$ 3T$@
+D$83T$
+3\$@3\$
+D$D_^[
+D$$_^[
+-{"NN
+JkhB4
+t$$3t$
+T$$3T$
+3D$ _^
+y/3T$
+~v3T$ 
+|$H3D$$3
+3L$$3
+3T$(3
+Z@3\$
+3\$(3\$
+3\$,3\$
+D$$3D$(
+?}L3E
+3D$(3D$
+,q3\$
+\$@3T$
+T$H3D$
+L$$3L$
+3T$,3T$(3t$
+7d3T$
+L$83\$
+L$ 3L$(
+L$$3D$
+3\$ 3\$(3\$
+D$(3D$$3D$
+5/8f;
+3D$ 3D$
+T$H3L$P3L$
+L$ 3L$
+D$$3D$ 3|$ 3
+|$(3L$(
+|$@3T$D3T$ 3T$
+D$ 3D$
+Yx5e5
+L$H3T$
+3|$ 3|$$
+T$$h0
+3L$ 3L$
+3D$<3D$
+M3L$@
+D$$3L$
+D$43D$
+3D$ 3D$
+3\$ 3|$ 
+3D$$3D$
+3\$ 3\$
+\$$3\$
+L$ 3D$
+\$@3T$
+T$ 3T$<
+D$ ,N
+YE03T$
+3L$,3L$
+3T$,3
+3D$03\$43
+L$ 3L$
+3D$ 3D$,
+-/kRD
+3\$,3
+R3D$ 
+D$P_^[
+3\$ 4
+3L$ 3L$$3L$
+3D$$3D$L
+T$P3\$
+D$8_^
+3L$43L$8
+@dEL3T$
+584)3t$
+T$$3t$
+D$(3L$
+3L$$3\$(3
+3\$$3
+L$T3|$(
+D$ 3D$
+D$L3L$H
+t$P3D$
+D$(3D$
+_^5'b
+L$ ;t$
+3D$ 3
+|$P1t$
+0<3\$
+L$ +E
+3\$$5
+3t$$3t$
+3\$,3\$
+3\$(47
+T$D3\$
+3T$03T$
+3D$(5
+\92_^[
+3T$03T$
+hR5UH
+L$ ;D$
+3\$(3\$
+ZQ"3L$
+\$,3t$(3t$
+|$(3T$ 3
+3|$$3
+t$P3\$
+T$ 3T$<3T$$
+D$83T$
+t$$+]
+5$t?Z
+L$@3D$
+L$43D$03D$
+3D$ 3t$,3t$ 
+3D$(3
+t$ 3D$
+3L$,3L$
+L$D+]
+3L$ 3L$
+D$D3L$@
+3D$03D$
+T$H_^
+M3T$ 3
+L$(9L$
+T$L3L$ 3
+3\$ 3
+D$H_^
+]p{P3t$
+D$,3\$
+D$D_^[
+:JyzhL
+t$ 3T$
+3L$(3L$
+3L$03L$
+T$8+E
+L$<3|$
+|$$3D$ 3t$
+5.p7R
+"_^5%~
+5-U&&
+L$$3\$
+I~3L$
+T$(hD
+n3T$(3
+\9d_^[
+ZWR+t$,3
+3T$43T$
+_^5~;d
+t$ hp
+L$$hX
+3|$<3|$
+3\$@3\$
+3\$,3\$ _
+S3T$ 3
+3t$$3
+3L$$3
+3T$@3T$
+_^-+<tj
+L$D3D$
+3t$$3
+3\$$3t$ 
+T$L3D$ 
+3L$43L$
+L$$3L$
+L$<58
+3\$ 3
+3L$<3L$
+-T&n3
+T$@3T$
+3T$$3T$ 3D$$
+D$@3L$<
+L$(5[P
+T$ Wh
+3T$$3
+T$L3L$
+3L$$3
+3\$ 3
+q3D$(
+t$(3D$
+D$,3L$
+3D$ 3
+3D$ 5
+j@Jj3T$ 3T$
+T$P3D$
+t$L3D$
+3L$,3
+3D$,3D$ 
+D$D_^
+U@SVW
+3D$$3
+3\$ 3\$
+D$H_^[
+4x3L$ 
+L$,3L$03L$
+3D$,3
+3D$(3D$
+3L$43L$,
+3D$03D$,
+D$$3D$0
+3D$$3
+3\$(3
+t$L3\$8
+3D$43
+3L$,3L$
+3D$03D$81D$
+3T$<3T$8
+3D$<3
+D$,3D$@
+D$03D$,
+3L$,3L$(1L$
+D$03D$$1D$(
+3D$@3
+D$,3D$<
+3\$$1t$
+3D$@3D$
+\$03D$(1D$
+D$H3\$43\$X3
+D$83D$$3D$
+D$@3D$83D$03
+3D$@3D$43D$03T$P
+3D$<3D$
+3D$@3D$03
+3D$03D$
+D$83D$<3
+3D$83
+3D$@3
+3D$@3D$
+3T$43
+3T$83T$
+L$H1D$
+3D$03
+3D$@3
+3D$83
+8/iL3D$D
+3D$<3
+3t$D3
+3D$@1D$
+\$<3\$D3
+D$83T$<3T$03T$
+D$(1t$(
+T$L3t$0
+3|$L3
+3D$01D$
+3T$@3T$03
+3D$@3D$
+3L$(3D$$3
+3L$D3D$0
+D$05Z
+3D$03D$
+3D$<3D$
+3D$D1D$
+3T$L3T$D3
+T$03T$L3
+D$<3D$03D$D3D$
+3D$43
+3|$<3D$@
+D$L3|$@3|$D
+3D$D1D$
+3D$@3D$D3
+3t$@3t$
+3|$83t$
+3L$P3L$D3L$<
+3D$@3
+T$83D$
+3D$<1D$
+3\$D3
+D$83D$L3D$03D$<
+T$L3T$@3T$<3T$
+3L$@3L$
+3\$83\$0
+3T$<3T$
+3L$P3L$@3L$0
+T$P3T$D3T$03T$<
+t$03\$
+3D$$3D$
+3D$$3
+T$X3D$$3
+3D$03
+P3D$4
+D$P3D$
+3T$ 3
+T$(5y
+^g_^-'
+t$,5o
+D$H3L$D
+L$,3L$
+3L$,3L$
+3D$ 3
+3L$ 3
+3\$$3\$
+T$83L$<3L$
+L$ 5n
+F3T$(3
+f23D$
+D$ +M
+=V3D$
+3T$ 3T$
+3t$03t$
+3t$$3|$,3|$$
+D$ 3D$
+|$(3|$
+t$$3D$ 3L$
+3L$(3D$
+-s&=/
+_^5VU
+3T$$3T$
+T$43L$(
+L$<3D$83D$
+3t$43t$
+3L$$3L$
+D$03L$,_^
+3t$,3
+3D$,3D$0
+3L$$3
+3D$05;
+sN3L$
+T$@_^
+L$<3\$
+T$ 3T$<
+T$,_^[
+3|$ 3|$
+3D$ 3D$
+T$ h0
+3T$ 3T$
+3L$ 3
+L$P3D$
+3D$(3D$ 3
+D$(3D$ 
+L$ 3\$
+3t$03t$ 
+jb3L$
+5"2M=
+L$43t$
+5<l60
+3\$83\$<
+L$,3D$$3D$
+3t$ 3t$
+D$H_^
+L$03\$,3\$
+|$,3|$(3|$
+|$D3t$
+D$,3t$
+L$83T$
+3T$03T$43T$
+3D$ 3\$ 
+3D$$3D$
+D$D3D$
+D$L3L$H
+D$$3D$
+L$$3L$
+L$ 3L$
+3L$43\$(3\$4
+3D$$3
+3D$(3L$
+D$$5Z+
+3T$$3T$(3T$
+5l2O-
+3\$(3\$43\$
+3D$$3
+3L$<3L$ 
+D$@3t$
+3\$(3\$,
+3D$(3D$
+L$,5Zj
+3D$ 5
+3T$$3
+L$03L$
+3L$43L$
+L$,3t$
+L$,3\$
+3L$,3L$
+3D$$3D$
+3D$(1D$
+3D$(3
+\$$3\$,
+t$ 3t$$
+3D$ 3
+3D$(1D$
+\$43\$,3
+D$$3D$4
+3D$$3
+3D$ 1D$
+3D$ 3
+D$43D$,
+\$$3\$(3\$ 3\$
+3D$$3
+3D$ 3
+3T$(3T$
+3\$83\$
+3t$83t$ 3t$
+3D$03D$
+3D$$5
+L$(3L$$
+3T$$3
+3\$(3
+t$(5i`
+3T$43T$
+3t$$3
+3T$83T$
+3|$ 3|$
+3\$83\$ 3\$
+T$$5s
+3L$<3L$(3L$
+3D$ 5kL
+3|$$3|$ 
+3D$H3D$
+L$D3D$
+T$L3L$
+3T$ 3T$
+3T$,3T$0
+T$L_^
+|$$3|$
+3D$,3D$
+3T$ 3T$
+xF'+M
+x}%3T$(3
+3\$,3\$
+L$$9\$
+3L$(3
+3D$(3L$
+L$45l
+3L$43L$
+t$$3t$
+%>3T$
+:83T$
+3\$ 3
+3D$03D$
+L$83L$43L$H3L$
+\$$+\$(
+L$$3\$ 
+3D$,3D$ 
+L$<3T$
+L$ 3L$
+2_3\$
+D$@3D$D-fP"
+^,1\$
+D$4+M
+3t$ h
+L$P3D$
+\$$3\$
+t$ 3t$(
+3D$$3D$(
+D$H_^
+3D$(3D$
+3t$,3t$
+t$(3\$,3
+L$$3L$
+T$$3T$,3T$
+D$83L$4
+3T$ 3T$
+3L$(3|$
+3T$<3T$(
+L$(4I
+F#D$$
+3L$03L$
+1\$ 3
+3T$ 3
+C-+\$,
+L$(5}
+D$@1T$8
+T$$3T$4
+\$(3\$
+9t$Ds
+3|$<3
+|$<1D$<3t$<
+T$P1\$0
+1T$03
+L$01L$
+T$P1L$(
+3D$(1D$
+3T$<3
+1T$ 3
+y)L$<
+1T$,1\$8
+L$D)L$@
+1T$83
+3T$,1T$4
+|$ 3|$4
+1L$43
+1L$(5
+L$D)L$@
+1T$,1\$<
+L$D)L$@
+9D$@s
+1T$<3
+3T$,1T$4
+D$8+D$0
+|$41|$ 
+D$@)L$8
+1D$ 3
+1\$<3
+)Fv)+
+L$D)L$@
+D$,5m
+L$D)L$@
+T$@1L$
+t$D)t$@
+1t$,3
+T$<1\$ 1\$,1|$4
+1D$43
+|$01|$$
+D$41D$$1D$0
+L$81D$83t$8
+L$D)L$<
+9D$<s
+D$D1|$
+L$D)L$@
+9D$@s
+1\$01t$8
+D$4)L$<
+D$D3|$0
+s)D$<
+1D$ 3
+D$()L$@
+t$<1\$0
+D$01D$
+D$01D$83T$8
+1\$83
+1T$45
+t$<)t$@
+9L$@s
+t$@1T$8
+\$(3T$41T$,
+|$ 3|$,
+L$D)L$@
+9D$@s
+1|$,5@p
+D$<)L$@
+1T$,3t$0
+t$03t$<1t$
+D$05'
+1D$03\$
+l)D$@
+1\$05
+1D$<3T$0
+t$03t$41t$
+D$<1t$,
+t$ 3t$,
+T$03T$@1T$
+1D$,3t$,
+T$,3T$0
+T$$3T$4+
+|$<)D$@
+9D$@s
+D$@+D$<
+D$X)T$<
+1\$83
+1|$,3
+D$`+\$@
+D$@+T$d
+T$$3T$,
+t$,wd`
+*l)T$<
+-3\$ 5
+1Kx^[]
+6m$C3
+L$ ;\$
+3L$ 3
+L$@hD
+t$ 5Q
+83D$@
+\9*_^[
+L$@3L$
+|BW_^[
+5G*kE
+3L$<3L$
+T$H5p
+3\$$3
+|$(,`
+<3T$$3
+L$P3D$$3
+t$L3D$
+3D$$3|$,3|$$
+D$L_^[
+L$ 3L$
+T$D3L$
+L$43D$
+t$(5RFw
+#D$$+
+D$ ;D$
+L$@3\$$
+3\$@3\$D3\$
+5Er-r
+m3L$D
+t$03D$
+3L$$3
+fSp9^-
+hXq@^
+3\$ 3
+3t$ 3
+MaKHh$
+V3T$$3
+L$ ;\$
+D$<3L$@3L$
+|$(5!;
+D$D_^[
+L$ 9\$
+T$4_^[
+L$(#D$,
+3|$(3|$
+3\$(3
+O3\$ 
+\90_^[
+L$P3T$
+D$H3\$
+T$(52
+D$D3D$H
+L$ ;\$
+%03T$
+lD3T$
+3L$ 3L$
+D$,3L$$
+3D$ 3D$
+Vwn1T$
+c?1{3
+\$ 3\$<3\$$3\$(
+,!]3\$
+L$ 9t$
+L$(3D$$3t$ 
+3\$<5
+D$ 3D$
+L$$1L$
+cK1D$
+L$(9L$$
+\9'_^[
+\$,3\$83\$
+3t$,3
+L$ 3L$0
+3D$,3
+3D$ 3D$$1D$
+\$,@+
+|$ 3|$
+3D$$3
+L$$3L$,3
+3t$$3
+\$03t$
+3L$03L$
+3D$03
+D8j+D$4t
+|%3D$
+3D$ _^5
+L$ ;\$
+\$,3L$
+\$(3D$
+L$03L$
+D$L3L$H
+*og7^
+3L$$3L$
+L$ 3\$ 
+3\$03\$
+3|$$3|$
+T$@3|$
+D$P3M
+L$83\$$3\$
+t$43T$83T$<3T$
+L$H3t$
+ep3|$
+L$ 9D$
+5e'{i3
+3D$ 3L$ 3
+3D$$3
+L$(3L$
+\$ h|
+T$H_^
+3D$$3D$05
+D$L_^[
+3T$$3T$
+2D$ 2D$
+$59fW
+3D$ 3|$
+L$(3D$
+3D$ 3
+\$03T$$3U
+L$ 3L$
+]z3L$
+t$H3L$
+3D$,3D$
+D$H_^
+D$0+}
+3D$01D$ 
+3D$03
+3T$$3T$ 3T$8
+3\$<3\$4
+3|$83|$$3|$
+T$H3|$<3|$
+L$$3t$
+3|$ 3t$
+D$D_^
+3L$ 3t$ 
+UT,63
+3T$ 3T$
+T$ 3L$
+\$H3D$ 
+_^-^}
+Uz;}h
+\9 _^[
+|$ 3|$
+3D$(3D$
+|$ 3\$(
+t$05{
+3D$$3D$
+Ov;\$
+\1_^[
+L$ ;\$
+3D$ 3D$
+|$83D$03D$
+3\$(3\$ 
+D$(3D$
+D$(3T$
+L$43t$
+q;!{^
+L$$3D$
+3D$(3|$
+D$83\$@
+*5K_^
+L$$3D$
+3T$$3T$ 
+D$(3T$
+3D$$3
+3T$(5AP
+>3T$0
+3L$ 3L$03L$
+D$ 3D$
+_^-yw
+L$03t$
+FEYU+
+\$L3T$
+3\$(3\$
+3D$ 3\$(3\$ 
+$ZghX
+D$(54Q
+3L$(3L$
+\9N_^[
+{3T$ 3
+T$$3t$
+_m3D$
+3\$,3
+b3\$(3
+L$$3L$(3L$
+3\$ 3
+D$ 3D$D
+L$D3t$
+3L$,3
+3T$$3T$
+D$H_^
+\$41T$
+\$8+\
+t$$1L$
+T$@1L$,1L$(
+\$,5FY
+1D$81\$
+D$01T$
+1D$ 1T$(
+8)D$4
+D$4+D$0
+\$,3\$(
+D$(3D$83
+I)D$8
+1L$(3
+1D$(3
+3D$01D$
+D$05J
+9D$Ds
+D$8+D$4
+!D$,1\$
+|$,)D$8
+1\$01T$(3
+|$(5i
+)D$<X
+9D$8s
+3t$03
+3t$01t$
+D$8+D$@
+D$(3L$(
+!D$D1\$
+\$43\$ 
+1L$03
+!D$D1\$
+t$D5]
+L$01L$
+D$,3T$8
+1L$83
+L$@)D$4
+1L$(3
+D$D3|$(
+L$8+L$D
+!D$D1\$4
+1D$43
+L$@1t$ 1t$(
+|$D+L$P
+L$8+L$D
+D$@+L$X
+1L$(3
+D$8+D$D
+T$D1\$(
+T$\+T$D
+D$@+T$`
+D$(+L$<5HY
+3|$,3|$(3|$ 
+3L$ 3L$$
+T$,3T$
+3L$ 3
+T$L3D$(3D$$
+3L$(3D$
+3L$ 3L$
+D$H3D$
+3L$ 3L$
+T$$3T$
+T$$3|$
+L$ 3L$
+_5=lS
+3D$ 3D$
+D$,5=r
+$c'u3
+3L$$3L$ 
+|$(3T$$3
+3D$,3D$(3\$,5
+3T$ 3T$
+2\$$2\$ 
+\$L3|$ 
+3T$$3
+3\$83\$
+T$@3\$$3
+D$P3L$
+L$$3\$ 
+3L$ 3L$$3L$
+]N~r3
+S5eq@%
+3D$@3
+D$L+M
+D$$3\$@
+D$(h@
+3T$(3T$
+|$,3D$,3|$(3
+3D$ 3
+L$ 3L$$3L$(3L$
+L$(+U
+|$03L$
+L$L3|$$
+3D$$_^5
+3\$$3
+'3L$ 1D$ 
+3T$ 3T$
+3\$ 3
+T$L3L$
+D$03\$ 3\$
+T$$h|
+D$$9L$
+*?Tk^
+?3\$43\$$3\$
+D$$Wh
+D$<42
+D$P3L$(_
+C00Lh0
+L$ ;\$
+|$$3L$
+49_^[
+D$H3\$
+3D$(1\$
+3L$ 3L$
+T$L_^
+3|$ 3
+L$$3L$
+3D$$3D$L3D$
+T$ _^
+3L$43L$8
+T$ hH
+3|$,3|$(
+3\$(3\$
+3D$,3
+L$83\$
+L$H3T$
+3\$(3\$
+D$D3D$
+i\4_-
+3T$ 3T$
+3\$<3\$
+L$,3\$
+T$,3\$
+t$05Q[H
+D$$3D$,3D$
+-o^-T
+\$43D$
+T$<3L$
+t$$5N
+L$(3\$
+D$<3D$
+L$<3|$
+v3|$ 
+\$P3D$
+3T$03T$ 
+O}3T$
+\1X^[
+D$(3\$
+3D$(3
+Dh$~3
+3D$$3
+L$$3T$
+53t$ 
+D$03t$
+t$P3L$ 
+t$,5%
+3\$$3\$
+3T$03T$43T$
+D$43t$(3
+D$43t$
+L$D3D$
+]RuD3
+3D$$3
+T$D_^
+?D3L$
+3L$ 3T$
+3\$,3\$
+3D$ 3D$
+D$ 3D$
+L$85nU
+t$(5&
++I0_^
+3L$(3L$
+3D$$3D$(
+3L$(3L$ 
+D$H3D$
+3D$$3D$
+5VVx%
+D$$5!
+D$@3D$
+V51LX
+3L$83L$<
+3L$$3L$
+!3T$$
+L$ 9\$
+t$H3L$
+3\$43\$
+n3T$ 3
+P^ _3
+w@IE+
+w@IE3
+=Z3L$$3L$
+3\$ 3\$
+L$$5qiBi
+3L$43L$8
+3D$ 3D$$3D$L
+):OVW
+*P`@3
+D$03D$
+3\$ 3
+C0a5N>3
+D$H3L$
+|$P3D$
+3D$,3D$$
+D$83D$<3D$(
+3D$,3
+3D$@56
+3D$(3D$
+3D$43D$
+3D$$1D$
+3D$83D$H3D$,3D$
+3D$03D$83D$H3D$,3D$(3
+D$43D$(
+D$03D$4
+3D$,3D$
+3\$$3
+3D$<1D$
+3\$<3
+D$,3D$$
+L$@3L$,
+D$43D$@3D$
+D$45^
+3D$43D$01D$
+3D$(3D$03
+D$,3D$(3
+D$@3D$,
+3D$43
+3D$,3D$
+3D$<3D$01D$
+3D$(3D$03
+D$,3D$(3
+3\$,5
+L$<3L$@
+3L$853'] 
+3D$<3
+3D$81D$
+3D$43D$83
+D$,3D$43
+D$03D$,
+3D$(1D$
+3D$<3D$(3
+3D$<3
+D$,3D$4
+D$(3D$0
+3D$(3
+3D$43D$
+3D$01D$
+3D$@3D$03
+|$H3|$4
+3D$,3|$
+|$P1t$
+3D$43
+3T$X3
+T$<3T$P
+3|$43|$,3
+3|$03D$,
+|$D3D$
+3D$<1D$
+3D$03D$<3D$
+D$,3D$03D$
+3D$,3
+D$D3D$(3
+3D$H3
+3D$ 1D$
+3L$03L$H3T$@1L$
+3T$H3\$@3T$
+L$03L$4
+t$43t$<3
+3T$03
+3D$@3D$
+3D$D1D$
+3L$H3|$H3
+3|$D3L$
+3D$<3
+t$P3D$
+D$03D$@3
+3D$@3D$
+3L$@3L$43L$
+3D$,1D$
+3D$D3D$,3D$
+D$43D$D3
+D$@3D$43D$(3D$
+3D$@3
+3D$H3D$D3
+3D$D3D$
+|3D$(3
+3D$03D$(3D$
+3|$03
+3\$,3
+3\$@3
+3D$03
+D$H57
+3D$@1D$
+3D$D3D$@3
+D$03D$D
+3T$H3L$03L$43L$
+L$P3D$4
+3D$<3
+3D$03D$41D$
+3D$D3D$43
+3D$D3D$
+3T$,5
+3D$03D$(3
+3D$D3D$(3D$
+3D$03D$41D$
+3D$43D$
+D$(3\$
+\$03\$D
+3D$03
+3D$H3
+3D$43D$H3
+3\$43
+D$,3D$<3
+D$D3D$,
+3D$D3
+d$ 3L$
+3L$43
+3D$@3
+3\$@3\$
+D$43D$<3
+3T$43T$03
+3\$,3\$D3\$0
+3\$D3\$
+3D$<3D$
+3D$H1D$
+3D$03D$H3
+3T$03T$
+3L$D3t$<
+3t$D3t$@
+D$D5X
+3D$<3D$@1D$
+3T$D5
+3D$43D$D3D$H
+3D$@3D$
+3L$43L$H1L$
+D$P3|$D3|$H3|$
+L$@3L$D
+T$43T$<
+\$<3\$@
+3D$43D$03D$,
+3L$D3
+3D$H1L$
+3t$H3
+3D$03
+3\$43\$,3
+3T$D3T$<3T$
+3|$,3|$
+3T$03T$H3T$D
+T$D3\$43\$H
+3L$@3L$
+T$H3T$D3T$
+3L$H3
+y=V3L$
+3t$ 3
+3D$(3D$
+9qa5+
+3D$(3D$
+L$$3L$
+3L$ 3L$
+D$D3D$$3D$ 
+|$(3D$
+3D$,3D$(3\$,
+L$ 3L$
+D$$3D$ 3D$
+3L$ 5
+D$L3L$H
+3t$,3
+L$ 3L$(3L$,3L$
+L$(3L$$3L$
+D$ 3D$
+3D$ 3
+T$$3T$
+L$,3\$
+L$<3T$ 3T$@
+|$ 3|$
+3L$03L$
+D$P3E
+3L$$3
+3L$43L$
+L$H3t$ 
+3t$$3
+3L$(3
+D$41L$
+3L$43L$ 3L$
+t$ h8
+\$ 3t$
+3T$ 3
+\$43D$$3L$,3
+3T$(3T$
+D$$3D$83D$(
+9xJ[)\$
+D$,1D$
+3D$,3
+D$(3D$
+D$0_^[
+QQhGl0
+Y__^[
+HtPHt3
+HtPHt3
+PQQSVW
+\$T.(
+__AddMachineCertToLicenseStore
+SHGetKnownFolderPath
+.?AVlogic_error@std@@
+.?AVexception@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+malloc
+_callnewh
+_XcptFilter
+__p__commode
+_amsg_exit
+__getmainargs
+__set_app_type
+_exit
+_cexit
+__p__fmode
+__setusermatherr
+_initterm
+_except_handler4_common
+msvcrt.dll
+?terminate@@YAXXZ
+_controlfp
+VirtualProtect
+SetLastError
+EnterCriticalSection
+VirtualFree
+GetCurrentProcess
+VirtualAlloc
+GetModuleFileNameW
+LeaveCriticalSection
+InitializeCriticalSection
+GetLastError
+RaiseFailFastException
+GetCurrentThread
+CloseHandle
+GetProcAddress
+DeleteCriticalSection
+GetModuleHandleW
+LoadLibraryExW
+Sleep
+SetUnhandledExceptionFilter
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+TerminateProcess
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-errorhandling-l1-1-2.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+WinVerifyTrust
+WTHelperProvDataFromStateData
+WTHelperGetProvSignerFromChain
+WINTRUST.dll
+_stricmp
+_snwprintf_s
+wcscpy_s
+_wcsicmp
+_wcsnicmp
+memcpy
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABV0@@Z
+??1exception@@UAE@XZ
+?what@exception@@UBEPBDXZ
+_CxxThrowException
+??1type_info@@UAE@XZ
+__CxxFrameHandler3
+UnregisterTraceGuids
+GetTraceEnableLevel
+GetTraceEnableFlags
+GetTraceLoggerHandle
+TraceMessage
+HeapSetInformation
+CoCreateGuid
+GetVersionExA
+GetSystemTime
+LocalFree
+CryptProtectData
+HeapAlloc
+GetProcessHeap
+GetVolumeInformationW
+DeviceIoControl
+GetLogicalDriveStringsW
+CreateFileA
+GetDriveTypeW
+RegDeleteValueA
+RegOpenKeyExA
+RegSetValueExA
+RegCreateKeyExA
+RegCloseKey
+CoTaskMemFree
+CreateMutexA
+WaitForSingleObject
+CreateFileW
+ReleaseMutex
+DeleteFileW
+RaiseException
+FreeLibrary
+GetSystemDirectoryW
+LoadLibraryW
+CertVerifyCertificateChainPolicy
+GetSystemWindowsDirectoryW
+GetEnvironmentStringsW
+LocalAlloc
+LoadLibraryExA
+ReleaseSRWLockExclusive
+AcquireSRWLockExclusive
+GetSystemInfo
+VirtualQuery
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+CRYPT32.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+CryptGetHashParam
+CryptDestroyHash
+CryptHashData
+CryptCreateHash
+CryptGenKey
+CryptExportKey
+CryptDestroyKey
+CryptDeriveKey
+CryptGenRandom
+CryptReleaseContext
+CryptGetDefaultProviderW
+CryptContextAddRef
+CryptAcquireContextW
+CRYPTSP.dll
+RegisterTraceGuidsA
+CreateToolhelp32Snapshot
+Module32FirstW
+Module32NextW
+api-ms-win-eventing-obsolete-l1-1-0.dll
+api-ms-win-core-toolhelp-l1-1-0.dll
+memmove
+memset
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity version="5.1.0.0" processorArchitecture="x86" name="Microsoft.Windows.RMActivate" type="win32" />
+<description>Windows Rights Management Services Activation</description>
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+        <requestedPrivileges>
+            <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+        </requestedPrivileges>
+    </security>
+</trustInfo>
+</assembly>
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Windows Rights Management Services Activation for Desktop Security Processor
+FileVersion
+10.0.22621.1 (WinBuild.160101.0800)
+InternalName
+Windows Rights Management Services Activation for Desktop Security Processor
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+rmactivate.exe
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.1
+VarFileInfo
+Translation
+en-US
+0L0P0X0`0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,10141<1D1L1T1\1p1x1
+2"2(2A2R2\2a2k2q2x2
+253X3
+4Q5^5d5o5v5{5
+5J6Q6Z6p6y6
+7,757<7X7]7h7
+8%80878<8B8H8M8S8w8
+9&9Y9
+:%:+:5:d:
+;";';1;<;T;a;
+<F<S<
+=.=E=R=Y=g=w=~=
+>%>5>g>
+1O1~1
+2!2-2P2V2^2~2
+4:4_4
+5o5|5
+5`6e6k6}6
+7J8b8
+8B9G9M9_9
+:);A;m;s;z;#<(<.<@<n<
+?I?y?
+0$1-1J1
+1$2R2e2
+2 3;3a3
+4)5<5s5
+9m:r:x:
+:&;Q;
+<]<j<
+<N=S=Y=k=
+<5<H?
+3.3;3B3G3X3l3s3
+4$4+4
+:&:9:F:b:o:~:
+;";P;W;n;
+<(<><L<
+="=<=I=X=l=t=
+>0>8>
+1"1k1H4h4
+;$;C;K;C>K>P>
+2R6d6G7
+0?4M4n4|4
+5=5F5Z6d6i6{6
+7-727=7C7J7O7f7s7x7
+8"8(8.828=8A8K8P8[8a8h8m8
+9,919;9A9G9S9X9]9g9l9
+:#:-:2:M:R:d:i:s:
+;%;*;4;9;[;`;n;s;};
+<5<l<
+=6>Y>n>
+1J1X1a1
+262A2c2i2
+2J3r3
+4d4n4
+5c5v5
+6I6\687
+849p9
+4<5P6
+6'7H7[7
+:y:~:";5;p;z;
+:":+:6:<:F:P:
+;$;0;7;=;F;U;v;
+<3<M<_<t<
+=%=:=
+1S445
+7E8C9
+001"2
+5F6}8
+4Q6$7
+;{<`=
+;}=.?
+;/<{?
+6M7$8
+9'<&>
+;r<?=y?
+;c=9>
+0{1A2M3
+;U=!>
+7):z=[>
+4Q6 779
+3:4V5
+1P2,4
+81;R=
+4P7=8
+7I8L;v;e=_>F?
+8q9A:
+<F=P?
+1!2C4Z7
+4S5D6
+86:X<
+<k>d?
+5j6^7
+0B2k4
+5V8'9];
+9-;c=M?
+7y8U:
+(0o2{4
+;(=&>
+2F6D8n:
+9@<d>
+2[4A5
+4e7'8
+:k;7<
+3J5)6
+9~=/?
+6a9s<V>
+1=2_4
+0d1!2
+4Q6c7
+7y9>:
+2{3+4
+:k;C<
+7n889
+5h6P:
+0z1*2
+4Q7k9
+1:36508b9
+8n;C<
+5X8V:+;
+Z1}2L336
+8{9G:
+;3<2>
+408t:
+>$>*>1>:>@>H>N>[>c>i>
+?"?'?I?O?V?[?h?w?
+0W0w0
+1"181D1P1
+3=3Q3W3
+484G4P4Y4n4
+4-5@5I5T5[5s5y5
+6.646?6E6Q6a6j6
+7!7*7<7I7
+8+9S9z9
+:8:]:h:u:
+=Z=z=
+>$>(>D>H>d>h>
+?$?8?H?l?x?
+0$0<0\0

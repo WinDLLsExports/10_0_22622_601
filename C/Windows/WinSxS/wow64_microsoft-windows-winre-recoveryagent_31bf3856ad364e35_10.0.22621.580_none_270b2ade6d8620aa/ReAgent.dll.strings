@@ -1,0 +1,4061 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.idata
+@.didat
+.rsrc
+@.reloc
+WIMGAPI.DLL
+ServicingCommon.dll
+ADVAPI32.dll
+USER32.dll
+imagehlp.dll
+ole32.dll
+OLEAUT32.dll
+@kon|
+bcd.dll
+WINTRUST.dll
+CRYPT32.dll
+DismApi.DLL
+DisableUpdateEnhancedConfigInfo
+failed to get config file path
+failed to init agent config
+FALSE
+SOFTWARE\Microsoft\RecoveryEnvironment
+failed to add trailing back slash
+Recovery
+Winre.wim
+failed to get os info for boot entry
+failed to get partition list
+failed to allocate memory
+base\diagnosis\srt\reagent2\reinfo\parser_2.0.cpp
+failed to get congig file path
+IsOSConfigFile %s (0x%x) in file %S line %d
+ReAgentXMLParser::Init %s (0x%x) in file %S line %d
+failed to copy file path
+RtlCreateUtf8UCSStringBuilder failed: 0x%x
+RtlCreateDefaultXmlWriter failed: 0x%x
+failed to emit attribute
+GetDocument failed: 0x%x
+RtlCreateMicrodom failed: 0x%x
+failed to init unicode string
+ReAgentXMLParser::WriteAttribute %s (0x%x) in file %S line %d
+failed to duplicate unicode string
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo Target config file isn't config file of current OS
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo Still use BCD info to update enhanced info due to caller request
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo WinRE disabled, WinRE Guid could not be determined  (0x%x) 
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo GetOsInfoForBootEntry returned 0x%x 
+failed to copy boot application directory name
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo %s (0x%x) in file %S line %d
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo BCD recovery entry points to invalid location (no winre.wim at %s)
+boot.sdi
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo BCD recovery entry points to invalid location (no boot.sdi at %s)
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo winreConvertDirNameToOffset (%s) returned 0X%X 
+ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo SetWinreLocationPath returned 0x%x 
+WinRE is installed
+%I64u
+{%08lx-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}
+base\diagnosis\srt\reagent2\reagent\installex.cpp
+Failed to get config path
+DetectAndFixWinReIssues (WinRE)WinRE is already installed, setting BCD entry (winre location %s)
+DetectAndFixWinReIssues Current Recovery Sequence is already set as the BCD id of WinRE.
+DetectAndFixWinReIssues Failed to get WinRE GUID.
+DetectAndFixWinReIssues Get different WinRE GUID.
+DetectAndFixWinReIssues Will fix the BCD entry.
+DetectAndFixWinReIssues BCD could not be set, uninstalling WinRE
+failed to uninstall
+DetectAndFixWinReIssues %s (0x%x) in file %S line %d
+Create Recovery BCD entry issue successfully.
+Updated winre GUID in reagent xml file and fixed missing Recovery BCD entry issue successfully!!!
+Recovery Sequence is set.
+Failed to set Recovery Sequence for created Recovery BCD entry.
+Failed to update winre GUID in Reagent xml file.
+Failed to create recovery BCD entry, will continue.
+Failed to convert directory name to offset, will continue.
+NOTE: WILL RETRY. We have to uninstall WinRE and retry because WinRE is installed but its BCD entry is not present.
+DetectAndFixWinReIssues Copying Winre.wim from %s to staging location
+Failed to update config file
+DetectAndFixWinReIssues Uninstalling corrupt WinRE installation.
+DetectAndFixWinReIssues WinRE uninstall did not succeed
+Agent config update failed
+DetectAndFixWinReIssues we should retry because winre installation was changed.
+DetectAndFixWinReIssues nothing to do because winre is not enabled.
+Failed to get WIM attributes
+CanPutWinREOnOtherPartitions %s (0x%x) in file %S line %d
+CanPutWinREOnOtherPartitions WinRE is not staged. Searching for a suitable partition for WinRE.
+CanPutWinREOnOtherPartitions No suitable partition could be found for installing WinRE
+CanPutWinREOnOtherPartitions Uninstalling WinRE
+CanPutWinREOnOtherPartitions WinRE is already installed to the proper partition.
+CanPutWinREOnOtherPartitions WinRE is installed to the wrong partition. Reinstalling.
+Failed to uninstall WinRE
+CanPutWinREOnOtherPartitions Restart the WinRE installation
+NOTE: WILL RETRY because the target winre partition is the same as source partition, and it is installed now, we will uninstall to move it to the staged location and do a normal install instead.
+Failed to get config path from os guid
+CanKeepWinReOnSamePartitionIfStaged %s (0x%x) in file %S line %d
+CanKeepWinReOnSamePartitionIfStaged WinRE is staged.  Checking that the staged partition is valid for WinRE.
+CanKeepWinReOnSamePartitionIfStaged Error 0X%X while detecting OS install type
+CanKeepWinReOnSamePartitionIfStaged BitLocker enabled, retrying install on other partitions
+Failed to set operation sync key
+WinReInstallOnTargetOSInternal %s (0x%x) in file %S line %d
+--Install on target OS step 1: collect info like partition list, loading reagent.xml, source winre.wim and partition
+failed to get downlevel reagent config
+First round search
+Second round search
+failed to get reagent config
+failed to find source winre.wim
+--Install on target OS step 2: detect and fix if there is any issue for winre settings
+Current WinRE is ready. No need to make any further changes
+failed to detect and fix winre issues, error:0x%x
+--Install on target OS step 3: check if we can keep winre.wim in the same partition if it is staged.
+NOTE: Find target partition: source partition will used
+NOTE: WILL RETRY because source partition is not ok because of bitlocker
+--Install on target OS step 4: check if we can put winre.wim in other partitions or create one if needed.
+Can't put WinRE on other partitions, error:0x%x
+--Install on target OS step 5: set WinRE settings and restore system to a good state when hitting any errors
+failed to set WinRE settings, error:0x%x
+WinReInstallOnTargetOSInternal WinRE installation completed successfully.
+AllowDiskPartitionChanges
+SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\WinRE
+Failed to delete [%s], last error: 0x%x
+Failed to open key [%s], last error: 0x%x
+Enter WinReSetupInstall
+Parameters: StagedWinRELocation: %s, AllowDiskPartitionChanges: %d
+newOSBCDGuid
+failed to get os guid or default
+get downlevel config file path by guid failed: 0x%x
+Downlevel WinRE config file path: %s
+ Failed to install WinRE. Copying winre.wim to the target OS staging location
+ Failed to construct source winre.wim path: 0x%x
+ Failed to construct destination winre.wim path: 0x%x
+() Copy file %s to %s
+ Failed to copy winre.wim to the target OS staging location: 0X%X 
+Exit WinReSetupInstall return value: %d, last error: 0x%x
+\Recovery\WindowsRE
+base\diagnosis\srt\reagent2\reagent\reagent.cpp
+failed to back up config file
+failed to append path
+Enter WinReRepairEx
+Parameters: WinDir: %s, Flags: %llu
+New WinRE GUID: 
+WinReRepairEx %s (0x%x) in file %S line %d
+Update config file %s
+Update Disk info for WinRE location
+failed to convert Windows directory to partition info
+failed to set disk ID and Signature
+Update WinRE GUID
+Failed to update agent config
+Repair WinRE
+Repair should be called with NULL Windows directory
+Failed to repair WinRE
+Failed to repair WinRE. Error: 0x%08X
+Successfully Repair WinRE
+Exit WinReRepairEx return value: %d, last error: 0x%x
+Failed to open winre.wim: %d
+failed to get temp path
+winreOpenRecoveryWim %s (0x%x) in file %S line %d
+winre
+Failed to create mount dir: 0x%x
+failed to set temporary path for wimgapi
+failed to get wim attributes
+Could not find a bootable index in the wim file.
+Loading boot index %d
+Failed to load winre.wim: 0x%x
+ntdll.dll
+failed to open recovery wim
+winreValidateWimFile %s (0x%x) in file %S line %d
+ExtractedFromWim
+SkipWinpeShellCheckDuringValidation
+\windows\system32\winpeshl.ini
+failed to extract winpe shell .ini path
+AppPath
+LaunchApp
+x:\sources\recovery\recenv.exe
+WIM file not trusted:  RecEnv.exe is not the launch app.
+\sources\recovery\recenv.exe
+failed to extract recenv mount path
+Failed to verify trust of RecEnv.exe: 0x%x
+Failed to get provider data of of RecEnv.exe
+Failed to get provider signer of of RecEnv.exe
+Failed to get certification chain of of RecEnv.exe
+Failed to get certification policy of of RecEnv.exe
+Failed to get certification chain of of RecEnv.exe error: 0x%x
+failed to close recovery wim handle
+failed to close wim handle
+winreValidateWimFile took %llu ms.
+ (WinRE)winReCheckDirectorySize::<lambda_518ccdbbba8f2e52189634dfccc1f1a2>::operator ()() Get file size failed
+ (WinRE)winReCheckDirectorySize::<lambda_518ccdbbba8f2e52189634dfccc1f1a2>::operator ()() File open to check size failed
+ (WinRE)winRECreateDirectory() argument error
+ (WinRE)winRECreateDirectory() CreatePath failed at %s %x
+ (WinRE)winRECreateDirectory() Target path %s exists but is not a directory
+ (WinRE)winRECreateDirectoryInPartition() argument error
+ (WinRE)winRECreateDirectoryInPartition() Failed to create %s
+ (WinRE)winREMoveDirectory::<lambda_8b9e06ad20f71a2cbf75674459a28998>::operator ()() delete directory failed %s %x
+ (WinRE)winREMoveDirectory::<lambda_8b9e06ad20f71a2cbf75674459a28998>::operator ()() SetFileAttributes failed. Error: 0x%X
+ (WinRE)winREMoveDirectory::<lambda_8b9e06ad20f71a2cbf75674459a28998>::operator ()() delete file failed %s %x
+Failed to get WinRE config file path
+AppendPath failed. Error: 0x%x.
+RegLoadKey %s failed. Error: 0x%x.
+RegOpenKeyEx failed. Error: 0x%x.
+RegGetValue failed. Error: 0x%x.
+Enter WinReInitiateOfflineScanning
+Parameters: applicationName: %s, commandLine: %s
+failed to get Windows directory. Error: 0x%08X
+File %s does not exist. Error: 0x%08X
+failed to get winre config. Error: 0x%08X
+failed to set recovery action. Error: 0x%08X
+failed to queue recovery boot. Error: 0x%08X
+failed to configure boot app. Error: 0x%08X
+Cannot enable privilege SE_SHUTDOWN_PRIVILEGE. Error: 0x%08X
+failed to initiate system shutdown. Error: 0x%08X
+failed to delete BCD boot entry. Error: 0x%08X
+failed to clear boot app. Error: 0x%08X
+Exit WinReInitiateOfflineScanning return value: %d, last error: 0x%x
+ (WinRE)winReProcessDirectoryTree() FindFirstFileW failed
+$OFFLINE$SYSTEM
+ReAgent.xml
+base\diagnosis\srt\reagent2\reagent\setup.cpp
+targetOsGuid: 
+%hs: Input Path is NULL
+pCopyFile
+%hs: Failed to open source file %s. Error: 0x%08X
+%hs: Failed to get the size for source file %s. Error: 0x%08X
+%hs: Failed to open destination file %s. Error: 0x%08X
+%hs: Failed to allocate buffer for copy operation. Error: 0x%08X
+%hs: Failed to write file. Error: 0x%08X
+%hs: Failed to set attributes for %s. Error: 0x%08X
+%hs: Failed to get attributes for %s. Error: 0x%08X
+Enter WinReSetupBackupWinRE
+backup directory: %s
+$PBR_IN_PROGRESS_BACKUP.MARKER
+Find existing PBR_IN_PROGRESS_MARKER, will delete it.
+ Could not delete %s. Error: 0X%X
+PbrInProgress
+PBR in progress.
+BackupDirectory is NULL, will not create marker.
+Failed to create marker in BackupDirectory
+WinRE not enabled. There is nothing to backup
+AgentConfig.Init failed. Error: 0X%X
+WimBoot is enabled
+WinReSetupBackupWinRE %s (0x%x) in file %S line %d
+Downlevel WinRE image version: %d.%d
+The downlevel WinRE image will be preserved.
+WinRE image version: %d.%d
+The current WinRE will be preserved.
+WinReLocation.txt
+failed to get downlevel config file path by guid: 0x%x
+failed to create downlevel winre config directory with error 0x%x
+copy downlevel ReAgent.xml failed:  0x%x
+Try to use backup function to backup downlevel ReAgent.xml.
+backup downlevel ReAgent.xml failed:  0x%x
+Free space on %s before moving %I64u
+failed to get disk free space with error 0x%x
+Failed to copy winre location to caller's buffer. Error: 0X%X
+move directoy from %s to %s failed
+Free space on %s after moving %I64u
+failed to get free disk space with error: 0x%x
+location.txt
+StringCchPrintf winre location offset failed. Error: 0X%X
+Partition offset
+WinRE Location
+WritePrivateProfileString partition offset string failed. Error: 0X%X
+Relative path
+WritePrivateProfileString winre location failed. Error: 0X%X
+StringFromCLSID failed. hr = 0x%08X
+OS Guid
+WritePrivateProfileString OS GUID failed. Error: 0X%X
+GetVolumePathName failed. Error: 0X%X
+$WINRE_BACKUP_PARTITION.MARKER
+Marker file %s created
+Unable to create the marker file %s. Error: 0X%X
+ (WinRE)WinReSetupBackupWinRE() returning %s
+Enter WinReSetupRemoveWinRE
+targetOSBCDGuid: 
+failed to get OS guid or default
+failed to get WinRE guid, 0x%x
+failed to get os info for boot entry, 0x%x
+Get Os info for boot entry returned corrupt information.
+winreDeleteAllFiles failed, 0x%x
+RemoveDirectory failed, 0x%x
+successfully cleaned up the WinRE directory
+ (WinRE)WinReSetupRemoveWinRE() returning %s
+%s file does not exist.
+HeapAlloc failed. Error: 0X%X
+GetPrivateProfileString partition offset failed. Error: 0X%X
+GetPrivateProfileString relative path failed. Error: 0X%X
+Failed to convert String {%s} to GUID. Error: 0X%X
+OS Guid:
+failed to cleanup existing WinRE with error 0x%x
+Check undo-Installtion info from %s
+New Partition offset
+Find new WinRE partition offset %I64u while original offset during backup is %I64u
+WinRE partition is extended, restore WinRE to extended partyition
+WinRE partition is resized, cannot restore WinRE
+No %s file under Undo directory %s
+failed to find partition by offset %I64u. Error: 0X%X
+Failed to create relative dir %s on target partition
+StringCchPrintf failed. Error: 0X%X
+failed to get volume path name. Error: 0X%X
+Partition has been resized, recreate WinRE BCD entry
+WinReSetupRestoreWinREInternal %s (0x%x) in file %S line %d
+failed to remove current WinRE bcd entry: 0x%x
+failed to update device path in WinRE BCD: 0x%x
+New WinRE BCD Guid: 
+failed to set Recovery Sequence: 0x%x
+Partition offset is changed, update it in config
+failed to update offset to config file: 0x%x
+Enter WinReSetupRestoreWinREEx
+BackupDirectory is NULL
+BackupDirectory does not exist
+Find PBR marker, will do nothing
+failed for setup to restore winre with errr 0x%x
+ (WinRE)WinReSetupRestoreWinREEx() returning %s
+ReAgent.xml
+%I64u
+BcdOpenObject failed: 0x%x
+winreGetWinReGuid open store failed: 0x%x
+winreGetWinReGuid BcdOpenObject failed: 0x%x
+Failed to get recovery entries: 0x%x
+base\diagnosis\srt\reagent2\reagent\bcdutil.cpp
+winreGetWinReGuid %s (0x%x) in file %S line %d
+BcdOpenObject(WinRE) failed: 0x%x
+winreGetWinReGuid returning 0X%X
+Open store failed: 0x%x
+BcdDeleteElement failed: 0x%x
+winreSetBCDBootEntry failed: 0x%x
+failed to get id for current os
+winreSetBCDBootEntry %s (0x%x) in file %S line %d
+BcdSetElementData failed: 0x%x
+winreSetBCDDisplayMessage %s (0x%x) in file %S line %d
+winreSetBCDDisplayMessage failed: 0x%x
+winreSetRecoverySequence open store failed: %x
+winreSetRecoverySequence %s (0x%x) in file %S line %d
+winreSetRecoverySequenceBcdOpenObject filed: 0x%x
+winreSetRecoverySequenceBcdSetElementData(recoverysequence) failed: 0x%x
+winreSetRecoverySequenceBcdSetElementData(recoveryenabled) failed: 0x%x
+winreSetRecoverySequenceBcdOpenObject failed: 0x%x
+winreSetRecoverySequenceBcdSetElementData BCDE_LIBRARY_TYPE_CONSOLE_EXTENDED_INPUT failed: 0x%x
+winreSetRecoverySequenceBcdSetElementData BCDE_CUSTOM_ACTION_APPLICATION_LIST failed: 0x%x
+winreSetRecoverySequenceBcdSetElementData BCDE_BOOTMGR_TYPE_CUSTOM_ACTIONS_LIST failed: 0x%x
+winreSetRecoverySequencewinreSetRecoverySequence failed: 0x%x
+BcdCreateObject failed: 0x%x
+BcdQueryObject failed: 0x%x
+failed to make bcd device object
+winreCreateRamdiskOptions %s (0x%x) in file %S line %d
+failed to create boot.sdi file path
+failed to get boot.sdi path length
+winreCreateRamdiskOptions returning 0x%x
+open store failed: 0x%x
+BcdGetElementData failed: 0x%x
+winreCreateRecoveryEntryInBCD %s (0x%x) in file %S line %d
+failed to create boot path
+winreCreateRecoveryEntryInBCDEx %s (0x%x) in file %S line %d
+failed to create ram disk options
+failed to concatenate winre.wim path
+\windows
+\windows\system32\winload.exe
+\windows\system32\winload.efi
+failed to get the length of loader relative path
+BcdSetElementData(BCDE_LIBRARY_TYPE_INHERIT) failed: 0x%x
+winreCreateRecoveryEntryInBCDExfailed: 0x%x
+winreDeleteRamDiskObject %s (0x%x) in file %S line %d
+BcdDeleteObject filed: 0x%x
+winreDeleteRamDiskObject failed: 0x%x
+ Failed to open system BCD: 0x%x
+ Failed to remove recovery entry from BCD: 0x%x
+BcdSetElementData(recoveryenabled) failed: 0x%x
+winreRemoveRecoverySequenceEx failed: 0x%x
+BcdOpenObject filed: 0x%x
+winreRemoveRecoveryEntryFromBCD failed: 0x%x
+NULL parameter
+winreVerifyRamDiskObject %s (0x%x) in file %S line %d
+winreVerifyRamDiskObject failed: 0x%x
+RAM object is in a valid state
+ RAM object is not in a valid state
+Open store failed: %x
+BcdOpenObject (Recovery Os object) failed: 0x%x
+Ram disk object was invalid
+BcdGetElementData(recoveryenabled) failed: 0x%x
+Recovery not enabled on current OS
+BcdGetElementData(recoverysequence) failed: 0x%x
+Recovery sequence on current OS not matched with winre
+Recovery not enabled on resume object of the current OS
+Recovery sequence on current OS (resume) does not match the XML
+Resume object not found
+winreVerifyWinReBcdState failed: 0x%x
+WinRE BCD entries are valid
+ WinRE BCD entries are not valid
+failed to enumerate objects. error = 0x%x
+HeapAlloc (%u) failed.
+BcdEnumerateObjects() failed. error = 0x%x
+Checking BCD guid: 
+Skipping WinPE object
+Skipping OS entry without system root
+Skipping WinRE object
+%lu OS Loader objects found
+winreCountOsLoaderEntries failed: 0x%x
+\EFI\Microsoft\Recovery\BCD
+ Recovery BCDs are only supported on EFI machines
+ Failed to get system partition: 0x%x
+AppendPath failed for %s, %s
+BcdOpenStore failed for %s: 0x%x
+Failed to open bootmgr in Recovery BCD: 0x%x
+Unable to get default BCD object (0x%x), checking display order instead
+Unable to read display order: 0x%x
+ Couldn't get size of OS device from BCD object: 0x%x
+Failed to allocate BCDE_DEVICE (%u bytes)
+Couldn't read OS device from BCD object: 0x%x
+Expected a ramdisk device, found device type %u instead
+Failed to copy partition path to output parameter: 0x%x
+SyspartGetSystemPartition failed: 0x%x
+Parent device has unsupported type %u
+Failed to copy WIM path to output parameter: 0x%x
+Couldn't get default boot object (0x%x), will query display order instead
+ Failed to get top of the display order: 0x%x
+ The default entry is NULL or missing
+Couldn't open WinRE BCD object: 0x%x
+Failed to open system store: 0x%x
+Failed to open target OS entry: 0x%x
+Failed to read locale size from parent OS: 0x%x
+Failed to allocate Locale buffer of %u bytes
+Failed to read locale from parent OS: 0x%x
+Failed to add entry for WinRE in recovery BCD: 0x%x
+Failed to get bootmgr entry from recovery BCD: 0x%x
+Failed to set default object in recovery BCD: 0x%x
+Failed to open bootmgr object: 0x%x
+Bootmgr has no default object set (0x%x), will use first display order entry instead
+Couldn't get top of display order: 0x%x
+We will report success and exit because recovery BCD is not used at all.
+Failed to remove recovery entry from BCD: 0x%x
+Machine firmware is not EFI, nothing to do
+Failed to open recovery BCD store: 0x%x
+Failed to query whether the recovery BCD is empty: 0x%x
+Failed to clear existing entry from recovery BCD
+Failed to set WinRE as the Recovery BCD entry: 0x%x
+Failed to open recovery BCD: 0x%x
+Failed to check whether recovery BCD is empty: 0x%x
+Recovery BCD is empty, nothing to delete
+Failed to retrieve recovery entry WIM path: 0x%x
+Failed to open system BCD: 0x%x
+Failed to open main OS entry in system BCD: 0x%x
+Failed to get path to winre.wim being unregistered: 0x%x
+The current Recovery BCD entry points to %s[%s]
+The WIM file being unregistered is %s[%s]
+Paths are the same, clearing Recovery BCD
+Failed to clear recovery BCD: 0x%x
+Cleared recovery BCD successfully
+Paths are different, not touching Recovery BCD
+Windows Recovery
+Windows Recovery Environment
+base\diagnosis\srt\reagent2\reagent\install.cpp
+Failed to get WinDir from target OS Guid. Error: 0x%08X
+Failed to System Windows Directory. Error: 0x%08X
+Failed to compare Windows Directories. Error: 0x%08X
+Failed to get online OS version info. Error: 0x%08X
+Failed to enable backup privilege
+Failed to enable restore privilege
+System32\config\Software
+Client
+RegUnloadKey [%s] failed. Error: 0x%x.
+Existing
+Extended
+Systen
+Undo Directory [%s] does not exist.
+ Save new offset [%I64u] to %s for restore
+WritePrivateProfileString new partition offset string failed. Error: 0X%X
+Entering FindTargetPartition
+ Downlevel winre.wim not found
+ Downlevel winre.wim found
+ Error 0X%X while searching for downlevel winre.wim
+FindTargetPartition %s (0x%x) in file %S line %d
+ Error 0X%X while detecting OS install type
+ Not allowed to repartition the disk
+Start looping through each partition and initialize os partition, recovery partition and system partition for MBR
+ Checking partition at offset %I64u, partition number: %d
+ skip partition because it is not on the same disk as staging partition
+ skip partition because it is downlevel WinRe partition
+ find OS partition
+ NOTE: find system partition and not OS partition for MBR
+ skip MBR Partition which type is not MSFT_RECOVERY
+ skip GPT Partition which type is not PARTITION_MSFT_RECOVERY_GUID
+ partition contains winre backup partition marker
+ NOTE: find existing WinRE partition and continue
+ skip partition beyond current candidate partition on disk
+ partition meets requirements
+ skip partition because it is the os install location partition
+ skip partition because it is in use
+ NOTE: select partition because it meets WinRE requirements
+ skip partition because it does not meet WinRE requirements
+Complete looping through each partition
+----Search target partition option #1: try existing WinRE partition
+failed to append WinRE backup part marker
+ Could not delete %s
+Found target partition: use the existing WinRE partition, offset: %I64u
+Existing WinRE partition does not have enough free space to meet the requirements
+Formatting the existing WinRE partition because its total size is big enough
+Found target partition: use the existing WinRE partition and format it, offset: %I64u
+Failed to format the existing WinRE partition, offset: %I64u
+Trying to expand the existing WinRE partition while it doesn't meet because no disk space
+ WinRE partition expanded
+Found target partition: use the existing WinRE partition after expansion, offset: %I64u
+ Failed to expand the WinRE partition
+----Search target partition option #2: try first recovery partition
+Found target partition: use the first recovery partition, offset: %I64u
+----Search target partition option #3: try system partition for MBR
+Found target partition: use system partition for MBR, offset: %I64u
+----Search target partition option #4: try new recovery partition if allowed
+ Attempting to create a new partition for WinRE
+ New WinRE partition created
+Found target partition: use the new WinRE partition, offset: %I64u
+ Failed to create the new WinRE partition
+----Search target partition option #5: try target OS partition
+Found target partition: use target OS partition, offset: %I64u
+ No disk space
+ Partition not found 
+failed to find target partition: 0x%x
+Exit FindTargetPartition returns with status code: 0x%x
+GetElementsByTagName failed: 0x%x
+Exactly 1 BootShell tag required.
+No WinReTool tags found.
+GetAttribute failed: 0x%x
+winreUtf8ToUnicode failed: 0x%x
+Exactly 1 Name tag required.
+Exactly 1 Description tag required.
+GetInnerText failed: 0x%x
+Exactly 1 Reset tag required.
+No SystemDisk tags found.
+Exactly 1 SystemDisk tag required.
+GetElementsByTagName failed. 0x%x
+No RecoveryImageIndexTags found
+Exactly 1 RecoveryImageIndex tag required.
+GetInnerText() failed. error = 0x%x
+DismMountClass::Mount The class has already mounted a wim
+DismMountClass::Mount Mount directory: 
+DismMountClass::Mount GetTempPathW error 0x%x
+DismMountClass::Mount CoCreateGuid error 0x%x
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+DismMountClass::Mount StringCchPrintf error 0x%x
+DismMountClass::Mount CreateDirectory error %ls
+DismMountClass::Mount Mounting %ls to %ls
+DismMountClass::Mount DismMountImage error 0x%x
+commit
+discard
+DismMountClass::Unmount Dismounting %ls %ls change
+DismMountClass::Unmount DismUnmountImage error 0x%x
+DismMountClass::Unmount RemoveDirectoryW error %ls
+DismMountClass::Unmount No wim mounted
+DismMountClass::GetMountPath No wim mounted
+winreMigrateDrivers Session error 0x%x
+{F2E7DD72-6468-4E36-B6F1-6488F42C1B52}
+apfiltr.inf
+winreMigrateDriversBlocking driver: %ls Version: %d.%d.%d.%d
+{4D36E972-E325-11CE-BFC1-08002BE10318}
+winreMigrateDrivers   DismAddDriver error %ls %x
+winreMigrateDrivers   DismAddDriver %ls
+winreMigrateDrivers   DismCommitImage error %x
+WINDOWS\System32\config\SYSTEM
+RemoveSetupFilter: AppendPath failed. Error: 0x%x.
+RemoveSetupFilter: RegLoadKey %s failed. Error: 0x%x.
+RemoveSetupFilter: RegOpenKeyEx failed. Error: 0x%x.
+Current
+Select
+RemoveSetupFilter: Failed to get the current control set. Error: 0x%08X
+ControlSet%03u\Services\WinSetupBoot
+RemoveSetupFilter: Failed to create WinSetupBoot service key string. HRESULT: 0x%x.
+RemoveSetupFilter: Failed to delete registry tree HKLM\SYSTEM\%s
+ControlSet%03u\Services\fastfat
+RemoveSetupFilter: Failed to create FastFat service key string. HRESULT: 0x%x.
+Start.Bak
+Start
+RemoveSetupFilter: Cannot set Start value for HKLM\SYSTEM\%s. Error: 0x%08X
+RemoveSetupFilter: Failed to remove backup start type for service %s. Error: 0x%08X
+ControlSet%03u\Control
+RemoveSetupFilter: Failed to create control key string. HRESULT: 0x%x.
+BootDriverFlags.Bak
+BootDriverFlags
+RemoveSetupFilter: Cannot set BootDriverFlags value. Error: 0x%08X
+RemoveSetupFilter: Failed to remove backup BootDriverFlags. Error: 0x%08X
+pMigrateOemTools Invalid arguments specified.
+pMigrateOemTools AppendPath failed. Error: 0x%x
+pMigrateOemTools Downlevel WinRE.wim not found. There's nothing to migrate.
+pMigrateOemTools Downlevel WinRE image path: %s
+Sources\Recovery\Tools
+pMigrateOemTools GetTempPath failed. Error: 0x%x
+pMigrateOemTools WIMCreateFile failed. Error: 0x%x
+pMigrateOemTools WIMSetTemporaryPath failed. Error: 0x%x
+pMigrateOemTools WIMLoadImage failed. Error: 0x%x
+pMigrateOemTools WIMRegisterMessageCallback failed. Error: 0x%x
+pMigrateOemTools WIMExtractImageDirectory failed. Error: 0x%x
+pMigrateOemTools failed to set WinRE config. Error: 0x%x
+pMigrateOemToolsfailed to get recovery file path
+pMigrateOemTools failed to set WinRE customization. Error: 0x%x
+pMigrateOemTools WIMUnregisterMessageCallback failed. Error: 0x%x
+MigrateDataWithMount failed to mount target wim [%s]. Error:0x%08X
+MigrateDataWithMount failed to get mount path for target wim. Error:0x%08X
+MigrateDataWithMount winRE File Size Before: %d
+MigrateDataWithMount failed to migrate OEM tools.
+MigrateDataWithMount OEM tools migration not required.
+MigrateDataWithMount RemoveSetupFilter error
+MigrateDataWithMount Remove setup filter not required.
+MigrateDataWithMount Driver migration not required.
+MigrateDataWithMount Source error 0x%x 0x%x
+MigrateDataWithMount   winreMigrateDrivers error
+MigrateDataWithMount failed to unmount target wim [%s]. Error:0x%08X
+MigrateDataWithMount   Unmount target wim for cleanup
+MigrateDataWithMount winRE File Size After: %d
+ReCustomization.xml
+winreExtendVolume No rollback info
+winreExtendVolume Extend error hr = 0x%X 
+winreExtendVolume Wait error hr = 0x%X hrAsync = 0x%X 
+winreExtendVolume returning %ls
+winreCreatePartition Extent does not meet requirements error
+winreCreatePartition GetProperties error hr = 0x%X 
+winreCreatePartition CoCreateGuid error hr = 0x%X 
+winreCreatePartition Unknown/unsupported partitioning style
+winreCreatePartition QueryInterface IID_IVdsDiskPartitionMF error hr = 0x%X 
+winreCreatePartition QueryInterface IID_IVdsAdvancedDisk error hr = 0x%X 
+winreCreatePartition Will create partition at offset: %I64u with size: %I64u 
+winreCreatePartition CreatePartition error hr = 0x%X 
+winreCreatePartition failed to create partition with wait error hr = 0x%X hrAsync = 0x%X 
+winreCreatePartition create partition successfully, actual offset is: 0x%I64X
+winreCreatePartition FormatPartitionEx error hr = 0x%X 
+winreCreatePartition FormatPartitionEx Wait error hr = 0x%X hrAsync = 0x%X 
+winreCreatePartition returning %ls
+winreDeletePartition Try to delete partition on disk %d, offset: 0x%I64X
+winreDeletePartition winrePInitVDSService failed.
+winreDeletePartition DeletePartition failed. Error: 0x%X
+winreDeletePartition delete partition successfully
+winreRecreateTargetPartition Invalid arguments
+winreRecreateTargetPartition Recreate a new WinRE partition of size: %I64u 
+winreRecreateTargetPartition CoInitialize failed. Error: 0x%X 
+winreRecreateTargetPartition Target Partition details: {NTFS: %d, Mbr: %d, Active: %d, Boot: %d, BitlockerEnabled: %d, PartitionNumber: %d}
+winreRecreateTargetPartition The WinRE partition is not located after the OS partition
+winreRecreateTargetPartition winreDeletePartition failed.
+winreRecreateTargetPartition winreGetNewPartition failed.
+IMAGE
+INDEX
+WINDOWS
+VERSION
+MAJOR
+MINOR
+BUILD
+bitlocker                       
+\Boot\BCD
+\EFI\Microsoft\Boot\BCD
+Exception
+ReturnNt
+ReturnHr
+LogNt
+LogHr
+FailFast
+%hs(%u)\%hs!%p: 
+%hs!%p: 
+(caller: %p) 
+%hs(%d) tid(%x) %08X %ws
+Msg:[%ws] 
+CallContext:[%hs] 
+[%hs(%hs)]
+[%hs]
+kernelbase.dll
+RaiseFailFastException
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+RtlNtStatusToDosErrorNoTeb
+RtlDllShutdownInProgress
+RtlDisownModuleHeapAllocation
+WilFailureNotifyWatchers
+RtlRegisterFeatureConfigurationChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlNotifyFeatureUsage
+NtQueryWnfStateData
+NtUpdateWnfStateData
+WilError_03
+onecore\internal\sdk\inc\wil\Staging.h
+WilStaging_02
+Local\SM0:%lu:%lu:%hs
+<unknown>
+[%S] %S
+UnattendLogWV
+onecore\base\ntsetup\lib\unattendlog\src\unattendlog.cpp
+CreatePath: Unable to create [%s]; GLE = 0x%x
+\\?\UNC\
+GetSystemPartitionNTPath: Found system partition at [%s].
+GetSystemPartitionNTPath: BCD APIs could not find system partition; status = 0x%x
+version
+$OFFLINE$SOFTWARE
+Microsoft\Windows NT\CurrentVersion
+InstallationType
+BootShell
+WinRETool
+Description
+locale
+Reset
+SystemDisk
+RecoveryImageIndex
+\\?\GLOBALROOT
+\\?\Volume{
+\\?\UNC
+\Device\HarddiskVolume
+\Device\Harddisk
+Partition
+MigrateDataWithMountFailed
+ErrorCode
+WinRESize
+PartA_PrivTags
+MigrateDataWithMountSucceed
+WinRESize
+PartA_PrivTags
+MigrateDataWithMountStart
+WinRESize
+PartA_PrivTags
+FindTargetPartitionFailed
+WinRESize
+PartA_PrivTags
+FindTargetPartitionSucceed
+PartitionType
+RecoveryPartitionSubtype
+WinRESize
+PartitionSize
+PartA_PrivTags
+WinreFormatPartitionFailed
+HRESULT
+PartA_PrivTags
+WinreFormatPartitionSucceed
+PartA_PrivTags
+WinreFormatPartition
+PartA_PrivTags
+InstallType
+InstallType
+PartA_PrivTags
+DeletePartitionFailed
+HRESULT
+PartA_PrivTags
+DeletePartitionSucceed
+PartA_PrivTags
+DeletePartition
+DiskNumber
+Offset
+PartA_PrivTags
+ExtendOsPartitionFailed
+HRESULT
+PartA_PrivTags
+ExtendOsPartitionSucceed
+PartA_PrivTags
+ExtendOsPartition
+ExtendSize
+PartA_PrivTags
+ShrinkOsPartitionFailed
+HRESULT
+PartA_PrivTags
+ShrinkOsPartitionSucceed
+PartA_PrivTags
+ShrinkOsPartition
+ShrinkSize
+PartA_PrivTags
+CreatePartitionFailed
+ErrorCode
+PartA_PrivTags
+CreatePartitionSucceed
+PartA_PrivTags
+CreatePartition
+ExtentOffset
+ExtentPartitionSize
+TargetPartitionSize
+PartA_PrivTags
+ReCreateWinRePartitionFailed
+ErrorCode
+PartitionLayoutIssue
+PartA_PrivTags
+ReCreateWinRePartitionSucceed
+PartA_PrivTags
+ReCreateWinRePartition
+PartitionSize
+TargetPartitionSize
+PartA_PrivTags
+CreateWinRePartitionFailed
+ErrorCode
+PartA_PrivTags
+CreateWinRePartitionSucceed
+PartA_PrivTags
+CreateWinRePartition
+PartitionSize
+PartA_PrivTags
+MigrateOemToolsToWinREFailed
+ErrorCode
+PartA_PrivTags
+MigrateOemToolsToWinRESucceed
+PartA_PrivTags
+MigrateOemToolsToWinRE
+DownlevelWinREPath
+PartA_PrivTags
+MigrateDriversToWinReFailed
+ErrorCode
+PartA_PrivTags
+MigrateDriversToWinReSucceed
+PartA_PrivTags
+MigrateDriversToWinRe
+WinReLocation
+SourceImagePath
+PartA_PrivTags
+InstallWinREFailed
+IsOemDir
+ErrorCode
+PartA_PrivTags
+InstallWinRESucceed
+WinRePartitionSize
+WinRePartitionFreeSpace
+IsWinRePartitionBoot
+IsWinRePartitionActive
+IsWinRePartitionMBR
+IsOemDir
+PartA_PrivTags
+InstallWinRE
+InstallPath
+CalledBySP
+PartA_PrivTags
+FveCheckSuspendBitLockerOnUpgrade
+ShouldSuspendBitlocker
+IsSecureBootBound
+IsOsPreRS1
+AuthUsesFlags
+LineNumber
+FveRemoveTrustedWimData
+FveAddTrustedWimData
+Microsoft.Windows.WinRE.Agent
+Microsoft.Windows.StartRepairCore
+FveDetectTelemetry
+FveGetStatusW
+FveEnableRawAccessW
+FveOpenVolumeW
+FveKeyManagement
+FveCommitChanges
+FveCloseVolume
+FveLockVolume
+Enter WinReGetConfig
+Parameters: configWinDir: %s
+Exit WinReGetConfig return value: %d, last error: 0x%x
+The size of WINRE_CONFIG is unexpected
+base\diagnosis\srt\reagent2\reinfo\shared.cpp
+WinReGetConfigInternal %s (0x%x) in file %S line %d
+WinRE config file path: %s
+WinRE is installed at: %s
+failed to copy wim installed location
+WinRE is staged
+failed to copy operation param
+OS install location: %s
+failed to copy setup directory location
+Custom image location: %s
+failed to copy custom image location
+failed to copy wim directory location
+Wim dir location: %s
+Downlevel WinRE location: %s
+failed to copy downlevel winre location
+System is WimBoot: %s
+WinRE image validated
+winre get config failed with error code 0x%x
+failed to allocate path
+winreGetRecoveryFilePath %s (0x%x) in file %S line %d
+failed to open recovery environment key
+SourceWimPath
+failed to concatenate recovery file name
+ Using recovery file at %s
+TargetOS
+failed to read target OS reg value
+system32\
+failed to concatenate string system32
+faile to concatenate recovery root directory
+failed to find main os config directory
+%s\system32\%s
+winreIsImageStaged %s (0x%x) in file %S line %d
+SYSTEM\CurrentControlSet\Control\MiniNT
+winreFindMainOsConfigDir %s (0x%x) in file %S line %d
+system32
+%s\%s
+failed to add file to directory path
+winreDoesFileExist %s (0x%x) in file %S line %d
+failed to concatenate target directory
+winreAddFileToDirPath %s (0x%x) in file %S line %d
+ failed to add trailing back slash to string %s (0x%x) in file %S line %d
+ overwrites error code 0x%x because it is not critical
+failed to concatenate file name
+winreFindVolumeFromOffset %s (0x%x) in file %S line %d
+failed to create target path
+failed to copy target path
+failed to get system directory
+winreGetWindowsVolume %s (0x%x) in file %S line %d
+failed to get volume name
+failed to get the length of string windows volume
+PrivateGetPartitionList %s (0x%x) in file %S line %d
+failed to enumerate disks
+\\.\PhysicalDrive%lu
+failed to get drive name
+winreGetDiskSignature %s (0x%x) in file %S line %d
+winreGetDiskSignature failed: 0x%x
+failed to get volume name length
+pEnumeratePartitions %s (0x%x) in file %S line %d
+failed to copy volume name
+\\?\GLOBALROOT\device\harddisk%u\partition%u
+failed to create partition name
+failed to get disk signature
+pEnumeratePartitions failed: 0x%x
+IOCTL_STORAGE_QUERY_PROPERTY failed: 0x%x
+winreConvertDirNameToOffset %s (0x%x) in file %S line %d
+failed to get volume path name
+failed to get volume path length
+failed to copy relative path
+winreConvertDirNameToOffset failed: 0x%x
+ReAgent.xml
+WimHash
+WimValidated
+SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\WinRE
+index
+state
+status
+offset
+WindowsRE
+WinreBCD
+ImageLocation
+WinreLocation
+OsInstallLocation
+CustomImageLocation
+PBRImageLocation
+PBRCustomImageLocation
+InstallState
+NarratorScheduled
+OsInstallAvailable
+CustomImageAvailable
+WinREStaged
+ScheduledOperation
+OperationParam
+OperationPermanent
+OsBuildVersion
+OemTool
+BootKey
+IsServer
+IsAutoRepairOn
+DownlevelWinreLocation
+IsWimBoot
+winreConvertLUTF8ToInt %s (0x%x) in file %S line %d
+winreConvertLUTF8ToInt64 %s (0x%x) in file %S line %d
+failed to write EOL
+ReAgentXMLParser::Update %s (0x%x) in file %S line %d
+failed to begin open element
+ReAgentXMLParser::Update XML version 0X%X not known, assuming this is a ver 2.0
+failed to end open element
+failed to write single node
+failed to write winre location attribute
+failed to write id attribute
+failed to write offset attribute
+failed to write disk id attribute
+failed to write image location attribute
+failed to bein open element os install location
+failed to bein open element PBR image location
+failed to write os install location attribute
+failed to write index attribute
+failed to begin open element custom image location
+failed to begin open element PBR custom image location
+failed to write custom image location attribute
+failed to write path attribute
+failed to write end open element
+failed to write child nodes
+failed to close element
+failed to get data and reset
+ReAgentXMLParser::ReadXMLFile %s (0x%x) in file %S line %d
+failed to read file
+read xml file (%s) failed: 0x%x
+failed to set end of file
+ReAgentXMLParser::WriteXMLFile %s (0x%x) in file %S line %d
+failed to write file
+Flush file buffers failed: 0x%x
+failed to read config xml file
+ReAgentXMLParser::ParseConfigFile %s (0x%x) in file %S line %d
+failed to parse dom
+GetDocumentElement failed: 0x%x
+failed to get properties
+Invalid Manifest
+ReadKnownTags failed: 0x%x
+ReAgentXMLParser::ParseConfigFile (xml file: %s) returning 0x%x
+failed to cast
+ReAgentXMLParser::GetChildAttributeByTag %s (0x%x) in file %S line %d
+failed to convert utf8 to unicode
+failed to get child attribute by tag: 0x%x
+failed to write text
+ReAgentXMLParser::WriteEOL %s (0x%x) in file %S line %d
+ReAgentXMLParser::WriteEOLWithIndent %s (0x%x) in file %S line %d
+ReAgentXMLParser::WriteSingleNode %s (0x%x) in file %S line %d
+failed to write attribute in single node
+GetChildAttributeByTag(WinreBCD): 0x%x
+GetChildAttributeByTag(WinreLocation): 0x%x
+GetChildAttributeByTag(WinreLocation offset): 0x%x
+GetChildAttributeByTag(WinreLocation guid): 0x%x
+GetChildAttributeByTag(ImageLocation path): 0x%x
+GetChildAttributeByTag(ImageLocation Id): 0x%x
+GetChildAttributeByTag(ImageLocation offset): 0x%x
+GetChildAttributeByTag(ImageLocation guid): 0x%x
+failed to get child attribute by tag: OsInstallLocation.Dir: 0x%x
+failed to get child attribute by tag: OsInstallLocation.DiskSignature: 0x%x
+failed to get child attribute by tag: OsInstallLocation.Offset: 0x%x
+failed to get child attribute by tag: OsInstallLocation.DiskId: 0x%x
+GetChildAttributeByTag(OsInstallLocationTag, Index) failed: 0x%x
+failed to get child attribute by tag: CustomImageLocation.Dir failed: 0x%x
+failed to get child attribute by tag: CustomImageLocation.DiskSignature: 0x%x
+failed to get child attribute by tag: CustomImageLocation.Offset: 0x%x
+failed to get child attribute by tag: CustomImageLocation.DiskId: 0x%x
+GetChildAttributeByTag(CustomImageLocationTag, Index) failed: 0x%x
+GetChildAttributeByTag(InstallState) failed: 0x%x
+GetChildAttributeByTag(IsOsInstallAvailable) failed: 0x%x
+GetChildAttributeByTag(IsCustomImageAvailable) failed: 0x%x
+GetChildAttributeByTag(IsAutoRepairOn) failed: 0x%x
+GetChildAttributeByTag(WinREStaged) failed: 0x%x
+GetChildAttributeByTag(ScheduledOperation) failed: 0x%x
+GetChildAttributeByTag(OperationParam) failed: 0x%x
+GetChildAttributeByTag(OperationPermanent) failed: 0x%x
+GetChildAttributeByTag(IsOemToolAvailable) failed: 0x%x
+GetChildAttributeByTag(BootKey) failed: 0x%x
+GetChildAttributeByTag(IsServer) failed: 0x%x
+GetChildAttributeByTag(DownlevelWinreLocation.Dir): 0x%x
+GetChildAttributeByTag(DownlevelWinreLocation.DiskSignature): 0x%x
+GetChildAttributeByTag(DownlevelWinreLocation.Offset): 0x%x
+GetChildAttributeByTag(DownlevelWinreLocation.DiskId): 0x%x
+GetChildAttributeByTag(IsWimBoot) failed: 0x%x
+GetChildAttributeByTag(NarratorScheduled) failed: 0x%x
+failed to init reagent xml parser
+ReAgentConfig::Init %s (0x%x) in file %S line %d
+failed to write single node scheduled operation
+ReAgentConfig::WriteChildNodes %s (0x%x) in file %S line %d
+ReAgentConfig::ParseConfigFile ReAgent.XML was not found or could not be parsed, creating a new config xml Err=%x
+ReAgentConfig::ParseConfigFile  returned with 0x%x 
+Update enhanced config info is enabled.
+ReAgentConfig::ParseConfigFile WinRE disabled (read bcd and update config info returned with 0x%x) 
+Get ReAgent config
+GetReAgentConfig %s (0x%x) in file %S line %d
+GetReAgentConfig Config file path: %s
+SystemSetupInProgress
+SYSTEM\Setup
+GetReAgentConfig System setup is in progress.
+GetReAgentConfig Disabling update enhanced config info for legacy setup.
+Failed to initialize config file
+Get downlevel ReAgent config
+Failed to get downlevel config path
+GetDownlevelReAgentConfig %s (0x%x) in file %S line %d
+Recovery\ReAgentOld.xml
+failed to create downlevel winre config file path
+ Downlevel config file path: %s
+ Checking for downlevel WinRE installation.
+ Ignore the error %d in function GetDownlevelReAgentConfig
+failed to copy winre locaiton
+FindWinReSourceImageAndPartition %s (0x%x) in file %S line %d
+Failed to find WinreLocation volume
+FindWinReSourceImageAndPartition No source winre.wim was specified.  Checking for a staged winre.wim.
+FindWinReSourceImageAndPartition Searching for OEM Winre.wim
+FindWinReSourceImageAndPartition Error 0X%X while searching for OEM winre.wim
+FindWinReSourceImageAndPartition Winre.wim was not found
+FindWinReSourceImageAndPartition using winre.wim from %s
+winre.wim
+Failed to find offset for winre.wim
+Enter SetWinRESettings
+SetWinRESettings %s (0x%x) in file %S line %d
+OEM partition, copying boot.sdi
+winreCopyBootSdiOnly failed
+failed to copy target dir string
+boot.sdi copied
+Copying WinRE from %s to staging location on %s
+winreCopyWIM failed
+Copied WinRE to staging location
+Creating BCD entry
+Failed to create BCD recovery entry %d
+BCD could not be set, Copying Winre.wim from %s to staging location
+Failed to copy string %s 
+\winre.wim
+Failed to concatenate string
+Moving %s to %s
+Failed to move winre.wim back %s %s error:%d
+WinRE created BCD entry: 
+Moving Winre and boot.sdi from staging location to target
+winre RenameWimDir failed
+Moved Winre and boot.sdi from staging location to target
+Updating reagent.xml
+Set WinRE location path to: %s
+Failed to set WinRE location
+Set recovery guid
+Set scheduled operation: WinReNoOperation
+Failed to set operation param
+Set OS build version: %s
+Server SKU detected
+Set Wimboot state: %d
+Set install state to: enabled
+Setting the recovery sequence for the target OS.
+Failed to register WinRE in recovery BCD, recovery button may be unavailable: 0x%x
+Creating backup of reagent.xml
+Created backup of reagent.xml
+Configuring the WinRE validation task.
+Completed the WinRE validation task.
+Failed to get customization file path
+Creating backup of customization file
+Created backup of customization file
+Storing disk info in NVRAM
+Stored disk info in NVRAM
+Sysprep VM mode; skipped storing disk info in NVRAM
+Deleting file %s
+SetFileAttributes failed. Error: 0X%08X
+Cannot delete %s. Error: 0X%08X
+SetWinRESettings return with error code 0x%x
+Enter WinReInstallOnTargetOS
+Parameters: ReInstallBecauseOfBitlocker: %d, IsNewSetup: %d, SourcePathOverride: %s, AllowDiskPartitionChanges: %d
+TargetOsGuid
+Exit WinReInstallOnTargetOS return value: %d, last error: 0x%x
+Enter WinReInstall
+Parameter: ReInstallBecauseOfBitlocker: %d
+Exit WinReInstall return value: %d, last error: 0x%x
+Enter WinRE_Specialize
+Disk partition changes are allowed
+NOTE: overwrite the error code 0x%x to conform to the existing behavior
+Exit WinRE_Specialize with return value which is error code: 0x%x
+Microsoft\Windows\CurrentVersion\Setup\Sysprep
+SysprepMode
+Get NULL for offline SOFTWARE HIVE
+Get wrong type [%d] for Reg value SysprepMode
+upgrade
+According to the register keys in offline HIVE, it's Upgrade scenario.
+Get value [%s] from Reg value [%s]. It's not Upgrade scenario.
+failed to get value from %s [%s] in offline SOFTWARE HIVE: 0x%x
+failed to read size from %s [%s] in offline SOFTWARE HIVE: 0x%x
+pkWinREExistInOfflineOS %s (0x%x) in file %S line %d
+%s\system32\%s\%s
+Enter WinRE_Specialize_Offline
+failed to check whether offline OS is in Upgrade: 0x%x
+Called by Upgrade. Will do nothing.
+failed to check whether Offline OS has WinRE:  0x%x
+Offline OS does not have WinRE. Will do nothing.
+failed to get winre config: 0x%x
+Cannot find Config file while WinRE.wim exists.
+WinRE is available
+Need to use online API to detect and fix WinRE
+WinRE is not available
+Exit WinRE_Specialize_Offline with return value which is error code: 0x%x
+Enter WinReReinstall
+ (WinRE) WinReReinstall() Invalid parameters
+ (WinRE) WinReReinstall() failed to uninstall internal. Error: 0x%08x
+ (WinRE) WinReReinstallfailed to install on target OS. Error: 0x%08x
+ (WinRE) WinReReinstall() The system partition has enough free space
+Exit WinReReinstall return value: %d
+ReCustomization.xml
+rundll32.exe %s,RjvCreateSuccessTaskEntryPoint 
+Launching PBR RjvCreateSuccessTaskEntryPoint
+Launch process (%s) did not succeed
+StringCchPrintf (%S) failed
+reseteng.dll does not exist (server sku)
+AppendPath (%s, %s) failed, error 0X%X
+%s -OOBE
+Launching ResetEngine.exe
+ResetEngine.exe does not exist (server sku)
+RegOpenKeyEx(GP) failed: 0x%x
+Group policy is enabled!
+WinReGetGroupPolicies failed with error code 0x%x
+NOTE: overwrite error code 0x%x because it is not critical
+winreGetOsVersion %s (0x%x) in file %S line %d
+failed to get version info
+%u.%u.%u.
+failed to create temporary string
+winreGetBootSdiPath %s (0x%x) in file %S line %d
+Enter WinRePostBCDRepair
+repairedOS: 
+WinRePostBCDRepair %s (0x%x) in file %S line %d
+failed to convert directory name to offset
+Failed to update recovery BCD: 0x%x
+failed to update agent config
+Exit WinRePostBCDRepair return value: %d, last error: 0x%x
+Enter WinReQueueRecoveryBoot
+failed to get winre config
+WinReQueueRecoveryBoot %s (0x%x) in file %S line %d
+WinRE not configured
+failed to set BCD boot entry
+Exit WinReQueueRecoveryBoot return value: %d, last error: 0x%x
+Enter WinReSetNarratorScheduled
+Parameters: configWinDir: %s, State: %d
+WinReSetNarratorScheduled %s (0x%x) in file %S line %d
+Exit WinReSetNarratorScheduled return value: %d, last error: 0x%x
+Enter WinReSetRecoveryAction
+Parameters: Operation: %d, OperationParam: %s, Permanent: %s, ConfigWinDir: %s
+WinReSetRecoveryAction %s (0x%x) in file %S line %d
+Setup disabled by GP
+No Setup files are available
+failed to set emptry string operation param
+failed to set operation param
+Exit WinReSetRecoveryAction return value: %d, last error: 0x%x
+Enter WinReSetConfig
+Exit WinReSetConfig return value: %d, last error: 0x%x
+WinReSetConfigInternal %s (0x%x) in file %S line %d
+failed to set image location path
+install.wim
+failed to convert install.wim path to offset
+failed to set os install location path
+failed to set custom image location path
+failed to convert winre.wim path to offset
+failed to set downlevel winre location path
+failed to add winre.wim to directory path
+WinRE is not installed, nothing to back up
+WinRe directory(%s) not found
+Recovery file not found at %s
+winreBackupRecoveryFile %s (0x%x) in file %S line %d
+failed to copy file
+failed to set ACL
+winreBackupRecoveryFile (%s, %s) failed, Err: %lu
+Enter WinReOobeInstall
+WinReOobeInstall GetSystemWindowsDirectory failed, error 0X%X
+WinReOobeInstall Target drive (%s) is not a valid drive letter
+PushButtonReset
+WinReOobeInstall PBRSucceed event was scheduled
+WinReOobeInstall Checking if install is needed
+WinReOobeInstall WinRE install succeeded
+WinReOobeInstall WinRE install did not succeed
+WinReOobeInstall Resetting WinRE recovery action
+WinReOobeInstall Resealing volume if necessary
+WinReOobeInstall WinRE installation in OOBE completed
+Exit WinReOobeInstall return value: %d
+Enter WinRECheckGuid
+Parameter: TargetOsGuid: 
+ (WinRE)WinRECheckGuid() WinRECheckGuid failed NULL guid
+ (WinRE)WinRECheckGuid() winreGetOSGuidOrDefault failed
+Exit WinRECheckGuid return error code: 0x%x
+winreUnInstallInternalfailed, winPE is not supported: : 0x%x
+winreUnInstallInternal %s (0x%x) in file %S line %d
+Winre is already disabled, nothing to do here
+failed to copy wim back
+WinRE uninstall step 1 succeeded: copy WIM file back to its staging location
+failed to set winre location path
+WinRE uninstall step 2 succeeded: update agent config for BCD id, install state, schedule operation.
+Failed to unregister Winre.wim from recovery BCD: 0x%x, not critical error and will be ignored.
+WinRE uninstall step 3 succeeded: unregister winre.wim from recovery BCD.
+WinRE uninstall step 4 succeeded: remove recovery related sequence from BCD.
+WinRE uninstall step 5 completed with return value %s: remove validation task.
+Enter WinReUnInstall
+WinReUnInstall %s (0x%x) in file %S line %d
+Exit WinReUnInstall returns %d with last error: 0x%x
+Enter WinRE_Generalize
+Exit WinRE_Generalize returns success with last error: 0x%x
+winreGetWIMAttr %s (0x%x) in file %S line %d
+failed to copy string
+failed to concatenate winre.wim file name
+Enter WinReGetWIMInfo
+WinReGetWIMInfo %s (0x%x) in file %S line %d
+failed to get wim attribute
+Exit WinReGetWIMInfo return value: %d, last error: 0x%x
+Enter WinReGetCustomization
+Parameters: configWinDir: %s, pwszLocale: %s
+failed to get recovery file path
+WinReGetCustomization %s (0x%x) in file %S line %d
+failed to init agent customization
+failed to parse config file
+Exit WinReGetCustomization return value: %d, last error: 0x%x
+Enter WinReSetCustomization
+Parameters: configWinDir: %s, pwszConfigFile: %s
+Exit WinReSetCustomization return value: %d, last error: 0x%x
+WinReSetCustomizationInternal %s (0x%x) in file %S line %d
+failed to get config file path from win dir: 0x%x
+AgentConfig.Init failed: 0x%x
+failed to back up recovery file: 0x%x
+Enter WinReClearOemImagePath
+WinReClearOemImagePath %s (0x%x) in file %S line %d
+Exit WinReClearOemImagePath return value: %d, last error: 0x%x
+SeBackupPrivilege
+SeRestorePrivilege
+Enter WinReRepair
+ %lu OS loaders found in the BCD store, not attempting repair
+GetSystemWindowsDirectoryW failed, err 0x%x
+WinReRepair %s (0x%x) in file %S line %d
+Attempting to restore xml from the backup location
+Loading restored xml
+Restored xml could not be parsed
+Attempting to recreate the XML
+CreateFile (%s) failed , 0x%x
+failed to reconstruct config xml
+Loading reconstructed xml
+WinRE Installed, verifying BCD state
+Verifying WinRE files
+WinRE Disabled, verifying state consistency
+Repair needed, uninstalling winre
+Installing winre
+WinRE state valid, no repair required
+Successfully repaired winre
+Repair failed
+Exit WinReRepair return value: %d, last error: 0x%x
+Enter WinReConfigureTask
+Parameters: TaskFolder: %s, TaskName: %s, WinReTaskAction, %d
+failed to call coinitialize
+WinReConfigureTask %s (0x%x) in file %S line %d
+failed to create task schedule instance
+failed to connect to task service
+failed to get root folder
+failed to get task folder
+failed to delete task
+failed to delete folder
+failed to get winre task
+failed to set winre task state
+Exit WinReConfigureTask return error code: 0x%x
+Utils::AppendPath returned 0x%x
+failed to get file size
+winreHashSHA256 %s (0x%x) in file %S line %d
+failed to acquire context
+failed to create hash
+failed to hash data
+failed to get hash parameter
+Failed to clear WIM file trusted state: 0x%x
+Failed to clear WIM file hash: 0x%x
+Failed to open WinRE reg key: 0x%x
+Failed to publish the configuration change notification: 0x%x
+winreConfigureValidationTask failed: 0x%x, a non critical error
+RtlPublishWnfStateData
+1.3.6.1.4.1.311.10.3.6
+Enter WinReValidateRecoveryWim
+Exit WinReValidateRecoveryWim return value: %d, last error: 0x%x
+Enter WinReValidateWimFile
+Parameters: WimFile: %s
+Exit WinReValidateWimFile return value: %d, last error: 0x%x, valid: %u
+Enter WinReHashWimFile
+Exit WinReHashWimFile return value: %d, last error: 0x%x
+winreHashWimFile: Failed to hash [%s]: 0x%x
+WinReValidateRecoveryWimInternal %s (0x%x) in file %S line %d
+Failed to find winre.wim because WinRE is not installed.
+Winre.wim is available at %s\%s
+failed to validate trust
+WinReValidateRecoveryWimInternal: The WIM file is not trusted
+Failed to generate hash of winre.wim: 0x%x
+failed to open key
+Failed to store WIM file trusted state: 0x%x
+Failed to store WIM file hash: 0x%x
+WinReValidateRecoveryWimInternal took %llu ms.
+WinReValidateRecoveryWimInternal failed: 0x%x
+ (WinRE)winReCheckDirectorySize() argument error
+ (WinRE)winReCheckDirectorySize() source is empty
+ (WinRE)winReCheckDirectorySize() size pointer is empty
+ (WinRE)winReCheckDirectorySize() Check file size failed
+ (WinRE)winReCheckDirectorySize() returning %s
+ (WinRE)winRECopyDirectory() argument error
+ (WinRE)winRECopyDirectory() source is empty
+ (WinRE)winRECopyDirectory() target is empty
+ (WinRE)winRECopyDirectory() copy failed
+ (WinRE)winRECopyDirectory() returning %s
+ (WinRE)winREMoveDirectory() argument error
+ (WinRE)winREMoveDirectory() source is empty
+ (WinRE)winREMoveDirectory() copy failed
+ (WinRE)winREMoveDirectory() delete failed
+ (WinRE)winREMoveDirectory() returning %s
+ (WinRE)winreGetConfigByGuid() winreGetOSGuidOrDefault failed
+ (WinRE)winreGetConfigByGuid() GetOsInfoForBootEntry failed
+ (WinRE)winreGetConfigByGuid() returning %s
+Enter WinREUseNewPBRImage
+Parameter newOSBCDGuid: 
+Exit WinREUseNewPBRImage return value: %d, last error: 0x%x
+ (WinRE)WinREUseNewPBRImageInternal() winreGetOSGuidOrDefault failed
+WinREUseNewPBRImageInternal %s (0x%x) in file %S line %d
+ (WinRE)WinREUseNewPBRImageInternal() winreGetWinDir failed. Error: 0x%08X
+ (WinRE)WinREUseNewPBRImageInternal() WimBoot is enabled, replace the old PBR image
+ (WinRE)WinREUseNewPBRImageInternal() winreGetConfigByGuid failed, assuming no existing PBR image
+ (WinRE)WinREUseNewPBRImageInternal() PBR image not found. Use the new PBR image
+ (WinRE)WinREUseNewPBRImageInternal() Unable to get the WIM image info. Error: 0x%08X
+ (WinRE)WinREUseNewPBRImageInternal() Windows 8.x PBR image found. Preserve it.
+ (WinRE)WinREUseNewPBRImageInternal() Windows 10 PBR image found
+ (WinRE)WinREUseNewPBRImageInternal() Free space on %s : %I64u
+ (WinRE)WinREUseNewPBRImageInternal() Not enough free space, don't use the new PBR image
+ (WinRE) GetDiskFreeSpaceEx failed. Error: 0x%08X
+ (WinRE)WinREUseNewPBRImageInternal() returning %s
+Enter WinReSetBootApp
+Parameters: wimFileDir: %s, relativeAppPathAndCmdLine: %s
+Exit WinReSetBootApp return value: %d, last error: 0x%x
+Enter WinReClearBootApp
+Parameters: wimFileDir: %s
+Exit WinReClearBootApp return value: %d, last error: 0x%x
+winreConfigureBootAppwinre.wim not found at %s
+Append path failed
+winreConfigureBootApp %s (0x%x) in file %S line %d
+Failed to init agent config
+winreConfigureBootAppOne-time boot app not specified. Leaving ReAgent.xml unchanged. Error: 0x%x
+winreConfigureBootAppFailed to delete configuration file at %s
+winreConfigureBootApp failed:  0x%x
+winreConfigureBootApp succeeded
+Enter WinReIsWimBootEnabled
+Parameters: pszWinDir: %s
+Exit WinReIsWimBootEnabled returns %d with last error: 0x%x
+Failed to check whether %s is the current Windows directory
+Failed to get system windows directory
+GetVersionEx failed. Error: 0x%x.
+Wimboot
+System32\config\SYSTEM
+Setup
+install.swm
+install.esd
+Invalid parameters
+ StringCchPrintf failed. Error: 0x%x
+Enter WinReIsInstalledOnSystemPartition
+Target OS guid: 
+Exit WinReIsInstalledOnSystemPartition return value: %d, last error: 0x%x
+ (WinRE)WinReIsInstalledOnSystemPartitionInternal() Invalid parameters
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() GetSystemPartitionNTPath failed. Error: 0x%08x
+\\?\GLOBALROOT%s\
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() StringCchPrintf failed. Error: 0x%08x
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() winreGetConfigByGuid failed. Error: 0x%08x
+failed to get winre config. Error: 0x%08x
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() GetVolumePathName failed. Error: 0x%08x
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() WinRE volume path: %s
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() GetVolumeNameForVolumeMountPoint failed. Error: 0x%08x
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() System volume path: %s
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() WinRE image is on the system partition
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() WinRE is not located on the System partition
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() WinRE is not enabled
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() GetDiskFreeSpaceEx failed. Error: 0x%08x
+ (WinRE) WinReIsInstalledOnSystemPartitionInternal() Free space on %s: %I64u
+WinReCopyDiagnosticFilesInternal %s (0x%x) in file %S line %d
+failed to construct config file target path
+WinReCopyDiagnosticFilesInternal
+%hs: Failed to copy [%s] => [%s]: 0x%0x
+Enter WinReCopyDiagnosticFiles
+Parameters: WinDir: %s DestinationDir: %s
+Exit WinReCopyDiagnosticFiles return value: %d, last error: 0x%x
+Enter WinReGetTrustedBootApps
+Parameters: WinDir: %s
+Exit WinReGetTrustedBootApps return value: %d, last error: 0x%x
+Enter WinReHashBootApp
+Parameters: AppPath: %s
+Exit WinReHashBootApp return value: %d, last error: 0x%x
+Enter WinReAddTrustedBootApp
+Parameters: WinDir: %s ImageName: %s
+Exit WinReAddTrustedBootApp return value: %d, last error: 0x%x
+Enter WinReRemoveTrustedBootApp
+Exit WinReRemoveTrustedBootApp return value: %d, last error: 0x%x
+vector<T> too long
+deque<T> too long
+invalid string position
+string too long
+WimHash
+WimValidated
+SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\WinRE
+ReCustomization.xml
+\Windows\System32\ResetEngine.exe
+\Windows\system32\reseteng.dll
+DisableSetup
+SOFTWARE\Policies\Microsoft\Windows\WinRE
+RegOpenKeyEx(RecEnv) failed: 0x%x
+base\diagnosis\srt\reagent2\reagent\logfile.cpp
+Failed to drop file form path
+winreGetStoredRecoveryDir %s (0x%x) in file %S line %d
+failed to concatenate recovery root directory
+Enter WinReGetLogDirPath
+Exit WinReGetLogDirPath return error code: 0x%x
+WinReGetLogDirPathInternal %s (0x%x) in file %S line %d
+failed to open log directory
+failed to drop file form path
+failed to concatenate string
+Enter WinReSetTriggerFile
+Parameters: DirName: %s, fDelete: %d
+WinReSetTriggerFile %s (0x%x) in file %S line %d
+failed to delete file
+failed to create file %s: 0x%x
+Exit WinReSetTriggerFile return error code: 0x%x
+winreCreateReloadFile %s (0x%x) in file %S line %d
+failed to agent reload
+failed to update agent reload
+winreCreateOrOpenLogDir %s (0x%x) in file %S line %d
+failed to get log directory path
+failed to open directory
+Enter WinReCreateLogInstanceEx
+failed to create directory
+WinReCreateLogInstanceEx %s (0x%x) in file %S line %d
+failed to create reload file
+WinReCreateLogInstanceEx failed: 0x%x
+Exit WinReCreateLogInstanceEx returns error code 0x%x
+Enter WinReOpenLogInstance
+failed to create log directory
+WinReOpenLogInstance %s (0x%x) in file %S line %d
+failed to add reload file to directory path
+failed to init agent reload
+Exit WinReOpenLogInstance returns %d with last error: 0x%x
+Enter WinReDeleteLogFiles
+Exit WinReDeleteLogFiles returns %d with last error: 0x%x
+WinReDeleteLogFilesInternal %s (0x%x) in file %S line %d
+failed to delete all files
+Enter WinReUpdateLogInstance
+WinReUpdateLogInstance %s (0x%x) in file %S line %d
+failed to set trigger file
+Exit WinReUpdateLogInstance returns %d with last error: 0x%x
+Failed to allocate path
+winreCopyLogFilesInternal %s (0x%x) in file %S line %d
+failed to open WinPE directory
+failed to add * to search pattern
+failed to add file to src directory path
+failed to add file to dest directory path
+Enter WinReCopyLogFilesToRamdisk
+failed to copy log files
+WinReCopyLogFilesToRamdisk %s (0x%x) in file %S line %d
+Exit WinReCopyLogFilesToRamdisk returns %d with last error: 0x%x
+Enter WinReRestoreLogFiles
+WinReRestoreLogFiles %s (0x%x) in file %S line %d
+Exit WinReRestoreLogFiles returns %d with last error: 0x%x
+Enter WinReRestoreConfigAfterPBR
+Parameters: szNewOsConfigPath: %s, bUseDownlevelWinReLocation: %d
+WinReRestoreConfigAfterPBR Searching for reload.xml
+Failed to get log directory
+WinReRestoreConfigAfterPBR %s (0x%x) in file %S line %d
+WinReRestoreConfigAfterPBR Logs location is %s
+Failed to open log directory
+WinReRestoreConfigAfterPBR Processing %s and disable update enhanced config info
+Failed to parse reload.xml
+WinReRestoreConfigAfterPBR reload.xml WinreLocation: %s
+WinReRestoreConfigAfterPBR reload.xml ImageLocation: %s
+WinReRestoreConfigAfterPBR reload.xml DownlevelWinreLocation: %s
+WinReRestoreConfigAfterPBR reload.xml InstallState: %d
+Failed to set the operation key
+Failed to get ReAgent.xml path
+Failed to parse ReAgent.xml
+WinReRestoreConfigAfterPBR reagent.xml WinreLocation: %s
+WinReRestoreConfigAfterPBR reagent.xml ImageLocation: %s
+WinReRestoreConfigAfterPBR reagent.xml DownlevelWinreLocation: %s
+WinReRestoreConfigAfterPBR reagent.xml InstallState: %d
+WinReRestoreConfigAfterPBR Using WinRE from downlevel OS
+WinReRestoreConfigAfterPBR Using installed WinRE from old OS
+WinReRestoreConfigAfterPBR Using staged WinRE from old OS
+WinReRestoreConfigAfterPBR Using staged WinRE from new OS
+WinReRestoreConfigAfterPBR Using default WinRE from new OS
+Failed to clear WinreLocationPath
+Failed to stage WinRE to the new OS image location
+WinReRestoreConfigAfterPBR Deleting staged WinRE from %s
+Failed to stage WinRE to the downlevel WinRE location
+failed to add boot.sdi directory path
+WinReRestoreConfigAfterPBR Deleting old boot.sdi
+Failed to clear ImageLocationPath
+WinReRestoreConfigAfterPBR Searching for a recovery image from the old OS
+Failed to add file to directory path
+WinReRestoreConfigAfterPBR Found recovery image from old OS at %s
+WinReRestoreConfigAfterPBR Searching for a recovery image from the new OS
+Found recovery image from new OS at %s
+Failed to update OsInstallLocationPath
+WinReRestoreConfigAfterPBR Failed to find a recovery image
+ Final WinreLocation: %s
+ Final ImageLocation: %s
+ Final DownlevelWinreLocation: %s
+ Final InstallState: %d
+ Final OsInstallLocation: %s
+ Final OsImageIndex: %d
+Failed to update ReAgent.xml
+Exit WinReRestoreConfigAfterPBR return value: %d, last error: 0x%x
+TargetOS
+SOFTWARE\Microsoft\RecoveryEnvironment
+c:\Recovery
+x:\RecoveryLogs
+Recovery.txt
+Reload.xml
+Enter winreFindInstallMedia
+Parameters: volPath: %s, DosPath: %s
+failed to get current OS architecture
+winreFindInstallMedia %s (0x%x) in file %S line %d
+sources
+setup.exe
+failed to add setup.exe to directory path
+failed to get binary architecture
+Exit winreFindInstallMedia return error code: 0x%x
+fixing WinRE staging
+pFixImageLocation %s (0x%x) in file %S line %d
+pFixImageLocation returning %s
+pGetExistingWinREPath %s (0x%x) in file %S line %d
+pGetExistingWinREPath returning %s
+Enter WinReSetupCheckWinRE
+invalid parameter because backupSize can not be NULL
+WinRE is disabled
+check directory size failed
+WinReSetupCheckWinRE returning %s
+Enter WinReSetupMigrateData
+WinRELocation: %s, SourceImagePath: %s, DownlevelWinREPath: %s, OldOsWinDir: %s, NewOsWinDir: %s, RemoveSetupFilter: %s
+Looking for winre.wim
+failed to get winre config, assuming WinRE is disabled: 0x%x
+WinRE is not installed or staged.  Nothing to do.
+Failed to construct path to winre.wim
+WinReSetupMigrateData %s (0x%x) in file %S line %d
+Migrating drivers to %s
+Failed to migrate drivers.
+overriding return value to prevent rollback.
+WinReSetupMigrateData returning %s
+Invalid parameter because image path is not specified
+failed to create file (%s). Error: 0x%08X
+failed to get prerelease version. Error: 0x%08X
+Build ID: %s
+StringCchPrintf failed. Error: 0x%08X
+WriteFile failed. Error: 0x%08X
+winreCreatePBRMarkerFile returning %s
+Enter WinReSetupSetImage
+ImagePath: %s, ImageIndex: %d, backup directory: %s
+newOSBCDGuid: 
+directory not specified
+PBR image not found.
+winreGetOSGuidOrDefault failed
+GetOsInfoForBootEntry failed
+Unable to get the WIM image info. Error: 0X%X
+PBR image version: %d.%d
+FindFirstFileW failed
+drivers
+install
+WinReSetupSetImage %s (0x%x) in file %S line %d
+The WinRE image associated with the current PBR image is: %s.
+Unable to get the WinRE WIM image info. Error: 0X%X
+StringCchCopyW failed
+string copy failed
+failed to set winre config
+WinReSetupSetImage() returning %s
+OEMInformation
+Upgrade will not replace the on-disk recovery image if this file is present. Do not delete or modify this file.
+DONOTREPLACE.txt
+base\diagnosis\srt\reagent2\reagent\util.cpp
+ failed to open key
+SetWinReOperationSyncKey %s (0x%x) in file %S line %d
+SetWinReOperationSyncKey failed to create key %s: %x
+SetWinReOperationSyncKey another installation in progress
+RemoveWinReOperationSyncKey %s (0x%x) in file %S line %d
+RegDeleteKey(InstallKey) failed: 0x%x
+CheckRegKey Reg get value (%s) failed. with error 0x%X
+CheckRegKey test hook (%s) present or enabled
+CheckRegKey test hook (%s) present and disabled
+Failed to append OEM install directory path
+IsPartitionInUse %s (0x%x) in file %S line %d
+IsPartitionInUse partition is in use
+%s: NULL 
+%s: {%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X} 
+Enumerate and log all fixed partitions:
+--Partition info--
+VolumeName: %s, PartitionName: %s
+Partition number: %d, offset: %I64u, free space: %I64u, total space: %I64u
+DiskNumber:%d, DiskSignature:%d, NTFS:%d, Mbr:%d, Active:%d, Boot:%d, BitlockerEnabled:%d
+MBR partition id: 0x%x
+GPT partition GUID:
+DiskId
+winreGetDownlevelConfigFilePathByGuid GetOsInfoForBootEntry returned 0x%x
+ Utils::AppendPath returned 0x%x
+SeTakeOwnershipPrivilege
+winreSetACL %s (0x%x) in file %S line %d
+failed to set named security info
+failed to set file attributes
+failed to add file to directory
+winreCreateTargetDirName %s (0x%x) in file %S line %d
+failed to create target directory path
+winreCreateTempDirName failed: 0x%x
+winreFindPartitionByOffset %s (0x%x) in file %S line %d
+ (WinRE)winreGetWinDir GetWindowsDirectory failed. Error: 0x%08X
+ (WinRE)winreGetWinDir GetOsInfoForBootEntry failed. Error: 0x%08X
+ (WinRE)winreGetWinDir StringCchCopy failed. Error: 0x%08X
+winreDeleteAllFiles %s (0x%x) in file %S line %d
+failed to add * to directory path
+faile to delete all files
+D:(A;OICI;GA;;;BA)
+failed to convert string security descriptor
+winreOpenOrCreateDir %s (0x%x) in file %S line %d
+winreOpenOrCreateDir failed: 0x%x
+failed to add boot.sdi to directory path
+winreRenameWIMDir %s (0x%x) in file %S line %d
+failed to create temporary directory
+failed to add OEM install directory to directory path
+failed to move file
+winreRenameWIMDir failed: 0x%x
+{00000000-0000-0000-0000-000000000000}
+winreArePathsEqualFailed to get attributes for %s: 0x%x
+winreArePathsEqualFailed to open for read %s: 0x%x
+winreArePathsEqualFailed to get file information for %s: 0x%x
+winreGetOSGuidOrDefault GetCurrentOsGuid returned 0x%x
+System\Setup\BuildUpdate
+RecoveryDestination
+winreSetRecoveryTimestamp: Failed to create HKLM\%s: %u
+winreSetRecoveryTimestamp: Failed to set HKLM\%s [%s]: %u
+winreGetLatestDriverImportDate: pArg cannot be NULL
+winreGetLatestDriverImportDate: Failed to query import time for %s: 0x%x
+winreGetLatestDriverImportDate: %s: Import time: %llu
+SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\PBR
+DriverEpoch
+drvstore.dll
+winreSetDriverEpoch: Failed to load drvstore.dll: 0x%x
+DriverStoreOpenW
+winreSetDriverEpoch: Failed to load drvstore!DriverStoreOpenW: 0x%x
+DriverStoreClose
+winreSetDriverEpoch: Failed to load drvstore!DriverStoreClose: 0x%x
+DriverStoreEnumW
+winreSetDriverEpoch: Failed to load drvstore!DriverStoreEnumW: 0x%x
+DriverStoreGetObjectPropertyW
+winreSetDriverEpoch: Failed to load drvstore!DriverStoreGetObjectPropertyW: 0x%x
+winreSetDriverEpoch: Failed to get system Windows dir: 0x%x
+winreSetDriverEpoch: Failed to get online driver store: 0x%x
+winreSetDriverEpoch: Failed to iterate over third-party drivers: 0x%x
+winreSetDriverEpoch: Driver epoch: %llu
+winreSetDriverEpoch: Failed to create %s: 0x%x
+winreSetDriverEpoch: Failed to set %s: 0x%x
+O:BAG:BAD:(A;CIOI;GA;;;BA)(A;CIOI;GRGX;;;AU)(A;CIOI;GRGX;;;BU)
+?:\Recovery
+winreSetRecoveryDirectorySecurity: Failed to get windows dir: 0x%x
+winreSetRecoveryDirectorySecurity: Checking for recovery dir [%s]
+winreSetRecoveryDirectorySecurity: Recovery dir did not exist, creating with secure ACL
+winreSetRecoveryDirectorySecurity: Failed to create [%s]: 0x%x
+winreSetRecoveryDirectorySecurity: Created [%s] successfully
+winreSetRecoveryDirectorySecurity: Failed to set permissions on [%s] to [%s]: 0x%x
+winreSetRecoveryDirectorySecurity: Set [%s] permissions to [%s]
+winreSetRecoveryDirectorySecurity: Failed to mark [%s] as hidden: 0x%x
+winreSetRecoveryDirectorySecurity: Successfully made [%s] hidden
+winreSetRecoveryDirectorySecurity: Recovery dir already exists, nothing to do
+InstallType
+SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OOBE
+winreTraceHostInstallType: Failed to read install type: 0x%x
+winreTraceHostInstallType: Install type: %u
+winreGetConfigFilePathFromOsGuid GetOsInfoForBootEntry returned 0x%x 
+winreGetCurrentOsArch %s (0x%x) in file %S line %d
+\kernel32.dll
+failed to concatenate kernel32.dll path
+RegOpenKeyEx(CurrentVersion) failed: 0x%x
+RegQueryValueEx failed: 0x%x
+Inavlid Reg value type
+[%s] contains a [%s] marker. Use existing one.
+SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Sysprep
+Temporary
+SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\WinRE
+BuildLabEx
+Software\Microsoft\Windows NT\CurrentVersion
+InstallInProgress
+failed to get string length
+winreMakeBcdDeviceObject %s (0x%x) in file %S line %d
+failed to copy partition path
+failed to get relative path length
+failed to copy device file path
+MeetPartitionRequirements Partition details: {Offset: %I64u, Free space: %I64u, Total space: %I64u}
+MeetPartitionRequirements WinRE WIM size: %I64u
+MeetPartitionRequirements Required free space: %I64u
+MeetPartitionRequirements Not enough free space req = %I64u avail = %I64u offset = %I64u 
+MeetPartitionRequirements Partition has bitlocker, offset = %I64u 
+MeetPartitionRequirements Not Supported partition type offset = %I64u 
+MeetPartitionRequirements Not Ntfs offset = %I64u 
+Partition details: {Offset: %I64u, Free space: %I64u, Total space: %I64u}
+Required free space: %I64u
+Not enough total space req = %I64u avail = %I64u offset = %I64u 
+failed to get windows volume
+winreFindOemWinRe %s (0x%x) in file %S line %d
+failed to get the length of volume root
+Skipping OS volume
+Valid MBR parition found
+Skipping volume %s
+ Scanning volume %s
+failed to append OEM install directory
+winreFindOemWinRe WINRE located at %s
+winreFindOemWinRe Ignoring downlevel WINRE located at %s
+winreFindOemWinRe Multiple winre.wims found
+failed to copy winre path
+failed to append PBR image dir
+winreFindOemWinRe PBR image located at %s
+winreFindOemWinRe Multiple PBR images found
+failed to copy pbr image path
+Found winre at location %s
+failed to convert winre.wim directory name to offset
+Setting staging location to %s
+failed to set image location
+Winre not found
+Setting PBR image location to %s
+PBRImage was not set
+Updating config xml
+winreFindOemWinRe failed: 0x%x
+failed to find main os config dir
+winreGetSourceFile %s (0x%x) in file %S line %d
+winreGetSourceFile failed: 0x%x
+winreDeleteStagedFiles %s (0x%x) in file %S line %d
+failed to add winre.wim to directory
+winreCopyBootSdiOnly %s (0x%x) in file %S line %d
+failed to get boot sdi path
+failed to copy recovery directory
+failed to add boot sdi to directory
+winreCopyBootSdiOnly failed: 0x%x
+winreCopyWIM %s (0x%x) in file %S line %d
+failed to create target directory name
+failed to create \Recovery root directory
+failed to create temp directory
+failed to get source file winre.wim
+winreCopyWIM Deleted existing wim file in %s
+winreCopyWIM Copying file from %s to %s
+winreCopyWIM Could not delete %s (GLE 0X%X)
+failed to get boot.sdi path
+winreCopyWIM Deleted existing sdi file in %s
+winreCopyWIM failed: 0x%x
+WinRE enabled
+boot.sdi found at %s\%s
+winre.wim not found at %s\%s
+boot.sdi not found at %s\%s
+reagent.xml
+reagent.xml not found at %s\%s
+GetSystemWindowsDirectoryW failed 0x%x
+System32\Recovery\ReAgent.xml
+failed to append reagent.xml
+winreRestoreBackupXMLFromVolume %s (0x%x) in file %S line %d
+Backup xml found at %s
+Copy file from %s to %s failed, 0x%x
+Backup xml copied to %s
+\Recovery
+failed to create wildcard path
+%s not found
+FindFirstFileW(%s) failed, last error 0x%x
+failed to get Windows volume root
+winreRestoreBackupXML %s (0x%x) in file %S line %d
+XML restored from the windows volume
+XML restored 
+winreRestoreBackupXML failed: 0x%x
+ invalid parameter: TempFilesFound can't be NULL
+Recovery\Temporary
+failed to append recovery\temporary path
+winreCopyWIMBackFromVolume %s (0x%x) in file %S line %d
+ Path %s not found
+failed to copy src directory
+failed to copy image location path
+failed to get source file
+failed to delete boot.sdi
+winreCopyWIMBackFromVolume failed: 0x%x
+failed to get Windows volume
+winreCopyWIMBackFromTempStaging %s (0x%x) in file %S line %d
+Temp dir found and deleted from the windows volume
+Temp files found and deleted
+winreCopyWIMBackFromTempStaging failed: 0x%x
+winreCopyWIMBack %s (0x%x) in file %S line %d
+winre.wim is not available under %s
+boot.sdi is not available under %s
+failed to copy winre location path
+failed to get the path of winre.wim
+failed to get source file boot.sdi
+failed to get config file
+failed to get OEM customization file
+failed to get source file config file
+failed to get customization file
+winreCopyWIMBack failed to move WIM file from %s to %s: 0x%x
+winreCopyWIMBack moved WIM file from %s to %s successfully!
+CoInitialize returned hr=0x%x
+Not continuing due to CoInitialize error
+CoCreateInstance error hr = 0x%x
+LoadService error hr = 0x%x
+WaitForServiceReady error hr = 0x%x
+QueryProviders error hr = 0x%x
+pEnum->Next error hr = 0x%x
+QueryInterface(IID_IVdsProvider) error hr = 0x%x
+QueryInterface(IID_IVdsSwProvider) error hr = 0x%x
+QueryPacks error hr = 0x%x
+pEnumPack->Next error hr = 0x%x
+QueryInterface(IID_IVdsPack) error hr = 0x%x
+QueryDisks error hr = 0x%x
+spEnumDisk->Next error hr = 0x%x
+QueryInterface(IID_IVdsDisk3) error hr = 0x%x
+GetProperties2(IID_IVdsDisk3) error hr = 0x%x
+Multiple system disks found
+Location path not found (might be mmc bus)
+StringCchCopyW error hr = 0x%x
+RtlAdjustPrivilege(SE_SYSTEM_ENVIRONMENT_PRIVILEGE) error = 0x%x
+{A9B5F8D2-CB6D-42C2-BC01-B5FFAAE4335E}
+PBRDevicePath
+GetFirmwareEnvironmentVariableW() = 0x%x 
+NVRAM update not necessary
+SetFirmwareEnvironmentVariableW() error = 0x%x
+NVRAM update successful
+invalid parameter
+winreScanForInstallWim %s (0x%x) in file %S line %d
+FindFirstFileW(%s) failed, last error 0X%X
+install.wim or install.swm or install.esd found at %s
+ResetConfig.xml
+ResetConfig.xml found at %s
+ResetConfig.xml not found at %s, ignoring install.wim
+winreScanForWinReWim %s (0x%x) in file %S line %d
+Winre.wim found at %s
+Winre.wim found in the temporary staging location at  %s
+Scanning %s
+resetconfig.xml
+failed to append path resetconfig.xml
+winreGetPBRImageIndex %s (0x%x) in file %S line %d
+File %s found with index = %lu
+ResetConfig.xml does not have the PBR image tag, checking other xmls
+%s\*.xml
+Scanning path %s
+Checking %s
+Ignorning directory %s
+Processing file %s
+File %s found with index = %lu 
+ File %s does not contain PBR image index information
+Setting PBR index to %lu
+ %lu valid xmls found, exactly one xml has to be valid
+ hr = 0x%x
+winreReconstructConfigXML %s (0x%x) in file %S line %d
+Multiple winre.wims found. Cannot repair
+Multiple install.wims found. Not setting install.wim path
+failed to image location path
+failed to find main OS config directory
+Moving winre form %s to %S
+Temporary
+ReCustomization.xml
+ReAgent.xml
+\RecoveryImage
+api-ms-win-eventing-provider-l1-1-0.dll
+advapi32.dll
+EventSetInformation
+BackupLaunch
+BackupComplete
+BackupResult
+MachineGuid
+UserGuid
+OptIn
+base\diagnosis\srt\reagent2\reagent\parserex.cpp
+ReAgentReload::Init %s (0x%x) in file %S line %d
+failed to read known tags
+ReAgentReload::ReadKnownTags %s (0x%x) in file %S line %d
+GetChildAttributeByTag(BackupLaunch) failed: 0x%x
+GetChildAttributeByTag(BackupComplete) failed: 0x%x
+GetChildAttributeByTag(BackupResult) failed: 0x%x
+GetChildAttributeByTag(MachineGuid) failed: 0x%x
+GetChildAttributeByTag(UserGuid) failed: 0x%x
+GetChildAttributeByTag(SqmOptIn) failed: 0x%x
+ReAgentReload::WriteChildNodes %s (0x%x) in file %S line %d
+failed to write state attribute
+failed to write status attribute
+failed to write single node status
+failed to write single node sqm machine guid
+failed to write single node sqm user guid
+failed to write single node sqm optin
+ReAgentCustomization::Init %s (0x%x) in file %S line %d
+ReAgentCustomization::Init failed: 0x%x
+ResetConfigXMLParser::Init %s (0x%x) in file %S line %d
+ResetConfigXMLParser::Init failed: 0x%x
+$WINRE$SOFTWARE
+Microsoft\RecoveryEnvironment\TrustedApps
+System32\config\SOFTWARE
+winreLoadSoftwareHive: Failed to construct path to SOFTWARE hive in [%s]: 0x%x
+winreLoadSoftwareHive: Failed to load [%s]: 0x%x
+winreLoadSoftwareHive: Failed to open mount point key: 0x%x
+SOFTWARE
+winreLoadSoftwareHive: Failed to open SOFTWARE hive: 0x%x
+winreUnloadSoftwareHive: Failed to unload SOFTWARE hive: 0x%x
+winreGetTrustedBootApps: Failed to enable backup privilege
+winreGetTrustedBootApps: Failed to enable restore privilege
+winreGetTrustedBootApps: Failed to load SOFTWARE hive: 0x%x
+winreGetTrustedBootApps: Failed to open trusted app list key: 0x%x
+winreGetTrustedBootApps: Failed to count trusted apps: 0x%x
+winreGetTrustedBootApps: Failed to allocate output array: 0x%x
+winreGetTrustedBootApps: Failed to read app [%u]: 0x%x
+winreAddTrustedBootApp: Failed to enable backup privilege
+winreAddTrustedBootApp: Failed to enable restore privilege
+winreAddTrustedBootApp: Failed to load SOFTWARE hive: 0x%x
+winreAddTrustedBootApp: Failed to open trusted app list key: 0x%x
+winreAddTrustedBootApp: Failed to write hash for app [%s]: 0x%x
+winreRemoveTrustedBootApp: Failed to enable backup privilege
+winreRemoveTrustedBootApp: Failed to enable restore privilege
+winreRemoveTrustedBootApp: Failed to load SOFTWARE hive: 0x%x
+winreRemoveTrustedBootApp: Failed to open trusted app list key: 0x%x
+winreRemoveTrustedBootApp: Failed to delete hash for [%s]: 0x%x
+winreHashBootApp: Failed to hash [%s]: 0x%x
+DismInitializeClass::DismInitializeClass failed to initialize DISM error 0x%x
+DismInitializeClass::~DismInitializeClass failed to shutdown DISM error 0x%x
+DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}
+DismSessionClass::DismSessionClass DismGetDrivers error 0x%x
+DismSessionClass::~DismSessionClass DismCloseSession error 0x%x
+DismDriverList::DismDriverList DismGetDrivers error 0x%x
+DismDriverList::~DismDriverList DismDelete error 0x%x
+DismMountClass::~DismMountClass Dismounting %ls
+DismMountClass::~DismMountClass DismUnmountImage error 0x%x
+DismMountClass::~DismMountClass RemoveDirectoryW error %ls
+ApplyOemToolsCallback: Deciding whether to migrate OEM tool path [%s]
+ApplyOemToolsCallback: -> Target does not exist in uplevel WIM, will process
+ApplyOemToolsCallback: -> Target exists but is a directory, processing recursively
+ApplyOemToolsCallback: -> Target file already exists uplevel, skipping
+winreconfig.xml
+winrePInitVDSService CoCreateInstance error hr = 0x%X 
+winrePInitVDSService LoadService error hr = 0x%X 
+winrePInitVDSService WaitForServiceReady error hr = 0x%X 
+winrePInitVDSService returning %ls
+winreGetVolumeGUIDPath GetVolumePathName returned 0 for %S, last error is %lu
+winreGetVolumeGUIDPath GetVolumeNameForVolumeMountPoint returned 0 for %S, last error is %lu
+winreGetVolumeGUIDPath Out of Memory error
+winreGetVolumeGUIDPath returning %ls
+winreShrinkVolume Shrinking the OS volume with: %I64u 
+winreShrinkVolume QueryInterface error hr = 0x%X 
+winreShrinkVolume Shrink error hr = 0x%X 
+winreShrinkVolume Wait error hr = 0x%X hrAsync = 0x%X 
+winreShrinkVolume Shrink operation reclaimed less bytes than we have requested. Reclaimend bytes: %I64x, requested bytes: %I64x
+winreShrinkVolume returning %ls
+winreProcessDisk QueryExtents error hr = 0x%X 
+winreProcessDisk Extent:%016I64x %016I64x %08x %d
+winreProcessDisk winreCreatePartition error
+winreProcessDisk Out of Memory error
+winreProcessDisk returning %ls
+winreProcessVolume QueryInterface error hr = 0x%X 
+winreProcessVolume winreShrinkVolume error
+winreProcessVolume Not suitable OS partition %08x flags = 0x%X %ls %ls
+winreProcessVolumeVDS_VF_SYSTEM_VOLUME
+winreProcessVolumeVDS_VF_BOOT_VOLUME
+winreProcessVolumeVDS_VF_ACTIVE
+winreProcessVolumeVDS_VF_READONLY
+winreProcessVolumeVDS_VF_HIDDEN
+winreProcessVolumeVDS_VF_CAN_EXTEND
+winreProcessVolumeVDS_VF_CAN_SHRINK
+winreProcessVolumeVDS_VF_PAGEFILE
+winreProcessVolumeVDS_VF_HIBERNATION
+winreProcessVolumeVDS_VF_CRASHDUMP
+winreProcessVolumeVDS_VF_INSTALLABLE
+winreProcessVolumeVDS_VF_LBN_REMAP_ENABLED
+winreProcessVolumeVDS_VF_FORMATTING
+winreProcessVolumeVDS_VF_NOT_FORMATTABLE
+winreProcessVolumeVDS_VF_NTFS_NOT_SUPPORTED
+winreProcessVolumeVDS_VF_FAT32_NOT_SUPPORTED
+winreProcessVolumeVDS_VF_FAT_NOT_SUPPORTED
+winreProcessVolumeVDS_VF_NO_DEFAULT_DRIVE_LETTER
+winreProcessVolumeVDS_VF_PERMANENTLY_DISMOUNTED
+winreProcessVolumeVDS_VF_PERMANENT_DISMOUNT_SUPPORTED
+winreProcessVolumeVDS_VF_SHADOW_COPY
+winreProcessVolumeVDS_VF_FVE_ENABLED
+winreProcessVolumeVDS_VF_DIRTY
+winreProcessVolumeVDS_VF_REFS_NOT_SUPPORTED
+winreProcessVolume Skipped %08x flags = 0x%X %ls %ls
+winreProcessVolume Mismatch: %ls %ls
+winreProcessVolume returning %ls
+winreProcessPack QueryVolumes error hr = 0x%X 
+winreProcessPack winreEnumerate IVdsVolume error
+winreProcessPack QueryDisks error hr = 0x%X 
+winreProcessPack winreEnumerate IVdsDisk error
+winreProcessPack returning %ls
+winreProcessProvider QueryDisks error hr = 0x%X 
+winreProcessProvider winreEnumerate IVdsPack error
+winreProcessProvider returning %ls
+winreGetNewPartition GetSystemWindowsDirectoryW error
+winreGetNewPartition GetOsInfoForBootEntry error
+winreGetNewPartition Get OS path error
+winreGetNewPartition root: %ls OS volume GUID: %ls
+winreGetNewPartition Out of Memory error
+winreGetNewPartition winrePInitVDSService error
+winreGetNewPartition QueryDisks error hr = 0x%X 
+winreGetNewPartition winreEnumerate IVdsSwProvider error
+winreGetNewPartition returning %ls
+winreGetNewPartitionWithCoInit CoInitialize error hr = 0x%X 
+winreGetNewPartitionWithCoInit Will shrink the OS volume with : %I64u 
+winreGetNewPartitionWithCoInit Will create partition with size: %I64u 
+winreGetNewPartitionWithCoInit returning %ls
+Try to format partition on disk %d, offset: 0x%I64X
+failed to init VDS service.
+failed to format partition. Error: 0x%X
+ format partition successfully
+invalid map/set<T> iterator
+winreEnumerate NULL parameter error
+winreEnumerate spIterator->Next error hr = 0x%X 
+winreEnumerate spIterator returned unexpected NULL result
+winreEnumerate QueryInterface error hr = 0x%X 
+winreEnumerate callback returned error
+winreEnumerate returning %ls
+map/set<T> too long
+\\?\GlobalRoot
+%ws\%ws
+fveapi
+\\.\?:
+\FVEAPI.DLL
+FveGetStatusBasicW
+FveSetFipsAllowDisabled
+FveDisableAuthenticationW
+FveEnableAuthenticationW
+FveGetStatus
+FveAddAuthMethodInformation
+FveGetAuthMethodInformation
+FveDeleteAuthMethod
+FveGetSecureBootBindingState
+\System Volume Information\FVE.{e40ad34d-dae9-4bc7-95bd-b16218c10f72}.X
+\System Volume Information\FVE2.{e40ad34d-dae9-4bc7-95bd-b16218c10f72}.X
+CacheDisable
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\FveDetect
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\FveDetect\Cache
+Cache
+-FVE-FS-
+EXFAT   
+NTFS    
+Partitions for disk %s:
+Offset = %I64u (%I64u), Length = %I64u (%I64u), Type = %u
+Offset = %I64u (%I64u), Length = %I64u (%I64u)
+multi(0)disk(0)rdisk(0)
+\Device\Harddisk0\DR0
+%s\Partition%1u
+\\?\GLOBALROOT%s
+bootmgr
+EFI\Microsoft\Boot\bootmgfw.efi
+BootMgr
+bbc3*
+CorruptMbr
+CorruptPartitionTable
+CorruptBootSector
+CorruptVolume
+NoOsInstalled
+NoHardDrive
+NoSystemPartition
+MissingBootManager
+CorruptBootManager
+MissingOsLoader
+CorruptOsLoader
+CorruptBootConfigData
+CorruptBootEntry
+CorruptFirmwareBootConfigData
+MissingBootConfigData
+OsVersionMismatch
+NoBootFailure
+BadRAM
+TooManyAttempts
+FailureDuringSetup
+MissingFile
+CorruptFile
+CorruptRegistry
+UnknownBugcheck
+BadDriver
+BadPatch
+BadDisk
+CorruptAcl
+AuditFailure
+UnrecognizedSystemPartition
+LowDiskSpace
+ACPIFailure
+CorruptBootSectorCode
+StartupRepairDisabled
+NoRootCause
+BitLockerEncrpted
+OsBitLockerEncrypted
+WIMBootConfigCorrupt
+FaultyPackageInProgress
+CorruptSystemPartition
+FaultyLCUInstalled
+MeasuredLaunchFailure
+FaultyDriverUpdateInstalled
+WdsSetupLogInit
+WdsGenericSetupLogInit
+WdsSetupLogDestroy
+WdsSetupLogMessageA
+WdsSetupLogMessageW
+ConstructPartialMsgVA
+ConstructPartialMsgVW
+CurrentIP
+%windir%\Panther\UnattendGC
+wdscore.dll
+\ArcName
+SetPartitionType: The request to set type id and partition specified are both MBR format.
+SetPartitionType: The request to set type id and partition specified are both GPT format.
+SetPartitionType: Either the partition style for the request [%s] is either unknown, or does not match the style of the specified partition [%s].
+SetPartitionType: ChangePartitionType failed, hr = 0x%x.
+SetPartitionType: This is a recovery partition; setting specific attributes.
+FormatPartition: Partition type ID (0x%X) needs to be carefully preserved across format.
+FormatPartition: Re-setting original OEM partition type (lost during format)...
+\\?\PhysicalDrive%d
+GetDisk: Querying VDS providers...
+GetDisk: Finished querying VDS providers.
+GetDisk: Querying unallocated disks...
+GetDisk: Finished querying unallocated disks
+CDROM(
+\device\cdrom%1u
+WinREPartitionInfo.xml
+WinREPartitionInfo
+NotActive
+WinREHiddenPartition
+RSDSD
+ReAgent.pdb
+.rdata$brc
+.rdata$T$brc
+.rdata$zz$brc
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.gfids
+.giats
+.rdata
+.rdata$00
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zz
+.rdata$zzzdbg
+.text
+.text$di
+.text$lp00reagent.dll!20_pri7
+.text$mn
+.text$x
+.text$yd
+.text$zy
+.text$zz
+.tls$
+.tls$ZZZ
+.xdata$x
+.didat$2
+.didat$3
+.didat$4
+.didat$6
+.didat$7
+.edata
+.data$dk00$brc
+.data$r$brc
+.data$zz$brc
+.data
+.data$00
+.data$dk00
+.data$zz
+.bss$00
+.bss$dk00
+.bss$pr00
+.bss$zz
+.idata$5
+.00cfg
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.didat$5
+.rsrc$01
+.rsrc$02
+PQVVRh
+Y__^[
+PQQSVW
+QRPh,
+QRPhL
+QRPhl
+D$@WVP
+D$@PQ
+D$LPW
+u<9D$
+D$@YY
+D$<WP
+j\Zf9TA
+j\Zf9TA
+j\Zf9TA
+FVh4i
+j\Zf9TH
+j\Zf9TA
+j\Zf9TH
+j\Zf9TA
+j\Zf9TA
+j\Zf9TA
+FVh4i
+j\Zf9TH
+j\Zf9TA
+j\Zf9TH
+j\Zf9TA
+j\Zf9TA
+j\Zf9TA
+FVh4i
+j\Zf9TH
+j\Zf9TA
+j\Zf9TH
+j\[f9\A
+j\[f9\A
+j\Zf9TA
+j\Zf9TA
+tchhQ
+YYj2^
+YYVSh
+j\Zf9TA
+PVh$x
+j\Zf9TA
+j\Zf9TA
+D$(SVW
+*jW[h!
+8K RRR
+|$hWQ
+t$hVQ
+&PWSV
+QQSVW
+L$4^3
+97s/j
+D$(PQ
+T$0QQV
+j\^f;t]
+j\Zf;T]
+j:Xf;F
+j:Xf;F
+Y__^[
+SVWh\
+D$(VPj WVVh
+D$,QPkD$0
+ PWQQh
+D$0Ph
+D$LPQQhH
+D$,QPj`
+PQQhd
+SVWh\
+PWVSShP
+tBPh<
+YYjW^
+SVWh\
+QQSVW3
+^Vhx<
+f99t2f9
+F$_^[
+G PVV
+u$VhpP
+s$WQh(
+C$WWW
+PWWQh(
+PWWWQh
+C$WWW
+PWWQh(
+PWWWQh
+RRRPQh
+RPRRQh(
+PPPQh
+RRPRQh
+QPQQQh
+RRRPQh
+RPRRQh(
+RRPRQh
+t*PhpF
+QPQQQh
+PWWQh
+PWWQh
+PWWQh
+PWWQh
+PWWQh
+PWWQh
+C$WWW
+PWWQh
+C$WWW
+PWWQh
+u5WPWWQh
+PWWQh
+PWWQh(
+PWWWQh
+t5WPWWQh
+PWWQh
+PQQQh(
+PQQQh(
+PQQQh(
+PQQQh(
+PQQQh
+PQQQh(
+RPhX0
+D$\hh*
+A$VW3
+PVVQh
+jWX^]
+u9h8/
+YYud3
+t?h04
+t-Ph0Z
+t;j>h
+u"h`e
+YYWWWVWVW3
+t hXs
+YYjW^
+WWWWWWW
+tj9\$
+3SSSj
+SVWh\
+j\Yf9LC
+j\Yf9LC
+x<hTy
+SVWh\
+"jW^h\
+PVh`c
+@PWhP
+FWVhx
+VWhHe
+YYWWWWWWW3
+YYWWWj
+D$Ph\
+L$$VS
+t$$WVh
+YYWWWWWWW3
+u)Rhh
+t$PVP
+QRPSh 
+D$Hh\
+D$Th.
+D$$Pj
+D$,Pj
+D$@SVWj
+L$0Sj
+XRhLN
+D$tPQhhV
+L$`Pj
+D$tPj
+T$$RPh
+L$ WhP
+D$(PS
+L$(QP
+QSVW3
+D$@SV3
+QQSV3
+D$8S3
+VWh`l
+PSWh m
+GWVVh
+|$$WP
+D$@j\Zf9TA
+f;D$$u
+L$0Pj
+D$,PQh
+9\$Lt?h
+j\Yf9LG
+t$4h(q
+srhxq
+9\$dt
+j\Zf9TA
+j\Zf9TA
+yPVhHt
+L$TPP
+D$0XQf
+D$$QP
+D$XWP
+j\Zf9TA
+WSVRQPh
+j2^hx
+j\Zf9TH
+j\Yf9
+j\Zf9TA
+t!j>h
+t$j{h
+PSh8'
+"jWXh
+F,Phh
+WWWh@9
+WWh,:
+SVWj4
+PSh0$
+t-h(9
+SVWhP
+SVVVj
+dVVVj
+SVWh\
+j\Yf9LF
+jW^Vh
+j\Yf9LC
+jW^Vh
+QQSVW
+SVWP3
+PVhxm
+PSSSSSSh 
+QQQh@(
+QPhHz
+PSWhX&
+yhVh@
+j2_Sj
+YYj2X
+YYjW[
+YYjW_
+D$ PVW
+ypSh$
+D$ SVW3
+L$,_^[3
+yBVhx
+D$$Ph
+D$PPh
+D$$Ph
+D$(PhP
+L$0Ph0
+L$l_^[3
+D$4PhP
+YYjW_
+RQPShX@
+PShP=
+<'tG<
+"jW^h
+SVWh\
+j\Yf9LC
+j\Yf9
+j\Yf9LC
+VPh8Q
+j\Yf9
+.jW^h
+j\Yf9LG
+j\Yf9
+VPh8Q
+WSh@L
+VRQh`Z
+SVWh\
+PWWhd
+PWWhH
+SVWh\
+PVVhd
+PVVhH
+j\Yf9
+j\Yf9
+YYh\*
+YYh\*
+VPh8Q
+f9;u7
+SVWh\
+PQQhd
+PQQhH
+YYh\*
+YYh\*
+j\Zf9TA
+j\Yf9
+j\Yf9
+SVWh\
+PQQhd
+PQQhH
+VWjpSP
+t0ShX[
+u#hP`
+f93t&
+Vj2^Phpl
+u$WSQ
+VWjDj
+j3h@m
+j9h@m
+^Vhht
+t!jKh@m
+PQQQh
+PQQQh
+PQQQh
+PQQQh
+PQQQh
+PQQQh
+ PQQh(
+0PQQh(
+@PQQQh
+PSSQh
+PSSQh
+PSSQh
+PSSQh
+PSSQh
+PSSQh
+PSSQh
+ PSQh(
+0PSQh(
+PSSQh
+QPQh?
+VWh8}
+QQQQP
+VSh`u
+t:Vhhv
+(WPWh?
+QPQh?
+8_!tM
+6SSSPV
+:f98t
+j\Zf9TA
+YYjW^
+u+Shx
+jWXPh
+9Q@uO
+y<du?9Q@u:=6
+y>ShP
+y-PVh
+RQRQP
+7VRh8
+j\Xf9DN
+QSVW3
+jWX_^[
+tEQPQ
+uYQSQ
+t\VPS
+SVWjC^h
+PVVVVVVSV
+PVVVVh
+PQRj+
+PQRj+
+PQWj+
+PQRj+
+PVWQRj+
+PRVQWj+
+PWVSR
+PRWSV
+D$$Vj
+LSVW3
+xHj1^
+PSWVVh
+KPQQh
+PWSWWWh
+QQSVW3
+;9;u/j
+jWX_^[
+jWX^]
+unf9>ti
+WWWWWh
+QSVWj
+QQSWh8
+jWX_^[
+jWX_[
+PQQjc
+D$0Ph
+jWX^[
+QSVWj(
+QSVj$
+<wj?^
+jWX_^[]
+jWX_^]
+QQSWh
+j\[SV
+tQVVVW
+t%j\Q
+t%j\V
+SWVhh
+tKWS3
+t,WVS
+DtCSV
+;t04u
+$VWPQ
+tB!7!w
+jW^=(
+WIMCreateFile
+WIMSetTemporaryPath
+WIMGetAttributes
+WIMLoadImage
+WIMExtractImagePath
+WIMCloseHandle
+WIMRegisterMessageCallback
+WIMApplyImage
+WIMUnregisterMessageCallback
+RtlCreateUtf8UCSStringBuilder
+RtlCreateDefaultXmlWriter
+RtlFreeLUtf8String
+RtlCreateMicrodom
+RtlCompareLUtf8Strings
+RtlInitLUnicodeStringFromNullTerminatedString
+RtlDuplicateLUnicodeStringToLUtf8String
+RtlConcatenateLUtf8Strings
+RegOpenKeyExW
+RegQueryValueExW
+RegCloseKey
+RegDeleteValueW
+RegGetValueW
+CryptAcquireContextW
+CryptCreateHash
+CryptHashData
+CryptGetHashParam
+CryptDestroyHash
+CryptReleaseContext
+RegSetValueExW
+RegLoadKeyW
+RegUnLoadKeyW
+InitiateSystemShutdownExW
+RegCreateKeyExW
+RegDeleteKeyW
+OpenProcessToken
+LookupPrivilegeValueW
+AdjustTokenPrivileges
+AllocateAndInitializeSid
+GetLengthSid
+InitializeAcl
+AddAccessAllowedAceEx
+SetNamedSecurityInfoW
+FreeSid
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+EventRegister
+EventUnregister
+EventWriteTransfer
+RegEnumValueW
+TraceMessage
+GetSecurityDescriptorOwner
+GetSecurityDescriptorGroup
+GetSecurityDescriptorDacl
+GetSecurityDescriptorSacl
+RegDeleteTreeW
+ImageNtHeader
+CoTaskMemFree
+CoInitializeEx
+CoCreateInstance
+CoUninitialize
+StringFromCLSID
+CLSIDFromString
+CoCreateGuid
+CoInitialize
+BcdOpenObject
+BcdQueryObject
+BcdCloseObject
+BcdOpenStore
+BcdGetElementDataWithFlags
+BcdGetElementData
+BcdCloseStore
+BcdDeleteElement
+BcdSetElementData
+BcdCreateObject
+BcdDeleteObject
+BcdDeleteObjectReferences
+BcdEnumerateObjects
+SyspartGetSystemPartition
+BcdOpenStoreFromFile
+WinVerifyTrust
+WTHelperProvDataFromStateData
+WTHelperGetProvSignerFromChain
+CertGetEnhancedKeyUsage
+CertVerifyCertificateChainPolicy
+DismInitialize
+DismShutdown
+DismOpenSession
+DismCloseSession
+DismGetDrivers
+DismDelete
+DismMountImage
+DismUnmountImage
+DismAddDriver
+DismCommitImage
+WIMGetImageInformation
+OpenThreadToken
+DuplicateTokenEx
+SetThreadToken
+EventWrite
+RegDeleteKeyExW
+LoadStringW
+BcdOpenSystemStore
+ !"#$%
+&'()*+,-./0123456789:
+ReAgent.dll
+WinRE_Specialize
+WinRE_Specialize_Offline
+WinReClearOemImagePath
+WinReRestoreConfigAfterPBR
+WinRECheckGuid
+WinREUseNewPBRImage
+WinRE_Generalize
+WinReAddTrustedBootApp
+WinReClearBootApp
+WinReClearError
+WinReConfigureTask
+WinReCopyDiagnosticFiles
+WinReCopyLogFilesToRamdisk
+WinReCreateLogInstance
+WinReCreateLogInstanceEx
+WinReDeleteLogFiles
+WinReGetConfig
+WinReGetCustomization
+WinReGetError
+WinReGetLogDirPath
+WinReGetTrustedBootApps
+WinReGetWIMInfo
+WinReHashBootApp
+WinReHashWimFile
+WinReInitiateOfflineScanning
+WinReInstall
+WinReInstallOnTargetOS
+WinReIsInstalledOnSystemPartition
+WinReIsWimBootEnabled
+WinReIsWinPE
+WinReOobeInstall
+WinReOpenLogInstance
+WinRePostBCDRepair
+WinReQueueRecoveryBoot
+WinReReinstall
+WinReRemoveTrustedBootApp
+WinReRepair
+WinReRepairEx
+WinReRestoreLogFiles
+WinReSetBootApp
+WinReSetConfig
+WinReSetCustomization
+WinReSetError
+WinReSetNarratorScheduled
+WinReSetRecoveryAction
+WinReSetTriggerFile
+WinReSetupBackupWinRE
+WinReSetupCheckWinRE
+WinReSetupInstall
+WinReSetupMigrateData
+WinReSetupRemoveWinRE
+WinReSetupRestoreWinREEx
+WinReSetupSetImage
+WinReUnInstall
+WinReUpdateLogInstance
+WinReValidateRecoveryWim
+WinReValidateWimFile
+winreFindInstallMedia
+winreGetBinaryArch
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+.?AVbad_alloc@std@@
+.?AVexception@@
+MSWIN4.1
+NO NAME    FAT32   3
+fXfXfXfX
+BOOTMGR    
+Disk error
+Press any key to restart
+An operating system wasn't found. Try disconnecting any drives that don't
+contain an operating system.
+NTFS    
+NTFSu
+TCPAu$
+fSfSfU
+fY[ZfYfY
+A disk read error occurred
+BOOTMGR is compressed
+Press Ctrl+Alt+Del to restart
+BOOTMGR
+NTLDR
+BOOTTGT
+BOOTNXT
+An operating system wasn't found. Try disconnecting any drives that don't
+contain an operating system.
+fSfPfQfVfW
+f_f^fYf
+fTfVgf
+fPfPgf
+fZfYfBfQfV
+f^fYf
+fYfZfQfVf
+f^fYf
+f_fYf
+fXf[f
+f`&gf
+fRfQfRf
+f`fPfQf3
+fYfXf
+fPfSfQf
+fYf[fX
+fSfRf
+fIfKf
+fSfRf+
+fIfKf
+fQfVg
+fPfQf
+fYfYf3
+fPfVfXf^f;
+fVf@fPfH
+fZf^fYf[fSfQfVfRf
+fYfYfYfY
+fYfYf3
+fQfPf
+f[fYf
+f[f_f
+fRfQf
+fYfZ&f9
+fYfZf3
+fPfQf
+f3G f3G4f
+fQfWfRf
+fZf_fY
+TCPAf
+TCPAf
+MBRCh
+TCPAf
+MBRDh
+malloc
+_callnewh
+_XcptFilter
+_amsg_exit
+_initterm
+msvcrt.dll
+_except_handler4_common
+_lock
+_unlock
+__dllonexit
+_onexit
+TlsAlloc
+TlsSetValue
+TlsFree
+Sleep
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetTickCount
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+KERNEL32.dll
+__CxxFrameHandler3
+_purecall
+_vsnwprintf
+wcschr
+_wcsicmp
+_wcsnicmp
+_atoi64
+_vsnprintf
+wcsrchr
+??0exception@@QAE@ABV0@@Z
+?what@exception@@UBEPBDXZ
+??1exception@@UAE@XZ
+??0exception@@QAE@ABQBD@Z
+_wtoi64
+_CxxThrowException
+?terminate@@YAXXZ
+??1type_info@@UAE@XZ
+RtlNtStatusToDosError
+RtlGUIDFromString
+RtlRaiseStatus
+NtClose
+RtlInitUnicodeString
+RtlAdjustPrivilege
+RtlFreeHeap
+ntdll.dll
+GetLastError
+SetLastError
+GetProcessHeap
+HeapFree
+TlsGetValue
+HeapAlloc
+GetSystemDirectoryW
+CreateFileW
+CloseHandle
+GetFileAttributesExW
+GetVolumeNameForVolumeMountPointW
+DeviceIoControl
+FindFirstVolumeW
+GetDriveTypeW
+GetDiskFreeSpaceExW
+FindNextVolumeW
+FindVolumeClose
+GetFileAttributesW
+GetFullPathNameW
+GetVolumePathNameW
+MultiByteToWideChar
+GetFileSize
+ReadFile
+SetEndOfFile
+WriteFile
+FlushFileBuffers
+MoveFileExW
+SetFileAttributesW
+DeleteFileW
+RemoveDirectoryW
+CopyFileW
+GetVersionExW
+CopyFileExW
+GetSystemWindowsDirectoryW
+GetWindowsDirectoryW
+GetTempPathW
+CreateDirectoryW
+GetFileSizeEx
+GetModuleHandleW
+GetProcAddress
+GetTickCount64
+CompareStringW
+FindFirstFileW
+FindNextFileW
+FindClose
+GetVolumePathNamesForVolumeNameW
+WaitForSingleObject
+WritePrivateProfileStringW
+GetPrivateProfileStringW
+GetFileInformationByHandle
+SetFirmwareEnvironmentVariableW
+LoadLibraryExW
+FreeLibrary
+CreateFileMappingW
+MapViewOfFile
+UnmapViewOfFile
+GetFirmwareEnvironmentVariableW
+GetModuleHandleExW
+LoadLibraryW
+CreateProcessW
+GetExitCodeProcess
+SetVolumeMountPointW
+LocalFree
+GetSystemInfo
+UuidCompare
+RPCRT4.dll
+wprintf
+wcsstr
+memcpy_s
+memmove_s
+wcsncmp
+NtQuerySystemInformation
+RtlAllocateHeap
+RtlCompareMemory
+RtlDosPathNameToNtPathName_U
+RtlFreeUnicodeString
+NtOpenSymbolicLinkObject
+NtQuerySymbolicLinkObject
+GetCurrentThread
+VirtualAlloc
+VirtualFree
+AcquireSRWLockExclusive
+ReleaseSRWLockExclusive
+GetVolumeInformationW
+SetFilePointer
+GetModuleFileNameA
+CreateSemaphoreExW
+EnterCriticalSection
+ReleaseSemaphore
+GetModuleFileNameW
+LeaveCriticalSection
+InitializeCriticalSection
+InitializeCriticalSectionEx
+WaitForThreadpoolTimerCallbacks
+ReleaseMutex
+FormatMessageW
+OutputDebugStringW
+CloseThreadpoolTimer
+WaitForSingleObjectEx
+OpenSemaphoreW
+SetThreadpoolTimer
+ReleaseSRWLockShared
+CreateThreadpoolTimer
+CreateMutexExW
+AcquireSRWLockShared
+DeleteCriticalSection
+DebugBreak
+IsDebuggerPresent
+ExpandEnvironmentStringsW
+VirtualProtect
+LoadLibraryExA
+RaiseException
+VirtualQuery
+WakeAllConditionVariable
+SleepConditionVariableSRW
+memcmp
+memcpy
+memmove
+memset
+WEVT_TEMPLATE
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) Microsoft Corporation -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+name="reagent"
+processorArchitecture="x86"
+version="1.0.0.0"
+type="win32"/>
+<description>Microsoft Windows Recovery Agent</description>
+<dependency>
+<dependentAssembly>
+<assemblyIdentity
+type="win32"
+name="Microsoft.Windows.Common-Controls"
+version="6.0.0.0"
+processorArchitecture="x86"
+publicKeyToken="6595b64144ccf1df"
+language="*"
+</dependentAssembly>
+</dependency>
+</assembly>
+Startup Repair successfully completed repairs.
+Startup Repair failed.
+The master boot record (MBR) was corrupt.
+The partition table was corrupt.
+The boot sector on the system partition was corrupt.
+The system volume was corrupt.
+Windows startup files were not found on the disk.
+A hard disk could not be found.
+A valid system partition was not found.
+The boot manager was missing.
+The boot manager was corrupt.
+The boot manager failed to find the Windows loader.
+The Windows loader was corrupt.
+The boot configuration data was corrupt.
+The boot configuration data was corrupt.
+The boot configuration data was missing.
+Windows could not detect the problem. The boot status indicated that Windows booted successfully.
+A possible problem with hardware memory (RAM) might have prevented Windows from starting.
+Startup Repair tried several times but could not determine the cause of the problem.
+Failure during the installation of Windows.
+The following file necessary for Windows startup was missing: %1
+The following file necessary for Windows startup was corrupt: %1
+The registry hive was corrupt. Error information: %1
+Windows was unable to determine the problem. Error code: %1
+A recent driver installation or upgrade might have prevented Windows from starting.
+A software patch prevented the system from starting.
+An error on the hard disk prevented Windows from starting.
+An access control list (ACL) on the following file might have prevented Windows from starting : %1
+Security settings on this computer prevented Windows from starting.
+Low disk space on this computer prevented Windows from starting.
+Windows could not recognize the system partition type.
+The boot configuration data was corrupt.
+This operating system version is not supported by Startup Repair.
+The computer firmware (BIOS) is not compatible with Windows. Contact your computer manufacturer for an update to the computer BIOS.
+The boot sector code on the system partition was corrupt.
+Several files necessary for Windows startup were corrupt.
+This version of Startup Repair is not compatible with currently installed updates to Windows.
+Unspecified changes to system configuration might have caused the problem.
+The computer hard disk is encrypted using BitLocker Drive Encryption and could not be unlocked.
+The WIMBoot configuration file was corrupt.
+An in-progress package installation may be preventing Windows from starting.
+Last installed LCU may be preventing Windows from starting.
+Repaired the master boot record (MBR).
+Reconstructed the partition table.
+Restored the boot sector from backup files.
+Repaired file system errors.
+Scheduled a hardware memory (RAM) test.
+Copied the following file from backup files: %2
+Reconstructed boot configuration data.
+Restored system to an earlier restore point.
+Fixed access control list (ACL) on the following file: %2
+Restored the registry from backup files.
+Fixed the CrashOnAuditFailure registry setting.
+Restored the boot sector code.
+Repaired the corrupted files from backup.
+Removed service start type overrides.
+Repaired the WIMBoot configuration file.
+Aborted all pending package installations.
+Uninstall latest LCU.
+Uninstall recently installed driver updates.
+Information
+Microsoft-Windows-StartupRepair
+System
+CRIMH
+WEVT$
+CHAN0
+System
++5dR!@rhRu
+SrtSummary
+xmlns
+Nhttp://manifests.microsoft.com/win/2005/08/windows/Reliability/Postboot/Events
+StartTime
+EndTime
+NumAttempts
+NumRootCauses
+LaunchType
+StartTime
+EndTime
+NumAttempts
+NumRootCauses
+LaunchType
+TEMPD
+RootCause
+xmlns
+Nhttp://manifests.microsoft.com/win/2005/08/windows/Reliability/Postboot/Events
+Repair
+xmlns
+Nhttp://manifests.microsoft.com/win/2005/08/windows/Reliability/Postboot/Events
+RepairStatus
+RepairStatus
+PRVAT
+Microsoft-Windows-StartupRepair
+LEVL@
+win:Informational
+EVNTP
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft Windows Recovery Agent DLL
+FileVersion
+10.0.22621.580 (WinBuild.160101.0800)
+InternalName
+reagent.dll
+LegalCopyright
+ Microsoft Corporation. All rights reserved.
+OriginalFilename
+reagent.dll
+ProductName
+Microsoft
+ Windows
+ Operating System
+ProductVersion
+10.0.22621.580
+VarFileInfo
+Translation
+Microsoft Corporation
+Recovery?Recovery has completed. Do you want to restore your user files?cIf you created a user file backup before recovering your computer, you can restore those files now.
+Restore my files
+Cancel
+This setting is managed by your system administrator.  <a href="mshelp://windows/?id=ca607790-adf6-41a7-abd8-0a1f2feb70b1">Why can't I change these settings?</a>
+WEVT_TEMPLATE
+en-US
+0T0X0`0h0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3,383D3P3T3X3\3`3l3p3t3x3|3
+4(444@4L4X4d4p4|4
+5$5054585<5H5T5`5l5x5
+2G3p3
+3!4I4{4
+6-7e7
+8 8&8*8B8F8L8P8V8Z8`8d8j8n8t8x8~8
+9!939':1:=:
+:C;J;
+<!<N<^<c<
+=&=,=2=`=w=
+1>1b1x1
+2/2M2a2g2*3H3W3`3i3~3
+3B4G4^4l4}4
+4*535>5E5]5c5i5o5u5{5
+6)6/6;6K6T6k6q6w6}6
+7'737?7K7v7
+838I8b8r8~8
+9&989I9p9
+:%:5:B:V:f:v:
+;';7;G;W;g;w;
+<'<7<G<W<g<w<
+=$=8=E=Y=f=z=
+>+>;>H>\>l>|>
+?,?<?I?]?m?}?
+0 000@0P0f0m0s0}0
+1"171G1W1g1w1
+2(2B2V2s2
+2Z3`3e3
+484[4a4k4v4
+6 6A6S6s6
+6%7v7
+7*848^8
+9O9W9_9e9k9q9
+:#:+:0:I:
+;1;:;N;
+=(=6=@=T=h=v=|=
+>,>U><?C?
+/060`0
+0[1i1
+1l2z2
+4K5R5
+6%6b6
+6E7L7
+7h8w8
+889a9H:O:
+:;;B;l;
+;g<u<
+>&?0?u?
+2$292@2r2
+4/4A4
+4-53585M5j5y5
+6O6U6g6
+7,7@7V7
+7c8y8
+8b9i9
+:J:O:U:_:e:}:
+; ;-;V;q;w;
+<4<Z<
+='=e=v=
+?I?j?t?
+%040`0
+1>1U1
+2(2.232Z2x2
+3'353J3k3x3
+4L4X4d4u4
+545G5U5^5h5y5
+7.7A7Z7`7
+838Z8t8
+8)9`9
+9C:I:q:x:}:
+:9;Y;
+;/<9<k<y<
+=C=I=N=
+>'>->2>V>
+1'1<1N1z1
+2H2_2w2
+303P3
+474T4
+5;5k5
+5"6?6
+7"7<7Y7
+9!:-:
+:);5;{;
+=#>)>
+011I2
+616E6Y6
+647u7
+9 9N9f:q:
+:>;n;
+=J=P=
+="?<?C?
+161C1J1W1^1e1z1
+2)2?2V2
+546V6
+7$7H7R7a7+:8;S;
+<.<7<C<P<`<j<z<
+<B?\?
+051s1
+3P3d3j3p3z3
+4%4.484A4K4T4^4p4
+8'9%:";);
+="=2=H=Q=]=e=t=
+193c3
+4)4u4
+6 6=6L6T6a6
+6&7H7p7
+7H8y8
+; ;%;8;D;P;X;y;
+<$<<<J<V<^<x<
+>*>K>^>
+1'2N2h2
+3q4M5T5n5u5
+:8:[:
+;C;s;
+=0>j>
+?9?s?
+393\3
+535m5
+899k9q9{9
+: :/:5:l:
+;(;8;A;Q;Z;w;
+>%>5>
+?!?/?9?j?t?
+0-1M1
+242:2_2e2j2
+3>3\3b3g3
+5$5:5A5Q5W5\5
+6+646J6e6
+727Y7_7
+8E8K8P8
+9O9U9
+: :6:C:I:^:i:
+;*;7;H;O;j;
+<%</<6<C<l<r<w<
+=V=\=a=
+>,>F>P>Z>b>y>
+>C?I?N?t?
+0b0h0m0
+1%1*1O1b1
+22282f2l2q2
+3.3P3V3
+3x4~4
+575U5
+676@6p6v6{6
+7$747:7k7
+718:8
+9Q:W:\:u:
+;I;`;n;
+;(<e<
+>L?R?W?
+2.24292X2_2
+2W3r3
+4"4O4u4{4
+676^6
+6I7U7s7
+8)8<8K8
+9V9]9
+:@:Q:
+;";4;O;T;f;
+<.<I<N<`<q<
+===I=\=y=
+>B>O>b>
+?/?4?F?a?f?z?
+0.0I0N0`0{0
+1(1R1W1i1
+2:2?2Q2l2q2
+333X3l3y3
+4-43484T4^4h4p4u4
+606Y6m6|6
+7(7=7B7Q7b7
+8"838S8g8
+9 919R9d9s9
+:$:A:U:q:
+;%;9;`;t;
+<.<?<`<
+=1=N=b=
+>B>G>^>|>
+?:?_?d?{?
+0.0L0q0v0
+0$1)1@1^1
+2!2=2L2]2}2
+3.3J3[3|3
+4"4@4W4h4
+5$5?5k5|5
+7?7S7Y7^7}7
+8E8Y8_8d8
+8!959;9a9g9{9
+:':3:=:G:O:T:q:{:
+;5;E;L;t;
+<$<R<
+>->X>
+0'070K0m0
+2 2B2J2U2e2u2
+3G3s3y3
+3!4M4y4
+5%5*5>5\5
+6#6=6C6H6`6z6
+999?9D9[9p9
+9%:O:b:{:
+;(;.;8;F;Y;
+</<V<x<
+=-=3=O=^=u=
+>%>F>X>_>
+>!?=?G?T?k?y?
+101B1M1b1v1
+2Y2m2~2
+2m3s3x3
+4;4P4
+425O5
+7!8'8@8N8n8t8
+8"9(9z9
+;?;\;
+<3<:<?<`<e<{<
+=#=)=
+?1?K?
+0$0)0S0Y0a0
+1g1m1
+212;2K2P2c2i2n2
+3J3o3
+4<4A4W4j4
+5 5-575K5Q5a5f5
+=H>U>u>
+$0*0U0\0a0
+1#1+1D1N1X1`1s1
+2'212;2B2`2m2
+3#333K3Q3V3
+4#4)4C4I4Y4
+565@5l5
+6_6p6
+627`7f7k7
+7H8n8
+9X9r9
+9 :8:>:[:d:y:
+;!;1;7;<;];e;o;
+;7<F<Q<\<g<u<{<
+<&=E=K=P=
+>&>,>
+>"?E?h?
+020_0
+1O1U1Z1
+292G2]2n2
+383E3R3
+4!4@4\4b4
+5)52575O5a5v5
+6 6O6^6
+6(737L7r7|7
+878?8S8[8
+979<9Q9[9`9
+90:A:Y:b:x:
+;.;5;K;U;_;o;y;
+< <G<M<g<m<
+=*=4=:=L=n=
+><>F>
+>*?Y?
+0-0?0E0\0
+262<2f2
+4,484o4
+5)525Q5W5\5t5
+6?6s6
+7$787B7H7b7z7
+8$8A8J8a8l8s8
+8!9'9.9o9
+;&;O;f;l;
+;,<r<x<}<
+<,=4=R=j=s=
+>P>V>[>
+>A?G?|?
+161_1n1
+1F2x2~2
+2'313;3C3\3b3
+555;5B5\5b5g5|5
+556H6S6b6l6~6
+787J7{7
+7-8B8H8`8f8
+9B9H9M9`9z9
+9,:@:Y:_:
+;Q;W;};
+<4<R<]<m<s<
+=6=H=]=h=w=
+>.>J>
+?)?7?=?
+0#0=0K0Z0`0
+141B1L1R1
+2@3i3
+4/4=4D4g4y4
+4#5D5Z5
+6Z6`6
+7'757H7Y7l7~7
+8'8C8M8W8j8
+9 979=9f9l9q9
+:F:P:Z:b:g:
+;#;(;f;l;q;
+<4<><K<g<
+<C=M=W=_=d=
+>%>/>9>A>`>s>
+)030;0@0z0
+1P1U1`1
+2+343O3[3e3o3w3
+4 424@4F4U4
+5E5o5
+6*60656X6m6s6
+7!7F7L7
+8(8:8R8c8
+:G:M:R:o:
+;N;};
+<$<M<S<p<
+>1>Z>`>q>
+?0?A?S?d?
+0#0)0:0m0s0x0
+11272<2W2r2x2
+3F3V3j3p3|3
+4Y4_4d4
+6#6(6L6R6u6
+6"7(7-7B7]7
+8'8-848K8Q8e8
+9J9~9
+9<:T:u:
+;';P;
+< <C<_<e<j<
+=#=(=K=Z=d=
+=.>4>9>a>g>l>
+>B?M?[?q?
+0=0S0\0}0
+0"1(1-1D1Z1`1o1y1
+1,2w2
+373=3d3j3
+5.5G5M5t5
+64696Q6w6
+8#8-8<8~8
+8)9/9
+;9;>;T;d;
+<E<O<U<n<z<
+<_=#>4>K>Q>e>
+>'?@?J?Z?
+0<0H0_0
+0I1Q1y1
+2M2i2o2t2
+3#3E3J3`3
+4-4X4}4
+5 5/5`5y5
+797J7P7
+848]8b8h8r8x8
+9"9,929l9
+;-;Q;};
+=.=6=
+>7>=>B>d>
+?%?*?D?
+$0:0@0R0c0o0y0
+2O2j2|2
+52595y5
+8X8]8
+839d9m9|9
+:<:|:
+;)<Q<\<q<
+=1=A=^=q=
+>F>Q>W>
+?&?-?W?
+1 121F1`1f1k1
+1+2H2X2e2
+3*30353F3O3[3t3
+454=4F4a4r4
+5@5N5W5h5u5|5
+5$6W6m6s6x6
+8D8K8Z8a8{8
+9_9l9
+:5:F:
+;K;U;];b;
+<.<5<:<V<\<r<~<
+=$=)=?=[=
+>'>3>U>^>j>
+?9?k?
+111=1L1S1o1
+2&2.2>2H2R2Z2h2r2|2
+383>3C3q3w3
+4@4R4
+5$5*585B5L5T5Y5t5
+6&62686?6F6V6\6c6j6z6
+6'7D7T7Z7r7
+8,898a8
+999`9y9
+:7:O:u:
+;&;<;F;S;k;
+;J<V<[<q<
+=C=_=z=
+>>>C>Q>[>q>
+?9?C?e?o?z?
+L0X0x0
+12181=1v1|1
+262G2o2
+3/3P3\3g3s3
+4/4R4
+5$5A5T5v5
+6'6L6X6i6|6
+737?7U7\7
+8^8e8x8
+9N9T9[9p9w9
+: :1:Z:d:j:
+;5;I;\;
+<5<U<h<
+=#=8=D=[=o=z=
+>+>E>Q>b>m>t>
+>"?6?N?X?n?t?y?
+0$050F0M0{0
+1%1/1@1g1s1
+2(2G2V2
+3d3p3
+4#4(4E4O4x4
+5#6/6C6H6l6r6w6
+7"7'7u7{7
+8E8K8P8
+9 9*9L9V9
+:H:X:p:
+;<;n;z;
+<)<5<m<
+=(=1=<=H={=
+>$>9>S>s>
+?'?1?B?h?
+0+0>0H0Q0[0l0
+0K1W1
+2'272c2
+32383=3_3k3
+4 484B4N4i4u4
+5%5/585B5S5
+6(6N6\6
+767O7l7w7
+788W8c8
+9@9M9b9
+:#:>:Y:l:
+=1=9=T=b=
+>1>8>=>d>i>
+?'?O?[?b?
+0.0L0Z0
+0G1V1
+2!2E2q2
+5 5[5a5
+5!6+656=6P6k6q6
+:B:H:^:j:{:
+;0;5;H;e;j;
+<6<d<n<
+=4=L=w=
+==>C>p>
+?,?E?w?}?
+&000D0h0~0
+0_1}1
+192?2l2x2
+3*3E3Z3o3
+5B5I5N5o5t5
+6d6j6
+7*7;7g7n7s7
+798Y8_8x8
+9.9=9z9
+:L:R:W:}:
+;G;M;R;
+<'<1<;<C<U<l<r<
+=5=;=@=j=p=u=
+>0>6>;>O>h>n>{>
+?M?W?a?i?x?
+0>0I0T0^0
+1!151M1}1
+272=2J2l2r2
+353;3G3S3k3q3}3
+4#4/4G4M4R4a4{4
+6!7A7j7
+8 8F8L8Q8h8
+:N:_:v:
+:";L;v;
+; <&<S<Z<_<
+=u={=
+=&>>>L>l>r>
+>%?+?7?=?B?]?k?
+,020z0
+1.1>1H1y1'2,2S2Z2_2
+3 3-3Q3W3\3i3
+4E4K4x4
+4L5d5
+6#6g6m6r6
+7E8K8P8
+839>9g9
+:+:@:
+:R;};
+<7<=<B<`<
+=*=0=b=g=
+>A>F>g>l>
+>,?1?X?]?s?
+!0&0<0`0m0
+1(1W1t1
+1V2\2a2
+3#424N4T4Y4}4
+4S5_5{5
+6(646Q6t6}6
+7/7T7w7
+9 9;9
+:/:7:W:^:d:n:t:
+;2;W;s;
+=R=b=h=o=
+=?>i>
+0#0^0
+1X1~1
+2I2i2
+3;3[3
+3'4J4
+4$5A5[5x5
+6%6+60656<6U6
+7c8o8
+;,;><f<
+="=,=6=>=Q=[=
+>8>H>Y>f>w>
+?6?R?
+0%0D0T0z0
+1+1X1t1
+2$393
+666e6
+6*7m7
+7,888H8a8q8
+9(9A9S9c9s9
+:,:J:g:
+;,;1;E;\;a;u;
+<6<;<O<c<h<|<
+>)>;>W>f>y>
+?'?6?I?Z?i?
+0/040F0_0d0v0
+1Q1x1
+3*3o3
+3@4Y4`4n4
+4G5M5u5|5
+6*666I6T6`6
+7%717=7V7
+8!9-9G9Q9
+:7:A:f:x:
+?<?C?H?i?n?
+0B0I0N0o0t0
+1@1P1X1f1m1w1
+1/272N2a2
+4%404:4?4b4m4w4
+4.5A5O5g5p5z5
+5%6/6?6W6j6
+7O7e7~7
+878v8
+8I9R9u9
+9!:e:s:
+;<;Y;
+=,=L=Z=v=
+?#?+?<?Y?h?n?
+0K0R0Z0k0
+191B1z1
+2;2h2q2
+4&4I4
+5:6T7
+>X>f>
+?)?;?D?R?{?
+0>0E0P0^0
+171d1r1
+1'2F2
+2-3;3`3v3
+4Z4m4w4
+535C5c5w5
+5&6s6
+7$7F7O7U7
+8,818:8@8`8
+9Z9h9
+:":=:Q:Y:h:n:
+=.=E=Q=h=v=
+>!>'>S>
+0!080O0f0}0
+151L1c1z1
+1\2w2
+3/3=3L3R3s3
+4+4>4\4
+4#5Z5
+7*8b8
+:&:2:9:
+;*<4<Q<_<f<
+=F=Y=^=p=
+>V>\>o>
+?2?H?M?_?
+0.070<0J0V0e0u0
+1A1n1x1
+292?2Q2q2
+2$3<3B3S3
+4'4,4<4d4n4u4z4
+5'51585=5
+686B6I6N6w6|6
+7%777
+8 8,8l8r8
+9&9-929G9t9
+:@:J:Q:V:g:
+; ;*;4;D;N;d;z;
+;O<Z<_<
+<$=)=>=
+>F?[?a?
+ 0%0c0i0
+1 1]1c1
+2K2Q2
+293?3m3r3
+3!4[4y4
+5-5J5r5
+5"6'6@6`6j6q6v6
+7@7J7Q7V7
+8!8M8R8c8
+8A9F9V9
+9[:n;
+<`<y<
+=X=q=
+?#?(?K?T?a?h?m?
+0#00070<0\0e0r0y0~0
+2&2+2d2q2v2
+3v3{3
+4 4+4?4D4T4d4r4
+6O6z6
+7$7+7>7E7X7_7r7y7
+8-848D8Z8a8h8
+9B9L9n9|9
+90:::b:
+<>=O=
+>i>p>
+>'?7?>?P?W?i?p?
+0%1\1f1
+2$22272>2
+3X3e3
+4u4|4
+415<5P5Y5p5}5
+8&9,9
+:":`:e:
+;C;H;m;r;
+;-<;<y<
+="=-=M=X=c=h=~=
+=*?4?:?K?s?
+0b0g0
+0,121_1n1
+12272M2
+3%3K3y3
+4%4*4]4
+5)5;5V5[5l5
+6Q6W6h6|6
+6)7/7@7
+72888
+9=9B9X9
+93:8:f:k:
+<D<S<X<_<f<
+=9=H=M=T=[=
+>'>->K>v>|>
+?%?6?
+0R0^0z0
+1E1J1Y1
+2<2A2g2l2~2
+2,313B3q3v3
+3.434Q4u4z4
+5%5N5S5h5
+6.6B6j6o6
+7H7M7y7
+8.8C8T8Z8r8
+909U9
+:G:Q:W:g:
+;.;8;>;N;g;l;|;
+=9=l=q=
+>c?~?
+0:1M1^1c1t1
+3B4G4n4
+415C5z5
+6D6W6
+828m8s8
+9!9'9`9f9k9q9
+97:=:B:H:
+<6<[<j<q<
+<1=6=L=
+>1>Z>w>
+?6?A?F?W?z?
+0+0]0r0w0
+2:2X2v2
+373<3W3\3
+3>4C4X4
+6!6K6[6b6g6
+787=7
+7)8.8?8m8
+9S9z9
+9%:*:;:f:l:|:
+:/;4;S;m;
+<7<<<L<w<}<
+=!=R=
+>5>:>Z>v>{>
+0,1D1
+2,2C2o2y2~2
+20363
+4D4I4p4{4
+4B5G5W5
+5L6t6
+6$7*7>7
+758B8
+:/:I:N:_:
+:5;R;W;h;
+<&=<=A=Q=
+?F?K?[?
+K0P0`0
+1+22272_2w2
+2)363=3B3^3
+3 4F4w4|4
+575<5L5g5
+6@6G6Q6Y6_6
+7)7]7
+8G8O8
+9&9,9d9j9
+:A:O:u:
+;*;8;
+<.<F<s<x<
+?<?F?N?T?
+0T0Y0j0
+0D1a1
+2M2W2_2e2
+464;4K4
+555E5_5j5
+6#6,686I6Z6e6
+7 7,797@7G7l7
+868<8L8
+9D9i9o9
+9 :t:
+<$<)<A<h<}<
+0D0K0
+1!1W1^1y1
+3:3?3U3
+484?4
+4B5z5
+5)6>6D6U6
+7"7(797
+84898I8
+9D9Z9_9m9r9
+:@:b:m:v:
+>%>7>Q>a>f>w>
+? ?&?+?4?:?@?E?N?T?Z?_?h?n?t?y?
+0#0*0:0B0H0N0^0j0
+1E1f1
+1+222G2
+3)303=3
+4&4.474D4t4
+465j5|5
+6b6i6
+878I8T8`8u8
+9!9(9b9n9
+:,:3:::H:d:v:}:
+=K>T>
+1K2V2
+2'303b3m3
+4^5y5
+7@7a7x7
+8$8<8N8`8r8
+:/:F:X:j:|:
+;:<e<n<
+=;=D=g=
+>3>T>v>
+?2?=?[?h?
+0B1e1~1
+2,2|2
+2'373X3x3
+4,4t4
+5%5J5
+6=6P6l6
+7>7J7]7
+9v9}9
+:+:Z:q:
+;';N;h;
+<W<\<m<
+<&=1=6=G=Y=q=
+=4>9>Z>r>w>
+>??D?o?{?
+$0)0P0U0k0x0
+1 1$1,10181<1D1H1d1h1
+2,2P2\2d2|2
+383D3d3l3x3
+484@4H4T4\4
+4$585H5X5
+646<6D6L6T6\6h6
+7$7,747L7T7\7d7l7t7
+8<8H8P8
+9 9,9L9T9`9h9
+: :(:0:8:@:L:l:x:
+;(;L;T;\;d;l;t;|;
+< <(<0<8<D<d<l<x<
+=$=D=P=p=x=
+>$>0>P>X>`>h>p>|>
+?8?@?H?T?t?
+0$0,040<0H0h0t0
+0(0,040@0`0
+1(1,141H1L1T1h1l1t1
+2(2,242H2L2h2l2t2
+3(3,343H3L3T3h3l3t3
+4(4,444H4L4T4h4l4t4
+5(5,545H5L5T5h5l5t5
+6(6,646L6T6h6l6t6
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1$1(1,1014181<1@1D1H1P1T1X1`1d1h1l1p1t1x1|1
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+220505192315Z
+230504192315Z0p1
+Washington1
+Redmond1
+Microsoft Corporation1
+Microsoft Windows0
+?/=KzdN
+uyL7j
+#HMDuV
+:Tt3n
+v~Bpd
+I0G1-0+
+$Microsoft Ireland Operations Limited1
+229879+4700220
+M0K0I
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+U0S0Q
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+&go`4
+m<&8cx
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+111019184142Z
+261019185142Z0
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 20110
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+TlP0X
+R!s4Z
+Washington1
+Redmond1
+Microsoft Corporation1.0,
+%Microsoft Windows Production PCA 2011
+,2AqgVml8UUt7oIsU4p5OvijC3V8nmYHnyVoIskENop0=0Z
+"Microsoft Window
+ http://www.microsoft.com/windows0
+KL{pe
+QK]Go
+20220806041117.368Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:2264-E33E-780C1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+211202190515Z
+230228190515Z0
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:2264-E33E-780C1%0#
+Microsoft Time-Stamp Service0
+U-/*b
+F,n7D
+X0V0T
+Nhttp://www.microsoft.com/pkiops/crl/Microsoft%20Time-Stamp%20PCA%202010(1).crl0l
+`0^0\
+Phttp://www.microsoft.com/pkiops/certs/Microsoft%20Time-Stamp%20PCA%202010(1).crt0
+N"4A>
+jg{i8c
+Washington1
+Redmond1
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+210930182225Z
+300930183225Z0|1
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+q\Q17
+&S|9a
+!]_0t
+U0S0Q
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+O0M0K
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+N0L0J
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>NGdx
+fg:SM
+xSu$W
+as.,k{n?,
+J>f;O
+!TkjE
+Washington1
+Redmond1
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:2264-E33E-780C1%0#
+Microsoft Time-Stamp Service
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+20220806082818Z
+20220807082818Z0t0:
+1,0*0
+1(0&0
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+Washington1
+Redmond1
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 2010
+,%,8u
+DqX^6yFR}31
+\U11[
+@O2G2

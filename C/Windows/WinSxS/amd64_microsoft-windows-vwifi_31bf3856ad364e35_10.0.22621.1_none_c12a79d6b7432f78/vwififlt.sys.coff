@@ -1,0 +1,149 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-vwifi_31bf3856ad364e35_10.0.22621.1_none_c12a79d6b7432f78\vwififlt.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0012128 Import Address Table
+             1C0012428 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         44F IofCompleteRequest
+                          70 DbgPrint
+                         44E IofCallDriver
+                         302 IoBuildDeviceIoControlRequest
+                         4CD KeInitializeEvent
+                         6CD ObfReferenceObject
+                         36D IoGetDeviceObjectPointer
+                         BDA ZwSetSecurityObject
+                         9A9 RtlSetDaclSecurityDescriptor
+                         856 RtlCreateSecurityDescriptor
+                         7FD RtlAddAccessAllowedAce
+                         84F RtlCreateAcl
+                         A38 SeExports
+                         93D RtlLengthSid
+                         6B6 ObOpenObjectByPointer
+                         BE1 ZwSetValueKey
+                         BA8 ZwQueryValueKey
+                         B69 ZwOpenKey
+                          EE ExFreePoolWithTag
+                         4D1 KeInitializeMutex
+                         8B4 RtlGUIDFromString
+                          BD ExAllocatePool2
+                          94 EtwUnregister
+                         429 IoUnregisterPlugPlayNotificationEx
+                         B17 ZwClose
+                         B26 ZwCreateKey
+                         3AA IoOpenDriverRegistryKey
+                         3CE IoRegisterPlugPlayNotification
+                          8F EtwRegister
+                         536 KeReleaseMutex
+                          9A EtwWriteTransfer
+                         585 KeWaitForSingleObject
+                         9E9 RtlUpcaseUnicodeString
+                         833 RtlCompareMemory
+                         C4C _vsnwprintf
+                         441 IoWMIRegistrationControl
+                         5DB MmGetSystemRoutineAddress
+                         6CB ObfDereferenceObject
+                         475 KeAcquireSpinLockRaiseToDpc
+                         4D5 KeInitializeSpinLock
+                         539 KeReleaseSpinLock
+                         473 KeAcquireSpinLockAtDpcLevel
+                         53B KeReleaseSpinLockFromDpcLevel
+                         8F1 RtlInitUnicodeString
+
+    NDIS.SYS
+             1C0012000 Import Address Table
+             1C0012300 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          A8 NdisFreeMemory
+                          78 NdisDeregisterDeviceEx
+                          C0 NdisGetDeviceReservedExtension
+                         1CF NdisRegisterDeviceEx
+                          8B NdisFCancelSendNetBufferLists
+                          9B NdisFReturnNetBufferLists
+                          74 NdisCopySendNetBufferListInfo
+                          12 NdisAllocateCloneNetBufferList
+                          9C NdisFSendNetBufferLists
+                          1E NdisAllocateNetBufferListContext
+                          AD NdisFreeNetBufferListContext
+                          A2 NdisFreeCloneNetBufferList
+                          93 NdisFNetPnPEvent
+                          8D NdisFDevicePnPEventNotify
+                          89 NdisFCancelDirectOidRequest
+                          8E NdisFDirectOidRequest
+                          A3 NdisFreeCloneOidRequest
+                          8A NdisFCancelOidRequest
+                          94 NdisFOidRequest
+                          13 NdisAllocateCloneOidRequest
+                          9E NdisFSetAttributes
+                          AE NdisFreeNetBufferListPool
+                         109 NdisInitializeEvent
+                          1F NdisAllocateNetBufferListPool
+                          8F NdisFDirectOidRequestComplete
+                          95 NdisFOidRequestComplete
+                          92 NdisFIndicateStatus
+                          9D NdisFSendNetBufferListsComplete
+                          91 NdisFIndicateReceiveNetBufferLists
+                          8C NdisFDeregisterFilterDriver
+                          97 NdisFRegisterFilterDriver
+                         20A NdisWaitEvent
+                         1DC NdisResetEvent
+                          1A NdisAllocateMemoryWithTagPriority
+                         1E7 NdisSetEvent
+                         18F NdisMSleep
+
+  Section contains the following exports for vwififlt.SYS
+
+    00000000 characteristics
+    54CEB4CA time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000022C0 DllInitialize
+          2    1 000022C0 DllUnload
+          3    2 0000B300 FExCancelDirectOidRequest
+          4    3 0000B3D0 FExCancelOidRequest
+          5    4 0000B4A0 FExCancelSendNetBufferLists
+          6    5 0000B580 FExDeregisterMp
+          7    6 0000B750 FExDirectOidRequest
+          8    7 0000B830 FExMpRegistrationComplete
+          9    8 0000B8D0 FExOidRequest
+         10    9 0000BA10 FExRegisterMp
+         11    A 0000C970 FExReturnNetBufferLists
+         12    B 0000CA30 FExSendNetBufferLists
+         13    C 0000CB20 FExStartMp
+         14    D 0000CCD0 FExStopMp
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        D000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE
+        1000 fothk

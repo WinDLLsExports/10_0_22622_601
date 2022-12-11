@@ -1,0 +1,8156 @@
+!This program cannot be run in DOS mode.
+Rich`
+.text
+`.data
+.idata
+@.rsrc
+@.reloc
+0123456789ABCDEF
+select
+delete
+update
+insert
+transform
+alter
+create
+procedure
+parameters
+execute
+grant
+revoke
+begin
+commit
+rollback
+ADMINS
+0123456789ABCDEF
+Procedure
+MSysUserList; Select
+MSysAccounts.Name From
+MSysAccounts Where
+MSysAccounts.FGroup = 0 Order by
+MSysAccounts.Name 
+Procedure
+MSysUserMemberships UserName Text; Select
+Distinct MSysAccounts_1.Name From
+(MSysAccounts inner join MSysGroups on MSysAccounts.SID = MSysGroups.UserSID) 
+inner join MSysAccounts as MSysAccounts_1 on MSysGroups.GroupSID = MSysAccounts_1.SID Where
+MSysAccounts.name = UserName and 
+MSysAccounts.FGroup = 0 and 
+MSysAccounts_1.FGroup <> 0;
+Procedure
+MSysGroupList; Select
+MSysAccounts.Name From
+MSysAccounts Where
+MSysAccounts.FGroup <> 0 Order by
+MSysAccounts.Name 
+Procedure
+MSysGroupMembers GroupName Text; Select
+Distinct MSysAccounts_1.Name From
+(MSysAccounts inner join MSysGroups on MSysAccounts.SID = MSysGroups.GroupSID) 
+inner join MSysAccounts as MSysAccounts_1 on MSysGroups.UserSID = MSysAccounts_1.SID Where
+MSysAccounts.name = GroupName and 
+MSysAccounts.FGroup <> 0 and 
+MSysAccounts_1.FGroup = 0;
+Jet 3.x
+Jet 2.x
+admin
+Admins
+Users
+Engine
+Creator
+0123456789ABCDEF
+Description
+LvExtra
+PresentationOrder
+;LCID=
+;ForceCP=
+;Sensitive=
+;Pwd=
+JetErrFormattedMessage
+JetErrRawMessage
+0123456789ABCDEF
+SOFTWARE\Microsoft\Jet\4.0\Engines
+SystemDB
+CompactByPKey
+PrevFormatCompactWithUNICODECompression
+AllowQueryRemoteTables
+AllowQueryRemoteTables_audit
+JetDisabled
+RmtTrace
+SavedQueryTrace
+TraceSQLMode
+SQLTraceMode
+TraceODBCAPI
+DisableAsync
+LoginTimeout
+QueryTimeout
+ConnectionTimeout
+TryJetAuth
+FatBlastRows
+FatBlastTimeout
+AsyncRetryInterval
+AttachCaseSensitive
+FastRequery
+ODBCISAMAttach
+PreparedInsert
+PreparedUpdate
+AttachableObjects
+'TABLE','VIEW','SYSTEM TABLE','ALIAS','SYNONYM'
+SnapshotOnly
+\Engines
+MS Access
+SOFTWARE\Microsoft\Jet\4.0\ISAM Formats
+SOFTWARE\Microsoft\Jet\4.0\Engines\
+0123456789ABCDEF
+win32
+Tables
+Relationships
+Databases
+MSysDb
+Index
+MSysObjects
+MSysColumns
+MSysIndexes
+MSysQueries
+MSysACEs
+MSysRelationships
+MSysAccounts
+MSysGroups
+MSysUserList
+MSysGroupList
+MSysUserMemberships
+MSysGroupMembers
+ParentIdName
+ObjectIdName
+ObjectIdName
+GroupSID
+UserSID
+ObjectId
+ObjectIdAttribute
+ParentId
+DateUpdate
+DateCreate
+Database
+Connect
+ForeignName
+Flags
+PresentationOrder
+LvProp
+LvModule
+LvExtra
+LvExtra
+Description
+PresentationOrder
+LvExtra
+Description
+Owner
+Password
+FGroup
+OLDSID
+GroupSID
+UserSID
+ObjectId
+FInheritable
+ObjectId
+Attribute
+Order
+Name1
+Name2
+Expression
+LvExtra
+RmtInfoShort
+RmtInfoLong
+RmtInfoShort
+RmtInfoLong
+RmtInfoShort
+RmtInfoLong
+LogMessages
+ODBCTimeout
+MaxRecords
+DefaultValue
+ValidationRule
+ValidationText
+Required
+AllowZeroLength
+CheckConstraints
+GenUniqueID()
+GenGUID()
+MSysCompactError
+ErrorCode
+ErrorDescription
+ErrorTable
+ErrorRecid
+################
+MSJTER40.DLL
+0123456789ABCDEF
+TMP%#MAU@
+msrepl40.dll
+Pivot
+0123456789ABCDEF
+Format
+0123456789ABCDEF
+szRelationship
+grbit
+ccolumn
+icolumn
+szObject
+szColumn
+szReferencedObject
+szReferencedColumn
+SELECT
+DISTINCT CStr(Database)    FROM    MSysObjects    WHERE   ParentId = 251658241 and Type = 6 and Connect Is Null
+SELECT
+*    FROM    MSysRelationships    WHERE   szObject = wszTableName OR szReferencedObject = wszTableName
+SELECT *    FROM    MSysRelationships    WHERE   szRelationship = wszRelName
+SELECT
+ '[%s].' & szRelationship as szRel, grbit + 4 as grbit2,     ccolumn, icolumn,     T1.Name as szObject, szColumn,     T2.Name as szReferencedObject, szReferencedColumn
+    FROM    [%s].MSysRelationships as R, MSysObjects as T1, MSysObjects as T2
+    WHERE   R.szObject = T1.ForeignName AND R.szReferencedObject = T2.ForeignName AND
+    T1.ParentId = 251658241 AND T1.database = '%s' AND T1.Connect Is Null AND
+    T2.ParentId = 251658241 AND T2.database = '%s' AND T2.Connect Is Null
+ AND Name = wszTableName
+ AND (T1.Name = '%s' OR T2.Name = '%s')
+ AND R.szRelationship = '%s'
+0123456789ABCDEF
+szRelationship
+grbit
+szObject
+szReferencedObject
+Index
+szRel
+grbit2
+ccolumn
+icolumn
+szColumn
+szReferencedColumn
++szRelationship
++szObject
++szReferencedObject
+flags
+ForeignName
+0123456789ABCDEF
+0123456789ABCDEF
+rkatpvjg
+jshcsabn
+;3+#>6.&
+kjhggaut
+nitremvk
+kjhggaut
+nitremvk
+kjhggaut
+nitremvk
+kjhggaut
+nitremvk
+kjhggaut
+nitremvk
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+system.mdb
+0123456789ABCDEF
+tables
+0123456789ABCDEF
+0123456789ABCDEF
+SOFTWARE\Microsoft\Jet\4.0\Engines\Debug
+SOFTWARE\Microsoft\Office\9.0\Common\Security
+DisablePwdCaching
+SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Network
+0123456789ABCDEF
+0123456789ABCDEF
+TempField*
+Update [%s] Set [%s] = [%s] ;
+0123456789ABCDEF
+0123456789ABCDEF
+mpr.dll
+WNetGetConnectionA
+0123456789ABCDEF
+NetShareEnum
+NetApiBufferFree
+%s\%s
+\\%s\%s
+SccPath
+MSysAccessObjects
+MSysAccessStorage
+MSysCmdbars
+MSysIMEXColumns
+MSysIMEXSpecs
+AccessVersion
+07.51
+AdminByRepl35
+JET_RenamedFrom
+SOFTWARE\Microsoft\Jet\4.0\Replication
+Replication
+Replica Priority Relative Percentage
+Replicable
+ReplicableBool
+ReplicaPriority
+KeepLocal
+ReplicableConflictTable
+ColumnLevelTracking
+ColIsGuid
+ColGeneration
+DefaultPartner
+MostRecentSyncPartner
+FiltersOutOfSync
+PartialClean
+ReorderTables
+RepVersion
+LastUpdater
+LastNoOpCheck
+ReplIdentityCheck
+MSysGenHistory
+MSysOthersHistory
+MSysRepInfo
+MSysReplicas
+MSysExchangeLog
+MSysSchChange
+MSysSchedule
+MSysSchemaProb
+MSysSchemaRetry
+MSysSideTables
+MSysTableGuids
+MSysTombstone
+MSysTranspAddress
+MSysFilters
+MSysErrors
+MSysConflicts
+MSysContents
+MSysRetry
+MSysRepLock
+MSysGenMax
+~TmpRpRc.mdb
+MSysModules
+MSysModules2
+Index1
+Module
+TypeInfo
+Modules
+Forms
+Reports
+Form_
+Report_
+Flags
+ReplicationVersion
+Version
+s_Generation
+s_GenGuid
+s_GUID
+s_Lineage
+s_ColLineage
+ReplicaId
+SchemaVersion
+TransporterId
+TransportType
+RemoteRep
+LastExchange
+Reason
+ReasonText
+Gen_ReasonText
+EnableFlag
+ConflictIdGuid
+BaseTableGuid
+BaseRowGuid
+BaseGuidSrc
+ConflictDescCode
+InvolvedObjects
+WinningRowGuid
+WinningGuidSrc
+LosingReplicaId
+WinningReplicaId
+BaseTableRowGuid
+ConflictRowGuid
+RowGuid
+AtReplica
+LastChange
+Operation
+GetRelated
+OpCode
+ResentData
+GuidSrc
+GuidLocal
+Nicknames
+SchemaMaster
+GlobalDbid
+Retention
+SingleMaster
+SetDescription
+Description
+Machinename
+Pathname
+UNCPathname
+ReplicaType
+ReadOnly
+Nickname
+ISentGen
+ISentGuid
+IRecGen
+IRecGuid
+SchemaGuid
+ProxyReplica
+Removed
+LastScheduledExchange
+Priority
+ExchangeID
+RemoteNickname
+InitiatedHere
+Scheduled
+ExchangeType
+Status
+MessageLimit
+StartTime
+LastCommunication
+SendGen
+SchemaVersion
+TableCount
+RowsInserted
+RowsDeleted
+RowsUpdated
+RowsSent
+TombstonesSent
+ErrorsGenerated
+SideTableRows
+SchemaChangesSent
+SchemaChangesReceived
+Reason Description
+ActualTransportType
+Text1
+Text2
+Text3
+Memo1
+Memo2
+Schedule
+Disabled
+LocalTransporterId
+RemoteTransporterId
+LocalTIDRemoteTId
+Command
+Error
+ErrorText
+SideTable
+Conflicts
+TableName
+TableGuid
+BaseRowLineage
+Version
+s_level
+Attributes
+PublicFlag
+Defunct
+TransporterDescription
+CMCAddress
+FSAddress
+HTTPAddress
+FTPAddress
+FTPDirectory
+CMCPassword
+FSPassword
+HTTPPassword
+CMCEnable
+FSEnable
+HTTPEnable
+INETAddress
+FTPDropbox
+LocalGuid
+SourceGuid
+LocalGen
+Filter
+FilterType
+TableGuidFilterType
+DateTime
++s_GUID
++SideTable
++s_Generation
++ReplicaId
++LocalTransporterId
++TransporterId
++LocalTransporterId
++RemoteTransporterId
++s_level
++ExchangeID
++StartTime
++Status
++Nickname
++SchemaVersion
++GuidSrc
++GuidLocal
++TableName
++TableGuid
++Date
++AtReplica
++RowGuid
++AtReplica
++TableGuid
++FilterType
++WinningDataSource
++ConflictIdGuid
++BaseTableGuid
++BaseRowGuid
++BaseRowGuid
++ConflictRowGuid
+User command
+System Action
+Error CleanUp
+No description
+YOUPICK
+DIRECT
+trnsprtr.log
+REPLICA
+Transporter
+Replica
+LogFile
+LoggingLevel
+WorkWoLog
+Interactive
+ManagedDirectories
+ManagedReplicas
+FSLimit
+HTTPLimit
+CMCLimit
+DefaultSchedule
+AdminEmail
+MagicNumber
+MagicNumber2
+InternalSyncSchedule
+LogRetentionPeriod
+Software\Microsoft\Jet\3.0\Transporter
+Software\Microsoft\Jet\3.5\Transporter
+Software\Microsoft\Jet\4.0\Transporter
+MU:OneClient-hcuot tnoD .tcejbO namgniW a is sihT
+MU:CurReplica-hcuot tnoD .tcejbO namgniW a is sihT
+EO:ClientRefreshRepList-hcuot tnoD .tcejbO namgniW a is sihT
+EO:ServerRefreshRepList-hcuot tnoD .tcejbO namgniW a is sihT
+wingman.sgn
+EO:ServerDoExchange-hcuot tnoD .tcejbO namgniW a is sihT
+EO:SynchLocal-hcuot tnoD .tcejbO namgniW a is sihT
+EO:TermServer-hcuot tnoD .tcejbO namgniW a is sihT
+EO:WaitForClient-hcuot tnoD .tcejbO namgniW a is sihT
+netapi32.dll
+CurReplica-hcuot tnoD .tcejbO namgniW a is sihT
+ExchCompleted-hcuot tnoD .tcejbO namgniW a is sihT
+ServerProcessId-hcuot tnoD .tcejbO namgniW a is sihT
+mstran40.exe
+Unexpected Error: 
+FMESSAGE=
+SOFTWARE\Microsoft\Windows\CurrentVersion\Network
+ERRORCODE=
+MESSAGEFILE=
+MESSAGEDBFILE=
+FPartialTableUpdatable
+Priority_FS
+Priority_Direct
+Priority_Internet
+Timeout_Synch_Lock
+Timeout_Synch
+Timeout_Synch_Internet_Server
+Timeout_Internet_Client
+Timeout_Internet_Connect
+CleanupAnonymousReplicas
+ColLinPosition
+ColLinPositionsUsed
+CColumnsMissing
+MissingColumnsBitmap
+CentralizedConflicts
+conflict_
+pubid
+origin_datasource
+conflict_type
+reason_code
+reason_text
+tablenick
+msmerge_delete_conflicts
+uc1msmerge_delete_conflicts
++tablenick
++rowguid
+InternetAddress
+InternetDropbox
+HttpScriptsFolder
+HostInfo
+SynchHooks
+YYYY-MM-DD HH:MM:ss AMPM
+0123456789ABCDEF
+0123456789ABCDEF
+SOFTWARE\Microsoft\Jet\4.0\Transporter
+Priority_FS
+Priority_Direct
+Priority_Internet
+Timeout_Synch_Lock
+Timeout_Synch
+Timeout_Synch_Internet_Server
+Timeout_Internet_Client
+Timeout_Internet_Connect
+0123456789ABCDEF
+?><=89;:01327645 !#"'&$%/.,-()+*
+~|}xy{zpqsrwvtu`acbgfdeonlmhikj@ACBGFDEONLMHIKJ_^\]XY[ZPQSRWVTU
+0123456789ABCDEF
+0123456789ABCDEF
+SOFTWARE\Microsoft\Jet\4.0\Engines\Jet 4.0
+PageTimeout
+LockRetry
+MaxBufferSize
+Threads
+UserCommitSync
+ImplicitCommitSync
+ExclusiveAsyncDelay
+SharedAsyncDelay
+FlushTransactionTimeout
+MaxLocksPerFile
+LockDelay
+RecycleLVs
+PagesLockedToTableLock
+RecyclePagesTimeout
+\Engines\Jet
+0123456789ABCDEF
+Langid
+Jet System DB  
+Standard Jet DB
+Temp Jet DB    
+0123456789ABCDEF
+?0123456789ABCDEF
+0123456789ABCDEF
+ComputerName
+LoginName
+Connected
+SuspectedState
+Tables
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+MSysObjects
+MSysACEs
+ParentId
+DateCreate
+DateUpdate
+Owner
+Flags
+ParentIdName
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+Connect
+Database
+LvExtra
+LvModule
+LvProp
+RmtInfoLong
+RmtInfoShort
+PresentationOrder
+0123456789ABCDEF
++ParentId
++Name
+ObjectId
+FInheritable
++ObjectId
+Attribute
+Order
+Name1
+Name2
+Expression
+ObjectIdAttribute
++ObjectId
++Attribute
++Order
+Password
+FGroup
+OLDSID
++Name
+GroupSID
+UserSID
++GroupSID
++UserSID
+Databases
+Relationships
+MSysDb
+MSysQueries
+MSysRelationships
+MSysAccounts
+MSysGroups
+0123456789ABCDEF
+.TempBogusIndexName
+0123456789ABCDEF
+0123456789ABCDEF
+SELECT Name, ForeignName, Database from MSysObjects where Type = 9
+ParmT
+PARAMETERS [
+] tableid; SELECT (
+SELECT (
+) FROM [
+0123456789ABCDEF
+0123456789ABCDEF
+TmpCol
+TmpTableIdParm
+PARAMETERS 
+ tableid; UPDATE 
+ SET 
+0123456789ABCDEF
+CZZZZZZZZZZZZXXX
+0123456789ABCDEF
+select 1 where 0 = 1
+SELECT
+#S_C_H#
+'#S_C_H#'
+0123456789ABCDEF
+(MEMO FETCH)
+(GRAPHIC FETCH)
+(MULTI-ROW FETCH)
+ LIKE 
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+%*.*sPa_RaM%03.3d
+PARAMETERS %*.*S;
+Pa_RaM%03d %-18.18s 
+Value
+iif(%s < 0, fix(%s), -1 * int(-1 * %s))
+0123456789ABCDEF
+datepart('%s',%s)
+iif(%s is null, null, cstr(format(%s,'%s')))
+#%d/%d/%d#
+#%02d:%02d:%02d#
+#%d/%d/%d %02d:%02d:%02d#
+ mod 
+Weekday
+lcase
+len(rtrim(%s))
+instr
+ltrim
+right
+rtrim
+space
+ucase
+) ^ (
+date$
+time$
+ join
+minute
+second
+month
+SQL_FLOAT
+cdbl(%s)
+SQL_DOUBLE
+SQL_NUMERIC
+ccur(%s)
+SQL_INTEGER
+clng(%s)
+SQL_REAL
+csng(%s)
+SQL_SMALLINT
+cint(%s)
+SQL_VARCHAR
+cstr(%s)
+SQL_WVARCHAR
+%s %s 
+Grouping Index
+0123456789ABCDEF
+NIL        
+Nested     
+Indexed    
+Sort Merge 
+Fake       
+Rushmore   
+Lookup     
+Index Merge
+Error converting UNICODE string
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+JETSHOWPLAN
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+F:\B\16840\12386\Sources\QJET4\src\qombind.c
+0 == hr
+0123456789ABCDEF
+0123456789ABCDEF
+@@identity
+0123456789ABCDEF
+MSysTables
+ODBC;
+0123456789ABCDEF
+0123456789ABCDEF
+0123456789ABCDEF
+SELECT Config, nValue FROM MSysConf
+odbcjt16.dll
+odbcjt32.dll
+simba.dll
+excel
+DATABASE=
+ODBC;
+SERVER=
+DRIVER=
+Microsoft Jet
+SQLAllocConnect
+SQLAllocEnv
+SQLAllocStmt
+SQLCancel
+SQLColumnsW
+SQLDescribeColW
+SQLDisconnect
+SQLDriverConnectW
+SQLErrorA
+SQLErrorW
+SQLExecDirectW
+SQLExecute
+SQLFetch
+SQLFreeConnect
+SQLFreeEnv
+SQLFreeStmt
+SQLGetData
+SQLGetFunctions
+SQLGetInfoW
+SQLGetStmtOption
+SQLGetTypeInfo
+SQLColAttributes
+SQLMoreResults
+SQLNumResultCols
+SQLParamData
+SQLPrepareW
+SQLPutData
+SQLRowCount
+SQLSetConnectOption
+SQLSetParam
+SQLSetStmtOption
+SQLSpecialColumnsW
+SQLStatisticsW
+SQLTables
+SQLTransact
+SQLBindParameter
+SQLSetConnectAttrW
+ODBC32.DLL
+odbcapi.txt
+22003
+22008
+S0002
+23000
+S1C00
+22001
+08001
+0123456789ABCDEF
+sqlout.txt
+SQLExecDirect: 
+SQLPrepare: 
+SQLExecute: 
+(PARAMETERIZED QUERY)
+VALUES
+SMALLINT
+INTEGER
+FLOAT
+VARCHAR
+money
+(5,0)
+(10,0)
+0123456789ABCDEF
+ identity
+(SELECT INTO insert)
+DATEPART
+DATEVALUE
+DATE$
+INSTR
+LCASE
+LCASE$
+LEFT$
+LTRIM
+LTRIM$
+MINUTE
+MONTH
+RIGHT
+RIGHT$
+RTRIM
+RTRIM$
+SECOND
+SPACE
+SPACE$
+STRING
+STRING$
+TIMEVALUE
+TIME$
+TRIM$
+UCASE
+UCASE$
+WEEKDAY
+CVDATE
+FORMAT
+FORMAT$
+DATEADD
+DATEDIFF
+SWITCH
+CHOOSE
+DATESERIAL
+TIMESERIAL
+floor
+ascii
+concat
+lcase
+length
+locate
+ltrim
+repeat
+right
+rtrim
+substring
+ucase
+curdate
+dayofmonth
+dayofweek
+dayofyear
+minute
+month
+second
+curtime
+quarter
+convert
+'yyyy'
+0123456789ABCDEF
+0123456789ABCDEF
+SELECT
+DISTINCT
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+UNION
+EXISTS
+BETWEEN
+LEFT OUTER JOIN 
+SQL_SMALLINT
+SQL_INTEGER
+SQL_FLOAT
+SQL_VARCHAR
+SQL_TIMESTAMP
+UNKNOWN
+0123456789ABCDEF
+COUNT
+0123456789ABCDEF
+CREATE TABLE 
+INSERT INTO 
+SET IDENTITY_INSERT 
+DROP TABLE 
+Microsoft SQL Server
+SQL Server
+SYSTEM TABLE
+0123456789ABCDEF
+SELECT
+ WHERE 
+INSERT INTO 
+UPDATE
+DELETE FROM
+VALUES
+SET IDENTITY_INSERT
+ AND 
+(INSERT)
+(DELETE)
+(UPDATE)
+ VALUES (
+SELECT @@IDENTITY
+0123456789ABCDEF
+IS NULL
+ = ? AND 
+(GOTO BOOKMARK)
+(ROW-FIXUP SEEK)
+0123456789ABCDEF
+---------------------------------------------
+DATE: %s
+VER:  %d.%02d.%04d
+NOTE: Currently does not handle subqueries, vt parameters, and subqueries
+NOTE: You may see ERROR messages in these cases
+temp query
+--- %S ---
+- Inputs to Query -
+Un-named
+Table '%S'
+ODBC table '%S'
+Recordset
+    Database '%S'
+    Connect '%S'
+    Using index '%S'
+    Having Indexes:
+    %S %d entrie%s, %d page%s, %d value%s
+      which has %d column%s
+, fixed
+, unique
+, clustered and/or counter
+, primary-key
+, no-nulls
+, nulls ignored
+- End inputs to Query -
+%02d) Select into '%S'
+%02d) Insert into '%S'
+%02d) Update
+%02d) Delete
+) AND (
+) OR (
+ NOT (
+%02d)
+%02d) Remote SQL
+%02d) 
+Scan table '%S'
+Scan ODBC table '%S'
+Scan recordset
+      store result in temporary table
+table
+result of
+Distinct 
+%02d) Sort %s%s '%S'
+%02d) Group %s '%S'
+Error OUT OF MEMORY
+%02d) Restrict rows of %s %S
+      using index '%S'
+      for expression "%s"
+      then test expression "%s"
+      using rushmore
+      by scanning
+      testing expression "%s"
+      ERROR: unexpected empty expression
+Outer
+Inner
+%02d) %s Join %s '%S' to %s '%S'
+      using X-Prod join
+      using parameterized distributed join
+      using index '%S!%S'
+      using temporary index
+      using Merge Join
+      using for Sample Preview
+      merging indexes
+      join expression "%s"
+%02d) Union %s '%S' and %s '%S'
+%02d) Compute Top of %s '%S'
+%02d) Distinct table '%S' using index '%S'
+%02d) Scan table '%S'
+%02d) ERROR unexpected node qgtype = %d
+showplan.out
+0123456789ABCDEF
+Check
+PROCEDURE 
+PARAMETERS 
+UNION 
+TRANSFORM 
+SELECT 
+SELECT 
+SELECT *
+INSERT INTO 
+ INTO 
+FROM 
+DELETE 
+UPDATE 
+ SET 
+DISTINCT 
+PERCENT 
+DISTINCTROW 
+WITH OWNERACCESS OPTION;
+WHERE 
+GROUP BY 
+HAVING 
+ORDER BY 
+ DESC 
+PIVOT 
+ AND 
+VALUES (
+ DEFAULT VALUES
+EXECUTE 
+ LEVEL  ?;
+0123456789ABCDEF
+ LEFT JOIN 
+ RIGHT JOIN 
+ INNER JOIN 
+Unknown
+0123456789ABCDEF
+Nchar
+Substring
+OwnerAccess
+Corresponding
+Varying
+Write
+BigBinary
+Extract
+Declare
+Delete
+Binary
+Tinyint
+Catalog
+Bit_Length
+Create
+Rowguidcol
+Escape
+Deferrable
+Cascade
+Sqlstate
+Image
+Autoincrement
+AdminDB
+Current_Date
+Current_Time
+Current_User
+Local
+Output
+Deallocate
+Cascaded
+Privileges
+Database
+Index
+CreateDB
+Diagnostics
+Names
+Session_user
+Object
+Fetch
+Float
+IEEEDouble
+IEEESingle
+Domain
+Action
+General
+Table
+Float8
+Float4
+DateTime
+Coalesce
+Describe
+Match
+Schema
+Sysname
+False
+Global
+Identity
+Character
+Alter
+Except
+Space
+Tableid
+Disallow
+Grant
+Language
+Uniqueidentifier
+Descriptor
+Execute
+Current_Timestamp
+Char_Length
+Relative
+Right
+Order
+Inner
+Having
+Absolute
+Select
+Indicator
+Second
+Update
+Double
+References
+Level
+Disconnect
+Exception
+Commit
+Collate
+Allocate
+Percent
+Parameters
+Money
+Logical
+Ignore
+Inheritable
+Immediate
+Usage
+Varchar
+Foreign
+Close
+Insert
+Logical1
+Connect
+X7YZ_____1
+Collation
+X7YZ_____2
+National
+Precision
+Section
+Alphanumeric
+Varbinary
+Single
+Smallint
+Assertion
+First
+Character_length
+System_user
+Number
+Integer
+Count
+Public
+Column
+UpdateOwner
+Interval
+Between
+0123456789ABCDEF
+Trailing
+Integer2
+Integer4
+Integer1
+LongChar
+LongText
+Where
+SmallMoney
+SelectSchema
+Cross
+Lower
+Module
+Sqlcode
+OLEObject
+Timestamp
+Found
+Intersect
+Connection
+Whenever
+Value
+Octet_length
+Scroll
+Numeric
+Counter
+Contains
+Continue
+Convert
+Prior
+Upper
+LongBinary
+Values
+Distinct
+SelectSecurity
+Compression
+Exists
+Insensitive
+Minute
+Partial
+Prepare
+Sqlerror
+Union
+NonClustered
+Container
+UpdateIdentity
+UpdateSecurity
+Input
+External
+Initially
+Natural
+Short
+Procedure
+Primary
+SmallDateTime
+NVarchar
+Password
+Nullif
+Translate
+Transform
+Outer
+Group
+Constraint
+Check
+Month
+Revoke
+Temporary
+Pivot
+Option
+Cursor
+NText
+Clustered
+Replication
+Constraints
+Default
+Isolation
+Rollback
+Timezone_hour
+Using
+YesNo
+Unique
+Preserve
+Current
+Unknown
+DistinctRow
+Position
+Transaction
+Translation
+ExclusiveConnect
+Begin
+Overlaps
+Session
+Currency
+Authorization
+Timezone_minute
+Decimal
+Restrict
+String
+Deferred
+Leading
+DEFAULT
+0123456789ABCDEF
+PARAMETERS vt tableid; SELECT * FROM vt WHERE Not(
+ AND 
+] Is Not NULL)
+] <> "")
+) OR ((
+) Is Null
+] Is Null OR 
+0123456789ABCDEF
+ESCAPE
+INTERVAL
+INTERVAL %c'%lu' YEAR(%u)
+INTERVAL %c'%lu' MONTH(%u)
+INTERVAL %c'%lu' DAY(%u)
+INTERVAL %c'%lu' HOUR(%u)
+INTERVAL %c'%lu' MINUTE(%u)
+INTERVAL %c'%lu%s' SECOND(%u,%u)
+INTERVAL %c'%lu-%02lu' YEAR(%u) TO MONTH
+INTERVAL %c'%lu %02lu' DAY(%u) TO HOUR
+INTERVAL %c'%lu %02lu:%02lu' DAY(%u) TO MINUTE
+INTERVAL %c'%lu %02lu:%02lu:%02lu%s' DAY(%u) TO SECOND(%u)
+INTERVAL %c'%lu:%02lu' HOUR(%u) TO MINUTE
+INTERVAL %c'%lu:%02lu:%02lu%s' HOUR(%u) TO SECOND(%u)
+INTERVAL %c'%lu:%02lu%s' MINUTE(%u) TO SECOND(%u)
+'INTERVAL %c''%lu'' YEAR(%u)'
+'INTERVAL %c''%lu'' MONTH(%u)'
+'INTERVAL %c''%lu'' DAY(%u)'
+'INTERVAL %c''%lu'' HOUR(%u)'
+'INTERVAL %c''%lu'' MINUTE(%u)'
+'INTERVAL %c''%lu%s'' SECOND(%u,%u)'
+'INTERVAL %c''%lu-%02lu'' YEAR(%u) TO MONTH'
+'INTERVAL %c''%lu %02lu'' DAY(%u) TO HOUR'
+'INTERVAL %c''%lu %02lu:%02lu'' DAY(%u) TO MINUTE'
+'INTERVAL %c''%lu %02lu:%02lu:%02lu%s'' DAY(%u) TO SECOND(%u)'
+'INTERVAL %c''%lu:%02lu'' HOUR(%u) TO MINUTE'
+'INTERVAL %c''%lu:%02lu:%02lu%s'' HOUR(%u) TO SECOND(%u)'
+'INTERVAL %c''%lu:%02lu%s'' MINUTE(%u) TO SECOND(%u)'
+0123456789ABCDEF
+%08X-%04X-%04X-
+.%09lu
+MONTH
+MINUTE
+SECOND
+E%c%d
+?0123456789ABCDEF
+0123456789ABCDEF
+SYSTEM
+ole32.dll
+CoUninitialize
+CoInitializeEx
+0123456789ABCDEF
+msaccess.exe
+bad allocation
+Assertion failed!
+Program: 
+<program name unknown>
+File: 
+Line: 
+Expression: 
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts
+(Press Retry to debug the application - JIT must be enabled)
+Microsoft Visual C++ Runtime Library
+combase.dll
+RoUninitialize
+kernel32.dll
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+InitializeCriticalSectionEx
+CreateEventExW
+CreateSemaphoreExW
+SetThreadStackGuarantee
+CreateThreadpoolTimer
+SetThreadpoolTimer
+WaitForThreadpoolTimerCallbacks
+CloseThreadpoolTimer
+CreateThreadpoolWait
+SetThreadpoolWait
+CloseThreadpoolWait
+FlushProcessWriteBuffers
+FreeLibraryWhenCallbackReturns
+GetCurrentProcessorNumber
+GetLogicalProcessorInformation
+CreateSymbolicLinkW
+SetDefaultDllDirectories
+EnumSystemLocalesEx
+CompareStringEx
+GetDateFormatEx
+GetLocaleInfoEx
+GetTimeFormatEx
+GetUserDefaultLocaleName
+IsValidLocaleName
+LCMapStringEx
+GetCurrentPackageId
+GetTickCount64
+GetFileInformationByHandleExW
+SetFileInformationByHandleW
+         (((((                  H
+         (((((                  H
+                                 
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+ja-JP
+zh-CN
+ko-KR
+zh-TW
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+January
+February
+March
+April
+August
+September
+October
+November
+December
+MM/dd/yy
+dddd, MMMM dd, yyyy
+HH:mm:ss
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+January
+February
+March
+April
+August
+September
+October
+November
+December
+MM/dd/yy
+dddd, MMMM dd, yyyy
+HH:mm:ss
+en-US
+mscoree.dll
+CorExitProcess
+R6002
+- floating point support not loaded
+R6008
+- not enough space for arguments
+R6009
+- not enough space for environment
+R6010
+- abort() has been called
+R6016
+- not enough space for thread data
+R6017
+- unexpected multithread lock error
+R6018
+- unexpected heap error
+R6019
+- unable to open console device
+R6024
+- not enough space for _onexit/atexit table
+R6025
+- pure virtual function call
+R6026
+- not enough space for stdio initialization
+R6027
+- not enough space for lowio initialization
+R6028
+- unable to initialize heap
+R6030
+- CRT not initialized
+R6031
+- Attempt to initialize the CRT more than once.
+This indicates a bug in your application.
+R6032
+- not enough space for locale information
+R6033
+- Attempt to use MSIL code from this assembly during native code initialization
+This indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.
+R6034
+- inconsistent onexit begin-end variables
+DOMAIN error
+SING error
+TLOSS error
+runtime error 
+Runtime Error!
+Program: 
+(null)
+(null)
+( 8PX
+700WP
+`h````
+xpxxxx
+e+000
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+SunMonTueWedThuFriSat
+JanFebMarAprMayJunJulAugSepOctNovDec
+Unknown exception
+log10
+atan2
+floor
+ldexp
+_cabs
+_hypot
+frexp
+_logb
+_nextafter
+USER32.DLL
+MessageBoxW
+GetActiveWindow
+GetLastActivePopup
+GetUserObjectInformationW
+GetProcessWindowStation
+UTF-8
+UTF-16LE
+UNICODE
+exp10
+bad exception
+zh-CHS
+ar-SA
+bg-BG
+ca-ES
+cs-CZ
+da-DK
+de-DE
+el-GR
+fi-FI
+fr-FR
+he-IL
+hu-HU
+is-IS
+it-IT
+nl-NL
+nb-NO
+pl-PL
+pt-BR
+ro-RO
+ru-RU
+hr-HR
+sk-SK
+sq-AL
+sv-SE
+th-TH
+tr-TR
+ur-PK
+id-ID
+uk-UA
+be-BY
+sl-SI
+et-EE
+lv-LV
+lt-LT
+fa-IR
+vi-VN
+hy-AM
+az-AZ-Latn
+eu-ES
+mk-MK
+tn-ZA
+xh-ZA
+zu-ZA
+af-ZA
+ka-GE
+fo-FO
+hi-IN
+mt-MT
+se-NO
+ms-MY
+kk-KZ
+ky-KG
+sw-KE
+uz-UZ-Latn
+tt-RU
+bn-IN
+pa-IN
+gu-IN
+ta-IN
+te-IN
+kn-IN
+ml-IN
+mr-IN
+sa-IN
+mn-MN
+cy-GB
+gl-ES
+kok-IN
+syr-SY
+div-MV
+quz-BO
+ns-ZA
+mi-NZ
+ar-IQ
+de-CH
+en-GB
+es-MX
+fr-BE
+it-CH
+nl-BE
+nn-NO
+pt-PT
+sr-SP-Latn
+sv-FI
+az-AZ-Cyrl
+se-SE
+ms-BN
+uz-UZ-Cyrl
+quz-EC
+ar-EG
+zh-HK
+de-AT
+en-AU
+es-ES
+fr-CA
+sr-SP-Cyrl
+se-FI
+quz-PE
+ar-LY
+zh-SG
+de-LU
+en-CA
+es-GT
+fr-CH
+hr-BA
+smj-NO
+ar-DZ
+zh-MO
+de-LI
+en-NZ
+es-CR
+fr-LU
+bs-BA-Latn
+smj-SE
+ar-MA
+en-IE
+es-PA
+fr-MC
+sr-BA-Latn
+sma-NO
+ar-TN
+en-ZA
+es-DO
+sr-BA-Cyrl
+sma-SE
+ar-OM
+en-JM
+es-VE
+sms-FI
+ar-YE
+en-CB
+es-CO
+smn-FI
+ar-SY
+en-BZ
+es-PE
+ar-JO
+en-TT
+es-AR
+ar-LB
+en-ZW
+es-EC
+ar-KW
+en-PH
+es-CL
+ar-AE
+es-UY
+ar-BH
+es-PY
+ar-QA
+es-BO
+es-SV
+es-HN
+es-NI
+es-PR
+zh-CHT
+af-za
+ar-ae
+ar-bh
+ar-dz
+ar-eg
+ar-iq
+ar-jo
+ar-kw
+ar-lb
+ar-ly
+ar-ma
+ar-om
+ar-qa
+ar-sa
+ar-sy
+ar-tn
+ar-ye
+az-az-cyrl
+az-az-latn
+be-by
+bg-bg
+bn-in
+bs-ba-latn
+ca-es
+cs-cz
+cy-gb
+da-dk
+de-at
+de-ch
+de-de
+de-li
+de-lu
+div-mv
+el-gr
+en-au
+en-bz
+en-ca
+en-cb
+en-gb
+en-ie
+en-jm
+en-nz
+en-ph
+en-tt
+en-us
+en-za
+en-zw
+es-ar
+es-bo
+es-cl
+es-co
+es-cr
+es-do
+es-ec
+es-es
+es-gt
+es-hn
+es-mx
+es-ni
+es-pa
+es-pe
+es-pr
+es-py
+es-sv
+es-uy
+es-ve
+et-ee
+eu-es
+fa-ir
+fi-fi
+fo-fo
+fr-be
+fr-ca
+fr-ch
+fr-fr
+fr-lu
+fr-mc
+gl-es
+gu-in
+he-il
+hi-in
+hr-ba
+hr-hr
+hu-hu
+hy-am
+id-id
+is-is
+it-ch
+it-it
+ja-jp
+ka-ge
+kk-kz
+kn-in
+kok-in
+ko-kr
+ky-kg
+lt-lt
+lv-lv
+mi-nz
+mk-mk
+ml-in
+mn-mn
+mr-in
+ms-bn
+ms-my
+mt-mt
+nb-no
+nl-be
+nl-nl
+nn-no
+ns-za
+pa-in
+pl-pl
+pt-br
+pt-pt
+quz-bo
+quz-ec
+quz-pe
+ro-ro
+ru-ru
+sa-in
+se-fi
+se-no
+se-se
+sk-sk
+sl-si
+sma-no
+sma-se
+smj-no
+smj-se
+smn-fi
+sms-fi
+sq-al
+sr-ba-cyrl
+sr-ba-latn
+sr-sp-cyrl
+sr-sp-latn
+sv-fi
+sv-se
+sw-ke
+syr-sy
+ta-in
+te-in
+th-th
+tn-za
+tr-tr
+tt-ru
+uk-ua
+ur-pk
+uz-uz-cyrl
+uz-uz-latn
+vi-vn
+xh-za
+zh-chs
+zh-cht
+zh-cn
+zh-hk
+zh-mo
+zh-sg
+zh-tw
+zu-za
+__based(
+__cdecl
+__pascal
+__stdcall
+__thiscall
+__fastcall
+__vectorcall
+__clrcall
+__eabi
+__ptr64
+__restrict
+__unaligned
+restrict(
+ delete
+operator
+`vftable'
+`vbtable'
+`vcall'
+`typeof'
+`local static guard'
+`string'
+`vbase destructor'
+`vector deleting destructor'
+`default constructor closure'
+`scalar deleting destructor'
+`vector constructor iterator'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`virtual displacement map'
+`eh vector constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`copy constructor closure'
+`udt returning'
+`RTTI
+`local vftable'
+`local vftable constructor closure'
+ new[]
+ delete[]
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`managed vector constructor iterator'
+`managed vector destructor iterator'
+`eh vector copy constructor iterator'
+`eh vector vbase copy constructor iterator'
+`dynamic initializer for '
+`dynamic atexit destructor for '
+`vector copy constructor iterator'
+`vector vbase copy constructor iterator'
+`managed vector copy constructor iterator'
+`local static thread guard'
+ Type Descriptor'
+ Base Class Descriptor at (
+ Base Class Array'
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+1#SNAN
+1#IND
+1#INF
+1#QNAN
+('8PW
+700PP
+`h`hhh
+xppwpp
+CreateFile2
+CONOUT$
+msjet40.pdb
+t$ SW
+D$(Ph
+t$ SW
+D$ _^]
+D$ _^]
+D$ _^]
+D$(][^_Y
+t$(PSVW
+l$hVW
+D$ Ph
+D$ Pj
+t$4WV
+D$(PUSj
+PUSWV
+_^][3
+t$ SUV
+\$0SV
+t$8hP$
+t$$SV
+D$,[_]^
+D$@PSV
+t$@SV
+t$DSV
+t$HSV
+|$(WV
+|$<<r
+PShP$
+t$$WV
+D$,[]_^
+t$@SWV
+t$@WV
+t$DWV
+D$,_[
+t$,QPR
+|$LOt@
+;D$Ts
+_^][3
+t$ SV
+D$ Pj
+t$4SV
+t$ SV
+t$$SV
+_]^[3
+D$4Pj
+t$(UW
+D$DPVhP$
+D$,PVhP$
+D$(Pj
+t$@UW
+t$(PUW
+D$8Pj
+jjjjjjjjj
+PPUSWV
+t$$USWV
+t$$USWV
+t$$PQ
+D$(Pj
+t$(WV
+t$(WV
+t$(WV
+D$0PS
+t$(WV
+L$T_^][3
+\$4SV
+D$0PUW
+t$(PUQ
+t$$VW
+t$$VW
+L$(_^][3
+D$$PUS
+t$$UW
+t$$UWS
+D$0Pj
+jjjjjjjjj
+_^][3
+D$@Ph
+L$@Qh
+9|$0tB
+t$,UW
+t$ VW
+t$ i|$
+D$ PQW
+D$`PSV
+D$pPV
+D$,Pj
+D$$PSV
+t$(SV
+t$ SV
+D$$Ph
+D$<PSj
+D$8Pj
+_^][3
+D$,PW
+D$$S=
+D$0PQW
+;D$,t
+t$(SV
+t$(SV
+D$0j P
+D$4Pj
+t$4UVW
+PUhP$
+t$0Vh
+D$ PWV
+D$ PWV
+xzSWV
+xQUSV
+D$TUV
+D$,Qj
+_[^]3
+t$ SW
+|$ WV
+t$(hP$
+t$$WV
+D$$US
+t$4PWV
+t$$WV
+t$ RWV
+D$(PSV
+D$ PSV
+D$$UPSV
+D$$Uj
+|$ WV
+PUhP$
+t$(WV
+t$0UWV
+t$0UWV
+t$4WV
+t$4SV
+D$8Ph
+D$(Ph<G
+t$ QP
+_^][3
+\$Xf9
+D$XPVW
+D$0QPW
+t$4h, 
+D$<PV
+D$LPj
+\$,V3
+D$ Phx+
+D$ Ph
+D$ Ph
+D$ Ph
+t$$UW
+SVhx%
+D$ Ph
+D$ Phh(
+D$4Pj
+t$XUS
+D$4Ph
+t$LUS
+D$4Ph
+t$TUS
+D$$Pj
+t$$Qh
+D$(PVW
+D$0PVW
+_^][3
+|$0VUh
+D$ PU
+D$ PU
+D$8Pj
+D$0PU
+D$XPh
+D$<Pj
+D$0PU
+D$0PU
+D$<Pj
+_^][3
+D$DPj
+D$tPU
+D$DPj
+_^][3
+QRUPV
+t$4USV
+D$,Pj
+D$,Pj
+D$,Pj
+D$@Pj
+D$,Ph
+D$@Pj
+D$@Pj
+D$@Pj
+;D$ u
+D$HPh
+D$ Pj
+t$XUV
+L$,;L$
+D$<Pj
+_^][3
+D$$PUSW
+t$0SW
+t$,SW
+D$ Pj
+_^][3
+L$(Pj
+_^][3
+D$DPj
+LD(@3
+D$DPj
+D$(PU
+D$(PS
+D$XPVW
+D$`PVW
+_^][3
+D$8PVW
+D$@PVW
+L$,QWPV
+y4_^]
+D$<PW
+D$,Pj
+D$4PW
+D$4Pj
+uMhD%
+D$8Pj
+D$8PS
+D$<PU
+D$pPj
+D$hPU
+_^][3
+t$0PSUV
+D$ Pj
+_^][Y
+D$8Pj
+D$DPUS
+_^][3
+\$LUW
+l$(Ph
+D$4PVW
+D$$Pj
+D$0Pj
+t$,Ph
+t$`EW
+D$ Pj
+L$8_][3
+D$@Ph
+D$LQP
+D$dPj
+_^][3
+D$$PUWV
+t$,WV
+D$ Ph
+_^][3
+L$(VWj
+L$$_^[3
+9L$(P
+_^][3
+FXPhd
+F`Ph|
+FhPhp'
+D$xSV
+D$0Ph
+D$XPh
+D$HPj
+D$#PU
+9L$@j
+D$ Ph<G
+D$0PhlK
+L$x]_^[3
+t$\Vh
+u2hP 
+l$,VW
+_^][3
+x_hH#
+u6Vhl#
+_^][3
+t'VWU
+D$0jdP
+D$8Ph
+_^][Y
+D$,Ph
+D$4PhX'
+t$DVU
+D$4Ph
+t$DVU
+t$DVU
+D$dPWV
+D$4PVhP$
+t$`VU
+D$,PV
+D$XPh4'
+t$hSW
+D$XPhH'
+t$hSW
+D$lPhX'
+D$lPhP$
+D$|Pj
+D$@Pj
+t$$WtJ
+D$|Pj
+D$|Pj
+QPhP$
+t$DVW
+f;D$Tt&
+L$D^_
+L$ ][3
+D$$PS
+D$8PSW
+D$lPSW
+D$@PSW
+|Lb;t
+D$8Ph.
+D$hPhH'
+PVhX'
+_^][3
+D$0Qj
+x2u0j
+D$<PUW
+D$DPj
+t$<hP$
+jjjjj
+D$0PUW
+D$8hP$
+D$DPj
+_^][3
+L$(_3
+D$$QPhP$
+D$@Uj
+t$XVW
+t$XVW
+PUh4'
+PShH'
+D$$PS
+D$(PS
+D$\PhP$
+D$ Ph
+D$,Ph
+t$ SP
+_^][3
+t$$VU
+4HSRRf
+QPhP$
+PShP$
+t$$WV
+t$$WV
+L$,QWWPhP$
+D$0Qf
+\$,UV
+QWWWh$G
+L$ Qh
+L$ Qh
+L$ Qh
+L$0_^][3
+\$PUV
+D$$PS
+\$\Uj
+t$$Wj
+D$8Ph
+_^][3
+D$$PUV
+QPhP$
+T$(tBf
+L$ PQ
+D$0PUV
+D$TPUV
+D$PPhP$
+L$ PQ
+SPhP$
+_^][3
+D$ _^
+D$$Pj
+t$ SW
+t$@SW
+L$ Qj
+D$tPhl0
+_^][3
+D$4Pj
+D$$PVUW
+L$4QP
+;D$,v
+L$@QPV
+L$ Qj
+D$pPhl0
+_^][3
+|$ SWU
+\$,UW3
+L$$;t$(
+;|$,t*
+SWj(3
+t$$SVU
+;D$ uo
+D$$PhL0
+D$$PU
+\$(W3
+9|$4u
+9|$0t
+D$$Pj
+t$8PUS
+t$lWVQ
+t$PPQRS
+~D$,f
+t$(GS
+_^][3
+t$\WS
+D$(Ph
+t$8WS
+t$4WS
+L$8[_^3
+9T$ t
+9t$Du
+L$,SQ
+L$(SQ
+D$@ tI_
+uE9s0t@f
+D$4kx
+_^][3
+f;^ }I
+D$`PUU
+f;N }Y
+D$0@t
+t$@Pj
+D$$Pj
+t$,WV
+PWhP$
+D$$Pj
+8_^][
+\$dVW
+t$8UV
+D$pWPV
+t$(PV
+D$,PWhP$
+p<QUV
+]_^[3
+D$ VPUW
+D$4PS
+D$(Pj
+t$<UW
+D$@PhP$
+t$4Vj
+D$xSU
+t$8WS
+t$hP$
+_^][3
+t$$hP$
+t$,VS
+PWRQVS
+t$$UQS
+D$0PSW
+D$(PSW
+D$4PU
+t$8SW
+_^][3
+D$DhP$
+t$LSj
+u&9D$
+t$(9F
+D$4t WPQRU
+t$HPQRU
+t$LSU
+|$(WUVS
+D$ t+
+t$<WUPS
+t$@UVPS
+\$8SU
+t$$WV
+t$4Pj
+t$8WV
+l$4Vj
+t$HUQj
+D$(Pj
+D$ PUS
+D$$PUS
+p hP$
+l$LVWPj
+t$0Uh
+D$8Sf
+D$$Ph %
+D$8Ph
+L$H_^][3
+D$|Ph
+f9(tOf
+D$<Ph`$
+D$LPUW
+t$DUW
+t$(h`$
+t$HUW
+t$`UW
+t$dSW
+t$hSW
+t$lSW
+t$pSW
+t$tSW
+t$xSW
+t$|SW
+t$$hP$
+t$ VW
+D$0PVh`$
+t$0SW
+D$0Ph
+D$8Ph
+D$8PhP$
+D$$Pj
+t$0SW
+D$$Pj
+t$0SW
+L$(QP
+L$(_^][3
+l$(VWj
+t$PUS
+t$xUS
+t$PUS
+_^][3
+{_^][
+L$ QPhP$
+D$8PhH'
+D$8Ph4'
+D$8Ph
+D$8Ph
+L$D_][3
+QPhP$
+D$,Ph
+L$8^[3
+D$4Ph`$
+D$<PUW
+El$dj
+D$tPU
+D$$Ph
+D$hPh`$
+t$ UW
+El$dW
+_^][3
+L$ _3
+|$(PWU
+D$TPWU
+L$HQPWU
+D$pPj
+L$LQh
+_^][3
+9D$,uDj
+D$404
+D$4P3
+D$<Pj
+D$<Ph
+\$ WWWWh
+D$$Pj
+xFSVW
+D$(Ph`%
+D$(Pj
+t$<WV
+D$$ u+j
+L$,QU
+D$$QP
+D$XPV
+D$8Ph
+D$8Ph
+D$$QP
+D$8Ph|(
+D$8Phh(
+t$$SW
+D$ PhD%
+D$(Pj
+t$4SW
+l$,USW
+D$LPUSW
+D$ Pj
+D$$PUW
+D$ VP
+D$4PWS
+D$4PWS
+_^][3
+D$$Pj
+t$0US
+D$  u$j
+D$(PUW
+D$$VP
+D$8PWS
+t$$SV
+t$$SV
+D$,PWj
+D$(PV
+D$ PhD%
+D$ Pj
+t$4SV
+D$0PWj
+D$,PV
+D$,PV
+D$,PU
+t$@WV
+D$,Ph
+D$HPUW
+D$@PW
+t$(WV
+D$ Ph
+D$<Pj
+t$4WV
+D$$[]_^
+t$,PW
+D$ Pj
+t$,UW
+t$$SW
+D$0PW
+_^][3
+D$(][_^
+D$ Pj
+D$(Ph`%
+D$8Pj
+t$<UW
+D$\PSj
+\$0Ph
+D$ PS
+D$XPW
+D$@Ph
+D$PVPS
+t$,UV
+D$,Ph
+D$8PSU
+D$$PS
+t$ UV
+t$4UV
+t$,UV
+D$,Vj
+t$0SW
+D$<Ph
+D$TPhd)
+D$,Pj
+D$,Pj
+D$0Ph
+D$pPUS
+t$(VW
+D$$x3
+DT$(A
+T48F;
+t$0SPv
+_^][3
+D$$x3
+DT$(A
+T48F;
+t$0SPv
+_^][3
+D$(Ph
+_^][3
+_^][3
+D$ Phh(
+D$8PSW
+D$LPh
+D$LPh
+D$LPh
+D$LPh
+D$lPU
+t$ SU
+D$,[_^
+D$ PSVW
+y"_^=
+D$,PhT(
+D$,Ph|(
+_^][3
+D$ Ph
+D$ PhH(
+_^][3
+y"_^=
+D$(Ph`(
+D$(Ph|(
+_^][3
+\$4UV
+_^][3
+RPQWS
+t$$WS
+D$ PV
+D$(Phh(
+t$ SW
+_^][3
+D$DPS
+D$0Ph
+D$0Ph
+D$(Ph
+_^[]3
+D$HPh
+D$HPh
+D$HPh
+\$,9l$
+D$ Pj
+D$HPS
+;D$8t
+D$ Ph
+D$\PV
+D$ Pj
+D$HPh
+D$(PhT(
+D$(Ph`(
+D$(Ph
+D$(Ph|(
+D$(Phh(
+t$ UW
+^_][3
+D$$Ph
+D$$Ph
+xXUVW
+D$ PQRS
+_^][Y
+_^][Y
+_^][Y
+SUhl&
+D$$Ph
+][_^3
+^_][3
+D$4Ph
+D$,Ph
+D$TPSWV
+D$DSP
+L$HQP
+t$(SWV
+t$$WV
+t$ WV
+D$(_^
+~D$(f
+~D$(f
+|$Tj*QP
+_^][3
+L$L_^]3
+l$TVW3
+L$T_^][3
+D$(_=
+wLSQWP
+_^][3
+D$$Pj
+D$$PU
+L$$_^]
+D$ Pj
+t$DhP$
+t$DhP$
+L$$QP
+D$(Ph
+D$<g#
+D$@@(
+D$(PS
+_^][3
+tjh %
+tXhD%
+tFh`%
+PWhP$
+D$ PRW
+t$xUPRW
+D$dPj
+D$$Pj
+D$ PV
+_^][3
+9;v)V
+L$xSU
+L$PQP
+_^][3
+D$$QP
+D$8;B$t
+D$LVWP
+PPPSPf
+D$,Pj
+D$,Ph
+D$<hP$
+D$<hP$
+_^][3
+l$HVW
+;D$0u
+D$X_^]
+D$ ;D$
+L$<^][3
+x@SVW
+|$$VW
+L$ Qj
+VSUQj
+^]_[Y
+L$ QP
+VSUQj
+^]_[Y
+^][_Y
+^][_Y
+D$(PSVU
+t$(SVU
+_][^Y
+F ;G u8
+>\uNf
+t$0US
+t$,PWUS
+x SjT
+x WjT
+D$4Vj
+D$PPhP$
+D$PPhP$
+D$PPhP$
+D$8Ph
+t$0hP$
+D$8Ph
+D$$UP
+t$,hP$
+L$H_]3
+t$ WU
+D$$Ph@V
+D$ Pj
+L$D_^][3
+D$ Ph
+D$0Ph
+D$ Ph
+D$ jTj
+t$$WU
+D$(PWU
+L$ QVhP$
+D$$PUS
+t$(hP$
+t$,hP$
+t$(hP$
+t$,hP$
+D$$;D$
+t$8h`$
+D$(Ph
+D$tPSW
+|$tPWVU
+t$pPVh`$
+PWhP$
+PWhP$
+D$$PSV
+D$$PWhP$
+D$ Vk0d
+D$$PWhP$
+D$ Vk0d
+D$ Vk0d
+kD$$d
+t$(SUW
+t$$US
+{<_[^
+{<_[^
+{<_[^
+D$0PU
+\$,Vj
+t$hSW
+t$dSW
+t$`SW
+t$LSW
+D$ PQhP$
+T$t;W
+u!PPPh
+|$tPWVU
+PShP$
+PShP$
+D$$PVW
+_^][3
+UShP$
+L$xQP
+_^][3
+L$xQP
+_^][3
+|$tPWVQ
+D$tPU
+D$$SUV
+L$(_^][3
+@0j.W
+_^][3
+D$0g#
+D$4@(
+D$<UP
+D$|UP
+D$`g#
+D$d@(
+D$0QRPSW
+D$4PS
+l$0QPS
+D$$Ph
+_^][3
+<7tN<5tJ<8tF<9tB<6t>
+D$4j\P
+D$4Ph@E
+_^][3
+D$dPV
+D$@9D$H
+D$HPW
+D$$Ph?
+D$pPW
+D$hPj
+D$xPV
+D$dhTb
+uuF;t$ 
+C;\$,
+D$@;D$H
+_^][3
+t"F;3r
+t"F;3r
+D$ PhLE
+_^][3
+_][^Y
+Uk+dW
+t$ VS
+|$@USW
+FD@t~
+L$8_^][3
+t$,W=
+u3PVS
+L$4Qj
+D$4Pj
+D$ Pj
+D$,PVVS
+D$4Pj
+PQRVS
+oD$dVS
+L$`_^][3
+G@;0tXA
+D$0PV
+G@;0t+A
+D$(PVS
+D$<PV
+\$@UVW
+D$0PuchlO
+t$@SW
+t$@SW
+D$,PSUW
+_^][3
+tp;S tk;S
+98tcA
+D$<PV
+D$$Pj
+D$0WPV
+_^][3
+D$|Ph
+t$(hP$
+D$DPj
+D$,Ph
+D$,Ph
+_^][3
+D$,Ph
+D$0Ph@V
+L$8_[3
+D$LPh
+D$DPS
+l$ V3
+D$8Pj
+D$'Ph
+D$ Pj
+D$$Ph|G
+D$(Ph$G
+t$<hP$
+_^][3
+D$$Pj
+D$$Pj
+D$$VW
+D$ Pj
+D$$PU
+tZ;~ tf;~
+;8t/A
+t$8UW
+D$(Ph
+t$8UW
+D$(Ph
+t$8UW
+D$(Ph
+D$(Ph
+D$(Ph
+t$4UW
+D$(PQW
+D$ h`Q
+PUhP$
+D$DPh
+|$0Tu
+kD$ d
+_^][3
+D$TPh
+D$TPh
+_^][3
+D$$Pj
+\$$Vj
+D$$Pj
+t$dSW
+D$$Pj
+t$`SW
+D$$Pj
+t$\SW
+t$HSW
+D$ PWS
+t$$WS
+D$$Pj
+D$$Pj
+t$,WS
+^]_[Y
+D$HPhTP
+D$$Pj
+D$HPh
+D$$Pj
+D$(Pj
+D$lPh
+D$HPh`Q
+D$$Pj
+D$<PUW
+#D$ j
+D$$Pj
+D$HPh
+D$$Pj
+D$HPh4Q
+D$$Pj
+D$ Pj
+D$,Pj
+t$LSW
+t$`SW
+t$LSW
+t$`SW
+t$dSW
+_^][3
+D$ Ph@V
+D$ Ph
+D$ Ph
+D$ PhtV
+D$ Ph
+D$ PhTV
+D$ Ph
+D$ Ph$M
+D$ Ph
+D$ Ph
+D$ Ph0R
+D$ Ph
+D$ Ph,V
+D$ Ph
+D$ Ph`Q
+D$ Ph$M
+D$ Ph
+D$ Ph
+D$ Ph
+D$ Ph
+D$ Ph
+D$ Ph
+D$ Ph
+D$ Ph
+D$ Ph U
+D$ Ph,U
+D$ Ph
+D$ Ph@V
+_[^]3
+D$0uIU
+D$ PUhP$
+\$,hPk
+D$PPSW
+PUhP$
+D$@Ph
+D$@Ph
+D$@Ph
+D$ PUSW
+\$4SW
+_^][3
+D$0SV
+D$(Ph
+D$,Ph0R
+t$8VW
+L$<_^[3
+D$ Pk
+D$LPhP$
+D$HPhP$
+D$(Ph
+D$dPhP$
+D$4Ph
+D$4Ph
+D$4Ph
+D$HPUS
+D$HPUS
+D$ UV
+y']_^[
+dUVW3
+_^][3
+\$<UVW
+D$,Ph
+t$<WV
+L$<_^][3
+D$$PU
+t$ hP$
+QSUVkt$
+t$<UhP$
+_^][Y
+D$8QUP
+D$HPVS
+D$HPVS
+D$8PVS
+D$DPh
+t$0hP$
+D$\Ph
+D$$QPSU
+D$\Ph
+D$(QPSU
+D$<PSU
+D$\Ph4N
+t$(SU
+t$,SU
+t$0SU
+oD$DS
+D$TPWSU
+_^][3
+L$(QPRW
+D$DPSW
+D$LPVhP$
+D$ PSUh
+t$0hP$
+_^][3
+D$,Ph
+t$4hP$
+l$8VW
+xBh@V
+D$ Ph
+_^][3
+L$0_^]3
+oD$8S
+oD$XS
+t$LWS
+t$PWS
+L$(_[3
+D$4SU
+D$(Ph@V
+D$(Ph
+D$,Ph
+D$$PSUW
+D$PPSW
+D$,Ph
+D$$PS
+D$|PVj
+D$,PSW
+D$0PW
+D$DPSW
+D$HPW
+D$,;D$
+D$|Pj
+D$DPSW
+D$HPW
+_^][3
+^_][Y
+oD$TS
+oD$|S
+D$DPUWS
+L$L_[3
+$SUVWQk
+toh0I
+t`hPI
+tQh`J
+tBh<K
+t3h@J
+|$ 9|$
+t)F@;
+;|$$s
+;|$$s
+T$(O;|$
+;D$ sW
+D$(PS
+D$(QPW
+D$(QPS
+D$`PW
+L$(QP
+\$$u"
+_^][t
+D$`SUV
+9o$u%j
+_^][3
+D$pSU
+D$8PW
+9D$\VS
+D$ PU
+L$L_][3
+F8f9)t
+G _^[
+D$ um
+d$ RP
+L$(_^
+f9(t!SQ
+L$X_^3
+L$X_^3
+_^][3
+\$HUV
+D$0WP
+D$,Vj
+L$@_^][3
+_^][3
+_^][3
+D$,SU
+D$,WP
+D$(Vj
+L$<_^][3
+_^][3
+C"2G"$
+O"2K"
+C#2G#$
+W#2S#
+L$0VP
+_^][3
+]_^[Y
+D$4SUV
+D$4SP
+L$D_^][3
+_]^[Y
+F$WPQ
+F$WPU
+F$WPU
+G$VPQ
+D$8SUV
+D$8SP
+G$VPQ
+L$H_^][3
+G$VPQQ
+G$VPRQ
+G$VPU
+F\Phd
+|$0WV
+|$4u!
+t$WUV
+FH9~P|2
+N(QWS
+L$(uK
+T$\Rj
+D$tua
+T$\Rj
+jjjjj
+_^][t
+FD9~H|
+FH9~P|
++N0+N4
+L$49K
+D$4WP
+D$4PS
+D$4WPU
+L$4F;s
+_^][3
+D$@f9
+D$ PW
+t$0SP
+D$ PW
+L$(QU
+L$@9|$
+D$,PS
+D$(Pj
+D$<_^][
+L$H9\$<
+L$HC;\$<|
+D$(PQ
+N(PUQ
+D$PPUQ
+D$d#D$TPR
+D$0_[
+(SUVW
+;\$<t4
+D$(PU
+Pp_^][
+9_,uy9^htX
+Ph_^][Y
+;h\t?;hXt:
+A _^][
+t$WSV
+Ph[_^
+N(UQW
+N(UQW
+_^][Y
+H9FH|
+Hl_^]
+uhSVSj
+D$t#D$
+t$4UP
+D$lWUP
+D$df9
+Ht0Ht
+T$$t%
+D$(PS
+t$4UP
+D$(PU
+T$$t"
+D$(PS
+D$4PS
+D$4PS
+D$0Pj
+f;^0tA
+^0[_^
+P<9h,t
+[<F;w8|
+T$0Rj
+_^][t
+D$(PV
+l$4x4
+_^][t
+D$$PW
+l$tVW
+D$0j P
+D$,Uj@P
+L$l_^][3
+D$\VP
+L$XQVP
+_^][3
+l$$VW
+(SUVW
+9XHtN
+D$$PSW
+_^][t
+L$P_^][3
+NDHSP
+t+f9qL
+D$ HS
+(SVW3
+t$,PQ
+l$(98tFA
+D$8@P
+D$HPj
+D$,Ph
+D$,Ph
+D$$Pj
+D$$Pj
+;sdtb
+l$@F;
+T$4SUV
+L$8_^][3
+D$4VP
+D$hPj 
+t$,VP
+8SUV3
+D$4PW
+D$$PW
+FdW@h
+NDHWP
+L$DUQ
+L$4_^][3
+D$,Ph
+W9l$<
+C;\$ |
+D$<Sj
++D$0+\$<y
+L$8G;
+f97uO
+_^][3
+tAHt+-
+f9D$2_
+Richu
+_^][3
+D$0PS
+D$(;D$0t
+\$,UV3
+_^][3
+D$LVP
+D$$WP
+L$0Qj
+D$HPV
+_^][3
+T$,Rj
+T$,Rj
+D$,PW
+_^][3
+L$,Qj
+L$@Qj
+D$$Pj
+D$ Pj
+D$ Pj
+L$ Qj
+D$ Pj
+R@PUW
+T$,Rj
+T$,Rj
+T$,Rj
+,SUVW
+t6f93t1
+l$Tuc
+T$(Rj
+T$(Rj
+T$(Rj
+\$8UVW
+tDf90t?
+T$(Rj
+T$(Rj
+T$(Rj
+H$VRj
+D$ Pj
+L$ VR
+Ht1Ht
+D$(Pj
+L$(Qj
+D$(Pj
+D$ VW
+D$ V3
+D$$WVR
+u>SVh0
+t\SPh
+L$,Sj
+T$,Sj
+L$ Sj
+L$4Sj
+T$@Rj
+L$@Qj
+D$X;D$
+T$@Rj
+L$@Qj
+L$$Sj
+t$`Qj
+t$tQj
+_^][t
+8SUVWj,
+U|;UX
+U|;UX~
+M\Qj@
+_^][3
+L$$Qj7j
+\$,VW3
+T$(HRSPQ
+9\$Dt
+D$LPS
+9\$Ht
+L$D_][3
+F ;G u8
+9\$Dt
+D$LPS
+9\$Ht
+~3WUPS
+8D$ S
+N\8D$ S
+t+_[^]Y
+N\8D$$
+FX_[^]Y
+FX;A })
+FX;A }
+D$$PW
+n9\$0t
+9s ~GUW
+F;s |
+SUVWh
+E(2G($
+K<QVP
+L$t_^[3
+9_ ~xUV
+C;_ |
+D$8+D$
+|$4WP
+L$0VP
+L$ f)C
+D$ RP
+D$$PW
+D$$PV
+l$8VW
+D$D;|$
+L$PPQ
+L$$+D$
+t$HQP
++D$H+
+L$0+D$
+9l$Hv
+\$0VW
+D$ PS
+ItAIt6IuF8N)tA
+@,;F0u
+;H |"
+Q,;V0
+P<;p,t
+u<UWV
+t$ Vj
+_^][3
+t$,VU
+t$4SU
+QVWh|
+T$ Vj
+T$ Vj
+T$(Vj
+_^][3
+T$ Vj
+t$ h|
+_^][Y
+_^][Y
+hLVAL
+t$<WVU
+|$49|$8u
+D$8VPj
+@@9H`
+^][_Y
+T$4VW
+L$0_^3
+l$ Pj
+D$ PU
+;D$$t
+D$hPj
+L$DSU
+_^][3
+D$DPV
+D$,PSU
++D$L;
+D$,PSU
+\$@UVW
+u._^]3
+|$,PSU
++D$L;
+D$(PSU
+t$(;Y
+L$$VP
+D$0PU
+H(QVj
+=LVALt
+ttUSV
+u`SUV
+D$@UP
+D$@UP
+L$,QP
+t$0Pt
+L$4QP
+D$,PQ
+L$(Pj
+|$$;i
+l$0Wj
+L$@Pt
+l$$PU
+D$HPS
+rlj@j@
+_^][3
+L$8_^[3
+D$ QPW
+=LVALu"
+D$ QPW
+=LVALu
+r(VWP
+hLVAL
+L$dQP
+D$4_^][
+=LVALt
+D$4PV
+D$,PV
+L$,SU
+T$0VW
+T$8Oy
+L$4VSP
+l$$W3
+L$,;L$4u.
+FTG;x
+;D$0t
+D$4;L$<t
+GP_^][
+GP_^][
+A<;D$
+f9qP~
+u[PPP
+t$0WU
+L$ t#
+D$PPW
+D$@uG3
+n<^][
+L$,QP
+L$$9t$Hu
+8;|$Hs 
+L$T@f
+t$H[_
+\$0UVW
+D$(+D$
+D$$f;D$
+L$ Sj
+D$8tQ
+ SUVW
+tGWSU
+D$49O
+D$8hp
+|D$9v
+LD$Hy
+L$,SQ
+_^][3
+Hur9F ttUS
+WX_^][
+oX_^][
+Gl_^][
+Gl_^][
+GT_^]
+l$,UP
+Hur9F ttUS
+D$(9D$,
+D$ ]_^[
+_^][Y
+sZSUVW
+_^][Y
+_^][3
+uBSjPj
+F@;E@
+t!Hu'
+t%Hu;
+t!Hu'
+t9HuW
+t$_^][
+t!Hu'
+GH_^][
+tOHuL
+D$xSV
+T$,Rj
+UVWSj
+tKHuH
+HtIHt!HuR
+D$\VW
+UVWSj
+tOHuL
+_]^[Y
+UVWSj
+T$$H;
+tKHuH
+u!UWS
+D$1jE
+L$d_^[3
+D$`QP
+_^][3
+D$(PV
+)t$$yW
+D$DPj
+_^][3
+t$(VP
+8D$Ku
+_^][3
+T$(Rj
+T$ 9T$L
+D$$PVWQ
+;l$du
+l$\;T$L
+L$$QP
+D$(;t$
+D$l;D$T
+P0_^[
+D$XSV
+C;^,vW9~$u
+D$@;^,w
+9D$@w
+9FHvg
+d9FHv
+wQt8=
+t$$+s$
+|$(){H
+T$$Rh
+\$$UWSj
+ETG;x
+k$_^]
++Q,+Q(R
++A4+A0P
+l$DVW
+D$(WPS
+L$(;E
+_^][3
+t$$u&WV
+}xOx!
+L$49K
+79n(~!
+79nL~&
+T$,SWQ
+t$8PV
+D$$uK
+D$$tB
+L$(@j
+tMSWU
+_^][3
+L$ 9N
+L$ ;N
+l$$VW
+F(9HHu3
+D$dSUVW
+L$,t$
+;p }A
+DL$HQ
+F0;A,uZ
+D$dWPh
+L$t_^][3
+CH_^[
+L$PQP
+_^][t
+_<U9G
+9](~{
+qH9YL
+D$(PU
+_@9_D~
+L$$WV
+D$ PVQ
+L$(RV
+_^][3
+T$tRj
+8D$8j
+t$d;|$h
+|$4u7
+_^][t
+l$@VW
+D$ Pj
+L$ Qj
+\$$UV
+@0;G,t
+;G,tn
+_^][3
+D$(SUV
+9T$Du
+;F,td
+B0;G,t
+_^][3
+_^][3
+1_^][
+L$x^[3
+D$$PQ
+;W(~#
+t,Mu;
+2G"$ 0G"
+x Suq
+N(WSU
+D$,PSU
+D$0;K(~
+D$4;H
+D$4uP
+D$0P3
+_^][t
+9~ls)
+_^][3
+H(QVj
+_^][Y
+H(QVj
+_^][Y
+H(QUj
+_^][Y
+;\$$r
+H(QWj
+D$ _^]
+H(QSj
+I(QSj
+9\$ v"
+;\$ r
+H(QWj
+H(QSj
+H(QSj
+FL^][
+L$0f;
+f;D$,
+f;D$0}%
+_^][3
+D$<Ph`
++L$,_^]
+49D$ }
+_^][3
+&WPh^
+L$0_^][3
+L$DVVPW
+SUVWj
+I<QSj
+L$ Vj
+^_+D$
+D$$UVSP
+L$$^]
+A+9|$
+~@G;|$
+u2UVW
+D$ Sj Q
+9|$ vY
+;|$ r
+D$$_^[
+s$NxC
+9S$ve
+tFUVW
+D$(_^][
+9l$(s
+v8SRQ
+v8SRQ
+t$8US
+t$@VU
+l$4SU
+VL_][^
+_^[YY
+L$$QPW
+D$ SSSPSSh
+L$ RRRQP
+t$ Ph
+PShP$
+D$<PUh`$
+t$0hH'
+PShX'
+t$,h4'
+_^][3
+D$4Ph
+_^][3
+L$4PPQ
+L$ QPW
+D$$PUh`$
+t$$SW
+D$ QQQPh
+D$<Ph
+t$(VP3
+t$4hP$
+D$HWP
+f9>u 
+D$0tJ
+D$ QQPj@QQj
+xgUUUj
+xIUUUj
+_^][3
+t$(Pj
+D$,QPj8
+D$0Ph
+D$0Pj
+f;D$8u
+T$0@+
+D$XX+
+_^][3
+D$DPW
+D$ WVS
+_^][3
+D$lPh
+D$XQP
+D$ Pj
+D$lPh4'
+L$(f90
+T$(f90v{
+9t$8t
+\$$9t$,
+D$lPh
+D$TVV
+L$ Qh
+D$lPhX'
+D$PVV
+L$ Qh
+\$4u@Vj
+D$lPh
+L$ Qj
+L$Lf9
+D$ Pj
+Xf9D$
+!VVVh#
+u(9t$4v"
+F;t$4r
+_^][3
+QQQPQQh
+L$0Qh
+SPhP$
+t?f9D$
+^f9+u
+SWQQQ
+D$ Ph
+D$0Ph
+t~Nt*N
+D$ SP
+^f9+u
+D$TPV
+D$HPV
+D$TPV
+9L$(P
+9L$,P
+_^][t
+t$$UV
+\$(UV
+tT<4tCvh<6v
+D$8Ph
+D$8Pj
+Af90t
+p]f9(u
+%WUVR
+Nu7Wf
+HHtXHt4Huo
+twHHtTHt2Hui
+_^][Y
+D$ Pf
+|$ =t
+|$ >u
+_ j.S
+D$xSU
+L$l_^][3
+!7QPUS
+L$D9D$Pu#
+D$X;D$@u
+9T$Tu
+9L$\u
+D$,Pj
+D$hPh|'
+D$hPh|'
+WjAPh
+D$xPWWUS
+D$$PV
+t$$US
+_^][3
+D$HPU
+EL$TQ
+_^][3
+]TVWj
+j+YPf
+D$0PW
+_^][3
+\$0UVW
+t$8WS
+4K9T$D
+~vj_Xf
+L$,_^][3
+ukWk~
+|$ kV
+f9u,u
+9t$$t[
+t htD
+t$(PW
+L$$PW
+L$$QWPS
+L$$PW
+l$$QWPS
+l$$QWPS
+l$$QWPS
+l$$QWPS
+L$$PW
+_^][Y
+C,^][Y
+sPSVW+
+D$$UW
+l$ WU
+D$4Pj
+t$0RVU
+D$0j4YkP
+s?f9F,t/
+F.;D$
+t$4VU
+D$(j4
+F,^[_]
+\$$UVW
+\$0t9
+t"j4X
+A,@_^][
+D$$RPU
+T$$RP
+A(_^][Y
+L$,QVPW
+D$,PV
+4;\$(
+t$ u2
+D$<Pj
+;D$(}C
+t$DSU
+VQjhU
+D$(PS
+D$8PWV
+D$8Yf;
+t(VWV
+D$8PUV
+l$0VUV
+L$8QPV
+t$0Uj
+D$8PUV
+D$8PUV
+t$ Uj
+D$8PWV
+t$$WSPV
+t$,VUV
+HHt"Ht
+s!hp[
+_^][Y
+D$ PWj
+D$ j4
+F.9D$,
+t$ UWS
+D$(PWUS
+t^h:`
+D$4Wh
+D$ PV
+_^][3
+t$$!l$
+D$<Pj
+D$ Ph
+L$(;L$
+L$D@QP
+_^][3
+)l$49T$4
+QWUhA
+D$0QV
+QQSUW3
+_][YY
+D$(9C(s
+VPPhl
+t$$u=
+t$ VW
+\$4UVW
+UPRPV
+QPRPV
+:F5^u
+:F5^u
+t$T@Wj
+T$$RQ
+L$8QW
+D$0@t
+l$Tt7+
+D$$PVQ
+D$ PUV
+D$,PSUV
+C;^@r
+D$XUVWkXD(3
+L$h9O
+T$0RP
+D$$9D$\
+r89>u
+D$\9x
+p89>u
+D$4PU
+D$\9x
+D$\;D$$
+p4N;t$lv<
+;t$lw
+D$HPW
+D$HPW
+D$0PWR
+|$,97u
+D$HPP
+;D$tvn9q
+D$HPU
+D$0PWR
+;D$tw%
+VPPhl
+VWWhl
+VWWhl
+VPPhl
+PWWhl
+PVVhl
+\$$UV
+l$4f9
+PPPPP
+t$LQW
+D$$P3
+PPPVSW
+l$,9i
+D$ Pj
+D$(PVW
+l$,PPVUW
+\$4UVW
+VVVUW
+D$8;A$
+t:Huyj
+T$ RP
+u#h6m
+D$4VVVVVPh
+D$8;A$
+PPPUW
+PVVhl
+:F4sQ
+:F5u'
+t$4Ai
+t$HUV
+f9\$H
+f9L$Hu7
+@f9D$Hu4
+f9L$H
+\$0S3
+f9L$H
+9D$@u
+;\$Du
+;D$@v]3
+F@f9t$H
+@f9D$Hu-9\$@u#
+H9D$@t
+F0@u#j
+^8RSP
+F0@t@
+J4kjD(
+PPPSW
+_^][Y
+D$ PQ
+D$<Pj
+l$$UR
+O<UQR
+t ;O,t
+\$$UV
+L$$_^][3
+D$<PV
+L$<QPW
+D$4PUW
+u&Uj U
+QPPhl
+j ^f91u
+D$0PjCWW
+_^][3
+VP9N4~9
+ ;N4|
+PPPhb
+VVVhG
+t$T;|$@t
+D$|PV
+D$<PVV
+@f9D$
+D$dPh|'
+xxVVV
+_^][3
+CHVj(Q
+l$DVh
+D$ PSW
+D$ PSW
+L$H_^[3
+^09V4~1
+B;V4|
+t$<US
+t39/v
+D$$;D$(
+D$dPQ
+L$d;H4t
+D$8Ph
+D$<PS
+D$$;D$(
+_^][3
+PPPh_
+PPPhb
+D$4kP4
+!D$<;L$P
+D$hPW
+t$TPS
+9D$,u
+D$T;D$
+L$@;D$P
+D$LVPWS
+Y;L$0
+D$hPj
+l$XPj
+D$PPWS
+PPPhb
+_^][3
+D$ Pj
+WWWhL
+PShP$
+WWWh(
+ u&UUUhL
+ED$<PS
+D$8WWSP
+D$pSUVW
+D$Pj(P
+\$lSW
+f;L$$
+D$@PU
+f;\$$|
+D$8VPWU
+L$t_^][3
+D$<PWU
+9DKVC
+_^][3
+D$$PV
+D$hPh
+D$dVj
+D$hPh4)
+D$dVj
+D$hPhL)
+f9t$0t
+VVj"h
+D$ PVj@VV
+D$hPh
+Bt$,PV
+9l$ t
+l$@UV
+H9GPt+
+\$$UV
+D$ PQV
+_^][Y
+t$,W3
+L$(_^][3
+_^][3
+D$$Ph
+[_^]YY
+tKUWj
+D$ Ph
+L$0PQVS
+_^][3
+D$`Pj
+D$4;L$\
+D$,;t$
+D$PPh
+9|$@t!
+D$8f!H
+L$ 99
+D$(t<
+t$P9|$@tW
++l$Pt;
+L$ C;
+D$PPh
+9|$Ht
+Ff9t$@u
+9|$Tt
+xfWWW
+9|$Tt
+t$X;\$
+_^][3
+\$4UVW
+kD$DA+
+L$DQ3
+k|$HA
+D$<f9
+f;T$$t/
+D$Dj,Yf
+j ^Af
+j ^Bf
+j,];t$,
+t$4j ]f
++l$ Uj
+l$4VW
+f;D$,u
+D$ UVW
+;D$4u
+D$$Pj
+D$(PSV
+t$89s
+t$8SV
+D$<PSV
+D$(Pj
+D$$9D$
++D$4H
+D$<PSV
+_^][YY
+\$,UVW
+D$ hT
+L$0_^][3
+D$(SUV
+t$DWS
+D$(9D$@
+D$DPWR
+D$(9D$ 
+D$<tJ@
+D$,Pj
+D$(PW
+t$<WVS
+D$4Pj
+D$8PQR
+@9D$,u
+f#D$Lf
+D$,Pj
+D$<PWU
+_^][3
+D$lPS
+t$0V3
+f9CD~B
+L$p;D$D
+D$LPh
+D$H9D$Lu
+D$|Pj
+_^][3
+D$tSUV
+9|$,t
+D$dPV
+D$<PU
+_^][3
+T$(SU
+l$(;l$,s
+L$(_^][3
+f9D$4t
+;t$$s
+HtYHtCHt
+HuuPh
+L$ WP
+_^][3
+p VS9X
+T$\SU3
+T$Lj$3
+D$DPj
+t$(Wj
+|$`9t$
+D$4PUt
+G!T$<
+j*Xj%Z
+|$LPW
+D$|Ph
+D$D;D$|u
+D$LPh
+D$|Ph
+D$PPh
+L$tQP
+_^][3
+SUVW3
+9|$4tv
+\$ PUS
+9|$,t,
+9|$,t
+L$$QP
+VVVh5
+u&j*Xj%Y
+_^][3
+9O t*
+G8h6m
+t$(QQQQQ
+D$,Ph
+L$$Qh
+D$PPW
+D$<VP
+D$<j?P
+D$<j*P
+|$ VWU
+_^][3
+D$4Y+
+D$8PVU
+D$(PVU
+D$4Ph
+t$(WU
+D$@PV
+t$ WU
+QSPVU
+D$DPS
+L$P_^][3
+9D$0u_
+t$4PR
+M9^(t
+t$4SR
+~T9~Tt
+FTHu&
+^T9~D
+D$0PW
+t$4SQ
+^,u9;
+9D$ un
+A9N(t
+D$ PW
+N(_^][Y
+9L$0uc
+t$4!~PQP
+9V(ta
+t$4RP
+F08FJt
+D$0Pj
+V8SRP
+F@SPQ
+L$0SU
+;\$Ds)
+|$498
+D$0Pj
+FT;FX
+FT;FX
+j*Yj%X
+D$,Ph
+O9V8tL
+_^][3
+D$$PSQ
+D$$PUQ
+_^][3
+WPPhl
+j*Yj%
+D$$f9
+D$$f9
+;Ntv8
+Fx;Fpu
+D$ PWS
+9G<us9G8un
+ueh6m
+UPPPP
+L$<_^][3
+D$,Pj
+L$0Qj
+GT;GX
+D$4PU
+D$$PU
+G\@t+3
+VPPhl
+VPPhl
+;\$ sc
+D$LSUV
+D$4PVS
+D$4PVS
+D$ Pj
+L$\_^][3
+L$4QP
+D$,PU
+_^][3
+\$<UV
+t$@Wj
+L$8_^][3
+t$LWj
+D$ PVWU
+|$@9{
+L$D_^[3
+t$$PW
+9|$(t
+9|$(t=
+D$(QS
+_^][YY
+VPPhl
+VPPhl
+;t$(sv
+QQSUV
+t$(UW
+PPPUS
+_^][YY
+;~du8
+;~`u/
+^hUinp
+t)iN`
+M;~`uH
+L$$Rj
+l$4US
+D$ Ph
+X(;H`u
+;Hdu8
+phWixp
+;F(uJ
+L$4_^][3
+t$$VW
+_^][Y
+|$,tN
+CL tM
+_^][3
+Ht!Ht
+D$$PWV
+D$$Ph
+D$$Ph
+E;L$$
+_^][3
+t,SSj
+xiSSS
+HtDHu2
+D$$PWS
+D$$!C#
+D$(PU
+L$LPUS
+L$@PUS
+L$DQPS
+D$0j(Y
+l$LVW
+D$ PQRS
+uC9EHt3;
+L$<QRRPR
+D$<PRRQS
+D$4PS
+QRRPR
+D$4PS
+_^][3
+^_][Y
+D$ Ph
+_^][3
+.;t$ 
+C, u"
+D$<PW
+D$(Pj
+ SUVW
+D$ Pj
+t$<VS
+D$8Pj
+D$(@u?
+t$4WS
+(SUVW
+D$$PWV
+D$DPV
+9\$@t.SSV
+Z9T$Hr
+9\$(u
+9\$,u
+9\$0t
+u"9\$
+D$@PV
+9\$@t
+Pj@WU
+Pj WU
+9L$$t
+VPPhl
+D$,PUVS
+_^][3
+t$$WW
+t$PUV
+D$DPUV
+;t$ s
+^_][YY
+_^][Y
+ub;D$
+_^][Y
+L$8SU
+t$<!l$(!l$
+9L$`U
+|$4!l$0k
+!l$43
+L$Htt
+t$XRWQ
+DD$8P
+\$HtG
+t$XSW
+D$@PS
+t$HWS
+t$`PS
+t$dPP
+_^][3
+_^][3
+D$LPj
+_^][3
+D$HPh
+D$pPSV
+D$@Pj
+t$hWV
+t$`WV
+t$tWV
+t$lWV
+t$dWV
+t$pWV
+t$xWV
+@]_^[
+9p$u#
+9H$uj
+9H(t^j
+9D$$Y
+D$4PV
+_^][YY
+@[_^]
+_^][3
+VSShl
+VSShl
+D$<SP
+x#WWWVS
+L$<^]3
+WWWVS
+D$$PVS
+D$ PVS
+P$k@(
+t$,SW
+_^][3
+9|$ tIj
+T$ Z9
+uYj2^
+L$4Qj
+L$$QP
+_^][3
+D$0Pj
+PPPPPPPPP
+L$0QPW
+_^][3
+uF!T$4
+D$ P3
+PPPPPPPPP
+_^][3
+F@;F<u
+SVWkx4
+XHUkh4
+D$$PVR
+_^][3
+F<9n4~
+E;n4|
+L$ QP
+L$@_^][3
+VPSRP
+FTSPQ
+~P9~Tt
+PUUWS
+x(kE(
+QPPhl
+_^][Y
+QQPQQ
+\$$UVW
+k89n(t
+n(_]^3
+D$$PU
+D$ ;t$,
+9GLt5PP
+D$TPj
+D$$PU
+;t$,s
+D$PPj
+_^][3
+C(PUV
+D$hPWV
+9sLtv
+T$@Pj
+C(9SL
+QQPh)
+D$@P3
+D$(P3
+D$ P3
+D$ 9s
+t$l;\$4
+L$X9L$
+L$8QR
+D$@PR
+Xj<Yf
+C<9x(t
+;D$Hu
+D$tPU
+t$Dh)
+D$$;D$
+C@PWU
+_@9\$Ht
+_^][3
+D$(Ph
+D$ ;D$$
+VWWhl
+_^][3
+_^][YY
+_[9.v
+D$(+D$ 
+H9D$(}
+j XCf
+tmHtQHt
+PtbHtFHu}
+D$.Ph
+D$ Ph
+D$"Php
+PQj59M
+_^][3
+L$,QP
+D$$PW
+_^][3
+ _^][
+_[]^Y
+D$$;D$$
+|$0VW
+D$8PQ
+t$\PW
+D$@PQ
+L$@_^][3
+\$DPSR
+T$0;Ahu
+D$,Wj
+\$(j@X;
+tXj@X;
+f9L$4u
+L$4t4Uj
+9|$,t
+SU@Pj
+D$$t*
+\$$UVW
+u?;T$ sP
+\$0V3
+T$ 9l$
+D$(Pj
+\$$USW
+_^][3
+_^][YY
+u 9l$ u
+D$$WS
+\$ UV3
+9k(t.
+t$8UV
+\$ VW
+l$T@V
+D$<VQP
+D$\VQP
+D$`QP
+D$\VQP
+D$`QP
+D$\VQP
+D$`QP
+D$$PU
+D$\VQP
+D$`QP
+D$TVQP
+D$TVQP
+t$dUS
+t$`RP
+D$\VQP
+D$PPU
+t$`RP
+D$PVQP
+j Y+K
+f3A0f#
+f3A0f
+f3Q0f#
+f3Q0f
+0f3F0f#
+DD$$3
+t$(US
+j Y+K
+_^][3
+VAW9kt
+|$ hp[
+C,^u$
+t$ VSU
+\$ UVW
+@PSUW
+u4VPW
+C,_^][
+T$,_[
+DD$8PR
+D$L;D$L
+D$(9D$,
+GD$,)
+D$L_^][
+@u#WVS
+_^][Y
+_^][3
+L$(QPS
+;D$(u\
+t$(H;
+jdQPW
+_^][YY
+D$$PQU
+D$,PVW
+D$(UPVW
+t,VSW
+_^][3
+l$LUP
+jdPVW
+9l$pu
+9l$lu
+T$LRW
+D$D;D$$
+jdPVW
+D$TPQ
+t$@VPW
+L$PQW
+;\$Pj
+9l$Lu
+9D$$v2
+T$@Sj
+D$@F;t$
+_^][3
+QQSUVW
+_^][YY
+k$9l$\t
+t$lRW
+D$h;D$hu&
+9ntu/
+t$dWV
+D$,PUWV
+D$8;Fh
+;L$<sk
+D$$;l$<tw
+;l$<r
+w$_^][
+D$hPWV
+E;l$$|
+L$(QU
+L$hQPV
+D$ PV
+_^][3
+L$TSU
+L$T_^][3
+D$`PV
+t$(WV
+_^][YY
+L$\Q3
+D$HPQ
+D$ Ph
+t$tUW
+t$|UW
+D$ Pj
+t$xUW
+D$\PUWSQ
+Ht%Ht
+Ht'Hu
+D$<UVW
+hdA;K
+t$$9>t
+;l$ s
+L$89X
+;l$ s>
+t$(SU
+QQSVW
+_^][3
+D$0F;
+t$`VS
+D$,PS
+D$HPVS
+L$,;L$H
+t$4QVS
+19>t-
+59>t1
+D$H98tw3
+D$ PVS
+t$ WV
+t$,SUW
+_^][Y
+D$8tMj
+t$@PS
+L$$QPS
+t$<US
+D$$PWS
+t$4Wj
+D$(PVS
+PVj4U
+_^][YY
+wh@VW
+f;D$$u
+f;D$$u
+l$$~c
+f;D$$u
+E;l$ |
+_^][Y
+JTSUH3
+tgVWS
+|";l$
+L$$WUV
+kD$D4
+A.+D$$i
+G.+D$$i
+D*0PVWS
+4;|$@r
+F`^][
+L$4!|$
+L$@Qj
+D$(Pj
+t$`SV
+DD$lPSV
+L$lQP
+l$,s6
+_^][3
+t$(SW
+][_^Y
+UVWkK
+f9P,v
+f9N,t!PW
+t$$VS
+^_][YY
+CtPQVW
+~{USVW
+9ELuZ
+f;D$ u
+f;D$ u
+f;D$ u
+f;D$ u
+UVWkk
+of9~,u
+F,f9~,wI
+D$0UV
+t$@W3
+4G;\$
+D$$PUV
+L$<_^]3
+uUSkX
+l$HV3
+|$Tj4[
+L$$Qj
+s#j4]
+A.;D$
+L$LVPQ
+D$<PS
+H0j4X
+tKv~<
+L$LRPQ
+D$ SUVk
+t$(Sj
+t$(Sj
+D$(hp[
+u-9L$
+4;|$ 
+Wk~D(
+|$(S3H0
+u%htD
+D$(j(Y
+\$(jl^
+A0@tZ
+E9iDuI
+D$LSVW
+D$$PRj
+D$$P3
+D$ P3
+D$8kPL8
+D$\P3
+D$(P3
+L$(;L$8r
+l$TkU
+f9p,t
+D$$P3
+t/f9^,t)
+D$,PVW
+D$HPQW
+w$QVP
+t$<h)
+D$XP3
+D$D@k
+D$X;t$TsW
+f9V,t5
+L$0QPSVW
+t$8VW
+L$0QPSVW
+t$8VW
+L$\sd
+|$Pt@QRPS
+4;t$Xr
+u<QRPS
+4;t$Xr
+<4uKV
+@( u"
+_^][Y
+D$0PSV
+T$$k@
+t$$QV
+f;D$(u
+L$$_^
+HPk@L8
+q4j8H3
+A4PQVWU
+|$ !\$ 
+t$(PU
+PSjXV
+A4PQVWU
+SPVWU
+PSjHV
+A4PQVWU
+_^][3
+F8[_^
+j*Xj%Y
+]UQQVW
+D$ 9D$
+t$4VW
+t$<VW
+t$4WP
+D$0kG
+t$4WP
+t$4WP
+t$4WQ
+Cd_^][
+u>9~0t9
+D$0PQS
+_^][3
+t$$PV
+A\ u7
+][9AHu
+B$;A$u
+B(;A(u
+4VWP3
+l$$Pk
+D$$f9y
+_^][YY
+\$4UVW
+D$4uY
+D$HPUj0
+D$HVW
+t$HVW
+D$$PU
+t$$SWVU
+L$ PW
+t$HPW
+f9h,v
+L$ UW
+D$@;l$$
+t$LUW
+t$4UW
+l$DVU
+AX+APj
+9A8u59A<u0
+AHPkA4
+t$,VWU
+BRVPU
+L$ ;Nl}
+@;Nl|
+_^][Y
+N$+A0Y
+t$(WV
+PSjXW
+D$(P3
+.f9N,t@
+F0@t:f
+t$,WVS
+t(HHu$
+QQSUV
+f9GhtX;
+Gl_^][YY
+t/j W
+t'j W
+t$$PV
+_^][Y
+u0WVS
+tMSkY
+t$@VU
+t(9|$
+t$HWWWj
+t$XVU
+t$<VU
+D$\Xj
+D$PPUhP$
+Xf9D$
+D$pPh,'
+f9D$t
+9t$xt
+D$\Pj
+!t$8h
+D$0Pj
+ED$Dj
+D$0Ph
+_^][3
+]PhP$
+E4Ph`
+El@t&
+M@_^3
+f9G,t
+D$,Pj
+D$8Pj
+D$$PSV
+F,]_^[Y
+t$,QW
+L$lQPW
+t$$hP$
+_^][3
+t$0hP$
+D$8Ph
+D$,r<
+8D$Wu
+D$,f9D$Tu
+D$0Yf
+D$ PU
+D$8Ph
+_^][3
+QSUVW
+@4j@]
+_^][Y
+PPPSP
+PRhP$
+D$8Phd)
+t$4WV
+D$8Ph4)
+t$HWV
+D$0Uj
+UUQUUPWV
+_^][3
+PPPUS
+t$4WV
+B,#D$
+D$TPVhP$
+_^][3
+D$@PW
+D$,PWS
+D$09D$
+QPQPS
+t$ WS
+t$ WS
+D$<PQW
+D$HPQW
+t$8WS
+Xf9D$(t"
+t+9l$4u
+QPQPS
+t$HWS
+f9L$(u
+QPQPS
+l$(SS
+D$0SP
+t$ SSUV
+t$PUSQV
+SSShI
+9l$ps
+L$T_^][3
+t$DWS
+t$PVWS
+t$LQP
+t$\WS
+t$@WS
+t$<WS
+t$TWS
+t$8WS
+@`9x<u
+t+#t$4V
+L$8^][3
+D$,Phd)
+D$,PhL)
+SSQSSP
+PPPVS
+_^][3
+mH9^`
+_^][YY
+t SPU
+QQSUV
+_^][YY
+t(kPh
+\$0VW
+QVPVVV
+f;D$,
+f;D$(
+|$ ;D$$s,
+t$(RPV
+t+;\$(t%3
+t$@PW
+t$@PW
+D$TWP
+t$$SW
+ Pj0WWW
+t$(SW
+u!SSj
+D$8j8Y
+_^][3
+t$$W3
+t$,RVP
+\$4VWU
+t$PWVU
+t$(VU
+QSUVW
+PQPQU
+_^][Y
+T$$t`
+l$4Pj
+D$(Pj
+D$(Pj
+_^][3
+D$$PWh`
+PSj4V
+PQj4V
+D$(+L$ 
+_^][Y
+D$0PRUS
+D$"j.P
+D$@Pj
+D$DPh
+T$$tFj
+t$ PW
+QQQQj
+QUhP$
+D$HVP
+D$HVP
+L$ VS
+_^][3
+t$@US
+PPPhI
+f;D$0u
+D$<P3
+L$ QP
+D$$PUS
+j8QUPS
+_^][3
+D$HPjA
+D$|PSWV
+L$0RQ
+PPPhI
+PPPh{
+u QQQhM
+Z9L$(uHR
+L$,tA
+ uUPV
+PPPhX
+t$ PV
+t$ PV
+FT^][3
+QQQhX
+VUUPUSUU
+L$8tO
+\$ P3
+f;D$$u
+f;D$$u
+t$,hP$
+D$$QPQ
+PPPhI
+D$LPh
+F|QhP$
+tsf9/tn
+j.Zf9TMZu
+PWhP$
+T$8Pj
+D$ PW
+D$ Ph
+D$ Pj
+_^][3
+_^][Y
+t$ PV
+_^][3
+WPWh#
+D$Lt"j
+l$ VU
+D$4kh4
+9l$pt
+sNj4Y
+T$09T$
+\$@s +t$8
+D$897u
+;\$ r
+HtfHt
+Hu49D$0
+f9D$$t
+L$LZ;L$8
+_^][3
+D$PPW
+t$L;t$X
+;t$Xr
+t$L;t$X
+D$HSQPU
+L$(QWj
+VVVh5
+HtoHHt@Ht"Ht
+<)te<*ta<+t]<,tY<-tU<.
+f9L$ t
+(f;D$
+tOf;L$
+f9.u4f9/u/+
+QQSUV
+t4f;D$ t-
+tff;D$
+t>f;D$
+j!Yf;
+D$ f9
+_^][YY
+(tdWU
+u[j*Xj%Z
+<-uzj U
+</tC<0t?<1t;
+</t.<0t*<1t&j U
+QSUVW
+kL$$4+u
+Q_^][Y
+$SUVW
+l$<;l$
+D$(f;
+l$<;l$
+\$$;\$0
+\$8UVW
+D$(PU
+D$,kD$ 4P3
+D$ P3
+f;D$4u
+j<Yj>f
+t$$;D$,
+F.;D$ 
+^]_[Y
+L$<f;
+G.Pj4Y
+G(_^[
+t$0SSSh~
+\$hUVW
+tPPWS
+L$(QPS
+D$<PESf
+u j S
+D$PPRS
+D$(PVS
+L$XPPPh@
+L$l_^][3
+l$@SVU
+D$,PSU
+D$DYf9
+f;D$ u
+f;D$ u
+L$LQPVU
+;L$8s
+t$8PPPh|
+;|$H~
+D$,US
+t$LWUS
+_^][3
+QQSUVW
+_^][YY
+PPPhF
+|$8QVW
+D$8HPVW
+kD$D4
+L$$P3
+\$ 9L$8
+D$,PSW
+t$HPVW
+;L$8}
+l$@_^
+t$4RRRh}
+QQQhK
+MX_^3
+D$,PQ
+twSUW
+9D$,_
+D$<P3
+l$4PU
+t$dWV
+t$pWV
+t$hWV
+P@PWV
+9OljMXj1Y
+9ppjMXj1Y
+t$(VWS
+t$lWQ
+D$<PWU
+D$<PWU
+D$<PWS
+L$d_^][3
+;|$$r
+^][YY
+_^][3
+[_^]Y
+Y^_[]
+T$8VPQ
+D$(h8
+L$$^3
+F$!T$$
+u(QVU
+L$ QSP
+L$ QSP
+$SUVWPj
+_^][YY
+f9x,u
+_^][Y
+_u&9x
+_^][3
+PPPhd
+j"Yf;
+u!f9L~
+Oj;XPV
+j;Xf9
+D$(Ph|
+D$`Phd)
+D$`PhL)
+D$,Xf9D$ 
+@f9D$
+D$,Ph
+_^][3
+j Xj@
+D$(UPV
+L$P_^][3
+D$$Ph|
+]_^[Y
+D$4Ph
+f;D$$u
+_^][3
+G.VVV
+D$ u,
+l$0u4Q
+L$@SUVW
+D$ VP
+L$D_^][3
+A$;A ~
+]_^[Y
+D$DPh4*
+t,9T$(u&9|$
+PPP@P
+DD$lQP
+t$,PW
+D$,VVVWP
+f!D$,~
+D$$j`Z
+;|$lr
+;D$t~
+uBQSU
+|$x@3
+ED$hP
+RRRRRU
+BRPPU
+PPP9C
+D$Lf9
+t$,SBU
+BRPPU
+PPPPPU
+j`Xf9
+j[Xf9
+|$dPPPj
+L$|QP3
+QQQhO
+PPPhx
+PPPh`
+PPPh^
+QQQhd
+PPPh_
+PPPVPP
+PPPh_
+D$,Rj
+RRRhs
+PPPht
+PPPPPU
+L$LWQV
+PPPhM
+VVVhd
+RRRhZ
+VVVhM
+9t$PtK
+VVVhK
+VPRhr
+VVPhQ
+t&VVVha
+t;9],
+9],tF
+VVVhZ
+_^][3
+j`^f;
+N\;NXt
+9^<u!SSSh
+u:PPPj
+u!VVVh
+\$pj8X
+D$ 9p
+u:VVU
+D$ 9p
+xvVVV
+l$$j8^;
+D$4PU
+L$`_[3
+Ht"Ht
+9^<u"SSSh
+9^LuUSSSj
+B9^Lt
+xBSSSj
+_^[]YY
+xcSSj
+x)SSS
+D$0PSj
+srSSSh
+u9f;L$ t
+D$|PhX
+D$|PP
+D$hPW
+D$|PP
+D$ Phc
+;\$ vh
+D$,PV
+j Xj@Yj
+Zf9T$
+D$LPU
+|$l3'
+tEHt.j
+D$8Qj
+_^][3
+F8UUUSW
+x)UUUU
+UUUSW
+L$$_^[3
+L$(_^][3
+9~ls&
+Fhu#Pj
+D$4PQS
+GPPQUj
+l$,US
+_^][YY
+9|$,uJ
+PWWWh
+|$ 9_
+_^][Y
+:D$ t
+D$ Pj
+t SSWSS
+t$(WUS
+D$tSP
+;9|$pt
+_^][3
+D$0Ph
+D$tPQ
+L$hQP
+9\$`t/
+tY9\$tvS
+\$ SW
+t$(hP$
+UPUUU
+t$,SW
+t$0SW
+\$<UVW
+D$(Uj
+D$,Ph
+D$,PUVW
+t$ VW
+D$(PUVW
+SSSVW
+L$<_^][3
+f;D$(u
+f;D$(u
+f;D$(u
+f;D$(u
+L$<f;
+D$8kB
+f;D$0u
+f;D$0u
+f;D$0u
+SQj4+p
+;D$@s
+_^][3
+T$(kR
+D$4P3
+D$0P3
+D$(P3
+D$8P3
+D$,kH
+L$Pt)
+D$`PUS
+D$PPV
+D$,9P
+A0@u=<
+F90tX
+D$<PQS
+D$@;8t
+D$,j4^
+;D$ s[
+;D$ r
+_^][3
+QQQh_
+l$ VW
+|$$UW
+tmf91th
+tsf91tn
+t$,USW
+G\_^]
+l$ QU
+f9q,t
+kl$04+
+F j4X
+D$0Ju
+D$$^]
+t$8VU
+D$0PWU
+Af9H,v
+t$0PVU
+t$ Wk]
+t$0USV
+D$$83
+D$,Pj
+t$$USW
+D$ Pj
+t$$USj
+et Ht
+PPPVU
+D$LPV
+D$8Ph|
+D$8P3
+D$,PSW
+D$(EPUSW
+L$ f;
+~!f9l$$|
+D$4PV
+D$ Ph|
+D$,PhX
+D$(Phd
+D$$WVS
+Zf9D$
+D$ Pj
+Xf9D$
+_^][3
+D$,Pj
+D$,Pj
+D|$$W
+D$ PVU
+D$(PS
+D$ PVU
+_^][3
+D$ PV
+_^][3
+t)j;V
+PPPh?
+_^][3
+f98t#SVj;[
+@tO;^
+(f9^h
+f9^D~
+f9FD~
+f9Fh~
+t$(QW
+_^][YY
+t$<VVVVVV
+t$0SV
+Ht+Ht
+X9D$t
+D$@SPU
+D$HPU
+D$4PU
+D$0PU
+PVVhl
+j<E_f9s
+u1f9s
+u#f9s
+ueVVVh
+PVVhl
+_9|$tr:S
+L$DQP
+_9|$ts
+L$DQP
+L$X^[3
+u$VVVh<
+x*VVh
+_^][3
+SVWhp
++D$(3
+A9Htu
+D$ Pj
+!T$,j
+D$ SP
+D$ SP
+\$\PU
+D$0PU
+D$|j.P
+_^][3
+t$ WSP
+t$$WSP
+D$,PQ
+ub9L$\u\
+f9Chu1f9CDt
+9|$\t
+T$H;l$l
+QUPSV
+jcXf;
+u.j X
+D$,VP
+_^][3
+xKUV3
+x)UUU
+0SUVW
+t$4f;L$4u
+;L$,s
+L$HSUVW
+D$4u$Vj
+L$L_^][3
+[_^]Y
+t$8SV
+D$<PS
+\$8UWS
+D$Dh\
+9D$,u
+t$$SPP
+_^][3
+t$8SV
+t$8SV
+t$8SV
+t$0SV
+t$8SV
+t$8SV
+t$0SV
+t$8SV
+t$0SV
+t$0SV
+L$$Qj
+D$4PV
+!\$(3
+j.[f;
+tFVHt
+j2^95
+u=QQPh/
+D$8P3
+D$8f;
+D$0Ph
+L$<QP
+D$ PQV
+D$<SRP
+D$$PV
+f;D$4u
+f;D$4u
+f;D$4u
+f;D$4u
+f;D$4u
+f;D$4u
+f;D$4u
+f;D$4u
+B;l$$
+D$4PS
+f;D$4u
+D$4PS
+f;D$4u
+f;D$4u
+D$4PS
+f;D$4u
+f;D$4u
+D$4PS
+f;D$4u
+f;D$4u
+D$4PS
+f;D$4u
+D$4PS
+D$4PS
+L$ SUP
+D$<@P
+_^][YY
+D$ VW
+D$8f;
+D$0Ph
+D$<QP
+Dl89D$$t5
+xjVVj
+xAVVj
+_^][3
+t@HHt
+D$,Ph
+D$,Pj
+D$(f9(
+YYj_[
+f9/t4j
+f9,7v
+D$$f9u
+D$`j(P
+D$4PS
+D$$Pjd
+_^][3
+D$ Pj
+D$ 9h
+D$ 9(u:
+D$ WV
+D$ Pj
+Pj~SU
+Xf9D$ u
+Xf9D$
+t$$SUj
+D$LPjcj
+t$$SUQ
+D$@Pjcj
+t$$SUj
+D$PPj
+t$$SUj
+D$0Pjcj
+t$$SUj
+t$TPW
+PPPSU
+_^][3
+\$$UVW
+D$ Pj
+D$0Pj
+D$XSU
+D$4PU
+L$`][3
+f9x,t
+3f9j,r*
+^[_]Y
+9D$$u
+^_][Y
+L$0QPV
+f;D$$
+_^][3
+Ht!Ht
+t$(@W
+tgHt1H
+@f9E,
+@f9E,
+f!K0Wf
+S(f!C03
+j @Wf
+|$$t2
+f9h,v
+4VQPW
+QQQQPW
+D$<PRW
+t$$Pj
+Ht!Ht
+PPPQSW
+QPPQSW
+s-j4Yf9F,v
+QQQQPW
+_^][3
+jMYjSf
+VWj&Yj
+D$8UV
+D$0PU
+_^][3
+D$,VW
+D$TPj
+|$ 9|$
+D$,Ph
+PjAX+
+D$,Pj
+D$,Pj
+_^][3
+D$\Ph|'
+D$lh 
+L$@_^][3
+_^][3
+C PQU
+f;L$(
+L$HQh
+L$lQP
+L$ UP
+@f;D$(
+D$(PUVS
+l$,UVS
+f;D$4
+D$$Ph
+D$HPS
+f;L$4
+u|9npt-
+_^][3
+`PPPh
+_^][3
+_^][YY
+^\9^|t
+n$9n`t
+nh9nxt$9
+nlPSW
+D$(PUSW
+D$4PUSW
+D$HPUSW
+PPPSW
+D$<SU3
+l$,f9
+\$8f9V,t.
+F( t#VS
+L$@f9O,
+t$LSV
+t$\SW
+D$@P3
+D$HPj
+D$XPSV
+f;D$0u
+t$LUS
++D$$Y
+D$8+C
+UUUWS
+|$ WSV
+f;D$ u
+l$,UWS
+tjQh\
+4;t$ r
+PPUWS
+QQPQWSU
+l$(BV
+|$,Rh
+t$,PU
+\$0SW
+_^][Y
+9l$ t
+f9V,t1
+t$,PWSV
+X][_^
+\$8UVW
+HHt`Ht
+D$TPW
+\$HhT
+t+~)3
+PVVhl
+xkt)~'
+PVVhl
+_^][3
+f;D$ u
+Wj.XPS
+t$ SU
+PPPWV
+_^][Y
+Ht,Ht"
+|$,Qh
+t$<VW
+t$<WVU
+t$<WV
+t$<WV
+t$<WVS
+t$<WVU
+t$<WV
+t$<WV
+t$<WVU
+\$4WS
+t$<WVS
+|$4VV
+t$,WUS
+_^][3
+D$(PSU
+t$0VW
+D$0uM
+0PQVW
+D$,PVW
+D$(f9M
+9l$$t
+__^][
+f9P,v
+_^][Y
+D$4Pj
+t$0VW
+_^][3
+j'Xf9
+j'Xf9A
+@9L$ 
+t$,RV
+D$(!|$
+L$4QPU
+t$0QU
+D$ P3
+_^][3
+Yj@XRh
+D$<Pj
+T$DVW
+Xf9D$$}
+L$(Pj
+L$DUWQ
+t$(UWj
+t$(UWS
+_^][3
+D$(PV
+_^][3
+_^][3
+\$4UV
+|$DUUUWS
+D$ PUWS
+]@f9l$
+tijYXf
+@f9D$
+D$,Pj
+D$,Pj
+xof9l$
+|$$.t5h
+L$8_^][3
+PPPSU
+VWSUj
+D$ PWSUj
+Yf9L$ }
+D$(PjcQWSUj
+_WVj.
+xHf9}
+x"f9}
+D$(UQPW
+L$ QPW
+D$$PjZj
+D$4UP
+PUhH'
+xOUUU
+9\$@t
+\$@9\$
+_^][3
+D$ VP
+_^][3
+Pj2SW
+Pj1SW
+Pj4SW
+Pj3SW
+Pj0SW
+PjASW
+Pj=SW
+Pj<SW
+Pj:SW
+PjCSW
+PjFSW
+PjsSW
+x%f9l$
+D$0Pj&SW
+Xf9D$
+jNXf9D$(t
+jFXf9D$(u
+D$0Pj
+Xf9D$
+u@jYYf9L$(t
+jNXf9D$(t
+D$0PjZSW
+Yf9L$
+jYXf9D$(t
+jNXf9D$(t
+D$ Pj
+Xf9D$
+@f9D$
+D$ PSW
+t$ SW
+D$$Pj
+t$ SW
+D$ Pj
+t$ SW
+L$8_^]3
+t$4SU
+Xf9D$ }?
+t$$SUj
+^_][Y
+PQjxR
+D$ PVU
+t$$VU
+t$,UP
+Xf9D$<}X
+t$,@P
+_^][3
+t$(UP
+t$<UP
+)9L$du#
+t$<UP
+f;D$Pu
+f;D$Pu
+t$,SUW
+D$0Pjcj
+t$,SUW
+Xf9D$(t
+Xf9D$(t
+Xf9D$(uu
+t$,SUW
+D$<Pjcj
+t$,SUW
+D$@Pjcj
+t$,SUW
+D$HPjcj
+t$,SU3
+\$DZf
+Xf;D$(u
+t$tUW
+D$pQP
+C f98
+D$hPWW
+C f98t
+@f9D$
+D$(PW
+|$Tt93
+D$#Ph
+PWhP$
+D$#Ph
+PWhP$
+t$$UP
+Xf9D$0}C
+_^][3
+|$ WU
+L$<Pj
+L$0WUQ
+D$,Pjcj
+t$(WUV
+D$$Pjcj
+D$HPSU
+t$(WUR
+L$(Pjcj
+D$(<At <D
+D$XPjcj
+D$TPjcj
+D$HPSU
+PPPSU
+_][^Y
+_^][3
+D$2PV
+_^][3
+HteHtXHt5H
+SSSSS
+PVSSSS
+PVhX'
+PVhH'
+T$4SUV
+ET$<RS
+D$HPQV
+WVj4U
+PRj4U
+9L$$t
+D$ Pj
+D$0Pj
+;D$,u
+_^][3
+D$ t 
+D$8Pj
+D$DPj
+D$<PV
+D$@PV
+L$8j.Xf
+D$<PV
+D$<PV
+D$<PV
+D$<PV
+D$HPV
+D$HPV
+D$HPV
+D$HPV
+D$HPV
+D$HPV
+;D$$t
+D$D_^]
+D$ PV
+D$ PV
+D$ PV
+D$ PV
+D$ PV
+D$ PV
+f;D$<u
+f;D$<u
+t$8UVW
+f;D$<u
+f;L$ t
+L$<Q3
+D$0P3
+D$8PU
+D$8PU
+D$8PU
+D$8PU
+D$0PQVUW
+PkD$$
+_^][YY
+VUWSQ
+\$$;L$
+D$0SV
+f;D$,u
+D$8Pj
+D$@PV
+D$@PV
+D$8h|
+T$0CC
+WRPQS
+ PQRU
+t$$UP
+t$,SU
+t$,PQVSU
+t$$VSU
+_^][YY
+D$( t
+]_^[Y
+l$,VW
+T$4uV
+ PSRW
+t$<WP
+t$<USW
+t$<USW
+t$4QU
+HHtBHHt6
+9|$<j
+9D$<j
+D$@VP
+L$DUQ
+D$4Ph
+9L$<u*9
+D$DPQ
+D$TPWS
+_^][3
+D$XPV
+@f9D$Pu
+D$4Ph
+t$0t"V
+D$HPU
+^[_]Y
+L$<SU
+l$HV3
+L$(Qj
+L$8_^][3
+~w(j.
+Fj Xf
+[_^]YY
+_^][3
+D$$Ph
+l$8VW
+L$0_^][3
+_^][3
+_^][Y
+D$$S+
+L$0kBt$UV
+;l$,sj
+t$8VS
+D$(WjcQ
+t$,SP
+_^][3
+t$,USW
+^]_[Y
+\$0SV
+t<WPV
+sa+l$ 3
+4FXj?f
+l$$j Xf
+^][YY
+smSVh`
+D$(PSU
+D$$PSU
+D$DPQ
+D$(PR
+_^][3
+YYHt*Ht
+HtoHtB
+D$\Ph
+D$`Ph 
+Ht\Ht)Ht
+HuWhd
+_^][3
+l$0V3
+Ht*Ht
+_Ht.Ht
+Hu9QhX
+L$(^][3
+L$(QP
+L$(QP
+HtUHHt-
+D$(Pj
+^][YY
+uo9+uk
+Wf9Y,u
+L$ QPS
+f9N,u
+f9q,t
+t$(8H
+L$ 9L$
+L$ j4
+s6j4[
+\$8+|$
+QSUVW
+_^][Y
+f9h,v
+D$ jd
+f!F03
+F,C;\$$
+j4Xj4
+\$$9_
+D$(PS
+j4Zf9K,t
+D$,SW
+T$$;W
+_^][3
+|$<Pj
+D$8Pk
+@0@t2
+0f!x0
+D$0PVf
+t$ ;\$$
+u"hp[
+D$ Pj
+D$ Pj
+D$ ][
+E.:F.u.
+u"hp[
+{0j43
+j?@Zf
+UVWks
+HHuEk
+f9B,t!
+|$(QPU
+T$ QPU
+L$(QPU
+_^][YY
+t8PVW
+9|$0u
+SSSWV
+USWQP
+_^][Y
+QRPVS
+QRPVS
+QRPVS
+t$(PW
+t$0PW
+j`Zj[Y
+t$(PS
+L$,j`
+j[Zf;
+t$8PS
+QRPVU
+QRPVU
+QRPVU
+QRPVS
+t$(PVS
+t$,PVS
+j`Yj[Z
+j`Yf;
+j[Yf;
+t$0PW
+L$,VQ
+RRQPRS
+D$hPWhP$
+D$@f;
+D$hPj
+D$,Pj
+_^][3
+FP;FT
+t$0SU
+t2HHt
+WWWVSU
+D$tPVWS
+D$DPVWS
+D$xPWS
+]_^[3
+|$ E=
+D$,PVS
+T$$VW
+_^][3
+t$0WS
+D$D9t$\u
+D$$PSVW
+D$0PSVW
+D$0PSVW
+D$0PSVW
+D$0PSVW
+l$xVU
+t$(VU
+t$,VU
+QPVUS
+l$,W3
+D$$Pj
+9L$8t&S
+D$0^_]
+t$ VU
+t$$VU
+tUHHus
+~$\rI
+t$ h 
+D$,PVS
+t$0h 
+]_^[Y
+\$,UV
+t$8WVS
+D$<PVS
+t$$PP
++_^][
+EVWSh!
+PPPVWS
+t$$WVSUh
+(u/Wh
+D$,PVSUh
+wPWVSU
+t$0SU
+~$\r!
+]_^[YY
+D$(PV
+D$ PVW
+t$<SSS
+t$<SSS
+1_^][
+D$\PVWU
+D$,PVWU
+_^][3
+D$DPVWS
+D$DPWS
+L$p]_^[3
+u"C=J
+D$TPVWS
+D$$PVW
+9L$ UP
+_^][3
+f;D$ t
+D$$Xf;
+j+Xf;
+j-Xf9D$ u
+^_][3
+t$ WV
+D$$Wh
+D$4PVS
+t$8h"
+D$,PVS
+D$(PVS
+D$ h"
+\$HUV
+L$H_^][3
+E;kT|
+L$H_^][3
+QQSUV
+t$ W3
+9|$(t V
+D$ h"
+D$ h"
+t$4h"
+_^][YY
+D$ h"
+D$ h"
+D$$Wh
+t$4h"
+t$$VS
+D$ h=
+t$8UWWS
+D$ h=
+D$ h"
+;tR=g
+t$(WQS
+79(t(;t$$r
+;D$$r
+_^][Y
+t-9+r
+D$(WQ
+_^][Y
+_^][YY
+t!;D$$r
+t!;D$$
+t$$USV
+tf;D$ r
+;D$ s
+T$(t%;D$ 
+D$$PS
+PVj(S
+D$\PW
+D$\PW
+D$ PVW
+D$<Pj
+D$$PS
+D$$Pj
+D$LPj
+t$ PVW
+L$@92
+D$PPj
+t$DVW
+D$ Phx
+D$ Pj
+D$ f;
+D$ Pj
+L$$QQ
+D$ P3
+D$ Ph
+|$0PR
+;|$$u
+D$<j)Yf
+Xf;L$0u
+PPPhd
+D$0f9
+D$ UPWQ
+D$\PV
+f;L$Du
+L$0f9L$L
+D$`PS
+D$ UPWQ
+D$`Pj
+D$`PW
+D$`VV
+Zf9T$,
+D$`PW
+D$\Pj
+D$ UPWQ
+D$`Pj
+D$\Pj
+D$ UPWQ
+j XPh
+D$ UPQR
+D$ UP
+D$ UPWQ
+D$ UP
+L$$QP
+Xf9D$,
+D$ UP
+D$ PWQ
+D$ UPWQ
+D$ UPWQ
+VUPWQ
+D$`Pj
+Xf9D$,tb
+D$ UP
+D$  t%
+D$ PW
+D$ UPWQ
+D$`PW
+D$\Pj
+L$(ubf;
+u`9t$<
+Xf9D$,
+D$ UPWQ
+D$ UP
+D$$PR
+D$$PQ
+D$ PW
+D$`Pj
+D$`PW
+D$\Pj
+D$ PW
+D$ PW
+D$`Pj
+D$TPW
+D$ PWQ
+D$`P3
+D$\PW
+L$(f;
+D$ PW
+D$`PW
+D$\Pj
+T$hj;[;
+f;D$Pt
+_^][Y
+SWVh:
+_^][Y
+j.Zj*f9TA
+usQQQ
+D$$PU
+j.]f9(t
+[_^]Y
+q RSW
+t$DSW
+;l$,r
+t$8VW
+\$4;\$,
+8.t(V
+tzWWWWWWW
+WVSj;
+E @u(
+D$(Pj
+t)Ht#
+u"WWWhm
+^]_[YY
+j[[j`]f;
+QPhP$
+L$ _^][3
+j`Zf;
+;t$$w
+;t%=1
+j][f;
+E$FVPU
+0_^][
+QQQhd
+j"[j']
+f;L$ t
+_][^Y
+t$(VW
+t$(VW
+t$(VW
+[^]_Y
+tFHt$
+t$(SUWV
+A$_^]
+|$0WSUV
+t$4SU
+PUWSh
+^][YY
+j@Zf9
+j@Yf9
+=uThD
+j@Yf9
+_^][YY
+D$@SU
+D$(PVWU
+=u)hD
+;\$Xt
+L$P_^][3
+D$0SU
+t$4Wj.3
+j.Zj\Y=
+t#j3S
+\$$f;
+j[[f;
+s j:Yf;
+j\Yf;
+j.Yf;
+j#Yf;
+j`Yf;
+t?j[Yf;
+j`Zf;
+t!j[Zf;
+tof;D$
+s j:Yf;
+j\Yf;
+j.Yf;
+j#Yf;
+f;D$$t
+j`Yf;
+j]Yf;
+f;D$$t
+j`Zf;
+j]Zf;
+j\Xf9D$
+s%j.]f9*u
+L$,_^][3
+t$LUV
+D$@UVW
+T$,!l$(
+f;D$8u
+t%j[Xf9
+D$$j]Yj
+D$D+|$@
+L$(_^][3
+D$@PW
+f;D$,u
+L$$;M
+L$<Qj8
+D$@!9!83
+l$Hj@Yf9
+D$\j@Yf9
+D$,Ph
+D$<Ph
+D$<Pj
+D$<Pj
+t$LSP
+VSShl
+L$(SQP
+D$0+8
+_^][3
+t$0Wj`[
+D$0j.
+j[[f;
+t"f;D$
+f;D$ u
+Ef;D$
+j`[f;
+j!Zf;
+D$0+L$,
+x)UUUVS
+_^][3
+j'Xf;
+j"Xf;
+j`Xf;
+j'Xf;
+j"Xf;
+j][j`
+X_^][
+j.Yj!
+j.Yf;
+j!Yf;
+t$(Wj
+j`Xf;
+YYj.Y
+f;D$$u
+\s89G
+j.Yf9
+f;D$,t
+tFj]Yf;
+X_^][
+sRf9)tMS
+tfHtN-@
+9t$tt
+G!D$t
+u{9|$ttc
+t$DW3
+D$$Pj
+D$$Ph
+t$dhP$
+D$\98u
+|$Lj(^f
+t$(W3
+D$$Pj
+D$$Ph
+t$HhP$
+D$@98u
+QQSW3
+t$<hP$
+D$898u
+D$<Ph
+PVhP$
+D$8j]Z
+9\$Dt
+f;D$4u
+_^][3
+D$@h8
+D$ Ph
+f;D$4u
+_^][3
+D$TPSj
+Y9;u$
+u-j%X
+u-j(X
+u-j&X
+D$DXP
+T$$Cj-
+}-^j-Xf91u
+j*Xf9A
+9)j-X
+L$$th
+D$8PSQ
+L$0f+
+j/^j*Z
+tXj*Zj/^
+Yj#]j_Y
+j_Yf;
+QQSUV
+HtTHH
+HHt(HH
+_^][YY
+9W9l$<t_j
+w^QVUW
+|$$-u-
+@_^][
+A@;D$
+El$0Wj
+jcXf;
+jcXf;
+t$4QVS
+t$4QVS
+uAUWR
+t$4QVS
+@_^][Y
+t$4QVS
+t$4QVS
+t$4QVS
+t$4QVS
+t$4QVS
+t$4QVS
+t$4QVS
+t$ QP
+T$ W3
+l$(AV
+Xf9L$
+D$ j9Y
+5f9L$
+Zf9T$
+^][_Y
+t$,WVPP
+t$,WVPP
+L$HQP
+L$HQP
+D$LPV
+D<D-G@
+D$ Xf9
+D$HPQ
+AjbXf9
+D$HPj
+D$@Pj
+D$@Pj
+D$HPV
+D$Dj.P
+D$Dj.P
+D$TPQQ
+D$ Ou
+PQj+Xj-Y
+j+Xj-Y
+j+Xj-Y
+j+Xj-Y
+Qj+Xj-Y
+Qj+Xj-Y
+Qj+Xj-Y
+j+Xj-Y
+j+Xj-Y
+j+Xj-Y
+jbYf9
+D$(jEV
+|$ VPW
+PVUWR
+D$$PVU
+t$(PWV
+\$(Bf;
+nj_Xf#
+jTXf;
+$_<St&;
+nj_XjDf#
+jTXf;
+jD^f;
+D$@PWQRV
+j;Yf9L$@
+D$(Y+
+f9D$8
+f;L$4u
+f;t$,
+f;t$0
+f9l$@u
+f9D$8u
+kD$><
+_^][3
+t|f;|$4u
+f;l$8tnf;l$Dtgf;l$4u
+f;|$8tYf;|$DtRf;|$$u
+f;l$ tDf;l$
+t=f;l$$u
+f;|$ t/f;|$
+f;l$0t
+f;l$$
+if;l$$
+f;l$$
+f;l$$
+D$LPV
+D$,QP
+L$HRRho
+t$@RR
+D$ PQV
+f;l$$
+D$<PQV
+f;l$$
+D$<PQQ
+f;|$4tLf;|$DtEf;|$8t>
+_^][3
+D$(PQ
+D$$PQ
+T$ PPho
+t$(PP
+_^][3
+t&SSj'
+PWVSS
+~%}u'F
+L$T_^][3
+PVRGWU
+D$XXf
+D$8PVR
+kt$H<
+D$DUW
+D$HUW
+D$DUW
+D$4PVQR
+t$$UV
+t$$UV
+_^][3
+L$ f9~
+D$8PV
+ <etSA
+D$ PWV
+D$ PWV
+L$`_^3
+L$x_^][3
+t$$QVS
+D$Gf9s
+D$HPj
+tkf;T$
+D$,PP
+D$dt,
+D$hSP
+PVjbZ
+_^][3
+D$$QPQQ
+Pj+Xj-Y
+L$(_^[3
+t$ QQ
+f;D$,w
+Xf9D$(uLj
+Xf9D$8t`f
+|$8[tX
+T$<YY
+@f9D$(u
+|$8\t
+@_^][
+t$8PSW
+GPhP$
+GPh`$
+GPhD$
+GPh,$
+GPh8$
+GPh$$
+D$|j@P
+\$(PSV
+D$@PS
+FPhp$
+_^][3
+@j0]j
+tDj Z
+Gf9(u
+QQSUV
+D$$_^
+(][YY
+_^][3
+D$ JPRQ
+|$9Ff
+L$$<+u
+9T$ u
+CG;|$
+D$$PP
+_^][3
+RVQUSWP
+_^][3
+VUSRWQ
+_^][3
+T$(t#
+t$$RQUSWPV
+t$4USW
+_^][3
+VQPURS
+D$$PU
+_^][3
+\$HU3
+oD$#VW
+_^][3
+l$$_^
+6QRPj
+tGHt1
+HtL_-
+VWjch
+@}VVi
+L$ QSW
+jxYf;
+jXYf;
+jxYf;
+jXYf;
+uHjAXf;
+SSSSS
+SVWjA_jZ+
+uBjAYjZ+
+Y__^[
+C =02CVu
+B 02CV
+&s]j5X
+WWWWW
+tFVVj
+f98t V
+jA^f;
+tFVVj
+f98t V
+ja^f;
+SVjA[jZ^+
+jAZjZ^
+jjjjj
+QQSVWd
+PPPPP
+j0Yf;
+A_^[]
+Y_^[]
+1N_^[
+Y;=Do
+~pjCXf
+5ntel
+5Genu
+SSSSS
+t/HHt
+j*Xf;
+j*Xf;
+htHjlZ;
+HHtXHHt
+nt'joZ;
+jgXf;
+YYjgXf9
+>0t<NAj0X
+Wj0XP
+Wj XP
+t/HHt
+HHtVHHt
+>0t-N
+,SVWj0X
+u'j0X
+Wj0XPV
+PjdSQ
+-jd[;
+WWWWW
+VVVVV
+SSPQSW
+SSSSS
+SSSSS
+?:uBGW
+} kE$<
+jjjjj
+URPQQh
+SVWUj
+;t$,v-
+UQPXY]Y[
+VVhLD
+<at-<rt"<wt
+tRHtC
+t;Ht+
+j@j _W
+} j@W
+PP9E u
+PVVVVQ
+PPPPP
+QQSVWj
+YY_^[
+tfHtWHtHHt/
+ft!9q
+@_^[]
+< t8<
+t@VSP
+PPPPP
+SPPP+
+FVWPP
+SVWPP
+jA[jZZ+
+~';_t|%3
+;_tr.
+QVWSj
+PWWWWV
+PSSSSV
+r)f;q
+r2f;A
++t"HHt
+9] t"
+SSSSS
+bWWWWj
+PRPQh
+tWhdn
+tHHt*Ht#
+uJSSR
+SSSSS
+t\j=S
+t&9=l
+PPPPP
+PRPQh
+t7QVW
+PPPPP
+msjet40.dll
+DllRegisterServer
+DllUnregisterServer
+MSysAccounts
+MSysGroups
+%$##@_Alias
+ !"#$%&'()*+,-./
+ !"#$%&'()*+,-./0
+22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+"L',b'ta-
+"#$%&'()*+,-./0123456789:;:<=:>BEHSI?JHMINOP_b
+Tgsah
+TFC@ViW
+Z[\]^kFB|l
+AAAAAADDDDDDLLLLLLRRRRRRUU
+$%*R$%d'%'d7%D'%*"%'$%7W7AW72/R
+#&#/&2Y>2/#2#>2/#####&DC)&
+Y0&0)08)&A)&()80(ICI(0F(
+((>+(++(NkN[++k.C.+.X94.994[X.49F
+.14T1TF41_bm1m1
+1bb115_5ni
+5imT5n555
+y5lyl56ls6s
+~}|{zwvutrqpojhgec`^]\ZVMKJHG?<;3-, 
+vendor
+microsoft
+product
+%02u:%02u:%02u.%03lu
+%04d-%02u-%02u
+%04d%02u%02u
+%02u:%02u:%02u
+%02u:%02u:%02u
+%04d-%02u-%02u %02u:%02u:%02u.%03lu
+%04d%02u%02u %02u:%02u:%02u.%03lu
+MONTH
+MINUTE
+SECOND
+MONTH
+MINUTE
+SECOND
+MINUTE
+SECOND
+MINUTE
+SECOND
+SOFTWARE\Microsoft\Jet\4.0\ESDLL
+Assertion failed: %s, file %s, line %d
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+z?aUY
+zc%C1
+-64OS
+.?AVColumnLv@@
+.?AVColumnVariable@@
+.?AVColumn@@
+.?AVNamedObject@@
+.?AVColumnFixed@@
+.?AVColumnFixedBit@@
+.?AVColumnFixedByte@@
+.?AVColumnFixedShort@@
+.?AVColumnFixedLong@@
+.?AVColumnFixedCurrency@@
+.?AVColumnFixedSingle@@
+.?AVColumnFixedDouble@@
+.?AVColumnFixedDateTime@@
+.?AVColumnFixedBinary@@
+.?AVColumnFixedText@@
+.?AVColumnFixedGUID@@
+.?AVColumnFixedDecimal@@
+.?AVColumnFixedBigBinary@@
+.?AVColumnVariableByte@@
+.?AVColumnVariableShort@@
+.?AVColumnVariableLong@@
+.?AVColumnVariableCurrency@@
+.?AVColumnVariableSingle@@
+.?AVColumnVariableDouble@@
+.?AVColumnVariableDateTime@@
+.?AVColumnVariableBinary@@
+.?AVColumnVariableText@@
+.?AVColumnVariableGUID@@
+.?AVColumnVariableDecimal@@
+.?AVColumnVariableBigBinary@@
+.?AVColumnLvBinary@@
+.?AVColumnLvText@@
+.?AVColumnDummy@@
+.?AVCursor@@
+.?AVDatabase@@
+.?AVFile@@
+.?AVTemporaryDatabase@@
+.?AVHashObject@@
+.?AVMover@@
+.?AVIndexMover@@
+.?AVTableMover@@
+.?AUILockBytes@@
+.?AUIUnknown@@
+.?AVCJetILockBytes@@
+.?AVColumnCursor@@
+.?AVIndexCursor@@
+.?AVReferenceCursor@@
+.?AVLvDataOrig@@
+.?AVLvData@@
+.?AVLvDataNew@@
+.?AVPageDesc@@
+.?AVSortMover@@
+.?AVSysObjCursor@@
+.?AVSysColCursor@@
+.?AVSysIdxCursor@@
+.?AVColumnInvalid@@
+.?AVColumnDeleted@@
+.?AVSafeIntException@@
+.?AVbad_alloc@std@@
+.?AVexception@std@@
+.?AVtype_info@@
+.?AVbad_exception@std@@
+mswstr10.dll
+RegCloseKey
+RegEnumKeyA
+RegOpenKeyExA
+RegQueryValueExA
+EventWriteTransfer
+RegEnumKeyW
+RegEnumValueA
+RegEnumValueW
+RegOpenKeyExW
+RegQueryInfoKeyA
+RegQueryInfoKeyW
+RegQueryValueExW
+SetThreadToken
+OpenThreadToken
+GetUserNameA
+ADVAPI32.dll
+DisableThreadLibraryCalls
+CreateFileA
+DeleteFileA
+CloseHandle
+GetLastError
+InitializeCriticalSection
+EnterCriticalSection
+LeaveCriticalSection
+DeleteCriticalSection
+GetLocalTime
+GetTickCount
+VirtualAlloc
+VirtualFree
+VirtualQuery
+FreeLibrary
+GetModuleFileNameW
+GetProcAddress
+GetTempPathA
+GetUserDefaultLCID
+FindClose
+FindFirstFileA
+Sleep
+LoadLibraryExA
+GetLocaleInfoA
+FlushFileBuffers
+GetFileInformationByHandle
+GetFileSize
+GetFileType
+LockFile
+ReadFile
+SetEndOfFile
+SetFilePointer
+UnlockFile
+WriteFile
+HeapAlloc
+HeapFree
+GetProcessHeap
+SetThreadPriority
+ResumeThread
+GetSystemInfo
+GlobalMemoryStatus
+GetComputerNameA
+SetEvent
+ResetEvent
+WaitForSingleObject
+CreateEventA
+CreateThread
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+GetDateFormatA
+GetTimeFormatA
+MultiByteToWideChar
+WideCharToMultiByte
+GetNumberFormatA
+GetCurrencyFormatA
+CreateFileW
+DeleteFileW
+FindFirstFileW
+GetDriveTypeA
+GetDriveTypeW
+GetFileAttributesA
+GetFileAttributesW
+GetFullPathNameA
+GetFullPathNameW
+GetShortPathNameW
+GetTempFileNameW
+GetTempPathW
+SetLastError
+GetModuleFileNameA
+GetModuleHandleA
+GetModuleHandleW
+LoadLibraryExW
+GetShortPathNameA
+GetTempFileNameA
+GetComputerNameW
+GetLocaleInfoW
+IsDBCSLeadByte
+GetCurrentThread
+IsDebuggerPresent
+IsProcessorFeaturePresent
+GetStringTypeW
+HeapReAlloc
+EncodePointer
+DecodePointer
+RtlUnwind
+GetStdHandle
+GetModuleHandleExW
+WriteConsoleW
+RaiseException
+ExitThread
+GetCommandLineA
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+InitializeCriticalSectionAndSpinCount
+GetCurrentProcess
+TerminateProcess
+TlsAlloc
+TlsGetValue
+TlsSetValue
+TlsFree
+GetStartupInfoW
+IsValidCodePage
+GetACP
+GetOEMCP
+GetCPInfo
+ExitProcess
+AreFileApisANSI
+GetTimeZoneInformation
+HeapSize
+OutputDebugStringW
+QueryPerformanceCounter
+GetCurrentProcessId
+GetEnvironmentStringsW
+FreeEnvironmentStringsW
+CompareStringW
+LCMapStringW
+GetConsoleCP
+GetConsoleMode
+SetFilePointerEx
+SetStdHandle
+SetEnvironmentVariableA
+ReadConsoleW
+KERNEL32.dll
+CoCreateGuid
+CoCreateInstance
+ole32.dll
+OLEAUT32.dll
+CharUpperA
+CharUpperW
+TranslateMessage
+DispatchMessageA
+PeekMessageA
+MsgWaitForMultipleObjects
+USER32.dll
+WEVT_TEMPLATE
+Operational
+Error
+Information
+Microsoft-Windows-JetRed/Operational
+External Database open attempted
+External Database open attempt blocked
+);P]3
+CHANl
+Microsoft-Windows-JetRed/Operational
+TTBLP
+TEMPD
+EventData
+Database Path
+Executable
+Database Path
+Executable
+PRVAH
+Microsoft-Windows-JetRed
+OPCO0
+win:Info
+LEVLd
+win:Error
+win:Informational
+TASKX
+taskExternalDatabase
+KEYW8
+Operational
+EVNTp
+VS_VERSION_INFO
+StringFileInfo
+000004B0
+CompanyName
+Microsoft Corporation
+FileDescription
+Microsoft Jet Engine Library
+FileVersion
+4.00.9801.32
+InternalName
+MSJET40.DLL
+LegalCopyright
+Copyright (C) Microsoft Corp. 1993-1999
+OriginalFilename
+MSJET40.DLL
+ProductName
+Microsoft (R) Jet
+ProductVersion
+4.00.9801.32
+VarFileInfo
+Translation
+0 0$0004080
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2
+3 3(30383(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+<4>8>D>H>T>X>d>h>t>x>
+?$?(?4?8?D?H?T?X?d?h?
+0 0$0(0,000<0@0D0H0X1`1h1p1x1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3(4,404x4|4
+; ;$;(;,;0;4;8;X;\;`;d;h;l;p;t;x;|;
+<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+<(=4=@=L=d=p=
+>$><>T>X>\>`>l>
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?h?l?p?t?x?|?
+0(0,04080@0D0L0P0X0\0d0h0|0
+1 1$1(1,181<1@1D1P1\1h1t1
+2(242@2L2X2d2p2|2
+3 3,383D3P3\3h3t3
+44484<4@4D4H4T4l4x4
+5 5$505<5H5T5`5x5|5
+6 6,686D6P6\6t6x6|6
+7 787<7@7D7H7L7X7d7p7|7
+8 8,888D8\8`8d8h8t8
+9(9@9X9d9p9|9
+9,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+8 8$8(8,8084888<8@8X8\8`8d8h8l8p8t8x8|8
+: :$:(:,:0:4:8:<:@:D:H:
+:8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+> >$>(>,>0>4>8><>@>D>H>T>X>\>`>
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5x5|5
+5x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7
+808L8h8
+9,9H9
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+<(<8<H<X<h<x<
+=(=8=H=X=h=x=
+>(>8>H>X>h>x>
+? ?$?(?,?0?4?8?<?
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3(3,3034383<3@3D3H3
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5h6l6
+6$8(8084888<8@8D8H8L8P8T8\8`8d8l8p8x8|8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9l9p9t9x9
+: :$:(:,:0:<:@:D:H:X:\:`:d:h:l:p:t:x:|:
+;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+>p>t>x>|>
+?$?(?,?0?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4t4x4|4
+5 5$5(5,5054585D5H5L5P5`5d5h5l5p5t5x5|5
+6 6064686<6@6H6
+6 7$7(7,70787p7t7x7|7
+8 8(8`8d8h8l8p8x8
+989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+p0x0|0
+0H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7,747<7@7D7P7T7X7\7
+8 8`8d8h8T9X9\9`9d9h9p9t9
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;d;h;l;p;8<<<@<D<H<L<P<T<
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+6 6$6(6,606<6@6D6H6 =(=,=4=8=@=D=L=P=X=\=d=h=p=t=|=
+=0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+`2d2h2l2p2t2x2|2
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4
+t1x1|1
+1l2t2
+3$3L3p3x3
+4$484@4T4\4x4
+5$5,5P5X5p5x5
+686@6\6d6|6
+747d7l7
+848\8d8
+8$9,9D9L9t9|9
+:$:,:P:X:
+;(;0;L;p;x;
+<$<,<H<P<l<
+= =(=@=d=l=
+>,>T>\>
+?0?8?P?X?p?x?
+0$0<0D0\0d0
+101T1\1x1
+2(2T2\2|2
+3,343L3T3p3x3
+4 4(4D4L4p4
+50585T5\5x5
+6$6,6@6H6\6|6
+7 7(7@7H7h7p7
+8$8D8L8h8p8
+90989\9d9|9
+:$:,:H:P:t:
+; ;@;H;h;p;
+<,<\<d<|<
+=,=4=T=\=t=
+>,>4>L>T>l>
+?$?@?H?T?\?x?
+0(000H0P0h0p0
+1 1@1H1\1d1
+2(202L2T2h2p2
+3D3l3t3
+4$4D4L4d4l4
+5@5h5p5
+6$6D6L6`6h6
+7(707H7P7l7t7
+888X8`8
+9$9,9L9T9|9
+:(:0:L:T:p:x:
+;$;<;D;X;`;
+< <4<<<\<d<
+= =4=<=X=
+4L8T8\8d8l8t8|8
+d3h3l3X5\5`5d5
+6$6,646<6D6L6T6\6d6l6t6|6
+7$7,747<7D7L7T7\7d7l7t7|7
+8$8,848<8D8L8T8\8d8l8t8|8
+9$9,949<9D9L9T9\9d9l9t9|9
+:$:,:4:<:D:L:T:\:d:l:t:|:
+;$;,;4;<;D;L;T;\;d;l;t;|;
+<$<,<4<<<D<L<T<\<d<l<t<|<
+=$=,=4=8=@=H=P=X=`=h=p=x=
+> >(>0>8>@>H>P>X>`>h>p>x>
+? ?(?0?8?@?H?P?X?`?h?p?x?
+0 0(00080@0H0P0X0`0h0p0x0
+1 1(10181@1H1P1X1`1h1p1x1
+2 2(20282@2H2P2X2`2h2p2x2
+3 3(30383@3H3P3X3`3h3p3x3
+4 4(40484@4H4P4
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+>`?d?h?l?p?x?
+0 00040<0T0d0h0x0|0
+1 1$1(1,141L1\1`1p1t1x1|1
+2 2$2(202H2X2\2l2p2t2x2|2
+3 3$3,3D3T3X3h3l3p3t3x3
+4 4(4@4P4T4d4h4l4p4t4|4
+5$5<5L5P5`5d5h5l5p5x5
+6 686H6L6\6`6d6h6l6t6
+747D7H7X7\7`7d7h7p7
+808@8D8T8X8\8`8d8l8
+909@9D9T9X9\9`9d9h9p9
+: :0:4:D:H:L:T:l:p:
+; ;0;4;<;T;d;h;p;
+< <$<(<0<H<L<d<t<x<
+=0=4=L=\=`=p=t=
+>$>(>8><>L>P>T>\>t>x>
+?,?0?4?<?T?d?h?x?|?
+0 080H0L0\0`0d0l0
+1(181<1@1X1h1l1
+2(2,2<2@2D2L2d2
+4H4'5>5[5k5
+797d7
+8;8f8
+9=9h9
+9K;f;
+<,<J<c<|<
+<)=4=A=d=}=
+=%>K>z>
+>F?_?
+3O3f3
+3B4w4
+656S6l6
+6$7S7w7
+9&9?9
+:$:::c:
+<"<G<y<
+?B?c?|?
+0B0X0\0`0d0h0l0p0t0x0
+0!1K1c1|1
+2 2$2(2,2024282<2C2\2~2
+2 3C3\3
+4#4<4^4
+6>6E6
+8C8g8
+:;;J;j;
+<#<<<
+<%=h=
+>#><>j>
+?0?S?l?
+0O0b0z0
+:A;`;o;6<
+>??I?Y?
+0<0A0e0l0
+262{2
+334<4|4
+6A7M7T7^7e7~7
+8D8b8
+:C:\:~:
+;P<V<a<
+=&>g>
+50S0t0
+1&1?1v1
+1+2=2[2>3
+3F4c4|4
+7q7x7
+8T8u8|8
+8-9_9
+:.:Z:|:
+;4;9;T;v;{;
+;/<4<m<r<
+0=0W0o0
+041C1m1
+202L2[2s2
+3B3c3|3
+5)5?5i5z5
+7 7&7,767M7r7|7
+8*8?8b8m8
+9Q9Z9n9
+:,:d:w:
+;F;s;
+<S<|<
+<4=d=
+=,>P>
+?P?X?
+0=0E0l0t0
+1A1N1
+1!232I2l2~2
+3 3$3(3,3034383<3@3D3H3L3P3T3
+5D5c5|5
+626S6l6
+7O7b7m7
+808W8
+8-9t9
+9$:B:Q:s:
+;J;f;
+=&=O=o=x=
+?2?B?M?c?|?
+0R2b2j2o2~2
+3.383>3[3c4h4o4t4
+6"767M7t9
+=-=j=
+5E5i5
+587=7
+8k<C=
+2*2<2N2`2r2
+3^5z5
+6T7m7
+9';?;W;o;
+<T<m<
+=(=D=`=x=
+>(>.>B>J>O>^>h>n>
+2F3Y4x4}4
+5)5\6~6
+7!7q7v7}7
+8;8C8
+8"9*9/9>9H9N9b9j9o9~9
+;&;0;:;D;N;X;b;l;v;
+<"<?<d<
+=$=>=K=e=r=
+>">/>I>V>p>}>
+>2?{?
+1&1,1C1\1j1t1
+3:3G3_3
+4"4'4D4I4f4k4
+52575T5Y5v5{5
+5!616k6
+7/7?7I7P7u7
+:&:2:Y:v:
+=)>8>?>K>Z>a>
+?2?;?I?W?_?w?
+0#1a1
+162F2O2~2
+3%3,363=3^3i3t3
+4%4/4D4I4P4]4d4o4v4
+575A5W5a5~5
+9+:Z:
+2g2"3<3
+:$;=;^;
+;e<w=
+;(<D<
+<3=Y=
+2'3E3c3
+3r4G5
+1L1V1w1
+3`4r4
+4'5$7;7h7
+9):d:
+4#6<6
+7E7y7
+8 9M9
+9-:R:#;~;8<
+=[>a>
+>2?7?R?
+8M8d8}8-9M9p9
+<"<><Q<y<
+=!=T=~?
+<7<W<w<
+97<^<z<
+<"=d=
+>-?F?
+0d0}0
+41464
+6I6S6l6q6
+8G8Y8
+9%9r9
+:':W:i:
+:9;E;};
+;-<C<c<
+?G?c?
+1;1R1w1
+1F2w2
+2*3V3`3w3|3
+4'4G4j4
+6?6<7
+8'8R8t8
+8-:g:
+:4;j;
+>?>g>
+617O7
+8X8b8
+070\0
+9W:g;
+2 3[3
+4/5V5T7|7
+8$9K9
+:#;-;
+=">6>G>h>~>
+?!?3?d?
+3$363
+3`4y4
+6U7\7
+7Q8c8u8
+9):C:H:Z:c:s:z:
+;&;0;:;B;N;Z;i;p;u;|;
+<"<.<<<C<I<P<Z<d<n<x<
+=$=.=8=B=L=T=`=l=z=
+> >(>4>@>O>T>c>j>p>v>}>
+? ?;?J?Y?h?
+0$1-141C1M1R1Y1e1j1o1v1
+2&21282C2J2U2\2
+4L4V4
+5*555C5Q5e5m5
+6%6/6B6L6V6[6u6
+8#858?8G8O8f8o8z8
+8A:Z:b:~:N;Y;v;
+;"<9<F<N<X<q<
+=%=1=>=K=X=_=e=
+>!>'>7>K>R>h>~>
+E1M1T1\1v1
+2%3w3
+3j4u4
+?4?J?\?n?
+S0Z0k0r0
+0x1|1
+7D;H;L;P;T;j;
+8'999c9
+<(<9<?<E<P<b<h<
+= =<=m={=
+>#><>C>P>h>o>
+2B3W3
+3%4f4
+4G5a5s5y5
+6?6T6f6
+7?7T7f7
+7O8d8k8
+9D9u9
+:4:F:o:
+;4;F;o;
+=R=t=}=
+>&>7>;>H>g>q>{>
+> ?7?H?L?S?[?b?f?q?
+0$070
+1.1<1L1W1h1{1
+2.2=2F2O2~2
+3N3m3}3
+4&4/4^4u4~4
+5#5N5a5j5s5
+6&6/6^6y6
+7'7N7i7r7{7
+808C8
+9>9Y9b9k9
+:>:Q:Z:c:
+;>;U;^;g;
+<.<A<J<S<~<
+<.=A=J=S=~=
+>.>E>N>W>~>
+?$?I?^?k?
+>0]0f0o0
+1#1D1i1~1
+2^2q2z2
+3"3+3^3m3v3
+4$4M4i4n4x4
+5)5-595]5h5n5
+6.696=6I6S6w6
+7N7Y7]7i7s7
+8"8+8f8z8
+8?9F9Q9V9\9`9m9t9
+:-:I:
+;';4;A;I;S;W;];a;g;q;W<
+133I3
+7D7q7
+8!8H8M8[8
+939|9
+:,:7:c:i:
+;+;l;
+;@<K<z<
+?(?.?
+243\3
+3>4g5
+748G8
+9!9N9\9
+<!=N=k=
+>!>h>m>u>
+?B?R?
+3"3a3
+5!61676H6\7
+7K8P8W8\8
+=+=3=d=
+1,222
+2.3;3Z3x3
+787w7
+8d9s90:E:
+1#181
+819994:H:h:
+1'2F2
+414A4W4
+9"9,9:9R9f9l9r9|9
+><>X>
+0[2i2.3
+6.8g8c:l:u:
+?^?p?
+0\0v0
+041:1D1K1
+2 2G2S2w2
+2b3s3z3
+444\4o4Y5
+7!8t8
+?b?|?
+0'1z1
+2!303A3^4
+666L6
+;%<3<I<p<
+a0s0y0
+5=6S6
+8"868=8
+<E>M?_?
+111V1_1e1k1
+292?2
+575W5
+6*636
+6=8H8
+9=:B:m:r:
+<Z<;=
+2$333[3q3
+494S4{4
+565^5
+676<6V6~6
+7I7x7
+888`8
+969^9c9}9
+:3:8:R:z:
+;';O;T;n;
+<B<G<d<
+?9?E?N?
+2-292E2Q2]2
+4$4:4O4^4w4
+4>5J5d5q5x5
+576b6o6
+6"7d7p7
+=o>'?n?
+1M3V3`3
+8';W;
+0 0m0
+2(2F2
+2,3d3
+5$7;7i7
+888`8
+8 9u9
+0*1Z1z1
+:4;t;
+<&<5<D<S<b<q<
+=,=V=
+=)>i>
+4)4@4
+4(5N546v6
+9<:Y:
+548D>
+5B6V6D9D:G>
+; ;$;(;,;0;4;8;<;
+7H7t7
+8%8+8K8Q8q8w8
+9/959U9[9
+:3:x:
+:B;v;
+2t4x4|4
+4E5l5
+6`7t7
+<c>z>
+223Z3t5
+3?4w4>5@6D6H6L6P6T6X6\6
+9!:;:s:
+:2;$=(=,=0=4=M=
+727H7x7
+9E9[9
+0&2R2
+3*3@3y3
+5-6T7
+9.:R=g=
+70G1M274
+0&0t0
+0:1L1
+1'4W5
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<S=
+5$779
+2P3T3X3\3`3d3h3l3p3t3x3|3
+2 2$2(2,2024282
+1.2F2
+<0>_>
+061M1[1
+3o3<5
+6'6E6W6`6
+6U7\7s7}7l8p8t8x8|8
+91:C:e:
+;4;=;T;g;
+=%=0=J=
+=->H>g>
+>#?\?
+0&161A1\1f1
+1G2~2
+3#404=4H4
+5&515L5V5x5
+4 4$4(4,4044484<4@4-7
+J5X5o5
+626]6
+7:7[7e7
+<d=h=l=p=t=
+8 8$8(8,8u8
+: :$:(:,:I<
+>->E>[>s>
+4'8A8F9
+2H2Z2_4w4
+4Z5z5
+<>=|=
+?`?d?h?l?
+878q;
+8U>[>b>
+0,4044484<4@4
+4p5x5
+:=?E?
+9k;|;
+0f3$4
+1W4W7
+;3<D>
+64787<7@7D7H74:
+;F;Q;U<y<
+<,=C=x=
+= ?m?
+2'2.2
+4 4$4(4,4044484<4C5o5
+707Z7
+7R9n99:@:h:o:
+;b;|;
+<0=x=|=
+>`?i?
+1;2V2
+8'8]8i8
+:*:?:T:i:~:
+5c9t:D=s?
+#284<4@4D4H4w='?
+2U2\4v6
+7-7H7r7
+=`>d>h>l>p>
+6$6e6t6
+6<7C7T7q7y7
+51:7:D:L:S:Z:
+<U=a=$>*?o?
+263?3
+4A4^4
+6'6`8
+8Q9`:j:
+>335m5
+5F6(8
+:B;#<
+7!8K8
+424=4
+8A8j8
+51\4?5
+7$7F7h7
+3_4f4}5
+7J8&;
+;+<f<r<
+9/9@9M9U9z9%;w=~=
+>G>N>
+>K>w>
+z1l253
+40W1&205R5n5
+4/7s8
+3;5&6
+1"1l1B2W=u=
+>;>r>
+4A6)7
+9k:~<
+3.4J4
+:<;g?
+395C5[6_6c6g6k6o6s6
+7W8K:
+748:8
+1j1{1g2
+5E6`6t6c:
+1U2s2
+2'3B3m3
+8/<c<
+0"1B1
+2h6@8!:
+>*>>>M>a>p>
+90>0e0
+001g1|1
+1H2]2
+323G3\3q3
+43595
+5A6R6
+8&8;8
+9Z9o9
+2$252>3
+9::q:
+=g>m>
+8*909@:
+1F2X2a3
+5Y7f7
+8$=*=Q=
+0R2V3
+<Z=5>
+4=5[6}6=7
+9A;*?
+787S;
+5j6K:z:Q;4<
+?T?]?
+1+2;3U3(636F6Q6v6
+8w8O9Z;
+1d2j2
+72;w=W?
+1G3s3~4k5
+8#:C:s:
+;V;5<F<w?
+7l7(9
+2w2z3
+<>=D=t?z?
+,121h1
+7&7~<
+=\=u=
+0'0U0k0
+1$1?1
+272P2
+3T4e4
+5J6K:i;
+01484r4
+3%3E3J3{6
+;'<O<
+686T6l6j>
+e0P2.4
+<)<S<g<
+4"4&4*4.42464:4>4B4F4J4N4R4V4Z4^4b4
+4A5J6
+9%:+:
+<.=s=
+112c2
+>=?o?
+344x4
+7O8|8
+=!>A>
+><?S?
+7#8R8z8}9}:
+2K3q3%4
+6a8e8i8m8
+4"5Y5
+8)848P8
+:":6:e:
+:P;Z;s;
+=3>W>
+3-3B3e3
+3>4L5
+617N7k7
+7D8q8
+;D<q<
+0Y1a1
+1J2X2
+2e3"5L5
+6$8R8
+=J?O?p?
+0%000B0
+1@1G1N1s1
+2)4G4
+425n5
+9#9'9+9/93979;9?9
+7+7/8
+8$9L9z9
+9+929X9h9o9
+5_5{5
+4&4!5l5`6s6
+7.737C7H7Y7^7 8
+9!9%9)9-9195999\9
+486C6
+6B7P7
+808D8X8l8
+8k9r9}9
+:E:I:M:Q:U:Y:]:a:
+0Z2-<9<
+93:r:z:
+1h3z3G5
+9 919?9G9
+:r<y<
+>T?Y?g?{?
+0F0L0p0
+1D1J1
+2A2F2R2W2l2q2
+5@6v7
+<*<8<Y<l<
+<8=?=F=M=T=Y=
+>Y>`>h>o>w>
+?*?9?B?Q?w?
+0:0[0
+1$181@1O1T1e1y1
+2 2+242C2P2i2x2
+3'393>3M3Y3^3w3|3
+464;4I4e4Q5V5|5
+6#7:7T7Y7b7q7
+8U8Z8i8
+:+:0:
+,0E0N0`0e0
+6!6%6)6-6165696=6A6E6I6M6Q6U6Y6]6a6e6i6m6q6u6y6}6
+9-:g:
+<b=g=
+2G2L2
+;O<t<*>
+5*686K7
+2*3J3
+3\4z4
+4Z5^5b5f5j5n5r5v5z5~5
+8E9w9t:
+<A=H=
+> >s>
+5X;};
+4t6y6
+8@8Y8
+9)9.9E9K9T9l9q9
+=*=}>
+*0L0)535
+777g7
+0u102,3
+42767:7>7B7F7J7N7R7`8
+8U9s9
+8s8/9z9
+:@;h;
+>->Y>
+0'020?0J0a0x0
+1"2)232U2g2
+323X3_3f3m3}3
+464?4R4l4t4
+5 5*5U5v5}5
+6%606=6H6_6v6
+7+7<7M7^7o7z7
+%42:\;{>
+7m85:W:w:
+:e;0?N?
+0!1\1
+252u2
+<P=Q?
+0Z1=2
+7Y7^7
+8'8,8R8W8
+6g8v9T;
+6A7F7<8d<
+93:q:
+:G;U;
+;a<i<u<
+444b4
+5U6\6
+112=2E3R3
+==>k>
+><?I?
+0S1O2{2
+3 4o4
+6"6k6
+8l8y8
+8i9~9
+<P<d<
+<&=2=U>r>
+0;1#2
+4B4`4n4z4
+9=<l=x>
+6*7r7
+:,:8:B:
+1C2E3h3
+4L4l7
+=z>i?
+1/292
+4z5[6j6
+678<8
+9c:w:
+<G<L<]<c<r<x<
+=&=,=1=8===B=Y=e=v=|=
+=3>]>e>
+> ?,?4?G?N?`?n?v?
+0&0<0i0|0
+2,2D2U2c2
+3'313<3K3X3f3
+4#4@4H4V4a4n4z4
+5%515U5a5w5
+6;6G6]6j6
+717>7
+8)8/868;8A8G8l8x8
+9!9'9L9X9w9
+:=:I:_:h:p:
+;!;-;E;Q;q;};
+<-<6<><U<a<y<
+=?=K=a=j=r=
+>>>J>`>w>
+?#?F?R?h?
+0)0?0[0g0
+1/1;1^1j1
+222>2T2p2|2
+3+3G3S3s3
+4'4J4V4l4
+5*5@5\5h5
+606<6\6h6~6
+707<7R7n7z7
+8&8B8N8n8z8
+9"9B9N9d9
+:":8:T:`:
+;(;4;T;`;v;
+<(<4<J<f<r<
+=:=F=f=r=
+>:>F>\>x>
+?0?L?X?x?
+0 0,0L0X0n0
+1#1/1E1a1m1
+2,282^2j2
+3&323X3d3
+3 4,4R4^4
+5&5L5X5~5
+6 6F6R6x6
+7@7L7r7~7
+8:8F8l8x8
+949@9f9r9
+:::F:i:u:
+;1;=;c;o;
+<+<7<]<i<
+<%=1=W=c=
+>+>Q>]>
+?%?K?W?}?
+0E0Q0w0
+1?1K1q1}1
+292E2k2w2
+333?3e3q3
+4-494_4k4
+5'535Y5e5
+5!6-6S6_6
+7'7M7Y7
+8!8G8S8y8
+9A9M9s9
+:;:G:m:y:
+;5;A;g;s;
+</<;<a<m<
+=)=5=[=g=
+=#>/>U>a>
+?)?O?[?
+0#0I0U0{0
+1C1O1u1
+2=2I2o2{2
+373C3i3u3
+414=4c4o4
+5+575]5i5
+5%616W6c6
+7+7Q7]7
+8%8K8W8}8
+9E9Q9w9
+:?:K:q:}:
+;9;E;k;w;
+<6<B<f<r<
+=&=2=V=b=
+>">F>R>v>
+?$?0?@?T?`?
+0$0,050>0I0Q0i0w0~0
+1.161C1K1X1a1i1v1~1
+2!2%2)2-2125292=2A2E2I2M2Q2U2Y2]2a2e2i2m2q2u2y2}2
+3!3%3)3-3135393=3A3E3I3M3Q3U3Y3]3a3e3i3m3q3u3y3}3
+4%4)4-4145494=4A4E4I4M4Q4U4Y4]4a4e4i4m4q4u4y4}4
+5!5%5)5-5155595=5A5E5I5M5Q5U5Y5]5a5e5i5m5q5u5y5}5
+6!6%6)6-6165696=6A6E6I6M6Q6U6Y6]6a6e6i6m6y6
+7'70787F7p7
+384J4i4
+71888^9o9|9
+>(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?
+2\3m3
+9P;5<C<f<
+<1?5?9?=?A?E?I?M?Q?U?Y?]?a?e?i?m?q?u?y?
+1Y2c2z2
+=/=3=7=;=?=C=G=K=O=S=W=[=_=g=
+1S2b2
+5R6V6Z6^6b6f6j6n6r6v6z6~6
+607#8
+=4>v>
+2G3V3g3
+505`5
+5%6w6
+6'767b7
+7g8v8
+8G9V9y9
+;W<f<
+<'=6=\=
+>?>|>
+172F2
+3"4u4
+3)3.3>3G3u3
+4!4.434H4M4S4Y4^4d4j4o4u4
+5'5-535;5E5L5V5i5x5}5
+7!7'7,7;7@7H7N7S7[7h7n7
+8%878L8R8Z8`8l8r8}8
+9"9?9^9
+93:X:
+<R=D>O>
+?0?=?S?[?
+0P1X1}1
+3!3'3+31353;3?3F3
+3<4J4j4
+5"5r5
+7w7J8P8V8_8f8y8
+9$9-92989B9L9\9l9|9
+:*:/:5:?:I:\:a:
+<5=<=R=\=y>
+? ?2?d?
+0%040
+313W3u3|3
+3Z4e4
+5 5$5(5,50545~5
+5#7K7Y7
+9#9<9C9K9P9T9X9
+92:8:<:@:D:
+;/;a;h;l;p;t;x;|;
+;m>s>
+0$0(0.02080<0A0G0K0Q0U0[0_0e0i0
+6@6N6X6k6
+D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+>??F?N?
+6.6S6
+6o7w7
+9*<c<n<
+?\?y?
+000N0k0
+021t1
+2.2d2
+=0=;=[=f=
+3/3_3
+8i9q9
+<g=|=
+>H?`?e?
+0<2L2[2~2
+2"3)3w3~3
+4J4_4i4s4
+5d5y5
+7$7?7O7X7`7x7
+8$8,81878?8D8J8R8W8]8e8j8p8x8}8
+9#9(9.969;9A9I9N9T9\9a9g9o9t9z9
+:):0:=:F:V:8;x;
+0+0d0
+1!1(1/1G1V1`1m1w1
+515K5f5n5|5
+5 6V6i6
+6-7T7
+8;9U9
+:+:m:
+;/;?;M;d;o;
+<.<M<b<l<
+>'>S>]>
+?&?2?8?C?Q?Z?d?t?y?~?
+0*0/0?0K0P0[0e0{0
+0<1S1`1l1|1
+3&303L3S3Y3g3m3
+4b4s5z5
+;@=F=l=r=
+2e3l3
+9 :&:E:K:
+> >$>(>,>
+:':3:S:Y:_:e:
+=!=6=D=f=
+> >)>2>:>F>N>`>k>s>{>
+?r?}?
+020H0g0
+111;1j1t1
+3$4)4/4;4E4\4d4r4
+6.6P6f6
+7X:k:
+;^;s;
+;6<;<M<k<
+<E=Q=\>
+2`5U6f6)91969p:
+;!;G;x;
+=%=G=
+1U1Z1c1h1q1v1
+3"31383H3N3T3\3b3h3p3v3|3
+3<4T4m4
+8)848i8y8
+;(;|;
+>!>@>e>
+>7?V?
+191_1j2
+2O3>4
+:C:O:[:q:
+;(;1;:;};
+=\=b=g=o=
+>%>E>
+0I2i4w4
+<J=O=
+>%?1?u?
+0H0P0a0
+111N1T1^1t1
+2-2[2`2
+3&383J3\3n3
+7L8^8
+9U9{9
+9F:(;<;a;
+>"?+?
+0[1d1p2y2e3
+3:4q4
+6&6i6t6
+7F7a8}8&9^:
+U0g0y0
+1 1N1~1
+1*313
+4'4j4|4
+5K5Q5Y5
+6&6-6y6
+7S7\7e7
+<9=A=
+0)080
+566M6
+>!>/>
+?6?n?
+9;;v=
+2'2?2J2\2
+5"6N6h6
+6-7%:6:J:P:U:
+;';5;
+=A=T=)>
+^0t1{1
+2$2Z2
+3)4?4U4n4
+5-5T5
+7'7D7Z7
+9"9J9Z9h9
+=$=(=8=\=h=p=
+>(>H>h>
+?(?H?h?
+080X0x0
+1 1@1`1
+2 2(2,2H2P2T2l2p2
+3 3$3,3@3`3
+4 4,4H4h4
+0 0$0,0004080H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+1 1$1(1,1014181l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+4X4x4
+5,54585L5T5X5l5t5x5
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7t7x7|7
+8 8$8(8,8084888<8@8L8P8T8X8\8`8d8h8l8p8t8x8
+9$9(9L9P9x9
+:<:@:d:h:
+;0;X;|;
+< <D<H<l<p<
+=4=8=\=`=
+>(>P>x>
+?<?@?h?
+0,000T0X0|0
+0 1H1l1p1
+282`2
+3(3P3x3
+4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5
+014181
+2H5L5P5T5X5\5`5d5h5l5p5t5x5 7$7(7
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+? ?$?(?,?0?4?8?<?@?D?l?|?
+0 0$0(0,0004080<0@0
+0$1,141<1D1L1T1\1d1l1t1|1
+6 6$6(6,6064686<6H6L6P6T6X6\6`6d6
+;(;H;`;|;
+<<<\<|<
+=$=H=l=
+>$>L>p>
+?$?@?\?t?
+0(0D0\0|0
+1 181P1l1
+242L2

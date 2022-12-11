@@ -1,0 +1,325 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+XR/,Y
+n(]:n
+AcknowledgeType
+ActiveDirectoryUnavailableJ
+AdminQueuePath
+AllowAccess
+AllowAccessWarning
+AnonymousADAccess
+AuthenticatedMessage
+BadParameterSet
+CertComputerName
+CertRetrievalFail
+ClusterLibraryNotFound
+ClusterNotinstalled
+ClusterPhysicalNode
+ClusterVirtualServer
+Connect
+CreatedQueueSuccessfully
+DeleteAttempt
+DeletedQueue
+DenyAccess
+DenyAccessWarning
+DestQueueRequired
+Disconnect
+FailedToGetClusterHandle
+FailedToGetSD
+FailedToSetPermission
+FailedToSetSD
+FindingMatch
+FindingSubqueueMatch
+FriendlyQueueName
+GetClusterNodeStateFailed
+GetJournalQueues
+GetOutGoingQueueName
+InvalidAccessRight
+InvalidQueuePath
+InvalidSubQueue
+JournalMessage
+JournalOnSend
+JournalQueueValidation
+JournalQuota
+JournalQuotainKB
+Label
+LocalSystemIsCluster
+LocalSystemIsNotCluster
+LocationNotUpdateInVirtualServerInstance
+MessageBody
+MessageCount
+MessageLabel
+MessageObject
+MessageQuota
+MoveMessageDestination
+MoveMessageInput
+MoveMessageMessage
+MsgLogStore
+MsgStore
+MustSpecifyAccess
+NewQueueAuthenticated
+NewQueueJournal
+NewQueueLabel
+NewQueuePrivacyLevel
+NotFoundInAD
+NotSupportedinWorkGroup
+OpenClusterAccessDenied
+OutgoingQueue
+OutgoingQueueObj
+PathOrFormatName
+PurgeOutGoingQueue
+PurgeOutGoingQueueWarning
+PurgeQueue
+PurgeQueueWarning
+Purging
+QueueMulticastAddress
+QueueNotExist
+QueueObject
+QueueQuotaMustPositive
+QueueQuotainKB
+QueueTypeQueues
+QueueTypeToCreate
+QueueTypeTransactional
+QuotaMustPositive
+RecoverableMessage
+RegisterCertDescription
+RegisterCertFail
+RegisterCertFailure
+RegisterCertSuccess
+RemoveAccess
+RemoveAccessWarning
+RemoveCert
+RemoveCertSuccessful
+RemoveCertWarning
+RemoveDenyAccess
+RemoveDenyAccessWarning
+RemoveQueue
+RemoveQueueWarn
+RenewCertFail
+RenewCertSuccess
+RenewCertWarning
+RenewEncryptionKey
+RenewEncryptionKey2
+RenewEncryptionKeyCaption
+RenewEncryptionKeyWarning
+RenewInternalCert
+RenewInternalCertProgress
+RenewInternalCertWarning
+RequestValidQueueTypeForSubQueue
+ResponseQueuePath
+RetrieveBody
+SendRecoverable
+SentMessage
+SentTransactionalMessage
+SetAuth
+SetAuthWarning
+SetAuthenticateQueue
+SetJournal
+SetJournalQueue
+SetJournalQuota
+SetJournalQuotaWarning
+SetJournalWarning
+SetLabel
+SetLabelWarning
+SetMulticastAddress
+SetMulticastAddressWarning
+SetPrivacyLevel
+SetPrivacyLevelWarning
+SetPropertyFailed
+SetQuota
+SetQuotaWarning
+SpecifyDestQueue
+StopMsmq
+SubqueueName
+Timeout
+TransactionalMove
+TransactionalReceive
+TransactionalSend
+UpdateJournalQuota
+UpdateMsgLogStoreInfo
+UpdateMsgQuota
+UpdateMsgStoreInfo
+UpdateXactLogStoreInfo
+UserName
+ValidFolder
+ValidQueueTypeForJournal
+XactLogStore
+HType of acknowledgment message to be returned to the sending application
+FCannot access the directory service. Make sure MSMQ is domain joined. 
+0Path Name or Format Name of Admin Queue Required
+%Allow access {0} for account name {1}
+?Are you sure you want to allow access {0} for account name {1}?
+A local user is authenticated as an anonymous user and cannot access Active Directory. You need to log on as a domain user to access Active Directory.
+IIf specified, require the authentication of the message before being sent
+Bad ParameterSet Name
+The computer name retrieves the certificates of the current user for the specified machine. The computer name must be the NetBios name
+No certificates were retrieved
+#Local machine is not a cluster node
+PCluster Service is not running on this node. Local machine is not a cluster node
+{0} is a cluster physical node
+{0} is a cluster virtual server
+0If specified, connects a computer to the network
+Successfully Created Queue
+Attempting to Delete
+Deleted  {0} Queue
+$Deny access {0} for account name {1}
+>Are you sure you want to deny access {0} for account name {1}?
+Destination Queue Required
+5If specified, disconnects a computer from the network
+3Failed to get handle to Cluster that {0} is part of
+2Failed to get security descriptor. Error code: {0}
+*Failed to set permissions. Error code: {0}
+2Failed to set security descriptor. Error code: {0}
+"Finding matches for Queue name {0}
+%Finding matches for subQueue name {0}
+The friendly name of a Queue
+EFailed to get Cluster Node state. Local machine is not a cluster node
+JIf specified, retrieves the Journal queue(s) that match the Name Parameter
+5The friendly name of a Queue. Wildcards are permitted
+'The '{0}' access right is not supported
+Invalid queue path name
+7Can only retrieve SubQueue for Public or Private queues
+uIf specified, indicates whether a copy of the message should be kept in a machine journal on the originating computer
+uIf specified, indicates whether a copy of the message should be kept in a machine journal on the originating computer
+<Can only retrieve Journal queue for Public or Private queues
+CIf specified, sets the total Journal Message Storage quota for MSMQ
+?If specified, Sets the maximum size of the journal queue(in KB)
+Message Label
+Local machine is a cluster node
+#Local machine is not a cluster node
+\Location for message store or message log store cannot be updated on virtual server instance
+The body of a message
+'Sets the number of messages to retrieve
+Message Label
+Message Object
+;If specified, sets the total Message Storage quota for MSMQ
+MessageQueue objects, representing the destination queue to which the message will be moved. The destination queue can be a subqueue or the main queue.
+MessageQueue objects, representing the source queue from which the message will be moved.  The source queue can be a subqueue or the main queue. Accepts pipelined input.
+3Message object representing the message to be moved
+yIf specified, changes the message logger storage location and moves over all the message logger files to the new location
+kIf specified, changes the message storage location and moves over all the message files to the new location
+*Must specify -Allow, -Deny, and/or -Remove
+_If specified, sets a value that indicates whether the queue accepts only authenticated messages
+cIf specified, Sets a value that indicates whether received messages are copied to the journal queue
+(If specified, Sets the Queue Description
+KIf specified, Sets the Privacy Level on the queue to None, Optional or Body
+1The object was not found in the Active Directory.
+6This functionality is not supported in WorkGroup mode.
+3Access denied when open cluster that {0} is part of
+OutgoingQueue Objects
+OutgoingQueue Object(s)
+*Path Name or Format Name of Queue Required
+jIf specified, returns a copy of the first message in the queue without removing the message from the queue
+-Delete all messages in the outgoing queue {0}
+GAre you sure you want to delete all messages in the outgoing queue {0}?
+Delete all messages in {0}
+4Are you sure you want to delete all messages in {0}?
+Purging the contents of 
+BIf specified, sets the multicast address associated with the queue
+Queue does not exist
+Message Queue object
+5Queue or journal queue quota must be positive integer
+7If specified, Sets the maximum size of the queue(in KB)
+1If specified, retrieves only the QueueType queues
+5Indicates whether to create a public or private queue
+AIf specified, creates a transactional queue at the specified path
+;Messages or journal messages quota must be positive integer
+:If specified, sets the recoverable property of the message
+?Registering Certificate {0} on Active Directory Domain Services
+Failed To Register Certificate
+-Cannot Register Certificate in Workgroup mode
+#Successfully Registered Certificate
+,Remove allow access {0} for account name {1}
+FAre you sure you want to remove allow access {0} for account name {1}?
+$Remove certificate with Serial: {0}?
+.Successfully removed certificate with Serial: 
+=Are you sure you want to remove certificate with Serial: {0}?
++Remove deny access {0} for account name {1}
+FAre you sure you want to remove deny access {0}  for account name {1}?
+Delete queue {0}
+*Are you sure you want to delete queue {0}?
+$Failed To Renew Internal Certificate
+)Successfully Renewed Internal Certificate
+The supplied certificate will be registered in Active Directory Domain Services. Do you want to continue registering the certificate?
+FIf specified, renews the cryptographic key that is used for encryption
+renewEncryptionKey. You may receive messages encrypted with a different cryptographic key than your computer currently has. You will not be able to read such messages. You must restart windows for the changes to take place.
+(Warning: This is a new cryptographic key
+You may receive messages encrypted with a different cryptographic key than your computer currently has. You will not be able to read such messages. You must restart windows for the changes to take place. Do you want to continue?
+-If specified, renews the internal certificate
+-Performing operation RenewInternalCertificate
+The authenticated messages that you already sent using the current internal certificate may be rejected as not authenticated. Do you want to continue renewing the internal certificate?
+3Please specify a valid QueueType for SubQueue Queue
+3Path Name or Format Name of Response Queue Required
+6If specified, returns the content of the message body.
+-If specified, sends only recoverable messages
+Sent message to {0}
+Sent transactional message to 
+YSet the value that indicates whether the queue accepts only authenticated messages to {0}
+pAre you sure you want set the value that indicates whether the queue accepts only authenticated messages to {0}?
+_If specified, Sets a value that indicates whether the queue accepts only authenticated messages
+]Set the value that indicates whether received messages are copied to the journal queue to {0}
+cIf specified, Sets a value that indicates whether received messages are copied to the journal queue
+7Set the maximum size of the journal queue(in KB) to {0}
+NAre you sure you want set the maximum size of the journal queue(in KB) to {0}?
+tAre you sure you want set the value that indicates whether received messages are copied to the journal queue to {0}?
+ set the queue description to {0}
+7Are you sure you want set the queue description to {0}?
+:Set the multicast address associated with the queue to {0}
+QAre you sure you want set the multicast address associated with the queue to {0}?
+)Set the Privacy Level on the queue to {0}
+@Are you sure you want set the Privacy Level on the queue to {0}?
+Unable to set properties for 
+/Set the maximum size of the queue(in KB) to {0}
+FAre you sure you want set the maximum size of the queue(in KB) to {0}?
+$Please specify the destination queue
+The Message Queuing service has to be restarted for the changes to take effect. Do you want to restart the Message Queuing service now?
+ZSubqueue name, it will retreive an instance of a subqueue even if it doesn't already exist
+eSets the maximum amount of time for the message to be received from the destination queue(in Seconds)
+NSets the maximum amount of time for the message to reach the queue(in Seconds)
+mSets the timespan that indicates the maximum time to wait for the queue to contain a message(in milliseconds)
+4If specified, moves messages in a transaction scope.
+6If specified, receives messages in a transaction scope
+,If specified, sends only transacted messages
+update the JournalQuota to {0}
+"update MsgLogStore from {0} to {1}
+update the messagequota to {0}
+update MsgStore from {0} to {1}
+*update TransactionLogStore from {0} to {1}
+User name
+G{0} is not a valid folder name. Please enter the full path of a folder.
+2Please specify a valid QueueType for Journal Queue
+If specified, changes the transaction logger storage location and moves over all the transaction logger files to the new location
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+Microsoft.Msmq.PowerShell.Commands.resources
+Microsoft.Msmq.PowerShell.Commands.Resources.en.resources
+Microsoft.Msmq.PowerShell.Commands.resources.dll
+_CorDllMain
+mscoree.dll
+VS_VERSION_INFO
+VarFileInfo
+Translation
+StringFileInfo
+040904b0
+CompanyName
+Microsoft Corporation
+FileDescription
+FileVersion
+10.0.22621.1
+InternalName
+Microsoft.Msmq.PowerShell.Commands.resources.dll
+LegalCopyright
+Copyright (c) Microsoft Corporation. All rights reserved.
+OriginalFilename
+Microsoft.Msmq.PowerShell.Commands.resources.dll
+ProductName
+Microsoft (R) Windows (R) Operating System
+ProductVersion
+10.0.22621.1
